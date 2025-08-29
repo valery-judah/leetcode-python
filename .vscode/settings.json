@@ -1,0 +1,17 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}/venv/bin/python",
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestArgs": ["tasks"],
+  "editor.formatOnSave": true,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "terminal.integrated.profiles.osx": {
+    "bash-with-venv": {
+      "path": "bash",
+      "args": ["-c", "source scripts/setup_terminal.sh"]
+    }
+  },
+  "terminal.integrated.defaultProfile.osx": "bash-with-venv"
+}

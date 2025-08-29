@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python
 from __future__ import annotations
 
@@ -9,21 +8,24 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 
+
 def kebab(s: str) -> str:
     s = s.strip().lower()
     s = re.sub(r"[^a-z0-9]+", "-", s)
     return re.sub(r"-+", "-", s).strip("-")
 
+
 def render(tpl_path: Path, **kw) -> str:
     tpl = tpl_path.read_text()
     return tpl.format(**kw)
+
 
 def main() -> None:
     ap = argparse.ArgumentParser(description="Create a LeetCode problem skeleton")
     ap.add_argument("slug", help="leetcode slug, e.g., two-sum")
     ap.add_argument("number", type=int, help="problem number, e.g., 1")
     ap.add_argument("--title", help="human title, default from slug", default=None)
-    ap.add_argument("--difficulty", choices=["easy","medium","hard"], default="easy")
+    ap.add_argument("--difficulty", choices=["easy", "medium", "hard"], default="easy")
     ap.add_argument("--tags", default="")
     ap.add_argument("--url", default="")
     args = ap.parse_args()
@@ -64,6 +66,7 @@ def main() -> None:
     print("Next:")
     print(f"  - Edit {base/'solution.py'} and {base/'test_solution.py'}")
     print("  - Run: pytest -q")
+
 
 if __name__ == "__main__":
     main()

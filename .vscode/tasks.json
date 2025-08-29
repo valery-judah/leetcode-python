@@ -1,0 +1,70 @@
+{
+  "version": "2.0.0",
+  "inputs": [
+    {
+      "id": "slug",
+      "type": "promptString",
+      "description": "LeetCode slug",
+      "default": "two-sum"
+    },
+    {
+      "id": "number",
+      "type": "promptString",
+      "description": "Problem number",
+      "default": "1"
+    },
+    {
+      "id": "difficulty",
+      "type": "pickString",
+      "options": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "default": "easy"
+    }
+  ],
+  "tasks": [
+    {
+      "label": "New problem",
+      "type": "shell",
+      "command": "python scripts/new_task.py ${input:slug} ${input:number} --difficulty ${input:difficulty}",
+      "problemMatcher": []
+    },
+    {
+      "label": "Test",
+      "type": "shell",
+      "command": "pytest -q",
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "Test: Active File",
+      "type": "shell",
+      "command": "pytest -q ${relativeFile}",
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "Test: This Folder",
+      "type": "shell",
+      "command": "pytest -q ${fileDirname}",
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "Lint",
+      "type": "shell",
+      "command": "make lint",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Format",
+      "type": "shell",
+      "command": "make fmt",
+      "group": "build",
+      "problemMatcher": []
+    }
+  ]
+}
