@@ -1,27 +1,27 @@
 
-        .PHONY: install linters precommit test lint type fmt ci
+.PHONY: install linters precommit test lint type fmt ci
 
-        install:
+install:
 	python -m pip install -r requirements-dev.txt
 
-        linters:  # alias
+linters:  # alias
 	make lint
 
-        precommit:
+precommit:
 	pre-commit install
 
-        test:
+test:
 	pytest -q
 
-        lint:
+lint:
 	ruff check .
 	black --check .
 
-        fmt:
+fmt:
 	ruff check . --fix
 	black .
 
-        type:
+type:
 	mypy tasks || true  # tasks may contain stubs early
 
-        ci: test lint type
+ci: test lint type

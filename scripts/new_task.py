@@ -44,14 +44,18 @@ def main() -> None:
     )
 
     # README
-    (base / "README.md").write_text(render(ROOT / "templates" / "README.md.tpl", **context))
+    readme_tpl = ROOT / "templates" / "README.md.tpl"
+    (base / "README.md").write_text(render(readme_tpl, **context))
 
     # solution.py
-    (base / "solution.py").write_text(render(ROOT / "templates" / "solution.py.tpl", **context))
+    solution_tpl = ROOT / "templates" / "solution.py.tpl"
+    (base / "solution.py").write_text(render(solution_tpl, **context))
 
     # tests
     tests_dir = base
-    (tests_dir / "test_solution.py").write_text(render(ROOT / "templates" / "test_solution.py.tpl", **context))
+    test_tpl = ROOT / "templates" / "test_solution.py.tpl"
+    test_content = render(test_tpl, **context)
+    (tests_dir / "test_solution.py").write_text(test_content)
 
     # package marker for pytest discovery
     (base / "__init__.py").write_text("")

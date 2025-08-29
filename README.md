@@ -24,6 +24,25 @@ Folders are created under `tasks/NNNN-slug/`. Each contains:
 
 CI, pre-commit, and VS Code configs are included.
 
+## Developer workflow
+- Lint: `make lint` (runs `ruff check .` and `black --check .`).
+- Auto-fix: `make fmt` (runs `ruff check . --fix` and `black .`).
+- Type check: `make type` (mypy on `tasks/`).
+- Tests: `make test` or `pytest -q` (configured via `pytest.ini`).
+- Pre-commit: `make precommit` to install hooks; `pre-commit run --all-files` to run manually.
+- VS Code Tasks: Command Palette → “Tasks: Run Task” → `Test`, `Test: Active File`, or `New problem` (see `.vscode/tasks.json`).
+- Python Test Explorer: Enabled for pytest; discovery is configured in `.vscode/settings.json`.
+
+Key configs:
+- Ruff/Black/Mypy: `pyproject.toml`.
+- Pytest defaults: `pytest.ini`.
+- Git hooks: `.pre-commit-config.yaml`.
+- Editor tasks/settings: `.vscode/tasks.json`, `.vscode/settings.json`.
+- Terminal bootstrap: `scripts/setup_terminal.sh` (creates venv, installs deps).
+
+CI:
+- GitHub Actions runs lint, type check, and tests on push/PR (`.github/workflows/ci.yml`).
+
 ### Cline Assistant Workflow
 
 This project is configured with a `.clinerules` file that enables a proactive assistant workflow with Cline. You can ask Cline to review your work, and it will act as an automated code reviewer to ensure your solution meets the project's standards.
