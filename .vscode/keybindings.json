@@ -1,0 +1,7 @@
+[
+  {
+    "key": "cmd+alt+t",
+    "command": "workbench.action.tasks.runTestTask",
+    "when": "editorTextFocus || terminalFocus"
+  }
+]

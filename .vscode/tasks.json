@@ -45,7 +45,7 @@
       "presentation": {
         "reveal": "silent",
         "focus": false,
-        "panel": "new",
+        "panel": "shared",
         "showReuseMessage": false,
         "clear": false
       },
@@ -66,7 +66,7 @@
       "presentation": {
         "reveal": "silent",
         "focus": false,
-        "panel": "new",
+        "panel": "shared",
         "showReuseMessage": false,
         "clear": false
       },
@@ -87,7 +87,7 @@
       "presentation": {
         "reveal": "silent",
         "focus": false,
-        "panel": "new",
+        "panel": "shared",
         "showReuseMessage": false,
         "clear": false
       },
@@ -98,10 +98,9 @@
       "label": "Test: Current Dir",
       "type": "shell",
       "command": "${config:python.defaultInterpreterPath}",
-      "args": ["-m", "pytest", "-q", "."],
+      "args": ["-m", "pytest", "-q", "${fileDirname}"],
       "options": {
         "shell": { "executable": "/bin/bash", "args": ["-lc"] },
-        "cwd": "${fileDirname}",
         "env": {
           "PYTHONDONTWRITEBYTECODE": "1"
         }
@@ -109,7 +108,7 @@
       "presentation": {
         "reveal": "silent",
         "focus": false,
-        "panel": "new",
+        "panel": "shared",
         "showReuseMessage": false,
         "clear": false
       },
