@@ -6,7 +6,7 @@ class BruteForce:
         for i, v in enumerate(nums):
             for j in range(i + 1, len(nums)):
                 if v == nums[j]:
-                    return False
+                    return True
         return False
 
 

@@ -34,11 +34,20 @@
     {
       "label": "Test",
       "type": "shell",
-      "command": "python -m pytest -q",
+      "command": "${config:python.defaultInterpreterPath}",
+      "args": ["-m", "pytest", "-q"],
       "options": {
+        "shell": { "executable": "/bin/bash", "args": ["-lc"] },
         "env": {
           "PYTHONDONTWRITEBYTECODE": "1"
         }
+      },
+      "presentation": {
+        "reveal": "silent",
+        "focus": false,
+        "panel": "new",
+        "showReuseMessage": false,
+        "clear": false
       },
       "group": "test",
       "problemMatcher": []
@@ -46,11 +55,20 @@
     {
       "label": "Test: Active File",
       "type": "shell",
-      "command": "python -m pytest -q ${relativeFile}",
+      "command": "${config:python.defaultInterpreterPath}",
+      "args": ["-m", "pytest", "-q", "${relativeFile}"],
       "options": {
+        "shell": { "executable": "/bin/bash", "args": ["-lc"] },
         "env": {
           "PYTHONDONTWRITEBYTECODE": "1"
         }
+      },
+      "presentation": {
+        "reveal": "silent",
+        "focus": false,
+        "panel": "new",
+        "showReuseMessage": false,
+        "clear": false
       },
       "group": "test",
       "problemMatcher": []
@@ -58,11 +76,20 @@
     {
       "label": "Test: This Folder",
       "type": "shell",
-      "command": "python -m pytest -q ${fileDirname}",
+      "command": "${config:python.defaultInterpreterPath}",
+      "args": ["-m", "pytest", "-q", "${fileDirname}"],
       "options": {
+        "shell": { "executable": "/bin/bash", "args": ["-lc"] },
         "env": {
           "PYTHONDONTWRITEBYTECODE": "1"
         }
+      },
+      "presentation": {
+        "reveal": "silent",
+        "focus": false,
+        "panel": "new",
+        "showReuseMessage": false,
+        "clear": false
       },
       "group": "test",
       "problemMatcher": []
@@ -70,14 +97,23 @@
     {
       "label": "Test: Current Dir",
       "type": "shell",
-      "command": "python -m pytest -q .",
+      "command": "${config:python.defaultInterpreterPath}",
+      "args": ["-m", "pytest", "-q", "."],
       "options": {
+        "shell": { "executable": "/bin/bash", "args": ["-lc"] },
         "cwd": "${fileDirname}",
         "env": {
           "PYTHONDONTWRITEBYTECODE": "1"
         }
       },
-      "group": "test",
+      "presentation": {
+        "reveal": "silent",
+        "focus": false,
+        "panel": "new",
+        "showReuseMessage": false,
+        "clear": false
+      },
+      "group": { "kind": "test", "isDefault": true },
       "problemMatcher": []
     },
     {

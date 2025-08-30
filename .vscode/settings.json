@@ -10,7 +10,7 @@
   "terminal.integrated.profiles.osx": {
     "bash-with-venv": {
       "path": "bash",
-      "args": ["-lc", "source scripts/setup_terminal.sh"]
+      "args": ["-lc", "source ${workspaceFolder}/scripts/setup_terminal.sh"]
     }
   },
   "terminal.integrated.defaultProfile.osx": "bash-with-venv"

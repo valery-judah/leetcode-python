@@ -42,7 +42,7 @@ REQUIRED_PY=$(find_python_ge_311)
 if [ -z "$REQUIRED_PY" ]; then
   echo "Python >=3.11 is required but not found on PATH." >&2
   echo "- macOS/Homebrew: brew install python@3.11 (or 3.12)" >&2
-  echo "- Ensure brew is on PATH (e.g., echo 'eval \"$($(which brew) shellenv)\"' >> ~/.zprofile)" >&2
+  echo "- Ensure brew is on PATH (e.g., echo 'eval \"\$(brew shellenv)\"' >> ~/.zprofile)" >&2
   echo "Continuing without venv activation so the terminal still opens..." >&2
   exec "$SHELL"
 fi
