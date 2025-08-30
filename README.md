@@ -51,6 +51,12 @@ CI:
 
 - GitHub Actions runs lint, type check, and tests on push/PR (`.github/workflows/ci.yml`).
 
+## Project Architecture
+
+- Overview of structure, testing, and conventions: `docs/architecture.md`
+- Workflow templates: `docs/cline-workflow-template.md`
+- Patterns and active notes: `memory-bank/`
+
 ### Cline Assistant Workflow
 
 This project is configured with a `.clinerules` file that enables a proactive assistant workflow with Cline. You can ask Cline to review your work, and it will act as an automated code reviewer to ensure your solution meets the project's standards.

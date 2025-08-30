@@ -1,9 +1,9 @@
 
-# 217. Contains Duplicate
+# 219. Contains Duplicate Ii
 
-**URL**: https://leetcode.com/problems/contains-duplicate/
+**URL**: https://leetcode.com/problems/contains-duplicate-ii/
 **Difficulty**: easy
-**Tags**: array,hash-set
+**Tags**: array,hash-map
 
 ## Clarifying questions
 - Input shape, ranges, constraints?
