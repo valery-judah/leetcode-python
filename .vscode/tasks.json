@@ -68,6 +68,19 @@
       "problemMatcher": []
     },
     {
+      "label": "Test: Current Dir",
+      "type": "shell",
+      "command": "python -m pytest -q .",
+      "options": {
+        "cwd": "${fileDirname}",
+        "env": {
+          "PYTHONDONTWRITEBYTECODE": "1"
+        }
+      },
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
       "label": "Lint",
       "type": "shell",
       "command": "make lint",

@@ -6,7 +6,7 @@ class BruteForce:
         for i, v in enumerate(nums):
             for j in range(i + 1, len(nums)):
                 if v == nums[j]:
-                    return True
+                    return False
         return False
 
 
@@ -32,3 +32,12 @@ Solution = SetBased
 # Explicit multi-export for test discovery
 ALL_SOLUTIONS = [BruteForce, SetBased, Sorting]
 
+
+if __name__ == "__main__":
+    # Convenience: running this file executes tests for its task folder.
+    import subprocess
+    import sys
+    from pathlib import Path
+
+    task_dir = Path(__file__).parent
+    subprocess.run([sys.executable, "-m", "pytest", "-q", str(task_dir)], check=False)

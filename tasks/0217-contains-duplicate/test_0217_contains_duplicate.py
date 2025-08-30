@@ -7,6 +7,9 @@ from pathlib import Path
 import pytest
 from _pytest.mark.structures import ParameterSet
 
+# Aggregate results per solution for a verbose, grouped summary
+# Summary recording provided by this package's conftest.py via `run_summary` fixture
+
 
 def _discover_solution_classes() -> list[ParameterSet]:
     """Discover solution classes for this task from `solutions.py`.
@@ -42,17 +45,20 @@ def S(request) -> Callable[[], object]:
 
 
 @pytest.mark.parametrize(
-    ("nums", "expected"),
+    ("label", "nums", "expected"),
     [
-        ([1, 2, 3, 1], True),
-        ([1, 2, 3, 4], False),
-        ([1, 1, 1, 3, 3, 4, 3, 2, 4, 2], True),
-        ([], False),
-        ([5], False),
-        ([0, 0], True),
-        ([-1, -2, -1], True),
+        ("dupe_simple", [1, 2, 3, 1], True),
+        ("no_dupe", [1, 2, 3, 4], False),
+        ("multi_dupes", [1, 1, 1, 3, 3, 4, 3, 2, 4, 2], True),
+        ("empty", [], False),
+        ("single", [5], False),
+        ("zeros", [0, 0], True),
+        ("negatives", [-1, -2, -1], True),
     ],
 )
-def test_contains_duplicate(S, nums: list[int], expected: bool):
+def test_contains_duplicate(S, label: str, nums: list[int], expected: bool, run_summary):
     sol = S()
-    assert sol.solve(nums) is expected
+    ok = sol.solve(nums) is expected
+    # Record per-solution outcome for verbose grouped reporting
+    run_summary[S.__name__].append((label, ok))
+    assert ok
