@@ -1,8 +1,7 @@
 import heapq
-from typing import List
 
 
-def kClosest(points: List[List[int]], k: int) -> List[List[int]]:
+def kClosest(points: list[list[int]], k: int) -> list[list[int]]:
     if len(points) <= k:
         return points
 
@@ -20,7 +19,7 @@ def kClosest(points: List[List[int]], k: int) -> List[List[int]]:
     return res
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     points = [[3, 3], [5, -1], [-2, 4]]
     k = 2
     print(kClosest(points, k))

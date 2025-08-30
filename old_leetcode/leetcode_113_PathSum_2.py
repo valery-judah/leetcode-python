@@ -1,4 +1,3 @@
-from typing import Optional, List, Tuple, Any
 from dataclasses import dataclass
 from unittest import TestCase
 
@@ -8,9 +7,9 @@ from src.utils.Trees import TreeNode, getTree
 @dataclass
 class TestData:
     name: str
-    root: Optional[TreeNode]
+    root: TreeNode | None
     target: int
-    expected: List[List[int]]
+    expected: list[list[int]]
 
 
 class TestSolution(TestCase):
@@ -29,14 +28,12 @@ class TestSolution(TestCase):
             self.assertEqual(
                 case.expected,
                 actual,
-                "failed test {} expected {}, actual {}".format(
-                    case.name, case.expected, actual
-                )
+                f"failed test {case.name} expected {case.expected}, actual {actual}"
             )
 
 
 class Solution:
-    def pathSum__(self, root: Optional[TreeNode], targetSum: int) -> List[List[int]]:
+    def pathSum__(self, root: TreeNode | None, targetSum: int) -> list[list[int]]:
         if not root:
             return []
         outputPaths = []
@@ -55,7 +52,7 @@ class Solution:
                     stack.append((path, currentSum - node.val, node.left))
         return outputPaths
 
-    def pathSum(self, root: Optional[TreeNode], targetSum: int) -> List[List[int]]:
+    def pathSum(self, root: TreeNode | None, targetSum: int) -> list[list[int]]:
         if root is None:
             return []
         if root.left is None and root.right is None:

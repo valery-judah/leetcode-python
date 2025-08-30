@@ -1,4 +1,3 @@
-from typing import List
 from dataclasses import dataclass
 from unittest import TestCase
 
@@ -12,7 +11,7 @@ class TestData:
 
 
 # O (n) time; O(1) space
-class Solution(object):
+class Solution:
 
     @staticmethod
     def is_subsequence_for_loop(s: str, t: str):
@@ -52,9 +51,7 @@ class TestSolution(TestCase):
             self.assertEqual(
                 case.expected,
                 actual,
-                "failed test {} expected {}, actual {}".format(
-                    case.name, case.expected, actual
-                ),
+                f"failed test {case.name} expected {case.expected}, actual {actual}",
             )
 
 # reuse 2 sum that it can return all pairs

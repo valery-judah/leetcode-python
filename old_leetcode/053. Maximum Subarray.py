@@ -1,5 +1,4 @@
 import sys
-from typing import List
 
 
 def test(f):
@@ -9,7 +8,7 @@ def test(f):
 
 
 @test
-def maxSub(nums: List[int]) -> int:
+def maxSub(nums: list[int]) -> int:
     curMax = globalMax = -sys.maxsize
     for n in nums:
         curMax = max(n, n + curMax)

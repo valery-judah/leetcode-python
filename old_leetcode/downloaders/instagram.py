@@ -11,7 +11,7 @@ L.login(username, password)  # (login)
 # Obtain profile metadata
 profile = instaloader.Profile.from_username(L.context, "argentina_family1")
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # Print list of followees
     follow_list = []
     count = 0

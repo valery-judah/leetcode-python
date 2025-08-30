@@ -1,4 +1,3 @@
-from typing import List
 
 
 def test(f):
@@ -8,7 +7,7 @@ def test(f):
 
 
 @test
-def reverseString(s: List[str]) -> None:
+def reverseString(s: list[str]) -> None:
     left, right = 0, len(s) - 1
     while left < right:
         s[right], s[left] = s[left], s[right]

@@ -1,5 +1,4 @@
 from collections import deque
-from typing import Optional, List
 from dataclasses import dataclass
 from unittest import TestCase
 
@@ -14,8 +13,8 @@ class TreeNode:
 @dataclass
 class TestData:
     name: str
-    root: Optional[TreeNode]
-    expected: List[List[int]]
+    root: TreeNode | None
+    expected: list[list[int]]
 
 
 class TestSolution(TestCase):
@@ -31,15 +30,13 @@ class TestSolution(TestCase):
             self.assertListEqual(
                 case.expected,
                 actual,
-                "failed test {} expected {}, actual {}".format(
-                    case.name, case.expected, actual
-                )
+                f"failed test {case.name} expected {case.expected}, actual {actual}"
             )
 
 
 class Solution:
     @staticmethod
-    def level_order_traversal(root: Optional[TreeNode]) -> List[List[int]]:
+    def level_order_traversal(root: TreeNode | None) -> list[list[int]]:
         levels = []
         if root is None:
             return levels

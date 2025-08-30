@@ -1,4 +1,3 @@
-from typing import List, Set
 
 
 def test(f):
@@ -9,10 +8,10 @@ def test(f):
 # Choose a num for a seat - DFS
 # It's not backtracking
 
-def myGivePermutations(nums: List[int]) -> List[List[int]]:
+def myGivePermutations(nums: list[int]) -> list[list[int]]:
     out = []
 
-    def helper(path: List[int], candidates):
+    def helper(path: list[int], candidates):
         if not candidates:
             out.append(path)
         for i in range(len(candidates)):
@@ -26,7 +25,7 @@ def myGivePermutations(nums: List[int]) -> List[List[int]]:
 def myBacktracking(nums):
     res = []
 
-    def backtrack(curr: List[int]):
+    def backtrack(curr: list[int]):
         print(f"in backtrack: {curr}")
         if len(curr) == len(nums):
             res.append(curr[:])
@@ -60,7 +59,7 @@ def moreElegantFromLeetCode(nums):
 
 
 # leetCode solution without intensive copying
-def permute(nums: List[int]) -> List[List[int]]:
+def permute(nums: list[int]) -> list[list[int]]:
     def backtrack(curr):
         if len(curr) == len(nums):
             ans.append(curr[:])
@@ -77,11 +76,11 @@ def permute(nums: List[int]) -> List[List[int]]:
     return ans
 
 
-def permute(nums: List[int]) -> List[List[int]]:
+def permute(nums: list[int]) -> list[list[int]]:
     candidates = set(nums)
     res = []
 
-    def dfs(sub: List[int], currentCandidates: Set[int]):
+    def dfs(sub: list[int], currentCandidates: set[int]):
         print(f"sub: {sub}, currentCandidates: {currentCandidates}")
         if not currentCandidates:
             res.append(sub.copy())

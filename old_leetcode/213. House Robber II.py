@@ -1,4 +1,3 @@
-from typing import List
 
 
 def test(f):
@@ -7,7 +6,7 @@ def test(f):
 
 
 @test
-def rob(nums: List[int]):
+def rob(nums: list[int]):
     def helper(nums):
         prev, cur = 0, 0
         for n in nums:

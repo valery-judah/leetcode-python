@@ -1,4 +1,3 @@
-from typing import List
 
 
 def test(f):
@@ -7,7 +6,7 @@ def test(f):
 
 
 @test
-def rob(nums: List[int]) -> int:
+def rob(nums: list[int]) -> int:
     sub = [0] * len(nums)
     sub[0] = nums[0]
     sub[1] = max(nums[1], nums[0])
@@ -17,7 +16,7 @@ def rob(nums: List[int]) -> int:
 
 
 @test
-def rob_dp(nums: List[int]) -> int:
+def rob_dp(nums: list[int]) -> int:
     prev, cur = 0, 0
     for n in nums:
         prev, cur = cur, max(cur, prev + n)

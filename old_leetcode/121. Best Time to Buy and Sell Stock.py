@@ -1,7 +1,6 @@
-from typing import List
 
 
-def maxProfit(prices: List[int]) -> int:
+def maxProfit(prices: list[int]) -> int:
     toBuy = 0
     toSell = 1
     diffMax = 0
@@ -13,7 +12,7 @@ def maxProfit(prices: List[int]) -> int:
         toSell += 1
     return diffMax
 
-def maxProfit_back(prices: List[int]) -> int:
+def maxProfit_back(prices: list[int]) -> int:
     valueMax = prices[-1]
     diffMax = 0
     for i in reversed(range(len(prices))):
@@ -24,7 +23,7 @@ def maxProfit_back(prices: List[int]) -> int:
     return diffMax
 
 
-def get_max_profit_bruteforce(prices: List[int]) -> int:
+def get_max_profit_bruteforce(prices: list[int]) -> int:
     profit_max = 0
     for i in range(len(prices)):
         for j in range(i + 1, len(prices)):
@@ -33,7 +32,7 @@ def get_max_profit_bruteforce(prices: List[int]) -> int:
     return profit_max
 
 
-def get_max_profit_structures(prices: List[int]) -> int:
+def get_max_profit_structures(prices: list[int]) -> int:
     res = 0
     lowest = prices[0]
     for price in prices:
@@ -44,7 +43,7 @@ def get_max_profit_structures(prices: List[int]) -> int:
     return res
 
 
-def get_max_profit_backward(prices: List[int]) -> int:
+def get_max_profit_backward(prices: list[int]) -> int:
     res = 0
     max_price = prices[-1]
     for i in reversed(range(len(prices))):
@@ -56,7 +55,7 @@ def get_max_profit_backward(prices: List[int]) -> int:
     return res
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     stocks = [7, 1, 5, 3, 6, 4]
     print(get_max_profit_backward(stocks))
 

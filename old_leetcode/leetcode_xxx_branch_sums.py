@@ -1,8 +1,8 @@
-from typing import Optional, List
+
 from src.utils.Trees import TreeNode, getTree
 
 
-def getPathSumsHelper(root: TreeNode, pathSums: List[int], runningSum):
+def getPathSumsHelper(root: TreeNode, pathSums: list[int], runningSum):
     if not root:
         return
 
@@ -16,13 +16,13 @@ def getPathSumsHelper(root: TreeNode, pathSums: List[int], runningSum):
     return
 
 
-def getPathSums(root: Optional[TreeNode]) -> List[int]:
+def getPathSums(root: TreeNode | None) -> list[int]:
     sums = []
     getPathSumsHelper(root, sums, 0)
     return sums
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     expected = [18, 20, 47, 52]
     tree = getTree([10, 5, 15, 2, 5, 13, 22, 1, None, None, None, None, 14, None, None])
     print(getPathSums(root=tree))

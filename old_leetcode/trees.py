@@ -1,6 +1,5 @@
 import collections
 from collections import deque
-from typing import List, Optional
 
 
 class TreeNode:
@@ -13,7 +12,7 @@ class TreeNode:
         self.right = right
 
 
-def traverse_by_level_iterative0(root: Optional[TreeNode]) -> List[List[int]]:
+def traverse_by_level_iterative0(root: TreeNode | None) -> list[list[int]]:
     """OLD. Traverse by level in iterative manner version 0.1
     My version"""
     result = []
@@ -38,7 +37,7 @@ def traverse_by_level_iterative0(root: Optional[TreeNode]) -> List[List[int]]:
     return result
 
 
-def traverse_by_level_iterative(root: Optional[TreeNode]) -> List[List[int]]:
+def traverse_by_level_iterative(root: TreeNode | None) -> list[list[int]]:
     """Traverse in iterative manner version 0.2
     My version with functional features (list comprehensions)."""
     result = []
@@ -54,7 +53,7 @@ def traverse_by_level_iterative(root: Optional[TreeNode]) -> List[List[int]]:
     return result
 
 
-def traverse_by_level_iterative1(root: Optional[TreeNode]) -> List[List[int]]:
+def traverse_by_level_iterative1(root: TreeNode | None) -> list[list[int]]:
     """ in iterative manner version 0.3"""
     result = []
     if root is None:
@@ -75,7 +74,7 @@ def traverse_by_level_iterative1(root: Optional[TreeNode]) -> List[List[int]]:
     return result
 
 
-def traverse_zig_zag(root: Optional[TreeNode]) -> List[List[int]]:
+def traverse_zig_zag(root: TreeNode | None) -> list[list[int]]:
     """ Zig zag traversing based on version 0.3"""
     result = []
     if root is None:
@@ -111,7 +110,7 @@ def add_value(current_level, node, reverse):
         current_level.append(node.val)
 
 
-def get_min_depth(root: Optional[TreeNode]) -> int:
+def get_min_depth(root: TreeNode | None) -> int:
     if root is None:
         return 0
     if not root.left and not root.right:
@@ -136,7 +135,7 @@ def get_min_depth(root: Optional[TreeNode]) -> int:
 # BFS
 
 
-def has_path(root: Optional[TreeNode], sum_to_match: int):
+def has_path(root: TreeNode | None, sum_to_match: int):
     if root is None:
         return False
     if not root.left and not root.right:

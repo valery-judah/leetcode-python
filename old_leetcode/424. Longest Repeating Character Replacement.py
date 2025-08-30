@@ -13,7 +13,7 @@ def characterReplacement(s: str, k: int) -> int:
     return res
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = "AABABBA"
     k = 1
     print(characterReplacement(s, k))

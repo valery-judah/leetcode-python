@@ -12,7 +12,7 @@ def groupAnagrams(strs):
     return list(groups.values())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     strs = ["eat", "tea", "tan", "ate", "nat", "bat"]
     output = [["bat"], ["nat", "tan"], ["ate", "eat", "tea"]]
     print(groupAnagrams(strs))

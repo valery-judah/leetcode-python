@@ -1,4 +1,3 @@
-from typing import Optional, List
 from src.utils.Trees import TreeNode, getTree
 
 # todo understand
@@ -10,7 +9,7 @@ def helper(root: TreeNode, nodeDepth):
     return nodeDepth + helper(root.left, nodeDepth + 1) + helper(root.right, nodeDepth + 1)
 
 
-def getDepthsSum(root: Optional[TreeNode]):
+def getDepthsSum(root: TreeNode | None):
     return helper(root, 0)
 
 
@@ -27,7 +26,7 @@ def getDepthsSum_iterative(root):
     return depthSum
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     expected = 16
     tree = getTree([10, 5, 15, 2, 5, 13, 22, 1, None, None, None, None, 14, None, None])
     print(getDepthsSum_iterative(root=tree))

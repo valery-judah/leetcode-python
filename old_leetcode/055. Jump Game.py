@@ -1,4 +1,3 @@
-from typing import List
 
 
 def test(f):
@@ -7,7 +6,7 @@ def test(f):
 
 
 @test
-def canJump_Neetcode(nums: List[int]) -> bool:
+def canJump_Neetcode(nums: list[int]) -> bool:
     goal = len(nums) - 1
     for i in reversed(range(len(nums) - 1)):
         if i + nums[i] >= goal:
@@ -16,7 +15,7 @@ def canJump_Neetcode(nums: List[int]) -> bool:
 
 
 @test
-def canJump(nums: List[int]) -> bool:
+def canJump(nums: list[int]) -> bool:
     steps = 1
     for n in nums:
         if steps - 1 < 0:

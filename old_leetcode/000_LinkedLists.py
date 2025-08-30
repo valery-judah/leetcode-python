@@ -1,4 +1,3 @@
-from typing import Optional
 
 
 class ListNode:
@@ -11,7 +10,7 @@ class ListNode:
 
 
 # iterative, 2 pointers way
-def reverseList_(head: Optional[ListNode]) -> Optional[ListNode]:
+def reverseList_(head: ListNode | None) -> ListNode | None:
     prev, curr = None, head
     while curr:
         (curr.next, prev, curr) = (prev, curr, curr.next)
@@ -19,7 +18,7 @@ def reverseList_(head: Optional[ListNode]) -> Optional[ListNode]:
 
 
 # recursive approach
-def reverseList(head: Optional[ListNode]) -> Optional[ListNode]:
+def reverseList(head: ListNode | None) -> ListNode | None:
 
     if not head:
         print("end of recusion; returning with None")
@@ -59,6 +58,6 @@ def reverse_linked_list_recursive(head):
     return new_head
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     lst = ListNode(1, ListNode(2, ListNode(3)))
     print(reverseList(lst))

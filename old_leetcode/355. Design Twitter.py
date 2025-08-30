@@ -1,6 +1,4 @@
-import collections
 import heapq
-from typing import List
 
 
 class Twitter:
@@ -22,7 +20,7 @@ class Twitter:
 
         print(f"tweets: {self.tweets}")
 
-    def getNewsFeed(self, userId: int) -> List[int]:
+    def getNewsFeed(self, userId: int) -> list[int]:
         res = []
         for i in range(len(self.tweets[userId])):
             res.append(heapq.heappop(self.tweets[userId]))
@@ -36,7 +34,7 @@ class Twitter:
         self.followers[followeeId].remove(followerId)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     service = Twitter()
     service.follow(2, 1)
     service.follow(2, 3)
@@ -71,7 +69,7 @@ class TwitterOrdinary:
     def postTweet(self, userId: int, tweetId: int) -> None:
         self.tweets.setdefault(userId, []).append(tweetId)
 
-    def getNewsFeed(self, userId: int) -> List[int]:
+    def getNewsFeed(self, userId: int) -> list[int]:
         res = []
         for followeeId in self.follows[userId]:
             for tweet in self.tweets[followeeId]:

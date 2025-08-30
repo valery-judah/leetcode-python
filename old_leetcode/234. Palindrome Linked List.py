@@ -1,4 +1,3 @@
-from typing import Optional
 
 
 class ListNode:
@@ -7,7 +6,7 @@ class ListNode:
         self.next = next
 
     def __str__(self) -> str:
-        return f'{self.val} -> {self.next}'
+        return f"{self.val} -> {self.next}"
 
 
 def test(f):
@@ -16,5 +15,5 @@ def test(f):
 
 
 @test
-def is_palindrome(head: Optional[ListNode]):
+def is_palindrome(head: ListNode | None):
     pass

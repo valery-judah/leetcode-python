@@ -1,4 +1,3 @@
-from typing import Optional, List
 from dataclasses import dataclass
 from unittest import TestCase
 
@@ -16,8 +15,8 @@ class TreeNode:
 @dataclass
 class TestData:
     name: str
-    root: Optional[TreeNode]
-    expected: List[int]
+    root: TreeNode | None
+    expected: list[int]
 
 
 class TestSolution(TestCase):
@@ -32,37 +31,31 @@ class TestSolution(TestCase):
             self.assertListEqual(
                 case.expected,
                 actual,
-                "failed test {} expected {}, actual {}".format(
-                    case.name, case.expected, actual
-                )
+                f"failed test {case.name} expected {case.expected}, actual {actual}"
             )
         for case in testcases:
             actual = Solution.postorder_traversal_(root=case.root)
             self.assertListEqual(
                 case.expected,
                 actual,
-                "failed test {} expected {}, actual {}".format(
-                    case.name, case.expected, actual
-                )
+                f"failed test {case.name} expected {case.expected}, actual {actual}"
             )
         for case in testcases:
             actual = Solution.postorder_traversal__(root=case.root)
             self.assertListEqual(
                 case.expected,
                 actual,
-                "failed test {} expected {}, actual {}".format(
-                    case.name, case.expected, actual
-                )
+                f"failed test {case.name} expected {case.expected}, actual {actual}"
             )
 
 
 class Solution:
     @staticmethod
-    def postorder_traversal(root: Optional[TreeNode]) -> List[int]:
+    def postorder_traversal(root: TreeNode | None) -> list[int]:
         output = []
         if root is None:
             return output
-        visited: List[TreeNode] = []
+        visited: list[TreeNode] = []
         s = [root]
         while s:
             curr = s[-1]
@@ -79,7 +72,7 @@ class Solution:
         return output
 
     @staticmethod
-    def postorder_traversal_(root: Optional[TreeNode]) -> List[int]:
+    def postorder_traversal_(root: TreeNode | None) -> list[int]:
         output = []
         if root is None:
             return output
@@ -95,7 +88,7 @@ class Solution:
         return output
 
     @staticmethod
-    def postorder_traversal__(root: Optional[TreeNode]) -> List[int]:
+    def postorder_traversal__(root: TreeNode | None) -> list[int]:
         output = []
         if root is None:
             return output

@@ -1,7 +1,7 @@
 import heapq
-from typing import List
 
-def lastStoneWeight(stones: List[int]) -> int:
+
+def lastStoneWeight(stones: list[int]) -> int:
     stones = [-n for n in stones]
     heapq.heapify(stones)
     while len(stones) > 1:
@@ -15,5 +15,5 @@ def lastStoneWeight(stones: List[int]) -> int:
     else:
         return 0
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(lastStoneWeight([2, 7, 4, 1, 8, 1]))

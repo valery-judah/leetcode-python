@@ -14,7 +14,7 @@ def isValid(s: str) -> bool:
     return len(stack) == 0
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = "(z)[]{((3 + 1)(()))}"
     print(isValid(s))
 

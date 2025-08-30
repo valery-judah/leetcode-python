@@ -1,6 +1,3 @@
-import heapq
-from collections import defaultdict
-from typing import List
 
 
 def test(f):
@@ -8,8 +5,8 @@ def test(f):
 
 
 @test
-def topKFrequent(nums: List[int], k: int) -> List[int]:
-    orderedCounter = [[] for i in range((len(nums) + 1))]
+def topKFrequent(nums: list[int], k: int) -> list[int]:
+    orderedCounter = [[] for i in range(len(nums) + 1)]
 
     counts = {}
     for elem in nums:

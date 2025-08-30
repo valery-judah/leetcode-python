@@ -1,5 +1,6 @@
 import heapq
 
+
 class MedianFinder:
 
     def __init__(self):
@@ -69,7 +70,7 @@ class MedianFinderMy:
         return sum(self.median) / len(self.median)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     medianFinder = MedianFinder()
     medianFinder.addNum(1)
     medianFinder.addNum(2)

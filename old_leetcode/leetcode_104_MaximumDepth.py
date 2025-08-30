@@ -1,5 +1,3 @@
-from collections import deque
-from typing import Optional, List
 from dataclasses import dataclass
 from unittest import TestCase
 
@@ -17,7 +15,7 @@ class TreeNode:
 @dataclass
 class TestData:
     name: str
-    root: Optional[TreeNode]
+    root: TreeNode | None
     expected: int
 
 
@@ -36,9 +34,7 @@ class TestSolution(TestCase):
             self.assertEqual(
                 case.expected,
                 actual,
-                "failed test {} expected {}, actual {}".format(
-                    case.name, case.expected, actual
-                )
+                f"failed test {case.name} expected {case.expected}, actual {actual}"
             )
 
         for case in testcases:
@@ -46,14 +42,12 @@ class TestSolution(TestCase):
             self.assertEqual(
                 case.expected,
                 actual,
-                "failed test {} expected {}, actual {}".format(
-                    case.name, case.expected, actual
-                )
+                f"failed test {case.name} expected {case.expected}, actual {actual}"
             )
 
 
 class Solution:
-    def maxDepth(self, root: Optional[TreeNode]) -> int:
+    def maxDepth(self, root: TreeNode | None) -> int:
         if root is None:
             return 0
         else:
@@ -61,7 +55,7 @@ class Solution:
             right_max_height = self.maxDepth(root.right)
         return max(left_max_height, right_max_height) + 1
 
-    def maxDepth_BFS(self, root: Optional[TreeNode]) -> int:
+    def maxDepth_BFS(self, root: TreeNode | None) -> int:
         depth = 0
         stack = []
         if root:

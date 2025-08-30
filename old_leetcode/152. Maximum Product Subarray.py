@@ -1,5 +1,3 @@
-import sys
-from typing import List
 
 
 def test(f):
@@ -16,7 +14,7 @@ def maxProd(nums):
         globalMax = max(globalMax, curMax, n)
     return globalMax
 
-def maxProduct(nums: List[int]) -> int:
+def maxProduct(nums: list[int]) -> int:
     maxProd = float("-inf")
     for i in range(len(nums)):
         curProduct = 1

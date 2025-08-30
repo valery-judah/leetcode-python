@@ -1,7 +1,6 @@
-from typing import List
 
 
-def containsNearbyAlmostDuplicate(self, nums: List[int], indexDiff: int, valueDiff: int) -> bool:
+def containsNearbyAlmostDuplicate(self, nums: list[int], indexDiff: int, valueDiff: int) -> bool:
     duplicates = {}
     for i, elem in enumerate(nums):
         if elem in duplicates:
@@ -15,7 +14,7 @@ def containsNearbyAlmostDuplicate(self, nums: List[int], indexDiff: int, valueDi
     return False
 
 
-def containsNearbyDuplicate(nums: List[int], k: int) -> bool:
+def containsNearbyDuplicate(nums: list[int], k: int) -> bool:
     duplicates = {}
     for i, elem in enumerate(nums):
         if elem in duplicates and i - duplicates[elem] <= k:
@@ -24,7 +23,7 @@ def containsNearbyDuplicate(nums: List[int], k: int) -> bool:
     return False
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     nums = [1, 2, 3, 1]
     k = 2
     print(containsNearbyDuplicate(nums, k))

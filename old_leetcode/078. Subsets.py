@@ -1,4 +1,3 @@
-from typing import List
 
 
 def test(f):
@@ -7,10 +6,10 @@ def test(f):
 
 
 @test
-def subsetsMy(nums: List[int]):
+def subsetsMy(nums: list[int]):
     out = []
 
-    def helper(partialSubset: List[int], i: int):
+    def helper(partialSubset: list[int], i: int):
         if i == len(nums):
             subsetToAdd = partialSubset.copy()
             out.append(subsetToAdd)
@@ -24,7 +23,7 @@ def subsetsMy(nums: List[int]):
     return out
 
 
-def subsets(nums: List[int]) -> List[List[int]]:
+def subsets(nums: list[int]) -> list[list[int]]:
     """
     Backtracking approach of neetcode project
     :param nums:
@@ -50,13 +49,13 @@ def subsets(nums: List[int]) -> List[List[int]]:
     return res
 
 
-def subsets_cascading(nums: List[int]) -> List[List[int]]:
-    '''
+def subsets_cascading(nums: list[int]) -> list[list[int]]:
+    """
     Leetcode cascading approach
     :param self:
     :param nums:
     :return:
-    '''
+    """
     output = [[]]
 
     for num in nums:
@@ -65,7 +64,7 @@ def subsets_cascading(nums: List[int]) -> List[List[int]]:
     return output
 
 
-def subsets_back2(nums: List[int]) -> List[List[int]]:
+def subsets_back2(nums: list[int]) -> list[list[int]]:
     def backtrack(first=0, curr=[]):
         # if the combination is done
         if len(curr) == k:

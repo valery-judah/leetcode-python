@@ -1,4 +1,3 @@
-from typing import List
 
 
 def test(f):
@@ -24,7 +23,7 @@ def test2(f):
 
 
 @test2
-def merge_new(nums1: List[int], m: int, nums2: List[int], n: int) -> None:
+def merge_new(nums1: list[int], m: int, nums2: list[int], n: int) -> None:
     to = len(nums1) - 1
     a = m - 1
     b = n - 1

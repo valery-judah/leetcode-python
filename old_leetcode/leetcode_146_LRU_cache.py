@@ -1,4 +1,4 @@
-from collections import OrderedDict, deque
+from collections import OrderedDict
 
 
 # todo add tests
@@ -27,7 +27,7 @@ class LRUCache:
         return self.items.__str__()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     cache = LRUCache(2)
     cache.put(1, 10)
     cache.put(2, 12)

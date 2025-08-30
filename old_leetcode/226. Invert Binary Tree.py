@@ -1,5 +1,4 @@
 # Definition for a binary tree node.
-from typing import Optional
 
 
 class TreeNode:
@@ -18,7 +17,7 @@ def test(f):
 
 
 @test
-def invertTree(root: Optional[TreeNode]) -> Optional[TreeNode]:
+def invertTree(root: TreeNode | None) -> TreeNode | None:
     def helper(root):
         if not root:
             return None

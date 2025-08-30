@@ -1,7 +1,6 @@
-from typing import List
 
 
-def evalRPN(tokens: List[str]) -> int:
+def evalRPN(tokens: list[str]) -> int:
     stack = []
     operations = {"+": lambda x, y: x + y, "-": lambda x, y: x - y, "*": lambda x, y: x * y, "/": lambda x, y: x / y}
 
@@ -16,7 +15,7 @@ def evalRPN(tokens: List[str]) -> int:
     return stack[-1]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     tokens = ["4", "13", "5", "/", "+"]
     answer = 6
     print(evalRPN(tokens))

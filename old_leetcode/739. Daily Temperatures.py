@@ -1,7 +1,6 @@
-from typing import List
 
 
-def dailyTemperatures(temperatures: List[int]) -> List[int]:
+def dailyTemperatures(temperatures: list[int]) -> list[int]:
     stack = []
     days = [0] * len(temperatures)
     for i in range(len(temperatures)):
@@ -13,6 +12,6 @@ def dailyTemperatures(temperatures: List[int]) -> List[int]:
     return days
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     temperatures = [73, 74, 75, 71, 69, 72, 76, 73]
     print(dailyTemperatures(temperatures))

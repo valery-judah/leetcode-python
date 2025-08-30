@@ -1,10 +1,9 @@
-from typing import List
 
 
-def combinationSum(candidates: List[int], target: int) -> List[List[int]]:
+def combinationSum(candidates: list[int], target: int) -> list[list[int]]:
     res = []
 
-    def dfs(i, sub: List[int], total):
+    def dfs(i, sub: list[int], total):
         if total == target:
             res.append(sub.copy())
             return
@@ -23,7 +22,7 @@ def combinationSum(candidates: List[int], target: int) -> List[List[int]]:
     return res
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     nums = [2, 3, 6, 7]
     target = 7
     print(combinationSum(nums, target))

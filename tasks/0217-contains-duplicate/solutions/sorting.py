@@ -1,10 +1,8 @@
 from __future__ import annotations
 
-from typing import List
-
 
 class Solution:
-    def solve(self, nums: List[int]) -> bool:
+    def solve(self, nums: list[int]) -> bool:
         if len(nums) < 2:
             return False
         nums_sorted = sorted(nums)

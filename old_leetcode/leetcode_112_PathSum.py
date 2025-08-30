@@ -1,5 +1,3 @@
-from collections import deque
-from typing import Optional, List
 from dataclasses import dataclass
 from unittest import TestCase
 
@@ -17,7 +15,7 @@ class TreeNode:
 @dataclass
 class TestData:
     name: str
-    root: Optional[TreeNode]
+    root: TreeNode | None
     target: int
     expected: bool
 
@@ -39,9 +37,7 @@ class TestSolution(TestCase):
             self.assertEqual(
                 case.expected,
                 actual,
-                "failed test {} expected {}, actual {}".format(
-                    case.name, case.expected, actual
-                )
+                f"failed test {case.name} expected {case.expected}, actual {actual}"
             )
         for case in testcases:
             solution = Solution()
@@ -49,15 +45,13 @@ class TestSolution(TestCase):
             self.assertEqual(
                 case.expected,
                 actual,
-                "failed test {} expected {}, actual {}".format(
-                    case.name, case.expected, actual
-                )
+                f"failed test {case.name} expected {case.expected}, actual {actual}"
             )
 
 
 class Solution:
     @staticmethod
-    def has_path_sum(root: Optional[TreeNode], targetSum: int) -> bool:
+    def has_path_sum(root: TreeNode | None, targetSum: int) -> bool:
         print("------------------------------------------")
         if not root:
             return False
@@ -75,7 +69,7 @@ class Solution:
                     stack.append((target - node.val, node.left))
         return False
 
-    def has_path_sum_recursive(self, root: Optional[TreeNode], targetSum: int) -> bool:
+    def has_path_sum_recursive(self, root: TreeNode | None, targetSum: int) -> bool:
         if not root:
             return False
         targetSum -= root.val

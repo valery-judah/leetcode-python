@@ -1,4 +1,5 @@
 import unittest
+
 # Assuming the functions are in a file named 'contains_duplicate_217.py'
 # in a 'leetcode' directory relative to the test file, or adjust the import path as needed.
 # For this example, let's redefine the functions here for clarity,
@@ -64,5 +65,5 @@ class TestContainsDuplicate(unittest.TestCase):
         self.assertTrue(contains_duplicates_sorting_approach([-1, -2, -1]), "Test Case 7 Failed (Sorting - Negatives)")
 
 # This allows running the tests from the command line
-if __name__ == '__main__':
-    unittest.main(argv=['first-arg-is-ignored'], exit=False)
+if __name__ == "__main__":
+    unittest.main(argv=["first-arg-is-ignored"], exit=False)

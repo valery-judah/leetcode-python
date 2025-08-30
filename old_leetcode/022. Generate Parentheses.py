@@ -1,4 +1,3 @@
-from typing import List
 
 
 def test(f):
@@ -6,7 +5,7 @@ def test(f):
 
 
 @test
-def generateParenthesis(n: int) -> List[str]:
+def generateParenthesis(n: int) -> list[str]:
     out = []
 
     def helper(l: int, r: int, brackets: str):
@@ -26,7 +25,7 @@ def generateParenthesis(n: int) -> List[str]:
 
 
 @test
-def generateByNeetcode(n: int) -> List[str]:
+def generateByNeetcode(n: int) -> list[str]:
     out = []
 
     def helper(open: int, close: int, brackets=""):

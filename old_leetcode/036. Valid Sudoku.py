@@ -1,5 +1,4 @@
 from collections import Counter
-from typing import List
 
 
 def test(f):
@@ -20,17 +19,17 @@ def test(f):
 
 
 @test
-def isValidSudoku(board: List[List[str]]) -> bool:
+def isValidSudoku(board: list[list[str]]) -> bool:
 
     def isUnique(slice):
         counter = Counter(slice)
-        counter.pop('.')
+        counter.pop(".")
         for v in counter.values():
             if v > 1:
                 return False
         return True
 
-    def getAreas(board: List[List[str]]):
+    def getAreas(board: list[list[str]]):
         areas = []
         for i in (0, 3, 6):
             for j in (0, 3, 6):
@@ -39,7 +38,7 @@ def isValidSudoku(board: List[List[str]]) -> bool:
         return areas
 
     rowsUnique = all([isUnique(row) for row in board])
-    colsUnique = all([isUnique(col) for col in zip(*board)])
+    colsUnique = all([isUnique(col) for col in zip(*board, strict=False)])
     areasUnique = all([isUnique(area) for area in getAreas(board)])
 
 

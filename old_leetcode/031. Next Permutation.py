@@ -1,4 +1,3 @@
-from typing import List
 
 
 def test(f):
@@ -8,7 +7,7 @@ def test(f):
 
 
 @test
-def nextPermutation(nums: List[int]) -> None:
+def nextPermutation(nums: list[int]) -> None:
 
     i = len(nums) - 1
     while nums[i - 1] > nums[i]:

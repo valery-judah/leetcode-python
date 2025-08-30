@@ -1,5 +1,3 @@
-from collections import deque
-from typing import Optional, List
 from dataclasses import dataclass
 from unittest import TestCase
 
@@ -17,7 +15,7 @@ class TreeNode:
 @dataclass
 class TestData:
     name: str
-    root: Optional[TreeNode]
+    root: TreeNode | None
     expected: bool
 
 
@@ -37,15 +35,13 @@ class TestSolution(TestCase):
             self.assertEqual(
                 case.expected,
                 actual,
-                "failed test {} expected {}, actual {}".format(
-                    case.name, case.expected, actual
-                )
+                f"failed test {case.name} expected {case.expected}, actual {actual}"
             )
 
 
 class Solution:
     @staticmethod
-    def is_symmetric(root: Optional[TreeNode]) -> bool:
+    def is_symmetric(root: TreeNode | None) -> bool:
         nodes = [root, root]
         while nodes:
             left = nodes.pop()

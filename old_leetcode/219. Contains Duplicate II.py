@@ -1,5 +1,4 @@
 # tags: #duplicates #hashmap
-from typing import List
 
 
 def test(f):
@@ -7,7 +6,7 @@ def test(f):
 
 
 @test
-def containsNearbyDuplicate_steps(nums: List[int], k: int) -> bool:
+def containsNearbyDuplicate_steps(nums: list[int], k: int) -> bool:
     indexes = {}
     for i, value in enumerate(nums):
         # if already seen

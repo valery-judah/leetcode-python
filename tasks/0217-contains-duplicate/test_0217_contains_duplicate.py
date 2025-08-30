@@ -1,11 +1,11 @@
 from __future__ import annotations
 
 import runpy
+from collections.abc import Callable
 from pathlib import Path
-from typing import Callable, Type
-from _pytest.mark.structures import ParameterSet
 
 import pytest
+from _pytest.mark.structures import ParameterSet
 
 
 def _discover_solution_classes() -> list[ParameterSet]:
@@ -21,7 +21,7 @@ def _discover_solution_classes() -> list[ParameterSet]:
         ns = runpy.run_path(str(path))
         if "Solution" not in ns:
             continue
-        cls: Type = ns["Solution"]
+        cls: type = ns["Solution"]
         params.append(pytest.param(cls, id=path.stem))
     if not params:
         raise RuntimeError("No solutions found in solutions/*.py")
@@ -31,7 +31,7 @@ def _discover_solution_classes() -> list[ParameterSet]:
 @pytest.fixture(params=_discover_solution_classes())
 def S(request) -> Callable[[], object]:
     """Parametrized factory for each solution variant."""
-    cls: Type = request.param
+    cls: type = request.param
     return cls
 
 

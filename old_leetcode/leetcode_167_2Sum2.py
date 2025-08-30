@@ -1,7 +1,5 @@
 from dataclasses import dataclass
-from typing import List
 from unittest import TestCase
-
 
 # Main things: we need to find 2 elements. By traversing a massive in various ways.
 #
@@ -15,14 +13,14 @@ from unittest import TestCase
 @dataclass
 class TestData:
     name: str
-    numbers: List[int]
+    numbers: list[int]
     target: int
-    expected: List[int]
+    expected: list[int]
 
 
-class Solution(object):
+class Solution:
     @staticmethod
-    def two_sum(numbers: List[int], target: int) -> List[int]:
+    def two_sum(numbers: list[int], target: int) -> list[int]:
         for i in range(len(numbers) - 1):
             first_num = numbers[i]
             for j in range(i + 1, len(numbers)):
@@ -32,7 +30,7 @@ class Solution(object):
         return []
 
     @staticmethod
-    def two_sum_sorted(nums: List[int], target: int) -> List[int]:
+    def two_sum_sorted(nums: list[int], target: int) -> list[int]:
         nums.sort()
         left, right = 0, len(nums) - 1
         while left < right:
@@ -46,7 +44,7 @@ class Solution(object):
         return []
 
     @staticmethod
-    def two_sum_hash_table(nums: List[int], target: int) -> List[int]:
+    def two_sum_hash_table(nums: list[int], target: int) -> list[int]:
         complements = {}
         for i in range(len(nums)):
             cur_number = nums[i]
@@ -69,7 +67,5 @@ class TestSolution(TestCase):
             self.assertListEqual(
                 case.expected,
                 actual,
-                "failed test {} expected {}, actual {}".format(
-                    case.name, case.expected, actual
-                ),
+                f"failed test {case.name} expected {case.expected}, actual {actual}",
             )

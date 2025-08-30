@@ -1,4 +1,3 @@
-from typing import List
 
 
 def test(f):
@@ -6,7 +5,7 @@ def test(f):
 
 
 @test
-def twoSum_brute_force(nums: List[int], target: int) -> List[int]:
+def twoSum_brute_force(nums: list[int], target: int) -> list[int]:
     for i, n in enumerate(nums):
         for j in range(i + 1, len(nums)):
             if n + nums[j] == target:
@@ -14,10 +13,10 @@ def twoSum_brute_force(nums: List[int], target: int) -> List[int]:
 
 
 @test
-def twoSum_brute_hashmap(nums: List[int], target: int) -> List[int]:
+def twoSum_brute_hashmap(nums: list[int], target: int) -> list[int]:
     sum_to_target = {}
     for i, n in enumerate(nums):
-        if n not in sum_to_target.keys():
+        if n not in sum_to_target:
             sum_to_target[target - n] = i
         else:
             return [sum_to_target[n], i]

@@ -1,10 +1,8 @@
 from __future__ import annotations
 
-from typing import List
-
 
 class Solution:
-    def solve(self, nums: List[int]) -> bool:
+    def solve(self, nums: list[int]) -> bool:
         seen: set[int] = set()
         for n in nums:
             if n in seen:

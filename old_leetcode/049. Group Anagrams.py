@@ -1,6 +1,5 @@
 from collections import defaultdict
-from functools import lru_cache
-from typing import List
+from functools import cache
 
 
 def test(f):
@@ -8,16 +7,16 @@ def test(f):
     print(f(words))
 
 
-def get_word_representation(word: str) -> List[int]:
+def get_word_representation(word: str) -> list[int]:
     key_array = [0] * 26
     for letter in word:
-        key = ord(letter) - ord('a')
+        key = ord(letter) - ord("a")
         key_array[key] += ord(letter)
     return key_array
 
 
 @test
-def groupAnagrams_dict(strs: List[str]) -> List[List[str]]:
+def groupAnagrams_dict(strs: list[str]) -> list[list[str]]:
     anagrams = defaultdict(list)
     for word in strs:
         group_key = tuple(get_word_representation(word))
@@ -25,7 +24,7 @@ def groupAnagrams_dict(strs: List[str]) -> List[List[str]]:
     return list(anagrams.values())
 
 
-@lru_cache(maxsize=None)
+@cache
 def get_hist_representation(word):
     group_key = defaultdict(int)
     for letter in word:
@@ -35,7 +34,7 @@ def get_hist_representation(word):
 
 
 @test
-def groupAnagrams_dict(strs: List[str]) -> List[List[str]]:
+def groupAnagrams_dict(strs: list[str]) -> list[list[str]]:
     anagrams = defaultdict(list)
     for word in strs:
         group_key = get_hist_representation(word)

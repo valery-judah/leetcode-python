@@ -1,4 +1,3 @@
-from typing import List
 from dataclasses import dataclass
 from unittest import TestCase
 
@@ -6,8 +5,8 @@ from unittest import TestCase
 @dataclass
 class TestData:
     name: str
-    numbers: List[int]
-    expected: List[List[int]]
+    numbers: list[int]
+    expected: list[list[int]]
 
 
 class TestSolution(TestCase):
@@ -21,19 +20,17 @@ class TestSolution(TestCase):
             self.assertListEqual(
                 case.expected,
                 actual,
-                "failed test {} expected {}, actual {}".format(
-                    case.name, case.expected, actual
-                ),
+                f"failed test {case.name} expected {case.expected}, actual {actual}",
             )
 
 
 # reuse 2 sum that it can return all pairs
 
 
-class Solution(object):
+class Solution:
     # solution when we can sort the input array
     @staticmethod
-    def three_sum_sorted(nums: List[int]) -> List[List[int]]:
+    def three_sum_sorted(nums: list[int]) -> list[list[int]]:
         nums.sort()
         triplets = []
         for i in range(len(nums)):
@@ -44,7 +41,7 @@ class Solution(object):
         return triplets
 
     @staticmethod
-    def two_sum_pointers(nums: List[int], i: int, triplets: List[List[int]]):
+    def two_sum_pointers(nums: list[int], i: int, triplets: list[list[int]]):
         lo, hi = i + 1, len(nums) - 1
         while lo < hi:
             current_sum = nums[lo] + nums[hi] + nums[i]

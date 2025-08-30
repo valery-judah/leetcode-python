@@ -4,8 +4,7 @@ class ListNode:
         self.next = next
 
 
-from typing import Optional
 
 
-def reverseList(head: Optional[ListNode]) -> Optional[ListNode]:
+def reverseList(head: ListNode | None) -> ListNode | None:
     pass

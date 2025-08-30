@@ -1,8 +1,7 @@
-from typing import List
 
 
-def topKFrequent(nums: List[int], k: int) -> List[int]:
-    orderedCounter = [[] for i in range((len(nums) + 1))]
+def topKFrequent(nums: list[int], k: int) -> list[int]:
+    orderedCounter = [[] for i in range(len(nums) + 1)]
 
     counts = {}
     for elem in nums:
@@ -23,7 +22,7 @@ def topKFrequent(nums: List[int], k: int) -> List[int]:
                 return res
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     nums = [1, 1, 1, 2, 2, 3]
     k = 2
     print(topKFrequent(nums, k))

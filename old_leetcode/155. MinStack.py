@@ -23,7 +23,7 @@ class MinStack:
         return self.stack.__repr__()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     stack = MinStack()
     stack.push(1)
     stack.push(2)

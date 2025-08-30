@@ -1,5 +1,4 @@
 from dataclasses import dataclass
-from typing import Optional, List, Tuple, Any
 from unittest import TestCase
 
 from src.utils.Trees import TreeNode, getTree
@@ -29,15 +28,13 @@ class TestSolution(TestCase):
             self.assertEqual(
                 case.expected,
                 actual,
-                "failed test {} expected {}, actual {}".format(
-                    case.name, case.expected, actual
-                )
+                f"failed test {case.name} expected {case.expected}, actual {actual}"
             )
 
 
 class Solution:
 
-    def lca_recursive(self, root: Optional[TreeNode], p: Optional[TreeNode], q: Optional[TreeNode]) -> TreeNode:
+    def lca_recursive(self, root: TreeNode | None, p: TreeNode | None, q: TreeNode | None) -> TreeNode:
         pass
 
     def lowestCommonAncestor(self, root: TreeNode, p: TreeNode, q: TreeNode) -> TreeNode:

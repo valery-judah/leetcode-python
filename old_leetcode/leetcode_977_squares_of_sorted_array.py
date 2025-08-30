@@ -1,8 +1,8 @@
-from typing import List
+
 
 # tags: coding-pattern/2-pointers
 # given array in non-decreasing order
-def solution(nums: List[int]) -> List[int]:
+def solution(nums: list[int]) -> list[int]:
     left = 0
     right = len(nums) - 1
     squares = [x ** 2 for x in nums]
@@ -19,7 +19,7 @@ def solution(nums: List[int]) -> List[int]:
     return out
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     massOne = [-2, 1, 4, 5]
     output = solution(massOne)
     print(output)

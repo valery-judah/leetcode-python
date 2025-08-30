@@ -1,4 +1,3 @@
-from typing import List
 
 
 def test(f):
@@ -13,7 +12,7 @@ def test(f):
 
 
 @test
-def find_and_replace_pattern(words: List[str], pattern: str) -> List[str]:
+def find_and_replace_pattern(words: list[str], pattern: str) -> list[str]:
     def match(word: str, cur_pattern: str) -> bool:
         word2pattern = dict()
         pattern2word = dict()
