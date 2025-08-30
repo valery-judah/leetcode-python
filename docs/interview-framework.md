@@ -14,32 +14,31 @@
 4. **Simulate Clarifying Question Scenarios**:  
    - Take a few sample interview questions and generate potential clarifying questions for each. This will help you prepare for real-world scenarios and improve your ability to think critically under pressure.
 
-prepare list of tricks/tips to find more optimal solution. Like, you can use an auxiliary data structure.. 
+prepare list of tricks/tips to find more optimal solution. Like, you can use an auxiliary data structure..
 
-There are also some interesting insights available here: 
-https://www.techinterviewhandbook.org/coding-interview-prep/
-https://www.techinterviewhandbook.org/coding-interview-cheatsheet/
-https://www.techinterviewhandbook.org/coding-interview-techniques/
+There are also some interesting insights available here:
+<https://www.techinterviewhandbook.org/coding-interview-prep/>
+<https://www.techinterviewhandbook.org/coding-interview-cheatsheet/>
+<https://www.techinterviewhandbook.org/coding-interview-techniques/>
 
-# Persons 
+# Persons
 
 You can learn a bunch of cool tricks from these persons
 
-site:https://leetcode.com/ "StefanPochmann"
-site:https://leetcode.com/ "lee215"
-site:https://leetcode.com/ "Awice"
-site:https://leetcode.com/ "zhijun_liao"
-site:https://leetcode.com/ "fun4LeetCode"
-site:https://leetcode.com/ "DBabichev"
-site:https://leetcode.com/ "agave"
-site:https://leetcode.com/ "yegao"
+site:<https://leetcode.com/> "StefanPochmann"
+site:<https://leetcode.com/> "lee215"
+site:<https://leetcode.com/> "Awice"
+site:<https://leetcode.com/> "zhijun_liao"
+site:<https://leetcode.com/> "fun4LeetCode"
+site:<https://leetcode.com/> "DBabichev"
+site:<https://leetcode.com/> "agave"
+site:<https://leetcode.com/> "yegao"
 
+# Before solving
 
-# Before solving:
+Coding questions tend to be vague and underspecified on purpose to allow the interviewer to gauge the candidate's attention to detail and carefulness.
 
-Coding questions tend to be vague and underspecified on purpose to allow the interviewer to gauge the candidate's attention to detail and carefulness. 
-
-- Do not jump straight into coding, take a few minutes to understand the problem and ask any clarifying questions (but not too long!). 
+- Do not jump straight into coding, take a few minutes to understand the problem and ask any clarifying questions (but not too long!).
 - Make a plan. Be wary of jumping into code without thinking about your program's high-level structure. You don't have to work out every last detail (this can be difficult for more meaty problems), but you should give the matter sufficient thought. Without proper planning, you may be forced to waste your limited time reworking significant parts of your program.
 - Describe your solution to your interviewer and get their thoughts on your solution.
 
@@ -50,15 +49,18 @@ Clarify any assumptions you made subconsciously. **Many questions are under-spec
 Always seek clarification about the question upon hearing it even if it you think it is clear to you. You might discover something that you have missed out and it also sends a signal to the interviewer that you are a careful person who pays attention to details. Some interviewers deliberately omit important details to see if you ask the right questions.
 
 Before jumping into writing code, a good candidate will always ask clarifying questions. This serves three main purposes:
+
 - It bounds the problem space. For example, perhaps you ask the interviewer, "Is it guaranteed that all integers in this array are positive?". If the answer is yes, then you don't have to account for the entire negative integer space, which could potentially make the problem much easier to solve.
 - It shows the interviewer that you're proactively thinking about edge cases. Interviews are as much about showing that you're capable of thinking critically and thoroughly as it is about raw coding ability.
 - It allows you and the interviewer to agree on an understanding of the problem. Occasionally, I've given a problem to a candidate and they solved a slightly different problem. Making sure that you and your interviewer are on the same page about what your task is before you begin.
 
 For data structures, I've divided the questions into two broad categories:
+
 - Questions about the input/output of the function (the function signature)
 - Questions about allowable/preferred solving methods (used in the body of the function)
 
 *Make sure to clarify the following things:*
+
 - *Ask for an example* of input and output
 - Clarify the data type
 - Clarify any kinds of restrictions in range (e.g will there be numbers bigger than the largest int?)
@@ -67,6 +69,7 @@ For data structures, I've divided the questions into two broad categories:
 - If you have 2 solutions in mind ask whether it is more important to prioritize time or space complexity
 
 For example:
+
 - How big is the size of the input?
 - How big is the range of values?
 - What kind of values are there? Are there negative numbers? Floating points? Will there be empty inputs?
@@ -81,7 +84,6 @@ For example:
 
 **In the end work through a small example to ensure you understood the question.**
 
-
 # Planning the solution and solving the problem
 
 ## Work out and optimize your approach with the interviewer
@@ -92,9 +94,9 @@ This discussion can range from a few minutes to up to 5-10 minutes depending on 
 
 > Explain a few approaches that you could take at a high level (don't go too much into implementation details). Discuss the tradeoffs of each approach with your interviewer as if the interviewer was your coworker and you all are collaborating on a problem.
 
-Solving techique. An example can dramatically improve your ability to solve an interview question, and yet so many candidates just try to solve the question in their heads. Example should be sufficiently large, specific and not a special case. 
+Solving techique. An **example** can dramatically improve your ability to solve an interview question, and yet so many candidates just try to solve the question in their heads. Example should be sufficiently large, specific and not a special case.
 
-State a brute-force. Start with a brute force approach, communicate it to the interviewer, explain the time and space complexity and why it is bad. It is unlikely that the brute force approach will be one that you will be coding. Despite being possibly slow, a brute force algorithm is valuable to discuss. *It's a starting point for optimizations, and it helps you wrap your head around the problem.* 
+State a brute-force. Start with a brute force approach, communicate it to the interviewer, explain the time and space complexity and why it is bad. It is unlikely that the brute force approach will be one that you will be coding. Despite being possibly slow, a brute force algorithm is valuable to discuss. *It's a starting point for optimizations, and it helps you wrap your head around the problem.*
 
 At this point, the interviewer will usually pop the dreaded "Can we do better?" question, meaning that they are looking for a more optimal approach. In my opinion, this is usually the hardest part of the interview. In general, look for repeated work and try to optimize them by potentially caching the calculated result somewhere and reference it later, rather than having to compute it all over again. There are some tips on tackling topic-specific questions that I dive into details below.
 
@@ -102,23 +104,23 @@ After you have sufficiently clarified the scope and intention of the problem, ex
 
 You can sort an input array or make some another changes to an input data if you stuck with a solution. After it you can reason more clearly about combinatorics of problem and use heuristics to solve the problem. #coding/tip #tip #heuristics
 
-
-
 Appraisal criteria when comparing solutions:
 Time and space complexity
 Almost every interviewer will ask for the time and space complexity of the algorithm. Proactively providing this information, instead of waiting for them to ask, shows the interviewer that you're familiar with these concepts and can calculate them easily.
 
 Some things to keep in mind:
+
 - When initially thinking about the problem, try to think what the absolute best and worst case complexity would be. For example, to find a certain element in an unsorted list, we know that we will have to look at every element in the list at least once, so we're lower bounded by O(n).
 - Try to "stress test" your complexity, especially if it depends on two or more variables. For example, if your algorithm was O(n * k): What happens if k is extremely small? What happens when k approaches n? Occasionally, you'll find that one algorithm is optimal for certain values of n and k, and another algorithm is optimal for different values of n and k.
 - For memory constraints, try to reason about if you really need to keep track of all the values in your data structures. Also, be cognizant of the fact that certain functions in different coding languages may use additional memory. A good example of this is list slicing in Python, which creates a new list (potentially another O(n) memory usage).
-- Think out loud. Explain your thought process to your interviewer as you code. This helps you more fully communicate your solution, and gives your interviewer an opportunity to correct misconceptions or otherwise provide high-level guidance. 
+- Think out loud. Explain your thought process to your interviewer as you code. This helps you more fully communicate your solution, and gives your interviewer an opportunity to correct misconceptions or otherwise provide high-level guidance.
 - Break the problem down and define abstractions. One crucial skill the recruiters look for is the ability to handle complexity by breaking problems into manageable sub-problems. For anything non-trivial, you'll want to avoid writing one giant, monolithic function. Feel free to define helper functions, helper classes, and other abstractions to reach a working solution. You can leverage design patterns or other programming idioms as well. Ideally, your solution will be well-factored and as a result easy to read, understand, and prove correct.
 - Optimize. Proactively suggest ways to optimize to the interviewer and get their feedback to ensure what you're trying to do is not overly complex and is correct then code it up.
 - Consider edge cases (extreme test cases), test your code, restate complexity
 
 ## While solving (tricks)
--	
+
+- 
 
 ## While coding
 
@@ -142,6 +144,7 @@ While coding, if you find yourself copying and pasting code, consider whether it
 - Explain trade-offs and how the code / approach can be improved if given more time.
 
 After you have finished coding, do not immediately announce to the interviewer that you are done. In most cases, your code is usually not perfect and contains some bugs or syntax errors. What you need to do now is to review your code.
+
 - Review and refactor. Firstly, look through your code from start to finish as if it is the first time you are seeing it, as if it was written by someone else and you are trying to spot bugs in it. That's exactly what your interviewer will be doing. Look through and fix any minor issues you may find.
 - Step through your code and test it. One of the best ways to check your work is to simulate how your code executes against a sample input. Take one of your earlier examples and make sure your code produces the right result. Huge caveat here: when mentally simulating how your code behaves, your brain will be tempted to project what it wants to happen rather than what actually says happen. Fight this tendency by being as literal as possible.
 - Next, come up with small test cases and step through the code (not your algorithm!) with those sample input. What interviewers usually do after you have finished coding would be to get you to write tests. It is a huge plus if you write tests for your code even before they prompt you to do so. You should be emulating a debugger when stepping through and jot down or say out the values of the important variables as you step through the lines of code.
@@ -152,8 +155,8 @@ After you have finished coding, do not immediately announce to the interviewer t
 
 If your interviewer is happy with the solution, the interview usually ends here. It is also not uncommon that the interviewer asks you extension questions, such as how you would handle the problem if the whole input is too large to fit into memory, or if the input arrives as a stream. This is a common follow-up question at Google where they care a lot about scale. The answer is usually a divide-and-conquer approach — perform distributed processing of the data and only read certain chunks of the input from disk into memory, write the output back to disk, and combine them later on.
 
-
 # Remember
+
 - Interviewer can only evaluate you on the code you write.
 - Talk about what you are doing throughout the interview. If you need to be quiet to think, that's great — just let the interviewer know.
 - Think out loud if you are working through a solution you are presented with as the Engineer will want to know how you approach and troubleshoot problems.
@@ -169,17 +172,19 @@ If your interviewer is happy with the solution, the interview usually ends here.
 - Make sure you review recursion.
 - Make sure you know what your base case is. Bonus points available for talking about or implementing the dynamic programming solution.
 - Practice coding on a whiteboard.
- 
+
 Advices:
 You need to learn to communicate your thoughts. It can be hard, awkward and unnatural — so it requires a lot of practice.
 You neet be active at interview
 
 # Coding Signals
+
 The point of interviews is for interviewers to extract signals from certain candidate behaviors. In coding interviews, the signals can be broadly classified into the following categories: Problem Solving, Technical Competency, Testing, and Communication.
 When interviewers take down interview feedback, these are likely what is on their feedback sheet.
 
 Problem solving
 Understanding the problem
+
 - 👍 Understood the key aspects of the problem quickly
 - 👎 Had difficulty in understanding the key aspects of the problem
 Solution/approach
@@ -197,6 +202,7 @@ Hinting
 
 Technical competency
 Speed
+
 - 👍 Quickly implemented a working solution
 - 👎 Was not able to complete the solution
 Correctness/Accuracy
@@ -216,6 +222,7 @@ Coding style
 
 Testing
 Common cases
+
 - 👍 Tested their code against various typical cases
 - 👎 Failed to test the code against typical cases
 Corner cases
@@ -227,6 +234,7 @@ Self-correction
 
 Communication
 Clarify problem
+
 - 👍 Appropriately asked good, clarifying questions about the problem
 - 👎 Failed to confirm understanding/ask appropriate questions
 Communicating approach
@@ -234,6 +242,7 @@ Communicating approach
 - 👎 Failed to effectively explain overall approach, technical terms and acronyms (where applicable)
 
 # Applications
+
 ## Notes from LT guy
 
 Other things like, candidate should be able to finish leetcode medium problem in ==20 minutes==. Leaked problem will be banned, but only if it is identical and marked as "asked in Google interview".
@@ -251,24 +260,24 @@ Don't debate with the interviewer. You are not showing how convincing you are. Y
 
 ## What to do when stuck
 
-
 Getting stuck during coding interviews is extremely common. But do not worry, that is part of the process and is a test of your problem solving abilities. Here are some tips to try out when you are stuck:
+
 - Talk through what you initially thought might work and explain why it doesn't
-o	This can help guide you on the right track by avoiding the pitfalls
+o This can help guide you on the right track by avoiding the pitfalls
 
 - Come up with more test cases and write them down
-o	A pattern may emerge
+o A pattern may emerge
 
 - Think about how you would solve it without a program
-o	You may spot a pattern and come up with a general algorithm for it
+o You may spot a pattern and come up with a general algorithm for it
 
 - Recall past questions related to the topic, what similar questions in the past have you encountered and what techniques did you use?
 
 - Enumerate through the common data structures and whether they can be applied to the question
-o	Dictionaries/maps are extremely common in making algorithms more efficient
+o Dictionaries/maps are extremely common in making algorithms more efficient
 
 - Look out for repeated work and determine if you can cache those computations
-o	Trade off memory for speed
+o Trade off memory for speed
 
 You have a solution. Now what?
 

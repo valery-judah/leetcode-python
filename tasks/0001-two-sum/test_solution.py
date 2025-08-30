@@ -1,18 +1,18 @@
-import sys
+import runpy
 from pathlib import Path
 
 import pytest
 
-# Add the script's directory to the Python path to enable local imports
-sys.path.append(str(Path(__file__).parent))
 
-from solution import Solution
+def _load_solution_cls():
+    ns = runpy.run_path(str(Path(__file__).with_name("solution.py")))
+    return ns["Solution"]
 
 
 @pytest.fixture
 def solution():
-    """Provides a Solution instance for each test case."""
-    return Solution()
+    """Provides a Solution instance for each test case without importing the module."""
+    return _load_solution_cls()()
 
 
 @pytest.mark.parametrize(
@@ -30,7 +30,7 @@ def solution():
         ([0, 4, 3, 0], 0, [0, 3]),
     ],
 )
-def test_solve(solution: Solution, nums: list[int], target: int, expected: list[int]):
+def test_solve(solution, nums: list[int], target: int, expected: list[int]):
     """
     Tests the solve method with various inputs.
 

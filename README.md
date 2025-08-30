@@ -12,7 +12,7 @@ Baseline runtime: Python 3.11 (matches LeetCode’s runtime).
 python scripts/new_task.py two-sum 1 --difficulty easy --tags array,hash-map --url https://leetcode.com/problems/two-sum/
 
 # 2) Run tests and style checks
-make test          # pytest
+make test          # pytest (no __pycache__ written)
 make lint          # ruff + black --check
 make type          # mypy
 
@@ -33,7 +33,8 @@ CI, pre-commit, and VS Code configs are included.
 - Lint: `make lint` (runs `ruff check .` and `black --check .`).
 - Auto-fix: `make fmt` (runs `ruff check . --fix` and `black .`).
 - Type check: `make type` (mypy on `tasks/`).
-- Tests: `make test` or `pytest -q` (configured via `pytest.ini`).
+- Tests: `make test` (runs `PYTHONDONTWRITEBYTECODE=1 python -m pytest -q`).
+  - To run manually without cache files: `PYTHONDONTWRITEBYTECODE=1 python -m pytest -q`.
 - Pre-commit: `make precommit` to install hooks; `pre-commit run --all-files` to run manually.
 - VS Code Tasks: Command Palette → “Tasks: Run Task” → `Test`, `Test: Active File`, or `New problem` (see `.vscode/tasks.json`).
 - Python Test Explorer: Enabled for pytest; discovery is configured in `.vscode/settings.json`.

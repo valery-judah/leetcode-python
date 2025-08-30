@@ -11,7 +11,7 @@ precommit:
 	pre-commit install
 
 test:
-	pytest -q
+	PYTHONDONTWRITEBYTECODE=1 python -m pytest -q
 
 lint:
 	ruff check .

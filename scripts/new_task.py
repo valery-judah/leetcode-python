@@ -59,8 +59,7 @@ def main() -> None:
     test_content = render(test_tpl, **context)
     (tests_dir / "test_solution.py").write_text(test_content)
 
-    # package marker for pytest discovery
-    (base / "__init__.py").write_text("")
+    # no package marker; tests load solution via runpy, not imports
 
     print(f"Created {base.relative_to(ROOT)}")
     print("Next:")
