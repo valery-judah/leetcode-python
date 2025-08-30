@@ -6,17 +6,17 @@ def test(f):
 def generateParenthesis(n: int) -> list[str]:
     out = []
 
-    def helper(l: int, r: int, brackets: str):
-        if not l and not r:
+    def helper(left: int, right: int, brackets: str):
+        if not left and not right:
             out.append(brackets)
-        elif not l:
-            helper(l, r - 1, brackets + ")")
-        elif not r:
-            helper(l - 1, r, brackets + "(")
+        elif not left:
+            helper(left, right - 1, brackets + ")")
+        elif not right:
+            helper(left - 1, right, brackets + "(")
         else:
-            helper(l - 1, r, brackets + "(")
-            if l < r:
-                helper(l, r - 1, brackets + ")")
+            helper(left - 1, right, brackets + "(")
+            if left < right:
+                helper(left, right - 1, brackets + ")")
 
     helper(3, 3, "")
     return out

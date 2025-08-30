@@ -21,11 +21,8 @@ def isValidSudoku(board: list[list[str]]) -> bool:
 
     def isUnique(slice):
         counter = Counter(slice)
-        counter.pop(".")
-        for v in counter.values():
-            if v > 1:
-                return False
-        return True
+        counter.pop(".", None)
+        return all(v <= 1 for v in counter.values())
 
     def getAreas(board: list[list[str]]):
         areas = []

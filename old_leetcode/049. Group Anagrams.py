@@ -34,7 +34,7 @@ def get_hist_representation(word):
 
 
 @test
-def groupAnagrams_dict(strs: list[str]) -> list[list[str]]:
+def groupAnagrams_histogram(strs: list[str]) -> list[list[str]]:
     anagrams = defaultdict(list)
     for word in strs:
         group_key = get_hist_representation(word)

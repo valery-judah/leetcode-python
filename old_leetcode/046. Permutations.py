@@ -75,7 +75,7 @@ def permute(nums: list[int]) -> list[list[int]]:
     return ans
 
 
-def permute(nums: list[int]) -> list[list[int]]:
+def permute_with_set_dfs(nums: list[int]) -> list[list[int]]:
     candidates = set(nums)
     res = []
 
