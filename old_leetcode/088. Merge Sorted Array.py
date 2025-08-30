@@ -1,5 +1,3 @@
-
-
 def test(f):
     nums1 = [1, 2, 3, 0, 0, 0, 0]
     m = 3
@@ -49,5 +47,6 @@ def merge_new(nums1: list[int], m: int, nums2: list[int], n: int) -> None:
             nums1[to] = nums2[b]
             to -= 1
             b -= 1
+
 
 # todo divide logic of moving and assigning(choosing appropriate massive)

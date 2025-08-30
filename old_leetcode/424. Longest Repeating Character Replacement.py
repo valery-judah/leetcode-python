@@ -24,12 +24,9 @@ def test(f):
     k = 1
     print(characterReplacement_second(s, k))
 
+
 @test
 def characterReplacement_second(s: str, k: int) -> int:
     for i in range(len(s)):
         for j in range(i + 1, len(s)):
             pass
-
-
-
-

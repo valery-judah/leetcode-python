@@ -25,4 +25,3 @@ def add_binary(a, b):
         res += "1"
 
     return res[::-1]
-

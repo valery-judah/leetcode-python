@@ -1,11 +1,9 @@
-
-
 # tags: coding-pattern/2-pointers
 # given array in non-decreasing order
 def solution(nums: list[int]) -> list[int]:
     left = 0
     right = len(nums) - 1
-    squares = [x ** 2 for x in nums]
+    squares = [x**2 for x in nums]
     out = []
     while left <= right:
         if squares[left] < squares[right]:

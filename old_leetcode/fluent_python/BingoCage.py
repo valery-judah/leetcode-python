@@ -24,4 +24,3 @@ if __name__ == "__main__":
     bingo = BingoCage(range(3))
     print(bingo.pick())
     print(bingo.pick())
-

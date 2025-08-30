@@ -19,15 +19,19 @@ class TestData:
 class TestSolution(TestCase):
     def test_3_sum(self):
         testcases = [
-            TestData(name="case 0", root=TreeNode(val=1, right=TreeNode(val=2, left=TreeNode(val=3))), expected=[1, 2, 3]),
-            TestData(name="case 1", root=None, expected=[])
+            TestData(
+                name="case 0",
+                root=TreeNode(val=1, right=TreeNode(val=2, left=TreeNode(val=3))),
+                expected=[1, 2, 3],
+            ),
+            TestData(name="case 1", root=None, expected=[]),
         ]
         for case in testcases:
             actual = Solution.preorder_traversal(root=case.root)
             self.assertListEqual(
                 case.expected,
                 actual,
-                f"failed test {case.name} expected {case.expected}, actual {actual}"
+                f"failed test {case.name} expected {case.expected}, actual {actual}",
             )
 
 
@@ -37,7 +41,9 @@ class Solution:
         nodes = []
         if root is None:
             return nodes
-        stack = [root, ]
+        stack = [
+            root,
+        ]
         while stack:
             root = stack.pop()
             nodes.append(root.val)

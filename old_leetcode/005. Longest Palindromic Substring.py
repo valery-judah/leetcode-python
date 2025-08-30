@@ -12,7 +12,7 @@ def longestPalindrome(s: str) -> str:
         while l >= 0 and r < len(s) and s[l] == s[r]:
             if r - l + 1 > lenMax:
                 lenMax = r - l + 1
-                res = s[l: r + 1]
+                res = s[l : r + 1]
             l -= 1
             r += 1
         return res, lenMax

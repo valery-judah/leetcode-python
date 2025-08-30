@@ -22,10 +22,16 @@ class TestData:
 class TestSolution(TestCase):
     def test(self):
         testcases = [
-            TestData(name="case 0", root=TreeNode(val=3, left=TreeNode(9),
-                                                  right=TreeNode(val=20, left=TreeNode(val=15), right=TreeNode(7))),
-                     expected=3),
-            TestData(name="case 1", root=None, expected=0)
+            TestData(
+                name="case 0",
+                root=TreeNode(
+                    val=3,
+                    left=TreeNode(9),
+                    right=TreeNode(val=20, left=TreeNode(val=15), right=TreeNode(7)),
+                ),
+                expected=3,
+            ),
+            TestData(name="case 1", root=None, expected=0),
         ]
 
         for case in testcases:
@@ -34,7 +40,7 @@ class TestSolution(TestCase):
             self.assertEqual(
                 case.expected,
                 actual,
-                f"failed test {case.name} expected {case.expected}, actual {actual}"
+                f"failed test {case.name} expected {case.expected}, actual {actual}",
             )
 
         for case in testcases:
@@ -42,7 +48,7 @@ class TestSolution(TestCase):
             self.assertEqual(
                 case.expected,
                 actual,
-                f"failed test {case.name} expected {case.expected}, actual {actual}"
+                f"failed test {case.name} expected {case.expected}, actual {actual}",
             )
 
 

@@ -59,6 +59,7 @@ if __name__ == "__main__":
         print(type(elem))
         print(elem)
 
+
 # not optimized for reading operations. reads >> writes
 class TwitterOrdinary:
 

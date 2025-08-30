@@ -1,5 +1,3 @@
-
-
 def test(f):
     words = ["abc", "deq", "mee", "aqq", "dkd", "ccc"]
     pattern = "abb"

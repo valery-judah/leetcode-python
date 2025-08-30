@@ -1,5 +1,3 @@
-
-
 def maxProfit(prices: list[int]) -> int:
     toBuy = 0
     toSell = 1
@@ -11,6 +9,7 @@ def maxProfit(prices: list[int]) -> int:
             diffMax = max(diffMax, prices[toSell] - prices[toBuy])
         toSell += 1
     return diffMax
+
 
 def maxProfit_back(prices: list[int]) -> int:
     valueMax = prices[-1]
@@ -58,17 +57,3 @@ def get_max_profit_backward(prices: list[int]) -> int:
 if __name__ == "__main__":
     stocks = [7, 1, 5, 3, 6, 4]
     print(get_max_profit_backward(stocks))
-
-
-
-
-
-
-
-
-
-
-
-
-
-

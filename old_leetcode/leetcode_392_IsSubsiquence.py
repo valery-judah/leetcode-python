@@ -28,7 +28,6 @@ class Solution:
                 sIdx += 1
         return sIdx == sLen  # We have matched all elements in subsequence
 
-
     @staticmethod
     def is_subsequence_while_loop(s: str, t: str):
         sIdx = 0
@@ -44,7 +43,7 @@ class TestSolution(TestCase):
     def test_solution(self):
         testcases = [
             TestData(name="case 0", s="123", t="01772300", expected=True),
-            TestData(name="case 0", s="123", t="01989898989", expected=False)
+            TestData(name="case 0", s="123", t="01989898989", expected=False),
         ]
         for case in testcases:
             actual = Solution.is_subsequence_for_loop(s=case.s, t=case.t)
@@ -53,5 +52,6 @@ class TestSolution(TestCase):
                 actual,
                 f"failed test {case.name} expected {case.expected}, actual {actual}",
             )
+
 
 # reuse 2 sum that it can return all pairs

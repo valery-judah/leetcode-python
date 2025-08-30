@@ -22,20 +22,31 @@ class TestData:
 class TestSolution(TestCase):
     def test(self):
         testcases = [
-            TestData(name="case 0", root=TreeNode(val=3, left=TreeNode(9),
-                                                  right=TreeNode(val=20, left=TreeNode(val=15), right=TreeNode(7))),
-                     expected=False),
-            TestData(name="case 1",
-                     root=TreeNode(1, left=TreeNode(2, left=TreeNode(3), right=TreeNode(4)),
-                                   right=TreeNode(2, left=TreeNode(4), right=TreeNode(3))),
-                     expected=True)
+            TestData(
+                name="case 0",
+                root=TreeNode(
+                    val=3,
+                    left=TreeNode(9),
+                    right=TreeNode(val=20, left=TreeNode(val=15), right=TreeNode(7)),
+                ),
+                expected=False,
+            ),
+            TestData(
+                name="case 1",
+                root=TreeNode(
+                    1,
+                    left=TreeNode(2, left=TreeNode(3), right=TreeNode(4)),
+                    right=TreeNode(2, left=TreeNode(4), right=TreeNode(3)),
+                ),
+                expected=True,
+            ),
         ]
         for case in testcases:
             actual = Solution.is_symmetric(root=case.root)
             self.assertEqual(
                 case.expected,
                 actual,
-                f"failed test {case.name} expected {case.expected}, actual {actual}"
+                f"failed test {case.name} expected {case.expected}, actual {actual}",
             )
 
 

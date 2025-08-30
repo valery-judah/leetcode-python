@@ -1,5 +1,3 @@
-
-
 def topKFrequent(nums: list[int], k: int) -> list[int]:
     orderedCounter = [[] for i in range(len(nums) + 1)]
 

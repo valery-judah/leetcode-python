@@ -1,5 +1,3 @@
-
-
 def test(f):
     letters = ["a", "s", "d", "w"]
     f(letters)

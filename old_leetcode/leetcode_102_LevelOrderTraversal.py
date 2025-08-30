@@ -20,17 +20,23 @@ class TestData:
 class TestSolution(TestCase):
     def test_3_sum(self):
         testcases = [
-            TestData(name="case 0", root=TreeNode(val=3, left=TreeNode(9),
-                                                  right=TreeNode(val=20, left=TreeNode(val=15), right=TreeNode(7))),
-                     expected=[[3], [9, 20], [15, 7]]),
-            TestData(name="case 1", root=None, expected=[])
+            TestData(
+                name="case 0",
+                root=TreeNode(
+                    val=3,
+                    left=TreeNode(9),
+                    right=TreeNode(val=20, left=TreeNode(val=15), right=TreeNode(7)),
+                ),
+                expected=[[3], [9, 20], [15, 7]],
+            ),
+            TestData(name="case 1", root=None, expected=[]),
         ]
         for case in testcases:
             actual = Solution.level_order_traversal(root=case.root)
             self.assertListEqual(
                 case.expected,
                 actual,
-                f"failed test {case.name} expected {case.expected}, actual {actual}"
+                f"failed test {case.name} expected {case.expected}, actual {actual}",
             )
 
 
@@ -40,7 +46,11 @@ class Solution:
         levels = []
         if root is None:
             return levels
-        queue = deque([root, ])
+        queue = deque(
+            [
+                root,
+            ]
+        )
         current_level = []
         while queue:
             for i in range(len(queue)):

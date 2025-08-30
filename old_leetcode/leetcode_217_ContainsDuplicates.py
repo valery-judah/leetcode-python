@@ -1,5 +1,3 @@
-
-
 def containsNearbyAlmostDuplicate(self, nums: list[int], indexDiff: int, valueDiff: int) -> bool:
     duplicates = {}
     for i, elem in enumerate(nums):

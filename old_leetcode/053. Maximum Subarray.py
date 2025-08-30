@@ -16,4 +16,3 @@ def maxSub(nums: list[int]) -> int:
             globalMax = curMax
         print(f"n: {n}, curMax = {curMax}, globalMax = {globalMax}")
     return globalMax
-

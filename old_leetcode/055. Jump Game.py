@@ -1,5 +1,3 @@
-
-
 def test(f):
     nums = [3, 2, 1, 0, 4]
     print(f(nums))

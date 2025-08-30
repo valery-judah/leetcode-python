@@ -1,5 +1,3 @@
-
-
 def dailyTemperatures(temperatures: list[int]) -> list[int]:
     stack = []
     days = [0] * len(temperatures)

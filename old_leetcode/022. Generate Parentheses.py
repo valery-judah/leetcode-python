@@ -1,5 +1,3 @@
-
-
 def test(f):
     print(f(3))
 

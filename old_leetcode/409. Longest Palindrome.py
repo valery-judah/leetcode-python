@@ -4,7 +4,8 @@ from collections import Counter
 def test(f):
     s = "abccccdd"
     print(f(s))
-    print(9//2)
+    print(9 // 2)
+
 
 @test
 def longestPalindrome(s: str) -> int:
@@ -16,4 +17,3 @@ def longestPalindrome(s: str) -> int:
         if not center:
             center = v % 2
     return maxLen + center
-

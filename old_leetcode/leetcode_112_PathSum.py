@@ -23,21 +23,32 @@ class TestData:
 class TestSolution(TestCase):
     def test(self):
         testcases = [
-            TestData(name="case 1-2", root=TreeNode(val=1, left=TreeNode(2)),
-                     target=1, expected=False),
-            TestData(name="case -2 -3", root=TreeNode(val=-2, right=TreeNode(-3)),
-                     target=-5, expected=True),
-            TestData(name="case 1",
-                     root=TreeNode(1, left=TreeNode(2, left=TreeNode(3), right=TreeNode(4)),
-                                   right=TreeNode(2, left=TreeNode(4), right=TreeNode(3))),
-                     target=6, expected=True)
+            TestData(
+                name="case 1-2", root=TreeNode(val=1, left=TreeNode(2)), target=1, expected=False
+            ),
+            TestData(
+                name="case -2 -3",
+                root=TreeNode(val=-2, right=TreeNode(-3)),
+                target=-5,
+                expected=True,
+            ),
+            TestData(
+                name="case 1",
+                root=TreeNode(
+                    1,
+                    left=TreeNode(2, left=TreeNode(3), right=TreeNode(4)),
+                    right=TreeNode(2, left=TreeNode(4), right=TreeNode(3)),
+                ),
+                target=6,
+                expected=True,
+            ),
         ]
         for case in testcases:
             actual = Solution.has_path_sum(root=case.root, targetSum=case.target)
             self.assertEqual(
                 case.expected,
                 actual,
-                f"failed test {case.name} expected {case.expected}, actual {actual}"
+                f"failed test {case.name} expected {case.expected}, actual {actual}",
             )
         for case in testcases:
             solution = Solution()
@@ -45,7 +56,7 @@ class TestSolution(TestCase):
             self.assertEqual(
                 case.expected,
                 actual,
-                f"failed test {case.name} expected {case.expected}, actual {actual}"
+                f"failed test {case.name} expected {case.expected}, actual {actual}",
             )
 
 
@@ -75,4 +86,6 @@ class Solution:
         targetSum -= root.val
         if targetSum == 0 and not (root.left or root.right):
             return True
-        return self.has_path_sum_recursive(root.left, targetSum) or self.has_path_sum_recursive(root.right, targetSum)
+        return self.has_path_sum_recursive(root.left, targetSum) or self.has_path_sum_recursive(
+            root.right, targetSum
+        )

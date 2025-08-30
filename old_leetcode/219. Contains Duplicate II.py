@@ -17,4 +17,3 @@ def containsNearbyDuplicate_steps(nums: list[int], k: int) -> bool:
         # else add to seen values
         indexes[value] = i
     return False
-

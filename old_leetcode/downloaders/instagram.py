@@ -16,7 +16,9 @@ if __name__ == "__main__":
     follow_list = []
     count = 0
     for followee in profile.get_followers():
-        follow_list.append(f"https://instagram.com/{followee.username}, {followee.full_name}, {followee.followers}, {followee.follows}, {followee.username}")
+        follow_list.append(
+            f"https://instagram.com/{followee.username}, {followee.full_name}, {followee.followers}, {followee.follows}, {followee.username}"
+        )
         file = open("argentinafamilty_followers.txt", "a+")
         file.write(follow_list[count])
         file.write("\n")

@@ -21,6 +21,15 @@ fmt:
 	ruff check . --fix
 	black .
 
+# Optional: run linters on legacy code too
+lint-legacy:
+	ruff check old_leetcode
+	black --check old_leetcode
+
+fmt-legacy:
+	ruff check old_leetcode --fix || true
+	black old_leetcode || true
+
 type:
 	mypy tasks || true  # tasks may contain stubs early
 

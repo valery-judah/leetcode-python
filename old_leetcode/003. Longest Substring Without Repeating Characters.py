@@ -32,4 +32,3 @@ def get_longest_len(s):
             unique_letters.add(letter)
             max_len = max(max_len, len(unique_letters))
     return max_len
-

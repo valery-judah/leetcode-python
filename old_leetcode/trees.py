@@ -20,7 +20,7 @@ def traverse_by_level_iterative0(root: TreeNode | None) -> list[list[int]]:
 
     # todo create & check invariant: all children of all nodes is on queue??
     # check for null or emptiness
-    while len(queue) > 0:               # When there are no nodes to process in next level
+    while len(queue) > 0:  # When there are no nodes to process in next level
         list_to_process = []
         while len(queue) > 0:
             list_to_process.append(queue.pop(0))
@@ -45,6 +45,7 @@ def traverse_by_level_iterative(root: TreeNode | None) -> list[list[int]]:
         return result
     queue = [root]
     import itertools
+
     while queue:
         list_to_process = queue
         result.append([x.val for x in list_to_process])
@@ -54,7 +55,7 @@ def traverse_by_level_iterative(root: TreeNode | None) -> list[list[int]]:
 
 
 def traverse_by_level_iterative1(root: TreeNode | None) -> list[list[int]]:
-    """ in iterative manner version 0.3"""
+    """in iterative manner version 0.3"""
     result = []
     if root is None:
         return result
@@ -75,7 +76,7 @@ def traverse_by_level_iterative1(root: TreeNode | None) -> list[list[int]]:
 
 
 def traverse_zig_zag(root: TreeNode | None) -> list[list[int]]:
-    """ Zig zag traversing based on version 0.3"""
+    """Zig zag traversing based on version 0.3"""
     result = []
     if root is None:
         return result
@@ -131,6 +132,7 @@ def get_min_depth(root: TreeNode | None) -> int:
                 queue.append(node.right)
     return nodes_number
 
+
 ###################################################################
 # BFS
 
@@ -144,4 +146,3 @@ def has_path(root: TreeNode | None, sum_to_match: int):
         else:
             return False
     return False
-

@@ -1,5 +1,3 @@
-
-
 def test(f):
     print(f([1, 2, 2, 3, 3, 3, 1, 1, 1, 4, 4], 2))
 
@@ -17,4 +15,3 @@ def topKFrequent(nums: list[int], k: int) -> list[int]:
 
     out = [elem for sublist in orderedCounter for elem in sublist if sublist]
     return out[-k:]
-

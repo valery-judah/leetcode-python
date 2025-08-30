@@ -15,5 +15,6 @@ def lastStoneWeight(stones: list[int]) -> int:
     else:
         return 0
 
+
 if __name__ == "__main__":
     print(lastStoneWeight([2, 7, 4, 1, 8, 1]))

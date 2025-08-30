@@ -1,8 +1,11 @@
-
-
 def evalRPN(tokens: list[str]) -> int:
     stack = []
-    operations = {"+": lambda x, y: x + y, "-": lambda x, y: x - y, "*": lambda x, y: x * y, "/": lambda x, y: x / y}
+    operations = {
+        "+": lambda x, y: x + y,
+        "-": lambda x, y: x - y,
+        "*": lambda x, y: x * y,
+        "/": lambda x, y: x / y,
+    }
 
     for token in tokens:
         if token not in operations:

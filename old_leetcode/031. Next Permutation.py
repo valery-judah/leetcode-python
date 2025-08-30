@@ -1,5 +1,3 @@
-
-
 def test(f):
     permutation = [1, 2, 5, 4, 0]
     f(permutation)

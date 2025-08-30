@@ -30,6 +30,7 @@ class MedianFinder:
         else:
             return self.rightHeap[0]
 
+
 class MedianFinderMy:
 
     def __init__(self):
@@ -40,7 +41,9 @@ class MedianFinderMy:
         heapq.heapify(self.rightHeap)
 
     def addNum(self, num: int) -> None:
-        print(f"before: n: {num},    left: {self.leftHeap}, median:{self.median}, right: {self.rightHeap}")
+        print(
+            f"before: n: {num},    left: {self.leftHeap}, median:{self.median}, right: {self.rightHeap}"
+        )
         if not self.median:
             self.median.append(num)
         elif len(self.median) == 1:
@@ -64,7 +67,9 @@ class MedianFinderMy:
                 heapq.heappush(self.rightHeap, num)
                 self.median.pop(0)
 
-        print(f"after: n: {num},   left: {self.leftHeap}, median:{self.median}, right: {self.rightHeap}")
+        print(
+            f"after: n: {num},   left: {self.leftHeap}, median:{self.median}, right: {self.rightHeap}"
+        )
 
     def findMedian(self) -> float:
         return sum(self.median) / len(self.median)

@@ -14,6 +14,7 @@ def productExceptSelf(nums: list[int]) -> list[int]:
                 out[i] = out[i] * nums[j]
     return out
 
+
 def productExceptSelf_other(nums: list[int]) -> list[int]:
     prefix = [1] * len(nums)
     for i in range(1, len(nums)):
@@ -23,6 +24,7 @@ def productExceptSelf_other(nums: list[int]) -> list[int]:
     for i in reversed(range(len(nums) - 1)):
         suffix[i] = suffix[i + 1] * nums[i + 1]
     return [a * b for a, b in zip(prefix, suffix, strict=False)]
+
 
 @test
 def productExceptSelf_optimized(nums: list[int]) -> list[int]:

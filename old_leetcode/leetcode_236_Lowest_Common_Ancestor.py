@@ -16,8 +16,13 @@ class TestData:
 class TestSolution(TestCase):
     def test(self):
         testcases = [
-            TestData(name="case 1-1", root=getTree([3, 9, 20, None, None, 15, 7]),
-                     p=getTree([5]), q=getTree([1]), expected=getTree([3]))
+            TestData(
+                name="case 1-1",
+                root=getTree([3, 9, 20, None, None, 15, 7]),
+                p=getTree([5]),
+                q=getTree([1]),
+                expected=getTree([3]),
+            )
             # TestData(name="case 1-1", root=getTree([1, 9, 20, None, None, 15, 7]),
             #          p=getTree([1]), q=getTree([2]), expected=getTree([1]))
         ]
@@ -28,13 +33,15 @@ class TestSolution(TestCase):
             self.assertEqual(
                 case.expected,
                 actual,
-                f"failed test {case.name} expected {case.expected}, actual {actual}"
+                f"failed test {case.name} expected {case.expected}, actual {actual}",
             )
 
 
 class Solution:
 
-    def lca_recursive(self, root: TreeNode | None, p: TreeNode | None, q: TreeNode | None) -> TreeNode:
+    def lca_recursive(
+        self, root: TreeNode | None, p: TreeNode | None, q: TreeNode | None
+    ) -> TreeNode:
         pass
 
     def lowestCommonAncestor(self, root: TreeNode, p: TreeNode, q: TreeNode) -> TreeNode:
@@ -45,7 +52,7 @@ class Solution:
         out = []
 
         left = []
-        right = [] 
+        right = []
         while stack:
             curr, path = stack.pop()
             print(f"curr: {curr}, path: {path}")

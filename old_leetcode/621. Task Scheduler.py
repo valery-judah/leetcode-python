@@ -14,7 +14,7 @@ def leastInterval(tasks: list[str], n: int) -> int:
     while maxHeap or queue:
         time += 1
         cnt = -heapq.heappop(maxHeap)
-        
+
         queue.append((cnt - 1, time + 1))
 
 

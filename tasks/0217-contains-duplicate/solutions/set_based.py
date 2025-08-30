@@ -9,4 +9,3 @@ class Solution:
                 return True
             seen.add(n)
         return False
-

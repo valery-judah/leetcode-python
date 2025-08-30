@@ -1,5 +1,3 @@
-
-
 def search(nums: list[int], target: int) -> int:
     if len(nums) == 1:
         if nums[0] == target:

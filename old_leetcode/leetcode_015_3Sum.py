@@ -12,8 +12,10 @@ class TestData:
 class TestSolution(TestCase):
     def test_3_sum(self):
         testcases = [
-            TestData(name="case 0", numbers=[-1, 0, 1, 2, -1, -4], expected=[[-1, -1, 2], [-1, 0, 1]]),
-            TestData(name="case 0", numbers=[0, 0, 0], expected=[[0, 0, 0]])
+            TestData(
+                name="case 0", numbers=[-1, 0, 1, 2, -1, -4], expected=[[-1, -1, 2], [-1, 0, 1]]
+            ),
+            TestData(name="case 0", numbers=[0, 0, 0], expected=[[0, 0, 0]]),
         ]
         for case in testcases:
             actual = Solution.three_sum_sorted(nums=case.numbers)

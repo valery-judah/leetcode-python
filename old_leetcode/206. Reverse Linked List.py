@@ -4,7 +4,5 @@ class ListNode:
         self.next = next
 
 
-
-
 def reverseList(head: ListNode | None) -> ListNode | None:
     pass

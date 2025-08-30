@@ -1,5 +1,3 @@
-
-
 def test(f):
     nums = [1, 2, 3]
     print(f"out: {f(nums)}")
@@ -8,6 +6,7 @@ def test(f):
 # Choose a num for a seat - DFS
 # It's not backtracking
 
+
 def myGivePermutations(nums: list[int]) -> list[list[int]]:
     out = []
 
@@ -15,7 +14,7 @@ def myGivePermutations(nums: list[int]) -> list[list[int]]:
         if not candidates:
             out.append(path)
         for i in range(len(candidates)):
-            helper(path + [candidates[i]], candidates[:i] + candidates[i + 1:])
+            helper(path + [candidates[i]], candidates[:i] + candidates[i + 1 :])
 
     helper([], nums)
     return out
@@ -52,7 +51,7 @@ def moreElegantFromLeetCode(nums):
             # return # backtracking
 
         for i in range(len(nums)):
-            dfs(nums[:i] + nums[i + 1:], path + [nums[i]], res)
+            dfs(nums[:i] + nums[i + 1 :], path + [nums[i]], res)
 
     dfs(nums, [], res)
     return res
