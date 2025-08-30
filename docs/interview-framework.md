@@ -120,7 +120,7 @@ Some things to keep in mind:
 
 ## While solving (tricks)
 
-- 
+-
 
 ## While coding
 

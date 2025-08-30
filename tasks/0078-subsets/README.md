@@ -1,9 +1,9 @@
 
-# {number}. {title}
+# 78. Subsets
 
-**URL**: {url}
-**Difficulty**: {difficulty}
-**Tags**: {tags}
+**URL**: https://leetcode.com/problems/subsets/
+**Difficulty**: medium
+**Tags**: 
 
 ## Clarifying questions
 - Input shape, ranges, constraints?

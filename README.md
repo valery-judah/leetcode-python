@@ -50,6 +50,7 @@ This scaffolds a consolidated `tasks/0217-contains-duplicate/solutions.py` where
 - Python Test Explorer: Enabled for pytest; discovery is configured in `.vscode/settings.json`.
 
 Notes on multi-variant tests:
+
 - Tests load `solutions.py` and read `ALL_SOLUTIONS` to parametrize variants. If `ALL_SOLUTIONS` is absent, they will use a single exported `Solution` class from `solutions.py`.
 
 Key configs:

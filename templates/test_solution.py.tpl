@@ -17,11 +17,17 @@ def S():
 
 # TODO: replace with true signature and cases
 @pytest.mark.parametrize(
-    "args, kwargs, expected",
+    ("label", "args", "kwargs"),
     [
-        ((), {{}}, None),  # replace
+        ("example", (), {{}},),  # replace
     ],
 )
-def test_example(S, args, kwargs, expected):
-    with pytest.raises(NotImplementedError):
-        S.solve(*args, **kwargs)
+def test_example_raises_not_implemented(S, label, args, kwargs, run_summary):
+    ok = False
+    try:
+        with pytest.raises(NotImplementedError):
+            S.solve(*args, **kwargs)
+        ok = True
+    finally:
+        run_summary[S.__class__.__name__].append((label, ok))
+    assert ok

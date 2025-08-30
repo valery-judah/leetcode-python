@@ -12,6 +12,7 @@ This document captures how this workspace is structured and the patterns used fo
 - `old_leetcode/`: Legacy ad-hoc solutions not following current structure.
 
 Key configs:
+
 - Testing: `pytest.ini` → discovers tests in `tasks/`.
 - Lint/format/type: `pyproject.toml`.
 - Make targets: `Makefile`.
@@ -19,11 +20,13 @@ Key configs:
 ## Problem Folder Structure
 
 Default (single solution):
+
 - `tasks/NNNN-slug/README.md` — clarifying questions, approach, complexity.
 - `tasks/NNNN-slug/solutions.py` — export a `Solution` class with a `solve(...)` method. Optionally include `ALL_SOLUTIONS = [Solution]` for consistency.
 - `tasks/NNNN-slug/test_solution.py` — pytest tests for the above.
 
 Multi-solution pattern (recommended for comparing approaches):
+
 - `tasks/NNNN-slug/solutions.py` — consolidated module exporting multiple classes implementing the same `solve(...)` API. List them in `ALL_SOLUTIONS = [ClassA, ClassB, ...]`. Optionally set `Solution = ClassA` as a default alias.
 - `tasks/NNNN-slug/test_<slug>.py` — pytest that discovers variants by reading `ALL_SOLUTIONS` from `solutions.py`. Each class is parametrized as its own variant. If `ALL_SOLUTIONS` is absent, tests use the single exported `Solution` class from `solutions.py`.
 
@@ -88,6 +91,7 @@ test_0217_contains_duplicate.py::test_contains_duplicate[solutions:SetBased] PAS
 ## Decision Records (optional but recommended)
 
 For notable choices (e.g., “Use pytest with per-problem tests”, “Adopt multi-solution discovery”), record brief ADRs:
+
 - `docs/decisions/0001-testing-approach.md`
 - `docs/decisions/0002-multi-solution-structure.md`
 

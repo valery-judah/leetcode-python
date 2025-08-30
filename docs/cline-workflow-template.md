@@ -12,9 +12,9 @@ This document outlines a standardized TDD workflow for solving LeetCode problems
 - Single-solution flow: open `tasks/<problem-slug>/test_solution.py`.
 - Multi-variant flow (`--multi` scaffold): open `tasks/<problem-slug>/test_<slug>.py`.
 - **Add Test Cases**: Use the `@pytest.mark.parametrize` decorator to add a comprehensive set of test cases, including:
-    - The base case from the problem description.
-    - Edge cases (e.g., empty lists, negative numbers, duplicates).
-    - Cases that test different paths through the logic.
+  - The base case from the problem description.
+  - Edge cases (e.g., empty lists, negative numbers, duplicates).
+  - Cases that test different paths through the logic.
 - **Run `make test`**: Execute the tests to confirm that they fail as expected with a `NotImplementedError`.
 
 ## 3. Implement the Solution

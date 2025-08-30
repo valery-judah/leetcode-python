@@ -49,4 +49,3 @@ This guide shows how to format, lint, and quickly find issues.
   - `pre-commit run --all-files`
 - Stop on first failing test (fast feedback):
   - `pytest -x -q`
-

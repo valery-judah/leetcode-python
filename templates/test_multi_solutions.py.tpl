@@ -43,12 +43,18 @@ def S(request) -> Callable[[], object]:
 
 # TODO: replace with true signature and cases
 @pytest.mark.parametrize(
-    "args, kwargs",
+    ("label", "args", "kwargs"),
     [
-        ((), {{}}),  # replace with concrete inputs
+        ("example", (), {{}}),  # replace with concrete inputs
     ],
 )
-def test_example_raises_not_implemented(S, args, kwargs):
+def test_example_raises_not_implemented(S, label, args, kwargs, run_summary):
     """Template test that expects NotImplementedError until implemented."""
-    with pytest.raises(NotImplementedError):
-        S() .solve(*args, **kwargs)
+    ok = False
+    try:
+        with pytest.raises(NotImplementedError):
+            S().solve(*args, **kwargs)
+        ok = True
+    finally:
+        run_summary[S.__name__].append((label, ok))
+    assert ok

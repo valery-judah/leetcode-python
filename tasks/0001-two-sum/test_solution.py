@@ -20,21 +20,16 @@ def solution():
 
 
 @pytest.mark.parametrize(
-    ("nums", "target", "expected"),
+    ("label", "nums", "target", "expected"),
     [
-        # Base case from the problem description
-        ([2, 7, 11, 15], 9, [0, 1]),
-        # Case where the solution is not the first two elements
-        ([3, 2, 4], 6, [1, 2]),
-        # Case with duplicate numbers
-        ([3, 3], 6, [0, 1]),
-        # Case with negative numbers
-        ([-10, 7, 19, 15], 9, [0, 2]),
-        # Case with zero
-        ([0, 4, 3, 0], 0, [0, 3]),
+        ("base", [2, 7, 11, 15], 9, [0, 1]),
+        ("mid", [3, 2, 4], 6, [1, 2]),
+        ("dupes", [3, 3], 6, [0, 1]),
+        ("negative", [-10, 7, 19, 15], 9, [0, 2]),
+        ("zero", [0, 4, 3, 0], 0, [0, 3]),
     ],
 )
-def test_solve(solution, nums: list[int], target: int, expected: list[int]):
+def test_solve(solution, label: str, nums: list[int], target: int, expected: list[int], run_summary):
     """
     Tests the solve method with various inputs.
 
@@ -43,6 +38,6 @@ def test_solve(solution, nums: list[int], target: int, expected: list[int]):
     order-independent.
     """
     result = solution.solve(nums, target)
-    assert isinstance(result, list)
-    assert len(result) == 2
-    assert sorted(result) == sorted(expected)
+    ok = isinstance(result, list) and len(result) == 2 and sorted(result) == sorted(expected)
+    run_summary[solution.__class__.__name__].append((label, ok))
+    assert ok

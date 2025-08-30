@@ -42,22 +42,26 @@ def S(request) -> Callable[[], object]:
 
 
 @pytest.mark.parametrize(
-    ("nums", "k", "expected"),
+    ("label", "nums", "k", "expected"),
     [
-        ([1, 2, 3, 1], 3, True),  # basic true
-        ([1, 0, 1, 1], 1, True),  # adjacent duplicate
-        ([1, 2, 3, 1, 2, 3], 2, False),  # too far
-        ([], 1, False),  # empty
-        ([1], 1, False),  # single element
-        ([1, 2, 1], 0, False),  # k=0 cannot match
-        ([99, 1, 99], 2, True),  # exactly within k
-        ([-1, -2, -3, -1], 3, True),  # negatives
-        ([1, 2, 3, 1, 2, 3], 3, True),  # boundary equal to k
-        ([1, 2, 3, 1, 2, 3], 1, False),  # no local dup within k
-        ([1, 2, 1], 2, True),  # distance exactly 2
-        ([1, 2, 3, 1], 100, True),  # large k
+        ("basic_true", [1, 2, 3, 1], 3, True),
+        ("adjacent_dup", [1, 0, 1, 1], 1, True),
+        ("too_far", [1, 2, 3, 1, 2, 3], 2, False),
+        ("empty", [], 1, False),
+        ("single", [1], 1, False),
+        ("k_zero", [1, 2, 1], 0, False),
+        ("within_k", [99, 1, 99], 2, True),
+        ("negatives", [-1, -2, -3, -1], 3, True),
+        ("boundary_eq", [1, 2, 3, 1, 2, 3], 3, True),
+        ("no_local_dup", [1, 2, 3, 1, 2, 3], 1, False),
+        ("exact_k2", [1, 2, 1], 2, True),
+        ("large_k", [1, 2, 3, 1], 100, True),
     ],
 )
-def test_contains_nearby_duplicate(S, nums: list[int], k: int, expected: bool):
+def test_contains_nearby_duplicate(
+    S, label: str, nums: list[int], k: int, expected: bool, run_summary
+):
     sol = S()
-    assert sol.solve(nums, k) is expected
+    ok = sol.solve(nums, k) is expected
+    run_summary[S.__name__].append((label, ok))
+    assert ok
