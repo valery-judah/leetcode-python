@@ -33,11 +33,7 @@ class TestSolution(TestCase):
         ]
         for case in testcases:
             actual = Solution.level_order_traversal(root=case.root)
-            self.assertListEqual(
-                case.expected,
-                actual,
-                f"failed test {case.name} expected {case.expected}, actual {actual}",
-            )
+            assert case.expected == actual, f"failed test {case.name}"
 
 
 class Solution:
@@ -53,7 +49,7 @@ class Solution:
         )
         current_level = []
         while queue:
-            for i in range(len(queue)):
+            for _ in range(len(queue)):
                 elem = queue.popleft()
                 current_level.append(elem.val)
                 left = elem.left

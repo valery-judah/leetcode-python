@@ -47,11 +47,7 @@ class TestSolution(TestCase):
         ]
         for case in testcases:
             actual = Solution.is_subsequence_for_loop(s=case.s, t=case.t)
-            self.assertEqual(
-                case.expected,
-                actual,
-                f"failed test {case.name} expected {case.expected}, actual {actual}",
-            )
+            assert case.expected == actual, f"failed test {case.name}"
 
 
 # reuse 2 sum that it can return all pairs

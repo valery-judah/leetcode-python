@@ -65,8 +65,4 @@ class TestSolution(TestCase):
         ]
         for case in testcases:
             actual = Solution.two_sum_sorted(case.numbers, case.target)
-            self.assertListEqual(
-                case.expected,
-                actual,
-                f"failed test {case.name} expected {case.expected}, actual {actual}",
-            )
+            assert case.expected == actual, f"failed test {case.name}"

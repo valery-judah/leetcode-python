@@ -1,27 +1,13 @@
 def search(nums: list[int], target: int) -> int:
-    if len(nums) == 1:
-        if nums[0] == target:
-            return 0
+    left, right = 0, len(nums) - 1
+    while left <= right:
+        mid = (left + right) // 2
+        if nums[mid] == target:
+            return mid
+        elif nums[mid] < target:
+            left = mid + 1
         else:
-            return -1
-
-    l = 0
-    r = len(nums) - 1
-
-    while l < r:
-        if nums[l] == target:
-            return l
-        elif nums[r] == target:
-            return r
-        else:
-            median = int((r + l) / 2)
-            print(f"l: {l}, median: {median}, r: {r}")
-            if target > nums[median]:
-                l = median
-            elif target == nums[median]:
-                return median
-            else:
-                r = median
+            right = mid - 1
     return -1
 
 

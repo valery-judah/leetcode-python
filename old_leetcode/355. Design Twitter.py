@@ -22,7 +22,7 @@ class Twitter:
 
     def getNewsFeed(self, userId: int) -> list[int]:
         res = []
-        for i in range(len(self.tweets[userId])):
+        for _ in range(len(self.tweets[userId])):
             res.append(heapq.heappop(self.tweets[userId]))
         return res
 

@@ -5,7 +5,8 @@ def test(f):
 
     # Testing setdefault
     m = {}
-    p = [m.setdefault(c, len(m)) for c in "aqq"]
+    for c in "aqq":
+        m.setdefault(c, len(m))
     print(m)
 
 
@@ -14,7 +15,7 @@ def find_and_replace_pattern(words: list[str], pattern: str) -> list[str]:
     def match(word: str, cur_pattern: str) -> bool:
         word2pattern = dict()
         pattern2word = dict()
-        if not len(word) == len(cur_pattern):
+        if len(word) != len(cur_pattern):
             return False
         for i in range(len(word)):
             if word[i] not in word2pattern:

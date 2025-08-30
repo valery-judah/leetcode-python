@@ -8,8 +8,8 @@ def test(f):
 # bruteforce approach
 def productExceptSelf(nums: list[int]) -> list[int]:
     out = [1] * len(nums)
-    for i, n in enumerate(nums):
-        for j in range(0, len(nums)):
+    for i, _ in enumerate(nums):
+        for j in range(len(nums)):
             if i != j:
                 out[i] = out[i] * nums[j]
     return out
@@ -28,7 +28,13 @@ def productExceptSelf_other(nums: list[int]) -> list[int]:
 
 @test
 def productExceptSelf_optimized(nums: list[int]) -> list[int]:
-    product = [1] * len(nums)
-
-    for i in range(1, len(nums)):
-        pass
+    res = [1] * len(nums)
+    prefix = 1
+    for i in range(len(nums)):
+        res[i] = prefix
+        prefix *= nums[i]
+    postfix = 1
+    for i in range(len(nums) - 1, -1, -1):
+        res[i] *= postfix
+        postfix *= nums[i]
+    return res

@@ -28,11 +28,7 @@ class TestSolution(TestCase):
         ]
         for case in testcases:
             actual = Solution.inorder_traversal(root=case.root)
-            self.assertListEqual(
-                case.expected,
-                actual,
-                f"failed test {case.name} expected {case.expected}, actual {actual}",
-            )
+            assert case.expected == actual, f"failed test {case.name}"
 
 
 class Solution:

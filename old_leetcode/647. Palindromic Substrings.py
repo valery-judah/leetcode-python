@@ -7,12 +7,12 @@ def test(f):
 def palindromeNumbers(s: str) -> int:
     res = 0
 
-    def getPalindromeNumber(s, l, r):
+    def getPalindromeNumber(s, left, right):
         res = 0
-        while l >= 0 and r < len(s) and s[l] == s[r]:
+        while left >= 0 and right < len(s) and s[left] == s[right]:
             res += 1
-            l -= 1
-            r += 1
+            left -= 1
+            right += 1
         return res
 
     for i in range(len(s)):

@@ -43,11 +43,7 @@ class TestSolution(TestCase):
         ]
         for case in testcases:
             actual = Solution.is_symmetric(root=case.root)
-            self.assertEqual(
-                case.expected,
-                actual,
-                f"failed test {case.name} expected {case.expected}, actual {actual}",
-            )
+            assert case.expected == actual, f"failed test {case.name}"
 
 
 class Solution:

@@ -42,7 +42,8 @@ class MedianFinderMy:
 
     def addNum(self, num: int) -> None:
         print(
-            f"before: n: {num},    left: {self.leftHeap}, median:{self.median}, right: {self.rightHeap}"
+            f"before: n: {num},    left: {self.leftHeap}, "
+            f"median:{self.median}, right: {self.rightHeap}"
         )
         if not self.median:
             self.median.append(num)
@@ -68,7 +69,8 @@ class MedianFinderMy:
                 self.median.pop(0)
 
         print(
-            f"after: n: {num},   left: {self.leftHeap}, median:{self.median}, right: {self.rightHeap}"
+            f"after: n: {num},   left: {self.leftHeap}, "
+            f"median:{self.median}, right: {self.rightHeap}"
         )
 
     def findMedian(self) -> float:

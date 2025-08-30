@@ -37,19 +37,11 @@ class TestSolution(TestCase):
         for case in testcases:
             sol = Solution()
             actual = sol.maxDepth(root=case.root)
-            self.assertEqual(
-                case.expected,
-                actual,
-                f"failed test {case.name} expected {case.expected}, actual {actual}",
-            )
+            assert case.expected == actual, f"failed test {case.name}"
 
         for case in testcases:
             actual = sol.maxDepth_BFS(root=case.root)
-            self.assertEqual(
-                case.expected,
-                actual,
-                f"failed test {case.name} expected {case.expected}, actual {actual}",
-            )
+            assert case.expected == actual, f"failed test {case.name}"
 
 
 class Solution:

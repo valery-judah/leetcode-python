@@ -31,25 +31,13 @@ class TestSolution(TestCase):
         ]
         for case in testcases:
             actual = Solution.postorder_traversal(root=case.root)
-            self.assertListEqual(
-                case.expected,
-                actual,
-                f"failed test {case.name} expected {case.expected}, actual {actual}",
-            )
+            assert case.expected == actual, f"failed test {case.name}"
         for case in testcases:
             actual = Solution.postorder_traversal_(root=case.root)
-            self.assertListEqual(
-                case.expected,
-                actual,
-                f"failed test {case.name} expected {case.expected}, actual {actual}",
-            )
+            assert case.expected == actual, f"failed test {case.name}"
         for case in testcases:
             actual = Solution.postorder_traversal__(root=case.root)
-            self.assertListEqual(
-                case.expected,
-                actual,
-                f"failed test {case.name} expected {case.expected}, actual {actual}",
-            )
+            assert case.expected == actual, f"failed test {case.name}"
 
 
 class Solution:

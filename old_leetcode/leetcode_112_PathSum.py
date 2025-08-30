@@ -45,19 +45,11 @@ class TestSolution(TestCase):
         ]
         for case in testcases:
             actual = Solution.has_path_sum(root=case.root, targetSum=case.target)
-            self.assertEqual(
-                case.expected,
-                actual,
-                f"failed test {case.name} expected {case.expected}, actual {actual}",
-            )
+            assert case.expected == actual, f"failed test {case.name}"
         for case in testcases:
             solution = Solution()
             actual = solution.has_path_sum_recursive(root=case.root, targetSum=case.target)
-            self.assertEqual(
-                case.expected,
-                actual,
-                f"failed test {case.name} expected {case.expected}, actual {actual}",
-            )
+            assert case.expected == actual, f"failed test {case.name}"
 
 
 class Solution:

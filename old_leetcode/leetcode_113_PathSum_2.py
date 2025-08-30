@@ -37,11 +37,7 @@ class TestSolution(TestCase):
         for case in testcases:
             solution = Solution()
             actual = solution.pathSum(root=case.root, targetSum=case.target)
-            self.assertEqual(
-                case.expected,
-                actual,
-                f"failed test {case.name} expected {case.expected}, actual {actual}",
-            )
+            assert case.expected == actual, f"failed test {case.name}"
 
 
 class Solution:

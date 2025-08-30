@@ -19,11 +19,7 @@ class TestSolution(TestCase):
         ]
         for case in testcases:
             actual = Solution.three_sum_sorted(nums=case.numbers)
-            self.assertListEqual(
-                case.expected,
-                actual,
-                f"failed test {case.name} expected {case.expected}, actual {actual}",
-            )
+            assert case.expected == actual, f"failed test {case.name}"
 
 
 # reuse 2 sum that it can return all pairs

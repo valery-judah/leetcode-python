@@ -13,8 +13,8 @@ class BingoCage:
     def pick(self):  # <3>
         try:
             return self._items.pop()
-        except IndexError:
-            raise LookupError("pick from empty BingoCage")  # <4>
+        except IndexError as e:
+            raise LookupError("pick from empty BingoCage") from e
 
     def __call__(self):  # <5>
         return self.pick()

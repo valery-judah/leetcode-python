@@ -141,8 +141,5 @@ def has_path(root: TreeNode | None, sum_to_match: int):
     if root is None:
         return False
     if not root.left and not root.right:
-        if root.val == sum_to_match:
-            return True
-        else:
-            return False
+        return root.val == sum_to_match
     return False
