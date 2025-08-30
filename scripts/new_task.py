@@ -57,13 +57,9 @@ def main() -> None:
     (base / "README.md").write_text(render(readme_tpl, **context))
 
     if args.multi:
-        # multi-solution scaffold
-        sols_dir = base / "solutions"
-        sols_dir.mkdir(exist_ok=True)
-
-        # add a starter variant
+        # multi-solution scaffold (consolidated file in task root)
         variant_tpl = ROOT / "templates" / "solution_variant.py.tpl"
-        (sols_dir / "baseline.py").write_text(render(variant_tpl, **context))
+        (base / "solutions.py").write_text(render(variant_tpl, **context))
 
         # discovery test with parametrized variants
         test_tpl = ROOT / "templates" / "test_multi_solutions.py.tpl"
@@ -82,7 +78,7 @@ def main() -> None:
     print(f"Created {base.relative_to(ROOT)}")
     print("Next:")
     if args.multi:
-        print(f"  - Add variants under {base/'solutions'} (export class Solution)")
+        print(f"  - Edit {base/'solutions.py'} and add classes to ALL_SOLUTIONS")
         print(f"  - Edit tests in {base} matching 'test_*.py'")
     else:
         print(f"  - Edit {base/'solution.py'} and {base/'test_solution.py'}")

@@ -12,8 +12,8 @@ The repo’s `make fmt` surfaced many Ruff/Black issues (see `fmt_errors.md`), m
 - Makefile
   - Added optional `lint-legacy` and `fmt-legacy` targets to run checks specifically on `old_leetcode/` if desired.
 - Code fixes (current tasks)
-  - `tasks/0217-contains-duplicate/solutions/sorting.py`: addressed SIM110 by using `any(...)` on adjacent sorted elements.
-  - `tasks/0219-contains-duplicate-ii/solutions/baseline.py`: replaced deprecated `typing.List` with builtin `list[int]` and removed the import.
+  - `tasks/0217-contains-duplicate/solutions.py` (Sorting variant): addressed SIM110 by using `any(...)` on adjacent sorted elements.
+  - `tasks/0219-contains-duplicate-ii/solutions.py`: replaced deprecated `typing.List` with builtin `list[int]` and removed the import.
 - Verification
   - `make fmt` and `make lint` now complete successfully.
   - All tests pass: `pytest -q`.
@@ -33,4 +33,3 @@ The repo’s `make fmt` surfaced many Ruff/Black issues (see `fmt_errors.md`), m
 - If we want Black to skip `old_leetcode/` going forward, consider `force-exclude` on the CLI (or adjust patterns) when running on the full repo.
 - Incrementally modernize `old_leetcode/` files if/when migrating them into `tasks/` (rename variables, remove duplicates, convert tests to pytest).
 - Keep `tasks/` strict: treat Ruff warnings as errors there; use marks for slow tests; maintain docstrings/README updates per task.
-

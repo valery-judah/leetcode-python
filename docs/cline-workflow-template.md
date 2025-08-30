@@ -9,7 +9,8 @@ This document outlines a standardized TDD workflow for solving LeetCode problems
 
 ## 2. Write Failing Tests
 
-- **Open the `test_solution.py` file**: Navigate to the `tasks/<problem-slug>/test_solution.py` file.
+- Single-solution flow: open `tasks/<problem-slug>/test_solution.py`.
+- Multi-variant flow (`--multi` scaffold): open `tasks/<problem-slug>/test_<slug>.py`.
 - **Add Test Cases**: Use the `@pytest.mark.parametrize` decorator to add a comprehensive set of test cases, including:
     - The base case from the problem description.
     - Edge cases (e.g., empty lists, negative numbers, duplicates).
@@ -18,7 +19,8 @@ This document outlines a standardized TDD workflow for solving LeetCode problems
 
 ## 3. Implement the Solution
 
-- **Open the `solution.py` file**: Navigate to the `tasks/<problem-slug>/solution.py` file.
+- Single-solution flow: open `tasks/<problem-slug>/solution.py`.
+- Multi-variant flow: open `tasks/<problem-slug>/solutions.py` and add one or more classes implementing `solve(...)`. List them in `ALL_SOLUTIONS = [...]` so tests will parametrize across variants. Optionally set `Solution = <DefaultClass>`.
 - **Implement the `solve` method**: Write the code to solve the problem, focusing on a clean and efficient implementation.
 - **Add Docstrings**: Document the solution's approach, arguments, and return value.
 

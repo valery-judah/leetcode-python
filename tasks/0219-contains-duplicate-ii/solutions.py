@@ -15,3 +15,8 @@ class Solution:
                 return True
             last_index[v] = i
         return False
+
+
+# Allow tests to parametrize multiple variants from one file.
+ALL_SOLUTIONS = [Solution]
+

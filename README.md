@@ -28,6 +28,16 @@ Folders are created under `tasks/NNNN-slug/`. Each contains:
 
 CI, pre-commit, and VS Code configs are included.
 
+### Multi-variant mode (compare approaches)
+
+If you want to implement and compare multiple approaches for a problem:
+
+```bash
+python scripts/new_task.py contains-duplicate 217 --multi
+```
+
+This scaffolds a consolidated `tasks/0217-contains-duplicate/solutions.py` where you can define multiple classes (e.g., `BruteForce`, `SetBased`) and list them in `ALL_SOLUTIONS = [BruteForce, SetBased]`. The test file auto-discovers each class and runs the same cases for all variants. You can also optionally set `Solution = SetBased` as a default alias.
+
 ## Developer workflow
 
 - Lint: `make lint` (runs `ruff check .` and `black --check .`).
@@ -38,6 +48,9 @@ CI, pre-commit, and VS Code configs are included.
 - Pre-commit: `make precommit` to install hooks; `pre-commit run --all-files` to run manually.
 - VS Code Tasks: Command Palette → “Tasks: Run Task” → `Test`, `Test: Active File`, or `New problem` (see `.vscode/tasks.json`).
 - Python Test Explorer: Enabled for pytest; discovery is configured in `.vscode/settings.json`.
+
+Notes on multi-variant tests:
+- Tests will first look for `solutions.py` and read `ALL_SOLUTIONS` to parametrize variants. If absent, they fall back to `variants.py` or legacy `solutions/*.py` modules.
 
 Key configs:
 
