@@ -9,9 +9,7 @@ For some problems we want to compare multiple approaches (e.g., brute force, sor
 
 ## Decision
 
-Adopt a consolidated `solutions.py` file in each problem directory when comparing approaches. The file exports multiple classes that implement the same `solve(...)` API and a list `ALL_SOLUTIONS = [ClassA, ClassB, ...]` for test discovery. Optionally expose `Solution = ClassA` as a default alias. Tests read `ALL_SOLUTIONS` and parametrize over each class.
-
-For backward compatibility, tests also support `variants.py` and a legacy `solutions/` folder (with one class per module), but `solutions.py` is the recommended pattern.
+Adopt a consolidated `solutions.py` file in each problem directory when comparing approaches. The file exports multiple classes that implement the same `solve(...)` API and a list `ALL_SOLUTIONS = [ClassA, ClassB, ...]` for test discovery. Optionally expose `Solution = ClassA` as a default alias. Tests read `ALL_SOLUTIONS` and parametrize over each class (or a single `Solution`).
 
 ## Consequences
 

@@ -4,7 +4,10 @@ import pytest
 
 
 def _load_solution_cls():
-    ns = runpy.run_path(str(Path(__file__).with_name("solution.py")))
+    ns = runpy.run_path(str(Path(__file__).with_name("solutions.py")))
+    # Prefer ALL_SOLUTIONS if present, otherwise single Solution class
+    if "ALL_SOLUTIONS" in ns:
+        return ns["ALL_SOLUTIONS"][0]
     return ns["Solution"]
 
 

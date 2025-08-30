@@ -31,7 +31,7 @@ def main() -> None:
     ap.add_argument(
         "--multi",
         action="store_true",
-        help="scaffold a solutions/ folder and discovery test for multiple variants",
+        help="scaffold a consolidated solutions.py and a discovery test for multiple variants",
     )
     args = ap.parse_args()
 
@@ -66,9 +66,9 @@ def main() -> None:
         test_name = f"test_{args.number:04d}_{slug.replace('-', '_')}.py"
         (base / test_name).write_text(render(test_tpl, **context))
     else:
-        # single-solution scaffold
+        # single-solution scaffold (consolidated file)
         solution_tpl = ROOT / "templates" / "solution.py.tpl"
-        (base / "solution.py").write_text(render(solution_tpl, **context))
+        (base / "solutions.py").write_text(render(solution_tpl, **context))
 
         test_tpl = ROOT / "templates" / "test_solution.py.tpl"
         (base / "test_solution.py").write_text(render(test_tpl, **context))
@@ -81,7 +81,7 @@ def main() -> None:
         print(f"  - Edit {base/'solutions.py'} and add classes to ALL_SOLUTIONS")
         print(f"  - Edit tests in {base} matching 'test_*.py'")
     else:
-        print(f"  - Edit {base/'solution.py'} and {base/'test_solution.py'}")
+        print(f"  - Edit {base/'solutions.py'} and {base/'test_solution.py'}")
     print("  - Run: pytest -q")
 
 

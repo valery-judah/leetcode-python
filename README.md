@@ -23,7 +23,7 @@ code .
 Folders are created under `tasks/NNNN-slug/`. Each contains:
 
 - `README.md` with clarifying questions and plan checklist
-- `solution.py` starter
+- `solutions.py` starter (exports `Solution`, optionally `ALL_SOLUTIONS`)
 - `test_solution.py` scaffold
 
 CI, pre-commit, and VS Code configs are included.
@@ -50,7 +50,7 @@ This scaffolds a consolidated `tasks/0217-contains-duplicate/solutions.py` where
 - Python Test Explorer: Enabled for pytest; discovery is configured in `.vscode/settings.json`.
 
 Notes on multi-variant tests:
-- Tests will first look for `solutions.py` and read `ALL_SOLUTIONS` to parametrize variants. If absent, they fall back to `variants.py` or legacy `solutions/*.py` modules.
+- Tests load `solutions.py` and read `ALL_SOLUTIONS` to parametrize variants. If `ALL_SOLUTIONS` is absent, they will use a single exported `Solution` class from `solutions.py`.
 
 Key configs:
 

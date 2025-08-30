@@ -19,8 +19,9 @@ This document outlines a standardized TDD workflow for solving LeetCode problems
 
 ## 3. Implement the Solution
 
-- Single-solution flow: open `tasks/<problem-slug>/solution.py`.
-- Multi-variant flow: open `tasks/<problem-slug>/solutions.py` and add one or more classes implementing `solve(...)`. List them in `ALL_SOLUTIONS = [...]` so tests will parametrize across variants. Optionally set `Solution = <DefaultClass>`.
+- Open `tasks/<problem-slug>/solutions.py`.
+- Single solution: implement `Solution.solve(...)`.
+- Multiple variants: add classes implementing `solve(...)` and list them in `ALL_SOLUTIONS = [...]`. Optionally set `Solution = <DefaultClass>`.
 - **Implement the `solve` method**: Write the code to solve the problem, focusing on a clean and efficient implementation.
 - **Add Docstrings**: Document the solution's approach, arguments, and return value.
 
