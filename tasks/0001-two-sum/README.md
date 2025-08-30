@@ -31,7 +31,7 @@ This approach avoids the need for a nested loop, which would result in an O(n^2)
 
 ## Checklist
 
-- [ ] Restate problem
+- [v] Restate problem
 - [ ] Small example walkthrough
 - [ ] Choose DS/algorithm
 - [ ] Dry-run core loop
