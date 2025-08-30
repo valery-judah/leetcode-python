@@ -58,7 +58,7 @@ def main() -> None:
 
     if args.multi:
         # multi-solution scaffold (consolidated file in task root)
-        variant_tpl = ROOT / "templates" / "solution_variant.py.tpl"
+        variant_tpl = ROOT / "templates" / "solutions_multi.py.tpl"
         (base / "solutions.py").write_text(render(variant_tpl, **context))
 
         # discovery test with parametrized variants
