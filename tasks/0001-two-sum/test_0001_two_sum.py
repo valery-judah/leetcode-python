@@ -29,7 +29,9 @@ def solution():
         ("zero", [0, 4, 3, 0], 0, [0, 3]),
     ],
 )
-def test_solve(solution, label: str, nums: list[int], target: int, expected: list[int], run_summary):
+def test_solve(
+    solution, label: str, nums: list[int], target: int, expected: list[int], run_summary
+):
     """
     Tests the solve method with various inputs.
 
@@ -41,4 +43,3 @@ def test_solve(solution, label: str, nums: list[int], target: int, expected: lis
     ok = isinstance(result, list) and len(result) == 2 and sorted(result) == sorted(expected)
     run_summary[solution.__class__.__name__].append((label, ok))
     assert ok
-

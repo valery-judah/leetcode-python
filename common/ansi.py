@@ -47,4 +47,3 @@ def format_table(headers: list[str], rows: list[list[str]]) -> list[str]:
     for r in rows:
         out.append(fmt_row(r))
     return out
-

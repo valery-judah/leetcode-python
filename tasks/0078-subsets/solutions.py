@@ -1,9 +1,8 @@
-
 """
 Problem 78: Subsets
 https://leetcode.com/problems/subsets/
 Difficulty: medium
-Tags: 
+Tags:
 """
 
 from __future__ import annotations
@@ -63,8 +62,12 @@ TEST_CASES: list[tuple[str, list[int], list[list[int]]]] = [
         [1, 2, 3],
         [
             [],
-            [1], [2], [3],
-            [1, 2], [1, 3], [2, 3],
+            [1],
+            [2],
+            [3],
+            [1, 2],
+            [1, 3],
+            [2, 3],
             [1, 2, 3],
         ],
     ),
@@ -76,8 +79,12 @@ TEST_CASES: list[tuple[str, list[int], list[list[int]]]] = [
         [3, 1, 2],
         [
             [],
-            [1], [2], [3],
-            [1, 2], [1, 3], [2, 3],
+            [1],
+            [2],
+            [3],
+            [1, 2],
+            [1, 3],
+            [2, 3],
             [1, 2, 3],
         ],
     ),
@@ -86,8 +93,12 @@ TEST_CASES: list[tuple[str, list[int], list[list[int]]]] = [
         [-1, 0, 1],
         [
             [],
-            [-1], [0], [1],
-            [-1, 0], [-1, 1], [0, 1],
+            [-1],
+            [0],
+            [1],
+            [-1, 0],
+            [-1, 1],
+            [0, 1],
             [-1, 0, 1],
         ],
     ),

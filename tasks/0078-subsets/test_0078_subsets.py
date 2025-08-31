@@ -14,7 +14,9 @@ S = S_fixture_for_this_dir(__file__)
 norm = norm_subsets
 
 
-@pytest.mark.parametrize(("label", "nums", "expected"), cases_from_solutions(__file__, "TEST_CASES"))
+@pytest.mark.parametrize(
+    ("label", "nums", "expected"), cases_from_solutions(__file__, "TEST_CASES")
+)
 def test_subsets_small(S, label: str, nums: list[int], expected: list[list[int]], run_summary):
     sol = S()
     got = sol.solve(nums)
@@ -35,4 +37,3 @@ def test_counts_and_uniqueness(S, label: str, nums: list[int], run_summary):
     ok = ok_count and ok_unique and [] in got
     run_summary[S.__name__].append((label, ok))
     assert ok
-

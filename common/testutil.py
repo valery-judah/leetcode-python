@@ -77,6 +77,7 @@ SUBSETS_COUNT_CASES: list[tuple[str, list[int]]] = [
     ("n10_count", list(range(10))),
 ]
 
+
 def subset_count_cases(*sizes: int) -> list[tuple[str, list[int]]]:
     """Generate (label, nums) cases for subset count/uniqueness checks.
 
