@@ -41,34 +41,20 @@ def pytest_terminal_summary(terminalreporter):  # type: ignore[no-untyped-def]
     terminalreporter.write_line("")
     terminalreporter.write_line("=== Results Matrix ===")
 
-    use_solutions_as_columns = len(solutions) <= 4
+    # Always render with solutions as columns, cases as rows
     rows: list[list[str]] = []
-    if use_solutions_as_columns:
-        headers = ["Case"] + solutions
-        for lab in labels:
-            row = [lab]
-            for sol in solutions:
-                ok = by_label.get(sol, {}).get(lab)
-                if ok is True:
-                    row.append(f"{GREEN}PASS{RESET}")
-                elif ok is False:
-                    row.append(f"{RED}FAIL{RESET}")
-                else:
-                    row.append("-")
-            rows.append(row)
-    else:
-        headers = ["Solution"] + labels
+    headers = ["Case"] + solutions
+    for lab in labels:
+        row = [lab]
         for sol in solutions:
-            row = [sol]
-            for lab in labels:
-                ok = by_label.get(sol, {}).get(lab)
-                if ok is True:
-                    row.append(f"{GREEN}PASS{RESET}")
-                elif ok is False:
-                    row.append(f"{RED}FAIL{RESET}")
-                else:
-                    row.append("-")
-            rows.append(row)
+            ok = by_label.get(sol, {}).get(lab)
+            if ok is True:
+                row.append(f"{GREEN}PASS{RESET}")
+            elif ok is False:
+                row.append(f"{RED}FAIL{RESET}")
+            else:
+                row.append("-")
+        rows.append(row)
 
     for line in format_table(headers, rows):
         terminalreporter.write_line(line)
@@ -89,4 +75,3 @@ def pytest_terminal_summary(terminalreporter):  # type: ignore[no-untyped-def]
                 terminalreporter.write_line(
                     f"- {RED}{sol}{RESET}:{BOLD}{RED}{bad}/{total} failed{RESET} -> {labs}"
                 )
-

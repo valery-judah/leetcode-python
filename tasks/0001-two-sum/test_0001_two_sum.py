@@ -41,3 +41,4 @@ def test_solve(solution, label: str, nums: list[int], target: int, expected: lis
     ok = isinstance(result, list) and len(result) == 2 and sorted(result) == sorted(expected)
     run_summary[solution.__class__.__name__].append((label, ok))
     assert ok
+

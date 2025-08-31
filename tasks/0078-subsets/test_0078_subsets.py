@@ -35,3 +35,4 @@ def test_counts_and_uniqueness(S, label: str, nums: list[int], run_summary):
     ok = ok_count and ok_unique and [] in got
     run_summary[S.__name__].append((label, ok))
     assert ok
+

@@ -51,7 +51,6 @@ See also: `docs/interview-framework.md`.
   assert ok
   ```
 
-- If more than 4 solutions exist, the table flips to list solutions as rows.
 
 ## Test Cases Source
 - Define canonical test cases in your `solutions.py` so tests stay minimal.

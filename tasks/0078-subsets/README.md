@@ -50,5 +50,3 @@ See also: `docs/interview-framework.md`.
   run_summary[S.__class__.__name__].append((label, ok))
   assert ok
   ```
-
-- If more than 4 solutions exist, the table flips to list solutions as rows.

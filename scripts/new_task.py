@@ -71,7 +71,8 @@ def main() -> None:
         (base / "solutions.py").write_text(render(solution_tpl, **context))
 
         test_tpl = ROOT / "templates" / "test_solution.py.tpl"
-        (base / "test_solution.py").write_text(render(test_tpl, **context))
+        test_name = f"test_{args.number:04d}_{slug.replace('-', '_')}.py"
+        (base / test_name).write_text(render(test_tpl, **context))
 
     # no package marker; tests load solution via runpy, not imports
 
