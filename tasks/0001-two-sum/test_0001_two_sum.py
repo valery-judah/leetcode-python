@@ -1,45 +1,23 @@
-import runpy
-from pathlib import Path
-
 import pytest
 
+from common.testutil import S_fixture_for_this_dir, cases_from_solutions
 
-def _load_solution_cls():
-    ns = runpy.run_path(str(Path(__file__).with_name("solutions.py")))
-    # Prefer ALL_SOLUTIONS if present, otherwise single Solution class
-    if "ALL_SOLUTIONS" in ns:
-        # Use the first as default for this single-solution style test
-        return ns["ALL_SOLUTIONS"][0]
-    return ns["Solution"]
-
-
-@pytest.fixture
-def solution():
-    """Provides a Solution instance for each test case without importing the module."""
-    return _load_solution_cls()()
+# Primary solution class (first in ALL_SOLUTIONS)
+S = S_fixture_for_this_dir(__file__)
 
 
 @pytest.mark.parametrize(
     ("label", "nums", "target", "expected"),
-    [
-        ("base", [2, 7, 11, 15], 9, [0, 1]),
-        ("mid", [3, 2, 4], 6, [1, 2]),
-        ("dupes", [3, 3], 6, [0, 1]),
-        ("negative", [-10, 7, 19, 15], 9, [0, 2]),
-        ("zero", [0, 4, 3, 0], 0, [0, 3]),
-    ],
+    cases_from_solutions(__file__, "TEST_CASES"),
 )
-def test_solve(
-    solution, label: str, nums: list[int], target: int, expected: list[int], run_summary
-):
-    """
-    Tests the solve method with various inputs.
+def test_solve(S, label: str, nums: list[int], target: int, expected: list[int], run_summary):
+    """Validates two-sum against canonical examples from solutions.py.
 
-    The problem statement allows returning indices in any order, so we sort
-    both the result and the expected list to ensure the comparison is
-    order-independent.
+    The problem allows returning indices in any order, so we compare sorted
+    indices.
     """
+    solution = S()
     result = solution.solve(nums, target)
     ok = isinstance(result, list) and len(result) == 2 and sorted(result) == sorted(expected)
-    run_summary[solution.__class__.__name__].append((label, ok))
+    run_summary[S.__name__].append((label, ok))
     assert ok
