@@ -1,2 +1,5 @@
 sortedcontainers
-
+mkdocs
+mkdocs-material
+mkdocstrings[python]
+griffe

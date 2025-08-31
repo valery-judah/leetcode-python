@@ -1,0 +1,43 @@
+site_name: LeetCode Python Workspace
+site_url: https://valery-judah.github.io/leetcode-python-project/
+repo_url: https://github.com/valery-judah/leetcode-python-project
+repo_name: valery-judah/leetcode-python-project
+
+theme:
+  name: material
+  features:
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths:
+            - .
+          options:
+            show_source: true
+            show_root_heading: true
+            docstring_style: google
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - codehilite
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - attr_list
+
+nav:
+  - Home: index.md
+  - Problems:
+      - "217. Contains Duplicate": reference/0217-contains-duplicate.md
+  - Reference:
+      - Shims: reference/shims.md
+  - Coverage: coverage/index.html

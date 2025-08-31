@@ -5,6 +5,7 @@ import os
 import re
 import shutil
 from dataclasses import dataclass
+import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -66,6 +67,26 @@ def ensure_empty_dir(path: Path) -> None:
 
 
 def build_site(tasks: list[TaskMeta]) -> None:
+    """Build the Pages site.
+
+    If an MkDocs config is present at the repo root (mkdocs.yml), prefer
+    building the MkDocs site. Otherwise, fall back to generating a minimal
+    static index with coverage using the legacy builder below.
+    """
+    mkdocs_yml = ROOT / "mkdocs.yml"
+    if mkdocs_yml.exists():
+        # Build MkDocs site into ./site
+        # Use --clean to ensure old artifacts are removed
+        subprocess.run(["mkdocs", "build", "--clean"], check=True)
+        # Copy coverage into /site/coverage if present
+        if HTMLCOV_DIR.exists():
+            dest = SITE_DIR / "coverage"
+            if dest.exists():
+                shutil.rmtree(dest)
+            shutil.copytree(HTMLCOV_DIR, dest)
+        return
+
+    # Legacy minimal site builder (no MkDocs)
     ensure_empty_dir(SITE_DIR)
     # Copy coverage under /coverage if present
     if HTMLCOV_DIR.exists():

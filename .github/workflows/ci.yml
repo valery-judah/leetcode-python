@@ -76,8 +76,13 @@ jobs:
           if-no-files-found: ignore
 
       - name: Build static site
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
           python scripts/build_pages.py
+
+      - name: Configure Pages
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: actions/configure-pages@v5
 
       - name: Upload Pages artifact
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
