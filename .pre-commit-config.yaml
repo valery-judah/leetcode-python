@@ -1,16 +1,19 @@
 
 repos:
-  - repo: https://github.com/psf/black
-    rev: 24.4.2
-    hooks:
-      - id: black
-  - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.6.9
-    hooks:
-      - id: ruff
-      - id: ruff-format
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.6.0
     hooks:
       - id: end-of-file-fixer
       - id: trailing-whitespace
+  - repo: local
+    hooks:
+      - id: make-fmt
+        name: make fmt (ruff --fix, black .)
+        entry: make fmt
+        language: system
+        pass_filenames: false
+      - id: make-lint
+        name: make lint (ruff check, black --check)
+        entry: make lint
+        language: system
+        pass_filenames: false
