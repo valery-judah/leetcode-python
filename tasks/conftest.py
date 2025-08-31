@@ -106,7 +106,8 @@ def pytest_terminal_summary(terminalreporter):  # type: ignore[no-untyped-def]
                 RESETC = RESET
                 terminalreporter.write_line("")
                 terminalreporter.write_line(
-                    f"Coverage (scoped): {color}{pct:.1f}%{RESETC} ({total_stmts - total_miss}/{total_stmts} lines)"
+                    f"Coverage (scoped): {color}{pct:.1f}%{RESETC} "
+                    f"({total_stmts - total_miss}/{total_stmts} lines)"
                 )
         except Exception:
             pass

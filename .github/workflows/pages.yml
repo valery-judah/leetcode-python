@@ -34,13 +34,17 @@ jobs:
       - name: Generate coverage HTML
         run: make cov-html
 
+      - name: Build site index
+        run: |
+          python scripts/build_pages.py
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload coverage artifact
+      - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: htmlcov
+          path: site
 
   deploy:
     needs: build
@@ -52,4 +56,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
