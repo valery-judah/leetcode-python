@@ -6,4 +6,3 @@ Task folders are named with numeric prefixes and hyphens (e.g., `0217-contains-d
 - Usage in docs: `::: docs.shims.contains_duplicate`
 
 This keeps the repo’s task layout intact while enabling API documentation.
-

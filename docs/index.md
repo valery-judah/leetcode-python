@@ -18,4 +18,3 @@ mkdocs serve
 ```
 
 Deploy (via GitHub Actions → Pages) is already configured in the repo CI guidance.
-

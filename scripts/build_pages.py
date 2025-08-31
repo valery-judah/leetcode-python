@@ -98,21 +98,21 @@ def build_site(tasks: list[TaskMeta]) -> None:
     (assets / "style.css").write_text(
         """
         :root { --fg:#222; --muted:#666; --accent:#0b6; --chip:#eef; }
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif; 
-            margin: 2rem auto; 
-            max-width: 900px; 
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif;
+            margin: 2rem auto;
+            max-width: 900px;
             color: var(--fg);
-        } 
+        }
         a { color: var(--accent); text-decoration: none; }
         header h1 { margin: 0; }
         .muted { color: var(--muted); }
         .chips { display:flex; flex-wrap:wrap; gap:.5rem; margin:.5rem 0 1rem; }
-        .chip { 
-            background: var(--chip); 
-            padding:.2rem .5rem; 
-            border-radius: .75rem; 
-            font-size: .9rem; 
+        .chip {
+            background: var(--chip);
+            padding:.2rem .5rem;
+            border-radius: .75rem;
+            font-size: .9rem;
         }
         table { border-collapse: collapse; width: 100%; }
         th, td { border-bottom: 1px solid #ddd; padding: .5rem; text-align: left; }

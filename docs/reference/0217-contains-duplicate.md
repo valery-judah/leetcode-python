@@ -14,4 +14,3 @@ Related write-up: `tasks/0217-contains-duplicate/README.md`
       show_source: true
       show_root_heading: true
       heading_level: 2
-

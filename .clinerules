@@ -152,8 +152,8 @@ globs:
 ### Add pattern to patterns.md
 ```md
 ## <Pattern Name>
-**Use when**: <conditions>  
-**Idea**: <1–2 lines>  
+**Use when**: <conditions>
+**Idea**: <1–2 lines>
 **Template**:
 ```python
 def solve(...):

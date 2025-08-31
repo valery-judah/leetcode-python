@@ -3,7 +3,7 @@
 
 **URL**: https://leetcode.com/problems/subsets/
 **Difficulty**: medium
-**Tags**: 
+**Tags**:
 
 ## Clarifying questions
 - Input shape, ranges, constraints?

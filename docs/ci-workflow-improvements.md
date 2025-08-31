@@ -160,4 +160,3 @@ jobs:
 - Add `test-ci` and `type-ci` targets to `Makefile`.
 - Refactor `.github/workflows/ci.yml` using the sketch above; keep behavior identical for non‑deploy PRs.
 - Pin actions to SHAs in the refactor PR; follow up to tune thresholds/timeouts as needed.
-

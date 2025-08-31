@@ -1,17 +1,17 @@
 
 **Action Plan:**
 
-1. **Refine and Finalize the Algorithm and Checklist**:  
+1. **Refine and Finalize the Algorithm and Checklist**:
    - Develop a comprehensive algorithm and checklist for solving coding tasks both at home and during interviews.
 
-2. **Practice Asking Clarifying Questions**:  
-   - Focus on identifying and formulating clarifying questions during task-solving.  
+2. **Practice Asking Clarifying Questions**:
+   - Focus on identifying and formulating clarifying questions during task-solving.
    - Make it a habit to think about relevant clarifying questions for each step of the process.
 
-3. **Create an Interview Process Checklist**:  
+3. **Create an Interview Process Checklist**:
    - Draft a structured checklist for approaching tasks in interviews to ensure a clear and consistent problem-solving methodology.
 
-4. **Simulate Clarifying Question Scenarios**:  
+4. **Simulate Clarifying Question Scenarios**:
    - Take a few sample interview questions and generate potential clarifying questions for each. This will help you prepare for real-world scenarios and improve your ability to think critically under pressure.
 
 prepare list of tricks/tips to find more optimal solution. Like, you can use an auxiliary data structure..
