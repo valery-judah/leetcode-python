@@ -8,8 +8,6 @@ Tags:
 
 from __future__ import annotations
 
-from typing import List
-
 
 class Backtracking:
     def solve(self, nums: list[int]) -> list[list[int]]:
@@ -55,6 +53,47 @@ Solution = Backtracking
 
 # Explicit multi-variant export for discovery tests
 ALL_SOLUTIONS = [Backtracking, Iterative, Bitmask]
+
+
+# Optional: declare canonical small test cases here for reuse by tests
+# Each item: (label, nums, expected_subsets)
+TEST_CASES: list[tuple[str, list[int], list[list[int]]]] = [
+    (
+        "example_1",
+        [1, 2, 3],
+        [
+            [],
+            [1], [2], [3],
+            [1, 2], [1, 3], [2, 3],
+            [1, 2, 3],
+        ],
+    ),
+    ("empty", [], [[]]),
+    ("single", [0], [[], [0]]),
+    ("two", [1, 2], [[], [1], [2], [1, 2]]),
+    (
+        "unsorted",
+        [3, 1, 2],
+        [
+            [],
+            [1], [2], [3],
+            [1, 2], [1, 3], [2, 3],
+            [1, 2, 3],
+        ],
+    ),
+    (
+        "negatives",
+        [-1, 0, 1],
+        [
+            [],
+            [-1], [0], [1],
+            [-1, 0], [-1, 1], [0, 1],
+            [-1, 0, 1],
+        ],
+    ),
+]
+
+# Property-based count/uniqueness cases have been moved to common.testutil
 
 
 if __name__ == "__main__":

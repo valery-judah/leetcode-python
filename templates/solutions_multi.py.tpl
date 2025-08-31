@@ -13,6 +13,13 @@ Solution = Baseline
 # Explicit multi-export for test discovery
 ALL_SOLUTIONS = [Baseline]
 
+# Canonical small test cases for this task, imported by tests via
+# common.testutil.cases_from_solutions(__file__, "TEST_CASES").
+# Each entry: (label, args_tuple, kwargs_dict)
+TEST_CASES = [
+    ("example", (), {}),  # replace with concrete inputs
+]
+
 
 if __name__ == "__main__":
     # Convenience: running this file executes tests for its task folder.

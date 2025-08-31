@@ -1,18 +1,17 @@
 from __future__ import annotations
 
 from collections import defaultdict
-from typing import Dict, List, Tuple
 
 import pytest
 
-from common.ansi import RED, GREEN, BOLD, RESET, format_table
+from common.ansi import BOLD, GREEN, RED, RESET, format_table
 
 # Shared summary across tests (opt-in via `run_summary` fixture)
-_RUN_SUMMARY: Dict[str, List[Tuple[str, bool]]] = defaultdict(list)
+_RUN_SUMMARY: dict[str, list[tuple[str, bool]]] = defaultdict(list)
 
 
 @pytest.fixture(scope="session")
-def run_summary() -> Dict[str, List[Tuple[str, bool]]]:
+def run_summary() -> dict[str, list[tuple[str, bool]]]:
     """Session-scoped aggregator mapping solution name -> list of (case_label, pass?).
 
     Tests can append to this to participate in the matrix summary.
@@ -27,9 +26,9 @@ def pytest_terminal_summary(terminalreporter):  # type: ignore[no-untyped-def]
     solutions = sorted(_RUN_SUMMARY.keys())
 
     # Preserve first-seen order of case labels across solutions
-    labels: List[str] = []
+    labels: list[str] = []
     seen = set()
-    by_label: Dict[str, Dict[str, bool]] = {}
+    by_label: dict[str, dict[str, bool]] = {}
     for sol in solutions:
         mapping = {label: ok for label, ok in _RUN_SUMMARY[sol]}
         by_label[sol] = mapping
@@ -43,7 +42,7 @@ def pytest_terminal_summary(terminalreporter):  # type: ignore[no-untyped-def]
     terminalreporter.write_line("=== Results Matrix ===")
 
     use_solutions_as_columns = len(solutions) <= 4
-    rows: List[List[str]] = []
+    rows: list[list[str]] = []
     if use_solutions_as_columns:
         headers = ["Case"] + solutions
         for lab in labels:

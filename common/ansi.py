@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import re
-from typing import List
 
 # Basic ANSI codes
 RED = "\x1b[31m"
@@ -26,7 +25,7 @@ def ljust_ansi(s: str, width: int) -> str:
     return s + (" " * (width - visible))
 
 
-def format_table(headers: List[str], rows: List[List[str]]) -> List[str]:
+def format_table(headers: list[str], rows: list[list[str]]) -> list[str]:
     """Render a pipe-separated table aligned even with ANSI colors.
 
     Returns a list of lines ready to print.
@@ -39,7 +38,7 @@ def format_table(headers: List[str], rows: List[List[str]]) -> List[str]:
             else:
                 col_widths.append(vis_len(cell))
 
-    def fmt_row(cells: List[str]) -> str:
+    def fmt_row(cells: list[str]) -> str:
         parts = [ljust_ansi(cells[i], col_widths[i]) for i in range(len(col_widths))]
         return " | ".join(parts)
 
