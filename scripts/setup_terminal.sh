@@ -17,8 +17,34 @@ if command -v conda >/dev/null 2>&1; then
   fi
 fi
 
-# Find a Python interpreter that is >= 3.11 (prefer 3.12/3.11),
-# and avoid hard-failing when not present so the terminal still opens.
+# Ensure Homebrew is on PATH so user-level tools (e.g., fzf) resolve in VS Code
+if ! command -v brew >/dev/null 2>&1; then
+  if [ -x "/opt/homebrew/bin/brew" ]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)" 2>/dev/null || true
+  elif [ -x "/usr/local/bin/brew" ]; then
+    eval ""$(/usr/local/bin/brew shellenv)"" 2>/dev/null || true
+  fi
+fi
+
+# Prefer an existing project venv if present and compatible. Only fall back
+# to locating a system Python when we need to create/recreate the venv.
+
+# If an existing venv is present and is >= 3.11, just activate it and exit.
+if [ -x "venv/bin/python" ]; then
+  VENV_VER=$(venv/bin/python -c 'import sys; print(f"{sys.version_info.major}.{sys.version_info.minor}")' 2>/dev/null || echo "")
+  if [ -n "$VENV_VER" ]; then
+    VMAJOR=${VENV_VER%%.*}
+    VMINOR=${VENV_VER#*.}
+    if [ "$VMAJOR" -gt 3 ] || { [ "$VMAJOR" -eq 3 ] && [ "$VMINOR" -ge 11 ]; }; then
+      # Activate and open an interactive shell
+      source venv/bin/activate
+      echo "Using $(python --version)"
+      exec "$SHELL" -il
+    fi
+  fi
+fi
+
+# Find a Python interpreter that is >= 3.11 (prefer 3.12/3.11)
 
 find_python_ge_311() {
   for candidate in python3.12 python3.11 python3; do
@@ -40,11 +66,16 @@ find_python_ge_311() {
 
 REQUIRED_PY=$(find_python_ge_311)
 if [ -z "$REQUIRED_PY" ]; then
-  echo "Python >=3.11 is required but not found on PATH." >&2
+  echo "Python >=3.11 is required to (re)create the venv, but no system Python was found on PATH." >&2
+  if [ -x "venv/bin/python" ]; then
+    echo "Existing venv found; starting shell without re-creation." >&2
+    source venv/bin/activate 2>/dev/null || true
+    exec "$SHELL" -il
+  fi
   echo "- macOS/Homebrew: brew install python@3.11 (or 3.12)" >&2
   echo "- Ensure brew is on PATH (e.g., echo 'eval \"\$(brew shellenv)\"' >> ~/.zprofile)" >&2
   echo "Continuing without venv activation so the terminal still opens..." >&2
-  exec "$SHELL"
+  exec "$SHELL" -il
 fi
 
 create_venv() {
@@ -69,16 +100,11 @@ fi
 source venv/bin/activate
 echo "Using $(python --version)"
 
-# 4) Install/update dependencies using the Makefile target
-echo "Installing dependencies..."
+# 4) Install/update dependencies using the Makefile target (best-effort)
 if command -v make >/dev/null 2>&1; then
+  echo "Installing dependencies..."
   make install || echo "Dependency install failed (continuing). Run 'make install' manually if needed."
-else
-  echo "'make' not found; skipping dependency installation."
 fi
 
-echo "Environment setup complete."
-
-# The final line of this script should be to execute an interactive login shell,
-# otherwise the terminal will close after running the script.
+echo "Environment setup complete. Opening shell..."
 exec "$SHELL" -il
