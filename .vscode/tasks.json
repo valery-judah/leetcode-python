@@ -8,6 +8,41 @@
       "default": "two-sum"
     },
     {
+      "label": "Coverage: Badge",
+      "type": "shell",
+      "command": "make badge",
+      "options": {
+        "shell": { "executable": "/bin/bash", "args": ["-lc"] }
+      },
+      "presentation": {
+        "reveal": "silent",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": false
+      },
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "Coverage: HTML (This Folder)",
+      "type": "shell",
+      "command": "${config:python.defaultInterpreterPath}",
+      "args": ["-m", "pytest", "-q", "${fileDirname}", "--cov=${fileDirname}", "--cov-report=html"],
+      "options": {
+        "shell": { "executable": "/bin/bash", "args": ["-lc"] }
+      },
+      "presentation": {
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": false
+      },
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
       "id": "number",
       "type": "promptString",
       "description": "Problem number",
@@ -35,7 +70,7 @@
       "label": "Test",
       "type": "shell",
       "command": "${config:python.defaultInterpreterPath}",
-      "args": ["-m", "pytest", "-q"],
+      "args": ["-m", "pytest", "-q", "--cov=tasks", "--cov-report="],
       "options": {
         "shell": { "executable": "/bin/bash", "args": ["-lc"] },
         "env": {
@@ -56,7 +91,7 @@
       "label": "Test: Active File",
       "type": "shell",
       "command": "${config:python.defaultInterpreterPath}",
-      "args": ["-m", "pytest", "-q", "${relativeFile}"],
+      "args": ["-m", "pytest", "-q", "${relativeFile}", "--cov=${fileDirname}", "--cov-report="],
       "options": {
         "shell": { "executable": "/bin/bash", "args": ["-lc"] },
         "env": {
@@ -77,7 +112,7 @@
       "label": "Test: This Folder",
       "type": "shell",
       "command": "${config:python.defaultInterpreterPath}",
-      "args": ["-m", "pytest", "-q", "${fileDirname}"],
+      "args": ["-m", "pytest", "-q", "${fileDirname}", "--cov=${fileDirname}", "--cov-report="],
       "options": {
         "shell": { "executable": "/bin/bash", "args": ["-lc"] },
         "env": {
@@ -98,7 +133,7 @@
       "label": "Test: Current Dir",
       "type": "shell",
       "command": "${config:python.defaultInterpreterPath}",
-      "args": ["-m", "pytest", "-q", "${fileDirname}"],
+      "args": ["-m", "pytest", "-q", "${fileDirname}", "--cov=${fileDirname}", "--cov-report="],
       "options": {
         "shell": { "executable": "/bin/bash", "args": ["-lc"] },
         "env": {

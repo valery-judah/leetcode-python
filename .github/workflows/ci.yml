@@ -10,6 +10,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -25,3 +27,21 @@ jobs:
         run: make type
       - name: Test
         run: make test
+      - name: Coverage HTML
+        run: make cov-html
+      - name: Generate coverage badge
+        run: make badge
+      - name: Upload coverage artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-artifacts
+          path: |
+            coverage.xml
+            htmlcov
+            docs/badges/coverage.svg
+      - name: Commit badge (main only)
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore(ci): update coverage badge'
+          file_pattern: docs/badges/coverage.svg

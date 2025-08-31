@@ -1,6 +1,8 @@
 
 # LeetCode Python Workspace
 
+![Coverage](docs/badges/coverage.svg)
+
 Minimal, test-first workflow for coding interview practice in VS Code.
 
 Baseline runtime: Python 3.11 (matches LeetCode’s runtime).

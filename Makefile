@@ -1,5 +1,5 @@
 
-.PHONY: install linters precommit test lint type fmt ci
+.PHONY: install linters precommit test lint type fmt ci badge cov-html
 
 # Prefer project venv Python, then python3, then python
 PYTHON := $(shell if [ -x "./venv/bin/python" ]; then echo "./venv/bin/python"; \
@@ -17,7 +17,12 @@ precommit:
 	pre-commit install
 
 test:
-	PYTHONDONTWRITEBYTECODE=1 $(PYTHON) -m pytest -q
+	PYTHONDONTWRITEBYTECODE=1 $(PYTHON) -m pytest -q --cov=tasks --cov-report=term-missing --cov-report=xml:coverage.xml
+
+badge:
+	@mkdir -p docs/badges
+	PYTHONWARNINGS="ignore::UserWarning" genbadge coverage -i coverage.xml -o docs/badges/coverage.svg \
+		|| echo "Install dev deps first: make install"
 
 lint:
 	ruff check .
@@ -39,4 +44,7 @@ fmt-legacy:
 type:
 	mypy tasks || true  # tasks may contain stubs early
 
-ci: test lint type
+ci: test badge lint type
+
+cov-html:
+	PYTHONDONTWRITEBYTECODE=1 $(PYTHON) -m pytest -q --cov=tasks --cov-report=html
