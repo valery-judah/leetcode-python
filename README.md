@@ -66,6 +66,7 @@ Key configs:
 CI:
 
 - GitHub Actions runs lint, type check, and tests on push/PR (`.github/workflows/ci.yml`).
+- GitHub Pages: on pushes to `main`, CI builds `site/` (includes coverage under `/coverage`) and deploys it via Pages. Enable once in Settings → Pages → Build and deployment → Source: GitHub Actions. Site URL: `https://<your-username>.github.io/<this-repo>/` (or see Actions → Deployments → Pages for the exact link).
 
 ## Project Architecture
 

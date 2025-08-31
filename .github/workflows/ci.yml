@@ -1,47 +1,89 @@
-
 name: CI
 
 on:
   push:
     branches: [ main ]
   pull_request:
-    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  build:
+  ci:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11 (with pip cache)
+        uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
-      - name: Install
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements-dev.txt
-      - name: Lint
-        run: make lint
-      - name: Type check
-        run: make type
-      - name: Test
+          python-version: '3.11'
+          cache: 'pip'
+          cache-dependency-path: 'requirements-dev.txt'
+
+      - name: Restore tool caches (mypy/ruff/pytest)
+        uses: actions/cache@v4
+        with:
+          path: |
+            .mypy_cache
+            .ruff_cache
+            .pytest_cache
+          key: tools-${{ runner.os }}-py3.11-${{ hashFiles('pyproject.toml') }}
+          restore-keys: |
+            tools-${{ runner.os }}-py3.11-
+
+      - name: Install dev dependencies
+        run: make install
+
+      - name: Run tests (with coverage)
         run: make test
-      - name: Coverage HTML
-        run: make cov-html
+
+      - name: Generate coverage HTML (no re-run)
+        run: python -m coverage html
+
       - name: Generate coverage badge
         run: make badge
+
+      - name: Lint
+        run: make lint
+
+      - name: Type check
+        run: make type
+
       - name: Upload coverage artifacts
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: coverage-artifacts
+          name: coverage
           path: |
             coverage.xml
-            htmlcov
             docs/badges/coverage.svg
-      - name: Commit badge (main only)
+            htmlcov
+          if-no-files-found: ignore
+
+      - name: Build static site
+        run: |
+          python scripts/build_pages.py
+
+      - name: Upload Pages artifact
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: actions/upload-pages-artifact@v3
         with:
-          commit_message: 'chore(ci): update coverage badge'
-          file_pattern: docs/badges/coverage.svg
+          path: site
+
+      - name: Deploy to GitHub Pages
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        id: deployment
+        uses: actions/deploy-pages@v4
