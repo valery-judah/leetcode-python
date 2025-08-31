@@ -31,7 +31,9 @@ jobs:
         with:
           python-version: '3.11'
           cache: 'pip'
-          cache-dependency-path: 'requirements-dev.txt'
+          cache-dependency-path: |
+            requirements.txt
+            requirements-dev.txt
 
       - name: Restore tool caches (mypy/ruff/pytest)
         uses: actions/cache@v4
@@ -44,7 +46,7 @@ jobs:
           restore-keys: |
             tools-${{ runner.os }}-py3.11-
 
-      - name: Install dev dependencies
+      - name: Install dependencies
         run: make install
 
       - name: Run tests (with coverage)

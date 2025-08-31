@@ -8,7 +8,7 @@ PYTHON := $(shell if [ -x "./venv/bin/python" ]; then echo "./venv/bin/python"; 
                   else echo python; fi)
 
 install:
-	$(PYTHON) -m pip install -r requirements-dev.txt
+	$(PYTHON) -m pip install -r requirements.txt -r requirements-dev.txt
 
 linters:  # alias
 	make lint
