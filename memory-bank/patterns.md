@@ -1,9 +1,14 @@
 # Solution Patterns
 
+There is a list of patterns that we can apply to problem.
+
 ## Hash Map for Complements
 
 **Use when**: You need to find two numbers in a collection that sum up to a target value.
-**Idea**: Use a hash map to store the numbers you've seen and their indices. For each number, calculate its complement (target - number) and check if the complement is already in the hash map. This allows you to find a solution in a single pass.
+**Idea**: Use a hash map to store the numbers you've seen and their indices.
+For each number, calculate its complement (target - number) and check
+if the complement is already in the hash map. This allows you to find a solution
+in a single pass.
 **Template**:
 
 ```python
