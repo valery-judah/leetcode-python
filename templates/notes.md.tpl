@@ -38,4 +38,3 @@
 See also: `docs/interview-framework.md`.
 
 <!-- Template intentionally keeps test reporting and case source docs in main docs. -->
-

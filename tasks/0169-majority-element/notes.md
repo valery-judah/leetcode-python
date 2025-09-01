@@ -39,4 +39,4 @@ See also: `docs/interview-framework.md`.
 
 # Flow
 
-So, how can we start think about this problem? 
+So, how can we start think about this problem?
