@@ -36,23 +36,3 @@
 - [ ] Test edge cases
 
 See also: `docs/interview-framework.md`.
-
-## Test Matrix Reporter
-
-- Tests can opt into a colored PASS/FAIL matrix shown at the end of `pytest` by appending results to the shared `run_summary` fixture.
-- For each assertion, append a tuple of `(label, ok)` where `label` is a short case name and `ok` is a boolean.
-- Multi-solution tests should use the solution class name as the key. Example:
-
-  ```python
-  ok = S().solve(*args, **kwargs) == expected
-  run_summary[S.__name__].append((label, ok))
-  assert ok
-  ```
-
-- Single-solution tests (where `S` is an instance) should use the instance class name:
-
-  ```python
-  ok = S.solve(*args, **kwargs) == expected
-  run_summary[S.__class__.__name__].append((label, ok))
-  assert ok
-  ```
