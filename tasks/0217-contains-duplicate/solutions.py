@@ -1,3 +1,10 @@
+"""
+Problem 217: Contains Duplicate
+https://leetcode.com/problems/contains-duplicate/
+Difficulty: easy
+Tags: array,hash-set,sorting
+"""
+
 from __future__ import annotations
 
 
@@ -33,11 +40,30 @@ Solution = SetBased
 ALL_SOLUTIONS = [BruteForce, SetBased, Sorting]
 
 
+# Canonical small test cases for default generic tests
+# Each entry: (label, nums, expected)
+TEST_CASES: list[tuple[str, list[int], bool]] = [
+    ("dupe_simple", [1, 2, 3, 1], True),
+    ("no_dupe", [1, 2, 3, 4], False),
+    ("multi_dupes", [1, 1, 1, 3, 3, 4, 3, 2, 4, 2], True),
+    ("empty", [], False),
+    ("single", [5], False),
+    ("zeros", [0, 0], True),
+    ("negatives", [-1, -2, -1], True),
+]
+
+
 if __name__ == "__main__":
-    # Convenience: running this file executes tests for its task folder.
+    # Convenience: running this file executes the generic spec filtered to this task.
     import subprocess
     import sys
     from pathlib import Path
 
     task_dir = Path(__file__).parent
-    subprocess.run([sys.executable, "-m", "pytest", "-q", str(task_dir)], check=False)
+    root = task_dir.parent
+    task_name = task_dir.name
+    # Run the single generic spec, filtered to this task's params
+    subprocess.run(
+        [sys.executable, "-m", "pytest", "-q", str(root), "-k", task_name],
+        check=False,
+    )

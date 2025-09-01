@@ -37,8 +37,7 @@ class BruteForce:
 
 ALL_SOLUTIONS = [Solution, BruteForce]
 
-# Canonical small test cases consumed by tests via
-# common.testutil.cases_from_solutions(__file__, "TEST_CASES").
+# Canonical small test cases for default generic tests
 # Each entry: (label, nums, target, expected_indices)
 TEST_CASES: list[tuple[str, list[int], int, list[int]]] = [
     ("base", [2, 7, 11, 15], 9, [0, 1]),
@@ -56,28 +55,16 @@ TEST_CASES: list[tuple[str, list[int], int, list[int]]] = [
 
 
 if __name__ == "__main__":
-    # Convenience: running this file executes tests for its task folder.
+    # Convenience: running this file executes the generic spec filtered to this task.
     import subprocess
     import sys
     from pathlib import Path
 
     task_dir = Path(__file__).parent
-    # 1) Run example and equivalence tests quietly
+    root = task_dir.parent
+    task_name = task_dir.name
+    # Run the single generic spec, filtered to this task's params
     subprocess.run(
-        [sys.executable, "-m", "pytest", "-q", str(task_dir), "-k", "not properties"],
-        check=False,
-    )
-    # 2) Run property tests with verbose output and Hypothesis statistics
-    subprocess.run(
-        [
-            sys.executable,
-            "-m",
-            "pytest",
-            str(task_dir),
-            "-k",
-            "properties",
-            "-vv",
-            "--hypothesis-show-statistics",
-        ],
+        [sys.executable, "-m", "pytest", "-q", str(root), "-k", task_name],
         check=False,
     )

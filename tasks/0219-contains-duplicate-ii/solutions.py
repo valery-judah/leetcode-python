@@ -1,3 +1,10 @@
+"""
+Problem 219: Contains Duplicate II
+https://leetcode.com/problems/contains-duplicate-ii/
+Difficulty: easy
+Tags: array,hash-map,sliding-window
+"""
+
 from __future__ import annotations
 
 
@@ -21,11 +28,35 @@ class Solution:
 ALL_SOLUTIONS = [Solution]
 
 
+# Canonical small test cases for default generic tests
+# Each entry: (label, nums, k, expected)
+TEST_CASES: list[tuple[str, list[int], int, bool]] = [
+    ("basic_true", [1, 2, 3, 1], 3, True),
+    ("adjacent_dup", [1, 0, 1, 1], 1, True),
+    ("too_far", [1, 2, 3, 1, 2, 3], 2, False),
+    ("empty", [], 1, False),
+    ("single", [1], 1, False),
+    ("k_zero", [1, 2, 1], 0, False),
+    ("within_k", [99, 1, 99], 2, True),
+    ("negatives", [-1, -2, -3, -1], 3, True),
+    ("boundary_eq", [1, 2, 3, 1, 2, 3], 3, True),
+    ("no_local_dup", [1, 2, 3, 1, 2, 3], 1, False),
+    ("exact_k2", [1, 2, 1], 2, True),
+    ("large_k", [1, 2, 3, 1], 100, True),
+]
+
+
 if __name__ == "__main__":
-    # Convenience: running this file executes tests for its task folder.
+    # Convenience: running this file executes the generic spec filtered to this task.
     import subprocess
     import sys
     from pathlib import Path
 
     task_dir = Path(__file__).parent
-    subprocess.run([sys.executable, "-m", "pytest", "-q", str(task_dir)], check=False)
+    root = task_dir.parent
+    task_name = task_dir.name  # e.g., "0219-contains-duplicate-ii"
+    # Run the single generic spec, filtered to this task's params
+    subprocess.run(
+        [sys.executable, "-m", "pytest", "-q", str(root), "-k", task_name],
+        check=False,
+    )

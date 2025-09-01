@@ -40,6 +40,35 @@ python scripts/new_task.py contains-duplicate 217 --multi
 
 This scaffolds a consolidated `tasks/0217-contains-duplicate/solutions.py` where you can define multiple classes (e.g., `BruteForce`, `SetBased`) and list them in `ALL_SOLUTIONS = [BruteForce, SetBased]`. The test file auto-discovers each class and runs the same cases for all variants. You can also optionally set `Solution = SetBased` as a default alias.
 
+### Task file conventions
+
+- Header docstring at top of `solutions.py` for consistency:
+
+  ```python
+  """
+  Problem 1: Two Sum
+  https://leetcode.com/problems/two-sum/
+  Difficulty: easy
+  Tags: array,hash-map
+  """
+  ```
+
+- Quick-run tests from a task file directly (runs generic spec filtered to that task):
+
+  ```python
+  if __name__ == "__main__":
+      import subprocess, sys
+      from pathlib import Path
+      task_dir = Path(__file__).parent
+      root = task_dir.parent
+      task_name = task_dir.name
+      subprocess.run([sys.executable, "-m", "pytest", "-q", str(root), "-k", task_name], check=False)
+  ```
+
+- Canonical test cases live in `solutions.py` as `TEST_CASES`:
+  - Implemented tasks: `(label, arg1, ..., expected)`
+  - Stub tasks: `(label, args_tuple, kwargs_dict)` and `TEST_EXPECT_EXCEPTION = NotImplementedError`
+
 ## Developer workflow
 
 - Lint: `make lint` (runs `ruff check .` and `black --check .`).

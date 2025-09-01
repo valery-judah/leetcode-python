@@ -18,19 +18,27 @@ class Solution:
 # For consistency with multi-variant discovery
 ALL_SOLUTIONS = [Solution]
 
-# Canonical small test cases for this task, imported by tests via
-# common.testutil.cases_from_solutions(__file__, "TEST_CASES").
+# Canonical small test cases for generic stub tests
 # Each entry: (label, args_tuple, kwargs_dict)
 TEST_CASES = [
     ("example", (), {{}}),  # replace with concrete inputs
 ]
 
+# Opt-in for generic stub testing: assert .solve raises this exception.
+TEST_EXPECT_EXCEPTION = NotImplementedError
+
 
 if __name__ == "__main__":
-    # Convenience: running this file executes tests for its task folder.
-    import sys
+    # Convenience: running this file executes the generic spec filtered to this task.
     import subprocess
+    import sys
     from pathlib import Path
 
     task_dir = Path(__file__).parent
-    subprocess.run([sys.executable, "-m", "pytest", "-q", str(task_dir)], check=False)
+    root = task_dir.parent
+    task_name = task_dir.name
+    # Run the single generic spec, filtered to this task's params
+    subprocess.run(
+        [sys.executable, "-m", "pytest", "-q", str(root), "-k", task_name],
+        check=False,
+    )

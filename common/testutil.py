@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import runpy
+import subprocess
+import sys
 from collections.abc import Callable
 from pathlib import Path
 from typing import Any
@@ -68,6 +70,36 @@ def cases_from_solutions(test_file: str | Path, name: str = "TEST_CASES") -> lis
     if not isinstance(cases, list):  # basic sanity check
         raise RuntimeError(f"{name} in {path.name} must be a list")
     return cases
+
+
+def run_task_tests(
+    file: str | Path, *, quiet: bool = True, extra_pytest_args: list[str] | None = None
+) -> int:
+    """Run pytest for the repository, filtered to this task's folder.
+
+    Intended for use in `if __name__ == "__main__"` blocks inside
+    `tasks/<id-name>/solutions.py` to quickly execute the generic tests
+    for just that task.
+
+    - `file`: pass `__file__` from the caller module.
+    - `quiet`: include `-q` to reduce pytest output noise.
+    - `extra_pytest_args`: optional additional pytest CLI args.
+
+    Returns the subprocess return code.
+    """
+    task_dir = Path(file).parent
+    root = task_dir.parent
+    task_name = task_dir.name
+
+    args: list[str] = [sys.executable, "-m", "pytest"]
+    if quiet:
+        args.append("-q")
+    args.extend([str(root), "-k", task_name])
+    if extra_pytest_args:
+        args.extend(extra_pytest_args)
+
+    proc = subprocess.run(args, check=False)
+    return proc.returncode
 
 
 # Common property-based cases for subsets (LeetCode 78)

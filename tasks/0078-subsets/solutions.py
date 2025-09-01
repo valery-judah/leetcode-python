@@ -2,7 +2,7 @@
 Problem 78: Subsets
 https://leetcode.com/problems/subsets/
 Difficulty: medium
-Tags:
+Tags: array,backtracking,bitmask,iteration
 """
 
 from __future__ import annotations
@@ -54,8 +54,8 @@ Solution = Backtracking
 ALL_SOLUTIONS = [Backtracking, Iterative, Bitmask]
 
 
-# Optional: declare canonical small test cases here for reuse by tests
-# Each item: (label, nums, expected_subsets)
+# Canonical small test cases for default generic tests
+# Each entry: (label, nums, expected_subsets)
 TEST_CASES: list[tuple[str, list[int], list[list[int]]]] = [
     (
         "example_1",
@@ -108,10 +108,16 @@ TEST_CASES: list[tuple[str, list[int], list[list[int]]]] = [
 
 
 if __name__ == "__main__":
-    # Convenience: running this file executes tests for its task folder.
+    # Convenience: running this file executes the generic spec filtered to this task.
     import subprocess
     import sys
     from pathlib import Path
 
     task_dir = Path(__file__).parent
-    subprocess.run([sys.executable, "-m", "pytest", "-q", str(task_dir)], check=False)
+    root = task_dir.parent
+    task_name = task_dir.name
+    # Run the single generic spec, filtered to this task's params
+    subprocess.run(
+        [sys.executable, "-m", "pytest", "-q", str(root), "-k", task_name],
+        check=False,
+    )
