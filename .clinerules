@@ -25,6 +25,7 @@ globs:
 # Cline Operating Rules
 
 ## Core Behavior
+
 1. Always open and read **all Memory Bank files** before acting. Highest priority: `memory-bank/activeContext.md`, `memory-bank/progress.md`.
 2. Keep `activeContext.md` accurate. Update it at the start of every session and after each significant step.
 3. Prefer **tests first**. If tests are missing, write minimal failing tests in `tasks/<id-slug>/test_solution.py` using `pytest.mark.parametrize`.
@@ -33,11 +34,13 @@ globs:
 6. Persist learnings in `memory-bank/patterns.md` and session notes in `progress.md` at wrap-up.
 
 ## File Conventions
+
 - Tasks live in `tasks/NNNN-slug/` where NNNN is 4-digit problem number.
 - Each task has `README.md`, `solution.py`, `test_solution.py`, `__init__.py`.
 - Use Python ≥3.10. Style by ruff + black. Keep line length ≤100.
 
 ## Session Protocol
+
 1. **Initialize**
    - Ensure venv is active. If not, activate project venv or use VS Code interpreter.
    - `pip install -r requirements-dev.txt` if tools are missing.
@@ -56,13 +59,17 @@ globs:
 # Workflows
 
 ## 1) Create New Problem
+
 **When**: user says “new”, “create”, “bootstrap”, or provides slug/number.
 
 **Steps**
+
 1. Generate skeleton:
+
    ```bash
    python scripts/new_task.py <slug> <number> --difficulty <easy|medium|hard> --tags "<csv>" --url "https://leetcode.com/problems/<slug>/"
    ```
+
 2. Open files:
    - `tasks/<NNNN-slug>/README.md`
    - `tasks/<NNNN-slug>/test_solution.py`
@@ -72,32 +79,41 @@ globs:
    - Extract constraints from LeetCode prompt and add to **Constraints** section.
    - Draft small **Test Plan** with 3–5 cases including edge cases.
 4. Stage seed commit:
+
    ```bash
    git add -A && git commit -m "chore(task): scaffold <NNNN-slug>"
    ```
 
 ## 2) TDD Solve Loop
+
 **When**: solution doesn’t exist or tests are failing.
 
 **Loop**
+
 1. Write or expand tests in `test_solution.py` using examples and edge cases.
 2. Run tests:
+
    ```bash
    pytest -q
    ```
+
 3. Implement minimal code in `solution.py` to pass the next failing test.
 4. Repeat until all tests pass.
 5. Run quality gates:
+
    ```bash
    make fmt && make lint && make type && make test
    ```
+
 6. Update `activeContext.md` with Complexity (time/space) and Approach summary.
 7. Commit:
+
    ```bash
    git add -A && git commit -m "feat(task): pass tests for <NNNN-slug> with <technique>"
    ```
 
 ## 3) Refactor & Document
+
 1. Improve names, factor helpers, remove duplication.
 2. Add docstring to `Solution` method with:
    - Problem link
@@ -106,15 +122,18 @@ globs:
    - Complexity
 3. Re-run quality gates (`make fmt`, `make lint`, `make type`, `make test`).
 4. Commit:
+
    ```bash
    git add -A && git commit -m "refactor(task): simplify <NNNN-slug> implementation"
    ```
 
 ## 4) Session Wrap-Up
+
 1. Update `memory-bank/progress.md` table with:
    - Date, Problem, Difficulty, Status (solved/partial/blocked), Time spent, Attempts, Complexity, Notes.
 2. Append pattern summary to `memory-bank/patterns.md` (template below).
 3. Push if repo is connected:
+
    ```bash
    git push --set-upstream origin HEAD
    ```
@@ -126,6 +145,7 @@ globs:
 > Use these snippets to quickly maintain state.
 
 ### Initialize activeContext.md
+
 ```md
 # Active Context
 - Date: <YYYY-MM-DD HH:MM>
@@ -143,6 +163,7 @@ globs:
 ```
 
 ### Append to progress.md
+
 ```md
 | Date | Task | Diff | Status | Time | Attempts | Time/Space | Notes |
 |------|------|------|--------|------|----------|------------|-------|
@@ -150,6 +171,7 @@ globs:
 ```
 
 ### Add pattern to patterns.md
+
 ```md
 ## <Pattern Name>
 **Use when**: <conditions>
@@ -160,7 +182,9 @@ def solve(...):
     # canonical snippet
     pass
 ```
+
 **Pitfalls**: <gotchas>
+
 ```
 
 ---

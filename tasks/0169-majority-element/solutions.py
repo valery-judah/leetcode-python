@@ -5,15 +5,21 @@ Difficulty: easy
 Tags: array,hash-table,divide-and-conquer,sorting,counting
 """
 
-from __future__ import annotations
-
 from typing import List
 
 
 class Solution:
     def solve(self, nums: List[int]) -> int:
-        return 1
+        candidate: int = 0
+        margin: int = 0
 
+        for n in nums:
+            if margin == 0:
+                candidate = n
+
+            margin = margin + 1 if n == candidate else margin - 1
+
+        return candidate
 
 # For consistency with multi-variant discovery
 ALL_SOLUTIONS = [Solution]
@@ -22,9 +28,8 @@ ALL_SOLUTIONS = [Solution]
 # Each entry: (label, args_tuple, kwargs_dict)
 TEST_CASES = [
     ("example_1", [3, 2, 3], 3),
-    ("example_2", [2, 2, 1, 1, 1, 2, 2], 1),
+    ("example_2", [2, 2, 1, 1, 1, 2, 2], 2),
 ]
-
 
 if __name__ == "__main__":
     # Convenience: running this file executes the generic spec filtered to this task.
