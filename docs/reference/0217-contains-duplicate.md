@@ -3,7 +3,7 @@
 The solution classes below are auto-documented via mkdocstrings, using a shim
 module that loads the task’s `solutions.py` from a non-importable folder name.
 
-Related write-up: `tasks/0217-contains-duplicate/README.md`
+Related write-up: `tasks/0217-contains-duplicate/notes.md`
 
 ::: docs.shims.contains_duplicate
     options:

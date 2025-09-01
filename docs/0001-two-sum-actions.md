@@ -13,5 +13,5 @@ This log documents the steps taken to solve the Two Sum problem using a TDD work
 4. **[PENDING]** Implement the solution using a hash map.
 5. **[PENDING]** Format and lint the code.
 6. **[PENDING]** Run tests to confirm the solution passes.
-7. **[PENDING]** Document the solution in the README.
+7. **[PENDING]** Document the solution in notes.md.
 8. **[PENDING]** Create a reusable Cline workflow template.

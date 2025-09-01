@@ -22,15 +22,18 @@ class TaskMeta:
     url: str | None
     difficulty: str | None
     tags: list[str]
-    readme_rel: str  # repo-relative path to README.md
+    notes_rel: str  # repo-relative path to notes.md (or fallback README.md)
 
 
 MD_BOLD_FIELD = re.compile(r"^\*\*(?P<key>[^*]+)\*\*:\s*(?P<val>.*)")
 
 
 def parse_task(task_dir: Path) -> TaskMeta | None:
-    readme = task_dir / "README.md"
-    if not readme.exists():
+    # Prefer notes.md; fall back to README.md for backward compatibility
+    doc = task_dir / "notes.md"
+    if not doc.exists():
+        doc = task_dir / "README.md"
+    if not doc.exists():
         return None
 
     title = task_dir.name
@@ -41,7 +44,7 @@ def parse_task(task_dir: Path) -> TaskMeta | None:
     tags: list[str] = []
 
     try:
-        for line in readme.read_text(encoding="utf-8").splitlines():
+        for line in doc.read_text(encoding="utf-8").splitlines():
             if line.startswith("# ") and ". " in line:
                 # e.g., "# 78. Subsets"
                 title = line[2:].strip()
@@ -55,9 +58,9 @@ def parse_task(task_dir: Path) -> TaskMeta | None:
                     difficulty = val or None
                 elif key == "tags" and val:
                     tags = [t.strip() for t in re.split(r"[,|]", val) if t.strip()]
-        return TaskMeta(number, slug, title, url, difficulty, tags, str(readme.relative_to(ROOT)))
+        return TaskMeta(number, slug, title, url, difficulty, tags, str(doc.relative_to(ROOT)))
     except Exception:
-        return TaskMeta(number, slug, title, url, difficulty, tags, str(readme.relative_to(ROOT)))
+        return TaskMeta(number, slug, title, url, difficulty, tags, str(doc.relative_to(ROOT)))
 
 
 def ensure_empty_dir(path: Path) -> None:
@@ -146,7 +149,7 @@ def build_site(tasks: list[TaskMeta]) -> None:
             or "<span class=muted>—</span>"
         )
         diff = f"<span class=pill>{t.difficulty or '?'}<span>"
-        title_link = f"<a href='{gh_link(t.readme_rel)}'>{t.title}</a>"
+        title_link = f"<a href='{gh_link(t.notes_rel)}'>{t.title}</a>"
         rows.append(
             f"<tr><td>{t.number:04d}</td><td>{title_link}</td><td>{diff}</td><td>{tags_html}</td></tr>"
         )
