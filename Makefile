@@ -25,24 +25,24 @@ badge:
 		|| echo "Install dev deps first: make install"
 
 lint:
-	ruff check .
-	black --check .
+	$(PYTHON) -m ruff check .
+	$(PYTHON) -m black --check .
 
 fmt:
-	ruff check . --fix
-	black .
+	$(PYTHON) -m ruff check . --fix
+	$(PYTHON) -m black .
 
 # Optional: run linters on legacy code too
 lint-legacy:
-	ruff check old_leetcode
-	black --check old_leetcode
+	$(PYTHON) -m ruff check old_leetcode
+	$(PYTHON) -m black --check old_leetcode
 
 fmt-legacy:
-	ruff check old_leetcode --fix || true
-	black old_leetcode || true
+	$(PYTHON) -m ruff check old_leetcode --fix || true
+	$(PYTHON) -m black old_leetcode || true
 
 type:
-	mypy tasks || true  # tasks may contain stubs early
+	$(PYTHON) -m mypy tasks || true  # tasks may contain stubs early
 
 ci: test badge lint type
 

@@ -7,9 +7,11 @@ Tags: array,hash-map
 
 from __future__ import annotations
 
+from typing import List
+
 
 class Solution:
-    def solve(self, *args, **kwargs):
+    def solve(self, strs: List[str]) -> List[List[str]]:
         """Replace with actual signature per problem."""
         raise NotImplementedError
 

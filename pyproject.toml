@@ -22,8 +22,13 @@ extend-exclude = [
 ]
 
 [tool.ruff.lint]
+# The 'UP' rules are opinionated and can be noisy.
+# The 'UP' rules are opinionated and can be noisy.
+# UP006: Use `list` instead of `List` for type annotations (PEP 585).
+# UP007: Use `dict` instead of `Dict` for type annotations (PEP 585).
+# UP035: `typing.List` is deprecated, use `list` instead.
 select = ["E", "F", "I", "UP", "B", "PT", "Q", "SIM"]
-ignore = ["E203"]
+ignore = ["E203", "UP006", "UP007", "UP035"]
 
 [tool.ruff.lint.isort]
 known-first-party = ["tasks"]
