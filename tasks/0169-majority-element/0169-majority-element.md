@@ -47,32 +47,44 @@ Output: 2
 - `1 <= n <= 5 * 10^4`
 - `-10^9 <= nums[i] <= 10^9`
 
-**Follow-up:** Could you solve the problem in linear time and in `O(1)` space?
+**Follow-up:** Solve it in linear time and `O(1)` space.
 
-## Stub
+## Recommended Solution (Boyer–Moore)
+
+The Boyer–Moore majority vote algorithm runs in O(n) time and O(1) space by maintaining a candidate and a vote margin (count). Each non-candidate cancels one vote from the candidate; a true majority cannot be fully canceled.
 
 ```python
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
-        count, res = 0, 0
-        for n in nums:
+        count = 0
+        candidate = 0
+        for x in nums:
             if count == 0:
-                res = n
-            count += (1 if n == res else -1)
-        return res
+                candidate = x
+            count += 1 if x == candidate else -1
+        return candidate
 ```
 
-## Solutions
+### Why it works (pair-cancellation intuition)
+
+- Maintain `(candidate, count)` for the processed prefix.
+- If `count == 0`, start a new phase with the current element as `candidate` and `count = 1`.
+- If the next item equals `candidate`, increment; otherwise decrement (`cancel a pair`).
+- Deleting unequal pairs never changes whether a majority exists; if a majority exists overall, it must be the final `candidate`.
+
+Note: In problems without the “majority always exists” guarantee, add a verification pass to confirm the final candidate appears more than `n/2` times.
+
+## Alternative Approaches
 
 ### Approach 1: Brute Force
 
 #### Intuition
 
-We can exhaust the search space in quadratic time by checking whether each element is the majority element.
+Check every element and count its occurrences; return the first that exceeds `n/2`.
 
 #### Algorithm
 
-The brute force algorithm iterates over the array, and then iterates again for each number to count its occurrences. As soon as a number is found to have appeared more than any other can possibly have appeared, return it.
+Iterate over `nums`; for each value, do a full pass to count its occurrences. If the count exceeds `n/2`, return it.
 
 #### Implementation
 
@@ -89,21 +101,21 @@ class Solution:
 #### Complexity Analysis
 
 - **Time complexity:** O(n^2)
-The brute force algorithm contains two nested `for` loops that each run for n iterations, adding up to quadratic time complexity.
+Two nested loops over `n` elements lead to quadratic time.
 - **Space complexity:** O(1)
-The brute force solution does not allocate additional space proportional to the input size.
+No extra space proportional to input size.
 
 ---
 
-### Approach 2: HashMap
+### Approach 2: Hash Map / Counter
 
 #### Intuition
 
-We know that the majority element occurs more than `⌊n / 2⌋` times, and a `HashMap` allows us to count element occurrences efficiently.
+The majority element occurs more than `⌊n / 2⌋` times; counting with a map is straightforward and linear time.
 
 #### Algorithm
 
-We can use a `HashMap` that maps elements to counts in order to count occurrences in linear time by looping over `nums`. Then, we simply return the key with maximum value.
+Use a map from value → count while scanning; return the key with the maximum count.
 
 #### Implementation
 
@@ -119,9 +131,9 @@ class Solution:
 #### Complexity Analysis
 
 - **Time complexity:** O(n)
-We iterate over `nums` once and make a constant time `HashMap` insertion on each iteration. Therefore, the algorithm runs in O(n) time.
+Single pass to count; `max` over keys is linear in distinct values.
 - **Space complexity:** O(n)
-At most, the `HashMap` can contain n - `⌊n / 2⌋` associations, so it occupies O(n) space.
+Up to `O(n)` distinct keys in the map.
 
 ---
 
@@ -129,11 +141,11 @@ At most, the `HashMap` can contain n - `⌊n / 2⌋` associations, so it occupie
 
 #### Intuition
 
-If the elements are sorted in monotonically increasing (or decreasing) order, the majority element can be found at index `n // 2`.
+When sorted, the majority element must occupy index `n // 2`.
 
 #### Algorithm
 
-For this algorithm, we simply sort `nums`, and return the element at index `n // 2`.
+Sort `nums` and return the element at index `n // 2`.
 
 #### Implementation
 
@@ -147,41 +159,42 @@ class Solution:
 #### Complexity Analysis
 
 - **Time complexity:** O(n log n)
-Sorting the array costs O(n log n) time in Python and Java, so it dominates the overall runtime.
+Sorting dominates the runtime.
 - **Space complexity:** O(1) or O(n)
-We sorted `nums` in place here - if that is not allowed, then we must spend linear additional space on a copy of `nums` and sort the copy instead.
+In-place sort is `O(1)` extra; copying to sort is `O(n)`.
 
 ---
 
-### Approach 4: Boyer-Moore Voting Algorithm
+### Approach 4: Boyer–Moore Voting (expanded)
 
 #### Intuition
 
-If we had some way of counting instances of the majority element as +1 and instances of any other element as -1, summing them would make it obvious that the majority element is indeed the majority element.
+Count the majority as +1 and others as −1; the surplus that survives pairwise cancellation identifies the majority.
 
 #### Algorithm
 
-Essentially, what Boyer-Moore does is look for a suffix of `nums` where the majority element is `candidate`. To do this, we maintain a `count`, which is incremented whenever we see an instance of our current `candidate` for majority element and decremented whenever we see anything else. Whenever `count` equals 0, we effectively forget about everything in `nums` up to the current index and consider the current number as the new candidate.
+Maintain `candidate` and `count` as a running vote margin. If `count == 0`, start a new phase with the current element as `candidate`; otherwise increment/decrement based on match. A true majority cannot be completely canceled.
 
 #### Implementation
 
 ```python
 class Solution:
     def majorityElement(self, nums: list[int]) -> int:
-        count, res = 0, 0
-        for n in nums:
+        count = 0
+        candidate = 0
+        for x in nums:
             if count == 0:
-                res = n
-            count += (1 if n == res else -1)
-        return res
+                candidate = x
+            count += 1 if x == candidate else -1
+        return candidate
 ```
 
 #### Complexity Analysis
 
 - **Time complexity:** O(n)
-Boyer-Moore performs constant work exactly n times, so the algorithm runs in linear time.
+Constant work per element.
 - **Space complexity:** O(1)
-Boyer-Moore allocates only constant additional memory.
+Constant extra memory.
 
 ---
 
@@ -189,15 +202,34 @@ Boyer-Moore allocates only constant additional memory.
 
 #### Intuition
 
-If an element `majority_element` occurs more than `⌊n / 2⌋` times, then there are at least `⌊n / 2⌋` + 1 elements of identical values with `num` at each bit. That is, we can reconstruct the exact value of `num` by combining the most frequent value (0 or 1) at each bit.
+For each bit position, count how many numbers have that bit set. If the count exceeds `n/2`, set that bit in the answer. This reconstructs the majority value bit by bit.
 
 #### Algorithm
 
-Starting from the least significant bit, we enumerate each bit to determine which value is the majority at this bit, 0 or 1, and put this value to the corresponding bit of the result. Finally, we end up with the most least significant bit of all elements and return the result.
+Scan all 32 bit positions (fits the constraints). If `ones > n/2` for a bit, set it in the result. Handle the sign bit for negatives using 32-bit two’s complement.
+
+```python
+class Solution:
+    def majorityElement(self, nums: list[int]) -> int:
+        n = len(nums)
+        result = 0
+        for b in range(32):
+            ones = 0
+            mask = 1 << b
+            for x in nums:
+                if x & mask:
+                    ones += 1
+            if ones > n // 2:
+                result |= mask
+        # Convert to signed 32-bit if needed
+        if result >= 1 << 31:
+            result -= 1 << 32
+        return result
+```
 
 #### Complexity Analysis
 
-- **Time complexity:** O(n * log C) where C is the max absolute value in `nums`.
+- **Time complexity:** O(32 · n) = O(n)
 - **Space complexity:** O(1)
 
 ---
@@ -210,7 +242,25 @@ If we know the majority element in the left and right halves of an array, we can
 
 #### Algorithm
 
-We apply a classical divide & conquer approach that recurses on the left and right halves of an array until an answer can be trivially achieved for a length-1 array. If the left and right halves agree on the majority element, then that is the answer. If they disagree, we count the occurrences of each candidate and return the winner.
+Recurse on left and right halves; if both sides agree, return that value. Otherwise, count both candidates across the current range and return the one with higher frequency.
+
+```python
+class Solution:
+    def majorityElement(self, nums: list[int]) -> int:
+        def majority(lo: int, hi: int) -> int:
+            if lo == hi:
+                return nums[lo]
+            mid = (lo + hi) // 2
+            left = majority(lo, mid)
+            right = majority(mid + 1, hi)
+            if left == right:
+                return left
+            # Count both in current segment
+            left_count = sum(1 for i in range(lo, hi + 1) if nums[i] == left)
+            right_count = sum(1 for i in range(lo, hi + 1) if nums[i] == right)
+            return left if left_count >= right_count else right
+        return majority(0, len(nums) - 1)
+```
 
 #### Complexity Analysis
 
@@ -223,23 +273,23 @@ We apply a classical divide & conquer approach that recurses on the left and rig
 
 #### Intuition
 
-Because more than `⌊n / 2⌋` array indices are occupied by the majority element, a random array index is likely to contain the majority element.
+Since more than half the positions contain the majority, a random index equals the majority with probability > 1/2.
 
 #### Algorithm
 
-Select a random index, check whether its value is the majority element, return if it is, and repeat if it is not.
+Repeat: pick a random index, count occurrences of that value; if it exceeds `n/2`, return it; otherwise try again.
 
 #### Complexity Analysis
 
-- **Time complexity:** O(∞) in the worst case, but O(n) on average.
+- **Time complexity:** Expected O(n). Each trial costs O(n) to verify, and the expected number of trials is < 2.
 - **Space complexity:** O(1)
 
-## pitfalls
+## Pitfalls
 
 - Forgetting that the majority element is guaranteed to exist.
 - Not considering the time and space complexity constraints mentioned in the follow-up.
 
-## tests / edge cases
+## Tests / Edge Cases
 
 - `[3,2,3]` -> `3`
 - `[2,2,1,1,1,2,2]` -> `2`

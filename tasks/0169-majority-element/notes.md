@@ -5,26 +5,25 @@
 **Difficulty**: easy
 **Tags**: array,hash-table,divide-and-conquer,sorting,counting
 
-## Clarifying questions
+## Clarifying Questions
 
-- Input shape, ranges, constraints?
-- Duplicates, negatives, empty input?
-- Mutations allowed? Sorted? Streaming?
+- Input size, value ranges, and guarantee of a majority?
+- Are negatives allowed? Are duplicates typical? Any empty input cases?
+- Can we mutate the array? Is streaming or one-pass required?
 
 ## Examples
 
-- Add 2–3 examples and edge cases.
+- `[3,2,3]` → `3`
+- `[2,2,1,1,1,2,2]` → `2`
+- `[1]` → `1`
 
-## Approach
+## Approach (Overview)
 
-- Brute force -> improved -> optimal.
-- Data structures considered.
-- Proof of correctness sketch.
+- Recommended: Boyer–Moore majority vote (O(n) time, O(1) space).
+- Alternatives: Counter/Hash Map (O(n) time, O(n) space), Sorting (O(n log n) time), Divide & Conquer (O(n log n)), Bit manipulation (O(n)).
+- If majority is not guaranteed, add a verification pass to confirm the candidate.
 
-## Complexity
-
-- Time: O(...)
-- Space: O(...)
+ 
 
 ## Checklist
 
@@ -206,7 +205,9 @@ Clarify the term in this context:
 
 # Interesting or Important Moments
 
-- it's not even a frequency estimator. It returns only candidates.
-- No guarantee without verification if a majority may not exist.
-- **Composition:** online summaries should be **mergeable** (e.g., Boyer–Moore residues or Misra–Gries tables can be combined across shards).
-- **When to use:** streams, memory caps, or latency targets that demand constant-time, constant-space updates.
+- Not a frequency estimator — it returns only a candidate.
+- If a majority may not exist, verification is required.
+- Composition: summaries should be mergeable (e.g., combine residues across shards).
+- Use when streaming, memory-constrained, or latency-sensitive with O(1) updates.
+
+See also: `docs/interview-framework.md`.
