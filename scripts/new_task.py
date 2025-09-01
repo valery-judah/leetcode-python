@@ -31,7 +31,7 @@ def main() -> None:
     ap.add_argument(
         "--multi",
         action="store_true",
-        help="scaffold a consolidated solutions.py and a discovery test for multiple variants",
+        help="scaffold a consolidated solutions.py with room for multiple variants",
     )
     args = ap.parse_args()
 
@@ -60,19 +60,10 @@ def main() -> None:
         # multi-solution scaffold (consolidated file in task root)
         variant_tpl = ROOT / "templates" / "solutions_multi.py.tpl"
         (base / "solutions.py").write_text(render(variant_tpl, **context))
-
-        # discovery test with parametrized variants
-        test_tpl = ROOT / "templates" / "test_multi_solutions.py.tpl"
-        test_name = f"test_{args.number:04d}_{slug.replace('-', '_')}.py"
-        (base / test_name).write_text(render(test_tpl, **context))
     else:
         # single-solution scaffold (consolidated file)
         solution_tpl = ROOT / "templates" / "solution.py.tpl"
         (base / "solutions.py").write_text(render(solution_tpl, **context))
-
-        test_tpl = ROOT / "templates" / "test_solution.py.tpl"
-        test_name = f"test_{args.number:04d}_{slug.replace('-', '_')}.py"
-        (base / test_name).write_text(render(test_tpl, **context))
 
     # no package marker; tests load solution via runpy, not imports
 
@@ -80,10 +71,9 @@ def main() -> None:
     print("Next:")
     if args.multi:
         print(f"  - Edit {base/'solutions.py'} and add classes to ALL_SOLUTIONS")
-        print(f"  - Edit tests in {base} matching 'test_*.py'")
     else:
-        print(f"  - Edit {base/'solutions.py'} and {base/'test_solution.py'}")
-    print("  - Run: pytest -q")
+        print(f"  - Edit {base/'solutions.py'}")
+    print("  - Add TEST_CASES in solutions.py; run: pytest -q")
 
 
 if __name__ == "__main__":
