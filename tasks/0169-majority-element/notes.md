@@ -1,10 +1,9 @@
 
-# {number}. {title}
+# 169. Majority Element
 
-**URL**: <{url}>
-**Difficulty**: {difficulty}
-**Tags**: {tags}
-
+**URL**: <https://leetcode.com/problems/majority-element/>
+**Difficulty**: easy
+**Tags**: array,hash-table,divide-and-conquer,sorting,counting
 
 ## Clarifying questions
 
@@ -38,4 +37,6 @@
 
 See also: `docs/interview-framework.md`.
 
-<!-- Template intentionally keeps test reporting and case source docs in main README/docs. -->
+# Flow
+
+So, how can we start think about this problem?

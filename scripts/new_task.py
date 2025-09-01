@@ -52,9 +52,9 @@ def main() -> None:
         created=datetime.utcnow().isoformat(timespec="seconds") + "Z",
     )
 
-    # README
-    readme_tpl = ROOT / "templates" / "README.md.tpl"
-    (base / "README.md").write_text(render(readme_tpl, **context))
+    # notes.md (per-problem write-up)
+    readme_tpl = ROOT / "templates" / "notes.md.tpl"
+    (base / "notes.md").write_text(render(readme_tpl, **context))
 
     if args.multi:
         # multi-solution scaffold (consolidated file in task root)
