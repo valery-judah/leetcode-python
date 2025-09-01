@@ -39,25 +39,25 @@ See also: `docs/interview-framework.md`.
 
 # Flow
 
-So, how can we start think about this problem?
+So, how should we start thinking about this problem?
 
-First thought that comes up to the head is just calculate all elements counts and choose most frequent.
+The first thought that comes to mind is to calculate the count of all elements and choose the most frequent.
 
-# todo use hashmap, counter; use from lib and implement by yourself
+# todo use a hashmap/counter; use the library and also implement it yourself
 
-Then, if we want to optimize time or space we need to understand what we can improve / that we can improve something.
+If we want to optimize time or space, we need to understand what can be improved.
 
 Now, #idea #todo formulate
 
-We don't need to calculate (by counts) all the information about all elements. We need just understand something about most frequent element - so we're +/- to most frequent element. +/- to some invariant I think. How to name this invariant?
+We don't need to compute counts for every element. We just need to understand something about the most frequent element—some invariant related to it. How should we name this invariant?
 
-So, what do we have from the problem conditions? The fact that l > n/2
+What do we have from the problem statement? The majority element appears more than n/2 times.
 
-Reflection: I could intuitively come to vague idea of some frequency calculations between most common and other elements.
+Reflection: I can intuitively arrive at a vague idea of comparing frequencies between the most common element and the others.
 
-LLM propose me this when I asked about invariant: Let's call the invariant the vote margin (a.k.a. surplus, balance, or unpaired majority count). It is the number of currently unpaired occurrences of the candidate.
+An LLM proposed this when I asked about an invariant: Let's call the invariant the vote margin (a.k.a. surplus, balance, or unpaired majority count). It is the number of currently unpaired occurrences of the candidate.
 
-Question: how to came up to the algorithm?
+Question: how do we arrive at the algorithm?
 
 [??] --> algorithm
 
@@ -84,13 +84,13 @@ If the current element is different from the candidate, decrement count.
 - Count the actual occurrences of the `candidate` found in the first pass.
 - If this count is greater than N/2, then the `candidate` is indeed the majority element. Otherwise, there is no majority element in the sequence.
 
-Correctnress can be found in wiki [Boyer–Moore majority vote algorithm](https://en.wikipedia.org/wiki/Boyer–Moore_majority_vote_algorithm).
+Correctness can be found in the wiki article on the [Boyer–Moore majority vote algorithm](https://en.wikipedia.org/wiki/Boyer–Moore_majority_vote_algorithm).
 
-[visualisation script](/tasks/0169-majority-element/reasoning_by_step.py).
+[visualization script](/tasks/0169-majority-element/reasoning_by_step.py).
 
 Terminology. Let's call the invariant the **vote margin** (a.k.a. **surplus**, **balance**, or **unpaired majority count**). It is the number of currently **unpaired** occurrences of the candidate.
 
-Your goal in first phase is to find a value of maximum margin (count) among all.
+Your goal in the first phase is to find a value with the maximum margin (count).
 
 After processing any prefix:
 
@@ -101,7 +101,7 @@ The intuition behind this phase is that each non-candidate element effectively "
 
 # Why it works
 
-**Pairing/cancellation view.** Each time you see a non-candidate while count>0, you cancel it against one candidate vote. This simulates removing opposite votes in pairs. Since a true majority m satisfies `#m` > n/2, after maximal cancellation at least one m remains. The algorithm’s candidate at the end is exactly the element that survives this cancellation.
+**Pairing/cancellation view.** Each time you see a non-candidate while `count > 0`, you cancel it against one candidate vote. This simulates removing opposite votes in pairs. Since a true majority `m` satisfies `#m > n/2`, after maximal cancellation at least one `m` remains. The algorithm’s candidate at the end is exactly the element that survives this cancellation.
 
 # Majority by Cancellation: a concise derivation of Boyer–Moore
 
@@ -115,7 +115,7 @@ Find an element occurring > n/2 times in a stream with O(1) memory and one pass,
 
 - Input: sequence $x_1,\dots,x_n$.
 - Goal: return m with \#(m) > n/2, or report none.
-- Constraints: streaming, constant memory, adversarial order allowed. (?)
+- Constraints: streaming, constant memory, adversarial order allowed.
 
 ## 2) Design target
 
@@ -154,15 +154,13 @@ Let next item be x.
 - Else if x=c: residue grows. Set s:=s+1.
 - Else: delete a mismatched pair (c,x). Set s:=s-1.
 
-This exactly *simulates pair-deletion online*.
+This exactly simulates pair deletion online.
 
 ## **6) Phase structure**
 
 A **phase** runs from one time s becomes 0 to the next. While in a phase,
 
-s = $n(candidate) - n(others))$
-
-over that phase’s items, and never negative. Hitting 0 ends the phase and forgets the past.
+`s = n(candidate) - n(others)` over that phase’s items, and it is never negative. Hitting 0 ends the phase and forgets the past.
 
 ## **8) Correctness skeleton**
 
@@ -194,7 +192,7 @@ over that phase’s items, and never negative. Hitting 0 ends the phase and forg
 
 # Online Term
 
-“Online” means **process each item as it arrives, update a small state, and move on**. No full input in memory. No revisiting earlier items. One (or few) passes.
+“Online” means: process each item as it arrives, update a small state, and move on. No full input in memory. No revisiting earlier items. One (or a few) passes.
 
 Clarify the term in this context:
 
