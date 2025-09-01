@@ -1,28 +1,33 @@
 
 # 219. Contains Duplicate Ii
 
-**URL**: https://leetcode.com/problems/contains-duplicate-ii/
+**URL**: <https://leetcode.com/problems/contains-duplicate-ii/>
 **Difficulty**: easy
 **Tags**: array,hash-map
 
 ## Clarifying questions
+
 - Input shape, ranges, constraints?
 - Duplicates, negatives, empty input?
 - Mutations allowed? Sorted? Streaming?
 
 ## Examples
+
 - Add 2–3 examples and edge cases.
 
 ## Approach
+
 - Brute force -> improved -> optimal.
 - Data structures considered.
 - Proof of correctness sketch.
 
 ## Complexity
+
 - Time: O(...)
 - Space: O(...)
 
 ## Checklist
+
 - [ ] Restate problem
 - [ ] Small example walkthrough
 - [ ] Choose DS/algorithm

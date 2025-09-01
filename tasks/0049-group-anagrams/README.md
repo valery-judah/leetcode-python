@@ -1,28 +1,33 @@
 
-# {number}. {title}
+# 49. Group Anagrams
 
-**URL**: {url}
-**Difficulty**: {difficulty}
-**Tags**: {tags}
+**URL**: <https://leetcode.com/problems/group-anagrams/>
+**Difficulty**: medium
+**Tags**: array,hash-map
 
 ## Clarifying questions
+
 - Input shape, ranges, constraints?
 - Duplicates, negatives, empty input?
 - Mutations allowed? Sorted? Streaming?
 
 ## Examples
+
 - Add 2–3 examples and edge cases.
 
 ## Approach
+
 - Brute force -> improved -> optimal.
 - Data structures considered.
 - Proof of correctness sketch.
 
 ## Complexity
+
 - Time: O(...)
 - Space: O(...)
 
 ## Checklist
+
 - [ ] Restate problem
 - [ ] Small example walkthrough
 - [ ] Choose DS/algorithm
@@ -33,6 +38,7 @@
 See also: `docs/interview-framework.md`.
 
 ## Test Matrix Reporter
+
 - Tests can opt into a colored PASS/FAIL matrix shown at the end of `pytest` by appending results to the shared `run_summary` fixture.
 - For each assertion, append a tuple of `(label, ok)` where `label` is a short case name and `ok` is a boolean.
 - Multi-solution tests should use the solution class name as the key. Example:
@@ -51,8 +57,8 @@ See also: `docs/interview-framework.md`.
   assert ok
   ```
 
-
 ## Test Cases Source
+
 - Define canonical test cases in your `solutions.py` so tests stay minimal.
 - Create a `TEST_CASES` list (imported by tests via `cases_from_solutions(__file__, "TEST_CASES")`).
 - Format for generic templates: `(label: str, args: tuple, kwargs: dict)`.
@@ -61,7 +67,7 @@ Example in `solutions.py`:
 
 ```python
 TEST_CASES = [
-  ("example", (/* positional args */), {{ /* keyword args */ }}),
+  ("example", (/* positional args */), { /* keyword args */ }),
 ]
 ```
 

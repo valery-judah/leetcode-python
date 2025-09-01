@@ -22,7 +22,7 @@ ALL_SOLUTIONS = [Solution]
 # common.testutil.cases_from_solutions(__file__, "TEST_CASES").
 # Each entry: (label, args_tuple, kwargs_dict)
 TEST_CASES = [
-    ("example", (), {}),  # replace with concrete inputs
+    ("example", (), {{}}),  # replace with concrete inputs
 ]
 
 

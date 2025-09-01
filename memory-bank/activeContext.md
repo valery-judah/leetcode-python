@@ -1,7 +1,8 @@
 # Active Context
+
 - Date: 2025-08-29 16:31
 - Task: 0001-two-sum
-- URL: https://leetcode.com/problems/two-sum/
+- URL: <https://leetcode.com/problems/two-sum/>
 - Difficulty: easy
 - Constraints: Given an array of integers `nums` and an integer `target`, return indices of the two numbers such that they add up to `target`. You may assume that each input would have exactly one solution, and you may not use the same element twice.
 - Approach: Hash map (dictionary in Python) to store seen numbers and their indices. This allows for a single-pass O(n) time complexity solution.

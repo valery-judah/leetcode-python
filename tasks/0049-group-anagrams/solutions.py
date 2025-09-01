@@ -1,30 +1,34 @@
+"""
+Problem 49: Group Anagrams
+https://leetcode.com/problems/group-anagrams/
+Difficulty: medium
+Tags: array,hash-map
+"""
+
 from __future__ import annotations
 
 
-class Baseline:
+class Solution:
     def solve(self, *args, **kwargs):
         """Replace with actual signature per problem."""
         raise NotImplementedError
 
 
-# Optional default alias for single-export usage
-Solution = Baseline
-
-# Explicit multi-export for test discovery
-ALL_SOLUTIONS = [Baseline]
+# For consistency with multi-variant discovery
+ALL_SOLUTIONS = [Solution]
 
 # Canonical small test cases for this task, imported by tests via
 # common.testutil.cases_from_solutions(__file__, "TEST_CASES").
 # Each entry: (label, args_tuple, kwargs_dict)
 TEST_CASES = [
-    ("example", (), {{}}),  # replace with concrete inputs
+    ("example", (), {}),  # replace with concrete inputs
 ]
 
 
 if __name__ == "__main__":
     # Convenience: running this file executes tests for its task folder.
-    import sys
     import subprocess
+    import sys
     from pathlib import Path
 
     task_dir = Path(__file__).parent

@@ -2,7 +2,7 @@
 
 Welcome to the project documentation site. This site is built with MkDocs and mkdocstrings.
 
-- Project repo: https://github.com/valery-judah/leetcode-python-project
+- Project repo: <https://github.com/valery-judah/leetcode-python-project>
 - Continuous Integration: see `.github/workflows/ci.yml`
 
 What you’ll find here:

@@ -138,9 +138,9 @@ class Sorting:
 
 Direct code anchors (commit-pinned):
 
-- BruteForce class: https://github.com/valery-judah/leetcode-python-project/blob/e0d064588ad7b5b99f1fe7282eab5859644ac41f/tasks/0217-contains-duplicate/solutions.py#L4
-- SetBased class: https://github.com/valery-judah/leetcode-python-project/blob/e0d064588ad7b5b99f1fe7282eab5859644ac41f/tasks/0217-contains-duplicate/solutions.py#L13
-- Sorting class: https://github.com/valery-judah/leetcode-python-project/blob/e0d064588ad7b5b99f1fe7282eab5859644ac41f/tasks/0217-contains-duplicate/solutions.py#L23
+- BruteForce class: <https://github.com/valery-judah/leetcode-python-project/blob/e0d064588ad7b5b99f1fe7282eab5859644ac41f/tasks/0217-contains-duplicate/solutions.py#L4>
+- SetBased class: <https://github.com/valery-judah/leetcode-python-project/blob/e0d064588ad7b5b99f1fe7282eab5859644ac41f/tasks/0217-contains-duplicate/solutions.py#L13>
+- Sorting class: <https://github.com/valery-judah/leetcode-python-project/blob/e0d064588ad7b5b99f1fe7282eab5859644ac41f/tasks/0217-contains-duplicate/solutions.py#L23>
 
 ## How to Think Through Errors
 
