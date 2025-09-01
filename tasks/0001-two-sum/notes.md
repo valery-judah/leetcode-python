@@ -28,6 +28,7 @@
 - If the complement is not in the map, the current number and its index are added to the map for future reference.
 
 This approach avoids the need for a nested loop, which would result in an O(n^2) time complexity, and instead provides a more efficient O(n) solution.
+
 ## Complexity
 
 - Time: O(n) — each element processed once with O(1) average lookups.

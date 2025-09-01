@@ -99,7 +99,7 @@ After processing any prefix:
 
 The intuition behind this phase is that each non-candidate element effectively "cancels out" one instance of the candidate. If a true majority element exists, it will eventually emerge as the `candidate` at the end of this pass because its occurrences will outnumber the cancellations.
 
-**Why it works**
+# Why it works
 
 **Pairing/cancellation view.** Each time you see a non-candidate while count>0, you cancel it against one candidate vote. This simulates removing opposite votes in pairs. Since a true majority m satisfies `#m` > n/2, after maximal cancellation at least one m remains. The algorithm’s candidate at the end is exactly the element that survives this cancellation.
 

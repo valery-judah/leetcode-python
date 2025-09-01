@@ -55,12 +55,14 @@ def explain_trace(steps: List[Step]) -> None:
     - s/margin = vote margin (unpaired count of candidate)
     - When s hits 0, the processed prefix cancels to empty residue
     """
-    header = f"{'i':>3} {'x':>6} | {'prev_c':>7} {'prev_s':>6} | {'action':>11} || {'c':>7} {'s/margin':>9}"
+    header = f"{'i':>3} {'x':>6} | {'prev_c':>7} {'prev_s':>6} | \
+        {'action':>11} || {'c':>7} {'s/margin':>9}"
     print(header)
     print("-" * len(header))
     for st in steps:
         print(
-            f"{st.i:3d} {str(st.x):>6} | {str(st.prev_c):>7} {st.prev_s:6d} | {st.action:>11} || {str(st.c):>7} {st.margin:9d}"
+            f"{st.i:3d} {str(st.x):>6} | {str(st.prev_c):>7} {st.prev_s:6d} | {st.action:>11} || \
+                {str(st.c):>7} {st.margin:9d}"
         )
 
 

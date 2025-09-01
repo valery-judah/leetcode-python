@@ -59,7 +59,7 @@ ALL_SOLUTIONS = [Baseline, SetBased]
 
 Running tests with `-vv` shows each class as a separate variant, labeled `module:ClassName`:
 
-```
+```bash
 $ pytest tasks/0217-contains-duplicate/test_0217_contains_duplicate.py -vv
 test_0217_contains_duplicate.py::test_contains_duplicate[solutions:Baseline] PASSED
 test_0217_contains_duplicate.py::test_contains_duplicate[solutions:SetBased] PASSED

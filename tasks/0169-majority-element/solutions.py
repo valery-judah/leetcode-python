@@ -21,6 +21,7 @@ class Solution:
 
         return candidate
 
+
 # For consistency with multi-variant discovery
 ALL_SOLUTIONS = [Solution]
 
