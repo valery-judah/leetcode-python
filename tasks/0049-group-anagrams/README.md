@@ -2,7 +2,7 @@
 
 **URL**: <https://leetcode.com/problems/group-anagrams/>
 **Difficulty**: tbd
-**Tags**: 
+**Tags**:
 
 ## Files
 
@@ -41,4 +41,3 @@
 - [ ] Test edge cases
 
 # Flow
-

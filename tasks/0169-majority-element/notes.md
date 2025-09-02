@@ -23,8 +23,6 @@
 - Alternatives: Counter/Hash Map (O(n) time, O(n) space), Sorting (O(n log n) time), Divide & Conquer (O(n log n)), Bit manipulation (O(n)).
 - If majority is not guaranteed, add a verification pass to confirm the candidate.
 
- 
-
 ## Checklist
 
 - [ ] Restate problem
