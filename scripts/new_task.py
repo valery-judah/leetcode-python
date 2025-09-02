@@ -70,9 +70,9 @@ def main() -> None:
     print(f"Created {base.relative_to(ROOT)}")
     print("Next:")
     if args.multi:
-        print(f"  - Edit {base/'solutions.py'} and add classes to ALL_SOLUTIONS")
+        print(f"  - Edit {base / 'solutions.py'} and add classes to ALL_SOLUTIONS")
     else:
-        print(f"  - Edit {base/'solutions.py'}")
+        print(f"  - Edit {base / 'solutions.py'}")
     print("  - Add TEST_CASES in solutions.py; run: pytest -q")
 
 

@@ -193,7 +193,7 @@ def build_site(tasks: list[TaskMeta]) -> None:
     <table>
       <thead><tr><th>#</th><th>Problem</th><th>Difficulty</th><th>Tags</th></tr></thead>
       <tbody>
-        {''.join(rows)}
+        {"".join(rows)}
       </tbody>
     </table>
   </section>

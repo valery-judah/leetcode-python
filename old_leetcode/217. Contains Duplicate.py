@@ -32,7 +32,6 @@ def contains_duplicates_sorting_approach(nums):
 
 
 class TestContainsDuplicate(unittest.TestCase):
-
     def test_bruteforce(self):
         print("\nTesting: contains_duplicate_brutforce")
         assert contains_duplicate_brutforce([1, 2, 3, 1])

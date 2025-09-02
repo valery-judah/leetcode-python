@@ -18,7 +18,6 @@ def test(f):
 
 @test
 def isValidSudoku(board: list[list[str]]) -> bool:
-
     def isUnique(slice):
         counter = Counter(slice)
         counter.pop(".", None)

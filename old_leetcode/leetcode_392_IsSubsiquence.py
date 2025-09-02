@@ -12,7 +12,6 @@ class TestData:
 
 # O (n) time; O(1) space
 class Solution:
-
     @staticmethod
     def is_subsequence_for_loop(s: str, t: str):
         if not s:

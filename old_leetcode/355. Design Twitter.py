@@ -2,7 +2,6 @@ import heapq
 
 
 class Twitter:
-
     def __init__(self):
         self.tweets = {}
         self.followers = {}
@@ -62,7 +61,6 @@ if __name__ == "__main__":
 
 # not optimized for reading operations. reads >> writes
 class TwitterOrdinary:
-
     def __init__(self):
         self.tweets = {}
         self.follows = {}

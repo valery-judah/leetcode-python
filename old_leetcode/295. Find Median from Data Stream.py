@@ -2,7 +2,6 @@ import heapq
 
 
 class MedianFinder:
-
     def __init__(self):
         self.leftHeap = []
         self.rightHeap = []
@@ -32,7 +31,6 @@ class MedianFinder:
 
 
 class MedianFinderMy:
-
     def __init__(self):
         self.leftHeap = []
         self.rightHeap = []

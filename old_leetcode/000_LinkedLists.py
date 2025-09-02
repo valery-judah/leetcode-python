@@ -17,7 +17,6 @@ def reverseList_(head: ListNode | None) -> ListNode | None:
 
 # recursive approach
 def reverseList(head: ListNode | None) -> ListNode | None:
-
     if not head:
         print("end of recusion; returning with None")
         return None

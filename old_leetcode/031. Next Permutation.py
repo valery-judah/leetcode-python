@@ -6,7 +6,6 @@ def test(f):
 
 @test
 def nextPermutation(nums: list[int]) -> None:
-
     i = len(nums) - 1
     while nums[i - 1] > nums[i]:
         i -= 1
