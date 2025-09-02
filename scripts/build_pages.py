@@ -78,16 +78,19 @@ def build_site(tasks: list[TaskMeta]) -> None:
     """
     mkdocs_yml = ROOT / "mkdocs.yml"
     if mkdocs_yml.exists():
-        # Build MkDocs site into ./site
-        # Use --clean to ensure old artifacts are removed
-        subprocess.run(["mkdocs", "build", "--clean"], check=True)
-        # Copy coverage into /site/coverage if present
-        if HTMLCOV_DIR.exists():
-            dest = SITE_DIR / "coverage"
-            if dest.exists():
-                shutil.rmtree(dest)
-            shutil.copytree(HTMLCOV_DIR, dest)
-        return
+        try:
+            # Build MkDocs site into ./site
+            # Use --clean to ensure old artifacts are removed
+            subprocess.run(["mkdocs", "build", "--clean"], check=True)
+            # Copy coverage into /site/coverage if present
+            if HTMLCOV_DIR.exists():
+                dest = SITE_DIR / "coverage"
+                if dest.exists():
+                    shutil.rmtree(dest)
+                shutil.copytree(HTMLCOV_DIR, dest)
+            return
+        except FileNotFoundError:
+            print("WARNING: mkdocs command not found, falling back to legacy site builder")
 
     # Legacy minimal site builder (no MkDocs)
     ensure_empty_dir(SITE_DIR)

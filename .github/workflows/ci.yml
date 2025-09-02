@@ -92,9 +92,14 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Build static site
+      - name: Install build dependencies
         run: |
-          python scripts/build_pages.py
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Build static site from README
+        run: |
+          python scripts/build_readme_pages.py
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
