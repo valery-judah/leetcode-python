@@ -1,8 +1,8 @@
 # {number}. {title}
 
-**URL**: <{url}>
-**Difficulty**: {difficulty}
-**Tags**: {tags}
+- **URL**: <{url}>
+- **Difficulty**: {difficulty}
+- **Tags**: {tags}
 
 ## Files
 
@@ -42,5 +42,7 @@
 - [ ] Dry-run core loop
 - [ ] Code cleanly
 - [ ] Test edge cases
+
+See also: [Interview Framework](/docs/interview-framework.md).
 
 # Flow

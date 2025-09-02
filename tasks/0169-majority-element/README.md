@@ -1,9 +1,9 @@
 
 # 169. Majority Element
 
-**URL**: <https://leetcode.com/problems/majority-element/>
-**Difficulty**: easy
-**Tags**: array,hash-table,divide-and-conquer,sorting,counting
+- **URL**: <https://leetcode.com/problems/majority-element/>
+- **Difficulty**: easy
+- **Tags**: `#array`,`hash-table`,`divide-and-conquer`,`sorting`,`counting`
 
 ## Files
 
@@ -43,6 +43,6 @@
 - [ ] Code cleanly
 - [ ] Test edge cases
 
-See also: `docs/interview-framework.md`.
+See also: [Interview Framework](/docs/interview-framework.md).
 
 # Flow

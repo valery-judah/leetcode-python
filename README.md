@@ -3,7 +3,7 @@
 
 ![Coverage](docs/badges/coverage.svg)
 
-> [!NOTE] This repository is a work in progress. I have only a few LeetCode tasks solved so far, and I hope to add more in the future.
+> This repository is a work in progress. I have only a few LeetCode tasks solved so far, and I hope to add more in the future.
 
 This repository contains solutions to LeetCode tasks and materials I find interesting. The current format uses a separate directory for each task that includes the task description, solutions, reasoning, and sometimes the solution flow. For example, see the [Majority Element task](/tasks/0169-majority-element/README.md).
 
