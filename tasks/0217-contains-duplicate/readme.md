@@ -1,9 +1,12 @@
+# 217. Contains Duplicate
 
-# 78. Subsets
-
-**URL**: <https://leetcode.com/problems/subsets/>
-**Difficulty**: medium
+**URL**: <https://leetcode.com/problems/contains-duplicate/>
+**Difficulty**: tbd
 **Tags**:
+
+## Files
+
+- [solutions.py](solutions.py): Implementations (single or multi-variant via `ALL_SOLUTIONS`) and `TEST_CASES`.
 
 ## Clarifying questions
 
@@ -35,4 +38,4 @@
 - [ ] Code cleanly
 - [ ] Test edge cases
 
-See also: `docs/interview-framework.md`.
+# Flow
