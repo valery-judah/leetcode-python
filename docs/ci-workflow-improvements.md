@@ -64,7 +64,7 @@ on:
   pull_request:
     paths-ignore:
       - 'docs/**'
-      - 'README.md'
+      - 'readme.md'
   workflow_dispatch:
 
 jobs:

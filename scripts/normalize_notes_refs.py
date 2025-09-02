@@ -22,33 +22,31 @@ def should_skip(path: Path) -> bool:
 
 
 def replace_task_paths(text: str) -> str:
-    # Replace explicit task README paths to notes.md
-    pattern = re.compile(r"`?tasks/(\d{4}-[^/]+?)/README\.md`?")
-    return pattern.sub(lambda m: f"tasks/{m.group(1)}/notes.md", text)
+    # Replace legacy notes.md paths to task readme.md
+    pattern = re.compile(r"`?tasks/(\d{4}-[^/]+?)/notes\.md`?")
+    return pattern.sub(lambda m: f"tasks/{m.group(1)}/readme.md", text)
 
 
 def replace_docs_language(text: str, rel: str) -> str:
     # Target only docs and templates wording changes
-    if not (rel.startswith("docs/") or rel.startswith("templates/") or rel == "README.md"):
+    if not (rel.startswith("docs/") or rel.startswith("templates/") or rel == "readme.md"):
         return text
 
     replacements: list[tuple[re.Pattern[str], str]] = [
-        # Narrative READMEs phrasing
-        (re.compile(r"narrative READMEs", re.IGNORECASE), "notes.md write-ups"),
-        # Generic 'problem README' wording
-        (re.compile(r"problem README(s)?", re.IGNORECASE), "problem notes.md"),
-        (re.compile(r"per[- ]task README(s)?", re.IGNORECASE), "per-task notes.md"),
+        # Narrative phrasing
+        (re.compile(r"notes\.md write-ups", re.IGNORECASE), "task README write-ups"),
+        # Generic wording
+        (re.compile(r"problem notes\.md", re.IGNORECASE), "problem README"),
+        (re.compile(r"per[- ]task notes\.md", re.IGNORECASE), "per-task README"),
         # Action items and guidance
         (
-            re.compile(r"Document the solution in the README\.", re.IGNORECASE),
-            "Document the solution in notes.md.",
+            re.compile(r"Document the solution in notes\.md\.", re.IGNORECASE),
+            "Document the solution in the README.",
         ),
         (
-            re.compile(r"docstrings/README updates per task", re.IGNORECASE),
-            "docstrings/notes.md updates per task",
+            re.compile(r"docstrings/notes\.md updates per task", re.IGNORECASE),
+            "docstrings/README updates per task",
         ),
-        # Template comment
-        (re.compile(r"main README/docs", re.IGNORECASE), "main docs"),
     ]
 
     out = text

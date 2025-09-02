@@ -21,14 +21,13 @@ Key configs:
 
 Default (single solution):
 
-- `tasks/NNNN-slug/notes.md` — clarifying questions, approach, complexity.
+- `tasks/NNNN-slug/readme.md` — clarifying questions, examples, approach, complexity.
 - `tasks/NNNN-slug/solutions.py` — export a `Solution` class with a `solve(...)` method. Optionally include `ALL_SOLUTIONS = [Solution]` for consistency.
-- `tasks/NNNN-slug/test_solution.py` — pytest tests for the above.
 
 Multi-solution pattern (recommended for comparing approaches):
 
 - `tasks/NNNN-slug/solutions.py` — consolidated module exporting multiple classes implementing the same `solve(...)` API. List them in `ALL_SOLUTIONS = [ClassA, ClassB, ...]`. Optionally set `Solution = ClassA` as a default alias.
-- `tasks/NNNN-slug/test_<slug>.py` — pytest that discovers variants by reading `ALL_SOLUTIONS` from `solutions.py`. Each class is parametrized as its own variant. If `ALL_SOLUTIONS` is absent, tests use the single exported `Solution` class from `solutions.py`.
+- No per-task test files are required. The generic spec `tasks/all_problems_spec.py` auto-discovers the primary class (or the first class in `ALL_SOLUTIONS`) and runs the declared `TEST_CASES`.
 
 Example: `tasks/0217-contains-duplicate/solutions.py`.
 
@@ -80,7 +79,7 @@ test_0217_contains_duplicate.py::test_contains_duplicate[solutions:SetBased] PAS
 
 - Public API: `class Solution: def solve(self, ...) -> ...` to keep tests consistent.
 - Types: Use type hints; allow partial typing during exploration (`make type` tolerates stubs in `tasks/`).
-- Docs: Add a docstring to `solve(...)` and fill problem `notes.md` with approach and complexity.
+- Docs: Add a docstring to `solve(...)` and fill the task `readme.md` with approach and complexity.
 - No side effects: Avoid print/exec at import time; tests control execution.
 
 ## Scaffolding

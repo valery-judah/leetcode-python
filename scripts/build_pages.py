@@ -22,17 +22,17 @@ class TaskMeta:
     url: str | None
     difficulty: str | None
     tags: list[str]
-    notes_rel: str  # repo-relative path to notes.md (or fallback README.md)
+    notes_rel: str  # repo-relative path to notes.md (or fallback readme.md)
 
 
 MD_BOLD_FIELD = re.compile(r"^\*\*(?P<key>[^*]+)\*\*:\s*(?P<val>.*)")
 
 
 def parse_task(task_dir: Path) -> TaskMeta | None:
-    # Prefer notes.md; fall back to README.md for backward compatibility
-    doc = task_dir / "notes.md"
+    # Prefer readme.md; fall back to legacy notes.md for backward compatibility
+    doc = task_dir / "readme.md"
     if not doc.exists():
-        doc = task_dir / "README.md"
+        doc = task_dir / "notes.md"
     if not doc.exists():
         return None
 

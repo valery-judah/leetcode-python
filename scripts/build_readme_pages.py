@@ -8,13 +8,13 @@ import markdown
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE_DIR = ROOT / "site"
-README_PATH = ROOT / "README.md"
+README_PATH = ROOT / "readme.md"
 
 
 def build_from_readme() -> None:
-    """Builds the site from the main README.md."""
+    """Builds the site from the main readme.md."""
     if not README_PATH.exists():
-        print("ERROR: README.md not found.")
+        print("ERROR: readme.md not found.")
         return
 
     content = README_PATH.read_text(encoding="utf-8")
@@ -41,7 +41,7 @@ def build_from_readme() -> None:
 
     SITE_DIR.mkdir(parents=True, exist_ok=True)
     (SITE_DIR / "index.html").write_text(html, encoding="utf-8")
-    print("Site built successfully from README.md.")
+    print("Site built successfully from readme.md.")
 
 
 if __name__ == "__main__":

@@ -4,8 +4,8 @@ This document outlines a standardized TDD workflow for solving LeetCode problems
 
 ## 1. Understand the Problem
 
-- **Read the `notes.md`**: Carefully review the problem description, constraints, and examples.
-- **Clarify Requirements**: If anything is unclear, add questions to the "Clarifying questions" section of the `notes.md`.
+- **Read the task `readme.md`**: Carefully review the problem description, constraints, and examples.
+- **Clarify Requirements**: If anything is unclear, add questions to the "Clarifying questions" section of the task `readme.md`.
 
 ## 2. Write Failing Tests
 
@@ -32,7 +32,7 @@ This document outlines a standardized TDD workflow for solving LeetCode problems
 
 ## 5. Document the Solution
 
-- **Update the `notes.md`**: Fill in the "Approach" and "Complexity" sections of the `notes.md` to document the solution's logic and its time and space complexity.
+- **Update the task `readme.md`**: Fill in the "Approach" and "Complexity" sections to document the solution's logic and its time and space complexity.
 
 ## 6. Log Actions
 

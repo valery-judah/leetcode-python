@@ -7,8 +7,7 @@
 ## Files
 
 - [solutions.py](solutions.py): Implementations (single or multi-variant via `ALL_SOLUTIONS`) and `TEST_CASES`.
-- [notes.md](notes.md): Clarifying questions, approach plan, and complexity analysis.
-- [README.md](README.md): This task overview and navigation.
+
 
 <!-- Optional per-repo conventions -->
 <!-- Add extras like reasoning_by_step.py or statement copy if present -->

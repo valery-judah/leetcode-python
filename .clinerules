@@ -11,7 +11,7 @@ globs:
   - "memory-bank/progress.md"
   - "memory-bank/patterns.md"
   # Problem artifacts
-  - "tasks/**/README.md"
+  - "tasks/**/readme.md"
   - "tasks/**/solution.py"
   - "tasks/**/test_solution.py"
   # Tooling
@@ -36,7 +36,7 @@ globs:
 ## File Conventions
 
 - Tasks live in `tasks/NNNN-slug/` where NNNN is 4-digit problem number.
-- Each task has `README.md`, `solution.py`, `test_solution.py`, `__init__.py`.
+- Each task has `readme.md`, `solution.py`, `test_solution.py`, `__init__.py`.
 - Use Python ≥3.10. Style by ruff + black. Keep line length ≤100.
 
 ## Session Protocol
@@ -71,7 +71,7 @@ globs:
    ```
 
 2. Open files:
-   - `tasks/<NNNN-slug>/README.md`
+   - `tasks/<NNNN-slug>/readme.md`
    - `tasks/<NNNN-slug>/test_solution.py`
    - `tasks/<NNNN-slug>/solution.py`
 3. Update `memory-bank/activeContext.md`:

@@ -32,4 +32,4 @@ The repo’s `make fmt` surfaced many Ruff/Black issues (see `fmt_errors.md`), m
 
 - If we want Black to skip `old_leetcode/` going forward, consider `force-exclude` on the CLI (or adjust patterns) when running on the full repo.
 - Incrementally modernize `old_leetcode/` files if/when migrating them into `tasks/` (rename variables, remove duplicates, convert tests to pytest).
-- Keep `tasks/` strict: treat Ruff warnings as errors there; use marks for slow tests; maintain docstrings/notes.md updates per task.
+- Keep `tasks/` strict: treat Ruff warnings as errors there; use marks for slow tests; maintain docstrings/README updates per task.

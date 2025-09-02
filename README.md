@@ -5,7 +5,7 @@
 
 > This repository is a work in progress. I have only a few LeetCode tasks solved so far, and I hope to add more in the future.
 
-This repository contains solutions to LeetCode tasks and materials I find interesting. The current format uses a separate directory for each task that includes the task description, solutions, reasoning, and sometimes the solution flow. For example, see the [Majority Element task](/tasks/0169-majority-element/README.md).
+This repository contains solutions to LeetCode tasks and materials I find interesting. The current format uses a separate directory for each task that includes the task description, solutions, reasoning, and sometimes the solution flow. For example, see the [Majority Element task](/tasks/0169-majority-element/readme.md).
 
 This section will include NeetCode category-based task set descriptions and navigation. (TODO: paste from Obsidian notes)
 
@@ -26,9 +26,8 @@ code .
 
 Folders are created under `tasks/NNNN-slug/`. Each contains:
 
-- `notes.md` with clarifying questions and plan checklist
+- `readme.md` with clarifying questions, examples, approach, and complexity
 - `solutions.py` starter (exports `Solution`, optionally `ALL_SOLUTIONS`)
-- `test_solution.py` scaffold
 
 CI, pre-commit, and VS Code configs are included.
 
@@ -111,7 +110,7 @@ This project is configured with a `.clinerules` file that enables a proactive as
 
 #### How to Use
 
-1. **Implement Your Solution**: Complete your solution in the `solution.py` file and update the `notes.md` with your approach and complexity analysis.
+1. **Implement Your Solution**: Complete your solution in the `solution.py` file and update the task `readme.md` with your approach and complexity analysis.
 2. **Request a Review**: In the chat, ask Cline to review your work. You can say something like:
     - "Cline, please review my solution for the two-sum problem."
     - "Can you check my work for `0001-two-sum`?"
@@ -129,11 +128,11 @@ When you request a review, I will check your solution against the following crit
 2. **Correctness**: I will run the test suite to ensure that your solution is correct and passes all test cases.
     - `make test`: Executes the `pytest` test suite.
 
-3. **Complexity Analysis**: I will check the `notes.md` to ensure that you have provided a clear and accurate analysis of the time and space complexity of your solution.
+3. **Complexity Analysis**: I will check the task `readme.md` to ensure that you have provided a clear and accurate analysis of the time and space complexity of your solution.
 
 4. **Documentation**: I will verify that the solution is well-documented.
     - **Solution Docstring**: I will check for a comprehensive docstring in the `solve` method in `solution.py`.
-    - **Approach Documentation**: I will check that the `notes.md` contains a clear explanation of your approach.
+    - **Approach Documentation**: I will check that the task `readme.md` contains a clear explanation of your approach.
 
 5. **Pattern Recognition**: I will remind you to consider if the solution uses a common pattern that should be added to the `memory-bank/patterns.md` file to help you build your collection of reusable patterns.
 

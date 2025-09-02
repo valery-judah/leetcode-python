@@ -52,10 +52,6 @@ def main() -> None:
         created=datetime.utcnow().isoformat(timespec="seconds") + "Z",
     )
 
-    # notes.md (per-problem write-up)
-    readme_tpl = ROOT / "templates" / "notes.md.tpl"
-    (base / "notes.md").write_text(render(readme_tpl, **context))
-
     if args.multi:
         # multi-solution scaffold (consolidated file in task root)
         variant_tpl = ROOT / "templates" / "solutions_multi.py.tpl"
@@ -67,8 +63,7 @@ def main() -> None:
 
     # task README with standardized Files section
     task_readme_tpl = ROOT / "templates" / "task_readme.md.tpl"
-    if task_readme_tpl.exists():
-        (base / "README.md").write_text(render(task_readme_tpl, **context))
+    (base / "readme.md").write_text(render(task_readme_tpl, **context))
 
     # no package marker; tests load solution via runpy, not imports
 
