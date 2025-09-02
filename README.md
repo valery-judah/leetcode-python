@@ -3,9 +3,11 @@
 
 ![Coverage](docs/badges/coverage.svg)
 
-Minimal, test-first workflow for coding interview practice in VS Code.
+> [!NOTE] This repository is a work in progress. I have only a few LeetCode tasks solved so far, and I hope to add more in the future.
 
-Baseline runtime: Python 3.11 (matches LeetCode’s runtime).
+This repository contains solutions to LeetCode tasks and materials I find interesting. The current format uses a separate directory for each task that includes the task description, solutions, reasoning, and sometimes the solution flow. For example, see the [Majority Element task](/tasks/0169-majority-element/README.md).
+
+This section will include NeetCode category-based task set descriptions and navigation. (TODO: paste from Obsidian notes)
 
 ## Quick start
 

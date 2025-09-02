@@ -1,17 +1,17 @@
+# {number}. {title}
 
-# 169. Majority Element
-
-**URL**: <https://leetcode.com/problems/majority-element/>
-**Difficulty**: easy
-**Tags**: array,hash-table,divide-and-conquer,sorting,counting
+**URL**: <{url}>
+**Difficulty**: {difficulty}
+**Tags**: {tags}
 
 ## Files
 
-- [0169-majority-element.md](0169-majority-element.md): Problem statement snapshot and key constraints.
-- [solutions.py](solutions.py): Implementations (may include multiple variants via `ALL_SOLUTIONS`) and `TEST_CASES`.
+- [solutions.py](solutions.py): Implementations (single or multi-variant via `ALL_SOLUTIONS`) and `TEST_CASES`.
 - [notes.md](notes.md): Clarifying questions, approach plan, and complexity analysis.
-- [reasoning_by_step.py](reasoning_by_step.py): Step-by-step reasoning or exploratory code for the chosen approach(es).
 - [README.md](README.md): This task overview and navigation.
+
+<!-- Optional per-repo conventions -->
+<!-- Add extras like reasoning_by_step.py or statement copy if present -->
 
 ## Clarifying questions
 
@@ -43,6 +43,5 @@
 - [ ] Code cleanly
 - [ ] Test edge cases
 
-See also: `docs/interview-framework.md`.
-
 # Flow
+

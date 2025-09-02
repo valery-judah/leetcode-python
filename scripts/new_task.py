@@ -65,6 +65,11 @@ def main() -> None:
         solution_tpl = ROOT / "templates" / "solution.py.tpl"
         (base / "solutions.py").write_text(render(solution_tpl, **context))
 
+    # task README with standardized Files section
+    task_readme_tpl = ROOT / "templates" / "task_readme.md.tpl"
+    if task_readme_tpl.exists():
+        (base / "README.md").write_text(render(task_readme_tpl, **context))
+
     # no package marker; tests load solution via runpy, not imports
 
     print(f"Created {base.relative_to(ROOT)}")
