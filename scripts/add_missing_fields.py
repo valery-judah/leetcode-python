@@ -1,11 +1,12 @@
 import json
 import os
+import re
 
 
 def add_missing_fields():
     # Construct absolute paths to the JSON files
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    neetcode_path = os.path.join(base_dir, "data", "neetcode_250_complete.json")
+    neetcode_path = os.path.join(base_dir, "data", "leetcode_premium_100.json")
     leetcode_path = os.path.join(base_dir, "data", "leetcode_questions.json")
 
     # Load the source JSON data
@@ -14,6 +15,7 @@ def add_missing_fields():
 
     # Create a lookup map from the LeetCode data
     leetcode_map = {}
+    leetcode_title_map = {} # For fuzzy matching by title
     for item in leetcode_data:
         question = item.get("data", {}).get("question", {})
         if question and "questionId" in question and "topicTags" in question:
@@ -30,7 +32,12 @@ def add_missing_fields():
                     "tags": [tag["name"] for tag in question["topicTags"]],
                     "similarQuestions": question.get("similarQuestions", "[]"),
                     "url": question.get("url"),
+                    "title": question.get("title"), # Store title for fuzzy matching
                 }
+                # Add to fuzzy title map
+                cleaned_title = question["title"].lower().replace(' ', '-').replace('.', '').replace('(', '').replace(')', '').replace(',', '')
+                cleaned_title = re.sub(r'[^a-z0-9-]', '', cleaned_title)
+                leetcode_title_map[cleaned_title] = leetcode_map[slug]
 
     # Process similar questions to include IDs
     for slug, data in leetcode_map.items():
@@ -61,22 +68,43 @@ def add_missing_fields():
     missing_slug_in_neetcode_count = 0
     unmatched_slugs = []
     for problem in neetcode_data.get("problems", []):
+        matched = False
+        
+        # Try exact slug match first
         slug = problem.get("slug")
         if not slug:
             missing_slug_in_neetcode_count += 1
             continue
+
         if slug in leetcode_map:
             problem["id"] = leetcode_map[slug]["id"]
             problem["tags"] = leetcode_map[slug]["tags"]
-            problem["similarQuestions"] = leetcode_map[slug]["similarQuestions"]
+            problem["leetcode_url"] = leetcode_map[slug]["url"]
+            problem["similar_questions"] = leetcode_map[slug]["similarQuestions"]
             found_count += 1
+            matched = True
         else:
+            # Fallback to fuzzy title match
+            name = problem.get("name")
+            if name:
+                cleaned_name = name.lower().replace(' ', '-').replace('.', '').replace('(', '').replace(')', '').replace(',', '')
+                cleaned_name = re.sub(r'[^a-z0-9-]', '', cleaned_name)
+                if cleaned_name in leetcode_title_map:
+                    matched_data = leetcode_title_map[cleaned_name]
+                    problem["id"] = matched_data["id"]
+                    problem["tags"] = matched_data["tags"]
+                    problem["leetcode_url"] = matched_data["url"]
+                    problem["similar_questions"] = matched_data["similarQuestions"]
+                    found_count += 1
+                    matched = True
+        
+        if not matched:
             unmatched_slugs.append(slug)
 
     print("\n--- Statistics ---")
-    print(f"Total problems in neetcode_250_complete.json: {len(neetcode_data.get('problems', []))}")
+    print(f"Total problems in leetcode_premium_100.json: {len(neetcode_data.get('problems', []))}")
     print(f"Matched problems: {found_count}")
-    print(f"Problems missing a slug in neetcode_250_complete.json: {missing_slug_in_neetcode_count}")
+    print(f"Problems missing a slug in leetcode_premium_100.json: {missing_slug_in_neetcode_count}")
     print(f"Unmatched slugs: {len(unmatched_slugs)}")
 
     if unmatched_slugs:
@@ -101,9 +129,15 @@ def add_missing_fields():
         if "similarQuestions" in problem:
             problem["similar_questions"] = problem.pop("similarQuestions")
 
-        reordered_problem = {
-            key: problem[key] for key in desired_order if key in problem
-        }
+        reordered_problem = {}
+        # Preserve existing category if it exists
+        if "category" in problem:
+            reordered_problem["category"] = problem["category"]
+            
+        for key in desired_order:
+            if key in problem:
+                reordered_problem[key] = problem[key]
+        
         reordered_problems.append(reordered_problem)
 
     neetcode_data["problems"] = reordered_problems
