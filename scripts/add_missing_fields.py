@@ -28,11 +28,24 @@ def add_missing_fields():
         neetcode_data = json.load(f)
 
     # Update the NeetCode data with fields from the LeetCode data
+    found_count = 0
+    missing_titles = []
     for problem in neetcode_data.get("problems", []):
         title = problem.get("title")
+        if not title:
+            continue
         if title in leetcode_map:
             problem["id"] = leetcode_map[title]["id"]
             problem["tags"] = leetcode_map[title]["tags"]
+            found_count += 1
+        else:
+            missing_titles.append(title)
+
+    print(f"Found {found_count} matching problems.")
+    if missing_titles:
+        print("The following titles were not found in the leetcode data:")
+        for title in missing_titles:
+            print(f"  - {title}")
 
     # Save the updated data back to the file
     with open(neetcode_path, "w") as f:
