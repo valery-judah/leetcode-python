@@ -1,11 +1,3 @@
-"""
-Problem 1: Two Sum
-https://leetcode.com/problems/two-sum/
-Difficulty: easy
-Tags: array,hash-map
-"""
-
-from __future__ import annotations
 
 
 class Solution:

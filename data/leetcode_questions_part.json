@@ -1,0 +1,214 @@
+[
+  {
+    "data": {
+      "question": {
+        "questionId": "1",
+        "questionFrontendId": "1",
+        "title": "Two Sum",
+        "likes": 63912,
+        "dislikes": 2337,
+        "similarQuestions": "[{\"title\": \"3Sum\", \"titleSlug\": \"3sum\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"4Sum\", \"titleSlug\": \"4sum\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Two Sum II - Input Array Is Sorted\", \"titleSlug\": \"two-sum-ii-input-array-is-sorted\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Two Sum III - Data structure design\", \"titleSlug\": \"two-sum-iii-data-structure-design\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Subarray Sum Equals K\", \"titleSlug\": \"subarray-sum-equals-k\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Two Sum IV - Input is a BST\", \"titleSlug\": \"two-sum-iv-input-is-a-bst\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Two Sum Less Than K\", \"titleSlug\": \"two-sum-less-than-k\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Max Number of K-Sum Pairs\", \"titleSlug\": \"max-number-of-k-sum-pairs\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Count Good Meals\", \"titleSlug\": \"count-good-meals\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Count Number of Pairs With Absolute Difference K\", \"titleSlug\": \"count-number-of-pairs-with-absolute-difference-k\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Number of Pairs of Strings With Concatenation Equal to Target\", \"titleSlug\": \"number-of-pairs-of-strings-with-concatenation-equal-to-target\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Find All K-Distant Indices in an Array\", \"titleSlug\": \"find-all-k-distant-indices-in-an-array\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"First Letter to Appear Twice\", \"titleSlug\": \"first-letter-to-appear-twice\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Number of Excellent Pairs\", \"titleSlug\": \"number-of-excellent-pairs\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Number of Arithmetic Triplets\", \"titleSlug\": \"number-of-arithmetic-triplets\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Node With Highest Edge Score\", \"titleSlug\": \"node-with-highest-edge-score\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Check Distances Between Same Letters\", \"titleSlug\": \"check-distances-between-same-letters\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Find Subarrays With Equal Sum\", \"titleSlug\": \"find-subarrays-with-equal-sum\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Largest Positive Integer That Exists With Its Negative\", \"titleSlug\": \"largest-positive-integer-that-exists-with-its-negative\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Number of Distinct Averages\", \"titleSlug\": \"number-of-distinct-averages\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Count Pairs Whose Sum is Less than Target\", \"titleSlug\": \"count-pairs-whose-sum-is-less-than-target\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+        "categoryTitle": "Algorithms",
+        "hints": [
+          "A really brute force way would be to search for all possible pairs of numbers but that would be too slow. Again, it's best to try out brute force solutions just for completeness. It is from these brute force solutions that you can come up with optimizations.",
+          "So, if we fix one of the numbers, say <code>x</code>, we have to scan the entire array to find the next number <code>y</code> which is <code>value - x</code> where value is the input parameter. Can we change our array somehow so that this search becomes faster?",
+          "The second train of thought is, without changing the array, can we use additional space somehow? Like maybe a hash map to speed up the search?"
+        ],
+        "topicTags": [
+          {
+            "name": "Array"
+          },
+          {
+            "name": "Hash Table"
+          }
+        ],
+        "companyTags": null,
+        "difficulty": "Easy",
+        "isPaidOnly": false,
+        "hasSolution": true,
+        "hasVideoSolution": true,
+        "url": "https://leetcode.com/problems/two-sum/"
+      }
+    }
+  },
+  {
+    "data": {
+      "question": {
+        "questionId": "2",
+        "questionFrontendId": "2",
+        "title": "Add Two Numbers",
+        "likes": 34610,
+        "dislikes": 6922,
+        "similarQuestions": "[{\"title\": \"Multiply Strings\", \"titleSlug\": \"multiply-strings\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Add Binary\", \"titleSlug\": \"add-binary\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Sum of Two Integers\", \"titleSlug\": \"sum-of-two-integers\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Add Strings\", \"titleSlug\": \"add-strings\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Add Two Numbers II\", \"titleSlug\": \"add-two-numbers-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Add to Array-Form of Integer\", \"titleSlug\": \"add-to-array-form-of-integer\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Add Two Polynomials Represented as Linked Lists\", \"titleSlug\": \"add-two-polynomials-represented-as-linked-lists\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Double a Number Represented as a Linked List\", \"titleSlug\": \"double-a-number-represented-as-a-linked-list\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "categoryTitle": "Algorithms",
+        "hints": [],
+        "topicTags": [
+          {
+            "name": "Linked List"
+          },
+          {
+            "name": "Math"
+          },
+          {
+            "name": "Recursion"
+          }
+        ],
+        "companyTags": null,
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "hasSolution": true,
+        "hasVideoSolution": true,
+        "url": "https://leetcode.com/problems/add-two-numbers/"
+      }
+    }
+  },
+  {
+    "data": {
+      "question": {
+        "questionId": "3",
+        "questionFrontendId": "3",
+        "title": "Longest Substring Without Repeating Characters",
+        "likes": 42960,
+        "dislikes": 2102,
+        "similarQuestions": "[{\"title\": \"Longest Substring with At Most Two Distinct Characters\", \"titleSlug\": \"longest-substring-with-at-most-two-distinct-characters\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Longest Substring with At Most K Distinct Characters\", \"titleSlug\": \"longest-substring-with-at-most-k-distinct-characters\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Subarrays with K Different Integers\", \"titleSlug\": \"subarrays-with-k-different-integers\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Maximum Erasure Value\", \"titleSlug\": \"maximum-erasure-value\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Number of Equal Count Substrings\", \"titleSlug\": \"number-of-equal-count-substrings\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Minimum Consecutive Cards to Pick Up\", \"titleSlug\": \"minimum-consecutive-cards-to-pick-up\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Longest Nice Subarray\", \"titleSlug\": \"longest-nice-subarray\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Optimal Partition of String\", \"titleSlug\": \"optimal-partition-of-string\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Count Complete Subarrays in an Array\", \"titleSlug\": \"count-complete-subarrays-in-an-array\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Find Longest Special Substring That Occurs Thrice II\", \"titleSlug\": \"find-longest-special-substring-that-occurs-thrice-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Find Longest Special Substring That Occurs Thrice I\", \"titleSlug\": \"find-longest-special-substring-that-occurs-thrice-i\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "categoryTitle": "Algorithms",
+        "hints": [
+          "Generate all possible substrings & check for each substring if it's valid and keep updating maxLen accordingly."
+        ],
+        "topicTags": [
+          {
+            "name": "Hash Table"
+          },
+          {
+            "name": "String"
+          },
+          {
+            "name": "Sliding Window"
+          }
+        ],
+        "companyTags": null,
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "hasSolution": true,
+        "hasVideoSolution": true,
+        "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/"
+      }
+    }
+  },
+  {
+    "data": {
+      "question": {
+        "questionId": "4",
+        "questionFrontendId": "4",
+        "title": "Median of Two Sorted Arrays",
+        "likes": 30766,
+        "dislikes": 3454,
+        "similarQuestions": "[{\"title\": \"Median of a Row Wise Sorted Matrix\", \"titleSlug\": \"median-of-a-row-wise-sorted-matrix\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "categoryTitle": "Algorithms",
+        "hints": [],
+        "topicTags": [
+          {
+            "name": "Array"
+          },
+          {
+            "name": "Binary Search"
+          },
+          {
+            "name": "Divide and Conquer"
+          }
+        ],
+        "companyTags": null,
+        "difficulty": "Hard",
+        "isPaidOnly": false,
+        "hasSolution": true,
+        "hasVideoSolution": true,
+        "url": "https://leetcode.com/problems/median-of-two-sorted-arrays/"
+      }
+    }
+  },
+  {
+    "data": {
+      "question": {
+        "questionId": "5",
+        "questionFrontendId": "5",
+        "title": "Longest Palindromic Substring",
+        "likes": 31384,
+        "dislikes": 1934,
+        "similarQuestions": "[{\"title\": \"Shortest Palindrome\", \"titleSlug\": \"shortest-palindrome\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Palindrome Permutation\", \"titleSlug\": \"palindrome-permutation\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Palindrome Pairs\", \"titleSlug\": \"palindrome-pairs\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Longest Palindromic Subsequence\", \"titleSlug\": \"longest-palindromic-subsequence\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Palindromic Substrings\", \"titleSlug\": \"palindromic-substrings\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Maximum Number of Non-overlapping Palindrome Substrings\", \"titleSlug\": \"maximum-number-of-non-overlapping-palindrome-substrings\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+        "categoryTitle": "Algorithms",
+        "hints": [
+          "How can we reuse a previously computed palindrome to compute a larger palindrome?",
+          "If \u201caba\u201d is a palindrome, is \u201cxabax\u201d a palindrome? Similarly is \u201cxabay\u201d a palindrome?",
+          "Complexity based hint:</br>\r\nIf we use brute-force and check whether for every start and end position a substring is a palindrome we have O(n^2) start - end pairs and O(n) palindromic checks. Can we reduce the time for palindromic checks to O(1) by reusing some previous computation."
+        ],
+        "topicTags": [
+          {
+            "name": "Two Pointers"
+          },
+          {
+            "name": "String"
+          },
+          {
+            "name": "Dynamic Programming"
+          }
+        ],
+        "companyTags": null,
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "hasSolution": true,
+        "hasVideoSolution": true,
+        "url": "https://leetcode.com/problems/longest-palindromic-substring/"
+      }
+    }
+  },
+  {
+    "data": {
+      "question": {
+        "questionId": "6",
+        "questionFrontendId": "6",
+        "title": "Zigzag Conversion",
+        "likes": 8752,
+        "dislikes": 15575,
+        "similarQuestions": "[]",
+        "categoryTitle": "Algorithms",
+        "hints": [],
+        "topicTags": [
+          {
+            "name": "String"
+          }
+        ],
+        "companyTags": null,
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "hasSolution": true,
+        "hasVideoSolution": true,
+        "url": "https://leetcode.com/problems/zigzag-conversion/"
+      }
+    }
+  },
+  {
+    "data": {
+      "question": {
+        "questionId": "7",
+        "questionFrontendId": "7",
+        "title": "Reverse Integer",
+        "likes": 14585,
+        "dislikes": 13855,
+        "similarQuestions": "[{\"title\": \"String to Integer (atoi)\", \"titleSlug\": \"string-to-integer-atoi\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Reverse Bits\", \"titleSlug\": \"reverse-bits\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"A Number After a Double Reversal\", \"titleSlug\": \"a-number-after-a-double-reversal\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Count Number of Distinct Integers After Reverse Operations\", \"titleSlug\": \"count-number-of-distinct-integers-after-reverse-operations\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+        "categoryTitle": "Algorithms",
+        "hints": [],
+        "topicTags": [
+          {
+            "name": "Math"
+          }
+        ],
+        "companyTags": null,
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "hasSolution": true,
+        "hasVideoSolution": true,
+        "url": "https://leetcode.com/problems/reverse-integer/"
+      }
+    }
+  }
+]
