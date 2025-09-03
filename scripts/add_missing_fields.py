@@ -28,7 +28,29 @@ def add_missing_fields():
                 leetcode_map[slug] = {
                     "id": question["questionId"],
                     "tags": [tag["name"] for tag in question["topicTags"]],
+                    "similarQuestions": question.get("similarQuestions", "[]"),
+                    "url": question.get("url"),
                 }
+
+    # Process similar questions to include IDs
+    for slug, data in leetcode_map.items():
+        try:
+            similar_questions_json = json.loads(data["similarQuestions"])
+            processed_similar_questions = []
+            for sq in similar_questions_json:
+                similar_slug = sq.get("titleSlug")
+                if similar_slug in leetcode_map:
+                    processed_similar_questions.append(
+                        {
+                            "title": sq["title"],
+                            "slug": similar_slug,
+                            "id": leetcode_map[similar_slug]["id"],
+                            "leetcode_url": leetcode_map[similar_slug]["url"],
+                        }
+                    )
+            data["similarQuestions"] = processed_similar_questions
+        except json.JSONDecodeError:
+            data["similarQuestions"] = []
 
     # Load the target JSON data
     with open(neetcode_path, "r") as f:
@@ -46,6 +68,7 @@ def add_missing_fields():
         if slug in leetcode_map:
             problem["id"] = leetcode_map[slug]["id"]
             problem["tags"] = leetcode_map[slug]["tags"]
+            problem["similarQuestions"] = leetcode_map[slug]["similarQuestions"]
             found_count += 1
         else:
             unmatched_slugs.append(slug)
@@ -60,6 +83,30 @@ def add_missing_fields():
         print("\nThe following slugs were not found in the leetcode data:")
         for slug in unmatched_slugs:
             print(f"  - {slug}")
+
+    # Reorder fields and rename similarQuestions
+    reordered_problems = []
+    desired_order = [
+        "category",
+        "id",
+        "name",
+        "difficulty",
+        "leetcode_url",
+        "slug",
+        "tags",
+        "similar_questions",
+        "neetcode_url",
+    ]
+    for problem in neetcode_data.get("problems", []):
+        if "similarQuestions" in problem:
+            problem["similar_questions"] = problem.pop("similarQuestions")
+
+        reordered_problem = {
+            key: problem[key] for key in desired_order if key in problem
+        }
+        reordered_problems.append(reordered_problem)
+
+    neetcode_data["problems"] = reordered_problems
 
     # Save the updated data back to the file
     with open(neetcode_path, "w") as f:
