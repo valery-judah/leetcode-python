@@ -125,3 +125,5 @@ dmypy.json
 .ruff_cache
 __pycache__
 tasks/.DS_Store
+data/all_neetcode.md
+data/leetcode_questions.json

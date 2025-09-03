@@ -4,3 +4,4 @@ mkdocs-material
 mkdocstrings[python]
 griffe
 markdown
+requests
