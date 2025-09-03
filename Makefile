@@ -44,7 +44,7 @@ fmt-legacy:
 type:
 	$(PYTHON) -m mypy tasks || true  # tasks may contain stubs early
 
-ci: test badge lint type
+ci: test lint type
 
 cov-html:
 	PYTHONDONTWRITEBYTECODE=1 $(PYTHON) -m pytest -q --cov=tasks --cov-report=html
