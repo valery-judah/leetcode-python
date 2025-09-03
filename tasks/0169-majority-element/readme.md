@@ -76,7 +76,9 @@ Finding a Candidate:
 - If the current element is the same as the candidate, increment count.
 - If the current element is different from the candidate, decrement count.
 
-> [!note] The intuition behind this phase is that each non-candidate element effectively "cancels out" one instance of the candidate. If a true majority element exists, it will eventually emerge as the candidate at the end of this pass because its occurrences will outnumber the cancellations. <- this one is interesting
+>[!note] The intuition behind this phase is that each non-candidate element effectively "cancels out" one instance of the candidate. If a true majority element exists, it will eventually emerge as the candidate at the end of this pass because its occurrences will outnumber the cancellations. <- this one is interesting
+
+Question: why it's a candidate? Because: s(XXAXX) = s(XXXXA) = 1, and `XXXX` can be `ABCB` and `ABAB`. `A` will be majority only in the latter.
 
 **Second Phase. Verifying the Candidate:**
 

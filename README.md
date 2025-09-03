@@ -5,11 +5,21 @@
 
 > This repository is a work in progress. I have only a few LeetCode tasks solved so far, and I hope to add more in the future.
 
-This repository contains solutions to LeetCode tasks and materials I find interesting. The current format uses a separate directory for each task that includes the task description, solutions, reasoning, and sometimes the solution flow. For example, see the [Majority Element task](/tasks/0169-majority-element/readme.md).
+This repository contains solutions to LeetCode tasks and materials I find interesting. All leetcode tasks are in the [tasks](/tasks/) directory.
+
+Each task has separate directory which includes task description, solutions, reasoning, and sometimes the solution flow. For example, see the [Majority Element task](/tasks/0169-majority-element/readme.md).
 
 This section will include NeetCode category-based task set descriptions and navigation. (TODO: paste from Obsidian notes)
 
 ## Quick start
+
+
+What do you want? 
+
+- Read information about tasks:
+- Run tests and get additional info (?)
+- Create new task
+
 
 ```bash
 # 1) Create a new problem skeleton
