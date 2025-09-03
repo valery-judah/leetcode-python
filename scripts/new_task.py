@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import re
+import shutil
 from datetime import datetime
 from pathlib import Path
 
@@ -28,17 +29,14 @@ def main() -> None:
     ap.add_argument("--difficulty", choices=["easy", "medium", "hard"], default="easy")
     ap.add_argument("--tags", default="")
     ap.add_argument("--url", default="")
-    ap.add_argument(
-        "--multi",
-        action="store_true",
-        help="scaffold a consolidated solutions.py with room for multiple variants",
-    )
     args = ap.parse_args()
 
     slug = kebab(args.slug)
     title = args.title or slug.replace("-", " ").title()
     dirname = f"{args.number:04d}-{slug}"
     base = ROOT / "tasks" / dirname
+    if base.exists():
+        shutil.rmtree(base)
     base.mkdir(parents=True, exist_ok=True)
 
     context = dict(
@@ -52,27 +50,23 @@ def main() -> None:
         created=datetime.utcnow().isoformat(timespec="seconds") + "Z",
     )
 
-    if args.multi:
-        # multi-solution scaffold (consolidated file in task root)
-        variant_tpl = ROOT / "templates" / "solutions_multi.py.tpl"
-        (base / "solutions.py").write_text(render(variant_tpl, **context))
-    else:
-        # single-solution scaffold (consolidated file)
-        solution_tpl = ROOT / "templates" / "solution.py.tpl"
-        (base / "solutions.py").write_text(render(solution_tpl, **context))
+    # multi-solution scaffold (consolidated file in task root)
+    variant_tpl = ROOT / "templates" / "solutions_multi.py.tpl"
+    (base / "solutions.py").write_text(render(variant_tpl, **context))
 
     # task README with standardized Files section
     task_readme_tpl = ROOT / "templates" / "task_readme.md.tpl"
     (base / "readme.md").write_text(render(task_readme_tpl, **context))
+    link_path = base / f"{args.number:04d}.readme.md"
+    if link_path.exists():
+        link_path.unlink()
+    link_path.symlink_to("readme.md")
 
     # no package marker; tests load solution via runpy, not imports
 
     print(f"Created {base.relative_to(ROOT)}")
     print("Next:")
-    if args.multi:
-        print(f"  - Edit {base / 'solutions.py'} and add classes to ALL_SOLUTIONS")
-    else:
-        print(f"  - Edit {base / 'solutions.py'}")
+    print(f"  - Edit {base / 'solutions.py'} and add classes to ALL_SOLUTIONS")
     print("  - Add TEST_CASES in solutions.py; run: pytest -q")
 
 

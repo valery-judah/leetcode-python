@@ -23,3 +23,11 @@ def find_sum_indices(nums: list[int], target: int) -> list[int]:
 ```
 
 **Pitfalls**: This approach assumes that each input has exactly one solution and that you cannot use the same element twice. If these constraints are different, the template will need to be modified.
+
+## Soft Links for Readmes
+
+**Use when**: You have a large number of readme files and want to provide stable, memorable links to them.
+**Idea**: Create soft (`.soft.md`)  links to the main readme file (e.g., `readme.md`). This prevents issues with mentioning the exact readme file, especially when dealing with hundreds of them.
+**Example**:
+
+- `0169.soft.md` -> `tasks/0169-majority-element/readme.md`

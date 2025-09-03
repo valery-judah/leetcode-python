@@ -1,4 +1,4 @@
-# 0002 – Multi-solution Structure
+# 0002 – Solution Structure
 
 - Status: Accepted
 - Date: 2025-08-30

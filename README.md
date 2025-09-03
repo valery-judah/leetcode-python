@@ -31,6 +31,24 @@ Folders are created under `tasks/NNNN-slug/`. Each contains:
 
 CI, pre-commit, and VS Code configs are included.
 
+## Chat aliases (for this assistant)
+
+To reference a task’s files in chat without typing full paths, you can use simple aliases. I will resolve these when you use them in messages here (no symlinks needed):
+
+- `@NNNN` → `tasks/NNNN-*/readme.md`
+  - Example: `@0169` → `tasks/0169-majority-element/readme.md`
+- `@slug` → `tasks/*-slug/readme.md`
+  - Example: `@two-sum` → `tasks/0001-two-sum/readme.md`
+- `@NNNN/<file>` or `@slug/<file>` to point to another file in that task directory
+  - Example: `@0169/solutions.py` → `tasks/0169-majority-element/solutions.py`
+
+If an alias maps to multiple folders, I’ll ask you to clarify which one you meant.
+
+### Optional alias files (local convenience)
+
+- Prefer a symlink alias which is resides in taks folder per task, e.g. `0169.readme.md` → `readme.md`.
+- Create with: `ln -s readme.md 0169.readme.md`.
+
 ### Multi-variant mode (compare approaches)
 
 If you want to implement and compare multiple approaches for a problem:
