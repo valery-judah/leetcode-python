@@ -34,7 +34,7 @@ def main() -> None:
     slug = kebab(args.slug)
     title = args.title or slug.replace("-", " ").title()
     dirname = f"{args.number:04d}-{slug}"
-    base = ROOT / "tasks" / dirname
+    base = ROOT / "problems" / dirname
     if base.exists():
         shutil.rmtree(base)
     base.mkdir(parents=True, exist_ok=True)
@@ -50,13 +50,13 @@ def main() -> None:
         created=datetime.utcnow().isoformat(timespec="seconds") + "Z",
     )
 
-    # multi-solution scaffold (consolidated file in task root)
+    # multi-solution scaffold (consolidated file in problem root)
     variant_tpl = ROOT / "templates" / "solutions_multi.py.tpl"
     (base / "solutions.py").write_text(render(variant_tpl, **context))
 
-    # task README with standardized Files section
-    task_readme_tpl = ROOT / "templates" / "task_readme.md.tpl"
-    (base / "readme.md").write_text(render(task_readme_tpl, **context))
+    # problem README with standardized Files section
+    problem_readme_tpl = ROOT / "templates" / "problem_readme.md.tpl"
+    (base / "readme.md").write_text(render(problem_readme_tpl, **context))
     link_path = base / f"{args.number:04d}.readme.md"
     if link_path.exists():
         link_path.unlink()

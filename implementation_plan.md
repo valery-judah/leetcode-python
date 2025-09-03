@@ -1,31 +1,36 @@
 # Implementation Plan
 
 [Overview]
-This plan outlines the steps to remove the GitHub Pages deployment functionality from the project's CI/CD pipeline. This involves deleting the deployment script, removing the deployment job from the GitHub Actions workflow, and updating the Makefile.
+This document outlines the plan to rename the `tasks` directory to `problems` and update all related scripts and configuration files to reflect this change. This change will improve the clarity of the project's structure and naming conventions.
 
 [Types]
-There are no changes to types, data structures, or interfaces.
+No new types will be introduced.
 
 [Files]
-File modifications will be made to remove the GitHub Pages deployment logic.
-
-- **Modified:** `.github/workflows/ci.yml` - The `deploy` job will be removed.
-- **Deleted:** `scripts/build_readme_pages.py` - This script is no longer needed.
-- **Modified:** `Makefile` - The `ci` target will be updated to remove any deployment-related steps.
+The following file modifications will be made:
+- Rename the `tasks` directory to `problems`.
+- Modify `scripts/new_task.py` to create new problems in the `problems` directory.
+- Modify `scripts/test_new_task.py` to use the `problems` directory for testing.
+- Modify `problems/all_problems_spec.py` to refer to `problem` instead of `task`.
+- Modify `Makefile` to use the `problems` directory for testing and type checking.
+- Modify `pytest.ini` to look for tests in the `problems` directory.
 
 [Functions]
-No new, modified, or removed functions.
+No new functions will be introduced.
 
 [Classes]
-No new, modified, or removed classes.
+No new classes will be introduced.
 
 [Dependencies]
-No changes to dependencies.
+No new dependencies will be introduced.
 
 [Testing]
-No changes to the testing approach.
+The existing tests will be updated to work with the new `problems` directory. No new tests will be added.
 
 [Implementation Order]
-1. Modify `.github/workflows/ci.yml` to remove the `deploy` job.
-2. Delete the `scripts/build_readme_pages.py` file.
-3. Modify the `Makefile` to update the `ci` target.
+1. Rename the `tasks` directory to `problems`.
+2. Update `scripts/new_task.py` to create new problems in the `problems` directory.
+3. Update `scripts/test_new_task.py` to use the `problems` directory.
+4. Update `problems/all_problems_spec.py` to refer to `problem` instead of `task`.
+5. Update `Makefile` to use the `problems` directory for testing and type checking.
+6. Update `pytest.ini` to look for tests in the `problems` directory.

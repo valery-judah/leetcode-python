@@ -11,7 +11,7 @@ import pytest
 
 @dataclass(frozen=True)
 class StubParam:
-    task: str
+    problem: str
     sol_name: str
     module_path: str
     exc: type[BaseException]
@@ -22,7 +22,7 @@ class StubParam:
 
 @dataclass(frozen=True)
 class CaseParam:
-    task: str
+    problem: str
     sol_name: str
     module_path: str
     label: str
@@ -77,8 +77,8 @@ def _parse_case_tuple(item: Any) -> tuple[str, tuple[Any, ...], dict[str, Any], 
 def _discover_stub_params() -> list[StubParam]:
     root = Path(__file__).parent
     params: list[StubParam] = []
-    for task_dir in sorted(p for p in root.iterdir() if p.is_dir()):
-        sol_path = task_dir / "solutions.py"
+    for problem_dir in sorted(p for p in root.iterdir() if p.is_dir()):
+        sol_path = problem_dir / "solutions.py"
         if not sol_path.exists():
             continue
         try:
@@ -114,7 +114,7 @@ def _discover_stub_params() -> list[StubParam]:
             for label, args, kwargs in cases:
                 params.append(
                     StubParam(
-                        task=task_dir.name,
+                        problem=problem_dir.name,
                         sol_name=sol_name,
                         module_path=str(sol_path),
                         exc=exc,
@@ -129,8 +129,8 @@ def _discover_stub_params() -> list[StubParam]:
 def _discover_case_params() -> list[CaseParam]:
     root = Path(__file__).parent
     params: list[CaseParam] = []
-    for task_dir in sorted(p for p in root.iterdir() if p.is_dir()):
-        sol_path = task_dir / "solutions.py"
+    for problem_dir in sorted(p for p in root.iterdir() if p.is_dir()):
+        sol_path = problem_dir / "solutions.py"
         if not sol_path.exists():
             continue
         try:
@@ -138,7 +138,7 @@ def _discover_case_params() -> list[CaseParam]:
         except Exception:
             continue
 
-        # Skip stub tasks
+        # Skip stub problems
         if _is_exception_opt_in(ns):
             continue
 
@@ -158,7 +158,7 @@ def _discover_case_params() -> list[CaseParam]:
             sol_name = getattr(classes[0], "__name__", "Solution")
             params.append(
                 CaseParam(
-                    task=task_dir.name,
+                    problem=problem_dir.name,
                     sol_name=sol_name,
                     module_path=str(sol_path),
                     label=label,
@@ -197,11 +197,14 @@ _CASE_PARAMS = _discover_case_params()
 
 
 @pytest.mark.parametrize(
-    ("task", "sol_name", "module_path", "exc", "label", "args", "kwargs"),
-    [(p.task, p.sol_name, p.module_path, p.exc, p.label, p.args, p.kwargs) for p in _STUB_PARAMS],
+    ("problem", "sol_name", "module_path", "exc", "label", "args", "kwargs"),
+    [
+        (p.problem, p.sol_name, p.module_path, p.exc, p.label, p.args, p.kwargs)
+        for p in _STUB_PARAMS
+    ],
 )
 def test_stub_solutions_raise(
-    task: str,
+    problem: str,
     sol_name: str,
     module_path: str,
     exc: type[BaseException],
@@ -222,19 +225,27 @@ def test_stub_solutions_raise(
             cls().solve(*args, **kwargs)
         ok = True
     finally:
-        run_summary[sol_name].append((f"{task}:{label}", ok))
+        run_summary[sol_name].append((f"{problem}:{label}", ok))
     assert ok
 
 
 @pytest.mark.parametrize(
-    ("task", "sol_name", "module_path", "label", "args", "kwargs", "expected"),
+    ("problem", "sol_name", "module_path", "label", "args", "kwargs", "expected"),
     [
-        (p.task, p.sol_name, p.module_path, p.label, p.args, p.kwargs, p.expected)
+        (
+            p.problem,
+            p.sol_name,
+            p.module_path,
+            p.label,
+            p.args,
+            p.kwargs,
+            p.expected,
+        )
         for p in _CASE_PARAMS
     ],
 )
 def test_default_cases(
-    task: str,
+    problem: str,
     sol_name: str,
     module_path: str,
     label: str,
@@ -259,5 +270,5 @@ def test_default_cases(
     exp_norm = normalizer(expected)
     out_norm = normalizer(out)
     ok = out_norm == exp_norm
-    run_summary[sol_name].append((f"{task}:{label}", ok))
+    run_summary[sol_name].append((f"{problem}:{label}", ok))
     assert ok

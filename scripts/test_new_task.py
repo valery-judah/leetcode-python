@@ -2,46 +2,47 @@ import shutil
 import subprocess
 import sys
 from pathlib import Path
+from typing import Generator
 
 import pytest
 
 ROOT = Path(__file__).resolve().parents[1]
-NEW_TASK_SCRIPT = ROOT / "scripts" / "new_task.py"
-TASKS_DIR = ROOT / "tasks"
+NEW_PROBLEM_SCRIPT = ROOT / "scripts" / "new_task.py"
+PROBLEMS_DIR = ROOT / "problems"
 
 
 @pytest.fixture
-def test_task_path() -> Path:
-    """Provides the path for a test task and ensures cleanup."""
-    slug = "test-task-for-regeneration"
+def test_problem_path() -> Generator[Path, None, None]:
+    """Provides the path for a test problem and ensures cleanup."""
+    slug = "test-problem-for-regeneration"
     number = "9997"
-    task_path = TASKS_DIR / f"{int(number):04d}-{slug}"
+    problem_path = PROBLEMS_DIR / f"{int(number):04d}-{slug}"
 
     # Clean up before the test, in case of a previous failure
-    if task_path.exists():
-        shutil.rmtree(task_path)
+    if problem_path.exists():
+        shutil.rmtree(problem_path)
 
-    yield task_path
+    yield problem_path
 
     # Clean up after the test
-    if task_path.exists():
-        shutil.rmtree(task_path)
+    if problem_path.exists():
+        shutil.rmtree(problem_path)
 
 
-def run_new_task_script(*args: str) -> None:
+def run_new_problem_script(*args: str) -> None:
     """Helper function to run the new_task.py script from the project root."""
-    cmd = [sys.executable, str(NEW_TASK_SCRIPT), *args]
+    cmd = [sys.executable, str(NEW_PROBLEM_SCRIPT), *args]
     subprocess.run(cmd, check=True, cwd=ROOT)
 
 
-def test_new_task_creation_and_regeneration(test_task_path: Path):
-    """Tests that a new task can be created and regenerated correctly."""
-    slug = "test-task-for-regeneration"
+def test_new_problem_creation_and_regeneration(test_problem_path: Path):
+    """Tests that a new problem can be created and regenerated correctly."""
+    slug = "test-problem-for-regeneration"
     number = "9997"
-    expected_dir = test_task_path
+    expected_dir = test_problem_path
 
     # 1. Initial creation
-    run_new_task_script(slug, number)
+    run_new_problem_script(slug, number)
 
     # Assert initial creation
     assert expected_dir.is_dir()
@@ -57,7 +58,7 @@ def test_new_task_creation_and_regeneration(test_task_path: Path):
     assert (expected_dir / "dummy_file.txt").exists()
 
     # 3. Regeneration
-    run_new_task_script(slug, number)
+    run_new_problem_script(slug, number)
 
     # Assert regeneration
     assert expected_dir.is_dir()

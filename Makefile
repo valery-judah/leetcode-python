@@ -17,7 +17,7 @@ precommit:
 	pre-commit install
 
 test:
-	PYTHONDONTWRITEBYTECODE=1 $(PYTHON) -m pytest -q --cov=tasks --cov-report=term-missing --cov-report=xml:coverage.xml
+	PYTHONDONTWRITEBYTECODE=1 $(PYTHON) -m pytest -q --cov=problems --cov-report=term-missing --cov-report=xml:coverage.xml
 
 badge:
 	@mkdir -p docs/badges
@@ -42,9 +42,9 @@ fmt-legacy:
 	$(PYTHON) -m black old_leetcode || true
 
 type:
-	$(PYTHON) -m mypy tasks || true  # tasks may contain stubs early
+	$(PYTHON) -m mypy problems || true  # problems may contain stubs early
 
 ci: test lint type
 
 cov-html:
-	PYTHONDONTWRITEBYTECODE=1 $(PYTHON) -m pytest -q --cov=tasks --cov-report=html
+	PYTHONDONTWRITEBYTECODE=1 $(PYTHON) -m pytest -q --cov=problems --cov-report=html
