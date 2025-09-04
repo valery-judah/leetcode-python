@@ -1,6 +1,6 @@
 
 .PHONY: install linters precommit test lint type fmt ci badge cov-html \
-        format-md lint-md fix-md validate-stats tracks-report tracks-table markdown build
+        format-md fmt-json lint-md fix-md validate-stats tracks-report tracks-table markdown build
 
 # Prefer project venv Python, then python3, then python
 PYTHON := $(shell if [ -x "./venv/bin/python" ]; then echo "./venv/bin/python"; \
@@ -71,6 +71,8 @@ build:
 	make fmt
 	@echo "--- Formatting Markdown ---"
 	make format-md
+	@echo "--- Formatting JSON ---"
+	make fmt-json
 	@echo "--- Running linters ---"
 	make lint
 	@echo "--- Linting Markdown ---"
@@ -91,6 +93,11 @@ build:
 format-md:
 	@echo "--- Formatting Markdown files with mdformat ---"
 	$(PYTHON) -m mdformat .
+
+# JSON formatting via pre-commit hook (pretty-format-json)
+fmt-json:
+	@echo "--- Formatting JSON files (pre-commit: pretty-format-json) ---"
+	pre-commit run --hook-stage manual pretty-format-json --all-files || true
 
 # Target: fix-md
 # Automatically fixes all supported Markdown linting issues using markdownlint.

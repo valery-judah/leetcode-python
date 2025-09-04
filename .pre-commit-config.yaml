@@ -5,6 +5,8 @@ repos:
     hooks:
       - id: end-of-file-fixer
       - id: trailing-whitespace
+      - id: pretty-format-json
+        args: ["--autofix", "--indent=2", "--no-sort-keys"]
   - repo: local
     hooks:
       - id: make-fmt

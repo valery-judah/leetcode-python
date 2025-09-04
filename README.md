@@ -45,7 +45,7 @@ Actions order to build and use your own system:
 
 ```bash
 # 1) Create a new problem skeleton (example)
-python scripts/new_problem.py two-sum 1 
+python scripts/new_problem.py two-sum 1
 
 # 2) Run tests and style checks
 make test          # pytest (no __pycache__ written)
