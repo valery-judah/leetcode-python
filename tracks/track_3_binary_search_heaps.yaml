@@ -1,0 +1,179 @@
+
+
+version: 1
+track: track_3_binary_search_heaps
+title: Binary Search — Predicates, Partitions, and Heaps
+description: Build mastery of monotone predicates, partition-based search, search-on-answer, and heap/selection patterns.
+problems:
+  # Binary search basics
+  - slug: binary-search
+    title: Binary Search
+    difficulty: easy
+    primary_pattern: binary-search
+    section: basics
+    why: >
+      Template baseline. Practice mid computation, invariant (lo..hi), and loop shape without off-by-one errors.
+  - slug: search-in-rotated-sorted-array
+    title: Search in Rotated Sorted Array
+    difficulty: medium
+    primary_pattern: binary-search-on-rotations
+    section: basics
+    why: >
+      Decide which half is sorted each step. Teaches branch reasoning inside the search and handling wrap-around.
+  - slug: find-minimum-in-rotated-sorted-array
+    title: Find Minimum in Rotated Sorted Array
+    difficulty: medium
+    primary_pattern: binary-search-on-rotations
+    section: basics
+    why: >
+      Monotone boundary on the minimum. Solidifies choosing the side by comparing to nums[hi] or nums[mid].
+  - slug: find-peak-element
+    title: Find Peak Element
+    difficulty: medium
+    primary_pattern: binary-search-on-slope
+    section: basics
+    why: >
+      Use slope sign at mid to discard half. Generalizes to unimodal searches and mountain arrays.
+
+  # 2D search
+  - slug: search-a-2d-matrix
+    title: Search a 2D Matrix
+    difficulty: medium
+    primary_pattern: binary-search-flattened
+    section: matrices
+    why: >
+      Treat as 1D via index mapping, or do two-stage search. Exercises careful integer math.
+
+  # Partition-based binary search (hard)
+  - slug: median-of-two-sorted-arrays
+    title: Median of Two Sorted Arrays
+    difficulty: hard
+    primary_pattern: binary-search-partition
+    section: partitions
+    why: >
+      Partition the smaller array and validate with border values. Capstone for reasoning about partitions and invariants.
+
+  # Search with time/index histories
+  - slug: time-based-key-value-store
+    title: Time Based Key-Value Store
+    difficulty: medium
+    primary_pattern: binary-search-in-history
+    section: maps
+    why: >
+      Per-key sorted history with lower_bound/upper_bound. Introduces per-bucket binary search in associative containers.
+
+  # Heaps, selection, and streaming
+  - slug: k-closest-points-to-origin
+    title: K Closest Points to Origin
+    difficulty: medium
+    primary_pattern: heap-selection
+    section: heaps
+    why: >
+      Fixed-size heap vs quickselect tradeoff. Practice comparator correctness and O(n log k) vs average O(n).
+  - slug: find-median-from-data-stream
+    title: Find Median from Data Stream
+    difficulty: hard
+    primary_pattern: two-heaps
+    section: heaps
+    why: >
+      Two balanced heaps with size invariant. Teaches amortized O(log n) updates and lazy rebalancing.
+  - slug: kth-largest-element-in-an-array
+    title: Kth Largest Element in an Array
+    difficulty: medium
+    primary_pattern: quickselect-or-heap
+    section: heaps
+    why: >
+      Deterministic heap and randomized quickselect. Clarifies when to prefer each under constraints.
+  - slug: merge-k-sorted-lists
+    title: Merge k Sorted Lists
+    difficulty: hard
+    primary_pattern: heap-kway-merge
+    section: heaps
+    why: >
+      Classic k-way merge with a min-heap of heads. Also sets up external merge patterns.
+
+  # Search on answer
+  - slug: kth-smallest-element-in-a-sorted-matrix
+    title: Kth Smallest Element in a Sorted Matrix
+    difficulty: hard
+    primary_pattern: binary-search-on-answer
+    section: search-on-answer
+    why: >
+      Binary search value range and count ≤ mid in O(n) per check with row pointers. Canonical BS-on-answer template.
+
+notes:
+  ordering: Basics → 2D → partitions → histories → heaps/selection → search-on-answer.
+  next_track: track_4_intervals
+
+extensions:
+  optional:
+    - slug: koko-eating-bananas
+      title: Koko Eating Bananas
+      difficulty: medium
+      primary_pattern: binary-search-on-answer
+      section: search-on-answer
+      why: >
+        Monotone predicate on speed. Clean practice for designing ok(mid) and bounding search space.
+    - slug: capacity-to-ship-packages-within-d-days
+      title: Capacity To Ship Packages Within D Days
+      difficulty: medium
+      primary_pattern: binary-search-on-answer
+      section: search-on-answer
+      why: >
+        Feasibility check by greedy packing. Strengthens predicate design and bounds.
+    - slug: split-array-largest-sum
+      title: Split Array Largest Sum
+      difficulty: hard
+      primary_pattern: binary-search-on-answer
+      section: search-on-answer
+      why: >
+        Partition array into m groups minimizing max sum. Core BS-on-answer with greedy feasibility.
+    - slug: search-a-2d-matrix-ii
+      title: Search a 2D Matrix II
+      difficulty: medium
+      primary_pattern: sorted-matrix-staircase
+      section: matrices
+      why: >
+        Staircase from top-right/bottom-left. Alternative to BS and a common interview twist.
+    - slug: find-first-and-last-position-of-element-in-sorted-array
+      title: Find First and Last Position of Element in Sorted Array
+      difficulty: medium
+      primary_pattern: binary-search-left-right-bound
+      section: basics
+      why: >
+        Master leftmost/rightmost templates. Eliminates off-by-one and clarifies invariants for closed vs half-open ranges.
+    - slug: find-k-closest-elements
+      title: Find K Closest Elements
+      difficulty: medium
+      primary_pattern: binary-search + two-pointers
+      section: heaps
+      why: >
+        Lower_bound on left edge then shrink window, or heap alternative. Good comparison of strategies.
+
+omitted:
+  from_neetcode_250:
+    - id: 81
+      slug: search-in-rotated-sorted-array-ii
+      reason: >
+        Duplicates complicate boundary logic. Add after mastering 33/153 to avoid mixing corner cases early.
+    - id: 154
+      slug: find-minimum-in-rotated-sorted-array-ii
+      reason: >
+        Same duplicate-rotation pitfalls as 81. Keep as follow-up exercise.
+    - id: 347
+      slug: top-k-frequent-elements
+      reason: >
+        Already covered in track_0 foundations under hashing + heap/bucket. No repetition here.
+    - id: 719
+      slug: find-k-th-smallest-pair-distance
+      reason: >
+        Advanced BS-on-answer with frequency counting. Good after 378/410; omitted to keep core lean.
+  from_leetcode_150:
+    - id: 34
+      slug: find-first-and-last-position-of-element-in-sorted-array
+      reason: >
+        Provided as an extension. Include when left/right-bound templates feel automatic.
+    - id: 658
+      slug: find-k-closest-elements
+      reason: >
+        Added as extension to compare binary-search window vs heap. Not core if 973/215 are already covered.

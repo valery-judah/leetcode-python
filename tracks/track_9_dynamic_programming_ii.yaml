@@ -1,0 +1,242 @@
+version: 1
+track: track_9_dynamic_programming_ii
+title: Dynamic Programming II — 2D Tables, Sequences, and Palindromes
+description: Master 2D/tabular DP on grids and strings; LCS/edit families; count/exact-match vs subsequence; palindrome tables and subsequences.
+problems:
+  # Grid & triangle tables
+  - slug: unique-paths
+    title: Unique Paths
+    difficulty: medium
+    primary_pattern: dp-grid-count
+    section: grids
+    why: >
+      Classic grid count with 2D table or 1D roll. Base initialization and iteration order.
+  - slug: unique-paths-ii
+    title: Unique Paths II
+    difficulty: medium
+    primary_pattern: dp-grid-count-obstacles
+    section: grids
+    why: >
+      Obstacles add zeroing and careful starts. Solidifies guard conditions.
+  - slug: minimum-path-sum
+    title: Minimum Path Sum
+    difficulty: medium
+    primary_pattern: dp-grid-min
+    section: grids
+    why: >
+      Min over top/left with cell cost. Teaches sentinel handling and 1D rolling min.
+  - slug: minimum-falling-path-sum
+    title: Minimum Falling Path Sum
+    difficulty: medium
+    primary_pattern: dp-grid-min-diagonals
+    section: grids
+    why: >
+      Down-left/down/down-right transition. Boundary guards and rolling from next row up.
+  - slug: triangle
+    title: Triangle
+    difficulty: medium
+    primary_pattern: dp-triangle
+    section: grids
+    why: >
+      Bottom‑up row rolling or top‑down memo. Practises in‑place updates.
+
+  # Edit/LCS family
+  - slug: longest-common-subsequence
+    title: Longest Common Subsequence
+    difficulty: medium
+    primary_pattern: dp-lcs
+    section: edit-lcs
+    why: >
+      Canonical 2D DP. Transition on match vs skip. Sets template for many string DPs.
+  - slug: edit-distance
+    title: Edit Distance
+    difficulty: hard
+    primary_pattern: dp-levenshtein
+    section: edit-lcs
+    why: >
+      Insert/delete/replace with cost 1. Full table with row/col bases and min of three.
+  - slug: delete-operation-for-two-strings
+    title: Delete Operation for Two Strings
+    difficulty: medium
+    primary_pattern: dp-lcs-derivation
+    section: edit-lcs
+    why: >
+      Min deletions via |s|+|t|-2*LCS. Use LCS or direct DP. Highlights equivalences.
+  - slug: interleaving-string
+    title: Interleaving String
+    difficulty: medium
+    primary_pattern: dp-interleave
+    section: edit-lcs
+    why: >
+      dp[i][j] depends on s1[i-1] or s2[j-1] matching s3. Indexing discipline with two sources.
+  - slug: distinct-subsequences
+    title: Distinct Subsequences
+    difficulty: hard
+    primary_pattern: dp-subsequence-count
+    section: edit-lcs
+    why: >
+      Count subsequences forming T. Transition on match: take + skip. Requires large-number care.
+
+  # Palindromes & substrings
+  - slug: palindromic-substrings
+    title: Palindromic Substrings
+    difficulty: medium
+    primary_pattern: dp-palindrome-table
+    section: palindromes
+    why: >
+      2D table or expand‑around‑center. If dp, fill by length with dp[i+1][j-1] dependency.
+  - slug: longest-palindromic-substring
+    title: Longest Palindromic Substring
+    difficulty: medium
+    primary_pattern: dp-palindrome-table
+    section: palindromes
+    why: >
+      Same table as 647 but track best length/span. Compares DP vs expand‑center tradeoffs.
+  - slug: longest-palindromic-subsequence
+    title: Longest Palindromic Subsequence
+    difficulty: medium
+    primary_pattern: dp-lps
+    section: palindromes
+    why: >
+      LCS(s, reverse(s)) or direct dp[i][j]. Teaches reverse‑string trick vs in‑place 2D.
+  - slug: maximum-length-of-repeated-subarray
+    title: Maximum Length of Repeated Subarray
+    difficulty: medium
+    primary_pattern: dp-lcs-contiguous
+    section: palindromes
+    why: >
+      LCS for contiguous runs. dp[i][j]=1+dp[i-1][j-1] on match; else 0. Contrast with LCS.
+
+notes:
+  ordering: Grids/triangle → LCS/edit family → interleaving/count → palindromes.
+  next_track: track_10_hard_mix
+
+extensions:
+  optional:
+    - slug: maximal-square
+      title: Maximal Square
+      difficulty: medium
+      primary_pattern: dp-grid-square
+      section: grids
+      why: >
+        dp[i][j]=1+min of three neighbors for '1' cells. Area from side^2. Good rolling‑array practice.
+    - slug: minimum-ascii-delete-sum-for-two-strings
+      title: Minimum ASCII Delete Sum for Two Strings
+      difficulty: medium
+      primary_pattern: dp-ascii-delete
+      section: edit-lcs
+      why: >
+        Weighted variant of 583. Requires sum of deleted char codes; careful base initialization.
+    - slug: regular-expression-matching
+      title: Regular Expression Matching
+      difficulty: hard
+      primary_pattern: dp-regex
+      section: strings
+      why: >
+        DP with '.' and '*' operators. Edge‑case heavy; do after core tables.
+    - slug: wildcard-matching
+      title: Wildcard Matching
+      difficulty: hard
+      primary_pattern: dp-wildcard
+      section: strings
+      why: >
+        Greedy+DP hybrid or full DP. Clarifies '*' collapse and consecutive wildcards.
+    - slug: palindrome-partitioning-ii
+      title: Palindrome Partitioning II
+      difficulty: hard
+      primary_pattern: dp-pal-partition
+      section: palindromes
+      why: >
+        Precompute pal table then dp cuts. Classic O(n^2) preprocess + O(n^2) DP.
+    - slug: dungeon-game
+      title: Dungeon Game
+      difficulty: hard
+      primary_pattern: dp-grid-min-survival
+      section: grids
+      why: >
+        Backward DP for min health needed. Teaches reverse fill with max(1, ...).
+    - slug: minimum-cost-to-cut-a-stick
+      title: Minimum Cost to Cut a Stick
+      difficulty: hard
+      primary_pattern: dp-interval-partition
+      section: intervals
+      why: >
+        Interval DP with sorted cuts; cost depends on interval length + subproblems.
+    - slug: burst-balloons
+      title: Burst Balloons
+      difficulty: hard
+      primary_pattern: dp-interval-knuth-like
+      section: intervals
+      why: >
+        Interval DP choosing last balloon to burst. High‑yield classic after interval DP intro.
+    - slug: longest-common-substring
+      title: Longest Common Substring (Alt to 718)
+      difficulty: medium
+      primary_pattern: dp-lcs-contiguous
+      section: edit-lcs
+      why: >
+        Same as 718 by name; include if you keep a separate variant.
+
+omitted:
+  from_neetcode_250:
+    - id: 221
+      slug: maximal-square
+      reason: >
+        Added as extension to keep core balanced across grid and strings.
+    - id: 312
+      slug: burst-balloons
+      reason: >
+        Hard interval DP; placed in extensions or track_10 hard mix.
+    - id: 174
+      slug: dungeon-game
+      reason: >
+        Extension due to reverse fill and tricky bases. Do after grid basics.
+    - id: 44
+      slug: wildcard-matching
+      reason: >
+        Edge‑case heavy; extension.
+    - id: 10
+      slug: regular-expression-matching
+      reason: >
+        Hard with many cases; extension.
+  from_leetcode_150:
+    - id: 1143
+      slug: longest-common-subsequence
+      reason: >
+        Included in core.
+    - id: 72
+      slug: edit-distance
+      reason: >
+        Included in core.
+    - id: 97
+      slug: interleaving-string
+      reason: >
+        Included in core.
+    - id: 115
+      slug: distinct-subsequences
+      reason: >
+        Included in core.
+    - id: 647
+      slug: palindromic-substrings
+      reason: >
+        Included in core.
+    - id: 5
+      slug: longest-palindromic-substring
+      reason: >
+        Included in core.
+    - id: 64
+      slug: minimum-path-sum
+      reason: >
+        Included in core.
+    - id: 62
+      slug: unique-paths
+      reason: >
+        Included in core.
+    - id: 63
+      slug: unique-paths-ii
+      reason: >
+        Included in core.
+    - id: 120
+      slug: triangle
+      reason: >
+        Included in core.

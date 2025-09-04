@@ -1,0 +1,191 @@
+
+
+version: 1
+track: track_2_two_pointers_advanced
+title: Two Pointers — Advanced and In‑Place Transforms
+description: Master slow–fast scans, 3‑way partitions, backscans, reverse/backfill tricks, and cycle detection.
+problems:
+  # Warm‑ups: slow–fast compaction
+  - slug: remove-duplicates-from-sorted-array
+    title: Remove Duplicates from Sorted Array
+    difficulty: easy
+    primary_pattern: two-pointers-slow-fast
+    section: warmups
+    why: >
+      Read head scans, write head emits unique values. Teaches invariant "nums[0..w) has desired form" and correct return value.
+  - slug: move-zeroes
+    title: Move Zeroes
+    difficulty: easy
+    primary_pattern: two-pointers-slow-fast
+    section: warmups
+    why: >
+      Stable compaction with overwrite or swap. Reinforces conditional writes and post-loop fill.
+
+  # In‑place partitioning
+  - slug: sort-colors
+    title: Sort Colors
+    difficulty: medium
+    primary_pattern: dutch-flag-3way
+    section: partition
+    why: >
+      Three-way partition (0/1/2) with low/mid/high pointers. Generalizes to k-partition and quicksort partitioning.
+
+  # Sum families on sorted arrays
+  - slug: 3sum-closest
+    title: 3Sum Closest
+    difficulty: medium
+    primary_pattern: two-pointers-sum
+    section: sums
+    why: >
+      Sort then sweep with i<l<r. Trains delta tracking, pruning, and duplicate handling without exact-match early exit.
+  - slug: 4sum
+    title: 4Sum
+    difficulty: medium
+    primary_pattern: two-pointers-sum
+    section: sums
+    why: >
+      Two loops + two pointers + dedup. Cements k-sum decomposition and overflow/long long awareness.
+
+  # String backscans and merges
+  - slug: is-subsequence
+    title: Is Subsequence
+    difficulty: easy
+    primary_pattern: two-pointers-merge
+    section: strings
+    why: >
+      Linear merge across two strings. Builds mental model for multi-stream pointer advancement.
+  - slug: backspace-string-compare
+    title: Backspace String Compare
+    difficulty: easy
+    primary_pattern: two-pointers-backscan
+    section: strings
+    why: >
+      Reverse scan with skip counters. Avoids O(n) rebuild and introduces backscan-with-skip template.
+
+  # Reverse/backfill transforms
+  - slug: rotate-array
+    title: Rotate Array
+    difficulty: medium
+    primary_pattern: reverse-3step
+    section: transforms
+    why: >
+      Reverse three segments in-place. Shows why backfilling from the end avoids overwrites.
+
+  # Linked‑list and array cycle detection
+  - slug: remove-nth-node-from-end-of-list
+    title: Remove Nth Node From End of List
+    difficulty: medium
+    primary_pattern: two-pointers-gap-k
+    section: linked-lists
+    why: >
+      Gap-k technique with sentinel head. Teaches off-by-one handling and constant-space deletion.
+  - slug: linked-list-cycle
+    title: Linked List Cycle
+    difficulty: easy
+    primary_pattern: floyd-cycle-detection
+    section: linked-lists
+    why: >
+      Floyd tortoise–hare. First-principles proof of meeting point and O(1) space detection.
+  - slug: find-the-duplicate-number
+    title: Find the Duplicate Number
+    difficulty: medium
+    primary_pattern: floyd-cycle-detection-array
+    section: arrays
+    why: >
+      Treat indices as next pointers to form a cycle. Reuses Floyd on arrays without modification.
+
+  # Boundary movement with global invariant
+  - slug: trapping-rain-water
+    title: Trapping Rain Water
+    difficulty: hard
+    primary_pattern: two-pointers-boundary
+    section: capstone
+    why: >
+      Move the side with lower max. Forces reasoning with left_max/right_max invariants and proves correctness without stack.
+
+notes:
+  ordering: Warm‑ups → partition → sums → strings → transforms → cycles → capstone.
+  next_track: track_3_binary_search_heaps
+
+extensions:
+  optional:
+    - slug: valid-palindrome-ii
+      title: Valid Palindrome II
+      difficulty: easy
+      primary_pattern: two-pointers-at-most-one-delete
+      section: strings
+      why: >
+        Branch once on mismatch and verify either side. Good for pruning and recursion vs iteration choices.
+    - slug: remove-duplicates-from-sorted-array-ii
+      title: Remove Duplicates from Sorted Array II
+      difficulty: medium
+      primary_pattern: two-pointers-slow-fast
+      section: warmups
+      why: >
+        Allow up to two occurrences. Introduces count-guarded writes and generalizes to at-most-K.
+    - slug: remove-element
+      title: Remove Element
+      difficulty: easy
+      primary_pattern: two-pointers-slow-fast
+      section: warmups
+      why: >
+        Filter in-place by value. Consolidates overwrite vs swap decisions.
+    - slug: sort-array-by-parity
+      title: Sort Array By Parity
+      difficulty: easy
+      primary_pattern: partition-2way
+      section: partition
+      why: >
+        Classic 2-way partition with i/j pointers. Prepares for custom predicates.
+    - slug: shortest-unsorted-continuous-subarray
+      title: Shortest Unsorted Continuous Subarray
+      difficulty: medium
+      primary_pattern: boundary-expand
+      section: transforms
+      why: >
+        Expand from first/last disorder using running mins/maxes; alternative approach to sorting with O(1) extra space.
+    - slug: reverse-words-in-a-string-ii
+      title: Reverse Words in a String II
+      difficulty: medium
+      primary_pattern: reverse-in-place
+      section: strings
+      why: >
+        Reverse whole string then each word. Deepens index arithmetic and segment iteration.
+    - slug: minimum-window-subsequence
+      title: Minimum Window Subsequence
+      difficulty: hard
+      primary_pattern: two-pointers-forward-backtrack
+      section: strings
+      why: >
+        Forward scan to match, backward scan to minimize. Hybrid pointer/DP thinking without heavy tables.
+    - slug: partition-list
+      title: Partition List
+      difficulty: medium
+      primary_pattern: two-lists-stitch
+      section: linked-lists
+      why: >
+        Two-pass stitching with dummy heads. Clean LL manipulation and pointer hygiene.
+
+omitted:
+  from_neetcode_250:
+    - id: 11
+      slug: container-with-most-water
+      reason: >
+        Already covered in track_0. Avoid repetition; use as quick review if needed.
+    - id: 977
+      slug: squares-of-a-sorted-array
+      reason: >
+        Included as an optional extension in track_0. Keep fundamentals grouped.
+    - id: 167
+      slug: two-sum-ii-input-array-is-sorted
+      reason: >
+        Covered in track_0 foundations; serves as scaffold for 3Sum/4Sum here.
+  from_leetcode_150:
+    - id: 88
+      slug: merge-sorted-array
+      reason: >
+        Added as an optional extension in track_0. Keep merge/backfill basics there.
+    - id: 680
+      slug: valid-palindrome-ii
+      reason: >
+        Present as optional extension here to keep core focused on higher-payoff patterns.
