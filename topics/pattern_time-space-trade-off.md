@@ -4,37 +4,37 @@
 
 Replace repeated scans with a maintained auxiliary structure that answers future queries fast. Spend memory and bounded update work now to cut later time. This pattern defines a formal model, design rules, variants, correctness obligations, and LeetCode-style examples.
 
----
+______________________________________________________________________
 
 ## 1. Name
 
 **Anticipatory Indexing** (aka **Preprocess-and-Index**). Trade time for space by materializing a summary or index while streaming or preprocessing the input.
 
----
+______________________________________________________________________
 
 ## 2. Intent
 
-Cut worst-case or amortized time by avoiding $O(n)$ rescans. Build a structure $S$ so that each query or decision is $O(1)$ or $O(\log n)$ on average.
+Cut worst-case or amortized time by avoiding $O(n)$ rescans. Build a structure $S$ so that each query or decision is $O(1)$ or $O(\\log n)$ on average.
 
----
+______________________________________________________________________
 
 ## 3. Model
 
-- **Input sequence**: $x_1,\dots,x_n$.
+- **Input sequence**: $x_1,\\dots,x_n$.
 - At step $i$, you may:
-  - **Query**: answer a predicate/aggregation about past items using only $S_{i-1}$.
-  - **Update**: set $S_i \leftarrow U(S_{i-1}, x_i)$.
+  - **Query**: answer a predicate/aggregation about past items using only $S\_{i-1}$.
+  - **Update**: set $S_i \\leftarrow U(S\_{i-1}, x_i)$.
 - **Cost**:
 
 $$
-T_{\text{scan}} = \Theta(n^2) \quad \text{vs} \quad T_{\text{idx}} = \sum_{i=1}^{n} (c_Q(i) + c_U(i)).
+T\_{\\text{scan}} = \\Theta(n^2) \\quad \\text{vs} \\quad T\_{\\text{idx}} = \\sum\_{i=1}^{n} (c_Q(i) + c_U(i)).
 $$
 
-If $c_Q, c_U \in O(1)$ on average, then $T_{\text{idx}} = O(n)$.
+If $c_Q, c_U \\in O(1)$ on average, then $T\_{\\text{idx}} = O(n)$.
 
-**Invariant:** $S_i$ reflects all information needed from $\{x_1,\dots,x_i\}$ for future queries.
+**Invariant:** $S_i$ reflects all information needed from ${x_1,\\dots,x_i}$ for future queries.
 
----
+______________________________________________________________________
 
 ## 4. When to Use / When Not
 
@@ -50,7 +50,7 @@ If $c_Q, c_U \in O(1)$ on average, then $T_{\text{idx}} = O(n)$.
 - Severe memory constraints and no acceptable approximation.
 - Highly write-heavy workloads where maintenance dominates.
 
----
+______________________________________________________________________
 
 ## 5. Structure
 
@@ -59,7 +59,7 @@ If $c_Q, c_U \in O(1)$ on average, then $T_{\text{idx}} = O(n)$.
 - **Answer $A(q,S)$**: constant or logarithmic time per query.
 - **Maintenance**: rehashing, rotations, rebuilds, or periodic compaction.
 
----
+______________________________________________________________________
 
 ## 6. Correctness Obligations
 
@@ -68,31 +68,31 @@ If $c_Q, c_U \in O(1)$ on average, then $T_{\text{idx}} = O(n)$.
 - **Stability**: invariant holds after each update.
 - **Randomized structures**: bound failure rates (e.g., Bloom filter FPR).
 
----
+______________________________________________________________________
 
 ## 7. Complexity Tradeoffs
 
 | Structure | Build/Update | Query | Space | Notes |
 |---|---:|---:|---:|---|
 | Hash set / dict | $O(1)$ avg | $O(1)$ avg | $O(n)$ | Adversarial inputs degrade to $O(n)$ per op |
-| Balanced BST | $O(\log n)$ | $O(\log n)$ | $O(n)$ | Order queries supported |
+| Balanced BST | $O(\\log n)$ | $O(\\log n)$ | $O(n)$ | Order queries supported |
 | Prefix sums | $O(n)$ build; $O(1)$ query | $O(1)$ | $O(n)$ | Immutable array; use Fenwick/segment tree for updates |
-| Fenwick / Segment tree | $O(\log n)$ | $O(\log n)$ | $O(n)$ | Range queries with updates |
+| Fenwick / Segment tree | $O(\\log n)$ | $O(\\log n)$ | $O(n)$ | Range queries with updates |
 | Bloom filter | $O(1)$ | $O(1)$ (prob.) | $O(m)$ bits | False positives only |
 | LRU cache | $O(1)$ | $O(1)$ | $O(C)$ | Competitive under locality |
 
----
+______________________________________________________________________
 
 ## 8. Design Recipe
 
-1. **Bottleneck**: isolate the inner scan $P(x_i,\cdot)$.
-2. **Workload hypothesis**: expected queries, error tolerance, update rate, memory budget.
-3. **Sufficient summary $S$**: minimal state to answer future queries.
-4. **Update/Query contracts**: define $U$ and $A$; preserve invariant.
-5. **Amortized bound**: rehashes/rebuilds must not dominate.
-6. **Failure modes**: adversarial keys, skew, staleness, approximation error.
+1. **Bottleneck**: isolate the inner scan $P(x_i,\\cdot)$.
+1. **Workload hypothesis**: expected queries, error tolerance, update rate, memory budget.
+1. **Sufficient summary $S$**: minimal state to answer future queries.
+1. **Update/Query contracts**: define $U$ and $A$; preserve invariant.
+1. **Amortized bound**: rehashes/rebuilds must not dominate.
+1. **Failure modes**: adversarial keys, skew, staleness, approximation error.
 
----
+______________________________________________________________________
 
 ## 9. Patterns and LeetCode Examples
 
@@ -161,19 +161,19 @@ class NumArray:
 - **State**: Bloom filter.
 - **Benefit**: dramatically less memory. **Cost**: false positives.
 
----
+______________________________________________________________________
 
 ## 10. Proof Sketches
 
 ### 10.1 Soundness for Contains Duplicate
 
-Induction on stream index $i$. Base $i=1$: `seen` contains exactly $\{x_1\}$. Step: at $i$, `x in seen` iff there exists $j < i$ with $x_j = x$. After check, add $x_i$. Invariant holds.
+Induction on stream index $i$. Base $i=1$: `seen` contains exactly ${x_1}$. Step: at $i$, `x in seen` iff there exists $j < i$ with $x_j = x$. After check, add $x_i$. Invariant holds.
 
 ### 10.2 Amortized $O(1)$ Hashing
 
 With geometric resizing (bounded load factor), total moves across $n$ inserts is $O(n)$. Hence average per insert is $O(1)$. Membership has the same bound.
 
----
+______________________________________________________________________
 
 ## 11. Failure Modes and Mitigations
 
@@ -183,7 +183,7 @@ With geometric resizing (bounded load factor), total moves across $n$ inserts is
 - **Approximation errors** → size the sketch for target error; validate hits if needed.
 - **Memory blow-up** → compress keys, store indices not values, purge via LRU/TTL.
 
----
+______________________________________________________________________
 
 ## 12. Variants
 
@@ -193,7 +193,7 @@ With geometric resizing (bounded load factor), total moves across $n$ inserts is
 - **External-memory**: B-trees for I/O-efficient indexing.
 - **Succinct**: near-entropy space with $O(1)$ rank/select.
 
----
+______________________________________________________________________
 
 ## 13. Implementation Checklist
 
@@ -204,7 +204,7 @@ With geometric resizing (bounded load factor), total moves across $n$ inserts is
 - Handle collisions, edge cases, and duplicates.
 - Add tests covering: empty, single element, all equal, strictly increasing, random, adversarial.
 
----
+______________________________________________________________________
 
 ## 14. Reference Template (drop-in)
 
@@ -229,7 +229,7 @@ def process(stream: Iterable, idx: AnticipatoryIndex):
         idx.update(x)
 ```
 
----
+______________________________________________________________________
 
 ## 15. Worked Example: Contains Nearby Duplicate (k-window)
 
@@ -250,9 +250,9 @@ def contains_nearby_duplicate(nums: List[int], k: int) -> bool:
     return False
 ```
 
-Invariant: `seen` equals the contents of the last $\le k$ items.
+Invariant: `seen` equals the contents of the last $\\le k$ items.
 
----
+______________________________________________________________________
 
 ## 16. Connections to Theory
 
@@ -261,13 +261,13 @@ Invariant: `seen` equals the contents of the last $\le k$ items.
 - **Amortized analysis**: potential method for dynamic arrays and hashing.
 - **Probabilistic data structures**: explicit error–time–space tradeoff.
 
----
+______________________________________________________________________
 
 ## 17. Summary
 
 Anticipatory Indexing replaces right-side scans with a maintained summary $S$. Define the future workload, pick a sufficient summary, enforce the invariant, and prove amortized bounds. This is the standard lever to turn $O(n^2)$ patterns into $O(n)$ solutions in interview problems and beyond.
 
----
+______________________________________________________________________
 
 ## 18. Further Practice (LeetCode set)
 

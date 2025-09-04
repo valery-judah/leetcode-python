@@ -8,10 +8,10 @@ This log documents the steps taken to solve the Two Sum problem using a TDD work
 ## Action Items
 
 1. **[IN PROGRESS]** Create a log file to document actions.
-2. **[PENDING]** Update the test file with comprehensive test cases.
-3. **[PENDING]** Run tests to confirm initial failure.
-4. **[PENDING]** Implement the solution using a hash map.
-5. **[PENDING]** Format and lint the code.
-6. **[PENDING]** Run tests to confirm the solution passes.
-7. **[PENDING]** Document the solution in the problem README.
-8. **[PENDING]** Create a reusable Cline workflow template.
+1. **[PENDING]** Update the test file with comprehensive test cases.
+1. **[PENDING]** Run tests to confirm initial failure.
+1. **[PENDING]** Implement the solution using a hash map.
+1. **[PENDING]** Format and lint the code.
+1. **[PENDING]** Run tests to confirm the solution passes.
+1. **[PENDING]** Document the solution in the problem README.
+1. **[PENDING]** Create a reusable Cline workflow template.

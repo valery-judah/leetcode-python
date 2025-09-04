@@ -1,4 +1,3 @@
-
 # Why this tracks?
 
 Rationale: order by dependency, transfer, and interview yield. Each track adds one primitive, reuses prior ones, and reduces branching.

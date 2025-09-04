@@ -1,5 +1,5 @@
 
-.PHONY: install linters precommit test lint type fmt ci badge cov-html
+.PHONY: install linters precommit test lint type fmt ci badge cov-html format-md lint-md fix-md
 
 # Prefer project venv Python, then python3, then python
 PYTHON := $(shell if [ -x "./venv/bin/python" ]; then echo "./venv/bin/python"; \
@@ -48,3 +48,26 @@ ci: test lint type
 
 cov-html:
 	PYTHONDONTWRITEBYTECODE=1 $(PYTHON) -m pytest -q --cov=problems --cov-report=html
+
+# Target: format-md
+# Automatically formats all Markdown files in the repository using mdformat.
+# This target should be used locally to fix files.
+format-md:
+	@echo "--- Formatting Markdown files with mdformat ---"
+	$(PYTHON) -m mdformat .
+
+# Target: fix-md
+# Automatically fixes all supported Markdown linting issues using markdownlint.
+# Respects the .gitignore file. This target should be used locally.
+fix-md:
+	@echo "--- Fixing Markdown files with markdownlint ---"
+	markdownlint --fix "**/*.md" --ignore-path .gitignore .
+
+# Target: lint-md
+# Checks Markdown files for formatting and style issues without modifying them.
+# Ideal for CI pipelines. Fails if any issues are found.
+lint-md:
+	@echo "--- Checking Markdown formatting (mdformat) ---"
+	$(PYTHON) -m mdformat --check .
+	@echo "--- Linting Markdown files (markdownlint) ---"
+	markdownlint --ignore-path .gitignore .

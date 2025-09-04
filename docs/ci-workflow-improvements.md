@@ -39,7 +39,7 @@ This document captures proposed improvements to our GitHub Actions workflow for 
 
 ## Implementation Sketch
 
-1) Makefile additions (keep existing local targets unchanged):
+1. Makefile additions (keep existing local targets unchanged):
 
 ```Makefile
 # Fail CI if coverage drops below threshold
@@ -53,7 +53,7 @@ type-ci:
  mypy problems
 ```
 
-2) Split workflow into build and deploy jobs with job‑level permissions and matrix:
+2. Split workflow into build and deploy jobs with job‑level permissions and matrix:
 
 ```yaml
 name: CI
@@ -141,7 +141,7 @@ jobs:
         uses: actions/deploy-pages@<sha>
 ```
 
-3) Optional extras
+3. Optional extras
 
 - Pre-commit in CI:
 

@@ -1,17 +1,20 @@
-
 **Action Plan:**
 
 1. **Refine and Finalize the Algorithm and Checklist**:
+
    - Develop a comprehensive algorithm and checklist for solving coding problems both at home and during interviews.
 
-2. **Practice Asking Clarifying Questions**:
+1. **Practice Asking Clarifying Questions**:
+
    - Focus on identifying and formulating clarifying questions during problem-solving.
    - Make it a habit to think about relevant clarifying questions for each step of the process.
 
-3. **Create an Interview Process Checklist**:
+1. **Create an Interview Process Checklist**:
+
    - Draft a structured checklist for approaching problems in interviews to ensure a clear and consistent problem-solving methodology.
 
-4. **Simulate Clarifying Question Scenarios**:
+1. **Simulate Clarifying Question Scenarios**:
+
    - Take a few sample interview questions and generate potential clarifying questions for each. This will help you prepare for real-world scenarios and improve your ability to think critically under pressure.
 
 prepare list of tricks/tips to find more optimal solution. Like, you can use an auxiliary data structure..
@@ -187,16 +190,16 @@ Understanding the problem
 
 - 👍 Understood the key aspects of the problem quickly
 - 👎 Had difficulty in understanding the key aspects of the problem
-Solution/approach
+  Solution/approach
 - 👍 Approached the problem in a systematic and logical manner
 - 👎 Did not demonstrate a logical thought process for approaching the problem
-Improving the solution
+  Improving the solution
 - 👍 Suggested a more efficient solution when prompted, or proactively coming up with a better solution
 - 👎 Had difficulty in coming up with a more efficient solution even after being prompted
-Trade-offs analysis
+  Trade-offs analysis
 - 👍 Explained the trade-offs of different approaches clearly and correctly
 - 👎 Failed to describe trade-offs of different approaches
-Hinting
+  Hinting
 - 👍 Did not require any major hints
 - 👎 Needed plenty of hints
 
@@ -205,18 +208,18 @@ Speed
 
 - 👍 Quickly implemented a working solution
 - 👎 Was not able to complete the solution
-Correctness/Accuracy
+  Correctness/Accuracy
 - 👍 Implemented the solution correctly (e.g., working solution, minimal bugs)
 - 👎 Unable to correctly implement a solution (e.g., non-working solution, incorrect logic, and/or serious bugs)
-Complexity analysis
+  Complexity analysis
 - 👍 Able to determine the algorithmic time and space complexity
 - 👎 Was not able to determine the algorithmic time and space complexity (explain why TC came up with such an answer)
-Mastery of chosen programming language
+  Mastery of chosen programming language
 - 👍 Demonstrated mastery of the chosen programming language
 - 👎 Does not seem to be familiar with the chosen programming language Implementation
 - 👍 Implementation was clean and straightforward
 - 👎 Implementation was unnecessarily complex and/or messy
-Coding style
+  Coding style
 - 👍 Coding style was neat (proper indentation, spacing and no bad practices)
 - 👎 Coding style was messy (inconsistent indentation, weird spacings, etc)
 
@@ -225,10 +228,10 @@ Common cases
 
 - 👍 Tested their code against various typical cases
 - 👎 Failed to test the code against typical cases
-Corner cases
+  Corner cases
 - 👍 Found and handled corner/edge cases
 - 👎 Failed to consider corner/edge cases
-Self-correction
+  Self-correction
 - 👍 Identified and corrected bugs in the code (where applicable)
 - 👎 Was not able to discover and fix bugs even after being prompted
 
@@ -237,7 +240,7 @@ Clarify problem
 
 - 👍 Appropriately asked good, clarifying questions about the problem
 - 👎 Failed to confirm understanding/ask appropriate questions
-Communicating approach
+  Communicating approach
 - 👍 Able to explain overall approach, technical terms and acronyms (where applicable)
 - 👎 Failed to effectively explain overall approach, technical terms and acronyms (where applicable)
 
@@ -263,21 +266,21 @@ Don't debate with the interviewer. You are not showing how convincing you are. Y
 Getting stuck during coding interviews is extremely common. But do not worry, that is part of the process and is a test of your problem solving abilities. Here are some tips to try out when you are stuck:
 
 - Talk through what you initially thought might work and explain why it doesn't
-o This can help guide you on the right track by avoiding the pitfalls
+  o This can help guide you on the right track by avoiding the pitfalls
 
 - Come up with more test cases and write them down
-o A pattern may emerge
+  o A pattern may emerge
 
 - Think about how you would solve it without a program
-o You may spot a pattern and come up with a general algorithm for it
+  o You may spot a pattern and come up with a general algorithm for it
 
 - Recall past questions related to the topic, what similar questions in the past have you encountered and what techniques did you use?
 
 - Enumerate through the common data structures and whether they can be applied to the question
-o Dictionaries/maps are extremely common in making algorithms more efficient
+  o Dictionaries/maps are extremely common in making algorithms more efficient
 
 - Look out for repeated work and determine if you can cache those computations
-o Trade off memory for speed
+  o Trade off memory for speed
 
 You have a solution. Now what?
 

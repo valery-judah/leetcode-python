@@ -1,4 +1,3 @@
-
 # 217. Contains Duplicate
 
 **URL**: <https://leetcode.com/problems/contains-duplicate/>

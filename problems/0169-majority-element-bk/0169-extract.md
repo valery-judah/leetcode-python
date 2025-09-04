@@ -1,4 +1,5 @@
----
+______________________________________________________________________
+
 category: arrays-hashing
 difficulty: easy
 status: todo
@@ -6,18 +7,20 @@ attempts: 0
 last_solved: null
 solution_path: repos/leetcode-python-project/problems/0169-majority-element/solutions.py
 tags:
+
 - leetcode
 - array
 - hash-table
 - divide-and-conquer
 - sorting
 - counting
-pattern: []
-created: 2025-09-01
-updated: 2025-09-01
-leetcode_link: https://leetcode.com/problems/majority-element/
-problem_dir: repos/leetcode-python-project/problems/0169-majority-element
----
+  pattern: []
+  created: 2025-09-01
+  updated: 2025-09-01
+  leetcode_link: <https://leetcode.com/problems/majority-element/>
+  problem_dir: repos/leetcode-python-project/problems/0169-majority-element
+
+______________________________________________________________________
 
 # Majority Element
 
@@ -101,11 +104,11 @@ class Solution:
 #### Complexity Analysis
 
 - **Time complexity:** O(n^2)
-Two nested loops over `n` elements lead to quadratic time.
+  Two nested loops over `n` elements lead to quadratic time.
 - **Space complexity:** O(1)
-No extra space proportional to input size.
+  No extra space proportional to input size.
 
----
+______________________________________________________________________
 
 ### Approach 2: Hash Map / Counter
 
@@ -131,11 +134,11 @@ class Solution:
 #### Complexity Analysis
 
 - **Time complexity:** O(n)
-Single pass to count; `max` over keys is linear in distinct values.
+  Single pass to count; `max` over keys is linear in distinct values.
 - **Space complexity:** O(n)
-Up to `O(n)` distinct keys in the map.
+  Up to `O(n)` distinct keys in the map.
 
----
+______________________________________________________________________
 
 ### Approach 3: Sorting
 
@@ -159,11 +162,11 @@ class Solution:
 #### Complexity Analysis
 
 - **Time complexity:** O(n log n)
-Sorting dominates the runtime.
+  Sorting dominates the runtime.
 - **Space complexity:** O(1) or O(n)
-In-place sort is `O(1)` extra; copying to sort is `O(n)`.
+  In-place sort is `O(1)` extra; copying to sort is `O(n)`.
 
----
+______________________________________________________________________
 
 ### Approach 4: Boyer–Moore Voting (expanded)
 
@@ -192,11 +195,11 @@ class Solution:
 #### Complexity Analysis
 
 - **Time complexity:** O(n)
-Constant work per element.
+  Constant work per element.
 - **Space complexity:** O(1)
-Constant extra memory.
+  Constant extra memory.
 
----
+______________________________________________________________________
 
 ### Approach 5: Bit Manipulation
 
@@ -232,7 +235,7 @@ class Solution:
 - **Time complexity:** O(32 · n) = O(n)
 - **Space complexity:** O(1)
 
----
+______________________________________________________________________
 
 ### Approach 6: Divide and Conquer
 
@@ -267,7 +270,7 @@ class Solution:
 - **Time complexity:** O(n log n)
 - **Space complexity:** O(log n) due to recursion stack.
 
----
+______________________________________________________________________
 
 ### Approach 7: Randomization
 
@@ -319,26 +322,35 @@ Repeat: pick a random index, count occurrences of that value; if it exceeds `n/2
 ## Editorial / Discussions
 
 **User (date unknown):**
+
 > All those upvotes are for sure done by nerds who used either an extra O(n) space or extra time complexity which maybe n^2 or nlogn.
 > But guys be honest did anyone solve it O(n) time and O(1) space. who has solved it like this?
 > I'm here sitting for an hour to figure out this.
 
----
+______________________________________________________________________
+
 **An-Wen Deng** (Feb 11, 2024):
+
 > Have a good day.
 > key word "Boyer–Moore majority vote algorithm"
 > Other quick solution fit the requirement is to use bit manipulation.
 
----
+______________________________________________________________________
+
 **Margad B Jantsan** (May 12, 2023):
+
 > I don't understand why people are sorting and returning the middle element. Although it is a valid solution, the follow-up of the question is asking us to solve the problem in Linear time and not O(nlogn) time.
 
----
+______________________________________________________________________
+
 **iL YDOC** (Nov 17, 2015):
+
 > if I have [1,1,1,2,2,2], why is 1 the majority number and not 2?
 
----
+______________________________________________________________________
+
 **User (date unknown):**
+
 > I found nobody using bit-Operation for this question.
 >
 > I will try make up a O(n) time bit operation solution.
@@ -346,14 +358,20 @@ Repeat: pick a random index, count occurrences of that value; if it exceeds `n/2
 > **No** Boyer-Moore Majority Vote Algorithm
 > **No** Hashing table
 
----
+______________________________________________________________________
+
 **User (date unknown):**
+
 > I have problem coming up with the divide and conquer solution. Assume the base case contains only one element, which is the majority element for the base case. Now suppose we have two elements, each one returning from the base case. Say they are 1 2. There is clearly no majority element in this two-element array. If the whole input array is 1 2 2 and you divide the problem into 1 2 and 2. Of course you pick 2 in the right half. But what to pick in the left half?
 
----
+______________________________________________________________________
+
 **User (date unknown):**
+
 > Why did they put this problem under "Bit Manipulation" when none of the 6 solutions use bit operators?
 
----
+______________________________________________________________________
+
 **User (date unknown):**
+
 > This has to be a medium question considering you want time complexity of O(n) and space complexity of O(1). How anyone supposed to come up with Moore's algorithm?

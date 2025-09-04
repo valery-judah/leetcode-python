@@ -4,7 +4,7 @@
 - Problem: 0169-majority-element
 - URL: <https://leetcode.com/problems/majority-element/>
 - Difficulty: easy
-- Constraints: n == nums.length, 1 <= n <= 5 * 10^4, -10^9 <= nums[i] <= 10^9
+- Constraints: n == nums.length, 1 \<= n \<= 5 * 10^4, -10^9 \<= nums[i] \<= 10^9
 - Approach: TBD
 - Test Plan: TBD
 - TODO:

@@ -1,4 +1,3 @@
-
 # 49. Group Anagrams
 
 **URL**: <https://leetcode.com/problems/group-anagrams/>

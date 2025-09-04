@@ -1,4 +1,3 @@
-
 # 169. Majority Element
 
 - **URL**: <https://leetcode.com/problems/majority-element/>
@@ -30,8 +29,8 @@
 
 0. Brut-force with $O(n^2)$ time, $O(1)$ space.
 1. If you want to slightly optimize time and don't have time to come up to mental tricks, then you can trade off space for time and use hash-map for counters: Counter/Hash Map (O(n) time, O(n) space).
-2. Also there is Sorting (O(n log n) time), Divide & Conquer (O(n log n)), Bit manipulation (O(n)) - all are suboptimal.
-3. But Recommended is Boyer–Moore majority vote (O(n) time, O(1) space).
+1. Also there is Sorting (O(n log n) time), Divide & Conquer (O(n log n)), Bit manipulation (O(n)) - all are suboptimal.
+1. But Recommended is Boyer–Moore majority vote (O(n) time, O(1) space).
 
 ## Checklist
 
@@ -70,13 +69,13 @@ Finding a Candidate:
 
 1. Initialize two variables: count to 0 and candidate to store a potential majority element.
 
-2. Iterate through the input sequence.
+1. Iterate through the input sequence.
 
 - If count is 0, set the current element as the candidate and increment count.
 - If the current element is the same as the candidate, increment count.
 - If the current element is different from the candidate, decrement count.
 
->[!note] The intuition behind this phase is that each non-candidate element effectively "cancels out" one instance of the candidate. If a true majority element exists, it will eventually emerge as the candidate at the end of this pass because its occurrences will outnumber the cancellations. <- this one is interesting
+> [!note] The intuition behind this phase is that each non-candidate element effectively "cancels out" one instance of the candidate. If a true majority element exists, it will eventually emerge as the candidate at the end of this pass because its occurrences will outnumber the cancellations. \<- this one is interesting
 
 Question: why it's a candidate? Because: s(XXAXX) = s(XXXXA) = 1, and `XXXX` can be `ABCB` and `ABAB`. `A` will be majority only in the latter.
 
@@ -87,7 +86,7 @@ Question: why it's a candidate? Because: s(XXAXX) = s(XXXXA) = 1, and `XXXX` can
 - Count the actual occurrences of the `candidate` found in the first pass.
 - If this count is greater than N/2, then the `candidate` is indeed the majority element. Otherwise, there is no majority element in the sequence.
 
-Correctness can be found in the wiki article on the [Boyer–Moore majority vote algorithm](https://en.wikipedia.org/wiki/Boyer–Moore_majority_vote_algorithm).
+Correctness can be found in the wiki article on the [Boyer–Moore majority vote algorithm](https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_majority_vote_algorithm).
 
 [visualization script](/problems/0169-majority-element/reasoning_by_step.py).
 
@@ -112,12 +111,12 @@ The intuition behind this phase is that each non-candidate element effectively "
 
 Find an element occurring > n/2 times in a stream with O(1) memory and one pass, then verify. Pattern generalizes to “heavy hitters” > n/k.
 
----
+______________________________________________________________________
 
 ## 1) Problem Model
 
-- Input: sequence $x_1,\dots,x_n$.
-- Goal: return m with \#(m) > n/2, or report none.
+- Input: sequence $x_1,\\dots,x_n$.
+- Goal: return m with #(m) > n/2, or report none.
 - Constraints: streaming, constant memory, adversarial order allowed.
 
 ## 2) Design target
@@ -125,8 +124,8 @@ Find an element occurring > n/2 times in a stream with O(1) memory and one pass,
 Maintain a **state** that:
 
 1. is sufficient to reconstruct the majority at the end if it exists,
-2. fits in O(1) space,
-3. updates in O(1) per item.
+1. fits in O(1) space,
+1. updates in O(1) per item.
 
 You cannot keep per-value counts. You must compress online.
 
@@ -145,7 +144,7 @@ Reason: each deletion reduces size by 2 without changing which value (if any) ex
 For the current processed prefix, the residue is fully described by:
 
 - candidate c: the surviving value if residue non-empty,
-- count $s\ge 0$: the size of the residue.
+- count $s\\ge 0$: the size of the residue.
 
 No other information is needed. This is the **vote margin** (a.k.a. surplus/balance).
 
@@ -180,9 +179,9 @@ A **phase** runs from one time s becomes 0 to the next. While in a phase,
 **Recipe:**
 
 1. Identify a property invariant under deleting “opposite” pairs that preserves the target.
-2. Show the normal form is either empty or one value repeated.
-3. Maintain (candidate, margin) that equals that normal form online.
-4. Add a verification pass when the property might not hold globally.
+1. Show the normal form is either empty or one value repeated.
+1. Maintain (candidate, margin) that equals that normal form online.
+1. Add a verification pass when the property might not hold globally.
 
 ## **15) Checklist before using**
 
@@ -199,7 +198,7 @@ A **phase** runs from one time s becomes 0 to the next. While in a phase,
 
 Clarify the term in this context:
 
-- **Model:** streaming input $x_1,x_2,\dots,x_n$. You maintain a tiny summary S_t and update S_{t+1}=f(S_t,x_{t+1}).
+- **Model:** streaming input $x_1,x_2,\\dots,x_n$. You maintain a tiny summary S_t and update S\_{t+1}=f(S_t,x\_{t+1}).
 
 - **Constraints:** sublinear space (often O(1) or O(k)), O(1) work per item, order may be adversarial.
 

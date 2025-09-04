@@ -8,6 +8,7 @@ No new types will be introduced.
 
 [Files]
 The following file modifications will be made:
+
 - Rename the `problems` directory to `problems`.
 - Modify `scripts/new_problem.py` to create new problems in the `problems` directory.
 - Modify `scripts/test_new_problem.py` to use the `problems` directory for testing.
@@ -28,9 +29,10 @@ No new dependencies will be introduced.
 The existing tests will be updated to work with the new `problems` directory. No new tests will be added.
 
 [Implementation Order]
+
 1. Rename the `problems` directory to `problems`.
-2. Update `scripts/new_problem.py` to create new problems in the `problems` directory.
-3. Update `scripts/test_new_problem.py` to use the `problems` directory.
-4. Update `problems/all_problems_spec.py` to refer to `problem` instead of `problem`.
-5. Update `Makefile` to use the `problems` directory for testing and type checking.
-6. Update `pytest.ini` to look for tests in the `problems` directory.
+1. Update `scripts/new_problem.py` to create new problems in the `problems` directory.
+1. Update `scripts/test_new_problem.py` to use the `problems` directory.
+1. Update `problems/all_problems_spec.py` to refer to `problem` instead of `problem`.
+1. Update `Makefile` to use the `problems` directory for testing and type checking.
+1. Update `pytest.ini` to look for tests in the `problems` directory.

@@ -6,11 +6,11 @@ module that loads the problem’s `solutions.py` from a non-importable folder na
 Related write-up: `problems/0217-contains-duplicate/readme.md`
 
 ::: docs.shims.contains_duplicate
-    options:
-      members:
-        - SetBased
-        - Sorting
-        - BruteForce
-      show_source: true
-      show_root_heading: true
-      heading_level: 2
+options:
+members:
+\- SetBased
+\- Sorting
+\- BruteForce
+show_source: true
+show_root_heading: true
+heading_level: 2
