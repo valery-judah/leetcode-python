@@ -6,24 +6,26 @@
 
 You can use this repo to build your own coding interview preparation system. It's based on 'tracks'. More info and information are in [Tracks](#tracks).
 
-This repository contains solutions to LeetCode problems and materials I find interesting. All leetcode problems are in the [problems](/problems/) directory.
+This repository contains solutions to LeetCode problems and materials I find interesting. All problems are in the `problems/` directory.
 
 Each problem has separate directory which includes problem description, solutions, reasoning, and sometimes the solution flow. For example, see the [Majority Element problem](/problems/0169-majority-element/readme.md).
 
-This section will include NeetCode category-based problem set descriptions and navigation. (TODO: paste from Obsidian notes)
+Track-driven workflow guides learning; reports and progress are generated from problem stats.
 
 ## Quick start
 
-What do you want?
+Common tasks
 
-- Read information about problems:
-- Run tests and get additional info (?)
-- Adjust the system for you
-- Create new problem
+- Create a new problem: `python scripts/new_problem.py <slug> <id> [--difficulty ... --tags ... --url ...]`
+- Run tests: `make test` (pytest, no `__pycache__`)
+- Lint/format: `make lint` / `make fmt`
+- Type check: `make type`
+- Generate track reports and update README table: `make markdown`
+- Full build (format → lint → type → test → validate stats → reports): `make build`
 
 # Tracks
 
-For me, for example, the tracks now are:
+Current tracks and progress:
 
 <!-- BEGIN_TRACKS_TABLE -->
 | Track | Main | Ext | Total | Done | Progress | Linked | Unlinked |
@@ -31,34 +33,33 @@ For me, for example, the tracks now are:
 | [Foundations — Arrays, Hashing, Two-Pointers, Prefix, Stack](tracks/track_0_foundations.md) | 17 | 8 | 25 | 1 | 4%                 | 5 | 20 |
 <!-- END_TRACKS_TABLE -->
 
-> You can create your own tracks of problems for you to do in the 'tracks' folder. Then 'make build' command build a report for you.
+> Define tracks in `tracks/*.yaml`. Generate reports and update this table with `make markdown` (or via `make build`).
 
-Actions order:
+Actions order to build and use your own system:
+0\. Checkout to 'start' git branch.
 
-1. Checkout to 'start' git branch.
-1.
+1. Create or update problems under `problems/NNNN-slug/`.
+1. Validate stats: `make validate-stats`.
+1. Generate track reports and README table: `make markdown`.
+1. Run full build locally before pushing: `make build`.
 
 ## How to create a problem snapshot
 
 ```bash
-# 1) Create a new problem skeleton
-python scripts/new_problem.py two-sum 1 --difficulty easy --tags array,hash-map --url https://leetcode.com/problems/two-sum/
+# 1) Create a new problem skeleton (example)
+python scripts/new_problem.py two-sum 1 
 
 # 2) Run tests and style checks
 make test          # pytest (no __pycache__ written)
 make lint          # ruff + black --check
 make type          # mypy
-
-# 3) Open in VS Code
-code .
 ```
 
 Folders are created under `problems/NNNN-slug/`. Each contains:
 
 - `readme.md` with clarifying questions, examples, approach, and complexity
 - `solutions.py` starter (exports `Solution`, optionally `ALL_SOLUTIONS`)
-
-CI, pre-commit, and VS Code configs are included.
+- `stats.json` to fix information about progress for the task
 
 ## Stats and Track Reports
 
@@ -84,18 +85,17 @@ make tracks-report
 code tracks/track_0_foundations.md
 ```
 
-## Chat aliases (for this assistant)
+## Tracks Format
 
-To reference a problem’s files in chat without typing full paths, you can use simple aliases. I will resolve these when you use them in messages here (no symlinks needed):
+- Location: define tracks in `tracks/*.yaml`; each YAML generates a sibling Markdown report (`tracks/*.md`).
+- Core keys: `track` (id), `title`, `description`, `problems` (list), `extensions.optional` (list).
+- Problem entry: `slug` (required), optional `title`, `difficulty`, and notes. The `slug` maps to `problems/*-<slug>/`.
+- Links: report rows link to `problems/NNNN-slug/readme.md` when that directory exists; otherwise they render as plain text.
+- Done calculation (README table): counts problems with `optimal_solution: true` in `problems/*-slug/stats.json`; includes both `problems` and `extensions.optional`.
+- Totals (Main/Ext): derived from the generated track Markdown tables, so run `make markdown` (which runs reports first) to keep counts correct.
+- Fallback: if a track has no YAML, the README table estimates progress from linked rows in the track Markdown.
 
-- `@NNNN` → `problems/NNNN-*/readme.md`
-  - Example: `@0169` → `problems/0169-majority-element/readme.md`
-- `@slug` → `problems/*-slug/readme.md`
-  - Example: `@two-sum` → `problems/0001-two-sum/readme.md`
-- `@NNNN/<file>` or `@slug/<file>` to point to another file in that problem directory
-  - Example: `@0169/solutions.py` → `problems/0169-majority-element/solutions.py`
-
-If an alias maps to multiple folders, I’ll ask you to clarify which one you meant.
+We have a bunch of predefined tracks in 'archive' folder. So you can copy them to tracks and begin your journey.
 
 ### Optional alias files (local convenience)
 
@@ -176,11 +176,11 @@ CI:
 - Workflow templates: `docs/cline-workflow-template.md`
 - Patterns and active notes: `memory-bank/`
 
-### Cline Assistant Workflow
+## Cline Assistant Workflow
 
 This project is configured with a `.clinerules` file that enables a proactive assistant workflow with Cline. You can ask Cline to review your work, and it will act as an automated code reviewer to ensure your solution meets the project's standards.
 
-#### How to Use
+## How to Use
 
 1. **Implement Your Solution**: Complete your solution in the `solution.py` file and update the problem `readme.md` with your approach and complexity analysis.
 1. **Request a Review**: In the chat, ask Cline to review your work. You can say something like:
@@ -188,7 +188,7 @@ This project is configured with a `.clinerules` file that enables a proactive as
    - "Can you check my work for `0001-two-sum`?"
 1. **Review the Feedback**: Cline will perform the following checks and provide you with a summary of the results.
 
-#### Review Criteria
+### Review Criteria
 
 When you request a review, I will check your solution against the following criteria:
 
@@ -213,6 +213,6 @@ When you request a review, I will check your solution against the following crit
 
 This workflow helps maintain code quality and ensures that all necessary documentation and logging are completed for each problem.
 
-# Markdown Formatting
+# Other: Markdown Formatting
 
 You can use `markdownlint --fix "**/*.md" --ignore-path .gitignore .` command.
