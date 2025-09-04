@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "985",
+  "name": "Sum of Even Numbers After Queries",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/sum-of-even-numbers-after-queries/",
+  "slug": "sum-of-even-numbers-after-queries",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "similar_questions": []
+}

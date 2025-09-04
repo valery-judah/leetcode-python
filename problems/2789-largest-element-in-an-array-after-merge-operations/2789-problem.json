@@ -1,0 +1,33 @@
+{
+  "category": "",
+  "id": "2789",
+  "name": "Largest Element in an Array after Merge Operations",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/largest-element-in-an-array-after-merge-operations/",
+  "slug": "largest-element-in-an-array-after-merge-operations",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "similar_questions": [
+    {
+      "title": "Jump Game",
+      "slug": "jump-game",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/jump-game/"
+    },
+    {
+      "title": "House Robber",
+      "slug": "house-robber",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/house-robber/"
+    },
+    {
+      "title": "Get Maximum in Generated Array",
+      "slug": "get-maximum-in-generated-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/get-maximum-in-generated-array/"
+    }
+  ]
+}

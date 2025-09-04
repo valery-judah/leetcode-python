@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1706",
+  "name": "Where Will the Ball Fall",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/where-will-the-ball-fall/",
+  "slug": "where-will-the-ball-fall",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "similar_questions": []
+}

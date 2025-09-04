@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "1457",
+  "name": "Pseudo-Palindromic Paths in a Binary Tree",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree/",
+  "slug": "pseudo-palindromic-paths-in-a-binary-tree",
+  "isPaidOnly": false,
+  "tags": [
+    "Bit Manipulation",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": []
+}

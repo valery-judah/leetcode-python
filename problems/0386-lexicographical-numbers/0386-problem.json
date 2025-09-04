@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "386",
+  "name": "Lexicographical Numbers",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/lexicographical-numbers/",
+  "slug": "lexicographical-numbers",
+  "isPaidOnly": false,
+  "tags": [
+    "Depth-First Search",
+    "Trie"
+  ],
+  "similar_questions": []
+}

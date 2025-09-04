@@ -1,0 +1,48 @@
+{
+  "category": "",
+  "id": "2448",
+  "name": "Minimum Cost to Make Array Equal",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-cost-to-make-array-equal/",
+  "slug": "minimum-cost-to-make-array-equal",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Greedy",
+    "Sorting",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Moves to Equal Array Elements II",
+      "slug": "minimum-moves-to-equal-array-elements-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/"
+    },
+    {
+      "title": "Maximum Product of the Length of Two Palindromic Substrings",
+      "slug": "maximum-product-of-the-length-of-two-palindromic-substrings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-substrings/"
+    },
+    {
+      "title": "Minimum Amount of Time to Fill Cups",
+      "slug": "minimum-amount-of-time-to-fill-cups",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-amount-of-time-to-fill-cups/"
+    },
+    {
+      "title": "Minimum Operations to Make All Array Elements Equal",
+      "slug": "minimum-operations-to-make-all-array-elements-equal",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-operations-to-make-all-array-elements-equal/"
+    },
+    {
+      "title": "Minimum Cost to Make Array Equalindromic",
+      "slug": "minimum-cost-to-make-array-equalindromic",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-cost-to-make-array-equalindromic/"
+    }
+  ]
+}

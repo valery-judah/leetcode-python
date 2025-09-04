@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "948",
+  "name": "Bag of Tokens",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/bag-of-tokens/",
+  "slug": "bag-of-tokens",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": []
+}

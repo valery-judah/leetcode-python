@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "1630",
+  "name": "Arithmetic Subarrays",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/arithmetic-subarrays/",
+  "slug": "arithmetic-subarrays",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Arithmetic Slices",
+      "slug": "arithmetic-slices",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/arithmetic-slices/"
+    },
+    {
+      "title": "Can Make Arithmetic Progression From Sequence",
+      "slug": "can-make-arithmetic-progression-from-sequence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/"
+    }
+  ]
+}

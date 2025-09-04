@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "838",
+  "name": "Push Dominoes",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/push-dominoes/",
+  "slug": "push-dominoes",
+  "isPaidOnly": false,
+  "tags": [
+    "Two Pointers",
+    "String",
+    "Dynamic Programming"
+  ],
+  "similar_questions": []
+}

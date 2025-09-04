@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "605",
+  "name": "Can Place Flowers",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/can-place-flowers/",
+  "slug": "can-place-flowers",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "similar_questions": [
+    {
+      "title": "Teemo Attacking",
+      "slug": "teemo-attacking",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/teemo-attacking/"
+    },
+    {
+      "title": "Asteroid Collision",
+      "slug": "asteroid-collision",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/asteroid-collision/"
+    }
+  ]
+}

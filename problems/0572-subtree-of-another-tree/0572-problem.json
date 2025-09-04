@@ -1,0 +1,30 @@
+{
+  "category": "",
+  "id": "572",
+  "name": "Subtree of Another Tree",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/subtree-of-another-tree/",
+  "slug": "subtree-of-another-tree",
+  "isPaidOnly": false,
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "String Matching",
+    "Binary Tree",
+    "Hash Function"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Univalue Subtrees",
+      "slug": "count-univalue-subtrees",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-univalue-subtrees/"
+    },
+    {
+      "title": "Most Frequent Subtree Sum",
+      "slug": "most-frequent-subtree-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/most-frequent-subtree-sum/"
+    }
+  ]
+}

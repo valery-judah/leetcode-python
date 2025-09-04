@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "854",
+  "name": "K-Similar Strings",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/k-similar-strings/",
+  "slug": "k-similar-strings",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Breadth-First Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Couples Holding Hands",
+      "slug": "couples-holding-hands",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/couples-holding-hands/"
+    }
+  ]
+}

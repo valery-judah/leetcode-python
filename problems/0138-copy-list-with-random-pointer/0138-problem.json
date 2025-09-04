@@ -1,0 +1,33 @@
+{
+  "category": "",
+  "id": "138",
+  "name": "Copy List with Random Pointer",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/copy-list-with-random-pointer/",
+  "slug": "copy-list-with-random-pointer",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "Linked List"
+  ],
+  "similar_questions": [
+    {
+      "title": "Clone Graph",
+      "slug": "clone-graph",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/clone-graph/"
+    },
+    {
+      "title": "Clone Binary Tree With Random Pointer",
+      "slug": "clone-binary-tree-with-random-pointer",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/clone-binary-tree-with-random-pointer/"
+    },
+    {
+      "title": "Clone N-ary Tree",
+      "slug": "clone-n-ary-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/clone-n-ary-tree/"
+    }
+  ]
+}

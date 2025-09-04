@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "277",
+  "name": "Find the Celebrity",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-the-celebrity/",
+  "slug": "find-the-celebrity",
+  "isPaidOnly": true,
+  "tags": [
+    "Two Pointers",
+    "Graph",
+    "Interactive"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find the Town Judge",
+      "slug": "find-the-town-judge",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-town-judge/"
+    }
+  ]
+}

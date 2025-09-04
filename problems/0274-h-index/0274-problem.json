@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "274",
+  "name": "H-Index",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/h-index/",
+  "slug": "h-index",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Sorting",
+    "Counting Sort"
+  ],
+  "similar_questions": [
+    {
+      "title": "H-Index II",
+      "slug": "h-index-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/h-index-ii/"
+    }
+  ]
+}

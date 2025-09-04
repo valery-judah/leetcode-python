@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "160",
+  "name": "Intersection of Two Linked Lists",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/intersection-of-two-linked-lists/",
+  "slug": "intersection-of-two-linked-lists",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "Linked List",
+    "Two Pointers"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Index Sum of Two Lists",
+      "slug": "minimum-index-sum-of-two-lists",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-index-sum-of-two-lists/"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "1766",
+  "name": "Tree of Coprimes",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/tree-of-coprimes/",
+  "slug": "tree-of-coprimes",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Tree",
+    "Depth-First Search",
+    "Number Theory"
+  ],
+  "similar_questions": []
+}

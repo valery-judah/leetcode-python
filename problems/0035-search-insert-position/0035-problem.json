@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "35",
+  "name": "Search Insert Position",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/search-insert-position/",
+  "slug": "search-insert-position",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "First Bad Version",
+      "slug": "first-bad-version",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/first-bad-version/"
+    },
+    {
+      "title": "Minimum Operations to Exceed Threshold Value I",
+      "slug": "minimum-operations-to-exceed-threshold-value-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-i/"
+    }
+  ]
+}

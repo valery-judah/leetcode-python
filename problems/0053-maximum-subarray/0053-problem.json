@@ -1,0 +1,100 @@
+{
+  "category": "",
+  "id": "53",
+  "name": "Maximum Subarray",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-subarray/",
+  "slug": "maximum-subarray",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Divide and Conquer",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Best Time to Buy and Sell Stock",
+      "slug": "best-time-to-buy-and-sell-stock",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/"
+    },
+    {
+      "title": "Maximum Product Subarray",
+      "slug": "maximum-product-subarray",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-product-subarray/"
+    },
+    {
+      "title": "Degree of an Array",
+      "slug": "degree-of-an-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/degree-of-an-array/"
+    },
+    {
+      "title": "Longest Turbulent Subarray",
+      "slug": "longest-turbulent-subarray",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-turbulent-subarray/"
+    },
+    {
+      "title": "Maximum Score Of Spliced Array",
+      "slug": "maximum-score-of-spliced-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-score-of-spliced-array/"
+    },
+    {
+      "title": "Maximum Absolute Sum of Any Subarray",
+      "slug": "maximum-absolute-sum-of-any-subarray",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/"
+    },
+    {
+      "title": "Maximum Subarray Sum After One Operation",
+      "slug": "maximum-subarray-sum-after-one-operation",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-subarray-sum-after-one-operation/"
+    },
+    {
+      "title": "Substring With Largest Variance",
+      "slug": "substring-with-largest-variance",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/substring-with-largest-variance/"
+    },
+    {
+      "title": "Count Subarrays With Score Less Than K",
+      "slug": "count-subarrays-with-score-less-than-k",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-subarrays-with-score-less-than-k/"
+    },
+    {
+      "title": "Maximum Value of a String in an Array",
+      "slug": "maximum-value-of-a-string-in-an-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-value-of-a-string-in-an-array/"
+    },
+    {
+      "title": "Find the Substring With Maximum Cost",
+      "slug": "find-the-substring-with-maximum-cost",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-substring-with-maximum-cost/"
+    },
+    {
+      "title": "K Items With the Maximum Sum",
+      "slug": "k-items-with-the-maximum-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/k-items-with-the-maximum-sum/"
+    },
+    {
+      "title": "Maximum Good Subarray Sum",
+      "slug": "maximum-good-subarray-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-good-subarray-sum/"
+    },
+    {
+      "title": "Maximize Subarray Sum After Removing All Occurrences of One Element",
+      "slug": "maximize-subarray-sum-after-removing-all-occurrences-of-one-element",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximize-subarray-sum-after-removing-all-occurrences-of-one-element/"
+    }
+  ]
+}

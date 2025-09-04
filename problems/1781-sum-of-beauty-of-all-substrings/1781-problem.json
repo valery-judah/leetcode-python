@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "1781",
+  "name": "Sum of Beauty of All Substrings",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/sum-of-beauty-of-all-substrings/",
+  "slug": "sum-of-beauty-of-all-substrings",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Substrings That Begin and End With the Same Letter",
+      "slug": "substrings-that-begin-and-end-with-the-same-letter",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/substrings-that-begin-and-end-with-the-same-letter/"
+    }
+  ]
+}

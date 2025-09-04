@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "407",
+  "name": "Trapping Rain Water II",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/trapping-rain-water-ii/",
+  "slug": "trapping-rain-water-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Breadth-First Search",
+    "Heap (Priority Queue)",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Trapping Rain Water",
+      "slug": "trapping-rain-water",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/trapping-rain-water/"
+    },
+    {
+      "title": "Maximum Number of Points From Grid Queries",
+      "slug": "maximum-number-of-points-from-grid-queries",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-number-of-points-from-grid-queries/"
+    }
+  ]
+}

@@ -1,49 +1,23 @@
-"""
-Problem 219: Contains Duplicate II
-https://leetcode.com/problems/contains-duplicate-ii/
-Difficulty: easy
-Tags: array,hash-map,sliding-window
-"""
-
-from __future__ import annotations
+class Baseline:
+    def solve(self, *args, **kwargs):
+        """Replace with actual signature per problem."""
+        raise NotImplementedError
 
 
-class Solution:
-    def solve(self, nums: list[int], k: int) -> bool:
-        """
-        Returns True if there exist indices i != j such that
-        nums[i] == nums[j] and abs(i - j) <= k.
+# Optional default alias for single-export usage
+Solution = Baseline
 
-        Single-pass O(n) using a hashmap of last seen index per value.
-        """
-        last_index: dict[int, int] = {}
-        for i, v in enumerate(nums):
-            if v in last_index and i - last_index[v] <= k:
-                return True
-            last_index[v] = i
-        return False
+# Explicit multi-export for test discovery
+ALL_SOLUTIONS = [Baseline]
 
-
-# Allow tests to parametrize multiple variants from one file.
-ALL_SOLUTIONS = [Solution]
-
-
-# Canonical small test cases for default generic tests
-# Each entry: (label, nums, k, expected)
-TEST_CASES: list[tuple[str, list[int], int, bool]] = [
-    ("basic_true", [1, 2, 3, 1], 3, True),
-    ("adjacent_dup", [1, 0, 1, 1], 1, True),
-    ("too_far", [1, 2, 3, 1, 2, 3], 2, False),
-    ("empty", [], 1, False),
-    ("single", [1], 1, False),
-    ("k_zero", [1, 2, 1], 0, False),
-    ("within_k", [99, 1, 99], 2, True),
-    ("negatives", [-1, -2, -3, -1], 3, True),
-    ("boundary_eq", [1, 2, 3, 1, 2, 3], 3, True),
-    ("no_local_dup", [1, 2, 3, 1, 2, 3], 1, False),
-    ("exact_k2", [1, 2, 1], 2, True),
-    ("large_k", [1, 2, 3, 1], 100, True),
+# Canonical small test cases for generic stub tests
+# Each entry: (label, args_tuple, kwargs_dict)
+TEST_CASES = [
+    ("example", (), {}),  # replace with concrete inputs
 ]
+
+# Opt-in for generic stub testing: assert .solve raises this exception.
+TEST_EXPECT_EXCEPTION = NotImplementedError
 
 
 if __name__ == "__main__":
@@ -54,7 +28,7 @@ if __name__ == "__main__":
 
     problem_dir = Path(__file__).parent
     root = problem_dir.parent
-    problem_name = problem_dir.name  # e.g., "0219-contains-duplicate-ii"
+    problem_name = problem_dir.name
     # Run the single generic spec, filtered to this problem's params
     subprocess.run(
         [sys.executable, "-m", "pytest", "-q", str(root), "-k", problem_name],

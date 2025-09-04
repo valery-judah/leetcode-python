@@ -1,0 +1,57 @@
+{
+  "category": "",
+  "id": "72",
+  "name": "Edit Distance",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/edit-distance/",
+  "slug": "edit-distance",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "One Edit Distance",
+      "slug": "one-edit-distance",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/one-edit-distance/"
+    },
+    {
+      "title": "Delete Operation for Two Strings",
+      "slug": "delete-operation-for-two-strings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/delete-operation-for-two-strings/"
+    },
+    {
+      "title": "Minimum ASCII Delete Sum for Two Strings",
+      "slug": "minimum-ascii-delete-sum-for-two-strings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/"
+    },
+    {
+      "title": "Uncrossed Lines",
+      "slug": "uncrossed-lines",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/uncrossed-lines/"
+    },
+    {
+      "title": "Minimum White Tiles After Covering With Carpets",
+      "slug": "minimum-white-tiles-after-covering-with-carpets",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-white-tiles-after-covering-with-carpets/"
+    },
+    {
+      "title": "Longest Palindrome After Substring Concatenation II",
+      "slug": "longest-palindrome-after-substring-concatenation-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-palindrome-after-substring-concatenation-ii/"
+    },
+    {
+      "title": "Minimum Steps to Convert String with Operations",
+      "slug": "minimum-steps-to-convert-string-with-operations",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-steps-to-convert-string-with-operations/"
+    }
+  ]
+}

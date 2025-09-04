@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "972",
+  "name": "Equal Rational Numbers",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/equal-rational-numbers/",
+  "slug": "equal-rational-numbers",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "String"
+  ],
+  "similar_questions": []
+}

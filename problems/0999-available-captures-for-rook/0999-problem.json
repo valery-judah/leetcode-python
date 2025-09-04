@@ -1,0 +1,40 @@
+{
+  "category": "",
+  "id": "999",
+  "name": "Available Captures for Rook",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/available-captures-for-rook/",
+  "slug": "available-captures-for-rook",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Unguarded Cells in the Grid",
+      "slug": "count-unguarded-cells-in-the-grid",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-unguarded-cells-in-the-grid/"
+    },
+    {
+      "title": "Minimum Moves to Capture The Queen",
+      "slug": "minimum-moves-to-capture-the-queen",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-moves-to-capture-the-queen/"
+    },
+    {
+      "title": "Maximum Value Sum by Placing Three Rooks II",
+      "slug": "maximum-value-sum-by-placing-three-rooks-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-value-sum-by-placing-three-rooks-ii/"
+    },
+    {
+      "title": "Maximum Value Sum by Placing Three Rooks I",
+      "slug": "maximum-value-sum-by-placing-three-rooks-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-value-sum-by-placing-three-rooks-i/"
+    }
+  ]
+}

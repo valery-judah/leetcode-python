@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "1321",
+  "name": "Restaurant Growth",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/restaurant-growth/",
+  "slug": "restaurant-growth",
+  "isPaidOnly": false,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

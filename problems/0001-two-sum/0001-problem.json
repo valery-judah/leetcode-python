@@ -1,0 +1,141 @@
+{
+  "category": "",
+  "id": "1",
+  "name": "Two Sum",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/two-sum/",
+  "slug": "two-sum",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "similar_questions": [
+    {
+      "title": "3Sum",
+      "slug": "3sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/3sum/"
+    },
+    {
+      "title": "4Sum",
+      "slug": "4sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/4sum/"
+    },
+    {
+      "title": "Two Sum II - Input Array Is Sorted",
+      "slug": "two-sum-ii-input-array-is-sorted",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/"
+    },
+    {
+      "title": "Two Sum III - Data structure design",
+      "slug": "two-sum-iii-data-structure-design",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/two-sum-iii-data-structure-design/"
+    },
+    {
+      "title": "Subarray Sum Equals K",
+      "slug": "subarray-sum-equals-k",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/subarray-sum-equals-k/"
+    },
+    {
+      "title": "Two Sum IV - Input is a BST",
+      "slug": "two-sum-iv-input-is-a-bst",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/two-sum-iv-input-is-a-bst/"
+    },
+    {
+      "title": "Two Sum Less Than K",
+      "slug": "two-sum-less-than-k",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/two-sum-less-than-k/"
+    },
+    {
+      "title": "Max Number of K-Sum Pairs",
+      "slug": "max-number-of-k-sum-pairs",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/max-number-of-k-sum-pairs/"
+    },
+    {
+      "title": "Count Good Meals",
+      "slug": "count-good-meals",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-good-meals/"
+    },
+    {
+      "title": "Count Number of Pairs With Absolute Difference K",
+      "slug": "count-number-of-pairs-with-absolute-difference-k",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/"
+    },
+    {
+      "title": "Number of Pairs of Strings With Concatenation Equal to Target",
+      "slug": "number-of-pairs-of-strings-with-concatenation-equal-to-target",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-pairs-of-strings-with-concatenation-equal-to-target/"
+    },
+    {
+      "title": "Find All K-Distant Indices in an Array",
+      "slug": "find-all-k-distant-indices-in-an-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-all-k-distant-indices-in-an-array/"
+    },
+    {
+      "title": "First Letter to Appear Twice",
+      "slug": "first-letter-to-appear-twice",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/first-letter-to-appear-twice/"
+    },
+    {
+      "title": "Number of Excellent Pairs",
+      "slug": "number-of-excellent-pairs",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-excellent-pairs/"
+    },
+    {
+      "title": "Number of Arithmetic Triplets",
+      "slug": "number-of-arithmetic-triplets",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-arithmetic-triplets/"
+    },
+    {
+      "title": "Node With Highest Edge Score",
+      "slug": "node-with-highest-edge-score",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/node-with-highest-edge-score/"
+    },
+    {
+      "title": "Check Distances Between Same Letters",
+      "slug": "check-distances-between-same-letters",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/check-distances-between-same-letters/"
+    },
+    {
+      "title": "Find Subarrays With Equal Sum",
+      "slug": "find-subarrays-with-equal-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-subarrays-with-equal-sum/"
+    },
+    {
+      "title": "Largest Positive Integer That Exists With Its Negative",
+      "slug": "largest-positive-integer-that-exists-with-its-negative",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/largest-positive-integer-that-exists-with-its-negative/"
+    },
+    {
+      "title": "Number of Distinct Averages",
+      "slug": "number-of-distinct-averages",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-distinct-averages/"
+    },
+    {
+      "title": "Count Pairs Whose Sum is Less than Target",
+      "slug": "count-pairs-whose-sum-is-less-than-target",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/"
+    }
+  ]
+}

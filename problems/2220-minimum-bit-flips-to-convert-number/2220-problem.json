@@ -1,0 +1,32 @@
+{
+  "category": "",
+  "id": "2220",
+  "name": "Minimum Bit Flips to Convert Number",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/minimum-bit-flips-to-convert-number/",
+  "slug": "minimum-bit-flips-to-convert-number",
+  "isPaidOnly": false,
+  "tags": [
+    "Bit Manipulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Flips to Make a OR b Equal to c",
+      "slug": "minimum-flips-to-make-a-or-b-equal-to-c",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/"
+    },
+    {
+      "title": "Minimum Number of Operations to Make Array XOR Equal to K",
+      "slug": "minimum-number-of-operations-to-make-array-xor-equal-to-k",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-number-of-operations-to-make-array-xor-equal-to-k/"
+    },
+    {
+      "title": "Smallest Number With All Set Bits",
+      "slug": "smallest-number-with-all-set-bits",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/smallest-number-with-all-set-bits/"
+    }
+  ]
+}

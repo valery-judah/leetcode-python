@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "2792",
+  "name": "Count Nodes That Are Great Enough",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/count-nodes-that-are-great-enough/",
+  "slug": "count-nodes-that-are-great-enough",
+  "isPaidOnly": true,
+  "tags": [
+    "Divide and Conquer",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": []
+}

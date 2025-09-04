@@ -1,0 +1,71 @@
+{
+  "category": "",
+  "id": "94",
+  "name": "Binary Tree Inorder Traversal",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/binary-tree-inorder-traversal/",
+  "slug": "binary-tree-inorder-traversal",
+  "isPaidOnly": false,
+  "tags": [
+    "Stack",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Validate Binary Search Tree",
+      "slug": "validate-binary-search-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/validate-binary-search-tree/"
+    },
+    {
+      "title": "Binary Tree Preorder Traversal",
+      "slug": "binary-tree-preorder-traversal",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/binary-tree-preorder-traversal/"
+    },
+    {
+      "title": "Binary Tree Postorder Traversal",
+      "slug": "binary-tree-postorder-traversal",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/binary-tree-postorder-traversal/"
+    },
+    {
+      "title": "Binary Search Tree Iterator",
+      "slug": "binary-search-tree-iterator",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/binary-search-tree-iterator/"
+    },
+    {
+      "title": "Kth Smallest Element in a BST",
+      "slug": "kth-smallest-element-in-a-bst",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/"
+    },
+    {
+      "title": "Closest Binary Search Tree Value II",
+      "slug": "closest-binary-search-tree-value-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/closest-binary-search-tree-value-ii/"
+    },
+    {
+      "title": "Inorder Successor in BST",
+      "slug": "inorder-successor-in-bst",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/inorder-successor-in-bst/"
+    },
+    {
+      "title": "Convert Binary Search Tree to Sorted Doubly Linked List",
+      "slug": "convert-binary-search-tree-to-sorted-doubly-linked-list",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/"
+    },
+    {
+      "title": "Minimum Distance Between BST Nodes",
+      "slug": "minimum-distance-between-bst-nodes",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-distance-between-bst-nodes/"
+    }
+  ]
+}

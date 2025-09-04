@@ -1,0 +1,31 @@
+{
+  "category": "",
+  "id": "731",
+  "name": "My Calendar II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/my-calendar-ii/",
+  "slug": "my-calendar-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Design",
+    "Segment Tree",
+    "Prefix Sum",
+    "Ordered Set"
+  ],
+  "similar_questions": [
+    {
+      "title": "My Calendar I",
+      "slug": "my-calendar-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/my-calendar-i/"
+    },
+    {
+      "title": "My Calendar III",
+      "slug": "my-calendar-iii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/my-calendar-iii/"
+    }
+  ]
+}

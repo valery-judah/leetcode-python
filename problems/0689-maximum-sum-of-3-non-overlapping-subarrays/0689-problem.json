@@ -1,0 +1,35 @@
+{
+  "category": "",
+  "id": "689",
+  "name": "Maximum Sum of 3 Non-Overlapping Subarrays",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays/",
+  "slug": "maximum-sum-of-3-non-overlapping-subarrays",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Sliding Window",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Best Time to Buy and Sell Stock III",
+      "slug": "best-time-to-buy-and-sell-stock-iii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/"
+    },
+    {
+      "title": "Sum of Variable Length Subarrays",
+      "slug": "sum-of-variable-length-subarrays",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sum-of-variable-length-subarrays/"
+    },
+    {
+      "title": "Maximize Y‑Sum by Picking a Triplet of Distinct X‑Values",
+      "slug": "maximize-ysum-by-picking-a-triplet-of-distinct-xvalues",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximize-ysum-by-picking-a-triplet-of-distinct-xvalues/"
+    }
+  ]
+}

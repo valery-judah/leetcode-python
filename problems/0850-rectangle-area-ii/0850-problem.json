@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "850",
+  "name": "Rectangle Area II",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/rectangle-area-ii/",
+  "slug": "rectangle-area-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Segment Tree",
+    "Line Sweep",
+    "Ordered Set"
+  ],
+  "similar_questions": [
+    {
+      "title": "Separate Squares II",
+      "slug": "separate-squares-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/separate-squares-ii/"
+    }
+  ]
+}

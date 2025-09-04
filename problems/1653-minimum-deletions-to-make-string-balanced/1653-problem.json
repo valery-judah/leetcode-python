@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "1653",
+  "name": "Minimum Deletions to Make String Balanced",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/",
+  "slug": "minimum-deletions-to-make-string-balanced",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Dynamic Programming",
+    "Stack"
+  ],
+  "similar_questions": [
+    {
+      "title": "Check if All A's Appears Before All B's",
+      "slug": "check-if-all-as-appears-before-all-bs",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/check-if-all-as-appears-before-all-bs/"
+    }
+  ]
+}

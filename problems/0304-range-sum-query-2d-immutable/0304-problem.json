@@ -1,0 +1,35 @@
+{
+  "category": "",
+  "id": "304",
+  "name": "Range Sum Query 2D - Immutable",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/range-sum-query-2d-immutable/",
+  "slug": "range-sum-query-2d-immutable",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Design",
+    "Matrix",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Range Sum Query - Immutable",
+      "slug": "range-sum-query-immutable",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/range-sum-query-immutable/"
+    },
+    {
+      "title": "Range Sum Query 2D - Mutable",
+      "slug": "range-sum-query-2d-mutable",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/range-sum-query-2d-mutable/"
+    },
+    {
+      "title": "Find the Grid of Region Average",
+      "slug": "find-the-grid-of-region-average",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-grid-of-region-average/"
+    }
+  ]
+}

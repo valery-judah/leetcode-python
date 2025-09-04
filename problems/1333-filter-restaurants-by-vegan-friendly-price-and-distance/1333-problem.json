@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "1333",
+  "name": "Filter Restaurants by Vegan-Friendly, Price and Distance",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/filter-restaurants-by-vegan-friendly-price-and-distance/",
+  "slug": "filter-restaurants-by-vegan-friendly-price-and-distance",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "similar_questions": []
+}

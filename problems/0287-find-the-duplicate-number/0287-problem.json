@@ -1,0 +1,47 @@
+{
+  "category": "",
+  "id": "287",
+  "name": "Find the Duplicate Number",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-the-duplicate-number/",
+  "slug": "find-the-duplicate-number",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Bit Manipulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "First Missing Positive",
+      "slug": "first-missing-positive",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/first-missing-positive/"
+    },
+    {
+      "title": "Single Number",
+      "slug": "single-number",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/single-number/"
+    },
+    {
+      "title": "Linked List Cycle II",
+      "slug": "linked-list-cycle-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/linked-list-cycle-ii/"
+    },
+    {
+      "title": "Missing Number",
+      "slug": "missing-number",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/missing-number/"
+    },
+    {
+      "title": "Set Mismatch",
+      "slug": "set-mismatch",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/set-mismatch/"
+    }
+  ]
+}

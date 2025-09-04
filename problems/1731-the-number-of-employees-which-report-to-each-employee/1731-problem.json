@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "1731",
+  "name": "The Number of Employees Which Report to Each Employee",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/the-number-of-employees-which-report-to-each-employee/",
+  "slug": "the-number-of-employees-which-report-to-each-employee",
+  "isPaidOnly": false,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

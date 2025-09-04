@@ -1,0 +1,66 @@
+{
+  "category": "",
+  "id": "349",
+  "name": "Intersection of Two Arrays",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/intersection-of-two-arrays/",
+  "slug": "intersection-of-two-arrays",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
+    "Binary Search",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Intersection of Two Arrays II",
+      "slug": "intersection-of-two-arrays-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/intersection-of-two-arrays-ii/"
+    },
+    {
+      "title": "Intersection of Three Sorted Arrays",
+      "slug": "intersection-of-three-sorted-arrays",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/intersection-of-three-sorted-arrays/"
+    },
+    {
+      "title": "Find the Difference of Two Arrays",
+      "slug": "find-the-difference-of-two-arrays",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-difference-of-two-arrays/"
+    },
+    {
+      "title": "Count Common Words With One Occurrence",
+      "slug": "count-common-words-with-one-occurrence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-common-words-with-one-occurrence/"
+    },
+    {
+      "title": "Choose Numbers From Two Arrays in Range",
+      "slug": "choose-numbers-from-two-arrays-in-range",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/choose-numbers-from-two-arrays-in-range/"
+    },
+    {
+      "title": "Intersection of Multiple Arrays",
+      "slug": "intersection-of-multiple-arrays",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/intersection-of-multiple-arrays/"
+    },
+    {
+      "title": "Minimum Common Value",
+      "slug": "minimum-common-value",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-common-value/"
+    },
+    {
+      "title": "Maximum Size of a Set After Removals",
+      "slug": "maximum-size-of-a-set-after-removals",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-size-of-a-set-after-removals/"
+    }
+  ]
+}

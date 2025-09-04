@@ -1,0 +1,35 @@
+{
+  "category": "",
+  "id": "229",
+  "name": "Majority Element II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/majority-element-ii/",
+  "slug": "majority-element-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Majority Element",
+      "slug": "majority-element",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/majority-element/"
+    },
+    {
+      "title": "Check If a Number Is Majority Element in a Sorted Array",
+      "slug": "check-if-a-number-is-majority-element-in-a-sorted-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/"
+    },
+    {
+      "title": "Most Frequent Even Element",
+      "slug": "most-frequent-even-element",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/most-frequent-even-element/"
+    }
+  ]
+}

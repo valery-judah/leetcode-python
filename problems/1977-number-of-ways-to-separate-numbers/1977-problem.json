@@ -1,0 +1,40 @@
+{
+  "category": "",
+  "id": "1977",
+  "name": "Number of Ways to Separate Numbers",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/number-of-ways-to-separate-numbers/",
+  "slug": "number-of-ways-to-separate-numbers",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Dynamic Programming",
+    "Suffix Array"
+  ],
+  "similar_questions": [
+    {
+      "title": "Decode Ways",
+      "slug": "decode-ways",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/decode-ways/"
+    },
+    {
+      "title": "Decode Ways II",
+      "slug": "decode-ways-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/decode-ways-ii/"
+    },
+    {
+      "title": "Restore The Array",
+      "slug": "restore-the-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/restore-the-array/"
+    },
+    {
+      "title": "Number of Beautiful Partitions",
+      "slug": "number-of-beautiful-partitions",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-beautiful-partitions/"
+    }
+  ]
+}

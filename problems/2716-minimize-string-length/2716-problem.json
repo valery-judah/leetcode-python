@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "2716",
+  "name": "Minimize String Length",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/minimize-string-length/",
+  "slug": "minimize-string-length",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Remove All Adjacent Duplicates In String",
+      "slug": "remove-all-adjacent-duplicates-in-string",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/"
+    },
+    {
+      "title": "Remove All Adjacent Duplicates in String II",
+      "slug": "remove-all-adjacent-duplicates-in-string-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/"
+    }
+  ]
+}

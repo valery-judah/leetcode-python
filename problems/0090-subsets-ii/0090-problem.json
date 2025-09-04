@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "90",
+  "name": "Subsets II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/subsets-ii/",
+  "slug": "subsets-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Backtracking",
+    "Bit Manipulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Subsets",
+      "slug": "subsets",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/subsets/"
+    },
+    {
+      "title": "Find Array Given Subset Sums",
+      "slug": "find-array-given-subset-sums",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-array-given-subset-sums/"
+    }
+  ]
+}

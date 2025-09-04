@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "1335",
+  "name": "Minimum Difficulty of a Job Schedule",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/",
+  "slug": "minimum-difficulty-of-a-job-schedule",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "similar_questions": []
+}

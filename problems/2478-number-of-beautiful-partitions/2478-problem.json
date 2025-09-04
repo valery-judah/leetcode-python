@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "2478",
+  "name": "Number of Beautiful Partitions",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/number-of-beautiful-partitions/",
+  "slug": "number-of-beautiful-partitions",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Restore The Array",
+      "slug": "restore-the-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/restore-the-array/"
+    },
+    {
+      "title": "Number of Ways to Separate Numbers",
+      "slug": "number-of-ways-to-separate-numbers",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-ways-to-separate-numbers/"
+    }
+  ]
+}

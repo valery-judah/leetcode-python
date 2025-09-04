@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "2494",
+  "name": "Merge Overlapping Events in the Same Hall",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/merge-overlapping-events-in-the-same-hall/",
+  "slug": "merge-overlapping-events-in-the-same-hall",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "1404",
+  "name": "Number of Steps to Reduce a Number in Binary Representation to One",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/",
+  "slug": "number-of-steps-to-reduce-a-number-in-binary-representation-to-one",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Bit Manipulation",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Moves to Reach Target Score",
+      "slug": "minimum-moves-to-reach-target-score",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-moves-to-reach-target-score/"
+    }
+  ]
+}

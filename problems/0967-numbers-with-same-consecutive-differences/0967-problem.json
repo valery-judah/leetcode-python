@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "967",
+  "name": "Numbers With Same Consecutive Differences",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/numbers-with-same-consecutive-differences/",
+  "slug": "numbers-with-same-consecutive-differences",
+  "isPaidOnly": false,
+  "tags": [
+    "Backtracking",
+    "Breadth-First Search"
+  ],
+  "similar_questions": []
+}

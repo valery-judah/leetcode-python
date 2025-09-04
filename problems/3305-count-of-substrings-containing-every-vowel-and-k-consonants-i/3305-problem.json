@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "3305",
+  "name": "Count of Substrings Containing Every Vowel and K Consonants I",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/",
+  "slug": "count-of-substrings-containing-every-vowel-and-k-consonants-i",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Sliding Window"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longest Substring Of All Vowels in Order",
+      "slug": "longest-substring-of-all-vowels-in-order",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-substring-of-all-vowels-in-order/"
+    },
+    {
+      "title": "Count Vowel Substrings of a String",
+      "slug": "count-vowel-substrings-of-a-string",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-vowel-substrings-of-a-string/"
+    }
+  ]
+}

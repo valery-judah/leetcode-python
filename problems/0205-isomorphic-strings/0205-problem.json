@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "205",
+  "name": "Isomorphic Strings",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/isomorphic-strings/",
+  "slug": "isomorphic-strings",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Word Pattern",
+      "slug": "word-pattern",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/word-pattern/"
+    },
+    {
+      "title": "Find and Replace Pattern",
+      "slug": "find-and-replace-pattern",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-and-replace-pattern/"
+    }
+  ]
+}

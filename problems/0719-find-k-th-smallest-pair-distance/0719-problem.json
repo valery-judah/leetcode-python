@@ -1,0 +1,59 @@
+{
+  "category": "",
+  "id": "719",
+  "name": "Find K-th Smallest Pair Distance",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/find-k-th-smallest-pair-distance/",
+  "slug": "find-k-th-smallest-pair-distance",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find K Pairs with Smallest Sums",
+      "slug": "find-k-pairs-with-smallest-sums",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-k-pairs-with-smallest-sums/"
+    },
+    {
+      "title": "Kth Smallest Element in a Sorted Matrix",
+      "slug": "kth-smallest-element-in-a-sorted-matrix",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/"
+    },
+    {
+      "title": "Find K Closest Elements",
+      "slug": "find-k-closest-elements",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-k-closest-elements/"
+    },
+    {
+      "title": "Kth Smallest Number in Multiplication Table",
+      "slug": "kth-smallest-number-in-multiplication-table",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/"
+    },
+    {
+      "title": "K-th Smallest Prime Fraction",
+      "slug": "k-th-smallest-prime-fraction",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/k-th-smallest-prime-fraction/"
+    },
+    {
+      "title": "Find the Median of the Uniqueness Array",
+      "slug": "find-the-median-of-the-uniqueness-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-median-of-the-uniqueness-array/"
+    },
+    {
+      "title": "Maximize Score of Numbers in Ranges",
+      "slug": "maximize-score-of-numbers-in-ranges",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximize-score-of-numbers-in-ranges/"
+    }
+  ]
+}

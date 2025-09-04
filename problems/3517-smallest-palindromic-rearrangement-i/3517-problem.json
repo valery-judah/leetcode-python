@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "3517",
+  "name": "Smallest Palindromic Rearrangement I",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/smallest-palindromic-rearrangement-i/",
+  "slug": "smallest-palindromic-rearrangement-i",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Sorting",
+    "Counting Sort"
+  ],
+  "similar_questions": [
+    {
+      "title": "Shortest Palindrome",
+      "slug": "shortest-palindrome",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/shortest-palindrome/"
+    }
+  ]
+}

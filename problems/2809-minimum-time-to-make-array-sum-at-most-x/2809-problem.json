@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "2809",
+  "name": "Minimum Time to Make Array Sum At Most x",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-time-to-make-array-sum-at-most-x/",
+  "slug": "minimum-time-to-make-array-sum-at-most-x",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Sorting"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "1127",
+  "name": "User Purchase Platform",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/user-purchase-platform/",
+  "slug": "user-purchase-platform",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

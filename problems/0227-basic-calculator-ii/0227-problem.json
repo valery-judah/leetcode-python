@@ -1,0 +1,34 @@
+{
+  "category": "",
+  "id": "227",
+  "name": "Basic Calculator II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/basic-calculator-ii/",
+  "slug": "basic-calculator-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "String",
+    "Stack"
+  ],
+  "similar_questions": [
+    {
+      "title": "Basic Calculator",
+      "slug": "basic-calculator",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/basic-calculator/"
+    },
+    {
+      "title": "Expression Add Operators",
+      "slug": "expression-add-operators",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/expression-add-operators/"
+    },
+    {
+      "title": "Basic Calculator III",
+      "slug": "basic-calculator-iii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/basic-calculator-iii/"
+    }
+  ]
+}

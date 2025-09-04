@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "1137",
+  "name": "N-th Tribonacci Number",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/n-th-tribonacci-number/",
+  "slug": "n-th-tribonacci-number",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Memoization"
+  ],
+  "similar_questions": [
+    {
+      "title": "Climbing Stairs",
+      "slug": "climbing-stairs",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/climbing-stairs/"
+    },
+    {
+      "title": "Fibonacci Number",
+      "slug": "fibonacci-number",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/fibonacci-number/"
+    }
+  ]
+}

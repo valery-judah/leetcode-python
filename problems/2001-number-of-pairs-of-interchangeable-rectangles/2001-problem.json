@@ -1,0 +1,36 @@
+{
+  "category": "",
+  "id": "2001",
+  "name": "Number of Pairs of Interchangeable Rectangles",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/",
+  "slug": "number-of-pairs-of-interchangeable-rectangles",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Counting",
+    "Number Theory"
+  ],
+  "similar_questions": [
+    {
+      "title": "Number of Good Pairs",
+      "slug": "number-of-good-pairs",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-good-pairs/"
+    },
+    {
+      "title": "Count Nice Pairs in an Array",
+      "slug": "count-nice-pairs-in-an-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-nice-pairs-in-an-array/"
+    },
+    {
+      "title": "Replace Non-Coprime Numbers in Array",
+      "slug": "replace-non-coprime-numbers-in-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/replace-non-coprime-numbers-in-array/"
+    }
+  ]
+}

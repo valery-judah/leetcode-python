@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "1160",
+  "name": "Find Words That Can Be Formed by Characters",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/",
+  "slug": "find-words-that-can-be-formed-by-characters",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Ransom Note",
+      "slug": "ransom-note",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/ransom-note/"
+    },
+    {
+      "title": "Rearrange Characters to Make Target String",
+      "slug": "rearrange-characters-to-make-target-string",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/rearrange-characters-to-make-target-string/"
+    }
+  ]
+}

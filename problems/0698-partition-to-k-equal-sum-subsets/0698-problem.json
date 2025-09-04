@@ -1,0 +1,43 @@
+{
+  "category": "",
+  "id": "698",
+  "name": "Partition to K Equal Sum Subsets",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/partition-to-k-equal-sum-subsets/",
+  "slug": "partition-to-k-equal-sum-subsets",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Backtracking",
+    "Bit Manipulation",
+    "Memoization",
+    "Bitmask"
+  ],
+  "similar_questions": [
+    {
+      "title": "Partition Equal Subset Sum",
+      "slug": "partition-equal-subset-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/partition-equal-subset-sum/"
+    },
+    {
+      "title": "Fair Distribution of Cookies",
+      "slug": "fair-distribution-of-cookies",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/fair-distribution-of-cookies/"
+    },
+    {
+      "title": "Maximum Number of Ways to Partition an Array",
+      "slug": "maximum-number-of-ways-to-partition-an-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-number-of-ways-to-partition-an-array/"
+    },
+    {
+      "title": "Maximum Rows Covered by Columns",
+      "slug": "maximum-rows-covered-by-columns",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-rows-covered-by-columns/"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "1331",
+  "name": "Rank Transform of an Array",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/rank-transform-of-an-array/",
+  "slug": "rank-transform-of-an-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Rank Transform of a Matrix",
+      "slug": "rank-transform-of-a-matrix",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/rank-transform-of-a-matrix/"
+    },
+    {
+      "title": "Find Target Indices After Sorting Array",
+      "slug": "find-target-indices-after-sorting-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-target-indices-after-sorting-array/"
+    }
+  ]
+}

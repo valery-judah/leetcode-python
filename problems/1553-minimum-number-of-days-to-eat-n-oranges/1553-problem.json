@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "1553",
+  "name": "Minimum Number of Days to Eat N Oranges",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-number-of-days-to-eat-n-oranges/",
+  "slug": "minimum-number-of-days-to-eat-n-oranges",
+  "isPaidOnly": false,
+  "tags": [
+    "Dynamic Programming",
+    "Memoization"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "1818",
+  "name": "Minimum Absolute Sum Difference",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-absolute-sum-difference/",
+  "slug": "minimum-absolute-sum-difference",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Sorting",
+    "Ordered Set"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Sum of Squared Difference",
+      "slug": "minimum-sum-of-squared-difference",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-sum-of-squared-difference/"
+    },
+    {
+      "title": "Minimize the Maximum Adjacent Element Difference",
+      "slug": "minimize-the-maximum-adjacent-element-difference",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimize-the-maximum-adjacent-element-difference/"
+    }
+  ]
+}

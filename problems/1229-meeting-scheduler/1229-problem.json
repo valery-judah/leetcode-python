@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "1229",
+  "name": "Meeting Scheduler",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/meeting-scheduler/",
+  "slug": "meeting-scheduler",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Merge Two 2D Arrays by Summing Values",
+      "slug": "merge-two-2d-arrays-by-summing-values",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/"
+    },
+    {
+      "title": "Reschedule Meetings for Maximum Free Time I",
+      "slug": "reschedule-meetings-for-maximum-free-time-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/reschedule-meetings-for-maximum-free-time-i/"
+    }
+  ]
+}

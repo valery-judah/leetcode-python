@@ -1,0 +1,51 @@
+{
+  "category": "",
+  "id": "125",
+  "name": "Valid Palindrome",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/valid-palindrome/",
+  "slug": "valid-palindrome",
+  "isPaidOnly": false,
+  "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Palindrome Linked List",
+      "slug": "palindrome-linked-list",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/palindrome-linked-list/"
+    },
+    {
+      "title": "Valid Palindrome II",
+      "slug": "valid-palindrome-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/valid-palindrome-ii/"
+    },
+    {
+      "title": "Maximum Product of the Length of Two Palindromic Subsequences",
+      "slug": "maximum-product-of-the-length-of-two-palindromic-subsequences",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/"
+    },
+    {
+      "title": "Find First Palindromic String in the Array",
+      "slug": "find-first-palindromic-string-in-the-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-first-palindromic-string-in-the-array/"
+    },
+    {
+      "title": "Valid Palindrome IV",
+      "slug": "valid-palindrome-iv",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/valid-palindrome-iv/"
+    },
+    {
+      "title": "Maximum Palindromes After Operations",
+      "slug": "maximum-palindromes-after-operations",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-palindromes-after-operations/"
+    }
+  ]
+}

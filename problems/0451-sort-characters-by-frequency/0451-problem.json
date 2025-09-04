@@ -1,0 +1,67 @@
+{
+  "category": "",
+  "id": "451",
+  "name": "Sort Characters By Frequency",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/sort-characters-by-frequency/",
+  "slug": "sort-characters-by-frequency",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Bucket Sort",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Top K Frequent Elements",
+      "slug": "top-k-frequent-elements",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/top-k-frequent-elements/"
+    },
+    {
+      "title": "First Unique Character in a String",
+      "slug": "first-unique-character-in-a-string",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/first-unique-character-in-a-string/"
+    },
+    {
+      "title": "Sort Array by Increasing Frequency",
+      "slug": "sort-array-by-increasing-frequency",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sort-array-by-increasing-frequency/"
+    },
+    {
+      "title": "Percentage of Letter in String",
+      "slug": "percentage-of-letter-in-string",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/percentage-of-letter-in-string/"
+    },
+    {
+      "title": "Maximum Number of Pairs in Array",
+      "slug": "maximum-number-of-pairs-in-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-number-of-pairs-in-array/"
+    },
+    {
+      "title": "Node With Highest Edge Score",
+      "slug": "node-with-highest-edge-score",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/node-with-highest-edge-score/"
+    },
+    {
+      "title": "Most Frequent Even Element",
+      "slug": "most-frequent-even-element",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/most-frequent-even-element/"
+    },
+    {
+      "title": "Count Pairs Of Similar Strings",
+      "slug": "count-pairs-of-similar-strings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-pairs-of-similar-strings/"
+    }
+  ]
+}

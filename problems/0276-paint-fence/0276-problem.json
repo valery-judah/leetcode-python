@@ -1,0 +1,38 @@
+{
+  "category": "",
+  "id": "276",
+  "name": "Paint Fence",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/paint-fence/",
+  "slug": "paint-fence",
+  "isPaidOnly": true,
+  "tags": [
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "House Robber",
+      "slug": "house-robber",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/house-robber/"
+    },
+    {
+      "title": "House Robber II",
+      "slug": "house-robber-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/house-robber-ii/"
+    },
+    {
+      "title": "Paint House",
+      "slug": "paint-house",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/paint-house/"
+    },
+    {
+      "title": "Paint House II",
+      "slug": "paint-house-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/paint-house-ii/"
+    }
+  ]
+}

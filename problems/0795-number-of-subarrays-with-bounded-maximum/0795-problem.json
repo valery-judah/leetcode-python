@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "795",
+  "name": "Number of Subarrays with Bounded Maximum",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/",
+  "slug": "number-of-subarrays-with-bounded-maximum",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Subarrays With Median K",
+      "slug": "count-subarrays-with-median-k",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-subarrays-with-median-k/"
+    },
+    {
+      "title": "Find the Number of Subarrays Where Boundary Elements Are Maximum",
+      "slug": "find-the-number-of-subarrays-where-boundary-elements-are-maximum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-number-of-subarrays-where-boundary-elements-are-maximum/"
+    }
+  ]
+}

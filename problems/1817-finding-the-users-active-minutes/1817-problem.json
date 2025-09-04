@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "1817",
+  "name": "Finding the Users Active Minutes",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/finding-the-users-active-minutes/",
+  "slug": "finding-the-users-active-minutes",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "similar_questions": []
+}

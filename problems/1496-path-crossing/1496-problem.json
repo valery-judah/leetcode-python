@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "1496",
+  "name": "Path Crossing",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/path-crossing/",
+  "slug": "path-crossing",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "similar_questions": []
+}

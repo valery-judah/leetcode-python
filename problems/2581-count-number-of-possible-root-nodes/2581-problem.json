@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "2581",
+  "name": "Count Number of Possible Root Nodes",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/count-number-of-possible-root-nodes/",
+  "slug": "count-number-of-possible-root-nodes",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Closest Node to Path in Tree",
+      "slug": "closest-node-to-path-in-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/closest-node-to-path-in-tree/"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "category": "",
+  "id": "42",
+  "name": "Trapping Rain Water",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/trapping-rain-water/",
+  "slug": "trapping-rain-water",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Dynamic Programming",
+    "Stack",
+    "Monotonic Stack"
+  ],
+  "similar_questions": [
+    {
+      "title": "Container With Most Water",
+      "slug": "container-with-most-water",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/container-with-most-water/"
+    },
+    {
+      "title": "Product of Array Except Self",
+      "slug": "product-of-array-except-self",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/product-of-array-except-self/"
+    },
+    {
+      "title": "Trapping Rain Water II",
+      "slug": "trapping-rain-water-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/trapping-rain-water-ii/"
+    },
+    {
+      "title": "Pour Water",
+      "slug": "pour-water",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/pour-water/"
+    },
+    {
+      "title": "Maximum Value of an Ordered Triplet II",
+      "slug": "maximum-value-of-an-ordered-triplet-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-ii/"
+    }
+  ]
+}

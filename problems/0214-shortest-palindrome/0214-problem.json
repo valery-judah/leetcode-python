@@ -1,0 +1,47 @@
+{
+  "category": "",
+  "id": "214",
+  "name": "Shortest Palindrome",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/shortest-palindrome/",
+  "slug": "shortest-palindrome",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Rolling Hash",
+    "String Matching",
+    "Hash Function"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longest Palindromic Substring",
+      "slug": "longest-palindromic-substring",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-palindromic-substring/"
+    },
+    {
+      "title": "Find the Index of the First Occurrence in a String",
+      "slug": "find-the-index-of-the-first-occurrence-in-a-string",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/"
+    },
+    {
+      "title": "Palindrome Pairs",
+      "slug": "palindrome-pairs",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/palindrome-pairs/"
+    },
+    {
+      "title": "Maximum Deletions on a String",
+      "slug": "maximum-deletions-on-a-string",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-deletions-on-a-string/"
+    },
+    {
+      "title": "Smallest Palindromic Rearrangement I",
+      "slug": "smallest-palindromic-rearrangement-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/smallest-palindromic-rearrangement-i/"
+    }
+  ]
+}

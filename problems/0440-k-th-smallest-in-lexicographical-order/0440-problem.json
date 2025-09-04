@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "440",
+  "name": "K-th Smallest in Lexicographical Order",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/k-th-smallest-in-lexicographical-order/",
+  "slug": "k-th-smallest-in-lexicographical-order",
+  "isPaidOnly": false,
+  "tags": [
+    "Trie"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Special Integers",
+      "slug": "count-special-integers",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-special-integers/"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1950",
+  "name": "Maximum of Minimum Values in All Subarrays",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-of-minimum-values-in-all-subarrays/",
+  "slug": "maximum-of-minimum-values-in-all-subarrays",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Stack",
+    "Monotonic Stack"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "815",
+  "name": "Bus Routes",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/bus-routes/",
+  "slug": "bus-routes",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Breadth-First Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Costs Using the Train Line",
+      "slug": "minimum-costs-using-the-train-line",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-costs-using-the-train-line/"
+    }
+  ]
+}

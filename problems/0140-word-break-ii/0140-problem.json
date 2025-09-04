@@ -1,0 +1,32 @@
+{
+  "category": "",
+  "id": "140",
+  "name": "Word Break II",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/word-break-ii/",
+  "slug": "word-break-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Dynamic Programming",
+    "Backtracking",
+    "Trie",
+    "Memoization"
+  ],
+  "similar_questions": [
+    {
+      "title": "Word Break",
+      "slug": "word-break",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/word-break/"
+    },
+    {
+      "title": "Concatenated Words",
+      "slug": "concatenated-words",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/concatenated-words/"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "1435",
+  "name": "Create a Session Bar Chart",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/create-a-session-bar-chart/",
+  "slug": "create-a-session-bar-chart",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Salary Categories",
+      "slug": "count-salary-categories",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-salary-categories/"
+    }
+  ]
+}

@@ -1,13 +1,3 @@
-"""
-Problem 169: Majority Element
-https://leetcode.com/problems/majority-element/
-Difficulty: easy
-Tags: Array, Hash Table, Divide and Conquer, Sorting, Counting
-"""
-
-from __future__ import annotations
-
-
 class Baseline:
     def solve(self, *args, **kwargs):
         """Replace with actual signature per problem."""

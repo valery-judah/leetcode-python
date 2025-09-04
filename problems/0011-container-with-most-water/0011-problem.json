@@ -1,0 +1,34 @@
+{
+  "category": "",
+  "id": "11",
+  "name": "Container With Most Water",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/container-with-most-water/",
+  "slug": "container-with-most-water",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Greedy"
+  ],
+  "similar_questions": [
+    {
+      "title": "Trapping Rain Water",
+      "slug": "trapping-rain-water",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/trapping-rain-water/"
+    },
+    {
+      "title": "Maximum Tastiness of Candy Basket",
+      "slug": "maximum-tastiness-of-candy-basket",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-tastiness-of-candy-basket/"
+    },
+    {
+      "title": "House Robber IV",
+      "slug": "house-robber-iv",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/house-robber-iv/"
+    }
+  ]
+}

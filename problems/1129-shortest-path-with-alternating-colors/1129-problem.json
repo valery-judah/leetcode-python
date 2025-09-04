@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "1129",
+  "name": "Shortest Path with Alternating Colors",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/shortest-path-with-alternating-colors/",
+  "slug": "shortest-path-with-alternating-colors",
+  "isPaidOnly": false,
+  "tags": [
+    "Breadth-First Search",
+    "Graph"
+  ],
+  "similar_questions": []
+}

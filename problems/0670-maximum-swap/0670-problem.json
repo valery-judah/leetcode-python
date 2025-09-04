@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "670",
+  "name": "Maximum Swap",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-swap/",
+  "slug": "maximum-swap",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Greedy"
+  ],
+  "similar_questions": [
+    {
+      "title": "Create Maximum Number",
+      "slug": "create-maximum-number",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/create-maximum-number/"
+    }
+  ]
+}

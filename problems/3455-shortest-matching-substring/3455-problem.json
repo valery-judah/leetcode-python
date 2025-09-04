@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "3455",
+  "name": "Shortest Matching Substring",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/shortest-matching-substring/",
+  "slug": "shortest-matching-substring",
+  "isPaidOnly": false,
+  "tags": [
+    "Two Pointers",
+    "String",
+    "Binary Search",
+    "String Matching"
+  ],
+  "similar_questions": []
+}

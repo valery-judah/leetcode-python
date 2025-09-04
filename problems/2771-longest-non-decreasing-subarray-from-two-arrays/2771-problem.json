@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "2771",
+  "name": "Longest Non-decreasing Subarray From Two Arrays",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/longest-non-decreasing-subarray-from-two-arrays/",
+  "slug": "longest-non-decreasing-subarray-from-two-arrays",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Russian Doll Envelopes",
+      "slug": "russian-doll-envelopes",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/russian-doll-envelopes/"
+    },
+    {
+      "title": "Maximum Length of Pair Chain",
+      "slug": "maximum-length-of-pair-chain",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-length-of-pair-chain/"
+    }
+  ]
+}

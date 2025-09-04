@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1849",
+  "name": "Splitting a String Into Descending Consecutive Values",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/splitting-a-string-into-descending-consecutive-values/",
+  "slug": "splitting-a-string-into-descending-consecutive-values",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Backtracking",
+    "Enumeration"
+  ],
+  "similar_questions": []
+}

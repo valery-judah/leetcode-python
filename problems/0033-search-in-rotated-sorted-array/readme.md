@@ -1,0 +1,57 @@
+# 33. Pour Water Between Buckets to Make Water Levels Equal
+
+- **URL**: <https://leetcode.com/problems/search-in-rotated-sorted-array/>
+- **Difficulty**: medium
+- **Tags**: Array, Binary Search
+
+## Files
+
+- [solutions.py](solutions.py): Implementations (single or multi-variant via `ALL_SOLUTIONS`) and `TEST_CASES`.
+
+## Similar Questions
+
+- [Medium] [Search in Rotated Sorted Array II](../0081-search-in-rotated-sorted-array-ii/readme.md)
+- [Medium] [Find Minimum in Rotated Sorted Array](../0153-find-minimum-in-rotated-sorted-array/readme.md)
+- [Medium] [Pour Water Between Buckets to Make Water Levels Equal](../2137-pour-water-between-buckets-to-make-water-levels-equal/readme.md)
+
+<!-- Optional per-repo conventions -->
+
+<!-- Add extras like reasoning_by_step.py or statement copy if present -->
+
+## Clarifying Questions
+
+- Input shape, ranges, constraints?
+- Duplicates, negatives, empty input?
+- Mutations allowed? Sorted? Streaming?
+
+## Examples
+
+- Add 2–3 examples and edge cases.
+
+## Approach
+
+- Brute force -> improved -> optimal.
+- Data structures considered.
+- Proof of correctness sketch.
+- For each calculate:
+  - Time: O(...)
+  - Space: O(...)
+
+## Checklist
+
+- [ ] Restate problem
+- [ ] Small example walkthrough
+- [ ] Choose DS/algorithm
+- [ ] Dry-run core loop
+- [ ] Code cleanly
+- [ ] Test edge cases
+
+See also: [Interview Framework](/docs/interview-framework.md).
+
+# Reasoning Flow
+
+[#todo paste your reasoning here]
+
+## Approaches (Overview)
+
+[#todo paste your solutions description here]

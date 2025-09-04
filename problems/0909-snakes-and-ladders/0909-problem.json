@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "909",
+  "name": "Snakes and Ladders",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/snakes-and-ladders/",
+  "slug": "snakes-and-ladders",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Most Profitable Path in a Tree",
+      "slug": "most-profitable-path-in-a-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/most-profitable-path-in-a-tree/"
+    }
+  ]
+}

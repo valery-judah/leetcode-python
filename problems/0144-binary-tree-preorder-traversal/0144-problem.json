@@ -1,0 +1,41 @@
+{
+  "category": "",
+  "id": "144",
+  "name": "Binary Tree Preorder Traversal",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/binary-tree-preorder-traversal/",
+  "slug": "binary-tree-preorder-traversal",
+  "isPaidOnly": false,
+  "tags": [
+    "Stack",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Binary Tree Inorder Traversal",
+      "slug": "binary-tree-inorder-traversal",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/binary-tree-inorder-traversal/"
+    },
+    {
+      "title": "Verify Preorder Sequence in Binary Search Tree",
+      "slug": "verify-preorder-sequence-in-binary-search-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/"
+    },
+    {
+      "title": "N-ary Tree Preorder Traversal",
+      "slug": "n-ary-tree-preorder-traversal",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/n-ary-tree-preorder-traversal/"
+    },
+    {
+      "title": "Kth Largest Sum in a Binary Tree",
+      "slug": "kth-largest-sum-in-a-binary-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/kth-largest-sum-in-a-binary-tree/"
+    }
+  ]
+}

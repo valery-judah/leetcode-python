@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "366",
+  "name": "Find Leaves of Binary Tree",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-leaves-of-binary-tree/",
+  "slug": "find-leaves-of-binary-tree",
+  "isPaidOnly": true,
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": []
+}

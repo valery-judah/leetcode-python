@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "1098",
+  "name": "Unpopular Books",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/unpopular-books/",
+  "slug": "unpopular-books",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

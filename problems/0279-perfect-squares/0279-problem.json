@@ -1,0 +1,34 @@
+{
+  "category": "",
+  "id": "279",
+  "name": "Perfect Squares",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/perfect-squares/",
+  "slug": "perfect-squares",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Breadth-First Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Primes",
+      "slug": "count-primes",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-primes/"
+    },
+    {
+      "title": "Ugly Number II",
+      "slug": "ugly-number-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/ugly-number-ii/"
+    },
+    {
+      "title": "Ways to Express an Integer as Sum of Powers",
+      "slug": "ways-to-express-an-integer-as-sum-of-powers",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/ways-to-express-an-integer-as-sum-of-powers/"
+    }
+  ]
+}

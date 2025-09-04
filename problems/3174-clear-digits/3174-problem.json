@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "3174",
+  "name": "Clear Digits",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/clear-digits/",
+  "slug": "clear-digits",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Stack",
+    "Simulation"
+  ],
+  "similar_questions": []
+}

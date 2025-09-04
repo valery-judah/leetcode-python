@@ -1,0 +1,46 @@
+{
+  "category": "",
+  "id": "424",
+  "name": "Longest Repeating Character Replacement",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/longest-repeating-character-replacement/",
+  "slug": "longest-repeating-character-replacement",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Sliding Window"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longest Substring with At Most K Distinct Characters",
+      "slug": "longest-substring-with-at-most-k-distinct-characters",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/"
+    },
+    {
+      "title": "Max Consecutive Ones III",
+      "slug": "max-consecutive-ones-iii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/max-consecutive-ones-iii/"
+    },
+    {
+      "title": "Minimum Number of Operations to Make Array Continuous",
+      "slug": "minimum-number-of-operations-to-make-array-continuous",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-number-of-operations-to-make-array-continuous/"
+    },
+    {
+      "title": "Maximize the Confusion of an Exam",
+      "slug": "maximize-the-confusion-of-an-exam",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximize-the-confusion-of-an-exam/"
+    },
+    {
+      "title": "Longest Substring of One Repeating Character",
+      "slug": "longest-substring-of-one-repeating-character",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-substring-of-one-repeating-character/"
+    }
+  ]
+}

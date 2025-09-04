@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "1360",
+  "name": "Number of Days Between Two Dates",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/number-of-days-between-two-dates/",
+  "slug": "number-of-days-between-two-dates",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Days Spent Together",
+      "slug": "count-days-spent-together",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-days-spent-together/"
+    }
+  ]
+}

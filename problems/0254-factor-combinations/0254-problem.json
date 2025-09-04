@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "254",
+  "name": "Factor Combinations",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/factor-combinations/",
+  "slug": "factor-combinations",
+  "isPaidOnly": true,
+  "tags": [
+    "Backtracking"
+  ],
+  "similar_questions": [
+    {
+      "title": "Combination Sum",
+      "slug": "combination-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/combination-sum/"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "1955",
+  "name": "Count Number of Special Subsequences",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/count-number-of-special-subsequences/",
+  "slug": "count-number-of-special-subsequences",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "similar_questions": []
+}

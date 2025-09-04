@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "3262",
+  "name": "Find Overlapping Shifts",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-overlapping-shifts/",
+  "slug": "find-overlapping-shifts",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

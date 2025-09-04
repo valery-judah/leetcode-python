@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "644",
+  "name": "Maximum Average Subarray II",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/maximum-average-subarray-ii/",
+  "slug": "maximum-average-subarray-ii",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Average Subarray I",
+      "slug": "maximum-average-subarray-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-average-subarray-i/"
+    }
+  ]
+}

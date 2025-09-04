@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "3475",
+  "name": "DNA Pattern Recognition ",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/dna-pattern-recognition/",
+  "slug": "dna-pattern-recognition",
+  "isPaidOnly": false,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

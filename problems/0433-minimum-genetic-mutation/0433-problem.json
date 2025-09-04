@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "433",
+  "name": "Minimum Genetic Mutation",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-genetic-mutation/",
+  "slug": "minimum-genetic-mutation",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Breadth-First Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Word Ladder",
+      "slug": "word-ladder",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/word-ladder/"
+    }
+  ]
+}

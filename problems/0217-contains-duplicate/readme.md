@@ -10,10 +10,10 @@
 
 ## Similar Questions
 
-- [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)
-- [Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/)
-- [Make Array Zero by Subtracting Equal Amounts](https://leetcode.com/problems/make-array-zero-by-subtracting-equal-amounts/)
-- [Find Valid Pair of Adjacent Digits in String](https://leetcode.com/problems/find-valid-pair-of-adjacent-digits-in-string/)
+- [Easy] [Contains Duplicate II](../0219-contains-duplicate-ii/readme.md)
+- [Hard] [Contains Duplicate III](../0220-contains-duplicate-iii/readme.md)
+- [Easy] [Make Array Zero by Subtracting Equal Amounts](../2357-make-array-zero-by-subtracting-equal-amounts/readme.md)
+- [Easy] [Find Valid Pair of Adjacent Digits in String](../3438-find-valid-pair-of-adjacent-digits-in-string/readme.md)
 
 <!-- Optional per-repo conventions -->
 

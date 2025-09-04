@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "1803",
+  "name": "Count Pairs With XOR in a Range",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/count-pairs-with-xor-in-a-range/",
+  "slug": "count-pairs-with-xor-in-a-range",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Bit Manipulation",
+    "Trie"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Paths With the Given XOR Value",
+      "slug": "count-paths-with-the-given-xor-value",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-paths-with-the-given-xor-value/"
+    }
+  ]
+}

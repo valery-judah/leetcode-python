@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "2743",
+  "name": "Count Substrings Without Repeating Character",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-substrings-without-repeating-character/",
+  "slug": "count-substrings-without-repeating-character",
+  "isPaidOnly": true,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Sliding Window"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Complete Substrings",
+      "slug": "count-complete-substrings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-complete-substrings/"
+    }
+  ]
+}

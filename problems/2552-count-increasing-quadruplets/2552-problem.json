@@ -1,0 +1,36 @@
+{
+  "category": "",
+  "id": "2552",
+  "name": "Count Increasing Quadruplets",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/count-increasing-quadruplets/",
+  "slug": "count-increasing-quadruplets",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Binary Indexed Tree",
+    "Enumeration",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Increasing Triplet Subsequence",
+      "slug": "increasing-triplet-subsequence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/increasing-triplet-subsequence/"
+    },
+    {
+      "title": "Count Special Quadruplets",
+      "slug": "count-special-quadruplets",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-special-quadruplets/"
+    },
+    {
+      "title": "Count Good Triplets in an Array",
+      "slug": "count-good-triplets-in-an-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-good-triplets-in-an-array/"
+    }
+  ]
+}

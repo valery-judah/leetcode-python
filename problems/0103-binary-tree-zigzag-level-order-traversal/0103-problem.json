@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "103",
+  "name": "Binary Tree Zigzag Level Order Traversal",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/",
+  "slug": "binary-tree-zigzag-level-order-traversal",
+  "isPaidOnly": false,
+  "tags": [
+    "Tree",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Binary Tree Level Order Traversal",
+      "slug": "binary-tree-level-order-traversal",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/binary-tree-level-order-traversal/"
+    },
+    {
+      "title": "Zigzag Grid Traversal With Skip",
+      "slug": "zigzag-grid-traversal-with-skip",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/zigzag-grid-traversal-with-skip/"
+    }
+  ]
+}

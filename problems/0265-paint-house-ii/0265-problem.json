@@ -1,0 +1,39 @@
+{
+  "category": "",
+  "id": "265",
+  "name": "Paint House II",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/paint-house-ii/",
+  "slug": "paint-house-ii",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Product of Array Except Self",
+      "slug": "product-of-array-except-self",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/product-of-array-except-self/"
+    },
+    {
+      "title": "Sliding Window Maximum",
+      "slug": "sliding-window-maximum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sliding-window-maximum/"
+    },
+    {
+      "title": "Paint House",
+      "slug": "paint-house",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/paint-house/"
+    },
+    {
+      "title": "Paint Fence",
+      "slug": "paint-fence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/paint-fence/"
+    }
+  ]
+}

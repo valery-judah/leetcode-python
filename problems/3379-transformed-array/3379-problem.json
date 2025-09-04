@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "3379",
+  "name": "Transformed Array",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/transformed-array/",
+  "slug": "transformed-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "similar_questions": []
+}

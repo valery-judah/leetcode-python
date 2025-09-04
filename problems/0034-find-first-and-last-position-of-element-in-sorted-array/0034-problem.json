@@ -1,0 +1,33 @@
+{
+  "category": "",
+  "id": "34",
+  "name": "Find First and Last Position of Element in Sorted Array",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/",
+  "slug": "find-first-and-last-position-of-element-in-sorted-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "First Bad Version",
+      "slug": "first-bad-version",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/first-bad-version/"
+    },
+    {
+      "title": "Plates Between Candles",
+      "slug": "plates-between-candles",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/plates-between-candles/"
+    },
+    {
+      "title": "Find Target Indices After Sorting Array",
+      "slug": "find-target-indices-after-sorting-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-target-indices-after-sorting-array/"
+    }
+  ]
+}

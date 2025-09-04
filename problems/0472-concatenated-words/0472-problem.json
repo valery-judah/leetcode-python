@@ -1,0 +1,25 @@
+{
+  "category": "",
+  "id": "472",
+  "name": "Concatenated Words",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/concatenated-words/",
+  "slug": "concatenated-words",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "String",
+    "Dynamic Programming",
+    "Depth-First Search",
+    "Trie",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Word Break II",
+      "slug": "word-break-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/word-break-ii/"
+    }
+  ]
+}

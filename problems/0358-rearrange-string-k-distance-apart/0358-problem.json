@@ -1,0 +1,37 @@
+{
+  "category": "",
+  "id": "358",
+  "name": "Rearrange String k Distance Apart",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/rearrange-string-k-distance-apart/",
+  "slug": "rearrange-string-k-distance-apart",
+  "isPaidOnly": true,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Task Scheduler",
+      "slug": "task-scheduler",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/task-scheduler/"
+    },
+    {
+      "title": "Reorganize String",
+      "slug": "reorganize-string",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/reorganize-string/"
+    },
+    {
+      "title": "Construct String With Repeat Limit",
+      "slug": "construct-string-with-repeat-limit",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/construct-string-with-repeat-limit/"
+    }
+  ]
+}

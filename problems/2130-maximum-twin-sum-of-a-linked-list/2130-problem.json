@@ -1,0 +1,34 @@
+{
+  "category": "",
+  "id": "2130",
+  "name": "Maximum Twin Sum of a Linked List",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/",
+  "slug": "maximum-twin-sum-of-a-linked-list",
+  "isPaidOnly": false,
+  "tags": [
+    "Linked List",
+    "Two Pointers",
+    "Stack"
+  ],
+  "similar_questions": [
+    {
+      "title": "Reverse Linked List",
+      "slug": "reverse-linked-list",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/reverse-linked-list/"
+    },
+    {
+      "title": "Palindrome Linked List",
+      "slug": "palindrome-linked-list",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/palindrome-linked-list/"
+    },
+    {
+      "title": "Middle of the Linked List",
+      "slug": "middle-of-the-linked-list",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/middle-of-the-linked-list/"
+    }
+  ]
+}

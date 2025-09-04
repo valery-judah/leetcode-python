@@ -1,0 +1,34 @@
+{
+  "category": "",
+  "id": "3291",
+  "name": "Minimum Number of Valid Strings to Form Target I",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/",
+  "slug": "minimum-number-of-valid-strings-to-form-target-i",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "String",
+    "Binary Search",
+    "Dynamic Programming",
+    "Trie",
+    "Segment Tree",
+    "Rolling Hash",
+    "String Matching",
+    "Hash Function"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Cost to Convert String II",
+      "slug": "minimum-cost-to-convert-string-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-cost-to-convert-string-ii/"
+    },
+    {
+      "title": "Construct String with Minimum Cost",
+      "slug": "construct-string-with-minimum-cost",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/construct-string-with-minimum-cost/"
+    }
+  ]
+}

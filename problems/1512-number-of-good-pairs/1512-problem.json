@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "1512",
+  "name": "Number of Good Pairs",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/number-of-good-pairs/",
+  "slug": "number-of-good-pairs",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Number of Pairs of Interchangeable Rectangles",
+      "slug": "number-of-pairs-of-interchangeable-rectangles",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/"
+    },
+    {
+      "title": "Substrings That Begin and End With the Same Letter",
+      "slug": "substrings-that-begin-and-end-with-the-same-letter",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/substrings-that-begin-and-end-with-the-same-letter/"
+    }
+  ]
+}

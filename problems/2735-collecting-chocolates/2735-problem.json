@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "2735",
+  "name": "Collecting Chocolates",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/collecting-chocolates/",
+  "slug": "collecting-chocolates",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Enumeration"
+  ],
+  "similar_questions": []
+}

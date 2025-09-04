@@ -1,0 +1,52 @@
+{
+  "category": "",
+  "id": "17",
+  "name": "Letter Combinations of a Phone Number",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/letter-combinations-of-a-phone-number/",
+  "slug": "letter-combinations-of-a-phone-number",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Backtracking"
+  ],
+  "similar_questions": [
+    {
+      "title": "Generate Parentheses",
+      "slug": "generate-parentheses",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/generate-parentheses/"
+    },
+    {
+      "title": "Combination Sum",
+      "slug": "combination-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/combination-sum/"
+    },
+    {
+      "title": "Binary Watch",
+      "slug": "binary-watch",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/binary-watch/"
+    },
+    {
+      "title": "Count Number of Texts",
+      "slug": "count-number-of-texts",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-number-of-texts/"
+    },
+    {
+      "title": "Minimum Number of Pushes to Type Word I",
+      "slug": "minimum-number-of-pushes-to-type-word-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i/"
+    },
+    {
+      "title": "Minimum Number of Pushes to Type Word II",
+      "slug": "minimum-number-of-pushes-to-type-word-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-ii/"
+    }
+  ]
+}

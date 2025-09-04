@@ -1,0 +1,45 @@
+{
+  "category": "",
+  "id": "2231",
+  "name": "Largest Number After Digit Swaps by Parity",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/largest-number-after-digit-swaps-by-parity/",
+  "slug": "largest-number-after-digit-swaps-by-parity",
+  "isPaidOnly": false,
+  "tags": [
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "similar_questions": [
+    {
+      "title": "Largest Number At Least Twice of Others",
+      "slug": "largest-number-at-least-twice-of-others",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/largest-number-at-least-twice-of-others/"
+    },
+    {
+      "title": "Sort Array By Parity",
+      "slug": "sort-array-by-parity",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sort-array-by-parity/"
+    },
+    {
+      "title": "Sort Array By Parity II",
+      "slug": "sort-array-by-parity-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sort-array-by-parity-ii/"
+    },
+    {
+      "title": "Smallest String With Swaps",
+      "slug": "smallest-string-with-swaps",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/smallest-string-with-swaps/"
+    },
+    {
+      "title": "Rearrange Array Elements by Sign",
+      "slug": "rearrange-array-elements-by-sign",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/rearrange-array-elements-by-sign/"
+    }
+  ]
+}

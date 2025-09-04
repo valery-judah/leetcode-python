@@ -1,0 +1,26 @@
+{
+  "category": "",
+  "id": "2176",
+  "name": "Count Equal and Divisible Pairs in an Array",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/count-equal-and-divisible-pairs-in-an-array/",
+  "slug": "count-equal-and-divisible-pairs-in-an-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Number of Pairs With Absolute Difference K",
+      "slug": "count-number-of-pairs-with-absolute-difference-k",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/"
+    },
+    {
+      "title": "Count Number of Bad Pairs",
+      "slug": "count-number-of-bad-pairs",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-number-of-bad-pairs/"
+    }
+  ]
+}

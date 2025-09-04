@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "2749",
+  "name": "Minimum Operations to Make the Integer Zero",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-operations-to-make-the-integer-zero/",
+  "slug": "minimum-operations-to-make-the-integer-zero",
+  "isPaidOnly": false,
+  "tags": [
+    "Bit Manipulation",
+    "Brainteaser",
+    "Enumeration"
+  ],
+  "similar_questions": [
+    {
+      "title": "Broken Calculator",
+      "slug": "broken-calculator",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/broken-calculator/"
+    },
+    {
+      "title": "Minimum Operations to Reduce X to Zero",
+      "slug": "minimum-operations-to-reduce-x-to-zero",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/"
+    }
+  ]
+}

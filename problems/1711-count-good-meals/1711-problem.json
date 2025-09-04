@@ -1,0 +1,33 @@
+{
+  "category": "",
+  "id": "1711",
+  "name": "Count Good Meals",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-good-meals/",
+  "slug": "count-good-meals",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "similar_questions": [
+    {
+      "title": "Two Sum",
+      "slug": "two-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/two-sum/"
+    },
+    {
+      "title": "Max Number of K-Sum Pairs",
+      "slug": "max-number-of-k-sum-pairs",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/max-number-of-k-sum-pairs/"
+    },
+    {
+      "title": "Find All Possible Recipes from Given Supplies",
+      "slug": "find-all-possible-recipes-from-given-supplies",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies/"
+    }
+  ]
+}

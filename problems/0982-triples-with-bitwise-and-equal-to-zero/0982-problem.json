@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "982",
+  "name": "Triples with Bitwise AND Equal To Zero",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/triples-with-bitwise-and-equal-to-zero/",
+  "slug": "triples-with-bitwise-and-equal-to-zero",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Bit Manipulation"
+  ],
+  "similar_questions": []
+}

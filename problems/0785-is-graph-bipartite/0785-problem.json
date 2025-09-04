@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "785",
+  "name": "Is Graph Bipartite?",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/is-graph-bipartite/",
+  "slug": "is-graph-bipartite",
+  "isPaidOnly": false,
+  "tags": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union Find",
+    "Graph"
+  ],
+  "similar_questions": [
+    {
+      "title": "Divide Nodes Into the Maximum Number of Groups",
+      "slug": "divide-nodes-into-the-maximum-number-of-groups",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/divide-nodes-into-the-maximum-number-of-groups/"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "category": "",
+  "id": "33",
+  "name": "Search in Rotated Sorted Array",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/search-in-rotated-sorted-array/",
+  "slug": "search-in-rotated-sorted-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Search in Rotated Sorted Array II",
+      "slug": "search-in-rotated-sorted-array-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/search-in-rotated-sorted-array-ii/"
+    },
+    {
+      "title": "Find Minimum in Rotated Sorted Array",
+      "slug": "find-minimum-in-rotated-sorted-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/"
+    },
+    {
+      "title": "Pour Water Between Buckets to Make Water Levels Equal",
+      "slug": "pour-water-between-buckets-to-make-water-levels-equal",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/pour-water-between-buckets-to-make-water-levels-equal/"
+    }
+  ]
+}

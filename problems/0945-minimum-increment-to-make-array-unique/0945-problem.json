@@ -1,0 +1,35 @@
+{
+  "category": "",
+  "id": "945",
+  "name": "Minimum Increment to Make Array Unique",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-increment-to-make-array-unique/",
+  "slug": "minimum-increment-to-make-array-unique",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Operations to Make the Array Increasing",
+      "slug": "minimum-operations-to-make-the-array-increasing",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-operations-to-make-the-array-increasing/"
+    },
+    {
+      "title": "Maximum Product After K Increments",
+      "slug": "maximum-product-after-k-increments",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-product-after-k-increments/"
+    },
+    {
+      "title": "Minimum Number of Operations to Make Elements in Array Distinct",
+      "slug": "minimum-number-of-operations-to-make-elements-in-array-distinct",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-number-of-operations-to-make-elements-in-array-distinct/"
+    }
+  ]
+}

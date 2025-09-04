@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "199",
+  "name": "Binary Tree Right Side View",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/binary-tree-right-side-view/",
+  "slug": "binary-tree-right-side-view",
+  "isPaidOnly": false,
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Populating Next Right Pointers in Each Node",
+      "slug": "populating-next-right-pointers-in-each-node",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/populating-next-right-pointers-in-each-node/"
+    },
+    {
+      "title": "Boundary of Binary Tree",
+      "slug": "boundary-of-binary-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/boundary-of-binary-tree/"
+    }
+  ]
+}

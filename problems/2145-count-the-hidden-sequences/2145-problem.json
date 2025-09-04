@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "2145",
+  "name": "Count the Hidden Sequences",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-the-hidden-sequences/",
+  "slug": "count-the-hidden-sequences",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "similar_questions": []
+}

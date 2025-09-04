@@ -1,0 +1,41 @@
+{
+  "category": "",
+  "id": "49",
+  "name": "Group Anagrams",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/group-anagrams/",
+  "slug": "group-anagrams",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Valid Anagram",
+      "slug": "valid-anagram",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/valid-anagram/"
+    },
+    {
+      "title": "Group Shifted Strings",
+      "slug": "group-shifted-strings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/group-shifted-strings/"
+    },
+    {
+      "title": "Find Resultant Array After Removing Anagrams",
+      "slug": "find-resultant-array-after-removing-anagrams",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/"
+    },
+    {
+      "title": "Count Anagrams",
+      "slug": "count-anagrams",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-anagrams/"
+    }
+  ]
+}

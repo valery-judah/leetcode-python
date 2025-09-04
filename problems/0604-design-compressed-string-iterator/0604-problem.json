@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "604",
+  "name": "Design Compressed String Iterator",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/design-compressed-string-iterator/",
+  "slug": "design-compressed-string-iterator",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "String",
+    "Design",
+    "Iterator"
+  ],
+  "similar_questions": [
+    {
+      "title": "LRU Cache",
+      "slug": "lru-cache",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/lru-cache/"
+    },
+    {
+      "title": "String Compression",
+      "slug": "string-compression",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/string-compression/"
+    }
+  ]
+}

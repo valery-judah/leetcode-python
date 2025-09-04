@@ -1,0 +1,18 @@
+{
+  "category": "",
+  "id": "1044",
+  "name": "Longest Duplicate Substring",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/longest-duplicate-substring/",
+  "slug": "longest-duplicate-substring",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Binary Search",
+    "Sliding Window",
+    "Rolling Hash",
+    "Suffix Array",
+    "Hash Function"
+  ],
+  "similar_questions": []
+}

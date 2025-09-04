@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "1025",
+  "name": "Divisor Game",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/divisor-game/",
+  "slug": "divisor-game",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Brainteaser",
+    "Game Theory"
+  ],
+  "similar_questions": []
+}

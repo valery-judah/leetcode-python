@@ -1,0 +1,37 @@
+{
+  "category": "",
+  "id": "2454",
+  "name": "Next Greater Element IV",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/next-greater-element-iv/",
+  "slug": "next-greater-element-iv",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Stack",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Monotonic Stack"
+  ],
+  "similar_questions": [
+    {
+      "title": "Next Greater Element I",
+      "slug": "next-greater-element-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/next-greater-element-i/"
+    },
+    {
+      "title": "Replace Elements with Greatest Element on Right Side",
+      "slug": "replace-elements-with-greatest-element-on-right-side",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side/"
+    },
+    {
+      "title": "Apply Operations to Maximize Score",
+      "slug": "apply-operations-to-maximize-score",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/apply-operations-to-maximize-score/"
+    }
+  ]
+}

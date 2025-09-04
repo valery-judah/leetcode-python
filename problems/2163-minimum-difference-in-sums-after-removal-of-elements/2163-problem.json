@@ -1,0 +1,34 @@
+{
+  "category": "",
+  "id": "2163",
+  "name": "Minimum Difference in Sums After Removal of Elements",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-difference-in-sums-after-removal-of-elements/",
+  "slug": "minimum-difference-in-sums-after-removal-of-elements",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Heap (Priority Queue)"
+  ],
+  "similar_questions": [
+    {
+      "title": "Product of Array Except Self",
+      "slug": "product-of-array-except-self",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/product-of-array-except-self/"
+    },
+    {
+      "title": "Find Subsequence of Length K With the Largest Sum",
+      "slug": "find-subsequence-of-length-k-with-the-largest-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum/"
+    },
+    {
+      "title": "Find Minimum Cost to Remove Array Elements",
+      "slug": "find-minimum-cost-to-remove-array-elements",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-minimum-cost-to-remove-array-elements/"
+    }
+  ]
+}

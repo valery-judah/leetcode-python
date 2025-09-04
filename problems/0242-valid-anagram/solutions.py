@@ -1,13 +1,3 @@
-"""
-Problem 242: Valid Anagram
-https://leetcode.com/problems/valid-anagram/
-Difficulty: easy
-Tags: Hash Table, String, Sorting
-"""
-
-from __future__ import annotations
-
-
 class Baseline:
     def solve(self, *args, **kwargs):
         """Replace with actual signature per problem."""

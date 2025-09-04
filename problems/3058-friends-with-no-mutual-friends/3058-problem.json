@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "3058",
+  "name": "Friends With No Mutual Friends",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/friends-with-no-mutual-friends/",
+  "slug": "friends-with-no-mutual-friends",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

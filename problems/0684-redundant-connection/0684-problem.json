@@ -1,0 +1,41 @@
+{
+  "category": "",
+  "id": "684",
+  "name": "Redundant Connection",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/redundant-connection/",
+  "slug": "redundant-connection",
+  "isPaidOnly": false,
+  "tags": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union Find",
+    "Graph"
+  ],
+  "similar_questions": [
+    {
+      "title": "Redundant Connection II",
+      "slug": "redundant-connection-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/redundant-connection-ii/"
+    },
+    {
+      "title": "Accounts Merge",
+      "slug": "accounts-merge",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/accounts-merge/"
+    },
+    {
+      "title": "Maximum Employees to Be Invited to a Meeting",
+      "slug": "maximum-employees-to-be-invited-to-a-meeting",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-employees-to-be-invited-to-a-meeting/"
+    },
+    {
+      "title": "Shortest Cycle in a Graph",
+      "slug": "shortest-cycle-in-a-graph",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/shortest-cycle-in-a-graph/"
+    }
+  ]
+}

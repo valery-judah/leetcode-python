@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "118",
+  "name": "Pascal's Triangle",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/pascals-triangle/",
+  "slug": "pascals-triangle",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Pascal's Triangle II",
+      "slug": "pascals-triangle-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/pascals-triangle-ii/"
+    },
+    {
+      "title": "Check If Digits Are Equal in String After Operations II",
+      "slug": "check-if-digits-are-equal-in-string-after-operations-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/check-if-digits-are-equal-in-string-after-operations-ii/"
+    }
+  ]
+}

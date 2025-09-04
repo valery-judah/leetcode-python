@@ -19,6 +19,7 @@ def main():
     files = [
         "archive/lists/leetcode_prep_150.json",
         "archive/lists/neetcode_all.json",
+        "archive/lists/leetcode_premium_100.json",
     ]
 
     all_ids = set()

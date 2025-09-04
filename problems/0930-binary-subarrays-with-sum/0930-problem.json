@@ -1,0 +1,41 @@
+{
+  "category": "",
+  "id": "930",
+  "name": "Binary Subarrays With Sum",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/binary-subarrays-with-sum/",
+  "slug": "binary-subarrays-with-sum",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Subarrays With Score Less Than K",
+      "slug": "count-subarrays-with-score-less-than-k",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-subarrays-with-score-less-than-k/"
+    },
+    {
+      "title": "Ways to Split Array Into Good Subarrays",
+      "slug": "ways-to-split-array-into-good-subarrays",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/ways-to-split-array-into-good-subarrays/"
+    },
+    {
+      "title": "Find All Possible Stable Binary Arrays I",
+      "slug": "find-all-possible-stable-binary-arrays-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-all-possible-stable-binary-arrays-i/"
+    },
+    {
+      "title": "Find All Possible Stable Binary Arrays II",
+      "slug": "find-all-possible-stable-binary-arrays-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-all-possible-stable-binary-arrays-ii/"
+    }
+  ]
+}

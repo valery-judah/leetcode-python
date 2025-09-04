@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "438",
+  "name": "Find All Anagrams in a String",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-all-anagrams-in-a-string/",
+  "slug": "find-all-anagrams-in-a-string",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Sliding Window"
+  ],
+  "similar_questions": [
+    {
+      "title": "Valid Anagram",
+      "slug": "valid-anagram",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/valid-anagram/"
+    },
+    {
+      "title": "Permutation in String",
+      "slug": "permutation-in-string",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/permutation-in-string/"
+    }
+  ]
+}

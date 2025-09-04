@@ -1,0 +1,40 @@
+{
+  "category": "",
+  "id": "18",
+  "name": "4Sum",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/4sum/",
+  "slug": "4sum",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Two Sum",
+      "slug": "two-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/two-sum/"
+    },
+    {
+      "title": "3Sum",
+      "slug": "3sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/3sum/"
+    },
+    {
+      "title": "4Sum II",
+      "slug": "4sum-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/4sum-ii/"
+    },
+    {
+      "title": "Count Special Quadruplets",
+      "slug": "count-special-quadruplets",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-special-quadruplets/"
+    }
+  ]
+}

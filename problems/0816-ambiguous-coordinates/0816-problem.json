@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "816",
+  "name": "Ambiguous Coordinates",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/ambiguous-coordinates/",
+  "slug": "ambiguous-coordinates",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Backtracking",
+    "Enumeration"
+  ],
+  "similar_questions": []
+}

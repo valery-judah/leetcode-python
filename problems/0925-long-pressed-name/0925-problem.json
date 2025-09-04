@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "925",
+  "name": "Long Pressed Name",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/long-pressed-name/",
+  "slug": "long-pressed-name",
+  "isPaidOnly": false,
+  "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Matching of Players With Trainers",
+      "slug": "maximum-matching-of-players-with-trainers",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-matching-of-players-with-trainers/"
+    }
+  ]
+}

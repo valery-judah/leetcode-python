@@ -1,0 +1,58 @@
+{
+  "category": "",
+  "id": "62",
+  "name": "Unique Paths",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/unique-paths/",
+  "slug": "unique-paths",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Combinatorics"
+  ],
+  "similar_questions": [
+    {
+      "title": "Unique Paths II",
+      "slug": "unique-paths-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/unique-paths-ii/"
+    },
+    {
+      "title": "Minimum Path Sum",
+      "slug": "minimum-path-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-path-sum/"
+    },
+    {
+      "title": "Dungeon Game",
+      "slug": "dungeon-game",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/dungeon-game/"
+    },
+    {
+      "title": "Minimum Path Cost in a Grid",
+      "slug": "minimum-path-cost-in-a-grid",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-path-cost-in-a-grid/"
+    },
+    {
+      "title": "Minimum Cost Homecoming of a Robot in a Grid",
+      "slug": "minimum-cost-homecoming-of-a-robot-in-a-grid",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/"
+    },
+    {
+      "title": "Number of Ways to Reach a Position After Exactly k Steps",
+      "slug": "number-of-ways-to-reach-a-position-after-exactly-k-steps",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-ways-to-reach-a-position-after-exactly-k-steps/"
+    },
+    {
+      "title": "Paths in Matrix Whose Sum Is Divisible by K",
+      "slug": "paths-in-matrix-whose-sum-is-divisible-by-k",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/paths-in-matrix-whose-sum-is-divisible-by-k/"
+    }
+  ]
+}

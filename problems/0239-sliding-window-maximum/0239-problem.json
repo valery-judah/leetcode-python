@@ -1,0 +1,66 @@
+{
+  "category": "",
+  "id": "239",
+  "name": "Sliding Window Maximum",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/sliding-window-maximum/",
+  "slug": "sliding-window-maximum",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Queue",
+    "Sliding Window",
+    "Heap (Priority Queue)",
+    "Monotonic Queue"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Window Substring",
+      "slug": "minimum-window-substring",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-window-substring/"
+    },
+    {
+      "title": "Min Stack",
+      "slug": "min-stack",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/min-stack/"
+    },
+    {
+      "title": "Longest Substring with At Most Two Distinct Characters",
+      "slug": "longest-substring-with-at-most-two-distinct-characters",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/"
+    },
+    {
+      "title": "Paint House II",
+      "slug": "paint-house-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/paint-house-ii/"
+    },
+    {
+      "title": "Jump Game VI",
+      "slug": "jump-game-vi",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/jump-game-vi/"
+    },
+    {
+      "title": "Maximum Number of Robots Within Budget",
+      "slug": "maximum-number-of-robots-within-budget",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-number-of-robots-within-budget/"
+    },
+    {
+      "title": "Maximum Tastiness of Candy Basket",
+      "slug": "maximum-tastiness-of-candy-basket",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-tastiness-of-candy-basket/"
+    },
+    {
+      "title": "Maximal Score After Applying K Operations",
+      "slug": "maximal-score-after-applying-k-operations",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximal-score-after-applying-k-operations/"
+    }
+  ]
+}

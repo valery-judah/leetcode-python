@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "2568",
+  "name": "Minimum Impossible OR",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-impossible-or/",
+  "slug": "minimum-impossible-or",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Bit Manipulation",
+    "Brainteaser"
+  ],
+  "similar_questions": []
+}

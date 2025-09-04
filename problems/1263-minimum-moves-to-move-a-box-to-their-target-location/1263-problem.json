@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "1263",
+  "name": "Minimum Moves to Move a Box to Their Target Location",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-moves-to-move-a-box-to-their-target-location/",
+  "slug": "minimum-moves-to-move-a-box-to-their-target-location",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Breadth-First Search",
+    "Heap (Priority Queue)",
+    "Matrix"
+  ],
+  "similar_questions": []
+}

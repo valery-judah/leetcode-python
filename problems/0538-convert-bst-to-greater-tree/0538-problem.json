@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "538",
+  "name": "Convert BST to Greater Tree",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/convert-bst-to-greater-tree/",
+  "slug": "convert-bst-to-greater-tree",
+  "isPaidOnly": false,
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "similar_questions": []
+}

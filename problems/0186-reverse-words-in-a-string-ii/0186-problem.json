@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "186",
+  "name": "Reverse Words in a String II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/reverse-words-in-a-string-ii/",
+  "slug": "reverse-words-in-a-string-ii",
+  "isPaidOnly": true,
+  "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Reverse Words in a String",
+      "slug": "reverse-words-in-a-string",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/reverse-words-in-a-string/"
+    },
+    {
+      "title": "Rotate Array",
+      "slug": "rotate-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/rotate-array/"
+    }
+  ]
+}

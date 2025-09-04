@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "789",
+  "name": "Escape The Ghosts",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/escape-the-ghosts/",
+  "slug": "escape-the-ghosts",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math"
+  ],
+  "similar_questions": [
+    {
+      "title": "Cat and Mouse II",
+      "slug": "cat-and-mouse-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/cat-and-mouse-ii/"
+    }
+  ]
+}

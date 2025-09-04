@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import shutil
 from datetime import datetime
@@ -163,11 +164,12 @@ def main() -> None:
     tags_list = problem.get("tags") or []
     tags = ", ".join(tags_list) if isinstance(tags_list, list) else str(tags_list)
     url = str(problem.get("leetcode_url") or f"https://leetcode.com/problems/{slug}/")
-    # Prepare similar questions markdown list
+    # Prepare similar questions markdown list (prefer repo readme links)
     similar_md = "None"
     similars = problem.get("similar_questions") or []
     if isinstance(similars, list) and similars:
         items: list[str] = []
+        current_base = ROOT / "problems" / f"{number:04d}-{slug}"
         for it in similars:
             if not isinstance(it, dict):
                 continue
@@ -176,21 +178,56 @@ def main() -> None:
             s_url = str(
                 it.get("leetcode_url") or (f"https://leetcode.com/problems/{s_slug}/" if s_slug else "")
             )
-            # Try to resolve difficulty from lists by id/slug
+            # Try to resolve difficulty and id from lists by id/slug or archive
             s_id = str(it.get("id") or "").strip()
             resolved = None
             if s_id and s_id in by_id:
                 resolved = by_id[s_id]
             elif s_slug and s_slug in by_slug:
                 resolved = by_slug[s_slug]
+                if not s_id:
+                    s_id = str(resolved.get("id") or "").strip()
+            if (not s_id) and s_slug:
+                arch = _load_problem_from_archive(s_slug)
+                if isinstance(arch, dict):
+                    s_id = str(arch.get("id") or "").strip()
+                    if not resolved:
+                        resolved = arch
+
             s_diff = _normalize_difficulty((resolved or {}).get("difficulty")) if resolved else None
             if not s_diff and s_id and s_id in SIMILAR_DIFFICULTY_OVERRIDES:
                 s_diff = SIMILAR_DIFFICULTY_OVERRIDES[s_id]
             diff_label = f"[{s_diff.title()}] " if s_diff else ""
-            if s_url:
-                items.append(f"- {diff_label}[{title}]({s_url})")
+
+            # Build repo-relative link to the similar problem's readme when possible
+            link_md: str | None = None
+            dirname_sim: str | None = None
+            try:
+                if s_id:
+                    dirname_sim = f"{int(s_id):04d}-{s_slug}" if s_slug else None
+            except Exception:
+                dirname_sim = None
+
+            other_readme: Path | None = None
+            if dirname_sim:
+                other_readme = ROOT / "problems" / dirname_sim / "readme.md"
             else:
-                items.append(f"- {diff_label}{title}")
+                # Try to locate by slug only under problems dir
+                if s_slug:
+                    cands = sorted((ROOT / "problems").glob(f"*-{s_slug}"))
+                    if cands:
+                        other_readme = cands[0] / "readme.md"
+
+            if other_readme is not None:
+                rel = Path(os.path.relpath(other_readme, start=current_base)).as_posix()
+                link_md = f"- {diff_label}[{title}]({rel})"
+            elif s_url:
+                link_md = f"- {diff_label}[{title}]({s_url})"
+            else:
+                link_md = f"- {diff_label}{title}"
+
+            items.append(link_md)
+
         if items:
             similar_md = "\n".join(items)
 

@@ -1,0 +1,82 @@
+{
+  "category": "",
+  "id": "3",
+  "name": "Longest Substring Without Repeating Characters",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+  "slug": "longest-substring-without-repeating-characters",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Sliding Window"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longest Substring with At Most Two Distinct Characters",
+      "slug": "longest-substring-with-at-most-two-distinct-characters",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/"
+    },
+    {
+      "title": "Longest Substring with At Most K Distinct Characters",
+      "slug": "longest-substring-with-at-most-k-distinct-characters",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/"
+    },
+    {
+      "title": "Subarrays with K Different Integers",
+      "slug": "subarrays-with-k-different-integers",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/subarrays-with-k-different-integers/"
+    },
+    {
+      "title": "Maximum Erasure Value",
+      "slug": "maximum-erasure-value",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-erasure-value/"
+    },
+    {
+      "title": "Number of Equal Count Substrings",
+      "slug": "number-of-equal-count-substrings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-equal-count-substrings/"
+    },
+    {
+      "title": "Minimum Consecutive Cards to Pick Up",
+      "slug": "minimum-consecutive-cards-to-pick-up",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-consecutive-cards-to-pick-up/"
+    },
+    {
+      "title": "Longest Nice Subarray",
+      "slug": "longest-nice-subarray",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-nice-subarray/"
+    },
+    {
+      "title": "Optimal Partition of String",
+      "slug": "optimal-partition-of-string",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/optimal-partition-of-string/"
+    },
+    {
+      "title": "Count Complete Subarrays in an Array",
+      "slug": "count-complete-subarrays-in-an-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-complete-subarrays-in-an-array/"
+    },
+    {
+      "title": "Find Longest Special Substring That Occurs Thrice II",
+      "slug": "find-longest-special-substring-that-occurs-thrice-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-longest-special-substring-that-occurs-thrice-ii/"
+    },
+    {
+      "title": "Find Longest Special Substring That Occurs Thrice I",
+      "slug": "find-longest-special-substring-that-occurs-thrice-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-longest-special-substring-that-occurs-thrice-i/"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "6",
+  "name": "Zigzag Conversion",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/zigzag-conversion/",
+  "slug": "zigzag-conversion",
+  "isPaidOnly": false,
+  "tags": [
+    "String"
+  ],
+  "similar_questions": []
+}

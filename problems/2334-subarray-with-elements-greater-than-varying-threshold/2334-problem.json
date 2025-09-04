@@ -1,0 +1,35 @@
+{
+  "category": "",
+  "id": "2334",
+  "name": "Subarray With Elements Greater Than Varying Threshold",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/subarray-with-elements-greater-than-varying-threshold/",
+  "slug": "subarray-with-elements-greater-than-varying-threshold",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Stack",
+    "Union Find",
+    "Monotonic Stack"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Subarray Min-Product",
+      "slug": "maximum-subarray-min-product",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-subarray-min-product/"
+    },
+    {
+      "title": "Smallest K-Length Subsequence With Occurrences of a Letter",
+      "slug": "smallest-k-length-subsequence-with-occurrences-of-a-letter",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/smallest-k-length-subsequence-with-occurrences-of-a-letter/"
+    },
+    {
+      "title": "K Divisible Elements Subarrays",
+      "slug": "k-divisible-elements-subarrays",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/k-divisible-elements-subarrays/"
+    }
+  ]
+}

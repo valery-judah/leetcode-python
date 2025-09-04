@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "957",
+  "name": "Prison Cells After N Days",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/prison-cells-after-n-days/",
+  "slug": "prison-cells-after-n-days",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Bit Manipulation"
+  ],
+  "similar_questions": []
+}

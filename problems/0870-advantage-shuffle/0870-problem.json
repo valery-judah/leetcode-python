@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "870",
+  "name": "Advantage Shuffle",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/advantage-shuffle/",
+  "slug": "advantage-shuffle",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": []
+}

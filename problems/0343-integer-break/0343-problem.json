@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "343",
+  "name": "Integer Break",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/integer-break/",
+  "slug": "integer-break",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximize Number of Nice Divisors",
+      "slug": "maximize-number-of-nice-divisors",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximize-number-of-nice-divisors/"
+    }
+  ]
+}

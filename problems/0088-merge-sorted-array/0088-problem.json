@@ -1,0 +1,40 @@
+{
+  "category": "",
+  "id": "88",
+  "name": "Merge Sorted Array",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/merge-sorted-array/",
+  "slug": "merge-sorted-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Merge Two Sorted Lists",
+      "slug": "merge-two-sorted-lists",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/merge-two-sorted-lists/"
+    },
+    {
+      "title": "Squares of a Sorted Array",
+      "slug": "squares-of-a-sorted-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/squares-of-a-sorted-array/"
+    },
+    {
+      "title": "Interval List Intersections",
+      "slug": "interval-list-intersections",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/interval-list-intersections/"
+    },
+    {
+      "title": "Take K of Each Character From Left and Right",
+      "slug": "take-k-of-each-character-from-left-and-right",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/take-k-of-each-character-from-left-and-right/"
+    }
+  ]
+}

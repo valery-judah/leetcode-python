@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "2582",
+  "name": "Pass the Pillow",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/pass-the-pillow/",
+  "slug": "pass-the-pillow",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find the Student that Will Replace the Chalk",
+      "slug": "find-the-student-that-will-replace-the-chalk",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-student-that-will-replace-the-chalk/"
+    }
+  ]
+}

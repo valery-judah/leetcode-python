@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "1286",
+  "name": "Iterator for Combination",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/iterator-for-combination/",
+  "slug": "iterator-for-combination",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Backtracking",
+    "Design",
+    "Iterator"
+  ],
+  "similar_questions": []
+}

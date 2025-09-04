@@ -1,0 +1,35 @@
+{
+  "category": "",
+  "id": "23",
+  "name": "Merge k Sorted Lists",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/merge-k-sorted-lists/",
+  "slug": "merge-k-sorted-lists",
+  "isPaidOnly": false,
+  "tags": [
+    "Linked List",
+    "Divide and Conquer",
+    "Heap (Priority Queue)",
+    "Merge Sort"
+  ],
+  "similar_questions": [
+    {
+      "title": "Merge Two Sorted Lists",
+      "slug": "merge-two-sorted-lists",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/merge-two-sorted-lists/"
+    },
+    {
+      "title": "Ugly Number II",
+      "slug": "ugly-number-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/ugly-number-ii/"
+    },
+    {
+      "title": "Smallest Subarrays With Maximum Bitwise OR",
+      "slug": "smallest-subarrays-with-maximum-bitwise-or",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/smallest-subarrays-with-maximum-bitwise-or/"
+    }
+  ]
+}

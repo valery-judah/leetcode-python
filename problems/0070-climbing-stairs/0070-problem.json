@@ -1,0 +1,76 @@
+{
+  "category": "",
+  "id": "70",
+  "name": "Climbing Stairs",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/climbing-stairs/",
+  "slug": "climbing-stairs",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Memoization"
+  ],
+  "similar_questions": [
+    {
+      "title": "Min Cost Climbing Stairs",
+      "slug": "min-cost-climbing-stairs",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/min-cost-climbing-stairs/"
+    },
+    {
+      "title": "Fibonacci Number",
+      "slug": "fibonacci-number",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/fibonacci-number/"
+    },
+    {
+      "title": "N-th Tribonacci Number",
+      "slug": "n-th-tribonacci-number",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/n-th-tribonacci-number/"
+    },
+    {
+      "title": "Minimum Rounds to Complete All Tasks",
+      "slug": "minimum-rounds-to-complete-all-tasks",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks/"
+    },
+    {
+      "title": "Count Number of Ways to Place Houses",
+      "slug": "count-number-of-ways-to-place-houses",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-number-of-ways-to-place-houses/"
+    },
+    {
+      "title": "Number of Ways to Reach a Position After Exactly k Steps",
+      "slug": "number-of-ways-to-reach-a-position-after-exactly-k-steps",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-ways-to-reach-a-position-after-exactly-k-steps/"
+    },
+    {
+      "title": "Count Ways To Build Good Strings",
+      "slug": "count-ways-to-build-good-strings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-ways-to-build-good-strings/"
+    },
+    {
+      "title": "Frog Jump II",
+      "slug": "frog-jump-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/frog-jump-ii/"
+    },
+    {
+      "title": "Find Number of Ways to Reach the K-th Stair",
+      "slug": "find-number-of-ways-to-reach-the-k-th-stair",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-number-of-ways-to-reach-the-k-th-stair/"
+    },
+    {
+      "title": "The Number of Ways to Make the Sum",
+      "slug": "the-number-of-ways-to-make-the-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/the-number-of-ways-to-make-the-sum/"
+    }
+  ]
+}

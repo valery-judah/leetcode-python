@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "3219",
+  "name": "Minimum Cost for Cutting Cake II",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-cost-for-cutting-cake-ii/",
+  "slug": "minimum-cost-for-cutting-cake-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Cost for Cutting Cake I",
+      "slug": "minimum-cost-for-cutting-cake-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-cost-for-cutting-cake-i/"
+    }
+  ]
+}

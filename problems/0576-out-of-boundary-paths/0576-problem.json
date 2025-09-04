@@ -1,0 +1,26 @@
+{
+  "category": "",
+  "id": "576",
+  "name": "Out of Boundary Paths",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/out-of-boundary-paths/",
+  "slug": "out-of-boundary-paths",
+  "isPaidOnly": false,
+  "tags": [
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Knight Probability in Chessboard",
+      "slug": "knight-probability-in-chessboard",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/knight-probability-in-chessboard/"
+    },
+    {
+      "title": "Execution of All Suffix Instructions Staying in a Grid",
+      "slug": "execution-of-all-suffix-instructions-staying-in-a-grid",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/execution-of-all-suffix-instructions-staying-in-a-grid/"
+    }
+  ]
+}

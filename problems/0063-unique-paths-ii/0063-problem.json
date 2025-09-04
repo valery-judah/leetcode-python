@@ -1,0 +1,40 @@
+{
+  "category": "",
+  "id": "63",
+  "name": "Unique Paths II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/unique-paths-ii/",
+  "slug": "unique-paths-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Unique Paths",
+      "slug": "unique-paths",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/unique-paths/"
+    },
+    {
+      "title": "Unique Paths III",
+      "slug": "unique-paths-iii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/unique-paths-iii/"
+    },
+    {
+      "title": "Minimum Path Cost in a Grid",
+      "slug": "minimum-path-cost-in-a-grid",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-path-cost-in-a-grid/"
+    },
+    {
+      "title": "Paths in Matrix Whose Sum Is Divisible by K",
+      "slug": "paths-in-matrix-whose-sum-is-divisible-by-k",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/paths-in-matrix-whose-sum-is-divisible-by-k/"
+    }
+  ]
+}

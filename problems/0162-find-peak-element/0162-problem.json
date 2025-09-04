@@ -1,0 +1,45 @@
+{
+  "category": "",
+  "id": "162",
+  "name": "Find Peak Element",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-peak-element/",
+  "slug": "find-peak-element",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Peak Index in a Mountain Array",
+      "slug": "peak-index-in-a-mountain-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/peak-index-in-a-mountain-array/"
+    },
+    {
+      "title": "Find a Peak Element II",
+      "slug": "find-a-peak-element-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-a-peak-element-ii/"
+    },
+    {
+      "title": "Pour Water Between Buckets to Make Water Levels Equal",
+      "slug": "pour-water-between-buckets-to-make-water-levels-equal",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/pour-water-between-buckets-to-make-water-levels-equal/"
+    },
+    {
+      "title": "Count Hills and Valleys in an Array",
+      "slug": "count-hills-and-valleys-in-an-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-hills-and-valleys-in-an-array/"
+    },
+    {
+      "title": "Find the Peaks",
+      "slug": "find-the-peaks",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-peaks/"
+    }
+  ]
+}

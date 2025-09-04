@@ -1,0 +1,33 @@
+{
+  "category": "",
+  "id": "27",
+  "name": "Remove Element",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/remove-element/",
+  "slug": "remove-element",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers"
+  ],
+  "similar_questions": [
+    {
+      "title": "Remove Duplicates from Sorted Array",
+      "slug": "remove-duplicates-from-sorted-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/"
+    },
+    {
+      "title": "Remove Linked List Elements",
+      "slug": "remove-linked-list-elements",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/remove-linked-list-elements/"
+    },
+    {
+      "title": "Move Zeroes",
+      "slug": "move-zeroes",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/move-zeroes/"
+    }
+  ]
+}

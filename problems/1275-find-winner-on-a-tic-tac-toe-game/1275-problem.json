@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "1275",
+  "name": "Find Winner on a Tic Tac Toe Game",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/find-winner-on-a-tic-tac-toe-game/",
+  "slug": "find-winner-on-a-tic-tac-toe-game",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Matrix",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Categorize Box According to Criteria",
+      "slug": "categorize-box-according-to-criteria",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/categorize-box-according-to-criteria/"
+    }
+  ]
+}

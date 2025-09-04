@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "383",
+  "name": "Ransom Note",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/ransom-note/",
+  "slug": "ransom-note",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Stickers to Spell Word",
+      "slug": "stickers-to-spell-word",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/stickers-to-spell-word/"
+    },
+    {
+      "title": "Find Words That Can Be Formed by Characters",
+      "slug": "find-words-that-can-be-formed-by-characters",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/"
+    }
+  ]
+}

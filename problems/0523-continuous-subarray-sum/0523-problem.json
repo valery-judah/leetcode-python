@@ -1,0 +1,41 @@
+{
+  "category": "",
+  "id": "523",
+  "name": "Continuous Subarray Sum",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/continuous-subarray-sum/",
+  "slug": "continuous-subarray-sum",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Subarray Sum Equals K",
+      "slug": "subarray-sum-equals-k",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/subarray-sum-equals-k/"
+    },
+    {
+      "title": "Minimum Number of Operations to Make Array Continuous",
+      "slug": "minimum-number-of-operations-to-make-array-continuous",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-number-of-operations-to-make-array-continuous/"
+    },
+    {
+      "title": "Intervals Between Identical Elements",
+      "slug": "intervals-between-identical-elements",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/intervals-between-identical-elements/"
+    },
+    {
+      "title": "Apply Operations to Make All Array Elements Equal to Zero",
+      "slug": "apply-operations-to-make-all-array-elements-equal-to-zero",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/apply-operations-to-make-all-array-elements-equal-to-zero/"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "category": "",
+  "id": "188",
+  "name": "Best Time to Buy and Sell Stock IV",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/",
+  "slug": "best-time-to-buy-and-sell-stock-iv",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Best Time to Buy and Sell Stock",
+      "slug": "best-time-to-buy-and-sell-stock",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/"
+    },
+    {
+      "title": "Best Time to Buy and Sell Stock II",
+      "slug": "best-time-to-buy-and-sell-stock-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/"
+    },
+    {
+      "title": "Best Time to Buy and Sell Stock III",
+      "slug": "best-time-to-buy-and-sell-stock-iii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/"
+    },
+    {
+      "title": "Maximum Profit From Trading Stocks",
+      "slug": "maximum-profit-from-trading-stocks",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-profit-from-trading-stocks/"
+    }
+  ]
+}

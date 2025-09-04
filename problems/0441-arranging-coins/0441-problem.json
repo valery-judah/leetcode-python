@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "441",
+  "name": "Arranging Coins",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/arranging-coins/",
+  "slug": "arranging-coins",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Binary Search"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "1034",
+  "name": "Coloring A Border",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/coloring-a-border/",
+  "slug": "coloring-a-border",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Island Perimeter",
+      "slug": "island-perimeter",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/island-perimeter/"
+    }
+  ]
+}

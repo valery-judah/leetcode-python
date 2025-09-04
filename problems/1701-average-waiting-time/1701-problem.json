@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "1701",
+  "name": "Average Waiting Time",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/average-waiting-time/",
+  "slug": "average-waiting-time",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Average Height of Buildings in Each Segment",
+      "slug": "average-height-of-buildings-in-each-segment",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/average-height-of-buildings-in-each-segment/"
+    }
+  ]
+}

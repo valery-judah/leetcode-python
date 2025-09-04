@@ -1,0 +1,30 @@
+{
+  "category": "",
+  "id": "2456",
+  "name": "Most Popular Video Creator",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/most-popular-video-creator/",
+  "slug": "most-popular-video-creator",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "similar_questions": [
+    {
+      "title": "Design Video Sharing Platform",
+      "slug": "design-video-sharing-platform",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/design-video-sharing-platform/"
+    },
+    {
+      "title": "Design a Food Rating System",
+      "slug": "design-a-food-rating-system",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/design-a-food-rating-system/"
+    }
+  ]
+}

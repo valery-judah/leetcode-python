@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "1320",
+  "name": "Minimum Distance to Type a Word Using Two Fingers",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-distance-to-type-a-word-using-two-fingers/",
+  "slug": "minimum-distance-to-type-a-word-using-two-fingers",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Time to Type Word Using Special Typewriter",
+      "slug": "minimum-time-to-type-word-using-special-typewriter",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/"
+    }
+  ]
+}

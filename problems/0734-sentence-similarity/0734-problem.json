@@ -1,0 +1,34 @@
+{
+  "category": "",
+  "id": "734",
+  "name": "Sentence Similarity",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/sentence-similarity/",
+  "slug": "sentence-similarity",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Number of Provinces",
+      "slug": "number-of-provinces",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-provinces/"
+    },
+    {
+      "title": "Accounts Merge",
+      "slug": "accounts-merge",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/accounts-merge/"
+    },
+    {
+      "title": "Sentence Similarity II",
+      "slug": "sentence-similarity-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sentence-similarity-ii/"
+    }
+  ]
+}

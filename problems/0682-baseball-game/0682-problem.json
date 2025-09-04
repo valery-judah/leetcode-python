@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "682",
+  "name": "Baseball Game",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/baseball-game/",
+  "slug": "baseball-game",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Stack",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Crawler Log Folder",
+      "slug": "crawler-log-folder",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/crawler-log-folder/"
+    }
+  ]
+}

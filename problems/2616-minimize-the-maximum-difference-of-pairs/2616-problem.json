@@ -1,0 +1,30 @@
+{
+  "category": "",
+  "id": "2616",
+  "name": "Minimize the Maximum Difference of Pairs",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimize-the-maximum-difference-of-pairs/",
+  "slug": "minimize-the-maximum-difference-of-pairs",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Absolute Difference",
+      "slug": "minimum-absolute-difference",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-absolute-difference/"
+    },
+    {
+      "title": "Minimum Difference Between Largest and Smallest Value in Three Moves",
+      "slug": "minimum-difference-between-largest-and-smallest-value-in-three-moves",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-difference-between-largest-and-smallest-value-in-three-moves/"
+    }
+  ]
+}

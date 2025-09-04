@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "422",
+  "name": "Valid Word Square",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/valid-word-square/",
+  "slug": "valid-word-square",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Word Squares",
+      "slug": "word-squares",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/word-squares/"
+    },
+    {
+      "title": "Toeplitz Matrix",
+      "slug": "toeplitz-matrix",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/toeplitz-matrix/"
+    }
+  ]
+}

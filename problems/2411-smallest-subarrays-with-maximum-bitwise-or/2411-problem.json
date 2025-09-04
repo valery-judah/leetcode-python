@@ -1,0 +1,35 @@
+{
+  "category": "",
+  "id": "2411",
+  "name": "Smallest Subarrays With Maximum Bitwise OR",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/smallest-subarrays-with-maximum-bitwise-or/",
+  "slug": "smallest-subarrays-with-maximum-bitwise-or",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Bit Manipulation",
+    "Sliding Window"
+  ],
+  "similar_questions": [
+    {
+      "title": "Merge k Sorted Lists",
+      "slug": "merge-k-sorted-lists",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/merge-k-sorted-lists/"
+    },
+    {
+      "title": "Bitwise ORs of Subarrays",
+      "slug": "bitwise-ors-of-subarrays",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/bitwise-ors-of-subarrays/"
+    },
+    {
+      "title": "Longest Subarray With Maximum Bitwise AND",
+      "slug": "longest-subarray-with-maximum-bitwise-and",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-subarray-with-maximum-bitwise-and/"
+    }
+  ]
+}

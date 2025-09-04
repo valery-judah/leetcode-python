@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "2059",
+  "name": "Minimum Operations to Convert Number",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-operations-to-convert-number/",
+  "slug": "minimum-operations-to-convert-number",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Breadth-First Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Operations to Reduce X to Zero",
+      "slug": "minimum-operations-to-reduce-x-to-zero",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/"
+    }
+  ]
+}

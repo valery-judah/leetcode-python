@@ -1,0 +1,35 @@
+{
+  "category": "",
+  "id": "2221",
+  "name": "Find Triangular Sum of an Array",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-triangular-sum-of-an-array/",
+  "slug": "find-triangular-sum-of-an-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Simulation",
+    "Combinatorics"
+  ],
+  "similar_questions": [
+    {
+      "title": "Pascal's Triangle II",
+      "slug": "pascals-triangle-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/pascals-triangle-ii/"
+    },
+    {
+      "title": "Calculate Digit Sum of a String",
+      "slug": "calculate-digit-sum-of-a-string",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/calculate-digit-sum-of-a-string/"
+    },
+    {
+      "title": "Min Max Game",
+      "slug": "min-max-game",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/min-max-game/"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "1677",
+  "name": "Product's Worth Over Invoices",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/products-worth-over-invoices/",
+  "slug": "products-worth-over-invoices",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

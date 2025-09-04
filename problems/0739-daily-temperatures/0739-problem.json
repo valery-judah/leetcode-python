@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "739",
+  "name": "Daily Temperatures",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/daily-temperatures/",
+  "slug": "daily-temperatures",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Stack",
+    "Monotonic Stack"
+  ],
+  "similar_questions": [
+    {
+      "title": "Next Greater Element I",
+      "slug": "next-greater-element-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/next-greater-element-i/"
+    },
+    {
+      "title": "Online Stock Span",
+      "slug": "online-stock-span",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/online-stock-span/"
+    }
+  ]
+}

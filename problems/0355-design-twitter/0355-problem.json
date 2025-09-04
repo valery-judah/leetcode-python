@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "355",
+  "name": "Design Twitter",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/design-twitter/",
+  "slug": "design-twitter",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "Linked List",
+    "Design",
+    "Heap (Priority Queue)"
+  ],
+  "similar_questions": [
+    {
+      "title": "Design a File Sharing System",
+      "slug": "design-a-file-sharing-system",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/design-a-file-sharing-system/"
+    }
+  ]
+}

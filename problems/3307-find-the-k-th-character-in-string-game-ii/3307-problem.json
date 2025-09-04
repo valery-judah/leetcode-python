@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "3307",
+  "name": "Find the K-th Character in String Game II",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/find-the-k-th-character-in-string-game-ii/",
+  "slug": "find-the-k-th-character-in-string-game-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Bit Manipulation",
+    "Recursion"
+  ],
+  "similar_questions": [
+    {
+      "title": "Shifting Letters",
+      "slug": "shifting-letters",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/shifting-letters/"
+    }
+  ]
+}

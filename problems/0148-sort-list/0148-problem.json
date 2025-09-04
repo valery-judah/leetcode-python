@@ -1,0 +1,42 @@
+{
+  "category": "",
+  "id": "148",
+  "name": "Sort List",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/sort-list/",
+  "slug": "sort-list",
+  "isPaidOnly": false,
+  "tags": [
+    "Linked List",
+    "Two Pointers",
+    "Divide and Conquer",
+    "Sorting",
+    "Merge Sort"
+  ],
+  "similar_questions": [
+    {
+      "title": "Merge Two Sorted Lists",
+      "slug": "merge-two-sorted-lists",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/merge-two-sorted-lists/"
+    },
+    {
+      "title": "Sort Colors",
+      "slug": "sort-colors",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sort-colors/"
+    },
+    {
+      "title": "Insertion Sort List",
+      "slug": "insertion-sort-list",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/insertion-sort-list/"
+    },
+    {
+      "title": "Sort Linked List Already Sorted Using Absolute Values",
+      "slug": "sort-linked-list-already-sorted-using-absolute-values",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sort-linked-list-already-sorted-using-absolute-values/"
+    }
+  ]
+}

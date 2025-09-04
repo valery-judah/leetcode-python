@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "1720",
+  "name": "Decode XORed Array",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/decode-xored-array/",
+  "slug": "decode-xored-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Bit Manipulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find The Original Array of Prefix Xor",
+      "slug": "find-the-original-array-of-prefix-xor",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-original-array-of-prefix-xor/"
+    }
+  ]
+}

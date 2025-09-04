@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "1787",
+  "name": "Make the XOR of All Segments Equal to Zero",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/make-the-xor-of-all-segments-equal-to-zero/",
+  "slug": "make-the-xor-of-all-segments-equal-to-zero",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum XOR Score Subarray Queries",
+      "slug": "maximum-xor-score-subarray-queries",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-xor-score-subarray-queries/"
+    }
+  ]
+}

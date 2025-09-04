@@ -1,0 +1,39 @@
+{
+  "category": "",
+  "id": "2095",
+  "name": "Delete the Middle Node of a Linked List",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/",
+  "slug": "delete-the-middle-node-of-a-linked-list",
+  "isPaidOnly": false,
+  "tags": [
+    "Linked List",
+    "Two Pointers"
+  ],
+  "similar_questions": [
+    {
+      "title": "Remove Nth Node From End of List",
+      "slug": "remove-nth-node-from-end-of-list",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/"
+    },
+    {
+      "title": "Reorder List",
+      "slug": "reorder-list",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/reorder-list/"
+    },
+    {
+      "title": "Remove Linked List Elements",
+      "slug": "remove-linked-list-elements",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/remove-linked-list-elements/"
+    },
+    {
+      "title": "Middle of the Linked List",
+      "slug": "middle-of-the-linked-list",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/middle-of-the-linked-list/"
+    }
+  ]
+}

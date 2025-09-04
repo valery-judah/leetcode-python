@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "2731",
+  "name": "Movement of Robots",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/movement-of-robots/",
+  "slug": "movement-of-robots",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Brainteaser",
+    "Sorting",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Last Moment Before All Ants Fall Out of a Plank",
+      "slug": "last-moment-before-all-ants-fall-out-of-a-plank",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/last-moment-before-all-ants-fall-out-of-a-plank/"
+    }
+  ]
+}

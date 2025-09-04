@@ -1,0 +1,32 @@
+{
+  "category": "",
+  "id": "263",
+  "name": "Ugly Number",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/ugly-number/",
+  "slug": "ugly-number",
+  "isPaidOnly": false,
+  "tags": [
+    "Math"
+  ],
+  "similar_questions": [
+    {
+      "title": "Happy Number",
+      "slug": "happy-number",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/happy-number/"
+    },
+    {
+      "title": "Count Primes",
+      "slug": "count-primes",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-primes/"
+    },
+    {
+      "title": "Ugly Number II",
+      "slug": "ugly-number-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/ugly-number-ii/"
+    }
+  ]
+}

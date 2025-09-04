@@ -1,0 +1,35 @@
+{
+  "category": "",
+  "id": "2206",
+  "name": "Divide Array Into Equal Pairs",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/divide-array-into-equal-pairs/",
+  "slug": "divide-array-into-equal-pairs",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Bit Manipulation",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Sort Array by Increasing Frequency",
+      "slug": "sort-array-by-increasing-frequency",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sort-array-by-increasing-frequency/"
+    },
+    {
+      "title": "Distribute Elements Into Two Arrays I",
+      "slug": "distribute-elements-into-two-arrays-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/distribute-elements-into-two-arrays-i/"
+    },
+    {
+      "title": "Distribute Elements Into Two Arrays II",
+      "slug": "distribute-elements-into-two-arrays-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/distribute-elements-into-two-arrays-ii/"
+    }
+  ]
+}
