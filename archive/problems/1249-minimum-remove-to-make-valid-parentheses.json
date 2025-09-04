@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "1249",
+  "name": "Minimum Remove to Make Valid Parentheses",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/",
+  "slug": "minimum-remove-to-make-valid-parentheses",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Stack"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Number of Swaps to Make the String Balanced",
+      "slug": "minimum-number-of-swaps-to-make-the-string-balanced",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/"
+    },
+    {
+      "title": "Check if a Parentheses String Can Be Valid",
+      "slug": "check-if-a-parentheses-string-can-be-valid",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid/"
+    }
+  ]
+}

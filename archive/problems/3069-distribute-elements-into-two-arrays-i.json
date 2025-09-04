@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "3069",
+  "name": "Distribute Elements Into Two Arrays I",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/distribute-elements-into-two-arrays-i/",
+  "slug": "distribute-elements-into-two-arrays-i",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Split Array Largest Sum",
+      "slug": "split-array-largest-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/split-array-largest-sum/"
+    },
+    {
+      "title": "Divide Array Into Equal Pairs",
+      "slug": "divide-array-into-equal-pairs",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/divide-array-into-equal-pairs/"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "1614",
+  "name": "Maximum Nesting Depth of the Parentheses",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/",
+  "slug": "maximum-nesting-depth-of-the-parentheses",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Stack"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Nesting Depth of Two Valid Parentheses Strings",
+      "slug": "maximum-nesting-depth-of-two-valid-parentheses-strings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-nesting-depth-of-two-valid-parentheses-strings/"
+    }
+  ]
+}

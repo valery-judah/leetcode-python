@@ -1,0 +1,26 @@
+{
+  "category": "",
+  "id": "1474",
+  "name": "Delete N Nodes After M Nodes of a Linked List",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/delete-n-nodes-after-m-nodes-of-a-linked-list/",
+  "slug": "delete-n-nodes-after-m-nodes-of-a-linked-list",
+  "isPaidOnly": true,
+  "tags": [
+    "Linked List"
+  ],
+  "similar_questions": [
+    {
+      "title": "Remove Nth Node From End of List",
+      "slug": "remove-nth-node-from-end-of-list",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/"
+    },
+    {
+      "title": "Remove Zero Sum Consecutive Nodes from Linked List",
+      "slug": "remove-zero-sum-consecutive-nodes-from-linked-list",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/"
+    }
+  ]
+}

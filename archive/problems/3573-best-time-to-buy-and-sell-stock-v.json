@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "3573",
+  "name": "Best Time to Buy and Sell Stock V",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-v/",
+  "slug": "best-time-to-buy-and-sell-stock-v",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Best Time to Buy and Sell Stock",
+      "slug": "best-time-to-buy-and-sell-stock",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/"
+    }
+  ]
+}

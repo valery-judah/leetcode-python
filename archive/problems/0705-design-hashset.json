@@ -1,0 +1,30 @@
+{
+  "category": "",
+  "id": "705",
+  "name": "Design HashSet",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/design-hashset/",
+  "slug": "design-hashset",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Linked List",
+    "Design",
+    "Hash Function"
+  ],
+  "similar_questions": [
+    {
+      "title": "Design HashMap",
+      "slug": "design-hashmap",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/design-hashmap/"
+    },
+    {
+      "title": "Design Skiplist",
+      "slug": "design-skiplist",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/design-skiplist/"
+    }
+  ]
+}

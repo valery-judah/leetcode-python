@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "2106",
+  "name": "Maximum Fruits Harvested After at Most K Steps",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/maximum-fruits-harvested-after-at-most-k-steps/",
+  "slug": "maximum-fruits-harvested-after-at-most-k-steps",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Sliding Window",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Performance of a Team",
+      "slug": "maximum-performance-of-a-team",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-performance-of-a-team/"
+    }
+  ]
+}

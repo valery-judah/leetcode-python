@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1324",
+  "name": "Print Words Vertically",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/print-words-vertically/",
+  "slug": "print-words-vertically",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "String",
+    "Simulation"
+  ],
+  "similar_questions": []
+}

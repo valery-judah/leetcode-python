@@ -1,0 +1,32 @@
+{
+  "category": "",
+  "id": "1800",
+  "name": "Maximum Ascending Subarray Sum",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/maximum-ascending-subarray-sum/",
+  "slug": "maximum-ascending-subarray-sum",
+  "isPaidOnly": false,
+  "tags": [
+    "Array"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find Good Days to Rob the Bank",
+      "slug": "find-good-days-to-rob-the-bank",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-good-days-to-rob-the-bank/"
+    },
+    {
+      "title": "Maximum Number of Books You Can Take",
+      "slug": "maximum-number-of-books-you-can-take",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-number-of-books-you-can-take/"
+    },
+    {
+      "title": "Count Strictly Increasing Subarrays",
+      "slug": "count-strictly-increasing-subarrays",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-strictly-increasing-subarrays/"
+    }
+  ]
+}

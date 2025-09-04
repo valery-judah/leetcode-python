@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "2584",
+  "name": "Split the Array to Make Coprime Products",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/split-the-array-to-make-coprime-products/",
+  "slug": "split-the-array-to-make-coprime-products",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Number Theory"
+  ],
+  "similar_questions": [
+    {
+      "title": "Replace Non-Coprime Numbers in Array",
+      "slug": "replace-non-coprime-numbers-in-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/replace-non-coprime-numbers-in-array/"
+    }
+  ]
+}

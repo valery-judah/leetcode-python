@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "1190",
+  "name": "Reverse Substrings Between Each Pair of Parentheses",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/",
+  "slug": "reverse-substrings-between-each-pair-of-parentheses",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Stack"
+  ],
+  "similar_questions": []
+}

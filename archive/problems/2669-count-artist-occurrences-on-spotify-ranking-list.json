@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "2669",
+  "name": "Count Artist Occurrences On Spotify Ranking List",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/count-artist-occurrences-on-spotify-ranking-list/",
+  "slug": "count-artist-occurrences-on-spotify-ranking-list",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

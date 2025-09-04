@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "1668",
+  "name": "Maximum Repeating Substring",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/maximum-repeating-substring/",
+  "slug": "maximum-repeating-substring",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Dynamic Programming",
+    "String Matching"
+  ],
+  "similar_questions": [
+    {
+      "title": "Detect Pattern of Length M Repeated K or More Times",
+      "slug": "detect-pattern-of-length-m-repeated-k-or-more-times",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/detect-pattern-of-length-m-repeated-k-or-more-times/"
+    },
+    {
+      "title": "Minimum Number of Operations to Make Word K-Periodic",
+      "slug": "minimum-number-of-operations-to-make-word-k-periodic",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-number-of-operations-to-make-word-k-periodic/"
+    }
+  ]
+}

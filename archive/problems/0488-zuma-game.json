@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "488",
+  "name": "Zuma Game",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/zuma-game/",
+  "slug": "zuma-game",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Dynamic Programming",
+    "Stack",
+    "Breadth-First Search",
+    "Memoization"
+  ],
+  "similar_questions": []
+}

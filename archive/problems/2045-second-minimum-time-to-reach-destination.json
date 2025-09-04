@@ -1,0 +1,34 @@
+{
+  "category": "",
+  "id": "2045",
+  "name": "Second Minimum Time to Reach Destination",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/second-minimum-time-to-reach-destination/",
+  "slug": "second-minimum-time-to-reach-destination",
+  "isPaidOnly": false,
+  "tags": [
+    "Breadth-First Search",
+    "Graph",
+    "Shortest Path"
+  ],
+  "similar_questions": [
+    {
+      "title": "Network Delay Time",
+      "slug": "network-delay-time",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/network-delay-time/"
+    },
+    {
+      "title": "Find the City With the Smallest Number of Neighbors at a Threshold Distance",
+      "slug": "find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/"
+    },
+    {
+      "title": "Number of Ways to Arrive at Destination",
+      "slug": "number-of-ways-to-arrive-at-destination",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/"
+    }
+  ]
+}

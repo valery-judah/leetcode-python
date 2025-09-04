@@ -1,0 +1,33 @@
+{
+  "category": "",
+  "id": "1652",
+  "name": "Defuse the Bomb",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/defuse-the-bomb/",
+  "slug": "defuse-the-bomb",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Sliding Window"
+  ],
+  "similar_questions": [
+    {
+      "title": "Circular Sentence",
+      "slug": "circular-sentence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/circular-sentence/"
+    },
+    {
+      "title": "Shortest Distance to Target String in a Circular Array",
+      "slug": "shortest-distance-to-target-string-in-a-circular-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/shortest-distance-to-target-string-in-a-circular-array/"
+    },
+    {
+      "title": "Take K of Each Character From Left and Right",
+      "slug": "take-k-of-each-character-from-left-and-right",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/take-k-of-each-character-from-left-and-right/"
+    }
+  ]
+}

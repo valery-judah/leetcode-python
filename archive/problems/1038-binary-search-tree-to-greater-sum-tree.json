@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "1038",
+  "name": "Binary Search Tree to Greater Sum Tree",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/",
+  "slug": "binary-search-tree-to-greater-sum-tree",
+  "isPaidOnly": false,
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "similar_questions": []
+}

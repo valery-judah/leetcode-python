@@ -1,0 +1,18 @@
+{
+  "category": "",
+  "id": "1268",
+  "name": "Search Suggestions System",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/search-suggestions-system/",
+  "slug": "search-suggestions-system",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "String",
+    "Binary Search",
+    "Trie",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "similar_questions": []
+}

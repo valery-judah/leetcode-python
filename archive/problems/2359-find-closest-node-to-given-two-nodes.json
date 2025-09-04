@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "2359",
+  "name": "Find Closest Node to Given Two Nodes",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-closest-node-to-given-two-nodes/",
+  "slug": "find-closest-node-to-given-two-nodes",
+  "isPaidOnly": false,
+  "tags": [
+    "Depth-First Search",
+    "Graph"
+  ],
+  "similar_questions": []
+}

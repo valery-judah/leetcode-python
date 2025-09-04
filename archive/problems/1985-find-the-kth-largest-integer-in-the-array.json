@@ -1,0 +1,25 @@
+{
+  "category": "",
+  "id": "1985",
+  "name": "Find the Kth Largest Integer in the Array",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-the-kth-largest-integer-in-the-array/",
+  "slug": "find-the-kth-largest-integer-in-the-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "String",
+    "Divide and Conquer",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Quickselect"
+  ],
+  "similar_questions": [
+    {
+      "title": "Kth Largest Element in an Array",
+      "slug": "kth-largest-element-in-an-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/kth-largest-element-in-an-array/"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "3490",
+  "name": "Count Beautiful Numbers",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/count-beautiful-numbers/",
+  "slug": "count-beautiful-numbers",
+  "isPaidOnly": false,
+  "tags": [
+    "Dynamic Programming"
+  ],
+  "similar_questions": []
+}

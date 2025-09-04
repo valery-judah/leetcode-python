@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "1709",
+  "name": "Biggest Window Between Visits",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/biggest-window-between-visits/",
+  "slug": "biggest-window-between-visits",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": [
+    {
+      "title": "Users With Two Purchases Within Seven Days",
+      "slug": "users-with-two-purchases-within-seven-days",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/users-with-two-purchases-within-seven-days/"
+    }
+  ]
+}

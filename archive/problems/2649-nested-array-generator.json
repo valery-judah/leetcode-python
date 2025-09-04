@@ -1,0 +1,30 @@
+{
+  "category": "",
+  "id": "2649",
+  "name": "Nested Array Generator",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/nested-array-generator/",
+  "slug": "nested-array-generator",
+  "isPaidOnly": false,
+  "tags": [],
+  "similar_questions": [
+    {
+      "title": "Flatten Deeply Nested Array",
+      "slug": "flatten-deeply-nested-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/flatten-deeply-nested-array/"
+    },
+    {
+      "title": "Generate Fibonacci Sequence",
+      "slug": "generate-fibonacci-sequence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/generate-fibonacci-sequence/"
+    },
+    {
+      "title": "Design Cancellable Function",
+      "slug": "design-cancellable-function",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/design-cancellable-function/"
+    }
+  ]
+}

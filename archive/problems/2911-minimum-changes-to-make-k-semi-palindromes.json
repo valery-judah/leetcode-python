@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "2911",
+  "name": "Minimum Changes to Make K Semi-palindromes",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-changes-to-make-k-semi-palindromes/",
+  "slug": "minimum-changes-to-make-k-semi-palindromes",
+  "isPaidOnly": false,
+  "tags": [
+    "Two Pointers",
+    "String",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Palindrome Partitioning III",
+      "slug": "palindrome-partitioning-iii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/palindrome-partitioning-iii/"
+    }
+  ]
+}

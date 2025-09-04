@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "3565",
+  "name": "Sequential Grid Path Cover",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/sequential-grid-path-cover/",
+  "slug": "sequential-grid-path-cover",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Recursion",
+    "Matrix"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,34 @@
+{
+  "category": "",
+  "id": "590",
+  "name": "N-ary Tree Postorder Traversal",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/n-ary-tree-postorder-traversal/",
+  "slug": "n-ary-tree-postorder-traversal",
+  "isPaidOnly": false,
+  "tags": [
+    "Stack",
+    "Tree",
+    "Depth-First Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Binary Tree Postorder Traversal",
+      "slug": "binary-tree-postorder-traversal",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/binary-tree-postorder-traversal/"
+    },
+    {
+      "title": "N-ary Tree Level Order Traversal",
+      "slug": "n-ary-tree-level-order-traversal",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/n-ary-tree-level-order-traversal/"
+    },
+    {
+      "title": "N-ary Tree Preorder Traversal",
+      "slug": "n-ary-tree-preorder-traversal",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/n-ary-tree-preorder-traversal/"
+    }
+  ]
+}

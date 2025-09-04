@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "566",
+  "name": "Reshape the Matrix",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/reshape-the-matrix/",
+  "slug": "reshape-the-matrix",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Convert 1D Array Into 2D Array",
+      "slug": "convert-1d-array-into-2d-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/convert-1d-array-into-2d-array/"
+    }
+  ]
+}

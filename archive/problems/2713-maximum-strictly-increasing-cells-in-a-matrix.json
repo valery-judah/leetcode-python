@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "2713",
+  "name": "Maximum Strictly Increasing Cells in a Matrix",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/maximum-strictly-increasing-cells-in-a-matrix/",
+  "slug": "maximum-strictly-increasing-cells-in-a-matrix",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Dynamic Programming",
+    "Memoization",
+    "Sorting",
+    "Matrix",
+    "Ordered Set"
+  ],
+  "similar_questions": [
+    {
+      "title": "Number of Increasing Paths in a Grid",
+      "slug": "number-of-increasing-paths-in-a-grid",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-increasing-paths-in-a-grid/"
+    }
+  ]
+}

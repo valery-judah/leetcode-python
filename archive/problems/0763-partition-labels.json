@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "763",
+  "name": "Partition Labels",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/partition-labels/",
+  "slug": "partition-labels",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "Two Pointers",
+    "String",
+    "Greedy"
+  ],
+  "similar_questions": [
+    {
+      "title": "Merge Intervals",
+      "slug": "merge-intervals",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/merge-intervals/"
+    },
+    {
+      "title": "Optimal Partition of String",
+      "slug": "optimal-partition-of-string",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/optimal-partition-of-string/"
+    }
+  ]
+}

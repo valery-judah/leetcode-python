@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "508",
+  "name": "Most Frequent Subtree Sum",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/most-frequent-subtree-sum/",
+  "slug": "most-frequent-subtree-sum",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Subtree of Another Tree",
+      "slug": "subtree-of-another-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/subtree-of-another-tree/"
+    },
+    {
+      "title": "Count Nodes Equal to Sum of Descendants",
+      "slug": "count-nodes-equal-to-sum-of-descendants",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-nodes-equal-to-sum-of-descendants/"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1037",
+  "name": "Valid Boomerang",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/valid-boomerang/",
+  "slug": "valid-boomerang",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Geometry"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "381",
+  "name": "Insert Delete GetRandom O(1) - Duplicates allowed",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/",
+  "slug": "insert-delete-getrandom-o1-duplicates-allowed",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Design",
+    "Randomized"
+  ],
+  "similar_questions": [
+    {
+      "title": "Insert Delete GetRandom O(1)",
+      "slug": "insert-delete-getrandom-o1",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/insert-delete-getrandom-o1/"
+    }
+  ]
+}

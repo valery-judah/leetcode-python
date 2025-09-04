@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "3156",
+  "name": "Employee Task Duration and Concurrent Tasks",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/employee-task-duration-and-concurrent-tasks/",
+  "slug": "employee-task-duration-and-concurrent-tasks",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

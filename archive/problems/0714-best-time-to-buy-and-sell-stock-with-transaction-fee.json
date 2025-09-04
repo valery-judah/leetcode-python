@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "714",
+  "name": "Best Time to Buy and Sell Stock with Transaction Fee",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/",
+  "slug": "best-time-to-buy-and-sell-stock-with-transaction-fee",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "similar_questions": [
+    {
+      "title": "Best Time to Buy and Sell Stock II",
+      "slug": "best-time-to-buy-and-sell-stock-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/"
+    }
+  ]
+}

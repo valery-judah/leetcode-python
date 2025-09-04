@@ -1,0 +1,33 @@
+{
+  "category": "",
+  "id": "1721",
+  "name": "Swapping Nodes in a Linked List",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/swapping-nodes-in-a-linked-list/",
+  "slug": "swapping-nodes-in-a-linked-list",
+  "isPaidOnly": false,
+  "tags": [
+    "Linked List",
+    "Two Pointers"
+  ],
+  "similar_questions": [
+    {
+      "title": "Remove Nth Node From End of List",
+      "slug": "remove-nth-node-from-end-of-list",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/"
+    },
+    {
+      "title": "Swap Nodes in Pairs",
+      "slug": "swap-nodes-in-pairs",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/swap-nodes-in-pairs/"
+    },
+    {
+      "title": "Reverse Nodes in k-Group",
+      "slug": "reverse-nodes-in-k-group",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/reverse-nodes-in-k-group/"
+    }
+  ]
+}

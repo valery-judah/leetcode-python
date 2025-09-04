@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "2642",
+  "name": "Design Graph With Shortest Path Calculator",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/design-graph-with-shortest-path-calculator/",
+  "slug": "design-graph-with-shortest-path-calculator",
+  "isPaidOnly": false,
+  "tags": [
+    "Graph",
+    "Design",
+    "Heap (Priority Queue)",
+    "Shortest Path"
+  ],
+  "similar_questions": [
+    {
+      "title": "Number of Restricted Paths From First to Last Node",
+      "slug": "number-of-restricted-paths-from-first-to-last-node",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node/"
+    },
+    {
+      "title": "Closest Node to Path in Tree",
+      "slug": "closest-node-to-path-in-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/closest-node-to-path-in-tree/"
+    }
+  ]
+}

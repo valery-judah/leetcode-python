@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "2285",
+  "name": "Maximum Total Importance of Roads",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-total-importance-of-roads/",
+  "slug": "maximum-total-importance-of-roads",
+  "isPaidOnly": false,
+  "tags": [
+    "Greedy",
+    "Graph",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "similar_questions": []
+}

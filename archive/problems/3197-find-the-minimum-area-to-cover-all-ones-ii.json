@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "3197",
+  "name": "Find the Minimum Area to Cover All Ones II",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/find-the-minimum-area-to-cover-all-ones-ii/",
+  "slug": "find-the-minimum-area-to-cover-all-ones-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Matrix",
+    "Enumeration"
+  ],
+  "similar_questions": [
+    {
+      "title": "Smallest Rectangle Enclosing Black Pixels",
+      "slug": "smallest-rectangle-enclosing-black-pixels",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels/"
+    }
+  ]
+}

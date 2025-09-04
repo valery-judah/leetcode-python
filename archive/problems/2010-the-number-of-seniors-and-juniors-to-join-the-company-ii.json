@@ -1,0 +1,26 @@
+{
+  "category": "",
+  "id": "2010",
+  "name": "The Number of Seniors and Juniors to Join the Company II",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/the-number-of-seniors-and-juniors-to-join-the-company-ii/",
+  "slug": "the-number-of-seniors-and-juniors-to-join-the-company-ii",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": [
+    {
+      "title": "Last Person to Fit in the Bus",
+      "slug": "last-person-to-fit-in-the-bus",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/last-person-to-fit-in-the-bus/"
+    },
+    {
+      "title": "The Number of Seniors and Juniors to Join the Company",
+      "slug": "the-number-of-seniors-and-juniors-to-join-the-company",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/the-number-of-seniors-and-juniors-to-join-the-company/"
+    }
+  ]
+}

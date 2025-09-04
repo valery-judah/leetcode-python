@@ -1,0 +1,36 @@
+{
+  "category": "",
+  "id": "729",
+  "name": "My Calendar I",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/my-calendar-i/",
+  "slug": "my-calendar-i",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Design",
+    "Segment Tree",
+    "Ordered Set"
+  ],
+  "similar_questions": [
+    {
+      "title": "My Calendar II",
+      "slug": "my-calendar-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/my-calendar-ii/"
+    },
+    {
+      "title": "My Calendar III",
+      "slug": "my-calendar-iii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/my-calendar-iii/"
+    },
+    {
+      "title": "Determine if Two Events Have Conflict",
+      "slug": "determine-if-two-events-have-conflict",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/determine-if-two-events-have-conflict/"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "category": "",
+  "id": "2117",
+  "name": "Abbreviating the Product of a Range",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/abbreviating-the-product-of-a-range/",
+  "slug": "abbreviating-the-product-of-a-range",
+  "isPaidOnly": false,
+  "tags": [
+    "Math"
+  ],
+  "similar_questions": [
+    {
+      "title": "Factorial Trailing Zeroes",
+      "slug": "factorial-trailing-zeroes",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/factorial-trailing-zeroes/"
+    },
+    {
+      "title": "Maximum Trailing Zeros in a Cornered Path",
+      "slug": "maximum-trailing-zeros-in-a-cornered-path",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-trailing-zeros-in-a-cornered-path/"
+    },
+    {
+      "title": "Find All Good Indices",
+      "slug": "find-all-good-indices",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-all-good-indices/"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "2862",
+  "name": "Maximum Element-Sum of a Complete Subset of Indices",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/maximum-element-sum-of-a-complete-subset-of-indices/",
+  "slug": "maximum-element-sum-of-a-complete-subset-of-indices",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Number Theory"
+  ],
+  "similar_questions": [
+    {
+      "title": "Constrained Subsequence Sum",
+      "slug": "constrained-subsequence-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/constrained-subsequence-sum/"
+    },
+    {
+      "title": "Maximum Alternating Subsequence Sum",
+      "slug": "maximum-alternating-subsequence-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-alternating-subsequence-sum/"
+    }
+  ]
+}

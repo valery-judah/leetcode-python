@@ -1,0 +1,46 @@
+{
+  "category": "",
+  "id": "2507",
+  "name": "Smallest Value After Replacing With Sum of Prime Factors",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/smallest-value-after-replacing-with-sum-of-prime-factors/",
+  "slug": "smallest-value-after-replacing-with-sum-of-prime-factors",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Simulation",
+    "Number Theory"
+  ],
+  "similar_questions": [
+    {
+      "title": "Happy Number",
+      "slug": "happy-number",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/happy-number/"
+    },
+    {
+      "title": "2 Keys Keyboard",
+      "slug": "2-keys-keyboard",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/2-keys-keyboard/"
+    },
+    {
+      "title": "Count Ways to Make Array With Product",
+      "slug": "count-ways-to-make-array-with-product",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-ways-to-make-array-with-product/"
+    },
+    {
+      "title": "Distinct Prime Factors of Product of Array",
+      "slug": "distinct-prime-factors-of-product-of-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/distinct-prime-factors-of-product-of-array/"
+    },
+    {
+      "title": "Minimum Division Operations to Make Array Non Decreasing",
+      "slug": "minimum-division-operations-to-make-array-non-decreasing",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-division-operations-to-make-array-non-decreasing/"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "3431",
+  "name": "Minimum Unlocked Indices to Sort Nums",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-unlocked-indices-to-sort-nums/",
+  "slug": "minimum-unlocked-indices-to-sort-nums",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,32 @@
+{
+  "category": "",
+  "id": "2874",
+  "name": "Maximum Value of an Ordered Triplet II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-ii/",
+  "slug": "maximum-value-of-an-ordered-triplet-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array"
+  ],
+  "similar_questions": [
+    {
+      "title": "Trapping Rain Water",
+      "slug": "trapping-rain-water",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/trapping-rain-water/"
+    },
+    {
+      "title": "Sum of Beauty in the Array",
+      "slug": "sum-of-beauty-in-the-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sum-of-beauty-in-the-array/"
+    },
+    {
+      "title": "Minimum Sum of Mountain Triplets II",
+      "slug": "minimum-sum-of-mountain-triplets-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-sum-of-mountain-triplets-ii/"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "3016",
+  "name": "Minimum Number of Pushes to Type Word II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-ii/",
+  "slug": "minimum-number-of-pushes-to-type-word-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Greedy",
+    "Sorting",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Letter Combinations of a Phone Number",
+      "slug": "letter-combinations-of-a-phone-number",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/letter-combinations-of-a-phone-number/"
+    }
+  ]
+}

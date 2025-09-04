@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "3624",
+  "name": "Number of Integers With Popcount-Depth Equal to K II",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-ii/",
+  "slug": "number-of-integers-with-popcount-depth-equal-to-k-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Divide and Conquer",
+    "Binary Indexed Tree",
+    "Segment Tree"
+  ],
+  "similar_questions": []
+}

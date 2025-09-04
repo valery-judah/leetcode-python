@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "2451",
+  "name": "Odd String Difference",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/odd-string-difference/",
+  "slug": "odd-string-difference",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Rounds to Complete All Tasks",
+      "slug": "minimum-rounds-to-complete-all-tasks",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks/"
+    }
+  ]
+}

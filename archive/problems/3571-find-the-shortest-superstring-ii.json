@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "3571",
+  "name": "Find the Shortest Superstring II",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/find-the-shortest-superstring-ii/",
+  "slug": "find-the-shortest-superstring-ii",
+  "isPaidOnly": true,
+  "tags": [
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find the Shortest Superstring",
+      "slug": "find-the-shortest-superstring",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-shortest-superstring/"
+    }
+  ]
+}

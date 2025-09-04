@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "1426",
+  "name": "Counting Elements",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/counting-elements/",
+  "slug": "counting-elements",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "similar_questions": []
+}

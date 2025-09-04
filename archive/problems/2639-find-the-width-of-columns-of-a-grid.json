@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "2639",
+  "name": "Find the Width of Columns of a Grid",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/find-the-width-of-columns-of-a-grid/",
+  "slug": "find-the-width-of-columns-of-a-grid",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Next Greater Numerically Balanced Number",
+      "slug": "next-greater-numerically-balanced-number",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/next-greater-numerically-balanced-number/"
+    }
+  ]
+}

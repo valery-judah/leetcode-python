@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1427",
+  "name": "Perform String Shifts",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/perform-string-shifts/",
+  "slug": "perform-string-shifts",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Math",
+    "String"
+  ],
+  "similar_questions": []
+}

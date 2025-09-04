@@ -1,0 +1,64 @@
+{
+  "category": "",
+  "id": "2435",
+  "name": "Paths in Matrix Whose Sum Is Divisible by K",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/paths-in-matrix-whose-sum-is-divisible-by-k/",
+  "slug": "paths-in-matrix-whose-sum-is-divisible-by-k",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Unique Paths",
+      "slug": "unique-paths",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/unique-paths/"
+    },
+    {
+      "title": "Unique Paths II",
+      "slug": "unique-paths-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/unique-paths-ii/"
+    },
+    {
+      "title": "Minimum Path Sum",
+      "slug": "minimum-path-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-path-sum/"
+    },
+    {
+      "title": "Dungeon Game",
+      "slug": "dungeon-game",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/dungeon-game/"
+    },
+    {
+      "title": "Cherry Pickup",
+      "slug": "cherry-pickup",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/cherry-pickup/"
+    },
+    {
+      "title": "Shortest Path in Binary Matrix",
+      "slug": "shortest-path-in-binary-matrix",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/shortest-path-in-binary-matrix/"
+    },
+    {
+      "title": "Minimum Cost Homecoming of a Robot in a Grid",
+      "slug": "minimum-cost-homecoming-of-a-robot-in-a-grid",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/"
+    },
+    {
+      "title": "Check if There is a Path With Equal Number of 0's And 1's",
+      "slug": "check-if-there-is-a-path-with-equal-number-of-0s-and-1s",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/check-if-there-is-a-path-with-equal-number-of-0s-and-1s/"
+    }
+  ]
+}

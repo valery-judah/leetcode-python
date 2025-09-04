@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "2962",
+  "name": "Count Subarrays Where Max Element Appears at Least K Times",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-subarrays-where-max-element-appears-at-least-k-times/",
+  "slug": "count-subarrays-where-max-element-appears-at-least-k-times",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Sliding Window"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find the Number of Subarrays Where Boundary Elements Are Maximum",
+      "slug": "find-the-number-of-subarrays-where-boundary-elements-are-maximum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-number-of-subarrays-where-boundary-elements-are-maximum/"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "3018",
+  "name": "Maximum Number of Removal Queries That Can Be Processed I",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/maximum-number-of-removal-queries-that-can-be-processed-i/",
+  "slug": "maximum-number-of-removal-queries-that-can-be-processed-i",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "2733",
+  "name": "Neither Minimum nor Maximum",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/neither-minimum-nor-maximum/",
+  "slug": "neither-minimum-nor-maximum",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Third Maximum Number",
+      "slug": "third-maximum-number",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/third-maximum-number/"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "category": "",
+  "id": "1375",
+  "name": "Number of Times Binary String Is Prefix-Aligned",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/number-of-times-binary-string-is-prefix-aligned/",
+  "slug": "number-of-times-binary-string-is-prefix-aligned",
+  "isPaidOnly": false,
+  "tags": [
+    "Array"
+  ],
+  "similar_questions": [
+    {
+      "title": "Bulb Switcher",
+      "slug": "bulb-switcher",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/bulb-switcher/"
+    },
+    {
+      "title": "Bulb Switcher II",
+      "slug": "bulb-switcher-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/bulb-switcher-ii/"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "3597",
+  "name": "Partition String ",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/partition-string/",
+  "slug": "partition-string",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Trie",
+    "Simulation"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "2193",
+  "name": "Minimum Number of Moves to Make Palindrome",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-number-of-moves-to-make-palindrome/",
+  "slug": "minimum-number-of-moves-to-make-palindrome",
+  "isPaidOnly": false,
+  "tags": [
+    "Two Pointers",
+    "String",
+    "Greedy",
+    "Binary Indexed Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Insertion Steps to Make a String Palindrome",
+      "slug": "minimum-insertion-steps-to-make-a-string-palindrome",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/"
+    },
+    {
+      "title": "Minimum Number of Flips to Make Binary Grid Palindromic I",
+      "slug": "minimum-number-of-flips-to-make-binary-grid-palindromic-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-number-of-flips-to-make-binary-grid-palindromic-i/"
+    }
+  ]
+}

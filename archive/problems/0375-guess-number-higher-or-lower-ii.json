@@ -1,0 +1,40 @@
+{
+  "category": "",
+  "id": "375",
+  "name": "Guess Number Higher or Lower II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/guess-number-higher-or-lower-ii/",
+  "slug": "guess-number-higher-or-lower-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Game Theory"
+  ],
+  "similar_questions": [
+    {
+      "title": "Flip Game II",
+      "slug": "flip-game-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/flip-game-ii/"
+    },
+    {
+      "title": "Guess Number Higher or Lower",
+      "slug": "guess-number-higher-or-lower",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/guess-number-higher-or-lower/"
+    },
+    {
+      "title": "Can I Win",
+      "slug": "can-i-win",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/can-i-win/"
+    },
+    {
+      "title": "Find K Closest Elements",
+      "slug": "find-k-closest-elements",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-k-closest-elements/"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "category": "",
+  "id": "986",
+  "name": "Interval List Intersections",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/interval-list-intersections/",
+  "slug": "interval-list-intersections",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Line Sweep"
+  ],
+  "similar_questions": [
+    {
+      "title": "Merge Intervals",
+      "slug": "merge-intervals",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/merge-intervals/"
+    },
+    {
+      "title": "Merge Sorted Array",
+      "slug": "merge-sorted-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/merge-sorted-array/"
+    },
+    {
+      "title": "Employee Free Time",
+      "slug": "employee-free-time",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/employee-free-time/"
+    },
+    {
+      "title": "Maximum Matching of Players With Trainers",
+      "slug": "maximum-matching-of-players-with-trainers",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-matching-of-players-with-trainers/"
+    }
+  ]
+}

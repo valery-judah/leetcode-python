@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "3532",
+  "name": "Path Existence Queries in a Graph I",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/path-existence-queries-in-a-graph-i/",
+  "slug": "path-existence-queries-in-a-graph-i",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Union Find",
+    "Graph"
+  ],
+  "similar_questions": []
+}

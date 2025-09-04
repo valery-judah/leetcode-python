@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "360",
+  "name": "Sort Transformed Array",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/sort-transformed-array/",
+  "slug": "sort-transformed-array",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Math",
+    "Two Pointers",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Squares of a Sorted Array",
+      "slug": "squares-of-a-sorted-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/squares-of-a-sorted-array/"
+    },
+    {
+      "title": "Minimum Time to Repair Cars",
+      "slug": "minimum-time-to-repair-cars",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-time-to-repair-cars/"
+    }
+  ]
+}

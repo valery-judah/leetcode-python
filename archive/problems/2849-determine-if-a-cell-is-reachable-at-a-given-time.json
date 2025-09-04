@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "2849",
+  "name": "Determine if a Cell Is Reachable at a Given Time",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/determine-if-a-cell-is-reachable-at-a-given-time/",
+  "slug": "determine-if-a-cell-is-reachable-at-a-given-time",
+  "isPaidOnly": false,
+  "tags": [
+    "Math"
+  ],
+  "similar_questions": [
+    {
+      "title": "Reaching Points",
+      "slug": "reaching-points",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/reaching-points/"
+    }
+  ]
+}

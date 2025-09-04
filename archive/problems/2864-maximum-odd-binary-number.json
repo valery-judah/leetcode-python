@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "2864",
+  "name": "Maximum Odd Binary Number",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/maximum-odd-binary-number/",
+  "slug": "maximum-odd-binary-number",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "String",
+    "Greedy"
+  ],
+  "similar_questions": []
+}

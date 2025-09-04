@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "1600",
+  "name": "Throne Inheritance",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/throne-inheritance/",
+  "slug": "throne-inheritance",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Design"
+  ],
+  "similar_questions": [
+    {
+      "title": "Operations on Tree",
+      "slug": "operations-on-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/operations-on-tree/"
+    }
+  ]
+}

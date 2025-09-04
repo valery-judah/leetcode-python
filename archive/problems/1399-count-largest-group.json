@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "1399",
+  "name": "Count Largest Group",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/count-largest-group/",
+  "slug": "count-largest-group",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "Math"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "946",
+  "name": "Validate Stack Sequences",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/validate-stack-sequences/",
+  "slug": "validate-stack-sequences",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Stack",
+    "Simulation"
+  ],
+  "similar_questions": []
+}

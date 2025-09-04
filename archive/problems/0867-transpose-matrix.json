@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "867",
+  "name": "Transpose Matrix",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/transpose-matrix/",
+  "slug": "transpose-matrix",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "similar_questions": []
+}

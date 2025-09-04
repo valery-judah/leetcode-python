@@ -1,0 +1,25 @@
+{
+  "category": "",
+  "id": "3286",
+  "name": "Find a Safe Walk Through a Grid",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-a-safe-walk-through-a-grid/",
+  "slug": "find-a-safe-walk-through-a-grid",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Breadth-First Search",
+    "Graph",
+    "Heap (Priority Queue)",
+    "Matrix",
+    "Shortest Path"
+  ],
+  "similar_questions": [
+    {
+      "title": "Shortest Path in a Grid with Obstacles Elimination",
+      "slug": "shortest-path-in-a-grid-with-obstacles-elimination",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/"
+    }
+  ]
+}

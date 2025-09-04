@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "1201",
+  "name": "Ugly Number III",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/ugly-number-iii/",
+  "slug": "ugly-number-iii",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Binary Search",
+    "Combinatorics",
+    "Number Theory"
+  ],
+  "similar_questions": [
+    {
+      "title": "Ugly Number II",
+      "slug": "ugly-number-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/ugly-number-ii/"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "category": "",
+  "id": "1083",
+  "name": "Sales Analysis II",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/sales-analysis-ii/",
+  "slug": "sales-analysis-ii",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": [
+    {
+      "title": "Sales Analysis I",
+      "slug": "sales-analysis-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sales-analysis-i/"
+    },
+    {
+      "title": "Sales Analysis III",
+      "slug": "sales-analysis-iii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sales-analysis-iii/"
+    }
+  ]
+}

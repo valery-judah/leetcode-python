@@ -1,0 +1,26 @@
+{
+  "category": "",
+  "id": "2873",
+  "name": "Maximum Value of an Ordered Triplet I",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-i/",
+  "slug": "maximum-value-of-an-ordered-triplet-i",
+  "isPaidOnly": false,
+  "tags": [
+    "Array"
+  ],
+  "similar_questions": [
+    {
+      "title": "Number of Arithmetic Triplets",
+      "slug": "number-of-arithmetic-triplets",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-arithmetic-triplets/"
+    },
+    {
+      "title": "Minimum Sum of Mountain Triplets I",
+      "slug": "minimum-sum-of-mountain-triplets-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-sum-of-mountain-triplets-i/"
+    }
+  ]
+}

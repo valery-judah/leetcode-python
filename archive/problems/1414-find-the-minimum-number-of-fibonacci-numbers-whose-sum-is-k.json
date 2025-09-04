@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "1414",
+  "name": "Find the Minimum Number of Fibonacci Numbers Whose Sum Is K",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k/",
+  "slug": "find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Greedy"
+  ],
+  "similar_questions": []
+}

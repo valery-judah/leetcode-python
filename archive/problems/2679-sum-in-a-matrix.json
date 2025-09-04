@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "2679",
+  "name": "Sum in a Matrix",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/sum-in-a-matrix/",
+  "slug": "sum-in-a-matrix",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Matrix",
+    "Simulation"
+  ],
+  "similar_questions": []
+}

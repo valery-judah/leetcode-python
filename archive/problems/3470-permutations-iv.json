@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "3470",
+  "name": "Permutations IV",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/permutations-iv/",
+  "slug": "permutations-iv",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Combinatorics",
+    "Enumeration"
+  ],
+  "similar_questions": [
+    {
+      "title": "Permutations III",
+      "slug": "permutations-iii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/permutations-iii/"
+    }
+  ]
+}

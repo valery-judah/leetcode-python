@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "3552",
+  "name": "Grid Teleportation Traversal",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/grid-teleportation-traversal/",
+  "slug": "grid-teleportation-traversal",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "3141",
+  "name": "Maximum Hamming Distances",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/maximum-hamming-distances/",
+  "slug": "maximum-hamming-distances",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Bit Manipulation",
+    "Breadth-First Search"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "165",
+  "name": "Compare Version Numbers",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/compare-version-numbers/",
+  "slug": "compare-version-numbers",
+  "isPaidOnly": false,
+  "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "similar_questions": []
+}

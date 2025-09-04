@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "3184",
+  "name": "Count Pairs That Form a Complete Day I",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/count-pairs-that-form-a-complete-day-i/",
+  "slug": "count-pairs-that-form-a-complete-day-i",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Check If Array Pairs Are Divisible by k",
+      "slug": "check-if-array-pairs-are-divisible-by-k",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k/"
+    }
+  ]
+}

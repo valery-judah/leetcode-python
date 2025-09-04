@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1639",
+  "name": "Number of Ways to Form a Target String Given a Dictionary",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/number-of-ways-to-form-a-target-string-given-a-dictionary/",
+  "slug": "number-of-ways-to-form-a-target-string-given-a-dictionary",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "String",
+    "Dynamic Programming"
+  ],
+  "similar_questions": []
+}

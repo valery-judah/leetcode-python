@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "727",
+  "name": "Minimum Window Subsequence",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-window-subsequence/",
+  "slug": "minimum-window-subsequence",
+  "isPaidOnly": true,
+  "tags": [
+    "String",
+    "Dynamic Programming",
+    "Sliding Window"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Window Substring",
+      "slug": "minimum-window-substring",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-window-substring/"
+    },
+    {
+      "title": "Longest Continuous Increasing Subsequence",
+      "slug": "longest-continuous-increasing-subsequence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-continuous-increasing-subsequence/"
+    }
+  ]
+}

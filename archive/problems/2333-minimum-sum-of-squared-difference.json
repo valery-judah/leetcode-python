@@ -1,0 +1,30 @@
+{
+  "category": "",
+  "id": "2333",
+  "name": "Minimum Sum of Squared Difference",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-sum-of-squared-difference/",
+  "slug": "minimum-sum-of-squared-difference",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Absolute Sum Difference",
+      "slug": "minimum-absolute-sum-difference",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-absolute-sum-difference/"
+    },
+    {
+      "title": "Partition Array Into Two Arrays to Minimize Sum Difference",
+      "slug": "partition-array-into-two-arrays-to-minimize-sum-difference",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/"
+    }
+  ]
+}

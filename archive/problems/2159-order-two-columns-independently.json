@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "2159",
+  "name": "Order Two Columns Independently",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/order-two-columns-independently/",
+  "slug": "order-two-columns-independently",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

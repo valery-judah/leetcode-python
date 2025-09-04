@@ -1,0 +1,46 @@
+{
+  "category": "",
+  "id": "282",
+  "name": "Expression Add Operators",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/expression-add-operators/",
+  "slug": "expression-add-operators",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "String",
+    "Backtracking"
+  ],
+  "similar_questions": [
+    {
+      "title": "Evaluate Reverse Polish Notation",
+      "slug": "evaluate-reverse-polish-notation",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/evaluate-reverse-polish-notation/"
+    },
+    {
+      "title": "Basic Calculator",
+      "slug": "basic-calculator",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/basic-calculator/"
+    },
+    {
+      "title": "Basic Calculator II",
+      "slug": "basic-calculator-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/basic-calculator-ii/"
+    },
+    {
+      "title": "Different Ways to Add Parentheses",
+      "slug": "different-ways-to-add-parentheses",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/different-ways-to-add-parentheses/"
+    },
+    {
+      "title": "Target Sum",
+      "slug": "target-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/target-sum/"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "1529",
+  "name": "Minimum Suffix Flips",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-suffix-flips/",
+  "slug": "minimum-suffix-flips",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Greedy"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Operations to Make Binary Array Elements Equal to One II",
+      "slug": "minimum-operations-to-make-binary-array-elements-equal-to-one-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-ii/"
+    }
+  ]
+}

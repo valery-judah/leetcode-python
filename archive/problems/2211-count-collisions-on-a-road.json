@@ -1,0 +1,40 @@
+{
+  "category": "",
+  "id": "2211",
+  "name": "Count Collisions on a Road",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-collisions-on-a-road/",
+  "slug": "count-collisions-on-a-road",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Stack",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Asteroid Collision",
+      "slug": "asteroid-collision",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/asteroid-collision/"
+    },
+    {
+      "title": "Car Fleet",
+      "slug": "car-fleet",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/car-fleet/"
+    },
+    {
+      "title": "Last Moment Before All Ants Fall Out of a Plank",
+      "slug": "last-moment-before-all-ants-fall-out-of-a-plank",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/last-moment-before-all-ants-fall-out-of-a-plank/"
+    },
+    {
+      "title": "Car Fleet II",
+      "slug": "car-fleet-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/car-fleet-ii/"
+    }
+  ]
+}

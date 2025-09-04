@@ -1,0 +1,26 @@
+{
+  "category": "",
+  "id": "3420",
+  "name": "Count Non-Decreasing Subarrays After K Operations",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/count-non-decreasing-subarrays-after-k-operations/",
+  "slug": "count-non-decreasing-subarrays-after-k-operations",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Stack",
+    "Segment Tree",
+    "Queue",
+    "Sliding Window",
+    "Monotonic Stack",
+    "Monotonic Queue"
+  ],
+  "similar_questions": [
+    {
+      "title": "Non-decreasing Array",
+      "slug": "non-decreasing-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/non-decreasing-array/"
+    }
+  ]
+}

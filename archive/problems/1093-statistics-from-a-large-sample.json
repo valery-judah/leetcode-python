@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1093",
+  "name": "Statistics from a Large Sample",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/statistics-from-a-large-sample/",
+  "slug": "statistics-from-a-large-sample",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Probability and Statistics"
+  ],
+  "similar_questions": []
+}

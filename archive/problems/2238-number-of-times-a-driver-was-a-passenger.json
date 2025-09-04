@@ -1,0 +1,32 @@
+{
+  "category": "",
+  "id": "2238",
+  "name": "Number of Times a Driver Was a Passenger",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/number-of-times-a-driver-was-a-passenger/",
+  "slug": "number-of-times-a-driver-was-a-passenger",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": [
+    {
+      "title": "Hopper Company Queries I",
+      "slug": "hopper-company-queries-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/hopper-company-queries-i/"
+    },
+    {
+      "title": "Hopper Company Queries II",
+      "slug": "hopper-company-queries-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/hopper-company-queries-ii/"
+    },
+    {
+      "title": "Hopper Company Queries III",
+      "slug": "hopper-company-queries-iii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/hopper-company-queries-iii/"
+    }
+  ]
+}

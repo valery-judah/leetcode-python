@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "2986",
+  "name": "Find Third Transaction",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-third-transaction/",
+  "slug": "find-third-transaction",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

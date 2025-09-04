@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "2589",
+  "name": "Minimum Time to Complete All Tasks",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-time-to-complete-all-tasks/",
+  "slug": "minimum-time-to-complete-all-tasks",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Stack",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Single-Threaded CPU",
+      "slug": "single-threaded-cpu",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/single-threaded-cpu/"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "591",
+  "name": "Tag Validator",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/tag-validator/",
+  "slug": "tag-validator",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Stack"
+  ],
+  "similar_questions": [
+    {
+      "title": "Add Bold Tag in String",
+      "slug": "add-bold-tag-in-string",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/add-bold-tag-in-string/"
+    }
+  ]
+}

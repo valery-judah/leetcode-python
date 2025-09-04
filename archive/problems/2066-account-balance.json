@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "2066",
+  "name": "Account Balance",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/account-balance/",
+  "slug": "account-balance",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

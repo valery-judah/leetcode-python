@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "1836",
+  "name": "Remove Duplicates From an Unsorted Linked List",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/remove-duplicates-from-an-unsorted-linked-list/",
+  "slug": "remove-duplicates-from-an-unsorted-linked-list",
+  "isPaidOnly": true,
+  "tags": [
+    "Hash Table",
+    "Linked List"
+  ],
+  "similar_questions": [
+    {
+      "title": "Remove Duplicates from Sorted List II",
+      "slug": "remove-duplicates-from-sorted-list-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/"
+    },
+    {
+      "title": "Remove Duplicates from Sorted List",
+      "slug": "remove-duplicates-from-sorted-list",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/remove-duplicates-from-sorted-list/"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "348",
+  "name": "Design Tic-Tac-Toe",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/design-tic-tac-toe/",
+  "slug": "design-tic-tac-toe",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Design",
+    "Matrix",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Valid Tic-Tac-Toe State",
+      "slug": "valid-tic-tac-toe-state",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/valid-tic-tac-toe-state/"
+    }
+  ]
+}

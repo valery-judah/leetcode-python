@@ -1,0 +1,18 @@
+{
+  "category": "",
+  "id": "1258",
+  "name": "Synonymous Sentences",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/synonymous-sentences/",
+  "slug": "synonymous-sentences",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Backtracking",
+    "Sort",
+    "Union Find"
+  ],
+  "similar_questions": []
+}

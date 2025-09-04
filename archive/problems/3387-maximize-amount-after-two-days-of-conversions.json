@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "3387",
+  "name": "Maximize Amount After Two Days of Conversions",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximize-amount-after-two-days-of-conversions/",
+  "slug": "maximize-amount-after-two-days-of-conversions",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "String",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph"
+  ],
+  "similar_questions": [
+    {
+      "title": "Evaluate Division",
+      "slug": "evaluate-division",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/evaluate-division/"
+    }
+  ]
+}

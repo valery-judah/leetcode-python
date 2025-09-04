@@ -1,0 +1,11 @@
+{
+  "category": "",
+  "id": "2776",
+  "name": "Convert Callback Based Function to Promise Based Function",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/convert-callback-based-function-to-promise-based-function/",
+  "slug": "convert-callback-based-function-to-promise-based-function",
+  "isPaidOnly": true,
+  "tags": [],
+  "similar_questions": []
+}

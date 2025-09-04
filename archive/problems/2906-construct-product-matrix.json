@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "2906",
+  "name": "Construct Product Matrix",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/construct-product-matrix/",
+  "slug": "construct-product-matrix",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Matrix",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Product of Array Except Self",
+      "slug": "product-of-array-except-self",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/product-of-array-except-self/"
+    }
+  ]
+}

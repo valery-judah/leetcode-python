@@ -1,0 +1,34 @@
+{
+  "category": "",
+  "id": "394",
+  "name": "Decode String",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/decode-string/",
+  "slug": "decode-string",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Stack",
+    "Recursion"
+  ],
+  "similar_questions": [
+    {
+      "title": "Encode String with Shortest Length",
+      "slug": "encode-string-with-shortest-length",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/encode-string-with-shortest-length/"
+    },
+    {
+      "title": "Number of Atoms",
+      "slug": "number-of-atoms",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-atoms/"
+    },
+    {
+      "title": "Brace Expansion",
+      "slug": "brace-expansion",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/brace-expansion/"
+    }
+  ]
+}

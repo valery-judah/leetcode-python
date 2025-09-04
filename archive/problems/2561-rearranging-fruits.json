@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "2561",
+  "name": "Rearranging Fruits",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/rearranging-fruits/",
+  "slug": "rearranging-fruits",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Sort"
+  ],
+  "similar_questions": [
+    {
+      "title": "The Latest Time to Catch a Bus",
+      "slug": "the-latest-time-to-catch-a-bus",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/the-latest-time-to-catch-a-bus/"
+    },
+    {
+      "title": "Minimum Number of Operations to Make Arrays Similar",
+      "slug": "minimum-number-of-operations-to-make-arrays-similar",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-number-of-operations-to-make-arrays-similar/"
+    }
+  ]
+}

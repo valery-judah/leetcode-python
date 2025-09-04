@@ -1,0 +1,36 @@
+{
+  "category": "",
+  "id": "826",
+  "name": "Most Profit Assigning Work",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/most-profit-assigning-work/",
+  "slug": "most-profit-assigning-work",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Number of Tasks You Can Assign",
+      "slug": "maximum-number-of-tasks-you-can-assign",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-number-of-tasks-you-can-assign/"
+    },
+    {
+      "title": "Successful Pairs of Spells and Potions",
+      "slug": "successful-pairs-of-spells-and-potions",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/successful-pairs-of-spells-and-potions/"
+    },
+    {
+      "title": "Maximum Matching of Players With Trainers",
+      "slug": "maximum-matching-of-players-with-trainers",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-matching-of-players-with-trainers/"
+    }
+  ]
+}

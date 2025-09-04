@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "1369",
+  "name": "Get the Second Most Recent Activity",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/get-the-second-most-recent-activity/",
+  "slug": "get-the-second-most-recent-activity",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

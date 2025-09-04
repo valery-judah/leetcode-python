@@ -1,0 +1,39 @@
+{
+  "category": "",
+  "id": "334",
+  "name": "Increasing Triplet Subsequence",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/increasing-triplet-subsequence/",
+  "slug": "increasing-triplet-subsequence",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longest Increasing Subsequence",
+      "slug": "longest-increasing-subsequence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-increasing-subsequence/"
+    },
+    {
+      "title": "Count Special Quadruplets",
+      "slug": "count-special-quadruplets",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-special-quadruplets/"
+    },
+    {
+      "title": "Count Good Triplets in an Array",
+      "slug": "count-good-triplets-in-an-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-good-triplets-in-an-array/"
+    },
+    {
+      "title": "Count Increasing Quadruplets",
+      "slug": "count-increasing-quadruplets",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-increasing-quadruplets/"
+    }
+  ]
+}

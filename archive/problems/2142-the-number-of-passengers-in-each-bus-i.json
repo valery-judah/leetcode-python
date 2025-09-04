@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "2142",
+  "name": "The Number of Passengers in Each Bus I",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/the-number-of-passengers-in-each-bus-i/",
+  "slug": "the-number-of-passengers-in-each-bus-i",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

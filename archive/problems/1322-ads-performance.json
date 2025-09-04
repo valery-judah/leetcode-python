@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "1322",
+  "name": "Ads Performance",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/ads-performance/",
+  "slug": "ads-performance",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

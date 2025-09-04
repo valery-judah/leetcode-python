@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "537",
+  "name": "Complex Number Multiplication",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/complex-number-multiplication/",
+  "slug": "complex-number-multiplication",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "String",
+    "Simulation"
+  ],
+  "similar_questions": []
+}

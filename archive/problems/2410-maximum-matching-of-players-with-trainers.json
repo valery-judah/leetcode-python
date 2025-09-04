@@ -1,0 +1,65 @@
+{
+  "category": "",
+  "id": "2410",
+  "name": "Maximum Matching of Players With Trainers",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-matching-of-players-with-trainers/",
+  "slug": "maximum-matching-of-players-with-trainers",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Most Profit Assigning Work",
+      "slug": "most-profit-assigning-work",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/most-profit-assigning-work/"
+    },
+    {
+      "title": "Long Pressed Name",
+      "slug": "long-pressed-name",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/long-pressed-name/"
+    },
+    {
+      "title": "Interval List Intersections",
+      "slug": "interval-list-intersections",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/interval-list-intersections/"
+    },
+    {
+      "title": "Largest Merge Of Two Strings",
+      "slug": "largest-merge-of-two-strings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/largest-merge-of-two-strings/"
+    },
+    {
+      "title": "Maximum Number of Tasks You Can Assign",
+      "slug": "maximum-number-of-tasks-you-can-assign",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-number-of-tasks-you-can-assign/"
+    },
+    {
+      "title": "Successful Pairs of Spells and Potions",
+      "slug": "successful-pairs-of-spells-and-potions",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/successful-pairs-of-spells-and-potions/"
+    },
+    {
+      "title": "The Latest Time to Catch a Bus",
+      "slug": "the-latest-time-to-catch-a-bus",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/the-latest-time-to-catch-a-bus/"
+    },
+    {
+      "title": "Maximize Greatness of an Array",
+      "slug": "maximize-greatness-of-an-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximize-greatness-of-an-array/"
+    }
+  ]
+}

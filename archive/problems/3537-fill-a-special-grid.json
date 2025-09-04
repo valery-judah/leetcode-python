@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "3537",
+  "name": "Fill a Special Grid",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/fill-a-special-grid/",
+  "slug": "fill-a-special-grid",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Divide and Conquer",
+    "Matrix"
+  ],
+  "similar_questions": []
+}

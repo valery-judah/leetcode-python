@@ -1,0 +1,25 @@
+{
+  "category": "",
+  "id": "1648",
+  "name": "Sell Diminishing-Valued Colored Balls",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/sell-diminishing-valued-colored-balls/",
+  "slug": "sell-diminishing-valued-colored-balls",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Binary Search",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Running Time of N Computers",
+      "slug": "maximum-running-time-of-n-computers",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-running-time-of-n-computers/"
+    }
+  ]
+}

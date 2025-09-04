@@ -1,0 +1,51 @@
+{
+  "category": "",
+  "id": "692",
+  "name": "Top K Frequent Words",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/top-k-frequent-words/",
+  "slug": "top-k-frequent-words",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Trie",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Bucket Sort",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Top K Frequent Elements",
+      "slug": "top-k-frequent-elements",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/top-k-frequent-elements/"
+    },
+    {
+      "title": "K Closest Points to Origin",
+      "slug": "k-closest-points-to-origin",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/k-closest-points-to-origin/"
+    },
+    {
+      "title": "Sort Features by Popularity",
+      "slug": "sort-features-by-popularity",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sort-features-by-popularity/"
+    },
+    {
+      "title": "Sender With Largest Word Count",
+      "slug": "sender-with-largest-word-count",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sender-with-largest-word-count/"
+    },
+    {
+      "title": "Maximum Number of Pairs in Array",
+      "slug": "maximum-number-of-pairs-in-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-number-of-pairs-in-array/"
+    }
+  ]
+}

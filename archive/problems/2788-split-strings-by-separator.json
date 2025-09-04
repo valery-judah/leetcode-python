@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "2788",
+  "name": "Split Strings by Separator",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/split-strings-by-separator/",
+  "slug": "split-strings-by-separator",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Split a String in Balanced Strings",
+      "slug": "split-a-string-in-balanced-strings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/split-a-string-in-balanced-strings/"
+    }
+  ]
+}

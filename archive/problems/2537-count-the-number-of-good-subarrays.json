@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "2537",
+  "name": "Count the Number of Good Subarrays",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-the-number-of-good-subarrays/",
+  "slug": "count-the-number-of-good-subarrays",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Number of Homogenous Substrings",
+      "slug": "count-number-of-homogenous-substrings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-number-of-homogenous-substrings/"
+    },
+    {
+      "title": "Maximum Sum of Distinct Subarrays With Length K",
+      "slug": "maximum-sum-of-distinct-subarrays-with-length-k",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/"
+    }
+  ]
+}

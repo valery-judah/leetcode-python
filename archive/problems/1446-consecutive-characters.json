@@ -1,0 +1,50 @@
+{
+  "category": "",
+  "id": "1446",
+  "name": "Consecutive Characters",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/consecutive-characters/",
+  "slug": "consecutive-characters",
+  "isPaidOnly": false,
+  "tags": [
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Max Consecutive Ones",
+      "slug": "max-consecutive-ones",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/max-consecutive-ones/"
+    },
+    {
+      "title": "Longest Continuous Increasing Subsequence",
+      "slug": "longest-continuous-increasing-subsequence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-continuous-increasing-subsequence/"
+    },
+    {
+      "title": "Check if an Array Is Consecutive",
+      "slug": "check-if-an-array-is-consecutive",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/check-if-an-array-is-consecutive/"
+    },
+    {
+      "title": "Count Number of Homogenous Substrings",
+      "slug": "count-number-of-homogenous-substrings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-number-of-homogenous-substrings/"
+    },
+    {
+      "title": "Longest Substring of One Repeating Character",
+      "slug": "longest-substring-of-one-repeating-character",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-substring-of-one-repeating-character/"
+    },
+    {
+      "title": "Minimum Number of Chairs in a Waiting Room",
+      "slug": "minimum-number-of-chairs-in-a-waiting-room",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-number-of-chairs-in-a-waiting-room/"
+    }
+  ]
+}

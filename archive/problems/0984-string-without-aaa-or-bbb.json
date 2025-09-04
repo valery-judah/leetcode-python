@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "984",
+  "name": "String Without AAA or BBB",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/string-without-aaa-or-bbb/",
+  "slug": "string-without-aaa-or-bbb",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Greedy"
+  ],
+  "similar_questions": []
+}

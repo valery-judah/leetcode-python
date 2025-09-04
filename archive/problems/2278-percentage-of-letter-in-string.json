@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "2278",
+  "name": "Percentage of Letter in String",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/percentage-of-letter-in-string/",
+  "slug": "percentage-of-letter-in-string",
+  "isPaidOnly": false,
+  "tags": [
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Sort Characters By Frequency",
+      "slug": "sort-characters-by-frequency",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sort-characters-by-frequency/"
+    }
+  ]
+}

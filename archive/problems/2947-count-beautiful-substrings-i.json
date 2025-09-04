@@ -1,0 +1,18 @@
+{
+  "category": "",
+  "id": "2947",
+  "name": "Count Beautiful Substrings I",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-beautiful-substrings-i/",
+  "slug": "count-beautiful-substrings-i",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "Math",
+    "String",
+    "Enumeration",
+    "Number Theory",
+    "Prefix Sum"
+  ],
+  "similar_questions": []
+}

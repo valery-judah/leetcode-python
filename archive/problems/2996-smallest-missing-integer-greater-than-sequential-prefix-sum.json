@@ -1,0 +1,34 @@
+{
+  "category": "",
+  "id": "2996",
+  "name": "Smallest Missing Integer Greater Than Sequential Prefix Sum",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/",
+  "slug": "smallest-missing-integer-greater-than-sequential-prefix-sum",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longest Common Prefix",
+      "slug": "longest-common-prefix",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-common-prefix/"
+    },
+    {
+      "title": "First Missing Positive",
+      "slug": "first-missing-positive",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/first-missing-positive/"
+    },
+    {
+      "title": "Next Greater Element I",
+      "slug": "next-greater-element-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/next-greater-element-i/"
+    }
+  ]
+}

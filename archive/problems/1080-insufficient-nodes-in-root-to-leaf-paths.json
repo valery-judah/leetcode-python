@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "1080",
+  "name": "Insufficient Nodes in Root to Leaf Paths",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/insufficient-nodes-in-root-to-leaf-paths/",
+  "slug": "insufficient-nodes-in-root-to-leaf-paths",
+  "isPaidOnly": false,
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Nodes Equal to Average of Subtree",
+      "slug": "count-nodes-equal-to-average-of-subtree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/"
+    }
+  ]
+}

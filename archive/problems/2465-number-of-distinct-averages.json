@@ -1,0 +1,35 @@
+{
+  "category": "",
+  "id": "2465",
+  "name": "Number of Distinct Averages",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/number-of-distinct-averages/",
+  "slug": "number-of-distinct-averages",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Two Sum",
+      "slug": "two-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/two-sum/"
+    },
+    {
+      "title": "Finding Pairs With a Certain Sum",
+      "slug": "finding-pairs-with-a-certain-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/finding-pairs-with-a-certain-sum/"
+    },
+    {
+      "title": "Minimum Average of Smallest and Largest Elements",
+      "slug": "minimum-average-of-smallest-and-largest-elements",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-average-of-smallest-and-largest-elements/"
+    }
+  ]
+}

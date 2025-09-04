@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "1752",
+  "name": "Check if Array Is Sorted and Rotated",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/",
+  "slug": "check-if-array-is-sorted-and-rotated",
+  "isPaidOnly": false,
+  "tags": [
+    "Array"
+  ],
+  "similar_questions": [
+    {
+      "title": "Check if All A's Appears Before All B's",
+      "slug": "check-if-all-as-appears-before-all-bs",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/check-if-all-as-appears-before-all-bs/"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "category": "",
+  "id": "1945",
+  "name": "Sum of Digits of String After Convert",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/sum-of-digits-of-string-after-convert/",
+  "slug": "sum-of-digits-of-string-after-convert",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Happy Number",
+      "slug": "happy-number",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/happy-number/"
+    },
+    {
+      "title": "Add Digits",
+      "slug": "add-digits",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/add-digits/"
+    },
+    {
+      "title": "Count Integers With Even Digit Sum",
+      "slug": "count-integers-with-even-digit-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-integers-with-even-digit-sum/"
+    },
+    {
+      "title": "Minimum Element After Replacement With Digit Sum",
+      "slug": "minimum-element-after-replacement-with-digit-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/"
+    }
+  ]
+}

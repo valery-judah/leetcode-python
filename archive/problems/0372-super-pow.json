@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "372",
+  "name": "Super Pow",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/super-pow/",
+  "slug": "super-pow",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Divide and Conquer"
+  ],
+  "similar_questions": [
+    {
+      "title": "Pow(x, n)",
+      "slug": "powx-n",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/powx-n/"
+    }
+  ]
+}

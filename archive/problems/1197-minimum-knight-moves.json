@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "1197",
+  "name": "Minimum Knight Moves",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-knight-moves/",
+  "slug": "minimum-knight-moves",
+  "isPaidOnly": true,
+  "tags": [
+    "Breadth-First Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Check Knight Tour Configuration",
+      "slug": "check-knight-tour-configuration",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/check-knight-tour-configuration/"
+    }
+  ]
+}

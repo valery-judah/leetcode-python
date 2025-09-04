@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "376",
+  "name": "Wiggle Subsequence",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/wiggle-subsequence/",
+  "slug": "wiggle-subsequence",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "similar_questions": [
+    {
+      "title": "Rearrange Array Elements by Sign",
+      "slug": "rearrange-array-elements-by-sign",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/rearrange-array-elements-by-sign/"
+    }
+  ]
+}

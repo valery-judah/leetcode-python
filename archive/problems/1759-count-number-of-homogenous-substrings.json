@@ -1,0 +1,39 @@
+{
+  "category": "",
+  "id": "1759",
+  "name": "Count Number of Homogenous Substrings",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-number-of-homogenous-substrings/",
+  "slug": "count-number-of-homogenous-substrings",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Consecutive Characters",
+      "slug": "consecutive-characters",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/consecutive-characters/"
+    },
+    {
+      "title": "Number of Substrings With Only 1s",
+      "slug": "number-of-substrings-with-only-1s",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-substrings-with-only-1s/"
+    },
+    {
+      "title": "Sum of Subarray Ranges",
+      "slug": "sum-of-subarray-ranges",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sum-of-subarray-ranges/"
+    },
+    {
+      "title": "Count the Number of Good Subarrays",
+      "slug": "count-the-number-of-good-subarrays",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-the-number-of-good-subarrays/"
+    }
+  ]
+}

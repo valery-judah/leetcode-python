@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "2790",
+  "name": "Maximum Number of Groups With Increasing Length",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/maximum-number-of-groups-with-increasing-length/",
+  "slug": "maximum-number-of-groups-with-increasing-length",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Binary Search",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Group the People Given the Group Size They Belong To",
+      "slug": "group-the-people-given-the-group-size-they-belong-to",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "753",
+  "name": "Cracking the Safe",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/cracking-the-safe/",
+  "slug": "cracking-the-safe",
+  "isPaidOnly": false,
+  "tags": [
+    "Depth-First Search",
+    "Graph",
+    "Eulerian Circuit"
+  ],
+  "similar_questions": []
+}

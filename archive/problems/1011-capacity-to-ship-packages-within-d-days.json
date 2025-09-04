@@ -1,0 +1,51 @@
+{
+  "category": "",
+  "id": "1011",
+  "name": "Capacity To Ship Packages Within D Days",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/",
+  "slug": "capacity-to-ship-packages-within-d-days",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Split Array Largest Sum",
+      "slug": "split-array-largest-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/split-array-largest-sum/"
+    },
+    {
+      "title": "Divide Chocolate",
+      "slug": "divide-chocolate",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/divide-chocolate/"
+    },
+    {
+      "title": "Cutting Ribbons",
+      "slug": "cutting-ribbons",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/cutting-ribbons/"
+    },
+    {
+      "title": "Minimized Maximum of Products Distributed to Any Store",
+      "slug": "minimized-maximum-of-products-distributed-to-any-store",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimized-maximum-of-products-distributed-to-any-store/"
+    },
+    {
+      "title": "Maximum Bags With Full Capacity of Rocks",
+      "slug": "maximum-bags-with-full-capacity-of-rocks",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-bags-with-full-capacity-of-rocks/"
+    },
+    {
+      "title": "Minimum Total Distance Traveled",
+      "slug": "minimum-total-distance-traveled",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-total-distance-traveled/"
+    }
+  ]
+}

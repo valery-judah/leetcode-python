@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "1387",
+  "name": "Sort Integers by The Power Value",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/sort-integers-by-the-power-value/",
+  "slug": "sort-integers-by-the-power-value",
+  "isPaidOnly": false,
+  "tags": [
+    "Dynamic Programming",
+    "Memoization",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find Score of an Array After Marking All Elements",
+      "slug": "find-score-of-an-array-after-marking-all-elements",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-score-of-an-array-after-marking-all-elements/"
+    }
+  ]
+}

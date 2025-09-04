@@ -1,0 +1,18 @@
+{
+  "category": "",
+  "id": "1048",
+  "name": "Longest String Chain",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/longest-string-chain/",
+  "slug": "longest-string-chain",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
+    "String",
+    "Dynamic Programming",
+    "Sorting"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "1904",
+  "name": "The Number of Full Rounds You Have Played",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/the-number-of-full-rounds-you-have-played/",
+  "slug": "the-number-of-full-rounds-you-have-played",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "String"
+  ],
+  "similar_questions": []
+}

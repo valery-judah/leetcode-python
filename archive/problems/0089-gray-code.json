@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "89",
+  "name": "Gray Code",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/gray-code/",
+  "slug": "gray-code",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Backtracking",
+    "Bit Manipulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "1-bit and 2-bit Characters",
+      "slug": "1-bit-and-2-bit-characters",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/1-bit-and-2-bit-characters/"
+    }
+  ]
+}

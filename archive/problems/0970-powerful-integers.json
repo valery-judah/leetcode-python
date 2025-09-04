@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "970",
+  "name": "Powerful Integers",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/powerful-integers/",
+  "slug": "powerful-integers",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "Math",
+    "Enumeration"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count the Number of Powerful Integers",
+      "slug": "count-the-number-of-powerful-integers",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-the-number-of-powerful-integers/"
+    }
+  ]
+}

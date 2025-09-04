@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "1241",
+  "name": "Number of Comments per Post",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/number-of-comments-per-post/",
+  "slug": "number-of-comments-per-post",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,58 @@
+{
+  "category": "",
+  "id": "45",
+  "name": "Jump Game II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/jump-game-ii/",
+  "slug": "jump-game-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "similar_questions": [
+    {
+      "title": "Jump Game",
+      "slug": "jump-game",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/jump-game/"
+    },
+    {
+      "title": "Jump Game III",
+      "slug": "jump-game-iii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/jump-game-iii/"
+    },
+    {
+      "title": "Jump Game VII",
+      "slug": "jump-game-vii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/jump-game-vii/"
+    },
+    {
+      "title": "Jump Game VIII",
+      "slug": "jump-game-viii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/jump-game-viii/"
+    },
+    {
+      "title": "Minimum Number of Visited Cells in a Grid",
+      "slug": "minimum-number-of-visited-cells-in-a-grid",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-number-of-visited-cells-in-a-grid/"
+    },
+    {
+      "title": "Maximum Number of Jumps to Reach the Last Index",
+      "slug": "maximum-number-of-jumps-to-reach-the-last-index",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-number-of-jumps-to-reach-the-last-index/"
+    },
+    {
+      "title": "Visit Array Positions to Maximize Score",
+      "slug": "visit-array-positions-to-maximize-score",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/visit-array-positions-to-maximize-score/"
+    }
+  ]
+}

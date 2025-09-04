@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "2712",
+  "name": "Minimum Cost to Make All Characters Equal",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-cost-to-make-all-characters-equal/",
+  "slug": "minimum-cost-to-make-all-characters-equal",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "similar_questions": [
+    {
+      "title": "Flip String to Monotone Increasing",
+      "slug": "flip-string-to-monotone-increasing",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/flip-string-to-monotone-increasing/"
+    }
+  ]
+}

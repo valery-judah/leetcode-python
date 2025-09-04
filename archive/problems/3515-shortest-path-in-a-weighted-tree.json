@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "3515",
+  "name": "Shortest Path in a Weighted Tree",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/shortest-path-in-a-weighted-tree/",
+  "slug": "shortest-path-in-a-weighted-tree",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Tree",
+    "Depth-First Search",
+    "Binary Indexed Tree",
+    "Segment Tree"
+  ],
+  "similar_questions": []
+}

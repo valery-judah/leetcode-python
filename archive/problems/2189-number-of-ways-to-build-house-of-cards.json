@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "2189",
+  "name": "Number of Ways to Build House of Cards",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/number-of-ways-to-build-house-of-cards/",
+  "slug": "number-of-ways-to-build-house-of-cards",
+  "isPaidOnly": true,
+  "tags": [
+    "Math",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Champagne Tower",
+      "slug": "champagne-tower",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/champagne-tower/"
+    }
+  ]
+}

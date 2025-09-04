@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "3314",
+  "name": "Construct the Minimum Bitwise Array I",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/construct-the-minimum-bitwise-array-i/",
+  "slug": "construct-the-minimum-bitwise-array-i",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Bit Manipulation"
+  ],
+  "similar_questions": []
+}

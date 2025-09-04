@@ -1,0 +1,67 @@
+{
+  "category": "",
+  "id": "2297",
+  "name": "Jump Game VIII",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/jump-game-viii/",
+  "slug": "jump-game-viii",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Stack",
+    "Graph",
+    "Monotonic Stack",
+    "Shortest Path"
+  ],
+  "similar_questions": [
+    {
+      "title": "Jump Game II",
+      "slug": "jump-game-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/jump-game-ii/"
+    },
+    {
+      "title": "Jump Game",
+      "slug": "jump-game",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/jump-game/"
+    },
+    {
+      "title": "Jump Game III",
+      "slug": "jump-game-iii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/jump-game-iii/"
+    },
+    {
+      "title": "Jump Game IV",
+      "slug": "jump-game-iv",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/jump-game-iv/"
+    },
+    {
+      "title": "Jump Game V",
+      "slug": "jump-game-v",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/jump-game-v/"
+    },
+    {
+      "title": "Jump Game VI",
+      "slug": "jump-game-vi",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/jump-game-vi/"
+    },
+    {
+      "title": "Jump Game VII",
+      "slug": "jump-game-vii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/jump-game-vii/"
+    },
+    {
+      "title": "Jump Game VIII",
+      "slug": "jump-game-viii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/jump-game-viii/"
+    }
+  ]
+}

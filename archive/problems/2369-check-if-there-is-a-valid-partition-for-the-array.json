@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "2369",
+  "name": "Check if There is a Valid Partition For The Array",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/check-if-there-is-a-valid-partition-for-the-array/",
+  "slug": "check-if-there-is-a-valid-partition-for-the-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count the Number of Good Partitions",
+      "slug": "count-the-number-of-good-partitions",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-the-number-of-good-partitions/"
+    }
+  ]
+}

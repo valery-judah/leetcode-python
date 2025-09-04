@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "781",
+  "name": "Rabbits in Forest",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/rabbits-in-forest/",
+  "slug": "rabbits-in-forest",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Greedy"
+  ],
+  "similar_questions": [
+    {
+      "title": "Group the People Given the Group Size They Belong To",
+      "slug": "group-the-people-given-the-group-size-they-belong-to",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/"
+    }
+  ]
+}

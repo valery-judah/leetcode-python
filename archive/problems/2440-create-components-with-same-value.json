@@ -1,0 +1,30 @@
+{
+  "category": "",
+  "id": "2440",
+  "name": "Create Components With Same Value",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/create-components-with-same-value/",
+  "slug": "create-components-with-same-value",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Tree",
+    "Depth-First Search",
+    "Enumeration"
+  ],
+  "similar_questions": [
+    {
+      "title": "Equal Tree Partition",
+      "slug": "equal-tree-partition",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/equal-tree-partition/"
+    },
+    {
+      "title": "Maximum Number of K-Divisible Components",
+      "slug": "maximum-number-of-k-divisible-components",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-number-of-k-divisible-components/"
+    }
+  ]
+}

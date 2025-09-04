@@ -1,0 +1,30 @@
+{
+  "category": "",
+  "id": "2280",
+  "name": "Minimum Lines to Represent a Line Chart",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-lines-to-represent-a-line-chart/",
+  "slug": "minimum-lines-to-represent-a-line-chart",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Geometry",
+    "Sorting",
+    "Number Theory"
+  ],
+  "similar_questions": [
+    {
+      "title": "Max Points on a Line",
+      "slug": "max-points-on-a-line",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/max-points-on-a-line/"
+    },
+    {
+      "title": "Minimum Number of Lines to Cover Points",
+      "slug": "minimum-number-of-lines-to-cover-points",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-number-of-lines-to-cover-points/"
+    }
+  ]
+}

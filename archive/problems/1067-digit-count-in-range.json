@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "1067",
+  "name": "Digit Count in Range",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/digit-count-in-range/",
+  "slug": "digit-count-in-range",
+  "isPaidOnly": true,
+  "tags": [
+    "Math",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Number of Digit One",
+      "slug": "number-of-digit-one",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-digit-one/"
+    },
+    {
+      "title": "Sum of Numbers With Units Digit K",
+      "slug": "sum-of-numbers-with-units-digit-k",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sum-of-numbers-with-units-digit-k/"
+    }
+  ]
+}

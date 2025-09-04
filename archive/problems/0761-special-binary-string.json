@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "761",
+  "name": "Special Binary String",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/special-binary-string/",
+  "slug": "special-binary-string",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Recursion"
+  ],
+  "similar_questions": [
+    {
+      "title": "Valid Parenthesis String",
+      "slug": "valid-parenthesis-string",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/valid-parenthesis-string/"
+    },
+    {
+      "title": "Number of Good Binary Strings",
+      "slug": "number-of-good-binary-strings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-good-binary-strings/"
+    }
+  ]
+}

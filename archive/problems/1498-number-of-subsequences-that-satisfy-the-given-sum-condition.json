@@ -1,0 +1,35 @@
+{
+  "category": "",
+  "id": "1498",
+  "name": "Number of Subsequences That Satisfy the Given Sum Condition",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/",
+  "slug": "number-of-subsequences-that-satisfy-the-given-sum-condition",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Operations to Form Subsequence With Target Sum",
+      "slug": "minimum-operations-to-form-subsequence-with-target-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-operations-to-form-subsequence-with-target-sum/"
+    },
+    {
+      "title": "Find the Sum of Subsequence Powers",
+      "slug": "find-the-sum-of-subsequence-powers",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-sum-of-subsequence-powers/"
+    },
+    {
+      "title": "Find the Sum of the Power of All Subsequences",
+      "slug": "find-the-sum-of-the-power-of-all-subsequences",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-sum-of-the-power-of-all-subsequences/"
+    }
+  ]
+}

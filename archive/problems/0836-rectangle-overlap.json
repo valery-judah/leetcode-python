@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "836",
+  "name": "Rectangle Overlap",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/rectangle-overlap/",
+  "slug": "rectangle-overlap",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Geometry"
+  ],
+  "similar_questions": [
+    {
+      "title": "Rectangle Area",
+      "slug": "rectangle-area",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/rectangle-area/"
+    }
+  ]
+}

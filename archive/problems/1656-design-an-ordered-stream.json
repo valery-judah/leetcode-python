@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "1656",
+  "name": "Design an Ordered Stream",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/design-an-ordered-stream/",
+  "slug": "design-an-ordered-stream",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Design",
+    "Data Stream"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longest Uploaded Prefix",
+      "slug": "longest-uploaded-prefix",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-uploaded-prefix/"
+    }
+  ]
+}

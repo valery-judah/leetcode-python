@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "3300",
+  "name": "Minimum Element After Replacement With Digit Sum",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/",
+  "slug": "minimum-element-after-replacement-with-digit-sum",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math"
+  ],
+  "similar_questions": [
+    {
+      "title": "Sum of Digits of String After Convert",
+      "slug": "sum-of-digits-of-string-after-convert",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sum-of-digits-of-string-after-convert/"
+    }
+  ]
+}

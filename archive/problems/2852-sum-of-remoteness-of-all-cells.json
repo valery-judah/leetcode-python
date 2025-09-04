@@ -1,0 +1,18 @@
+{
+  "category": "",
+  "id": "2852",
+  "name": "Sum of Remoteness of All Cells",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/sum-of-remoteness-of-all-cells/",
+  "slug": "sum-of-remoteness-of-all-cells",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union Find",
+    "Matrix"
+  ],
+  "similar_questions": []
+}

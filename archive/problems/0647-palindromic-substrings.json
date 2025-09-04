@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "647",
+  "name": "Palindromic Substrings",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/palindromic-substrings/",
+  "slug": "palindromic-substrings",
+  "isPaidOnly": false,
+  "tags": [
+    "Two Pointers",
+    "String",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longest Palindromic Substring",
+      "slug": "longest-palindromic-substring",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-palindromic-substring/"
+    },
+    {
+      "title": "Longest Palindromic Subsequence",
+      "slug": "longest-palindromic-subsequence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-palindromic-subsequence/"
+    }
+  ]
+}

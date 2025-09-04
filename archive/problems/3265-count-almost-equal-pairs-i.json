@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "3265",
+  "name": "Count Almost Equal Pairs I",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-almost-equal-pairs-i/",
+  "slug": "count-almost-equal-pairs-i",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting",
+    "Counting",
+    "Enumeration"
+  ],
+  "similar_questions": [
+    {
+      "title": "Check if One String Swap Can Make Strings Equal",
+      "slug": "check-if-one-string-swap-can-make-strings-equal",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal/"
+    }
+  ]
+}

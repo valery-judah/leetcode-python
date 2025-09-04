@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "748",
+  "name": "Shortest Completing Word",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/shortest-completing-word/",
+  "slug": "shortest-completing-word",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "similar_questions": []
+}

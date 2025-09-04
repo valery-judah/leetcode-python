@@ -1,0 +1,32 @@
+{
+  "category": "",
+  "id": "665",
+  "name": "Non-decreasing Array",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/non-decreasing-array/",
+  "slug": "non-decreasing-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array"
+  ],
+  "similar_questions": [
+    {
+      "title": "Make Array Non-decreasing or Non-increasing",
+      "slug": "make-array-non-decreasing-or-non-increasing",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/make-array-non-decreasing-or-non-increasing/"
+    },
+    {
+      "title": "Find Good Days to Rob the Bank",
+      "slug": "find-good-days-to-rob-the-bank",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-good-days-to-rob-the-bank/"
+    },
+    {
+      "title": "Count Non-Decreasing Subarrays After K Operations",
+      "slug": "count-non-decreasing-subarrays-after-k-operations",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-non-decreasing-subarrays-after-k-operations/"
+    }
+  ]
+}

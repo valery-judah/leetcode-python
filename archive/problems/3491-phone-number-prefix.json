@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "3491",
+  "name": "Phone Number Prefix",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/phone-number-prefix/",
+  "slug": "phone-number-prefix",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "String",
+    "Trie",
+    "Sorting"
+  ],
+  "similar_questions": []
+}

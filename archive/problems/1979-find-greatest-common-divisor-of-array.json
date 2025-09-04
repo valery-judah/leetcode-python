@@ -1,0 +1,58 @@
+{
+  "category": "",
+  "id": "1979",
+  "name": "Find Greatest Common Divisor of Array",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/find-greatest-common-divisor-of-array/",
+  "slug": "find-greatest-common-divisor-of-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Number Theory"
+  ],
+  "similar_questions": [
+    {
+      "title": "Greatest Common Divisor of Strings",
+      "slug": "greatest-common-divisor-of-strings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/greatest-common-divisor-of-strings/"
+    },
+    {
+      "title": "Number of Different Subsequences GCDs",
+      "slug": "number-of-different-subsequences-gcds",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-different-subsequences-gcds/"
+    },
+    {
+      "title": "Three Divisors",
+      "slug": "three-divisors",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/three-divisors/"
+    },
+    {
+      "title": "Smallest Even Multiple",
+      "slug": "smallest-even-multiple",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/smallest-even-multiple/"
+    },
+    {
+      "title": "Number of Subarrays With GCD Equal to K",
+      "slug": "number-of-subarrays-with-gcd-equal-to-k",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-subarrays-with-gcd-equal-to-k/"
+    },
+    {
+      "title": "Find the Number of Subsequences With Equal GCD",
+      "slug": "find-the-number-of-subsequences-with-equal-gcd",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-number-of-subsequences-with-equal-gcd/"
+    },
+    {
+      "title": "Maximum Subarray With Equal Products",
+      "slug": "maximum-subarray-with-equal-products",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-subarray-with-equal-products/"
+    }
+  ]
+}

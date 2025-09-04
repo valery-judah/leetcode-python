@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "1965",
+  "name": "Employees With Missing Information",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/employees-with-missing-information/",
+  "slug": "employees-with-missing-information",
+  "isPaidOnly": false,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

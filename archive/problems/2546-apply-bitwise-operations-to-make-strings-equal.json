@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "2546",
+  "name": "Apply Bitwise Operations to Make Strings Equal",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/apply-bitwise-operations-to-make-strings-equal/",
+  "slug": "apply-bitwise-operations-to-make-strings-equal",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Bit Manipulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum One Bit Operations to Make Integers Zero",
+      "slug": "minimum-one-bit-operations-to-make-integers-zero",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/"
+    }
+  ]
+}

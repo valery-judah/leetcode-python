@@ -1,0 +1,53 @@
+{
+  "category": "",
+  "id": "395",
+  "name": "Longest Substring with At Least K Repeating Characters",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/",
+  "slug": "longest-substring-with-at-least-k-repeating-characters",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Divide and Conquer",
+    "Sliding Window"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longest Subsequence Repeated k Times",
+      "slug": "longest-subsequence-repeated-k-times",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-subsequence-repeated-k-times/"
+    },
+    {
+      "title": "Number of Equal Count Substrings",
+      "slug": "number-of-equal-count-substrings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-equal-count-substrings/"
+    },
+    {
+      "title": "Optimal Partition of String",
+      "slug": "optimal-partition-of-string",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/optimal-partition-of-string/"
+    },
+    {
+      "title": "Length of Longest Subarray With at Most K Frequency",
+      "slug": "length-of-longest-subarray-with-at-most-k-frequency",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/"
+    },
+    {
+      "title": "Find Longest Special Substring That Occurs Thrice II",
+      "slug": "find-longest-special-substring-that-occurs-thrice-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-longest-special-substring-that-occurs-thrice-ii/"
+    },
+    {
+      "title": "Find Longest Special Substring That Occurs Thrice I",
+      "slug": "find-longest-special-substring-that-occurs-thrice-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-longest-special-substring-that-occurs-thrice-i/"
+    }
+  ]
+}

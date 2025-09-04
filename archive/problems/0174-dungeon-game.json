@@ -1,0 +1,58 @@
+{
+  "category": "",
+  "id": "174",
+  "name": "Dungeon Game",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/dungeon-game/",
+  "slug": "dungeon-game",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Unique Paths",
+      "slug": "unique-paths",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/unique-paths/"
+    },
+    {
+      "title": "Minimum Path Sum",
+      "slug": "minimum-path-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-path-sum/"
+    },
+    {
+      "title": "Cherry Pickup",
+      "slug": "cherry-pickup",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/cherry-pickup/"
+    },
+    {
+      "title": "Minimum Path Cost in a Grid",
+      "slug": "minimum-path-cost-in-a-grid",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-path-cost-in-a-grid/"
+    },
+    {
+      "title": "Minimum Health to Beat Game",
+      "slug": "minimum-health-to-beat-game",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-health-to-beat-game/"
+    },
+    {
+      "title": "Paths in Matrix Whose Sum Is Divisible by K",
+      "slug": "paths-in-matrix-whose-sum-is-divisible-by-k",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/paths-in-matrix-whose-sum-is-divisible-by-k/"
+    },
+    {
+      "title": "Check if There is a Path With Equal Number of 0's And 1's",
+      "slug": "check-if-there-is-a-path-with-equal-number-of-0s-and-1s",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/check-if-there-is-a-path-with-equal-number-of-0s-and-1s/"
+    }
+  ]
+}

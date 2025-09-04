@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "3232",
+  "name": "Find if Digit Game Can Be Won",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/find-if-digit-game-can-be-won/",
+  "slug": "find-if-digit-game-can-be-won",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find Numbers with Even Number of Digits",
+      "slug": "find-numbers-with-even-number-of-digits",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-numbers-with-even-number-of-digits/"
+    },
+    {
+      "title": "Count Integers With Even Digit Sum",
+      "slug": "count-integers-with-even-digit-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-integers-with-even-digit-sum/"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1705",
+  "name": "Maximum Number of Eaten Apples",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-number-of-eaten-apples/",
+  "slug": "maximum-number-of-eaten-apples",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Heap (Priority Queue)"
+  ],
+  "similar_questions": []
+}

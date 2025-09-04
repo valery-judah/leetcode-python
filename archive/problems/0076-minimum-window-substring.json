@@ -1,0 +1,64 @@
+{
+  "category": "",
+  "id": "76",
+  "name": "Minimum Window Substring",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-window-substring/",
+  "slug": "minimum-window-substring",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Sliding Window"
+  ],
+  "similar_questions": [
+    {
+      "title": "Substring with Concatenation of All Words",
+      "slug": "substring-with-concatenation-of-all-words",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/substring-with-concatenation-of-all-words/"
+    },
+    {
+      "title": "Minimum Size Subarray Sum",
+      "slug": "minimum-size-subarray-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-size-subarray-sum/"
+    },
+    {
+      "title": "Sliding Window Maximum",
+      "slug": "sliding-window-maximum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sliding-window-maximum/"
+    },
+    {
+      "title": "Permutation in String",
+      "slug": "permutation-in-string",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/permutation-in-string/"
+    },
+    {
+      "title": "Smallest Range Covering Elements from K Lists",
+      "slug": "smallest-range-covering-elements-from-k-lists",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/"
+    },
+    {
+      "title": "Minimum Window Subsequence",
+      "slug": "minimum-window-subsequence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-window-subsequence/"
+    },
+    {
+      "title": "Count Substrings That Can Be Rearranged to Contain a String II",
+      "slug": "count-substrings-that-can-be-rearranged-to-contain-a-string-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/"
+    },
+    {
+      "title": "Count Substrings That Can Be Rearranged to Contain a String I",
+      "slug": "count-substrings-that-can-be-rearranged-to-contain-a-string-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-i/"
+    }
+  ]
+}

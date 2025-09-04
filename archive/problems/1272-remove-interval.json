@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "1272",
+  "name": "Remove Interval",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/remove-interval/",
+  "slug": "remove-interval",
+  "isPaidOnly": true,
+  "tags": [
+    "Array"
+  ],
+  "similar_questions": []
+}

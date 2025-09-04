@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "2737",
+  "name": "Find the Closest Marked Node",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-the-closest-marked-node/",
+  "slug": "find-the-closest-marked-node",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Graph",
+    "Heap (Priority Queue)",
+    "Shortest Path"
+  ],
+  "similar_questions": []
+}

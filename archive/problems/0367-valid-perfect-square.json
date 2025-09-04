@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "367",
+  "name": "Valid Perfect Square",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/valid-perfect-square/",
+  "slug": "valid-perfect-square",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Binary Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Sqrt(x)",
+      "slug": "sqrtx",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sqrtx/"
+    },
+    {
+      "title": "Sum of Square Numbers",
+      "slug": "sum-of-square-numbers",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sum-of-square-numbers/"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "1138",
+  "name": "Alphabet Board Path",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/alphabet-board-path/",
+  "slug": "alphabet-board-path",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "similar_questions": []
+}

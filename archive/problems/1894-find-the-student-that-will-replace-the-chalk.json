@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "1894",
+  "name": "Find the Student that Will Replace the Chalk",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-the-student-that-will-replace-the-chalk/",
+  "slug": "find-the-student-that-will-replace-the-chalk",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Simulation",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Pass the Pillow",
+      "slug": "pass-the-pillow",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/pass-the-pillow/"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "3176",
+  "name": "Find the Maximum Length of a Good Subsequence I",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-the-maximum-length-of-a-good-subsequence-i/",
+  "slug": "find-the-maximum-length-of-a-good-subsequence-i",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longest Increasing Subsequence",
+      "slug": "longest-increasing-subsequence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-increasing-subsequence/"
+    },
+    {
+      "title": "Maximum Length of Repeated Subarray",
+      "slug": "maximum-length-of-repeated-subarray",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-length-of-repeated-subarray/"
+    }
+  ]
+}

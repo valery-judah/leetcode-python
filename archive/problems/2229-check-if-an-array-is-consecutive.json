@@ -1,0 +1,34 @@
+{
+  "category": "",
+  "id": "2229",
+  "name": "Check if an Array Is Consecutive",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/check-if-an-array-is-consecutive/",
+  "slug": "check-if-an-array-is-consecutive",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Binary Tree Longest Consecutive Sequence",
+      "slug": "binary-tree-longest-consecutive-sequence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/"
+    },
+    {
+      "title": "Binary Tree Longest Consecutive Sequence II",
+      "slug": "binary-tree-longest-consecutive-sequence-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/binary-tree-longest-consecutive-sequence-ii/"
+    },
+    {
+      "title": "Consecutive Characters",
+      "slug": "consecutive-characters",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/consecutive-characters/"
+    }
+  ]
+}

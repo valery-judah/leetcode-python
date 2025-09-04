@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "1279",
+  "name": "Traffic Light Controlled Intersection",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/traffic-light-controlled-intersection/",
+  "slug": "traffic-light-controlled-intersection",
+  "isPaidOnly": true,
+  "tags": [
+    "Concurrency"
+  ],
+  "similar_questions": []
+}

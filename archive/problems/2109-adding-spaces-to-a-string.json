@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "2109",
+  "name": "Adding Spaces to a String",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/adding-spaces-to-a-string/",
+  "slug": "adding-spaces-to-a-string",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "String",
+    "Simulation"
+  ],
+  "similar_questions": []
+}

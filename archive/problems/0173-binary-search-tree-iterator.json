@@ -1,0 +1,55 @@
+{
+  "category": "",
+  "id": "173",
+  "name": "Binary Search Tree Iterator",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/binary-search-tree-iterator/",
+  "slug": "binary-search-tree-iterator",
+  "isPaidOnly": false,
+  "tags": [
+    "Stack",
+    "Tree",
+    "Design",
+    "Binary Search Tree",
+    "Binary Tree",
+    "Iterator"
+  ],
+  "similar_questions": [
+    {
+      "title": "Binary Tree Inorder Traversal",
+      "slug": "binary-tree-inorder-traversal",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/binary-tree-inorder-traversal/"
+    },
+    {
+      "title": "Flatten 2D Vector",
+      "slug": "flatten-2d-vector",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/flatten-2d-vector/"
+    },
+    {
+      "title": "Zigzag Iterator",
+      "slug": "zigzag-iterator",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/zigzag-iterator/"
+    },
+    {
+      "title": "Peeking Iterator",
+      "slug": "peeking-iterator",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/peeking-iterator/"
+    },
+    {
+      "title": "Inorder Successor in BST",
+      "slug": "inorder-successor-in-bst",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/inorder-successor-in-bst/"
+    },
+    {
+      "title": "Binary Search Tree Iterator II",
+      "slug": "binary-search-tree-iterator-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/binary-search-tree-iterator-ii/"
+    }
+  ]
+}

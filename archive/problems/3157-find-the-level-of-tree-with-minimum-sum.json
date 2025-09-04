@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "3157",
+  "name": "Find the Level of Tree with Minimum Sum",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-the-level-of-tree-with-minimum-sum/",
+  "slug": "find-the-level-of-tree-with-minimum-sum",
+  "isPaidOnly": true,
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Kth Largest Sum in a Binary Tree",
+      "slug": "kth-largest-sum-in-a-binary-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/kth-largest-sum-in-a-binary-tree/"
+    }
+  ]
+}

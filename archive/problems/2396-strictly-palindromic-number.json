@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "2396",
+  "name": "Strictly Palindromic Number",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/strictly-palindromic-number/",
+  "slug": "strictly-palindromic-number",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Two Pointers",
+    "Brainteaser"
+  ],
+  "similar_questions": [
+    {
+      "title": "Palindrome Number",
+      "slug": "palindrome-number",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/palindrome-number/"
+    },
+    {
+      "title": "Stone Game",
+      "slug": "stone-game",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/stone-game/"
+    }
+  ]
+}

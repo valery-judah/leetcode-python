@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "3003",
+  "name": "Maximize the Number of Partitions After Operations",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/maximize-the-number-of-partitions-after-operations/",
+  "slug": "maximize-the-number-of-partitions-after-operations",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Bitmask"
+  ],
+  "similar_questions": [
+    {
+      "title": "Can Make Palindrome from Substring",
+      "slug": "can-make-palindrome-from-substring",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/can-make-palindrome-from-substring/"
+    }
+  ]
+}

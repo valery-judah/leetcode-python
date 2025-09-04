@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "3032",
+  "name": "Count Numbers With Unique Digits II",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/count-numbers-with-unique-digits-ii/",
+  "slug": "count-numbers-with-unique-digits-ii",
+  "isPaidOnly": true,
+  "tags": [
+    "Hash Table",
+    "Math",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Numbers with Unique Digits",
+      "slug": "count-numbers-with-unique-digits",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-numbers-with-unique-digits/"
+    }
+  ]
+}

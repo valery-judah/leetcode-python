@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "1045",
+  "name": "Customers Who Bought All Products",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/customers-who-bought-all-products/",
+  "slug": "customers-who-bought-all-products",
+  "isPaidOnly": false,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

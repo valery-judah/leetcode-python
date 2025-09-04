@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "273",
+  "name": "Integer to English Words",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/integer-to-english-words/",
+  "slug": "integer-to-english-words",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "String",
+    "Recursion"
+  ],
+  "similar_questions": [
+    {
+      "title": "Integer to Roman",
+      "slug": "integer-to-roman",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/integer-to-roman/"
+    }
+  ]
+}

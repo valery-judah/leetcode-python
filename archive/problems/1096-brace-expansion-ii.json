@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "1096",
+  "name": "Brace Expansion II",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/brace-expansion-ii/",
+  "slug": "brace-expansion-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Backtracking",
+    "Stack",
+    "Breadth-First Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Brace Expansion",
+      "slug": "brace-expansion",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/brace-expansion/"
+    }
+  ]
+}

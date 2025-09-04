@@ -1,0 +1,32 @@
+{
+  "category": "",
+  "id": "8",
+  "name": "String to Integer (atoi)",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/string-to-integer-atoi/",
+  "slug": "string-to-integer-atoi",
+  "isPaidOnly": false,
+  "tags": [
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Reverse Integer",
+      "slug": "reverse-integer",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/reverse-integer/"
+    },
+    {
+      "title": "Valid Number",
+      "slug": "valid-number",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/valid-number/"
+    },
+    {
+      "title": "Check if Numbers Are Ascending in a Sentence",
+      "slug": "check-if-numbers-are-ascending-in-a-sentence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/check-if-numbers-are-ascending-in-a-sentence/"
+    }
+  ]
+}

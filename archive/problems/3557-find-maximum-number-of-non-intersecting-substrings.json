@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "3557",
+  "name": "Find Maximum Number of Non Intersecting Substrings",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-maximum-number-of-non-intersecting-substrings/",
+  "slug": "find-maximum-number-of-non-intersecting-substrings",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "similar_questions": []
+}

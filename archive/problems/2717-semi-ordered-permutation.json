@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "2717",
+  "name": "Semi-Ordered Permutation",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/semi-ordered-permutation/",
+  "slug": "semi-ordered-permutation",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "similar_questions": []
+}

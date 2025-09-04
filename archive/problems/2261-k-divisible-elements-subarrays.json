@@ -1,0 +1,37 @@
+{
+  "category": "",
+  "id": "2261",
+  "name": "K Divisible Elements Subarrays",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/k-divisible-elements-subarrays/",
+  "slug": "k-divisible-elements-subarrays",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Trie",
+    "Rolling Hash",
+    "Hash Function",
+    "Enumeration"
+  ],
+  "similar_questions": [
+    {
+      "title": "Subarrays with K Different Integers",
+      "slug": "subarrays-with-k-different-integers",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/subarrays-with-k-different-integers/"
+    },
+    {
+      "title": "Count Number of Nice Subarrays",
+      "slug": "count-number-of-nice-subarrays",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-number-of-nice-subarrays/"
+    },
+    {
+      "title": "Subarray With Elements Greater Than Varying Threshold",
+      "slug": "subarray-with-elements-greater-than-varying-threshold",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/subarray-with-elements-greater-than-varying-threshold/"
+    }
+  ]
+}

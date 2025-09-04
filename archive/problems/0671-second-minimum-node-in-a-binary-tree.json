@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "671",
+  "name": "Second Minimum Node In a Binary Tree",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/",
+  "slug": "second-minimum-node-in-a-binary-tree",
+  "isPaidOnly": false,
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Kth Smallest Element in a BST",
+      "slug": "kth-smallest-element-in-a-bst",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/"
+    }
+  ]
+}

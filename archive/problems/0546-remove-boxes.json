@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "546",
+  "name": "Remove Boxes",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/remove-boxes/",
+  "slug": "remove-boxes",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Memoization"
+  ],
+  "similar_questions": [
+    {
+      "title": "Strange Printer",
+      "slug": "strange-printer",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/strange-printer/"
+    },
+    {
+      "title": "Number of Unique Flavors After Sharing K Candies",
+      "slug": "number-of-unique-flavors-after-sharing-k-candies",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-unique-flavors-after-sharing-k-candies/"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1436",
+  "name": "Destination City",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/destination-city/",
+  "slug": "destination-city",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "similar_questions": []
+}

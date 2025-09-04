@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "626",
+  "name": "Exchange Seats",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/exchange-seats/",
+  "slug": "exchange-seats",
+  "isPaidOnly": false,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

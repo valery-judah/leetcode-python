@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "2483",
+  "name": "Minimum Penalty for a Shop",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-penalty-for-a-shop/",
+  "slug": "minimum-penalty-for-a-shop",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Grid Game",
+      "slug": "grid-game",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/grid-game/"
+    },
+    {
+      "title": "Minimum Amount of Damage Dealt to Bob",
+      "slug": "minimum-amount-of-damage-dealt-to-bob",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-amount-of-damage-dealt-to-bob/"
+    }
+  ]
+}

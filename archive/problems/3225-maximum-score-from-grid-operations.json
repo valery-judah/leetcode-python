@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "3225",
+  "name": "Maximum Score From Grid Operations",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/maximum-score-from-grid-operations/",
+  "slug": "maximum-score-from-grid-operations",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Difference Score in a Grid",
+      "slug": "maximum-difference-score-in-a-grid",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-difference-score-in-a-grid/"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "3204",
+  "name": "Bitwise User Permissions Analysis",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/bitwise-user-permissions-analysis/",
+  "slug": "bitwise-user-permissions-analysis",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

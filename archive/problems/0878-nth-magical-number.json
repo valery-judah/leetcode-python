@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "878",
+  "name": "Nth Magical Number",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/nth-magical-number/",
+  "slug": "nth-magical-number",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Binary Search"
+  ],
+  "similar_questions": []
+}

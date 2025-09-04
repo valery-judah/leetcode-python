@@ -1,0 +1,26 @@
+{
+  "category": "",
+  "id": "2016",
+  "name": "Maximum Difference Between Increasing Elements",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/maximum-difference-between-increasing-elements/",
+  "slug": "maximum-difference-between-increasing-elements",
+  "isPaidOnly": false,
+  "tags": [
+    "Array"
+  ],
+  "similar_questions": [
+    {
+      "title": "Best Time to Buy and Sell Stock",
+      "slug": "best-time-to-buy-and-sell-stock",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/"
+    },
+    {
+      "title": "Two Furthest Houses With Different Colors",
+      "slug": "two-furthest-houses-with-different-colors",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/two-furthest-houses-with-different-colors/"
+    }
+  ]
+}

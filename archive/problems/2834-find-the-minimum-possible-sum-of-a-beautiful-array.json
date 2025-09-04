@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "2834",
+  "name": "Find the Minimum Possible Sum of a Beautiful Array",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-the-minimum-possible-sum-of-a-beautiful-array/",
+  "slug": "find-the-minimum-possible-sum-of-a-beautiful-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Greedy"
+  ],
+  "similar_questions": []
+}

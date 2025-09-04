@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "60",
+  "name": "Permutation Sequence",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/permutation-sequence/",
+  "slug": "permutation-sequence",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Recursion"
+  ],
+  "similar_questions": [
+    {
+      "title": "Next Permutation",
+      "slug": "next-permutation",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/next-permutation/"
+    },
+    {
+      "title": "Permutations",
+      "slug": "permutations",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/permutations/"
+    }
+  ]
+}

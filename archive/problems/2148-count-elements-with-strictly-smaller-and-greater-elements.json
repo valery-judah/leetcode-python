@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "2148",
+  "name": "Count Elements With Strictly Smaller and Greater Elements ",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/count-elements-with-strictly-smaller-and-greater-elements/",
+  "slug": "count-elements-with-strictly-smaller-and-greater-elements",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Sorting",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find Smallest Letter Greater Than Target",
+      "slug": "find-smallest-letter-greater-than-target",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-smallest-letter-greater-than-target/"
+    }
+  ]
+}

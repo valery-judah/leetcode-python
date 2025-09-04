@@ -1,0 +1,34 @@
+{
+  "category": "",
+  "id": "284",
+  "name": "Peeking Iterator",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/peeking-iterator/",
+  "slug": "peeking-iterator",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Design",
+    "Iterator"
+  ],
+  "similar_questions": [
+    {
+      "title": "Binary Search Tree Iterator",
+      "slug": "binary-search-tree-iterator",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/binary-search-tree-iterator/"
+    },
+    {
+      "title": "Flatten 2D Vector",
+      "slug": "flatten-2d-vector",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/flatten-2d-vector/"
+    },
+    {
+      "title": "Zigzag Iterator",
+      "slug": "zigzag-iterator",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/zigzag-iterator/"
+    }
+  ]
+}

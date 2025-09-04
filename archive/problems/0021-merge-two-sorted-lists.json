@@ -1,0 +1,57 @@
+{
+  "category": "",
+  "id": "21",
+  "name": "Merge Two Sorted Lists",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/merge-two-sorted-lists/",
+  "slug": "merge-two-sorted-lists",
+  "isPaidOnly": false,
+  "tags": [
+    "Linked List",
+    "Recursion"
+  ],
+  "similar_questions": [
+    {
+      "title": "Merge k Sorted Lists",
+      "slug": "merge-k-sorted-lists",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/merge-k-sorted-lists/"
+    },
+    {
+      "title": "Merge Sorted Array",
+      "slug": "merge-sorted-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/merge-sorted-array/"
+    },
+    {
+      "title": "Sort List",
+      "slug": "sort-list",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sort-list/"
+    },
+    {
+      "title": "Shortest Word Distance II",
+      "slug": "shortest-word-distance-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/shortest-word-distance-ii/"
+    },
+    {
+      "title": "Add Two Polynomials Represented as Linked Lists",
+      "slug": "add-two-polynomials-represented-as-linked-lists",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/add-two-polynomials-represented-as-linked-lists/"
+    },
+    {
+      "title": "Longest Common Subsequence Between Sorted Arrays",
+      "slug": "longest-common-subsequence-between-sorted-arrays",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-common-subsequence-between-sorted-arrays/"
+    },
+    {
+      "title": "Merge Two 2D Arrays by Summing Values",
+      "slug": "merge-two-2d-arrays-by-summing-values",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/"
+    }
+  ]
+}

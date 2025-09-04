@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "2489",
+  "name": "Number of Substrings With Fixed Ratio",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/number-of-substrings-with-fixed-ratio/",
+  "slug": "number-of-substrings-with-fixed-ratio",
+  "isPaidOnly": true,
+  "tags": [
+    "Hash Table",
+    "Math",
+    "String",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Binary Substrings",
+      "slug": "count-binary-substrings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-binary-substrings/"
+    }
+  ]
+}

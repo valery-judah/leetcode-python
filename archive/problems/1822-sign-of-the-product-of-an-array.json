@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "1822",
+  "name": "Sign of the Product of an Array",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/sign-of-the-product-of-an-array/",
+  "slug": "sign-of-the-product-of-an-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "1057",
+  "name": "Campus Bikes",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/campus-bikes/",
+  "slug": "campus-bikes",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "similar_questions": [
+    {
+      "title": "Campus Bikes II",
+      "slug": "campus-bikes-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/campus-bikes-ii/"
+    }
+  ]
+}

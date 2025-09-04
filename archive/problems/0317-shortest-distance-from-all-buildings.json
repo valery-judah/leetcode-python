@@ -1,0 +1,34 @@
+{
+  "category": "",
+  "id": "317",
+  "name": "Shortest Distance from All Buildings",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/shortest-distance-from-all-buildings/",
+  "slug": "shortest-distance-from-all-buildings",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Walls and Gates",
+      "slug": "walls-and-gates",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/walls-and-gates/"
+    },
+    {
+      "title": "Best Meeting Point",
+      "slug": "best-meeting-point",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/best-meeting-point/"
+    },
+    {
+      "title": "As Far from Land as Possible",
+      "slug": "as-far-from-land-as-possible",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/as-far-from-land-as-possible/"
+    }
+  ]
+}

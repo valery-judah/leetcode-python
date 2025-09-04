@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "1429",
+  "name": "First Unique Number",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/first-unique-number/",
+  "slug": "first-unique-number",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Design",
+    "Queue",
+    "Data Stream"
+  ],
+  "similar_questions": []
+}

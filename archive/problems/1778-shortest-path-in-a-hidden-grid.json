@@ -1,0 +1,30 @@
+{
+  "category": "",
+  "id": "1778",
+  "name": "Shortest Path in a Hidden Grid",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/shortest-path-in-a-hidden-grid/",
+  "slug": "shortest-path-in-a-hidden-grid",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Matrix",
+    "Interactive"
+  ],
+  "similar_questions": [
+    {
+      "title": "Robot Room Cleaner",
+      "slug": "robot-room-cleaner",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/robot-room-cleaner/"
+    },
+    {
+      "title": "Minimum Path Cost in a Hidden Grid",
+      "slug": "minimum-path-cost-in-a-hidden-grid",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-path-cost-in-a-hidden-grid/"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "2656",
+  "name": "Maximum Sum With Exactly K Elements ",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/maximum-sum-with-exactly-k-elements/",
+  "slug": "maximum-sum-with-exactly-k-elements",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "2975",
+  "name": "Maximum Square Area by Removing Fences From a Field",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-square-area-by-removing-fences-from-a-field/",
+  "slug": "maximum-square-area-by-removing-fences-from-a-field",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Enumeration"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximize Area of Square Hole in Grid",
+      "slug": "maximize-area-of-square-hole-in-grid",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximize-area-of-square-hole-in-grid/"
+    }
+  ]
+}

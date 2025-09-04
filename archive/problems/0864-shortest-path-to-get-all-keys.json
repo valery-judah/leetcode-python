@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "864",
+  "name": "Shortest Path to Get All Keys",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/shortest-path-to-get-all-keys/",
+  "slug": "shortest-path-to-get-all-keys",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Bit Manipulation",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "similar_questions": []
+}

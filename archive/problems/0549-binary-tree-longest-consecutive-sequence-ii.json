@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "549",
+  "name": "Binary Tree Longest Consecutive Sequence II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/binary-tree-longest-consecutive-sequence-ii/",
+  "slug": "binary-tree-longest-consecutive-sequence-ii",
+  "isPaidOnly": true,
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Binary Tree Longest Consecutive Sequence",
+      "slug": "binary-tree-longest-consecutive-sequence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/"
+    },
+    {
+      "title": "Check if an Array Is Consecutive",
+      "slug": "check-if-an-array-is-consecutive",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/check-if-an-array-is-consecutive/"
+    }
+  ]
+}

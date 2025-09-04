@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "412",
+  "name": "Fizz Buzz",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/fizz-buzz/",
+  "slug": "fizz-buzz",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "String",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Fizz Buzz Multithreaded",
+      "slug": "fizz-buzz-multithreaded",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/fizz-buzz-multithreaded/"
+    },
+    {
+      "title": "Categorize Box According to Criteria",
+      "slug": "categorize-box-according-to-criteria",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/categorize-box-according-to-criteria/"
+    }
+  ]
+}

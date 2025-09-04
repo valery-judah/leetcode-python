@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "3012",
+  "name": "Minimize Length of Array Using Operations",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimize-length-of-array-using-operations/",
+  "slug": "minimize-length-of-array-using-operations",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Greedy",
+    "Number Theory"
+  ],
+  "similar_questions": []
+}

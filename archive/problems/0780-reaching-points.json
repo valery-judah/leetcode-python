@@ -1,0 +1,32 @@
+{
+  "category": "",
+  "id": "780",
+  "name": "Reaching Points",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/reaching-points/",
+  "slug": "reaching-points",
+  "isPaidOnly": false,
+  "tags": [
+    "Math"
+  ],
+  "similar_questions": [
+    {
+      "title": "Number of Ways to Reach a Position After Exactly k Steps",
+      "slug": "number-of-ways-to-reach-a-position-after-exactly-k-steps",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-ways-to-reach-a-position-after-exactly-k-steps/"
+    },
+    {
+      "title": "Check if Point Is Reachable",
+      "slug": "check-if-point-is-reachable",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/check-if-point-is-reachable/"
+    },
+    {
+      "title": "Determine if a Cell Is Reachable at a Given Time",
+      "slug": "determine-if-a-cell-is-reachable-at-a-given-time",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/determine-if-a-cell-is-reachable-at-a-given-time/"
+    }
+  ]
+}

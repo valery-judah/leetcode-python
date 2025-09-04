@@ -1,0 +1,25 @@
+{
+  "category": "",
+  "id": "3035",
+  "name": "Maximum Palindromes After Operations",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-palindromes-after-operations/",
+  "slug": "maximum-palindromes-after-operations",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Greedy",
+    "Sorting",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Valid Palindrome",
+      "slug": "valid-palindrome",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/valid-palindrome/"
+    }
+  ]
+}

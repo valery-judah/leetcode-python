@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "2938",
+  "name": "Separate Black and White Balls",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/separate-black-and-white-balls/",
+  "slug": "separate-black-and-white-balls",
+  "isPaidOnly": false,
+  "tags": [
+    "Two Pointers",
+    "String",
+    "Greedy"
+  ],
+  "similar_questions": []
+}

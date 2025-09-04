@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "1235",
+  "name": "Maximum Profit in Job Scheduling",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/maximum-profit-in-job-scheduling/",
+  "slug": "maximum-profit-in-job-scheduling",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Earnings From Taxi",
+      "slug": "maximum-earnings-from-taxi",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-earnings-from-taxi/"
+    },
+    {
+      "title": "Two Best Non-Overlapping Events",
+      "slug": "two-best-non-overlapping-events",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/two-best-non-overlapping-events/"
+    }
+  ]
+}

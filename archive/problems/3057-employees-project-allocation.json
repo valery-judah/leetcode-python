@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "3057",
+  "name": "Employees Project Allocation",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/employees-project-allocation/",
+  "slug": "employees-project-allocation",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

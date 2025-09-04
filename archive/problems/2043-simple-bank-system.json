@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "2043",
+  "name": "Simple Bank System",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/simple-bank-system/",
+  "slug": "simple-bank-system",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Design",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Design an ATM Machine",
+      "slug": "design-an-atm-machine",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/design-an-atm-machine/"
+    }
+  ]
+}

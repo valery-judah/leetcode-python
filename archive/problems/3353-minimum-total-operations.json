@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "3353",
+  "name": "Minimum Total Operations",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/minimum-total-operations/",
+  "slug": "minimum-total-operations",
+  "isPaidOnly": true,
+  "tags": [
+    "Array"
+  ],
+  "similar_questions": []
+}

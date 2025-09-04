@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "3056",
+  "name": "Snaps Analysis",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/snaps-analysis/",
+  "slug": "snaps-analysis",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

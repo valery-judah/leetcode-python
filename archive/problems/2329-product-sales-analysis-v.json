@@ -1,0 +1,32 @@
+{
+  "category": "",
+  "id": "2329",
+  "name": "Product Sales Analysis V",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/product-sales-analysis-v/",
+  "slug": "product-sales-analysis-v",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": [
+    {
+      "title": "Product Sales Analysis I",
+      "slug": "product-sales-analysis-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/product-sales-analysis-i/"
+    },
+    {
+      "title": "Product Sales Analysis II",
+      "slug": "product-sales-analysis-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/product-sales-analysis-ii/"
+    },
+    {
+      "title": "Product Sales Analysis III",
+      "slug": "product-sales-analysis-iii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/product-sales-analysis-iii/"
+    }
+  ]
+}

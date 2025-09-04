@@ -1,0 +1,30 @@
+{
+  "category": "",
+  "id": "676",
+  "name": "Implement Magic Dictionary",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/implement-magic-dictionary/",
+  "slug": "implement-magic-dictionary",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Depth-First Search",
+    "Design",
+    "Trie"
+  ],
+  "similar_questions": [
+    {
+      "title": "Implement Trie (Prefix Tree)",
+      "slug": "implement-trie-prefix-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/implement-trie-prefix-tree/"
+    },
+    {
+      "title": "Longest Word in Dictionary",
+      "slug": "longest-word-in-dictionary",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-word-in-dictionary/"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "category": "",
+  "id": "2915",
+  "name": "Length of the Longest Subsequence That Sums to Target",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/length-of-the-longest-subsequence-that-sums-to-target/",
+  "slug": "length-of-the-longest-subsequence-that-sums-to-target",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Coin Change",
+      "slug": "coin-change",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/coin-change/"
+    },
+    {
+      "title": "Coin Change II",
+      "slug": "coin-change-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/coin-change-ii/"
+    },
+    {
+      "title": "Find the Maximum Length of Valid Subsequence I",
+      "slug": "find-the-maximum-length-of-valid-subsequence-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-i/"
+    },
+    {
+      "title": "Find the Maximum Length of Valid Subsequence II",
+      "slug": "find-the-maximum-length-of-valid-subsequence-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-ii/"
+    }
+  ]
+}

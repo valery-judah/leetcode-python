@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "1589",
+  "name": "Maximum Sum Obtained of Any Permutation",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-sum-obtained-of-any-permutation/",
+  "slug": "maximum-sum-obtained-of-any-permutation",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Prefix Sum"
+  ],
+  "similar_questions": []
+}

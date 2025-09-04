@@ -1,0 +1,35 @@
+{
+  "category": "",
+  "id": "2493",
+  "name": "Divide Nodes Into the Maximum Number of Groups",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/divide-nodes-into-the-maximum-number-of-groups/",
+  "slug": "divide-nodes-into-the-maximum-number-of-groups",
+  "isPaidOnly": false,
+  "tags": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union Find",
+    "Graph"
+  ],
+  "similar_questions": [
+    {
+      "title": "Binary Tree Level Order Traversal",
+      "slug": "binary-tree-level-order-traversal",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/binary-tree-level-order-traversal/"
+    },
+    {
+      "title": "Is Graph Bipartite?",
+      "slug": "is-graph-bipartite",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/is-graph-bipartite/"
+    },
+    {
+      "title": "Shortest Cycle in a Graph",
+      "slug": "shortest-cycle-in-a-graph",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/shortest-cycle-in-a-graph/"
+    }
+  ]
+}

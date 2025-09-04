@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "1027",
+  "name": "Longest Arithmetic Subsequence",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/longest-arithmetic-subsequence/",
+  "slug": "longest-arithmetic-subsequence",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Destroy Sequential Targets",
+      "slug": "destroy-sequential-targets",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/destroy-sequential-targets/"
+    }
+  ]
+}

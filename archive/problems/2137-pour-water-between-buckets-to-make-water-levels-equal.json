@@ -1,0 +1,33 @@
+{
+  "category": "",
+  "id": "2137",
+  "name": "Pour Water Between Buckets to Make Water Levels Equal",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/pour-water-between-buckets-to-make-water-levels-equal/",
+  "slug": "pour-water-between-buckets-to-make-water-levels-equal",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Search in Rotated Sorted Array",
+      "slug": "search-in-rotated-sorted-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/search-in-rotated-sorted-array/"
+    },
+    {
+      "title": "Find Peak Element",
+      "slug": "find-peak-element",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-peak-element/"
+    },
+    {
+      "title": "Minimum Moves to Equal Array Elements",
+      "slug": "minimum-moves-to-equal-array-elements",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-moves-to-equal-array-elements/"
+    }
+  ]
+}

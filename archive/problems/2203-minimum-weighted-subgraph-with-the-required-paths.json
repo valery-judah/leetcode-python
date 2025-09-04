@@ -1,0 +1,33 @@
+{
+  "category": "",
+  "id": "2203",
+  "name": "Minimum Weighted Subgraph With the Required Paths",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-weighted-subgraph-with-the-required-paths/",
+  "slug": "minimum-weighted-subgraph-with-the-required-paths",
+  "isPaidOnly": false,
+  "tags": [
+    "Graph",
+    "Shortest Path"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Cost to Make at Least One Valid Path in a Grid",
+      "slug": "minimum-cost-to-make-at-least-one-valid-path-in-a-grid",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid/"
+    },
+    {
+      "title": "Escape the Spreading Fire",
+      "slug": "escape-the-spreading-fire",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/escape-the-spreading-fire/"
+    },
+    {
+      "title": "Disconnect Path in a Binary Matrix by at Most One Flip",
+      "slug": "disconnect-path-in-a-binary-matrix-by-at-most-one-flip",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/disconnect-path-in-a-binary-matrix-by-at-most-one-flip/"
+    }
+  ]
+}

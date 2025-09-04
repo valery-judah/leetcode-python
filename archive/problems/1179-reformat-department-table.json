@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "1179",
+  "name": "Reformat Department Table",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/reformat-department-table/",
+  "slug": "reformat-department-table",
+  "isPaidOnly": false,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

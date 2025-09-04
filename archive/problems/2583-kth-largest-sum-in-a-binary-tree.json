@@ -1,0 +1,35 @@
+{
+  "category": "",
+  "id": "2583",
+  "name": "Kth Largest Sum in a Binary Tree",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/kth-largest-sum-in-a-binary-tree/",
+  "slug": "kth-largest-sum-in-a-binary-tree",
+  "isPaidOnly": false,
+  "tags": [
+    "Tree",
+    "Breadth-First Search",
+    "Sorting",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Binary Tree Preorder Traversal",
+      "slug": "binary-tree-preorder-traversal",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/binary-tree-preorder-traversal/"
+    },
+    {
+      "title": "Maximum Level Sum of a Binary Tree",
+      "slug": "maximum-level-sum-of-a-binary-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/"
+    },
+    {
+      "title": "Find the Level of Tree with Minimum Sum",
+      "slug": "find-the-level-of-tree-with-minimum-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-level-of-tree-with-minimum-sum/"
+    }
+  ]
+}

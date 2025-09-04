@@ -1,0 +1,36 @@
+{
+  "category": "",
+  "id": "212",
+  "name": "Word Search II",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/word-search-ii/",
+  "slug": "word-search-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "String",
+    "Backtracking",
+    "Trie",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Word Search",
+      "slug": "word-search",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/word-search/"
+    },
+    {
+      "title": "Unique Paths III",
+      "slug": "unique-paths-iii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/unique-paths-iii/"
+    },
+    {
+      "title": "Encrypt and Decrypt Strings",
+      "slug": "encrypt-and-decrypt-strings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/encrypt-and-decrypt-strings/"
+    }
+  ]
+}

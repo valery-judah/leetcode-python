@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "1077",
+  "name": "Project Employees III",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/project-employees-iii/",
+  "slug": "project-employees-iii",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": [
+    {
+      "title": "Project Employees II",
+      "slug": "project-employees-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/project-employees-ii/"
+    }
+  ]
+}

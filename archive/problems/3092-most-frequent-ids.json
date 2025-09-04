@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "3092",
+  "name": "Most Frequent IDs",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/most-frequent-ids/",
+  "slug": "most-frequent-ids",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Heap (Priority Queue)",
+    "Ordered Set"
+  ],
+  "similar_questions": []
+}

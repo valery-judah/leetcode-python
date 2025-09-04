@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "1450",
+  "name": "Number of Students Doing Homework at a Given Time",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/number-of-students-doing-homework-at-a-given-time/",
+  "slug": "number-of-students-doing-homework-at-a-given-time",
+  "isPaidOnly": false,
+  "tags": [
+    "Array"
+  ],
+  "similar_questions": []
+}

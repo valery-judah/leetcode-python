@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "717",
+  "name": "1-bit and 2-bit Characters",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/1-bit-and-2-bit-characters/",
+  "slug": "1-bit-and-2-bit-characters",
+  "isPaidOnly": false,
+  "tags": [
+    "Array"
+  ],
+  "similar_questions": [
+    {
+      "title": "Gray Code",
+      "slug": "gray-code",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/gray-code/"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "2540",
+  "name": "Minimum Common Value",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/minimum-common-value/",
+  "slug": "minimum-common-value",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
+    "Binary Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Intersection of Two Arrays",
+      "slug": "intersection-of-two-arrays",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/intersection-of-two-arrays/"
+    },
+    {
+      "title": "Intersection of Two Arrays II",
+      "slug": "intersection-of-two-arrays-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/intersection-of-two-arrays-ii/"
+    }
+  ]
+}

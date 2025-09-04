@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "2565",
+  "name": "Subsequence With the Minimum Score",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/subsequence-with-the-minimum-score/",
+  "slug": "subsequence-with-the-minimum-score",
+  "isPaidOnly": false,
+  "tags": [
+    "Two Pointers",
+    "String",
+    "Binary Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longest Common Subsequence",
+      "slug": "longest-common-subsequence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-common-subsequence/"
+    }
+  ]
+}

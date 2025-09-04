@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "976",
+  "name": "Largest Perimeter Triangle",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/largest-perimeter-triangle/",
+  "slug": "largest-perimeter-triangle",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Largest Triangle Area",
+      "slug": "largest-triangle-area",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/largest-triangle-area/"
+    }
+  ]
+}

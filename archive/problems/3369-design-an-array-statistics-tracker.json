@@ -1,0 +1,19 @@
+{
+  "category": "",
+  "id": "3369",
+  "name": "Design an Array Statistics Tracker ",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/design-an-array-statistics-tracker/",
+  "slug": "design-an-array-statistics-tracker",
+  "isPaidOnly": true,
+  "tags": [
+    "Hash Table",
+    "Binary Search",
+    "Design",
+    "Queue",
+    "Heap (Priority Queue)",
+    "Data Stream",
+    "Ordered Set"
+  ],
+  "similar_questions": []
+}

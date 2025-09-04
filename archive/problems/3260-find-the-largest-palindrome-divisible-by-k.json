@@ -1,0 +1,30 @@
+{
+  "category": "",
+  "id": "3260",
+  "name": "Find the Largest Palindrome Divisible by K",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/",
+  "slug": "find-the-largest-palindrome-divisible-by-k",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "String",
+    "Dynamic Programming",
+    "Greedy",
+    "Number Theory"
+  ],
+  "similar_questions": [
+    {
+      "title": "Palindrome Number",
+      "slug": "palindrome-number",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/palindrome-number/"
+    },
+    {
+      "title": "Find the Closest Palindrome",
+      "slug": "find-the-closest-palindrome",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-closest-palindrome/"
+    }
+  ]
+}

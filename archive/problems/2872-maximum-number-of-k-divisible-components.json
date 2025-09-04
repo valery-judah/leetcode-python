@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "2872",
+  "name": "Maximum Number of K-Divisible Components",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/maximum-number-of-k-divisible-components/",
+  "slug": "maximum-number-of-k-divisible-components",
+  "isPaidOnly": false,
+  "tags": [
+    "Tree",
+    "Depth-First Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Create Components With Same Value",
+      "slug": "create-components-with-same-value",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/create-components-with-same-value/"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "2601",
+  "name": "Prime Subtraction Operation",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/prime-subtraction-operation/",
+  "slug": "prime-subtraction-operation",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Binary Search",
+    "Greedy",
+    "Number Theory"
+  ],
+  "similar_questions": []
+}

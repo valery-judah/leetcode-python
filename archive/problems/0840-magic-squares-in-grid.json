@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "840",
+  "name": "Magic Squares In Grid",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/magic-squares-in-grid/",
+  "slug": "magic-squares-in-grid",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Largest Magic Square",
+      "slug": "largest-magic-square",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/largest-magic-square/"
+    }
+  ]
+}

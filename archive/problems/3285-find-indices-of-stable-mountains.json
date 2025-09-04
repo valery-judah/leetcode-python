@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "3285",
+  "name": "Find Indices of Stable Mountains",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/find-indices-of-stable-mountains/",
+  "slug": "find-indices-of-stable-mountains",
+  "isPaidOnly": false,
+  "tags": [
+    "Array"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find in Mountain Array",
+      "slug": "find-in-mountain-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-in-mountain-array/"
+    }
+  ]
+}

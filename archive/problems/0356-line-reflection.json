@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "356",
+  "name": "Line Reflection",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/line-reflection/",
+  "slug": "line-reflection",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Math"
+  ],
+  "similar_questions": [
+    {
+      "title": "Max Points on a Line",
+      "slug": "max-points-on-a-line",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/max-points-on-a-line/"
+    },
+    {
+      "title": "Number of Boomerangs",
+      "slug": "number-of-boomerangs",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-boomerangs/"
+    }
+  ]
+}

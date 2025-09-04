@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "177",
+  "name": "Nth Highest Salary",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/nth-highest-salary/",
+  "slug": "nth-highest-salary",
+  "isPaidOnly": false,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": [
+    {
+      "title": "The Number of Users That Are Eligible for Discount",
+      "slug": "the-number-of-users-that-are-eligible-for-discount",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/the-number-of-users-that-are-eligible-for-discount/"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "category": "",
+  "id": "1943",
+  "name": "Describe the Painting",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/describe-the-painting/",
+  "slug": "describe-the-painting",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Average Height of Buildings in Each Segment",
+      "slug": "average-height-of-buildings-in-each-segment",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/average-height-of-buildings-in-each-segment/"
+    },
+    {
+      "title": "Amount of New Area Painted Each Day",
+      "slug": "amount-of-new-area-painted-each-day",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/amount-of-new-area-painted-each-day/"
+    },
+    {
+      "title": "Shifting Letters II",
+      "slug": "shifting-letters-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/shifting-letters-ii/"
+    }
+  ]
+}

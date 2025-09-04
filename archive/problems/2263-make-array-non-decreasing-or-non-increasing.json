@@ -1,0 +1,33 @@
+{
+  "category": "",
+  "id": "2263",
+  "name": "Make Array Non-decreasing or Non-increasing",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/make-array-non-decreasing-or-non-increasing/",
+  "slug": "make-array-non-decreasing-or-non-increasing",
+  "isPaidOnly": true,
+  "tags": [
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "similar_questions": [
+    {
+      "title": "Non-decreasing Array",
+      "slug": "non-decreasing-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/non-decreasing-array/"
+    },
+    {
+      "title": "Make Array Strictly Increasing",
+      "slug": "make-array-strictly-increasing",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/make-array-strictly-increasing/"
+    },
+    {
+      "title": "Minimum Operations to Make the Array Increasing",
+      "slug": "minimum-operations-to-make-the-array-increasing",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-operations-to-make-the-array-increasing/"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "903",
+  "name": "Valid Permutations for DI Sequence",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/valid-permutations-for-di-sequence/",
+  "slug": "valid-permutations-for-di-sequence",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "similar_questions": []
+}

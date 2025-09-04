@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "793",
+  "name": "Preimage Size of Factorial Zeroes Function",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function/",
+  "slug": "preimage-size-of-factorial-zeroes-function",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Binary Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Factorial Trailing Zeroes",
+      "slug": "factorial-trailing-zeroes",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/factorial-trailing-zeroes/"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "1134",
+  "name": "Armstrong Number",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/armstrong-number/",
+  "slug": "armstrong-number",
+  "isPaidOnly": true,
+  "tags": [
+    "Math"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "3169",
+  "name": "Count Days Without Meetings",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-days-without-meetings/",
+  "slug": "count-days-without-meetings",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Merge Intervals",
+      "slug": "merge-intervals",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/merge-intervals/"
+    }
+  ]
+}

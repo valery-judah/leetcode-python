@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "1363",
+  "name": "Largest Multiple of Three",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/largest-multiple-of-three/",
+  "slug": "largest-multiple-of-three",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": []
+}

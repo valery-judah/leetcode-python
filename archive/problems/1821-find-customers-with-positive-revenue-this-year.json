@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "1821",
+  "name": "Find Customers With Positive Revenue this Year",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/find-customers-with-positive-revenue-this-year/",
+  "slug": "find-customers-with-positive-revenue-this-year",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "1094",
+  "name": "Car Pooling",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/car-pooling/",
+  "slug": "car-pooling",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Simulation",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Meeting Rooms II",
+      "slug": "meeting-rooms-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/meeting-rooms-ii/"
+    }
+  ]
+}

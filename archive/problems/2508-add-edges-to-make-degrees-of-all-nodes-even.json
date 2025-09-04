@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "2508",
+  "name": "Add Edges to Make Degrees of All Nodes Even",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/add-edges-to-make-degrees-of-all-nodes-even/",
+  "slug": "add-edges-to-make-degrees-of-all-nodes-even",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "Graph"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Degree of a Connected Trio in a Graph",
+      "slug": "minimum-degree-of-a-connected-trio-in-a-graph",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-degree-of-a-connected-trio-in-a-graph/"
+    }
+  ]
+}

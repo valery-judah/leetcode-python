@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "2523",
+  "name": "Closest Prime Numbers in Range",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/closest-prime-numbers-in-range/",
+  "slug": "closest-prime-numbers-in-range",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Number Theory"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Ways to Make Array With Product",
+      "slug": "count-ways-to-make-array-with-product",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-ways-to-make-array-with-product/"
+    }
+  ]
+}

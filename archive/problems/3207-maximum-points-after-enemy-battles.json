@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "3207",
+  "name": "Maximum Points After Enemy Battles",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-points-after-enemy-battles/",
+  "slug": "maximum-points-after-enemy-battles",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "similar_questions": []
+}

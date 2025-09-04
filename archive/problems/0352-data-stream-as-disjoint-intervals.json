@@ -1,0 +1,40 @@
+{
+  "category": "",
+  "id": "352",
+  "name": "Data Stream as Disjoint Intervals",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/data-stream-as-disjoint-intervals/",
+  "slug": "data-stream-as-disjoint-intervals",
+  "isPaidOnly": false,
+  "tags": [
+    "Binary Search",
+    "Design",
+    "Ordered Set"
+  ],
+  "similar_questions": [
+    {
+      "title": "Summary Ranges",
+      "slug": "summary-ranges",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/summary-ranges/"
+    },
+    {
+      "title": "Find Right Interval",
+      "slug": "find-right-interval",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-right-interval/"
+    },
+    {
+      "title": "Range Module",
+      "slug": "range-module",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/range-module/"
+    },
+    {
+      "title": "Count Integers in Intervals",
+      "slug": "count-integers-in-intervals",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-integers-in-intervals/"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "502",
+  "name": "IPO",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/ipo/",
+  "slug": "ipo",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Subsequence Score",
+      "slug": "maximum-subsequence-score",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-subsequence-score/"
+    },
+    {
+      "title": "Maximum Elegance of a K-Length Subsequence",
+      "slug": "maximum-elegance-of-a-k-length-subsequence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-elegance-of-a-k-length-subsequence/"
+    }
+  ]
+}

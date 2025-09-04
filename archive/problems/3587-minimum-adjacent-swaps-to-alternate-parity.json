@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "3587",
+  "name": "Minimum Adjacent Swaps to Alternate Parity",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-adjacent-swaps-to-alternate-parity/",
+  "slug": "minimum-adjacent-swaps-to-alternate-parity",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "similar_questions": []
+}

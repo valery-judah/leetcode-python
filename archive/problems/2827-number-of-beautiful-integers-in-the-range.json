@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "2827",
+  "name": "Number of Beautiful Integers in the Range",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/number-of-beautiful-integers-in-the-range/",
+  "slug": "number-of-beautiful-integers-in-the-range",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Numbers with Non-Decreasing Digits ",
+      "slug": "count-numbers-with-non-decreasing-digits",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-numbers-with-non-decreasing-digits/"
+    }
+  ]
+}

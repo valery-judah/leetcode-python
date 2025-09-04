@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "3091",
+  "name": "Apply Operations to Make Sum of Array Greater Than or Equal to k",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/apply-operations-to-make-sum-of-array-greater-than-or-equal-to-k/",
+  "slug": "apply-operations-to-make-sum-of-array-greater-than-or-equal-to-k",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Greedy",
+    "Enumeration"
+  ],
+  "similar_questions": []
+}

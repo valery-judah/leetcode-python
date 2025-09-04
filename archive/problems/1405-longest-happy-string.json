@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "1405",
+  "name": "Longest Happy String",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/longest-happy-string/",
+  "slug": "longest-happy-string",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Greedy",
+    "Heap (Priority Queue)"
+  ],
+  "similar_questions": [
+    {
+      "title": "Reorganize String",
+      "slug": "reorganize-string",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/reorganize-string/"
+    }
+  ]
+}

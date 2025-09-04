@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "2222",
+  "name": "Number of Ways to Select Buildings",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/number-of-ways-to-select-buildings/",
+  "slug": "number-of-ways-to-select-buildings",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "similar_questions": []
+}

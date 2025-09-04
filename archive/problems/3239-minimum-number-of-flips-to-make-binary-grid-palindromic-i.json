@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "3239",
+  "name": "Minimum Number of Flips to Make Binary Grid Palindromic I",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-number-of-flips-to-make-binary-grid-palindromic-i/",
+  "slug": "minimum-number-of-flips-to-make-binary-grid-palindromic-i",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Number of Moves to Make Palindrome",
+      "slug": "minimum-number-of-moves-to-make-palindrome",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-number-of-moves-to-make-palindrome/"
+    }
+  ]
+}

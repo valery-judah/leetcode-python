@@ -1,0 +1,36 @@
+{
+  "category": "",
+  "id": "720",
+  "name": "Longest Word in Dictionary",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/longest-word-in-dictionary/",
+  "slug": "longest-word-in-dictionary",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Trie",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longest Word in Dictionary through Deleting",
+      "slug": "longest-word-in-dictionary-through-deleting",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/"
+    },
+    {
+      "title": "Implement Magic Dictionary",
+      "slug": "implement-magic-dictionary",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/implement-magic-dictionary/"
+    },
+    {
+      "title": "Longest Word With All Prefixes",
+      "slug": "longest-word-with-all-prefixes",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-word-with-all-prefixes/"
+    }
+  ]
+}

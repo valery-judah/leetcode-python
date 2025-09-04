@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "1479",
+  "name": "Sales by Day of the Week",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/sales-by-day-of-the-week/",
+  "slug": "sales-by-day-of-the-week",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

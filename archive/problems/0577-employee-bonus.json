@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "577",
+  "name": "Employee Bonus",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/employee-bonus/",
+  "slug": "employee-bonus",
+  "isPaidOnly": false,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": [
+    {
+      "title": "Combine Two Tables",
+      "slug": "combine-two-tables",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/combine-two-tables/"
+    }
+  ]
+}

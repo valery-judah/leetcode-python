@@ -1,0 +1,31 @@
+{
+  "category": "",
+  "id": "2251",
+  "name": "Number of Flowers in Full Bloom",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/number-of-flowers-in-full-bloom/",
+  "slug": "number-of-flowers-in-full-bloom",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Sorting",
+    "Prefix Sum",
+    "Ordered Set"
+  ],
+  "similar_questions": [
+    {
+      "title": "Meeting Rooms II",
+      "slug": "meeting-rooms-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/meeting-rooms-ii/"
+    },
+    {
+      "title": "Minimum Interval to Include Each Query",
+      "slug": "minimum-interval-to-include-each-query",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-interval-to-include-each-query/"
+    }
+  ]
+}

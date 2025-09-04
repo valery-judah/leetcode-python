@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "1682",
+  "name": "Longest Palindromic Subsequence II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/longest-palindromic-subsequence-ii/",
+  "slug": "longest-palindromic-subsequence-ii",
+  "isPaidOnly": true,
+  "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longest Palindromic Subsequence",
+      "slug": "longest-palindromic-subsequence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-palindromic-subsequence/"
+    }
+  ]
+}

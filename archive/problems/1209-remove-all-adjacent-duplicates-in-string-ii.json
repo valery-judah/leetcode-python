@@ -1,0 +1,33 @@
+{
+  "category": "",
+  "id": "1209",
+  "name": "Remove All Adjacent Duplicates in String II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/",
+  "slug": "remove-all-adjacent-duplicates-in-string-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Stack"
+  ],
+  "similar_questions": [
+    {
+      "title": "Remove All Adjacent Duplicates In String",
+      "slug": "remove-all-adjacent-duplicates-in-string",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/"
+    },
+    {
+      "title": "Replace Non-Coprime Numbers in Array",
+      "slug": "replace-non-coprime-numbers-in-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/replace-non-coprime-numbers-in-array/"
+    },
+    {
+      "title": "Minimize String Length",
+      "slug": "minimize-string-length",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimize-string-length/"
+    }
+  ]
+}

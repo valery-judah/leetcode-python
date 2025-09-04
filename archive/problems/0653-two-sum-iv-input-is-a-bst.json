@@ -1,0 +1,44 @@
+{
+  "category": "",
+  "id": "653",
+  "name": "Two Sum IV - Input is a BST",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/two-sum-iv-input-is-a-bst/",
+  "slug": "two-sum-iv-input-is-a-bst",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "Two Pointers",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Two Sum",
+      "slug": "two-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/two-sum/"
+    },
+    {
+      "title": "Two Sum II - Input Array Is Sorted",
+      "slug": "two-sum-ii-input-array-is-sorted",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/"
+    },
+    {
+      "title": "Two Sum III - Data structure design",
+      "slug": "two-sum-iii-data-structure-design",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/two-sum-iii-data-structure-design/"
+    },
+    {
+      "title": "Two Sum BSTs",
+      "slug": "two-sum-bsts",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/two-sum-bsts/"
+    }
+  ]
+}

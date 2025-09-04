@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "2007",
+  "name": "Find Original Array From Doubled Array",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-original-array-from-doubled-array/",
+  "slug": "find-original-array-from-doubled-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Array of Doubled Pairs",
+      "slug": "array-of-doubled-pairs",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/array-of-doubled-pairs/"
+    },
+    {
+      "title": "Recover the Original Array",
+      "slug": "recover-the-original-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/recover-the-original-array/"
+    }
+  ]
+}

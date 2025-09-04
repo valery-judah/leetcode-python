@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "1358",
+  "name": "Number of Substrings Containing All Three Characters",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/",
+  "slug": "number-of-substrings-containing-all-three-characters",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Sliding Window"
+  ],
+  "similar_questions": [
+    {
+      "title": "Vowels of All Substrings",
+      "slug": "vowels-of-all-substrings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/vowels-of-all-substrings/"
+    },
+    {
+      "title": "Count Complete Substrings",
+      "slug": "count-complete-substrings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-complete-substrings/"
+    }
+  ]
+}

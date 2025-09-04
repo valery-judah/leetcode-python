@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "2808",
+  "name": "Minimum Seconds to Equalize a Circular Array",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-seconds-to-equalize-a-circular-array/",
+  "slug": "minimum-seconds-to-equalize-a-circular-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "similar_questions": []
+}

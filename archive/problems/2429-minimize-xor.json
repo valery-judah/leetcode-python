@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "2429",
+  "name": "Minimize XOR",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimize-xor/",
+  "slug": "minimize-xor",
+  "isPaidOnly": false,
+  "tags": [
+    "Greedy",
+    "Bit Manipulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum XOR of Two Numbers in an Array",
+      "slug": "maximum-xor-of-two-numbers-in-an-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/"
+    },
+    {
+      "title": "Maximum XOR With an Element From Array",
+      "slug": "maximum-xor-with-an-element-from-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-xor-with-an-element-from-array/"
+    }
+  ]
+}

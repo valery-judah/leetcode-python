@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "37",
+  "name": "Sudoku Solver",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/sudoku-solver/",
+  "slug": "sudoku-solver",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Backtracking",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Valid Sudoku",
+      "slug": "valid-sudoku",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/valid-sudoku/"
+    },
+    {
+      "title": "Unique Paths III",
+      "slug": "unique-paths-iii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/unique-paths-iii/"
+    }
+  ]
+}

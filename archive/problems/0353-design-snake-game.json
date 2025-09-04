@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "353",
+  "name": "Design Snake Game",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/design-snake-game/",
+  "slug": "design-snake-game",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Design",
+    "Queue",
+    "Simulation"
+  ],
+  "similar_questions": []
+}

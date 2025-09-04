@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "933",
+  "name": "Number of Recent Calls",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/number-of-recent-calls/",
+  "slug": "number-of-recent-calls",
+  "isPaidOnly": false,
+  "tags": [
+    "Design",
+    "Queue",
+    "Data Stream"
+  ],
+  "similar_questions": []
+}

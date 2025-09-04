@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "3371",
+  "name": "Identify the Largest Outlier in an Array",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/identify-the-largest-outlier-in-an-array/",
+  "slug": "identify-the-largest-outlier-in-an-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Counting",
+    "Enumeration"
+  ],
+  "similar_questions": []
+}

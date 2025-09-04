@@ -1,0 +1,38 @@
+{
+  "category": "",
+  "id": "449",
+  "name": "Serialize and Deserialize BST",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/serialize-and-deserialize-bst/",
+  "slug": "serialize-and-deserialize-bst",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Design",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Serialize and Deserialize Binary Tree",
+      "slug": "serialize-and-deserialize-binary-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/"
+    },
+    {
+      "title": "Find Duplicate Subtrees",
+      "slug": "find-duplicate-subtrees",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-duplicate-subtrees/"
+    },
+    {
+      "title": "Serialize and Deserialize N-ary Tree",
+      "slug": "serialize-and-deserialize-n-ary-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/serialize-and-deserialize-n-ary-tree/"
+    }
+  ]
+}

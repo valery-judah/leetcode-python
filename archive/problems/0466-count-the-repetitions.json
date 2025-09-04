@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "466",
+  "name": "Count The Repetitions",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/count-the-repetitions/",
+  "slug": "count-the-repetitions",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "similar_questions": []
+}

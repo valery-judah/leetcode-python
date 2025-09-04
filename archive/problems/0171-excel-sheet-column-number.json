@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "171",
+  "name": "Excel Sheet Column Number",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/excel-sheet-column-number/",
+  "slug": "excel-sheet-column-number",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Excel Sheet Column Title",
+      "slug": "excel-sheet-column-title",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/excel-sheet-column-title/"
+    },
+    {
+      "title": "Cells in a Range on an Excel Sheet",
+      "slug": "cells-in-a-range-on-an-excel-sheet",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet/"
+    }
+  ]
+}

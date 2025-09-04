@@ -1,0 +1,45 @@
+{
+  "category": "",
+  "id": "668",
+  "name": "Kth Smallest Number in Multiplication Table",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/",
+  "slug": "kth-smallest-number-in-multiplication-table",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Binary Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Kth Smallest Element in a Sorted Matrix",
+      "slug": "kth-smallest-element-in-a-sorted-matrix",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/"
+    },
+    {
+      "title": "Find K-th Smallest Pair Distance",
+      "slug": "find-k-th-smallest-pair-distance",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-k-th-smallest-pair-distance/"
+    },
+    {
+      "title": "K-th Smallest Prime Fraction",
+      "slug": "k-th-smallest-prime-fraction",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/k-th-smallest-prime-fraction/"
+    },
+    {
+      "title": "Minimum Time to Eat All Grains",
+      "slug": "minimum-time-to-eat-all-grains",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-time-to-eat-all-grains/"
+    },
+    {
+      "title": "Kth Smallest Amount With Single Denomination Combination",
+      "slug": "kth-smallest-amount-with-single-denomination-combination",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/kth-smallest-amount-with-single-denomination-combination/"
+    }
+  ]
+}

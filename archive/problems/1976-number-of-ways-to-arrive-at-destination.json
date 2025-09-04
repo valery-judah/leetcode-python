@@ -1,0 +1,35 @@
+{
+  "category": "",
+  "id": "1976",
+  "name": "Number of Ways to Arrive at Destination",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/",
+  "slug": "number-of-ways-to-arrive-at-destination",
+  "isPaidOnly": false,
+  "tags": [
+    "Dynamic Programming",
+    "Graph",
+    "Topological Sort",
+    "Shortest Path"
+  ],
+  "similar_questions": [
+    {
+      "title": "All Paths From Source to Target",
+      "slug": "all-paths-from-source-to-target",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/all-paths-from-source-to-target/"
+    },
+    {
+      "title": "Path with Maximum Probability",
+      "slug": "path-with-maximum-probability",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/path-with-maximum-probability/"
+    },
+    {
+      "title": "Second Minimum Time to Reach Destination",
+      "slug": "second-minimum-time-to-reach-destination",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/second-minimum-time-to-reach-destination/"
+    }
+  ]
+}

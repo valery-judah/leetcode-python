@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "1954",
+  "name": "Minimum Garden Perimeter to Collect Enough Apples",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-garden-perimeter-to-collect-enough-apples/",
+  "slug": "minimum-garden-perimeter-to-collect-enough-apples",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Binary Search"
+  ],
+  "similar_questions": []
+}

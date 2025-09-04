@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "1207",
+  "name": "Unique Number of Occurrences",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/unique-number-of-occurrences/",
+  "slug": "unique-number-of-occurrences",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "similar_questions": []
+}

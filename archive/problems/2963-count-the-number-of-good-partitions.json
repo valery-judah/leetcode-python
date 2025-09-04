@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "2963",
+  "name": "Count the Number of Good Partitions",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/count-the-number-of-good-partitions/",
+  "slug": "count-the-number-of-good-partitions",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Combinatorics"
+  ],
+  "similar_questions": [
+    {
+      "title": "Check if There is a Valid Partition For The Array",
+      "slug": "check-if-there-is-a-valid-partition-for-the-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/check-if-there-is-a-valid-partition-for-the-array/"
+    }
+  ]
+}

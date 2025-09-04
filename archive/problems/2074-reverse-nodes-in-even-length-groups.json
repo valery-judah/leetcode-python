@@ -1,0 +1,26 @@
+{
+  "category": "",
+  "id": "2074",
+  "name": "Reverse Nodes in Even Length Groups",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/reverse-nodes-in-even-length-groups/",
+  "slug": "reverse-nodes-in-even-length-groups",
+  "isPaidOnly": false,
+  "tags": [
+    "Linked List"
+  ],
+  "similar_questions": [
+    {
+      "title": "Reverse Nodes in k-Group",
+      "slug": "reverse-nodes-in-k-group",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/reverse-nodes-in-k-group/"
+    },
+    {
+      "title": "Reverse Linked List",
+      "slug": "reverse-linked-list",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/reverse-linked-list/"
+    }
+  ]
+}

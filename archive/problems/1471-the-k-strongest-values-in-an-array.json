@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1471",
+  "name": "The k Strongest Values in an Array",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/the-k-strongest-values-in-an-array/",
+  "slug": "the-k-strongest-values-in-an-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Sorting"
+  ],
+  "similar_questions": []
+}

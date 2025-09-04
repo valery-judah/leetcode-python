@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "1481",
+  "name": "Least Number of Unique Integers after K Removals",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals/",
+  "slug": "least-number-of-unique-integers-after-k-removals",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Sorting",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Number of Distinct Elements After Operations",
+      "slug": "maximum-number-of-distinct-elements-after-operations",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-number-of-distinct-elements-after-operations/"
+    }
+  ]
+}

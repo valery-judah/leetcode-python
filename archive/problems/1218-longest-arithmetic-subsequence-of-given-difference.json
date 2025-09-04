@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "1218",
+  "name": "Longest Arithmetic Subsequence of Given Difference",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/",
+  "slug": "longest-arithmetic-subsequence-of-given-difference",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Destroy Sequential Targets",
+      "slug": "destroy-sequential-targets",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/destroy-sequential-targets/"
+    }
+  ]
+}

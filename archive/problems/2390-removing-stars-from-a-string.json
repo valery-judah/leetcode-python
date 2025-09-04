@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "2390",
+  "name": "Removing Stars From a String",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/removing-stars-from-a-string/",
+  "slug": "removing-stars-from-a-string",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Stack",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Backspace String Compare",
+      "slug": "backspace-string-compare",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/backspace-string-compare/"
+    },
+    {
+      "title": "Remove All Adjacent Duplicates In String",
+      "slug": "remove-all-adjacent-duplicates-in-string",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/"
+    }
+  ]
+}

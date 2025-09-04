@@ -1,0 +1,25 @@
+{
+  "category": "",
+  "id": "1908",
+  "name": "Game of Nim",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/game-of-nim/",
+  "slug": "game-of-nim",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Brainteaser",
+    "Game Theory"
+  ],
+  "similar_questions": [
+    {
+      "title": "Subtree Removal Game with Fibonacci Tree",
+      "slug": "subtree-removal-game-with-fibonacci-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/subtree-removal-game-with-fibonacci-tree/"
+    }
+  ]
+}

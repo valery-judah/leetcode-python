@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "1758",
+  "name": "Minimum Changes To Make Alternating Binary String",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/",
+  "slug": "minimum-changes-to-make-alternating-binary-string",
+  "isPaidOnly": false,
+  "tags": [
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Remove Adjacent Almost-Equal Characters",
+      "slug": "remove-adjacent-almost-equal-characters",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/remove-adjacent-almost-equal-characters/"
+    }
+  ]
+}

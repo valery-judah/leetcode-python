@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1326",
+  "name": "Minimum Number of Taps to Open to Water a Garden",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/",
+  "slug": "minimum-number-of-taps-to-open-to-water-a-garden",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "similar_questions": []
+}

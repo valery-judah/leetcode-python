@@ -1,0 +1,32 @@
+{
+  "category": "",
+  "id": "2368",
+  "name": "Reachable Nodes With Restrictions",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/reachable-nodes-with-restrictions/",
+  "slug": "reachable-nodes-with-restrictions",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union Find",
+    "Graph"
+  ],
+  "similar_questions": [
+    {
+      "title": "Open the Lock",
+      "slug": "open-the-lock",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/open-the-lock/"
+    },
+    {
+      "title": "Minimum Jumps to Reach Home",
+      "slug": "minimum-jumps-to-reach-home",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-jumps-to-reach-home/"
+    }
+  ]
+}

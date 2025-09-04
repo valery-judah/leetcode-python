@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "2728",
+  "name": "Count Houses in a Circular Street",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/count-houses-in-a-circular-street/",
+  "slug": "count-houses-in-a-circular-street",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Interactive"
+  ],
+  "similar_questions": []
+}

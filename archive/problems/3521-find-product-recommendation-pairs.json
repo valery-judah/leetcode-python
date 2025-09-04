@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "3521",
+  "name": "Find Product Recommendation Pairs",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-product-recommendation-pairs/",
+  "slug": "find-product-recommendation-pairs",
+  "isPaidOnly": false,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

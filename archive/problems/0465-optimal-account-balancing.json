@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "465",
+  "name": "Optimal Account Balancing",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/optimal-account-balancing/",
+  "slug": "optimal-account-balancing",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Backtracking",
+    "Bit Manipulation",
+    "Bitmask"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,33 @@
+{
+  "category": "",
+  "id": "446",
+  "name": "Arithmetic Slices II - Subsequence",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/arithmetic-slices-ii-subsequence/",
+  "slug": "arithmetic-slices-ii-subsequence",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Arithmetic Slices",
+      "slug": "arithmetic-slices",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/arithmetic-slices/"
+    },
+    {
+      "title": "Destroy Sequential Targets",
+      "slug": "destroy-sequential-targets",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/destroy-sequential-targets/"
+    },
+    {
+      "title": "Count Palindromic Subsequences",
+      "slug": "count-palindromic-subsequences",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-palindromic-subsequences/"
+    }
+  ]
+}

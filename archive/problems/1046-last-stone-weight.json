@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "1046",
+  "name": "Last Stone Weight",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/last-stone-weight/",
+  "slug": "last-stone-weight",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Heap (Priority Queue)"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "2097",
+  "name": "Valid Arrangement of Pairs",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/valid-arrangement-of-pairs/",
+  "slug": "valid-arrangement-of-pairs",
+  "isPaidOnly": false,
+  "tags": [
+    "Depth-First Search",
+    "Graph",
+    "Eulerian Circuit"
+  ],
+  "similar_questions": [
+    {
+      "title": "Reconstruct Itinerary",
+      "slug": "reconstruct-itinerary",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/reconstruct-itinerary/"
+    },
+    {
+      "title": "Find if Path Exists in Graph",
+      "slug": "find-if-path-exists-in-graph",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-if-path-exists-in-graph/"
+    }
+  ]
+}

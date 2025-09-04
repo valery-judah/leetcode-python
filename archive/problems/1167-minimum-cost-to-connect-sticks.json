@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "1167",
+  "name": "Minimum Cost to Connect Sticks",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-cost-to-connect-sticks/",
+  "slug": "minimum-cost-to-connect-sticks",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Heap (Priority Queue)"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Cost to Merge Stones",
+      "slug": "minimum-cost-to-merge-stones",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-cost-to-merge-stones/"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "3506",
+  "name": "Find Time Required to Eliminate Bacterial Strains",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/find-time-required-to-eliminate-bacterial-strains/",
+  "slug": "find-time-required-to-eliminate-bacterial-strains",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Math",
+    "Greedy",
+    "Heap (Priority Queue)"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Time to Build Blocks",
+      "slug": "minimum-time-to-build-blocks",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-time-to-build-blocks/"
+    }
+  ]
+}

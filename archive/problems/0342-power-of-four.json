@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "342",
+  "name": "Power of Four",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/power-of-four/",
+  "slug": "power-of-four",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Bit Manipulation",
+    "Recursion"
+  ],
+  "similar_questions": [
+    {
+      "title": "Power of Two",
+      "slug": "power-of-two",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/power-of-two/"
+    },
+    {
+      "title": "Power of Three",
+      "slug": "power-of-three",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/power-of-three/"
+    }
+  ]
+}

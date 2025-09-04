@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "2841",
+  "name": "Maximum Sum of Almost Unique Subarray",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-sum-of-almost-unique-subarray/",
+  "slug": "maximum-sum-of-almost-unique-subarray",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "603",
+  "name": "Consecutive Available Seats",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/consecutive-available-seats/",
+  "slug": "consecutive-available-seats",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

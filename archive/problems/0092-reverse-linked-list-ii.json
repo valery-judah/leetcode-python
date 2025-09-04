@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "92",
+  "name": "Reverse Linked List II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/reverse-linked-list-ii/",
+  "slug": "reverse-linked-list-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Linked List"
+  ],
+  "similar_questions": [
+    {
+      "title": "Reverse Linked List",
+      "slug": "reverse-linked-list",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/reverse-linked-list/"
+    }
+  ]
+}

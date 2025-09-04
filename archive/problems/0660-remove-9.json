@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "660",
+  "name": "Remove 9",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/remove-9/",
+  "slug": "remove-9",
+  "isPaidOnly": true,
+  "tags": [
+    "Math"
+  ],
+  "similar_questions": []
+}

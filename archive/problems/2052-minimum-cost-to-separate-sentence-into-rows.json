@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "2052",
+  "name": "Minimum Cost to Separate Sentence Into Rows",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-cost-to-separate-sentence-into-rows/",
+  "slug": "minimum-cost-to-separate-sentence-into-rows",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Sentence Screen Fitting",
+      "slug": "sentence-screen-fitting",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sentence-screen-fitting/"
+    }
+  ]
+}

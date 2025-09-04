@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "193",
+  "name": "Valid Phone Numbers",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/valid-phone-numbers/",
+  "slug": "valid-phone-numbers",
+  "isPaidOnly": false,
+  "tags": [
+    "Shell"
+  ],
+  "similar_questions": []
+}

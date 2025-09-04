@@ -1,0 +1,30 @@
+{
+  "category": "",
+  "id": "1574",
+  "name": "Shortest Subarray to be Removed to Make Array Sorted",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/",
+  "slug": "shortest-subarray-to-be-removed-to-make-array-sorted",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Stack",
+    "Monotonic Stack"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count the Number of Incremovable Subarrays II",
+      "slug": "count-the-number-of-incremovable-subarrays-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-ii/"
+    },
+    {
+      "title": "Count the Number of Incremovable Subarrays I",
+      "slug": "count-the-number-of-incremovable-subarrays-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-i/"
+    }
+  ]
+}

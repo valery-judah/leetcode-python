@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "1552",
+  "name": "Magnetic Force Between Two Balls",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/magnetic-force-between-two-balls/",
+  "slug": "magnetic-force-between-two-balls",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimized Maximum of Products Distributed to Any Store",
+      "slug": "minimized-maximum-of-products-distributed-to-any-store",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimized-maximum-of-products-distributed-to-any-store/"
+    }
+  ]
+}

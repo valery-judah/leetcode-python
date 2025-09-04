@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "598",
+  "name": "Range Addition II",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/range-addition-ii/",
+  "slug": "range-addition-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math"
+  ],
+  "similar_questions": [
+    {
+      "title": "Range Addition",
+      "slug": "range-addition",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/range-addition/"
+    },
+    {
+      "title": "Sum of Matrix After Queries",
+      "slug": "sum-of-matrix-after-queries",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sum-of-matrix-after-queries/"
+    }
+  ]
+}

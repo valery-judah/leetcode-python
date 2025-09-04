@@ -1,0 +1,45 @@
+{
+  "category": "",
+  "id": "2413",
+  "name": "Smallest Even Multiple",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/smallest-even-multiple/",
+  "slug": "smallest-even-multiple",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Number Theory"
+  ],
+  "similar_questions": [
+    {
+      "title": "Greatest Common Divisor of Strings",
+      "slug": "greatest-common-divisor-of-strings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/greatest-common-divisor-of-strings/"
+    },
+    {
+      "title": "Three Divisors",
+      "slug": "three-divisors",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/three-divisors/"
+    },
+    {
+      "title": "Find Greatest Common Divisor of Array",
+      "slug": "find-greatest-common-divisor-of-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-greatest-common-divisor-of-array/"
+    },
+    {
+      "title": "Convert the Temperature",
+      "slug": "convert-the-temperature",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/convert-the-temperature/"
+    },
+    {
+      "title": "Minimum Cuts to Divide a Circle",
+      "slug": "minimum-cuts-to-divide-a-circle",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-cuts-to-divide-a-circle/"
+    }
+  ]
+}

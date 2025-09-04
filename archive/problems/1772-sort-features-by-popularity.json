@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "1772",
+  "name": "Sort Features by Popularity",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/sort-features-by-popularity/",
+  "slug": "sort-features-by-popularity",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Top K Frequent Elements",
+      "slug": "top-k-frequent-elements",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/top-k-frequent-elements/"
+    },
+    {
+      "title": "Top K Frequent Words",
+      "slug": "top-k-frequent-words",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/top-k-frequent-words/"
+    }
+  ]
+}

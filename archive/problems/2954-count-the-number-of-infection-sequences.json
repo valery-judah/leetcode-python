@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "2954",
+  "name": "Count the Number of Infection Sequences",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/count-the-number-of-infection-sequences/",
+  "slug": "count-the-number-of-infection-sequences",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Combinatorics"
+  ],
+  "similar_questions": [
+    {
+      "title": "Contain Virus",
+      "slug": "contain-virus",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/contain-virus/"
+    },
+    {
+      "title": "Amount of Time for Binary Tree to Be Infected",
+      "slug": "amount-of-time-for-binary-tree-to-be-infected",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "category": "",
+  "id": "2414",
+  "name": "Length of the Longest Alphabetical Continuous Substring",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/length-of-the-longest-alphabetical-continuous-substring/",
+  "slug": "length-of-the-longest-alphabetical-continuous-substring",
+  "isPaidOnly": false,
+  "tags": [
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longest Consecutive Sequence",
+      "slug": "longest-consecutive-sequence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-consecutive-sequence/"
+    },
+    {
+      "title": "Arithmetic Slices",
+      "slug": "arithmetic-slices",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/arithmetic-slices/"
+    },
+    {
+      "title": "Max Consecutive Ones",
+      "slug": "max-consecutive-ones",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/max-consecutive-ones/"
+    },
+    {
+      "title": "Maximum Number of Vowels in a Substring of Given Length",
+      "slug": "maximum-number-of-vowels-in-a-substring-of-given-length",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/"
+    },
+    {
+      "title": "Number of Zero-Filled Subarrays",
+      "slug": "number-of-zero-filled-subarrays",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-zero-filled-subarrays/"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "category": "",
+  "id": "975",
+  "name": "Odd Even Jump",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/odd-even-jump/",
+  "slug": "odd-even-jump",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Stack",
+    "Sorting",
+    "Monotonic Stack",
+    "Ordered Set"
+  ],
+  "similar_questions": []
+}

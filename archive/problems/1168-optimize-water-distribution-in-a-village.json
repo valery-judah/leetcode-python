@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "1168",
+  "name": "Optimize Water Distribution in a Village",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/optimize-water-distribution-in-a-village/",
+  "slug": "optimize-water-distribution-in-a-village",
+  "isPaidOnly": true,
+  "tags": [
+    "Union Find",
+    "Graph",
+    "Heap (Priority Queue)",
+    "Minimum Spanning Tree"
+  ],
+  "similar_questions": []
+}

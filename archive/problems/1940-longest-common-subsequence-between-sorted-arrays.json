@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "1940",
+  "name": "Longest Common Subsequence Between Sorted Arrays",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/longest-common-subsequence-between-sorted-arrays/",
+  "slug": "longest-common-subsequence-between-sorted-arrays",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Merge Two Sorted Lists",
+      "slug": "merge-two-sorted-lists",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/merge-two-sorted-lists/"
+    }
+  ]
+}

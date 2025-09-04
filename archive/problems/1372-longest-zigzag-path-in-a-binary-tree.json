@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "1372",
+  "name": "Longest ZigZag Path in a Binary Tree",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/",
+  "slug": "longest-zigzag-path-in-a-binary-tree",
+  "isPaidOnly": false,
+  "tags": [
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Zigzag Grid Traversal With Skip",
+      "slug": "zigzag-grid-traversal-with-skip",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/zigzag-grid-traversal-with-skip/"
+    }
+  ]
+}

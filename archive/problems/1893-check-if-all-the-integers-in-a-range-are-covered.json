@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "1893",
+  "name": "Check if All the Integers in a Range Are Covered",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered/",
+  "slug": "check-if-all-the-integers-in-a-range-are-covered",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find Maximal Uncovered Ranges",
+      "slug": "find-maximal-uncovered-ranges",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-maximal-uncovered-ranges/"
+    }
+  ]
+}

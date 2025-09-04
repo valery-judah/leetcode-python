@@ -1,0 +1,69 @@
+{
+  "category": "",
+  "id": "41",
+  "name": "First Missing Positive",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/first-missing-positive/",
+  "slug": "first-missing-positive",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "similar_questions": [
+    {
+      "title": "Missing Number",
+      "slug": "missing-number",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/missing-number/"
+    },
+    {
+      "title": "Find the Duplicate Number",
+      "slug": "find-the-duplicate-number",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-duplicate-number/"
+    },
+    {
+      "title": "Find All Numbers Disappeared in an Array",
+      "slug": "find-all-numbers-disappeared-in-an-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/"
+    },
+    {
+      "title": "Couples Holding Hands",
+      "slug": "couples-holding-hands",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/couples-holding-hands/"
+    },
+    {
+      "title": "Smallest Number in Infinite Set",
+      "slug": "smallest-number-in-infinite-set",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/smallest-number-in-infinite-set/"
+    },
+    {
+      "title": "Maximum Number of Integers to Choose From a Range I",
+      "slug": "maximum-number-of-integers-to-choose-from-a-range-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-number-of-integers-to-choose-from-a-range-i/"
+    },
+    {
+      "title": "Smallest Missing Non-negative Integer After Operations",
+      "slug": "smallest-missing-non-negative-integer-after-operations",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/smallest-missing-non-negative-integer-after-operations/"
+    },
+    {
+      "title": "Maximum Number of Integers to Choose From a Range II",
+      "slug": "maximum-number-of-integers-to-choose-from-a-range-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-number-of-integers-to-choose-from-a-range-ii/"
+    },
+    {
+      "title": "Smallest Missing Integer Greater Than Sequential Prefix Sum",
+      "slug": "smallest-missing-integer-greater-than-sequential-prefix-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/"
+    }
+  ]
+}

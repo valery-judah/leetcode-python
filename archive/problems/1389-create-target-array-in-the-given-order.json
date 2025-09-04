@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "1389",
+  "name": "Create Target Array in the Given Order",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/create-target-array-in-the-given-order/",
+  "slug": "create-target-array-in-the-given-order",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "similar_questions": []
+}

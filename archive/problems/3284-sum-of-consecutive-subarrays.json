@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "3284",
+  "name": "Sum of Consecutive Subarrays",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/sum-of-consecutive-subarrays/",
+  "slug": "sum-of-consecutive-subarrays",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Dynamic Programming"
+  ],
+  "similar_questions": []
+}

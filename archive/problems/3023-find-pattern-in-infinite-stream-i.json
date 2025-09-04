@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "3023",
+  "name": "Find Pattern in Infinite Stream I",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-pattern-in-infinite-stream-i/",
+  "slug": "find-pattern-in-infinite-stream-i",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Sliding Window",
+    "Rolling Hash",
+    "String Matching",
+    "Hash Function"
+  ],
+  "similar_questions": []
+}

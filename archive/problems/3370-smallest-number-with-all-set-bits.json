@@ -1,0 +1,33 @@
+{
+  "category": "",
+  "id": "3370",
+  "name": "Smallest Number With All Set Bits",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/smallest-number-with-all-set-bits/",
+  "slug": "smallest-number-with-all-set-bits",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Bit Manipulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Number of K Consecutive Bit Flips",
+      "slug": "minimum-number-of-k-consecutive-bit-flips",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/"
+    },
+    {
+      "title": "Minimum Bit Flips to Convert Number",
+      "slug": "minimum-bit-flips-to-convert-number",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-bit-flips-to-convert-number/"
+    },
+    {
+      "title": "Find Sum of Array Product of Magical Sequences",
+      "slug": "find-sum-of-array-product-of-magical-sequences",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-sum-of-array-product-of-magical-sequences/"
+    }
+  ]
+}

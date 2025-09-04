@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "2930",
+  "name": "Number of Strings Which Can Be Rearranged to Contain Substring",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/number-of-strings-which-can-be-rearranged-to-contain-substring/",
+  "slug": "number-of-strings-which-can-be-rearranged-to-contain-substring",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Combinatorics"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Vowels Permutation",
+      "slug": "count-vowels-permutation",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-vowels-permutation/"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "1187",
+  "name": "Make Array Strictly Increasing",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/make-array-strictly-increasing/",
+  "slug": "make-array-strictly-increasing",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Make Array Non-decreasing or Non-increasing",
+      "slug": "make-array-non-decreasing-or-non-increasing",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/make-array-non-decreasing-or-non-increasing/"
+    }
+  ]
+}

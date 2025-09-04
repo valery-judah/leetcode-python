@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "842",
+  "name": "Split Array into Fibonacci Sequence",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/split-array-into-fibonacci-sequence/",
+  "slug": "split-array-into-fibonacci-sequence",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Backtracking"
+  ],
+  "similar_questions": [
+    {
+      "title": "Additive Number",
+      "slug": "additive-number",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/additive-number/"
+    },
+    {
+      "title": "Fibonacci Number",
+      "slug": "fibonacci-number",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/fibonacci-number/"
+    }
+  ]
+}

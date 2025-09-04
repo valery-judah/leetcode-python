@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "2899",
+  "name": "Last Visited Integers",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/last-visited-integers/",
+  "slug": "last-visited-integers",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "similar_questions": []
+}

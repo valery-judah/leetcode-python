@@ -1,0 +1,26 @@
+{
+  "category": "",
+  "id": "1909",
+  "name": "Remove One Element to Make the Array Strictly Increasing",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/remove-one-element-to-make-the-array-strictly-increasing/",
+  "slug": "remove-one-element-to-make-the-array-strictly-increasing",
+  "isPaidOnly": false,
+  "tags": [
+    "Array"
+  ],
+  "similar_questions": [
+    {
+      "title": "Steps to Make Array Non-decreasing",
+      "slug": "steps-to-make-array-non-decreasing",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/steps-to-make-array-non-decreasing/"
+    },
+    {
+      "title": "Find the Maximum Factor Score of Array",
+      "slug": "find-the-maximum-factor-score-of-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-maximum-factor-score-of-array/"
+    }
+  ]
+}

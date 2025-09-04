@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "3205",
+  "name": "Maximum Array Hopping Score I",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-array-hopping-score-i/",
+  "slug": "maximum-array-hopping-score-i",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Stack",
+    "Greedy",
+    "Monotonic Stack"
+  ],
+  "similar_questions": []
+}

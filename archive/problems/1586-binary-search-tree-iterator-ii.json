@@ -1,0 +1,25 @@
+{
+  "category": "",
+  "id": "1586",
+  "name": "Binary Search Tree Iterator II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/binary-search-tree-iterator-ii/",
+  "slug": "binary-search-tree-iterator-ii",
+  "isPaidOnly": true,
+  "tags": [
+    "Stack",
+    "Tree",
+    "Design",
+    "Binary Search Tree",
+    "Binary Tree",
+    "Iterator"
+  ],
+  "similar_questions": [
+    {
+      "title": "Binary Search Tree Iterator",
+      "slug": "binary-search-tree-iterator",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/binary-search-tree-iterator/"
+    }
+  ]
+}

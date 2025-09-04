@@ -1,0 +1,26 @@
+{
+  "category": "",
+  "id": "1214",
+  "name": "Two Sum BSTs",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/two-sum-bsts/",
+  "slug": "two-sum-bsts",
+  "isPaidOnly": true,
+  "tags": [
+    "Two Pointers",
+    "Binary Search",
+    "Stack",
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Two Sum IV - Input is a BST",
+      "slug": "two-sum-iv-input-is-a-bst",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/two-sum-iv-input-is-a-bst/"
+    }
+  ]
+}

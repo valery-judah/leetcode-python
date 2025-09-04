@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "2688",
+  "name": "Find Active Users",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-active-users/",
+  "slug": "find-active-users",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "2047",
+  "name": "Number of Valid Words in a Sentence",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/number-of-valid-words-in-a-sentence/",
+  "slug": "number-of-valid-words-in-a-sentence",
+  "isPaidOnly": false,
+  "tags": [
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Number of Words Found in Sentences",
+      "slug": "maximum-number-of-words-found-in-sentences",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/"
+    }
+  ]
+}

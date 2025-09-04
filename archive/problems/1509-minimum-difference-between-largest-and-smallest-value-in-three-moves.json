@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "1509",
+  "name": "Minimum Difference Between Largest and Smallest Value in Three Moves",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-difference-between-largest-and-smallest-value-in-three-moves/",
+  "slug": "minimum-difference-between-largest-and-smallest-value-in-three-moves",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimize the Maximum Difference of Pairs",
+      "slug": "minimize-the-maximum-difference-of-pairs",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimize-the-maximum-difference-of-pairs/"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1145",
+  "name": "Binary Tree Coloring Game",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/binary-tree-coloring-game/",
+  "slug": "binary-tree-coloring-game",
+  "isPaidOnly": false,
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": []
+}

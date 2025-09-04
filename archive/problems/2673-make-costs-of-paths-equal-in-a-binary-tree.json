@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "2673",
+  "name": "Make Costs of Paths Equal in a Binary Tree",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/make-costs-of-paths-equal-in-a-binary-tree/",
+  "slug": "make-costs-of-paths-equal-in-a-binary-tree",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy",
+    "Tree",
+    "Binary Tree"
+  ],
+  "similar_questions": []
+}

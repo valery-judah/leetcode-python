@@ -1,0 +1,72 @@
+{
+  "category": "",
+  "id": "2029",
+  "name": "Stone Game IX",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/stone-game-ix/",
+  "slug": "stone-game-ix",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Greedy",
+    "Counting",
+    "Game Theory"
+  ],
+  "similar_questions": [
+    {
+      "title": "Stone Game",
+      "slug": "stone-game",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/stone-game/"
+    },
+    {
+      "title": "Stone Game II",
+      "slug": "stone-game-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/stone-game-ii/"
+    },
+    {
+      "title": "Stone Game III",
+      "slug": "stone-game-iii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/stone-game-iii/"
+    },
+    {
+      "title": "Stone Game IV",
+      "slug": "stone-game-iv",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/stone-game-iv/"
+    },
+    {
+      "title": "Stone Game V",
+      "slug": "stone-game-v",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/stone-game-v/"
+    },
+    {
+      "title": "Stone Game VI",
+      "slug": "stone-game-vi",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/stone-game-vi/"
+    },
+    {
+      "title": "Stone Game VII",
+      "slug": "stone-game-vii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/stone-game-vii/"
+    },
+    {
+      "title": "Stone Game VIII",
+      "slug": "stone-game-viii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/stone-game-viii/"
+    },
+    {
+      "title": "Stone Game IX",
+      "slug": "stone-game-ix",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/stone-game-ix/"
+    }
+  ]
+}

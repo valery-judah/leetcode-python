@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "2646",
+  "name": "Minimize the Total Price of the Trips",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimize-the-total-price-of-the-trips/",
+  "slug": "minimize-the-total-price-of-the-trips",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search",
+    "Graph"
+  ],
+  "similar_questions": []
+}

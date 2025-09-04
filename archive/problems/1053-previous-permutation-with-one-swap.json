@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "1053",
+  "name": "Previous Permutation With One Swap",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/previous-permutation-with-one-swap/",
+  "slug": "previous-permutation-with-one-swap",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "similar_questions": []
+}

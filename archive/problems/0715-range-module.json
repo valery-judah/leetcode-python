@@ -1,0 +1,34 @@
+{
+  "category": "",
+  "id": "715",
+  "name": "Range Module",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/range-module/",
+  "slug": "range-module",
+  "isPaidOnly": false,
+  "tags": [
+    "Design",
+    "Segment Tree",
+    "Ordered Set"
+  ],
+  "similar_questions": [
+    {
+      "title": "Merge Intervals",
+      "slug": "merge-intervals",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/merge-intervals/"
+    },
+    {
+      "title": "Insert Interval",
+      "slug": "insert-interval",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/insert-interval/"
+    },
+    {
+      "title": "Data Stream as Disjoint Intervals",
+      "slug": "data-stream-as-disjoint-intervals",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/data-stream-as-disjoint-intervals/"
+    }
+  ]
+}

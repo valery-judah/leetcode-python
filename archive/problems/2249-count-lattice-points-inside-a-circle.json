@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "2249",
+  "name": "Count Lattice Points Inside a Circle",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-lattice-points-inside-a-circle/",
+  "slug": "count-lattice-points-inside-a-circle",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Geometry",
+    "Enumeration"
+  ],
+  "similar_questions": [
+    {
+      "title": "Queries on Number of Points Inside a Circle",
+      "slug": "queries-on-number-of-points-inside-a-circle",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/queries-on-number-of-points-inside-a-circle/"
+    }
+  ]
+}

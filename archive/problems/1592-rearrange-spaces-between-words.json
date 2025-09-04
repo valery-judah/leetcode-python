@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "1592",
+  "name": "Rearrange Spaces Between Words",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/rearrange-spaces-between-words/",
+  "slug": "rearrange-spaces-between-words",
+  "isPaidOnly": false,
+  "tags": [
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Text Justification",
+      "slug": "text-justification",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/text-justification/"
+    }
+  ]
+}

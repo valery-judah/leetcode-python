@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "872",
+  "name": "Leaf-Similar Trees",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/leaf-similar-trees/",
+  "slug": "leaf-similar-trees",
+  "isPaidOnly": false,
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": []
+}

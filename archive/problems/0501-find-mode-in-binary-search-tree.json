@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "501",
+  "name": "Find Mode in Binary Search Tree",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/find-mode-in-binary-search-tree/",
+  "slug": "find-mode-in-binary-search-tree",
+  "isPaidOnly": false,
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Validate Binary Search Tree",
+      "slug": "validate-binary-search-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/validate-binary-search-tree/"
+    }
+  ]
+}

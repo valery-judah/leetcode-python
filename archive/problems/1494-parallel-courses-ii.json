@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "1494",
+  "name": "Parallel Courses II",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/parallel-courses-ii/",
+  "slug": "parallel-courses-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Graph",
+    "Bitmask"
+  ],
+  "similar_questions": [
+    {
+      "title": "Parallel Courses",
+      "slug": "parallel-courses",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/parallel-courses/"
+    }
+  ]
+}

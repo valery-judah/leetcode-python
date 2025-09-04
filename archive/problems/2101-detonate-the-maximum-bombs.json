@@ -1,0 +1,43 @@
+{
+  "category": "",
+  "id": "2101",
+  "name": "Detonate the Maximum Bombs",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/detonate-the-maximum-bombs/",
+  "slug": "detonate-the-maximum-bombs",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph",
+    "Geometry"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minesweeper",
+      "slug": "minesweeper",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minesweeper/"
+    },
+    {
+      "title": "Number of Provinces",
+      "slug": "number-of-provinces",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-provinces/"
+    },
+    {
+      "title": "Max Area of Island",
+      "slug": "max-area-of-island",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/max-area-of-island/"
+    },
+    {
+      "title": "Rotting Oranges",
+      "slug": "rotting-oranges",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/rotting-oranges/"
+    }
+  ]
+}

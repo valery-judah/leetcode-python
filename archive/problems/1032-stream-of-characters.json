@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "1032",
+  "name": "Stream of Characters",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/stream-of-characters/",
+  "slug": "stream-of-characters",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "String",
+    "Design",
+    "Trie",
+    "Data Stream"
+  ],
+  "similar_questions": []
+}

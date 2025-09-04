@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "2687",
+  "name": "Bikes Last Time Used ",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/bikes-last-time-used/",
+  "slug": "bikes-last-time-used",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

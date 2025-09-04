@@ -1,0 +1,33 @@
+{
+  "category": "",
+  "id": "2446",
+  "name": "Determine if Two Events Have Conflict",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/determine-if-two-events-have-conflict/",
+  "slug": "determine-if-two-events-have-conflict",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Merge Intervals",
+      "slug": "merge-intervals",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/merge-intervals/"
+    },
+    {
+      "title": "Non-overlapping Intervals",
+      "slug": "non-overlapping-intervals",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/non-overlapping-intervals/"
+    },
+    {
+      "title": "My Calendar I",
+      "slug": "my-calendar-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/my-calendar-i/"
+    }
+  ]
+}

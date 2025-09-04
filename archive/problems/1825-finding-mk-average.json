@@ -1,0 +1,36 @@
+{
+  "category": "",
+  "id": "1825",
+  "name": "Finding MK Average",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/finding-mk-average/",
+  "slug": "finding-mk-average",
+  "isPaidOnly": false,
+  "tags": [
+    "Design",
+    "Queue",
+    "Heap (Priority Queue)",
+    "Data Stream",
+    "Ordered Set"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find Median from Data Stream",
+      "slug": "find-median-from-data-stream",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-median-from-data-stream/"
+    },
+    {
+      "title": "Kth Largest Element in a Stream",
+      "slug": "kth-largest-element-in-a-stream",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/kth-largest-element-in-a-stream/"
+    },
+    {
+      "title": "Sequentially Ordinal Rank Tracker",
+      "slug": "sequentially-ordinal-rank-tracker",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sequentially-ordinal-rank-tracker/"
+    }
+  ]
+}

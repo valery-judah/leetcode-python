@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "2108",
+  "name": "Find First Palindromic String in the Array",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/find-first-palindromic-string-in-the-array/",
+  "slug": "find-first-palindromic-string-in-the-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Valid Palindrome",
+      "slug": "valid-palindrome",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/valid-palindrome/"
+    }
+  ]
+}

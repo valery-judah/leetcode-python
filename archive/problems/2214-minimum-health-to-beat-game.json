@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "2214",
+  "name": "Minimum Health to Beat Game",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-health-to-beat-game/",
+  "slug": "minimum-health-to-beat-game",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "similar_questions": [
+    {
+      "title": "Dungeon Game",
+      "slug": "dungeon-game",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/dungeon-game/"
+    },
+    {
+      "title": "Eliminate Maximum Number of Monsters",
+      "slug": "eliminate-maximum-number-of-monsters",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/eliminate-maximum-number-of-monsters/"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "2458",
+  "name": "Height of Binary Tree After Subtree Removal Queries",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/height-of-binary-tree-after-subtree-removal-queries/",
+  "slug": "height-of-binary-tree-after-subtree-removal-queries",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Depth of Binary Tree",
+      "slug": "maximum-depth-of-binary-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-depth-of-binary-tree/"
+    }
+  ]
+}

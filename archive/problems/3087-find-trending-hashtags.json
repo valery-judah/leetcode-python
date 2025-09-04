@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "3087",
+  "name": "Find Trending Hashtags",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-trending-hashtags/",
+  "slug": "find-trending-hashtags",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,18 @@
+{
+  "category": "",
+  "id": "3435",
+  "name": "Frequencies of Shortest Supersequences",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/frequencies-of-shortest-supersequences/",
+  "slug": "frequencies-of-shortest-supersequences",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "String",
+    "Bit Manipulation",
+    "Graph",
+    "Topological Sort",
+    "Enumeration"
+  ],
+  "similar_questions": []
+}

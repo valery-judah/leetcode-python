@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "3155",
+  "name": "Maximum Number of Upgradable Servers",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-number-of-upgradable-servers/",
+  "slug": "maximum-number-of-upgradable-servers",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Math",
+    "Binary Search"
+  ],
+  "similar_questions": []
+}

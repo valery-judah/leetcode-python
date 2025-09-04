@@ -1,0 +1,40 @@
+{
+  "category": "",
+  "id": "271",
+  "name": "Encode and Decode Strings",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/encode-and-decode-strings/",
+  "slug": "encode-and-decode-strings",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "String",
+    "Design"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count and Say",
+      "slug": "count-and-say",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-and-say/"
+    },
+    {
+      "title": "Serialize and Deserialize Binary Tree",
+      "slug": "serialize-and-deserialize-binary-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/"
+    },
+    {
+      "title": "String Compression",
+      "slug": "string-compression",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/string-compression/"
+    },
+    {
+      "title": "Count Binary Substrings",
+      "slug": "count-binary-substrings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-binary-substrings/"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "573",
+  "name": "Squirrel Simulation",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/squirrel-simulation/",
+  "slug": "squirrel-simulation",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Math"
+  ],
+  "similar_questions": []
+}

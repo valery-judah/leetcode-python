@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "3640",
+  "name": "Trionic Array II",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/trionic-array-ii/",
+  "slug": "trionic-array-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "similar_questions": []
+}

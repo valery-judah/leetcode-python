@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "3274",
+  "name": "Check if Two Chessboard Squares Have the Same Color",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/",
+  "slug": "check-if-two-chessboard-squares-have-the-same-color",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Determine Color of a Chessboard Square",
+      "slug": "determine-color-of-a-chessboard-square",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/determine-color-of-a-chessboard-square/"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "1804",
+  "name": "Implement Trie II (Prefix Tree)",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/implement-trie-ii-prefix-tree/",
+  "slug": "implement-trie-ii-prefix-tree",
+  "isPaidOnly": true,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Design",
+    "Trie"
+  ],
+  "similar_questions": [
+    {
+      "title": "Implement Trie (Prefix Tree)",
+      "slug": "implement-trie-prefix-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/implement-trie-prefix-tree/"
+    },
+    {
+      "title": "Encrypt and Decrypt Strings",
+      "slug": "encrypt-and-decrypt-strings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/encrypt-and-decrypt-strings/"
+    }
+  ]
+}

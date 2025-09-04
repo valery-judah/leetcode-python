@@ -1,0 +1,57 @@
+{
+  "category": "",
+  "id": "516",
+  "name": "Longest Palindromic Subsequence",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/longest-palindromic-subsequence/",
+  "slug": "longest-palindromic-subsequence",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longest Palindromic Substring",
+      "slug": "longest-palindromic-substring",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-palindromic-substring/"
+    },
+    {
+      "title": "Palindromic Substrings",
+      "slug": "palindromic-substrings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/palindromic-substrings/"
+    },
+    {
+      "title": "Count Different Palindromic Subsequences",
+      "slug": "count-different-palindromic-subsequences",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-different-palindromic-subsequences/"
+    },
+    {
+      "title": "Longest Common Subsequence",
+      "slug": "longest-common-subsequence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-common-subsequence/"
+    },
+    {
+      "title": "Longest Palindromic Subsequence II",
+      "slug": "longest-palindromic-subsequence-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-palindromic-subsequence-ii/"
+    },
+    {
+      "title": "Maximize Palindrome Length From Subsequences",
+      "slug": "maximize-palindrome-length-from-subsequences",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximize-palindrome-length-from-subsequences/"
+    },
+    {
+      "title": "Maximum Product of the Length of Two Palindromic Subsequences",
+      "slug": "maximum-product-of-the-length-of-two-palindromic-subsequences",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/"
+    }
+  ]
+}

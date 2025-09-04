@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "1619",
+  "name": "Mean of Array After Removing Some Elements",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/mean-of-array-after-removing-some-elements/",
+  "slug": "mean-of-array-after-removing-some-elements",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "similar_questions": []
+}

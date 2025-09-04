@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "2802",
+  "name": "Find The K-th Lucky Number",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-the-k-th-lucky-number/",
+  "slug": "find-the-k-th-lucky-number",
+  "isPaidOnly": true,
+  "tags": [
+    "Math",
+    "String",
+    "Bit Manipulation"
+  ],
+  "similar_questions": []
+}

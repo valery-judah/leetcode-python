@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "1793",
+  "name": "Maximum Score of a Good Subarray",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/maximum-score-of-a-good-subarray/",
+  "slug": "maximum-score-of-a-good-subarray",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Stack",
+    "Monotonic Stack"
+  ],
+  "similar_questions": [
+    {
+      "title": "Largest Rectangle in Histogram",
+      "slug": "largest-rectangle-in-histogram",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/largest-rectangle-in-histogram/"
+    }
+  ]
+}

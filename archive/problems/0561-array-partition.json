@@ -1,0 +1,35 @@
+{
+  "category": "",
+  "id": "561",
+  "name": "Array Partition",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/array-partition/",
+  "slug": "array-partition",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Counting Sort"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Difference Between Highest and Lowest of K Scores",
+      "slug": "minimum-difference-between-highest-and-lowest-of-k-scores",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/"
+    },
+    {
+      "title": "Minimum Cost of Buying Candies With Discount",
+      "slug": "minimum-cost-of-buying-candies-with-discount",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-cost-of-buying-candies-with-discount/"
+    },
+    {
+      "title": "All Divisions With the Highest Score of a Binary Array",
+      "slug": "all-divisions-with-the-highest-score-of-a-binary-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/all-divisions-with-the-highest-score-of-a-binary-array/"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "2370",
+  "name": "Longest Ideal Subsequence",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/longest-ideal-subsequence/",
+  "slug": "longest-ideal-subsequence",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longest Increasing Subsequence",
+      "slug": "longest-increasing-subsequence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-increasing-subsequence/"
+    }
+  ]
+}

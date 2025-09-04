@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "2738",
+  "name": "Count Occurrences in Text",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-occurrences-in-text/",
+  "slug": "count-occurrences-in-text",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

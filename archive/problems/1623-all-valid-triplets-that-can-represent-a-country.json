@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "1623",
+  "name": "All Valid Triplets That Can Represent a Country",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/all-valid-triplets-that-can-represent-a-country/",
+  "slug": "all-valid-triplets-that-can-represent-a-country",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

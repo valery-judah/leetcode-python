@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "2286",
+  "name": "Booking Concert Tickets in Groups",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/booking-concert-tickets-in-groups/",
+  "slug": "booking-concert-tickets-in-groups",
+  "isPaidOnly": false,
+  "tags": [
+    "Binary Search",
+    "Design",
+    "Binary Indexed Tree",
+    "Segment Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Cinema Seat Allocation",
+      "slug": "cinema-seat-allocation",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/cinema-seat-allocation/"
+    },
+    {
+      "title": "Longest Increasing Subsequence II",
+      "slug": "longest-increasing-subsequence-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-increasing-subsequence-ii/"
+    }
+  ]
+}

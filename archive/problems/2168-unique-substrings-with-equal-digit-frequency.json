@@ -1,0 +1,30 @@
+{
+  "category": "",
+  "id": "2168",
+  "name": "Unique Substrings With Equal Digit Frequency",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/unique-substrings-with-equal-digit-frequency/",
+  "slug": "unique-substrings-with-equal-digit-frequency",
+  "isPaidOnly": true,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Rolling Hash",
+    "Counting",
+    "Hash Function"
+  ],
+  "similar_questions": [
+    {
+      "title": "Number of Equal Count Substrings",
+      "slug": "number-of-equal-count-substrings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-equal-count-substrings/"
+    },
+    {
+      "title": "Substrings That Begin and End With the Same Letter",
+      "slug": "substrings-that-begin-and-end-with-the-same-letter",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/substrings-that-begin-and-end-with-the-same-letter/"
+    }
+  ]
+}

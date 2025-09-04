@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "3446",
+  "name": "Sort Matrix by Diagonals",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/sort-matrix-by-diagonals/",
+  "slug": "sort-matrix-by-diagonals",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Sorting",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Sort the Matrix Diagonally",
+      "slug": "sort-the-matrix-diagonally",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sort-the-matrix-diagonally/"
+    }
+  ]
+}

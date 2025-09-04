@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "3607",
+  "name": "Power Grid Maintenance",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/power-grid-maintenance/",
+  "slug": "power-grid-maintenance",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union Find",
+    "Graph",
+    "Heap (Priority Queue)",
+    "Ordered Set"
+  ],
+  "similar_questions": []
+}

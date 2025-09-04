@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "1259",
+  "name": "Handshakes That Don't Cross",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/handshakes-that-dont-cross/",
+  "slug": "handshakes-that-dont-cross",
+  "isPaidOnly": true,
+  "tags": [
+    "Math",
+    "Dynamic Programming"
+  ],
+  "similar_questions": []
+}

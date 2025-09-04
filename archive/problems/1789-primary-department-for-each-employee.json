@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "1789",
+  "name": "Primary Department for Each Employee",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/primary-department-for-each-employee/",
+  "slug": "primary-department-for-each-employee",
+  "isPaidOnly": false,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "3378",
+  "name": "Count Connected Components in LCM Graph",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/count-connected-components-in-lcm-graph/",
+  "slug": "count-connected-components-in-lcm-graph",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Union Find",
+    "Number Theory"
+  ],
+  "similar_questions": []
+}

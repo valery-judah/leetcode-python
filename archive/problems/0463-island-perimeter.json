@@ -1,0 +1,35 @@
+{
+  "category": "",
+  "id": "463",
+  "name": "Island Perimeter",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/island-perimeter/",
+  "slug": "island-perimeter",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Max Area of Island",
+      "slug": "max-area-of-island",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/max-area-of-island/"
+    },
+    {
+      "title": "Flood Fill",
+      "slug": "flood-fill",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/flood-fill/"
+    },
+    {
+      "title": "Coloring A Border",
+      "slug": "coloring-a-border",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/coloring-a-border/"
+    }
+  ]
+}

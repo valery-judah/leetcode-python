@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "3426",
+  "name": "Manhattan Distances of All Arrangements of Pieces",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/manhattan-distances-of-all-arrangements-of-pieces/",
+  "slug": "manhattan-distances-of-all-arrangements-of-pieces",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Combinatorics"
+  ],
+  "similar_questions": []
+}

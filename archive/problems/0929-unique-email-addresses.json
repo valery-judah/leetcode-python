@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "929",
+  "name": "Unique Email Addresses",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/unique-email-addresses/",
+  "slug": "unique-email-addresses",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,33 @@
+{
+  "category": "",
+  "id": "1982",
+  "name": "Find Array Given Subset Sums",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/find-array-given-subset-sums/",
+  "slug": "find-array-given-subset-sums",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Divide and Conquer"
+  ],
+  "similar_questions": [
+    {
+      "title": "Subsets",
+      "slug": "subsets",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/subsets/"
+    },
+    {
+      "title": "Subsets II",
+      "slug": "subsets-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/subsets-ii/"
+    },
+    {
+      "title": "Recover the Original Array",
+      "slug": "recover-the-original-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/recover-the-original-array/"
+    }
+  ]
+}

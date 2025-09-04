@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "936",
+  "name": "Stamping The Sequence",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/stamping-the-sequence/",
+  "slug": "stamping-the-sequence",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Stack",
+    "Greedy",
+    "Queue"
+  ],
+  "similar_questions": []
+}

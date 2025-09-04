@@ -1,0 +1,40 @@
+{
+  "category": "",
+  "id": "2144",
+  "name": "Minimum Cost of Buying Candies With Discount",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/minimum-cost-of-buying-candies-with-discount/",
+  "slug": "minimum-cost-of-buying-candies-with-discount",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Array Partition",
+      "slug": "array-partition",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/array-partition/"
+    },
+    {
+      "title": "Minimum Absolute Difference",
+      "slug": "minimum-absolute-difference",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-absolute-difference/"
+    },
+    {
+      "title": "Minimum Number of Operations to Satisfy Conditions",
+      "slug": "minimum-number-of-operations-to-satisfy-conditions",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-number-of-operations-to-satisfy-conditions/"
+    },
+    {
+      "title": "Check if Grid Satisfies Conditions",
+      "slug": "check-if-grid-satisfies-conditions",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/check-if-grid-satisfies-conditions/"
+    }
+  ]
+}

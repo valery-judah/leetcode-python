@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "2729",
+  "name": "Check if The Number is Fascinating",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/check-if-the-number-is-fascinating/",
+  "slug": "check-if-the-number-is-fascinating",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "Math"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "1283",
+  "name": "Find the Smallest Divisor Given a Threshold",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/",
+  "slug": "find-the-smallest-divisor-given-a-threshold",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimized Maximum of Products Distributed to Any Store",
+      "slug": "minimized-maximum-of-products-distributed-to-any-store",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimized-maximum-of-products-distributed-to-any-store/"
+    }
+  ]
+}

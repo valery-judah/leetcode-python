@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "2284",
+  "name": "Sender With Largest Word Count",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/sender-with-largest-word-count/",
+  "slug": "sender-with-largest-word-count",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Top K Frequent Elements",
+      "slug": "top-k-frequent-elements",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/top-k-frequent-elements/"
+    },
+    {
+      "title": "Top K Frequent Words",
+      "slug": "top-k-frequent-words",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/top-k-frequent-words/"
+    }
+  ]
+}

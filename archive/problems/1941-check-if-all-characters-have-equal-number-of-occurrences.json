@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "1941",
+  "name": "Check if All Characters Have Equal Number of Occurrences",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/",
+  "slug": "check-if-all-characters-have-equal-number-of-occurrences",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Rings and Rods",
+      "slug": "rings-and-rods",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/rings-and-rods/"
+    },
+    {
+      "title": "Make Number of Distinct Characters Equal",
+      "slug": "make-number-of-distinct-characters-equal",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/make-number-of-distinct-characters-equal/"
+    }
+  ]
+}

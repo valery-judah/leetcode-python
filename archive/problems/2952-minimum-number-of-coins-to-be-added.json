@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "2952",
+  "name": "Minimum Number of Coins to be Added",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-number-of-coins-to-be-added/",
+  "slug": "minimum-number-of-coins-to-be-added",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Coin Change",
+      "slug": "coin-change",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/coin-change/"
+    },
+    {
+      "title": "Most Expensive Item That Can Not Be Bought",
+      "slug": "most-expensive-item-that-can-not-be-bought",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/most-expensive-item-that-can-not-be-bought/"
+    }
+  ]
+}

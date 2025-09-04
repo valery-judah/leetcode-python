@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "2876",
+  "name": "Count Visited Nodes in a Directed Graph",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/count-visited-nodes-in-a-directed-graph/",
+  "slug": "count-visited-nodes-in-a-directed-graph",
+  "isPaidOnly": false,
+  "tags": [
+    "Dynamic Programming",
+    "Graph",
+    "Memoization"
+  ],
+  "similar_questions": []
+}

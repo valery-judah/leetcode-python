@@ -1,0 +1,33 @@
+{
+  "category": "",
+  "id": "1911",
+  "name": "Maximum Alternating Subsequence Sum",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-alternating-subsequence-sum/",
+  "slug": "maximum-alternating-subsequence-sum",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Alternating Subarray Sum",
+      "slug": "maximum-alternating-subarray-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-alternating-subarray-sum/"
+    },
+    {
+      "title": "Maximum Element-Sum of a Complete Subset of Indices",
+      "slug": "maximum-element-sum-of-a-complete-subset-of-indices",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-element-sum-of-a-complete-subset-of-indices/"
+    },
+    {
+      "title": "Maximum Product of Subsequences With an Alternating Sum Equal to K",
+      "slug": "maximum-product-of-subsequences-with-an-alternating-sum-equal-to-k",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-product-of-subsequences-with-an-alternating-sum-equal-to-k/"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "category": "",
+  "id": "2226",
+  "name": "Maximum Candies Allocated to K Children",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-candies-allocated-to-k-children/",
+  "slug": "maximum-candies-allocated-to-k-children",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Koko Eating Bananas",
+      "slug": "koko-eating-bananas",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/koko-eating-bananas/"
+    },
+    {
+      "title": "Minimum Limit of Balls in a Bag",
+      "slug": "minimum-limit-of-balls-in-a-bag",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-limit-of-balls-in-a-bag/"
+    },
+    {
+      "title": "Minimum Speed to Arrive on Time",
+      "slug": "minimum-speed-to-arrive-on-time",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-speed-to-arrive-on-time/"
+    },
+    {
+      "title": "Maximum Number of Removable Characters",
+      "slug": "maximum-number-of-removable-characters",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-number-of-removable-characters/"
+    },
+    {
+      "title": "Minimized Maximum of Products Distributed to Any Store",
+      "slug": "minimized-maximum-of-products-distributed-to-any-store",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimized-maximum-of-products-distributed-to-any-store/"
+    },
+    {
+      "title": "Minimum Time to Complete Trips",
+      "slug": "minimum-time-to-complete-trips",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-time-to-complete-trips/"
+    },
+    {
+      "title": "Minimize Maximum of Array",
+      "slug": "minimize-maximum-of-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimize-maximum-of-array/"
+    },
+    {
+      "title": "Maximize Happiness of Selected Children",
+      "slug": "maximize-happiness-of-selected-children",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximize-happiness-of-selected-children/"
+    }
+  ]
+}

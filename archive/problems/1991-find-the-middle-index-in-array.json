@@ -1,0 +1,45 @@
+{
+  "category": "",
+  "id": "1991",
+  "name": "Find the Middle Index in Array",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/find-the-middle-index-in-array/",
+  "slug": "find-the-middle-index-in-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find Pivot Index",
+      "slug": "find-pivot-index",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-pivot-index/"
+    },
+    {
+      "title": "Partition Array Into Three Parts With Equal Sum",
+      "slug": "partition-array-into-three-parts-with-equal-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/partition-array-into-three-parts-with-equal-sum/"
+    },
+    {
+      "title": "Number of Ways to Split Array",
+      "slug": "number-of-ways-to-split-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-ways-to-split-array/"
+    },
+    {
+      "title": "Maximum Sum Score of Array",
+      "slug": "maximum-sum-score-of-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-sum-score-of-array/"
+    },
+    {
+      "title": "Left and Right Sum Differences",
+      "slug": "left-and-right-sum-differences",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/left-and-right-sum-differences/"
+    }
+  ]
+}

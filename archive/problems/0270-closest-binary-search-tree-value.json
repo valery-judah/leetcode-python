@@ -1,0 +1,42 @@
+{
+  "category": "",
+  "id": "270",
+  "name": "Closest Binary Search Tree Value",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/closest-binary-search-tree-value/",
+  "slug": "closest-binary-search-tree-value",
+  "isPaidOnly": true,
+  "tags": [
+    "Binary Search",
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Complete Tree Nodes",
+      "slug": "count-complete-tree-nodes",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-complete-tree-nodes/"
+    },
+    {
+      "title": "Closest Binary Search Tree Value II",
+      "slug": "closest-binary-search-tree-value-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/closest-binary-search-tree-value-ii/"
+    },
+    {
+      "title": "Search in a Binary Search Tree",
+      "slug": "search-in-a-binary-search-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/search-in-a-binary-search-tree/"
+    },
+    {
+      "title": "Closest Nodes Queries in a Binary Search Tree",
+      "slug": "closest-nodes-queries-in-a-binary-search-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/closest-nodes-queries-in-a-binary-search-tree/"
+    }
+  ]
+}

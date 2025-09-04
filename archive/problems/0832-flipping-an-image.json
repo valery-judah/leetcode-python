@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "832",
+  "name": "Flipping an Image",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/flipping-an-image/",
+  "slug": "flipping-an-image",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Bit Manipulation",
+    "Matrix",
+    "Simulation"
+  ],
+  "similar_questions": []
+}

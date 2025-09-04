@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "2668",
+  "name": "Find Latest Salaries",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/find-latest-salaries/",
+  "slug": "find-latest-salaries",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

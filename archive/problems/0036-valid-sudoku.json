@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "36",
+  "name": "Valid Sudoku",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/valid-sudoku/",
+  "slug": "valid-sudoku",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Sudoku Solver",
+      "slug": "sudoku-solver",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sudoku-solver/"
+    },
+    {
+      "title": "Check if Every Row and Column Contains All Numbers",
+      "slug": "check-if-every-row-and-column-contains-all-numbers",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers/"
+    }
+  ]
+}

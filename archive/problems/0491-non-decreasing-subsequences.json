@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "491",
+  "name": "Non-decreasing Subsequences",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/non-decreasing-subsequences/",
+  "slug": "non-decreasing-subsequences",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Backtracking",
+    "Bit Manipulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Length of Pair Chain",
+      "slug": "maximum-length-of-pair-chain",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-length-of-pair-chain/"
+    }
+  ]
+}

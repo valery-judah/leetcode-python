@@ -1,0 +1,33 @@
+{
+  "category": "",
+  "id": "1295",
+  "name": "Find Numbers with Even Number of Digits",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/find-numbers-with-even-number-of-digits/",
+  "slug": "find-numbers-with-even-number-of-digits",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math"
+  ],
+  "similar_questions": [
+    {
+      "title": "Finding 3-Digit Even Numbers",
+      "slug": "finding-3-digit-even-numbers",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/finding-3-digit-even-numbers/"
+    },
+    {
+      "title": "Number of Even and Odd Bits",
+      "slug": "number-of-even-and-odd-bits",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-even-and-odd-bits/"
+    },
+    {
+      "title": "Find if Digit Game Can Be Won",
+      "slug": "find-if-digit-game-can-be-won",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-if-digit-game-can-be-won/"
+    }
+  ]
+}

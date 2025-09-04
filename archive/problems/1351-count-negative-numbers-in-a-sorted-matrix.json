@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "1351",
+  "name": "Count Negative Numbers in a Sorted Matrix",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/",
+  "slug": "count-negative-numbers-in-a-sorted-matrix",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Count of Positive Integer and Negative Integer",
+      "slug": "maximum-count-of-positive-integer-and-negative-integer",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/"
+    }
+  ]
+}

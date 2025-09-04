@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "1883",
+  "name": "Minimum Skips to Arrive at Meeting On Time",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-skips-to-arrive-at-meeting-on-time/",
+  "slug": "minimum-skips-to-arrive-at-meeting-on-time",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Speed to Arrive on Time",
+      "slug": "minimum-speed-to-arrive-on-time",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-speed-to-arrive-on-time/"
+    },
+    {
+      "title": "Minimum Time to Finish the Race",
+      "slug": "minimum-time-to-finish-the-race",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-time-to-finish-the-race/"
+    }
+  ]
+}

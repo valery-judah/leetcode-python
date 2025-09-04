@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "2079",
+  "name": "Watering Plants",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/watering-plants/",
+  "slug": "watering-plants",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Watering Plants II",
+      "slug": "watering-plants-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/watering-plants-ii/"
+    }
+  ]
+}

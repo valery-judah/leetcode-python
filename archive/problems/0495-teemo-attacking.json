@@ -1,0 +1,33 @@
+{
+  "category": "",
+  "id": "495",
+  "name": "Teemo Attacking",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/teemo-attacking/",
+  "slug": "teemo-attacking",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Merge Intervals",
+      "slug": "merge-intervals",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/merge-intervals/"
+    },
+    {
+      "title": "Can Place Flowers",
+      "slug": "can-place-flowers",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/can-place-flowers/"
+    },
+    {
+      "title": "Dota2 Senate",
+      "slug": "dota2-senate",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/dota2-senate/"
+    }
+  ]
+}

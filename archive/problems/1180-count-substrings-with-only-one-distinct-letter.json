@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "1180",
+  "name": "Count Substrings with Only One Distinct Letter",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/count-substrings-with-only-one-distinct-letter/",
+  "slug": "count-substrings-with-only-one-distinct-letter",
+  "isPaidOnly": true,
+  "tags": [
+    "Math",
+    "String"
+  ],
+  "similar_questions": []
+}

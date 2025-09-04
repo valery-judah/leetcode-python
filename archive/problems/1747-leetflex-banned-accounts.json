@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "1747",
+  "name": "Leetflex Banned Accounts",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/leetflex-banned-accounts/",
+  "slug": "leetflex-banned-accounts",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

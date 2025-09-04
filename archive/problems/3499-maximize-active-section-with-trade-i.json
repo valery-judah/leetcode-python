@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "3499",
+  "name": "Maximize Active Section with Trade I",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximize-active-section-with-trade-i/",
+  "slug": "maximize-active-section-with-trade-i",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Enumeration"
+  ],
+  "similar_questions": []
+}

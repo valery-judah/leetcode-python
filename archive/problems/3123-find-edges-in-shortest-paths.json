@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "3123",
+  "name": "Find Edges in Shortest Paths",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/find-edges-in-shortest-paths/",
+  "slug": "find-edges-in-shortest-paths",
+  "isPaidOnly": false,
+  "tags": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph",
+    "Heap (Priority Queue)",
+    "Shortest Path"
+  ],
+  "similar_questions": []
+}

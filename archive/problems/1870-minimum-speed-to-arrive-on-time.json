@@ -1,0 +1,45 @@
+{
+  "category": "",
+  "id": "1870",
+  "name": "Minimum Speed to Arrive on Time",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-speed-to-arrive-on-time/",
+  "slug": "minimum-speed-to-arrive-on-time",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Candies Allocated to K Children",
+      "slug": "maximum-candies-allocated-to-k-children",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-candies-allocated-to-k-children/"
+    },
+    {
+      "title": "Minimum Skips to Arrive at Meeting On Time",
+      "slug": "minimum-skips-to-arrive-at-meeting-on-time",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-skips-to-arrive-at-meeting-on-time/"
+    },
+    {
+      "title": "Minimum Time to Complete Trips",
+      "slug": "minimum-time-to-complete-trips",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-time-to-complete-trips/"
+    },
+    {
+      "title": "The Latest Time to Catch a Bus",
+      "slug": "the-latest-time-to-catch-a-bus",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/the-latest-time-to-catch-a-bus/"
+    },
+    {
+      "title": "Minimize Maximum of Array",
+      "slug": "minimize-maximum-of-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimize-maximum-of-array/"
+    }
+  ]
+}

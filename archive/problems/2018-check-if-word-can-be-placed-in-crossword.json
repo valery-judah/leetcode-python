@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "2018",
+  "name": "Check if Word Can Be Placed In Crossword",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/check-if-word-can-be-placed-in-crossword/",
+  "slug": "check-if-word-can-be-placed-in-crossword",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Matrix",
+    "Enumeration"
+  ],
+  "similar_questions": []
+}

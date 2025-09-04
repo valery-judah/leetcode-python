@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "1491",
+  "name": "Average Salary Excluding the Minimum and Maximum Salary",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/",
+  "slug": "average-salary-excluding-the-minimum-and-maximum-salary",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "similar_questions": []
+}

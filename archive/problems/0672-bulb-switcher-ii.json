@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "672",
+  "name": "Bulb Switcher II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/bulb-switcher-ii/",
+  "slug": "bulb-switcher-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Bit Manipulation",
+    "Depth-First Search",
+    "Breadth-First Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Bulb Switcher",
+      "slug": "bulb-switcher",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/bulb-switcher/"
+    },
+    {
+      "title": "Number of Times Binary String Is Prefix-Aligned",
+      "slug": "number-of-times-binary-string-is-prefix-aligned",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-times-binary-string-is-prefix-aligned/"
+    }
+  ]
+}

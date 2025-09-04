@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "2905",
+  "name": "Find Indices With Index and Value Difference II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-indices-with-index-and-value-difference-ii/",
+  "slug": "find-indices-with-index-and-value-difference-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Absolute Difference Between Elements With Constraint",
+      "slug": "minimum-absolute-difference-between-elements-with-constraint",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-absolute-difference-between-elements-with-constraint/"
+    },
+    {
+      "title": "Find Indices With Index and Value Difference I",
+      "slug": "find-indices-with-index-and-value-difference-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-indices-with-index-and-value-difference-i/"
+    }
+  ]
+}

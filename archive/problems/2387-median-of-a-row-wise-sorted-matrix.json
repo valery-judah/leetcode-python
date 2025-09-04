@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "2387",
+  "name": "Median of a Row Wise Sorted Matrix",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/median-of-a-row-wise-sorted-matrix/",
+  "slug": "median-of-a-row-wise-sorted-matrix",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Median of Two Sorted Arrays",
+      "slug": "median-of-two-sorted-arrays",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/median-of-two-sorted-arrays/"
+    }
+  ]
+}

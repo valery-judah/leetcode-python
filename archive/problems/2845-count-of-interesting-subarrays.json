@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "2845",
+  "name": "Count of Interesting Subarrays",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-of-interesting-subarrays/",
+  "slug": "count-of-interesting-subarrays",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Subarray Sums Divisible by K",
+      "slug": "subarray-sums-divisible-by-k",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/subarray-sums-divisible-by-k/"
+    },
+    {
+      "title": "Count Number of Nice Subarrays",
+      "slug": "count-number-of-nice-subarrays",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-number-of-nice-subarrays/"
+    }
+  ]
+}

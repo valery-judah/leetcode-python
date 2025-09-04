@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "2260",
+  "name": "Minimum Consecutive Cards to Pick Up",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-consecutive-cards-to-pick-up/",
+  "slug": "minimum-consecutive-cards-to-pick-up",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longest Substring Without Repeating Characters",
+      "slug": "longest-substring-without-repeating-characters",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/"
+    }
+  ]
+}

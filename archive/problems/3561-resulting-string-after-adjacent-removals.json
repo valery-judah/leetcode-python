@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "3561",
+  "name": "Resulting String After Adjacent Removals",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/resulting-string-after-adjacent-removals/",
+  "slug": "resulting-string-after-adjacent-removals",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Stack",
+    "Simulation"
+  ],
+  "similar_questions": []
+}

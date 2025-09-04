@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "3563",
+  "name": "Lexicographically Smallest String After Adjacent Removals",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/lexicographically-smallest-string-after-adjacent-removals/",
+  "slug": "lexicographically-smallest-string-after-adjacent-removals",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "similar_questions": []
+}

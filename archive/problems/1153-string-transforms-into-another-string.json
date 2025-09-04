@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1153",
+  "name": "String Transforms Into Another String",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/string-transforms-into-another-string/",
+  "slug": "string-transforms-into-another-string",
+  "isPaidOnly": true,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Graph"
+  ],
+  "similar_questions": []
+}

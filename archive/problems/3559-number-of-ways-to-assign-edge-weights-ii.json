@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "3559",
+  "name": "Number of Ways to Assign Edge Weights II",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-ii/",
+  "slug": "number-of-ways-to-assign-edge-weights-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search"
+  ],
+  "similar_questions": []
+}

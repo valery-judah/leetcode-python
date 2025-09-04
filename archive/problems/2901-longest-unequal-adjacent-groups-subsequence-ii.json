@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "2901",
+  "name": "Longest Unequal Adjacent Groups Subsequence II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/longest-unequal-adjacent-groups-subsequence-ii/",
+  "slug": "longest-unequal-adjacent-groups-subsequence-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "String",
+    "Dynamic Programming"
+  ],
+  "similar_questions": []
+}

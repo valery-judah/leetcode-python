@@ -1,0 +1,47 @@
+{
+  "category": "",
+  "id": "323",
+  "name": "Number of Connected Components in an Undirected Graph",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/",
+  "slug": "number-of-connected-components-in-an-undirected-graph",
+  "isPaidOnly": true,
+  "tags": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union Find",
+    "Graph"
+  ],
+  "similar_questions": [
+    {
+      "title": "Number of Islands",
+      "slug": "number-of-islands",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-islands/"
+    },
+    {
+      "title": "Graph Valid Tree",
+      "slug": "graph-valid-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/graph-valid-tree/"
+    },
+    {
+      "title": "Number of Provinces",
+      "slug": "number-of-provinces",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-provinces/"
+    },
+    {
+      "title": "Paths in Maze That Lead to Same Room",
+      "slug": "paths-in-maze-that-lead-to-same-room",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/paths-in-maze-that-lead-to-same-room/"
+    },
+    {
+      "title": "Count the Number of Complete Components",
+      "slug": "count-the-number-of-complete-components",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-the-number-of-complete-components/"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "119",
+  "name": "Pascal's Triangle II",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/pascals-triangle-ii/",
+  "slug": "pascals-triangle-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Pascal's Triangle",
+      "slug": "pascals-triangle",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/pascals-triangle/"
+    },
+    {
+      "title": "Find Triangular Sum of an Array",
+      "slug": "find-triangular-sum-of-an-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-triangular-sum-of-an-array/"
+    }
+  ]
+}

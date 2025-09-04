@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "3361",
+  "name": "Shift Distance Between Two Strings",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/shift-distance-between-two-strings/",
+  "slug": "shift-distance-between-two-strings",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "String",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Shifting Letters",
+      "slug": "shifting-letters",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/shifting-letters/"
+    },
+    {
+      "title": "Shifting Letters II",
+      "slug": "shifting-letters-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/shifting-letters-ii/"
+    }
+  ]
+}

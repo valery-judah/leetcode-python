@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "1515",
+  "name": "Best Position for a Service Centre",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/best-position-for-a-service-centre/",
+  "slug": "best-position-for-a-service-centre",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Geometry",
+    "Randomized"
+  ],
+  "similar_questions": []
+}

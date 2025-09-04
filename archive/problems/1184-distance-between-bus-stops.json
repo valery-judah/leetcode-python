@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "1184",
+  "name": "Distance Between Bus Stops",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/distance-between-bus-stops/",
+  "slug": "distance-between-bus-stops",
+  "isPaidOnly": false,
+  "tags": [
+    "Array"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Costs Using the Train Line",
+      "slug": "minimum-costs-using-the-train-line",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-costs-using-the-train-line/"
+    }
+  ]
+}

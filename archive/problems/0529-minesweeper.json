@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "529",
+  "name": "Minesweeper",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minesweeper/",
+  "slug": "minesweeper",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Detonate the Maximum Bombs",
+      "slug": "detonate-the-maximum-bombs",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/detonate-the-maximum-bombs/"
+    }
+  ]
+}

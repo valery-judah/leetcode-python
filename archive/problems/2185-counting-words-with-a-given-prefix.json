@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "2185",
+  "name": "Counting Words With a Given Prefix",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/counting-words-with-a-given-prefix/",
+  "slug": "counting-words-with-a-given-prefix",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "String",
+    "String Matching"
+  ],
+  "similar_questions": [
+    {
+      "title": "Check If a Word Occurs As a Prefix of Any Word in a Sentence",
+      "slug": "check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence/"
+    },
+    {
+      "title": "Count Prefixes of a Given String",
+      "slug": "count-prefixes-of-a-given-string",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-prefixes-of-a-given-string/"
+    }
+  ]
+}

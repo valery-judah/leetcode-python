@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "1952",
+  "name": "Three Divisors",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/three-divisors/",
+  "slug": "three-divisors",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Enumeration",
+    "Number Theory"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find Greatest Common Divisor of Array",
+      "slug": "find-greatest-common-divisor-of-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-greatest-common-divisor-of-array/"
+    },
+    {
+      "title": "Smallest Even Multiple",
+      "slug": "smallest-even-multiple",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/smallest-even-multiple/"
+    }
+  ]
+}

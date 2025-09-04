@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "2927",
+  "name": "Distribute Candies Among Children III",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/distribute-candies-among-children-iii/",
+  "slug": "distribute-candies-among-children-iii",
+  "isPaidOnly": true,
+  "tags": [
+    "Math",
+    "Combinatorics"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "3337",
+  "name": "Total Characters in String After Transformations II",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/total-characters-in-string-after-transformations-ii/",
+  "slug": "total-characters-in-string-after-transformations-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "Math",
+    "String",
+    "Dynamic Programming",
+    "Counting"
+  ],
+  "similar_questions": []
+}

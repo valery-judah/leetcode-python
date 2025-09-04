@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "2051",
+  "name": "The Category of Each Member in the Store",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/the-category-of-each-member-in-the-store/",
+  "slug": "the-category-of-each-member-in-the-store",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

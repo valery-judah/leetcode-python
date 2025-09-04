@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "1413",
+  "name": "Minimum Value to Get Positive Step by Step Sum",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum/",
+  "slug": "minimum-value-to-get-positive-step-by-step-sum",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "similar_questions": []
+}

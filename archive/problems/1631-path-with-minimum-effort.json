@@ -1,0 +1,38 @@
+{
+  "category": "",
+  "id": "1631",
+  "name": "Path With Minimum Effort",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/path-with-minimum-effort/",
+  "slug": "path-with-minimum-effort",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union Find",
+    "Heap (Priority Queue)",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Swim in Rising Water",
+      "slug": "swim-in-rising-water",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/swim-in-rising-water/"
+    },
+    {
+      "title": "Path With Maximum Minimum Value",
+      "slug": "path-with-maximum-minimum-value",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/path-with-maximum-minimum-value/"
+    },
+    {
+      "title": "Find the Safest Path in a Grid",
+      "slug": "find-the-safest-path-in-a-grid",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-safest-path-in-a-grid/"
+    }
+  ]
+}

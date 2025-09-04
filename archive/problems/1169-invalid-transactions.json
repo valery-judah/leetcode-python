@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "1169",
+  "name": "Invalid Transactions",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/invalid-transactions/",
+  "slug": "invalid-transactions",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Sorting"
+  ],
+  "similar_questions": []
+}

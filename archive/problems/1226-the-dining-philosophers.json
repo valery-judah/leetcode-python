@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "1226",
+  "name": "The Dining Philosophers",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/the-dining-philosophers/",
+  "slug": "the-dining-philosophers",
+  "isPaidOnly": false,
+  "tags": [
+    "Concurrency"
+  ],
+  "similar_questions": []
+}

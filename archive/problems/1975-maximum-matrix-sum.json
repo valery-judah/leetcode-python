@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1975",
+  "name": "Maximum Matrix Sum",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-matrix-sum/",
+  "slug": "maximum-matrix-sum",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Matrix"
+  ],
+  "similar_questions": []
+}

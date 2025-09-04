@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "950",
+  "name": "Reveal Cards In Increasing Order",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/reveal-cards-in-increasing-order/",
+  "slug": "reveal-cards-in-increasing-order",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Queue",
+    "Sorting",
+    "Simulation"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,30 @@
+{
+  "category": "",
+  "id": "2171",
+  "name": "Removing Minimum Number of Magic Beans",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/removing-minimum-number-of-magic-beans/",
+  "slug": "removing-minimum-number-of-magic-beans",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Enumeration",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Moves to Equal Array Elements II",
+      "slug": "minimum-moves-to-equal-array-elements-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/"
+    },
+    {
+      "title": "Minimum Operations to Reduce X to Zero",
+      "slug": "minimum-operations-to-reduce-x-to-zero",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/"
+    }
+  ]
+}

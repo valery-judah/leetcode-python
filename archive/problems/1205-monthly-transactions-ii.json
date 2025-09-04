@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "1205",
+  "name": "Monthly Transactions II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/monthly-transactions-ii/",
+  "slug": "monthly-transactions-ii",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": [
+    {
+      "title": "Monthly Transactions I",
+      "slug": "monthly-transactions-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/monthly-transactions-i/"
+    }
+  ]
+}

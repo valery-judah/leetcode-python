@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "1808",
+  "name": "Maximize Number of Nice Divisors",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/maximize-number-of-nice-divisors/",
+  "slug": "maximize-number-of-nice-divisors",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Recursion",
+    "Number Theory"
+  ],
+  "similar_questions": [
+    {
+      "title": "Integer Break",
+      "slug": "integer-break",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/integer-break/"
+    }
+  ]
+}

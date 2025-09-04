@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "1998",
+  "name": "GCD Sort of an Array",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/gcd-sort-of-an-array/",
+  "slug": "gcd-sort-of-an-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Union Find",
+    "Sorting",
+    "Number Theory"
+  ],
+  "similar_questions": [
+    {
+      "title": "Rank Transform of a Matrix",
+      "slug": "rank-transform-of-a-matrix",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/rank-transform-of-a-matrix/"
+    }
+  ]
+}

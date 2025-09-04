@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "3619",
+  "name": "Count Islands With Total Value Divisible by K",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-islands-with-total-value-divisible-by-k/",
+  "slug": "count-islands-with-total-value-divisible-by-k",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union Find",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Number of Islands",
+      "slug": "number-of-islands",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-islands/"
+    }
+  ]
+}

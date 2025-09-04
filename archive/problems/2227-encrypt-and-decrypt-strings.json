@@ -1,0 +1,42 @@
+{
+  "category": "",
+  "id": "2227",
+  "name": "Encrypt and Decrypt Strings",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/encrypt-and-decrypt-strings/",
+  "slug": "encrypt-and-decrypt-strings",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Design",
+    "Trie"
+  ],
+  "similar_questions": [
+    {
+      "title": "Implement Trie (Prefix Tree)",
+      "slug": "implement-trie-prefix-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/implement-trie-prefix-tree/"
+    },
+    {
+      "title": "Word Search II",
+      "slug": "word-search-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/word-search-ii/"
+    },
+    {
+      "title": "Implement Trie II (Prefix Tree)",
+      "slug": "implement-trie-ii-prefix-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/implement-trie-ii-prefix-tree/"
+    },
+    {
+      "title": "Find the Sum of Encrypted Integers",
+      "slug": "find-the-sum-of-encrypted-integers",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-sum-of-encrypted-integers/"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "2173",
+  "name": "Longest Winning Streak",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/longest-winning-streak/",
+  "slug": "longest-winning-streak",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

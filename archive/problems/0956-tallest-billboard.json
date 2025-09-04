@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "956",
+  "name": "Tallest Billboard",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/tallest-billboard/",
+  "slug": "tallest-billboard",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Partition Array Into Two Arrays to Minimize Sum Difference",
+      "slug": "partition-array-into-two-arrays-to-minimize-sum-difference",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/"
+    }
+  ]
+}

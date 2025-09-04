@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "2046",
+  "name": "Sort Linked List Already Sorted Using Absolute Values",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/sort-linked-list-already-sorted-using-absolute-values/",
+  "slug": "sort-linked-list-already-sorted-using-absolute-values",
+  "isPaidOnly": true,
+  "tags": [
+    "Linked List",
+    "Two Pointers",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Sort List",
+      "slug": "sort-list",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sort-list/"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "1239",
+  "name": "Maximum Length of a Concatenated String with Unique Characters",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/",
+  "slug": "maximum-length-of-a-concatenated-string-with-unique-characters",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "String",
+    "Backtracking",
+    "Bit Manipulation"
+  ],
+  "similar_questions": []
+}

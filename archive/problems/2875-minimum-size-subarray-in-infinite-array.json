@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "2875",
+  "name": "Minimum Size Subarray in Infinite Array",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-size-subarray-in-infinite-array/",
+  "slug": "minimum-size-subarray-in-infinite-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window",
+    "Prefix Sum"
+  ],
+  "similar_questions": []
+}

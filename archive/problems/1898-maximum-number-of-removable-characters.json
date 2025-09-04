@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "1898",
+  "name": "Maximum Number of Removable Characters",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-number-of-removable-characters/",
+  "slug": "maximum-number-of-removable-characters",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "String",
+    "Binary Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Candies Allocated to K Children",
+      "slug": "maximum-candies-allocated-to-k-children",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-candies-allocated-to-k-children/"
+    }
+  ]
+}

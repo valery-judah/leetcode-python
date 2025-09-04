@@ -1,0 +1,34 @@
+{
+  "category": "",
+  "id": "2158",
+  "name": "Amount of New Area Painted Each Day",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/amount-of-new-area-painted-each-day/",
+  "slug": "amount-of-new-area-painted-each-day",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Segment Tree",
+    "Ordered Set"
+  ],
+  "similar_questions": [
+    {
+      "title": "Merge Intervals",
+      "slug": "merge-intervals",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/merge-intervals/"
+    },
+    {
+      "title": "Describe the Painting",
+      "slug": "describe-the-painting",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/describe-the-painting/"
+    },
+    {
+      "title": "Average Height of Buildings in Each Segment",
+      "slug": "average-height-of-buildings-in-each-segment",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/average-height-of-buildings-in-each-segment/"
+    }
+  ]
+}

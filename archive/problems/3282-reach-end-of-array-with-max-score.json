@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "3282",
+  "name": "Reach End of Array With Max Score",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/reach-end-of-array-with-max-score/",
+  "slug": "reach-end-of-array-with-max-score",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "similar_questions": []
+}

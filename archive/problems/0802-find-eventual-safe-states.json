@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "802",
+  "name": "Find Eventual Safe States",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-eventual-safe-states/",
+  "slug": "find-eventual-safe-states",
+  "isPaidOnly": false,
+  "tags": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph",
+    "Topological Sort"
+  ],
+  "similar_questions": [
+    {
+      "title": "Build a Matrix With Conditions",
+      "slug": "build-a-matrix-with-conditions",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/build-a-matrix-with-conditions/"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "category": "",
+  "id": "2335",
+  "name": "Minimum Amount of Time to Fill Cups",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/minimum-amount-of-time-to-fill-cups/",
+  "slug": "minimum-amount-of-time-to-fill-cups",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "similar_questions": [
+    {
+      "title": "Construct Target Array With Multiple Sums",
+      "slug": "construct-target-array-with-multiple-sums",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/construct-target-array-with-multiple-sums/"
+    },
+    {
+      "title": "Maximum Score From Removing Stones",
+      "slug": "maximum-score-from-removing-stones",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-score-from-removing-stones/"
+    },
+    {
+      "title": "Maximum Running Time of N Computers",
+      "slug": "maximum-running-time-of-n-computers",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-running-time-of-n-computers/"
+    },
+    {
+      "title": "Minimum Cost to Make Array Equal",
+      "slug": "minimum-cost-to-make-array-equal",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-cost-to-make-array-equal/"
+    }
+  ]
+}

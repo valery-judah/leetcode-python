@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "1411",
+  "name": "Number of Ways to Paint N \u00d7 3 Grid",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/",
+  "slug": "number-of-ways-to-paint-n-3-grid",
+  "isPaidOnly": false,
+  "tags": [
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Painting a Grid With Three Different Colors",
+      "slug": "painting-a-grid-with-three-different-colors",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/painting-a-grid-with-three-different-colors/"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "1796",
+  "name": "Second Largest Digit in a String",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/second-largest-digit-in-a-string/",
+  "slug": "second-largest-digit-in-a-string",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Remove Digit From Number to Maximize Result",
+      "slug": "remove-digit-from-number-to-maximize-result",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/remove-digit-from-number-to-maximize-result/"
+    }
+  ]
+}

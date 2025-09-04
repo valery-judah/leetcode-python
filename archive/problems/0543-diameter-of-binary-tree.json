@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "543",
+  "name": "Diameter of Binary Tree",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/diameter-of-binary-tree/",
+  "slug": "diameter-of-binary-tree",
+  "isPaidOnly": false,
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Diameter of N-Ary Tree",
+      "slug": "diameter-of-n-ary-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/diameter-of-n-ary-tree/"
+    },
+    {
+      "title": "Longest Path With Different Adjacent Characters",
+      "slug": "longest-path-with-different-adjacent-characters",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-path-with-different-adjacent-characters/"
+    }
+  ]
+}

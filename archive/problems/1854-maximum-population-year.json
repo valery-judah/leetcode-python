@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "1854",
+  "name": "Maximum Population Year",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/maximum-population-year/",
+  "slug": "maximum-population-year",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Counting",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Shifting Letters II",
+      "slug": "shifting-letters-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/shifting-letters-ii/"
+    }
+  ]
+}

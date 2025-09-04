@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "1144",
+  "name": "Decrease Elements To Make Array Zigzag",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/decrease-elements-to-make-array-zigzag/",
+  "slug": "decrease-elements-to-make-array-zigzag",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "similar_questions": []
+}

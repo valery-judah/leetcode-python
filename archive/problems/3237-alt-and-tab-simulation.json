@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "3237",
+  "name": "Alt and Tab Simulation",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/alt-and-tab-simulation/",
+  "slug": "alt-and-tab-simulation",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Simulation"
+  ],
+  "similar_questions": []
+}

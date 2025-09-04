@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "745",
+  "name": "Prefix and Suffix Search",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/prefix-and-suffix-search/",
+  "slug": "prefix-and-suffix-search",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Design",
+    "Trie"
+  ],
+  "similar_questions": [
+    {
+      "title": "Design Add and Search Words Data Structure",
+      "slug": "design-add-and-search-words-data-structure",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/design-add-and-search-words-data-structure/"
+    }
+  ]
+}

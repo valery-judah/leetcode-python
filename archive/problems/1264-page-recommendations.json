@@ -1,0 +1,26 @@
+{
+  "category": "",
+  "id": "1264",
+  "name": "Page Recommendations",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/page-recommendations/",
+  "slug": "page-recommendations",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": [
+    {
+      "title": "Page Recommendations II",
+      "slug": "page-recommendations-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/page-recommendations-ii/"
+    },
+    {
+      "title": "Strong Friendship",
+      "slug": "strong-friendship",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/strong-friendship/"
+    }
+  ]
+}

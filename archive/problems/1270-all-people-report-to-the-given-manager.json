@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "1270",
+  "name": "All People Report to the Given Manager",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/all-people-report-to-the-given-manager/",
+  "slug": "all-people-report-to-the-given-manager",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

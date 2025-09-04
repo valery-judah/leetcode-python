@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "3375",
+  "name": "Minimum Operations to Make Array Values Equal to K",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/minimum-operations-to-make-array-values-equal-to-k/",
+  "slug": "minimum-operations-to-make-array-values-equal-to-k",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "similar_questions": []
+}

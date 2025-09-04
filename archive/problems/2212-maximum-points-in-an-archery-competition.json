@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "2212",
+  "name": "Maximum Points in an Archery Competition",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-points-in-an-archery-competition/",
+  "slug": "maximum-points-in-an-archery-competition",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Backtracking",
+    "Bit Manipulation",
+    "Enumeration"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Product of the Length of Two Palindromic Subsequences",
+      "slug": "maximum-product-of-the-length-of-two-palindromic-subsequences",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/"
+    }
+  ]
+}

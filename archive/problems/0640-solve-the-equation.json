@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "640",
+  "name": "Solve the Equation",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/solve-the-equation/",
+  "slug": "solve-the-equation",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "String",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Fraction Addition and Subtraction",
+      "slug": "fraction-addition-and-subtraction",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/fraction-addition-and-subtraction/"
+    },
+    {
+      "title": "Minimize Result by Adding Parentheses to Expression",
+      "slug": "minimize-result-by-adding-parentheses-to-expression",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimize-result-by-adding-parentheses-to-expression/"
+    }
+  ]
+}

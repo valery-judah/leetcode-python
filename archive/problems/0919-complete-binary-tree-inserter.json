@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "919",
+  "name": "Complete Binary Tree Inserter",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/complete-binary-tree-inserter/",
+  "slug": "complete-binary-tree-inserter",
+  "isPaidOnly": false,
+  "tags": [
+    "Tree",
+    "Breadth-First Search",
+    "Design",
+    "Binary Tree"
+  ],
+  "similar_questions": []
+}

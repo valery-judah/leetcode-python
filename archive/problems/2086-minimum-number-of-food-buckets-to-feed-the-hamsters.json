@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "2086",
+  "name": "Minimum Number of Food Buckets to Feed the Hamsters",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-number-of-food-buckets-to-feed-the-hamsters/",
+  "slug": "minimum-number-of-food-buckets-to-feed-the-hamsters",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Number of People That Can Be Caught in Tag",
+      "slug": "maximum-number-of-people-that-can-be-caught-in-tag",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-number-of-people-that-can-be-caught-in-tag/"
+    },
+    {
+      "title": "Brightest Position on Street",
+      "slug": "brightest-position-on-street",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/brightest-position-on-street/"
+    }
+  ]
+}

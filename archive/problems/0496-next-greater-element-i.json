@@ -1,0 +1,65 @@
+{
+  "category": "",
+  "id": "496",
+  "name": "Next Greater Element I",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/next-greater-element-i/",
+  "slug": "next-greater-element-i",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Stack",
+    "Monotonic Stack"
+  ],
+  "similar_questions": [
+    {
+      "title": "Next Greater Element II",
+      "slug": "next-greater-element-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/next-greater-element-ii/"
+    },
+    {
+      "title": "Next Greater Element III",
+      "slug": "next-greater-element-iii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/next-greater-element-iii/"
+    },
+    {
+      "title": "Daily Temperatures",
+      "slug": "daily-temperatures",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/daily-temperatures/"
+    },
+    {
+      "title": "Sum of Subarray Ranges",
+      "slug": "sum-of-subarray-ranges",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sum-of-subarray-ranges/"
+    },
+    {
+      "title": "Sum of Total Strength of Wizards",
+      "slug": "sum-of-total-strength-of-wizards",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sum-of-total-strength-of-wizards/"
+    },
+    {
+      "title": "Next Greater Element IV",
+      "slug": "next-greater-element-iv",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/next-greater-element-iv/"
+    },
+    {
+      "title": "Remove Nodes From Linked List",
+      "slug": "remove-nodes-from-linked-list",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/remove-nodes-from-linked-list/"
+    },
+    {
+      "title": "Smallest Missing Integer Greater Than Sequential Prefix Sum",
+      "slug": "smallest-missing-integer-greater-than-sequential-prefix-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/"
+    }
+  ]
+}

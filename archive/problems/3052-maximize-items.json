@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "3052",
+  "name": "Maximize Items",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/maximize-items/",
+  "slug": "maximize-items",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

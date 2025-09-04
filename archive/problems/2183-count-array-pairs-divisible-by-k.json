@@ -1,0 +1,40 @@
+{
+  "category": "",
+  "id": "2183",
+  "name": "Count Array Pairs Divisible by K",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/count-array-pairs-divisible-by-k/",
+  "slug": "count-array-pairs-divisible-by-k",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Number Theory"
+  ],
+  "similar_questions": [
+    {
+      "title": "Number of Single Divisor Triplets",
+      "slug": "number-of-single-divisor-triplets",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-single-divisor-triplets/"
+    },
+    {
+      "title": "Check If Array Pairs Are Divisible by k",
+      "slug": "check-if-array-pairs-are-divisible-by-k",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k/"
+    },
+    {
+      "title": "Find the Number of Good Pairs II",
+      "slug": "find-the-number-of-good-pairs-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-number-of-good-pairs-ii/"
+    },
+    {
+      "title": "Find the Number of Good Pairs I",
+      "slug": "find-the-number-of-good-pairs-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-number-of-good-pairs-i/"
+    }
+  ]
+}

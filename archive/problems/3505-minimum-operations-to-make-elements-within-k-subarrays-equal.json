@@ -1,0 +1,31 @@
+{
+  "category": "",
+  "id": "3505",
+  "name": "Minimum Operations to Make Elements Within K Subarrays Equal",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-operations-to-make-elements-within-k-subarrays-equal/",
+  "slug": "minimum-operations-to-make-elements-within-k-subarrays-equal",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Dynamic Programming",
+    "Sliding Window",
+    "Heap (Priority Queue)"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find Median from Data Stream",
+      "slug": "find-median-from-data-stream",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-median-from-data-stream/"
+    },
+    {
+      "title": "Minimum Moves to Equal Array Elements II",
+      "slug": "minimum-moves-to-equal-array-elements-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/"
+    }
+  ]
+}

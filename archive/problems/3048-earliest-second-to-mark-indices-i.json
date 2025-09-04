@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "3048",
+  "name": "Earliest Second to Mark Indices I",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/earliest-second-to-mark-indices-i/",
+  "slug": "earliest-second-to-mark-indices-i",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "similar_questions": []
+}

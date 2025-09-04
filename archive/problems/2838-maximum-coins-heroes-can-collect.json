@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "2838",
+  "name": "Maximum Coins Heroes Can Collect",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-coins-heroes-can-collect/",
+  "slug": "maximum-coins-heroes-can-collect",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Sorting",
+    "Prefix Sum"
+  ],
+  "similar_questions": []
+}

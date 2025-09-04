@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "1691",
+  "name": "Maximum Height by Stacking Cuboids ",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/maximum-height-by-stacking-cuboids/",
+  "slug": "maximum-height-by-stacking-cuboids",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "The Number of Weak Characters in the Game",
+      "slug": "the-number-of-weak-characters-in-the-game",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/the-number-of-weak-characters-in-the-game/"
+    },
+    {
+      "title": "Maximum Number of Groups Entering a Competition",
+      "slug": "maximum-number-of-groups-entering-a-competition",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-number-of-groups-entering-a-competition/"
+    }
+  ]
+}

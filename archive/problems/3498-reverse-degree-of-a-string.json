@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "3498",
+  "name": "Reverse Degree of a String",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/reverse-degree-of-a-string/",
+  "slug": "reverse-degree-of-a-string",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Simulation"
+  ],
+  "similar_questions": []
+}

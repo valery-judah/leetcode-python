@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "677",
+  "name": "Map Sum Pairs",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/map-sum-pairs/",
+  "slug": "map-sum-pairs",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Design",
+    "Trie"
+  ],
+  "similar_questions": [
+    {
+      "title": "Sort the Jumbled Numbers",
+      "slug": "sort-the-jumbled-numbers",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sort-the-jumbled-numbers/"
+    },
+    {
+      "title": "Sum of Prefix Scores of Strings",
+      "slug": "sum-of-prefix-scores-of-strings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sum-of-prefix-scores-of-strings/"
+    }
+  ]
+}

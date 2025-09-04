@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "3152",
+  "name": "Special Array II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/special-array-ii/",
+  "slug": "special-array-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Prefix Sum"
+  ],
+  "similar_questions": []
+}

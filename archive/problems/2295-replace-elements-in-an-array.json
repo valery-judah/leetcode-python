@@ -1,0 +1,34 @@
+{
+  "category": "",
+  "id": "2295",
+  "name": "Replace Elements in an Array",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/replace-elements-in-an-array/",
+  "slug": "replace-elements-in-an-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find All Numbers Disappeared in an Array",
+      "slug": "find-all-numbers-disappeared-in-an-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/"
+    },
+    {
+      "title": "Maximum Number of Integers to Choose From a Range I",
+      "slug": "maximum-number-of-integers-to-choose-from-a-range-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-number-of-integers-to-choose-from-a-range-i/"
+    },
+    {
+      "title": "Maximum Number of Integers to Choose From a Range II",
+      "slug": "maximum-number-of-integers-to-choose-from-a-range-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-number-of-integers-to-choose-from-a-range-ii/"
+    }
+  ]
+}

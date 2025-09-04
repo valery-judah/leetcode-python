@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "1417",
+  "name": "Reformat The String",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/reformat-the-string/",
+  "slug": "reformat-the-string",
+  "isPaidOnly": false,
+  "tags": [
+    "String"
+  ],
+  "similar_questions": []
+}

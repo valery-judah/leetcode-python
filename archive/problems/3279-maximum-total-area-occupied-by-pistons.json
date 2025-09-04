@@ -1,0 +1,18 @@
+{
+  "category": "",
+  "id": "3279",
+  "name": "Maximum Total Area Occupied by Pistons",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/maximum-total-area-occupied-by-pistons/",
+  "slug": "maximum-total-area-occupied-by-pistons",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Simulation",
+    "Counting",
+    "Prefix Sum"
+  ],
+  "similar_questions": []
+}

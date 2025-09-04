@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "1598",
+  "name": "Crawler Log Folder",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/crawler-log-folder/",
+  "slug": "crawler-log-folder",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "String",
+    "Stack"
+  ],
+  "similar_questions": [
+    {
+      "title": "Baseball Game",
+      "slug": "baseball-game",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/baseball-game/"
+    },
+    {
+      "title": "Backspace String Compare",
+      "slug": "backspace-string-compare",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/backspace-string-compare/"
+    }
+  ]
+}

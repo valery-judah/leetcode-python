@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "16",
+  "name": "3Sum Closest",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/3sum-closest/",
+  "slug": "3sum-closest",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "3Sum",
+      "slug": "3sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/3sum/"
+    },
+    {
+      "title": "3Sum Smaller",
+      "slug": "3sum-smaller",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/3sum-smaller/"
+    }
+  ]
+}

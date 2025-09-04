@@ -1,0 +1,36 @@
+{
+  "category": "",
+  "id": "943",
+  "name": "Find the Shortest Superstring",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/find-the-shortest-superstring/",
+  "slug": "find-the-shortest-superstring",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "String",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Bitmask"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Rows Covered by Columns",
+      "slug": "maximum-rows-covered-by-columns",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-rows-covered-by-columns/"
+    },
+    {
+      "title": "Find the Minimum Cost Array Permutation",
+      "slug": "find-the-minimum-cost-array-permutation",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-minimum-cost-array-permutation/"
+    },
+    {
+      "title": "Find the Shortest Superstring II",
+      "slug": "find-the-shortest-superstring-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-shortest-superstring-ii/"
+    }
+  ]
+}

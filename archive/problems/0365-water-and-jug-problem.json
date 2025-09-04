@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "365",
+  "name": "Water and Jug Problem",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/water-and-jug-problem/",
+  "slug": "water-and-jug-problem",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Depth-First Search",
+    "Breadth-First Search"
+  ],
+  "similar_questions": []
+}

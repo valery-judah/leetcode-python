@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "2151",
+  "name": "Maximum Good People Based on Statements",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/maximum-good-people-based-on-statements/",
+  "slug": "maximum-good-people-based-on-statements",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Backtracking",
+    "Bit Manipulation",
+    "Enumeration"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Score Words Formed by Letters",
+      "slug": "maximum-score-words-formed-by-letters",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-score-words-formed-by-letters/"
+    }
+  ]
+}

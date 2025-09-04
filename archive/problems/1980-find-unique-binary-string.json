@@ -1,0 +1,35 @@
+{
+  "category": "",
+  "id": "1980",
+  "name": "Find Unique Binary String",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-unique-binary-string/",
+  "slug": "find-unique-binary-string",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Backtracking"
+  ],
+  "similar_questions": [
+    {
+      "title": "Missing Number",
+      "slug": "missing-number",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/missing-number/"
+    },
+    {
+      "title": "Find All Numbers Disappeared in an Array",
+      "slug": "find-all-numbers-disappeared-in-an-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/"
+    },
+    {
+      "title": "Random Pick with Blacklist",
+      "slug": "random-pick-with-blacklist",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/random-pick-with-blacklist/"
+    }
+  ]
+}

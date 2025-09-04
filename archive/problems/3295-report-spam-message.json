@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "3295",
+  "name": "Report Spam Message",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/report-spam-message/",
+  "slug": "report-spam-message",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "similar_questions": []
+}

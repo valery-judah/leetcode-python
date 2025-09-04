@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "1784",
+  "name": "Check if Binary String Has at Most One Segment of Ones",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/",
+  "slug": "check-if-binary-string-has-at-most-one-segment-of-ones",
+  "isPaidOnly": false,
+  "tags": [
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longer Contiguous Segments of Ones than Zeros",
+      "slug": "longer-contiguous-segments-of-ones-than-zeros",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longer-contiguous-segments-of-ones-than-zeros/"
+    }
+  ]
+}

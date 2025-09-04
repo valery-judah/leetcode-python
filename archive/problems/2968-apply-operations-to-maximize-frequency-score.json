@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "2968",
+  "name": "Apply Operations to Maximize Frequency Score",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/apply-operations-to-maximize-frequency-score/",
+  "slug": "apply-operations-to-maximize-frequency-score",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Sliding Window",
+    "Sorting",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Frequency of the Most Frequent Element",
+      "slug": "frequency-of-the-most-frequent-element",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/frequency-of-the-most-frequent-element/"
+    }
+  ]
+}

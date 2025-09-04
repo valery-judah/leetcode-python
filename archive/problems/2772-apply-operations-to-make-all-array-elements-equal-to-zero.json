@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "2772",
+  "name": "Apply Operations to Make All Array Elements Equal to Zero",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/apply-operations-to-make-all-array-elements-equal-to-zero/",
+  "slug": "apply-operations-to-make-all-array-elements-equal-to-zero",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Continuous Subarray Sum",
+      "slug": "continuous-subarray-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/continuous-subarray-sum/"
+    },
+    {
+      "title": "Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold",
+      "slug": "number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/"
+    }
+  ]
+}

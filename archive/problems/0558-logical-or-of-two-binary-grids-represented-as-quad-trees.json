@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "558",
+  "name": "Logical OR of Two Binary Grids Represented as Quad-Trees",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees/",
+  "slug": "logical-or-of-two-binary-grids-represented-as-quad-trees",
+  "isPaidOnly": false,
+  "tags": [
+    "Divide and Conquer",
+    "Tree"
+  ],
+  "similar_questions": []
+}

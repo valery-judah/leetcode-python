@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "2384",
+  "name": "Largest Palindromic Number",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/largest-palindromic-number/",
+  "slug": "largest-palindromic-number",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Greedy",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longest Palindrome",
+      "slug": "longest-palindrome",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-palindrome/"
+    }
+  ]
+}

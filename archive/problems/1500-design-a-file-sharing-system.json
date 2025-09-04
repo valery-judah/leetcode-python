@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "1500",
+  "name": "Design a File Sharing System",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/design-a-file-sharing-system/",
+  "slug": "design-a-file-sharing-system",
+  "isPaidOnly": true,
+  "tags": [
+    "Hash Table",
+    "Design",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Data Stream"
+  ],
+  "similar_questions": [
+    {
+      "title": "Design Twitter",
+      "slug": "design-twitter",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/design-twitter/"
+    }
+  ]
+}

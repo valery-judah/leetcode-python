@@ -1,0 +1,46 @@
+{
+  "category": "",
+  "id": "2400",
+  "name": "Number of Ways to Reach a Position After Exactly k Steps",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/number-of-ways-to-reach-a-position-after-exactly-k-steps/",
+  "slug": "number-of-ways-to-reach-a-position-after-exactly-k-steps",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Combinatorics"
+  ],
+  "similar_questions": [
+    {
+      "title": "Unique Paths",
+      "slug": "unique-paths",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/unique-paths/"
+    },
+    {
+      "title": "Climbing Stairs",
+      "slug": "climbing-stairs",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/climbing-stairs/"
+    },
+    {
+      "title": "Reach a Number",
+      "slug": "reach-a-number",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/reach-a-number/"
+    },
+    {
+      "title": "Reaching Points",
+      "slug": "reaching-points",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/reaching-points/"
+    },
+    {
+      "title": "Number of Ways to Stay in the Same Place After Some Steps",
+      "slug": "number-of-ways-to-stay-in-the-same-place-after-some-steps",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-ways-to-stay-in-the-same-place-after-some-steps/"
+    }
+  ]
+}

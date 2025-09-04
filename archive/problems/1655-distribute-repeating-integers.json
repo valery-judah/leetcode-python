@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "1655",
+  "name": "Distribute Repeating Integers",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/distribute-repeating-integers/",
+  "slug": "distribute-repeating-integers",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Backtracking",
+    "Bit Manipulation",
+    "Bitmask"
+  ],
+  "similar_questions": []
+}

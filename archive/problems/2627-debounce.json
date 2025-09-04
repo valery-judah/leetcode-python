@@ -1,0 +1,30 @@
+{
+  "category": "",
+  "id": "2627",
+  "name": "Debounce",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/debounce/",
+  "slug": "debounce",
+  "isPaidOnly": false,
+  "tags": [],
+  "similar_questions": [
+    {
+      "title": "Promise Time Limit",
+      "slug": "promise-time-limit",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/promise-time-limit/"
+    },
+    {
+      "title": "Cache With Time Limit",
+      "slug": "cache-with-time-limit",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/cache-with-time-limit/"
+    },
+    {
+      "title": "Throttle",
+      "slug": "throttle",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/throttle/"
+    }
+  ]
+}

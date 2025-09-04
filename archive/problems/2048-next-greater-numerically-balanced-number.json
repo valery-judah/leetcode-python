@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "2048",
+  "name": "Next Greater Numerically Balanced Number",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/next-greater-numerically-balanced-number/",
+  "slug": "next-greater-numerically-balanced-number",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "Math",
+    "Backtracking",
+    "Counting",
+    "Enumeration"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find the Width of Columns of a Grid",
+      "slug": "find-the-width-of-columns-of-a-grid",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-width-of-columns-of-a-grid/"
+    }
+  ]
+}

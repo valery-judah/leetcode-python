@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "3200",
+  "name": "Maximum Height of a Triangle",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/maximum-height-of-a-triangle/",
+  "slug": "maximum-height-of-a-triangle",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Enumeration"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "2073",
+  "name": "Time Needed to Buy Tickets",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/time-needed-to-buy-tickets/",
+  "slug": "time-needed-to-buy-tickets",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Queue",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Number of Students Unable to Eat Lunch",
+      "slug": "number-of-students-unable-to-eat-lunch",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/"
+    }
+  ]
+}

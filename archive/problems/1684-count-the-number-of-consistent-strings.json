@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "1684",
+  "name": "Count the Number of Consistent Strings",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/count-the-number-of-consistent-strings/",
+  "slug": "count-the-number-of-consistent-strings",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Bit Manipulation",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Pairs Of Similar Strings",
+      "slug": "count-pairs-of-similar-strings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-pairs-of-similar-strings/"
+    }
+  ]
+}

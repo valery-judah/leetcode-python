@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "2606",
+  "name": "Find the Substring With Maximum Cost",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-the-substring-with-maximum-cost/",
+  "slug": "find-the-substring-with-maximum-cost",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Subarray",
+      "slug": "maximum-subarray",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-subarray/"
+    }
+  ]
+}

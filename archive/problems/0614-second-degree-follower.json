@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "614",
+  "name": "Second Degree Follower",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/second-degree-follower/",
+  "slug": "second-degree-follower",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

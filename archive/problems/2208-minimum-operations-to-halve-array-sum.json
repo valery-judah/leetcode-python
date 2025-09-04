@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "2208",
+  "name": "Minimum Operations to Halve Array Sum",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-operations-to-halve-array-sum/",
+  "slug": "minimum-operations-to-halve-array-sum",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Heap (Priority Queue)"
+  ],
+  "similar_questions": [
+    {
+      "title": "Remove Stones to Minimize the Total",
+      "slug": "remove-stones-to-minimize-the-total",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/remove-stones-to-minimize-the-total/"
+    },
+    {
+      "title": "Minimum Operations to Exceed Threshold Value II",
+      "slug": "minimum-operations-to-exceed-threshold-value-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-ii/"
+    }
+  ]
+}

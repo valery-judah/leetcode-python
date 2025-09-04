@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "771",
+  "name": "Jewels and Stones",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/jewels-and-stones/",
+  "slug": "jewels-and-stones",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "similar_questions": []
+}

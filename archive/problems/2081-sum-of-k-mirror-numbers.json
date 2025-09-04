@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "2081",
+  "name": "Sum of k-Mirror Numbers",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/sum-of-k-mirror-numbers/",
+  "slug": "sum-of-k-mirror-numbers",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Enumeration"
+  ],
+  "similar_questions": [
+    {
+      "title": "Strobogrammatic Number II",
+      "slug": "strobogrammatic-number-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/strobogrammatic-number-ii/"
+    },
+    {
+      "title": "Prime Palindrome",
+      "slug": "prime-palindrome",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/prime-palindrome/"
+    }
+  ]
+}

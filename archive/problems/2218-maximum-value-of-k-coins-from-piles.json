@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "2218",
+  "name": "Maximum Value of K Coins From Piles",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/",
+  "slug": "maximum-value-of-k-coins-from-piles",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Coin Change",
+      "slug": "coin-change",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/coin-change/"
+    },
+    {
+      "title": "Coin Change II",
+      "slug": "coin-change-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/coin-change-ii/"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "category": "",
+  "id": "1568",
+  "name": "Minimum Number of Days to Disconnect Island",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island/",
+  "slug": "minimum-number-of-days-to-disconnect-island",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Matrix",
+    "Strongly Connected Component"
+  ],
+  "similar_questions": [
+    {
+      "title": "Disconnect Path in a Binary Matrix by at Most One Flip",
+      "slug": "disconnect-path-in-a-binary-matrix-by-at-most-one-flip",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/disconnect-path-in-a-binary-matrix-by-at-most-one-flip/"
+    },
+    {
+      "title": "Minimum Runes to Add to Cast Spell",
+      "slug": "minimum-runes-to-add-to-cast-spell",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-runes-to-add-to-cast-spell/"
+    }
+  ]
+}

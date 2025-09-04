@@ -1,0 +1,40 @@
+{
+  "category": "",
+  "id": "14",
+  "name": "Longest Common Prefix",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/longest-common-prefix/",
+  "slug": "longest-common-prefix",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "String",
+    "Trie"
+  ],
+  "similar_questions": [
+    {
+      "title": "Smallest Missing Integer Greater Than Sequential Prefix Sum",
+      "slug": "smallest-missing-integer-greater-than-sequential-prefix-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/"
+    },
+    {
+      "title": "Find the Length of the Longest Common Prefix",
+      "slug": "find-the-length-of-the-longest-common-prefix",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/"
+    },
+    {
+      "title": "Longest Common Suffix Queries",
+      "slug": "longest-common-suffix-queries",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-common-suffix-queries/"
+    },
+    {
+      "title": "Longest Common Prefix After at Most One Removal",
+      "slug": "longest-common-prefix-after-at-most-one-removal",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-common-prefix-after-at-most-one-removal/"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "category": "",
+  "id": "688",
+  "name": "Knight Probability in Chessboard",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/knight-probability-in-chessboard/",
+  "slug": "knight-probability-in-chessboard",
+  "isPaidOnly": false,
+  "tags": [
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Out of Boundary Paths",
+      "slug": "out-of-boundary-paths",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/out-of-boundary-paths/"
+    },
+    {
+      "title": "Maximum Number of Moves to Kill All Pawns",
+      "slug": "maximum-number-of-moves-to-kill-all-pawns",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-number-of-moves-to-kill-all-pawns/"
+    }
+  ]
+}

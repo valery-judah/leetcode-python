@@ -1,0 +1,30 @@
+{
+  "category": "",
+  "id": "2635",
+  "name": "Apply Transform Over Each Element in Array",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/apply-transform-over-each-element-in-array/",
+  "slug": "apply-transform-over-each-element-in-array",
+  "isPaidOnly": false,
+  "tags": [],
+  "similar_questions": [
+    {
+      "title": "Group By",
+      "slug": "group-by",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/group-by/"
+    },
+    {
+      "title": "Filter Elements from Array",
+      "slug": "filter-elements-from-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/filter-elements-from-array/"
+    },
+    {
+      "title": "Array Reduce Transformation",
+      "slug": "array-reduce-transformation",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/array-reduce-transformation/"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "1611",
+  "name": "Minimum One Bit Operations to Make Integers Zero",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/",
+  "slug": "minimum-one-bit-operations-to-make-integers-zero",
+  "isPaidOnly": false,
+  "tags": [
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Memoization"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Number of Operations to Make Array Continuous",
+      "slug": "minimum-number-of-operations-to-make-array-continuous",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-number-of-operations-to-make-array-continuous/"
+    },
+    {
+      "title": "Apply Bitwise Operations to Make Strings Equal",
+      "slug": "apply-bitwise-operations-to-make-strings-equal",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/apply-bitwise-operations-to-make-strings-equal/"
+    }
+  ]
+}

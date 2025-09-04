@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "3145",
+  "name": "Find Products of Elements of Big Array",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/find-products-of-elements-of-big-array/",
+  "slug": "find-products-of-elements-of-big-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Bit Manipulation"
+  ],
+  "similar_questions": []
+}

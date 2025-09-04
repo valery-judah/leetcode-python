@@ -1,0 +1,41 @@
+{
+  "category": "",
+  "id": "1751",
+  "name": "Maximum Number of Events That Can Be Attended II",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended-ii/",
+  "slug": "maximum-number-of-events-that-can-be-attended-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Number of Events That Can Be Attended",
+      "slug": "maximum-number-of-events-that-can-be-attended",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/"
+    },
+    {
+      "title": "Maximum Earnings From Taxi",
+      "slug": "maximum-earnings-from-taxi",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-earnings-from-taxi/"
+    },
+    {
+      "title": "Two Best Non-Overlapping Events",
+      "slug": "two-best-non-overlapping-events",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/two-best-non-overlapping-events/"
+    },
+    {
+      "title": "Meeting Rooms III",
+      "slug": "meeting-rooms-iii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/meeting-rooms-iii/"
+    }
+  ]
+}

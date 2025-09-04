@@ -1,0 +1,30 @@
+{
+  "category": "",
+  "id": "2620",
+  "name": "Counter",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/counter/",
+  "slug": "counter",
+  "isPaidOnly": false,
+  "tags": [],
+  "similar_questions": [
+    {
+      "title": "Memoize",
+      "slug": "memoize",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/memoize/"
+    },
+    {
+      "title": "Function Composition",
+      "slug": "function-composition",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/function-composition/"
+    },
+    {
+      "title": "Counter II",
+      "slug": "counter-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/counter-ii/"
+    }
+  ]
+}

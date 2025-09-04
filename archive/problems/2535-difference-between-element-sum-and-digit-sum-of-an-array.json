@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "2535",
+  "name": "Difference Between Element Sum and Digit Sum of an Array",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/difference-between-element-sum-and-digit-sum-of-an-array/",
+  "slug": "difference-between-element-sum-and-digit-sum-of-an-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math"
+  ],
+  "similar_questions": [
+    {
+      "title": "Add Digits",
+      "slug": "add-digits",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/add-digits/"
+    },
+    {
+      "title": "Minimum Sum of Four Digit Number After Splitting Digits",
+      "slug": "minimum-sum-of-four-digit-number-after-splitting-digits",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/"
+    }
+  ]
+}

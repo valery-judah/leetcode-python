@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "3402",
+  "name": "Minimum Operations to Make Columns Strictly Increasing",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/minimum-operations-to-make-columns-strictly-increasing/",
+  "slug": "minimum-operations-to-make-columns-strictly-increasing",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Operations to Make the Array Increasing",
+      "slug": "minimum-operations-to-make-the-array-increasing",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-operations-to-make-the-array-increasing/"
+    }
+  ]
+}

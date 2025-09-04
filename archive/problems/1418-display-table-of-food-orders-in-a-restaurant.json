@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "1418",
+  "name": "Display Table of Food Orders in a Restaurant",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/display-table-of-food-orders-in-a-restaurant/",
+  "slug": "display-table-of-food-orders-in-a-restaurant",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Sorting",
+    "Ordered Set"
+  ],
+  "similar_questions": []
+}

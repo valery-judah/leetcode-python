@@ -1,0 +1,30 @@
+{
+  "category": "",
+  "id": "3242",
+  "name": "Design Neighbor Sum Service",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/design-neighbor-sum-service/",
+  "slug": "design-neighbor-sum-service",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Design",
+    "Matrix",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Matrix Block Sum",
+      "slug": "matrix-block-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/matrix-block-sum/"
+    },
+    {
+      "title": "Array With Elements Not Equal to Average of Neighbors",
+      "slug": "array-with-elements-not-equal-to-average-of-neighbors",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/array-with-elements-not-equal-to-average-of-neighbors/"
+    }
+  ]
+}

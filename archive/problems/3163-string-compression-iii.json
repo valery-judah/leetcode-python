@@ -1,0 +1,26 @@
+{
+  "category": "",
+  "id": "3163",
+  "name": "String Compression III",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/string-compression-iii/",
+  "slug": "string-compression-iii",
+  "isPaidOnly": false,
+  "tags": [
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "String Compression",
+      "slug": "string-compression",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/string-compression/"
+    },
+    {
+      "title": "String Compression II",
+      "slug": "string-compression-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/string-compression-ii/"
+    }
+  ]
+}

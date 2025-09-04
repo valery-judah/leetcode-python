@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "2034",
+  "name": "Stock Price Fluctuation ",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/stock-price-fluctuation/",
+  "slug": "stock-price-fluctuation",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "Design",
+    "Heap (Priority Queue)",
+    "Data Stream",
+    "Ordered Set"
+  ],
+  "similar_questions": [
+    {
+      "title": "Time Based Key-Value Store",
+      "slug": "time-based-key-value-store",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/time-based-key-value-store/"
+    }
+  ]
+}

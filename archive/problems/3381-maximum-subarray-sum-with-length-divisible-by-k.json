@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "3381",
+  "name": "Maximum Subarray Sum With Length Divisible by K",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-subarray-sum-with-length-divisible-by-k/",
+  "slug": "maximum-subarray-sum-with-length-divisible-by-k",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Subarray Sums Divisible by K",
+      "slug": "subarray-sums-divisible-by-k",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/subarray-sums-divisible-by-k/"
+    }
+  ]
+}

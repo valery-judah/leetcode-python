@@ -1,0 +1,40 @@
+{
+  "category": "",
+  "id": "898",
+  "name": "Bitwise ORs of Subarrays",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/bitwise-ors-of-subarrays/",
+  "slug": "bitwise-ors-of-subarrays",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longest Nice Subarray",
+      "slug": "longest-nice-subarray",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-nice-subarray/"
+    },
+    {
+      "title": "Smallest Subarrays With Maximum Bitwise OR",
+      "slug": "smallest-subarrays-with-maximum-bitwise-or",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/smallest-subarrays-with-maximum-bitwise-or/"
+    },
+    {
+      "title": "Bitwise OR of All Subsequence Sums",
+      "slug": "bitwise-or-of-all-subsequence-sums",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/bitwise-or-of-all-subsequence-sums/"
+    },
+    {
+      "title": "Find the Maximum Sequence Value of Array",
+      "slug": "find-the-maximum-sequence-value-of-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-maximum-sequence-value-of-array/"
+    }
+  ]
+}

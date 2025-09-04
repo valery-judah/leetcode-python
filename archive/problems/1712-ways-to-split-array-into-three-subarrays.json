@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "1712",
+  "name": "Ways to Split Array Into Three Subarrays",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/ways-to-split-array-into-three-subarrays/",
+  "slug": "ways-to-split-array-into-three-subarrays",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Number of Ways to Divide a Long Corridor",
+      "slug": "number-of-ways-to-divide-a-long-corridor",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-ways-to-divide-a-long-corridor/"
+    },
+    {
+      "title": "Number of Ways to Split Array",
+      "slug": "number-of-ways-to-split-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-ways-to-split-array/"
+    }
+  ]
+}

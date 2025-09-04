@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "3173",
+  "name": "Bitwise OR of Adjacent Elements",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/bitwise-or-of-adjacent-elements/",
+  "slug": "bitwise-or-of-adjacent-elements",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Bit Manipulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Neighboring Bitwise XOR",
+      "slug": "neighboring-bitwise-xor",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/neighboring-bitwise-xor/"
+    }
+  ]
+}

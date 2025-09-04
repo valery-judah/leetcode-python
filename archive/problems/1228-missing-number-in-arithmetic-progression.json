@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "1228",
+  "name": "Missing Number In Arithmetic Progression",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/missing-number-in-arithmetic-progression/",
+  "slug": "missing-number-in-arithmetic-progression",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Math"
+  ],
+  "similar_questions": []
+}

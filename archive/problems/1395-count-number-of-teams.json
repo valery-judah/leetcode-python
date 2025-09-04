@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "1395",
+  "name": "Count Number of Teams",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-number-of-teams/",
+  "slug": "count-number-of-teams",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Binary Indexed Tree",
+    "Segment Tree"
+  ],
+  "similar_questions": []
+}

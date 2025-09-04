@@ -1,0 +1,33 @@
+{
+  "category": "",
+  "id": "2379",
+  "name": "Minimum Recolors to Get K Consecutive Black Blocks",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/",
+  "slug": "minimum-recolors-to-get-k-consecutive-black-blocks",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Sliding Window"
+  ],
+  "similar_questions": [
+    {
+      "title": "Max Consecutive Ones III",
+      "slug": "max-consecutive-ones-iii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/max-consecutive-ones-iii/"
+    },
+    {
+      "title": "Maximum Points You Can Obtain from Cards",
+      "slug": "maximum-points-you-can-obtain-from-cards",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/"
+    },
+    {
+      "title": "Maximum Number of Vowels in a Substring of Given Length",
+      "slug": "maximum-number-of-vowels-in-a-substring-of-given-length",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/"
+    }
+  ]
+}

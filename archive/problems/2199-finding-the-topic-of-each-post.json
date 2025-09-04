@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "2199",
+  "name": "Finding the Topic of Each Post",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/finding-the-topic-of-each-post/",
+  "slug": "finding-the-topic-of-each-post",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": [
+    {
+      "title": "Group Sold Products By The Date",
+      "slug": "group-sold-products-by-the-date",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/group-sold-products-by-the-date/"
+    }
+  ]
+}

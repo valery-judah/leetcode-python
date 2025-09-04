@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "2553",
+  "name": "Separate the Digits in an Array",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/separate-the-digits-in-an-array/",
+  "slug": "separate-the-digits-in-an-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Integers With Even Digit Sum",
+      "slug": "count-integers-with-even-digit-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-integers-with-even-digit-sum/"
+    },
+    {
+      "title": "Alternating Digit Sum",
+      "slug": "alternating-digit-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/alternating-digit-sum/"
+    }
+  ]
+}

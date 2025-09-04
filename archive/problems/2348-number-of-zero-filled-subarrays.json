@@ -1,0 +1,39 @@
+{
+  "category": "",
+  "id": "2348",
+  "name": "Number of Zero-Filled Subarrays",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/number-of-zero-filled-subarrays/",
+  "slug": "number-of-zero-filled-subarrays",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math"
+  ],
+  "similar_questions": [
+    {
+      "title": "Arithmetic Slices",
+      "slug": "arithmetic-slices",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/arithmetic-slices/"
+    },
+    {
+      "title": "Number of Smooth Descent Periods of a Stock",
+      "slug": "number-of-smooth-descent-periods-of-a-stock",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-smooth-descent-periods-of-a-stock/"
+    },
+    {
+      "title": "Length of the Longest Alphabetical Continuous Substring",
+      "slug": "length-of-the-longest-alphabetical-continuous-substring",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/length-of-the-longest-alphabetical-continuous-substring/"
+    },
+    {
+      "title": "Find Consecutive Integers from a Data Stream",
+      "slug": "find-consecutive-integers-from-a-data-stream",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-consecutive-integers-from-a-data-stream/"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "category": "",
+  "id": "2397",
+  "name": "Maximum Rows Covered by Columns",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-rows-covered-by-columns/",
+  "slug": "maximum-rows-covered-by-columns",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Backtracking",
+    "Bit Manipulation",
+    "Matrix",
+    "Enumeration"
+  ],
+  "similar_questions": [
+    {
+      "title": "Matchsticks to Square",
+      "slug": "matchsticks-to-square",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/matchsticks-to-square/"
+    },
+    {
+      "title": "Partition to K Equal Sum Subsets",
+      "slug": "partition-to-k-equal-sum-subsets",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/partition-to-k-equal-sum-subsets/"
+    },
+    {
+      "title": "Find the Shortest Superstring",
+      "slug": "find-the-shortest-superstring",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-shortest-superstring/"
+    },
+    {
+      "title": "Smallest Sufficient Team",
+      "slug": "smallest-sufficient-team",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/smallest-sufficient-team/"
+    },
+    {
+      "title": "Fair Distribution of Cookies",
+      "slug": "fair-distribution-of-cookies",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/fair-distribution-of-cookies/"
+    }
+  ]
+}

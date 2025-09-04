@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "1555",
+  "name": "Bank Account Summary",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/bank-account-summary/",
+  "slug": "bank-account-summary",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

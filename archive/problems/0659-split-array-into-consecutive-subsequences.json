@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "659",
+  "name": "Split Array into Consecutive Subsequences",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/split-array-into-consecutive-subsequences/",
+  "slug": "split-array-into-consecutive-subsequences",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Heap (Priority Queue)"
+  ],
+  "similar_questions": [
+    {
+      "title": "Top K Frequent Elements",
+      "slug": "top-k-frequent-elements",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/top-k-frequent-elements/"
+    },
+    {
+      "title": "Divide Array in Sets of K Consecutive Numbers",
+      "slug": "divide-array-in-sets-of-k-consecutive-numbers",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/divide-array-in-sets-of-k-consecutive-numbers/"
+    }
+  ]
+}

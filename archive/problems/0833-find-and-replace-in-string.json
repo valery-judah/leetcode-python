@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "833",
+  "name": "Find And Replace in String",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-and-replace-in-string/",
+  "slug": "find-and-replace-in-string",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Sorting"
+  ],
+  "similar_questions": []
+}

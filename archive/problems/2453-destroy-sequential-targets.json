@@ -1,0 +1,40 @@
+{
+  "category": "",
+  "id": "2453",
+  "name": "Destroy Sequential Targets",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/destroy-sequential-targets/",
+  "slug": "destroy-sequential-targets",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Arithmetic Slices II - Subsequence",
+      "slug": "arithmetic-slices-ii-subsequence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/arithmetic-slices-ii-subsequence/"
+    },
+    {
+      "title": "Pairs of Songs With Total Durations Divisible by 60",
+      "slug": "pairs-of-songs-with-total-durations-divisible-by-60",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/"
+    },
+    {
+      "title": "Longest Arithmetic Subsequence",
+      "slug": "longest-arithmetic-subsequence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-arithmetic-subsequence/"
+    },
+    {
+      "title": "Longest Arithmetic Subsequence of Given Difference",
+      "slug": "longest-arithmetic-subsequence-of-given-difference",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/"
+    }
+  ]
+}

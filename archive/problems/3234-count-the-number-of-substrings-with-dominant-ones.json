@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "3234",
+  "name": "Count the Number of Substrings With Dominant Ones",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-the-number-of-substrings-with-dominant-ones/",
+  "slug": "count-the-number-of-substrings-with-dominant-ones",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Sliding Window",
+    "Enumeration"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Binary Substrings",
+      "slug": "count-binary-substrings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-binary-substrings/"
+    }
+  ]
+}

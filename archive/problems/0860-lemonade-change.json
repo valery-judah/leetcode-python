@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "860",
+  "name": "Lemonade Change",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/lemonade-change/",
+  "slug": "lemonade-change",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "similar_questions": []
+}

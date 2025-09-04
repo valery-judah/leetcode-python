@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "931",
+  "name": "Minimum Falling Path Sum",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-falling-path-sum/",
+  "slug": "minimum-falling-path-sum",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Falling Path Sum II",
+      "slug": "minimum-falling-path-sum-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-falling-path-sum-ii/"
+    }
+  ]
+}

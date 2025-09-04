@@ -1,0 +1,33 @@
+{
+  "category": "",
+  "id": "339",
+  "name": "Nested List Weight Sum",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/nested-list-weight-sum/",
+  "slug": "nested-list-weight-sum",
+  "isPaidOnly": true,
+  "tags": [
+    "Depth-First Search",
+    "Breadth-First Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Nested List Weight Sum II",
+      "slug": "nested-list-weight-sum-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/nested-list-weight-sum-ii/"
+    },
+    {
+      "title": "Array Nesting",
+      "slug": "array-nesting",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/array-nesting/"
+    },
+    {
+      "title": "Employee Importance",
+      "slug": "employee-importance",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/employee-importance/"
+    }
+  ]
+}

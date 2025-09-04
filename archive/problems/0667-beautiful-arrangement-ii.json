@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "667",
+  "name": "Beautiful Arrangement II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/beautiful-arrangement-ii/",
+  "slug": "beautiful-arrangement-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math"
+  ],
+  "similar_questions": [
+    {
+      "title": "Beautiful Arrangement",
+      "slug": "beautiful-arrangement",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/beautiful-arrangement/"
+    }
+  ]
+}

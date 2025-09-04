@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "524",
+  "name": "Longest Word in Dictionary through Deleting",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/",
+  "slug": "longest-word-in-dictionary-through-deleting",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "String",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longest Word in Dictionary",
+      "slug": "longest-word-in-dictionary",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-word-in-dictionary/"
+    }
+  ]
+}

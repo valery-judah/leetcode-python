@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "901",
+  "name": "Online Stock Span",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/online-stock-span/",
+  "slug": "online-stock-span",
+  "isPaidOnly": false,
+  "tags": [
+    "Stack",
+    "Design",
+    "Monotonic Stack",
+    "Data Stream"
+  ],
+  "similar_questions": [
+    {
+      "title": "Daily Temperatures",
+      "slug": "daily-temperatures",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/daily-temperatures/"
+    }
+  ]
+}

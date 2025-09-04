@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "1562",
+  "name": "Find Latest Group of Size M",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-latest-group-of-size-m/",
+  "slug": "find-latest-group-of-size-m",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Simulation"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1244",
+  "name": "Design A Leaderboard",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/design-a-leaderboard/",
+  "slug": "design-a-leaderboard",
+  "isPaidOnly": true,
+  "tags": [
+    "Hash Table",
+    "Design",
+    "Sorting"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,34 @@
+{
+  "category": "",
+  "id": "54",
+  "name": "Spiral Matrix",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/spiral-matrix/",
+  "slug": "spiral-matrix",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Spiral Matrix II",
+      "slug": "spiral-matrix-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/spiral-matrix-ii/"
+    },
+    {
+      "title": "Spiral Matrix III",
+      "slug": "spiral-matrix-iii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/spiral-matrix-iii/"
+    },
+    {
+      "title": "Spiral Matrix IV",
+      "slug": "spiral-matrix-iv",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/spiral-matrix-iv/"
+    }
+  ]
+}

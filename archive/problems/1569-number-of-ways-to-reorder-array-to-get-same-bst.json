@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "1569",
+  "name": "Number of Ways to Reorder Array to Get Same BST",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/",
+  "slug": "number-of-ways-to-reorder-array-to-get-same-bst",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Divide and Conquer",
+    "Dynamic Programming",
+    "Tree",
+    "Union Find",
+    "Binary Search Tree",
+    "Memoization",
+    "Combinatorics",
+    "Binary Tree"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "3516",
+  "name": "Find Closest Person",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/find-closest-person/",
+  "slug": "find-closest-person",
+  "isPaidOnly": false,
+  "tags": [
+    "Math"
+  ],
+  "similar_questions": []
+}

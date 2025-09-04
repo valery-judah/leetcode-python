@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "2431",
+  "name": "Maximize Total Tastiness of Purchased Fruits",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximize-total-tastiness-of-purchased-fruits/",
+  "slug": "maximize-total-tastiness-of-purchased-fruits",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "similar_questions": []
+}

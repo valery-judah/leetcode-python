@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1196",
+  "name": "How Many Apples Can You Put into the Basket",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/how-many-apples-can-you-put-into-the-basket/",
+  "slug": "how-many-apples-can-you-put-into-the-basket",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": []
+}

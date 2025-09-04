@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "886",
+  "name": "Possible Bipartition",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/possible-bipartition/",
+  "slug": "possible-bipartition",
+  "isPaidOnly": false,
+  "tags": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union Find",
+    "Graph"
+  ],
+  "similar_questions": []
+}

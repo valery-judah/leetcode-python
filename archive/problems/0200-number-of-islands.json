@@ -1,0 +1,90 @@
+{
+  "category": "",
+  "id": "200",
+  "name": "Number of Islands",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/number-of-islands/",
+  "slug": "number-of-islands",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union Find",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Surrounded Regions",
+      "slug": "surrounded-regions",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/surrounded-regions/"
+    },
+    {
+      "title": "Walls and Gates",
+      "slug": "walls-and-gates",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/walls-and-gates/"
+    },
+    {
+      "title": "Number of Islands II",
+      "slug": "number-of-islands-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-islands-ii/"
+    },
+    {
+      "title": "Number of Connected Components in an Undirected Graph",
+      "slug": "number-of-connected-components-in-an-undirected-graph",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/"
+    },
+    {
+      "title": "Battleships in a Board",
+      "slug": "battleships-in-a-board",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/battleships-in-a-board/"
+    },
+    {
+      "title": "Number of Distinct Islands",
+      "slug": "number-of-distinct-islands",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-distinct-islands/"
+    },
+    {
+      "title": "Max Area of Island",
+      "slug": "max-area-of-island",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/max-area-of-island/"
+    },
+    {
+      "title": "Count Sub Islands",
+      "slug": "count-sub-islands",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-sub-islands/"
+    },
+    {
+      "title": "Find All Groups of Farmland",
+      "slug": "find-all-groups-of-farmland",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-all-groups-of-farmland/"
+    },
+    {
+      "title": "Count Unreachable Pairs of Nodes in an Undirected Graph",
+      "slug": "count-unreachable-pairs-of-nodes-in-an-undirected-graph",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/"
+    },
+    {
+      "title": "Maximum Number of Fish in a Grid",
+      "slug": "maximum-number-of-fish-in-a-grid",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-number-of-fish-in-a-grid/"
+    },
+    {
+      "title": "Count Islands With Total Value Divisible by K",
+      "slug": "count-islands-with-total-value-divisible-by-k",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-islands-with-total-value-divisible-by-k/"
+    }
+  ]
+}

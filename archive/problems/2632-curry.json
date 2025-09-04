@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "2632",
+  "name": "Curry",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/curry/",
+  "slug": "curry",
+  "isPaidOnly": true,
+  "tags": [],
+  "similar_questions": [
+    {
+      "title": "Memoize",
+      "slug": "memoize",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/memoize/"
+    },
+    {
+      "title": "Memoize II",
+      "slug": "memoize-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/memoize-ii/"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "2549",
+  "name": "Count Distinct Numbers on Board",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/count-distinct-numbers-on-board/",
+  "slug": "count-distinct-numbers-on-board",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count of Matches in Tournament",
+      "slug": "count-of-matches-in-tournament",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-of-matches-in-tournament/"
+    }
+  ]
+}

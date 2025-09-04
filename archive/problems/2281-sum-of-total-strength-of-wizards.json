@@ -1,0 +1,41 @@
+{
+  "category": "",
+  "id": "2281",
+  "name": "Sum of Total Strength of Wizards",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/sum-of-total-strength-of-wizards/",
+  "slug": "sum-of-total-strength-of-wizards",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Stack",
+    "Monotonic Stack",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Next Greater Element I",
+      "slug": "next-greater-element-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/next-greater-element-i/"
+    },
+    {
+      "title": "Sum of Subarray Minimums",
+      "slug": "sum-of-subarray-minimums",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sum-of-subarray-minimums/"
+    },
+    {
+      "title": "Number of Visible People in a Queue",
+      "slug": "number-of-visible-people-in-a-queue",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-visible-people-in-a-queue/"
+    },
+    {
+      "title": "Sum of Subarray Ranges",
+      "slug": "sum-of-subarray-ranges",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sum-of-subarray-ranges/"
+    }
+  ]
+}

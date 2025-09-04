@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "522",
+  "name": "Longest Uncommon Subsequence II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/longest-uncommon-subsequence-ii/",
+  "slug": "longest-uncommon-subsequence-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
+    "String",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longest Uncommon Subsequence I",
+      "slug": "longest-uncommon-subsequence-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-uncommon-subsequence-i/"
+    }
+  ]
+}

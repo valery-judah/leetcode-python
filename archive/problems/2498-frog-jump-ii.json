@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "2498",
+  "name": "Frog Jump II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/frog-jump-ii/",
+  "slug": "frog-jump-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Greedy"
+  ],
+  "similar_questions": [
+    {
+      "title": "Climbing Stairs",
+      "slug": "climbing-stairs",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/climbing-stairs/"
+    },
+    {
+      "title": "Koko Eating Bananas",
+      "slug": "koko-eating-bananas",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/koko-eating-bananas/"
+    }
+  ]
+}

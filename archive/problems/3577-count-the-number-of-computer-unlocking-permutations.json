@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "3577",
+  "name": "Count the Number of Computer Unlocking Permutations",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-the-number-of-computer-unlocking-permutations/",
+  "slug": "count-the-number-of-computer-unlocking-permutations",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Brainteaser",
+    "Combinatorics"
+  ],
+  "similar_questions": [
+    {
+      "title": "Clumsy Factorial",
+      "slug": "clumsy-factorial",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/clumsy-factorial/"
+    }
+  ]
+}

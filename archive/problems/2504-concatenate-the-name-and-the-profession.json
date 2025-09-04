@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "2504",
+  "name": "Concatenate the Name and the Profession",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/concatenate-the-name-and-the-profession/",
+  "slug": "concatenate-the-name-and-the-profession",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

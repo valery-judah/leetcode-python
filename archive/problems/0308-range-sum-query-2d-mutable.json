@@ -1,0 +1,42 @@
+{
+  "category": "",
+  "id": "308",
+  "name": "Range Sum Query 2D - Mutable",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/range-sum-query-2d-mutable/",
+  "slug": "range-sum-query-2d-mutable",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Design",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Range Sum Query 2D - Immutable",
+      "slug": "range-sum-query-2d-immutable",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/range-sum-query-2d-immutable/"
+    },
+    {
+      "title": "Range Sum Query - Mutable",
+      "slug": "range-sum-query-mutable",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/range-sum-query-mutable/"
+    },
+    {
+      "title": "Increment Submatrices by One",
+      "slug": "increment-submatrices-by-one",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/increment-submatrices-by-one/"
+    },
+    {
+      "title": "Sum of Matrix After Queries",
+      "slug": "sum-of-matrix-after-queries",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sum-of-matrix-after-queries/"
+    }
+  ]
+}

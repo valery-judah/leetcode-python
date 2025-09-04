@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "2091",
+  "name": "Removing Minimum and Maximum From Array",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/removing-minimum-and-maximum-from-array/",
+  "slug": "removing-minimum-and-maximum-from-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Points You Can Obtain from Cards",
+      "slug": "maximum-points-you-can-obtain-from-cards",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/"
+    },
+    {
+      "title": "Minimum Deletions to Make Character Frequencies Unique",
+      "slug": "minimum-deletions-to-make-character-frequencies-unique",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/"
+    }
+  ]
+}

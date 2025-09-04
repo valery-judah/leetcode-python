@@ -1,0 +1,43 @@
+{
+  "category": "",
+  "id": "658",
+  "name": "Find K Closest Elements",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-k-closest-elements/",
+  "slug": "find-k-closest-elements",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Sliding Window",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "similar_questions": [
+    {
+      "title": "Guess Number Higher or Lower",
+      "slug": "guess-number-higher-or-lower",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/guess-number-higher-or-lower/"
+    },
+    {
+      "title": "Guess Number Higher or Lower II",
+      "slug": "guess-number-higher-or-lower-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/guess-number-higher-or-lower-ii/"
+    },
+    {
+      "title": "Find K-th Smallest Pair Distance",
+      "slug": "find-k-th-smallest-pair-distance",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-k-th-smallest-pair-distance/"
+    },
+    {
+      "title": "Find Closest Number to Zero",
+      "slug": "find-closest-number-to-zero",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-closest-number-to-zero/"
+    }
+  ]
+}

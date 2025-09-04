@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "3038",
+  "name": "Maximum Number of Operations With the Same Score I",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-i/",
+  "slug": "maximum-number-of-operations-with-the-same-score-i",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "similar_questions": []
+}

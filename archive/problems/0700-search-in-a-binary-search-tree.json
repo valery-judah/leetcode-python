@@ -1,0 +1,34 @@
+{
+  "category": "",
+  "id": "700",
+  "name": "Search in a Binary Search Tree",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/search-in-a-binary-search-tree/",
+  "slug": "search-in-a-binary-search-tree",
+  "isPaidOnly": false,
+  "tags": [
+    "Tree",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Closest Binary Search Tree Value",
+      "slug": "closest-binary-search-tree-value",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/closest-binary-search-tree-value/"
+    },
+    {
+      "title": "Insert into a Binary Search Tree",
+      "slug": "insert-into-a-binary-search-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/insert-into-a-binary-search-tree/"
+    },
+    {
+      "title": "Closest Nodes Queries in a Binary Search Tree",
+      "slug": "closest-nodes-queries-in-a-binary-search-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/closest-nodes-queries-in-a-binary-search-tree/"
+    }
+  ]
+}

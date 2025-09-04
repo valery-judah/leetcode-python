@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "2846",
+  "name": "Minimum Edge Weight Equilibrium Queries in a Tree",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-edge-weight-equilibrium-queries-in-a-tree/",
+  "slug": "minimum-edge-weight-equilibrium-queries-in-a-tree",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Tree",
+    "Graph",
+    "Strongly Connected Component"
+  ],
+  "similar_questions": [
+    {
+      "title": "Kth Ancestor of a Tree Node",
+      "slug": "kth-ancestor-of-a-tree-node",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/kth-ancestor-of-a-tree-node/"
+    },
+    {
+      "title": "Minimum Runes to Add to Cast Spell",
+      "slug": "minimum-runes-to-add-to-cast-spell",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-runes-to-add-to-cast-spell/"
+    }
+  ]
+}

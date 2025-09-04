@@ -1,0 +1,30 @@
+{
+  "category": "",
+  "id": "3342",
+  "name": "Find Minimum Time to Reach Last Room II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-minimum-time-to-reach-last-room-ii/",
+  "slug": "find-minimum-time-to-reach-last-room-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Graph",
+    "Heap (Priority Queue)",
+    "Matrix",
+    "Shortest Path"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Cost to Reach Destination in Time",
+      "slug": "minimum-cost-to-reach-destination-in-time",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-cost-to-reach-destination-in-time/"
+    },
+    {
+      "title": "Minimum Time to Visit a Cell In a Grid",
+      "slug": "minimum-time-to-visit-a-cell-in-a-grid",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid/"
+    }
+  ]
+}

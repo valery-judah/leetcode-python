@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "1005",
+  "name": "Maximize Sum Of Array After K Negations",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/maximize-sum-of-array-after-k-negations/",
+  "slug": "maximize-sum-of-array-after-k-negations",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find Subsequence of Length K With the Largest Sum",
+      "slug": "find-subsequence-of-length-k-with-the-largest-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum/"
+    }
+  ]
+}

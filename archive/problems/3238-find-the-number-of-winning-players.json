@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "3238",
+  "name": "Find the Number of Winning Players",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/find-the-number-of-winning-players/",
+  "slug": "find-the-number-of-winning-players",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Can I Win",
+      "slug": "can-i-win",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/can-i-win/"
+    },
+    {
+      "title": "Predict the Winner",
+      "slug": "predict-the-winner",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/predict-the-winner/"
+    }
+  ]
+}

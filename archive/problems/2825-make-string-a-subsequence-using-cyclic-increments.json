@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "2825",
+  "name": "Make String a Subsequence Using Cyclic Increments",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments/",
+  "slug": "make-string-a-subsequence-using-cyclic-increments",
+  "isPaidOnly": false,
+  "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Is Subsequence",
+      "slug": "is-subsequence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/is-subsequence/"
+    }
+  ]
+}

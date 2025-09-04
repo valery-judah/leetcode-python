@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "1332",
+  "name": "Remove Palindromic Subsequences",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/remove-palindromic-subsequences/",
+  "slug": "remove-palindromic-subsequences",
+  "isPaidOnly": false,
+  "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "similar_questions": []
+}

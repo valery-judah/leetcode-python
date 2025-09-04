@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1585",
+  "name": "Check If String Is Transformable With Substring Sort Operations",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/check-if-string-is-transformable-with-substring-sort-operations/",
+  "slug": "check-if-string-is-transformable-with-substring-sort-operations",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": []
+}

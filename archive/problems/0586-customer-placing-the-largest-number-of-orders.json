@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "586",
+  "name": "Customer Placing the Largest Number of Orders",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/customer-placing-the-largest-number-of-orders/",
+  "slug": "customer-placing-the-largest-number-of-orders",
+  "isPaidOnly": false,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,33 @@
+{
+  "category": "",
+  "id": "2424",
+  "name": "Longest Uploaded Prefix",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/longest-uploaded-prefix/",
+  "slug": "longest-uploaded-prefix",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "Binary Search",
+    "Union Find",
+    "Design",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Heap (Priority Queue)",
+    "Ordered Set"
+  ],
+  "similar_questions": [
+    {
+      "title": "Design an Ordered Stream",
+      "slug": "design-an-ordered-stream",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/design-an-ordered-stream/"
+    },
+    {
+      "title": "Find X Value of Array II",
+      "slug": "find-x-value-of-array-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-x-value-of-array-ii/"
+    }
+  ]
+}

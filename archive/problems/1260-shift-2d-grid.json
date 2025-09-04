@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1260",
+  "name": "Shift 2D Grid",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/shift-2d-grid/",
+  "slug": "shift-2d-grid",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "similar_questions": []
+}

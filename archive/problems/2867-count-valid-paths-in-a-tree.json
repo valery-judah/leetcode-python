@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "2867",
+  "name": "Count Valid Paths in a Tree",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/count-valid-paths-in-a-tree/",
+  "slug": "count-valid-paths-in-a-tree",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search",
+    "Number Theory"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Paths That Can Form a Palindrome in a Tree",
+      "slug": "count-paths-that-can-form-a-palindrome-in-a-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-paths-that-can-form-a-palindrome-in-a-tree/"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "category": "",
+  "id": "741",
+  "name": "Cherry Pickup",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/cherry-pickup/",
+  "slug": "cherry-pickup",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Path Sum",
+      "slug": "minimum-path-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-path-sum/"
+    },
+    {
+      "title": "Dungeon Game",
+      "slug": "dungeon-game",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/dungeon-game/"
+    },
+    {
+      "title": "Maximum Path Quality of a Graph",
+      "slug": "maximum-path-quality-of-a-graph",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-path-quality-of-a-graph/"
+    },
+    {
+      "title": "Paths in Matrix Whose Sum Is Divisible by K",
+      "slug": "paths-in-matrix-whose-sum-is-divisible-by-k",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/paths-in-matrix-whose-sum-is-divisible-by-k/"
+    }
+  ]
+}

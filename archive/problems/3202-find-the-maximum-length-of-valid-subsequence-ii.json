@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "3202",
+  "name": "Find the Maximum Length of Valid Subsequence II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-ii/",
+  "slug": "find-the-maximum-length-of-valid-subsequence-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longest Increasing Subsequence",
+      "slug": "longest-increasing-subsequence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-increasing-subsequence/"
+    },
+    {
+      "title": "Length of the Longest Subsequence That Sums to Target",
+      "slug": "length-of-the-longest-subsequence-that-sums-to-target",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/length-of-the-longest-subsequence-that-sums-to-target/"
+    }
+  ]
+}

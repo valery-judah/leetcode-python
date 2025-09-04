@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "3447",
+  "name": "Assign Elements to Groups with Constraints",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/assign-elements-to-groups-with-constraints/",
+  "slug": "assign-elements-to-groups-with-constraints",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "similar_questions": []
+}

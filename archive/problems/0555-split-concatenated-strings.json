@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "555",
+  "name": "Split Concatenated Strings",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/split-concatenated-strings/",
+  "slug": "split-concatenated-strings",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "String",
+    "Greedy"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,34 @@
+{
+  "category": "",
+  "id": "2475",
+  "name": "Number of Unequal Triplets in Array",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/number-of-unequal-triplets-in-array/",
+  "slug": "number-of-unequal-triplets-in-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Good Triplets",
+      "slug": "count-good-triplets",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-good-triplets/"
+    },
+    {
+      "title": "Count Square Sum Triples",
+      "slug": "count-square-sum-triples",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-square-sum-triples/"
+    },
+    {
+      "title": "Number of Arithmetic Triplets",
+      "slug": "number-of-arithmetic-triplets",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-arithmetic-triplets/"
+    }
+  ]
+}

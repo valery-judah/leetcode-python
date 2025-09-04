@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "3050",
+  "name": "Pizza Toppings Cost Analysis",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/pizza-toppings-cost-analysis/",
+  "slug": "pizza-toppings-cost-analysis",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

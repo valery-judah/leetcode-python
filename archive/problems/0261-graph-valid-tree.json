@@ -1,0 +1,35 @@
+{
+  "category": "",
+  "id": "261",
+  "name": "Graph Valid Tree",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/graph-valid-tree/",
+  "slug": "graph-valid-tree",
+  "isPaidOnly": true,
+  "tags": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union Find",
+    "Graph"
+  ],
+  "similar_questions": [
+    {
+      "title": "Course Schedule",
+      "slug": "course-schedule",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/course-schedule/"
+    },
+    {
+      "title": "Number of Connected Components in an Undirected Graph",
+      "slug": "number-of-connected-components-in-an-undirected-graph",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/"
+    },
+    {
+      "title": "Keys and Rooms",
+      "slug": "keys-and-rooms",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/keys-and-rooms/"
+    }
+  ]
+}

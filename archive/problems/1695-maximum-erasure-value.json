@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "1695",
+  "name": "Maximum Erasure Value",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-erasure-value/",
+  "slug": "maximum-erasure-value",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longest Substring Without Repeating Characters",
+      "slug": "longest-substring-without-repeating-characters",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/"
+    }
+  ]
+}

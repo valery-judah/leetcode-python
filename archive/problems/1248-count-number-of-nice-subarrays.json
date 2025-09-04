@@ -1,0 +1,42 @@
+{
+  "category": "",
+  "id": "1248",
+  "name": "Count Number of Nice Subarrays",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-number-of-nice-subarrays/",
+  "slug": "count-number-of-nice-subarrays",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Sliding Window",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "K Divisible Elements Subarrays",
+      "slug": "k-divisible-elements-subarrays",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/k-divisible-elements-subarrays/"
+    },
+    {
+      "title": "Count Subarrays With Fixed Bounds",
+      "slug": "count-subarrays-with-fixed-bounds",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-subarrays-with-fixed-bounds/"
+    },
+    {
+      "title": "Ways to Split Array Into Good Subarrays",
+      "slug": "ways-to-split-array-into-good-subarrays",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/ways-to-split-array-into-good-subarrays/"
+    },
+    {
+      "title": "Count of Interesting Subarrays",
+      "slug": "count-of-interesting-subarrays",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-of-interesting-subarrays/"
+    }
+  ]
+}

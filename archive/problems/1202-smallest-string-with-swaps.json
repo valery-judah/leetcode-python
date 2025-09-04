@@ -1,0 +1,50 @@
+{
+  "category": "",
+  "id": "1202",
+  "name": "Smallest String With Swaps",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/smallest-string-with-swaps/",
+  "slug": "smallest-string-with-swaps",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union Find",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimize Hamming Distance After Swap Operations",
+      "slug": "minimize-hamming-distance-after-swap-operations",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimize-hamming-distance-after-swap-operations/"
+    },
+    {
+      "title": "Process Restricted Friend Requests",
+      "slug": "process-restricted-friend-requests",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/process-restricted-friend-requests/"
+    },
+    {
+      "title": "Largest Number After Digit Swaps by Parity",
+      "slug": "largest-number-after-digit-swaps-by-parity",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/largest-number-after-digit-swaps-by-parity/"
+    },
+    {
+      "title": "Lexicographically Smallest Beautiful String",
+      "slug": "lexicographically-smallest-beautiful-string",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/lexicographically-smallest-beautiful-string/"
+    },
+    {
+      "title": "Make Lexicographically Smallest Array by Swapping Elements",
+      "slug": "make-lexicographically-smallest-array-by-swapping-elements",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/make-lexicographically-smallest-array-by-swapping-elements/"
+    }
+  ]
+}

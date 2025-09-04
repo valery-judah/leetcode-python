@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "192",
+  "name": "Word Frequency",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/word-frequency/",
+  "slug": "word-frequency",
+  "isPaidOnly": false,
+  "tags": [
+    "Shell"
+  ],
+  "similar_questions": [
+    {
+      "title": "Top K Frequent Elements",
+      "slug": "top-k-frequent-elements",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/top-k-frequent-elements/"
+    }
+  ]
+}

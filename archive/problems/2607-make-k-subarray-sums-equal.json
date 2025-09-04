@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "2607",
+  "name": "Make K-Subarray Sums Equal",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/make-k-subarray-sums-equal/",
+  "slug": "make-k-subarray-sums-equal",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Greedy",
+    "Sorting",
+    "Number Theory"
+  ],
+  "similar_questions": [
+    {
+      "title": "Rotate Array",
+      "slug": "rotate-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/rotate-array/"
+    }
+  ]
+}

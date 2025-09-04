@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "1971",
+  "name": "Find if Path Exists in Graph",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/find-if-path-exists-in-graph/",
+  "slug": "find-if-path-exists-in-graph",
+  "isPaidOnly": false,
+  "tags": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union Find",
+    "Graph"
+  ],
+  "similar_questions": [
+    {
+      "title": "Valid Arrangement of Pairs",
+      "slug": "valid-arrangement-of-pairs",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/valid-arrangement-of-pairs/"
+    },
+    {
+      "title": "Paths in Maze That Lead to Same Room",
+      "slug": "paths-in-maze-that-lead-to-same-room",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/paths-in-maze-that-lead-to-same-room/"
+    }
+  ]
+}

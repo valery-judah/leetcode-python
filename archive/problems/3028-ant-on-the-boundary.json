@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "3028",
+  "name": "Ant on the Boundary",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/ant-on-the-boundary/",
+  "slug": "ant-on-the-boundary",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Simulation",
+    "Prefix Sum"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "2592",
+  "name": "Maximize Greatness of an Array",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximize-greatness-of-an-array/",
+  "slug": "maximize-greatness-of-an-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "3Sum Smaller",
+      "slug": "3sum-smaller",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/3sum-smaller/"
+    },
+    {
+      "title": "Maximum Matching of Players With Trainers",
+      "slug": "maximum-matching-of-players-with-trainers",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-matching-of-players-with-trainers/"
+    }
+  ]
+}

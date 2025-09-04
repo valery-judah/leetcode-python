@@ -1,0 +1,35 @@
+{
+  "category": "",
+  "id": "1125",
+  "name": "Smallest Sufficient Team",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/smallest-sufficient-team/",
+  "slug": "smallest-sufficient-team",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Bitmask"
+  ],
+  "similar_questions": [
+    {
+      "title": "The Number of Good Subsets",
+      "slug": "the-number-of-good-subsets",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/the-number-of-good-subsets/"
+    },
+    {
+      "title": "Minimum Number of Work Sessions to Finish the Tasks",
+      "slug": "minimum-number-of-work-sessions-to-finish-the-tasks",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-number-of-work-sessions-to-finish-the-tasks/"
+    },
+    {
+      "title": "Maximum Rows Covered by Columns",
+      "slug": "maximum-rows-covered-by-columns",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-rows-covered-by-columns/"
+    }
+  ]
+}

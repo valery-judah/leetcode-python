@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1219",
+  "name": "Path with Maximum Gold",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/path-with-maximum-gold/",
+  "slug": "path-with-maximum-gold",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Backtracking",
+    "Matrix"
+  ],
+  "similar_questions": []
+}

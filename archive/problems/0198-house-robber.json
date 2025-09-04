@@ -1,0 +1,93 @@
+{
+  "category": "",
+  "id": "198",
+  "name": "House Robber",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/house-robber/",
+  "slug": "house-robber",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Product Subarray",
+      "slug": "maximum-product-subarray",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-product-subarray/"
+    },
+    {
+      "title": "House Robber II",
+      "slug": "house-robber-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/house-robber-ii/"
+    },
+    {
+      "title": "Paint House",
+      "slug": "paint-house",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/paint-house/"
+    },
+    {
+      "title": "Paint Fence",
+      "slug": "paint-fence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/paint-fence/"
+    },
+    {
+      "title": "House Robber III",
+      "slug": "house-robber-iii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/house-robber-iii/"
+    },
+    {
+      "title": "Non-negative Integers without Consecutive Ones",
+      "slug": "non-negative-integers-without-consecutive-ones",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/"
+    },
+    {
+      "title": "Coin Path",
+      "slug": "coin-path",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/coin-path/"
+    },
+    {
+      "title": "Delete and Earn",
+      "slug": "delete-and-earn",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/delete-and-earn/"
+    },
+    {
+      "title": "Solving Questions With Brainpower",
+      "slug": "solving-questions-with-brainpower",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/solving-questions-with-brainpower/"
+    },
+    {
+      "title": "Count Number of Ways to Place Houses",
+      "slug": "count-number-of-ways-to-place-houses",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-number-of-ways-to-place-houses/"
+    },
+    {
+      "title": "House Robber IV",
+      "slug": "house-robber-iv",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/house-robber-iv/"
+    },
+    {
+      "title": "Mice and Cheese",
+      "slug": "mice-and-cheese",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/mice-and-cheese/"
+    },
+    {
+      "title": "Largest Element in an Array after Merge Operations",
+      "slug": "largest-element-in-an-array-after-merge-operations",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/largest-element-in-an-array-after-merge-operations/"
+    }
+  ]
+}

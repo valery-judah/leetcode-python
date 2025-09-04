@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "596",
+  "name": "Classes With at Least 5 Students",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/classes-with-at-least-5-students/",
+  "slug": "classes-with-at-least-5-students",
+  "isPaidOnly": false,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "944",
+  "name": "Delete Columns to Make Sorted",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/delete-columns-to-make-sorted/",
+  "slug": "delete-columns-to-make-sorted",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "String"
+  ],
+  "similar_questions": []
+}

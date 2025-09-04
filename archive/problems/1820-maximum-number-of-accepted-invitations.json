@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "1820",
+  "name": "Maximum Number of Accepted Invitations",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-number-of-accepted-invitations/",
+  "slug": "maximum-number-of-accepted-invitations",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Depth-First Search",
+    "Graph",
+    "Matrix"
+  ],
+  "similar_questions": []
+}

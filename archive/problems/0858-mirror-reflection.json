@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "858",
+  "name": "Mirror Reflection",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/mirror-reflection/",
+  "slug": "mirror-reflection",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Geometry",
+    "Number Theory"
+  ],
+  "similar_questions": []
+}

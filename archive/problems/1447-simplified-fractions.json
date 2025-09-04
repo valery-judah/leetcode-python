@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1447",
+  "name": "Simplified Fractions",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/simplified-fractions/",
+  "slug": "simplified-fractions",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "String",
+    "Number Theory"
+  ],
+  "similar_questions": []
+}

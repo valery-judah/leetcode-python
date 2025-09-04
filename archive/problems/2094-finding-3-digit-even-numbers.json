@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "2094",
+  "name": "Finding 3-Digit Even Numbers",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/finding-3-digit-even-numbers/",
+  "slug": "finding-3-digit-even-numbers",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting",
+    "Enumeration"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find Numbers with Even Number of Digits",
+      "slug": "find-numbers-with-even-number-of-digits",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-numbers-with-even-number-of-digits/"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "823",
+  "name": "Binary Trees With Factors",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/binary-trees-with-factors/",
+  "slug": "binary-trees-with-factors",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Dynamic Programming",
+    "Sorting"
+  ],
+  "similar_questions": []
+}

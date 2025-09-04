@@ -1,0 +1,26 @@
+{
+  "category": "",
+  "id": "896",
+  "name": "Monotonic Array",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/monotonic-array/",
+  "slug": "monotonic-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Hills and Valleys in an Array",
+      "slug": "count-hills-and-valleys-in-an-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-hills-and-valleys-in-an-array/"
+    },
+    {
+      "title": "Find the Count of Monotonic Pairs I",
+      "slug": "find-the-count-of-monotonic-pairs-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-count-of-monotonic-pairs-i/"
+    }
+  ]
+}

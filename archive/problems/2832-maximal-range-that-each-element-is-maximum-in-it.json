@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "2832",
+  "name": "Maximal Range That Each Element Is Maximum in It",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximal-range-that-each-element-is-maximum-in-it/",
+  "slug": "maximal-range-that-each-element-is-maximum-in-it",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Stack",
+    "Monotonic Stack"
+  ],
+  "similar_questions": []
+}

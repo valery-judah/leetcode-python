@@ -1,0 +1,36 @@
+{
+  "category": "",
+  "id": "116",
+  "name": "Populating Next Right Pointers in Each Node",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/populating-next-right-pointers-in-each-node/",
+  "slug": "populating-next-right-pointers-in-each-node",
+  "isPaidOnly": false,
+  "tags": [
+    "Linked List",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Populating Next Right Pointers in Each Node II",
+      "slug": "populating-next-right-pointers-in-each-node-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/"
+    },
+    {
+      "title": "Binary Tree Right Side View",
+      "slug": "binary-tree-right-side-view",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/binary-tree-right-side-view/"
+    },
+    {
+      "title": "Cycle Length Queries in a Tree",
+      "slug": "cycle-length-queries-in-a-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/cycle-length-queries-in-a-tree/"
+    }
+  ]
+}

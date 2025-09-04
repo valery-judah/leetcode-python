@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "3332",
+  "name": "Maximum Points Tourist Can Earn",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-points-tourist-can-earn/",
+  "slug": "maximum-points-tourist-can-earn",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "similar_questions": []
+}

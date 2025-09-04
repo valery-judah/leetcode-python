@@ -1,0 +1,34 @@
+{
+  "category": "",
+  "id": "2147",
+  "name": "Number of Ways to Divide a Long Corridor",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/number-of-ways-to-divide-a-long-corridor/",
+  "slug": "number-of-ways-to-divide-a-long-corridor",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "String",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Decode Ways II",
+      "slug": "decode-ways-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/decode-ways-ii/"
+    },
+    {
+      "title": "Minimum Cost to Cut a Stick",
+      "slug": "minimum-cost-to-cut-a-stick",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-cost-to-cut-a-stick/"
+    },
+    {
+      "title": "Ways to Split Array Into Three Subarrays",
+      "slug": "ways-to-split-array-into-three-subarrays",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/ways-to-split-array-into-three-subarrays/"
+    }
+  ]
+}

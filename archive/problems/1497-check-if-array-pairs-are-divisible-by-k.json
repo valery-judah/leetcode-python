@@ -1,0 +1,40 @@
+{
+  "category": "",
+  "id": "1497",
+  "name": "Check If Array Pairs Are Divisible by k",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k/",
+  "slug": "check-if-array-pairs-are-divisible-by-k",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Array Pairs Divisible by K",
+      "slug": "count-array-pairs-divisible-by-k",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-array-pairs-divisible-by-k/"
+    },
+    {
+      "title": "Minimum Deletions to Make Array Divisible",
+      "slug": "minimum-deletions-to-make-array-divisible",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-deletions-to-make-array-divisible/"
+    },
+    {
+      "title": "Count Pairs That Form a Complete Day II",
+      "slug": "count-pairs-that-form-a-complete-day-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-pairs-that-form-a-complete-day-ii/"
+    },
+    {
+      "title": "Count Pairs That Form a Complete Day I",
+      "slug": "count-pairs-that-form-a-complete-day-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-pairs-that-form-a-complete-day-i/"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "749",
+  "name": "Contain Virus",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/contain-virus/",
+  "slug": "contain-virus",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Matrix",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count the Number of Infection Sequences",
+      "slug": "count-the-number-of-infection-sequences",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-the-number-of-infection-sequences/"
+    }
+  ]
+}

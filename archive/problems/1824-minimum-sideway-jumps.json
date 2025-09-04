@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "1824",
+  "name": "Minimum Sideway Jumps",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-sideway-jumps/",
+  "slug": "minimum-sideway-jumps",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "similar_questions": [
+    {
+      "title": "Frog Jump",
+      "slug": "frog-jump",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/frog-jump/"
+    }
+  ]
+}

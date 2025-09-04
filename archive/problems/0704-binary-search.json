@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "704",
+  "name": "Binary Search",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/binary-search/",
+  "slug": "binary-search",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Search in a Sorted Array of Unknown Size",
+      "slug": "search-in-a-sorted-array-of-unknown-size",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/"
+    },
+    {
+      "title": "Maximum Count of Positive Integer and Negative Integer",
+      "slug": "maximum-count-of-positive-integer-and-negative-integer",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/"
+    }
+  ]
+}

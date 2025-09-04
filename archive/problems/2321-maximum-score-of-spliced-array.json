@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "2321",
+  "name": "Maximum Score Of Spliced Array",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/maximum-score-of-spliced-array/",
+  "slug": "maximum-score-of-spliced-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Subarray",
+      "slug": "maximum-subarray",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-subarray/"
+    }
+  ]
+}

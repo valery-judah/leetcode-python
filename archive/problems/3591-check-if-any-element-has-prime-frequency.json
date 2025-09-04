@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "3591",
+  "name": "Check if Any Element Has Prime Frequency",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/check-if-any-element-has-prime-frequency/",
+  "slug": "check-if-any-element-has-prime-frequency",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Counting",
+    "Number Theory"
+  ],
+  "similar_questions": []
+}

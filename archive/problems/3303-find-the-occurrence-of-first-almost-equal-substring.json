@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "3303",
+  "name": "Find the Occurrence of First Almost Equal Substring",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/find-the-occurrence-of-first-almost-equal-substring/",
+  "slug": "find-the-occurrence-of-first-almost-equal-substring",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "String Matching"
+  ],
+  "similar_questions": [
+    {
+      "title": "Check Whether Two Strings are Almost Equivalent",
+      "slug": "check-whether-two-strings-are-almost-equivalent",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/check-whether-two-strings-are-almost-equivalent/"
+    },
+    {
+      "title": "Count Almost Equal Pairs II",
+      "slug": "count-almost-equal-pairs-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-almost-equal-pairs-ii/"
+    }
+  ]
+}

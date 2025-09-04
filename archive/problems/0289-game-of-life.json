@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "289",
+  "name": "Game of Life",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/game-of-life/",
+  "slug": "game-of-life",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Set Matrix Zeroes",
+      "slug": "set-matrix-zeroes",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/set-matrix-zeroes/"
+    }
+  ]
+}

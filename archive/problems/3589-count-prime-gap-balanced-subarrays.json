@@ -1,0 +1,18 @@
+{
+  "category": "",
+  "id": "3589",
+  "name": "Count Prime-Gap Balanced Subarrays",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-prime-gap-balanced-subarrays/",
+  "slug": "count-prime-gap-balanced-subarrays",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Queue",
+    "Sliding Window",
+    "Number Theory",
+    "Monotonic Queue"
+  ],
+  "similar_questions": []
+}

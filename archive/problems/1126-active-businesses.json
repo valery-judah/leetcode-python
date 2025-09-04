@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "1126",
+  "name": "Active Businesses",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/active-businesses/",
+  "slug": "active-businesses",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

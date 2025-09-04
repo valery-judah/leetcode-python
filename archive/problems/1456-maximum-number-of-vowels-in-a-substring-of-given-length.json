@@ -1,0 +1,33 @@
+{
+  "category": "",
+  "id": "1456",
+  "name": "Maximum Number of Vowels in a Substring of Given Length",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/",
+  "slug": "maximum-number-of-vowels-in-a-substring-of-given-length",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Sliding Window"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum White Tiles Covered by a Carpet",
+      "slug": "maximum-white-tiles-covered-by-a-carpet",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-white-tiles-covered-by-a-carpet/"
+    },
+    {
+      "title": "Minimum Recolors to Get K Consecutive Black Blocks",
+      "slug": "minimum-recolors-to-get-k-consecutive-black-blocks",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/"
+    },
+    {
+      "title": "Length of the Longest Alphabetical Continuous Substring",
+      "slug": "length-of-the-longest-alphabetical-continuous-substring",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/length-of-the-longest-alphabetical-continuous-substring/"
+    }
+  ]
+}

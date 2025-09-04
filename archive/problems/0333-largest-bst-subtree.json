@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "333",
+  "name": "Largest BST Subtree",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/largest-bst-subtree/",
+  "slug": "largest-bst-subtree",
+  "isPaidOnly": true,
+  "tags": [
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "similar_questions": []
+}

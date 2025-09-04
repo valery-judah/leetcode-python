@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "391",
+  "name": "Perfect Rectangle",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/perfect-rectangle/",
+  "slug": "perfect-rectangle",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Geometry",
+    "Line Sweep"
+  ],
+  "similar_questions": []
+}

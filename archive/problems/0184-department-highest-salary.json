@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "184",
+  "name": "Department Highest Salary",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/department-highest-salary/",
+  "slug": "department-highest-salary",
+  "isPaidOnly": false,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": [
+    {
+      "title": "Highest Grade For Each Student",
+      "slug": "highest-grade-for-each-student",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/highest-grade-for-each-student/"
+    }
+  ]
+}

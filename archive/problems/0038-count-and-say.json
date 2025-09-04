@@ -1,0 +1,26 @@
+{
+  "category": "",
+  "id": "38",
+  "name": "Count and Say",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-and-say/",
+  "slug": "count-and-say",
+  "isPaidOnly": false,
+  "tags": [
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Encode and Decode Strings",
+      "slug": "encode-and-decode-strings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/encode-and-decode-strings/"
+    },
+    {
+      "title": "String Compression",
+      "slug": "string-compression",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/string-compression/"
+    }
+  ]
+}

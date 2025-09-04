@@ -1,0 +1,54 @@
+{
+  "category": "",
+  "id": "350",
+  "name": "Intersection of Two Arrays II",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/intersection-of-two-arrays-ii/",
+  "slug": "intersection-of-two-arrays-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
+    "Binary Search",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Intersection of Two Arrays",
+      "slug": "intersection-of-two-arrays",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/intersection-of-two-arrays/"
+    },
+    {
+      "title": "Find Common Characters",
+      "slug": "find-common-characters",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-common-characters/"
+    },
+    {
+      "title": "Find the Difference of Two Arrays",
+      "slug": "find-the-difference-of-two-arrays",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-difference-of-two-arrays/"
+    },
+    {
+      "title": "Choose Numbers From Two Arrays in Range",
+      "slug": "choose-numbers-from-two-arrays-in-range",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/choose-numbers-from-two-arrays-in-range/"
+    },
+    {
+      "title": "Intersection of Multiple Arrays",
+      "slug": "intersection-of-multiple-arrays",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/intersection-of-multiple-arrays/"
+    },
+    {
+      "title": "Minimum Common Value",
+      "slug": "minimum-common-value",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-common-value/"
+    }
+  ]
+}

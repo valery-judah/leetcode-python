@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "2987",
+  "name": "Find Expensive Cities",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/find-expensive-cities/",
+  "slug": "find-expensive-cities",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

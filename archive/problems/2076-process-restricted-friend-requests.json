@@ -1,0 +1,33 @@
+{
+  "category": "",
+  "id": "2076",
+  "name": "Process Restricted Friend Requests",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/process-restricted-friend-requests/",
+  "slug": "process-restricted-friend-requests",
+  "isPaidOnly": false,
+  "tags": [
+    "Union Find",
+    "Graph"
+  ],
+  "similar_questions": [
+    {
+      "title": "Number of Islands II",
+      "slug": "number-of-islands-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-islands-ii/"
+    },
+    {
+      "title": "Smallest String With Swaps",
+      "slug": "smallest-string-with-swaps",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/smallest-string-with-swaps/"
+    },
+    {
+      "title": "Maximum Employees to Be Invited to a Meeting",
+      "slug": "maximum-employees-to-be-invited-to-a-meeting",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-employees-to-be-invited-to-a-meeting/"
+    }
+  ]
+}

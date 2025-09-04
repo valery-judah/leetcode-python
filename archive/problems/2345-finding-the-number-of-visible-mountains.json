@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "2345",
+  "name": "Finding the Number of Visible Mountains",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/finding-the-number-of-visible-mountains/",
+  "slug": "finding-the-number-of-visible-mountains",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Stack",
+    "Sorting",
+    "Monotonic Stack"
+  ],
+  "similar_questions": [
+    {
+      "title": "Buildings With an Ocean View",
+      "slug": "buildings-with-an-ocean-view",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/buildings-with-an-ocean-view/"
+    }
+  ]
+}

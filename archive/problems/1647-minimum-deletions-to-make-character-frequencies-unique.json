@@ -1,0 +1,41 @@
+{
+  "category": "",
+  "id": "1647",
+  "name": "Minimum Deletions to Make Character Frequencies Unique",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/",
+  "slug": "minimum-deletions-to-make-character-frequencies-unique",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Deletions to Make Array Beautiful",
+      "slug": "minimum-deletions-to-make-array-beautiful",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-deletions-to-make-array-beautiful/"
+    },
+    {
+      "title": "Removing Minimum and Maximum From Array",
+      "slug": "removing-minimum-and-maximum-from-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/removing-minimum-and-maximum-from-array/"
+    },
+    {
+      "title": "Remove Letter To Equalize Frequency",
+      "slug": "remove-letter-to-equalize-frequency",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/remove-letter-to-equalize-frequency/"
+    },
+    {
+      "title": "Minimum Deletions to Make String K-Special",
+      "slug": "minimum-deletions-to-make-string-k-special",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-deletions-to-make-string-k-special/"
+    }
+  ]
+}

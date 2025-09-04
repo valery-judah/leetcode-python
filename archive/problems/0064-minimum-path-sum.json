@@ -1,0 +1,70 @@
+{
+  "category": "",
+  "id": "64",
+  "name": "Minimum Path Sum",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-path-sum/",
+  "slug": "minimum-path-sum",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Unique Paths",
+      "slug": "unique-paths",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/unique-paths/"
+    },
+    {
+      "title": "Dungeon Game",
+      "slug": "dungeon-game",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/dungeon-game/"
+    },
+    {
+      "title": "Cherry Pickup",
+      "slug": "cherry-pickup",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/cherry-pickup/"
+    },
+    {
+      "title": "Minimum Path Cost in a Grid",
+      "slug": "minimum-path-cost-in-a-grid",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-path-cost-in-a-grid/"
+    },
+    {
+      "title": "Maximum Number of Points with Cost",
+      "slug": "maximum-number-of-points-with-cost",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-number-of-points-with-cost/"
+    },
+    {
+      "title": "Minimum Cost Homecoming of a Robot in a Grid",
+      "slug": "minimum-cost-homecoming-of-a-robot-in-a-grid",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/"
+    },
+    {
+      "title": "Paths in Matrix Whose Sum Is Divisible by K",
+      "slug": "paths-in-matrix-whose-sum-is-divisible-by-k",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/paths-in-matrix-whose-sum-is-divisible-by-k/"
+    },
+    {
+      "title": "Check if There is a Path With Equal Number of 0's And 1's",
+      "slug": "check-if-there-is-a-path-with-equal-number-of-0s-and-1s",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/check-if-there-is-a-path-with-equal-number-of-0s-and-1s/"
+    },
+    {
+      "title": "Minimum Cost of a Path With Special Roads",
+      "slug": "minimum-cost-of-a-path-with-special-roads",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-cost-of-a-path-with-special-roads/"
+    }
+  ]
+}

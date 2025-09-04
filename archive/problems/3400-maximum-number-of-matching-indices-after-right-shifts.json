@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "3400",
+  "name": "Maximum Number of Matching Indices After Right Shifts",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-number-of-matching-indices-after-right-shifts/",
+  "slug": "maximum-number-of-matching-indices-after-right-shifts",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Rotate Array",
+      "slug": "rotate-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/rotate-array/"
+    }
+  ]
+}

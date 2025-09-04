@@ -1,0 +1,31 @@
+{
+  "category": "",
+  "id": "3116",
+  "name": "Kth Smallest Amount With Single Denomination Combination",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/kth-smallest-amount-with-single-denomination-combination/",
+  "slug": "kth-smallest-amount-with-single-denomination-combination",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Binary Search",
+    "Bit Manipulation",
+    "Combinatorics",
+    "Number Theory"
+  ],
+  "similar_questions": [
+    {
+      "title": "Kth Smallest Number in Multiplication Table",
+      "slug": "kth-smallest-number-in-multiplication-table",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/"
+    },
+    {
+      "title": "Find the Number of Possible Ways for an Event",
+      "slug": "find-the-number-of-possible-ways-for-an-event",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-number-of-possible-ways-for-an-event/"
+    }
+  ]
+}

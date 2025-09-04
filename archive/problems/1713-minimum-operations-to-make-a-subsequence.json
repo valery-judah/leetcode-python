@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "1713",
+  "name": "Minimum Operations to Make a Subsequence",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-operations-to-make-a-subsequence/",
+  "slug": "minimum-operations-to-make-a-subsequence",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Greedy"
+  ],
+  "similar_questions": [
+    {
+      "title": "Append Characters to String to Make Subsequence",
+      "slug": "append-characters-to-string-to-make-subsequence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/"
+    }
+  ]
+}

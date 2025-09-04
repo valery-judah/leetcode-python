@@ -1,0 +1,47 @@
+{
+  "category": "",
+  "id": "235",
+  "name": "Lowest Common Ancestor of a Binary Search Tree",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/",
+  "slug": "lowest-common-ancestor-of-a-binary-search-tree",
+  "isPaidOnly": false,
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Lowest Common Ancestor of a Binary Tree",
+      "slug": "lowest-common-ancestor-of-a-binary-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/"
+    },
+    {
+      "title": "Smallest Common Region",
+      "slug": "smallest-common-region",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/smallest-common-region/"
+    },
+    {
+      "title": "Lowest Common Ancestor of a Binary Tree II",
+      "slug": "lowest-common-ancestor-of-a-binary-tree-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-ii/"
+    },
+    {
+      "title": "Lowest Common Ancestor of a Binary Tree III",
+      "slug": "lowest-common-ancestor-of-a-binary-tree-iii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/"
+    },
+    {
+      "title": "Lowest Common Ancestor of a Binary Tree IV",
+      "slug": "lowest-common-ancestor-of-a-binary-tree-iv",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iv/"
+    }
+  ]
+}

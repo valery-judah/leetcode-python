@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "2664",
+  "name": "The Knight\u2019s Tour",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/the-knights-tour/",
+  "slug": "the-knights-tour",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Backtracking",
+    "Matrix"
+  ],
+  "similar_questions": []
+}

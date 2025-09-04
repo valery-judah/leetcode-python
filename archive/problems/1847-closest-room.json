@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "1847",
+  "name": "Closest Room",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/closest-room/",
+  "slug": "closest-room",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Sorting",
+    "Ordered Set"
+  ],
+  "similar_questions": [
+    {
+      "title": "Most Beautiful Item for Each Query",
+      "slug": "most-beautiful-item-for-each-query",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/most-beautiful-item-for-each-query/"
+    },
+    {
+      "title": "Minimum Time to Kill All Monsters",
+      "slug": "minimum-time-to-kill-all-monsters",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-time-to-kill-all-monsters/"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "1462",
+  "name": "Course Schedule IV",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/course-schedule-iv/",
+  "slug": "course-schedule-iv",
+  "isPaidOnly": false,
+  "tags": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph",
+    "Topological Sort"
+  ],
+  "similar_questions": []
+}

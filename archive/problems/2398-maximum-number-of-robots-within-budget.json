@@ -1,0 +1,50 @@
+{
+  "category": "",
+  "id": "2398",
+  "name": "Maximum Number of Robots Within Budget",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/maximum-number-of-robots-within-budget/",
+  "slug": "maximum-number-of-robots-within-budget",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Queue",
+    "Sliding Window",
+    "Heap (Priority Queue)",
+    "Prefix Sum",
+    "Monotonic Queue"
+  ],
+  "similar_questions": [
+    {
+      "title": "Sliding Window Maximum",
+      "slug": "sliding-window-maximum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sliding-window-maximum/"
+    },
+    {
+      "title": "Kth Smallest Product of Two Sorted Arrays",
+      "slug": "kth-smallest-product-of-two-sorted-arrays",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/kth-smallest-product-of-two-sorted-arrays/"
+    },
+    {
+      "title": "Maximum Number of Tasks You Can Assign",
+      "slug": "maximum-number-of-tasks-you-can-assign",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-number-of-tasks-you-can-assign/"
+    },
+    {
+      "title": "Minimized Maximum of Products Distributed to Any Store",
+      "slug": "minimized-maximum-of-products-distributed-to-any-store",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimized-maximum-of-products-distributed-to-any-store/"
+    },
+    {
+      "title": "Minimum Time to Complete Trips",
+      "slug": "minimum-time-to-complete-trips",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-time-to-complete-trips/"
+    }
+  ]
+}

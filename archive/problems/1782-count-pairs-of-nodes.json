@@ -1,0 +1,19 @@
+{
+  "category": "",
+  "id": "1782",
+  "name": "Count Pairs Of Nodes",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/count-pairs-of-nodes/",
+  "slug": "count-pairs-of-nodes",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
+    "Binary Search",
+    "Graph",
+    "Sorting",
+    "Counting"
+  ],
+  "similar_questions": []
+}

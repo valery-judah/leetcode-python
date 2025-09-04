@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "1518",
+  "name": "Water Bottles",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/water-bottles/",
+  "slug": "water-bottles",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Water Bottles II",
+      "slug": "water-bottles-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/water-bottles-ii/"
+    }
+  ]
+}

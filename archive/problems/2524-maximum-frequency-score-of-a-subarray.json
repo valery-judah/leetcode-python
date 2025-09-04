@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "2524",
+  "name": "Maximum Frequency Score of a Subarray",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/maximum-frequency-score-of-a-subarray/",
+  "slug": "maximum-frequency-score-of-a-subarray",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Stack",
+    "Sliding Window"
+  ],
+  "similar_questions": []
+}

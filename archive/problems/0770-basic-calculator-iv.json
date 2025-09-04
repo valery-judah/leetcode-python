@@ -1,0 +1,30 @@
+{
+  "category": "",
+  "id": "770",
+  "name": "Basic Calculator IV",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/basic-calculator-iv/",
+  "slug": "basic-calculator-iv",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "Math",
+    "String",
+    "Stack",
+    "Recursion"
+  ],
+  "similar_questions": [
+    {
+      "title": "Parse Lisp Expression",
+      "slug": "parse-lisp-expression",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/parse-lisp-expression/"
+    },
+    {
+      "title": "Basic Calculator III",
+      "slug": "basic-calculator-iii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/basic-calculator-iii/"
+    }
+  ]
+}

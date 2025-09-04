@@ -1,0 +1,18 @@
+{
+  "category": "",
+  "id": "3636",
+  "name": "Threshold Majority Queries",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/threshold-majority-queries/",
+  "slug": "threshold-majority-queries",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Divide and Conquer",
+    "Counting",
+    "Prefix Sum"
+  ],
+  "similar_questions": []
+}

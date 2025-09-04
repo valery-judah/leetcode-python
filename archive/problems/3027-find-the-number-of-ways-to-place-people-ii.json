@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "3027",
+  "name": "Find the Number of Ways to Place People II",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/find-the-number-of-ways-to-place-people-ii/",
+  "slug": "find-the-number-of-ways-to-place-people-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Geometry",
+    "Sorting",
+    "Enumeration"
+  ],
+  "similar_questions": [
+    {
+      "title": "Rectangle Area",
+      "slug": "rectangle-area",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/rectangle-area/"
+    }
+  ]
+}

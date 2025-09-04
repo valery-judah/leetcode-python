@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "851",
+  "name": "Loud and Rich",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/loud-and-rich/",
+  "slug": "loud-and-rich",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Depth-First Search",
+    "Graph",
+    "Topological Sort"
+  ],
+  "similar_questions": [
+    {
+      "title": "Build a Matrix With Conditions",
+      "slug": "build-a-matrix-with-conditions",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/build-a-matrix-with-conditions/"
+    }
+  ]
+}

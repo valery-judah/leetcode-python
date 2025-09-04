@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "800",
+  "name": "Similar RGB Color",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/similar-rgb-color/",
+  "slug": "similar-rgb-color",
+  "isPaidOnly": true,
+  "tags": [
+    "Math",
+    "String",
+    "Enumeration"
+  ],
+  "similar_questions": []
+}

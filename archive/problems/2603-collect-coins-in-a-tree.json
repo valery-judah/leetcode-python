@@ -1,0 +1,41 @@
+{
+  "category": "",
+  "id": "2603",
+  "name": "Collect Coins in a Tree",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/collect-coins-in-a-tree/",
+  "slug": "collect-coins-in-a-tree",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Tree",
+    "Graph",
+    "Topological Sort"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Height Trees",
+      "slug": "minimum-height-trees",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-height-trees/"
+    },
+    {
+      "title": "Sum of Distances in Tree",
+      "slug": "sum-of-distances-in-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sum-of-distances-in-tree/"
+    },
+    {
+      "title": "Maximum Score After Applying Operations on a Tree",
+      "slug": "maximum-score-after-applying-operations-on-a-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-score-after-applying-operations-on-a-tree/"
+    },
+    {
+      "title": "Find Number of Coins to Place in Tree Nodes",
+      "slug": "find-number-of-coins-to-place-in-tree-nodes",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-number-of-coins-to-place-in-tree-nodes/"
+    }
+  ]
+}

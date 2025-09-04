@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "1957",
+  "name": "Delete Characters to Make Fancy String",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/delete-characters-to-make-fancy-string/",
+  "slug": "delete-characters-to-make-fancy-string",
+  "isPaidOnly": false,
+  "tags": [
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find Maximum Removals From Source String",
+      "slug": "find-maximum-removals-from-source-string",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-maximum-removals-from-source-string/"
+    }
+  ]
+}

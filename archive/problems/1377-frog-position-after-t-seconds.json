@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "1377",
+  "name": "Frog Position After T Seconds",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/frog-position-after-t-seconds/",
+  "slug": "frog-position-after-t-seconds",
+  "isPaidOnly": false,
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longest Special Path",
+      "slug": "longest-special-path",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-special-path/"
+    }
+  ]
+}

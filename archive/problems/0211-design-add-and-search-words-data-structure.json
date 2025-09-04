@@ -1,0 +1,53 @@
+{
+  "category": "",
+  "id": "211",
+  "name": "Design Add and Search Words Data Structure",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/design-add-and-search-words-data-structure/",
+  "slug": "design-add-and-search-words-data-structure",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Depth-First Search",
+    "Design",
+    "Trie"
+  ],
+  "similar_questions": [
+    {
+      "title": "Implement Trie (Prefix Tree)",
+      "slug": "implement-trie-prefix-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/implement-trie-prefix-tree/"
+    },
+    {
+      "title": "Prefix and Suffix Search",
+      "slug": "prefix-and-suffix-search",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/prefix-and-suffix-search/"
+    },
+    {
+      "title": "Match Substring After Replacement",
+      "slug": "match-substring-after-replacement",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/match-substring-after-replacement/"
+    },
+    {
+      "title": "Sum of Prefix Scores of Strings",
+      "slug": "sum-of-prefix-scores-of-strings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sum-of-prefix-scores-of-strings/"
+    },
+    {
+      "title": "Count Prefix and Suffix Pairs II",
+      "slug": "count-prefix-and-suffix-pairs-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-prefix-and-suffix-pairs-ii/"
+    },
+    {
+      "title": "Count Prefix and Suffix Pairs I",
+      "slug": "count-prefix-and-suffix-pairs-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-prefix-and-suffix-pairs-i/"
+    }
+  ]
+}

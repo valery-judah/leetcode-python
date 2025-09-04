@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "3398",
+  "name": "Smallest Substring With Identical Characters I",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/smallest-substring-with-identical-characters-i/",
+  "slug": "smallest-substring-with-identical-characters-i",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Enumeration"
+  ],
+  "similar_questions": []
+}

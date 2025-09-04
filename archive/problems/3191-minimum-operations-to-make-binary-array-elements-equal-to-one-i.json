@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "3191",
+  "name": "Minimum Operations to Make Binary Array Elements Equal to One I",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/",
+  "slug": "minimum-operations-to-make-binary-array-elements-equal-to-one-i",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Bit Manipulation",
+    "Queue",
+    "Sliding Window",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Number of K Consecutive Bit Flips",
+      "slug": "minimum-number-of-k-consecutive-bit-flips",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/"
+    }
+  ]
+}

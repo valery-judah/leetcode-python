@@ -1,0 +1,53 @@
+{
+  "category": "",
+  "id": "834",
+  "name": "Sum of Distances in Tree",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/sum-of-distances-in-tree/",
+  "slug": "sum-of-distances-in-tree",
+  "isPaidOnly": false,
+  "tags": [
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search",
+    "Graph"
+  ],
+  "similar_questions": [
+    {
+      "title": "Distribute Coins in Binary Tree",
+      "slug": "distribute-coins-in-binary-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/distribute-coins-in-binary-tree/"
+    },
+    {
+      "title": "Count Nodes With the Highest Score",
+      "slug": "count-nodes-with-the-highest-score",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-nodes-with-the-highest-score/"
+    },
+    {
+      "title": "Collect Coins in a Tree",
+      "slug": "collect-coins-in-a-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/collect-coins-in-a-tree/"
+    },
+    {
+      "title": "Maximum Score After Applying Operations on a Tree",
+      "slug": "maximum-score-after-applying-operations-on-a-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-score-after-applying-operations-on-a-tree/"
+    },
+    {
+      "title": "Count Pairs of Connectable Servers in a Weighted Tree Network",
+      "slug": "count-pairs-of-connectable-servers-in-a-weighted-tree-network",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-pairs-of-connectable-servers-in-a-weighted-tree-network/"
+    },
+    {
+      "title": "Time Taken to Mark All Nodes",
+      "slug": "time-taken-to-mark-all-nodes",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/time-taken-to-mark-all-nodes/"
+    }
+  ]
+}

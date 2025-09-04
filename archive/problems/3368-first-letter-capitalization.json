@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "3368",
+  "name": "First Letter Capitalization",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/first-letter-capitalization/",
+  "slug": "first-letter-capitalization",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

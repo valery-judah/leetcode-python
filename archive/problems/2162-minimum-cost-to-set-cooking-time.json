@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "2162",
+  "name": "Minimum Cost to Set Cooking Time",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-cost-to-set-cooking-time/",
+  "slug": "minimum-cost-to-set-cooking-time",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Enumeration"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Time Difference",
+      "slug": "minimum-time-difference",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-time-difference/"
+    }
+  ]
+}

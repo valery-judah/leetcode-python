@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "1788",
+  "name": "Maximize the Beauty of the Garden",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/maximize-the-beauty-of-the-garden/",
+  "slug": "maximize-the-beauty-of-the-garden",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Prefix Sum"
+  ],
+  "similar_questions": []
+}

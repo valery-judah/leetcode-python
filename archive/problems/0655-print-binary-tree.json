@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "655",
+  "name": "Print Binary Tree",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/print-binary-tree/",
+  "slug": "print-binary-tree",
+  "isPaidOnly": false,
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": []
+}

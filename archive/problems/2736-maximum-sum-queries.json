@@ -1,0 +1,26 @@
+{
+  "category": "",
+  "id": "2736",
+  "name": "Maximum Sum Queries",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/maximum-sum-queries/",
+  "slug": "maximum-sum-queries",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Stack",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Sorting",
+    "Monotonic Stack"
+  ],
+  "similar_questions": [
+    {
+      "title": "Most Beautiful Item for Each Query",
+      "slug": "most-beautiful-item-for-each-query",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/most-beautiful-item-for-each-query/"
+    }
+  ]
+}

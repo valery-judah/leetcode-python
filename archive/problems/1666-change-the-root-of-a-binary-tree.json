@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1666",
+  "name": "Change the Root of a Binary Tree",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/change-the-root-of-a-binary-tree/",
+  "slug": "change-the-root-of-a-binary-tree",
+  "isPaidOnly": true,
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": []
+}

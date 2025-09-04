@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "2409",
+  "name": "Count Days Spent Together",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/count-days-spent-together/",
+  "slug": "count-days-spent-together",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Number of Days Between Two Dates",
+      "slug": "number-of-days-between-two-dates",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-days-between-two-dates/"
+    },
+    {
+      "title": "Minimum Number of Operations to Convert Time",
+      "slug": "minimum-number-of-operations-to-convert-time",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-number-of-operations-to-convert-time/"
+    }
+  ]
+}

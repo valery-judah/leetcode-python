@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "3126",
+  "name": "Server Utilization Time",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/server-utilization-time/",
+  "slug": "server-utilization-time",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,25 @@
+{
+  "category": "",
+  "id": "2290",
+  "name": "Minimum Obstacle Removal to Reach Corner",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-obstacle-removal-to-reach-corner/",
+  "slug": "minimum-obstacle-removal-to-reach-corner",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Breadth-First Search",
+    "Graph",
+    "Heap (Priority Queue)",
+    "Matrix",
+    "Shortest Path"
+  ],
+  "similar_questions": [
+    {
+      "title": "Shortest Path in a Grid with Obstacles Elimination",
+      "slug": "shortest-path-in-a-grid-with-obstacles-elimination",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "category": "",
+  "id": "1928",
+  "name": "Minimum Cost to Reach Destination in Time",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-cost-to-reach-destination-in-time/",
+  "slug": "minimum-cost-to-reach-destination-in-time",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Graph"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Cost of Trip With K Highways",
+      "slug": "maximum-cost-of-trip-with-k-highways",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-cost-of-trip-with-k-highways/"
+    },
+    {
+      "title": "Maximum Path Quality of a Graph",
+      "slug": "maximum-path-quality-of-a-graph",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-path-quality-of-a-graph/"
+    },
+    {
+      "title": "Minimum Cost to Reach City With Discounts",
+      "slug": "minimum-cost-to-reach-city-with-discounts",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-cost-to-reach-city-with-discounts/"
+    },
+    {
+      "title": "Find Minimum Time to Reach Last Room I",
+      "slug": "find-minimum-time-to-reach-last-room-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-minimum-time-to-reach-last-room-i/"
+    },
+    {
+      "title": "Find Minimum Time to Reach Last Room II",
+      "slug": "find-minimum-time-to-reach-last-room-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-minimum-time-to-reach-last-room-ii/"
+    },
+    {
+      "title": "Minimum Cost Path with Edge Reversals",
+      "slug": "minimum-cost-path-with-edge-reversals",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-cost-path-with-edge-reversals/"
+    }
+  ]
+}

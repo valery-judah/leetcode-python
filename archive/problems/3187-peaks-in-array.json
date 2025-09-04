@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "3187",
+  "name": "Peaks in Array",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/peaks-in-array/",
+  "slug": "peaks-in-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Indexed Tree",
+    "Segment Tree"
+  ],
+  "similar_questions": []
+}

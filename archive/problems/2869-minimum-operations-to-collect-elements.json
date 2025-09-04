@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "2869",
+  "name": "Minimum Operations to Collect Elements",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/minimum-operations-to-collect-elements/",
+  "slug": "minimum-operations-to-collect-elements",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Bit Manipulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Build an Array With Stack Operations",
+      "slug": "build-an-array-with-stack-operations",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/build-an-array-with-stack-operations/"
+    }
+  ]
+}

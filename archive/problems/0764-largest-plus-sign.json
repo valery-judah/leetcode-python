@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "764",
+  "name": "Largest Plus Sign",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/largest-plus-sign/",
+  "slug": "largest-plus-sign",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximal Square",
+      "slug": "maximal-square",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximal-square/"
+    }
+  ]
+}

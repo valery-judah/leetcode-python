@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1538",
+  "name": "Guess the Majority in a Hidden Array",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/guess-the-majority-in-a-hidden-array/",
+  "slug": "guess-the-majority-in-a-hidden-array",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Math",
+    "Interactive"
+  ],
+  "similar_questions": []
+}

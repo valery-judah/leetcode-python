@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "3500",
+  "name": "Minimum Cost to Divide Array Into Subarrays",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-cost-to-divide-array-into-subarrays/",
+  "slug": "minimum-cost-to-divide-array-into-subarrays",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Cost to Split an Array",
+      "slug": "minimum-cost-to-split-an-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-cost-to-split-an-array/"
+    }
+  ]
+}

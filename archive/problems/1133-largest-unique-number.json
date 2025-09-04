@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1133",
+  "name": "Largest Unique Number",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/largest-unique-number/",
+  "slug": "largest-unique-number",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting"
+  ],
+  "similar_questions": []
+}

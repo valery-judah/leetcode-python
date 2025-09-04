@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "2032",
+  "name": "Two Out of Three",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/two-out-of-three/",
+  "slug": "two-out-of-three",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Bit Manipulation"
+  ],
+  "similar_questions": []
+}

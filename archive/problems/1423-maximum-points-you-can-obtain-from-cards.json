@@ -1,0 +1,40 @@
+{
+  "category": "",
+  "id": "1423",
+  "name": "Maximum Points You Can Obtain from Cards",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/",
+  "slug": "maximum-points-you-can-obtain-from-cards",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Sliding Window",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Score from Performing Multiplication Operations",
+      "slug": "maximum-score-from-performing-multiplication-operations",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-score-from-performing-multiplication-operations/"
+    },
+    {
+      "title": "Removing Minimum and Maximum From Array",
+      "slug": "removing-minimum-and-maximum-from-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/removing-minimum-and-maximum-from-array/"
+    },
+    {
+      "title": "Minimum Recolors to Get K Consecutive Black Blocks",
+      "slug": "minimum-recolors-to-get-k-consecutive-black-blocks",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/"
+    },
+    {
+      "title": "Maximum Spending After Buying Items",
+      "slug": "maximum-spending-after-buying-items",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-spending-after-buying-items/"
+    }
+  ]
+}

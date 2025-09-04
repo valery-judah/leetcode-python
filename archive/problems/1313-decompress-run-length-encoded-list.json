@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "1313",
+  "name": "Decompress Run-Length Encoded List",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/decompress-run-length-encoded-list/",
+  "slug": "decompress-run-length-encoded-list",
+  "isPaidOnly": false,
+  "tags": [
+    "Array"
+  ],
+  "similar_questions": [
+    {
+      "title": "String Compression",
+      "slug": "string-compression",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/string-compression/"
+    }
+  ]
+}

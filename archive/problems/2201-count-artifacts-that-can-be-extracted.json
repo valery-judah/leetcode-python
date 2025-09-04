@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "2201",
+  "name": "Count Artifacts That Can Be Extracted",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-artifacts-that-can-be-extracted/",
+  "slug": "count-artifacts-that-can-be-extracted",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximal Square",
+      "slug": "maximal-square",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximal-square/"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "2505",
+  "name": "Bitwise OR of All Subsequence Sums",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/bitwise-or-of-all-subsequence-sums/",
+  "slug": "bitwise-or-of-all-subsequence-sums",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Math",
+    "Bit Manipulation",
+    "Brainteaser",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Bitwise ORs of Subarrays",
+      "slug": "bitwise-ors-of-subarrays",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/bitwise-ors-of-subarrays/"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "1141",
+  "name": "User Activity for the Past 30 Days I",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/user-activity-for-the-past-30-days-i/",
+  "slug": "user-activity-for-the-past-30-days-i",
+  "isPaidOnly": false,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

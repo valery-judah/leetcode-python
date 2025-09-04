@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "494",
+  "name": "Target Sum",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/target-sum/",
+  "slug": "target-sum",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Backtracking"
+  ],
+  "similar_questions": [
+    {
+      "title": "Expression Add Operators",
+      "slug": "expression-add-operators",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/expression-add-operators/"
+    },
+    {
+      "title": "Ways to Express an Integer as Sum of Powers",
+      "slug": "ways-to-express-an-integer-as-sum-of-powers",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/ways-to-express-an-integer-as-sum-of-powers/"
+    }
+  ]
+}

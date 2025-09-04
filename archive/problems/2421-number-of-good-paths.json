@@ -1,0 +1,49 @@
+{
+  "category": "",
+  "id": "2421",
+  "name": "Number of Good Paths",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/number-of-good-paths/",
+  "slug": "number-of-good-paths",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Tree",
+    "Union Find",
+    "Graph",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Checking Existence of Edge Length Limited Paths",
+      "slug": "checking-existence-of-edge-length-limited-paths",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/checking-existence-of-edge-length-limited-paths/"
+    },
+    {
+      "title": "Checking Existence of Edge Length Limited Paths II",
+      "slug": "checking-existence-of-edge-length-limited-paths-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/checking-existence-of-edge-length-limited-paths-ii/"
+    },
+    {
+      "title": "Longest Nice Substring",
+      "slug": "longest-nice-substring",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-nice-substring/"
+    },
+    {
+      "title": "Count Good Triplets in an Array",
+      "slug": "count-good-triplets-in-an-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-good-triplets-in-an-array/"
+    },
+    {
+      "title": "Count Pairs Of Similar Strings",
+      "slug": "count-pairs-of-similar-strings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-pairs-of-similar-strings/"
+    }
+  ]
+}

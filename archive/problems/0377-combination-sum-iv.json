@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "377",
+  "name": "Combination Sum IV",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/combination-sum-iv/",
+  "slug": "combination-sum-iv",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Combination Sum",
+      "slug": "combination-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/combination-sum/"
+    },
+    {
+      "title": "Ways to Express an Integer as Sum of Powers",
+      "slug": "ways-to-express-an-integer-as-sum-of-powers",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/ways-to-express-an-integer-as-sum-of-powers/"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "643",
+  "name": "Maximum Average Subarray I",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/maximum-average-subarray-i/",
+  "slug": "maximum-average-subarray-i",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Sliding Window"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Average Subarray II",
+      "slug": "maximum-average-subarray-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-average-subarray-ii/"
+    },
+    {
+      "title": "K Radius Subarray Averages",
+      "slug": "k-radius-subarray-averages",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/k-radius-subarray-averages/"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "category": "",
+  "id": "2514",
+  "name": "Count Anagrams",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/count-anagrams/",
+  "slug": "count-anagrams",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "Math",
+    "String",
+    "Combinatorics",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Group Anagrams",
+      "slug": "group-anagrams",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/group-anagrams/"
+    },
+    {
+      "title": "Count Ways to Build Rooms in an Ant Colony",
+      "slug": "count-ways-to-build-rooms-in-an-ant-colony",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-ways-to-build-rooms-in-an-ant-colony/"
+    }
+  ]
+}

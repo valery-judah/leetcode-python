@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "1211",
+  "name": "Queries Quality and Percentage",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/queries-quality-and-percentage/",
+  "slug": "queries-quality-and-percentage",
+  "isPaidOnly": false,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": [
+    {
+      "title": "Percentage of Users Attended a Contest",
+      "slug": "percentage-of-users-attended-a-contest",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/percentage-of-users-attended-a-contest/"
+    }
+  ]
+}

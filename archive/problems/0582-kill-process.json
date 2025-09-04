@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "582",
+  "name": "Kill Process",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/kill-process/",
+  "slug": "kill-process",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search"
+  ],
+  "similar_questions": []
+}

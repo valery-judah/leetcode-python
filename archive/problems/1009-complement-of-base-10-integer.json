@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "1009",
+  "name": "Complement of Base 10 Integer",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/complement-of-base-10-integer/",
+  "slug": "complement-of-base-10-integer",
+  "isPaidOnly": false,
+  "tags": [
+    "Bit Manipulation"
+  ],
+  "similar_questions": []
+}

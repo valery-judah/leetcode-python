@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "2697",
+  "name": "Lexicographically Smallest Palindrome",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/lexicographically-smallest-palindrome/",
+  "slug": "lexicographically-smallest-palindrome",
+  "isPaidOnly": false,
+  "tags": [
+    "Two Pointers",
+    "String",
+    "Greedy"
+  ],
+  "similar_questions": []
+}

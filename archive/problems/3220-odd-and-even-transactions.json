@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "3220",
+  "name": "Odd and Even Transactions",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/odd-and-even-transactions/",
+  "slug": "odd-and-even-transactions",
+  "isPaidOnly": false,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

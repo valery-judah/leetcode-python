@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "847",
+  "name": "Shortest Path Visiting All Nodes",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/shortest-path-visiting-all-nodes/",
+  "slug": "shortest-path-visiting-all-nodes",
+  "isPaidOnly": false,
+  "tags": [
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Breadth-First Search",
+    "Graph",
+    "Bitmask"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find the Minimum Cost Array Permutation",
+      "slug": "find-the-minimum-cost-array-permutation",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-minimum-cost-array-permutation/"
+    }
+  ]
+}

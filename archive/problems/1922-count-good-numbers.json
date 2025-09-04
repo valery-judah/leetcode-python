@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "1922",
+  "name": "Count Good Numbers",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-good-numbers/",
+  "slug": "count-good-numbers",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Recursion"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count the Number of Arrays with K Matching Adjacent Elements",
+      "slug": "count-the-number-of-arrays-with-k-matching-adjacent-elements",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-the-number-of-arrays-with-k-matching-adjacent-elements/"
+    }
+  ]
+}

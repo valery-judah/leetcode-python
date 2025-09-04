@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "1393",
+  "name": "Capital Gain/Loss",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/capital-gainloss/",
+  "slug": "capital-gainloss",
+  "isPaidOnly": false,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

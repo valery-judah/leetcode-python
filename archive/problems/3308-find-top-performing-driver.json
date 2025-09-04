@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "3308",
+  "name": "Find Top Performing Driver",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-top-performing-driver/",
+  "slug": "find-top-performing-driver",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

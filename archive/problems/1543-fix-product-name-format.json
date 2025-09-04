@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "1543",
+  "name": "Fix Product Name Format",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/fix-product-name-format/",
+  "slug": "fix-product-name-format",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "1416",
+  "name": "Restore The Array",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/restore-the-array/",
+  "slug": "restore-the-array",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Number of Ways to Separate Numbers",
+      "slug": "number-of-ways-to-separate-numbers",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-ways-to-separate-numbers/"
+    },
+    {
+      "title": "Number of Beautiful Partitions",
+      "slug": "number-of-beautiful-partitions",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-beautiful-partitions/"
+    }
+  ]
+}

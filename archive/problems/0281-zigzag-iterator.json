@@ -1,0 +1,47 @@
+{
+  "category": "",
+  "id": "281",
+  "name": "Zigzag Iterator",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/zigzag-iterator/",
+  "slug": "zigzag-iterator",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Design",
+    "Queue",
+    "Iterator"
+  ],
+  "similar_questions": [
+    {
+      "title": "Binary Search Tree Iterator",
+      "slug": "binary-search-tree-iterator",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/binary-search-tree-iterator/"
+    },
+    {
+      "title": "Flatten 2D Vector",
+      "slug": "flatten-2d-vector",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/flatten-2d-vector/"
+    },
+    {
+      "title": "Peeking Iterator",
+      "slug": "peeking-iterator",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/peeking-iterator/"
+    },
+    {
+      "title": "Flatten Nested List Iterator",
+      "slug": "flatten-nested-list-iterator",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/flatten-nested-list-iterator/"
+    },
+    {
+      "title": "Merge Strings Alternately",
+      "slug": "merge-strings-alternately",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/merge-strings-alternately/"
+    }
+  ]
+}

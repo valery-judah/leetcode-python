@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "423",
+  "name": "Reconstruct Original Digits from English",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/reconstruct-original-digits-from-english/",
+  "slug": "reconstruct-original-digits-from-english",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "Math",
+    "String"
+  ],
+  "similar_questions": []
+}

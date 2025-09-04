@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "175",
+  "name": "Combine Two Tables",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/combine-two-tables/",
+  "slug": "combine-two-tables",
+  "isPaidOnly": false,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": [
+    {
+      "title": "Employee Bonus",
+      "slug": "employee-bonus",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/employee-bonus/"
+    }
+  ]
+}

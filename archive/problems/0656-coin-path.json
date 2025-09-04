@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "656",
+  "name": "Coin Path",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/coin-path/",
+  "slug": "coin-path",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "House Robber",
+      "slug": "house-robber",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/house-robber/"
+    },
+    {
+      "title": "House Robber II",
+      "slug": "house-robber-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/house-robber-ii/"
+    }
+  ]
+}

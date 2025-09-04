@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "2751",
+  "name": "Robot Collisions",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/robot-collisions/",
+  "slug": "robot-collisions",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Stack",
+    "Sorting",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Asteroid Collision",
+      "slug": "asteroid-collision",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/asteroid-collision/"
+    }
+  ]
+}

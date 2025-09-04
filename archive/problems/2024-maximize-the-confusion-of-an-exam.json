@@ -1,0 +1,47 @@
+{
+  "category": "",
+  "id": "2024",
+  "name": "Maximize the Confusion of an Exam",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximize-the-confusion-of-an-exam/",
+  "slug": "maximize-the-confusion-of-an-exam",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Binary Search",
+    "Sliding Window",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longest Substring with At Most K Distinct Characters",
+      "slug": "longest-substring-with-at-most-k-distinct-characters",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/"
+    },
+    {
+      "title": "Longest Repeating Character Replacement",
+      "slug": "longest-repeating-character-replacement",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-repeating-character-replacement/"
+    },
+    {
+      "title": "Max Consecutive Ones III",
+      "slug": "max-consecutive-ones-iii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/max-consecutive-ones-iii/"
+    },
+    {
+      "title": "Minimum Number of Days to Make m Bouquets",
+      "slug": "minimum-number-of-days-to-make-m-bouquets",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/"
+    },
+    {
+      "title": "Longest Nice Subarray",
+      "slug": "longest-nice-subarray",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-nice-subarray/"
+    }
+  ]
+}

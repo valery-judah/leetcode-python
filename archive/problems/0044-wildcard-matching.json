@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "44",
+  "name": "Wildcard Matching",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/wildcard-matching/",
+  "slug": "wildcard-matching",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Dynamic Programming",
+    "Greedy",
+    "Recursion"
+  ],
+  "similar_questions": [
+    {
+      "title": "Regular Expression Matching",
+      "slug": "regular-expression-matching",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/regular-expression-matching/"
+    },
+    {
+      "title": "Substring Matching Pattern",
+      "slug": "substring-matching-pattern",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/substring-matching-pattern/"
+    }
+  ]
+}

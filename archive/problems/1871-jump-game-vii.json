@@ -1,0 +1,77 @@
+{
+  "category": "",
+  "id": "1871",
+  "name": "Jump Game VII",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/jump-game-vii/",
+  "slug": "jump-game-vii",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Dynamic Programming",
+    "Sliding Window",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Jump Game II",
+      "slug": "jump-game-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/jump-game-ii/"
+    },
+    {
+      "title": "Jump Game",
+      "slug": "jump-game",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/jump-game/"
+    },
+    {
+      "title": "Jump Game III",
+      "slug": "jump-game-iii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/jump-game-iii/"
+    },
+    {
+      "title": "Jump Game IV",
+      "slug": "jump-game-iv",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/jump-game-iv/"
+    },
+    {
+      "title": "Jump Game V",
+      "slug": "jump-game-v",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/jump-game-v/"
+    },
+    {
+      "title": "Jump Game VI",
+      "slug": "jump-game-vi",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/jump-game-vi/"
+    },
+    {
+      "title": "Jump Game VII",
+      "slug": "jump-game-vii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/jump-game-vii/"
+    },
+    {
+      "title": "Jump Game VIII",
+      "slug": "jump-game-viii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/jump-game-viii/"
+    },
+    {
+      "title": "Count Vowel Strings in Ranges",
+      "slug": "count-vowel-strings-in-ranges",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-vowel-strings-in-ranges/"
+    },
+    {
+      "title": "Maximum Number of Jumps to Reach the Last Index",
+      "slug": "maximum-number-of-jumps-to-reach-the-last-index",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-number-of-jumps-to-reach-the-last-index/"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "category": "",
+  "id": "862",
+  "name": "Shortest Subarray with Sum at Least K",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/",
+  "slug": "shortest-subarray-with-sum-at-least-k",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Queue",
+    "Sliding Window",
+    "Heap (Priority Queue)",
+    "Prefix Sum",
+    "Monotonic Queue"
+  ],
+  "similar_questions": [
+    {
+      "title": "Shortest Subarray With OR at Least K II",
+      "slug": "shortest-subarray-with-or-at-least-k-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-ii/"
+    },
+    {
+      "title": "Shortest Subarray With OR at Least K I",
+      "slug": "shortest-subarray-with-or-at-least-k-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-i/"
+    }
+  ]
+}

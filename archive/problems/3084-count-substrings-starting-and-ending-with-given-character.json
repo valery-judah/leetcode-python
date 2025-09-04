@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "3084",
+  "name": "Count Substrings Starting and Ending with Given Character",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-substrings-starting-and-ending-with-given-character/",
+  "slug": "count-substrings-starting-and-ending-with-given-character",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "String",
+    "Counting"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "1288",
+  "name": "Remove Covered Intervals",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/remove-covered-intervals/",
+  "slug": "remove-covered-intervals",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,39 @@
+{
+  "category": "",
+  "id": "429",
+  "name": "N-ary Tree Level Order Traversal",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/n-ary-tree-level-order-traversal/",
+  "slug": "n-ary-tree-level-order-traversal",
+  "isPaidOnly": false,
+  "tags": [
+    "Tree",
+    "Breadth-First Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Binary Tree Level Order Traversal",
+      "slug": "binary-tree-level-order-traversal",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/binary-tree-level-order-traversal/"
+    },
+    {
+      "title": "N-ary Tree Preorder Traversal",
+      "slug": "n-ary-tree-preorder-traversal",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/n-ary-tree-preorder-traversal/"
+    },
+    {
+      "title": "N-ary Tree Postorder Traversal",
+      "slug": "n-ary-tree-postorder-traversal",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/n-ary-tree-postorder-traversal/"
+    },
+    {
+      "title": "The Time When the Network Becomes Idle",
+      "slug": "the-time-when-the-network-becomes-idle",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/the-time-when-the-network-becomes-idle/"
+    }
+  ]
+}

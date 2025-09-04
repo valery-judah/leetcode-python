@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "3396",
+  "name": "Minimum Number of Operations to Make Elements in Array Distinct",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/minimum-number-of-operations-to-make-elements-in-array-distinct/",
+  "slug": "minimum-number-of-operations-to-make-elements-in-array-distinct",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Increment to Make Array Unique",
+      "slug": "minimum-increment-to-make-array-unique",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-increment-to-make-array-unique/"
+    }
+  ]
+}

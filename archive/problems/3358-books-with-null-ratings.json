@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "3358",
+  "name": "Books with NULL Ratings",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/books-with-null-ratings/",
+  "slug": "books-with-null-ratings",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

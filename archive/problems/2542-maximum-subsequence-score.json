@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "2542",
+  "name": "Maximum Subsequence Score",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-subsequence-score/",
+  "slug": "maximum-subsequence-score",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "similar_questions": [
+    {
+      "title": "IPO",
+      "slug": "ipo",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/ipo/"
+    },
+    {
+      "title": "Minimum Cost to Hire K Workers",
+      "slug": "minimum-cost-to-hire-k-workers",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-cost-to-hire-k-workers/"
+    }
+  ]
+}

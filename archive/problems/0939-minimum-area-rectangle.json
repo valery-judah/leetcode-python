@@ -1,0 +1,36 @@
+{
+  "category": "",
+  "id": "939",
+  "name": "Minimum Area Rectangle",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-area-rectangle/",
+  "slug": "minimum-area-rectangle",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Geometry",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Rectangles to Cover Points",
+      "slug": "minimum-rectangles-to-cover-points",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-rectangles-to-cover-points/"
+    },
+    {
+      "title": "Maximum Area Rectangle With Point Constraints I",
+      "slug": "maximum-area-rectangle-with-point-constraints-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-area-rectangle-with-point-constraints-i/"
+    },
+    {
+      "title": "Maximum Area Rectangle With Point Constraints II",
+      "slug": "maximum-area-rectangle-with-point-constraints-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-area-rectangle-with-point-constraints-ii/"
+    }
+  ]
+}

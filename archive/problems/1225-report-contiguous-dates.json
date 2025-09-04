@@ -1,0 +1,32 @@
+{
+  "category": "",
+  "id": "1225",
+  "name": "Report Contiguous Dates",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/report-contiguous-dates/",
+  "slug": "report-contiguous-dates",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find the Start and End Number of Continuous Ranges",
+      "slug": "find-the-start-and-end-number-of-continuous-ranges",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-start-and-end-number-of-continuous-ranges/"
+    },
+    {
+      "title": "Find the Missing IDs",
+      "slug": "find-the-missing-ids",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-missing-ids/"
+    },
+    {
+      "title": "Customers With Strictly Increasing Purchases",
+      "slug": "customers-with-strictly-increasing-purchases",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/customers-with-strictly-increasing-purchases/"
+    }
+  ]
+}

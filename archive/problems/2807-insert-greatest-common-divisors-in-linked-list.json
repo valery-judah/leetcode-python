@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "2807",
+  "name": "Insert Greatest Common Divisors in Linked List",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/",
+  "slug": "insert-greatest-common-divisors-in-linked-list",
+  "isPaidOnly": false,
+  "tags": [
+    "Linked List",
+    "Math",
+    "Number Theory"
+  ],
+  "similar_questions": [
+    {
+      "title": "Reverse Linked List",
+      "slug": "reverse-linked-list",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/reverse-linked-list/"
+    }
+  ]
+}

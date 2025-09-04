@@ -1,0 +1,40 @@
+{
+  "category": "",
+  "id": "419",
+  "name": "Battleships in a Board",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/battleships-in-a-board/",
+  "slug": "battleships-in-a-board",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Depth-First Search",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Number of Islands",
+      "slug": "number-of-islands",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-islands/"
+    },
+    {
+      "title": "Walls and Gates",
+      "slug": "walls-and-gates",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/walls-and-gates/"
+    },
+    {
+      "title": "Max Area of Island",
+      "slug": "max-area-of-island",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/max-area-of-island/"
+    },
+    {
+      "title": "Rotting Oranges",
+      "slug": "rotting-oranges",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/rotting-oranges/"
+    }
+  ]
+}

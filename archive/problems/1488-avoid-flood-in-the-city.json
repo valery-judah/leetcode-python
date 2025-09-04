@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "1488",
+  "name": "Avoid Flood in The City",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/avoid-flood-in-the-city/",
+  "slug": "avoid-flood-in-the-city",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Greedy",
+    "Heap (Priority Queue)"
+  ],
+  "similar_questions": []
+}

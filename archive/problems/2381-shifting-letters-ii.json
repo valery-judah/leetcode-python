@@ -1,0 +1,58 @@
+{
+  "category": "",
+  "id": "2381",
+  "name": "Shifting Letters II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/shifting-letters-ii/",
+  "slug": "shifting-letters-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "String",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "The Skyline Problem",
+      "slug": "the-skyline-problem",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/the-skyline-problem/"
+    },
+    {
+      "title": "Range Sum Query - Mutable",
+      "slug": "range-sum-query-mutable",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/range-sum-query-mutable/"
+    },
+    {
+      "title": "Range Addition",
+      "slug": "range-addition",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/range-addition/"
+    },
+    {
+      "title": "Shifting Letters",
+      "slug": "shifting-letters",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/shifting-letters/"
+    },
+    {
+      "title": "Maximum Population Year",
+      "slug": "maximum-population-year",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-population-year/"
+    },
+    {
+      "title": "Describe the Painting",
+      "slug": "describe-the-painting",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/describe-the-painting/"
+    },
+    {
+      "title": "Shift Distance Between Two Strings",
+      "slug": "shift-distance-between-two-strings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/shift-distance-between-two-strings/"
+    }
+  ]
+}

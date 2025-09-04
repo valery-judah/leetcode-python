@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "2014",
+  "name": "Longest Subsequence Repeated k Times",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/longest-subsequence-repeated-k-times/",
+  "slug": "longest-subsequence-repeated-k-times",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Backtracking",
+    "Greedy",
+    "Counting",
+    "Enumeration"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longest Substring with At Least K Repeating Characters",
+      "slug": "longest-substring-with-at-least-k-repeating-characters",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/"
+    }
+  ]
+}

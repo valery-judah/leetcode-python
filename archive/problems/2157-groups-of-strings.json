@@ -1,0 +1,34 @@
+{
+  "category": "",
+  "id": "2157",
+  "name": "Groups of Strings",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/groups-of-strings/",
+  "slug": "groups-of-strings",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Bit Manipulation",
+    "Union Find"
+  ],
+  "similar_questions": [
+    {
+      "title": "Word Ladder II",
+      "slug": "word-ladder-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/word-ladder-ii/"
+    },
+    {
+      "title": "Similar String Groups",
+      "slug": "similar-string-groups",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/similar-string-groups/"
+    },
+    {
+      "title": "Largest Component Size by Common Factor",
+      "slug": "largest-component-size-by-common-factor",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/largest-component-size-by-common-factor/"
+    }
+  ]
+}

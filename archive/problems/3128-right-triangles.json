@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "3128",
+  "name": "Right Triangles",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/right-triangles/",
+  "slug": "right-triangles",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Combinatorics",
+    "Counting"
+  ],
+  "similar_questions": []
+}

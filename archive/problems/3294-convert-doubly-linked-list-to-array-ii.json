@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "3294",
+  "name": "Convert Doubly Linked List to Array II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/convert-doubly-linked-list-to-array-ii/",
+  "slug": "convert-doubly-linked-list-to-array-ii",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Linked List",
+    "Doubly-Linked List"
+  ],
+  "similar_questions": [
+    {
+      "title": "Remove Linked List Elements",
+      "slug": "remove-linked-list-elements",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/remove-linked-list-elements/"
+    }
+  ]
+}

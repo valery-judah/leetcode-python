@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "1961",
+  "name": "Check If String Is a Prefix of Array",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/",
+  "slug": "check-if-string-is-a-prefix-of-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Prefixes of a Given String",
+      "slug": "count-prefixes-of-a-given-string",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-prefixes-of-a-given-string/"
+    }
+  ]
+}

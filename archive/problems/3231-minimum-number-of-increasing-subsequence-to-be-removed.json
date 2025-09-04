@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "3231",
+  "name": "Minimum Number of Increasing Subsequence to Be Removed",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-number-of-increasing-subsequence-to-be-removed/",
+  "slug": "minimum-number-of-increasing-subsequence-to-be-removed",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "similar_questions": []
+}

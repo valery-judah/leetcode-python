@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "2560",
+  "name": "House Robber IV",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/house-robber-iv/",
+  "slug": "house-robber-iv",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "similar_questions": [
+    {
+      "title": "Container With Most Water",
+      "slug": "container-with-most-water",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/container-with-most-water/"
+    },
+    {
+      "title": "House Robber",
+      "slug": "house-robber",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/house-robber/"
+    }
+  ]
+}

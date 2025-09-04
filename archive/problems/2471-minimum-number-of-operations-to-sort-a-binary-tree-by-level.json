@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "2471",
+  "name": "Minimum Number of Operations to Sort a Binary Tree by Level",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-number-of-operations-to-sort-a-binary-tree-by-level/",
+  "slug": "minimum-number-of-operations-to-sort-a-binary-tree-by-level",
+  "isPaidOnly": false,
+  "tags": [
+    "Tree",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Binary Tree Level Order Traversal",
+      "slug": "binary-tree-level-order-traversal",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/binary-tree-level-order-traversal/"
+    },
+    {
+      "title": "Longest Cycle in a Graph",
+      "slug": "longest-cycle-in-a-graph",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-cycle-in-a-graph/"
+    }
+  ]
+}

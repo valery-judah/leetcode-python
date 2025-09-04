@@ -1,0 +1,51 @@
+{
+  "category": "",
+  "id": "443",
+  "name": "String Compression",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/string-compression/",
+  "slug": "string-compression",
+  "isPaidOnly": false,
+  "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count and Say",
+      "slug": "count-and-say",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-and-say/"
+    },
+    {
+      "title": "Encode and Decode Strings",
+      "slug": "encode-and-decode-strings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/encode-and-decode-strings/"
+    },
+    {
+      "title": "Design Compressed String Iterator",
+      "slug": "design-compressed-string-iterator",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/design-compressed-string-iterator/"
+    },
+    {
+      "title": "Decompress Run-Length Encoded List",
+      "slug": "decompress-run-length-encoded-list",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/decompress-run-length-encoded-list/"
+    },
+    {
+      "title": "String Compression III",
+      "slug": "string-compression-iii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/string-compression-iii/"
+    },
+    {
+      "title": "Better Compression of String",
+      "slug": "better-compression-of-string",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/better-compression-of-string/"
+    }
+  ]
+}

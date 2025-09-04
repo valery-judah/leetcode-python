@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "2934",
+  "name": "Minimum Operations to Maximize Last Elements in Arrays",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-operations-to-maximize-last-elements-in-arrays/",
+  "slug": "minimum-operations-to-maximize-last-elements-in-arrays",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Enumeration"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Swaps To Make Sequences Increasing",
+      "slug": "minimum-swaps-to-make-sequences-increasing",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing/"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1238",
+  "name": "Circular Permutation in Binary Representation",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/circular-permutation-in-binary-representation/",
+  "slug": "circular-permutation-in-binary-representation",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Backtracking",
+    "Bit Manipulation"
+  ],
+  "similar_questions": []
+}

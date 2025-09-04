@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "1282",
+  "name": "Group the People Given the Group Size They Belong To",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/",
+  "slug": "group-the-people-given-the-group-size-they-belong-to",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy"
+  ],
+  "similar_questions": [
+    {
+      "title": "Rabbits in Forest",
+      "slug": "rabbits-in-forest",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/rabbits-in-forest/"
+    },
+    {
+      "title": "Maximum Number of Groups With Increasing Length",
+      "slug": "maximum-number-of-groups-with-increasing-length",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-number-of-groups-with-increasing-length/"
+    }
+  ]
+}

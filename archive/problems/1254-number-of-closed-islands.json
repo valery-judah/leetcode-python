@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "1254",
+  "name": "Number of Closed Islands",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/number-of-closed-islands/",
+  "slug": "number-of-closed-islands",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union Find",
+    "Matrix"
+  ],
+  "similar_questions": []
+}

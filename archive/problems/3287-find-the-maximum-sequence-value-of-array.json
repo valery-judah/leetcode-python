@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "3287",
+  "name": "Find the Maximum Sequence Value of Array",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/find-the-maximum-sequence-value-of-array/",
+  "slug": "find-the-maximum-sequence-value-of-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Bitwise ORs of Subarrays",
+      "slug": "bitwise-ors-of-subarrays",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/bitwise-ors-of-subarrays/"
+    }
+  ]
+}

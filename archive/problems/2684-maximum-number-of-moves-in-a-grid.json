@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "2684",
+  "name": "Maximum Number of Moves in a Grid",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/",
+  "slug": "maximum-number-of-moves-in-a-grid",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "similar_questions": []
+}

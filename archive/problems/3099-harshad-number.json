@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "3099",
+  "name": "Harshad Number",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/harshad-number/",
+  "slug": "harshad-number",
+  "isPaidOnly": false,
+  "tags": [
+    "Math"
+  ],
+  "similar_questions": []
+}

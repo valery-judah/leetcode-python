@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "2806",
+  "name": "Account Balance After Rounded Purchase",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/account-balance-after-rounded-purchase/",
+  "slug": "account-balance-after-rounded-purchase",
+  "isPaidOnly": false,
+  "tags": [
+    "Math"
+  ],
+  "similar_questions": []
+}

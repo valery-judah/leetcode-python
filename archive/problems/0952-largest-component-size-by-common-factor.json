@@ -1,0 +1,30 @@
+{
+  "category": "",
+  "id": "952",
+  "name": "Largest Component Size by Common Factor",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/largest-component-size-by-common-factor/",
+  "slug": "largest-component-size-by-common-factor",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Union Find",
+    "Number Theory"
+  ],
+  "similar_questions": [
+    {
+      "title": "Groups of Strings",
+      "slug": "groups-of-strings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/groups-of-strings/"
+    },
+    {
+      "title": "Distinct Prime Factors of Product of Array",
+      "slug": "distinct-prime-factors-of-product-of-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/distinct-prime-factors-of-product-of-array/"
+    }
+  ]
+}

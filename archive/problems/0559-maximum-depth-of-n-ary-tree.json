@@ -1,0 +1,34 @@
+{
+  "category": "",
+  "id": "559",
+  "name": "Maximum Depth of N-ary Tree",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/maximum-depth-of-n-ary-tree/",
+  "slug": "maximum-depth-of-n-ary-tree",
+  "isPaidOnly": false,
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Depth of Binary Tree",
+      "slug": "maximum-depth-of-binary-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-depth-of-binary-tree/"
+    },
+    {
+      "title": "The Time When the Network Becomes Idle",
+      "slug": "the-time-when-the-network-becomes-idle",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/the-time-when-the-network-becomes-idle/"
+    },
+    {
+      "title": "Count the Number of Good Nodes",
+      "slug": "count-the-number-of-good-nodes",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-the-number-of-good-nodes/"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1042",
+  "name": "Flower Planting With No Adjacent",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/flower-planting-with-no-adjacent/",
+  "slug": "flower-planting-with-no-adjacent",
+  "isPaidOnly": false,
+  "tags": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph"
+  ],
+  "similar_questions": []
+}

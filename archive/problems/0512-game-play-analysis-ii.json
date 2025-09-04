@@ -1,0 +1,26 @@
+{
+  "category": "",
+  "id": "512",
+  "name": "Game Play Analysis II",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/game-play-analysis-ii/",
+  "slug": "game-play-analysis-ii",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": [
+    {
+      "title": "Game Play Analysis I",
+      "slug": "game-play-analysis-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/game-play-analysis-i/"
+    },
+    {
+      "title": "Game Play Analysis III",
+      "slug": "game-play-analysis-iii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/game-play-analysis-iii/"
+    }
+  ]
+}

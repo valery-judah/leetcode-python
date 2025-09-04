@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "3175",
+  "name": "Find The First Player to win K Games in a Row",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-the-first-player-to-win-k-games-in-a-row/",
+  "slug": "find-the-first-player-to-win-k-games-in-a-row",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "similar_questions": []
+}

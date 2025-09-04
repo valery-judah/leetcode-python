@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "953",
+  "name": "Verifying an Alien Dictionary",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/verifying-an-alien-dictionary/",
+  "slug": "verifying-an-alien-dictionary",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "similar_questions": []
+}

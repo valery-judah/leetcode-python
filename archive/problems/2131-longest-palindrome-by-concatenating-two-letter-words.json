@@ -1,0 +1,30 @@
+{
+  "category": "",
+  "id": "2131",
+  "name": "Longest Palindrome by Concatenating Two Letter Words",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/",
+  "slug": "longest-palindrome-by-concatenating-two-letter-words",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Greedy",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Palindrome Pairs",
+      "slug": "palindrome-pairs",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/palindrome-pairs/"
+    },
+    {
+      "title": "Longest Palindrome",
+      "slug": "longest-palindrome",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-palindrome/"
+    }
+  ]
+}

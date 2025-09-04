@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "3441",
+  "name": "Minimum Cost Good Caption",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-cost-good-caption/",
+  "slug": "minimum-cost-good-caption",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "similar_questions": []
+}

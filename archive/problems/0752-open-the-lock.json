@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "752",
+  "name": "Open the Lock",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/open-the-lock/",
+  "slug": "open-the-lock",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Breadth-First Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Reachable Nodes With Restrictions",
+      "slug": "reachable-nodes-with-restrictions",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/reachable-nodes-with-restrictions/"
+    }
+  ]
+}

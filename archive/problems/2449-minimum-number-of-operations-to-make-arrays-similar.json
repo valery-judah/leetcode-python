@@ -1,0 +1,34 @@
+{
+  "category": "",
+  "id": "2449",
+  "name": "Minimum Number of Operations to Make Arrays Similar",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-number-of-operations-to-make-arrays-similar/",
+  "slug": "minimum-number-of-operations-to-make-arrays-similar",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Operations to Make Array Equal",
+      "slug": "minimum-operations-to-make-array-equal",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-operations-to-make-array-equal/"
+    },
+    {
+      "title": "Minimum Operations to Make Array Equal II",
+      "slug": "minimum-operations-to-make-array-equal-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-operations-to-make-array-equal-ii/"
+    },
+    {
+      "title": "Rearranging Fruits",
+      "slug": "rearranging-fruits",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/rearranging-fruits/"
+    }
+  ]
+}

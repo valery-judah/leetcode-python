@@ -1,0 +1,18 @@
+{
+  "category": "",
+  "id": "1857",
+  "name": "Largest Color Value in a Directed Graph",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/largest-color-value-in-a-directed-graph/",
+  "slug": "largest-color-value-in-a-directed-graph",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "Dynamic Programming",
+    "Graph",
+    "Topological Sort",
+    "Memoization",
+    "Counting"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "738",
+  "name": "Monotone Increasing Digits",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/monotone-increasing-digits/",
+  "slug": "monotone-increasing-digits",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Greedy"
+  ],
+  "similar_questions": [
+    {
+      "title": "Remove K Digits",
+      "slug": "remove-k-digits",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/remove-k-digits/"
+    }
+  ]
+}

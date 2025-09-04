@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "811",
+  "name": "Subdomain Visit Count",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/subdomain-visit-count/",
+  "slug": "subdomain-visit-count",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "similar_questions": []
+}

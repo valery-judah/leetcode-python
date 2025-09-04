@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "2998",
+  "name": "Minimum Number of Operations to Make X and Y Equal",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-number-of-operations-to-make-x-and-y-equal/",
+  "slug": "minimum-number-of-operations-to-make-x-and-y-equal",
+  "isPaidOnly": false,
+  "tags": [
+    "Dynamic Programming",
+    "Breadth-First Search",
+    "Memoization"
+  ],
+  "similar_questions": [
+    {
+      "title": "Shortest Bridge",
+      "slug": "shortest-bridge",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/shortest-bridge/"
+    },
+    {
+      "title": "Minimum Moves to Spread Stones Over Grid",
+      "slug": "minimum-moves-to-spread-stones-over-grid",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-moves-to-spread-stones-over-grid/"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "625",
+  "name": "Minimum Factorization",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-factorization/",
+  "slug": "minimum-factorization",
+  "isPaidOnly": true,
+  "tags": [
+    "Math",
+    "Greedy"
+  ],
+  "similar_questions": []
+}

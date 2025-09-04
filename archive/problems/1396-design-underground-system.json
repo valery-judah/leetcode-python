@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "1396",
+  "name": "Design Underground System",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/design-underground-system/",
+  "slug": "design-underground-system",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Design"
+  ],
+  "similar_questions": [
+    {
+      "title": "Design Bitset",
+      "slug": "design-bitset",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/design-bitset/"
+    }
+  ]
+}

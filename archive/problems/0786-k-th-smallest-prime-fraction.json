@@ -1,0 +1,36 @@
+{
+  "category": "",
+  "id": "786",
+  "name": "K-th Smallest Prime Fraction",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/k-th-smallest-prime-fraction/",
+  "slug": "k-th-smallest-prime-fraction",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "similar_questions": [
+    {
+      "title": "Kth Smallest Element in a Sorted Matrix",
+      "slug": "kth-smallest-element-in-a-sorted-matrix",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/"
+    },
+    {
+      "title": "Kth Smallest Number in Multiplication Table",
+      "slug": "kth-smallest-number-in-multiplication-table",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/"
+    },
+    {
+      "title": "Find K-th Smallest Pair Distance",
+      "slug": "find-k-th-smallest-pair-distance",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-k-th-smallest-pair-distance/"
+    }
+  ]
+}

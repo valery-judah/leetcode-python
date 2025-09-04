@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "979",
+  "name": "Distribute Coins in Binary Tree",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/distribute-coins-in-binary-tree/",
+  "slug": "distribute-coins-in-binary-tree",
+  "isPaidOnly": false,
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Sum of Distances in Tree",
+      "slug": "sum-of-distances-in-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sum-of-distances-in-tree/"
+    },
+    {
+      "title": "Binary Tree Cameras",
+      "slug": "binary-tree-cameras",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/binary-tree-cameras/"
+    }
+  ]
+}

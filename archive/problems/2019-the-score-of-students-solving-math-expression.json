@@ -1,0 +1,32 @@
+{
+  "category": "",
+  "id": "2019",
+  "name": "The Score of Students Solving Math Expression",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/the-score-of-students-solving-math-expression/",
+  "slug": "the-score-of-students-solving-math-expression",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "String",
+    "Dynamic Programming",
+    "Stack",
+    "Memoization"
+  ],
+  "similar_questions": [
+    {
+      "title": "Basic Calculator",
+      "slug": "basic-calculator",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/basic-calculator/"
+    },
+    {
+      "title": "Different Ways to Add Parentheses",
+      "slug": "different-ways-to-add-parentheses",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/different-ways-to-add-parentheses/"
+    }
+  ]
+}

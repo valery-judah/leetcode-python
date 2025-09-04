@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "1352",
+  "name": "Product of the Last K Numbers",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/product-of-the-last-k-numbers/",
+  "slug": "product-of-the-last-k-numbers",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Design",
+    "Data Stream",
+    "Prefix Sum"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "2644",
+  "name": "Find the Maximum Divisibility Score",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/find-the-maximum-divisibility-score/",
+  "slug": "find-the-maximum-divisibility-score",
+  "isPaidOnly": false,
+  "tags": [
+    "Array"
+  ],
+  "similar_questions": [
+    {
+      "title": "Binary Prefix Divisible By 5",
+      "slug": "binary-prefix-divisible-by-5",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/binary-prefix-divisible-by-5/"
+    }
+  ]
+}

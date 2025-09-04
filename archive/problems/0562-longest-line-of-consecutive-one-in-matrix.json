@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "562",
+  "name": "Longest Line of Consecutive One in Matrix",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/longest-line-of-consecutive-one-in-matrix/",
+  "slug": "longest-line-of-consecutive-one-in-matrix",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "3427",
+  "name": "Sum of Variable Length Subarrays",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/sum-of-variable-length-subarrays/",
+  "slug": "sum-of-variable-length-subarrays",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Range Sum Query - Immutable",
+      "slug": "range-sum-query-immutable",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/range-sum-query-immutable/"
+    },
+    {
+      "title": "Maximum Sum of 3 Non-Overlapping Subarrays",
+      "slug": "maximum-sum-of-3-non-overlapping-subarrays",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays/"
+    }
+  ]
+}

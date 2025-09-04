@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "607",
+  "name": "Sales Person",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/sales-person/",
+  "slug": "sales-person",
+  "isPaidOnly": false,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "3259",
+  "name": "Maximum Energy Boost From Two Drinks",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-energy-boost-from-two-drinks/",
+  "slug": "maximum-energy-boost-from-two-drinks",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,51 @@
+{
+  "category": "",
+  "id": "2087",
+  "name": "Minimum Cost Homecoming of a Robot in a Grid",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/",
+  "slug": "minimum-cost-homecoming-of-a-robot-in-a-grid",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "similar_questions": [
+    {
+      "title": "Unique Paths",
+      "slug": "unique-paths",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/unique-paths/"
+    },
+    {
+      "title": "Minimum Path Sum",
+      "slug": "minimum-path-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-path-sum/"
+    },
+    {
+      "title": "Bomb Enemy",
+      "slug": "bomb-enemy",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/bomb-enemy/"
+    },
+    {
+      "title": "Count Square Submatrices with All Ones",
+      "slug": "count-square-submatrices-with-all-ones",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-square-submatrices-with-all-ones/"
+    },
+    {
+      "title": "Paths in Matrix Whose Sum Is Divisible by K",
+      "slug": "paths-in-matrix-whose-sum-is-divisible-by-k",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/paths-in-matrix-whose-sum-is-divisible-by-k/"
+    },
+    {
+      "title": "Check if There is a Path With Equal Number of 0's And 1's",
+      "slug": "check-if-there-is-a-path-with-equal-number-of-0s-and-1s",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/check-if-there-is-a-path-with-equal-number-of-0s-and-1s/"
+    }
+  ]
+}

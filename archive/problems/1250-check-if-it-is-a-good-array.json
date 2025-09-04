@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1250",
+  "name": "Check If It Is a Good Array",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/check-if-it-is-a-good-array/",
+  "slug": "check-if-it-is-a-good-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Number Theory"
+  ],
+  "similar_questions": []
+}

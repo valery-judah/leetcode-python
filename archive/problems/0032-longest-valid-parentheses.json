@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "32",
+  "name": "Longest Valid Parentheses",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/longest-valid-parentheses/",
+  "slug": "longest-valid-parentheses",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Dynamic Programming",
+    "Stack"
+  ],
+  "similar_questions": [
+    {
+      "title": "Valid Parentheses",
+      "slug": "valid-parentheses",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/valid-parentheses/"
+    }
+  ]
+}

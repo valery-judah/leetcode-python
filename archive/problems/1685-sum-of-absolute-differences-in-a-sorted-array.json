@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1685",
+  "name": "Sum of Absolute Differences in a Sorted Array",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/sum-of-absolute-differences-in-a-sorted-array/",
+  "slug": "sum-of-absolute-differences-in-a-sorted-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Prefix Sum"
+  ],
+  "similar_questions": []
+}

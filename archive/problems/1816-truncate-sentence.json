@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "1816",
+  "name": "Truncate Sentence",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/truncate-sentence/",
+  "slug": "truncate-sentence",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "String"
+  ],
+  "similar_questions": []
+}

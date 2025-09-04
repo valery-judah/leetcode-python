@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "3249",
+  "name": "Count the Number of Good Nodes",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-the-number-of-good-nodes/",
+  "slug": "count-the-number-of-good-nodes",
+  "isPaidOnly": false,
+  "tags": [
+    "Tree",
+    "Depth-First Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Depth of N-ary Tree",
+      "slug": "maximum-depth-of-n-ary-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-depth-of-n-ary-tree/"
+    }
+  ]
+}

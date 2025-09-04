@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "3168",
+  "name": "Minimum Number of Chairs in a Waiting Room",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/minimum-number-of-chairs-in-a-waiting-room/",
+  "slug": "minimum-number-of-chairs-in-a-waiting-room",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Consecutive Characters",
+      "slug": "consecutive-characters",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/consecutive-characters/"
+    }
+  ]
+}

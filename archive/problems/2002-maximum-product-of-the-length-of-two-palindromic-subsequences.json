@@ -1,0 +1,42 @@
+{
+  "category": "",
+  "id": "2002",
+  "name": "Maximum Product of the Length of Two Palindromic Subsequences",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/",
+  "slug": "maximum-product-of-the-length-of-two-palindromic-subsequences",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Dynamic Programming",
+    "Backtracking",
+    "Bit Manipulation",
+    "Bitmask"
+  ],
+  "similar_questions": [
+    {
+      "title": "Valid Palindrome",
+      "slug": "valid-palindrome",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/valid-palindrome/"
+    },
+    {
+      "title": "Longest Palindromic Subsequence",
+      "slug": "longest-palindromic-subsequence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-palindromic-subsequence/"
+    },
+    {
+      "title": "Maximum Product of the Length of Two Palindromic Substrings",
+      "slug": "maximum-product-of-the-length-of-two-palindromic-substrings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-substrings/"
+    },
+    {
+      "title": "Maximum Points in an Archery Competition",
+      "slug": "maximum-points-in-an-archery-competition",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-points-in-an-archery-competition/"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1232",
+  "name": "Check If It Is a Straight Line",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/check-if-it-is-a-straight-line/",
+  "slug": "check-if-it-is-a-straight-line",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Geometry"
+  ],
+  "similar_questions": []
+}

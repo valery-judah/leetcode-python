@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "1489",
+  "name": "Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/",
+  "slug": "find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree",
+  "isPaidOnly": false,
+  "tags": [
+    "Union Find",
+    "Graph",
+    "Sorting",
+    "Minimum Spanning Tree",
+    "Strongly Connected Component"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "2111",
+  "name": "Minimum Operations to Make the Array K-Increasing",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-operations-to-make-the-array-k-increasing/",
+  "slug": "minimum-operations-to-make-the-array-k-increasing",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longest Increasing Subsequence",
+      "slug": "longest-increasing-subsequence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-increasing-subsequence/"
+    },
+    {
+      "title": "Minimum Swaps To Make Sequences Increasing",
+      "slug": "minimum-swaps-to-make-sequences-increasing",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing/"
+    }
+  ]
+}

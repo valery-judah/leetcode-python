@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "1253",
+  "name": "Reconstruct a 2-Row Binary Matrix",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/reconstruct-a-2-row-binary-matrix/",
+  "slug": "reconstruct-a-2-row-binary-matrix",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find Valid Matrix Given Row and Column Sums",
+      "slug": "find-valid-matrix-given-row-and-column-sums",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-valid-matrix-given-row-and-column-sums/"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "category": "",
+  "id": "2596",
+  "name": "Check Knight Tour Configuration",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/check-knight-tour-configuration/",
+  "slug": "check-knight-tour-configuration",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Matrix",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Knight Moves",
+      "slug": "minimum-knight-moves",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-knight-moves/"
+    },
+    {
+      "title": "Maximum Number of Moves to Kill All Pawns",
+      "slug": "maximum-number-of-moves-to-kill-all-pawns",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-number-of-moves-to-kill-all-pawns/"
+    }
+  ]
+}

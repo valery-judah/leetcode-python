@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "1541",
+  "name": "Minimum Insertions to Balance a Parentheses String",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/",
+  "slug": "minimum-insertions-to-balance-a-parentheses-string",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Stack",
+    "Greedy"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Number of Swaps to Make the String Balanced",
+      "slug": "minimum-number-of-swaps-to-make-the-string-balanced",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/"
+    }
+  ]
+}

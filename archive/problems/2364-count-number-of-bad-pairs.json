@@ -1,0 +1,53 @@
+{
+  "category": "",
+  "id": "2364",
+  "name": "Count Number of Bad Pairs",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-number-of-bad-pairs/",
+  "slug": "count-number-of-bad-pairs",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "K-diff Pairs in an Array",
+      "slug": "k-diff-pairs-in-an-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/k-diff-pairs-in-an-array/"
+    },
+    {
+      "title": "Subarray Sums Divisible by K",
+      "slug": "subarray-sums-divisible-by-k",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/subarray-sums-divisible-by-k/"
+    },
+    {
+      "title": "Count Nice Pairs in an Array",
+      "slug": "count-nice-pairs-in-an-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-nice-pairs-in-an-array/"
+    },
+    {
+      "title": "Count Number of Pairs With Absolute Difference K",
+      "slug": "count-number-of-pairs-with-absolute-difference-k",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/"
+    },
+    {
+      "title": "Count Equal and Divisible Pairs in an Array",
+      "slug": "count-equal-and-divisible-pairs-in-an-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-equal-and-divisible-pairs-in-an-array/"
+    },
+    {
+      "title": "Number of Pairs Satisfying Inequality",
+      "slug": "number-of-pairs-satisfying-inequality",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-pairs-satisfying-inequality/"
+    }
+  ]
+}

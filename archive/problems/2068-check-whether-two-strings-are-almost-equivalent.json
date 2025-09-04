@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "2068",
+  "name": "Check Whether Two Strings are Almost Equivalent",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/check-whether-two-strings-are-almost-equivalent/",
+  "slug": "check-whether-two-strings-are-almost-equivalent",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find the Occurrence of First Almost Equal Substring",
+      "slug": "find-the-occurrence-of-first-almost-equal-substring",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-occurrence-of-first-almost-equal-substring/"
+    }
+  ]
+}

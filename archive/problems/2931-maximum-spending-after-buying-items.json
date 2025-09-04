@@ -1,0 +1,30 @@
+{
+  "category": "",
+  "id": "2931",
+  "name": "Maximum Spending After Buying Items",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/maximum-spending-after-buying-items/",
+  "slug": "maximum-spending-after-buying-items",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Points You Can Obtain from Cards",
+      "slug": "maximum-points-you-can-obtain-from-cards",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/"
+    },
+    {
+      "title": "Maximum Score from Performing Multiplication Operations",
+      "slug": "maximum-score-from-performing-multiplication-operations",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-score-from-performing-multiplication-operations/"
+    }
+  ]
+}

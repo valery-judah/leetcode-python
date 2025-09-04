@@ -1,0 +1,35 @@
+{
+  "category": "",
+  "id": "2254",
+  "name": "Design Video Sharing Platform",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/design-video-sharing-platform/",
+  "slug": "design-video-sharing-platform",
+  "isPaidOnly": true,
+  "tags": [
+    "Hash Table",
+    "Stack",
+    "Design",
+    "Ordered Set"
+  ],
+  "similar_questions": [
+    {
+      "title": "Tweet Counts Per Frequency",
+      "slug": "tweet-counts-per-frequency",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/tweet-counts-per-frequency/"
+    },
+    {
+      "title": "Design Browser History",
+      "slug": "design-browser-history",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/design-browser-history/"
+    },
+    {
+      "title": "Most Popular Video Creator",
+      "slug": "most-popular-video-creator",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/most-popular-video-creator/"
+    }
+  ]
+}

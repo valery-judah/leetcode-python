@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1536",
+  "name": "Minimum Swaps to Arrange a Binary Grid",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-swaps-to-arrange-a-binary-grid/",
+  "slug": "minimum-swaps-to-arrange-a-binary-grid",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Matrix"
+  ],
+  "similar_questions": []
+}

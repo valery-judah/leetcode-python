@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "3411",
+  "name": "Maximum Subarray With Equal Products",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/maximum-subarray-with-equal-products/",
+  "slug": "maximum-subarray-with-equal-products",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Sliding Window",
+    "Enumeration",
+    "Number Theory"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find Greatest Common Divisor of Array",
+      "slug": "find-greatest-common-divisor-of-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-greatest-common-divisor-of-array/"
+    }
+  ]
+}

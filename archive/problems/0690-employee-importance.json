@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "690",
+  "name": "Employee Importance",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/employee-importance/",
+  "slug": "employee-importance",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Nested List Weight Sum",
+      "slug": "nested-list-weight-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/nested-list-weight-sum/"
+    }
+  ]
+}

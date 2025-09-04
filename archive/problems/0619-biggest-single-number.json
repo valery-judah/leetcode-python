@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "619",
+  "name": "Biggest Single Number",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/biggest-single-number/",
+  "slug": "biggest-single-number",
+  "isPaidOnly": false,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

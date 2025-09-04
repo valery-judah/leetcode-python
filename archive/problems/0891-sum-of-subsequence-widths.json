@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "891",
+  "name": "Sum of Subsequence Widths",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/sum-of-subsequence-widths/",
+  "slug": "sum-of-subsequence-widths",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Sorting"
+  ],
+  "similar_questions": []
+}

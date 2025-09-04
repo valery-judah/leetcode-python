@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "2532",
+  "name": "Time to Cross a Bridge",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/time-to-cross-a-bridge/",
+  "slug": "time-to-cross-a-bridge",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Heap (Priority Queue)",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "The Latest Time to Catch a Bus",
+      "slug": "the-latest-time-to-catch-a-bus",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/the-latest-time-to-catch-a-bus/"
+    },
+    {
+      "title": "Total Cost to Hire K Workers",
+      "slug": "total-cost-to-hire-k-workers",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/total-cost-to-hire-k-workers/"
+    }
+  ]
+}

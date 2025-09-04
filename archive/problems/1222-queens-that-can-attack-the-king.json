@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "1222",
+  "name": "Queens That Can Attack the King",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/queens-that-can-attack-the-king/",
+  "slug": "queens-that-can-attack-the-king",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Moves to Capture The Queen",
+      "slug": "minimum-moves-to-capture-the-queen",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-moves-to-capture-the-queen/"
+    }
+  ]
+}

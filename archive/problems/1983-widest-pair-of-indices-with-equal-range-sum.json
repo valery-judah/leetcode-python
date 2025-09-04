@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1983",
+  "name": "Widest Pair of Indices With Equal Range Sum",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/widest-pair-of-indices-with-equal-range-sum/",
+  "slug": "widest-pair-of-indices-with-equal-range-sum",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Prefix Sum"
+  ],
+  "similar_questions": []
+}

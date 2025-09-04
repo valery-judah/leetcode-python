@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "3351",
+  "name": "Sum of Good Subsequences",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/sum-of-good-subsequences/",
+  "slug": "sum-of-good-subsequences",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Dynamic Programming"
+  ],
+  "similar_questions": []
+}

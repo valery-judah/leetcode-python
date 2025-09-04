@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "3299",
+  "name": "Sum of Consecutive Subsequences",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/sum-of-consecutive-subsequences/",
+  "slug": "sum-of-consecutive-subsequences",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Dynamic Programming"
+  ],
+  "similar_questions": []
+}

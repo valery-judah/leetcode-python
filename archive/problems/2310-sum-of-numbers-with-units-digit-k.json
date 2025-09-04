@@ -1,0 +1,35 @@
+{
+  "category": "",
+  "id": "2310",
+  "name": "Sum of Numbers With Units Digit K",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/sum-of-numbers-with-units-digit-k/",
+  "slug": "sum-of-numbers-with-units-digit-k",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Greedy",
+    "Enumeration"
+  ],
+  "similar_questions": [
+    {
+      "title": "Digit Count in Range",
+      "slug": "digit-count-in-range",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/digit-count-in-range/"
+    },
+    {
+      "title": "Count Integers With Even Digit Sum",
+      "slug": "count-integers-with-even-digit-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-integers-with-even-digit-sum/"
+    },
+    {
+      "title": "Sum of Number and Its Reverse",
+      "slug": "sum-of-number-and-its-reverse",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sum-of-number-and-its-reverse/"
+    }
+  ]
+}

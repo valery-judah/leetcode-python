@@ -1,0 +1,37 @@
+{
+  "category": "",
+  "id": "710",
+  "name": "Random Pick with Blacklist",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/random-pick-with-blacklist/",
+  "slug": "random-pick-with-blacklist",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Binary Search",
+    "Sorting",
+    "Randomized"
+  ],
+  "similar_questions": [
+    {
+      "title": "Random Pick Index",
+      "slug": "random-pick-index",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/random-pick-index/"
+    },
+    {
+      "title": "Random Pick with Weight",
+      "slug": "random-pick-with-weight",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/random-pick-with-weight/"
+    },
+    {
+      "title": "Find Unique Binary String",
+      "slug": "find-unique-binary-string",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-unique-binary-string/"
+    }
+  ]
+}

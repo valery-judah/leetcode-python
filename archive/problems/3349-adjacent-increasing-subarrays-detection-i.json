@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "3349",
+  "name": "Adjacent Increasing Subarrays Detection I",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/adjacent-increasing-subarrays-detection-i/",
+  "slug": "adjacent-increasing-subarrays-detection-i",
+  "isPaidOnly": false,
+  "tags": [
+    "Array"
+  ],
+  "similar_questions": []
+}

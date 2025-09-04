@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "3255",
+  "name": "Find the Power of K-Size Subarrays II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-the-power-of-k-size-subarrays-ii/",
+  "slug": "find-the-power-of-k-size-subarrays-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Sliding Window"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Sum of Distinct Subarrays With Length K",
+      "slug": "maximum-sum-of-distinct-subarrays-with-length-k",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/"
+    }
+  ]
+}

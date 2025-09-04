@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "2799",
+  "name": "Count Complete Subarrays in an Array",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-complete-subarrays-in-an-array/",
+  "slug": "count-complete-subarrays-in-an-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longest Substring Without Repeating Characters",
+      "slug": "longest-substring-without-repeating-characters",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/"
+    },
+    {
+      "title": "Subarrays with K Different Integers",
+      "slug": "subarrays-with-k-different-integers",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/subarrays-with-k-different-integers/"
+    }
+  ]
+}

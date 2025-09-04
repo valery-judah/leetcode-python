@@ -1,0 +1,58 @@
+{
+  "category": "",
+  "id": "202",
+  "name": "Happy Number",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/happy-number/",
+  "slug": "happy-number",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "Math",
+    "Two Pointers"
+  ],
+  "similar_questions": [
+    {
+      "title": "Linked List Cycle",
+      "slug": "linked-list-cycle",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/linked-list-cycle/"
+    },
+    {
+      "title": "Add Digits",
+      "slug": "add-digits",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/add-digits/"
+    },
+    {
+      "title": "Ugly Number",
+      "slug": "ugly-number",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/ugly-number/"
+    },
+    {
+      "title": "Sum of Digits of String After Convert",
+      "slug": "sum-of-digits-of-string-after-convert",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sum-of-digits-of-string-after-convert/"
+    },
+    {
+      "title": "Minimum Addition to Make Integer Beautiful",
+      "slug": "minimum-addition-to-make-integer-beautiful",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-addition-to-make-integer-beautiful/"
+    },
+    {
+      "title": "Smallest Value After Replacing With Sum of Prime Factors",
+      "slug": "smallest-value-after-replacing-with-sum-of-prime-factors",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/smallest-value-after-replacing-with-sum-of-prime-factors/"
+    },
+    {
+      "title": "Count the Digits That Divide a Number",
+      "slug": "count-the-digits-that-divide-a-number",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-the-digits-that-divide-a-number/"
+    }
+  ]
+}

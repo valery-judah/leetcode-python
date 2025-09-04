@@ -1,0 +1,51 @@
+{
+  "category": "",
+  "id": "518",
+  "name": "Coin Change II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/coin-change-ii/",
+  "slug": "coin-change-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Value of K Coins From Piles",
+      "slug": "maximum-value-of-k-coins-from-piles",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/"
+    },
+    {
+      "title": "Number of Ways to Earn Points",
+      "slug": "number-of-ways-to-earn-points",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-ways-to-earn-points/"
+    },
+    {
+      "title": "Count of Sub-Multisets With Bounded Sum",
+      "slug": "count-of-sub-multisets-with-bounded-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-of-sub-multisets-with-bounded-sum/"
+    },
+    {
+      "title": "Length of the Longest Subsequence That Sums to Target",
+      "slug": "length-of-the-longest-subsequence-that-sums-to-target",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/length-of-the-longest-subsequence-that-sums-to-target/"
+    },
+    {
+      "title": "The Number of Ways to Make the Sum",
+      "slug": "the-number-of-ways-to-make-the-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/the-number-of-ways-to-make-the-sum/"
+    },
+    {
+      "title": "Inverse Coin Change",
+      "slug": "inverse-coin-change",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/inverse-coin-change/"
+    }
+  ]
+}

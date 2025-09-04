@@ -1,0 +1,25 @@
+{
+  "category": "",
+  "id": "654",
+  "name": "Maximum Binary Tree",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-binary-tree/",
+  "slug": "maximum-binary-tree",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Divide and Conquer",
+    "Stack",
+    "Tree",
+    "Monotonic Stack",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Binary Tree II",
+      "slug": "maximum-binary-tree-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-binary-tree-ii/"
+    }
+  ]
+}

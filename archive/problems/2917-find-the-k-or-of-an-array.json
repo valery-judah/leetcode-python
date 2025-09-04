@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "2917",
+  "name": "Find the K-or of an Array",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/find-the-k-or-of-an-array/",
+  "slug": "find-the-k-or-of-an-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Bit Manipulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Counting Bits",
+      "slug": "counting-bits",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/counting-bits/"
+    },
+    {
+      "title": "Sum of Values at Indices With K Set Bits",
+      "slug": "sum-of-values-at-indices-with-k-set-bits",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sum-of-values-at-indices-with-k-set-bits/"
+    }
+  ]
+}

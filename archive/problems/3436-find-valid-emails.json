@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "3436",
+  "name": "Find Valid Emails",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/find-valid-emails/",
+  "slug": "find-valid-emails",
+  "isPaidOnly": false,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

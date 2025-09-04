@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1409",
+  "name": "Queries on a Permutation With Key",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/queries-on-a-permutation-with-key/",
+  "slug": "queries-on-a-permutation-with-key",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Indexed Tree",
+    "Simulation"
+  ],
+  "similar_questions": []
+}

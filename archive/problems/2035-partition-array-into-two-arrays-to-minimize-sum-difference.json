@@ -1,0 +1,74 @@
+{
+  "category": "",
+  "id": "2035",
+  "name": "Partition Array Into Two Arrays to Minimize Sum Difference",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/",
+  "slug": "partition-array-into-two-arrays-to-minimize-sum-difference",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Ordered Set",
+    "Bitmask"
+  ],
+  "similar_questions": [
+    {
+      "title": "Partition Equal Subset Sum",
+      "slug": "partition-equal-subset-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/partition-equal-subset-sum/"
+    },
+    {
+      "title": "Split Array With Same Average",
+      "slug": "split-array-with-same-average",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/split-array-with-same-average/"
+    },
+    {
+      "title": "Tallest Billboard",
+      "slug": "tallest-billboard",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/tallest-billboard/"
+    },
+    {
+      "title": "Last Stone Weight II",
+      "slug": "last-stone-weight-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/last-stone-weight-ii/"
+    },
+    {
+      "title": "Fair Distribution of Cookies",
+      "slug": "fair-distribution-of-cookies",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/fair-distribution-of-cookies/"
+    },
+    {
+      "title": "Closest Subsequence Sum",
+      "slug": "closest-subsequence-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/closest-subsequence-sum/"
+    },
+    {
+      "title": "Number of Ways to Split Array",
+      "slug": "number-of-ways-to-split-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-ways-to-split-array/"
+    },
+    {
+      "title": "Minimum Sum of Squared Difference",
+      "slug": "minimum-sum-of-squared-difference",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-sum-of-squared-difference/"
+    },
+    {
+      "title": "Split With Minimum Sum",
+      "slug": "split-with-minimum-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/split-with-minimum-sum/"
+    }
+  ]
+}

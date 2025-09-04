@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "3211",
+  "name": "Generate Binary Strings Without Adjacent Zeros",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/",
+  "slug": "generate-binary-strings-without-adjacent-zeros",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Backtracking",
+    "Bit Manipulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Non-negative Integers without Consecutive Ones",
+      "slug": "non-negative-integers-without-consecutive-ones",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/"
+    }
+  ]
+}

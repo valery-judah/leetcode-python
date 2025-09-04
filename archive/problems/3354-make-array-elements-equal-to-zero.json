@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "3354",
+  "name": "Make Array Elements Equal to Zero",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/make-array-elements-equal-to-zero/",
+  "slug": "make-array-elements-equal-to-zero",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Simulation",
+    "Prefix Sum"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "2021",
+  "name": "Brightest Position on Street",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/brightest-position-on-street/",
+  "slug": "brightest-position-on-street",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Sorting",
+    "Prefix Sum",
+    "Ordered Set"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Number of Food Buckets to Feed the Hamsters",
+      "slug": "minimum-number-of-food-buckets-to-feed-the-hamsters",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-number-of-food-buckets-to-feed-the-hamsters/"
+    },
+    {
+      "title": "Count Positions on Street With Required Brightness",
+      "slug": "count-positions-on-street-with-required-brightness",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-positions-on-street-with-required-brightness/"
+    }
+  ]
+}

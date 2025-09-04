@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "2139",
+  "name": "Minimum Moves to Reach Target Score",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-moves-to-reach-target-score/",
+  "slug": "minimum-moves-to-reach-target-score",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Greedy"
+  ],
+  "similar_questions": [
+    {
+      "title": "Number of Steps to Reduce a Number to Zero",
+      "slug": "number-of-steps-to-reduce-a-number-to-zero",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/"
+    },
+    {
+      "title": "Number of Steps to Reduce a Number in Binary Representation to One",
+      "slug": "number-of-steps-to-reduce-a-number-in-binary-representation-to-one",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/"
+    }
+  ]
+}

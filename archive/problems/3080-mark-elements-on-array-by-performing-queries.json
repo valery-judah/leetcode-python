@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "3080",
+  "name": "Mark Elements on Array by Performing Queries",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/mark-elements-on-array-by-performing-queries/",
+  "slug": "mark-elements-on-array-by-performing-queries",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Simulation"
+  ],
+  "similar_questions": []
+}

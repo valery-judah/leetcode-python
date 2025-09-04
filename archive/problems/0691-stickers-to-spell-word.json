@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "691",
+  "name": "Stickers to Spell Word",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/stickers-to-spell-word/",
+  "slug": "stickers-to-spell-word",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Dynamic Programming",
+    "Backtracking",
+    "Bit Manipulation",
+    "Memoization",
+    "Bitmask"
+  ],
+  "similar_questions": [
+    {
+      "title": "Ransom Note",
+      "slug": "ransom-note",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/ransom-note/"
+    }
+  ]
+}

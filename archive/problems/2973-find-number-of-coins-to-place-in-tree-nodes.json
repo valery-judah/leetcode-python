@@ -1,0 +1,30 @@
+{
+  "category": "",
+  "id": "2973",
+  "name": "Find Number of Coins to Place in Tree Nodes",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/find-number-of-coins-to-place-in-tree-nodes/",
+  "slug": "find-number-of-coins-to-place-in-tree-nodes",
+  "isPaidOnly": false,
+  "tags": [
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "similar_questions": [
+    {
+      "title": "Collect Coins in a Tree",
+      "slug": "collect-coins-in-a-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/collect-coins-in-a-tree/"
+    },
+    {
+      "title": "Find the Maximum Sum of Node Values",
+      "slug": "find-the-maximum-sum-of-node-values",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-maximum-sum-of-node-values/"
+    }
+  ]
+}

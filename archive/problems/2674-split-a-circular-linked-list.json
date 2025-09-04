@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "2674",
+  "name": "Split a Circular Linked List",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/split-a-circular-linked-list/",
+  "slug": "split-a-circular-linked-list",
+  "isPaidOnly": true,
+  "tags": [
+    "Linked List",
+    "Two Pointers"
+  ],
+  "similar_questions": [
+    {
+      "title": "Split Linked List in Parts",
+      "slug": "split-linked-list-in-parts",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/split-linked-list-in-parts/"
+    }
+  ]
+}

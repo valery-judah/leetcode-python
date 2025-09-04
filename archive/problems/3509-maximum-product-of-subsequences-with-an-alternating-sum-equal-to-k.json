@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "3509",
+  "name": "Maximum Product of Subsequences With an Alternating Sum Equal to K",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/maximum-product-of-subsequences-with-an-alternating-sum-equal-to-k/",
+  "slug": "maximum-product-of-subsequences-with-an-alternating-sum-equal-to-k",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Alternating Subsequence Sum",
+      "slug": "maximum-alternating-subsequence-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-alternating-subsequence-sum/"
+    }
+  ]
+}

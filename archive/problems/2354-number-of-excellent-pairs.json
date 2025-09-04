@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "2354",
+  "name": "Number of Excellent Pairs",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/number-of-excellent-pairs/",
+  "slug": "number-of-excellent-pairs",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Bit Manipulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Two Sum",
+      "slug": "two-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/two-sum/"
+    }
+  ]
+}

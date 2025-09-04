@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "2312",
+  "name": "Selling Pieces of Wood",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/selling-pieces-of-wood/",
+  "slug": "selling-pieces-of-wood",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Memoization"
+  ],
+  "similar_questions": [
+    {
+      "title": "Tiling a Rectangle with the Fewest Squares",
+      "slug": "tiling-a-rectangle-with-the-fewest-squares",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares/"
+    },
+    {
+      "title": "Number of Ways of Cutting a Pizza",
+      "slug": "number-of-ways-of-cutting-a-pizza",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza/"
+    }
+  ]
+}

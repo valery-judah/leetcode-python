@@ -1,0 +1,33 @@
+{
+  "category": "",
+  "id": "565",
+  "name": "Array Nesting",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/array-nesting/",
+  "slug": "array-nesting",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Depth-First Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Nested List Weight Sum",
+      "slug": "nested-list-weight-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/nested-list-weight-sum/"
+    },
+    {
+      "title": "Flatten Nested List Iterator",
+      "slug": "flatten-nested-list-iterator",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/flatten-nested-list-iterator/"
+    },
+    {
+      "title": "Nested List Weight Sum II",
+      "slug": "nested-list-weight-sum-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/nested-list-weight-sum-ii/"
+    }
+  ]
+}

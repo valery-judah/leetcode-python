@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "3301",
+  "name": "Maximize the Total Height of Unique Towers",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximize-the-total-height-of-unique-towers/",
+  "slug": "maximize-the-total-height-of-unique-towers",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": []
+}

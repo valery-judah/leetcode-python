@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "1431",
+  "name": "Kids With the Greatest Number of Candies",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/",
+  "slug": "kids-with-the-greatest-number-of-candies",
+  "isPaidOnly": false,
+  "tags": [
+    "Array"
+  ],
+  "similar_questions": []
+}

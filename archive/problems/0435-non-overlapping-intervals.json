@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "435",
+  "name": "Non-overlapping Intervals",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/non-overlapping-intervals/",
+  "slug": "non-overlapping-intervals",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Number of Arrows to Burst Balloons",
+      "slug": "minimum-number-of-arrows-to-burst-balloons",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/"
+    },
+    {
+      "title": "Determine if Two Events Have Conflict",
+      "slug": "determine-if-two-events-have-conflict",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/determine-if-two-events-have-conflict/"
+    }
+  ]
+}

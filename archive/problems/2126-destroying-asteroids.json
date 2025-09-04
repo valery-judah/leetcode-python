@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "2126",
+  "name": "Destroying Asteroids",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/destroying-asteroids/",
+  "slug": "destroying-asteroids",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Asteroid Collision",
+      "slug": "asteroid-collision",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/asteroid-collision/"
+    }
+  ]
+}

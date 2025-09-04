@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "2041",
+  "name": "Accepted Candidates From the Interviews",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/accepted-candidates-from-the-interviews/",
+  "slug": "accepted-candidates-from-the-interviews",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

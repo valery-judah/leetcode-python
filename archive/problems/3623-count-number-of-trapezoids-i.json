@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "3623",
+  "name": "Count Number of Trapezoids I",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-number-of-trapezoids-i/",
+  "slug": "count-number-of-trapezoids-i",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Geometry"
+  ],
+  "similar_questions": []
+}

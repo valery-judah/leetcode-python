@@ -1,0 +1,30 @@
+{
+  "category": "",
+  "id": "988",
+  "name": "Smallest String Starting From Leaf",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/smallest-string-starting-from-leaf/",
+  "slug": "smallest-string-starting-from-leaf",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Backtracking",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Sum Root to Leaf Numbers",
+      "slug": "sum-root-to-leaf-numbers",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sum-root-to-leaf-numbers/"
+    },
+    {
+      "title": "Binary Tree Paths",
+      "slug": "binary-tree-paths",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/binary-tree-paths/"
+    }
+  ]
+}

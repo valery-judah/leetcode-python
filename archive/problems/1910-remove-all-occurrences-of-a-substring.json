@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "1910",
+  "name": "Remove All Occurrences of a Substring",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/remove-all-occurrences-of-a-substring/",
+  "slug": "remove-all-occurrences-of-a-substring",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Stack",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Deletions on a String",
+      "slug": "maximum-deletions-on-a-string",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-deletions-on-a-string/"
+    }
+  ]
+}

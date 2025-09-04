@@ -1,0 +1,26 @@
+{
+  "category": "",
+  "id": "941",
+  "name": "Valid Mountain Array",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/valid-mountain-array/",
+  "slug": "valid-mountain-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Number of Removals to Make Mountain Array",
+      "slug": "minimum-number-of-removals-to-make-mountain-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-number-of-removals-to-make-mountain-array/"
+    },
+    {
+      "title": "Beautiful Towers I",
+      "slug": "beautiful-towers-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/beautiful-towers-i/"
+    }
+  ]
+}

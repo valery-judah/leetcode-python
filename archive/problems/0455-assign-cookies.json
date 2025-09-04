@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "455",
+  "name": "Assign Cookies",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/assign-cookies/",
+  "slug": "assign-cookies",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": []
+}

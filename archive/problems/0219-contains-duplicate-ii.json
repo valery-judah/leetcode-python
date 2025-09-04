@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "219",
+  "name": "Contains Duplicate II",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/contains-duplicate-ii/",
+  "slug": "contains-duplicate-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window"
+  ],
+  "similar_questions": [
+    {
+      "title": "Contains Duplicate",
+      "slug": "contains-duplicate",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/contains-duplicate/"
+    },
+    {
+      "title": "Contains Duplicate III",
+      "slug": "contains-duplicate-iii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/contains-duplicate-iii/"
+    }
+  ]
+}

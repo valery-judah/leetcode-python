@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "1230",
+  "name": "Toss Strange Coins",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/toss-strange-coins/",
+  "slug": "toss-strange-coins",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Probability and Statistics"
+  ],
+  "similar_questions": []
+}

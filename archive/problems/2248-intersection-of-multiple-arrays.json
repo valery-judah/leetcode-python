@@ -1,0 +1,47 @@
+{
+  "category": "",
+  "id": "2248",
+  "name": "Intersection of Multiple Arrays",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/intersection-of-multiple-arrays/",
+  "slug": "intersection-of-multiple-arrays",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Intersection of Two Arrays",
+      "slug": "intersection-of-two-arrays",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/intersection-of-two-arrays/"
+    },
+    {
+      "title": "Intersection of Two Arrays II",
+      "slug": "intersection-of-two-arrays-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/intersection-of-two-arrays-ii/"
+    },
+    {
+      "title": "Find Smallest Common Element in All Rows",
+      "slug": "find-smallest-common-element-in-all-rows",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-smallest-common-element-in-all-rows/"
+    },
+    {
+      "title": "Intersection of Three Sorted Arrays",
+      "slug": "intersection-of-three-sorted-arrays",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/intersection-of-three-sorted-arrays/"
+    },
+    {
+      "title": "Find the Difference of Two Arrays",
+      "slug": "find-the-difference-of-two-arrays",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-difference-of-two-arrays/"
+    }
+  ]
+}

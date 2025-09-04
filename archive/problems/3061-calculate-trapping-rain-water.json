@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "3061",
+  "name": "Calculate Trapping Rain Water",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/calculate-trapping-rain-water/",
+  "slug": "calculate-trapping-rain-water",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

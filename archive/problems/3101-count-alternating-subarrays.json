@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "3101",
+  "name": "Count Alternating Subarrays",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-alternating-subarrays/",
+  "slug": "count-alternating-subarrays",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math"
+  ],
+  "similar_questions": []
+}

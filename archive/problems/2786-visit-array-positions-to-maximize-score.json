@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "2786",
+  "name": "Visit Array Positions to Maximize Score",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/visit-array-positions-to-maximize-score/",
+  "slug": "visit-array-positions-to-maximize-score",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Jump Game II",
+      "slug": "jump-game-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/jump-game-ii/"
+    },
+    {
+      "title": "Stone Game",
+      "slug": "stone-game",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/stone-game/"
+    }
+  ]
+}

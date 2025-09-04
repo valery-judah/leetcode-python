@@ -1,0 +1,36 @@
+{
+  "category": "",
+  "id": "1905",
+  "name": "Count Sub Islands",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-sub-islands/",
+  "slug": "count-sub-islands",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union Find",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Number of Islands",
+      "slug": "number-of-islands",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-islands/"
+    },
+    {
+      "title": "Number of Distinct Islands",
+      "slug": "number-of-distinct-islands",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-distinct-islands/"
+    },
+    {
+      "title": "Find All Groups of Farmland",
+      "slug": "find-all-groups-of-farmland",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-all-groups-of-farmland/"
+    }
+  ]
+}

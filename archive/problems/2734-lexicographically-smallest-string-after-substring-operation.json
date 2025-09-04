@@ -1,0 +1,39 @@
+{
+  "category": "",
+  "id": "2734",
+  "name": "Lexicographically Smallest String After Substring Operation",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/lexicographically-smallest-string-after-substring-operation/",
+  "slug": "lexicographically-smallest-string-after-substring-operation",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Greedy"
+  ],
+  "similar_questions": [
+    {
+      "title": "Shifting Letters",
+      "slug": "shifting-letters",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/shifting-letters/"
+    },
+    {
+      "title": "Lexicographically Smallest String After Applying Operations",
+      "slug": "lexicographically-smallest-string-after-applying-operations",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/lexicographically-smallest-string-after-applying-operations/"
+    },
+    {
+      "title": "Lexicographically Smallest String After Operations With Constraint",
+      "slug": "lexicographically-smallest-string-after-operations-with-constraint",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/lexicographically-smallest-string-after-operations-with-constraint/"
+    },
+    {
+      "title": "Replace Question Marks in String to Minimize Its Value",
+      "slug": "replace-question-marks-in-string-to-minimize-its-value",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/replace-question-marks-in-string-to-minimize-its-value/"
+    }
+  ]
+}

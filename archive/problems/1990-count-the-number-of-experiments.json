@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "1990",
+  "name": "Count the Number of Experiments",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-the-number-of-experiments/",
+  "slug": "count-the-number-of-experiments",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

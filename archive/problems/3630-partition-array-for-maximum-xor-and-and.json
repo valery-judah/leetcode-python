@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "3630",
+  "name": "Partition Array for Maximum XOR and AND",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/partition-array-for-maximum-xor-and-and/",
+  "slug": "partition-array-for-maximum-xor-and-and",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Greedy",
+    "Enumeration"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,36 @@
+{
+  "category": "",
+  "id": "528",
+  "name": "Random Pick with Weight",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/random-pick-with-weight/",
+  "slug": "random-pick-with-weight",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Binary Search",
+    "Prefix Sum",
+    "Randomized"
+  ],
+  "similar_questions": [
+    {
+      "title": "Random Pick Index",
+      "slug": "random-pick-index",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/random-pick-index/"
+    },
+    {
+      "title": "Random Pick with Blacklist",
+      "slug": "random-pick-with-blacklist",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/random-pick-with-blacklist/"
+    },
+    {
+      "title": "Random Point in Non-overlapping Rectangles",
+      "slug": "random-point-in-non-overlapping-rectangles",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/random-point-in-non-overlapping-rectangles/"
+    }
+  ]
+}

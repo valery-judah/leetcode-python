@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "730",
+  "name": "Count Different Palindromic Subsequences",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/count-different-palindromic-subsequences/",
+  "slug": "count-different-palindromic-subsequences",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longest Palindromic Subsequence",
+      "slug": "longest-palindromic-subsequence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-palindromic-subsequence/"
+    },
+    {
+      "title": "Count Palindromic Subsequences",
+      "slug": "count-palindromic-subsequences",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-palindromic-subsequences/"
+    }
+  ]
+}

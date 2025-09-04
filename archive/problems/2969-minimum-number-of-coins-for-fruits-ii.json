@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "2969",
+  "name": "Minimum Number of Coins for Fruits II",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-number-of-coins-for-fruits-ii/",
+  "slug": "minimum-number-of-coins-for-fruits-ii",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Queue",
+    "Heap (Priority Queue)",
+    "Monotonic Queue"
+  ],
+  "similar_questions": []
+}

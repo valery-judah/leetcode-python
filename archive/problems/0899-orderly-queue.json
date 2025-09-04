@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "899",
+  "name": "Orderly Queue",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/orderly-queue/",
+  "slug": "orderly-queue",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "String",
+    "Sorting"
+  ],
+  "similar_questions": []
+}

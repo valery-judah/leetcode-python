@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "615",
+  "name": "Average Salary: Departments VS Company",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/average-salary-departments-vs-company/",
+  "slug": "average-salary-departments-vs-company",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": [
+    {
+      "title": "Countries You Can Safely Invest In",
+      "slug": "countries-you-can-safely-invest-in",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/countries-you-can-safely-invest-in/"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "1362",
+  "name": "Closest Divisors",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/closest-divisors/",
+  "slug": "closest-divisors",
+  "isPaidOnly": false,
+  "tags": [
+    "Math"
+  ],
+  "similar_questions": [
+    {
+      "title": "Distinct Prime Factors of Product of Array",
+      "slug": "distinct-prime-factors-of-product-of-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/distinct-prime-factors-of-product-of-array/"
+    }
+  ]
+}

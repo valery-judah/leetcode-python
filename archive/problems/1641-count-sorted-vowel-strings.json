@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1641",
+  "name": "Count Sorted Vowel Strings",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-sorted-vowel-strings/",
+  "slug": "count-sorted-vowel-strings",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Combinatorics"
+  ],
+  "similar_questions": []
+}

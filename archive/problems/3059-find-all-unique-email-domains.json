@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "3059",
+  "name": "Find All Unique Email Domains",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/find-all-unique-email-domains/",
+  "slug": "find-all-unique-email-domains",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

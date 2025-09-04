@@ -1,0 +1,34 @@
+{
+  "category": "",
+  "id": "1724",
+  "name": "Checking Existence of Edge Length Limited Paths II",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/checking-existence-of-edge-length-limited-paths-ii/",
+  "slug": "checking-existence-of-edge-length-limited-paths-ii",
+  "isPaidOnly": true,
+  "tags": [
+    "Union Find",
+    "Graph",
+    "Minimum Spanning Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Checking Existence of Edge Length Limited Paths",
+      "slug": "checking-existence-of-edge-length-limited-paths",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/checking-existence-of-edge-length-limited-paths/"
+    },
+    {
+      "title": "Number of Good Paths",
+      "slug": "number-of-good-paths",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-good-paths/"
+    },
+    {
+      "title": "Minimum Score of a Path Between Two Cities",
+      "slug": "minimum-score-of-a-path-between-two-cities",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/"
+    }
+  ]
+}

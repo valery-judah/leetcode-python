@@ -1,0 +1,34 @@
+{
+  "category": "",
+  "id": "1314",
+  "name": "Matrix Block Sum",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/matrix-block-sum/",
+  "slug": "matrix-block-sum",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Matrix",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Stamping the Grid",
+      "slug": "stamping-the-grid",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/stamping-the-grid/"
+    },
+    {
+      "title": "Maximum Sum of an Hourglass",
+      "slug": "maximum-sum-of-an-hourglass",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-sum-of-an-hourglass/"
+    },
+    {
+      "title": "Design Neighbor Sum Service",
+      "slug": "design-neighbor-sum-service",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/design-neighbor-sum-service/"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "category": "",
+  "id": "146",
+  "name": "LRU Cache",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/lru-cache/",
+  "slug": "lru-cache",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "Linked List",
+    "Design",
+    "Doubly-Linked List"
+  ],
+  "similar_questions": [
+    {
+      "title": "LFU Cache",
+      "slug": "lfu-cache",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/lfu-cache/"
+    },
+    {
+      "title": "Design In-Memory File System",
+      "slug": "design-in-memory-file-system",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/design-in-memory-file-system/"
+    },
+    {
+      "title": "Design Compressed String Iterator",
+      "slug": "design-compressed-string-iterator",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/design-compressed-string-iterator/"
+    },
+    {
+      "title": "Design Most Recently Used Queue",
+      "slug": "design-most-recently-used-queue",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/design-most-recently-used-queue/"
+    }
+  ]
+}

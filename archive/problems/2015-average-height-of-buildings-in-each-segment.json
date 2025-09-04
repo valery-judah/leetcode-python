@@ -1,0 +1,41 @@
+{
+  "category": "",
+  "id": "2015",
+  "name": "Average Height of Buildings in Each Segment",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/average-height-of-buildings-in-each-segment/",
+  "slug": "average-height-of-buildings-in-each-segment",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "similar_questions": [
+    {
+      "title": "Average Waiting Time",
+      "slug": "average-waiting-time",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/average-waiting-time/"
+    },
+    {
+      "title": "Describe the Painting",
+      "slug": "describe-the-painting",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/describe-the-painting/"
+    },
+    {
+      "title": "Amount of New Area Painted Each Day",
+      "slug": "amount-of-new-area-painted-each-day",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/amount-of-new-area-painted-each-day/"
+    },
+    {
+      "title": "Divide Intervals Into Minimum Number of Groups",
+      "slug": "divide-intervals-into-minimum-number-of-groups",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/divide-intervals-into-minimum-number-of-groups/"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "2339",
+  "name": "All the Matches of the League",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/all-the-matches-of-the-league/",
+  "slug": "all-the-matches-of-the-league",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

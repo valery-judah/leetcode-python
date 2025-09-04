@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "1092",
+  "name": "Shortest Common Supersequence ",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/shortest-common-supersequence/",
+  "slug": "shortest-common-supersequence",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longest Common Subsequence",
+      "slug": "longest-common-subsequence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-common-subsequence/"
+    },
+    {
+      "title": "Shortest String That Contains Three Strings",
+      "slug": "shortest-string-that-contains-three-strings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/shortest-string-that-contains-three-strings/"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "2170",
+  "name": "Minimum Operations to Make the Array Alternating",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-operations-to-make-the-array-alternating/",
+  "slug": "minimum-operations-to-make-the-array-alternating",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Deletions to Make Array Beautiful",
+      "slug": "minimum-deletions-to-make-array-beautiful",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-deletions-to-make-array-beautiful/"
+    },
+    {
+      "title": "Minimum Number of Flips to Make the Binary String Alternating",
+      "slug": "minimum-number-of-flips-to-make-the-binary-string-alternating",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/"
+    }
+  ]
+}

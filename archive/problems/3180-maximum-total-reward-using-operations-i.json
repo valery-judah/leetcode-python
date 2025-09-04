@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "3180",
+  "name": "Maximum Total Reward Using Operations I",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-total-reward-using-operations-i/",
+  "slug": "maximum-total-reward-using-operations-i",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "similar_questions": []
+}

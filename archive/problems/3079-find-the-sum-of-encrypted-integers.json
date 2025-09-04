@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "3079",
+  "name": "Find the Sum of Encrypted Integers",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/find-the-sum-of-encrypted-integers/",
+  "slug": "find-the-sum-of-encrypted-integers",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math"
+  ],
+  "similar_questions": [
+    {
+      "title": "Encrypt and Decrypt Strings",
+      "slug": "encrypt-and-decrypt-strings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/encrypt-and-decrypt-strings/"
+    }
+  ]
+}

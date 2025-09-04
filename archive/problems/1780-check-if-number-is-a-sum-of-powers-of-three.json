@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "1780",
+  "name": "Check if Number is a Sum of Powers of Three",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/check-if-number-is-a-sum-of-powers-of-three/",
+  "slug": "check-if-number-is-a-sum-of-powers-of-three",
+  "isPaidOnly": false,
+  "tags": [
+    "Math"
+  ],
+  "similar_questions": [
+    {
+      "title": "Power of Three",
+      "slug": "power-of-three",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/power-of-three/"
+    }
+  ]
+}

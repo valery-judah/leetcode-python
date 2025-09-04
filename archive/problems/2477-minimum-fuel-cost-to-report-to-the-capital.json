@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "2477",
+  "name": "Minimum Fuel Cost to Report to the Capital",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-fuel-cost-to-report-to-the-capital/",
+  "slug": "minimum-fuel-cost-to-report-to-the-capital",
+  "isPaidOnly": false,
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph"
+  ],
+  "similar_questions": [
+    {
+      "title": "Binary Tree Postorder Traversal",
+      "slug": "binary-tree-postorder-traversal",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/binary-tree-postorder-traversal/"
+    }
+  ]
+}

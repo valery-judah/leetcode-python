@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "1403",
+  "name": "Minimum Subsequence in Non-Increasing Order",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/minimum-subsequence-in-non-increasing-order/",
+  "slug": "minimum-subsequence-in-non-increasing-order",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Hills and Valleys in an Array",
+      "slug": "count-hills-and-valleys-in-an-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-hills-and-valleys-in-an-array/"
+    }
+  ]
+}

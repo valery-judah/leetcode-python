@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1602",
+  "name": "Find Nearest Right Node in Binary Tree",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-nearest-right-node-in-binary-tree/",
+  "slug": "find-nearest-right-node-in-binary-tree",
+  "isPaidOnly": true,
+  "tags": [
+    "Tree",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": []
+}

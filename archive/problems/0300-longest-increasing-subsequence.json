@@ -1,0 +1,112 @@
+{
+  "category": "",
+  "id": "300",
+  "name": "Longest Increasing Subsequence",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/longest-increasing-subsequence/",
+  "slug": "longest-increasing-subsequence",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Increasing Triplet Subsequence",
+      "slug": "increasing-triplet-subsequence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/increasing-triplet-subsequence/"
+    },
+    {
+      "title": "Russian Doll Envelopes",
+      "slug": "russian-doll-envelopes",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/russian-doll-envelopes/"
+    },
+    {
+      "title": "Maximum Length of Pair Chain",
+      "slug": "maximum-length-of-pair-chain",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-length-of-pair-chain/"
+    },
+    {
+      "title": "Number of Longest Increasing Subsequence",
+      "slug": "number-of-longest-increasing-subsequence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-longest-increasing-subsequence/"
+    },
+    {
+      "title": "Minimum ASCII Delete Sum for Two Strings",
+      "slug": "minimum-ascii-delete-sum-for-two-strings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/"
+    },
+    {
+      "title": "Minimum Number of Removals to Make Mountain Array",
+      "slug": "minimum-number-of-removals-to-make-mountain-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-number-of-removals-to-make-mountain-array/"
+    },
+    {
+      "title": "Find the Longest Valid Obstacle Course at Each Position",
+      "slug": "find-the-longest-valid-obstacle-course-at-each-position",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-longest-valid-obstacle-course-at-each-position/"
+    },
+    {
+      "title": "Minimum Operations to Make the Array K-Increasing",
+      "slug": "minimum-operations-to-make-the-array-k-increasing",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-operations-to-make-the-array-k-increasing/"
+    },
+    {
+      "title": "Longest Ideal Subsequence",
+      "slug": "longest-ideal-subsequence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-ideal-subsequence/"
+    },
+    {
+      "title": "Maximum Number of Books You Can Take",
+      "slug": "maximum-number-of-books-you-can-take",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-number-of-books-you-can-take/"
+    },
+    {
+      "title": "Longest Increasing Subsequence II",
+      "slug": "longest-increasing-subsequence-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-increasing-subsequence-ii/"
+    },
+    {
+      "title": "Find the Maximum Length of a Good Subsequence II",
+      "slug": "find-the-maximum-length-of-a-good-subsequence-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-maximum-length-of-a-good-subsequence-ii/"
+    },
+    {
+      "title": "Find the Maximum Length of a Good Subsequence I",
+      "slug": "find-the-maximum-length-of-a-good-subsequence-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-maximum-length-of-a-good-subsequence-i/"
+    },
+    {
+      "title": "Find the Maximum Length of Valid Subsequence I",
+      "slug": "find-the-maximum-length-of-valid-subsequence-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-i/"
+    },
+    {
+      "title": "Find the Maximum Length of Valid Subsequence II",
+      "slug": "find-the-maximum-length-of-valid-subsequence-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-ii/"
+    },
+    {
+      "title": "Longest Subsequence With Decreasing Adjacent Difference",
+      "slug": "longest-subsequence-with-decreasing-adjacent-difference",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-subsequence-with-decreasing-adjacent-difference/"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "382",
+  "name": "Linked List Random Node",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/linked-list-random-node/",
+  "slug": "linked-list-random-node",
+  "isPaidOnly": false,
+  "tags": [
+    "Linked List",
+    "Math",
+    "Reservoir Sampling",
+    "Randomized"
+  ],
+  "similar_questions": [
+    {
+      "title": "Random Pick Index",
+      "slug": "random-pick-index",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/random-pick-index/"
+    }
+  ]
+}

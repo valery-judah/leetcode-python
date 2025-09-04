@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "3110",
+  "name": "Score of a String",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/score-of-a-string/",
+  "slug": "score-of-a-string",
+  "isPaidOnly": false,
+  "tags": [
+    "String"
+  ],
+  "similar_questions": []
+}

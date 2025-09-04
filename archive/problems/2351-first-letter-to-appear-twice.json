@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "2351",
+  "name": "First Letter to Appear Twice",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/first-letter-to-appear-twice/",
+  "slug": "first-letter-to-appear-twice",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Bit Manipulation",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Two Sum",
+      "slug": "two-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/two-sum/"
+    },
+    {
+      "title": "First Unique Character in a String",
+      "slug": "first-unique-character-in-a-string",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/first-unique-character-in-a-string/"
+    }
+  ]
+}

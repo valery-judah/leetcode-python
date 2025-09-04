@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1210",
+  "name": "Minimum Moves to Reach Target with Rotations",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-moves-to-reach-target-with-rotations/",
+  "slug": "minimum-moves-to-reach-target-with-rotations",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "similar_questions": []
+}

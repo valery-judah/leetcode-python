@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "1504",
+  "name": "Count Submatrices With All Ones",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-submatrices-with-all-ones/",
+  "slug": "count-submatrices-with-all-ones",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Stack",
+    "Matrix",
+    "Monotonic Stack"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Submatrices With Equal Frequency of X and Y",
+      "slug": "count-submatrices-with-equal-frequency-of-x-and-y",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/"
+    }
+  ]
+}

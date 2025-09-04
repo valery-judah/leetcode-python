@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "2801",
+  "name": "Count Stepping Numbers in Range",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/count-stepping-numbers-in-range/",
+  "slug": "count-stepping-numbers-in-range",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Stepping Numbers",
+      "slug": "stepping-numbers",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/stepping-numbers/"
+    }
+  ]
+}

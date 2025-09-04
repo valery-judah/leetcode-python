@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "1003",
+  "name": "Check If Word Is Valid After Substitutions",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/check-if-word-is-valid-after-substitutions/",
+  "slug": "check-if-word-is-valid-after-substitutions",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Stack"
+  ],
+  "similar_questions": [
+    {
+      "title": "Valid Parentheses",
+      "slug": "valid-parentheses",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/valid-parentheses/"
+    }
+  ]
+}

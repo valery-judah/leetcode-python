@@ -1,0 +1,47 @@
+{
+  "category": "",
+  "id": "2141",
+  "name": "Maximum Running Time of N Computers",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/maximum-running-time-of-n-computers/",
+  "slug": "maximum-running-time-of-n-computers",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Moves to Equal Array Elements",
+      "slug": "minimum-moves-to-equal-array-elements",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-moves-to-equal-array-elements/"
+    },
+    {
+      "title": "Sell Diminishing-Valued Colored Balls",
+      "slug": "sell-diminishing-valued-colored-balls",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sell-diminishing-valued-colored-balls/"
+    },
+    {
+      "title": "Maximum Number of Tasks You Can Assign",
+      "slug": "maximum-number-of-tasks-you-can-assign",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-number-of-tasks-you-can-assign/"
+    },
+    {
+      "title": "Minimum Time to Complete Trips",
+      "slug": "minimum-time-to-complete-trips",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-time-to-complete-trips/"
+    },
+    {
+      "title": "Minimum Amount of Time to Fill Cups",
+      "slug": "minimum-amount-of-time-to-fill-cups",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-amount-of-time-to-fill-cups/"
+    }
+  ]
+}

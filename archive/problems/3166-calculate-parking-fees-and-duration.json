@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "3166",
+  "name": "Calculate Parking Fees and Duration",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/calculate-parking-fees-and-duration/",
+  "slug": "calculate-parking-fees-and-duration",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

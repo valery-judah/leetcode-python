@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "648",
+  "name": "Replace Words",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/replace-words/",
+  "slug": "replace-words",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Trie"
+  ],
+  "similar_questions": [
+    {
+      "title": "Implement Trie (Prefix Tree)",
+      "slug": "implement-trie-prefix-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/implement-trie-prefix-tree/"
+    }
+  ]
+}

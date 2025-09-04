@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "3320",
+  "name": "Count The Number of Winning Sequences",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/count-the-number-of-winning-sequences/",
+  "slug": "count-the-number-of-winning-sequences",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Predict the Winner",
+      "slug": "predict-the-winner",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/predict-the-winner/"
+    }
+  ]
+}

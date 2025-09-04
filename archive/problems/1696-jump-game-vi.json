@@ -1,0 +1,42 @@
+{
+  "category": "",
+  "id": "1696",
+  "name": "Jump Game VI",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/jump-game-vi/",
+  "slug": "jump-game-vi",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Queue",
+    "Heap (Priority Queue)",
+    "Monotonic Queue"
+  ],
+  "similar_questions": [
+    {
+      "title": "Sliding Window Maximum",
+      "slug": "sliding-window-maximum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sliding-window-maximum/"
+    },
+    {
+      "title": "Jump Game VII",
+      "slug": "jump-game-vii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/jump-game-vii/"
+    },
+    {
+      "title": "Jump Game VIII",
+      "slug": "jump-game-viii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/jump-game-viii/"
+    },
+    {
+      "title": "Maximize Value of Function in a Ball Passing Game",
+      "slug": "maximize-value-of-function-in-a-ball-passing-game",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximize-value-of-function-in-a-ball-passing-game/"
+    }
+  ]
+}

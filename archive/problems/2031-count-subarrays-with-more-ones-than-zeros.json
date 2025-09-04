@@ -1,0 +1,38 @@
+{
+  "category": "",
+  "id": "2031",
+  "name": "Count Subarrays With More Ones Than Zeros",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-subarrays-with-more-ones-than-zeros/",
+  "slug": "count-subarrays-with-more-ones-than-zeros",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Divide and Conquer",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Merge Sort",
+    "Ordered Set"
+  ],
+  "similar_questions": [
+    {
+      "title": "Ones and Zeroes",
+      "slug": "ones-and-zeroes",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/ones-and-zeroes/"
+    },
+    {
+      "title": "Longer Contiguous Segments of Ones than Zeros",
+      "slug": "longer-contiguous-segments-of-ones-than-zeros",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longer-contiguous-segments-of-ones-than-zeros/"
+    },
+    {
+      "title": "All Divisions With the Highest Score of a Binary Array",
+      "slug": "all-divisions-with-the-highest-score-of-a-binary-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/all-divisions-with-the-highest-score-of-a-binary-array/"
+    }
+  ]
+}

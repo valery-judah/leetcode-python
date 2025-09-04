@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "2595",
+  "name": "Number of Even and Odd Bits",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/number-of-even-and-odd-bits/",
+  "slug": "number-of-even-and-odd-bits",
+  "isPaidOnly": false,
+  "tags": [
+    "Bit Manipulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find Numbers with Even Number of Digits",
+      "slug": "find-numbers-with-even-number-of-digits",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-numbers-with-even-number-of-digits/"
+    }
+  ]
+}

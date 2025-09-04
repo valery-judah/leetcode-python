@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "3484",
+  "name": "Design Spreadsheet",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/design-spreadsheet/",
+  "slug": "design-spreadsheet",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Design",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Excel Sheet Column Title",
+      "slug": "excel-sheet-column-title",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/excel-sheet-column-title/"
+    }
+  ]
+}

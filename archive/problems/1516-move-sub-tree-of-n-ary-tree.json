@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "1516",
+  "name": "Move Sub-Tree of N-Ary Tree",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/move-sub-tree-of-n-ary-tree/",
+  "slug": "move-sub-tree-of-n-ary-tree",
+  "isPaidOnly": true,
+  "tags": [
+    "Tree",
+    "Depth-First Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find Root of N-Ary Tree",
+      "slug": "find-root-of-n-ary-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-root-of-n-ary-tree/"
+    }
+  ]
+}

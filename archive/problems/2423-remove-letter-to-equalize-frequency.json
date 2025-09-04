@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "2423",
+  "name": "Remove Letter To Equalize Frequency",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/remove-letter-to-equalize-frequency/",
+  "slug": "remove-letter-to-equalize-frequency",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Equal Frequency",
+      "slug": "maximum-equal-frequency",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-equal-frequency/"
+    },
+    {
+      "title": "Minimum Deletions to Make Character Frequencies Unique",
+      "slug": "minimum-deletions-to-make-character-frequencies-unique",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/"
+    }
+  ]
+}

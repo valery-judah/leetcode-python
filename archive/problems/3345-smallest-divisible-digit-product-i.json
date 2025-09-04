@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "3345",
+  "name": "Smallest Divisible Digit Product I",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/smallest-divisible-digit-product-i/",
+  "slug": "smallest-divisible-digit-product-i",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Enumeration"
+  ],
+  "similar_questions": [
+    {
+      "title": "Smallest Number With Given Digit Product",
+      "slug": "smallest-number-with-given-digit-product",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/smallest-number-with-given-digit-product/"
+    }
+  ]
+}

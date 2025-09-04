@@ -1,0 +1,45 @@
+{
+  "category": "",
+  "id": "875",
+  "name": "Koko Eating Bananas",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/koko-eating-bananas/",
+  "slug": "koko-eating-bananas",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimize Max Distance to Gas Station",
+      "slug": "minimize-max-distance-to-gas-station",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimize-max-distance-to-gas-station/"
+    },
+    {
+      "title": "Maximum Candies Allocated to K Children",
+      "slug": "maximum-candies-allocated-to-k-children",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-candies-allocated-to-k-children/"
+    },
+    {
+      "title": "Minimized Maximum of Products Distributed to Any Store",
+      "slug": "minimized-maximum-of-products-distributed-to-any-store",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimized-maximum-of-products-distributed-to-any-store/"
+    },
+    {
+      "title": "Frog Jump II",
+      "slug": "frog-jump-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/frog-jump-ii/"
+    },
+    {
+      "title": "Minimum Time to Repair Cars",
+      "slug": "minimum-time-to-repair-cars",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-time-to-repair-cars/"
+    }
+  ]
+}

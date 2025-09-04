@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "65",
+  "name": "Valid Number",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/valid-number/",
+  "slug": "valid-number",
+  "isPaidOnly": false,
+  "tags": [
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "String to Integer (atoi)",
+      "slug": "string-to-integer-atoi",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/string-to-integer-atoi/"
+    }
+  ]
+}

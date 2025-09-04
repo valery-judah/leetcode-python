@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1743",
+  "name": "Restore the Array From Adjacent Pairs",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/restore-the-array-from-adjacent-pairs/",
+  "slug": "restore-the-array-from-adjacent-pairs",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Depth-First Search"
+  ],
+  "similar_questions": []
+}

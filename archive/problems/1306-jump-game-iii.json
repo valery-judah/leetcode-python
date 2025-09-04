@@ -1,0 +1,46 @@
+{
+  "category": "",
+  "id": "1306",
+  "name": "Jump Game III",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/jump-game-iii/",
+  "slug": "jump-game-iii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Jump Game II",
+      "slug": "jump-game-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/jump-game-ii/"
+    },
+    {
+      "title": "Jump Game",
+      "slug": "jump-game",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/jump-game/"
+    },
+    {
+      "title": "Jump Game VII",
+      "slug": "jump-game-vii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/jump-game-vii/"
+    },
+    {
+      "title": "Jump Game VIII",
+      "slug": "jump-game-viii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/jump-game-viii/"
+    },
+    {
+      "title": "Maximum Number of Jumps to Reach the Last Index",
+      "slug": "maximum-number-of-jumps-to-reach-the-last-index",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-number-of-jumps-to-reach-the-last-index/"
+    }
+  ]
+}

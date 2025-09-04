@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1397",
+  "name": "Find All Good Strings",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/find-all-good-strings/",
+  "slug": "find-all-good-strings",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Dynamic Programming",
+    "String Matching"
+  ],
+  "similar_questions": []
+}

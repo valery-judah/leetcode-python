@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "2857",
+  "name": "Count Pairs of Points With Distance k",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-pairs-of-points-with-distance-k/",
+  "slug": "count-pairs-of-points-with-distance-k",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Bit Manipulation"
+  ],
+  "similar_questions": []
+}

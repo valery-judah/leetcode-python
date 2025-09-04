@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "3469",
+  "name": "Find Minimum Cost to Remove Array Elements",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-minimum-cost-to-remove-array-elements/",
+  "slug": "find-minimum-cost-to-remove-array-elements",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Difference in Sums After Removal of Elements",
+      "slug": "minimum-difference-in-sums-after-removal-of-elements",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-difference-in-sums-after-removal-of-elements/"
+    }
+  ]
+}

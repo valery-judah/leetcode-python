@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "3160",
+  "name": "Find the Number of Distinct Colors Among the Balls",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-the-number-of-distinct-colors-among-the-balls/",
+  "slug": "find-the-number-of-distinct-colors-among-the-balls",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Number of Balls in a Box",
+      "slug": "maximum-number-of-balls-in-a-box",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-number-of-balls-in-a-box/"
+    }
+  ]
+}

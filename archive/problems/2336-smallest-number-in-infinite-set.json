@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "2336",
+  "name": "Smallest Number in Infinite Set",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/smallest-number-in-infinite-set/",
+  "slug": "smallest-number-in-infinite-set",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "Design",
+    "Heap (Priority Queue)",
+    "Ordered Set"
+  ],
+  "similar_questions": [
+    {
+      "title": "First Missing Positive",
+      "slug": "first-missing-positive",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/first-missing-positive/"
+    }
+  ]
+}

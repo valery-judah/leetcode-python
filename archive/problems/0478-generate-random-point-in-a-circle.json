@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "478",
+  "name": "Generate Random Point in a Circle",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/generate-random-point-in-a-circle/",
+  "slug": "generate-random-point-in-a-circle",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Geometry",
+    "Rejection Sampling",
+    "Randomized"
+  ],
+  "similar_questions": [
+    {
+      "title": "Random Point in Non-overlapping Rectangles",
+      "slug": "random-point-in-non-overlapping-rectangles",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/random-point-in-non-overlapping-rectangles/"
+    }
+  ]
+}

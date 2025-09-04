@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "93",
+  "name": "Restore IP Addresses",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/restore-ip-addresses/",
+  "slug": "restore-ip-addresses",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Backtracking"
+  ],
+  "similar_questions": [
+    {
+      "title": "IP to CIDR",
+      "slug": "ip-to-cidr",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/ip-to-cidr/"
+    }
+  ]
+}

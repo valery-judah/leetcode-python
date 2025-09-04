@@ -1,0 +1,26 @@
+{
+  "category": "",
+  "id": "2320",
+  "name": "Count Number of Ways to Place Houses",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-number-of-ways-to-place-houses/",
+  "slug": "count-number-of-ways-to-place-houses",
+  "isPaidOnly": false,
+  "tags": [
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Climbing Stairs",
+      "slug": "climbing-stairs",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/climbing-stairs/"
+    },
+    {
+      "title": "House Robber",
+      "slug": "house-robber",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/house-robber/"
+    }
+  ]
+}

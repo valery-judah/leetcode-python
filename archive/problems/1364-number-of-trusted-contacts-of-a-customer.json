@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "1364",
+  "name": "Number of Trusted Contacts of a Customer",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/number-of-trusted-contacts-of-a-customer/",
+  "slug": "number-of-trusted-contacts-of-a-customer",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

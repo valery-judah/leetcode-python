@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "2452",
+  "name": "Words Within Two Edits of Dictionary",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/words-within-two-edits-of-dictionary/",
+  "slug": "words-within-two-edits-of-dictionary",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "String",
+    "Trie"
+  ],
+  "similar_questions": [
+    {
+      "title": "Word Ladder",
+      "slug": "word-ladder",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/word-ladder/"
+    }
+  ]
+}

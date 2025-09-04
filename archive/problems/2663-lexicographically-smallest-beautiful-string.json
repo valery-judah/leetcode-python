@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "2663",
+  "name": "Lexicographically Smallest Beautiful String",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/lexicographically-smallest-beautiful-string/",
+  "slug": "lexicographically-smallest-beautiful-string",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Greedy"
+  ],
+  "similar_questions": [
+    {
+      "title": "Smallest String With Swaps",
+      "slug": "smallest-string-with-swaps",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/smallest-string-with-swaps/"
+    },
+    {
+      "title": "Find Palindrome With Fixed Length",
+      "slug": "find-palindrome-with-fixed-length",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-palindrome-with-fixed-length/"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "3466",
+  "name": "Maximum Coin Collection ",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-coin-collection/",
+  "slug": "maximum-coin-collection",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "similar_questions": []
+}

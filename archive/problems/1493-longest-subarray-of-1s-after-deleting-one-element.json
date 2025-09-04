@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "1493",
+  "name": "Longest Subarray of 1's After Deleting One Element",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/",
+  "slug": "longest-subarray-of-1s-after-deleting-one-element",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Sliding Window"
+  ],
+  "similar_questions": [
+    {
+      "title": "Max Consecutive Ones III",
+      "slug": "max-consecutive-ones-iii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/max-consecutive-ones-iii/"
+    }
+  ]
+}

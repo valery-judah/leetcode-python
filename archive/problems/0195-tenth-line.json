@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "195",
+  "name": "Tenth Line",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/tenth-line/",
+  "slug": "tenth-line",
+  "isPaidOnly": false,
+  "tags": [
+    "Shell"
+  ],
+  "similar_questions": []
+}

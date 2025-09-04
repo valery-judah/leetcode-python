@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "683",
+  "name": "K Empty Slots",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/k-empty-slots/",
+  "slug": "k-empty-slots",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Queue",
+    "Sliding Window",
+    "Heap (Priority Queue)",
+    "Ordered Set",
+    "Monotonic Queue"
+  ],
+  "similar_questions": []
+}

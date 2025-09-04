@@ -1,0 +1,35 @@
+{
+  "category": "",
+  "id": "1162",
+  "name": "As Far from Land as Possible",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/as-far-from-land-as-possible/",
+  "slug": "as-far-from-land-as-possible",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Shortest Distance from All Buildings",
+      "slug": "shortest-distance-from-all-buildings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/shortest-distance-from-all-buildings/"
+    },
+    {
+      "title": "K Highest Ranked Items Within a Price Range",
+      "slug": "k-highest-ranked-items-within-a-price-range",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/k-highest-ranked-items-within-a-price-range/"
+    },
+    {
+      "title": "Maximum Manhattan Distance After K Changes",
+      "slug": "maximum-manhattan-distance-after-k-changes",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-manhattan-distance-after-k-changes/"
+    }
+  ]
+}

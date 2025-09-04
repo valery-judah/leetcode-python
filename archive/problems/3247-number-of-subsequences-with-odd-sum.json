@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "3247",
+  "name": "Number of Subsequences with Odd Sum",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/number-of-subsequences-with-odd-sum/",
+  "slug": "number-of-subsequences-with-odd-sum",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Combinatorics"
+  ],
+  "similar_questions": []
+}

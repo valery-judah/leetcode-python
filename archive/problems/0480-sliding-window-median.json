@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "480",
+  "name": "Sliding Window Median",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/sliding-window-median/",
+  "slug": "sliding-window-median",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window",
+    "Heap (Priority Queue)"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find Median from Data Stream",
+      "slug": "find-median-from-data-stream",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-median-from-data-stream/"
+    },
+    {
+      "title": "Minimum Operations to Make Median of Array Equal to K",
+      "slug": "minimum-operations-to-make-median-of-array-equal-to-k",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-operations-to-make-median-of-array-equal-to-k/"
+    }
+  ]
+}

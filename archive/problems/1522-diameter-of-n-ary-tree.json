@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "1522",
+  "name": "Diameter of N-Ary Tree",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/diameter-of-n-ary-tree/",
+  "slug": "diameter-of-n-ary-tree",
+  "isPaidOnly": true,
+  "tags": [
+    "Tree",
+    "Depth-First Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Diameter of Binary Tree",
+      "slug": "diameter-of-binary-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/diameter-of-binary-tree/"
+    }
+  ]
+}

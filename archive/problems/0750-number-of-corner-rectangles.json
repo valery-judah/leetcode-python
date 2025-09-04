@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "750",
+  "name": "Number Of Corner Rectangles",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/number-of-corner-rectangles/",
+  "slug": "number-of-corner-rectangles",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "similar_questions": []
+}

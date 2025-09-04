@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "2833",
+  "name": "Furthest Point From Origin",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/furthest-point-from-origin/",
+  "slug": "furthest-point-from-origin",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Robot Return to Origin",
+      "slug": "robot-return-to-origin",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/robot-return-to-origin/"
+    }
+  ]
+}

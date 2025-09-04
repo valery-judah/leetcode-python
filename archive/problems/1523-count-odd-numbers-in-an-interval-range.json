@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "1523",
+  "name": "Count Odd Numbers in an Interval Range",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/",
+  "slug": "count-odd-numbers-in-an-interval-range",
+  "isPaidOnly": false,
+  "tags": [
+    "Math"
+  ],
+  "similar_questions": [
+    {
+      "title": "Check if Bitwise OR Has Trailing Zeros",
+      "slug": "check-if-bitwise-or-has-trailing-zeros",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/check-if-bitwise-or-has-trailing-zeros/"
+    }
+  ]
+}

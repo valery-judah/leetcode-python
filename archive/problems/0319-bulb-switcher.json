@@ -1,0 +1,39 @@
+{
+  "category": "",
+  "id": "319",
+  "name": "Bulb Switcher",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/bulb-switcher/",
+  "slug": "bulb-switcher",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Brainteaser"
+  ],
+  "similar_questions": [
+    {
+      "title": "Bulb Switcher II",
+      "slug": "bulb-switcher-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/bulb-switcher-ii/"
+    },
+    {
+      "title": "Minimum Number of K Consecutive Bit Flips",
+      "slug": "minimum-number-of-k-consecutive-bit-flips",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/"
+    },
+    {
+      "title": "Number of Times Binary String Is Prefix-Aligned",
+      "slug": "number-of-times-binary-string-is-prefix-aligned",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-times-binary-string-is-prefix-aligned/"
+    },
+    {
+      "title": "Find the Pivot Integer",
+      "slug": "find-the-pivot-integer",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-pivot-integer/"
+    }
+  ]
+}

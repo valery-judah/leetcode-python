@@ -1,0 +1,35 @@
+{
+  "category": "",
+  "id": "542",
+  "name": "01 Matrix",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/01-matrix/",
+  "slug": "01-matrix",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Shortest Path to Get Food",
+      "slug": "shortest-path-to-get-food",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/shortest-path-to-get-food/"
+    },
+    {
+      "title": "Minimum Operations to Remove Adjacent Ones in Matrix",
+      "slug": "minimum-operations-to-remove-adjacent-ones-in-matrix",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-operations-to-remove-adjacent-ones-in-matrix/"
+    },
+    {
+      "title": "Difference Between Ones and Zeros in Row and Column",
+      "slug": "difference-between-ones-and-zeros-in-row-and-column",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/difference-between-ones-and-zeros-in-row-and-column/"
+    }
+  ]
+}

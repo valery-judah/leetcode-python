@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "2619",
+  "name": "Array Prototype Last",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/array-prototype-last/",
+  "slug": "array-prototype-last",
+  "isPaidOnly": false,
+  "tags": [],
+  "similar_questions": [
+    {
+      "title": "Snail Traversal",
+      "slug": "snail-traversal",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/snail-traversal/"
+    },
+    {
+      "title": "Array Upper Bound",
+      "slug": "array-upper-bound",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/array-upper-bound/"
+    }
+  ]
+}

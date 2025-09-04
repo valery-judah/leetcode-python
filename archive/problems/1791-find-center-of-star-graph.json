@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "1791",
+  "name": "Find Center of Star Graph",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/find-center-of-star-graph/",
+  "slug": "find-center-of-star-graph",
+  "isPaidOnly": false,
+  "tags": [
+    "Graph"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Star Sum of a Graph",
+      "slug": "maximum-star-sum-of-a-graph",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-star-sum-of-a-graph/"
+    }
+  ]
+}

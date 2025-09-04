@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "222",
+  "name": "Count Complete Tree Nodes",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/count-complete-tree-nodes/",
+  "slug": "count-complete-tree-nodes",
+  "isPaidOnly": false,
+  "tags": [
+    "Binary Search",
+    "Bit Manipulation",
+    "Tree",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Closest Binary Search Tree Value",
+      "slug": "closest-binary-search-tree-value",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/closest-binary-search-tree-value/"
+    }
+  ]
+}

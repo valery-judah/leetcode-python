@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "2241",
+  "name": "Design an ATM Machine",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/design-an-atm-machine/",
+  "slug": "design-an-atm-machine",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Design"
+  ],
+  "similar_questions": [
+    {
+      "title": "Simple Bank System",
+      "slug": "simple-bank-system",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/simple-bank-system/"
+    },
+    {
+      "title": "Minimum Number of Operations to Convert Time",
+      "slug": "minimum-number-of-operations-to-convert-time",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-number-of-operations-to-convert-time/"
+    }
+  ]
+}

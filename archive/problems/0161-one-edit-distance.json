@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "161",
+  "name": "One Edit Distance",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/one-edit-distance/",
+  "slug": "one-edit-distance",
+  "isPaidOnly": true,
+  "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Edit Distance",
+      "slug": "edit-distance",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/edit-distance/"
+    }
+  ]
+}

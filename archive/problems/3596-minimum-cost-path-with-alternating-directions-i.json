@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "3596",
+  "name": "Minimum Cost Path with Alternating Directions I",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-cost-path-with-alternating-directions-i/",
+  "slug": "minimum-cost-path-with-alternating-directions-i",
+  "isPaidOnly": true,
+  "tags": [
+    "Math",
+    "Brainteaser"
+  ],
+  "similar_questions": []
+}

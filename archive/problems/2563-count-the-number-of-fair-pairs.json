@@ -1,0 +1,41 @@
+{
+  "category": "",
+  "id": "2563",
+  "name": "Count the Number of Fair Pairs",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-the-number-of-fair-pairs/",
+  "slug": "count-the-number-of-fair-pairs",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count of Range Sum",
+      "slug": "count-of-range-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-of-range-sum/"
+    },
+    {
+      "title": "Finding Pairs With a Certain Sum",
+      "slug": "finding-pairs-with-a-certain-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/finding-pairs-with-a-certain-sum/"
+    },
+    {
+      "title": "Count Number of Pairs With Absolute Difference K",
+      "slug": "count-number-of-pairs-with-absolute-difference-k",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/"
+    },
+    {
+      "title": "Count Pairs Whose Sum is Less than Target",
+      "slug": "count-pairs-whose-sum-is-less-than-target",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "669",
+  "name": "Trim a Binary Search Tree",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/trim-a-binary-search-tree/",
+  "slug": "trim-a-binary-search-tree",
+  "isPaidOnly": false,
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "similar_questions": []
+}

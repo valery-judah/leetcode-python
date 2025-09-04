@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "2198",
+  "name": "Number of Single Divisor Triplets",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/number-of-single-divisor-triplets/",
+  "slug": "number-of-single-divisor-triplets",
+  "isPaidOnly": true,
+  "tags": [
+    "Math"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Array Pairs Divisible by K",
+      "slug": "count-array-pairs-divisible-by-k",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-array-pairs-divisible-by-k/"
+    }
+  ]
+}

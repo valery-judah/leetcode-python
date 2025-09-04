@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "1947",
+  "name": "Maximum Compatibility Score Sum",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-compatibility-score-sum/",
+  "slug": "maximum-compatibility-score-sum",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Backtracking",
+    "Bit Manipulation",
+    "Bitmask"
+  ],
+  "similar_questions": []
+}

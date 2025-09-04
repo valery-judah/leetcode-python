@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "3599",
+  "name": "Partition Array to Minimize XOR",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/partition-array-to-minimize-xor/",
+  "slug": "partition-array-to-minimize-xor",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Prefix Sum"
+  ],
+  "similar_questions": []
+}

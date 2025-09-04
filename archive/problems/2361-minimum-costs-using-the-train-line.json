@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "2361",
+  "name": "Minimum Costs Using the Train Line",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-costs-using-the-train-line/",
+  "slug": "minimum-costs-using-the-train-line",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Bus Routes",
+      "slug": "bus-routes",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/bus-routes/"
+    },
+    {
+      "title": "Distance Between Bus Stops",
+      "slug": "distance-between-bus-stops",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/distance-between-bus-stops/"
+    }
+  ]
+}

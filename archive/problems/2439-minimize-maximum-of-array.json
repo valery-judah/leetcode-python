@@ -1,0 +1,36 @@
+{
+  "category": "",
+  "id": "2439",
+  "name": "Minimize Maximum of Array",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimize-maximum-of-array/",
+  "slug": "minimize-maximum-of-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
+    "Greedy",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Candies Allocated to K Children",
+      "slug": "maximum-candies-allocated-to-k-children",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-candies-allocated-to-k-children/"
+    },
+    {
+      "title": "Minimum Speed to Arrive on Time",
+      "slug": "minimum-speed-to-arrive-on-time",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-speed-to-arrive-on-time/"
+    },
+    {
+      "title": "Minimum Time to Complete Trips",
+      "slug": "minimum-time-to-complete-trips",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-time-to-complete-trips/"
+    }
+  ]
+}

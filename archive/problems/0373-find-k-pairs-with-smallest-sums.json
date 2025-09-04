@@ -1,0 +1,33 @@
+{
+  "category": "",
+  "id": "373",
+  "name": "Find K Pairs with Smallest Sums",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-k-pairs-with-smallest-sums/",
+  "slug": "find-k-pairs-with-smallest-sums",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Heap (Priority Queue)"
+  ],
+  "similar_questions": [
+    {
+      "title": "Kth Smallest Element in a Sorted Matrix",
+      "slug": "kth-smallest-element-in-a-sorted-matrix",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/"
+    },
+    {
+      "title": "Find K-th Smallest Pair Distance",
+      "slug": "find-k-th-smallest-pair-distance",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-k-th-smallest-pair-distance/"
+    },
+    {
+      "title": "Kth Smallest Product of Two Sorted Arrays",
+      "slug": "kth-smallest-product-of-two-sorted-arrays",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/kth-smallest-product-of-two-sorted-arrays/"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "2653",
+  "name": "Sliding Subarray Beauty",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/sliding-subarray-beauty/",
+  "slug": "sliding-subarray-beauty",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window"
+  ],
+  "similar_questions": []
+}

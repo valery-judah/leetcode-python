@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "910",
+  "name": "Smallest Range II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/smallest-range-ii/",
+  "slug": "smallest-range-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": []
+}

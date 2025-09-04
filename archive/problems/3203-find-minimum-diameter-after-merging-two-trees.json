@@ -1,0 +1,47 @@
+{
+  "category": "",
+  "id": "3203",
+  "name": "Find Minimum Diameter After Merging Two Trees",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/find-minimum-diameter-after-merging-two-trees/",
+  "slug": "find-minimum-diameter-after-merging-two-trees",
+  "isPaidOnly": false,
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Height Trees",
+      "slug": "minimum-height-trees",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-height-trees/"
+    },
+    {
+      "title": "Tree Diameter",
+      "slug": "tree-diameter",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/tree-diameter/"
+    },
+    {
+      "title": "Maximize the Number of Target Nodes After Connecting Trees I",
+      "slug": "maximize-the-number-of-target-nodes-after-connecting-trees-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximize-the-number-of-target-nodes-after-connecting-trees-i/"
+    },
+    {
+      "title": "Maximize the Number of Target Nodes After Connecting Trees II",
+      "slug": "maximize-the-number-of-target-nodes-after-connecting-trees-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximize-the-number-of-target-nodes-after-connecting-trees-ii/"
+    },
+    {
+      "title": "Maximize Sum of Weights after Edge Removals",
+      "slug": "maximize-sum-of-weights-after-edge-removals",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximize-sum-of-weights-after-edge-removals/"
+    }
+  ]
+}

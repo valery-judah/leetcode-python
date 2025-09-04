@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "2997",
+  "name": "Minimum Number of Operations to Make Array XOR Equal to K",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-number-of-operations-to-make-array-xor-equal-to-k/",
+  "slug": "minimum-number-of-operations-to-make-array-xor-equal-to-k",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Bit Manipulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Bit Flips to Convert Number",
+      "slug": "minimum-bit-flips-to-convert-number",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-bit-flips-to-convert-number/"
+    }
+  ]
+}

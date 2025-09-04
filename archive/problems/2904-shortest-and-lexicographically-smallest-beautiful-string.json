@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "2904",
+  "name": "Shortest and Lexicographically Smallest Beautiful String",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/shortest-and-lexicographically-smallest-beautiful-string/",
+  "slug": "shortest-and-lexicographically-smallest-beautiful-string",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Sliding Window"
+  ],
+  "similar_questions": []
+}

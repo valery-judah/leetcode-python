@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "1233",
+  "name": "Remove Sub-Folders from the Filesystem",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/remove-sub-folders-from-the-filesystem/",
+  "slug": "remove-sub-folders-from-the-filesystem",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "String",
+    "Depth-First Search",
+    "Trie"
+  ],
+  "similar_questions": []
+}

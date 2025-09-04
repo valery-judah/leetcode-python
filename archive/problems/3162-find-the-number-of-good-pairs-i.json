@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "3162",
+  "name": "Find the Number of Good Pairs I",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/find-the-number-of-good-pairs-i/",
+  "slug": "find-the-number-of-good-pairs-i",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Array Pairs Divisible by K",
+      "slug": "count-array-pairs-divisible-by-k",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-array-pairs-divisible-by-k/"
+    }
+  ]
+}

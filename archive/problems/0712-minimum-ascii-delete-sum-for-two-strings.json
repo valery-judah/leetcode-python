@@ -1,0 +1,33 @@
+{
+  "category": "",
+  "id": "712",
+  "name": "Minimum ASCII Delete Sum for Two Strings",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/",
+  "slug": "minimum-ascii-delete-sum-for-two-strings",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Edit Distance",
+      "slug": "edit-distance",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/edit-distance/"
+    },
+    {
+      "title": "Longest Increasing Subsequence",
+      "slug": "longest-increasing-subsequence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-increasing-subsequence/"
+    },
+    {
+      "title": "Delete Operation for Two Strings",
+      "slug": "delete-operation-for-two-strings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/delete-operation-for-two-strings/"
+    }
+  ]
+}

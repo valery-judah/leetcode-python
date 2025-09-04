@@ -1,0 +1,123 @@
+{
+  "category": "",
+  "id": "56",
+  "name": "Merge Intervals",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/merge-intervals/",
+  "slug": "merge-intervals",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Insert Interval",
+      "slug": "insert-interval",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/insert-interval/"
+    },
+    {
+      "title": "Meeting Rooms",
+      "slug": "meeting-rooms",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/meeting-rooms/"
+    },
+    {
+      "title": "Meeting Rooms II",
+      "slug": "meeting-rooms-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/meeting-rooms-ii/"
+    },
+    {
+      "title": "Teemo Attacking",
+      "slug": "teemo-attacking",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/teemo-attacking/"
+    },
+    {
+      "title": "Add Bold Tag in String",
+      "slug": "add-bold-tag-in-string",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/add-bold-tag-in-string/"
+    },
+    {
+      "title": "Range Module",
+      "slug": "range-module",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/range-module/"
+    },
+    {
+      "title": "Employee Free Time",
+      "slug": "employee-free-time",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/employee-free-time/"
+    },
+    {
+      "title": "Partition Labels",
+      "slug": "partition-labels",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/partition-labels/"
+    },
+    {
+      "title": "Interval List Intersections",
+      "slug": "interval-list-intersections",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/interval-list-intersections/"
+    },
+    {
+      "title": "Amount of New Area Painted Each Day",
+      "slug": "amount-of-new-area-painted-each-day",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/amount-of-new-area-painted-each-day/"
+    },
+    {
+      "title": "Longest Substring of One Repeating Character",
+      "slug": "longest-substring-of-one-repeating-character",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-substring-of-one-repeating-character/"
+    },
+    {
+      "title": "Count Integers in Intervals",
+      "slug": "count-integers-in-intervals",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-integers-in-intervals/"
+    },
+    {
+      "title": "Divide Intervals Into Minimum Number of Groups",
+      "slug": "divide-intervals-into-minimum-number-of-groups",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/divide-intervals-into-minimum-number-of-groups/"
+    },
+    {
+      "title": "Determine if Two Events Have Conflict",
+      "slug": "determine-if-two-events-have-conflict",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/determine-if-two-events-have-conflict/"
+    },
+    {
+      "title": "Count Ways to Group Overlapping Ranges",
+      "slug": "count-ways-to-group-overlapping-ranges",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-ways-to-group-overlapping-ranges/"
+    },
+    {
+      "title": "Points That Intersect With Cars",
+      "slug": "points-that-intersect-with-cars",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/points-that-intersect-with-cars/"
+    },
+    {
+      "title": "Count Days Without Meetings",
+      "slug": "count-days-without-meetings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-days-without-meetings/"
+    },
+    {
+      "title": "Minimize Connected Groups by Inserting Interval",
+      "slug": "minimize-connected-groups-by-inserting-interval",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimize-connected-groups-by-inserting-interval/"
+    }
+  ]
+}

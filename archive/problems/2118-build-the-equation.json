@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "2118",
+  "name": "Build the Equation",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/build-the-equation/",
+  "slug": "build-the-equation",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

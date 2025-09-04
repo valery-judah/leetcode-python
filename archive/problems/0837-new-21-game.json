@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "837",
+  "name": "New 21 Game",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/new-21-game/",
+  "slug": "new-21-game",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Sliding Window",
+    "Probability and Statistics"
+  ],
+  "similar_questions": []
+}

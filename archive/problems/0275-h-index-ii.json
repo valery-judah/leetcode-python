@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "275",
+  "name": "H-Index II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/h-index-ii/",
+  "slug": "h-index-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "H-Index",
+      "slug": "h-index",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/h-index/"
+    }
+  ]
+}

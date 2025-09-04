@@ -1,0 +1,35 @@
+{
+  "category": "",
+  "id": "2300",
+  "name": "Successful Pairs of Spells and Potions",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/successful-pairs-of-spells-and-potions/",
+  "slug": "successful-pairs-of-spells-and-potions",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Most Profit Assigning Work",
+      "slug": "most-profit-assigning-work",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/most-profit-assigning-work/"
+    },
+    {
+      "title": "Longest Subsequence With Limited Sum",
+      "slug": "longest-subsequence-with-limited-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-subsequence-with-limited-sum/"
+    },
+    {
+      "title": "Maximum Matching of Players With Trainers",
+      "slug": "maximum-matching-of-players-with-trainers",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-matching-of-players-with-trainers/"
+    }
+  ]
+}

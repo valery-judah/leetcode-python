@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "2277",
+  "name": "Closest Node to Path in Tree",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/closest-node-to-path-in-tree/",
+  "slug": "closest-node-to-path-in-tree",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Number of Possible Root Nodes",
+      "slug": "count-number-of-possible-root-nodes",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-number-of-possible-root-nodes/"
+    },
+    {
+      "title": "Design Graph With Shortest Path Calculator",
+      "slug": "design-graph-with-shortest-path-calculator",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/design-graph-with-shortest-path-calculator/"
+    }
+  ]
+}

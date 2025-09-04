@@ -1,0 +1,43 @@
+{
+  "category": "",
+  "id": "341",
+  "name": "Flatten Nested List Iterator",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/flatten-nested-list-iterator/",
+  "slug": "flatten-nested-list-iterator",
+  "isPaidOnly": false,
+  "tags": [
+    "Stack",
+    "Tree",
+    "Depth-First Search",
+    "Design",
+    "Queue",
+    "Iterator"
+  ],
+  "similar_questions": [
+    {
+      "title": "Flatten 2D Vector",
+      "slug": "flatten-2d-vector",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/flatten-2d-vector/"
+    },
+    {
+      "title": "Zigzag Iterator",
+      "slug": "zigzag-iterator",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/zigzag-iterator/"
+    },
+    {
+      "title": "Mini Parser",
+      "slug": "mini-parser",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/mini-parser/"
+    },
+    {
+      "title": "Array Nesting",
+      "slug": "array-nesting",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/array-nesting/"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "3119",
+  "name": "Maximum Number of Potholes That Can Be Fixed",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-number-of-potholes-that-can-be-fixed/",
+  "slug": "maximum-number-of-potholes-that-can-be-fixed",
+  "isPaidOnly": true,
+  "tags": [
+    "String",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": []
+}

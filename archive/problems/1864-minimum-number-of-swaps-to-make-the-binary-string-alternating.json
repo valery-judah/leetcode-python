@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "1864",
+  "name": "Minimum Number of Swaps to Make the Binary String Alternating",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-binary-string-alternating/",
+  "slug": "minimum-number-of-swaps-to-make-the-binary-string-alternating",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Greedy"
+  ],
+  "similar_questions": []
+}

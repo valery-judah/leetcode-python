@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "1625",
+  "name": "Lexicographically Smallest String After Applying Operations",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/lexicographically-smallest-string-after-applying-operations/",
+  "slug": "lexicographically-smallest-string-after-applying-operations",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Enumeration"
+  ],
+  "similar_questions": [
+    {
+      "title": "Lexicographically Smallest String After Substring Operation",
+      "slug": "lexicographically-smallest-string-after-substring-operation",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/lexicographically-smallest-string-after-substring-operation/"
+    },
+    {
+      "title": "Lexicographically Smallest String After a Swap",
+      "slug": "lexicographically-smallest-string-after-a-swap",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/lexicographically-smallest-string-after-a-swap/"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "category": "",
+  "id": "1735",
+  "name": "Count Ways to Make Array With Product",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/count-ways-to-make-array-with-product/",
+  "slug": "count-ways-to-make-array-with-product",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Combinatorics",
+    "Number Theory"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count the Number of Ideal Arrays",
+      "slug": "count-the-number-of-ideal-arrays",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-the-number-of-ideal-arrays/"
+    },
+    {
+      "title": "Smallest Value After Replacing With Sum of Prime Factors",
+      "slug": "smallest-value-after-replacing-with-sum-of-prime-factors",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/smallest-value-after-replacing-with-sum-of-prime-factors/"
+    },
+    {
+      "title": "Closest Prime Numbers in Range",
+      "slug": "closest-prime-numbers-in-range",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/closest-prime-numbers-in-range/"
+    }
+  ]
+}

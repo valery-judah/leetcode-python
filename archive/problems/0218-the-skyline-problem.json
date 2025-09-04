@@ -1,0 +1,32 @@
+{
+  "category": "",
+  "id": "218",
+  "name": "The Skyline Problem",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/the-skyline-problem/",
+  "slug": "the-skyline-problem",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Divide and Conquer",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Line Sweep",
+    "Heap (Priority Queue)",
+    "Ordered Set"
+  ],
+  "similar_questions": [
+    {
+      "title": "Falling Squares",
+      "slug": "falling-squares",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/falling-squares/"
+    },
+    {
+      "title": "Shifting Letters II",
+      "slug": "shifting-letters-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/shifting-letters-ii/"
+    }
+  ]
+}

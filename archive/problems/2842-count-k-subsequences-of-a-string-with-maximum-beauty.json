@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "2842",
+  "name": "Count K-Subsequences of a String With Maximum Beauty",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/count-k-subsequences-of-a-string-with-maximum-beauty/",
+  "slug": "count-k-subsequences-of-a-string-with-maximum-beauty",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "Math",
+    "String",
+    "Greedy",
+    "Combinatorics"
+  ],
+  "similar_questions": [
+    {
+      "title": "Distinct Subsequences II",
+      "slug": "distinct-subsequences-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/distinct-subsequences-ii/"
+    }
+  ]
+}

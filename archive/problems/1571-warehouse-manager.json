@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "1571",
+  "name": "Warehouse Manager",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/warehouse-manager/",
+  "slug": "warehouse-manager",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

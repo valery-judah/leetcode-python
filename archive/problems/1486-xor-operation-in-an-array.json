@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "1486",
+  "name": "XOR Operation in an Array",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/xor-operation-in-an-array/",
+  "slug": "xor-operation-in-an-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Bit Manipulation"
+  ],
+  "similar_questions": []
+}

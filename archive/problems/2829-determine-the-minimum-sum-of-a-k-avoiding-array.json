@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "2829",
+  "name": "Determine the Minimum Sum of a k-avoiding Array",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/determine-the-minimum-sum-of-a-k-avoiding-array/",
+  "slug": "determine-the-minimum-sum-of-a-k-avoiding-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Greedy"
+  ],
+  "similar_questions": []
+}

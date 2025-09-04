@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "2072",
+  "name": "The Winner University",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/the-winner-university/",
+  "slug": "the-winner-university",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": [
+    {
+      "title": "The Number of Rich Customers",
+      "slug": "the-number-of-rich-customers",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/the-number-of-rich-customers/"
+    }
+  ]
+}

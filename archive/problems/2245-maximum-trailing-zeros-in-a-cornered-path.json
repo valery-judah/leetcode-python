@@ -1,0 +1,34 @@
+{
+  "category": "",
+  "id": "2245",
+  "name": "Maximum Trailing Zeros in a Cornered Path",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-trailing-zeros-in-a-cornered-path/",
+  "slug": "maximum-trailing-zeros-in-a-cornered-path",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Matrix",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Factorial Trailing Zeroes",
+      "slug": "factorial-trailing-zeroes",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/factorial-trailing-zeroes/"
+    },
+    {
+      "title": "Bomb Enemy",
+      "slug": "bomb-enemy",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/bomb-enemy/"
+    },
+    {
+      "title": "Abbreviating the Product of a Range",
+      "slug": "abbreviating-the-product-of-a-range",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/abbreviating-the-product-of-a-range/"
+    }
+  ]
+}

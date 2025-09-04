@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "436",
+  "name": "Find Right Interval",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-right-interval/",
+  "slug": "find-right-interval",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Data Stream as Disjoint Intervals",
+      "slug": "data-stream-as-disjoint-intervals",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/data-stream-as-disjoint-intervals/"
+    }
+  ]
+}

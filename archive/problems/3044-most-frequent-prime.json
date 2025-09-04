@@ -1,0 +1,19 @@
+{
+  "category": "",
+  "id": "3044",
+  "name": "Most Frequent Prime",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/most-frequent-prime/",
+  "slug": "most-frequent-prime",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Matrix",
+    "Counting",
+    "Enumeration",
+    "Number Theory"
+  ],
+  "similar_questions": []
+}

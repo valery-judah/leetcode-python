@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "3267",
+  "name": "Count Almost Equal Pairs II",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/count-almost-equal-pairs-ii/",
+  "slug": "count-almost-equal-pairs-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting",
+    "Counting",
+    "Enumeration"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find the Occurrence of First Almost Equal Substring",
+      "slug": "find-the-occurrence-of-first-almost-equal-substring",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-occurrence-of-first-almost-equal-substring/"
+    }
+  ]
+}

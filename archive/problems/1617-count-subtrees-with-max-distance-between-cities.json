@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "1617",
+  "name": "Count Subtrees With Max Distance Between Cities",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/count-subtrees-with-max-distance-between-cities/",
+  "slug": "count-subtrees-with-max-distance-between-cities",
+  "isPaidOnly": false,
+  "tags": [
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Tree",
+    "Enumeration",
+    "Bitmask"
+  ],
+  "similar_questions": [
+    {
+      "title": "Tree Diameter",
+      "slug": "tree-diameter",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/tree-diameter/"
+    }
+  ]
+}

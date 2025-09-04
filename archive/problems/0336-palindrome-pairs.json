@@ -1,0 +1,41 @@
+{
+  "category": "",
+  "id": "336",
+  "name": "Palindrome Pairs",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/palindrome-pairs/",
+  "slug": "palindrome-pairs",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Trie"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longest Palindromic Substring",
+      "slug": "longest-palindromic-substring",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-palindromic-substring/"
+    },
+    {
+      "title": "Shortest Palindrome",
+      "slug": "shortest-palindrome",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/shortest-palindrome/"
+    },
+    {
+      "title": "Longest Palindrome by Concatenating Two Letter Words",
+      "slug": "longest-palindrome-by-concatenating-two-letter-words",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/"
+    },
+    {
+      "title": "Find Maximum Number of String Pairs",
+      "slug": "find-maximum-number-of-string-pairs",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-maximum-number-of-string-pairs/"
+    }
+  ]
+}

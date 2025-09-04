@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "3621",
+  "name": "Number of Integers With Popcount-Depth Equal to K I",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-i/",
+  "slug": "number-of-integers-with-popcount-depth-equal-to-k-i",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Combinatorics"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find Pattern in Infinite Stream II",
+      "slug": "find-pattern-in-infinite-stream-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-pattern-in-infinite-stream-ii/"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "category": "",
+  "id": "1814",
+  "name": "Count Nice Pairs in an Array",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-nice-pairs-in-an-array/",
+  "slug": "count-nice-pairs-in-an-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Number of Pairs of Interchangeable Rectangles",
+      "slug": "number-of-pairs-of-interchangeable-rectangles",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/"
+    },
+    {
+      "title": "Count Number of Bad Pairs",
+      "slug": "count-number-of-bad-pairs",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-number-of-bad-pairs/"
+    },
+    {
+      "title": "Number of Pairs Satisfying Inequality",
+      "slug": "number-of-pairs-satisfying-inequality",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-pairs-satisfying-inequality/"
+    }
+  ]
+}

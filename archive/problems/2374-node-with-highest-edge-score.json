@@ -1,0 +1,33 @@
+{
+  "category": "",
+  "id": "2374",
+  "name": "Node With Highest Edge Score",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/node-with-highest-edge-score/",
+  "slug": "node-with-highest-edge-score",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "Graph"
+  ],
+  "similar_questions": [
+    {
+      "title": "Two Sum",
+      "slug": "two-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/two-sum/"
+    },
+    {
+      "title": "Sort Characters By Frequency",
+      "slug": "sort-characters-by-frequency",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sort-characters-by-frequency/"
+    },
+    {
+      "title": "Sort Array by Increasing Frequency",
+      "slug": "sort-array-by-increasing-frequency",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sort-array-by-increasing-frequency/"
+    }
+  ]
+}

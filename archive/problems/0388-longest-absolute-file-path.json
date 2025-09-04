@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "388",
+  "name": "Longest Absolute File Path",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/longest-absolute-file-path/",
+  "slug": "longest-absolute-file-path",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Stack",
+    "Depth-First Search"
+  ],
+  "similar_questions": []
+}

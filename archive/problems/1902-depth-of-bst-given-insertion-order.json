@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "1902",
+  "name": "Depth of BST Given Insertion Order",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/depth-of-bst-given-insertion-order/",
+  "slug": "depth-of-bst-given-insertion-order",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Tree",
+    "Binary Search Tree",
+    "Binary Tree",
+    "Ordered Set"
+  ],
+  "similar_questions": []
+}

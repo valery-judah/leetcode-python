@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "1640",
+  "name": "Check Array Formation Through Concatenation",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/check-array-formation-through-concatenation/",
+  "slug": "check-array-formation-through-concatenation",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "2460",
+  "name": "Apply Operations to an Array",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/apply-operations-to-an-array/",
+  "slug": "apply-operations-to-an-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Remove Duplicates from Sorted Array",
+      "slug": "remove-duplicates-from-sorted-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/"
+    },
+    {
+      "title": "Move Zeroes",
+      "slug": "move-zeroes",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/move-zeroes/"
+    }
+  ]
+}

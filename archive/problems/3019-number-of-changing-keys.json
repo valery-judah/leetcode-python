@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "3019",
+  "name": "Number of Changing Keys",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/number-of-changing-keys/",
+  "slug": "number-of-changing-keys",
+  "isPaidOnly": false,
+  "tags": [
+    "String"
+  ],
+  "similar_questions": []
+}

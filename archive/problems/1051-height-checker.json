@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1051",
+  "name": "Height Checker",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/height-checker/",
+  "slug": "height-checker",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Sorting",
+    "Counting Sort"
+  ],
+  "similar_questions": []
+}

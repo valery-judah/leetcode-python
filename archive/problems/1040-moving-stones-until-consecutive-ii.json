@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "1040",
+  "name": "Moving Stones Until Consecutive II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/moving-stones-until-consecutive-ii/",
+  "slug": "moving-stones-until-consecutive-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Sliding Window",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Number of Operations to Make Array Continuous",
+      "slug": "minimum-number-of-operations-to-make-array-continuous",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-number-of-operations-to-make-array-continuous/"
+    }
+  ]
+}

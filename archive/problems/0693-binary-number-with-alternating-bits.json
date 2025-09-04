@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "693",
+  "name": "Binary Number with Alternating Bits",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/binary-number-with-alternating-bits/",
+  "slug": "binary-number-with-alternating-bits",
+  "isPaidOnly": false,
+  "tags": [
+    "Bit Manipulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Number of 1 Bits",
+      "slug": "number-of-1-bits",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-1-bits/"
+    }
+  ]
+}

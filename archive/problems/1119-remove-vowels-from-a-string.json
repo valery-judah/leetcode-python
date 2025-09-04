@@ -1,0 +1,26 @@
+{
+  "category": "",
+  "id": "1119",
+  "name": "Remove Vowels from a String",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/remove-vowels-from-a-string/",
+  "slug": "remove-vowels-from-a-string",
+  "isPaidOnly": true,
+  "tags": [
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Reverse Vowels of a String",
+      "slug": "reverse-vowels-of-a-string",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/reverse-vowels-of-a-string/"
+    },
+    {
+      "title": "Remove Digit From Number to Maximize Result",
+      "slug": "remove-digit-from-number-to-maximize-result",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/remove-digit-from-number-to-maximize-result/"
+    }
+  ]
+}

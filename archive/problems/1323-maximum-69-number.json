@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "1323",
+  "name": "Maximum 69 Number",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/maximum-69-number/",
+  "slug": "maximum-69-number",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Greedy"
+  ],
+  "similar_questions": []
+}

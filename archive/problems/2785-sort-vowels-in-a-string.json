@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "2785",
+  "name": "Sort Vowels in a String",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/sort-vowels-in-a-string/",
+  "slug": "sort-vowels-in-a-string",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Reverse Vowels of a String",
+      "slug": "reverse-vowels-of-a-string",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/reverse-vowels-of-a-string/"
+    }
+  ]
+}

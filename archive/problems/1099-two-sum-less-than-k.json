@@ -1,0 +1,41 @@
+{
+  "category": "",
+  "id": "1099",
+  "name": "Two Sum Less Than K",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/two-sum-less-than-k/",
+  "slug": "two-sum-less-than-k",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Two Sum",
+      "slug": "two-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/two-sum/"
+    },
+    {
+      "title": "Two Sum II - Input Array Is Sorted",
+      "slug": "two-sum-ii-input-array-is-sorted",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/"
+    },
+    {
+      "title": "3Sum Smaller",
+      "slug": "3sum-smaller",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/3sum-smaller/"
+    },
+    {
+      "title": "Subarray Product Less Than K",
+      "slug": "subarray-product-less-than-k",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/subarray-product-less-than-k/"
+    }
+  ]
+}

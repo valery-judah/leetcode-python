@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "3419",
+  "name": "Minimize the Maximum Edge Weight of Graph",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimize-the-maximum-edge-weight-of-graph/",
+  "slug": "minimize-the-maximum-edge-weight-of-graph",
+  "isPaidOnly": false,
+  "tags": [
+    "Binary Search",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph",
+    "Shortest Path"
+  ],
+  "similar_questions": []
+}

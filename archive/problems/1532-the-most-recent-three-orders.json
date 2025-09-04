@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "1532",
+  "name": "The Most Recent Three Orders",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/the-most-recent-three-orders/",
+  "slug": "the-most-recent-three-orders",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": [
+    {
+      "title": "The Most Recent Orders for Each Product",
+      "slug": "the-most-recent-orders-for-each-product",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/the-most-recent-orders-for-each-product/"
+    }
+  ]
+}

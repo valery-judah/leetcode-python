@@ -1,0 +1,35 @@
+{
+  "category": "",
+  "id": "2049",
+  "name": "Count Nodes With the Highest Score",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-nodes-with-the-highest-score/",
+  "slug": "count-nodes-with-the-highest-score",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Sum of Distances in Tree",
+      "slug": "sum-of-distances-in-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sum-of-distances-in-tree/"
+    },
+    {
+      "title": "Delete Nodes And Return Forest",
+      "slug": "delete-nodes-and-return-forest",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/delete-nodes-and-return-forest/"
+    },
+    {
+      "title": "Maximum Product of Splitted Binary Tree",
+      "slug": "maximum-product-of-splitted-binary-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "category": "",
+  "id": "31",
+  "name": "Next Permutation",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/next-permutation/",
+  "slug": "next-permutation",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers"
+  ],
+  "similar_questions": [
+    {
+      "title": "Permutations",
+      "slug": "permutations",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/permutations/"
+    },
+    {
+      "title": "Permutations II",
+      "slug": "permutations-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/permutations-ii/"
+    },
+    {
+      "title": "Permutation Sequence",
+      "slug": "permutation-sequence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/permutation-sequence/"
+    },
+    {
+      "title": "Palindrome Permutation II",
+      "slug": "palindrome-permutation-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/palindrome-permutation-ii/"
+    },
+    {
+      "title": "Minimum Adjacent Swaps to Reach the Kth Smallest Number",
+      "slug": "minimum-adjacent-swaps-to-reach-the-kth-smallest-number",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-adjacent-swaps-to-reach-the-kth-smallest-number/"
+    }
+  ]
+}

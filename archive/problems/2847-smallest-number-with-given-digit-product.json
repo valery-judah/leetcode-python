@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "2847",
+  "name": "Smallest Number With Given Digit Product",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/smallest-number-with-given-digit-product/",
+  "slug": "smallest-number-with-given-digit-product",
+  "isPaidOnly": true,
+  "tags": [
+    "Math",
+    "Greedy"
+  ],
+  "similar_questions": [
+    {
+      "title": "Smallest Divisible Digit Product I",
+      "slug": "smallest-divisible-digit-product-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/smallest-divisible-digit-product-i/"
+    },
+    {
+      "title": "Smallest Divisible Digit Product II",
+      "slug": "smallest-divisible-digit-product-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/smallest-divisible-digit-product-ii/"
+    }
+  ]
+}

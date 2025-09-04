@@ -1,0 +1,70 @@
+{
+  "category": "",
+  "id": "462",
+  "name": "Minimum Moves to Equal Array Elements II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/",
+  "slug": "minimum-moves-to-equal-array-elements-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Best Meeting Point",
+      "slug": "best-meeting-point",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/best-meeting-point/"
+    },
+    {
+      "title": "Minimum Moves to Equal Array Elements",
+      "slug": "minimum-moves-to-equal-array-elements",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-moves-to-equal-array-elements/"
+    },
+    {
+      "title": "Minimum Operations to Make a Uni-Value Grid",
+      "slug": "minimum-operations-to-make-a-uni-value-grid",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-operations-to-make-a-uni-value-grid/"
+    },
+    {
+      "title": "Removing Minimum Number of Magic Beans",
+      "slug": "removing-minimum-number-of-magic-beans",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/removing-minimum-number-of-magic-beans/"
+    },
+    {
+      "title": "Minimum Cost to Make Array Equal",
+      "slug": "minimum-cost-to-make-array-equal",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-cost-to-make-array-equal/"
+    },
+    {
+      "title": "Minimum Operations to Make All Array Elements Equal",
+      "slug": "minimum-operations-to-make-all-array-elements-equal",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-operations-to-make-all-array-elements-equal/"
+    },
+    {
+      "title": "Minimum Cost to Make Array Equalindromic",
+      "slug": "minimum-cost-to-make-array-equalindromic",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-cost-to-make-array-equalindromic/"
+    },
+    {
+      "title": "Minimum Operations to Make Subarray Elements Equal",
+      "slug": "minimum-operations-to-make-subarray-elements-equal",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-operations-to-make-subarray-elements-equal/"
+    },
+    {
+      "title": "Minimum Operations to Make Elements Within K Subarrays Equal",
+      "slug": "minimum-operations-to-make-elements-within-k-subarrays-equal",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-operations-to-make-elements-within-k-subarrays-equal/"
+    }
+  ]
+}

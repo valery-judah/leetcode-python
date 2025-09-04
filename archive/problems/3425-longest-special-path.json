@@ -1,0 +1,30 @@
+{
+  "category": "",
+  "id": "3425",
+  "name": "Longest Special Path",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/longest-special-path/",
+  "slug": "longest-special-path",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Frog Position After T Seconds",
+      "slug": "frog-position-after-t-seconds",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/frog-position-after-t-seconds/"
+    },
+    {
+      "title": "Longest Special Path II",
+      "slug": "longest-special-path-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-special-path-ii/"
+    }
+  ]
+}

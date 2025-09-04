@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "475",
+  "name": "Heaters",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/heaters/",
+  "slug": "heaters",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Sorting"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "2699",
+  "name": "Modify Graph Edge Weights",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/modify-graph-edge-weights/",
+  "slug": "modify-graph-edge-weights",
+  "isPaidOnly": false,
+  "tags": [
+    "Graph",
+    "Heap (Priority Queue)",
+    "Shortest Path"
+  ],
+  "similar_questions": []
+}

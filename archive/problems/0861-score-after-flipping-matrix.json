@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "861",
+  "name": "Score After Flipping Matrix",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/score-after-flipping-matrix/",
+  "slug": "score-after-flipping-matrix",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Bit Manipulation",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Remove All Ones With Row and Column Flips",
+      "slug": "remove-all-ones-with-row-and-column-flips",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/remove-all-ones-with-row-and-column-flips/"
+    }
+  ]
+}

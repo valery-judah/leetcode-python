@@ -1,0 +1,38 @@
+{
+  "category": "",
+  "id": "1649",
+  "name": "Create Sorted Array through Instructions",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/create-sorted-array-through-instructions/",
+  "slug": "create-sorted-array-through-instructions",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Divide and Conquer",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Merge Sort",
+    "Ordered Set"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Good Triplets in an Array",
+      "slug": "count-good-triplets-in-an-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-good-triplets-in-an-array/"
+    },
+    {
+      "title": "Longest Substring of One Repeating Character",
+      "slug": "longest-substring-of-one-repeating-character",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-substring-of-one-repeating-character/"
+    },
+    {
+      "title": "Sort Array by Moving Items to Empty Space",
+      "slug": "sort-array-by-moving-items-to-empty-space",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sort-array-by-moving-items-to-empty-space/"
+    }
+  ]
+}

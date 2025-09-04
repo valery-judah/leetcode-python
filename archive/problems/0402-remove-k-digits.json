@@ -1,0 +1,53 @@
+{
+  "category": "",
+  "id": "402",
+  "name": "Remove K Digits",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/remove-k-digits/",
+  "slug": "remove-k-digits",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Stack",
+    "Greedy",
+    "Monotonic Stack"
+  ],
+  "similar_questions": [
+    {
+      "title": "Create Maximum Number",
+      "slug": "create-maximum-number",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/create-maximum-number/"
+    },
+    {
+      "title": "Monotone Increasing Digits",
+      "slug": "monotone-increasing-digits",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/monotone-increasing-digits/"
+    },
+    {
+      "title": "Find the Most Competitive Subsequence",
+      "slug": "find-the-most-competitive-subsequence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-most-competitive-subsequence/"
+    },
+    {
+      "title": "Append K Integers With Minimal Sum",
+      "slug": "append-k-integers-with-minimal-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/append-k-integers-with-minimal-sum/"
+    },
+    {
+      "title": "Remove Digit From Number to Maximize Result",
+      "slug": "remove-digit-from-number-to-maximize-result",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/remove-digit-from-number-to-maximize-result/"
+    },
+    {
+      "title": "Minimum Operations to Make a Special Number",
+      "slug": "minimum-operations-to-make-a-special-number",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-operations-to-make-a-special-number/"
+    }
+  ]
+}

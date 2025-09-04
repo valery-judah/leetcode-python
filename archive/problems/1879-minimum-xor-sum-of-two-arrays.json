@@ -1,0 +1,35 @@
+{
+  "category": "",
+  "id": "1879",
+  "name": "Minimum XOR Sum of Two Arrays",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-xor-sum-of-two-arrays/",
+  "slug": "minimum-xor-sum-of-two-arrays",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Bitmask"
+  ],
+  "similar_questions": [
+    {
+      "title": "Fair Distribution of Cookies",
+      "slug": "fair-distribution-of-cookies",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/fair-distribution-of-cookies/"
+    },
+    {
+      "title": "Choose Numbers From Two Arrays in Range",
+      "slug": "choose-numbers-from-two-arrays-in-range",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/choose-numbers-from-two-arrays-in-range/"
+    },
+    {
+      "title": "Maximum AND Sum of Array",
+      "slug": "maximum-and-sum-of-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-and-sum-of-array/"
+    }
+  ]
+}

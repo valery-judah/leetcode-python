@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "3125",
+  "name": "Maximum Number That Makes Result of Bitwise AND Zero",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-number-that-makes-result-of-bitwise-and-zero/",
+  "slug": "maximum-number-that-makes-result-of-bitwise-and-zero",
+  "isPaidOnly": true,
+  "tags": [
+    "String",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,34 @@
+{
+  "category": "",
+  "id": "2509",
+  "name": "Cycle Length Queries in a Tree",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/cycle-length-queries-in-a-tree/",
+  "slug": "cycle-length-queries-in-a-tree",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Tree",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Populating Next Right Pointers in Each Node",
+      "slug": "populating-next-right-pointers-in-each-node",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/populating-next-right-pointers-in-each-node/"
+    },
+    {
+      "title": "Lowest Common Ancestor of a Binary Tree",
+      "slug": "lowest-common-ancestor-of-a-binary-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/"
+    },
+    {
+      "title": "Path In Zigzag Labelled Binary Tree",
+      "slug": "path-in-zigzag-labelled-binary-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/path-in-zigzag-labelled-binary-tree/"
+    }
+  ]
+}

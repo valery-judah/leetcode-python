@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "1889",
+  "name": "Minimum Space Wasted From Packaging",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-space-wasted-from-packaging/",
+  "slug": "minimum-space-wasted-from-packaging",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Sorting",
+    "Prefix Sum"
+  ],
+  "similar_questions": []
+}

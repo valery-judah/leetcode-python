@@ -1,0 +1,35 @@
+{
+  "category": "",
+  "id": "2197",
+  "name": "Replace Non-Coprime Numbers in Array",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/replace-non-coprime-numbers-in-array/",
+  "slug": "replace-non-coprime-numbers-in-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Stack",
+    "Number Theory"
+  ],
+  "similar_questions": [
+    {
+      "title": "Remove All Adjacent Duplicates in String II",
+      "slug": "remove-all-adjacent-duplicates-in-string-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/"
+    },
+    {
+      "title": "Number of Pairs of Interchangeable Rectangles",
+      "slug": "number-of-pairs-of-interchangeable-rectangles",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/"
+    },
+    {
+      "title": "Split the Array to Make Coprime Products",
+      "slug": "split-the-array-to-make-coprime-products",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/split-the-array-to-make-coprime-products/"
+    }
+  ]
+}

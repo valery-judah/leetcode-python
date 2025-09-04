@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "2492",
+  "name": "Minimum Score of a Path Between Two Cities",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/",
+  "slug": "minimum-score-of-a-path-between-two-cities",
+  "isPaidOnly": false,
+  "tags": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union Find",
+    "Graph"
+  ],
+  "similar_questions": [
+    {
+      "title": "Checking Existence of Edge Length Limited Paths",
+      "slug": "checking-existence-of-edge-length-limited-paths",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/checking-existence-of-edge-length-limited-paths/"
+    },
+    {
+      "title": "Checking Existence of Edge Length Limited Paths II",
+      "slug": "checking-existence-of-edge-length-limited-paths-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/checking-existence-of-edge-length-limited-paths-ii/"
+    }
+  ]
+}

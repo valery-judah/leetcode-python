@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "3443",
+  "name": "Maximum Manhattan Distance After K Changes",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-manhattan-distance-after-k-changes/",
+  "slug": "maximum-manhattan-distance-after-k-changes",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "Math",
+    "String",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "As Far from Land as Possible",
+      "slug": "as-far-from-land-as-possible",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/as-far-from-land-as-possible/"
+    }
+  ]
+}

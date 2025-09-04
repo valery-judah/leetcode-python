@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "563",
+  "name": "Binary Tree Tilt",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/binary-tree-tilt/",
+  "slug": "binary-tree-tilt",
+  "isPaidOnly": false,
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find All The Lonely Nodes",
+      "slug": "find-all-the-lonely-nodes",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-all-the-lonely-nodes/"
+    }
+  ]
+}

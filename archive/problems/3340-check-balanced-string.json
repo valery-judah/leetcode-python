@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "3340",
+  "name": "Check Balanced String",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/check-balanced-string/",
+  "slug": "check-balanced-string",
+  "isPaidOnly": false,
+  "tags": [
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Balanced Binary Tree",
+      "slug": "balanced-binary-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/balanced-binary-tree/"
+    }
+  ]
+}

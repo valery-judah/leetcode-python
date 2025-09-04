@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "2053",
+  "name": "Kth Distinct String in an Array",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/kth-distinct-string-in-an-array/",
+  "slug": "kth-distinct-string-in-an-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Common Words With One Occurrence",
+      "slug": "count-common-words-with-one-occurrence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-common-words-with-one-occurrence/"
+    }
+  ]
+}

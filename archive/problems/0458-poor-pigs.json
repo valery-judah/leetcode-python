@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "458",
+  "name": "Poor Pigs",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/poor-pigs/",
+  "slug": "poor-pigs",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Combinatorics"
+  ],
+  "similar_questions": []
+}

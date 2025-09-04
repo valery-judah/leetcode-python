@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "2501",
+  "name": "Longest Square Streak in an Array",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/longest-square-streak-in-an-array/",
+  "slug": "longest-square-streak-in-an-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Dynamic Programming",
+    "Sorting"
+  ],
+  "similar_questions": []
+}

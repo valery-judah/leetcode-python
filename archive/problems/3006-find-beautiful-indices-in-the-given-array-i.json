@@ -1,0 +1,18 @@
+{
+  "category": "",
+  "id": "3006",
+  "name": "Find Beautiful Indices in the Given Array I",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-beautiful-indices-in-the-given-array-i/",
+  "slug": "find-beautiful-indices-in-the-given-array-i",
+  "isPaidOnly": false,
+  "tags": [
+    "Two Pointers",
+    "String",
+    "Binary Search",
+    "Rolling Hash",
+    "String Matching",
+    "Hash Function"
+  ],
+  "similar_questions": []
+}

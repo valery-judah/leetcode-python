@@ -1,0 +1,25 @@
+{
+  "category": "",
+  "id": "2223",
+  "name": "Sum of Scores of Built Strings",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/sum-of-scores-of-built-strings/",
+  "slug": "sum-of-scores-of-built-strings",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Binary Search",
+    "Rolling Hash",
+    "Suffix Array",
+    "String Matching",
+    "Hash Function"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longest Happy Prefix",
+      "slug": "longest-happy-prefix",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-happy-prefix/"
+    }
+  ]
+}

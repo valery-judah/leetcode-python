@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "3616",
+  "name": "Number of Student Replacements",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/number-of-student-replacements/",
+  "slug": "number-of-student-replacements",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "similar_questions": []
+}

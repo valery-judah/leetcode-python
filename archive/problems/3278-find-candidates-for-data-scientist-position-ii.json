@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "3278",
+  "name": "Find Candidates for Data Scientist Position II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-candidates-for-data-scientist-position-ii/",
+  "slug": "find-candidates-for-data-scientist-position-ii",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

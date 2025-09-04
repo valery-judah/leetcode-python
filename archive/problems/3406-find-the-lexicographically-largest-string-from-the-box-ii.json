@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "3406",
+  "name": "Find the Lexicographically Largest String From the Box II",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/find-the-lexicographically-largest-string-from-the-box-ii/",
+  "slug": "find-the-lexicographically-largest-string-from-the-box-ii",
+  "isPaidOnly": true,
+  "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "similar_questions": []
+}

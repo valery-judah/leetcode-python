@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "3317",
+  "name": "Find the Number of Possible Ways for an Event",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/find-the-number-of-possible-ways-for-an-event/",
+  "slug": "find-the-number-of-possible-ways-for-an-event",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Combinatorics"
+  ],
+  "similar_questions": [
+    {
+      "title": "Kth Smallest Amount With Single Denomination Combination",
+      "slug": "kth-smallest-amount-with-single-denomination-combination",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/kth-smallest-amount-with-single-denomination-combination/"
+    }
+  ]
+}

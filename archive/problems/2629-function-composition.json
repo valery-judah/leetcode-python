@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "2629",
+  "name": "Function Composition",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/function-composition/",
+  "slug": "function-composition",
+  "isPaidOnly": false,
+  "tags": [],
+  "similar_questions": [
+    {
+      "title": "Memoize",
+      "slug": "memoize",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/memoize/"
+    },
+    {
+      "title": "Counter",
+      "slug": "counter",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/counter/"
+    }
+  ]
+}

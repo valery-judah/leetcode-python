@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "1262",
+  "name": "Greatest Sum Divisible by Three",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/greatest-sum-divisible-by-three/",
+  "slug": "greatest-sum-divisible-by-three",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "808",
+  "name": "Soup Servings",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/soup-servings/",
+  "slug": "soup-servings",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Probability and Statistics"
+  ],
+  "similar_questions": []
+}

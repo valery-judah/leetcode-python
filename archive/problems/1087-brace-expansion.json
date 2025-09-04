@@ -1,0 +1,34 @@
+{
+  "category": "",
+  "id": "1087",
+  "name": "Brace Expansion",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/brace-expansion/",
+  "slug": "brace-expansion",
+  "isPaidOnly": true,
+  "tags": [
+    "String",
+    "Backtracking",
+    "Breadth-First Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Decode String",
+      "slug": "decode-string",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/decode-string/"
+    },
+    {
+      "title": "Letter Case Permutation",
+      "slug": "letter-case-permutation",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/letter-case-permutation/"
+    },
+    {
+      "title": "Brace Expansion II",
+      "slug": "brace-expansion-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/brace-expansion-ii/"
+    }
+  ]
+}

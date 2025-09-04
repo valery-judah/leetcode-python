@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "2442",
+  "name": "Count Number of Distinct Integers After Reverse Operations",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-number-of-distinct-integers-after-reverse-operations/",
+  "slug": "count-number-of-distinct-integers-after-reverse-operations",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Reverse Integer",
+      "slug": "reverse-integer",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/reverse-integer/"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1774",
+  "name": "Closest Dessert Cost",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/closest-dessert-cost/",
+  "slug": "closest-dessert-cost",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Backtracking"
+  ],
+  "similar_questions": []
+}

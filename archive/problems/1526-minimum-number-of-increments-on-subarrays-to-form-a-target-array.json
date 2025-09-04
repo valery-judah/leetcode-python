@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "1526",
+  "name": "Minimum Number of Increments on Subarrays to Form a Target Array",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-number-of-increments-on-subarrays-to-form-a-target-array/",
+  "slug": "minimum-number-of-increments-on-subarrays-to-form-a-target-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Stack",
+    "Greedy",
+    "Monotonic Stack"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "978",
+  "name": "Longest Turbulent Subarray",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/longest-turbulent-subarray/",
+  "slug": "longest-turbulent-subarray",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Sliding Window"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Subarray",
+      "slug": "maximum-subarray",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-subarray/"
+    },
+    {
+      "title": "Longest Alternating Subarray",
+      "slug": "longest-alternating-subarray",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-alternating-subarray/"
+    }
+  ]
+}

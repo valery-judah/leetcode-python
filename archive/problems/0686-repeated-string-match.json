@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "686",
+  "name": "Repeated String Match",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/repeated-string-match/",
+  "slug": "repeated-string-match",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "String Matching"
+  ],
+  "similar_questions": [
+    {
+      "title": "Repeated Substring Pattern",
+      "slug": "repeated-substring-pattern",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/repeated-substring-pattern/"
+    }
+  ]
+}

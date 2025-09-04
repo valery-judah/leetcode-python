@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "916",
+  "name": "Word Subsets",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/word-subsets/",
+  "slug": "word-subsets",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "similar_questions": []
+}

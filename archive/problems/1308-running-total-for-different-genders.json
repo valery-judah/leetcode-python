@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "1308",
+  "name": "Running Total for Different Genders",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/running-total-for-different-genders/",
+  "slug": "running-total-for-different-genders",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": [
+    {
+      "title": "Last Person to Fit in the Bus",
+      "slug": "last-person-to-fit-in-the-bus",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/last-person-to-fit-in-the-bus/"
+    }
+  ]
+}

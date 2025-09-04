@@ -1,0 +1,39 @@
+{
+  "category": "",
+  "id": "46",
+  "name": "Permutations",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/permutations/",
+  "slug": "permutations",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Backtracking"
+  ],
+  "similar_questions": [
+    {
+      "title": "Next Permutation",
+      "slug": "next-permutation",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/next-permutation/"
+    },
+    {
+      "title": "Permutations II",
+      "slug": "permutations-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/permutations-ii/"
+    },
+    {
+      "title": "Permutation Sequence",
+      "slug": "permutation-sequence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/permutation-sequence/"
+    },
+    {
+      "title": "Combinations",
+      "slug": "combinations",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/combinations/"
+    }
+  ]
+}

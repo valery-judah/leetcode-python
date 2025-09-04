@@ -1,0 +1,40 @@
+{
+  "category": "",
+  "id": "2545",
+  "name": "Sort the Students by Their Kth Score",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/sort-the-students-by-their-kth-score/",
+  "slug": "sort-the-students-by-their-kth-score",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Sorting",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Erect the Fence",
+      "slug": "erect-the-fence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/erect-the-fence/"
+    },
+    {
+      "title": "Custom Sort String",
+      "slug": "custom-sort-string",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/custom-sort-string/"
+    },
+    {
+      "title": "Sort the People",
+      "slug": "sort-the-people",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sort-the-people/"
+    },
+    {
+      "title": "Sort Threats by Severity and Exploitability",
+      "slug": "sort-threats-by-severity-and-exploitability",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sort-threats-by-severity-and-exploitability/"
+    }
+  ]
+}

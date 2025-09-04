@@ -1,0 +1,40 @@
+{
+  "category": "",
+  "id": "2578",
+  "name": "Split With Minimum Sum",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/split-with-minimum-sum/",
+  "slug": "split-with-minimum-sum",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Partition Equal Subset Sum",
+      "slug": "partition-equal-subset-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/partition-equal-subset-sum/"
+    },
+    {
+      "title": "Minimum Cost to Move Chips to The Same Position",
+      "slug": "minimum-cost-to-move-chips-to-the-same-position",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-cost-to-move-chips-to-the-same-position/"
+    },
+    {
+      "title": "Partition Array Into Two Arrays to Minimize Sum Difference",
+      "slug": "partition-array-into-two-arrays-to-minimize-sum-difference",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/"
+    },
+    {
+      "title": "Minimum Sum of Values by Dividing Array",
+      "slug": "minimum-sum-of-values-by-dividing-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-sum-of-values-by-dividing-array/"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "category": "",
+  "id": "2459",
+  "name": "Sort Array by Moving Items to Empty Space",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/sort-array-by-moving-items-to-empty-space/",
+  "slug": "sort-array-by-moving-items-to-empty-space",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Course Schedule II",
+      "slug": "course-schedule-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/course-schedule-ii/"
+    },
+    {
+      "title": "Strange Printer II",
+      "slug": "strange-printer-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/strange-printer-ii/"
+    },
+    {
+      "title": "Create Sorted Array through Instructions",
+      "slug": "create-sorted-array-through-instructions",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/create-sorted-array-through-instructions/"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "894",
+  "name": "All Possible Full Binary Trees",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/all-possible-full-binary-trees/",
+  "slug": "all-possible-full-binary-trees",
+  "isPaidOnly": false,
+  "tags": [
+    "Dynamic Programming",
+    "Tree",
+    "Recursion",
+    "Memoization",
+    "Binary Tree"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,25 @@
+{
+  "category": "",
+  "id": "2371",
+  "name": "Minimize Maximum Value in a Grid",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimize-maximum-value-in-a-grid/",
+  "slug": "minimize-maximum-value-in-a-grid",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Union Find",
+    "Graph",
+    "Topological Sort",
+    "Sorting",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Candy",
+      "slug": "candy",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/candy/"
+    }
+  ]
+}

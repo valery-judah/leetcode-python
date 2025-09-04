@@ -1,0 +1,18 @@
+{
+  "category": "",
+  "id": "1467",
+  "name": "Probability of a Two Boxes Having The Same Number of Distinct Balls",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/probability-of-a-two-boxes-having-the-same-number-of-distinct-balls/",
+  "slug": "probability-of-a-two-boxes-having-the-same-number-of-distinct-balls",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Backtracking",
+    "Combinatorics",
+    "Probability and Statistics"
+  ],
+  "similar_questions": []
+}

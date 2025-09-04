@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "1624",
+  "name": "Largest Substring Between Two Equal Characters",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/largest-substring-between-two-equal-characters/",
+  "slug": "largest-substring-between-two-equal-characters",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "similar_questions": []
+}

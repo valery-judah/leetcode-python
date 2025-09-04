@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "2970",
+  "name": "Count the Number of Incremovable Subarrays I",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-i/",
+  "slug": "count-the-number-of-incremovable-subarrays-i",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Enumeration"
+  ],
+  "similar_questions": [
+    {
+      "title": "Shortest Subarray to be Removed to Make Array Sorted",
+      "slug": "shortest-subarray-to-be-removed-to-make-array-sorted",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/"
+    },
+    {
+      "title": "Number of Subarrays That Match a Pattern I",
+      "slug": "number-of-subarrays-that-match-a-pattern-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-subarrays-that-match-a-pattern-i/"
+    }
+  ]
+}

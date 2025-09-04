@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "2325",
+  "name": "Decode the Message",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/decode-the-message/",
+  "slug": "decode-the-message",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "similar_questions": []
+}

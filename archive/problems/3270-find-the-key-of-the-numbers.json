@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "3270",
+  "name": "Find the Key of the Numbers",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/find-the-key-of-the-numbers/",
+  "slug": "find-the-key-of-the-numbers",
+  "isPaidOnly": false,
+  "tags": [
+    "Math"
+  ],
+  "similar_questions": [
+    {
+      "title": "Largest Number",
+      "slug": "largest-number",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/largest-number/"
+    }
+  ]
+}

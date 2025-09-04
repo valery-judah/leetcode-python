@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1189",
+  "name": "Maximum Number of Balloons",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/maximum-number-of-balloons/",
+  "slug": "maximum-number-of-balloons",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "similar_questions": []
+}

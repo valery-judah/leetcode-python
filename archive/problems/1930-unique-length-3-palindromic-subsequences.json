@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "1930",
+  "name": "Unique Length-3 Palindromic Subsequences",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/unique-length-3-palindromic-subsequences/",
+  "slug": "unique-length-3-palindromic-subsequences",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Bit Manipulation",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Palindromic Subsequences",
+      "slug": "count-palindromic-subsequences",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-palindromic-subsequences/"
+    }
+  ]
+}

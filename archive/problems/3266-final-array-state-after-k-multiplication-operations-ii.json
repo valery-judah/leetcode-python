@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "3266",
+  "name": "Final Array State After K Multiplication Operations II",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/final-array-state-after-k-multiplication-operations-ii/",
+  "slug": "final-array-state-after-k-multiplication-operations-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Heap (Priority Queue)",
+    "Simulation"
+  ],
+  "similar_questions": []
+}

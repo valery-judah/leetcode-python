@@ -1,0 +1,58 @@
+{
+  "category": "",
+  "id": "2461",
+  "name": "Maximum Sum of Distinct Subarrays With Length K",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/",
+  "slug": "maximum-sum-of-distinct-subarrays-with-length-k",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window"
+  ],
+  "similar_questions": [
+    {
+      "title": "Max Consecutive Ones III",
+      "slug": "max-consecutive-ones-iii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/max-consecutive-ones-iii/"
+    },
+    {
+      "title": "Longest Nice Subarray",
+      "slug": "longest-nice-subarray",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-nice-subarray/"
+    },
+    {
+      "title": "Optimal Partition of String",
+      "slug": "optimal-partition-of-string",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/optimal-partition-of-string/"
+    },
+    {
+      "title": "Count the Number of Good Subarrays",
+      "slug": "count-the-number-of-good-subarrays",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-the-number-of-good-subarrays/"
+    },
+    {
+      "title": "Maximum Good Subarray Sum",
+      "slug": "maximum-good-subarray-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-good-subarray-sum/"
+    },
+    {
+      "title": "Find the Power of K-Size Subarrays I",
+      "slug": "find-the-power-of-k-size-subarrays-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-power-of-k-size-subarrays-i/"
+    },
+    {
+      "title": "Find the Power of K-Size Subarrays II",
+      "slug": "find-the-power-of-k-size-subarrays-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-power-of-k-size-subarrays-ii/"
+    }
+  ]
+}

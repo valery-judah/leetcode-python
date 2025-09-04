@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "2955",
+  "name": "Number of Same-End Substrings",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/number-of-same-end-substrings/",
+  "slug": "number-of-same-end-substrings",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Counting",
+    "Prefix Sum"
+  ],
+  "similar_questions": []
+}

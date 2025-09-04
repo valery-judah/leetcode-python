@@ -1,0 +1,35 @@
+{
+  "category": "",
+  "id": "2044",
+  "name": "Count Number of Maximum Bitwise-OR Subsets",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-number-of-maximum-bitwise-or-subsets/",
+  "slug": "count-number-of-maximum-bitwise-or-subsets",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Backtracking",
+    "Bit Manipulation",
+    "Enumeration"
+  ],
+  "similar_questions": [
+    {
+      "title": "Subsets",
+      "slug": "subsets",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/subsets/"
+    },
+    {
+      "title": "Largest Combination With Bitwise AND Greater Than Zero",
+      "slug": "largest-combination-with-bitwise-and-greater-than-zero",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero/"
+    },
+    {
+      "title": "Longest Subarray With Maximum Bitwise AND",
+      "slug": "longest-subarray-with-maximum-bitwise-and",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-subarray-with-maximum-bitwise-and/"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "3257",
+  "name": "Maximum Value Sum by Placing Three Rooks II",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/maximum-value-sum-by-placing-three-rooks-ii/",
+  "slug": "maximum-value-sum-by-placing-three-rooks-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix",
+    "Enumeration"
+  ],
+  "similar_questions": [
+    {
+      "title": "Available Captures for Rook",
+      "slug": "available-captures-for-rook",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/available-captures-for-rook/"
+    }
+  ]
+}

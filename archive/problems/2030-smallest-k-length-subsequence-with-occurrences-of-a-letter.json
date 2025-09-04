@@ -1,0 +1,35 @@
+{
+  "category": "",
+  "id": "2030",
+  "name": "Smallest K-Length Subsequence With Occurrences of a Letter",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/smallest-k-length-subsequence-with-occurrences-of-a-letter/",
+  "slug": "smallest-k-length-subsequence-with-occurrences-of-a-letter",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Stack",
+    "Greedy",
+    "Monotonic Stack"
+  ],
+  "similar_questions": [
+    {
+      "title": "Remove Duplicate Letters",
+      "slug": "remove-duplicate-letters",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/remove-duplicate-letters/"
+    },
+    {
+      "title": "Subarray With Elements Greater Than Varying Threshold",
+      "slug": "subarray-with-elements-greater-than-varying-threshold",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/subarray-with-elements-greater-than-varying-threshold/"
+    },
+    {
+      "title": "Find the Lexicographically Smallest Valid Sequence",
+      "slug": "find-the-lexicographically-smallest-valid-sequence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-lexicographically-smallest-valid-sequence/"
+    }
+  ]
+}

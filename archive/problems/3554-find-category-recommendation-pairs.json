@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "3554",
+  "name": "Find Category Recommendation Pairs",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/find-category-recommendation-pairs/",
+  "slug": "find-category-recommendation-pairs",
+  "isPaidOnly": false,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

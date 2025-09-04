@@ -1,0 +1,39 @@
+{
+  "category": "",
+  "id": "2574",
+  "name": "Left and Right Sum Differences",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/left-and-right-sum-differences/",
+  "slug": "left-and-right-sum-differences",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find Pivot Index",
+      "slug": "find-pivot-index",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-pivot-index/"
+    },
+    {
+      "title": "Find the Middle Index in Array",
+      "slug": "find-the-middle-index-in-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-middle-index-in-array/"
+    },
+    {
+      "title": "Find the Distinct Difference Array",
+      "slug": "find-the-distinct-difference-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-distinct-difference-array/"
+    },
+    {
+      "title": "Find the N-th Value After K Seconds",
+      "slug": "find-the-n-th-value-after-k-seconds",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-n-th-value-after-k-seconds/"
+    }
+  ]
+}

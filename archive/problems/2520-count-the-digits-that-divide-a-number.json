@@ -1,0 +1,26 @@
+{
+  "category": "",
+  "id": "2520",
+  "name": "Count the Digits That Divide a Number",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/count-the-digits-that-divide-a-number/",
+  "slug": "count-the-digits-that-divide-a-number",
+  "isPaidOnly": false,
+  "tags": [
+    "Math"
+  ],
+  "similar_questions": [
+    {
+      "title": "Happy Number",
+      "slug": "happy-number",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/happy-number/"
+    },
+    {
+      "title": "Self Dividing Numbers",
+      "slug": "self-dividing-numbers",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/self-dividing-numbers/"
+    }
+  ]
+}

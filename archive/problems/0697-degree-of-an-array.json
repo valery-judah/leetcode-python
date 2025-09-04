@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "697",
+  "name": "Degree of an Array",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/degree-of-an-array/",
+  "slug": "degree-of-an-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Subarray",
+      "slug": "maximum-subarray",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-subarray/"
+    }
+  ]
+}

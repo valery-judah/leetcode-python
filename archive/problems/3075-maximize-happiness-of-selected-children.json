@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "3075",
+  "name": "Maximize Happiness of Selected Children",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximize-happiness-of-selected-children/",
+  "slug": "maximize-happiness-of-selected-children",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Candies Allocated to K Children",
+      "slug": "maximum-candies-allocated-to-k-children",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-candies-allocated-to-k-children/"
+    }
+  ]
+}

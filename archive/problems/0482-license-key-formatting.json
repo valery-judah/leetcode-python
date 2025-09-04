@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "482",
+  "name": "License Key Formatting",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/license-key-formatting/",
+  "slug": "license-key-formatting",
+  "isPaidOnly": false,
+  "tags": [
+    "String"
+  ],
+  "similar_questions": []
+}

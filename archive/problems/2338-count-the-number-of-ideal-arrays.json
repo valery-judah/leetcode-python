@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "2338",
+  "name": "Count the Number of Ideal Arrays",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/count-the-number-of-ideal-arrays/",
+  "slug": "count-the-number-of-ideal-arrays",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Combinatorics",
+    "Number Theory"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Ways to Make Array With Product",
+      "slug": "count-ways-to-make-array-with-product",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-ways-to-make-array-with-product/"
+    },
+    {
+      "title": "Count the Number of Beautiful Subarrays",
+      "slug": "count-the-number-of-beautiful-subarrays",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-the-number-of-beautiful-subarrays/"
+    }
+  ]
+}

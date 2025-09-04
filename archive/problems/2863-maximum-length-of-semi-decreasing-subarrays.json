@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "2863",
+  "name": "Maximum Length of Semi-Decreasing Subarrays",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-length-of-semi-decreasing-subarrays/",
+  "slug": "maximum-length-of-semi-decreasing-subarrays",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Stack",
+    "Sorting",
+    "Monotonic Stack"
+  ],
+  "similar_questions": []
+}

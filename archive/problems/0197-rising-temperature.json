@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "197",
+  "name": "Rising Temperature",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/rising-temperature/",
+  "slug": "rising-temperature",
+  "isPaidOnly": false,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

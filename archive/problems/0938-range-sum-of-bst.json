@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "938",
+  "name": "Range Sum of BST",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/range-sum-of-bst/",
+  "slug": "range-sum-of-bst",
+  "isPaidOnly": false,
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "similar_questions": []
+}

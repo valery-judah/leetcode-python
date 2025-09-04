@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "1845",
+  "name": "Seat Reservation Manager",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/seat-reservation-manager/",
+  "slug": "seat-reservation-manager",
+  "isPaidOnly": false,
+  "tags": [
+    "Design",
+    "Heap (Priority Queue)"
+  ],
+  "similar_questions": [
+    {
+      "title": "Design Phone Directory",
+      "slug": "design-phone-directory",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/design-phone-directory/"
+    },
+    {
+      "title": "Design a Number Container System",
+      "slug": "design-a-number-container-system",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/design-a-number-container-system/"
+    }
+  ]
+}

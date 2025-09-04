@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "2672",
+  "name": "Number of Adjacent Elements With the Same Color",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/number-of-adjacent-elements-with-the-same-color/",
+  "slug": "number-of-adjacent-elements-with-the-same-color",
+  "isPaidOnly": false,
+  "tags": [
+    "Array"
+  ],
+  "similar_questions": []
+}

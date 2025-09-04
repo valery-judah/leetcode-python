@@ -1,0 +1,47 @@
+{
+  "category": "",
+  "id": "2332",
+  "name": "The Latest Time to Catch a Bus",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/the-latest-time-to-catch-a-bus/",
+  "slug": "the-latest-time-to-catch-a-bus",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Speed to Arrive on Time",
+      "slug": "minimum-speed-to-arrive-on-time",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-speed-to-arrive-on-time/"
+    },
+    {
+      "title": "Maximum Matching of Players With Trainers",
+      "slug": "maximum-matching-of-players-with-trainers",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-matching-of-players-with-trainers/"
+    },
+    {
+      "title": "Time Taken to Cross the Door",
+      "slug": "time-taken-to-cross-the-door",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/time-taken-to-cross-the-door/"
+    },
+    {
+      "title": "Time to Cross a Bridge",
+      "slug": "time-to-cross-a-bridge",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/time-to-cross-a-bridge/"
+    },
+    {
+      "title": "Rearranging Fruits",
+      "slug": "rearranging-fruits",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/rearranging-fruits/"
+    }
+  ]
+}

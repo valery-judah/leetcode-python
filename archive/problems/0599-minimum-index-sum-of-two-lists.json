@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "599",
+  "name": "Minimum Index Sum of Two Lists",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/minimum-index-sum-of-two-lists/",
+  "slug": "minimum-index-sum-of-two-lists",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Intersection of Two Linked Lists",
+      "slug": "intersection-of-two-linked-lists",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/intersection-of-two-linked-lists/"
+    }
+  ]
+}

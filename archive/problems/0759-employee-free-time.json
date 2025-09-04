@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "759",
+  "name": "Employee Free Time",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/employee-free-time/",
+  "slug": "employee-free-time",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Line Sweep",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "similar_questions": [
+    {
+      "title": "Merge Intervals",
+      "slug": "merge-intervals",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/merge-intervals/"
+    },
+    {
+      "title": "Interval List Intersections",
+      "slug": "interval-list-intersections",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/interval-list-intersections/"
+    }
+  ]
+}

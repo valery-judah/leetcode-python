@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "1240",
+  "name": "Tiling a Rectangle with the Fewest Squares",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares/",
+  "slug": "tiling-a-rectangle-with-the-fewest-squares",
+  "isPaidOnly": false,
+  "tags": [
+    "Backtracking"
+  ],
+  "similar_questions": [
+    {
+      "title": "Selling Pieces of Wood",
+      "slug": "selling-pieces-of-wood",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/selling-pieces-of-wood/"
+    }
+  ]
+}

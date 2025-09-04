@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "3329",
+  "name": "Count Substrings With K-Frequency Characters II",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/count-substrings-with-k-frequency-characters-ii/",
+  "slug": "count-substrings-with-k-frequency-characters-ii",
+  "isPaidOnly": true,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Sliding Window"
+  ],
+  "similar_questions": []
+}

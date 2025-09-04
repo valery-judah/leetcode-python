@@ -1,0 +1,26 @@
+{
+  "category": "",
+  "id": "1056",
+  "name": "Confusing Number",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/confusing-number/",
+  "slug": "confusing-number",
+  "isPaidOnly": true,
+  "tags": [
+    "Math"
+  ],
+  "similar_questions": [
+    {
+      "title": "Strobogrammatic Number",
+      "slug": "strobogrammatic-number",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/strobogrammatic-number/"
+    },
+    {
+      "title": "Confusing Number II",
+      "slug": "confusing-number-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/confusing-number-ii/"
+    }
+  ]
+}

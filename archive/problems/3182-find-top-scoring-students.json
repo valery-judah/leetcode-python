@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "3182",
+  "name": "Find Top Scoring Students",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-top-scoring-students/",
+  "slug": "find-top-scoring-students",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

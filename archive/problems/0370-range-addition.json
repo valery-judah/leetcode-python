@@ -1,0 +1,33 @@
+{
+  "category": "",
+  "id": "370",
+  "name": "Range Addition",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/range-addition/",
+  "slug": "range-addition",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Range Addition II",
+      "slug": "range-addition-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/range-addition-ii/"
+    },
+    {
+      "title": "Count Positions on Street With Required Brightness",
+      "slug": "count-positions-on-street-with-required-brightness",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-positions-on-street-with-required-brightness/"
+    },
+    {
+      "title": "Shifting Letters II",
+      "slug": "shifting-letters-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/shifting-letters-ii/"
+    }
+  ]
+}

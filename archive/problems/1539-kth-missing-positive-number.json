@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "1539",
+  "name": "Kth Missing Positive Number",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/kth-missing-positive-number/",
+  "slug": "kth-missing-positive-number",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Append K Integers With Minimal Sum",
+      "slug": "append-k-integers-with-minimal-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/append-k-integers-with-minimal-sum/"
+    }
+  ]
+}

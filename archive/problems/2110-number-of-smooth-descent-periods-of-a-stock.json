@@ -1,0 +1,34 @@
+{
+  "category": "",
+  "id": "2110",
+  "name": "Number of Smooth Descent Periods of a Stock",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/number-of-smooth-descent-periods-of-a-stock/",
+  "slug": "number-of-smooth-descent-periods-of-a-stock",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Subarray Product Less Than K",
+      "slug": "subarray-product-less-than-k",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/subarray-product-less-than-k/"
+    },
+    {
+      "title": "Number of Valid Subarrays",
+      "slug": "number-of-valid-subarrays",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-valid-subarrays/"
+    },
+    {
+      "title": "Number of Zero-Filled Subarrays",
+      "slug": "number-of-zero-filled-subarrays",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-zero-filled-subarrays/"
+    }
+  ]
+}

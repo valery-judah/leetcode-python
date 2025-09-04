@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "3049",
+  "name": "Earliest Second to Mark Indices II",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/earliest-second-to-mark-indices-ii/",
+  "slug": "earliest-second-to-mark-indices-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Greedy",
+    "Heap (Priority Queue)"
+  ],
+  "similar_questions": []
+}

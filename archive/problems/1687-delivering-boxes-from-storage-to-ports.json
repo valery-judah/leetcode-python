@@ -1,0 +1,19 @@
+{
+  "category": "",
+  "id": "1687",
+  "name": "Delivering Boxes from Storage to Ports",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/delivering-boxes-from-storage-to-ports/",
+  "slug": "delivering-boxes-from-storage-to-ports",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Segment Tree",
+    "Queue",
+    "Heap (Priority Queue)",
+    "Prefix Sum",
+    "Monotonic Queue"
+  ],
+  "similar_questions": []
+}

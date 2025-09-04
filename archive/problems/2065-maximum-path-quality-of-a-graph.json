@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "2065",
+  "name": "Maximum Path Quality of a Graph",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/maximum-path-quality-of-a-graph/",
+  "slug": "maximum-path-quality-of-a-graph",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Backtracking",
+    "Graph"
+  ],
+  "similar_questions": [
+    {
+      "title": "Cherry Pickup",
+      "slug": "cherry-pickup",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/cherry-pickup/"
+    },
+    {
+      "title": "Minimum Cost to Reach Destination in Time",
+      "slug": "minimum-cost-to-reach-destination-in-time",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-cost-to-reach-destination-in-time/"
+    }
+  ]
+}

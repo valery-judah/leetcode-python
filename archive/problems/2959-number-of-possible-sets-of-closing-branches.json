@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "2959",
+  "name": "Number of Possible Sets of Closing Branches",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/number-of-possible-sets-of-closing-branches/",
+  "slug": "number-of-possible-sets-of-closing-branches",
+  "isPaidOnly": false,
+  "tags": [
+    "Bit Manipulation",
+    "Graph",
+    "Heap (Priority Queue)",
+    "Enumeration",
+    "Shortest Path"
+  ],
+  "similar_questions": []
+}

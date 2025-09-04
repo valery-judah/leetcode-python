@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "3401",
+  "name": "Find Circular Gift Exchange Chains",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/find-circular-gift-exchange-chains/",
+  "slug": "find-circular-gift-exchange-chains",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,52 @@
+{
+  "category": "",
+  "id": "2006",
+  "name": "Count Number of Pairs With Absolute Difference K",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/",
+  "slug": "count-number-of-pairs-with-absolute-difference-k",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Two Sum",
+      "slug": "two-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/two-sum/"
+    },
+    {
+      "title": "K-diff Pairs in an Array",
+      "slug": "k-diff-pairs-in-an-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/k-diff-pairs-in-an-array/"
+    },
+    {
+      "title": "Finding Pairs With a Certain Sum",
+      "slug": "finding-pairs-with-a-certain-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/finding-pairs-with-a-certain-sum/"
+    },
+    {
+      "title": "Count Equal and Divisible Pairs in an Array",
+      "slug": "count-equal-and-divisible-pairs-in-an-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-equal-and-divisible-pairs-in-an-array/"
+    },
+    {
+      "title": "Count Number of Bad Pairs",
+      "slug": "count-number-of-bad-pairs",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-number-of-bad-pairs/"
+    },
+    {
+      "title": "Count the Number of Fair Pairs",
+      "slug": "count-the-number-of-fair-pairs",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-the-number-of-fair-pairs/"
+    }
+  ]
+}

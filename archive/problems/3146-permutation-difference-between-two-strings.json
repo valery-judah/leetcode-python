@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "3146",
+  "name": "Permutation Difference between Two Strings",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/permutation-difference-between-two-strings/",
+  "slug": "permutation-difference-between-two-strings",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find the Difference",
+      "slug": "find-the-difference",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-difference/"
+    }
+  ]
+}

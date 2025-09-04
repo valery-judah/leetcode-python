@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "330",
+  "name": "Patching Array",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/patching-array/",
+  "slug": "patching-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Number of Consecutive Values You Can Make",
+      "slug": "maximum-number-of-consecutive-values-you-can-make",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-number-of-consecutive-values-you-can-make/"
+    }
+  ]
+}

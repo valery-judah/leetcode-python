@@ -1,0 +1,18 @@
+{
+  "category": "",
+  "id": "2573",
+  "name": "Find the String with LCP",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/find-the-string-with-lcp/",
+  "slug": "find-the-string-with-lcp",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "String",
+    "Dynamic Programming",
+    "Greedy",
+    "Union Find",
+    "Matrix"
+  ],
+  "similar_questions": []
+}

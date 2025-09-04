@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "3357",
+  "name": "Minimize the Maximum Adjacent Element Difference",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimize-the-maximum-adjacent-element-difference/",
+  "slug": "minimize-the-maximum-adjacent-element-difference",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Greedy"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Absolute Sum Difference",
+      "slug": "minimum-absolute-sum-difference",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-absolute-sum-difference/"
+    },
+    {
+      "title": "Minimize the Maximum Adjacent Element Difference",
+      "slug": "minimize-the-maximum-adjacent-element-difference",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimize-the-maximum-adjacent-element-difference/"
+    }
+  ]
+}

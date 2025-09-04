@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "3603",
+  "name": "Minimum Cost Path with Alternating Directions II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-cost-path-with-alternating-directions-ii/",
+  "slug": "minimum-cost-path-with-alternating-directions-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "similar_questions": []
+}

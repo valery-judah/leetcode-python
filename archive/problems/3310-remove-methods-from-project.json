@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "3310",
+  "name": "Remove Methods From Project",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/remove-methods-from-project/",
+  "slug": "remove-methods-from-project",
+  "isPaidOnly": false,
+  "tags": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph"
+  ],
+  "similar_questions": []
+}

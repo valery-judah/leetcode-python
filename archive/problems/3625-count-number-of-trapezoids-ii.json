@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "3625",
+  "name": "Count Number of Trapezoids II",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/count-number-of-trapezoids-ii/",
+  "slug": "count-number-of-trapezoids-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Geometry"
+  ],
+  "similar_questions": []
+}

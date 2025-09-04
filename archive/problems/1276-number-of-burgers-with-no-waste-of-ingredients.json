@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "1276",
+  "name": "Number of Burgers with No Waste of Ingredients",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/number-of-burgers-with-no-waste-of-ingredients/",
+  "slug": "number-of-burgers-with-no-waste-of-ingredients",
+  "isPaidOnly": false,
+  "tags": [
+    "Math"
+  ],
+  "similar_questions": []
+}

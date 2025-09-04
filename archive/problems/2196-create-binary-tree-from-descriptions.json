@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "2196",
+  "name": "Create Binary Tree From Descriptions",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/create-binary-tree-from-descriptions/",
+  "slug": "create-binary-tree-from-descriptions",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Tree",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Convert Sorted List to Binary Search Tree",
+      "slug": "convert-sorted-list-to-binary-search-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/"
+    },
+    {
+      "title": "Number Of Ways To Reconstruct A Tree",
+      "slug": "number-of-ways-to-reconstruct-a-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-ways-to-reconstruct-a-tree/"
+    }
+  ]
+}

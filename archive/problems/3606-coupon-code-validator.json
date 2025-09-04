@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "3606",
+  "name": "Coupon Code Validator",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/coupon-code-validator/",
+  "slug": "coupon-code-validator",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Sorting"
+  ],
+  "similar_questions": []
+}

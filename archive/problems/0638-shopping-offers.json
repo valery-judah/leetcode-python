@@ -1,0 +1,18 @@
+{
+  "category": "",
+  "id": "638",
+  "name": "Shopping Offers",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/shopping-offers/",
+  "slug": "shopping-offers",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Backtracking",
+    "Bit Manipulation",
+    "Memoization",
+    "Bitmask"
+  ],
+  "similar_questions": []
+}

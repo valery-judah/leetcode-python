@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "2294",
+  "name": "Partition Array Such That Maximum Difference Is K",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/partition-array-such-that-maximum-difference-is-k/",
+  "slug": "partition-array-such-that-maximum-difference-is-k",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit",
+      "slug": "longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/"
+    },
+    {
+      "title": "Maximum Beauty of an Array After Applying Operation",
+      "slug": "maximum-beauty-of-an-array-after-applying-operation",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-beauty-of-an-array-after-applying-operation/"
+    }
+  ]
+}

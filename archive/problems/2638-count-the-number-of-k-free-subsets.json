@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "2638",
+  "name": "Count the Number of K-Free Subsets",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-the-number-of-k-free-subsets/",
+  "slug": "count-the-number-of-k-free-subsets",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Sorting",
+    "Combinatorics"
+  ],
+  "similar_questions": []
+}

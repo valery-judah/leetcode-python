@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "2301",
+  "name": "Match Substring After Replacement",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/match-substring-after-replacement/",
+  "slug": "match-substring-after-replacement",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "String Matching"
+  ],
+  "similar_questions": [
+    {
+      "title": "Design Add and Search Words Data Structure",
+      "slug": "design-add-and-search-words-data-structure",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/design-add-and-search-words-data-structure/"
+    },
+    {
+      "title": "Number of Subarrays That Match a Pattern II",
+      "slug": "number-of-subarrays-that-match-a-pattern-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-subarrays-that-match-a-pattern-ii/"
+    }
+  ]
+}

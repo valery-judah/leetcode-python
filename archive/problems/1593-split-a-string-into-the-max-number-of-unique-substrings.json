@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1593",
+  "name": "Split a String Into the Max Number of Unique Substrings",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/split-a-string-into-the-max-number-of-unique-substrings/",
+  "slug": "split-a-string-into-the-max-number-of-unique-substrings",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Backtracking"
+  ],
+  "similar_questions": []
+}

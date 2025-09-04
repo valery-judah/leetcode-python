@@ -1,0 +1,35 @@
+{
+  "category": "",
+  "id": "398",
+  "name": "Random Pick Index",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/random-pick-index/",
+  "slug": "random-pick-index",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "Math",
+    "Reservoir Sampling",
+    "Randomized"
+  ],
+  "similar_questions": [
+    {
+      "title": "Linked List Random Node",
+      "slug": "linked-list-random-node",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/linked-list-random-node/"
+    },
+    {
+      "title": "Random Pick with Blacklist",
+      "slug": "random-pick-with-blacklist",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/random-pick-with-blacklist/"
+    },
+    {
+      "title": "Random Pick with Weight",
+      "slug": "random-pick-with-weight",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/random-pick-with-weight/"
+    }
+  ]
+}

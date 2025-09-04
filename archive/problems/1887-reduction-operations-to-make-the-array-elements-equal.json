@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "1887",
+  "name": "Reduction Operations to Make the Array Elements Equal",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/reduction-operations-to-make-the-array-elements-equal/",
+  "slug": "reduction-operations-to-make-the-array-elements-equal",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "similar_questions": []
+}

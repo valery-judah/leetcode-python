@@ -1,0 +1,41 @@
+{
+  "category": "",
+  "id": "652",
+  "name": "Find Duplicate Subtrees",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-duplicate-subtrees/",
+  "slug": "find-duplicate-subtrees",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Serialize and Deserialize Binary Tree",
+      "slug": "serialize-and-deserialize-binary-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/"
+    },
+    {
+      "title": "Serialize and Deserialize BST",
+      "slug": "serialize-and-deserialize-bst",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/serialize-and-deserialize-bst/"
+    },
+    {
+      "title": "Construct String from Binary Tree",
+      "slug": "construct-string-from-binary-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/construct-string-from-binary-tree/"
+    },
+    {
+      "title": "Delete Duplicate Folders in System",
+      "slug": "delete-duplicate-folders-in-system",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/delete-duplicate-folders-in-system/"
+    }
+  ]
+}

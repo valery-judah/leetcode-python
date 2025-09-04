@@ -1,0 +1,33 @@
+{
+  "category": "",
+  "id": "25",
+  "name": "Reverse Nodes in k-Group",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/reverse-nodes-in-k-group/",
+  "slug": "reverse-nodes-in-k-group",
+  "isPaidOnly": false,
+  "tags": [
+    "Linked List",
+    "Recursion"
+  ],
+  "similar_questions": [
+    {
+      "title": "Swap Nodes in Pairs",
+      "slug": "swap-nodes-in-pairs",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/swap-nodes-in-pairs/"
+    },
+    {
+      "title": "Swapping Nodes in a Linked List",
+      "slug": "swapping-nodes-in-a-linked-list",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/swapping-nodes-in-a-linked-list/"
+    },
+    {
+      "title": "Reverse Nodes in Even Length Groups",
+      "slug": "reverse-nodes-in-even-length-groups",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/reverse-nodes-in-even-length-groups/"
+    }
+  ]
+}

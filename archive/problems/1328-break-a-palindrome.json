@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "1328",
+  "name": "Break a Palindrome",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/break-a-palindrome/",
+  "slug": "break-a-palindrome",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Greedy"
+  ],
+  "similar_questions": []
+}

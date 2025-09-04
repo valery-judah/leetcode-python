@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "1010",
+  "name": "Pairs of Songs With Total Durations Divisible by 60",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/",
+  "slug": "pairs-of-songs-with-total-durations-divisible-by-60",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Destroy Sequential Targets",
+      "slug": "destroy-sequential-targets",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/destroy-sequential-targets/"
+    },
+    {
+      "title": "Count Pairs That Form a Complete Day II",
+      "slug": "count-pairs-that-form-a-complete-day-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-pairs-that-form-a-complete-day-ii/"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "category": "",
+  "id": "2064",
+  "name": "Minimized Maximum of Products Distributed to Any Store",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimized-maximum-of-products-distributed-to-any-store/",
+  "slug": "minimized-maximum-of-products-distributed-to-any-store",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Greedy"
+  ],
+  "similar_questions": [
+    {
+      "title": "Koko Eating Bananas",
+      "slug": "koko-eating-bananas",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/koko-eating-bananas/"
+    },
+    {
+      "title": "Capacity To Ship Packages Within D Days",
+      "slug": "capacity-to-ship-packages-within-d-days",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/"
+    },
+    {
+      "title": "Maximum Candies Allocated to K Children",
+      "slug": "maximum-candies-allocated-to-k-children",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-candies-allocated-to-k-children/"
+    },
+    {
+      "title": "Find the Smallest Divisor Given a Threshold",
+      "slug": "find-the-smallest-divisor-given-a-threshold",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/"
+    },
+    {
+      "title": "Magnetic Force Between Two Balls",
+      "slug": "magnetic-force-between-two-balls",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/magnetic-force-between-two-balls/"
+    },
+    {
+      "title": "Minimum Limit of Balls in a Bag",
+      "slug": "minimum-limit-of-balls-in-a-bag",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-limit-of-balls-in-a-bag/"
+    },
+    {
+      "title": "Minimum Time to Complete Trips",
+      "slug": "minimum-time-to-complete-trips",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-time-to-complete-trips/"
+    },
+    {
+      "title": "Maximum Number of Robots Within Budget",
+      "slug": "maximum-number-of-robots-within-budget",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-number-of-robots-within-budget/"
+    }
+  ]
+}

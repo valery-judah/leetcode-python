@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1476",
+  "name": "Subrectangle Queries",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/subrectangle-queries/",
+  "slug": "subrectangle-queries",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Design",
+    "Matrix"
+  ],
+  "similar_questions": []
+}

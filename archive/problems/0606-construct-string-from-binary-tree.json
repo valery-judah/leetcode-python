@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "606",
+  "name": "Construct String from Binary Tree",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/construct-string-from-binary-tree/",
+  "slug": "construct-string-from-binary-tree",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Construct Binary Tree from String",
+      "slug": "construct-binary-tree-from-string",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/construct-binary-tree-from-string/"
+    },
+    {
+      "title": "Find Duplicate Subtrees",
+      "slug": "find-duplicate-subtrees",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-duplicate-subtrees/"
+    }
+  ]
+}

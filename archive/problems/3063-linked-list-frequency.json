@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "3063",
+  "name": "Linked List Frequency",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/linked-list-frequency/",
+  "slug": "linked-list-frequency",
+  "isPaidOnly": true,
+  "tags": [
+    "Hash Table",
+    "Linked List",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Top K Frequent Elements",
+      "slug": "top-k-frequent-elements",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/top-k-frequent-elements/"
+    }
+  ]
+}

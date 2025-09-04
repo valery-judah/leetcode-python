@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1545",
+  "name": "Find Kth Bit in Nth Binary String",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/",
+  "slug": "find-kth-bit-in-nth-binary-string",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Recursion",
+    "Simulation"
+  ],
+  "similar_questions": []
+}

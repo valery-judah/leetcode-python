@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "1938",
+  "name": "Maximum Genetic Difference Query",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/maximum-genetic-difference-query/",
+  "slug": "maximum-genetic-difference-query",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Bit Manipulation",
+    "Depth-First Search",
+    "Trie"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum XOR With an Element From Array",
+      "slug": "maximum-xor-with-an-element-from-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-xor-with-an-element-from-array/"
+    }
+  ]
+}

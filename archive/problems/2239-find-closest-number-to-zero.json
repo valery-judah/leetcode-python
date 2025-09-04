@@ -1,0 +1,20 @@
+{
+  "category": "",
+  "id": "2239",
+  "name": "Find Closest Number to Zero",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/find-closest-number-to-zero/",
+  "slug": "find-closest-number-to-zero",
+  "isPaidOnly": false,
+  "tags": [
+    "Array"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find K Closest Elements",
+      "slug": "find-k-closest-elements",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-k-closest-elements/"
+    }
+  ]
+}

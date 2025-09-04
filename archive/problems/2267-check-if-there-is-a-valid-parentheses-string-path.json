@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "2267",
+  "name": " Check if There Is a Valid Parentheses String Path",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/check-if-there-is-a-valid-parentheses-string-path/",
+  "slug": "check-if-there-is-a-valid-parentheses-string-path",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Check if There is a Valid Path in a Grid",
+      "slug": "check-if-there-is-a-valid-path-in-a-grid",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/check-if-there-is-a-valid-path-in-a-grid/"
+    },
+    {
+      "title": "Check if a Parentheses String Can Be Valid",
+      "slug": "check-if-a-parentheses-string-can-be-valid",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid/"
+    }
+  ]
+}

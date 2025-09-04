@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "2611",
+  "name": "Mice and Cheese",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/mice-and-cheese/",
+  "slug": "mice-and-cheese",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "similar_questions": [
+    {
+      "title": "House Robber",
+      "slug": "house-robber",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/house-robber/"
+    }
+  ]
+}

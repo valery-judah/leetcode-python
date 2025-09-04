@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "1561",
+  "name": "Maximum Number of Coins You Can Get",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-number-of-coins-you-can-get/",
+  "slug": "maximum-number-of-coins-you-can-get",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Greedy",
+    "Sorting",
+    "Game Theory"
+  ],
+  "similar_questions": []
+}

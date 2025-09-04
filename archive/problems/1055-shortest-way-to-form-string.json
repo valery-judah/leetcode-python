@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "1055",
+  "name": "Shortest Way to Form String",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/shortest-way-to-form-string/",
+  "slug": "shortest-way-to-form-string",
+  "isPaidOnly": true,
+  "tags": [
+    "Two Pointers",
+    "String",
+    "Binary Search",
+    "Greedy"
+  ],
+  "similar_questions": [
+    {
+      "title": "Is Subsequence",
+      "slug": "is-subsequence",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/is-subsequence/"
+    },
+    {
+      "title": "Number of Matching Subsequences",
+      "slug": "number-of-matching-subsequences",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-matching-subsequences/"
+    }
+  ]
+}

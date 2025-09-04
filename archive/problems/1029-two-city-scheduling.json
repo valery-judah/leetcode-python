@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "1029",
+  "name": "Two City Scheduling",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/two-city-scheduling/",
+  "slug": "two-city-scheduling",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Rearrange Array to Maximize Prefix Score",
+      "slug": "rearrange-array-to-maximize-prefix-score",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/rearrange-array-to-maximize-prefix-score/"
+    }
+  ]
+}

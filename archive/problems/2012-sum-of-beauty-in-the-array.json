@@ -1,0 +1,32 @@
+{
+  "category": "",
+  "id": "2012",
+  "name": "Sum of Beauty in the Array",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/sum-of-beauty-in-the-array/",
+  "slug": "sum-of-beauty-in-the-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array"
+  ],
+  "similar_questions": [
+    {
+      "title": "Best Time to Buy and Sell Stock",
+      "slug": "best-time-to-buy-and-sell-stock",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/"
+    },
+    {
+      "title": "Partition Array into Disjoint Intervals",
+      "slug": "partition-array-into-disjoint-intervals",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/partition-array-into-disjoint-intervals/"
+    },
+    {
+      "title": "Maximum Value of an Ordered Triplet II",
+      "slug": "maximum-value-of-an-ordered-triplet-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-ii/"
+    }
+  ]
+}

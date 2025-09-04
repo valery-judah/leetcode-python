@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "2837",
+  "name": "Total Traveled Distance",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/total-traveled-distance/",
+  "slug": "total-traveled-distance",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

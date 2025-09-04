@@ -1,0 +1,64 @@
+{
+  "category": "",
+  "id": "236",
+  "name": "Lowest Common Ancestor of a Binary Tree",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/",
+  "slug": "lowest-common-ancestor-of-a-binary-tree",
+  "isPaidOnly": false,
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Lowest Common Ancestor of a Binary Search Tree",
+      "slug": "lowest-common-ancestor-of-a-binary-search-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/"
+    },
+    {
+      "title": "Smallest Common Region",
+      "slug": "smallest-common-region",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/smallest-common-region/"
+    },
+    {
+      "title": "Find Players With Zero or One Losses",
+      "slug": "find-players-with-zero-or-one-losses",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-players-with-zero-or-one-losses/"
+    },
+    {
+      "title": "Lowest Common Ancestor of a Binary Tree II",
+      "slug": "lowest-common-ancestor-of-a-binary-tree-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-ii/"
+    },
+    {
+      "title": "Lowest Common Ancestor of a Binary Tree III",
+      "slug": "lowest-common-ancestor-of-a-binary-tree-iii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/"
+    },
+    {
+      "title": "Lowest Common Ancestor of a Binary Tree IV",
+      "slug": "lowest-common-ancestor-of-a-binary-tree-iv",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iv/"
+    },
+    {
+      "title": "Step-By-Step Directions From a Binary Tree Node to Another",
+      "slug": "step-by-step-directions-from-a-binary-tree-node-to-another",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/"
+    },
+    {
+      "title": "Cycle Length Queries in a Tree",
+      "slug": "cycle-length-queries-in-a-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/cycle-length-queries-in-a-tree/"
+    }
+  ]
+}

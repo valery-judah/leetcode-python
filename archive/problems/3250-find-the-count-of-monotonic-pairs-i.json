@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "3250",
+  "name": "Find the Count of Monotonic Pairs I",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/find-the-count-of-monotonic-pairs-i/",
+  "slug": "find-the-count-of-monotonic-pairs-i",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Combinatorics",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Monotonic Array",
+      "slug": "monotonic-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/monotonic-array/"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "category": "",
+  "id": "859",
+  "name": "Buddy Strings",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/buddy-strings/",
+  "slug": "buddy-strings",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Determine if Two Strings Are Close",
+      "slug": "determine-if-two-strings-are-close",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/determine-if-two-strings-are-close/"
+    },
+    {
+      "title": "Check if One String Swap Can Make Strings Equal",
+      "slug": "check-if-one-string-swap-can-make-strings-equal",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal/"
+    },
+    {
+      "title": "Make Number of Distinct Characters Equal",
+      "slug": "make-number-of-distinct-characters-equal",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/make-number-of-distinct-characters-equal/"
+    }
+  ]
+}

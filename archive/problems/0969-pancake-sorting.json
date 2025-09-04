@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "969",
+  "name": "Pancake Sorting",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/pancake-sorting/",
+  "slug": "pancake-sorting",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": []
+}

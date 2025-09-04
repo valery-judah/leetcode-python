@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "1842",
+  "name": "Next Palindrome Using Same Digits",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/next-palindrome-using-same-digits/",
+  "slug": "next-palindrome-using-same-digits",
+  "isPaidOnly": true,
+  "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Next Greater Element III",
+      "slug": "next-greater-element-iii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/next-greater-element-iii/"
+    },
+    {
+      "title": "Find the Closest Palindrome",
+      "slug": "find-the-closest-palindrome",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-closest-palindrome/"
+    }
+  ]
+}

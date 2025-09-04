@@ -1,0 +1,26 @@
+{
+  "category": "",
+  "id": "2288",
+  "name": "Apply Discount to Prices",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/apply-discount-to-prices/",
+  "slug": "apply-discount-to-prices",
+  "isPaidOnly": false,
+  "tags": [
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Multiply Strings",
+      "slug": "multiply-strings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/multiply-strings/"
+    },
+    {
+      "title": "Apply Discount Every n Orders",
+      "slug": "apply-discount-every-n-orders",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/apply-discount-every-n-orders/"
+    }
+  ]
+}

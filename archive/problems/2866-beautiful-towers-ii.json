@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "2866",
+  "name": "Beautiful Towers II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/beautiful-towers-ii/",
+  "slug": "beautiful-towers-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Stack",
+    "Monotonic Stack"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Number of Removals to Make Mountain Array",
+      "slug": "minimum-number-of-removals-to-make-mountain-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-number-of-removals-to-make-mountain-array/"
+    },
+    {
+      "title": "Maximum Number of Books You Can Take",
+      "slug": "maximum-number-of-books-you-can-take",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-number-of-books-you-can-take/"
+    }
+  ]
+}

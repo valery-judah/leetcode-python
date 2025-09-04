@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "1511",
+  "name": "Customer Order Frequency",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/customer-order-frequency/",
+  "slug": "customer-order-frequency",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

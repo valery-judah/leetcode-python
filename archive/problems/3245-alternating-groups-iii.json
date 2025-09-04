@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "3245",
+  "name": "Alternating Groups III",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/alternating-groups-iii/",
+  "slug": "alternating-groups-iii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Indexed Tree"
+  ],
+  "similar_questions": []
+}

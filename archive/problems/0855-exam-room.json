@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "855",
+  "name": "Exam Room",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/exam-room/",
+  "slug": "exam-room",
+  "isPaidOnly": false,
+  "tags": [
+    "Design",
+    "Heap (Priority Queue)",
+    "Ordered Set"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximize Distance to Closest Person",
+      "slug": "maximize-distance-to-closest-person",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximize-distance-to-closest-person/"
+    }
+  ]
+}

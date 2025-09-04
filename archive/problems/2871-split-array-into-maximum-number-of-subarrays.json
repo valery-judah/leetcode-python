@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "2871",
+  "name": "Split Array Into Maximum Number of Subarrays",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/split-array-into-maximum-number-of-subarrays/",
+  "slug": "split-array-into-maximum-number-of-subarrays",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Bit Manipulation"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "459",
+  "name": "Repeated Substring Pattern",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/repeated-substring-pattern/",
+  "slug": "repeated-substring-pattern",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "String Matching"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find the Index of the First Occurrence in a String",
+      "slug": "find-the-index-of-the-first-occurrence-in-a-string",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/"
+    },
+    {
+      "title": "Repeated String Match",
+      "slug": "repeated-string-match",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/repeated-string-match/"
+    }
+  ]
+}

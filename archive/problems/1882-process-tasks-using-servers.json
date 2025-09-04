@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "1882",
+  "name": "Process Tasks Using Servers",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/process-tasks-using-servers/",
+  "slug": "process-tasks-using-servers",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Heap (Priority Queue)"
+  ],
+  "similar_questions": [
+    {
+      "title": "Parallel Courses III",
+      "slug": "parallel-courses-iii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/parallel-courses-iii/"
+    }
+  ]
+}

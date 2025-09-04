@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "3324",
+  "name": "Find the Sequence of Strings Appeared on the Screen",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-the-sequence-of-strings-appeared-on-the-screen/",
+  "slug": "find-the-sequence-of-strings-appeared-on-the-screen",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Keyboard Row",
+      "slug": "keyboard-row",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/keyboard-row/"
+    }
+  ]
+}

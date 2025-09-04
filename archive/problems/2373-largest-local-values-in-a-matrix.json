@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "2373",
+  "name": "Largest Local Values in a Matrix",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/largest-local-values-in-a-matrix/",
+  "slug": "largest-local-values-in-a-matrix",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Matrix"
+  ],
+  "similar_questions": []
+}

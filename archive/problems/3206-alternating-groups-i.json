@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "3206",
+  "name": "Alternating Groups I",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/alternating-groups-i/",
+  "slug": "alternating-groups-i",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Sliding Window"
+  ],
+  "similar_questions": []
+}

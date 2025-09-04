@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "2186",
+  "name": "Minimum Number of Steps to Make Two Strings Anagram II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram-ii/",
+  "slug": "minimum-number-of-steps-to-make-two-strings-anagram-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Number of Steps to Make Two Strings Anagram",
+      "slug": "minimum-number-of-steps-to-make-two-strings-anagram",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/"
+    }
+  ]
+}

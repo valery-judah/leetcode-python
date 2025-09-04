@@ -1,0 +1,34 @@
+{
+  "category": "",
+  "id": "2317",
+  "name": "Maximum XOR After Operations ",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-xor-after-operations/",
+  "slug": "maximum-xor-after-operations",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Bit Manipulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum XOR of Two Numbers in an Array",
+      "slug": "maximum-xor-of-two-numbers-in-an-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/"
+    },
+    {
+      "title": "Maximum Xor Product",
+      "slug": "maximum-xor-product",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-xor-product/"
+    },
+    {
+      "title": "Minimize OR of Remaining Elements Using Operations",
+      "slug": "minimize-or-of-remaining-elements-using-operations",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimize-or-of-remaining-elements-using-operations/"
+    }
+  ]
+}

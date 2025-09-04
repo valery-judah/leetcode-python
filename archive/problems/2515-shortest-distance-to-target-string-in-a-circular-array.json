@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "2515",
+  "name": "Shortest Distance to Target String in a Circular Array",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/shortest-distance-to-target-string-in-a-circular-array/",
+  "slug": "shortest-distance-to-target-string-in-a-circular-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Defuse the Bomb",
+      "slug": "defuse-the-bomb",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/defuse-the-bomb/"
+    }
+  ]
+}

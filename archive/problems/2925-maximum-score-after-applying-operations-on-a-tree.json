@@ -1,0 +1,34 @@
+{
+  "category": "",
+  "id": "2925",
+  "name": "Maximum Score After Applying Operations on a Tree",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-score-after-applying-operations-on-a-tree/",
+  "slug": "maximum-score-after-applying-operations-on-a-tree",
+  "isPaidOnly": false,
+  "tags": [
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Sum of Distances in Tree",
+      "slug": "sum-of-distances-in-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sum-of-distances-in-tree/"
+    },
+    {
+      "title": "Collect Coins in a Tree",
+      "slug": "collect-coins-in-a-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/collect-coins-in-a-tree/"
+    },
+    {
+      "title": "Find the Maximum Sum of Node Values",
+      "slug": "find-the-maximum-sum-of-node-values",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-maximum-sum-of-node-values/"
+    }
+  ]
+}

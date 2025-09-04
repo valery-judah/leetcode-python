@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "2660",
+  "name": "Determine the Winner of a Bowling Game",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/determine-the-winner-of-a-bowling-game/",
+  "slug": "determine-the-winner-of-a-bowling-game",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "High Five",
+      "slug": "high-five",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/high-five/"
+    }
+  ]
+}

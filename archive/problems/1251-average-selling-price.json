@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "1251",
+  "name": "Average Selling Price",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/average-selling-price/",
+  "slug": "average-selling-price",
+  "isPaidOnly": false,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

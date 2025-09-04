@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "2069",
+  "name": "Walking Robot Simulation II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/walking-robot-simulation-ii/",
+  "slug": "walking-robot-simulation-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Design",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Walking Robot Simulation",
+      "slug": "walking-robot-simulation",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/walking-robot-simulation/"
+    }
+  ]
+}

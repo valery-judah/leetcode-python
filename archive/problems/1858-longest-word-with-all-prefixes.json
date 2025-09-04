@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "1858",
+  "name": "Longest Word With All Prefixes",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/longest-word-with-all-prefixes/",
+  "slug": "longest-word-with-all-prefixes",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "String",
+    "Depth-First Search",
+    "Trie"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longest Word in Dictionary",
+      "slug": "longest-word-in-dictionary",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-word-in-dictionary/"
+    }
+  ]
+}

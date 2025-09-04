@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "313",
+  "name": "Super Ugly Number",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/super-ugly-number/",
+  "slug": "super-ugly-number",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Ugly Number II",
+      "slug": "ugly-number-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/ugly-number-ii/"
+    }
+  ]
+}

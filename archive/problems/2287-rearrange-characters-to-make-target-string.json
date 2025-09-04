@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "2287",
+  "name": "Rearrange Characters to Make Target String",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/rearrange-characters-to-make-target-string/",
+  "slug": "rearrange-characters-to-make-target-string",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find Words That Can Be Formed by Characters",
+      "slug": "find-words-that-can-be-formed-by-characters",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/"
+    },
+    {
+      "title": "Maximum Number of Occurrences of a Substring",
+      "slug": "maximum-number-of-occurrences-of-a-substring",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-number-of-occurrences-of-a-substring/"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1861",
+  "name": "Rotating the Box",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/rotating-the-box/",
+  "slug": "rotating-the-box",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Matrix"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "1307",
+  "name": "Verbal Arithmetic Puzzle",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/verbal-arithmetic-puzzle/",
+  "slug": "verbal-arithmetic-puzzle",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "String",
+    "Backtracking"
+  ],
+  "similar_questions": []
+}

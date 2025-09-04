@@ -1,0 +1,44 @@
+{
+  "category": "",
+  "id": "2155",
+  "name": "All Divisions With the Highest Score of a Binary Array",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/all-divisions-with-the-highest-score-of-a-binary-array/",
+  "slug": "all-divisions-with-the-highest-score-of-a-binary-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array"
+  ],
+  "similar_questions": [
+    {
+      "title": "Ones and Zeroes",
+      "slug": "ones-and-zeroes",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/ones-and-zeroes/"
+    },
+    {
+      "title": "Max Consecutive Ones II",
+      "slug": "max-consecutive-ones-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/max-consecutive-ones-ii/"
+    },
+    {
+      "title": "Count Subarrays With More Ones Than Zeros",
+      "slug": "count-subarrays-with-more-ones-than-zeros",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-subarrays-with-more-ones-than-zeros/"
+    },
+    {
+      "title": "Array Partition",
+      "slug": "array-partition",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/array-partition/"
+    },
+    {
+      "title": "Divide Array in Sets of K Consecutive Numbers",
+      "slug": "divide-array-in-sets-of-k-consecutive-numbers",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/divide-array-in-sets-of-k-consecutive-numbers/"
+    }
+  ]
+}

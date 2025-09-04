@@ -1,0 +1,39 @@
+{
+  "category": "",
+  "id": "989",
+  "name": "Add to Array-Form of Integer",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/add-to-array-form-of-integer/",
+  "slug": "add-to-array-form-of-integer",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math"
+  ],
+  "similar_questions": [
+    {
+      "title": "Add Two Numbers",
+      "slug": "add-two-numbers",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/add-two-numbers/"
+    },
+    {
+      "title": "Plus One",
+      "slug": "plus-one",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/plus-one/"
+    },
+    {
+      "title": "Add Binary",
+      "slug": "add-binary",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/add-binary/"
+    },
+    {
+      "title": "Add Strings",
+      "slug": "add-strings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/add-strings/"
+    }
+  ]
+}

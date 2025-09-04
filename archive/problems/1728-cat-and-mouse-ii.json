@@ -1,0 +1,33 @@
+{
+  "category": "",
+  "id": "1728",
+  "name": "Cat and Mouse II",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/cat-and-mouse-ii/",
+  "slug": "cat-and-mouse-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Graph",
+    "Topological Sort",
+    "Memoization",
+    "Matrix",
+    "Game Theory"
+  ],
+  "similar_questions": [
+    {
+      "title": "Escape The Ghosts",
+      "slug": "escape-the-ghosts",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/escape-the-ghosts/"
+    },
+    {
+      "title": "Cat and Mouse",
+      "slug": "cat-and-mouse",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/cat-and-mouse/"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "824",
+  "name": "Goat Latin",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/goat-latin/",
+  "slug": "goat-latin",
+  "isPaidOnly": false,
+  "tags": [
+    "String"
+  ],
+  "similar_questions": []
+}

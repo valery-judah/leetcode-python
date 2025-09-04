@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "788",
+  "name": "Rotated Digits",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/rotated-digits/",
+  "slug": "rotated-digits",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Dynamic Programming"
+  ],
+  "similar_questions": []
+}

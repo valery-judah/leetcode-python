@@ -1,0 +1,33 @@
+{
+  "category": "",
+  "id": "3489",
+  "name": "Zero Array Transformation IV",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/zero-array-transformation-iv/",
+  "slug": "zero-array-transformation-iv",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Zero Array Transformation I",
+      "slug": "zero-array-transformation-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/zero-array-transformation-i/"
+    },
+    {
+      "title": "Zero Array Transformation II",
+      "slug": "zero-array-transformation-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/zero-array-transformation-ii/"
+    },
+    {
+      "title": "Zero Array Transformation III",
+      "slug": "zero-array-transformation-iii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/zero-array-transformation-iii/"
+    }
+  ]
+}

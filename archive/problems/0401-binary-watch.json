@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "401",
+  "name": "Binary Watch",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/binary-watch/",
+  "slug": "binary-watch",
+  "isPaidOnly": false,
+  "tags": [
+    "Backtracking",
+    "Bit Manipulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Letter Combinations of a Phone Number",
+      "slug": "letter-combinations-of-a-phone-number",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/letter-combinations-of-a-phone-number/"
+    },
+    {
+      "title": "Number of 1 Bits",
+      "slug": "number-of-1-bits",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-1-bits/"
+    }
+  ]
+}

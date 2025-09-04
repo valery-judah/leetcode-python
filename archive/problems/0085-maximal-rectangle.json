@@ -1,0 +1,36 @@
+{
+  "category": "",
+  "id": "85",
+  "name": "Maximal Rectangle",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/maximal-rectangle/",
+  "slug": "maximal-rectangle",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Stack",
+    "Matrix",
+    "Monotonic Stack"
+  ],
+  "similar_questions": [
+    {
+      "title": "Largest Rectangle in Histogram",
+      "slug": "largest-rectangle-in-histogram",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/largest-rectangle-in-histogram/"
+    },
+    {
+      "title": "Maximal Square",
+      "slug": "maximal-square",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximal-square/"
+    },
+    {
+      "title": "Find Sorted Submatrices With Maximum Element at Most K",
+      "slug": "find-sorted-submatrices-with-maximum-element-at-most-k",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-sorted-submatrices-with-maximum-element-at-most-k/"
+    }
+  ]
+}

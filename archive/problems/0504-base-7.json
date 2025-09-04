@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "504",
+  "name": "Base 7",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/base-7/",
+  "slug": "base-7",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "String"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,24 @@
+{
+  "category": "",
+  "id": "362",
+  "name": "Design Hit Counter",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/design-hit-counter/",
+  "slug": "design-hit-counter",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Design",
+    "Queue",
+    "Data Stream"
+  ],
+  "similar_questions": [
+    {
+      "title": "Logger Rate Limiter",
+      "slug": "logger-rate-limiter",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/logger-rate-limiter/"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "3030",
+  "name": "Find the Grid of Region Average",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-the-grid-of-region-average/",
+  "slug": "find-the-grid-of-region-average",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Range Sum Query 2D - Immutable",
+      "slug": "range-sum-query-2d-immutable",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/range-sum-query-2d-immutable/"
+    },
+    {
+      "title": "K Radius Subarray Averages",
+      "slug": "k-radius-subarray-averages",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/k-radius-subarray-averages/"
+    }
+  ]
+}

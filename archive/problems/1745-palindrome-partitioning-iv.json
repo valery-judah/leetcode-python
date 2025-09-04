@@ -1,0 +1,39 @@
+{
+  "category": "",
+  "id": "1745",
+  "name": "Palindrome Partitioning IV",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/palindrome-partitioning-iv/",
+  "slug": "palindrome-partitioning-iv",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Palindrome Partitioning",
+      "slug": "palindrome-partitioning",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/palindrome-partitioning/"
+    },
+    {
+      "title": "Palindrome Partitioning II",
+      "slug": "palindrome-partitioning-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/palindrome-partitioning-ii/"
+    },
+    {
+      "title": "Palindrome Partitioning III",
+      "slug": "palindrome-partitioning-iii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/palindrome-partitioning-iii/"
+    },
+    {
+      "title": "Maximum Number of Non-overlapping Palindrome Substrings",
+      "slug": "maximum-number-of-non-overlapping-palindrome-substrings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings/"
+    }
+  ]
+}

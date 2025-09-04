@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "2566",
+  "name": "Maximum Difference by Remapping a Digit",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/maximum-difference-by-remapping-a-digit/",
+  "slug": "maximum-difference-by-remapping-a-digit",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Greedy"
+  ],
+  "similar_questions": []
+}

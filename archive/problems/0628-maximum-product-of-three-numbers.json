@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "628",
+  "name": "Maximum Product of Three Numbers",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/maximum-product-of-three-numbers/",
+  "slug": "maximum-product-of-three-numbers",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Product Subarray",
+      "slug": "maximum-product-subarray",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-product-subarray/"
+    }
+  ]
+}

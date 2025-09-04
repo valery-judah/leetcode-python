@@ -1,0 +1,34 @@
+{
+  "category": "",
+  "id": "525",
+  "name": "Contiguous Array",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/contiguous-array/",
+  "slug": "contiguous-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Size Subarray Sum Equals k",
+      "slug": "maximum-size-subarray-sum-equals-k",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/"
+    },
+    {
+      "title": "Find All Possible Stable Binary Arrays I",
+      "slug": "find-all-possible-stable-binary-arrays-i",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-all-possible-stable-binary-arrays-i/"
+    },
+    {
+      "title": "Find All Possible Stable Binary Arrays II",
+      "slug": "find-all-possible-stable-binary-arrays-ii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-all-possible-stable-binary-arrays-ii/"
+    }
+  ]
+}

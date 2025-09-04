@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "406",
+  "name": "Queue Reconstruction by Height",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/queue-reconstruction-by-height/",
+  "slug": "queue-reconstruction-by-height",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count of Smaller Numbers After Self",
+      "slug": "count-of-smaller-numbers-after-self",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-of-smaller-numbers-after-self/"
+    },
+    {
+      "title": "Reward Top K Students",
+      "slug": "reward-top-k-students",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/reward-top-k-students/"
+    }
+  ]
+}

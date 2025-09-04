@@ -1,0 +1,34 @@
+{
+  "category": "",
+  "id": "2070",
+  "name": "Most Beautiful Item for Each Query",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/most-beautiful-item-for-each-query/",
+  "slug": "most-beautiful-item-for-each-query",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Closest Room",
+      "slug": "closest-room",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/closest-room/"
+    },
+    {
+      "title": "Find the Score of All Prefixes of an Array",
+      "slug": "find-the-score-of-all-prefixes-of-an-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-score-of-all-prefixes-of-an-array/"
+    },
+    {
+      "title": "Maximum Sum Queries",
+      "slug": "maximum-sum-queries",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-sum-queries/"
+    }
+  ]
+}

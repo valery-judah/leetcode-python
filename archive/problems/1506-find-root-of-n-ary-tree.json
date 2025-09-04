@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "1506",
+  "name": "Find Root of N-Ary Tree",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-root-of-n-ary-tree/",
+  "slug": "find-root-of-n-ary-tree",
+  "isPaidOnly": true,
+  "tags": [
+    "Hash Table",
+    "Bit Manipulation",
+    "Tree",
+    "Depth-First Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Move Sub-Tree of N-Ary Tree",
+      "slug": "move-sub-tree-of-n-ary-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/move-sub-tree-of-n-ary-tree/"
+    }
+  ]
+}

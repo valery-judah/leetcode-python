@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "3073",
+  "name": "Maximum Increasing Triplet Value",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-increasing-triplet-value/",
+  "slug": "maximum-increasing-triplet-value",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Ordered Set"
+  ],
+  "similar_questions": []
+}

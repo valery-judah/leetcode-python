@@ -1,0 +1,25 @@
+{
+  "category": "",
+  "id": "839",
+  "name": "Similar String Groups",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/similar-string-groups/",
+  "slug": "similar-string-groups",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union Find"
+  ],
+  "similar_questions": [
+    {
+      "title": "Groups of Strings",
+      "slug": "groups-of-strings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/groups-of-strings/"
+    }
+  ]
+}

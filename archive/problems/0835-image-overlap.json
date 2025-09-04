@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "835",
+  "name": "Image Overlap",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/image-overlap/",
+  "slug": "image-overlap",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Matrix"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "622",
+  "name": "Design Circular Queue",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/design-circular-queue/",
+  "slug": "design-circular-queue",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Linked List",
+    "Design",
+    "Queue"
+  ],
+  "similar_questions": [
+    {
+      "title": "Design Circular Deque",
+      "slug": "design-circular-deque",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/design-circular-deque/"
+    },
+    {
+      "title": "Design Front Middle Back Queue",
+      "slug": "design-front-middle-back-queue",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/design-front-middle-back-queue/"
+    }
+  ]
+}

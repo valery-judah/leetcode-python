@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "2138",
+  "name": "Divide a String Into Groups of Size k",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/divide-a-string-into-groups-of-size-k/",
+  "slug": "divide-a-string-into-groups-of-size-k",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Text Justification",
+      "slug": "text-justification",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/text-justification/"
+    },
+    {
+      "title": "Positions of Large Groups",
+      "slug": "positions-of-large-groups",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/positions-of-large-groups/"
+    }
+  ]
+}

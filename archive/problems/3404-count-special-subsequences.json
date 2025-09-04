@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "3404",
+  "name": "Count Special Subsequences",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-special-subsequences/",
+  "slug": "count-special-subsequences",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Enumeration"
+  ],
+  "similar_questions": [
+    {
+      "title": "Max Points on a Line",
+      "slug": "max-points-on-a-line",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/max-points-on-a-line/"
+    }
+  ]
+}

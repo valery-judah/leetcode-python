@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "1000",
+  "name": "Minimum Cost to Merge Stones",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-cost-to-merge-stones/",
+  "slug": "minimum-cost-to-merge-stones",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Burst Balloons",
+      "slug": "burst-balloons",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/burst-balloons/"
+    },
+    {
+      "title": "Minimum Cost to Connect Sticks",
+      "slug": "minimum-cost-to-connect-sticks",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-cost-to-connect-sticks/"
+    }
+  ]
+}

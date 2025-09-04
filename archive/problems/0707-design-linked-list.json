@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "707",
+  "name": "Design Linked List",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/design-linked-list/",
+  "slug": "design-linked-list",
+  "isPaidOnly": false,
+  "tags": [
+    "Linked List",
+    "Design"
+  ],
+  "similar_questions": [
+    {
+      "title": "Design Skiplist",
+      "slug": "design-skiplist",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/design-skiplist/"
+    }
+  ]
+}

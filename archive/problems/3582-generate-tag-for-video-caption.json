@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "3582",
+  "name": "Generate Tag for Video Caption",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/generate-tag-for-video-caption/",
+  "slug": "generate-tag-for-video-caption",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Simulation"
+  ],
+  "similar_questions": []
+}

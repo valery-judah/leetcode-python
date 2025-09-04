@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "2225",
+  "name": "Find Players With Zero or One Losses",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-players-with-zero-or-one-losses/",
+  "slug": "find-players-with-zero-or-one-losses",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Lowest Common Ancestor of a Binary Tree",
+      "slug": "lowest-common-ancestor-of-a-binary-tree",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/"
+    }
+  ]
+}

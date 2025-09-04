@@ -1,0 +1,42 @@
+{
+  "category": "",
+  "id": "2083",
+  "name": "Substrings That Begin and End With the Same Letter",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/substrings-that-begin-and-end-with-the-same-letter/",
+  "slug": "substrings-that-begin-and-end-with-the-same-letter",
+  "isPaidOnly": true,
+  "tags": [
+    "Hash Table",
+    "Math",
+    "String",
+    "Counting",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Number of Good Pairs",
+      "slug": "number-of-good-pairs",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-good-pairs/"
+    },
+    {
+      "title": "Sum of Beauty of All Substrings",
+      "slug": "sum-of-beauty-of-all-substrings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sum-of-beauty-of-all-substrings/"
+    },
+    {
+      "title": "Count Pairs in Two Arrays",
+      "slug": "count-pairs-in-two-arrays",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-pairs-in-two-arrays/"
+    },
+    {
+      "title": "Unique Substrings With Equal Digit Frequency",
+      "slug": "unique-substrings-with-equal-digit-frequency",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/unique-substrings-with-equal-digit-frequency/"
+    }
+  ]
+}

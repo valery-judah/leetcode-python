@@ -1,0 +1,18 @@
+{
+  "category": "",
+  "id": "1361",
+  "name": "Validate Binary Tree Nodes",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/validate-binary-tree-nodes/",
+  "slug": "validate-binary-tree-nodes",
+  "isPaidOnly": false,
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union Find",
+    "Graph",
+    "Binary Tree"
+  ],
+  "similar_questions": []
+}

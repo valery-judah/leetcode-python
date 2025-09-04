@@ -1,0 +1,41 @@
+{
+  "category": "",
+  "id": "251",
+  "name": "Flatten 2D Vector",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/flatten-2d-vector/",
+  "slug": "flatten-2d-vector",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Design",
+    "Iterator"
+  ],
+  "similar_questions": [
+    {
+      "title": "Binary Search Tree Iterator",
+      "slug": "binary-search-tree-iterator",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/binary-search-tree-iterator/"
+    },
+    {
+      "title": "Zigzag Iterator",
+      "slug": "zigzag-iterator",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/zigzag-iterator/"
+    },
+    {
+      "title": "Peeking Iterator",
+      "slug": "peeking-iterator",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/peeking-iterator/"
+    },
+    {
+      "title": "Flatten Nested List Iterator",
+      "slug": "flatten-nested-list-iterator",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/flatten-nested-list-iterator/"
+    }
+  ]
+}

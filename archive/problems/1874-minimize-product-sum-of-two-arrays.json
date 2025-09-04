@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "1874",
+  "name": "Minimize Product Sum of Two Arrays",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimize-product-sum-of-two-arrays/",
+  "slug": "minimize-product-sum-of-two-arrays",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Choose Numbers From Two Arrays in Range",
+      "slug": "choose-numbers-from-two-arrays-in-range",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/choose-numbers-from-two-arrays-in-range/"
+    }
+  ]
+}

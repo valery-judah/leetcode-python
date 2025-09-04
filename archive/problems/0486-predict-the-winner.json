@@ -1,0 +1,42 @@
+{
+  "category": "",
+  "id": "486",
+  "name": "Predict the Winner",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/predict-the-winner/",
+  "slug": "predict-the-winner",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Recursion",
+    "Game Theory"
+  ],
+  "similar_questions": [
+    {
+      "title": "Can I Win",
+      "slug": "can-i-win",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/can-i-win/"
+    },
+    {
+      "title": "Find the Winning Player in Coin Game",
+      "slug": "find-the-winning-player-in-coin-game",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-winning-player-in-coin-game/"
+    },
+    {
+      "title": "Find the Number of Winning Players",
+      "slug": "find-the-number-of-winning-players",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/find-the-number-of-winning-players/"
+    },
+    {
+      "title": "Count The Number of Winning Sequences",
+      "slug": "count-the-number-of-winning-sequences",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-the-number-of-winning-sequences/"
+    }
+  ]
+}

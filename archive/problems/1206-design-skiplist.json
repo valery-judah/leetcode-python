@@ -1,0 +1,33 @@
+{
+  "category": "",
+  "id": "1206",
+  "name": "Design Skiplist",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/design-skiplist/",
+  "slug": "design-skiplist",
+  "isPaidOnly": false,
+  "tags": [
+    "Linked List",
+    "Design"
+  ],
+  "similar_questions": [
+    {
+      "title": "Design HashSet",
+      "slug": "design-hashset",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/design-hashset/"
+    },
+    {
+      "title": "Design HashMap",
+      "slug": "design-hashmap",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/design-hashmap/"
+    },
+    {
+      "title": "Design Linked List",
+      "slug": "design-linked-list",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/design-linked-list/"
+    }
+  ]
+}

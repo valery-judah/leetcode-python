@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "2408",
+  "name": "Design SQL",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/design-sql/",
+  "slug": "design-sql",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Design"
+  ],
+  "similar_questions": []
+}

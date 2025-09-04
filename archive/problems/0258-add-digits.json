@@ -1,0 +1,58 @@
+{
+  "category": "",
+  "id": "258",
+  "name": "Add Digits",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/add-digits/",
+  "slug": "add-digits",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Simulation",
+    "Number Theory"
+  ],
+  "similar_questions": [
+    {
+      "title": "Happy Number",
+      "slug": "happy-number",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/happy-number/"
+    },
+    {
+      "title": "Sum of Digits in the Minimum Number",
+      "slug": "sum-of-digits-in-the-minimum-number",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sum-of-digits-in-the-minimum-number/"
+    },
+    {
+      "title": "Sum of Digits of String After Convert",
+      "slug": "sum-of-digits-of-string-after-convert",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/sum-of-digits-of-string-after-convert/"
+    },
+    {
+      "title": "Minimum Sum of Four Digit Number After Splitting Digits",
+      "slug": "minimum-sum-of-four-digit-number-after-splitting-digits",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/"
+    },
+    {
+      "title": "Calculate Digit Sum of a String",
+      "slug": "calculate-digit-sum-of-a-string",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/calculate-digit-sum-of-a-string/"
+    },
+    {
+      "title": "Difference Between Element Sum and Digit Sum of an Array",
+      "slug": "difference-between-element-sum-and-digit-sum-of-an-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/difference-between-element-sum-and-digit-sum-of-an-array/"
+    },
+    {
+      "title": "Alternating Digit Sum",
+      "slug": "alternating-digit-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/alternating-digit-sum/"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "1603",
+  "name": "Design Parking System",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/design-parking-system/",
+  "slug": "design-parking-system",
+  "isPaidOnly": false,
+  "tags": [
+    "Design",
+    "Simulation",
+    "Counting"
+  ],
+  "similar_questions": []
+}

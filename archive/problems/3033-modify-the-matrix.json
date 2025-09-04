@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "3033",
+  "name": "Modify the Matrix",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/modify-the-matrix/",
+  "slug": "modify-the-matrix",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Matrix"
+  ],
+  "similar_questions": []
+}

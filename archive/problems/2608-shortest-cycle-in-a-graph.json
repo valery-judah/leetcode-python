@@ -1,0 +1,33 @@
+{
+  "category": "",
+  "id": "2608",
+  "name": "Shortest Cycle in a Graph",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/shortest-cycle-in-a-graph/",
+  "slug": "shortest-cycle-in-a-graph",
+  "isPaidOnly": false,
+  "tags": [
+    "Breadth-First Search",
+    "Graph"
+  ],
+  "similar_questions": [
+    {
+      "title": "Redundant Connection",
+      "slug": "redundant-connection",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/redundant-connection/"
+    },
+    {
+      "title": "Longest Cycle in a Graph",
+      "slug": "longest-cycle-in-a-graph",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/longest-cycle-in-a-graph/"
+    },
+    {
+      "title": "Divide Nodes Into the Maximum Number of Groups",
+      "slug": "divide-nodes-into-the-maximum-number-of-groups",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/divide-nodes-into-the-maximum-number-of-groups/"
+    }
+  ]
+}

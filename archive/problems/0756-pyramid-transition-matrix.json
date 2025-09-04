@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "756",
+  "name": "Pyramid Transition Matrix",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/pyramid-transition-matrix/",
+  "slug": "pyramid-transition-matrix",
+  "isPaidOnly": false,
+  "tags": [
+    "Bit Manipulation",
+    "Depth-First Search",
+    "Breadth-First Search"
+  ],
+  "similar_questions": []
+}

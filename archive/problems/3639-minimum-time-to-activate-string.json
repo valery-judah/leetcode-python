@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "3639",
+  "name": "Minimum Time to Activate String",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-time-to-activate-string/",
+  "slug": "minimum-time-to-activate-string",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "similar_questions": []
+}

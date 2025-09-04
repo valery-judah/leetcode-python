@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "2438",
+  "name": "Range Product Queries of Powers",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/range-product-queries-of-powers/",
+  "slug": "range-product-queries-of-powers",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Bit Manipulation",
+    "Prefix Sum"
+  ],
+  "similar_questions": []
+}

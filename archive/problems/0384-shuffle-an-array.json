@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "384",
+  "name": "Shuffle an Array",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/shuffle-an-array/",
+  "slug": "shuffle-an-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Design",
+    "Randomized"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "2814",
+  "name": "Minimum Time Takes to Reach Destination Without Drowning",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-time-takes-to-reach-destination-without-drowning/",
+  "slug": "minimum-time-takes-to-reach-destination-without-drowning",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "similar_questions": []
+}

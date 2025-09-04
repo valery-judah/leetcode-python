@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "2861",
+  "name": "Maximum Number of Alloys",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-number-of-alloys/",
+  "slug": "maximum-number-of-alloys",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "similar_questions": []
+}

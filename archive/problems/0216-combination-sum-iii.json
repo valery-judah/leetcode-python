@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "216",
+  "name": "Combination Sum III",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/combination-sum-iii/",
+  "slug": "combination-sum-iii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Backtracking"
+  ],
+  "similar_questions": [
+    {
+      "title": "Combination Sum",
+      "slug": "combination-sum",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/combination-sum/"
+    }
+  ]
+}

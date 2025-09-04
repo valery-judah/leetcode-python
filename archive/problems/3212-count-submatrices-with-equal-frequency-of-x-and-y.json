@@ -1,0 +1,28 @@
+{
+  "category": "",
+  "id": "3212",
+  "name": "Count Submatrices With Equal Frequency of X and Y",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/",
+  "slug": "count-submatrices-with-equal-frequency-of-x-and-y",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Matrix",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Equal Frequency",
+      "slug": "maximum-equal-frequency",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-equal-frequency/"
+    },
+    {
+      "title": "Count Submatrices With All Ones",
+      "slug": "count-submatrices-with-all-ones",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-submatrices-with-all-ones/"
+    }
+  ]
+}

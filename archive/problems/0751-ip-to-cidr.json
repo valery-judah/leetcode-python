@@ -1,0 +1,27 @@
+{
+  "category": "",
+  "id": "751",
+  "name": "IP to CIDR",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/ip-to-cidr/",
+  "slug": "ip-to-cidr",
+  "isPaidOnly": true,
+  "tags": [
+    "String",
+    "Bit Manipulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Restore IP Addresses",
+      "slug": "restore-ip-addresses",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/restore-ip-addresses/"
+    },
+    {
+      "title": "Validate IP Address",
+      "slug": "validate-ip-address",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/validate-ip-address/"
+    }
+  ]
+}

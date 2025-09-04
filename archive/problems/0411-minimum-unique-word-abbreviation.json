@@ -1,0 +1,35 @@
+{
+  "category": "",
+  "id": "411",
+  "name": "Minimum Unique Word Abbreviation",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-unique-word-abbreviation/",
+  "slug": "minimum-unique-word-abbreviation",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "String",
+    "Backtracking",
+    "Bit Manipulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Generalized Abbreviation",
+      "slug": "generalized-abbreviation",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/generalized-abbreviation/"
+    },
+    {
+      "title": "Valid Word Abbreviation",
+      "slug": "valid-word-abbreviation",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/valid-word-abbreviation/"
+    },
+    {
+      "title": "Word Abbreviation",
+      "slug": "word-abbreviation",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/word-abbreviation/"
+    }
+  ]
+}

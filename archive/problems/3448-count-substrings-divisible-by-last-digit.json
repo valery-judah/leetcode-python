@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "3448",
+  "name": "Count Substrings Divisible By Last Digit",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/count-substrings-divisible-by-last-digit/",
+  "slug": "count-substrings-divisible-by-last-digit",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Number of Divisible Substrings",
+      "slug": "number-of-divisible-substrings",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/number-of-divisible-substrings/"
+    }
+  ]
+}

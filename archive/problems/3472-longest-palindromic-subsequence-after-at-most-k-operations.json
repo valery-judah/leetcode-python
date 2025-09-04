@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "3472",
+  "name": "Longest Palindromic Subsequence After at Most K Operations",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/longest-palindromic-subsequence-after-at-most-k-operations/",
+  "slug": "longest-palindromic-subsequence-after-at-most-k-operations",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "similar_questions": []
+}

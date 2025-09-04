@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "2730",
+  "name": "Find the Longest Semi-Repetitive Substring",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-the-longest-semi-repetitive-substring/",
+  "slug": "find-the-longest-semi-repetitive-substring",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Sliding Window"
+  ],
+  "similar_questions": []
+}

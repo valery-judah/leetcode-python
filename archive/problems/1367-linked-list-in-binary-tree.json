@@ -1,0 +1,16 @@
+{
+  "category": "",
+  "id": "1367",
+  "name": "Linked List in Binary Tree",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/linked-list-in-binary-tree/",
+  "slug": "linked-list-in-binary-tree",
+  "isPaidOnly": false,
+  "tags": [
+    "Linked List",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": []
+}

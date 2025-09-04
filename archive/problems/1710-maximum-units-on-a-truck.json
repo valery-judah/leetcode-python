@@ -1,0 +1,22 @@
+{
+  "category": "",
+  "id": "1710",
+  "name": "Maximum Units on a Truck",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/maximum-units-on-a-truck/",
+  "slug": "maximum-units-on-a-truck",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Bags With Full Capacity of Rocks",
+      "slug": "maximum-bags-with-full-capacity-of-rocks",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-bags-with-full-capacity-of-rocks/"
+    }
+  ]
+}

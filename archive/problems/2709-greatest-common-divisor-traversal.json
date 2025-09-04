@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "2709",
+  "name": "Greatest Common Divisor Traversal",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/greatest-common-divisor-traversal/",
+  "slug": "greatest-common-divisor-traversal",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Union Find",
+    "Number Theory"
+  ],
+  "similar_questions": [
+    {
+      "title": "Graph Connectivity With Threshold",
+      "slug": "graph-connectivity-with-threshold",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/graph-connectivity-with-threshold/"
+    }
+  ]
+}

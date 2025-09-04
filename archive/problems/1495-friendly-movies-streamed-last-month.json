@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "1495",
+  "name": "Friendly Movies Streamed Last Month",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/friendly-movies-streamed-last-month/",
+  "slug": "friendly-movies-streamed-last-month",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

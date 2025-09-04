@@ -1,0 +1,47 @@
+{
+  "category": "",
+  "id": "2050",
+  "name": "Parallel Courses III",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/parallel-courses-iii/",
+  "slug": "parallel-courses-iii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Graph",
+    "Topological Sort"
+  ],
+  "similar_questions": [
+    {
+      "title": "Course Schedule III",
+      "slug": "course-schedule-iii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/course-schedule-iii/"
+    },
+    {
+      "title": "Parallel Courses",
+      "slug": "parallel-courses",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/parallel-courses/"
+    },
+    {
+      "title": "Single-Threaded CPU",
+      "slug": "single-threaded-cpu",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/single-threaded-cpu/"
+    },
+    {
+      "title": "Process Tasks Using Servers",
+      "slug": "process-tasks-using-servers",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/process-tasks-using-servers/"
+    },
+    {
+      "title": "Maximum Employees to Be Invited to a Meeting",
+      "slug": "maximum-employees-to-be-invited-to-a-meeting",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/maximum-employees-to-be-invited-to-a-meeting/"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "category": "",
+  "id": "1956",
+  "name": "Minimum Time For K Virus Variants to Spread",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-time-for-k-virus-variants-to-spread/",
+  "slug": "minimum-time-for-k-virus-variants-to-spread",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Math",
+    "Binary Search",
+    "Geometry",
+    "Enumeration"
+  ],
+  "similar_questions": []
+}

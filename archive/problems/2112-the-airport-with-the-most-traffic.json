@@ -1,0 +1,13 @@
+{
+  "category": "",
+  "id": "2112",
+  "name": "The Airport With the Most Traffic",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/the-airport-with-the-most-traffic/",
+  "slug": "the-airport-with-the-most-traffic",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": []
+}

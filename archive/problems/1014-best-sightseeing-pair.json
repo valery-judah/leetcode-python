@@ -1,0 +1,14 @@
+{
+  "category": "",
+  "id": "1014",
+  "name": "Best Sightseeing Pair",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/best-sightseeing-pair/",
+  "slug": "best-sightseeing-pair",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "2349",
+  "name": "Design a Number Container System",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/design-a-number-container-system/",
+  "slug": "design-a-number-container-system",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "Design",
+    "Heap (Priority Queue)",
+    "Ordered Set"
+  ],
+  "similar_questions": [
+    {
+      "title": "Seat Reservation Manager",
+      "slug": "seat-reservation-manager",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/seat-reservation-manager/"
+    },
+    {
+      "title": "Design a Food Rating System",
+      "slug": "design-a-food-rating-system",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/design-a-food-rating-system/"
+    }
+  ]
+}

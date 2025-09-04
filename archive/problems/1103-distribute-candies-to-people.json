@@ -1,0 +1,21 @@
+{
+  "category": "",
+  "id": "1103",
+  "name": "Distribute Candies to People",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/distribute-candies-to-people/",
+  "slug": "distribute-candies-to-people",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Distribute Money to Maximum Children",
+      "slug": "distribute-money-to-maximum-children",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/distribute-money-to-maximum-children/"
+    }
+  ]
+}

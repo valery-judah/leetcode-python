@@ -1,0 +1,26 @@
+{
+  "category": "",
+  "id": "3481",
+  "name": "Apply Substitutions",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/apply-substitutions/",
+  "slug": "apply-substitutions",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph",
+    "Topological Sort"
+  ],
+  "similar_questions": [
+    {
+      "title": "Evaluate the Bracket Pairs of a String",
+      "slug": "evaluate-the-bracket-pairs-of-a-string",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "category": "",
+  "id": "3513",
+  "name": "Number of Unique XOR Triplets I",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/number-of-unique-xor-triplets-i/",
+  "slug": "number-of-unique-xor-triplets-i",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Bit Manipulation"
+  ],
+  "similar_questions": []
+}

@@ -1,0 +1,29 @@
+{
+  "category": "",
+  "id": "3161",
+  "name": "Block Placement Queries",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/block-placement-queries/",
+  "slug": "block-placement-queries",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Binary Indexed Tree",
+    "Segment Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Building Boxes",
+      "slug": "building-boxes",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/building-boxes/"
+    },
+    {
+      "title": "Fruits Into Baskets III",
+      "slug": "fruits-into-baskets-iii",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/fruits-into-baskets-iii/"
+    }
+  ]
+}

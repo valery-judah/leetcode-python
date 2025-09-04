@@ -1,0 +1,23 @@
+{
+  "category": "",
+  "id": "2464",
+  "name": "Minimum Subarrays in a Valid Split",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-subarrays-in-a-valid-split/",
+  "slug": "minimum-subarrays-in-a-valid-split",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Number Theory"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Split Into Subarrays With GCD Greater Than One",
+      "slug": "minimum-split-into-subarrays-with-gcd-greater-than-one",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/minimum-split-into-subarrays-with-gcd-greater-than-one/"
+    }
+  ]
+}

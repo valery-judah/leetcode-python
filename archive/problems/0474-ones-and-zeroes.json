@@ -1,0 +1,34 @@
+{
+  "category": "",
+  "id": "474",
+  "name": "Ones and Zeroes",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/ones-and-zeroes/",
+  "slug": "ones-and-zeroes",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "String",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Subarrays With More Ones Than Zeros",
+      "slug": "count-subarrays-with-more-ones-than-zeros",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/count-subarrays-with-more-ones-than-zeros/"
+    },
+    {
+      "title": "Non-negative Integers without Consecutive Ones",
+      "slug": "non-negative-integers-without-consecutive-ones",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/"
+    },
+    {
+      "title": "All Divisions With the Highest Score of a Binary Array",
+      "slug": "all-divisions-with-the-highest-score-of-a-binary-array",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/all-divisions-with-the-highest-score-of-a-binary-array/"
+    }
+  ]
+}
