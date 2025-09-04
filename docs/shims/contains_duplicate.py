@@ -4,16 +4,16 @@ from importlib.util import module_from_spec, spec_from_file_location
 from pathlib import Path
 from types import ModuleType
 
-"""Shim for tasks/0217-contains-duplicate/solutions.py.
+"""Shim for problems/0217-contains-duplicate/solutions.py.
 
-This module dynamically loads the task's solutions module so mkdocstrings can
-document the classes even though the task folder name is not a valid module
+This module dynamically loads the problem's solutions module so mkdocstrings can
+document the classes even though the problem folder name is not a valid module
 identifier.
 """
 
 
 ROOT = Path(__file__).resolve().parents[2]
-SRC = ROOT / "tasks/0217-contains-duplicate/solutions.py"
+SRC = ROOT / "problems/0217-contains-duplicate/solutions.py"
 
 
 def _load_module_from_path(name: str, path: Path) -> ModuleType:

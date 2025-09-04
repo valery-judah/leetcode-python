@@ -42,7 +42,7 @@ This directory contains various utility scripts for maintaining and managing the
 
 ### `new_task.py`
 
-**Purpose:** A script to assist in creating a new task or problem structure within the project.
+**Purpose:** A script to assist in creating a new problem or problem structure within the project.
 
 **Usage:** `python3 scripts/new_task.py`
 

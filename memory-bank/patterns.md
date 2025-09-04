@@ -30,4 +30,4 @@ def find_sum_indices(nums: list[int], target: int) -> list[int]:
 **Idea**: Create soft (`.soft.md`)  links to the main readme file (e.g., `readme.md`). This prevents issues with mentioning the exact readme file, especially when dealing with hundreds of them.
 **Example**:
 
-- `0169.soft.md` -> `tasks/0169-majority-element/readme.md`
+- `0169.soft.md` -> `problems/0169-majority-element/readme.md`

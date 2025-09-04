@@ -20,19 +20,19 @@ This guide shows how to format, lint, and quickly find issues.
 - Run tests:
   - `make test`
 
-## Tasks Only (skip legacy noise)
+## Problems Only (skip legacy noise)
 
-- Fix current tasks code:
-  - `ruff check tasks --fix && black tasks`
-- Check tasks only:
-  - `ruff check tasks && black --check tasks`
+- Fix current problems code:
+  - `ruff check problems --fix && black problems`
+- Check problems only:
+  - `ruff check problems && black --check problems`
 
 ## Capture What’s Wrong (log to a file)
 
 - Full repository log:
   - `ruff check . | tee fmt_errors.md && echo "\n--- BLACK ---" | tee -a fmt_errors.md && black --check . |& tee -a fmt_errors.md`
-- Tasks-only log:
-  - `ruff check tasks | tee fmt_errors.md && black --check tasks |& tee -a fmt_errors.md`
+- Problems-only log:
+  - `ruff check problems | tee fmt_errors.md && black --check problems |& tee -a fmt_errors.md`
 
 ## Triage Tips
 

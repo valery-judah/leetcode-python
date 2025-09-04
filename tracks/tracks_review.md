@@ -4,7 +4,7 @@ This review explains **how** to run the tracks, **what to practice**, and **how 
 
 ---
 ## 0) What’s in this repo
-- `tracks/track_*.yaml`: ordered learning tracks with **why** for each task, extensions, and omissions.
+- `tracks/track_*.yaml`: ordered learning tracks with **why** for each problem, extensions, and omissions.
 - `tracks/tracks.json`: compact list of `{name, ids}` for generators.
 - `problems/<slug>/`: per‑problem folder with README, solution(s), tests, `meta.yaml` (see schema in the project root plan).
 

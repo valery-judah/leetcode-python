@@ -75,11 +75,11 @@ def cases_from_solutions(test_file: str | Path, name: str = "TEST_CASES") -> lis
 def run_task_tests(
     file: str | Path, *, quiet: bool = True, extra_pytest_args: list[str] | None = None
 ) -> int:
-    """Run pytest for the repository, filtered to this task's folder.
+    """Run pytest for the repository, filtered to this problem's folder.
 
     Intended for use in `if __name__ == "__main__"` blocks inside
-    `tasks/<id-name>/solutions.py` to quickly execute the generic tests
-    for just that task.
+    `problems/<id-name>/solutions.py` to quickly execute the generic tests
+    for just that problem.
 
     - `file`: pass `__file__` from the caller module.
     - `quiet`: include `-q` to reduce pytest output noise.

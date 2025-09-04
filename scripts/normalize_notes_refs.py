@@ -22,9 +22,9 @@ def should_skip(path: Path) -> bool:
 
 
 def replace_task_paths(text: str) -> str:
-    # Replace legacy notes.md paths to task readme.md
-    pattern = re.compile(r"`?tasks/(\d{4}-[^/]+?)/notes\.md`?")
-    return pattern.sub(lambda m: f"tasks/{m.group(1)}/readme.md", text)
+    # Replace legacy notes.md paths to problem readme.md
+    pattern = re.compile(r"`?problems/(\d{4}-[^/]+?)/notes\.md`?")
+    return pattern.sub(lambda m: f"problems/{m.group(1)}/readme.md", text)
 
 
 def replace_docs_language(text: str, rel: str) -> str:
@@ -34,18 +34,18 @@ def replace_docs_language(text: str, rel: str) -> str:
 
     replacements: list[tuple[re.Pattern[str], str]] = [
         # Narrative phrasing
-        (re.compile(r"notes\.md write-ups", re.IGNORECASE), "task README write-ups"),
+        (re.compile(r"notes\.md write-ups", re.IGNORECASE), "problem README write-ups"),
         # Generic wording
         (re.compile(r"problem notes\.md", re.IGNORECASE), "problem README"),
-        (re.compile(r"per[- ]task notes\.md", re.IGNORECASE), "per-task README"),
+        (re.compile(r"per[- ]problem notes\.md", re.IGNORECASE), "per-problem README"),
         # Action items and guidance
         (
             re.compile(r"Document the solution in notes\.md\.", re.IGNORECASE),
             "Document the solution in the README.",
         ),
         (
-            re.compile(r"docstrings/notes\.md updates per task", re.IGNORECASE),
-            "docstrings/README updates per task",
+            re.compile(r"docstrings/notes\.md updates per problem", re.IGNORECASE),
+            "docstrings/README updates per problem",
         ),
     ]
 

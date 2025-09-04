@@ -1,4 +1,4 @@
 # Progress Log
 
-| Date | Task | Diff | Status | Time | Attempts | Time/Space | Notes |
+| Date | Problem | Diff | Status | Time | Attempts | Time/Space | Notes |
 |------|------|------|--------|------|----------|------------|-------|

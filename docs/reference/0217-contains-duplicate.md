@@ -1,9 +1,9 @@
 # 217. Contains Duplicate — API Reference
 
 The solution classes below are auto-documented via mkdocstrings, using a shim
-module that loads the task’s `solutions.py` from a non-importable folder name.
+module that loads the problem’s `solutions.py` from a non-importable folder name.
 
-Related write-up: `tasks/0217-contains-duplicate/readme.md`
+Related write-up: `problems/0217-contains-duplicate/readme.md`
 
 ::: docs.shims.contains_duplicate
     options:

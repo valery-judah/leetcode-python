@@ -45,12 +45,12 @@ This document captures proposed improvements to our GitHub Actions workflow for 
 # Fail CI if coverage drops below threshold
 test-ci:
  PYTHONDONTWRITEBYTECODE=1 $(PYTHON) -m pytest -q \
-  --cov=tasks --cov-report=term-missing \
+  --cov=problems --cov-report=term-missing \
   --cov-report=xml:coverage.xml --cov-fail-under=85
 
 # Strict mypy for CI (no "|| true")
 type-ci:
- mypy tasks
+ mypy problems
 ```
 
 2) Split workflow into build and deploy jobs with job‑level permissions and matrix:

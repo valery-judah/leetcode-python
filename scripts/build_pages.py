@@ -9,7 +9,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-TASKS_DIR = ROOT / "tasks"
+TASKS_DIR = ROOT / "problems"
 HTMLCOV_DIR = ROOT / "htmlcov"
 SITE_DIR = ROOT / "site"
 
@@ -69,7 +69,7 @@ def ensure_empty_dir(path: Path) -> None:
     path.mkdir(parents=True, exist_ok=True)
 
 
-def build_site(tasks: list[TaskMeta]) -> None:
+def build_site(problems: list[TaskMeta]) -> None:
     """Build the Pages site.
 
     If an MkDocs config is present at the repo root (mkdocs.yml), prefer
@@ -132,7 +132,7 @@ def build_site(tasks: list[TaskMeta]) -> None:
 
     # Build tag stats
     tag_counts: dict[str, int] = {}
-    for t in tasks:
+    for t in problems:
         for tag in t.tags:
             tag_counts[tag] = tag_counts.get(tag, 0) + 1
     top_tags = sorted(tag_counts.items(), key=lambda kv: (-kv[1], kv[0]))
@@ -146,7 +146,7 @@ def build_site(tasks: list[TaskMeta]) -> None:
 
     # Index HTML
     rows = []
-    for t in sorted(tasks, key=lambda x: x.number):
+    for t in sorted(problems, key=lambda x: x.number):
         tags_html = (
             " ".join(f"<span class=chip>{tag}</span>" for tag in t.tags)
             or "<span class=muted>—</span>"
@@ -158,7 +158,7 @@ def build_site(tasks: list[TaskMeta]) -> None:
         )
 
     tags_html = (
-        " ".join(f"<span class=chip title='{c} tasks'>{tag}</span>" for tag, c in top_tags)
+        " ".join(f"<span class=chip title='{c} problems'>{tag}</span>" for tag, c in top_tags)
         or "<span class=muted>No tags yet</span>"
     )
 
@@ -180,7 +180,7 @@ def build_site(tasks: list[TaskMeta]) -> None:
   <header>
     <h1>LeetCode Python Workspace</h1>
     <p class="muted">
-      Fast test-first practice with per-task coverage and multi-solution comparisons.
+      Fast test-first practice with per-problem coverage and multi-solution comparisons.
     </p>
   </header>
   <nav>
@@ -192,7 +192,7 @@ def build_site(tasks: list[TaskMeta]) -> None:
     <div class="chips">{tags_html}</div>
   </section>
   <section>
-    <h2>Tasks</h2>
+    <h2>Problems</h2>
     <table>
       <thead><tr><th>#</th><th>Problem</th><th>Difficulty</th><th>Tags</th></tr></thead>
       <tbody>
@@ -207,14 +207,14 @@ def build_site(tasks: list[TaskMeta]) -> None:
 
 
 def main() -> None:
-    tasks: list[TaskMeta] = []
+    problems: list[TaskMeta] = []
     if TASKS_DIR.exists():
         for entry in sorted(TASKS_DIR.iterdir()):
             if entry.is_dir():
                 meta = parse_task(entry)
                 if meta:
-                    tasks.append(meta)
-    build_site(tasks)
+                    problems.append(meta)
+    build_site(problems)
 
 
 if __name__ == "__main__":

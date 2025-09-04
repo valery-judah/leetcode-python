@@ -4,7 +4,7 @@ This document captures how this workspace is structured and the patterns used fo
 
 ## Top-level Layout
 
-- `tasks/`: One folder per LeetCode problem (`NNNN-slug/`). Source of truth for current work.
+- `problems/`: One folder per LeetCode problem (`NNNN-slug/`). Source of truth for current work.
 - `templates/`: Scaffolding templates used by `scripts/new_task.py`.
 - `scripts/`: Utilities (e.g., `new_task.py` for creating problem skeletons).
 - `docs/`: Documentation (workflow, architecture, logs).
@@ -13,7 +13,7 @@ This document captures how this workspace is structured and the patterns used fo
 
 Key configs:
 
-- Testing: `pytest.ini` → discovers tests in `tasks/`.
+- Testing: `pytest.ini` → discovers tests in `problems/`.
 - Lint/format/type: `pyproject.toml`.
 - Make targets: `Makefile`.
 
@@ -21,15 +21,15 @@ Key configs:
 
 Default (single solution):
 
-- `tasks/NNNN-slug/readme.md` — clarifying questions, examples, approach, complexity.
-- `tasks/NNNN-slug/solutions.py` — export a `Solution` class with a `solve(...)` method. Optionally include `ALL_SOLUTIONS = [Solution]` for consistency.
+- `problems/NNNN-slug/readme.md` — clarifying questions, examples, approach, complexity.
+- `problems/NNNN-slug/solutions.py` — export a `Solution` class with a `solve(...)` method. Optionally include `ALL_SOLUTIONS = [Solution]` for consistency.
 
 Multi-solution pattern (recommended for comparing approaches):
 
-- `tasks/NNNN-slug/solutions.py` — consolidated module exporting multiple classes implementing the same `solve(...)` API. List them in `ALL_SOLUTIONS = [ClassA, ClassB, ...]`. Optionally set `Solution = ClassA` as a default alias.
-- No per-task test files are required. The generic spec `tasks/all_problems_spec.py` auto-discovers the primary class (or the first class in `ALL_SOLUTIONS`) and runs the declared `TEST_CASES`.
+- `problems/NNNN-slug/solutions.py` — consolidated module exporting multiple classes implementing the same `solve(...)` API. List them in `ALL_SOLUTIONS = [ClassA, ClassB, ...]`. Optionally set `Solution = ClassA` as a default alias.
+- No per-problem test files are required. The generic spec `problems/all_problems_spec.py` auto-discovers the primary class (or the first class in `ALL_SOLUTIONS`) and runs the declared `TEST_CASES`.
 
-Example: `tasks/0217-contains-duplicate/solutions.py`.
+Example: `problems/0217-contains-duplicate/solutions.py`.
 
 ### Example: Minimal `solutions.py` and Variant IDs
 
@@ -59,7 +59,7 @@ ALL_SOLUTIONS = [Baseline, SetBased]
 Running tests with `-vv` shows each class as a separate variant, labeled `module:ClassName`:
 
 ```bash
-$ pytest tasks/0217-contains-duplicate/test_0217_contains_duplicate.py -vv
+$ pytest problems/0217-contains-duplicate/test_0217_contains_duplicate.py -vv
 test_0217_contains_duplicate.py::test_contains_duplicate[solutions:Baseline] PASSED
 test_0217_contains_duplicate.py::test_contains_duplicate[solutions:SetBased] PASSED
 ```
@@ -67,7 +67,7 @@ test_0217_contains_duplicate.py::test_contains_duplicate[solutions:SetBased] PAS
 ## Testing Conventions
 
 - Runner: `pytest` (see `Makefile: test`).
-- Discovery: `pytest` finds `test_*.py` under `tasks/`.
+- Discovery: `pytest` finds `test_*.py` under `problems/`.
 - Parametrization: Prefer `@pytest.mark.parametrize` for case coverage.
 - Loading solutions: Tests use `runpy.run_path(...)` to load target modules without importing packages, avoiding `__init__.py` overhead.
 - Multi-export discovery: Tests read `ALL_SOLUTIONS` (list of classes) when present; otherwise use a single `Solution` class from `solutions.py`. Variants are labeled as `module:ClassName` for clarity in `-vv` output.
@@ -78,8 +78,8 @@ test_0217_contains_duplicate.py::test_contains_duplicate[solutions:SetBased] PAS
 ## Coding Conventions
 
 - Public API: `class Solution: def solve(self, ...) -> ...` to keep tests consistent.
-- Types: Use type hints; allow partial typing during exploration (`make type` tolerates stubs in `tasks/`).
-- Docs: Add a docstring to `solve(...)` and fill the task `readme.md` with approach and complexity.
+- Types: Use type hints; allow partial typing during exploration (`make type` tolerates stubs in `problems/`).
+- Docs: Add a docstring to `solve(...)` and fill the problem `readme.md` with approach and complexity.
 - No side effects: Avoid print/exec at import time; tests control execution.
 
 ## Scaffolding
@@ -99,7 +99,7 @@ Each ADR should include: context, decision, consequences, and date.
 ## Patterns & Memory
 
 - Algorithmic patterns: `memory-bank/patterns.md` — reusable solution strategies (e.g., two-pointer, sliding window, hash map).
-- Active task notes: `memory-bank/activeContext.md` — current focus, examples, TODOs.
+- Active problem notes: `memory-bank/activeContext.md` — current focus, examples, TODOs.
 - Progress log: `memory-bank/progress.md` — optional lightweight log of sessions/outcomes.
 
 Use `docs/` for durable, repo-wide architecture/conventions; use `memory-bank/` for personal, evolving heuristics and active context.

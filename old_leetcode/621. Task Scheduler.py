@@ -2,8 +2,8 @@ import heapq
 from collections import Counter, deque
 
 
-def leastInterval(tasks: list[str], n: int) -> int:
-    count = Counter(tasks)
+def leastInterval(problems: list[str], n: int) -> int:
+    count = Counter(problems)
     print(count)
 
     maxHeap = [-c for c in count.values()]
@@ -19,6 +19,6 @@ def leastInterval(tasks: list[str], n: int) -> int:
 
 
 if __name__ == "__main__":
-    tasks = ["A", "A", "A", "B", "B", "B"]
+    problems = ["A", "A", "A", "B", "B", "B"]
     n = 2
-    print(leastInterval(tasks, n))
+    print(leastInterval(problems, n))

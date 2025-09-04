@@ -2,14 +2,14 @@
 **Action Plan:**
 
 1. **Refine and Finalize the Algorithm and Checklist**:
-   - Develop a comprehensive algorithm and checklist for solving coding tasks both at home and during interviews.
+   - Develop a comprehensive algorithm and checklist for solving coding problems both at home and during interviews.
 
 2. **Practice Asking Clarifying Questions**:
-   - Focus on identifying and formulating clarifying questions during task-solving.
+   - Focus on identifying and formulating clarifying questions during problem-solving.
    - Make it a habit to think about relevant clarifying questions for each step of the process.
 
 3. **Create an Interview Process Checklist**:
-   - Draft a structured checklist for approaching tasks in interviews to ensure a clear and consistent problem-solving methodology.
+   - Draft a structured checklist for approaching problems in interviews to ensure a clear and consistent problem-solving methodology.
 
 4. **Simulate Clarifying Question Scenarios**:
    - Take a few sample interview questions and generate potential clarifying questions for each. This will help you prepare for real-world scenarios and improve your ability to think critically under pressure.
@@ -52,7 +52,7 @@ Before jumping into writing code, a good candidate will always ask clarifying qu
 
 - It bounds the problem space. For example, perhaps you ask the interviewer, "Is it guaranteed that all integers in this array are positive?". If the answer is yes, then you don't have to account for the entire negative integer space, which could potentially make the problem much easier to solve.
 - It shows the interviewer that you're proactively thinking about edge cases. Interviews are as much about showing that you're capable of thinking critically and thoroughly as it is about raw coding ability.
-- It allows you and the interviewer to agree on an understanding of the problem. Occasionally, I've given a problem to a candidate and they solved a slightly different problem. Making sure that you and your interviewer are on the same page about what your task is before you begin.
+- It allows you and the interviewer to agree on an understanding of the problem. Occasionally, I've given a problem to a candidate and they solved a slightly different problem. Making sure that you and your interviewer are on the same page about what your problem is before you begin.
 
 For data structures, I've divided the questions into two broad categories:
 
@@ -126,7 +126,7 @@ Some things to keep in mind:
 
 **Only start coding after you and your interviewer have agreed on an approach and they have given you the green light.**
 
-Write your code with good coding style. Reading code written by others is usually not an enjoyable task. Reading horribly-formatted code by others makes it worse. Your goal is to make your interviewer understand the code you have written so that they can quickly evaluate if your code does what you say it does and whether it solves the given problem. Use clear variable names, avoid single letter names unless they are for iteration. However, if you are coding on a whiteboard, you might not want to use extremely verbose variable names for the sake of reducing the amount you have to write. Abbreviations are usually fine if you explain what it means beforehand.
+Write your code with good coding style. Reading code written by others is usually not an enjoyable problem. Reading horribly-formatted code by others makes it worse. Your goal is to make your interviewer understand the code you have written so that they can quickly evaluate if your code does what you say it does and whether it solves the given problem. Use clear variable names, avoid single letter names unless they are for iteration. However, if you are coding on a whiteboard, you might not want to use extremely verbose variable names for the sake of reducing the amount you have to write. Abbreviations are usually fine if you explain what it means beforehand.
 *Always be explaining what you are currently writing/typing to the interviewer.* Explain what you are coding/typing to the interviewer, what you are trying to achieve. This is not about literally reading out what you are typing to the interviewer. Talk about the section of the code you are currently implementing at a higher level, explain why it is written as such and what it is trying to achieve.
 While coding, if you find yourself copying and pasting code, consider whether it is necessary. If you find yourself copying and pasting one large chunk of code spanning multiple lines, it is usually an indicator that you can refactor by extracting those lines into a function and defining parameters for the differences in them. If it is just a single line you copied, usually it is fine. Do remember to change the respective variables in your copied line of code where relevant. Copy-paste errors are a common source of bugs even in day-to-day coding!
 

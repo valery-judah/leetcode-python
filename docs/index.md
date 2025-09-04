@@ -7,7 +7,7 @@ Welcome to the project documentation site. This site is built with MkDocs and mk
 
 What you’ll find here:
 
-- Problem write-ups (task README write-ups) and step-by-step reasoning
+- Problem write-ups (problem README write-ups) and step-by-step reasoning
 - API references for solution classes via mkdocstrings (through import shims)
 
 Run locally:
