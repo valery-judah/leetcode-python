@@ -87,14 +87,14 @@ def run_task_tests(
 
     Returns the subprocess return code.
     """
-    task_dir = Path(file).parent
-    root = task_dir.parent
-    task_name = task_dir.name
+    problem_dir = Path(file).parent
+    root = problem_dir.parent
+    problem_name = problem_dir.name
 
     args: list[str] = [sys.executable, "-m", "pytest"]
     if quiet:
         args.append("-q")
-    args.extend([str(root), "-k", task_name])
+    args.extend([str(root), "-k", problem_name])
     if extra_pytest_args:
         args.extend(extra_pytest_args)
 

@@ -23,7 +23,7 @@ What do you want?
 
 ```bash
 # 1) Create a new problem skeleton
-python scripts/new_task.py two-sum 1 --difficulty easy --tags array,hash-map --url https://leetcode.com/problems/two-sum/
+python scripts/new_problem.py two-sum 1 --difficulty easy --tags array,hash-map --url https://leetcode.com/problems/two-sum/
 
 # 2) Run tests and style checks
 make test          # pytest (no __pycache__ written)
@@ -64,7 +64,7 @@ If an alias maps to multiple folders, I’ll ask you to clarify which one you me
 If you want to implement and compare multiple approaches for a problem:
 
 ```bash
-python scripts/new_task.py contains-duplicate 217 --multi
+python scripts/new_problem.py contains-duplicate 217 --multi
 ```
 
 This scaffolds a consolidated `problems/0217-contains-duplicate/solutions.py` where you can define multiple classes (e.g., `BruteForce`, `SetBased`) and list them in `ALL_SOLUTIONS = [BruteForce, SetBased]`. The test file auto-discovers each class and runs the same cases for all variants. You can also optionally set `Solution = SetBased` as a default alias.
@@ -88,10 +88,10 @@ This scaffolds a consolidated `problems/0217-contains-duplicate/solutions.py` wh
   if __name__ == "__main__":
       import subprocess, sys
       from pathlib import Path
-      task_dir = Path(__file__).parent
-      root = task_dir.parent
-      task_name = task_dir.name
-      subprocess.run([sys.executable, "-m", "pytest", "-q", str(root), "-k", task_name], check=False)
+      problem_dir = Path(__file__).parent
+      root = problem_dir.parent
+      problem_name = problem_dir.name
+      subprocess.run([sys.executable, "-m", "pytest", "-q", str(root), "-k", problem_name], check=False)
   ```
 
 - Canonical test cases live in `solutions.py` as `TEST_CASES`:

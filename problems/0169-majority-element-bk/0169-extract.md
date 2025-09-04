@@ -4,7 +4,7 @@ difficulty: easy
 status: todo
 attempts: 0
 last_solved: null
-solution_path: repos/leetcode-python-project/tasks/0169-majority-element/solutions.py
+solution_path: repos/leetcode-python-project/problems/0169-majority-element/solutions.py
 tags:
 - leetcode
 - array
@@ -16,7 +16,7 @@ pattern: []
 created: 2025-09-01
 updated: 2025-09-01
 leetcode_link: https://leetcode.com/problems/majority-element/
-task_dir: repos/leetcode-python-project/tasks/0169-majority-element
+problem_dir: repos/leetcode-python-project/problems/0169-majority-element
 ---
 
 # Majority Element

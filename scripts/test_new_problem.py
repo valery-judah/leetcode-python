@@ -7,7 +7,7 @@ from typing import Generator
 import pytest
 
 ROOT = Path(__file__).resolve().parents[1]
-NEW_PROBLEM_SCRIPT = ROOT / "scripts" / "new_task.py"
+NEW_PROBLEM_SCRIPT = ROOT / "scripts" / "new_problem.py"
 PROBLEMS_DIR = ROOT / "problems"
 
 
@@ -30,7 +30,7 @@ def test_problem_path() -> Generator[Path, None, None]:
 
 
 def run_new_problem_script(*args: str) -> None:
-    """Helper function to run the new_task.py script from the project root."""
+    """Helper function to run the new_problem.py script from the project root."""
     cmd = [sys.executable, str(NEW_PROBLEM_SCRIPT), *args]
     subprocess.run(cmd, check=True, cwd=ROOT)
 

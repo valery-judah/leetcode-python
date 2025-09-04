@@ -10,7 +10,7 @@
 - [0169-leetcode.md](0169-extract.md): Problem statement, snapshot and key constraints.
 - [solutions.py](solutions.py): Implementations (may include multiple variants via `ALL_SOLUTIONS`) and `TEST_CASES`.
 - [reasoning_by_step.py](reasoning_by_step.py): Step-by-step reasoning or exploratory code for the chosen approach(es).
-- [readme.md](readme.md): This task overview and navigation.
+- [readme.md](readme.md): This problem overview and navigation.
 
 ## Clarifying Questions
 
@@ -89,7 +89,7 @@ Question: why it's a candidate? Because: s(XXAXX) = s(XXXXA) = 1, and `XXXX` can
 
 Correctness can be found in the wiki article on the [Boyer–Moore majority vote algorithm](https://en.wikipedia.org/wiki/Boyer–Moore_majority_vote_algorithm).
 
-[visualization script](/tasks/0169-majority-element/reasoning_by_step.py).
+[visualization script](/problems/0169-majority-element/reasoning_by_step.py).
 
 Terminology. Let's call the invariant variable the **vote margin** (a.k.a. **surplus**, **balance**, or **unpaired majority count**). It is the number of currently **unpaired** occurrences of the candidate.
 

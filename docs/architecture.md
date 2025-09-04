@@ -5,8 +5,8 @@ This document captures how this workspace is structured and the patterns used fo
 ## Top-level Layout
 
 - `problems/`: One folder per LeetCode problem (`NNNN-slug/`). Source of truth for current work.
-- `templates/`: Scaffolding templates used by `scripts/new_task.py`.
-- `scripts/`: Utilities (e.g., `new_task.py` for creating problem skeletons).
+- `templates/`: Scaffolding templates used by `scripts/new_problem.py`.
+- `scripts/`: Utilities (e.g., `new_problem.py` for creating problem skeletons).
 - `docs/`: Documentation (workflow, architecture, logs).
 - `memory-bank/`: Cline memory notes (patterns, active context, progress).
 - `old_leetcode/`: Legacy ad-hoc solutions not following current structure.
@@ -84,7 +84,7 @@ test_0217_contains_duplicate.py::test_contains_duplicate[solutions:SetBased] PAS
 
 ## Scaffolding
 
-- Create a new problem skeleton: `python scripts/new_task.py <slug> <number> [--difficulty ... --tags ... --url ...]`.
+- Create a new problem skeleton: `python scripts/new_problem.py <slug> <number> [--difficulty ... --tags ... --url ...]`.
 - Templates live in `templates/`; the `--multi` scaffold creates `solutions.py` with `ALL_SOLUTIONS` and a discovery test that parametrizes each class.
 
 ## Decision Records (optional but recommended)

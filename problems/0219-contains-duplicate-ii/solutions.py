@@ -47,16 +47,16 @@ TEST_CASES: list[tuple[str, list[int], int, bool]] = [
 
 
 if __name__ == "__main__":
-    # Convenience: running this file executes the generic spec filtered to this task.
+    # Convenience: running this file executes the generic spec filtered to this problem.
     import subprocess
     import sys
     from pathlib import Path
 
-    task_dir = Path(__file__).parent
-    root = task_dir.parent
-    task_name = task_dir.name  # e.g., "0219-contains-duplicate-ii"
-    # Run the single generic spec, filtered to this task's params
+    problem_dir = Path(__file__).parent
+    root = problem_dir.parent
+    problem_name = problem_dir.name  # e.g., "0219-contains-duplicate-ii"
+    # Run the single generic spec, filtered to this problem's params
     subprocess.run(
-        [sys.executable, "-m", "pytest", "-q", str(root), "-k", task_name],
+        [sys.executable, "-m", "pytest", "-q", str(root), "-k", problem_name],
         check=False,
     )
