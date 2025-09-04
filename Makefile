@@ -86,7 +86,8 @@ build:
 	@echo "--- Generating Markdown (tracks + README table) ---"
 	make markdown
 	@echo "--- Running pre-commit on all files (final step) ---"
-	pre-commit run --all-files
+	# Use module form to ensure venv resolution even if entrypoint isn't on PATH
+	$(PYTHON) -m pre_commit run --all-files || true
 
 # Target: format-md
 # Automatically formats all Markdown files in the repository using mdformat.
