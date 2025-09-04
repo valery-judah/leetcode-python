@@ -116,16 +116,13 @@ def main() -> None:
     pid_str = str(problem.get("id") or "").strip()
     try:
         number = int(pid_str)
-    except ValueError:
-        raise SystemExit(f"Invalid problem id: {pid_str}")
+    except ValueError as e:
+        raise SystemExit(f"Invalid problem id: {pid_str}") from e
     slug = kebab(str(problem.get("slug") or ""))
     title = str(problem.get("name") or slug.replace("-", " ").title())
     difficulty = _normalize_difficulty(problem.get("difficulty")) or "easy"
     tags_list = problem.get("tags") or []
-    if isinstance(tags_list, list):
-        tags = ", ".join(tags_list)
-    else:
-        tags = str(tags_list)
+    tags = ", ".join(tags_list) if isinstance(tags_list, list) else str(tags_list)
     url = str(problem.get("leetcode_url") or f"https://leetcode.com/problems/{slug}/")
     # Prepare similar questions markdown list
     similar_md = "None"
@@ -137,7 +134,9 @@ def main() -> None:
                 continue
             title = str(it.get("title") or it.get("name") or "").strip() or "Related"
             s_slug = kebab(str(it.get("slug") or ""))
-            s_url = str(it.get("leetcode_url") or (f"https://leetcode.com/problems/{s_slug}/" if s_slug else ""))
+            s_url = str(
+                it.get("leetcode_url") or (f"https://leetcode.com/problems/{s_slug}/" if s_slug else "")
+            )
             # Try to resolve difficulty from lists by id/slug
             s_id = str(it.get("id") or "").strip()
             resolved = None

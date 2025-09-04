@@ -198,10 +198,7 @@ _CASE_PARAMS = _discover_case_params()
 
 @pytest.mark.parametrize(
     ("problem", "sol_name", "module_path", "exc", "label", "args", "kwargs"),
-    [
-        (p.problem, p.sol_name, p.module_path, p.exc, p.label, p.args, p.kwargs)
-        for p in _STUB_PARAMS
-    ],
+    [(p.problem, p.sol_name, p.module_path, p.exc, p.label, p.args, p.kwargs) for p in _STUB_PARAMS],
 )
 def test_stub_solutions_raise(
     problem: str,

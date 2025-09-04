@@ -1,5 +1,3 @@
-
-
 class Solution:
     def solve(self, nums: list[int], target: int) -> list[int]:
         """

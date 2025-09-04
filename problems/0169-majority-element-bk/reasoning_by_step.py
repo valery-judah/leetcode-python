@@ -37,9 +37,7 @@ def boyer_moore_with_trace(nums: List[Any]) -> Tuple[Any | None, List[Step]]:
             s -= 1
             action = "dec"
 
-        steps.append(
-            Step(i=i, x=x, prev_c=prev_c, prev_s=prev_s, action=action, c=c, s=s, margin=s)
-        )
+        steps.append(Step(i=i, x=x, prev_c=prev_c, prev_s=prev_s, action=action, c=c, s=s, margin=s))
     return c, steps
 
 
@@ -113,9 +111,7 @@ def explain_trace(
             alive[st.i] = False
 
         # Build inline prefix rendering and a single-row output
-        prefix_repr = (
-            "[" + " ".join((str(nums[j]) if alive[j] else "X") for j in range(st.i + 1)) + "]"
-        )
+        prefix_repr = "[" + " ".join((str(nums[j]) if alive[j] else "X") for j in range(st.i + 1)) + "]"
         margin_bar = "|" * st.s  # quick visual for margin size
         suffix_mark = "★" if show_suffix_marker and st.i > last_zero_idx else " "
 

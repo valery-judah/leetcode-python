@@ -4,7 +4,8 @@ Generate / regenerate repo structure from track yaml files.
 
 - Reads all `tracks/track_*.yaml` (and optional `extensions.optional`) and builds a unified problem set.
 - Optionally enriches with IDs by scanning existing problems/* directories and lists/*.json.
-- Creates missing problem folders under problems/, writes `problem.json`, README, solution stub, and test stub.
+- Creates missing problem folders under problems/, writes `problem.json`,
+  README, solution stub, and test stub.
 - Idempotent. Default is dry-run. Use --apply to write changes.
 
 Requires: PyYAML (for reading track yaml). Install:
@@ -13,6 +14,7 @@ Requires: PyYAML (for reading track yaml). Install:
 from __future__ import annotations
 
 import argparse
+import contextlib
 import datetime as dt
 import json
 import re
@@ -28,6 +30,7 @@ except Exception:  # pragma: no cover
 
 # ---------------------------- models ----------------------------
 
+
 @dataclass
 class TrackProblem:
     slug: str
@@ -38,6 +41,7 @@ class TrackProblem:
     why: str | None
     track: str
     kind: str  # 'core' or 'extension'
+
 
 @dataclass
 class ProblemRecord:
@@ -70,6 +74,7 @@ class ProblemRecord:
         if tp.primary_pattern and tp.primary_pattern not in self.patterns:
             self.patterns.append(tp.primary_pattern)
 
+
 # ---------------------------- utils ----------------------------
 
 TRACK_LINE_RE = re.compile(r"^\s*track:\s*([^#\n]+?)\s*$", re.MULTILINE)
@@ -100,6 +105,7 @@ def write_json(p: Path, obj, apply: bool, indent: int = 2) -> None:
 
 # ---------------------------- discovery ----------------------------
 
+
 def load_tracks(tracks_dir: Path) -> Dict[str, List[TrackProblem]]:
     """Return mapping track_name -> list of TrackProblem."""
     ret: Dict[str, List[TrackProblem]] = {}
@@ -107,24 +113,11 @@ def load_tracks(tracks_dir: Path) -> Dict[str, List[TrackProblem]]:
         data = read_yaml(y)
         track_name = str(data.get("track") or y.stem)
         coll: List[TrackProblem] = []
-        for kind, key in [("core", "problems"), ("extension", "extensions")]:
+        for _kind, key in [("core", "problems"), ("extension", "extensions")]:
             if key == "problems" and isinstance(data.get("problems"), list):
                 for it in data["problems"]:
-                    coll.append(TrackProblem(
-                        slug=str(it.get("slug")),
-                        title=it.get("title"),
-                        difficulty=it.get("difficulty"),
-                        primary_pattern=it.get("primary_pattern"),
-                        section=it.get("section"),
-                        why=it.get("why"),
-                        track=track_name,
-                        kind="core",
-                    ))
-            elif key == "extensions" and isinstance(data.get("extensions"), dict):
-                opt = data["extensions"].get("optional")
-                if isinstance(opt, list):
-                    for it in opt:
-                        coll.append(TrackProblem(
+                    coll.append(
+                        TrackProblem(
                             slug=str(it.get("slug")),
                             title=it.get("title"),
                             difficulty=it.get("difficulty"),
@@ -132,8 +125,25 @@ def load_tracks(tracks_dir: Path) -> Dict[str, List[TrackProblem]]:
                             section=it.get("section"),
                             why=it.get("why"),
                             track=track_name,
-                            kind="extension",
-                        ))
+                            kind="core",
+                        )
+                    )
+            elif key == "extensions" and isinstance(data.get("extensions"), dict):
+                opt = data["extensions"].get("optional")
+                if isinstance(opt, list):
+                    for it in opt:
+                        coll.append(
+                            TrackProblem(
+                                slug=str(it.get("slug")),
+                                title=it.get("title"),
+                                difficulty=it.get("difficulty"),
+                                primary_pattern=it.get("primary_pattern"),
+                                section=it.get("section"),
+                                why=it.get("why"),
+                                track=track_name,
+                                kind="extension",
+                            )
+                        )
         ret[track_name] = coll
     return ret
 
@@ -180,10 +190,8 @@ def build_slug_id_map(problems_dir: Path, lists_dir: Path) -> Dict[str, int]:
 def _walk_pairs_id_slug(obj) -> Iterable[Tuple[int, str]]:
     if isinstance(obj, dict):
         if "id" in obj and "slug" in obj:
-            try:
+            with contextlib.suppress(Exception):
                 yield int(obj["id"]), str(obj["slug"]).strip()
-            except Exception:
-                pass
         for v in obj.values():
             yield from _walk_pairs_id_slug(v)
     elif isinstance(obj, list):
@@ -192,6 +200,7 @@ def _walk_pairs_id_slug(obj) -> Iterable[Tuple[int, str]]:
 
 
 # ---------------------------- generation ----------------------------
+
 
 def decide_folder_name(slug: str, pid: int | None, id_mode: str) -> str:
     if id_mode == "none" or pid is None and id_mode == "auto_none_if_missing":
@@ -246,6 +255,7 @@ def render_template(tpl: str, **kw) -> str:
     def repl(match):
         key = match.group(1)
         return str(kw.get(key, ""))
+
     return re.sub(r"\$\{([A-Z_]+)\}", repl, tpl)
 
 
@@ -269,14 +279,25 @@ def build_problem_json(rec: ProblemRecord) -> dict:
 
 # ---------------------------- main flow ----------------------------
 
+
 def main(argv: List[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description="Generate/regenerate repo from tracks")
     ap.add_argument("--tracks-dir", default="tracks", help="Directory with track_*.yaml files")
     ap.add_argument("--problems-dir", default="problems", help="Directory to create problem folders")
     ap.add_argument("--lists-dir", default="lists", help="Directory with lists *.json for ID enrichment")
-    ap.add_argument("--id-mode", choices=["auto", "auto_none_if_missing", "none", "require"], default="auto", help="Folder naming with ID prefix")
+    ap.add_argument(
+        "--id-mode",
+        choices=["auto", "auto_none_if_missing", "none", "require"],
+        default="auto",
+        help="Folder naming with ID prefix",
+    )
     ap.add_argument("--apply", action="store_true", help="Write changes; otherwise dry-run")
-    ap.add_argument("--overwrite", choices=["skip", "merge", "overwrite"], default="merge", help="When problem.json exists")
+    ap.add_argument(
+        "--overwrite",
+        choices=["skip", "merge", "overwrite"],
+        default="merge",
+        help="When problem.json exists",
+    )
     ap.add_argument("--readme-template", default="templates/problem_readme.md.tpl")
     ap.add_argument("--solution-template", default="templates/solution.py.tpl")
     ap.add_argument("--test-template", default="templates/test_solution.py.tpl")
@@ -293,7 +314,7 @@ def main(argv: List[str] | None = None) -> int:
 
     # Build slug->ProblemRecord
     records: Dict[str, ProblemRecord] = {}
-    for tname, items in tracks.items():
+    for _tname, items in tracks.items():
         for tp in items:
             slug = tp.slug
             if not slug:
@@ -316,14 +337,14 @@ def main(argv: List[str] | None = None) -> int:
     test_tpl = load_template((root / args.test_template), TEST_DEFAULT)
 
     # Apply
-    for slug, rec in sorted(records.items(), key=lambda kv: (kv[1].id is None, kv[1].id or 10**9, kv[0])):
+    for _slug, rec in sorted(records.items(), key=lambda kv: (kv[1].id is None, kv[1].id or 10**9, kv[0])):
         folder_name = decide_folder_name(rec.slug, rec.id, args.id_mode)
         pdir = problems_dir / folder_name
 
         # problem.json
         target_json = pdir / "problem.json"
         new_data = build_problem_json(rec)
-        action = "create"
+        # action = "create" # Removed unused variable
         if target_json.exists():
             if args.overwrite == "skip":
                 print(f"SKIP problem.json exists: {target_json}")

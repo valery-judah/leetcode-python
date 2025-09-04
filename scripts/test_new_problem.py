@@ -45,21 +45,19 @@ def test_new_problem_creation_and_regeneration(test_problem_path: Path):
     # Create a temporary list entry so the script can find the problem
     temp_list = LISTS_DIR / "_temp_test_list.json"
     temp_list.write_text(
-        (
-            "{\n"
-            "  \"problems\": [\n"
-            "    {\n"
-            f"      \"category\": \"Test\",\n"
-            f"      \"id\": \"{number}\",\n"
-            f"      \"name\": \"Temp Test Problem\",\n"
-            f"      \"difficulty\": \"Easy\",\n"
-            f"      \"leetcode_url\": \"https://leetcode.com/problems/{slug}/\",\n"
-            f"      \"slug\": \"{slug}\",\n"
-            f"      \"tags\": [\"Test\"]\n"
-            "    }\n"
-            "  ]\n"
-            "}\n"
-        )
+        "{\n"
+        '  "problems": [\n'
+        "    {\n"
+        f'      "category": "Test",\n'
+        f'      "id": "{number}",\n'
+        f'      "name": "Temp Test Problem",\n'
+        f'      "difficulty": "Easy",\n'
+        f'      "leetcode_url": "https://leetcode.com/problems/{slug}/",\n'
+        f'      "slug": "{slug}",\n'
+        f'      "tags": ["Test"]\n'
+        "    }\n"
+        "  ]\n"
+        "}\n"
     )
 
     # 1. Initial creation

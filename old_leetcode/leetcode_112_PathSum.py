@@ -23,9 +23,7 @@ class TestData:
 class TestSolution(TestCase):
     def test(self):
         testcases = [
-            TestData(
-                name="case 1-2", root=TreeNode(val=1, left=TreeNode(2)), target=1, expected=False
-            ),
+            TestData(name="case 1-2", root=TreeNode(val=1, left=TreeNode(2)), target=1, expected=False),
             TestData(
                 name="case -2 -3",
                 root=TreeNode(val=-2, right=TreeNode(-3)),
