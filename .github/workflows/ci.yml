@@ -43,6 +43,9 @@ jobs:
       - name: Install dependencies
         run: make install
 
+      - name: Install markdownlint-cli
+        run: npm install -g markdownlint-cli@0.42.0
+
       - name: Format sources (code/markdown/json)
         run: |
           make fmt
