@@ -41,4 +41,3 @@ See generation instructions in ../README.md.
 | Move Zeroes | Easy |  |  |  |  |  |                  |  |  |  |  |  |                      |
 | Merge Sorted Array | Easy |  |  |  |  |  |                  |  |  |  |  |  |                      |
 | Implement Queue using Stacks | Easy |  |  |  |  |  |                  |  |  |  |  |  |                      |
-

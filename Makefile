@@ -85,7 +85,8 @@ build:
 	make validate-stats
 	@echo "--- Generating Markdown (tracks + README table) ---"
 	make markdown
-	@echo "--- Build complete ---"
+	@echo "--- Running pre-commit on all files (final step) ---"
+	pre-commit run --all-files
 
 # Target: format-md
 # Automatically formats all Markdown files in the repository using mdformat.
