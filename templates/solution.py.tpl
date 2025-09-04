@@ -1,13 +1,9 @@
-
 """
 Problem {number}: {title}
 {url}
 Difficulty: {difficulty}
 Tags: {tags}
 """
-
-from __future__ import annotations
-
 
 class Solution:
     def solve(self, *args, **kwargs):

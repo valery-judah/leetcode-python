@@ -1,21 +1,17 @@
-# {number}. {title}
+# 169. Majority Element
 
-- **URL**: <{url}>
-- **Difficulty**: {difficulty}
-- **Tags**: {tags}
+- **URL**: <https://leetcode.com/problems/majority-element/>
+- **Difficulty**: easy
+- **Tags**: Array, Hash Table, Divide and Conquer, Sorting, Counting
 
 ## Files
 
 - [solutions.py](solutions.py): Implementations (single or multi-variant via `ALL_SOLUTIONS`) and `TEST_CASES`.
 
-## Similar Questions
-
-{similar_md}
-
 <!-- Optional per-repo conventions -->
 <!-- Add extras like reasoning_by_step.py or statement copy if present -->
 
-## Clarifying Questions
+## Clarifying questions
 
 - Input shape, ranges, constraints?
 - Duplicates, negatives, empty input?
@@ -45,10 +41,4 @@
 
 See also: [Interview Framework](/docs/interview-framework.md).
 
-# Reasoning Flow
-
-[#todo paste your reasoning here]
-
-## Approaches (Overview)
-
-[#todo paste your solutions description here]
+# Flow

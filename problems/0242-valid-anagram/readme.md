@@ -1,8 +1,16 @@
-# 217. Contains Duplicate
+# 242. Valid Anagram
 
-**URL**: <https://leetcode.com/problems/contains-duplicate/>
-**Difficulty**: easy
-**Tags**: array,hash-set
+- **URL**: <https://leetcode.com/problems/valid-anagram/>
+- **Difficulty**: easy
+- **Tags**: Hash Table, String, Sorting
+
+## Files
+
+- [solutions.py](solutions.py): Implementations (single or multi-variant via `ALL_SOLUTIONS`) and `TEST_CASES`.
+
+
+<!-- Optional per-repo conventions -->
+<!-- Add extras like reasoning_by_step.py or statement copy if present -->
 
 ## Clarifying questions
 
@@ -34,4 +42,6 @@
 - [ ] Code cleanly
 - [ ] Test edge cases
 
-See also: `docs/interview-framework.md`.
+See also: [Interview Framework](/docs/interview-framework.md).
+
+# Flow

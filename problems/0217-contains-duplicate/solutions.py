@@ -1,56 +1,30 @@
 """
-Problem 217: Contains Duplicate
+Problem 217: Find Valid Pair of Adjacent Digits in String
 https://leetcode.com/problems/contains-duplicate/
 Difficulty: easy
-Tags: array,hash-set,sorting
+Tags: Array, Hash Table, Sorting
 """
 
-from __future__ import annotations
+class Baseline:
+    def solve(self, *args, **kwargs):
+        """Replace with actual signature per problem."""
+        raise NotImplementedError
 
 
-class BruteForce:
-    def solve(self, nums: list[int]) -> bool:
-        for i, v in enumerate(nums):
-            for j in range(i, len(nums)):
-                if v == nums[j]:
-                    return True
-        return False
-
-
-class SetBased:
-    def solve(self, nums: list[int]) -> bool:
-        seen: set[int] = set()
-        for n in nums:
-            if n in seen:
-                return True
-            seen.add(n)
-        return False
-
-
-class Sorting:
-    def solve(self, nums: list[int]) -> bool:
-        nums_sorted = sorted(nums)
-        return any(nums_sorted[i] == nums_sorted[i - 1] for i in range(1, len(nums_sorted)))
-
-
-# Default alias for single-export usage (optional)
-Solution = SetBased
+# Optional default alias for single-export usage
+Solution = Baseline
 
 # Explicit multi-export for test discovery
-ALL_SOLUTIONS = [BruteForce, SetBased, Sorting]
+ALL_SOLUTIONS = [Baseline]
 
-
-# Canonical small test cases for default generic tests
-# Each entry: (label, nums, expected)
-TEST_CASES: list[tuple[str, list[int], bool]] = [
-    ("dupe_simple", [1, 2, 3, 1], True),
-    ("no_dupe", [1, 2, 3, 4], False),
-    ("multi_dupes", [1, 1, 1, 3, 3, 4, 3, 2, 4, 2], True),
-    ("empty", [], False),
-    ("single", [5], False),
-    ("zeros", [0, 0], True),
-    ("negatives", [-1, -2, -1], True),
+# Canonical small test cases for generic stub tests
+# Each entry: (label, args_tuple, kwargs_dict)
+TEST_CASES = [
+    ("example", (), {}),  # replace with concrete inputs
 ]
+
+# Opt-in for generic stub testing: assert .solve raises this exception.
+TEST_EXPECT_EXCEPTION = NotImplementedError
 
 
 if __name__ == "__main__":

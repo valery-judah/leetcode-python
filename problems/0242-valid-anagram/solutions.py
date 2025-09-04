@@ -1,9 +1,12 @@
 """
-Problem {number}: {title}
-{url}
-Difficulty: {difficulty}
-Tags: {tags}
+Problem 242: Valid Anagram
+https://leetcode.com/problems/valid-anagram/
+Difficulty: easy
+Tags: Hash Table, String, Sorting
 """
+
+from __future__ import annotations
+
 
 class Baseline:
     def solve(self, *args, **kwargs):
@@ -20,7 +23,7 @@ ALL_SOLUTIONS = [Baseline]
 # Canonical small test cases for generic stub tests
 # Each entry: (label, args_tuple, kwargs_dict)
 TEST_CASES = [
-    ("example", (), {{}}),  # replace with concrete inputs
+    ("example", (), {}),  # replace with concrete inputs
 ]
 
 # Opt-in for generic stub testing: assert .solve raises this exception.

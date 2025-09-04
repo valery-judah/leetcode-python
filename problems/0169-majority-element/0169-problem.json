@@ -1,0 +1,59 @@
+{
+  "category": "Array / String",
+  "id": "169",
+  "name": "Majority Element",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/majority-element/",
+  "slug": "majority-element",
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Divide and Conquer",
+    "Sorting",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Majority Element II",
+      "slug": "majority-element-ii",
+      "id": "229",
+      "leetcode_url": "https://leetcode.com/problems/majority-element-ii/"
+    },
+    {
+      "title": "Check If a Number Is Majority Element in a Sorted Array",
+      "slug": "check-if-a-number-is-majority-element-in-a-sorted-array",
+      "id": "1102",
+      "leetcode_url": "https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/"
+    },
+    {
+      "title": "Most Frequent Even Element",
+      "slug": "most-frequent-even-element",
+      "id": "2486",
+      "leetcode_url": "https://leetcode.com/problems/most-frequent-even-element/"
+    },
+    {
+      "title": "Minimum Index of a Valid Split",
+      "slug": "minimum-index-of-a-valid-split",
+      "id": "2888",
+      "leetcode_url": "https://leetcode.com/problems/minimum-index-of-a-valid-split/"
+    },
+    {
+      "title": "Minimum Operations to Exceed Threshold Value I",
+      "slug": "minimum-operations-to-exceed-threshold-value-i",
+      "id": "3331",
+      "leetcode_url": "https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-i/"
+    },
+    {
+      "title": "Find the Most Common Response",
+      "slug": "find-the-most-common-response",
+      "id": "3707",
+      "leetcode_url": "https://leetcode.com/problems/find-the-most-common-response/"
+    },
+    {
+      "title": "Find Valid Pair of Adjacent Digits in String",
+      "slug": "find-valid-pair-of-adjacent-digits-in-string",
+      "id": "3736",
+      "leetcode_url": "https://leetcode.com/problems/find-valid-pair-of-adjacent-digits-in-string/"
+    }
+  ]
+}
