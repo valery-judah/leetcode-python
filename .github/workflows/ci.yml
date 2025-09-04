@@ -43,13 +43,24 @@ jobs:
       - name: Install dependencies
         run: make install
 
-      - name: Run pre-commit hooks (all files)
-        run: pre-commit run --all-files --show-diff-on-failure
+      - name: Format sources (code/markdown/json)
+        run: |
+          make fmt
+          make format-md
+          make fmt-json
 
-      - name: Run all checks
+      - name: Run checks (lint/type/test/stats + md lint)
         run: |
           make ci
           make lint-md
+
+      - name: Generate Markdown (tracks + README table)
+        run: make markdown
+
+      - name: Run pre-commit hooks (final, strict)
+        env:
+          CI: true
+        run: make precommit-all
 
       - name: Generate coverage HTML (no re-run)
         run: python -m coverage html
