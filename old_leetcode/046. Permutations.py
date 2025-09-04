@@ -14,7 +14,7 @@ def myGivePermutations(nums: list[int]) -> list[list[int]]:
         if not candidates:
             out.append(path)
         for i in range(len(candidates)):
-            helper(path + [candidates[i]], candidates[:i] + candidates[i + 1 :])
+            helper(path + [candidates[i]], candidates[:i] + candidates[i + 1:])
 
     helper([], nums)
     return out

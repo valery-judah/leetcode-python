@@ -32,7 +32,9 @@ def isValidSudoku(board: list[list[str]]) -> bool:
         return areas
 
     rowsUnique = all([isUnique(row) for row in board])
-    colsUnique = all([isUnique(col) for col in zip(*board, strict=False)])
+    colsUnique = all(
+        [isUnique(col) for col in zip(*board, strict=False)]
+    )
     areasUnique = all([isUnique(area) for area in getAreas(board)])
 
     return rowsUnique and colsUnique and areasUnique

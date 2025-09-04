@@ -13,7 +13,7 @@ class TreeNode:
 
 
 @dataclass
-class TestData:
+class _TestData:
     name: str
     root: TreeNode | None
     target: int
@@ -23,14 +23,14 @@ class TestData:
 class TestSolution(TestCase):
     def test(self):
         testcases = [
-            TestData(name="case 1-2", root=TreeNode(val=1, left=TreeNode(2)), target=1, expected=False),
-            TestData(
+            _TestData(name="case 1-2", root=TreeNode(val=1, left=TreeNode(2)), target=1, expected=False),
+            _TestData(
                 name="case -2 -3",
                 root=TreeNode(val=-2, right=TreeNode(-3)),
                 target=-5,
                 expected=True,
             ),
-            TestData(
+            _TestData(
                 name="case 1",
                 root=TreeNode(
                     1,
@@ -66,8 +66,10 @@ class Solution:
                 if target - node.val == 0 and (not right and not left):
                     return True
                 else:
-                    stack.append((target - node.val, node.right))
-                    stack.append((target - node.val, node.left))
+                    if node.right:
+                        stack.append((target - node.val, node.right))
+                    if node.left:
+                        stack.append((target - node.val, node.left))
         return False
 
     def has_path_sum_recursive(self, root: TreeNode | None, targetSum: int) -> bool:
