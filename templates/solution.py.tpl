@@ -1,11 +1,3 @@
-"""
-Problem {number}: {title}
-{url}
-Difficulty: {difficulty}
-Tags: {tags}
-"""
-
-
 class Solution:
     def solve(self, *args, **kwargs):
         """Replace with actual signature per problem."""

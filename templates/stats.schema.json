@@ -6,7 +6,7 @@
     "baseline_impl",
     "complexity_justified",
     "optimal_solution",
-    "repeats",
+    "completed_repeats",
     "min_impl_time_min",
     "confidence_1to5",
     "signals",
@@ -28,7 +28,7 @@
     "optimal_solution": {
       "type": "boolean"
     },
-    "repeats": {
+    "completed_repeats": {
       "type": "integer",
       "minimum": 0
     },

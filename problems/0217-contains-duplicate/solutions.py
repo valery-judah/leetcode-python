@@ -1,11 +1,3 @@
-"""
-Problem 217: Find Valid Pair of Adjacent Digits in String
-https://leetcode.com/problems/contains-duplicate/
-Difficulty: easy
-Tags: Array, Hash Table, Sorting
-"""
-
-
 class Baseline:
     def solve(self, *args, **kwargs):
         """Replace with actual signature per problem."""

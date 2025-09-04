@@ -82,6 +82,40 @@ def _normalize_difficulty(s: str | None) -> str | None:
     return mapping.get(s, s)
 
 
+def _load_problem_from_archive(query: str) -> dict | None:
+    """Try to load a single problem JSON from archive/problems by id or slug.
+
+    - If query is digits: match "{id:04d}-*.json"
+    - Else: treat as slug: match "*-{slug}.json"
+    Returns the parsed dict or None if not found or invalid.
+    """
+    apath = ROOT / "archive" / "problems"
+    if not apath.exists():
+        return None
+
+    q = query.strip()
+    try:
+        patterns: list[str]
+        if q.isdigit():
+            patterns = [f"{int(q):04d}-*.json"]
+        else:
+            s = kebab(q)
+            patterns = [f"*-{s}.json"] if s else []
+    except Exception:
+        return None
+
+    for pat in patterns:
+        matches = sorted(apath.glob(pat))
+        if not matches:
+            continue
+        # Prefer the first sorted match (should be unique per id/slug)
+        try:
+            return json.loads(matches[0].read_text())
+        except Exception:
+            return None
+    return None
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description="Create a LeetCode problem skeleton from lists by id or slug")
     ap.add_argument("query", help="leetcode id (e.g., 1) or slug (e.g., two-sum)")
@@ -107,7 +141,12 @@ def main() -> None:
 
     q = args.query.strip()
     is_id = q.isdigit()
-    problem = by_id.get(q) if is_id else by_slug.get(kebab(q))
+
+    # Prefer problem metadata from the archived per-problem JSON when available
+    problem = _load_problem_from_archive(q)
+    if not problem:
+        # Fallback to aggregated lists index
+        problem = by_id.get(q) if is_id else by_slug.get(kebab(q))
 
     if not problem:
         raise SystemExit(f"Problem not found in lists by {'id' if is_id else 'slug'}: {q}")

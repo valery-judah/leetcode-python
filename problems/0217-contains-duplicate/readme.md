@@ -10,8 +10,8 @@
 
 ## Similar Questions
 
-- [Easy] [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)
-- [Hard] [Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/)
+- [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)
+- [Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/)
 - [Make Array Zero by Subtracting Equal Amounts](https://leetcode.com/problems/make-array-zero-by-subtracting-equal-amounts/)
 - [Find Valid Pair of Adjacent Digits in String](https://leetcode.com/problems/find-valid-pair-of-adjacent-digits-in-string/)
 

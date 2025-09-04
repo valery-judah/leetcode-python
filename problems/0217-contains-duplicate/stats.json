@@ -1,9 +1,9 @@
 {
   "version": 1,
-  "baseline_impl": true,
+  "baseline_impl": false,
   "complexity_justified": false,
-  "optimal_solution": true,
-  "repeats": 0,
+  "optimal_solution": false,
+  "completed_repeats": 0,
   "min_impl_time_min": 0,
   "confidence_1to5": 1,
   "signals": {
@@ -13,8 +13,6 @@
     "tests_edge_cases": false,
     "clean_impl": false
   },
-  "mistakes": [
-    "wrong-ds"
-  ],
+  "mistakes": [],
   "problems": []
 }
