@@ -13,6 +13,8 @@
     "tests_edge_cases": false,
     "clean_impl": false
   },
-  "mistakes": ["wrong-ds"],
+  "mistakes": [
+    "wrong-ds"
+  ],
   "problems": []
 }

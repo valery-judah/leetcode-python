@@ -12,7 +12,12 @@
       "type": "shell",
       "command": "make badge",
       "options": {
-        "shell": { "executable": "/bin/bash", "args": ["-lc"] }
+        "shell": {
+          "executable": "/bin/bash",
+          "args": [
+            "-lc"
+          ]
+        }
       },
       "presentation": {
         "reveal": "silent",
@@ -28,9 +33,21 @@
       "label": "Coverage: HTML (This Folder)",
       "type": "shell",
       "command": "${config:python.defaultInterpreterPath}",
-      "args": ["-m", "pytest", "-q", "${fileDirname}", "--cov=${fileDirname}", "--cov-report=html"],
+      "args": [
+        "-m",
+        "pytest",
+        "-q",
+        "${fileDirname}",
+        "--cov=${fileDirname}",
+        "--cov-report=html"
+      ],
       "options": {
-        "shell": { "executable": "/bin/bash", "args": ["-lc"] }
+        "shell": {
+          "executable": "/bin/bash",
+          "args": [
+            "-lc"
+          ]
+        }
       },
       "presentation": {
         "reveal": "always",
@@ -70,9 +87,20 @@
       "label": "Test",
       "type": "shell",
       "command": "${config:python.defaultInterpreterPath}",
-      "args": ["-m", "pytest", "-q", "--cov=tasks", "--cov-report="],
+      "args": [
+        "-m",
+        "pytest",
+        "-q",
+        "--cov=tasks",
+        "--cov-report="
+      ],
       "options": {
-        "shell": { "executable": "/bin/bash", "args": ["-lc"] },
+        "shell": {
+          "executable": "/bin/bash",
+          "args": [
+            "-lc"
+          ]
+        },
         "env": {
           "PYTHONDONTWRITEBYTECODE": "1"
         }
@@ -91,9 +119,21 @@
       "label": "Test: Active File",
       "type": "shell",
       "command": "${config:python.defaultInterpreterPath}",
-      "args": ["-m", "pytest", "-q", "${relativeFile}", "--cov=${fileDirname}", "--cov-report="],
+      "args": [
+        "-m",
+        "pytest",
+        "-q",
+        "${relativeFile}",
+        "--cov=${fileDirname}",
+        "--cov-report="
+      ],
       "options": {
-        "shell": { "executable": "/bin/bash", "args": ["-lc"] },
+        "shell": {
+          "executable": "/bin/bash",
+          "args": [
+            "-lc"
+          ]
+        },
         "env": {
           "PYTHONDONTWRITEBYTECODE": "1"
         }
@@ -112,9 +152,21 @@
       "label": "Test: This Folder",
       "type": "shell",
       "command": "${config:python.defaultInterpreterPath}",
-      "args": ["-m", "pytest", "-q", "${fileDirname}", "--cov=${fileDirname}", "--cov-report="],
+      "args": [
+        "-m",
+        "pytest",
+        "-q",
+        "${fileDirname}",
+        "--cov=${fileDirname}",
+        "--cov-report="
+      ],
       "options": {
-        "shell": { "executable": "/bin/bash", "args": ["-lc"] },
+        "shell": {
+          "executable": "/bin/bash",
+          "args": [
+            "-lc"
+          ]
+        },
         "env": {
           "PYTHONDONTWRITEBYTECODE": "1"
         }
@@ -133,9 +185,21 @@
       "label": "Test: Current Dir",
       "type": "shell",
       "command": "${config:python.defaultInterpreterPath}",
-      "args": ["-m", "pytest", "-q", "${fileDirname}", "--cov=${fileDirname}", "--cov-report="],
+      "args": [
+        "-m",
+        "pytest",
+        "-q",
+        "${fileDirname}",
+        "--cov=${fileDirname}",
+        "--cov-report="
+      ],
       "options": {
-        "shell": { "executable": "/bin/bash", "args": ["-lc"] },
+        "shell": {
+          "executable": "/bin/bash",
+          "args": [
+            "-lc"
+          ]
+        },
         "env": {
           "PYTHONDONTWRITEBYTECODE": "1"
         }
@@ -147,7 +211,10 @@
         "showReuseMessage": false,
         "clear": false
       },
-      "group": { "kind": "test", "isDefault": true },
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
       "problemMatcher": []
     },
     {
