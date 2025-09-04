@@ -37,9 +37,7 @@ class TestContainsDuplicate(unittest.TestCase):
         print("\nTesting: contains_duplicate_brutforce")
         assert contains_duplicate_brutforce([1, 2, 3, 1])
         assert not contains_duplicate_brutforce([1, 2, 3, 4])
-        assert contains_duplicate_brutforce(
-            [1, 1, 1, 3, 3, 4, 3, 2, 4, 2]
-        )
+        assert contains_duplicate_brutforce([1, 1, 1, 3, 3, 4, 3, 2, 4, 2])
         assert not contains_duplicate_brutforce([])
         assert not contains_duplicate_brutforce([5])
         assert contains_duplicate_brutforce([0, 0])
@@ -49,9 +47,7 @@ class TestContainsDuplicate(unittest.TestCase):
         print("\nTesting: contains_duplicate_set")
         assert contains_duplicate_set([1, 2, 3, 1])
         assert not contains_duplicate_set([1, 2, 3, 4])
-        assert contains_duplicate_set(
-            [1, 1, 1, 3, 3, 4, 3, 2, 4, 2]
-        )
+        assert contains_duplicate_set([1, 1, 1, 3, 3, 4, 3, 2, 4, 2])
         assert not contains_duplicate_set([])
         assert not contains_duplicate_set([5])
         assert contains_duplicate_set([0, 0])
@@ -62,9 +58,7 @@ class TestContainsDuplicate(unittest.TestCase):
         # Pass copies because the function sorts the list in place
         assert contains_duplicates_sorting_approach([1, 2, 3, 1])
         assert not contains_duplicates_sorting_approach([1, 2, 3, 4])
-        assert contains_duplicates_sorting_approach(
-            [1, 1, 1, 3, 3, 4, 3, 2, 4, 2]
-        )
+        assert contains_duplicates_sorting_approach([1, 1, 1, 3, 3, 4, 3, 2, 4, 2])
         assert not contains_duplicates_sorting_approach([])
         assert not contains_duplicates_sorting_approach([5])
         assert contains_duplicates_sorting_approach([0, 0])

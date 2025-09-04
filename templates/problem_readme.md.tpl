@@ -13,6 +13,7 @@
 {similar_md}
 
 <!-- Optional per-repo conventions -->
+
 <!-- Add extras like reasoning_by_step.py or statement copy if present -->
 
 ## Clarifying Questions

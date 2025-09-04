@@ -9,13 +9,15 @@ line-length = 110
 target-version = ["py311"]
 extend-exclude = """
 (
-  ^venv/
+  ^old_leetcode/
+  | ^venv/
 )
 """
 
 [tool.ruff]
 line-length = 110
 extend-exclude = [
+
   "venv",
 ]
 

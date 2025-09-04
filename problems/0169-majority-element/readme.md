@@ -9,6 +9,7 @@
 - [solutions.py](solutions.py): Implementations (single or multi-variant via `ALL_SOLUTIONS`) and `TEST_CASES`.
 
 <!-- Optional per-repo conventions -->
+
 <!-- Add extras like reasoning_by_step.py or statement copy if present -->
 
 ## Clarifying questions

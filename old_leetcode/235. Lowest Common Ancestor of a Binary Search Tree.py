@@ -5,6 +5,7 @@ class TreeNode:
         self.left = None
         self.right = None
 
+
 # The function `lowestCommonAncestor` is currently a placeholder and needs implementation.
 # For now, to resolve the Pylance error, we will remove the `pass` statement.
 # If a functional implementation is required, it should be added here.
