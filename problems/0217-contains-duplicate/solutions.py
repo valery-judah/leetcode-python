@@ -5,6 +5,7 @@ Difficulty: easy
 Tags: Array, Hash Table, Sorting
 """
 
+
 class Baseline:
     def solve(self, *args, **kwargs):
         """Replace with actual signature per problem."""

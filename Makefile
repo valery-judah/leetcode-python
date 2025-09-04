@@ -1,5 +1,5 @@
 
-.PHONY: install linters precommit test lint type fmt ci badge cov-html format-md lint-md fix-md
+.PHONY: install linters precommit test lint type fmt ci badge cov-html format-md lint-md fix-md validate-stats tracks-report build
 
 # Prefer project venv Python, then python3, then python
 PYTHON := $(shell if [ -x "./venv/bin/python" ]; then echo "./venv/bin/python"; \
@@ -42,7 +42,7 @@ fmt-legacy:
 	$(PYTHON) -m black old_leetcode || true
 
 type:
-	$(PYTHON) -m mypy problems || true  # problems may contain stubs early
+	$(PYTHON) -m mypy common || true  # problems may contain stubs early
 
 ci: test lint type validate-stats
 
@@ -52,6 +52,30 @@ cov-html:
 # Validate stats.json files against the JSON Schema
 validate-stats:
 	$(PYTHON) scripts/validate_stats.py
+
+# Generate markdown reports for all tracks
+tracks-report:
+	$(PYTHON) scripts/generate_track_reports.py
+
+# Build: run formatters, linters, type checks, tests, stats validation, and track reports
+build:
+	@echo "--- Running code formatters ---"
+	make fmt
+	@echo "--- Formatting Markdown ---"
+	make format-md
+	@echo "--- Running linters ---"
+	make lint
+	@echo "--- Linting Markdown ---"
+	make lint-md || true
+	@echo "--- Type checking ---"
+	make type
+	@echo "--- Running tests ---"
+	make test
+	@echo "--- Validating stats schema ---"
+	make validate-stats
+	@echo "--- Generating track reports ---"
+	make tracks-report
+	@echo "--- Build complete ---"
 
 # Target: format-md
 # Automatically formats all Markdown files in the repository using mdformat.

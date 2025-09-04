@@ -1,4 +1,4 @@
-**Action Plan:**
+# Action Plan
 
 1. **Refine and Finalize the Algorithm and Checklist**:
 

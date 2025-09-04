@@ -1,87 +1,12 @@
-```
-{
-  "version": 1,
-  "baseline_impl": false,
-  "complexity_justified": false,
-  "optimal_solution": false,
-  "repeats": 0,
-  "min_impl_time_min": 0,
-  "confidence_1to5": 1,
-  "signals": {
-    "clarified_assumptions": false,
-    "communicated_approach": false,
-    "stated_complexity": false,
-    "tests_edge_cases": false,
-    "clean_impl": false
-  },
-  "mistakes": [],
-  "problems": []
-}
-```
-JSON Schema (minimal, no tracks)
+# Track Report Generation Plan
 
-{
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "type": "object",
-  "required": [
-    "version",
-    "baseline_impl",
-    "complexity_justified",
-    "optimal_solution",
-    "repeats",
-    "min_impl_time_min",
-    "confidence_1to5",
-    "signals",
-    "mistakes",
-    "problems"
-  ],
-  "additionalProperties": false,
-  "properties": {
-    "version": { "type": "integer", "minimum": 1 },
-    "baseline_impl": { "type": "boolean" },
-    "complexity_justified": { "type": "boolean" },
-    "optimal_solution": { "type": "boolean" },
-    "repeats": { "type": "integer", "minimum": 0 },
-    "min_impl_time_min": { "type": "integer", "minimum": 0 },
-    "confidence_1to5": { "type": "integer", "minimum": 1, "maximum": 5 },
-    "signals": {
-      "type": "object",
-      "required": [
-        "clarified_assumptions",
-        "communicated_approach",
-        "stated_complexity",
-        "tests_edge_cases",
-        "clean_impl"
-      ],
-      "additionalProperties": false,
-      "properties": {
-        "clarified_assumptions": { "type": "boolean" },
-        "communicated_approach": { "type": "boolean" },
-        "stated_complexity": { "type": "boolean" },
-        "tests_edge_cases": { "type": "boolean" },
-        "clean_impl": { "type": "boolean" }
-      }
-    },
-    "mistakes": {
-      "type": "array",
-      "items": {
-        "enum": [
-          "off-by-one",
-          "boundary",
-          "indexing",
-          "null-handling",
-          "overflow",
-          "wrong-ds",
-          "inefficient",
-          "forgot-visited",
-          "misread-constraints",
-          "typo"
-        ]
-      }
-    },
-    "problems": { "type": "array", "items": { "type": "string" } }
-  }
-}
+create track report markdown file template
 
-Placement: problems/NNNN-slug/stats.json.
-Validate in CI with jsonschema as before.
+for each track in the folder 'tracks':
+
+track: {track_name}.yaml
+
+regenerate / create markdown file: {track_name}.md
+collect slugs from the track
+for each slug collect stats from according stats.json file which are presented in the each of the slug folders in 'problems' directory
+past this statistic to the corresponding table in report md file

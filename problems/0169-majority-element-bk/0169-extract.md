@@ -1,3 +1,5 @@
+# Majority Element - Problem Extract
+
 ______________________________________________________________________
 
 category: arrays-hashing

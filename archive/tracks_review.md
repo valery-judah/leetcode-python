@@ -16,33 +16,33 @@ ______________________________________________________________________
 
 ## 1) Daily loop (45–60 min per medium)
 
-**A. Pick**
+### A. Pick
 
 1. Choose an active track (start at `track_0_foundations`, move in order).
 1. Pull the next 1–3 unsolved items from the `problems` list in that track.
 
-**B. Frame (≤5 min)**
+### B. Frame (≤5 min)
 
 - Read the prompt, restate **inputs, outputs, constraints**.
 - Decide the **pattern** first. If unclear, use the **cue→pattern table** below.
 - State **complexity target** out loud (time, space) before coding.
 
-**C. Plan (≤5 min)**
+### C. Plan (≤5 min)
 
 - Write the invariant or predicate (e.g., *“window has no dups”*, *“ok(mid) is feasible”*, *“stack keeps increasing heights”*).
 - Name key variables and data structures.
 
-**D. Code (15–25 min)**
+### D. Code (15–25 min)
 
 - Code the **template** for the pattern, then adapt to the problem.
 - Keep functions small. Separate helpers where it clarifies invariants.
 
-**E. Test (10–15 min)**
+### E. Test (10–15 min)
 
 - Construct 5–8 cases that each kill a class of bugs (see **Edge‑case bank**).
 - Run. If a test fails, **instrument** minimal prints or assert the invariant.
 
-**F. Record (≤5 min)**
+### F. Record (≤5 min)
 
 - Update `problems/<slug>/meta.yaml`: status, attempts, last_solved, next `revisit_on`.
 - Write 2–4 bullets in README: invariant, pitfalls, final complexities.

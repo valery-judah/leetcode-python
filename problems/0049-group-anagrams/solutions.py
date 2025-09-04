@@ -8,7 +8,9 @@ Tags: array,hash-map
 from __future__ import annotations
 
 from collections import defaultdict
-from typing import Any, Callable
+from typing import Any, Callable, Union
+
+KeyTupleSecondElement = Union[tuple[int, ...], tuple[str, ...]]
 
 
 def _normalize_output(value: Any) -> Any:
@@ -75,7 +77,7 @@ def solve_by_count(strs: list[str]) -> list[list[str]]:
 
     A is alphabet size (26 for lowercase). Avoids per-string sort.
     """
-    groups: dict[tuple[int, tuple], list[str]] = defaultdict(list)
+    groups: dict[tuple[int, KeyTupleSecondElement], list[str]] = defaultdict(list)
     for s in strs:
         counts: list[int] | None = [0] * 26
         for ch in s:
@@ -86,6 +88,7 @@ def solve_by_count(strs: list[str]) -> list[list[str]]:
             else:
                 counts = None
                 break
+        key: tuple[int, KeyTupleSecondElement]
         if counts is None:
             key = (1, tuple(sorted(s)))
             groups[key].append(s)

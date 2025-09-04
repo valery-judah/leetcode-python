@@ -38,6 +38,30 @@ Folders are created under `problems/NNNN-slug/`. Each contains:
 
 CI, pre-commit, and VS Code configs are included.
 
+## Stats and Track Reports
+
+- Stats file: Each problem folder contains a `stats.json` scaffold that follows a strict JSON Schema (`templates/stats.schema.json`). It is created automatically by `scripts/new_problem.py`.
+
+  - Validate across the repo: `make validate-stats`
+  - Schema source: `templates/stats.schema.json`
+
+- Track reports: Generate Markdown reports for all tracks in `tracks/` based on `stats.json`.
+
+  - Generate: `make tracks-report`
+  - Output: `tracks/<track_name>.md` beside each YAML, e.g. `tracks/track_0_foundations.md`
+  - Template: `templates/track_report.md.tpl`
+  - Links in the reports are relative to the report location and point to `problems/NNNN-slug/readme.md`.
+
+Example:
+
+```bash
+make install            # ensure dev deps (jsonschema, PyYAML)
+python scripts/new_problem.py contains-duplicate 217 --full-rewrite
+make validate-stats
+make tracks-report
+code tracks/track_0_foundations.md
+```
+
 ## Chat aliases (for this assistant)
 
 To reference a problem’s files in chat without typing full paths, you can use simple aliases. I will resolve these when you use them in messages here (no symlinks needed):
