@@ -46,20 +46,16 @@ jobs:
       - name: Run pre-commit hooks (all files)
         run: pre-commit run --all-files --show-diff-on-failure
 
-      - name: Run tests (with coverage)
-        run: make test
+      - name: Run all checks
+        run: |
+          make ci
+          make lint-md
 
       - name: Generate coverage HTML (no re-run)
         run: python -m coverage html
 
       - name: Generate coverage badge
         run: make badge
-
-      - name: Lint
-        run: make lint
-
-      - name: Type check
-        run: make type
 
       - name: Upload coverage artifacts
         if: always()

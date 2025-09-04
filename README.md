@@ -1,7 +1,5 @@
 # LeetCode Python Workspace
 
-![Coverage](docs/badges/coverage.svg)
-
 > This repository is a work in progress. I have only a few LeetCode problems solved so far, and I hope to add more in the future.
 
 You can use this repo to build your own coding interview preparation system. It's based on 'tracks'. More info and information are in [Tracks](#tracks).
