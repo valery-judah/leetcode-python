@@ -44,10 +44,14 @@ fmt-legacy:
 type:
 	$(PYTHON) -m mypy problems || true  # problems may contain stubs early
 
-ci: test lint type
+ci: test lint type validate-stats
 
 cov-html:
 	PYTHONDONTWRITEBYTECODE=1 $(PYTHON) -m pytest -q --cov=problems --cov-report=html
+
+# Validate stats.json files against the JSON Schema
+validate-stats:
+	$(PYTHON) scripts/validate_stats.py
 
 # Target: format-md
 # Automatically formats all Markdown files in the repository using mdformat.

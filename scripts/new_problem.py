@@ -220,6 +220,20 @@ def main() -> None:
     except Exception:
         pass
 
+    # stats.json scaffold via template per implementation_plan schema
+    stats_path = base / "stats.json"
+    stats_tpl = ROOT / "templates" / "stats.json.tpl"
+    try:
+        if (not stats_path.exists()) or full_rewrite or rewrite_files:
+            # Read template as-is (no .format placeholders in JSON)
+            stats_content = stats_tpl.read_text()
+            # Ensure trailing newline for consistency
+            if not stats_content.endswith("\n"):
+                stats_content += "\n"
+            stats_path.write_text(stats_content)
+    except Exception:
+        pass
+
     # no package marker; tests load solution via runpy, not imports
 
     print(f"Created {base.relative_to(ROOT)}")
