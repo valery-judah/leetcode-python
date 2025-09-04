@@ -26,11 +26,9 @@ Common tasks
 Current tracks and progress:
 
 <!-- BEGIN_TRACKS_TABLE -->
-
 | Track | Main | Ext | Total | Done | Progress | Linked | Unlinked |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| [Foundations — Arrays, Hashing, Two-Pointers, Prefix, Stack](tracks/track_0_foundations.md) | 17 | 8 | 25 | 1 | 4% | 3 | 22 |
-
+| [Foundations — Arrays, Hashing, Two-Pointers, Prefix, Stack](tracks/track_0_foundations.md) | 17 | 8 | 25 | 1 | 4%                 | 3 | 22 |
 <!-- END_TRACKS_TABLE -->
 
 > Define tracks in `tracks/*.yaml`. Generate reports and update this table with `make markdown` (or via `make build`).
