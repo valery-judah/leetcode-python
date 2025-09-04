@@ -1,0 +1,80 @@
+
+
+version: 1
+track: track_1_sliding_window
+title: Sliding Window — Fixed and Dynamic
+description: Master fixed-size and variable-size windows. Learn frequency maps, expansion/contraction logic, and deque optimization.
+problems:
+  # Single-pass window (buy low, sell high)
+  - slug: best-time-to-buy-and-sell-stock
+    title: Best Time to Buy and Sell Stock
+    difficulty: easy
+    primary_pattern: single-pass-window
+    section: window-basics
+
+  # Dynamic-size windows with sets/maps
+  - slug: longest-substring-without-repeating-characters
+    title: Longest Substring Without Repeating Characters
+    difficulty: medium
+    primary_pattern: window-dynamic-set
+    section: window-dynamic
+  - slug: longest-repeating-character-replacement
+    title: Longest Repeating Character Replacement
+    difficulty: medium
+    primary_pattern: window-dynamic-counts
+    section: window-dynamic
+  - slug: minimum-window-substring
+    title: Minimum Window Substring
+    difficulty: hard
+    primary_pattern: window-dynamic-counts
+    section: window-dynamic
+
+  # Fixed-size counting windows
+  - slug: permutation-in-string
+    title: Permutation in String
+    difficulty: medium
+    primary_pattern: window-fixed-counts
+    section: window-fixed
+  - slug: find-all-anagrams-in-a-string
+    title: Find All Anagrams in a String
+    difficulty: medium
+    primary_pattern: window-fixed-counts
+    section: window-fixed
+  - slug: maximum-number-of-vowels-in-a-substring-of-given-length
+    title: Maximum Number of Vowels in a Substring of Given Length
+    difficulty: medium
+    primary_pattern: window-fixed
+    section: window-fixed
+
+  # Deque-optimized window
+  - slug: sliding-window-maximum
+    title: Sliding Window Maximum
+    difficulty: hard
+    primary_pattern: window-deque-monotonic
+    section: window-deque
+
+  # Frequency-window practice
+  - slug: max-consecutive-ones-iii
+    title: Max Consecutive Ones III
+    difficulty: medium
+    primary_pattern: window-dynamic-budget
+    section: window-dynamic
+  - slug: fruits-into-baskets
+    title: Fruit Into Baskets
+    difficulty: medium
+    primary_pattern: window-dynamic-k-types
+    section: window-dynamic
+  - slug: binary-subarrays-with-sum
+    title: Binary Subarrays With Sum
+    difficulty: medium
+    primary_pattern: prefix-sum + window
+    section: window-advanced
+  - slug: subarrays-with-k-different-integers
+    title: Subarrays with K Different Integers
+    difficulty: hard
+    primary_pattern: window-at-most-k
+    section: window-advanced
+
+notes:
+  ordering: Start with basics → dynamic-size → fixed-size → deque → advanced.
+  next_track: track_2_two_pointers_advanced

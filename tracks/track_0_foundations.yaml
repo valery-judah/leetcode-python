@@ -1,0 +1,103 @@
+
+
+version: 1
+track: track_0_foundations
+title: Foundations — Arrays, Hashing, Two-Pointers, Prefix, Stack
+description: Core patterns for fast ramp-up. Focus on invariants, O(n) scans, and state compression.
+problems:
+  # Arrays & Hashing
+  - slug: contains-duplicate
+    title: Contains Duplicate
+    difficulty: easy
+    primary_pattern: hash-map
+    section: arrays-hashing
+  - slug: valid-anagram
+    title: Valid Anagram
+    difficulty: easy
+    primary_pattern: hash-map
+    section: arrays-hashing
+  - slug: two-sum
+    title: Two Sum
+    difficulty: easy
+    primary_pattern: hash-map
+    section: arrays-hashing
+  - slug: group-anagrams
+    title: Group Anagrams
+    difficulty: medium
+    primary_pattern: hashing-bucketing
+    section: arrays-hashing
+  - slug: top-k-frequent-elements
+    title: Top K Frequent Elements
+    difficulty: medium
+    primary_pattern: heap-or-bucket
+    section: arrays-hashing
+  - slug: product-of-array-except-self
+    title: Product of Array Except Self
+    difficulty: medium
+    primary_pattern: prefix-suffix
+    section: arrays-hashing
+  - slug: valid-sudoku
+    title: Valid Sudoku
+    difficulty: medium
+    primary_pattern: set-constraints
+    section: arrays-hashing
+  - slug: longest-consecutive-sequence
+    title: Longest Consecutive Sequence
+    difficulty: medium
+    primary_pattern: set-linear-scan
+    section: arrays-hashing
+  - slug: encode-and-decode-strings
+    title: Encode and Decode Strings
+    difficulty: medium
+    primary_pattern: custom-serialization
+    section: arrays-hashing
+
+  # Two Pointers (basics)
+  - slug: valid-palindrome
+    title: Valid Palindrome
+    difficulty: easy
+    primary_pattern: two-pointers
+    section: two-pointers
+  - slug: two-sum-ii-input-array-is-sorted
+    title: Two Sum II - Input Array Is Sorted
+    difficulty: medium
+    primary_pattern: two-pointers
+    section: two-pointers
+  - slug: 3sum
+    title: 3Sum
+    difficulty: medium
+    primary_pattern: two-pointers
+    section: two-pointers
+  - slug: container-with-most-water
+    title: Container With Most Water
+    difficulty: medium
+    primary_pattern: two-pointers
+    section: two-pointers
+
+  # Prefix Sum
+  - slug: subarray-sum-equals-k
+    title: Subarray Sum Equals K
+    difficulty: medium
+    primary_pattern: prefix-sum
+    section: prefix-sum
+
+  # Stack (basics + monotonic)
+  - slug: valid-parentheses
+    title: Valid Parentheses
+    difficulty: easy
+    primary_pattern: stack
+    section: stack
+  - slug: min-stack
+    title: Min Stack
+    difficulty: medium
+    primary_pattern: stack-augmented
+    section: stack
+  - slug: daily-temperatures
+    title: Daily Temperatures
+    difficulty: medium
+    primary_pattern: monotonic-stack
+    section: stack
+
+notes:
+  ordering: Arrays & Hashing → Two Pointers → Prefix Sum → Stack.
+  next_track: track_1_sliding_window
