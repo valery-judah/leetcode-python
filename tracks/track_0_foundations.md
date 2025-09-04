@@ -12,8 +12,8 @@ See generation instructions in ../README.md.
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
 | [Contains Duplicate](../problems/0217-contains-duplicate/readme.md) | Easy | ✅ | ✖️ | ✅ | 0 | 0 |                 1 | ✖️ | ✖️ | ✖️ | ✖️ | ✖️ | wrong-ds                     |
 | [Valid Anagram](../problems/0242-valid-anagram/readme.md) | Easy |  |  |  |  |  |                  |  |  |  |  |  |                      |
-| [Two Sum](../problems/0001-two-sum/readme.md) | Easy |  |  |  |  |  |                  |  |  |  |  |  |                      |
-| [Group Anagrams](../problems/0049-group-anagrams/readme.md) | Medium |  |  |  |  |  |                  |  |  |  |  |  |                      |
+| Two Sum (0001-two-sum) | Easy |  |  |  |  |  |                  |  |  |  |  |  |                      |
+| Group Anagrams | Medium |  |  |  |  |  |                  |  |  |  |  |  |                      |
 | Top K Frequent Elements | Medium |  |  |  |  |  |                  |  |  |  |  |  |                      |
 | Product of Array Except Self | Medium |  |  |  |  |  |                  |  |  |  |  |  |                      |
 | Valid Sudoku | Medium |  |  |  |  |  |                  |  |  |  |  |  |                      |
