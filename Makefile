@@ -86,8 +86,7 @@ build:
 	@echo "--- Generating Markdown (tracks + README table) ---"
 	make markdown
 	@echo "--- Running pre-commit on all files (final step) ---"
-	# Use module form to ensure venv resolution even if entrypoint isn't on PATH
-	$(PYTHON) -m pre_commit run --all-files || true
+	make precommit-all
 
 # Target: format-md
 # Automatically formats all Markdown files in the repository using mdformat.
@@ -99,7 +98,18 @@ format-md:
 # JSON formatting via pre-commit hook (pretty-format-json)
 fmt-json:
 	@echo "--- Formatting JSON files (pre-commit: pretty-format-json) ---"
-	pre-commit run --hook-stage manual pretty-format-json --all-files || true
+	$(PYTHON) -m pre_commit run --hook-stage manual pretty-format-json --all-files || true
+
+# Run all pre-commit hooks across the repo.
+# - In CI (CI=true), fail if hooks find issues.
+# - Locally, allow hooks to modify files; re-run once; never fail build.
+precommit-all:
+ifeq ($(CI),true)
+	$(PYTHON) -m pre_commit run --all-files
+else
+	$(PYTHON) -m pre_commit run --all-files || \
+	  (echo "--- Re-running pre-commit after auto-fixes ---" && $(PYTHON) -m pre_commit run --all-files) || true
+endif
 
 # Target: fix-md
 # Automatically fixes all supported Markdown linting issues using markdownlint.
