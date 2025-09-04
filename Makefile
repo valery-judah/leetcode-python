@@ -1,5 +1,6 @@
 
-.PHONY: install linters precommit test lint type fmt ci badge cov-html format-md lint-md fix-md validate-stats tracks-report build
+.PHONY: install linters precommit test lint type fmt ci badge cov-html \
+        format-md lint-md fix-md validate-stats tracks-report tracks-table markdown build
 
 # Prefer project venv Python, then python3, then python
 PYTHON := $(shell if [ -x "./venv/bin/python" ]; then echo "./venv/bin/python"; \
@@ -57,6 +58,13 @@ validate-stats:
 tracks-report:
 	$(PYTHON) scripts/generate_track_reports.py
 
+# Update README tracks table from tracks/*.md
+tracks-table:
+	$(PYTHON) scripts/update_tracks_table.py
+
+# Markdown docs pipeline: generate track reports and update README table
+markdown: tracks-report tracks-table
+
 # Build: run formatters, linters, type checks, tests, stats validation, and track reports
 build:
 	@echo "--- Running code formatters ---"
@@ -73,8 +81,8 @@ build:
 	make test
 	@echo "--- Validating stats schema ---"
 	make validate-stats
-	@echo "--- Generating track reports ---"
-	make tracks-report
+	@echo "--- Generating Markdown (tracks + README table) ---"
+	make markdown
 	@echo "--- Build complete ---"
 
 # Target: format-md
@@ -98,4 +106,4 @@ lint-md:
 	@echo "--- Checking Markdown formatting (mdformat) ---"
 	$(PYTHON) -m mdformat --check .
 	@echo "--- Linting Markdown files (markdownlint) ---"
-	markdownlint --ignore-path .gitignore .
+	markdownlint --ignore-path .gitignore . --config .markdownlint.json

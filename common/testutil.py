@@ -41,7 +41,7 @@ def S_fixture_for_this_dir(test_file: str | Path) -> Callable:
     params = discover_solution_classes(test_file)
 
     @pytest.fixture(params=params)
-    def _S(request: pytest.FixtureRequest):
+    def _S(request: pytest.FixtureRequest) -> Any:
         return request.param
 
     return _S

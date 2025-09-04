@@ -29,8 +29,8 @@
 
 0. Brut-force with $O(n^2)$ time, $O(1)$ space.
 1. If you want to slightly optimize time and don't have time to come up to mental tricks, then you can trade off space for time and use hash-map for counters: Counter/Hash Map (O(n) time, O(n) space).
-2. Also there is Sorting (O(n log n) time), Divide & Conquer (O(n log n)), Bit manipulation (O(n)) - all are suboptimal.
-3. But Recommended is Boyer–Moore majority vote (O(n) time, O(1) space).
+1. Also there is Sorting (O(n log n) time), Divide & Conquer (O(n log n)), Bit manipulation (O(n)) - all are suboptimal.
+1. But Recommended is Boyer–Moore majority vote (O(n) time, O(1) space).
 
 ## Checklist
 

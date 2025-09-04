@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 from __future__ import annotations
 
-import datetime as _dt
 import json
 import os
 import sys
@@ -164,7 +163,6 @@ def generate_for_track(yaml_path: Path) -> Path:
         track_title=title,
         track_name=track_name,
         description=description,
-        generated=_dt.datetime.utcnow().isoformat(timespec="seconds") + "Z",
         problems_table=table,
         extensions_table=extensions_table,
     )

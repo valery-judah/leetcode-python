@@ -4,6 +4,8 @@
 
 > This repository is a work in progress. I have only a few LeetCode problems solved so far, and I hope to add more in the future.
 
+You can use this repo to build your own coding interview preparation system. It's based on 'tracks'. More info and information are in [Tracks](#tracks).
+
 This repository contains solutions to LeetCode problems and materials I find interesting. All leetcode problems are in the [problems](/problems/) directory.
 
 Each problem has separate directory which includes problem description, solutions, reasoning, and sometimes the solution flow. For example, see the [Majority Element problem](/problems/0169-majority-element/readme.md).
@@ -16,7 +18,27 @@ What do you want?
 
 - Read information about problems:
 - Run tests and get additional info (?)
+- Adjust the system for you
 - Create new problem
+
+# Tracks
+
+For me, for example, the tracks now are:
+
+<!-- BEGIN_TRACKS_TABLE -->
+| Track | Main | Ext | Total | Done | Progress | Linked | Unlinked |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| [Foundations — Arrays, Hashing, Two-Pointers, Prefix, Stack](tracks/track_0_foundations.md) | 17 | 8 | 25 | 1 | 4%                 | 5 | 20 |
+<!-- END_TRACKS_TABLE -->
+
+> You can create your own tracks of problems for you to do in the 'tracks' folder. Then 'make build' command build a report for you.
+
+Actions order:
+
+1. Checkout to 'start' git branch.
+1.
+
+## How to create a problem snapshot
 
 ```bash
 # 1) Create a new problem skeleton

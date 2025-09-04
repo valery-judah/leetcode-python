@@ -4,15 +4,13 @@ Track: `track_0_foundations`
 
 Core patterns for fast ramp-up. Focus on invariants, O(n) scans, and state compression.
 
-Generated: 2025-09-04T15:40:48Z
-
 See generation instructions in ../README.md.
 
 ## Problems
 
 | Problem | Diff | Baseline | Complex Justified | Optimal | Repeats | Min Time | Conf | Clarified |             Communicated | Stated | Edge Tests | Clean Impl | Mistakes |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| [Contains Duplicate](../problems/0217-contains-duplicate/readme.md) | Easy | ✖️ | ✖️ | ✖️ | 0 | 0 |                 1 | ✖️ | ✖️ | ✖️ | ✖️ | ✖️ |                      |
+| [Contains Duplicate](../problems/0217-contains-duplicate/readme.md) | Easy | ✅ | ✖️ | ✅ | 0 | 0 |                 1 | ✖️ | ✖️ | ✖️ | ✖️ | ✖️ | wrong-ds                     |
 | [Valid Anagram](../problems/0242-valid-anagram/readme.md) | Easy |  |  |  |  |  |                  |  |  |  |  |  |                      |
 | [Two Sum](../problems/0001-two-sum/readme.md) | Easy |  |  |  |  |  |                  |  |  |  |  |  |                      |
 | [Group Anagrams](../problems/0049-group-anagrams/readme.md) | Medium |  |  |  |  |  |                  |  |  |  |  |  |                      |

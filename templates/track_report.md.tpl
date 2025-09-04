@@ -4,8 +4,6 @@ Track: `{track_name}`
 
 {description}
 
-Generated: {generated}
-
 See generation instructions in ../README.md.
 
 ## Problems
