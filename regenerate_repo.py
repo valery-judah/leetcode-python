@@ -18,11 +18,11 @@ import json
 import re
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Dict, Iterable, List, Optional, Tuple
+from typing import Dict, Iterable, List, Tuple
 
 try:
     import yaml  # type: ignore
-except Exception as e:  # pragma: no cover
+except Exception:  # pragma: no cover
     print("[warn] PyYAML not available. Install with: pip install pyyaml", flush=True)
     yaml = None  # type: ignore
 
@@ -31,23 +31,23 @@ except Exception as e:  # pragma: no cover
 @dataclass
 class TrackProblem:
     slug: str
-    title: Optional[str]
-    difficulty: Optional[str]
-    primary_pattern: Optional[str]
-    section: Optional[str]
-    why: Optional[str]
+    title: str | None
+    difficulty: str | None
+    primary_pattern: str | None
+    section: str | None
+    why: str | None
     track: str
     kind: str  # 'core' or 'extension'
 
 @dataclass
 class ProblemRecord:
     slug: str
-    id: Optional[int] = None
-    title: Optional[str] = None
-    difficulty: Optional[str] = None
-    primary_pattern: Optional[str] = None
-    section: Optional[str] = None
-    why: Optional[str] = None
+    id: int | None = None
+    title: str | None = None
+    difficulty: str | None = None
+    primary_pattern: str | None = None
+    section: str | None = None
+    why: str | None = None
     sources: List[str] = field(default_factory=list)  # track names
     kind: str = "core"  # core or extension
     status: str = "todo"
@@ -193,7 +193,7 @@ def _walk_pairs_id_slug(obj) -> Iterable[Tuple[int, str]]:
 
 # ---------------------------- generation ----------------------------
 
-def decide_folder_name(slug: str, pid: Optional[int], id_mode: str) -> str:
+def decide_folder_name(slug: str, pid: int | None, id_mode: str) -> str:
     if id_mode == "none" or pid is None and id_mode == "auto_none_if_missing":
         return slug
     if pid is None and id_mode == "require":
@@ -203,7 +203,7 @@ def decide_folder_name(slug: str, pid: Optional[int], id_mode: str) -> str:
     return f"{pid:04d}-{slug}"
 
 
-def load_template(path: Optional[Path], default: str) -> str:
+def load_template(path: Path | None, default: str) -> str:
     if path and path.exists():
         return path.read_text(encoding="utf-8")
     return default
@@ -269,7 +269,7 @@ def build_problem_json(rec: ProblemRecord) -> dict:
 
 # ---------------------------- main flow ----------------------------
 
-def main(argv: Optional[List[str]] = None) -> int:
+def main(argv: List[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description="Generate/regenerate repo from tracks")
     ap.add_argument("--tracks-dir", default="tracks", help="Directory with track_*.yaml files")
     ap.add_argument("--problems-dir", default="problems", help="Directory to create problem folders")
@@ -347,7 +347,7 @@ def main(argv: Optional[List[str]] = None) -> int:
         if not readme.exists():
             rendered = render_template(
                 readme_tpl,
-                TITLE=rec.title or rec.slug.replace('-', ' ').title(),
+                TITLE=rec.title or rec.slug.replace("-", " ").title(),
                 ID=(rec.id if rec.id is not None else ""),
                 SLUG=rec.slug,
                 DIFFICULTY=rec.difficulty or "",

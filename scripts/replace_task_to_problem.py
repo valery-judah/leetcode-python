@@ -20,7 +20,6 @@ import re
 from pathlib import Path
 from typing import Iterable, Tuple
 
-
 WORD_RE = re.compile(r"\b(problems?)\b", re.IGNORECASE)
 
 
