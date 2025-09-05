@@ -146,6 +146,11 @@ def main():
                 del new_data['similarQuestions'] # a bit of cleanup to match the existing format
             if new_data.get('metaData'):
                 new_data['metaData'] = json.loads(new_data['metaData'])
+            
+            if 'solution' in new_data:
+                del new_data['solution']
+            if 'codeSnippets' in new_data:
+                del new_data['codeSnippets']
 
 
             if question_data.get('solution') and question_data['solution']['content']:
