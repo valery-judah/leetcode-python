@@ -1,11 +1,12 @@
+import argparse
 import json
-import re
-import requests
-import time
+import logging
 import os
 import random
-import argparse
-import logging
+import re
+import time
+
+import requests
 
 # Track consecutive rate limit hits across requests
 RATE_LIMIT_STATE = {"consecutive_429": 0}
@@ -68,9 +69,9 @@ def get_problem_data(slug, backoff_base=30, retries=3, logger: logging.Logger | 
     """
     variables = {"titleSlug": slug}
 
-    with open(".leetcode.creds/csrftoken", "r") as f:
+    with open(".leetcode.creds/csrftoken") as f:
         csrftoken = f.read().strip()
-    with open(".leetcode.creds/LEETCODE_SESSION", "r") as f:
+    with open(".leetcode.creds/LEETCODE_SESSION") as f:
         leetcode_session = f.read().strip()
 
     cookies = {
@@ -99,24 +100,21 @@ def get_problem_data(slug, backoff_base=30, retries=3, logger: logging.Logger | 
             elif response.status_code == 429:
                 base = backoff_base
                 jitter = random.uniform(0, 5)
-                wait_time = base * (2 ** attempt) + jitter
+                wait_time = base * (2**attempt) + jitter
                 if logger:
                     logger.warning(
-                        f"429 for problem {slug}. Backing off {wait_time:.1f}s (attempt {attempt+1}/{retries})"
+                        f"429 for problem {slug}. Backing off {wait_time:.1f}s "
+                        f"(attempt {attempt+1}/{retries})"
                     )
                 RATE_LIMIT_STATE["consecutive_429"] += 1
                 time.sleep(wait_time)
             else:
                 if logger:
-                    logger.error(
-                        f"Error fetching problem {slug}: {response.status_code} {response.text}"
-                    )
+                    logger.error(f"Error fetching problem {slug}: {response.status_code} {response.text}")
                 return None  # Don't retry on other errors
         except requests.exceptions.RequestException as e:
             if logger:
-                logger.warning(
-                    f"Request failed for {slug}: {e}. Attempt {attempt + 1} of {retries}"
-                )
+                logger.warning(f"Request failed for {slug}: {e}. Attempt {attempt + 1} of {retries}")
             if attempt < retries - 1:
                 time.sleep(5 * (attempt + 1))
             else:
@@ -156,9 +154,9 @@ def get_discussion_data(
     """
     topic_vars = {"titleSlug": slug}
 
-    with open(".leetcode.creds/csrftoken", "r") as f:
+    with open(".leetcode.creds/csrftoken") as f:
         csrftoken = f.read().strip()
-    with open(".leetcode.creds/LEETCODE_SESSION", "r") as f:
+    with open(".leetcode.creds/LEETCODE_SESSION") as f:
         leetcode_session = f.read().strip()
 
     cookies = {
@@ -186,18 +184,17 @@ def get_discussion_data(
                 if response.status_code == 429:
                     base = backoff_base
                     jitter = random.uniform(0, 5)
-                    wait_time = base * (2 ** attempt) + jitter
+                    wait_time = base * (2**attempt) + jitter
                     if logger:
                         logger.warning(
-                            f"429 on topic for {slug}. Backing off {wait_time:.1f}s (attempt {attempt+1}/{retries})"
+                            f"429 on topic for {slug}. Backing off {wait_time:.1f}s "
+                            f"(attempt {attempt+1}/{retries})"
                         )
                     RATE_LIMIT_STATE["consecutive_429"] += 1
                     time.sleep(wait_time)
                     continue
                 if logger:
-                    logger.error(
-                        f"Error topic {slug}: {response.status_code} {response.text}"
-                    )
+                    logger.error(f"Error topic {slug}: {response.status_code} {response.text}")
                 return None
 
             topic_json = response.json()
@@ -255,9 +252,7 @@ def get_discussion_data(
                 comments_json = comments_resp.json()
                 if "errors" in comments_json:
                     if logger:
-                        logger.error(
-                            f"GraphQL error comments {slug}: {comments_json['errors']}"
-                        )
+                        logger.error(f"GraphQL error comments {slug}: {comments_json['errors']}")
                     return None
                 # Reset global rate-limit counter on success
                 RATE_LIMIT_STATE["consecutive_429"] = 0
@@ -265,18 +260,17 @@ def get_discussion_data(
             elif comments_resp.status_code == 429:
                 base = backoff_base
                 jitter = random.uniform(0, 5)
-                wait_time = base * (2 ** attempt) + jitter
+                wait_time = base * (2**attempt) + jitter
                 if logger:
                     logger.warning(
-                        f"429 on comments for {slug}. Backing off {wait_time:.1f}s (attempt {attempt+1}/{retries})"
+                        f"429 on comments for {slug}. Backing off {wait_time:.1f}s "
+                        f"(attempt {attempt+1}/{retries})"
                     )
                 RATE_LIMIT_STATE["consecutive_429"] += 1
                 time.sleep(wait_time)
             else:
                 if logger:
-                    logger.error(
-                        f"Error comments {slug}: {comments_resp.status_code} {comments_resp.text}"
-                    )
+                    logger.error(f"Error comments {slug}: {comments_resp.status_code} {comments_resp.text}")
                 return None
         except requests.exceptions.RequestException as e:
             print(f"Request failed for {slug} discussions: {e}. Attempt {attempt + 1} of {retries}")
@@ -326,10 +320,10 @@ def _simplify_discussion_comments(comments):
     simplified = []
     for item in comments or []:
         post = (item or {}).get("post", {})
-        username = ((post.get("author") or {}).get("username"))
+        username = (post.get("author") or {}).get("username")
         ts = post.get("creationDate")
         year = None
-        if isinstance(ts, (int, float)):
+        if isinstance(ts, int | float):
             try:
                 year = time.gmtime(int(ts)).tm_year
             except Exception:
@@ -344,11 +338,17 @@ def _simplify_discussion_comments(comments):
         )
     return simplified
 
+
 def parse_args():
     parser = argparse.ArgumentParser(description="Enrich LeetCode problems with GraphQL data")
     parser.add_argument("--start", type=int, default=1, help="Start problem ID (inclusive)")
     parser.add_argument("--end", type=int, default=3700, help="End problem ID (exclusive)")
-    parser.add_argument("--max-problems", type=int, default=None, help="Maximum number of problems to process this run")
+    parser.add_argument(
+        "--max-problems",
+        type=int,
+        default=None,
+        help="Maximum number of problems to process this run",
+    )
     parser.add_argument("--per-problem-sleep-min", type=float, default=12.0)
     parser.add_argument("--per-problem-sleep-max", type=float, default=20.0)
     parser.add_argument("--long-break-every", type=int, default=25)
@@ -358,11 +358,18 @@ def parse_args():
     parser.add_argument("--micro-delay-max", type=float, default=3.5)
     parser.add_argument("--backoff-base", type=float, default=30.0)
     parser.add_argument("--retries", type=int, default=3)
-    parser.add_argument("--cool-off-threshold", type=int, default=2, help="Consecutive 429s before global cool-off")
+    parser.add_argument(
+        "--cool-off-threshold",
+        type=int,
+        default=2,
+        help="Consecutive 429s before global cool-off",
+    )
     parser.add_argument("--cool-off-sleep-min", type=float, default=600.0, help="Cool-off minimum seconds")
     parser.add_argument("--cool-off-sleep-max", type=float, default=900.0, help="Cool-off maximum seconds")
     parser.add_argument("--log-file", type=str, default="enrich.log", help="Log file path")
-    parser.add_argument("--log-level", type=str, default="INFO", help="Logging level: DEBUG, INFO, WARNING, ERROR")
+    parser.add_argument(
+        "--log-level", type=str, default="INFO", help="Logging level: DEBUG, INFO, WARNING, ERROR"
+    )
     return parser.parse_args()
 
 
@@ -370,7 +377,9 @@ def main():
     args = parse_args()
     logger = _setup_logging(args.log_file, args.log_level)
     logger.info(
-        "Starting enrichment with settings: start=%s end=%s max=%s per_sleep=[%s,%s] long_every=%s long_sleep=[%s,%s] micro=[%s,%s] backoff=%s retries=%s cool_thr=%s cool_sleep=[%s,%s]",
+        "Starting enrichment with settings: start=%s end=%s max=%s per_sleep=[%s,%s] "
+        "long_every=%s long_sleep=[%s,%s] micro=[%s,%s] backoff=%s retries=%s "
+        "cool_thr=%s cool_sleep=[%s,%s]",
         args.start,
         args.end,
         args.max_problems,
@@ -412,7 +421,7 @@ def main():
             continue
 
         try:
-            with open(problem_file, "r") as f:
+            with open(problem_file) as f:
                 existing_data = json.load(f)
         except json.JSONDecodeError:
             logger.warning(f"Could not decode JSON from {problem_file}. Skipping.")
@@ -422,7 +431,9 @@ def main():
         code_definition = {
             "value": "python3",
             "text": "Python3",
-            "defaultCode": "class Solution:\n    def containsDuplicate(self, nums: List[int]) -> bool:\n        ",
+            "defaultCode": (
+                "class Solution:\n    def containsDuplicate(self, nums: List[int]) -> bool:\n        "
+            ),
         }
 
         new_data = existing_data.copy()
@@ -453,7 +464,8 @@ def main():
             if original_leetcode_url:
                 new_data["leetcode_url"] = original_leetcode_url
 
-            # The stats, similarQuestions, and metaData fields are returned as strings, so they need to be parsed
+            # The stats, similarQuestions, and metaData fields are returned as strings,
+            # so they need to be parsed
             if new_data.get("stats"):
                 new_data["stats"] = json.loads(new_data["stats"])
             if new_data.get("similarQuestions"):
@@ -467,19 +479,17 @@ def main():
                 del new_data["similarQuestions"]
             if new_data.get("metaData"):
                 new_data["metaData"] = json.loads(new_data["metaData"])
-            
+
             if new_data.get("companyTagStats"):
                 company_stats = json.loads(new_data["companyTagStats"])
                 filtered_stats = {}
                 for key, companies in company_stats.items():
                     filtered_companies = [
-                        company
-                        for company in companies
-                        if company.get("timesEncountered", 0) > 10
+                        company for company in companies if company.get("timesEncountered", 0) > 10
                     ]
                     if filtered_companies:
                         filtered_stats[key] = filtered_companies
-                
+
                 if filtered_stats:
                     new_data["company_tag_stats"] = filtered_stats
                 del new_data["companyTagStats"]
@@ -511,9 +521,7 @@ def main():
                     with open(desc_html, "w") as df_html:
                         df_html.write(new_data["content"])  # same payload as HTML fragment
                 except OSError as e:
-                    logger.warning(
-                        f"Failed saving descriptions for {new_data.get('slug')}: {e}"
-                    )
+                    logger.warning(f"Failed saving descriptions for {new_data.get('slug')}: {e}")
         else:
             logger.warning(f"Could not retrieve problem data for problem {new_data.get('id')}")
             problem_data_fail += 1
@@ -526,11 +534,7 @@ def main():
             retries=args.retries,
             logger=logger,
         )
-        if (
-            discussion_data
-            and "data" in discussion_data
-            and discussion_data["data"].get("topicComments")
-        ):
+        if discussion_data and "data" in discussion_data and discussion_data["data"].get("topicComments"):
             comments = discussion_data["data"]["topicComments"].get("data", [])
             new_data["discussion_posts"] = _simplify_discussion_comments(comments)
             discuss_ok += 1
@@ -555,7 +559,8 @@ def main():
         if RATE_LIMIT_STATE["consecutive_429"] >= args.cool_off_threshold:
             cool = random.uniform(args.cool_off_sleep_min, args.cool_off_sleep_max)
             logger.warning(
-                f"Hit {RATE_LIMIT_STATE['consecutive_429']} consecutive 429s. Cooling off for {cool:.1f} seconds..."
+                f"Hit {RATE_LIMIT_STATE['consecutive_429']} consecutive 429s. "
+                f"Cooling off for {cool:.1f} seconds..."
             )
             time.sleep(cool)
             RATE_LIMIT_STATE["consecutive_429"] = 0
@@ -564,7 +569,8 @@ def main():
     elapsed = time.time() - t0
     avg = (elapsed / processed) if processed else 0
     logger.info(
-        "Summary: processed=%s enriched_ok=%s problem_fail=%s discuss_ok=%s discuss_fail=%s solutions_saved=%s elapsed=%.1fs avg_per_problem=%.1fs",
+        "Summary: processed=%s enriched_ok=%s problem_fail=%s discuss_ok=%s "
+        "discuss_fail=%s solutions_saved=%s elapsed=%.1fs avg_per_problem=%.1fs",
         processed,
         enriched_ok,
         problem_data_fail,

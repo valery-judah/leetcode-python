@@ -1,5 +1,8 @@
 from __future__ import annotations
 
+from dataclasses import dataclass, field
+from typing import Iterator, List
+
 """Common lightweight stubs for LeetCode-style types.
 
 These are minimal implementations to support type annotations, simple
@@ -7,17 +10,14 @@ construction in examples, and basic debugging/printing. They are not
 intended to be fully featured or optimized.
 """
 
-from dataclasses import dataclass, field
-from typing import List, Optional
-
 
 @dataclass
 class ListNode:
     val: int = 0
-    next: Optional["ListNode"] = None
+    next: ListNode | None = None
 
-    def __iter__(self):
-        node = self
+    def __iter__(self) -> Iterator[int]:
+        node: ListNode | None = self
         while node is not None:
             yield node.val
             node = node.next
@@ -29,15 +29,15 @@ class ListNode:
 @dataclass
 class RandomListNode:
     val: int = 0
-    next: Optional["RandomListNode"] = None
-    random: Optional["RandomListNode"] = None
+    next: RandomListNode | None = None
+    random: RandomListNode | None = None
 
 
 @dataclass
 class TreeNode:
     val: int = 0
-    left: Optional["TreeNode"] = None
-    right: Optional["TreeNode"] = None
+    left: TreeNode | None = None
+    right: TreeNode | None = None
 
     def __repr__(self) -> str:  # pragma: no cover - convenience only
         return f"TreeNode(val={self.val})"
@@ -46,13 +46,13 @@ class TreeNode:
 @dataclass
 class Node:
     val: int = 0
-    children: List["Node"] = field(default_factory=list)
+    children: List[Node] = field(default_factory=list)
 
 
 @dataclass
 class UndirectedGraphNode:
     val: int = 0
-    neighbors: List["UndirectedGraphNode"] = field(default_factory=list)
+    neighbors: List[UndirectedGraphNode] = field(default_factory=list)
 
 
 class NestedInteger:
@@ -62,13 +62,13 @@ class NestedInteger:
     """
 
     def __init__(self, value: int | None = None):
-        self._int: Optional[int] = value
-        self._list: Optional[list[NestedInteger]] = None if value is not None else []
+        self._int: int | None = value
+        self._list: list[NestedInteger] | None = None if value is not None else []
 
     def isInteger(self) -> bool:
         return self._int is not None
 
-    def add(self, elem: "NestedInteger") -> None:
+    def add(self, elem: NestedInteger) -> None:
         if self._list is None:
             self._list = []
             if self._int is not None:
@@ -81,10 +81,10 @@ class NestedInteger:
         self._int = value
         self._list = None
 
-    def getInteger(self) -> Optional[int]:
+    def getInteger(self) -> int | None:
         return self._int
 
-    def getList(self) -> Optional[list["NestedInteger"]]:
+    def getList(self) -> list[NestedInteger] | None:
         return self._list
 
 
@@ -96,4 +96,3 @@ __all__ = [
     "UndirectedGraphNode",
     "NestedInteger",
 ]
-

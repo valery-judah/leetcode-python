@@ -3,16 +3,11 @@ from __future__ import annotations
 # Common type stubs for annotations and simple local testing
 from common.types import (
     ListNode,
-    TreeNode,
-    Node,
-    UndirectedGraphNode,
-    RandomListNode,
-    NestedInteger,
 )
 
 
 class Baseline:
-    def solve(self, list1: ListNode | None, list2: ListNode | None)-> ListNode | None:
+    def solve(self, list1: ListNode | None, list2: ListNode | None) -> ListNode | None:
         """Replace with actual signature per problem."""
         raise NotImplementedError
 

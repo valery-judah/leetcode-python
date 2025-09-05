@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from typing import List, Tuple
+
 """Helpers to auto-generate typed stub TEST_CASES and explanatory comments.
 
 These are intentionally simple, aiming to:
@@ -7,8 +9,6 @@ These are intentionally simple, aiming to:
 - Seed a couple of representative shapes (e.g., empty list if list-typed)
 - Emit concise guidance on how to evolve cases to assertion-mode later
 """
-
-from typing import List, Tuple
 
 
 def _example_for(py_t: str) -> str:
@@ -51,7 +51,7 @@ def make_stub_cases(params: List[Tuple[str, str]]) -> tuple[list[tuple[str, List
     # Empty-list variant when any param is list-typed
     if any(t.startswith("list[") and t.endswith("]") for _, t in params):
         empty_variant: List[str] = []
-        for (_, t), dv in zip(params, defaults):
+        for (_, t), dv in zip(params, defaults, strict=False):
             if t.startswith("list[") and t.endswith("]"):
                 empty_variant.append("[]")
             else:
@@ -63,7 +63,10 @@ def make_stub_cases(params: List[Tuple[str, str]]) -> tuple[list[tuple[str, List
     sig_preview = ", ".join(f"{n}: {t}" for n, t in params) if params else ""
     lines.append("# TEST_CASES (typed placeholders for stub testing)")
     lines.append("# Shape: (label: str, args_tuple: tuple, kwargs_dict: dict)")
-    lines.append("# While TEST_EXPECT_EXCEPTION is set, only label/args/kwargs are used; expected values are ignored.")
+    lines.append(
+        "# While TEST_EXPECT_EXCEPTION is set, only label/args/kwargs are used; "
+        "expected values are ignored."
+    )
     if sig_preview:
         lines.append(f"# Signature preview: solve(self, {sig_preview})")
     # Per-param hints
@@ -76,7 +79,10 @@ def make_stub_cases(params: List[Tuple[str, str]]) -> tuple[list[tuple[str, List
                 hint = _example_for(t)
             lines.append(f"# - {name}: e.g., {hint}")
     # Evolution hints
-    lines.append("# To enable assertion-mode later: add expected to each case or switch to (label, *args, expected) shape.")
+    lines.append(
+        "# To enable assertion-mode later: add expected to each case or switch to "
+        "(label, *args, expected) shape."
+    )
 
     # We also suggest an empty-collection variant when any list is present
     if any(t.startswith("list[") for _, t in params):

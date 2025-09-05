@@ -1,7 +1,8 @@
 [TOC]
 
 ## Video Solution
----
+
+______________________________________________________________________
 
 <div>
     <div class="video-container">
@@ -14,10 +15,9 @@
 
 ## Solution Article
 
----
+______________________________________________________________________
 
 ### Overview
-
 
 In a lot of countries, Roman Numerals are taught in elementary school-level math. This has made them a somewhat popular "easy" interview question. Unfortunately though, this ignores the fact that *not everybody learned them in school*, and therefore a big advantage has been given to those who did. I suspect it's also difficult for a lot of us who *have* learned them previously to fully appreciate how much easier prior experience makes this question. While this is very unfair, and possibly very frustrating, keep in mind that the best thing you can do is work through this question and the related question [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) so that you don't get caught out by it in a real interview. In short, if you're here reading this, you've saved yourself from getting caught out by it! Thankfully, questions that rely on this kind of prior knowledge are few and far between.
 
@@ -39,7 +39,6 @@ One thing that can be a bit confusing if you're not familiar with Roman Numerals
 
 ![Some of the possible ways of representing 140 with Roman Numerals.](../Figures/12/ways_of_representing_140.png)
 
-
 **The system we use to decide** is to select the representation with the largest possible symbols, working from left to right. For example, the representations above with the largest symbol at the start are the ones starting with `C`.
 
 ![All ways of representing 140 that start with a C.](../Figures/12/ways_of_representing_140_starting_with_c.png)
@@ -50,7 +49,7 @@ This definition of Roman Numerals is, these days, the "most accepted". Interesti
 
 <br/>
 
----
+______________________________________________________________________
 
 ### Approach 1: Greedy
 
@@ -60,7 +59,7 @@ Representing a given integer as a Roman Numeral requires finding a sequence of t
 
 ![Symbol mapping](../Figures/13/hardcoding_2_fixed.png)
 
-As explained in the overview, the representation should use the largest possible symbols, working from the left. Therefore, it makes sense to use a **Greedy** algorithm. A Greedy algorithm is an algorithm that makes the best possible decision at the current time; in this case taking out the largest possible symbol it can. 
+As explained in the overview, the representation should use the largest possible symbols, working from the left. Therefore, it makes sense to use a **Greedy** algorithm. A Greedy algorithm is an algorithm that makes the best possible decision at the current time; in this case taking out the largest possible symbol it can.
 
 So to represent a given integer, we look for the *largest* symbol that fits into it. We subtract that, and then look for the largest symbol that fits into the remainder, and so on until the remainder is 0. Each of the symbols we take out are appended onto the output Roman Numeral string.
 
@@ -144,19 +143,17 @@ Here's an animation showing this algorithm run on the number `478`.
 
 <iframe src="https://leetcode.com/playground/Q6G5Dc6m/shared" frameBorder="0" width="100%" height="500" name="Q6G5Dc6m"></iframe>
 
-
 **Complexity Analysis**
 
 - Time complexity : $$O(1)$$.
 
-    As there is a finite set of roman numerals, there is a hard upper limit on how many times the loop can iterate. This upper limit is `15` times, and it occurs for the number `3888`, which has a representation of `MMMDCCCLXXXVIII`. Therefore, we say the time complexity is constant, i.e. $$O(1)$$.
+  As there is a finite set of roman numerals, there is a hard upper limit on how many times the loop can iterate. This upper limit is `15` times, and it occurs for the number `3888`, which has a representation of `MMMDCCCLXXXVIII`. Therefore, we say the time complexity is constant, i.e. $$O(1)$$.
 
 - Space complexity : $$O(1)$$.
 
-    The amount of memory used does not change with the size of the input integer, and is therefore constant.
+  The amount of memory used does not change with the size of the input integer, and is therefore constant.
 
-
----
+______________________________________________________________________
 
 ### Approach 2: Hardcode Digits
 
@@ -172,7 +169,7 @@ While the number is at least `1000`, an `M (1000)` will be appended to the outpu
 
 Now, assume we have a remainder of between `100` and `999`. The next symbols considered are those in the hundreds row. The highest symbol that could fit in right now is `CM (900)`, and the lowest is `C (100)`. None of the symbols in this range can possibly modify the tens or ones. As long as the remainder is still above `100`, we can still take at least `C (100)` out of it. This means that we'll only be subtracting symbols from the hundreds row for as long as the number is at least `100`.
 
-The same argument applies for the tens, and then the ones. 
+The same argument applies for the tens, and then the ones.
 
 We can, therefore, work out what the representation for each digit, in each place, is. There are only 34 of them; `0`, `1`, `2`, `3` and `4` for the thousands column, and `0`, `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8` and `9` for each of the hundreds, tens, and ones. So with a pencil, paper, and some patience, you can hopefully work out the representation for each of these possibilities and hardcode them. Then, converting an integer to a Roman Numeral will require breaking the integer into digits and appending the relevant representation for each digit.
 
@@ -199,11 +196,11 @@ The cleanest way to go about it in code is to have 4 separate arrays; one for ea
 
 - Time complexity : $$O(1)$$.
 
-    The same number of operations is done, regardless of the size of the input. Therefore, the time complexity is constant.
+  The same number of operations is done, regardless of the size of the input. Therefore, the time complexity is constant.
 
 - Space complexity : $$O(1)$$.
 
-    While we have Arrays, they are the same size, *regardless of the size of the input*. Therefore, they are constant for the purpose of space-complexity analysis.
+  While we have Arrays, they are the same size, *regardless of the size of the input*. Therefore, they are constant for the purpose of space-complexity analysis.
 
 The downside of this approach is that it is inflexible if Roman Numerals were to be extended (which is an interesting follow-up question). For example, what if we said the symbol `H` now represents `5000`, and `P` now represents `10000`, allowing us to represent numbers up to `39999`? Approach 1 will be a lot quicker to modify, as you simply need to add these 2 values to the code without doing any calculations. But for Approach 2, you'll need to calculate and hardcode ten new representations. What if we then added symbols to be able to go up to `399,999,999`? Approach 2 becomes more and more difficult to manage, the more symbols we add.
 

@@ -1,18 +1,10 @@
 from __future__ import annotations
 
 # Common type stubs for annotations and simple local testing
-from common.types import (
-    ListNode,
-    TreeNode,
-    Node,
-    UndirectedGraphNode,
-    RandomListNode,
-    NestedInteger,
-)
 
 
 class Baseline:
-    def solve(self, nums: list[int], target: int)-> list[int]:
+    def solve(self, nums: list[int], target: int) -> list[int]:
         """Replace with actual signature per problem."""
         raise NotImplementedError
 

@@ -4,8 +4,6 @@
 
 Given an integer array `nums`, return `true` if any value appears **at least twice** in the array, and return `false` if every element is distinct.
 
- 
-
 **Example 1:**
 
 ::: example-block
@@ -38,17 +36,13 @@ All elements are distinct.
 **Output:** [true]{.example-io}
 :::
 
- 
-
 **Constraints:**
 
 - `1 <= nums.length <= 10`^`5`^
-- `-10`^`9`^` <= nums[i] <= 10`^`9`^
-
+- `-10`^`9`^`<= nums[i] <= 10`^`9`^
 
 ## Solution
 
 ```python
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
-        

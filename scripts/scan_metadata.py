@@ -13,7 +13,7 @@ try:
 except Exception:  # pragma: no cover
     import sys as _sys
 
-    _sys.path.insert(0, str((Path(__file__).parent)))
+    _sys.path.insert(0, str(Path(__file__).parent))
     from meta_types import py_type_from_meta  # type: ignore
 
 

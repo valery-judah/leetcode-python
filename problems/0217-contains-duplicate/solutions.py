@@ -3,23 +3,16 @@ from __future__ import annotations
 # Ensure repo root is on sys.path when running this file directly
 import sys as _sys
 from pathlib import Path as _Path
+
 _root = str(_Path(__file__).resolve().parents[2])
 if _root not in _sys.path:
     _sys.path.insert(0, _root)
 
 # Common type stubs for annotations and simple local testing
-from common.types import (
-    ListNode,
-    TreeNode,
-    Node,
-    UndirectedGraphNode,
-    RandomListNode,
-    NestedInteger,
-)
 
 
 class Baseline:
-    def solve(self, nums: list[int])-> bool:
+    def solve(self, nums: list[int]) -> bool:
         """Replace with actual signature per problem."""
         raise NotImplementedError
 

@@ -2,11 +2,11 @@ import json
 import os
 import sys
 
-from enrich_problem import get_problem_data, get_discussion_data, _simplify_discussion_comments
+from enrich_problem import _simplify_discussion_comments, get_discussion_data, get_problem_data
 
 
 def enrich_file(problem_file: str) -> None:
-    with open(problem_file, "r") as f:
+    with open(problem_file) as f:
         data = json.load(f)
 
     slug = data.get("slug")

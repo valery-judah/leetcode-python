@@ -1,7 +1,5 @@
 import argparse
-import json
 import logging
-import os
 from pathlib import Path
 
 from enrich_problem import _setup_logging, get_problem_data

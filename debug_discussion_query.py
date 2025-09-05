@@ -1,5 +1,7 @@
 import json
+
 import requests
+
 
 def get_discussion_data(slug):
     """Fetches the top 10 discussion topics for a given problem slug."""
@@ -14,9 +16,9 @@ def get_discussion_data(slug):
     """
     variables = {"titleSlug": slug}
 
-    with open(".leetcode.creds/csrftoken", "r") as f:
+    with open(".leetcode.creds/csrftoken") as f:
         csrftoken = f.read().strip()
-    with open(".leetcode.creds/LEETCODE_SESSION", "r") as f:
+    with open(".leetcode.creds/LEETCODE_SESSION") as f:
         leetcode_session = f.read().strip()
 
     cookies = {
@@ -97,6 +99,7 @@ def get_discussion_data(slug):
     except requests.exceptions.RequestException as e:
         print(f"Request failed for {slug} discussions: {e}.")
         return None
+
 
 if __name__ == "__main__":
     get_discussion_data("two-sum")

@@ -1,10 +1,10 @@
 from .types import (
     ListNode,
+    NestedInteger,
+    Node,
     RandomListNode,
     TreeNode,
-    Node,
     UndirectedGraphNode,
-    NestedInteger,
 )
 
 __all__ = [
@@ -15,4 +15,3 @@ __all__ = [
     "UndirectedGraphNode",
     "NestedInteger",
 ]
-

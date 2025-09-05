@@ -46,4 +46,3 @@ Quick Checklist
 - [ ] Update `scripts/meta_types.py` mappings
 - [ ] Re-run scan to confirm coverage
 - [ ] Spot-check `new_problem.py` generation on representative problems
-

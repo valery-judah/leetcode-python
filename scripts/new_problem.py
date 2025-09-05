@@ -6,7 +6,7 @@ import json
 import os
 import re
 import shutil
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -98,7 +98,7 @@ def _normalize_difficulty(s: str | None) -> str | None:
 
 def _utc_now_iso_z() -> str:
     """Return current UTC time in ISO8601 with seconds precision and 'Z' suffix."""
-    return datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
+    return datetime.now(UTC).isoformat(timespec="seconds").replace("+00:00", "Z")
 
 
 # --- Field normalization helpers (to support schema variants) ---
@@ -300,7 +300,9 @@ def _render_similar_md(
     return similar_md
 
 
-def _build_context(problem: dict, by_id: dict[str, dict], by_slug: dict[str, dict]) -> tuple[dict, int, str, Path]:
+def _build_context(
+    problem: dict, by_id: dict[str, dict], by_slug: dict[str, dict]
+) -> tuple[dict, int, str, Path]:
     pid_str = _get_id(problem)
     try:
         number = int(pid_str)
@@ -338,14 +340,26 @@ def _ensure_base_dir(base: Path, *, full_rewrite: bool) -> None:
         base.mkdir(parents=True, exist_ok=True)
 
 
-def _write_solutions(base: Path, problem: dict, context: dict, *, full_rewrite: bool, rewrite_files: bool) -> None:
+def _write_solutions(
+    base: Path,
+    problem: dict,
+    context: dict,
+    *,
+    full_rewrite: bool,
+    rewrite_files: bool,
+) -> None:
     variant_tpl = ROOT / "templates" / "solutions_multi.py.tpl"
     solutions_path = base / "solutions.py"
     meta = problem.get("metaData") if isinstance(problem, dict) else None
     content: str
-    if isinstance(meta, dict) and isinstance(meta.get("params"), list) and meta.get("return"):
+    if (
+        isinstance(meta, dict)
+        and (params_list := meta.get("params"))
+        and isinstance(params_list, list)
+        and meta.get("return")
+    ):
         params = []
-        for p in meta.get("params"):
+        for p in params_list:
             if not isinstance(p, dict):
                 continue
             pname = kebab(str(p.get("name") or "arg")).replace("-", "_") or "arg"
@@ -361,6 +375,7 @@ def _write_solutions(base: Path, problem: dict, context: dict, *, full_rewrite: 
         )
         # Build typed TEST_CASES and comments via library helper
         stub_cases, comment_lines = make_stub_cases(params)
+
         # Materialize case tuple expressions using local value generator
         def _example_value(py_t: str) -> str:
             t = py_t.strip()
@@ -399,13 +414,8 @@ def _write_solutions(base: Path, problem: dict, context: dict, *, full_rewrite: 
         cases_lines: list[str] = []
         for label, raw_values in stub_cases:
             # raw_values are already expressions (strings)
-            cases_lines.append(f"    (\"{label}\", {_tuple_expr(raw_values)}, {{}}),")
-        generated_cases = (
-            "\n".join(comment_lines)
-            + "\nTEST_CASES = [\n"
-            + "\n".join(cases_lines)
-            + "\n]"
-        )
+            cases_lines.append(f'    ("{label}", {_tuple_expr(raw_values)}, {{}}),')
+        generated_cases = "\n".join(comment_lines) + "\nTEST_CASES = [\n" + "\n".join(cases_lines) + "\n]"
         # Replace the default TEST_CASES block
         tc_start = tpl_text.find("TEST_CASES = [")
         if tc_start != -1:
@@ -424,7 +434,9 @@ def _write_solutions(base: Path, problem: dict, context: dict, *, full_rewrite: 
         solutions_path.write_text(content)
 
 
-def _write_readme_and_symlink(base: Path, context: dict, number: int, *, full_rewrite: bool, rewrite_files: bool) -> None:
+def _write_readme_and_symlink(
+    base: Path, context: dict, number: int, *, full_rewrite: bool, rewrite_files: bool
+) -> None:
     problem_readme_tpl = ROOT / "templates" / "problem_readme.md.tpl"
     readme_path = base / "readme.md"
     if (not readme_path.exists()) or full_rewrite or rewrite_files:
@@ -447,7 +459,9 @@ def _write_readme_and_symlink(base: Path, context: dict, number: int, *, full_re
         link_path.symlink_to("readme.md")
 
 
-def _write_problem_json(base: Path, number: int, problem: dict, *, full_rewrite: bool, rewrite_files: bool) -> None:
+def _write_problem_json(
+    base: Path, number: int, problem: dict, *, full_rewrite: bool, rewrite_files: bool
+) -> None:
     problem_json_path = base / f"{number:04d}-problem.json"
     try:
         if (not problem_json_path.exists()) or full_rewrite or rewrite_files:
