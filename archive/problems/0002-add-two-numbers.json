@@ -15,50 +15,42 @@
     {
       "title": "Multiply Strings",
       "titleSlug": "multiply-strings",
-      "difficulty": "Medium",
-      "translatedTitle": null
+      "difficulty": "Medium"
     },
     {
       "title": "Add Binary",
       "titleSlug": "add-binary",
-      "difficulty": "Easy",
-      "translatedTitle": null
+      "difficulty": "Easy"
     },
     {
       "title": "Sum of Two Integers",
       "titleSlug": "sum-of-two-integers",
-      "difficulty": "Medium",
-      "translatedTitle": null
+      "difficulty": "Medium"
     },
     {
       "title": "Add Strings",
       "titleSlug": "add-strings",
-      "difficulty": "Easy",
-      "translatedTitle": null
+      "difficulty": "Easy"
     },
     {
       "title": "Add Two Numbers II",
       "titleSlug": "add-two-numbers-ii",
-      "difficulty": "Medium",
-      "translatedTitle": null
+      "difficulty": "Medium"
     },
     {
       "title": "Add to Array-Form of Integer",
       "titleSlug": "add-to-array-form-of-integer",
-      "difficulty": "Easy",
-      "translatedTitle": null
+      "difficulty": "Easy"
     },
     {
       "title": "Add Two Polynomials Represented as Linked Lists",
       "titleSlug": "add-two-polynomials-represented-as-linked-lists",
-      "difficulty": "Medium",
-      "translatedTitle": null
+      "difficulty": "Medium"
     },
     {
       "title": "Double a Number Represented as a Linked List",
       "titleSlug": "double-a-number-represented-as-a-linked-list",
-      "difficulty": "Medium",
-      "translatedTitle": null
+      "difficulty": "Medium"
     }
   ],
   "questionId": "2",
@@ -75,7 +67,6 @@
     "totalSubmissionRaw": 13135195,
     "acRate": "46.8%"
   },
-  "similarQuestions": "[{\"title\": \"Multiply Strings\", \"titleSlug\": \"multiply-strings\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Add Binary\", \"titleSlug\": \"add-binary\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Sum of Two Integers\", \"titleSlug\": \"sum-of-two-integers\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Add Strings\", \"titleSlug\": \"add-strings\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Add Two Numbers II\", \"titleSlug\": \"add-two-numbers-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Add to Array-Form of Integer\", \"titleSlug\": \"add-to-array-form-of-integer\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Add Two Polynomials Represented as Linked Lists\", \"titleSlug\": \"add-two-polynomials-represented-as-linked-lists\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Double a Number Represented as a Linked List\", \"titleSlug\": \"double-a-number-represented-as-a-linked-list\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
   "topicTags": [
     {
       "name": "Linked List",
