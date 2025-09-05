@@ -78,8 +78,8 @@
   "stats": {
     "totalAccepted": "8.1M",
     "totalSubmission": "21.5M",
-    "totalAcceptedRaw": 8071799,
-    "totalSubmissionRaw": 21535205,
+    "totalAcceptedRaw": 8071892,
+    "totalSubmissionRaw": 21535394,
     "acRate": "37.5%"
   },
   "topicTags": [
@@ -153,5 +153,67 @@
         "timesEncountered": 11
       }
     ]
-  }
+  },
+  "discussion_posts": [
+    {
+      "name": "ktranada1403",
+      "year": 2023,
+      "content": "Bruh who tf sat down and wrote 987 testcases. This is sacrilegious. Go touch grass. See the world out there gang. This is not it. ",
+      "voteCount": 3965
+    },
+    {
+      "name": "michaelg02",
+      "year": 2019,
+      "content": "The wording of the question was unclear for me. Example 3 does cover this where \"wke\" was the longest not \"wkew\", but the wording of the question suggests that the substring can have multiple of the same character as long as it is not repeating.\\n\\n\"wkew\" would pass because the substring does not have two w\\'s in a row.\\n\\n*Instead of:\\nGiven a string, find the length of the longest substring without repeating characters.*\\n\\n*I think this is a better wording:\\nGiven a string, find the length of the longest substring without **duplicate** characters.*\\n\\n\\n\\n\\n\\n",
+      "voteCount": 715
+    },
+    {
+      "name": "sourvad",
+      "year": 2024,
+      "content": "When I attempted this question a few months ago I was stumped and demoralized by my ineptitude. Now coming across this question today, it was a breeze. To all those who felt the same way I felt when I struggled with this question, stick with it, the grind is worth it, and you will see personal growth. Don\\'t give up, skeleton!",
+      "voteCount": 583
+    },
+    {
+      "name": "ooPo",
+      "year": 2019,
+      "content": "Do not try to use brute force to pass the problem.",
+      "voteCount": 343
+    },
+    {
+      "name": "artemilin-2023",
+      "year": 2023,
+      "content": "986 / 987 testcases passed T_T",
+      "voteCount": 341
+    },
+    {
+      "name": "technologyaddicted",
+      "year": 2017,
+      "content": "Given \"pwwkew\", the answer is \"wke\", with the length of 3. Note that the answer must be a substring, \"pwke\" is a subsequence and not a substring.\\n\\nI do not understand that in the Example # 3, it mentions 'wke' as the longest substring. Why not \"kew\" selected as the longest one? Help here is much appreciated.",
+      "voteCount": 252
+    },
+    {
+      "name": "anthonyhuang",
+      "year": 2018,
+      "content": "I have some problem understanding the problem, this test case \"dvdf \"says the output should be 3, while I suppose it should be 2.\\n\\n\"dv\" or \"df\" is what I think. It should be substring not subsequence like the question mentioned. Should it confined to \"Consistent String\"?\\n\\n",
+      "voteCount": 143
+    },
+    {
+      "name": "priyanshsingh279",
+      "year": 2022,
+      "content": "Some test cases:\\n\\n\" \"\\n\"dvdf\"\\n\"ckilbkd\"\\n\"tmmzuxt\"",
+      "voteCount": 104
+    },
+    {
+      "name": "uakrongrad",
+      "year": 2021,
+      "content": "I think the task could be better explained by asking the tester to find the length of the longest non repeating set of continous characters in the string.",
+      "voteCount": 87
+    },
+    {
+      "name": "sanyuktakate",
+      "year": 2019,
+      "content": "Did anyone get an error as - *\" is not a valid value of type string* for an input which was a string with space (\" \")?",
+      "voteCount": 60
+    }
+  ]
 }
