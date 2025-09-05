@@ -1,4 +1,4 @@
-# 128. Find the Maximum Number of Elements in Subset
+# 128. Longest Consecutive Sequence
 
 - **URL**: <https://leetcode.com/problems/longest-consecutive-sequence/>
 - **Difficulty**: medium

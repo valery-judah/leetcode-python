@@ -1,4 +1,4 @@
-# 217. Find Valid Pair of Adjacent Digits in String
+# 217. Contains Duplicate
 
 - **URL**: <https://leetcode.com/problems/contains-duplicate/>
 - **Difficulty**: easy

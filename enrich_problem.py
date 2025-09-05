@@ -494,10 +494,26 @@ def main():
                 output_file = f"archive/problems/{problem_id}-{new_data.get('slug')}.solution.md"
                 with open(output_file, "w") as f:
                     f.write(solution_content)
-                logger.info(f"Saved solution to {output_file}")
                 solutions_saved += 1
             else:
                 logger.info(f"No solution content available for problem {new_data.get('id')}")
+
+            # Persist problem description/content as markdown as well
+            # LeetCode returns HTML in the `content` field; markdown can render raw HTML.
+            if new_data.get("content"):
+                base = f"archive/problems/{problem_id}-{new_data.get('slug')}"
+                desc_md = f"{base}.description.md"
+                desc_html = f"{base}.description.html"
+                try:
+                    # Save raw HTML into both MD (for markdown renderers) and HTML file
+                    with open(desc_md, "w") as df_md:
+                        df_md.write(new_data["content"])  # markdown will render HTML
+                    with open(desc_html, "w") as df_html:
+                        df_html.write(new_data["content"])  # same payload as HTML fragment
+                except OSError as e:
+                    logger.warning(
+                        f"Failed saving descriptions for {new_data.get('slug')}: {e}"
+                    )
         else:
             logger.warning(f"Could not retrieve problem data for problem {new_data.get('id')}")
             problem_data_fail += 1
@@ -517,9 +533,6 @@ def main():
         ):
             comments = discussion_data["data"]["topicComments"].get("data", [])
             new_data["discussion_posts"] = _simplify_discussion_comments(comments)
-            logger.info(
-                f"Fetched {len(comments)} discussion comments for {new_data.get('slug')}"
-            )
             discuss_ok += 1
         else:
             logger.warning(f"Could not retrieve discussion data for problem {new_data.get('id')}")

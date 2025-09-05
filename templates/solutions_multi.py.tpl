@@ -1,3 +1,16 @@
+from __future__ import annotations
+
+# Common type stubs for annotations and simple local testing
+from common.types import (
+    ListNode,
+    TreeNode,
+    Node,
+    UndirectedGraphNode,
+    RandomListNode,
+    NestedInteger,
+)
+
+
 class Baseline:
     def solve(self, *args, **kwargs):
         """Replace with actual signature per problem."""

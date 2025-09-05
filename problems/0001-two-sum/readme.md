@@ -1,4 +1,4 @@
-# 1. Count Pairs Whose Sum is Less than Target
+# 1. Two Sum
 
 - **URL**: <https://leetcode.com/problems/two-sum/>
 - **Difficulty**: easy

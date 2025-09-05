@@ -1,4 +1,4 @@
-# 21. Merge Two 2D Arrays by Summing Values
+# 21. Merge Two Sorted Lists
 
 - **URL**: <https://leetcode.com/problems/merge-two-sorted-lists/>
 - **Difficulty**: easy

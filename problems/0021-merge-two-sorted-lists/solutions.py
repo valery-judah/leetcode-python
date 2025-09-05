@@ -1,5 +1,18 @@
+from __future__ import annotations
+
+# Common type stubs for annotations and simple local testing
+from common.types import (
+    ListNode,
+    TreeNode,
+    Node,
+    UndirectedGraphNode,
+    RandomListNode,
+    NestedInteger,
+)
+
+
 class Baseline:
-    def solve(self, *args, **kwargs):
+    def solve(self, list1: ListNode | None, list2: ListNode | None)-> ListNode | None:
         """Replace with actual signature per problem."""
         raise NotImplementedError
 
@@ -13,8 +26,9 @@ ALL_SOLUTIONS = [Baseline]
 # Canonical small test cases for generic stub tests
 # Each entry: (label, args_tuple, kwargs_dict)
 TEST_CASES = [
-    ("example", (), {}),  # replace with concrete inputs
+    ("types", (ListNode(1, ListNode(2)), ListNode(1, ListNode(2))), {}),
 ]
+
 
 # Opt-in for generic stub testing: assert .solve raises this exception.
 TEST_EXPECT_EXCEPTION = NotImplementedError
