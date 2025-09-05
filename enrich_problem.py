@@ -22,9 +22,6 @@ def get_problem_data(slug):
         likes
         dislikes
         stats
-        solution {
-          content
-        }
         similarQuestions
         topicTags {
           name
@@ -56,12 +53,33 @@ def get_problem_data(slug):
         "Referer": f"https://leetcode.com/problems/{slug}/",
     }
 
-    response = requests.post(
-        url, json={"query": query, "variables": variables}, cookies=cookies, headers=headers
-    )
-    if response.status_code == 200:
-        return response.json()
-    print(f"Error fetching data for {slug}: {response.status_code} {response.text}")
+    retries = 3
+    for attempt in range(retries):
+        try:
+            response = requests.post(
+                url,
+                json={"query": query, "variables": variables},
+                cookies=cookies,
+                headers=headers,
+                timeout=10,
+            )
+            if response.status_code == 200:
+                return response.json()
+            elif response.status_code == 429:
+                wait_time = 10 * (attempt + 1)
+                print(f"Rate limited for {slug}. Retrying in {wait_time} seconds...")
+                time.sleep(wait_time)
+            else:
+                print(
+                    f"Error fetching data for {slug}: {response.status_code} {response.text}"
+                )
+                return None  # Don't retry on other errors
+        except requests.exceptions.RequestException as e:
+            print(f"Request failed for {slug}: {e}. Attempt {attempt + 1} of {retries}")
+            if attempt < retries - 1:
+                time.sleep(5 * (attempt + 1))
+            else:
+                return None
     return None
 
 
@@ -101,7 +119,7 @@ def parse_python_snippet(code_string, sample_test_case):
 
 def main():
     problem_files = os.listdir("archive/problems")
-    for i in range(1, 3):
+    for i in range(1, 3700):
         problem_id = str(i).zfill(4)
         problem_file = None
         for f in problem_files:
@@ -172,14 +190,15 @@ def main():
             if "codeSnippets" in new_data:
                 del new_data["codeSnippets"]
 
-            if question_data.get("solution") and question_data["solution"]["content"]:
-                solution_content = question_data["solution"]["content"]
-                output_file = f"archive/problems/{problem_id}-{new_data.get('slug')}.solution.md"
-                with open(output_file, "w") as f:
-                    f.write(solution_content)
-                print(f"Successfully saved solution to {output_file}")
-            else:
-                print(f"No solution content available for problem {new_data.get('id')}")
+            # Solution fetching is disabled
+            # if question_data.get("solution") and question_data["solution"]["content"]:
+            #     solution_content = question_data["solution"]["content"]
+            #     output_file = f"archive/problems/{problem_id}-{new_data.get('slug')}.solution.md"
+            #     with open(output_file, "w") as f:
+            #         f.write(solution_content)
+            #     print(f"Successfully saved solution to {output_file}")
+            # else:
+            #     print(f"No solution content available for problem {new_data.get('id')}")
         else:
             print(f"Could not retrieve problem data for problem {new_data.get('id')}")
 
@@ -187,7 +206,13 @@ def main():
             json.dump(new_data, f, indent=2)
         print(f"Successfully enriched {problem_file}")
 
-        time.sleep(random.uniform(3, 7))
+        # Add a longer sleep every 50 requests
+        if i > 0 and i % 50 == 0:
+            sleep_time = random.uniform(30, 60)
+            print(f"Taking a long break for {sleep_time:.2f} seconds...")
+            time.sleep(sleep_time)
+        else:
+            time.sleep(random.uniform(5, 10))
 
 
 if __name__ == "__main__":

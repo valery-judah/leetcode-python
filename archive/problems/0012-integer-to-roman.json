@@ -14,15 +14,13 @@
   "similar_questions": [
     {
       "title": "Roman to Integer",
-      "titleSlug": "roman-to-integer",
       "difficulty": "Easy",
-      "translatedTitle": null
+      "slug": "roman-to-integer"
     },
     {
       "title": "Integer to English Words",
-      "titleSlug": "integer-to-english-words",
       "difficulty": "Hard",
-      "translatedTitle": null
+      "slug": "integer-to-english-words"
     }
   ],
   "questionId": "12",
@@ -35,8 +33,8 @@
   "stats": {
     "totalAccepted": "1.8M",
     "totalSubmission": "2.7M",
-    "totalAcceptedRaw": 1848659,
-    "totalSubmissionRaw": 2668231,
+    "totalAcceptedRaw": 1848671,
+    "totalSubmissionRaw": 2668243,
     "acRate": "69.3%"
   },
   "topicTags": [

@@ -14,9 +14,8 @@
   "similar_questions": [
     {
       "title": "Wildcard Matching",
-      "titleSlug": "wildcard-matching",
       "difficulty": "Hard",
-      "translatedTitle": null
+      "slug": "wildcard-matching"
     }
   ],
   "questionId": "10",
@@ -29,8 +28,8 @@
   "stats": {
     "totalAccepted": "1.2M",
     "totalSubmission": "4.1M",
-    "totalAcceptedRaw": 1221759,
-    "totalSubmissionRaw": 4129400,
+    "totalAcceptedRaw": 1221763,
+    "totalSubmissionRaw": 4129409,
     "acRate": "29.6%"
   },
   "topicTags": [
