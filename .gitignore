@@ -127,3 +127,5 @@ __pycache__
 problems/.DS_Store
 data/all_neetcode.md
 data/leetcode_questions.json
+.leetcode.creds/csrftoken
+.leetcode.creds/LEETCODE_SESSION
