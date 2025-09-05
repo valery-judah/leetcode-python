@@ -63,8 +63,8 @@
   "stats": {
     "totalAccepted": "6.2M",
     "totalSubmission": "13.1M",
-    "totalAcceptedRaw": 6153877,
-    "totalSubmissionRaw": 13135324,
+    "totalAcceptedRaw": 6153926,
+    "totalSubmissionRaw": 13135414,
     "acRate": "46.8%"
   },
   "topicTags": [
@@ -135,5 +135,67 @@
         "timesEncountered": 12
       }
     ]
-  }
+  },
+  "discussion_posts": [
+    {
+      "name": "davidmariluch",
+      "year": 2018,
+      "content": "Does anyone else think the ListNode class given is absolute trash? It isn\\'t a Java class in the Java 8 or 9 library. It has no class methods. It\\'s not static. So accessing anything in it is just a crap shoot trial and error? Who made this trash problem?",
+      "voteCount": 915
+    },
+    {
+      "name": "dabiggmoe",
+      "year": 2020,
+      "content": "I cannot pass this test case\\nl1 = [2,4,9]\\nl2 = [5,6,4,9]\\nmy answer is = [8,9,8,5]\\n\\nBut my submission is failing, saying the expected result is [7,0,4,0,1]\\n\\nAm I missing anything? How can I report this test case?",
+      "voteCount": 315
+    },
+    {
+      "name": "thekipp0",
+      "year": 2019,
+      "content": "Getting reverse() is not a function in javascript when doing\\n\\n[1,2,3].reverse()\\n\\nbut it works in the playground...",
+      "voteCount": 223
+    },
+    {
+      "name": "lazermax",
+      "year": 2018,
+      "content": "The problem description says \"You are given two non-empty linked lists representing two non-negative integers\". But with the test case that doesn\\'t fit into even Int64 these are clearly NOT integers, even though they are numbers. Please, change the problem description not to mislead anyone and add an appropriate section stating that numbers can contain any amount of digits.",
+      "voteCount": 189
+    },
+    {
+      "name": "jerry_lin",
+      "year": 2015,
+      "content": "Look at the example input : (2->4->3)+(5->6->4), why the output is the single link list 7->0->8. How do those numbers calculated?",
+      "voteCount": 175
+    },
+    {
+      "name": "linuxjh",
+      "year": 2019,
+      "content": "there\\'s big input data from test case like this, with commas removed:\\n[1000000000000000000000000000001]\\n[564]\\n\\nthe test data exceeds the unsigned integer range in c++:\\nULLONG_MAX: 18446744073709551615\\n\\n",
+      "voteCount": 158
+    },
+    {
+      "name": "bluezone",
+      "year": 2018,
+      "content": "![image](https://assets.leetcode.com/users/bluezone/image_1544337912.png)\\n\\nWhy the hell do you have test cases that pass such dumbass strings. How do you expect me to parse a value that long into an Integer? Not even a Long will suffice ....\\n",
+      "voteCount": 115
+    },
+    {
+      "name": "antunesleo",
+      "year": 2022,
+      "content": "The tip is to simulate [addition by hand](https://www.youtube.com/watch?v=Nwxa9E_X8K8) on code . The fact that the linked list is backwards only makes it easier, because on addition by hand we start from behind e.g. \n    \n```\n3\u00b9 4  2\n4  6  5\n---------\n8  0  7\n```\nWe can add the results for each \"column\" in the addition by hand in other linked list and return it.\n\n",
+      "voteCount": 111
+    },
+    {
+      "name": "sejoker",
+      "year": 2016,
+      "content": " From the task definition, it is clear that we should return a linked list.",
+      "voteCount": 94
+    },
+    {
+      "name": "sonakshi",
+      "year": 2014,
+      "content": "Do we need to include the cases when l1 and l2 are of different sizes ?",
+      "voteCount": 82
+    }
+  ]
 }

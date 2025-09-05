@@ -20,8 +20,8 @@
   "stats": {
     "totalAccepted": "1.9M",
     "totalSubmission": "3.6M",
-    "totalAcceptedRaw": 1888703,
-    "totalSubmissionRaw": 3614902,
+    "totalAcceptedRaw": 1888746,
+    "totalSubmissionRaw": 3614960,
     "acRate": "52.2%"
   },
   "topicTags": [
@@ -55,5 +55,67 @@
         "timesEncountered": 15
       }
     ]
-  }
+  },
+  "discussion_posts": [
+    {
+      "name": "waitingtodie",
+      "year": 2017,
+      "content": "No details of what is required at all - it's almost like this:\\ngiven a string Idonthaveaclue, convert it to wtfareyoutalkingabout, and oh yes do it in a zig zag pattern. good luck.\\n\\nWhen you have to spend more time working out the spec than working on the problem, it's a sign of a bad question.",
+      "voteCount": 2618
+    },
+    {
+      "name": "Manish_1001",
+      "year": 2023,
+      "content": "Ironically, Paypal is laying off ",
+      "voteCount": 1203
+    },
+    {
+      "name": "bk_3497",
+      "year": 2023,
+      "content": "I am ignoring this question for a long time.",
+      "voteCount": 495
+    },
+    {
+      "name": "jc334259684",
+      "year": 2023,
+      "content": "Don\\'t think too much, use a 2D array to generate the pattern first, and then join characters of each row. Sometimes naive version works best",
+      "voteCount": 217
+    },
+    {
+      "name": "Vgn",
+      "year": 2015,
+      "content": "Dear LeetCode,\\n\\nIt will be a good idea  if you provide a detailed test case when there is a 'Run time error'. This will ease the things to debug, especially when the code runs perfectly fine on local machines but not on Leet Code.\\n\\nThanks.",
+      "voteCount": 190
+    },
+    {
+      "name": "11markus04",
+      "year": 2024,
+      "content": "Note: the zig-zag pattern is like this y'all\n```\n|    /|    /|    /|\n|  /  |  /  |  /  |\n|/    |/    |/    |\n```",
+      "voteCount": 187
+    },
+    {
+      "name": "b0968760387",
+      "year": 2023,
+      "content": "Alien problem again today haha ",
+      "voteCount": 178
+    },
+    {
+      "name": "thetoon",
+      "year": 2023,
+      "content": "The description better be changed to reflex the reality to \"PAYPALISFIRING\".",
+      "voteCount": 174
+    },
+    {
+      "name": "LeetcodeProtector",
+      "year": 2023,
+      "content": "![alt text](https://i.imgur.com/QfbsjUh.png)\\n![alt text](https://i.imgur.com/RZpkxDZ.png)\\n\\nThings changed pretty quickly. ",
+      "voteCount": 49
+    },
+    {
+      "name": "haishenjun",
+      "year": 2013,
+      "content": "What should be the pattern of \"ABC\", 2?\\n\\nI suppose it to be \\n\\nA\\nB C\\n\\nand return \"ABC\".\\n\\nWhy is the answer \"ACB\"?",
+      "voteCount": 48
+    }
+  ]
 }

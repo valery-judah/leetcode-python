@@ -214,3 +214,9 @@ This workflow helps maintain code quality and ensures that all necessary documen
 # Other: Markdown Formatting
 
 You can use `markdownlint --fix "**/*.md" --ignore-path .gitignore .` command.
+
+## Optional cool-off when enriching problems
+
+```bash
+python enrich_problem.py --start 1 --end 3700 --max-problems 300 --per-problem-sleep-min 15 --per-problem-sleep-max 25 --long-break-every 20 --long-break-sleep-min 180 --long-break-sleep-max 360 --micro-delay-min 2 --micro-delay-max 4 --backoff-base 30 --retries 3 --cool-off-threshold 2 --cool-off-sleep-min 600 --cool-off-sleep-max 900 --log-file enrich.log --log-level INFO
+```
