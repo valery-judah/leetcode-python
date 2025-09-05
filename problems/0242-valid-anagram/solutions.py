@@ -11,10 +11,10 @@ class Baseline:
             counts[ch] = counts.get(ch, 0) + 1
         return counts
 
+
 class LibraryUse:
     def solve(self, s: str = "", t: str = "") -> bool:
         return Counter(s) == Counter(t)
-
 
 
 # Explicit multi-export for test discovery
