@@ -31,17 +31,22 @@ class CaseParam:
     expected: Any
 
 
-def _prefer_primary_class(ns: dict[str, Any]) -> Iterable[type]:
-    """Yield the primary solution class to test.
+def _all_solution_classes(ns: dict[str, Any]) -> list[type]:
+    """Return all solution classes to test.
 
-    Preference order:
-    1) `Solution` alias if present
-    2) First class in `ALL_SOLUTIONS`
+    Preference:
+    - If `ALL_SOLUTIONS` exists, return all classes with a `.solve` method.
+    - Else if `Solution` exists, return that single class.
+    - Else, empty list.
     """
-    if "Solution" in ns and hasattr(ns["Solution"], "solve"):
-        return [ns["Solution"]]
-    classes = ns.get("ALL_SOLUTIONS") or []
-    return classes[:1] if classes else []
+    classes = []
+    if "ALL_SOLUTIONS" in ns and isinstance(ns["ALL_SOLUTIONS"], Iterable):
+        for cls in ns["ALL_SOLUTIONS"]:
+            if hasattr(cls, "solve"):
+                classes.append(cls)
+    elif "Solution" in ns and hasattr(ns["Solution"], "solve"):
+        classes.append(ns["Solution"])
+    return classes
 
 
 def _is_exception_opt_in(ns: dict[str, Any]) -> type[BaseException] | None:
@@ -98,7 +103,7 @@ def _discover_stub_params() -> list[StubParam]:
         if not exc:
             continue
 
-        classes = list(_prefer_primary_class(ns))
+        classes = _all_solution_classes(ns)
         if not classes:
             continue
 
@@ -150,7 +155,7 @@ def _discover_case_params() -> list[CaseParam]:
         if _is_exception_opt_in(ns):
             continue
 
-        classes = list(_prefer_primary_class(ns))
+        classes = _all_solution_classes(ns)
         if not classes:
             continue
 
@@ -163,18 +168,19 @@ def _discover_case_params() -> list[CaseParam]:
             if not parsed:
                 continue
             label, args, kwargs, expected = parsed
-            sol_name = getattr(classes[0], "__name__", "Solution")
-            params.append(
-                CaseParam(
-                    problem=problem_dir.name,
-                    sol_name=sol_name,
-                    module_path=str(sol_path),
-                    label=label,
-                    args=args,
-                    kwargs=kwargs,
-                    expected=expected,
+            for cls in classes:
+                sol_name = getattr(cls, "__name__", "Solution")
+                params.append(
+                    CaseParam(
+                        problem=problem_dir.name,
+                        sol_name=sol_name,
+                        module_path=str(sol_path),
+                        label=label,
+                        args=args,
+                        kwargs=kwargs,
+                        expected=expected,
+                    )
                 )
-            )
     return params
 
 

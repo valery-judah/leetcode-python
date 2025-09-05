@@ -3,25 +3,37 @@ from collections import Counter
 
 class Baseline:
     def solve(self, s: str = "", t: str = "") -> bool:
-        if len(s) != len(t):
-            return False
+        return self._count(s) == self._count(t)
 
-        s_counter = Counter(s)
-        t_counter = Counter(t)
+    def _count(self, s):
+        counts = {}
+        for ch in s:
+            counts[ch] = counts.get(ch, 0) + 1
+        return counts
 
-        return s_counter == t_counter
+class LibraryUse:
+    def solve(self, s: str = "", t: str = "") -> bool:
+        return Counter(s) == Counter(t)
 
 
-# Optional default alias for single-export usage
-Solution = Baseline
 
 # Explicit multi-export for test discovery
-ALL_SOLUTIONS = [Baseline]
+ALL_SOLUTIONS = [Baseline, LibraryUse]
+SOLUTIONS = ALL_SOLUTIONS
+
+__all__ = [
+    "Baseline",
+    "LibraryUse",
+    "ALL_SOLUTIONS",
+    "SOLUTIONS",
+    "TEST_CASES",
+    "TEST_EXPECT_EXCEPTION",
+]
 
 # Canonical small test cases for generic stub tests
 # Each entry: (label, args_tuple, expected_output)
 TEST_CASES = [
-    ("simple positive", ("a", "a"), True),
+    ("simple positive", ("catt", "tact"), True),
     ("simple negative", ("a", "b"), False),
     ("positive", ("anagram", "nagaram"), True),
     ("negative", ("rat", "car"), False),
@@ -44,6 +56,6 @@ if __name__ == "__main__":
     problem_name = problem_dir.name
     # Run the single generic spec, filtered to this problem's params
     subprocess.run(
-        [sys.executable, "-m", "pytest", "-q", str(root), "-k", problem_name],
+        [sys.executable, "-m", "pytest", "-q", "-s", str(root), "-k", problem_name],
         check=False,
     )
