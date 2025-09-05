@@ -36,8 +36,8 @@
   "stats": {
     "totalAccepted": "2.1M",
     "totalSubmission": "10.8M",
-    "totalAcceptedRaw": 2121177,
-    "totalSubmissionRaw": 10764066,
+    "totalAcceptedRaw": 2121190,
+    "totalSubmissionRaw": 10764123,
     "acRate": "19.7%"
   },
   "topicTags": [
@@ -57,5 +57,15 @@
     "return": {
       "type": "integer"
     }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Meta",
+        "slug": "facebook",
+        "timesEncountered": 22
+      }
+    ]
   }
 }
