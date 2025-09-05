@@ -55,21 +55,29 @@ def _is_exception_opt_in(ns: dict[str, Any]) -> type[BaseException] | None:
 
 
 def _parse_case_tuple(item: Any) -> tuple[str, tuple[Any, ...], dict[str, Any], Any] | None:
-    """Supports two shapes:
+    """Supports three shapes:
     - (label, args_tuple, kwargs_dict, expected)
+    - (label, args_tuple, expected)
     - (label, arg1, ..., expected)
     Returns (label, args, kwargs, expected) or None if unsupported.
     """
     if not isinstance(item, tuple) or not item or not isinstance(item[0], str):
         return None
-    # Shape 1
+    # Shape 1: (label, args_tuple, kwargs_dict, expected)
     if len(item) == 4 and isinstance(item[1], tuple) and isinstance(item[2], dict):
         label, args, kwargs, expected = item
         return label, args, kwargs, expected
-    # Shape 2
-    if len(item) >= 3:
+    # Shape 2: (label, args_tuple, expected)
+    if len(item) == 3 and isinstance(item[1], tuple):
+        label, args, expected = item
+        return label, args, {}, expected
+    # Shape 3: (label, arg1, ..., expected)
+    if len(item) >= 2:
         label = item[0]
         *mid, expected = item[1:]
+        # To disambiguate from shape 2, we must not have a single tuple arg
+        if len(mid) == 1 and isinstance(mid[0], tuple):
+            return None
         return label, tuple(mid), {}, expected
     return None
 

@@ -1,7 +1,15 @@
+from collections import Counter
+
+
 class Baseline:
-    def solve(self, *args, **kwargs):
-        """Replace with actual signature per problem."""
-        raise NotImplementedError
+    def solve(self, s: str = "", t: str = "") -> bool:
+        if len(s) != len(t):
+            return False
+        
+        s_counter = Counter(s)
+        t_counter = Counter(t)
+        
+        return s_counter == t_counter
 
 
 # Optional default alias for single-export usage
@@ -11,13 +19,18 @@ Solution = Baseline
 ALL_SOLUTIONS = [Baseline]
 
 # Canonical small test cases for generic stub tests
-# Each entry: (label, args_tuple, kwargs_dict)
+# Each entry: (label, args_tuple, expected_output)
 TEST_CASES = [
-    ("example", (), {}),  # replace with concrete inputs
+    ("simple positive", ("a", "a"), True),
+    ("simple negative", ("a", "b"), False),
+    ("positive", ("anagram", "nagaram"), True),
+    ("negative", ("rat", "car"), False),
+    ("negative different length", ("rat", "cart"), False),
+    ("empty", ("", ""), True),
 ]
 
 # Opt-in for generic stub testing: assert .solve raises this exception.
-TEST_EXPECT_EXCEPTION = NotImplementedError
+TEST_EXPECT_EXCEPTION = None
 
 
 if __name__ == "__main__":
