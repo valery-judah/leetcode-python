@@ -14,43 +14,43 @@
   "similar_questions": [
     {
       "title": "Multiply Strings",
-      "titleSlug": "multiply-strings",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "slug": "multiply-strings"
     },
     {
       "title": "Add Binary",
-      "titleSlug": "add-binary",
-      "difficulty": "Easy"
+      "difficulty": "Easy",
+      "slug": "add-binary"
     },
     {
       "title": "Sum of Two Integers",
-      "titleSlug": "sum-of-two-integers",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "slug": "sum-of-two-integers"
     },
     {
       "title": "Add Strings",
-      "titleSlug": "add-strings",
-      "difficulty": "Easy"
+      "difficulty": "Easy",
+      "slug": "add-strings"
     },
     {
       "title": "Add Two Numbers II",
-      "titleSlug": "add-two-numbers-ii",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "slug": "add-two-numbers-ii"
     },
     {
       "title": "Add to Array-Form of Integer",
-      "titleSlug": "add-to-array-form-of-integer",
-      "difficulty": "Easy"
+      "difficulty": "Easy",
+      "slug": "add-to-array-form-of-integer"
     },
     {
       "title": "Add Two Polynomials Represented as Linked Lists",
-      "titleSlug": "add-two-polynomials-represented-as-linked-lists",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "slug": "add-two-polynomials-represented-as-linked-lists"
     },
     {
       "title": "Double a Number Represented as a Linked List",
-      "titleSlug": "double-a-number-represented-as-a-linked-list",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "slug": "double-a-number-represented-as-a-linked-list"
     }
   ],
   "questionId": "2",
@@ -63,8 +63,8 @@
   "stats": {
     "totalAccepted": "6.2M",
     "totalSubmission": "13.1M",
-    "totalAcceptedRaw": 6153792,
-    "totalSubmissionRaw": 13135195,
+    "totalAcceptedRaw": 6153827,
+    "totalSubmissionRaw": 13135246,
     "acRate": "46.8%"
   },
   "topicTags": [

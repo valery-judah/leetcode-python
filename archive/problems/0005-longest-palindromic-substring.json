@@ -14,39 +14,73 @@
   "similar_questions": [
     {
       "title": "Shortest Palindrome",
-      "slug": "shortest-palindrome",
-      "id": null,
-      "leetcode_url": "https://leetcode.com/problems/shortest-palindrome/"
+      "difficulty": "Hard",
+      "slug": "shortest-palindrome"
     },
     {
       "title": "Palindrome Permutation",
-      "slug": "palindrome-permutation",
-      "id": null,
-      "leetcode_url": "https://leetcode.com/problems/palindrome-permutation/"
+      "difficulty": "Easy",
+      "slug": "palindrome-permutation"
     },
     {
       "title": "Palindrome Pairs",
-      "slug": "palindrome-pairs",
-      "id": null,
-      "leetcode_url": "https://leetcode.com/problems/palindrome-pairs/"
+      "difficulty": "Hard",
+      "slug": "palindrome-pairs"
     },
     {
       "title": "Longest Palindromic Subsequence",
-      "slug": "longest-palindromic-subsequence",
-      "id": null,
-      "leetcode_url": "https://leetcode.com/problems/longest-palindromic-subsequence/"
+      "difficulty": "Medium",
+      "slug": "longest-palindromic-subsequence"
     },
     {
       "title": "Palindromic Substrings",
-      "slug": "palindromic-substrings",
-      "id": null,
-      "leetcode_url": "https://leetcode.com/problems/palindromic-substrings/"
+      "difficulty": "Medium",
+      "slug": "palindromic-substrings"
     },
     {
       "title": "Maximum Number of Non-overlapping Palindrome Substrings",
-      "slug": "maximum-number-of-non-overlapping-palindrome-substrings",
-      "id": null,
-      "leetcode_url": "https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings/"
+      "difficulty": "Hard",
+      "slug": "maximum-number-of-non-overlapping-palindrome-substrings"
     }
-  ]
+  ],
+  "questionId": "5",
+  "questionFrontendId": "5",
+  "title": "Longest Palindromic Substring",
+  "titleSlug": "longest-palindromic-substring",
+  "content": "<p>Given a string <code>s</code>, return <em>the longest</em> <span data-keyword=\"palindromic-string\"><em>palindromic</em></span> <span data-keyword=\"substring-nonempty\"><em>substring</em></span> in <code>s</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;babad&quot;\n<strong>Output:</strong> &quot;bab&quot;\n<strong>Explanation:</strong> &quot;aba&quot; is also a valid answer.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;cbbd&quot;\n<strong>Output:</strong> &quot;bb&quot;\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 1000</code></li>\n\t<li><code>s</code> consist of only digits and English letters.</li>\n</ul>\n",
+  "likes": 31428,
+  "dislikes": 1934,
+  "stats": {
+    "totalAccepted": "4.1M",
+    "totalSubmission": "11.3M",
+    "totalAcceptedRaw": 4118994,
+    "totalSubmissionRaw": 11334002,
+    "acRate": "36.3%"
+  },
+  "topicTags": [
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "metaData": {
+    "name": "longestPalindrome",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "string"
+    }
+  }
 }

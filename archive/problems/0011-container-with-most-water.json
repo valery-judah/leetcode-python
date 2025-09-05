@@ -14,21 +14,18 @@
   "similar_questions": [
     {
       "title": "Trapping Rain Water",
-      "titleSlug": "trapping-rain-water",
       "difficulty": "Hard",
-      "translatedTitle": null
+      "slug": "trapping-rain-water"
     },
     {
       "title": "Maximum Tastiness of Candy Basket",
-      "titleSlug": "maximum-tastiness-of-candy-basket",
       "difficulty": "Medium",
-      "translatedTitle": null
+      "slug": "maximum-tastiness-of-candy-basket"
     },
     {
       "title": "House Robber IV",
-      "titleSlug": "house-robber-iv",
       "difficulty": "Medium",
-      "translatedTitle": null
+      "slug": "house-robber-iv"
     }
   ],
   "questionId": "11",
@@ -41,8 +38,8 @@
   "stats": {
     "totalAccepted": "4.4M",
     "totalSubmission": "7.6M",
-    "totalAcceptedRaw": 4421254,
-    "totalSubmissionRaw": 7590524,
+    "totalAcceptedRaw": 4421298,
+    "totalSubmissionRaw": 7590587,
     "acRate": "58.2%"
   },
   "topicTags": [

@@ -13,108 +13,108 @@
   "similar_questions": [
     {
       "title": "3Sum",
-      "titleSlug": "3sum",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "slug": "3sum"
     },
     {
       "title": "4Sum",
-      "titleSlug": "4sum",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "slug": "4sum"
     },
     {
       "title": "Two Sum II - Input Array Is Sorted",
-      "titleSlug": "two-sum-ii-input-array-is-sorted",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "slug": "two-sum-ii-input-array-is-sorted"
     },
     {
       "title": "Two Sum III - Data structure design",
-      "titleSlug": "two-sum-iii-data-structure-design",
-      "difficulty": "Easy"
+      "difficulty": "Easy",
+      "slug": "two-sum-iii-data-structure-design"
     },
     {
       "title": "Subarray Sum Equals K",
-      "titleSlug": "subarray-sum-equals-k",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "slug": "subarray-sum-equals-k"
     },
     {
       "title": "Two Sum IV - Input is a BST",
-      "titleSlug": "two-sum-iv-input-is-a-bst",
-      "difficulty": "Easy"
+      "difficulty": "Easy",
+      "slug": "two-sum-iv-input-is-a-bst"
     },
     {
       "title": "Two Sum Less Than K",
-      "titleSlug": "two-sum-less-than-k",
-      "difficulty": "Easy"
+      "difficulty": "Easy",
+      "slug": "two-sum-less-than-k"
     },
     {
       "title": "Max Number of K-Sum Pairs",
-      "titleSlug": "max-number-of-k-sum-pairs",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "slug": "max-number-of-k-sum-pairs"
     },
     {
       "title": "Count Good Meals",
-      "titleSlug": "count-good-meals",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "slug": "count-good-meals"
     },
     {
       "title": "Count Number of Pairs With Absolute Difference K",
-      "titleSlug": "count-number-of-pairs-with-absolute-difference-k",
-      "difficulty": "Easy"
+      "difficulty": "Easy",
+      "slug": "count-number-of-pairs-with-absolute-difference-k"
     },
     {
       "title": "Number of Pairs of Strings With Concatenation Equal to Target",
-      "titleSlug": "number-of-pairs-of-strings-with-concatenation-equal-to-target",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "slug": "number-of-pairs-of-strings-with-concatenation-equal-to-target"
     },
     {
       "title": "Find All K-Distant Indices in an Array",
-      "titleSlug": "find-all-k-distant-indices-in-an-array",
-      "difficulty": "Easy"
+      "difficulty": "Easy",
+      "slug": "find-all-k-distant-indices-in-an-array"
     },
     {
       "title": "First Letter to Appear Twice",
-      "titleSlug": "first-letter-to-appear-twice",
-      "difficulty": "Easy"
+      "difficulty": "Easy",
+      "slug": "first-letter-to-appear-twice"
     },
     {
       "title": "Number of Excellent Pairs",
-      "titleSlug": "number-of-excellent-pairs",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "slug": "number-of-excellent-pairs"
     },
     {
       "title": "Number of Arithmetic Triplets",
-      "titleSlug": "number-of-arithmetic-triplets",
-      "difficulty": "Easy"
+      "difficulty": "Easy",
+      "slug": "number-of-arithmetic-triplets"
     },
     {
       "title": "Node With Highest Edge Score",
-      "titleSlug": "node-with-highest-edge-score",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "slug": "node-with-highest-edge-score"
     },
     {
       "title": "Check Distances Between Same Letters",
-      "titleSlug": "check-distances-between-same-letters",
-      "difficulty": "Easy"
+      "difficulty": "Easy",
+      "slug": "check-distances-between-same-letters"
     },
     {
       "title": "Find Subarrays With Equal Sum",
-      "titleSlug": "find-subarrays-with-equal-sum",
-      "difficulty": "Easy"
+      "difficulty": "Easy",
+      "slug": "find-subarrays-with-equal-sum"
     },
     {
       "title": "Largest Positive Integer That Exists With Its Negative",
-      "titleSlug": "largest-positive-integer-that-exists-with-its-negative",
-      "difficulty": "Easy"
+      "difficulty": "Easy",
+      "slug": "largest-positive-integer-that-exists-with-its-negative"
     },
     {
       "title": "Number of Distinct Averages",
-      "titleSlug": "number-of-distinct-averages",
-      "difficulty": "Easy"
+      "difficulty": "Easy",
+      "slug": "number-of-distinct-averages"
     },
     {
       "title": "Count Pairs Whose Sum is Less than Target",
-      "titleSlug": "count-pairs-whose-sum-is-less-than-target",
-      "difficulty": "Easy"
+      "difficulty": "Easy",
+      "slug": "count-pairs-whose-sum-is-less-than-target"
     }
   ],
   "questionId": "1",
