@@ -63,8 +63,8 @@
   "stats": {
     "totalAccepted": "6.2M",
     "totalSubmission": "13.1M",
-    "totalAcceptedRaw": 6153827,
-    "totalSubmissionRaw": 13135246,
+    "totalAcceptedRaw": 6153877,
+    "totalSubmissionRaw": 13135324,
     "acRate": "46.8%"
   },
   "topicTags": [
@@ -99,5 +99,41 @@
       "type": "ListNode",
       "dealloc": true
     }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Google",
+        "slug": "google",
+        "timesEncountered": 71
+      },
+      {
+        "taggedByAdmin": true,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 44
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Meta",
+        "slug": "facebook",
+        "timesEncountered": 21
+      },
+      {
+        "taggedByAdmin": true,
+        "name": "Microsoft",
+        "slug": "microsoft",
+        "timesEncountered": 19
+      }
+    ],
+    "3": [
+      {
+        "taggedByAdmin": true,
+        "name": "Adobe",
+        "slug": "adobe",
+        "timesEncountered": 12
+      }
+    ]
   }
 }

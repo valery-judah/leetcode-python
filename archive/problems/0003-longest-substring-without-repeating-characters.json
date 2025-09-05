@@ -78,8 +78,8 @@
   "stats": {
     "totalAccepted": "8.1M",
     "totalSubmission": "21.5M",
-    "totalAcceptedRaw": 8071718,
-    "totalSubmissionRaw": 21535033,
+    "totalAcceptedRaw": 8071799,
+    "totalSubmissionRaw": 21535205,
     "acRate": "37.5%"
   },
   "topicTags": [
@@ -107,5 +107,51 @@
     "return": {
       "type": "integer"
     }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": true,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 60
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Google",
+        "slug": "google",
+        "timesEncountered": 46
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Microsoft",
+        "slug": "microsoft",
+        "timesEncountered": 21
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Meta",
+        "slug": "facebook",
+        "timesEncountered": 18
+      },
+      {
+        "taggedByAdmin": true,
+        "name": "Bloomberg",
+        "slug": "bloomberg",
+        "timesEncountered": 15
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Oracle",
+        "slug": "oracle",
+        "timesEncountered": 12
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "TikTok",
+        "slug": "tiktok",
+        "timesEncountered": 11
+      }
+    ]
   }
 }

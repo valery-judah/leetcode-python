@@ -38,8 +38,8 @@
   "stats": {
     "totalAccepted": "4.4M",
     "totalSubmission": "7.6M",
-    "totalAcceptedRaw": 4421298,
-    "totalSubmissionRaw": 7590587,
+    "totalAcceptedRaw": 4421349,
+    "totalSubmissionRaw": 7590663,
     "acRate": "58.2%"
   },
   "topicTags": [
@@ -67,5 +67,21 @@
     "return": {
       "type": "integer"
     }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 31
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Google",
+        "slug": "google",
+        "timesEncountered": 25
+      }
+    ]
   }
 }

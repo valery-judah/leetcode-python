@@ -22,6 +22,9 @@ def get_problem_data(slug):
         likes
         dislikes
         stats
+        solution {
+          content
+        }
         similarQuestions
         topicTags {
           name
@@ -195,7 +198,19 @@ def main():
                 new_data["metaData"] = json.loads(new_data["metaData"])
             
             if new_data.get("companyTagStats"):
-                new_data["company_tag_stats"] = json.loads(new_data["companyTagStats"])
+                company_stats = json.loads(new_data["companyTagStats"])
+                filtered_stats = {}
+                for key, companies in company_stats.items():
+                    filtered_companies = [
+                        company
+                        for company in companies
+                        if company.get("timesEncountered", 0) > 10
+                    ]
+                    if filtered_companies:
+                        filtered_stats[key] = filtered_companies
+                
+                if filtered_stats:
+                    new_data["company_tag_stats"] = filtered_stats
                 del new_data["companyTagStats"]
 
             if "solution" in new_data:
@@ -203,15 +218,14 @@ def main():
             if "codeSnippets" in new_data:
                 del new_data["codeSnippets"]
 
-            # Solution fetching is disabled
-            # if question_data.get("solution") and question_data["solution"]["content"]:
-            #     solution_content = question_data["solution"]["content"]
-            #     output_file = f"archive/problems/{problem_id}-{new_data.get('slug')}.solution.md"
-            #     with open(output_file, "w") as f:
-            #         f.write(solution_content)
-            #     print(f"Successfully saved solution to {output_file}")
-            # else:
-            #     print(f"No solution content available for problem {new_data.get('id')}")
+            if question_data.get("solution") and question_data["solution"]["content"]:
+                solution_content = question_data["solution"]["content"]
+                output_file = f"archive/problems/{problem_id}-{new_data.get('slug')}.solution.md"
+                with open(output_file, "w") as f:
+                    f.write(solution_content)
+                print(f"Successfully saved solution to {output_file}")
+            else:
+                print(f"No solution content available for problem {new_data.get('id')}")
         else:
             print(f"Could not retrieve problem data for problem {new_data.get('id')}")
 

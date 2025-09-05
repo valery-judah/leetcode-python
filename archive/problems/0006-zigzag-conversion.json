@@ -20,8 +20,8 @@
   "stats": {
     "totalAccepted": "1.9M",
     "totalSubmission": "3.6M",
-    "totalAcceptedRaw": 1888681,
-    "totalSubmissionRaw": 3614864,
+    "totalAcceptedRaw": 1888703,
+    "totalSubmissionRaw": 3614902,
     "acRate": "52.2%"
   },
   "topicTags": [
@@ -45,5 +45,15 @@
     "return": {
       "type": "string"
     }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Google",
+        "slug": "google",
+        "timesEncountered": 15
+      }
+    ]
   }
 }

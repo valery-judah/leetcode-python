@@ -28,8 +28,8 @@
   "stats": {
     "totalAccepted": "3.7M",
     "totalSubmission": "8.2M",
-    "totalAcceptedRaw": 3658958,
-    "totalSubmissionRaw": 8204208,
+    "totalAcceptedRaw": 3658976,
+    "totalSubmissionRaw": 8204241,
     "acRate": "44.6%"
   },
   "topicTags": [
@@ -61,5 +61,39 @@
     "return": {
       "type": "double"
     }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": true,
+        "name": "Google",
+        "slug": "google",
+        "timesEncountered": 42
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 33
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Goldman Sachs",
+        "slug": "goldman-sachs",
+        "timesEncountered": 24
+      },
+      {
+        "taggedByAdmin": true,
+        "name": "Microsoft",
+        "slug": "microsoft",
+        "timesEncountered": 14
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Meta",
+        "slug": "facebook",
+        "timesEncountered": 13
+      }
+    ]
   }
 }
