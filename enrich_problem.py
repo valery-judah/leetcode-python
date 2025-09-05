@@ -143,8 +143,6 @@ def main():
             # Store original fields to preserve them
             original_id = new_data.get("id")
             original_leetcode_url = new_data.get("leetcode_url")
-            original_similar_questions = new_data.get("similar_questions")
-
             # Enrich with all new data
             new_data.update(question_data)
 
@@ -153,14 +151,19 @@ def main():
                 new_data["id"] = original_id
             if original_leetcode_url:
                 new_data["leetcode_url"] = original_leetcode_url
-            if original_similar_questions:
-                new_data["similar_questions"] = original_similar_questions
 
             # The stats, similarQuestions, and metaData fields are returned as strings, so they need to be parsed
             if new_data.get("stats"):
                 new_data["stats"] = json.loads(new_data["stats"])
             if new_data.get("similarQuestions"):
-                new_data["similar_questions"] = json.loads(new_data["similarQuestions"])
+                similar_questions_list = json.loads(new_data["similarQuestions"])
+                for question in similar_questions_list:
+                    if "translatedTitle" in question:
+                        del question["translatedTitle"]
+                    if "titleSlug" in question:
+                        question["slug"] = question.pop("titleSlug")
+                new_data["similar_questions"] = similar_questions_list
+                del new_data["similarQuestions"]
             if new_data.get("metaData"):
                 new_data["metaData"] = json.loads(new_data["metaData"])
 
