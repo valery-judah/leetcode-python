@@ -32,6 +32,7 @@ def get_problem_data(slug):
           langSlug
           code
         }
+        companyTagStats
         metaData
       }
     }
@@ -70,9 +71,7 @@ def get_problem_data(slug):
                 print(f"Rate limited for {slug}. Retrying in {wait_time} seconds...")
                 time.sleep(wait_time)
             else:
-                print(
-                    f"Error fetching data for {slug}: {response.status_code} {response.text}"
-                )
+                print(f"Error fetching data for {slug}: {response.status_code} {response.text}")
                 return None  # Don't retry on other errors
         except requests.exceptions.RequestException as e:
             print(f"Request failed for {slug}: {e}. Attempt {attempt + 1} of {retries}")
@@ -80,6 +79,16 @@ def get_problem_data(slug):
                 time.sleep(5 * (attempt + 1))
             else:
                 return None
+    return None
+
+
+def get_company_stats_for_problem(slug):
+    """Fetches and extracts company-specific statistics for a given problem."""
+    problem_data = get_problem_data(slug)
+    if problem_data and "data" in problem_data and problem_data["data"]["question"]:
+        question_data = problem_data["data"]["question"]
+        if question_data.get("companyTagStats"):
+            return json.loads(question_data["companyTagStats"])
     return None
 
 
@@ -184,6 +193,10 @@ def main():
                 del new_data["similarQuestions"]
             if new_data.get("metaData"):
                 new_data["metaData"] = json.loads(new_data["metaData"])
+            
+            if new_data.get("companyTagStats"):
+                new_data["company_tag_stats"] = json.loads(new_data["companyTagStats"])
+                del new_data["companyTagStats"]
 
             if "solution" in new_data:
                 del new_data["solution"]
