@@ -12,10 +12,6 @@
 
 {similar_md}
 
-<!-- Optional per-repo conventions -->
-
-<!-- Add extras like reasoning_by_step.py or statement copy if present -->
-
 ## Clarifying Questions
 
 - Input shape, ranges, constraints?
@@ -38,18 +34,20 @@
 ## Checklist
 
 - [ ] Restate problem
-- [ ] Small example walkthrough
-- [ ] Choose DS/algorithm
+- [ ] Concrete example walkthrough
+- [ ] Choose DS/algorithm and justify it
 - [ ] Dry-run core loop
 - [ ] Code cleanly
 - [ ] Test edge cases
 
-See also: [Interview Framework](/docs/interview-framework.md).
+See also: 
+- [Interview Framework](/docs/interview-framework.md).
+- [Checklist](/taxonomy/checklist.json)
 
 # Reasoning Flow
 
-[#todo paste your reasoning here]
+[paste your reasoning here]
 
 ## Approaches (Overview)
 
-[#todo paste your solutions description here]
+[paste your solutions description here]

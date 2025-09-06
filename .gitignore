@@ -1,3 +1,6 @@
+# OS-generated files
+.DS_Store
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -124,7 +127,6 @@ dmypy.json
 
 .ruff_cache
 __pycache__
-problems/.DS_Store
 data/all_neetcode.md
 data/leetcode_questions.json
 .leetcode.creds/csrftoken
