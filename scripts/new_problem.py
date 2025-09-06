@@ -269,7 +269,6 @@ def _render_similar_md(
             s_diff = SIMILAR_DIFFICULTY_OVERRIDES[s_id]
 
         # Build repo-relative link to the similar problem's readme when possible
-        link_md: str | None = None
         dirname_sim: str | None = None
         try:
             if s_id:
@@ -531,18 +530,44 @@ def _write_content_html(
     full_rewrite: bool,
     rewrite_files: bool,
 ) -> None:
-    """Write LeetCode HTML `content` into `NNNN-slug-content.html` when available.
+    """Write a renderable HTML page for the LeetCode `content`.
 
-    - Skips when `content` field is missing or empty.
-    - Respects rewrite flags similar to other writers.
+    Produces `NNNN-slug-content.html` that wraps the raw LeetCode HTML fragment
+    into a full HTML document and links a shared stylesheet at
+    `../../common/leetcode-content.css`.
     """
     try:
         content = problem.get("content") if isinstance(problem, dict) else None
         if not content:
             return
+
+        # Derive bits for title and link
+        title = _get_title(problem, slug=slug)
+        lc_url = _get_url(problem, slug)
+
+        # Build full HTML document with a link to the shared CSS
+        css_href = "../../common/leetcode-content.css"
+        doc = (
+            "<!doctype html>\n"
+            '<html lang="en">\n'
+            "<head>\n"
+            '  <meta charset="utf-8">\n'
+            '  <meta name="viewport" content="width=device-width, initial-scale=1">\n'
+            f"  <title>{number:04d}. {title}</title>\n"
+            f'  <link rel="stylesheet" href="{css_href}">\n'
+            "</head>\n"
+            "<body>\n"
+            '  <main class="lc-content">\n'
+            f"    <!-- Source: {lc_url} -->\n"
+            f"{content}\n"
+            "  </main>\n"
+            "</body>\n"
+            "</html>\n"
+        )
+
         out_path = base / f"{number:04d}-{slug}-content.html"
         if (not out_path.exists()) or full_rewrite or rewrite_files:
-            out_path.write_text(str(content))
+            out_path.write_text(doc)
     except Exception:
         # Best‑effort; avoid breaking scaffold creation if content write fails
         pass
