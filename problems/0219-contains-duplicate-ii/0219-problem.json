@@ -1,0 +1,142 @@
+{
+  "category": "",
+  "id": "219",
+  "name": "Contains Duplicate II",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/contains-duplicate-ii/",
+  "slug": "contains-duplicate-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window"
+  ],
+  "similar_questions": [
+    {
+      "title": "Contains Duplicate",
+      "difficulty": "Easy",
+      "slug": "contains-duplicate"
+    },
+    {
+      "title": "Contains Duplicate III",
+      "difficulty": "Hard",
+      "slug": "contains-duplicate-iii"
+    }
+  ],
+  "questionId": "219",
+  "questionFrontendId": "219",
+  "title": "Contains Duplicate II",
+  "titleSlug": "contains-duplicate-ii",
+  "content": "<p>Given an integer array <code>nums</code> and an integer <code>k</code>, return <code>true</code> <em>if there are two <strong>distinct indices</strong> </em><code>i</code><em> and </em><code>j</code><em> in the array such that </em><code>nums[i] == nums[j]</code><em> and </em><code>abs(i - j) &lt;= k</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2,3,1], k = 3\n<strong>Output:</strong> true\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,0,1,1], k = 1\n<strong>Output:</strong> true\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2,3,1,2,3], k = 2\n<strong>Output:</strong> false\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>\n\t<li><code>0 &lt;= k &lt;= 10<sup>5</sup></code></li>\n</ul>\n",
+  "likes": 6982,
+  "dislikes": 3263,
+  "stats": {
+    "totalAccepted": "1.5M",
+    "totalSubmission": "3M",
+    "totalAcceptedRaw": 1478287,
+    "totalSubmissionRaw": 2979420,
+    "acRate": "49.6%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Sliding Window",
+      "slug": "sliding-window"
+    }
+  ],
+  "metaData": {
+    "name": "containsNearbyDuplicate",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      },
+      {
+        "name": "k",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Meta",
+        "slug": "facebook",
+        "timesEncountered": 19
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "x4snowman",
+      "year": 2019,
+      "content": "I am confused about this description.",
+      "voteCount": 917
+    },
+    {
+      "name": "DontSuCharlie",
+      "year": 2018,
+      "content": "Why not just say something along the lines of \"Find 2 numbers in the array that are equal and are at most `k` apart from each other.\"?",
+      "voteCount": 773
+    },
+    {
+      "name": "deleted_user",
+      "year": 2023,
+      "content": "sometimes i wonder if i should re-learn my mother language ",
+      "voteCount": 572
+    },
+    {
+      "name": "zlgy126",
+      "year": 2020,
+      "content": "It feels like the question is super unclear.",
+      "voteCount": 461
+    },
+    {
+      "name": "ankithoney",
+      "year": 2018,
+      "content": "For this problem, the below test case is wrong:\\nnums = [99,99]\\nk = 2\\n\\nThe correct testcase should be nums = [99,99], k =1.\\n\\nBecause of it I am not able to submit my code.",
+      "voteCount": 139
+    },
+    {
+      "name": "Luna-martinez",
+      "year": 2022,
+      "content": "Do not spam Answers in the Discussion Chat. Avoid it.",
+      "voteCount": 72
+    },
+    {
+      "name": "ShuoGuo89",
+      "year": 2017,
+      "content": "Could anyone tell me why the test case below is true?\\n\\n[1,0,1,1]\\n1\\n\\nThe largest difference should be 2 which is greater than k = 1. Isn't it?\\nMany thanks!",
+      "voteCount": 66
+    },
+    {
+      "name": "gelatopro",
+      "year": 2015,
+      "content": "The testcases for this problem are too weak.\\n\\nIn my first AC solution, I wrote the code\\n\\n    if (n < k) return false;\\n\\n, where n is the length of the array.\\n\\nClearly, it is wrong(e.g. `nums = {2,2}, k = 3`).\\n\\n\\nI think the admin should do more serious test before a new problem coming online.",
+      "voteCount": 42
+    },
+    {
+      "name": "D3press3dd",
+      "year": 2023,
+      "content": "Why is this case false? [1,2,3,1,2,3], k = 2\\nthe number 3 is in position 2 and 5, that means Math.abs(2-5) === 3\\n3 >= this is false, so this does not fit the case and i have to return true\\n\\nam i confused?",
+      "voteCount": 38
+    },
+    {
+      "name": "neil90",
+      "year": 2018,
+      "content": "Can anybody elaborate on what its asking for?",
+      "voteCount": 37
+    }
+  ]
+}

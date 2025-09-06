@@ -522,6 +522,32 @@ def _write_stats(base: Path, *, full_rewrite: bool, rewrite_files: bool) -> None
         pass
 
 
+def _write_content_html(
+    base: Path,
+    number: int,
+    slug: str,
+    problem: dict,
+    *,
+    full_rewrite: bool,
+    rewrite_files: bool,
+) -> None:
+    """Write LeetCode HTML `content` into `NNNN-slug-content.html` when available.
+
+    - Skips when `content` field is missing or empty.
+    - Respects rewrite flags similar to other writers.
+    """
+    try:
+        content = problem.get("content") if isinstance(problem, dict) else None
+        if not content:
+            return
+        out_path = base / f"{number:04d}-{slug}-content.html"
+        if (not out_path.exists()) or full_rewrite or rewrite_files:
+            out_path.write_text(str(content))
+    except Exception:
+        # Best‑effort; avoid breaking scaffold creation if content write fails
+        pass
+
+
 def main() -> None:
     args = _parse_args()
     by_id, by_slug = _load_problems_index()
@@ -543,6 +569,7 @@ def main() -> None:
     _write_readme_and_symlink(base, context, number, full_rewrite=full_rewrite, rewrite_files=rewrite_files)
     _write_problem_json(base, number, problem, full_rewrite=full_rewrite, rewrite_files=rewrite_files)
     _write_stats(base, full_rewrite=full_rewrite, rewrite_files=rewrite_files)
+    _write_content_html(base, number, slug, problem, full_rewrite=full_rewrite, rewrite_files=rewrite_files)
 
     print(f"Created {base.relative_to(ROOT)}")
     print("Next:")
