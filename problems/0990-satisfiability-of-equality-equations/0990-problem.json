@@ -1,121 +1,121 @@
 {
-    "category": "",
-    "id": "990",
-    "name": "Satisfiability of Equality Equations",
-    "difficulty": "Medium",
-    "leetcode_url": "https://leetcode.com/problems/satisfiability-of-equality-equations/",
-    "slug": "satisfiability-of-equality-equations",
-    "isPaidOnly": false,
-    "tags": [
-        "Array",
-        "String",
-        "Union Find",
-        "Graph"
-    ],
-    "similar_questions": [],
-    "questionId": "1032",
-    "questionFrontendId": "990",
-    "title": "Satisfiability of Equality Equations",
-    "titleSlug": "satisfiability-of-equality-equations",
-    "likes": 3943,
-    "dislikes": 67,
-    "stats": {
-        "totalAccepted": "154.7K",
-        "totalSubmission": "301.7K",
-        "totalAcceptedRaw": 154661,
-        "totalSubmissionRaw": 301717,
-        "acRate": "51.3%"
+  "category": "",
+  "id": "990",
+  "name": "Satisfiability of Equality Equations",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/satisfiability-of-equality-equations/",
+  "slug": "satisfiability-of-equality-equations",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "String",
+    "Union Find",
+    "Graph"
+  ],
+  "similar_questions": [],
+  "questionId": "1032",
+  "questionFrontendId": "990",
+  "title": "Satisfiability of Equality Equations",
+  "titleSlug": "satisfiability-of-equality-equations",
+  "likes": 3943,
+  "dislikes": 67,
+  "stats": {
+    "totalAccepted": "154.7K",
+    "totalSubmission": "301.7K",
+    "totalAcceptedRaw": 154661,
+    "totalSubmissionRaw": 301717,
+    "acRate": "51.3%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
     },
-    "topicTags": [
-        {
-            "name": "Array",
-            "slug": "array"
-        },
-        {
-            "name": "String",
-            "slug": "string"
-        },
-        {
-            "name": "Union Find",
-            "slug": "union-find"
-        },
-        {
-            "name": "Graph",
-            "slug": "graph"
-        }
-    ],
-    "metaData": {
-        "name": "equationsPossible",
-        "params": [
-            {
-                "name": "equations",
-                "type": "string[]"
-            }
-        ],
-        "return": {
-            "type": "boolean"
-        }
+    {
+      "name": "String",
+      "slug": "string"
     },
-    "discussion_posts": [
-        {
-            "name": "Rupesh_Gupta_1909",
-            "year": 2023,
-            "content": "this is also one of test case , so before solving have a look at this test case {\"a==b\", \"b!=c\", \"c==a\"}",
-            "voteCount": 33
-        },
-        {
-            "name": "sayanpatel",
-            "year": 2024,
-            "content": "The examples could have been better!!!",
-            "voteCount": 31
-        },
-        {
-            "name": "c4tdog",
-            "year": 2023,
-            "content": "try to process `==` first. Then process `!=`\nSome tests:\n[\"c==c\",\"f!=a\",\"f==b\",\"b==c\"]\n[\"e==d\",\"e==a\",\"f!=d\",\"b!=c\",\"a==b\"]",
-            "voteCount": 26
-        },
-        {
-            "name": "Arcturus_22",
-            "year": 2024,
-            "content": "This is my 500th question on Leetcode and I was able to solve it on my own. \\nNot boasting, just reflecting on my progress.",
-            "voteCount": 24
-        },
-        {
-            "name": "legiatuan1998",
-            "year": 2024,
-            "content": "A really good question, this is how medium should be, not too challenging, difficulty is at the right level to not make us feel overwhelm.",
-            "voteCount": 13
-        },
-        {
-            "name": "pa-one55",
-            "year": 2023,
-            "content": "wtf is Union find..?",
-            "voteCount": 9
-        },
-        {
-            "name": "etanila",
-            "year": 2024,
-            "content": "I have to learn that not every problem must be solved in one pass. The idea of two passes came to my mind after thinking for at least 15 min.",
-            "voteCount": 8
-        },
-        {
-            "name": "sumit_verma_77",
-            "year": 2025,
-            "content": "First, place all `==` relationships into disjoint sets. Then, process the `!= `relationships, for `!=` ensure that the ultimate parents of the characters involved are not the same. If they are the same, it would contradict the `==` relationships.",
-            "voteCount": 6
-        },
-        {
-            "name": "delta_mohit",
-            "year": 2025,
-            "content": "Visualize the problem like this :-\\nKeep all the equal integers in a single line and other in different line.\\nEg :- a==b, b==c, c!=d, e==a, p==q, q==r\\nhence, a==b==c==e, p==q==r and c!=d\\n\\nThen try to think. Can\\'t we say the whole equal section is an single component? We need to club all equal variables together.",
-            "voteCount": 2
-        },
-        {
-            "name": "717822p136",
-            "year": 2024,
-            "content": "[\"a==b\",\"b!=a\"]\\n[\"b==a\",\"a==b\"]\\n[\"d!=f\",\"f==e\",\"a==b\",\"a==c\"]\\n[\"a==b\",\"b==c\",\"a==c\"]\\n[\"a==b\",\"b!=c\",\"c==a\"]",
-            "voteCount": 2
-        }
-    ]
+    {
+      "name": "Union Find",
+      "slug": "union-find"
+    },
+    {
+      "name": "Graph",
+      "slug": "graph"
+    }
+  ],
+  "metaData": {
+    "name": "equationsPossible",
+    "params": [
+      {
+        "name": "equations",
+        "type": "string[]"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "Rupesh_Gupta_1909",
+      "year": 2023,
+      "content": "this is also one of test case , so before solving have a look at this test case {\"a==b\", \"b!=c\", \"c==a\"}",
+      "voteCount": 33
+    },
+    {
+      "name": "sayanpatel",
+      "year": 2024,
+      "content": "The examples could have been better!!!",
+      "voteCount": 31
+    },
+    {
+      "name": "c4tdog",
+      "year": 2023,
+      "content": "try to process `==` first. Then process `!=`\nSome tests:\n[\"c==c\",\"f!=a\",\"f==b\",\"b==c\"]\n[\"e==d\",\"e==a\",\"f!=d\",\"b!=c\",\"a==b\"]",
+      "voteCount": 26
+    },
+    {
+      "name": "Arcturus_22",
+      "year": 2024,
+      "content": "This is my 500th question on Leetcode and I was able to solve it on my own. \\nNot boasting, just reflecting on my progress.",
+      "voteCount": 24
+    },
+    {
+      "name": "legiatuan1998",
+      "year": 2024,
+      "content": "A really good question, this is how medium should be, not too challenging, difficulty is at the right level to not make us feel overwhelm.",
+      "voteCount": 13
+    },
+    {
+      "name": "pa-one55",
+      "year": 2023,
+      "content": "wtf is Union find..?",
+      "voteCount": 9
+    },
+    {
+      "name": "etanila",
+      "year": 2024,
+      "content": "I have to learn that not every problem must be solved in one pass. The idea of two passes came to my mind after thinking for at least 15 min.",
+      "voteCount": 8
+    },
+    {
+      "name": "sumit_verma_77",
+      "year": 2025,
+      "content": "First, place all `==` relationships into disjoint sets. Then, process the `!= `relationships, for `!=` ensure that the ultimate parents of the characters involved are not the same. If they are the same, it would contradict the `==` relationships.",
+      "voteCount": 6
+    },
+    {
+      "name": "delta_mohit",
+      "year": 2025,
+      "content": "Visualize the problem like this :-\\nKeep all the equal integers in a single line and other in different line.\\nEg :- a==b, b==c, c!=d, e==a, p==q, q==r\\nhence, a==b==c==e, p==q==r and c!=d\\n\\nThen try to think. Can\\'t we say the whole equal section is an single component? We need to club all equal variables together.",
+      "voteCount": 2
+    },
+    {
+      "name": "717822p136",
+      "year": 2024,
+      "content": "[\"a==b\",\"b!=a\"]\\n[\"b==a\",\"a==b\"]\\n[\"d!=f\",\"f==e\",\"a==b\",\"a==c\"]\\n[\"a==b\",\"b==c\",\"a==c\"]\\n[\"a==b\",\"b!=c\",\"c==a\"]",
+      "voteCount": 2
+    }
+  ]
 }

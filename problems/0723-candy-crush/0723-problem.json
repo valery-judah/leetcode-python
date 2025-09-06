@@ -1,121 +1,121 @@
 {
-    "category": "",
-    "id": "723",
-    "name": "Candy Crush",
-    "difficulty": "Medium",
-    "leetcode_url": "https://leetcode.com/problems/candy-crush/",
-    "slug": "candy-crush",
-    "isPaidOnly": true,
-    "tags": [
-        "Array",
-        "Two Pointers",
-        "Matrix",
-        "Simulation"
-    ],
-    "similar_questions": [],
-    "questionId": "723",
-    "questionFrontendId": "723",
-    "title": "Candy Crush",
-    "titleSlug": "candy-crush",
-    "likes": 1046,
-    "dislikes": 540,
-    "stats": {
-        "totalAccepted": "82.5K",
-        "totalSubmission": "106.6K",
-        "totalAcceptedRaw": 82471,
-        "totalSubmissionRaw": 106649,
-        "acRate": "77.3%"
+  "category": "",
+  "id": "723",
+  "name": "Candy Crush",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/candy-crush/",
+  "slug": "candy-crush",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Matrix",
+    "Simulation"
+  ],
+  "similar_questions": [],
+  "questionId": "723",
+  "questionFrontendId": "723",
+  "title": "Candy Crush",
+  "titleSlug": "candy-crush",
+  "likes": 1046,
+  "dislikes": 540,
+  "stats": {
+    "totalAccepted": "82.5K",
+    "totalSubmission": "106.6K",
+    "totalAcceptedRaw": 82471,
+    "totalSubmissionRaw": 106649,
+    "acRate": "77.3%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
     },
-    "topicTags": [
-        {
-            "name": "Array",
-            "slug": "array"
-        },
-        {
-            "name": "Two Pointers",
-            "slug": "two-pointers"
-        },
-        {
-            "name": "Matrix",
-            "slug": "matrix"
-        },
-        {
-            "name": "Simulation",
-            "slug": "simulation"
-        }
-    ],
-    "metaData": {
-        "name": "candyCrush",
-        "params": [
-            {
-                "name": "board",
-                "type": "integer[][]"
-            }
-        ],
-        "return": {
-            "type": "integer[][]"
-        }
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
     },
-    "discussion_posts": [
-        {
-            "name": "likuo333",
-            "year": 2018,
-            "content": "![image](https://assets.leetcode.com/users/likuo333/image_1539102732.png)\\nwhy leave the board[8][0] there while cursh other \\'1\\'s??\\nplease help.\\n\\n",
-            "voteCount": 33
-        },
-        {
-            "name": "tech_bro_ceo",
-            "year": 2025,
-            "content": "Saw a variation of this problem in my OA with Capital One.",
-            "voteCount": 13
-        },
-        {
-            "name": "thesmashten",
-            "year": 2024,
-            "content": "Should be a hard imo ",
-            "voteCount": 12
-        },
-        {
-            "name": "bernikovich",
-            "year": 2023,
-            "content": "The expected solution is literally Brute Force.",
-            "voteCount": 10
-        },
-        {
-            "name": "umarmohd",
-            "year": 2024,
-            "content": "How can someone come up with the solution with confidence (since it\\u2019s brute force) with in the span of 35 mins (out of 45 mins, 10 mins reserved for intro and questions) ? Ridiculous!",
-            "voteCount": 7
-        },
-        {
-            "name": "tanner_nordell",
-            "year": 2024,
-            "content": "Confusing description regarding adjacent cells.",
-            "voteCount": 6
-        },
-        {
-            "name": "xtitan",
-            "year": 2019,
-            "content": "Why this 1 cannot be connect? I am really confused right now.\\n\\n![image](https://assets.leetcode.com/users/xtitan/image_1559747720.png)\\n",
-            "voteCount": 5
-        },
-        {
-            "name": "zeeqy",
-            "year": 2024,
-            "content": "I have to say this problem is tedious. It could be split into two parts, crush and refresh board, with more strict time and space requirement.",
-            "voteCount": 4
-        },
-        {
-            "name": "ShizhanLiu",
-            "year": 2025,
-            "content": "If somebody give you this quesion, he/she wants to fail you :(\\n",
-            "voteCount": 3
-        },
-        {
-            "name": "gsahu07",
-            "year": 2023,
-            "content": "Why is candy at board[8][2] part of two groups? Shouldn\\'t it be part of only one group, either vertical or horizontal?",
-            "voteCount": 3
-        }
-    ]
+    {
+      "name": "Matrix",
+      "slug": "matrix"
+    },
+    {
+      "name": "Simulation",
+      "slug": "simulation"
+    }
+  ],
+  "metaData": {
+    "name": "candyCrush",
+    "params": [
+      {
+        "name": "board",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "integer[][]"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "likuo333",
+      "year": 2018,
+      "content": "![image](https://assets.leetcode.com/users/likuo333/image_1539102732.png)\\nwhy leave the board[8][0] there while cursh other \\'1\\'s??\\nplease help.\\n\\n",
+      "voteCount": 33
+    },
+    {
+      "name": "tech_bro_ceo",
+      "year": 2025,
+      "content": "Saw a variation of this problem in my OA with Capital One.",
+      "voteCount": 13
+    },
+    {
+      "name": "thesmashten",
+      "year": 2024,
+      "content": "Should be a hard imo ",
+      "voteCount": 12
+    },
+    {
+      "name": "bernikovich",
+      "year": 2023,
+      "content": "The expected solution is literally Brute Force.",
+      "voteCount": 10
+    },
+    {
+      "name": "umarmohd",
+      "year": 2024,
+      "content": "How can someone come up with the solution with confidence (since it\\u2019s brute force) with in the span of 35 mins (out of 45 mins, 10 mins reserved for intro and questions) ? Ridiculous!",
+      "voteCount": 7
+    },
+    {
+      "name": "tanner_nordell",
+      "year": 2024,
+      "content": "Confusing description regarding adjacent cells.",
+      "voteCount": 6
+    },
+    {
+      "name": "xtitan",
+      "year": 2019,
+      "content": "Why this 1 cannot be connect? I am really confused right now.\\n\\n![image](https://assets.leetcode.com/users/xtitan/image_1559747720.png)\\n",
+      "voteCount": 5
+    },
+    {
+      "name": "zeeqy",
+      "year": 2024,
+      "content": "I have to say this problem is tedious. It could be split into two parts, crush and refresh board, with more strict time and space requirement.",
+      "voteCount": 4
+    },
+    {
+      "name": "ShizhanLiu",
+      "year": 2025,
+      "content": "If somebody give you this quesion, he/she wants to fail you :(\\n",
+      "voteCount": 3
+    },
+    {
+      "name": "gsahu07",
+      "year": 2023,
+      "content": "Why is candy at board[8][2] part of two groups? Shouldn\\'t it be part of only one group, either vertical or horizontal?",
+      "voteCount": 3
+    }
+  ]
 }

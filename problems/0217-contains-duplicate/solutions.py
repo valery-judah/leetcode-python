@@ -1,31 +1,36 @@
 from __future__ import annotations
 
-# Common type stubs for annotations and simple local testing
-
 
 class Baseline:
     def solve(self, nums: list[int]) -> bool:
-        """Check with actual signature per problem."""
-        raise NotImplementedError
+        for i, n in enumerate(nums):
+            # search equal number in nums[i + 1 : ]
+            for s in nums[i + 1 :]:
+                if s == n:
+                    return True
+        return False
 
 
-# Optional default alias for single-export usage
-Solution = Baseline
+class HashMapOptimized:
+    def solve(self, nums: list[int]) -> bool:
+        hist = {}
+        for n in nums:
+            if n in hist:
+                return True
+            else:
+                hist[n] = 1
+        return False  # so we didn't seen any duplicate so far -> return False
+
 
 # Explicit multi-export for test discovery
-ALL_SOLUTIONS = [Baseline]
+ALL_SOLUTIONS = [Baseline, HashMapOptimized]
 
-# Signature preview: solve(self, nums: list[int])
-# - nums: e.g., [0]
-# Includes basic empty-collection variant for list-typed parameters.
+
 TEST_CASES = [
-    ("types", ([0],), {}),
-    ("empty_list", ([],), {}),
+    ("types", ([1, 2, 0],), False),
+    ("simple_duplicate", ([1, 1]), True),
+    ("singe_element", ([1]), False),
 ]
-
-# Opt-in for generic stub testing: assert .solve raises this exception.
-TEST_EXPECT_EXCEPTION = NotImplementedError
-
 
 if __name__ == "__main__":
     # Convenience: running this file executes the generic spec filtered to this problem.

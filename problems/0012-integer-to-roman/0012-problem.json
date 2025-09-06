@@ -1,137 +1,137 @@
 {
-    "category": "",
-    "id": "12",
-    "name": "Integer to Roman",
-    "difficulty": "Medium",
-    "leetcode_url": "https://leetcode.com/problems/integer-to-roman/",
-    "slug": "integer-to-roman",
-    "isPaidOnly": false,
-    "tags": [
-        "Hash Table",
-        "Math",
-        "String"
-    ],
-    "similar_questions": [
-        {
-            "title": "Roman to Integer",
-            "difficulty": "Easy",
-            "slug": "roman-to-integer"
-        },
-        {
-            "title": "Integer to English Words",
-            "difficulty": "Hard",
-            "slug": "integer-to-english-words"
-        }
-    ],
-    "questionId": "12",
-    "questionFrontendId": "12",
-    "title": "Integer to Roman",
-    "titleSlug": "integer-to-roman",
-    "likes": 8074,
-    "dislikes": 5685,
-    "stats": {
-        "totalAccepted": "1.8M",
-        "totalSubmission": "2.7M",
-        "totalAcceptedRaw": 1849228,
-        "totalSubmissionRaw": 2668903,
-        "acRate": "69.3%"
+  "category": "",
+  "id": "12",
+  "name": "Integer to Roman",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/integer-to-roman/",
+  "slug": "integer-to-roman",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "Math",
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Roman to Integer",
+      "difficulty": "Easy",
+      "slug": "roman-to-integer"
     },
-    "topicTags": [
-        {
-            "name": "Hash Table",
-            "slug": "hash-table"
-        },
-        {
-            "name": "Math",
-            "slug": "math"
-        },
-        {
-            "name": "String",
-            "slug": "string"
-        }
+    {
+      "title": "Integer to English Words",
+      "difficulty": "Hard",
+      "slug": "integer-to-english-words"
+    }
+  ],
+  "questionId": "12",
+  "questionFrontendId": "12",
+  "title": "Integer to Roman",
+  "titleSlug": "integer-to-roman",
+  "likes": 8074,
+  "dislikes": 5685,
+  "stats": {
+    "totalAccepted": "1.8M",
+    "totalSubmission": "2.7M",
+    "totalAcceptedRaw": 1849228,
+    "totalSubmissionRaw": 2668903,
+    "acRate": "69.3%"
+  },
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "metaData": {
+    "name": "intToRoman",
+    "params": [
+      {
+        "name": "num",
+        "type": "integer"
+      }
     ],
-    "metaData": {
-        "name": "intToRoman",
-        "params": [
-            {
-                "name": "num",
-                "type": "integer"
-            }
-        ],
-        "return": {
-            "type": "string"
-        }
-    },
-    "company_tag_stats": {
-        "1": [
-            {
-                "taggedByAdmin": false,
-                "name": "Amazon",
-                "slug": "amazon",
-                "timesEncountered": 13
-            }
-        ]
-    },
-    "discussion_posts": [
-        {
-            "name": "sulicn",
-            "year": 2023,
-            "content": "Can I report those idiots that are still posting solutions here?",
-            "voteCount": 522
-        },
-        {
-            "name": "etanila",
-            "year": 2024,
-            "content": "I am now at a 600 problems solved mark.\n\nIt's fun to revisit these first problems that seemed so hard months ago. Really makes you appreciate all the time and effort you've put in solving LeetCode, and realize HOW MUCH you've leaned.\n\nStay motivated!",
-            "voteCount": 482
-        },
-        {
-            "name": "sayanijoddar",
-            "year": 2023,
-            "content": "Never thought I was THIS dumb.",
-            "voteCount": 213
-        },
-        {
-            "name": "Luojihencha",
-            "year": 2020,
-            "content": "I paied a lot of money for leetcode......and still there is no answer. Leetcode please, all questions are hard for me.",
-            "voteCount": 98
-        },
-        {
-            "name": "ChenxiLu",
-            "year": 2024,
-            "content": "The Romans did appear lacking a vision for scalability when designing this system. ",
-            "voteCount": 81
-        },
-        {
-            "name": "umnik",
-            "year": 2013,
-            "content": "I know the easy way of solving this problem is using **23 case** statements (10 for numbers [1-10], 10 for [10-100], 10 for [1000-3000]). But the code does not look good and it's getting bit long. I'm thinking even applying the rules for converting may also make the code complex. Any suggestions?",
-            "voteCount": 40
-        },
-        {
-            "name": "Yumiko15",
-            "year": 2025,
-            "content": "Roman to Integer \\uD83E\\uDD21\\nInteger to Roman \\uD83D\\uDC80",
-            "voteCount": 39
-        },
-        {
-            "name": "YuriiHryniv",
-            "year": 2022,
-            "content": "I bought leetcode subscription but this problem seems very hard to me :((. Unsubscribe, I thought I would get into FAANG",
-            "voteCount": 30
-        },
-        {
-            "name": "Amax",
-            "year": 2013,
-            "content": "For example: how do you spell 1999 in roman?\\nMIM or MCMXCIX?",
-            "voteCount": 30
-        },
-        {
-            "name": "sumantyadav3086",
-            "year": 2024,
-            "content": "Some tips that might help:\\nUnderstand the rules of Roman numeral representation, especially the cases where subtraction is used.\\n\\nStore the integer values and their corresponding Roman numeral representations.\\n\\nTry to break down the integer into its place values (ones, tens, hundreds, and thousands) to construct the Roman numeral representation step by step.\\n\\nThanks!",
-            "voteCount": 29
-        }
+    "return": {
+      "type": "string"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 13
+      }
     ]
+  },
+  "discussion_posts": [
+    {
+      "name": "sulicn",
+      "year": 2023,
+      "content": "Can I report those idiots that are still posting solutions here?",
+      "voteCount": 522
+    },
+    {
+      "name": "etanila",
+      "year": 2024,
+      "content": "I am now at a 600 problems solved mark.\n\nIt's fun to revisit these first problems that seemed so hard months ago. Really makes you appreciate all the time and effort you've put in solving LeetCode, and realize HOW MUCH you've leaned.\n\nStay motivated!",
+      "voteCount": 482
+    },
+    {
+      "name": "sayanijoddar",
+      "year": 2023,
+      "content": "Never thought I was THIS dumb.",
+      "voteCount": 213
+    },
+    {
+      "name": "Luojihencha",
+      "year": 2020,
+      "content": "I paied a lot of money for leetcode......and still there is no answer. Leetcode please, all questions are hard for me.",
+      "voteCount": 98
+    },
+    {
+      "name": "ChenxiLu",
+      "year": 2024,
+      "content": "The Romans did appear lacking a vision for scalability when designing this system. ",
+      "voteCount": 81
+    },
+    {
+      "name": "umnik",
+      "year": 2013,
+      "content": "I know the easy way of solving this problem is using **23 case** statements (10 for numbers [1-10], 10 for [10-100], 10 for [1000-3000]). But the code does not look good and it's getting bit long. I'm thinking even applying the rules for converting may also make the code complex. Any suggestions?",
+      "voteCount": 40
+    },
+    {
+      "name": "Yumiko15",
+      "year": 2025,
+      "content": "Roman to Integer \\uD83E\\uDD21\\nInteger to Roman \\uD83D\\uDC80",
+      "voteCount": 39
+    },
+    {
+      "name": "YuriiHryniv",
+      "year": 2022,
+      "content": "I bought leetcode subscription but this problem seems very hard to me :((. Unsubscribe, I thought I would get into FAANG",
+      "voteCount": 30
+    },
+    {
+      "name": "Amax",
+      "year": 2013,
+      "content": "For example: how do you spell 1999 in roman?\\nMIM or MCMXCIX?",
+      "voteCount": 30
+    },
+    {
+      "name": "sumantyadav3086",
+      "year": 2024,
+      "content": "Some tips that might help:\\nUnderstand the rules of Roman numeral representation, especially the cases where subtraction is used.\\n\\nStore the integer values and their corresponding Roman numeral representations.\\n\\nTry to break down the integer into its place values (ones, tens, hundreds, and thousands) to construct the Roman numeral representation step by step.\\n\\nThanks!",
+      "voteCount": 29
+    }
+  ]
 }

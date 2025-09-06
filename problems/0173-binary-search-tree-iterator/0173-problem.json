@@ -1,204 +1,204 @@
 {
-    "category": "",
-    "id": "173",
-    "name": "Binary Search Tree Iterator",
-    "difficulty": "Medium",
-    "leetcode_url": "https://leetcode.com/problems/binary-search-tree-iterator/",
-    "slug": "binary-search-tree-iterator",
-    "isPaidOnly": false,
-    "tags": [
-        "Stack",
-        "Tree",
-        "Design",
-        "Binary Search Tree",
-        "Binary Tree",
-        "Iterator"
-    ],
-    "similar_questions": [
-        {
-            "title": "Binary Tree Inorder Traversal",
-            "difficulty": "Easy",
-            "slug": "binary-tree-inorder-traversal"
-        },
-        {
-            "title": "Flatten 2D Vector",
-            "difficulty": "Medium",
-            "slug": "flatten-2d-vector"
-        },
-        {
-            "title": "Zigzag Iterator",
-            "difficulty": "Medium",
-            "slug": "zigzag-iterator"
-        },
-        {
-            "title": "Peeking Iterator",
-            "difficulty": "Medium",
-            "slug": "peeking-iterator"
-        },
-        {
-            "title": "Inorder Successor in BST",
-            "difficulty": "Medium",
-            "slug": "inorder-successor-in-bst"
-        },
-        {
-            "title": "Binary Search Tree Iterator II",
-            "difficulty": "Medium",
-            "slug": "binary-search-tree-iterator-ii"
-        }
-    ],
-    "questionId": "173",
-    "questionFrontendId": "173",
-    "title": "Binary Search Tree Iterator",
-    "titleSlug": "binary-search-tree-iterator",
-    "likes": 9048,
-    "dislikes": 562,
-    "stats": {
-        "totalAccepted": "1M",
-        "totalSubmission": "1.3M",
-        "totalAcceptedRaw": 1007288,
-        "totalSubmissionRaw": 1335588,
-        "acRate": "75.4%"
+  "category": "",
+  "id": "173",
+  "name": "Binary Search Tree Iterator",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/binary-search-tree-iterator/",
+  "slug": "binary-search-tree-iterator",
+  "isPaidOnly": false,
+  "tags": [
+    "Stack",
+    "Tree",
+    "Design",
+    "Binary Search Tree",
+    "Binary Tree",
+    "Iterator"
+  ],
+  "similar_questions": [
+    {
+      "title": "Binary Tree Inorder Traversal",
+      "difficulty": "Easy",
+      "slug": "binary-tree-inorder-traversal"
     },
-    "topicTags": [
+    {
+      "title": "Flatten 2D Vector",
+      "difficulty": "Medium",
+      "slug": "flatten-2d-vector"
+    },
+    {
+      "title": "Zigzag Iterator",
+      "difficulty": "Medium",
+      "slug": "zigzag-iterator"
+    },
+    {
+      "title": "Peeking Iterator",
+      "difficulty": "Medium",
+      "slug": "peeking-iterator"
+    },
+    {
+      "title": "Inorder Successor in BST",
+      "difficulty": "Medium",
+      "slug": "inorder-successor-in-bst"
+    },
+    {
+      "title": "Binary Search Tree Iterator II",
+      "difficulty": "Medium",
+      "slug": "binary-search-tree-iterator-ii"
+    }
+  ],
+  "questionId": "173",
+  "questionFrontendId": "173",
+  "title": "Binary Search Tree Iterator",
+  "titleSlug": "binary-search-tree-iterator",
+  "likes": 9048,
+  "dislikes": 562,
+  "stats": {
+    "totalAccepted": "1M",
+    "totalSubmission": "1.3M",
+    "totalAcceptedRaw": 1007288,
+    "totalSubmissionRaw": 1335588,
+    "acRate": "75.4%"
+  },
+  "topicTags": [
+    {
+      "name": "Stack",
+      "slug": "stack"
+    },
+    {
+      "name": "Tree",
+      "slug": "tree"
+    },
+    {
+      "name": "Design",
+      "slug": "design"
+    },
+    {
+      "name": "Binary Search Tree",
+      "slug": "binary-search-tree"
+    },
+    {
+      "name": "Binary Tree",
+      "slug": "binary-tree"
+    },
+    {
+      "name": "Iterator",
+      "slug": "iterator"
+    }
+  ],
+  "metaData": {
+    "classname": "BSTIterator",
+    "maxbytesperline": 200000,
+    "constructor": {
+      "params": [
         {
-            "name": "Stack",
-            "slug": "stack"
-        },
-        {
-            "name": "Tree",
-            "slug": "tree"
-        },
-        {
-            "name": "Design",
-            "slug": "design"
-        },
-        {
-            "name": "Binary Search Tree",
-            "slug": "binary-search-tree"
-        },
-        {
-            "name": "Binary Tree",
-            "slug": "binary-tree"
-        },
-        {
-            "name": "Iterator",
-            "slug": "iterator"
+          "type": "TreeNode",
+          "name": "root"
         }
-    ],
-    "metaData": {
-        "classname": "BSTIterator",
-        "maxbytesperline": 200000,
-        "constructor": {
-            "params": [
-                {
-                    "type": "TreeNode",
-                    "name": "root"
-                }
-            ]
-        },
-        "methods": [
-            {
-                "params": [],
-                "name": "next",
-                "return": {
-                    "type": "integer"
-                }
-            },
-            {
-                "params": [],
-                "name": "hasNext",
-                "return": {
-                    "type": "boolean"
-                }
-            }
-        ],
-        "systemdesign": true,
-        "params": [
-            {
-                "name": "inputs",
-                "type": "integer[]"
-            },
-            {
-                "name": "inputs",
-                "type": "integer[]"
-            }
-        ],
+      ]
+    },
+    "methods": [
+      {
+        "params": [],
+        "name": "next",
         "return": {
-            "type": "integer[]",
-            "dealloc": true
-        },
-        "manual": false
-    },
-    "company_tag_stats": {
-        "1": [
-            {
-                "taggedByAdmin": true,
-                "name": "Meta",
-                "slug": "facebook",
-                "timesEncountered": 26
-            }
-        ]
-    },
-    "discussion_posts": [
-        {
-            "name": "user4796V",
-            "year": 2023,
-            "content": "bro who writes these",
-            "voteCount": 272
-        },
-        {
-            "name": "hiravi",
-            "year": 2017,
-            "content": "Why not simply traverse the bst in-order and add everything to a list?\\nThen for hasNext you get length of list(or keep length counter which is even faster)\\nand for Next you simply pop the first element off the list O(1).\\n\\nThe storage would be O(n) for initialize but next/hasnext don't use extra space.",
-            "voteCount": 60
-        },
-        {
-            "name": "omrocks",
-            "year": 2024,
-            "content": "Very poor description, what is move to right. After watching some solution I got the idea. It is asking for some linked list type inorder way ...",
-            "voteCount": 44
-        },
-        {
-            "name": "Matexa",
-            "year": 2024,
-            "content": "Some examples that may help. You\\'re welcome :)\\n\\n`[\"BSTIterator\",\"next\",\"hasNext\",\"next\",\"hasNext\",\"next\",\"hasNext\",\"next\",\"hasNext\"]\\n[[[7,null,15,9,16]],[],[],[],[],[],[],[],[]]`\\n\\n`[\"BSTIterator\",\"next\",\"hasNext\",\"next\",\"hasNext\",\"next\",\"hasNext\",\"next\",\"hasNext\"]\\n[[[9,6,10,3,null,null,null]],[],[],[],[],[],[],[],[]]`\\n\\n`[\"BSTIterator\",\"next\",\"hasNext\",\"next\",\"hasNext\",\"next\",\"hasNext\",\"next\",\"hasNext\",\"next\",\"hasNext\",\"next\",\"hasNext\",\"next\",\"hasNext\"]\\n[[[8,5,10,3,6,9,12,1,null,null,7,null,null,11,null]],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]`\\n\\n`[\"BSTIterator\",\"hasNext\",\"next\",\"hasNext\"]\\n[[[1]],[],[],[]]`",
-            "voteCount": 27
-        },
-        {
-            "name": "quantanty",
-            "year": 2024,
-            "content": "If you store all values into a stack or a list, it would require O(N) extra space. Try Morris traversal method and use `node.right` as the next node.",
-            "voteCount": 18
-        },
-        {
-            "name": "Hiroki111",
-            "year": 2023,
-            "content": "The description says:\\n\\n> The pointer should be initialized to a non-existent number smaller than any element in the BST.\\n\\nCan someone rephrase this? I\\'ve seen a few solutions, but none of them are following this constraint",
-            "voteCount": 15
-        },
-        {
-            "name": "RDXV",
-            "year": 2022,
-            "content": "The question said \"boolean hasNext() Returns true if there exists a number in the traversal to the right of the pointer, otherwise returns false\". Shouldn\\'t it mean for case [7, 3, 15, null, null, 9, 20], hasNext() for 9 must be false because 9 does not have a right child as to the right of the pointer of 9, there is nothing? I understand the solution sees the stack.top() but the question is saying hasNext() sees existence of number to the right of pointer. Can someone explain if I am reading something wrong or the words of question are put in the wrong way?",
-            "voteCount": 14
-        },
-        {
-            "name": "__declspec",
-            "year": 2022,
-            "content": "Why do we need to optimise code to O(h) \\nO(h) is not better than O(n) in worse case\\nJust like optimising bubble sort to deterministic quicksort, why\\nhar har har\\non99?\\nnvm leetcode \\xAF\\\\\\\\_(\\u30C4)_/\\xAF",
-            "voteCount": 13
-        },
-        {
-            "name": "khanabdulmajid",
-            "year": 2025,
-            "content": "I got headache by just reading the Problem Description.\\n",
-            "voteCount": 12
-        },
-        {
-            "name": "silyows",
-            "year": 2018,
-            "content": "I tried deleting my cookie and all my code but my C++ code still does not work. I am using google chrome. This happened to me once for another problem too. That time I fixed it by refreshing my page.\\n\\nError message:\\nExpected JSON [[\"BSTIterator\",\"hasNext\",\"next\",\"hasNext\"]] to be of type JSMN_PRIMITIVE but got JSMN_STRING.",
-            "voteCount": 9
+          "type": "integer"
         }
+      },
+      {
+        "params": [],
+        "name": "hasNext",
+        "return": {
+          "type": "boolean"
+        }
+      }
+    ],
+    "systemdesign": true,
+    "params": [
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      },
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer[]",
+      "dealloc": true
+    },
+    "manual": false
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": true,
+        "name": "Meta",
+        "slug": "facebook",
+        "timesEncountered": 26
+      }
     ]
+  },
+  "discussion_posts": [
+    {
+      "name": "user4796V",
+      "year": 2023,
+      "content": "bro who writes these",
+      "voteCount": 272
+    },
+    {
+      "name": "hiravi",
+      "year": 2017,
+      "content": "Why not simply traverse the bst in-order and add everything to a list?\\nThen for hasNext you get length of list(or keep length counter which is even faster)\\nand for Next you simply pop the first element off the list O(1).\\n\\nThe storage would be O(n) for initialize but next/hasnext don't use extra space.",
+      "voteCount": 60
+    },
+    {
+      "name": "omrocks",
+      "year": 2024,
+      "content": "Very poor description, what is move to right. After watching some solution I got the idea. It is asking for some linked list type inorder way ...",
+      "voteCount": 44
+    },
+    {
+      "name": "Matexa",
+      "year": 2024,
+      "content": "Some examples that may help. You\\'re welcome :)\\n\\n`[\"BSTIterator\",\"next\",\"hasNext\",\"next\",\"hasNext\",\"next\",\"hasNext\",\"next\",\"hasNext\"]\\n[[[7,null,15,9,16]],[],[],[],[],[],[],[],[]]`\\n\\n`[\"BSTIterator\",\"next\",\"hasNext\",\"next\",\"hasNext\",\"next\",\"hasNext\",\"next\",\"hasNext\"]\\n[[[9,6,10,3,null,null,null]],[],[],[],[],[],[],[],[]]`\\n\\n`[\"BSTIterator\",\"next\",\"hasNext\",\"next\",\"hasNext\",\"next\",\"hasNext\",\"next\",\"hasNext\",\"next\",\"hasNext\",\"next\",\"hasNext\",\"next\",\"hasNext\"]\\n[[[8,5,10,3,6,9,12,1,null,null,7,null,null,11,null]],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]`\\n\\n`[\"BSTIterator\",\"hasNext\",\"next\",\"hasNext\"]\\n[[[1]],[],[],[]]`",
+      "voteCount": 27
+    },
+    {
+      "name": "quantanty",
+      "year": 2024,
+      "content": "If you store all values into a stack or a list, it would require O(N) extra space. Try Morris traversal method and use `node.right` as the next node.",
+      "voteCount": 18
+    },
+    {
+      "name": "Hiroki111",
+      "year": 2023,
+      "content": "The description says:\\n\\n> The pointer should be initialized to a non-existent number smaller than any element in the BST.\\n\\nCan someone rephrase this? I\\'ve seen a few solutions, but none of them are following this constraint",
+      "voteCount": 15
+    },
+    {
+      "name": "RDXV",
+      "year": 2022,
+      "content": "The question said \"boolean hasNext() Returns true if there exists a number in the traversal to the right of the pointer, otherwise returns false\". Shouldn\\'t it mean for case [7, 3, 15, null, null, 9, 20], hasNext() for 9 must be false because 9 does not have a right child as to the right of the pointer of 9, there is nothing? I understand the solution sees the stack.top() but the question is saying hasNext() sees existence of number to the right of pointer. Can someone explain if I am reading something wrong or the words of question are put in the wrong way?",
+      "voteCount": 14
+    },
+    {
+      "name": "__declspec",
+      "year": 2022,
+      "content": "Why do we need to optimise code to O(h) \\nO(h) is not better than O(n) in worse case\\nJust like optimising bubble sort to deterministic quicksort, why\\nhar har har\\non99?\\nnvm leetcode \\xAF\\\\\\\\_(\\u30C4)_/\\xAF",
+      "voteCount": 13
+    },
+    {
+      "name": "khanabdulmajid",
+      "year": 2025,
+      "content": "I got headache by just reading the Problem Description.\\n",
+      "voteCount": 12
+    },
+    {
+      "name": "silyows",
+      "year": 2018,
+      "content": "I tried deleting my cookie and all my code but my C++ code still does not work. I am using google chrome. This happened to me once for another problem too. That time I fixed it by refreshing my page.\\n\\nError message:\\nExpected JSON [[\"BSTIterator\",\"hasNext\",\"next\",\"hasNext\"]] to be of type JSMN_PRIMITIVE but got JSMN_STRING.",
+      "voteCount": 9
+    }
+  ]
 }

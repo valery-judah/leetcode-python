@@ -1,162 +1,162 @@
 {
-    "category": "",
-    "id": "721",
-    "name": "Accounts Merge",
-    "difficulty": "Medium",
-    "leetcode_url": "https://leetcode.com/problems/accounts-merge/",
-    "slug": "accounts-merge",
-    "isPaidOnly": false,
-    "tags": [
-        "Array",
-        "Hash Table",
-        "String",
-        "Depth-First Search",
-        "Breadth-First Search",
-        "Union Find",
-        "Sorting"
-    ],
-    "similar_questions": [
-        {
-            "title": "Redundant Connection",
-            "difficulty": "Medium",
-            "slug": "redundant-connection"
-        },
-        {
-            "title": "Sentence Similarity",
-            "difficulty": "Easy",
-            "slug": "sentence-similarity"
-        },
-        {
-            "title": "Sentence Similarity II",
-            "difficulty": "Medium",
-            "slug": "sentence-similarity-ii"
-        }
-    ],
-    "questionId": "721",
-    "questionFrontendId": "721",
-    "title": "Accounts Merge",
-    "titleSlug": "accounts-merge",
-    "likes": 7430,
-    "dislikes": 1274,
-    "stats": {
-        "totalAccepted": "557.1K",
-        "totalSubmission": "925.9K",
-        "totalAcceptedRaw": 557100,
-        "totalSubmissionRaw": 925891,
-        "acRate": "60.2%"
+  "category": "",
+  "id": "721",
+  "name": "Accounts Merge",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/accounts-merge/",
+  "slug": "accounts-merge",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union Find",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Redundant Connection",
+      "difficulty": "Medium",
+      "slug": "redundant-connection"
     },
-    "topicTags": [
-        {
-            "name": "Array",
-            "slug": "array"
-        },
-        {
-            "name": "Hash Table",
-            "slug": "hash-table"
-        },
-        {
-            "name": "String",
-            "slug": "string"
-        },
-        {
-            "name": "Depth-First Search",
-            "slug": "depth-first-search"
-        },
-        {
-            "name": "Breadth-First Search",
-            "slug": "breadth-first-search"
-        },
-        {
-            "name": "Union Find",
-            "slug": "union-find"
-        },
-        {
-            "name": "Sorting",
-            "slug": "sorting"
-        }
+    {
+      "title": "Sentence Similarity",
+      "difficulty": "Easy",
+      "slug": "sentence-similarity"
+    },
+    {
+      "title": "Sentence Similarity II",
+      "difficulty": "Medium",
+      "slug": "sentence-similarity-ii"
+    }
+  ],
+  "questionId": "721",
+  "questionFrontendId": "721",
+  "title": "Accounts Merge",
+  "titleSlug": "accounts-merge",
+  "likes": 7430,
+  "dislikes": 1274,
+  "stats": {
+    "totalAccepted": "557.1K",
+    "totalSubmission": "925.9K",
+    "totalAcceptedRaw": 557100,
+    "totalSubmissionRaw": 925891,
+    "acRate": "60.2%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Breadth-First Search",
+      "slug": "breadth-first-search"
+    },
+    {
+      "name": "Union Find",
+      "slug": "union-find"
+    },
+    {
+      "name": "Sorting",
+      "slug": "sorting"
+    }
+  ],
+  "metaData": {
+    "name": "accountsMerge",
+    "params": [
+      {
+        "name": "accounts",
+        "type": "list<list<string>>"
+      }
     ],
-    "metaData": {
-        "name": "accountsMerge",
-        "params": [
-            {
-                "name": "accounts",
-                "type": "list<list<string>>"
-            }
-        ],
-        "return": {
-            "type": "list<list<string>>"
-        }
-    },
-    "company_tag_stats": {
-        "1": [
-            {
-                "taggedByAdmin": true,
-                "name": "Meta",
-                "slug": "facebook",
-                "timesEncountered": 26
-            }
-        ]
-    },
-    "discussion_posts": [
-        {
-            "name": "crazysamurai",
-            "year": 2022,
-            "content": "I\\'m sorry, i\\'ll use only one email from now on.",
-            "voteCount": 1073
-        },
-        {
-            "name": "trocadilho",
-            "year": 2024,
-            "content": "Solution using SQL:\n```\nDROP TABLE accounts;\n```",
-            "voteCount": 676
-        },
-        {
-            "name": "xuxuxudaren",
-            "year": 2019,
-            "content": "My heart has broken.",
-            "voteCount": 545
-        },
-        {
-            "name": "harkeshbirman",
-            "year": 2022,
-            "content": "NOT A MEDIUM. IT\\'S HARD",
-            "voteCount": 373
-        },
-        {
-            "name": "zzznotsomuch",
-            "year": 2019,
-            "content": "I disagree with this problem being termed as medium. Even if one know DSU, it\\'s hard to arrive to the solution.",
-            "voteCount": 222
-        },
-        {
-            "name": "coder42032",
-            "year": 2023,
-            "content": "Move this problem into hard section.",
-            "voteCount": 150
-        },
-        {
-            "name": "techno_phile",
-            "year": 2023,
-            "content": "Leetcode should add a new difficulty label called \"VERY HARD\" and this as one of the first problems to be labeled as that.",
-            "voteCount": 110
-        },
-        {
-            "name": "marcello834",
-            "year": 2020,
-            "content": "Alright, this is truly out of context... It turns out that I have 2 leetcode accounts, how do I merge one into the other? :)",
-            "voteCount": 103
-        },
-        {
-            "name": "kamun",
-            "year": 2022,
-            "content": "This is definitely a hard problem. I saw many hards simpler than this one and not because it require knowledge of DSU or DFS, but because it is really hard to implement a clean version. ",
-            "voteCount": 60
-        },
-        {
-            "name": "MinhUchiha",
-            "year": 2022,
-            "content": "This should be marked as hard...",
-            "voteCount": 50
-        }
+    "return": {
+      "type": "list<list<string>>"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": true,
+        "name": "Meta",
+        "slug": "facebook",
+        "timesEncountered": 26
+      }
     ]
+  },
+  "discussion_posts": [
+    {
+      "name": "crazysamurai",
+      "year": 2022,
+      "content": "I\\'m sorry, i\\'ll use only one email from now on.",
+      "voteCount": 1073
+    },
+    {
+      "name": "trocadilho",
+      "year": 2024,
+      "content": "Solution using SQL:\n```\nDROP TABLE accounts;\n```",
+      "voteCount": 676
+    },
+    {
+      "name": "xuxuxudaren",
+      "year": 2019,
+      "content": "My heart has broken.",
+      "voteCount": 545
+    },
+    {
+      "name": "harkeshbirman",
+      "year": 2022,
+      "content": "NOT A MEDIUM. IT\\'S HARD",
+      "voteCount": 373
+    },
+    {
+      "name": "zzznotsomuch",
+      "year": 2019,
+      "content": "I disagree with this problem being termed as medium. Even if one know DSU, it\\'s hard to arrive to the solution.",
+      "voteCount": 222
+    },
+    {
+      "name": "coder42032",
+      "year": 2023,
+      "content": "Move this problem into hard section.",
+      "voteCount": 150
+    },
+    {
+      "name": "techno_phile",
+      "year": 2023,
+      "content": "Leetcode should add a new difficulty label called \"VERY HARD\" and this as one of the first problems to be labeled as that.",
+      "voteCount": 110
+    },
+    {
+      "name": "marcello834",
+      "year": 2020,
+      "content": "Alright, this is truly out of context... It turns out that I have 2 leetcode accounts, how do I merge one into the other? :)",
+      "voteCount": 103
+    },
+    {
+      "name": "kamun",
+      "year": 2022,
+      "content": "This is definitely a hard problem. I saw many hards simpler than this one and not because it require knowledge of DSU or DFS, but because it is really hard to implement a clean version. ",
+      "voteCount": 60
+    },
+    {
+      "name": "MinhUchiha",
+      "year": 2022,
+      "content": "This should be marked as hard...",
+      "voteCount": 50
+    }
+  ]
 }

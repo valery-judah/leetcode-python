@@ -10,7 +10,7 @@ See generation instructions in ../README.md.
 
 | Problem | Diff | Baseline | Complex Justified | Optimal | Repeats | Min Time | Conf | Clarified |             Communicated | Stated | Edge Tests | Clean Impl | Mistakes |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| [Contains Duplicate](../problems/0217-contains-duplicate/readme.md) | Easy | ✖️ | ✖️ | ✖️ |  | 0 |                 1 | ✖️ | ✖️ | ✖️ | ✖️ | ✖️ |                      |
+| [Contains Duplicate](../problems/0217-contains-duplicate/readme.md) | Easy | ✅ | ✖️ | ✖️ |  | 0 |                 1 | ✖️ | ✖️ | ✖️ | ✖️ | ✖️ |                      |
 | [Valid Anagram](../problems/0242-valid-anagram/readme.md) | Easy | ✖️ | ✖️ | ✖️ |  | 0 |                 1 | ✖️ | ✖️ | ✖️ | ✖️ | ✖️ |                      |
 | [Two Sum](../problems/0001-two-sum/readme.md) | Easy | ✖️ | ✖️ | ✖️ |  | 0 |                 1 | ✖️ | ✖️ | ✖️ | ✖️ | ✖️ |                      |
 | [Group Anagrams](../problems/0049-group-anagrams/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 |                 1 | ✖️ | ✖️ | ✖️ | ✖️ | ✖️ |                      |

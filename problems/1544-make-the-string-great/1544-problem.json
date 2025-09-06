@@ -1,111 +1,111 @@
 {
-    "category": "",
-    "id": "1544",
-    "name": "Make The String Great",
-    "difficulty": "Easy",
-    "leetcode_url": "https://leetcode.com/problems/make-the-string-great/",
-    "slug": "make-the-string-great",
-    "isPaidOnly": false,
-    "tags": [
-        "String",
-        "Stack"
-    ],
-    "similar_questions": [],
-    "questionId": "1666",
-    "questionFrontendId": "1544",
-    "title": "Make The String Great",
-    "titleSlug": "make-the-string-great",
-    "likes": 3173,
-    "dislikes": 181,
-    "stats": {
-        "totalAccepted": "377.4K",
-        "totalSubmission": "552.5K",
-        "totalAcceptedRaw": 377434,
-        "totalSubmissionRaw": 552549,
-        "acRate": "68.3%"
+  "category": "",
+  "id": "1544",
+  "name": "Make The String Great",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/make-the-string-great/",
+  "slug": "make-the-string-great",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Stack"
+  ],
+  "similar_questions": [],
+  "questionId": "1666",
+  "questionFrontendId": "1544",
+  "title": "Make The String Great",
+  "titleSlug": "make-the-string-great",
+  "likes": 3173,
+  "dislikes": 181,
+  "stats": {
+    "totalAccepted": "377.4K",
+    "totalSubmission": "552.5K",
+    "totalAcceptedRaw": 377434,
+    "totalSubmissionRaw": 552549,
+    "acRate": "68.3%"
+  },
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
     },
-    "topicTags": [
-        {
-            "name": "String",
-            "slug": "string"
-        },
-        {
-            "name": "Stack",
-            "slug": "stack"
-        }
+    {
+      "name": "Stack",
+      "slug": "stack"
+    }
+  ],
+  "metaData": {
+    "name": "makeGood",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      }
     ],
-    "metaData": {
-        "name": "makeGood",
-        "params": [
-            {
-                "name": "s",
-                "type": "string"
-            }
-        ],
-        "return": {
-            "type": "string"
-        }
+    "return": {
+      "type": "string"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "drap5468",
+      "year": 2022,
+      "content": "The title requires us to make the string great, but the function only allows us to make it good. Sad day.",
+      "voteCount": 208
     },
-    "discussion_posts": [
-        {
-            "name": "drap5468",
-            "year": 2022,
-            "content": "The title requires us to make the string great, but the function only allows us to make it good. Sad day.",
-            "voteCount": 208
-        },
-        {
-            "name": "WKelvinson",
-            "year": 2020,
-            "content": "Just for fun, the name of this problem remindes me of the orange president,  anyway happy coding!",
-            "voteCount": 146
-        },
-        {
-            "name": "District_12",
-            "year": 2023,
-            "content": "Wasted chance to name the question \"Make The String Great Again\".",
-            "voteCount": 145
-        },
-        {
-            "name": "kumarkunal4052002",
-            "year": 2022,
-            "content": "Thing to remember difference between capital and small of alphabet in ascii is 32 . ",
-            "voteCount": 121
-        },
-        {
-            "name": "Zeeshan_2512",
-            "year": 2024,
-            "content": "200 days streak completed.",
-            "voteCount": 66
-        },
-        {
-            "name": "alpharomeo99",
-            "year": 2022,
-            "content": "Try a stack, maybe?",
-            "voteCount": 30
-        },
-        {
-            "name": "kanealdrich12",
-            "year": 2022,
-            "content": "Reading the instructions for this made me smell burnt toast. Anyway, happy coding!",
-            "voteCount": 30
-        },
-        {
-            "name": "mstuebs",
-            "year": 2024,
-            "content": "### Helpful Testcases\\n```\\n\"j\"\\n\"I\"\\n\"vV\"\\n\"Nn\"\\n\"nThYCFZCwfFzjNTsyYuUyYqvVStnxXfFnNdSsBQqPJNnwWnDdZfQqqFWwQqFXxIWXxchzfcGgDdjyHtziInNMEhHqQkKkwyQqgG\"\\n\"qgEqEqeGQQeEGGqQggGeEqQgeEEQqQQqGgeEqeeEEqqeEgEeEQeqQqQEqQGgGQgGGgQQqgGeqQEeqQGgEeEEGGgQQqEeGgeEQqg\"\\n\"orvhVjTTxNpVqfMjBvyIiIhHFfVbJwWmjJXWwDNjJFfkKNnQqQtvJgxXQEedcCPknXWtXtwSZzzZJLlWwvERHoOnNDdVROeEbBuU\"\\n\"RERErEWrWrRRWRRRreweWeEWeEwerREeEeEWERwEreeEWrRrrwrrEewWRrRReERRwEeEewErRRwWwwWeEERERrEeRrrrReeErWww\"\\n```",
-            "voteCount": 27
-        },
-        {
-            "name": "daringcalf",
-            "year": 2024,
-            "content": "I smell stack week coming.",
-            "voteCount": 17
-        },
-        {
-            "name": "Mspatild7",
-            "year": 2022,
-            "content": "Can Plz Someone explain me how \"Leetcode\" is good string, as this string have adjacent e ?",
-            "voteCount": 14
-        }
-    ]
+    {
+      "name": "WKelvinson",
+      "year": 2020,
+      "content": "Just for fun, the name of this problem remindes me of the orange president,  anyway happy coding!",
+      "voteCount": 146
+    },
+    {
+      "name": "District_12",
+      "year": 2023,
+      "content": "Wasted chance to name the question \"Make The String Great Again\".",
+      "voteCount": 145
+    },
+    {
+      "name": "kumarkunal4052002",
+      "year": 2022,
+      "content": "Thing to remember difference between capital and small of alphabet in ascii is 32 . ",
+      "voteCount": 121
+    },
+    {
+      "name": "Zeeshan_2512",
+      "year": 2024,
+      "content": "200 days streak completed.",
+      "voteCount": 66
+    },
+    {
+      "name": "alpharomeo99",
+      "year": 2022,
+      "content": "Try a stack, maybe?",
+      "voteCount": 30
+    },
+    {
+      "name": "kanealdrich12",
+      "year": 2022,
+      "content": "Reading the instructions for this made me smell burnt toast. Anyway, happy coding!",
+      "voteCount": 30
+    },
+    {
+      "name": "mstuebs",
+      "year": 2024,
+      "content": "### Helpful Testcases\\n```\\n\"j\"\\n\"I\"\\n\"vV\"\\n\"Nn\"\\n\"nThYCFZCwfFzjNTsyYuUyYqvVStnxXfFnNdSsBQqPJNnwWnDdZfQqqFWwQqFXxIWXxchzfcGgDdjyHtziInNMEhHqQkKkwyQqgG\"\\n\"qgEqEqeGQQeEGGqQggGeEqQgeEEQqQQqGgeEqeeEEqqeEgEeEQeqQqQEqQGgGQgGGgQQqgGeqQEeqQGgEeEEGGgQQqEeGgeEQqg\"\\n\"orvhVjTTxNpVqfMjBvyIiIhHFfVbJwWmjJXWwDNjJFfkKNnQqQtvJgxXQEedcCPknXWtXtwSZzzZJLlWwvERHoOnNDdVROeEbBuU\"\\n\"RERErEWrWrRRWRRRreweWeEWeEwerREeEeEWERwEreeEWrRrrwrrEewWRrRReERRwEeEewErRRwWwwWeEERERrEeRrrrReeErWww\"\\n```",
+      "voteCount": 27
+    },
+    {
+      "name": "daringcalf",
+      "year": 2024,
+      "content": "I smell stack week coming.",
+      "voteCount": 17
+    },
+    {
+      "name": "Mspatild7",
+      "year": 2022,
+      "content": "Can Plz Someone explain me how \"Leetcode\" is good string, as this string have adjacent e ?",
+      "voteCount": 14
+    }
+  ]
 }

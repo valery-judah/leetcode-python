@@ -1,142 +1,142 @@
 {
-    "category": "",
-    "id": "2001",
-    "name": "Number of Pairs of Interchangeable Rectangles",
-    "difficulty": "Medium",
-    "leetcode_url": "https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/",
-    "slug": "number-of-pairs-of-interchangeable-rectangles",
-    "isPaidOnly": false,
-    "tags": [
-        "Array",
-        "Hash Table",
-        "Math",
-        "Counting",
-        "Number Theory"
-    ],
-    "similar_questions": [
-        {
-            "title": "Number of Good Pairs",
-            "difficulty": "Easy",
-            "slug": "number-of-good-pairs"
-        },
-        {
-            "title": "Count Nice Pairs in an Array",
-            "difficulty": "Medium",
-            "slug": "count-nice-pairs-in-an-array"
-        },
-        {
-            "title": "Replace Non-Coprime Numbers in Array",
-            "difficulty": "Hard",
-            "slug": "replace-non-coprime-numbers-in-array"
-        }
-    ],
-    "questionId": "2129",
-    "questionFrontendId": "2001",
-    "title": "Number of Pairs of Interchangeable Rectangles",
-    "titleSlug": "number-of-pairs-of-interchangeable-rectangles",
-    "likes": 563,
-    "dislikes": 49,
-    "stats": {
-        "totalAccepted": "52.8K",
-        "totalSubmission": "102.1K",
-        "totalAcceptedRaw": 52773,
-        "totalSubmissionRaw": 102133,
-        "acRate": "51.7%"
+  "category": "",
+  "id": "2001",
+  "name": "Number of Pairs of Interchangeable Rectangles",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/",
+  "slug": "number-of-pairs-of-interchangeable-rectangles",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Counting",
+    "Number Theory"
+  ],
+  "similar_questions": [
+    {
+      "title": "Number of Good Pairs",
+      "difficulty": "Easy",
+      "slug": "number-of-good-pairs"
     },
-    "topicTags": [
-        {
-            "name": "Array",
-            "slug": "array"
-        },
-        {
-            "name": "Hash Table",
-            "slug": "hash-table"
-        },
-        {
-            "name": "Math",
-            "slug": "math"
-        },
-        {
-            "name": "Counting",
-            "slug": "counting"
-        },
-        {
-            "name": "Number Theory",
-            "slug": "number-theory"
-        }
-    ],
-    "metaData": {
-        "name": "interchangeableRectangles",
-        "params": [
-            {
-                "name": "rectangles",
-                "type": "integer[][]"
-            }
-        ],
-        "return": {
-            "type": "long"
-        }
+    {
+      "title": "Count Nice Pairs in an Array",
+      "difficulty": "Medium",
+      "slug": "count-nice-pairs-in-an-array"
     },
-    "discussion_posts": [
-        {
-            "name": "shoumik916",
-            "year": 2023,
-            "content": "This should definitely be an Easy problem lol ",
-            "voteCount": 27
-        },
-        {
-            "name": "Musti_Don",
-            "year": 2024,
-            "content": "Should be easy",
-            "voteCount": 10
-        },
-        {
-            "name": "portalsigma2022",
-            "year": 2023,
-            "content": "In the problem, we are taking a combination of k =2, in the formula N ! /(N-K) ! * K. Using this we can reduce the formula of combinations from N ! /(N-2) ! * 2.\\nThat can be simplified to (N* (N-1)*(N-2) ! ) / (N-2) ! * 2,\\ngives (N * (N-1))/2.\\nN is the number of the total number of elements in the set.",
-            "voteCount": 6
-        },
-        {
-            "name": "Captain_Yedla",
-            "year": 2024,
-            "content": "I think, test cases are not that strong. \\n\\nproblem comes with the floating point division support.\\n\\nproper approach for this problem is not by division\\n\\n1. bring every numerator / denomination to such level where there are no common factors\\n\\n2. then combine numerator and denominator to a string\\n\\n3. use hash table approach. \\n",
-            "voteCount": 3
-        },
-        {
-            "name": "iaanuj",
-            "year": 2024,
-            "content": "This should be easy question. ",
-            "voteCount": 2
-        },
-        {
-            "name": "mayank567",
-            "year": 2024,
-            "content": "HINTS == SOLUTION  ",
-            "voteCount": 1
-        },
-        {
-            "name": "tin_le",
-            "year": 2024,
-            "content": "this problem fits \"Double it and give it to the next person\" the most. Hint: it\\'s just about counting the frequency",
-            "voteCount": 1
-        },
-        {
-            "name": "StefanelStan",
-            "year": 2024,
-            "content": "Tips:\\n- Use a Map<Double, Integer> to group/count the ratio of each rectangle\\n- Iterate over the values and if value > 1, use the combination formula n! / ((n-k)! * k!).\\n When we know k = 2, short version of formula is ((n-1) * n / 2). Pay attention to long as 10^5 * 10^5 = 10^10.\\nhttps://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/solutions/4572243/java-combinations-map-clean-code/",
-            "voteCount": 1
-        },
-        {
-            "name": "arturszogla",
-            "year": 2023,
-            "content": "For me the difference between TLE and accepted Python solution came down to using `for key in dict:` (fast) instead of `for key in dict.keys():` (slow).",
-            "voteCount": 1
-        },
-        {
-            "name": "ghostie404",
-            "year": 2023,
-            "content": "Think of the 2sum problem and how you\\'re able to use past calculations to aid with current calculations.",
-            "voteCount": 1
-        }
-    ]
+    {
+      "title": "Replace Non-Coprime Numbers in Array",
+      "difficulty": "Hard",
+      "slug": "replace-non-coprime-numbers-in-array"
+    }
+  ],
+  "questionId": "2129",
+  "questionFrontendId": "2001",
+  "title": "Number of Pairs of Interchangeable Rectangles",
+  "titleSlug": "number-of-pairs-of-interchangeable-rectangles",
+  "likes": 563,
+  "dislikes": 49,
+  "stats": {
+    "totalAccepted": "52.8K",
+    "totalSubmission": "102.1K",
+    "totalAcceptedRaw": 52773,
+    "totalSubmissionRaw": 102133,
+    "acRate": "51.7%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Counting",
+      "slug": "counting"
+    },
+    {
+      "name": "Number Theory",
+      "slug": "number-theory"
+    }
+  ],
+  "metaData": {
+    "name": "interchangeableRectangles",
+    "params": [
+      {
+        "name": "rectangles",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "long"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "shoumik916",
+      "year": 2023,
+      "content": "This should definitely be an Easy problem lol ",
+      "voteCount": 27
+    },
+    {
+      "name": "Musti_Don",
+      "year": 2024,
+      "content": "Should be easy",
+      "voteCount": 10
+    },
+    {
+      "name": "portalsigma2022",
+      "year": 2023,
+      "content": "In the problem, we are taking a combination of k =2, in the formula N ! /(N-K) ! * K. Using this we can reduce the formula of combinations from N ! /(N-2) ! * 2.\\nThat can be simplified to (N* (N-1)*(N-2) ! ) / (N-2) ! * 2,\\ngives (N * (N-1))/2.\\nN is the number of the total number of elements in the set.",
+      "voteCount": 6
+    },
+    {
+      "name": "Captain_Yedla",
+      "year": 2024,
+      "content": "I think, test cases are not that strong. \\n\\nproblem comes with the floating point division support.\\n\\nproper approach for this problem is not by division\\n\\n1. bring every numerator / denomination to such level where there are no common factors\\n\\n2. then combine numerator and denominator to a string\\n\\n3. use hash table approach. \\n",
+      "voteCount": 3
+    },
+    {
+      "name": "iaanuj",
+      "year": 2024,
+      "content": "This should be easy question. ",
+      "voteCount": 2
+    },
+    {
+      "name": "mayank567",
+      "year": 2024,
+      "content": "HINTS == SOLUTION  ",
+      "voteCount": 1
+    },
+    {
+      "name": "tin_le",
+      "year": 2024,
+      "content": "this problem fits \"Double it and give it to the next person\" the most. Hint: it\\'s just about counting the frequency",
+      "voteCount": 1
+    },
+    {
+      "name": "StefanelStan",
+      "year": 2024,
+      "content": "Tips:\\n- Use a Map<Double, Integer> to group/count the ratio of each rectangle\\n- Iterate over the values and if value > 1, use the combination formula n! / ((n-k)! * k!).\\n When we know k = 2, short version of formula is ((n-1) * n / 2). Pay attention to long as 10^5 * 10^5 = 10^10.\\nhttps://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/solutions/4572243/java-combinations-map-clean-code/",
+      "voteCount": 1
+    },
+    {
+      "name": "arturszogla",
+      "year": 2023,
+      "content": "For me the difference between TLE and accepted Python solution came down to using `for key in dict:` (fast) instead of `for key in dict.keys():` (slow).",
+      "voteCount": 1
+    },
+    {
+      "name": "ghostie404",
+      "year": 2023,
+      "content": "Think of the 2sum problem and how you\\'re able to use past calculations to aid with current calculations.",
+      "voteCount": 1
+    }
+  ]
 }

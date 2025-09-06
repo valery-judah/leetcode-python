@@ -1,139 +1,139 @@
 {
-    "category": "",
-    "id": "249",
-    "name": "Group Shifted Strings",
-    "difficulty": "Medium",
-    "leetcode_url": "https://leetcode.com/problems/group-shifted-strings/",
-    "slug": "group-shifted-strings",
-    "isPaidOnly": true,
-    "tags": [
-        "Array",
-        "Hash Table",
-        "String"
-    ],
-    "similar_questions": [
-        {
-            "title": "Group Anagrams",
-            "difficulty": "Medium",
-            "slug": "group-anagrams"
-        },
-        {
-            "title": "Find Maximum Number of String Pairs",
-            "difficulty": "Easy",
-            "slug": "find-maximum-number-of-string-pairs"
-        }
-    ],
-    "questionId": "249",
-    "questionFrontendId": "249",
-    "title": "Group Shifted Strings",
-    "titleSlug": "group-shifted-strings",
-    "likes": 1763,
-    "dislikes": 437,
-    "stats": {
-        "totalAccepted": "303.1K",
-        "totalSubmission": "448.9K",
-        "totalAcceptedRaw": 303052,
-        "totalSubmissionRaw": 448934,
-        "acRate": "67.5%"
+  "category": "",
+  "id": "249",
+  "name": "Group Shifted Strings",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/group-shifted-strings/",
+  "slug": "group-shifted-strings",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Group Anagrams",
+      "difficulty": "Medium",
+      "slug": "group-anagrams"
     },
-    "topicTags": [
-        {
-            "name": "Array",
-            "slug": "array"
-        },
-        {
-            "name": "Hash Table",
-            "slug": "hash-table"
-        },
-        {
-            "name": "String",
-            "slug": "string"
-        }
+    {
+      "title": "Find Maximum Number of String Pairs",
+      "difficulty": "Easy",
+      "slug": "find-maximum-number-of-string-pairs"
+    }
+  ],
+  "questionId": "249",
+  "questionFrontendId": "249",
+  "title": "Group Shifted Strings",
+  "titleSlug": "group-shifted-strings",
+  "likes": 1763,
+  "dislikes": 437,
+  "stats": {
+    "totalAccepted": "303.1K",
+    "totalSubmission": "448.9K",
+    "totalAcceptedRaw": 303052,
+    "totalSubmissionRaw": 448934,
+    "acRate": "67.5%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "metaData": {
+    "name": "groupStrings",
+    "params": [
+      {
+        "name": "strings",
+        "type": "string[]",
+        "dealloc": false
+      }
     ],
-    "metaData": {
-        "name": "groupStrings",
-        "params": [
-            {
-                "name": "strings",
-                "type": "string[]",
-                "dealloc": false
-            }
-        ],
-        "return": {
-            "type": "list<list<string>>",
-            "dealloc": true
-        }
-    },
-    "company_tag_stats": {
-        "1": [
-            {
-                "taggedByAdmin": false,
-                "name": "Meta",
-                "slug": "facebook",
-                "timesEncountered": 28
-            }
-        ]
-    },
-    "discussion_posts": [
-        {
-            "name": "dav1de24",
-            "year": 2016,
-            "content": "There is no requirement to sort or order in any way the answers, yet you flag incorrect answers with a different order. Please make sure you ask the question correctly.",
-            "voteCount": 140
-        },
-        {
-            "name": "ybn4aq",
-            "year": 2023,
-            "content": "You guys really need to do a better job at properly describing the problem. In a real interview, the interviewee would be able to ask clarifying questions about the setup of the problem. This description is way too short, and doesn\\'t really explain that you\\'re able to shift backwards.",
-            "voteCount": 64
-        },
-        {
-            "name": "sherryxmhe",
-            "year": 2016,
-            "content": "I don't quite understand the question. Successive letter means in alphabet order or the next letter in the string. And is \"ba\" the result of shifting \"az\" to the right? And we can't shift \"az\" to the left because z is the last letter in the alphabet?",
-            "voteCount": 56
-        },
-        {
-            "name": "justinkangg",
-            "year": 2023,
-            "content": "For those who have seen this question in interviews - were there any follow up questions?",
-            "voteCount": 21
-        },
-        {
-            "name": "forgetboy",
-            "year": 2016,
-            "content": "Input:\\n[\"ab\",\"ba\"]\\n\\nOutput:\\n[[\"ab\",\"ba\"]]\\n\\nExpected:\\n[[\"ba\"],[\"ab\"]]\\n\\n\\nMy code submission is failing with the message above. As far as I can see, the expected result is incorrect. If not, can someone please explain to me why that's the case. Thanks.",
-            "voteCount": 11
-        },
-        {
-            "name": "chris_284",
-            "year": 2024,
-            "content": "The irony is rich X\\'D.\\n\\nWhoever writes the examples and descriptions for leetcode problems, is the exact opposite individual that any company would be looking to hire X\\'D",
-            "voteCount": 10
-        },
-        {
-            "name": "moosemunch",
-            "year": 2024,
-            "content": "Shifts are cyclic, this is evident from the test cases but is not mentioned in the problem statement.",
-            "voteCount": 8
-        },
-        {
-            "name": "haoxj0122",
-            "year": 2024,
-            "content": "The description says you can return in any order, but it actually require you to sort in some untold and unobvious way. Should refine the description or test cases.",
-            "voteCount": 6
-        },
-        {
-            "name": "yanggao",
-            "year": 2015,
-            "content": "do we have to follow the ascending or descending sequence? \"acef\" is not continuous.",
-            "voteCount": 5
-        },
-        {
-            "name": "Unox_dot_jpeg",
-            "year": 2024,
-            "content": "\"you may return the result in any order\"  LMAO",
-            "voteCount": 4
-        }
+    "return": {
+      "type": "list<list<string>>",
+      "dealloc": true
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Meta",
+        "slug": "facebook",
+        "timesEncountered": 28
+      }
     ]
+  },
+  "discussion_posts": [
+    {
+      "name": "dav1de24",
+      "year": 2016,
+      "content": "There is no requirement to sort or order in any way the answers, yet you flag incorrect answers with a different order. Please make sure you ask the question correctly.",
+      "voteCount": 140
+    },
+    {
+      "name": "ybn4aq",
+      "year": 2023,
+      "content": "You guys really need to do a better job at properly describing the problem. In a real interview, the interviewee would be able to ask clarifying questions about the setup of the problem. This description is way too short, and doesn\\'t really explain that you\\'re able to shift backwards.",
+      "voteCount": 64
+    },
+    {
+      "name": "sherryxmhe",
+      "year": 2016,
+      "content": "I don't quite understand the question. Successive letter means in alphabet order or the next letter in the string. And is \"ba\" the result of shifting \"az\" to the right? And we can't shift \"az\" to the left because z is the last letter in the alphabet?",
+      "voteCount": 56
+    },
+    {
+      "name": "justinkangg",
+      "year": 2023,
+      "content": "For those who have seen this question in interviews - were there any follow up questions?",
+      "voteCount": 21
+    },
+    {
+      "name": "forgetboy",
+      "year": 2016,
+      "content": "Input:\\n[\"ab\",\"ba\"]\\n\\nOutput:\\n[[\"ab\",\"ba\"]]\\n\\nExpected:\\n[[\"ba\"],[\"ab\"]]\\n\\n\\nMy code submission is failing with the message above. As far as I can see, the expected result is incorrect. If not, can someone please explain to me why that's the case. Thanks.",
+      "voteCount": 11
+    },
+    {
+      "name": "chris_284",
+      "year": 2024,
+      "content": "The irony is rich X\\'D.\\n\\nWhoever writes the examples and descriptions for leetcode problems, is the exact opposite individual that any company would be looking to hire X\\'D",
+      "voteCount": 10
+    },
+    {
+      "name": "moosemunch",
+      "year": 2024,
+      "content": "Shifts are cyclic, this is evident from the test cases but is not mentioned in the problem statement.",
+      "voteCount": 8
+    },
+    {
+      "name": "haoxj0122",
+      "year": 2024,
+      "content": "The description says you can return in any order, but it actually require you to sort in some untold and unobvious way. Should refine the description or test cases.",
+      "voteCount": 6
+    },
+    {
+      "name": "yanggao",
+      "year": 2015,
+      "content": "do we have to follow the ascending or descending sequence? \"acef\" is not continuous.",
+      "voteCount": 5
+    },
+    {
+      "name": "Unox_dot_jpeg",
+      "year": 2024,
+      "content": "\"you may return the result in any order\"  LMAO",
+      "voteCount": 4
+    }
+  ]
 }

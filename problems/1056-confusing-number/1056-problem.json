@@ -1,117 +1,117 @@
 {
-    "category": "",
-    "id": "1056",
-    "name": "Confusing Number",
-    "difficulty": "Easy",
-    "leetcode_url": "https://leetcode.com/problems/confusing-number/",
-    "slug": "confusing-number",
-    "isPaidOnly": true,
-    "tags": [
-        "Math"
-    ],
-    "similar_questions": [
-        {
-            "title": "Strobogrammatic Number",
-            "difficulty": "Easy",
-            "slug": "strobogrammatic-number"
-        },
-        {
-            "title": "Confusing Number II",
-            "difficulty": "Hard",
-            "slug": "confusing-number-ii"
-        }
-    ],
-    "questionId": "1069",
-    "questionFrontendId": "1056",
-    "title": "Confusing Number",
-    "titleSlug": "confusing-number",
-    "likes": 328,
-    "dislikes": 182,
-    "stats": {
-        "totalAccepted": "53.1K",
-        "totalSubmission": "107.7K",
-        "totalAcceptedRaw": 53105,
-        "totalSubmissionRaw": 107723,
-        "acRate": "49.3%"
+  "category": "",
+  "id": "1056",
+  "name": "Confusing Number",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/confusing-number/",
+  "slug": "confusing-number",
+  "isPaidOnly": true,
+  "tags": [
+    "Math"
+  ],
+  "similar_questions": [
+    {
+      "title": "Strobogrammatic Number",
+      "difficulty": "Easy",
+      "slug": "strobogrammatic-number"
     },
-    "topicTags": [
-        {
-            "name": "Math",
-            "slug": "math"
-        }
+    {
+      "title": "Confusing Number II",
+      "difficulty": "Hard",
+      "slug": "confusing-number-ii"
+    }
+  ],
+  "questionId": "1069",
+  "questionFrontendId": "1056",
+  "title": "Confusing Number",
+  "titleSlug": "confusing-number",
+  "likes": 328,
+  "dislikes": 182,
+  "stats": {
+    "totalAccepted": "53.1K",
+    "totalSubmission": "107.7K",
+    "totalAcceptedRaw": 53105,
+    "totalSubmissionRaw": 107723,
+    "acRate": "49.3%"
+  },
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "metaData": {
+    "name": "confusingNumber",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      }
     ],
-    "metaData": {
-        "name": "confusingNumber",
-        "params": [
-            {
-                "name": "n",
-                "type": "integer"
-            }
-        ],
-        "return": {
-            "type": "boolean"
-        }
+    "return": {
+      "type": "boolean"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "mmcclarty",
+      "year": 2019,
+      "content": "916 says it should return False; but it seems to fit the criteria of confusing number (619 on rotation)?",
+      "voteCount": 33
     },
-    "discussion_posts": [
-        {
-            "name": "mmcclarty",
-            "year": 2019,
-            "content": "916 says it should return False; but it seems to fit the criteria of confusing number (619 on rotation)?",
-            "voteCount": 33
-        },
-        {
-            "name": "pieceofpie",
-            "year": 2023,
-            "content": "This problem makes me confused.",
-            "voteCount": 16
-        },
-        {
-            "name": "StrongMinded",
-            "year": 2020,
-            "content": "Input - 619\\nOutput - false ?",
-            "voteCount": 5
-        },
-        {
-            "name": "vinu_ji",
-            "year": 2025,
-            "content": "Poor explanation of question ",
-            "voteCount": 3
-        },
-        {
-            "name": "shrinidhir",
-            "year": 2019,
-            "content": "If 916 is rotated by 180 degrees, we get 619, which is a confusing number (all digits valid and the final number is different from the input). Why is the expected output false? Am I missing something?",
-            "voteCount": 3
-        },
-        {
-            "name": "ClaraClara",
-            "year": 2019,
-            "content": "This seems to be similar to palindrome but it\\'s different.",
-            "voteCount": 3
-        },
-        {
-            "name": "rajs217",
-            "year": 2023,
-            "content": "Problem is same as 246 LeetCode Problem.",
-            "voteCount": 2
-        },
-        {
-            "name": "Satansoft",
-            "year": 2025,
-            "content": "Surprised that string reverse and numbers replacing confusing people...",
-            "voteCount": 1
-        },
-        {
-            "name": "MingNguyen",
-            "year": 2024,
-            "content": "This problem makes me confused. Please clarify more clearer.",
-            "voteCount": 1
-        },
-        {
-            "name": "shnitsel666",
-            "year": 2023,
-            "content": "916, 906 - why do they must be \\'false\\'?\\n8101, 81010, 88001101, 80 - why do they must be \\'true\\'?\\nInteresting task, but wrong testcases or task description...",
-            "voteCount": 1
-        }
-    ]
+    {
+      "name": "pieceofpie",
+      "year": 2023,
+      "content": "This problem makes me confused.",
+      "voteCount": 16
+    },
+    {
+      "name": "StrongMinded",
+      "year": 2020,
+      "content": "Input - 619\\nOutput - false ?",
+      "voteCount": 5
+    },
+    {
+      "name": "vinu_ji",
+      "year": 2025,
+      "content": "Poor explanation of question ",
+      "voteCount": 3
+    },
+    {
+      "name": "shrinidhir",
+      "year": 2019,
+      "content": "If 916 is rotated by 180 degrees, we get 619, which is a confusing number (all digits valid and the final number is different from the input). Why is the expected output false? Am I missing something?",
+      "voteCount": 3
+    },
+    {
+      "name": "ClaraClara",
+      "year": 2019,
+      "content": "This seems to be similar to palindrome but it\\'s different.",
+      "voteCount": 3
+    },
+    {
+      "name": "rajs217",
+      "year": 2023,
+      "content": "Problem is same as 246 LeetCode Problem.",
+      "voteCount": 2
+    },
+    {
+      "name": "Satansoft",
+      "year": 2025,
+      "content": "Surprised that string reverse and numbers replacing confusing people...",
+      "voteCount": 1
+    },
+    {
+      "name": "MingNguyen",
+      "year": 2024,
+      "content": "This problem makes me confused. Please clarify more clearer.",
+      "voteCount": 1
+    },
+    {
+      "name": "shnitsel666",
+      "year": 2023,
+      "content": "916, 906 - why do they must be \\'false\\'?\\n8101, 81010, 88001101, 80 - why do they must be \\'true\\'?\\nInteresting task, but wrong testcases or task description...",
+      "voteCount": 1
+    }
+  ]
 }

@@ -1,108 +1,108 @@
 {
-    "category": "",
-    "id": "1150",
-    "name": "Check If a Number Is Majority Element in a Sorted Array",
-    "difficulty": "Easy",
-    "leetcode_url": "https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/",
-    "slug": "check-if-a-number-is-majority-element-in-a-sorted-array",
-    "isPaidOnly": true,
-    "tags": [
-        "Array",
-        "Binary Search"
-    ],
-    "similar_questions": [
-        {
-            "title": "Majority Element",
-            "difficulty": "Easy",
-            "slug": "majority-element"
-        },
-        {
-            "title": "Majority Element II",
-            "difficulty": "Medium",
-            "slug": "majority-element-ii"
-        }
-    ],
-    "questionId": "1102",
-    "questionFrontendId": "1150",
-    "title": "Check If a Number Is Majority Element in a Sorted Array",
-    "titleSlug": "check-if-a-number-is-majority-element-in-a-sorted-array",
-    "likes": 466,
-    "dislikes": 35,
-    "stats": {
-        "totalAccepted": "56.8K",
-        "totalSubmission": "96.2K",
-        "totalAcceptedRaw": 56842,
-        "totalSubmissionRaw": 96186,
-        "acRate": "59.1%"
+  "category": "",
+  "id": "1150",
+  "name": "Check If a Number Is Majority Element in a Sorted Array",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/",
+  "slug": "check-if-a-number-is-majority-element-in-a-sorted-array",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Majority Element",
+      "difficulty": "Easy",
+      "slug": "majority-element"
     },
-    "topicTags": [
-        {
-            "name": "Array",
-            "slug": "array"
-        },
-        {
-            "name": "Binary Search",
-            "slug": "binary-search"
-        }
-    ],
-    "metaData": {
-        "name": "isMajorityElement",
-        "params": [
-            {
-                "name": "nums",
-                "type": "integer[]"
-            },
-            {
-                "name": "target",
-                "type": "integer"
-            }
-        ],
-        "return": {
-            "type": "boolean"
-        }
+    {
+      "title": "Majority Element II",
+      "difficulty": "Medium",
+      "slug": "majority-element-ii"
+    }
+  ],
+  "questionId": "1102",
+  "questionFrontendId": "1150",
+  "title": "Check If a Number Is Majority Element in a Sorted Array",
+  "titleSlug": "check-if-a-number-is-majority-element-in-a-sorted-array",
+  "likes": 466,
+  "dislikes": 35,
+  "stats": {
+    "totalAccepted": "56.8K",
+    "totalSubmission": "96.2K",
+    "totalAcceptedRaw": 56842,
+    "totalSubmissionRaw": 96186,
+    "acRate": "59.1%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
     },
-    "discussion_posts": [
-        {
-            "name": "yangwudi398",
-            "year": 2023,
-            "content": "No need to specify the target. The only possible candidate is the number that exists at the middle.",
-            "voteCount": 4
-        },
-        {
-            "name": "hardcoredummmy",
-            "year": 2023,
-            "content": "First glance should be solved by Counter 1-liner. If follow on optimization during interview, `\"sorted array\" + \"target\" = Binary Search!!`",
-            "voteCount": 2
-        },
-        {
-            "name": "daringcalf",
-            "year": 2023,
-            "content": "This is a clever one.",
-            "voteCount": 1
-        },
-        {
-            "name": "tM9ybwxHYD",
-            "year": 2025,
-            "content": "I love this question :)",
-            "voteCount": 0
-        },
-        {
-            "name": "tin_le",
-            "year": 2024,
-            "content": "Another 1 liner boring question",
-            "voteCount": 0
-        },
-        {
-            "name": "seredenko99",
-            "year": 2024,
-            "content": "it returns `SyntaxError: Unexpected end of JSON input` for Js\\\\Ts",
-            "voteCount": 0
-        },
-        {
-            "name": "GuG_Shadamu",
-            "year": 2023,
-            "content": "can someone help me with this error?\n\n\n\n![image](https://imgtr.ee/images/2023/06/11/K4H7Y.png)",
-            "voteCount": 0
-        }
-    ]
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    }
+  ],
+  "metaData": {
+    "name": "isMajorityElement",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      },
+      {
+        "name": "target",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "yangwudi398",
+      "year": 2023,
+      "content": "No need to specify the target. The only possible candidate is the number that exists at the middle.",
+      "voteCount": 4
+    },
+    {
+      "name": "hardcoredummmy",
+      "year": 2023,
+      "content": "First glance should be solved by Counter 1-liner. If follow on optimization during interview, `\"sorted array\" + \"target\" = Binary Search!!`",
+      "voteCount": 2
+    },
+    {
+      "name": "daringcalf",
+      "year": 2023,
+      "content": "This is a clever one.",
+      "voteCount": 1
+    },
+    {
+      "name": "tM9ybwxHYD",
+      "year": 2025,
+      "content": "I love this question :)",
+      "voteCount": 0
+    },
+    {
+      "name": "tin_le",
+      "year": 2024,
+      "content": "Another 1 liner boring question",
+      "voteCount": 0
+    },
+    {
+      "name": "seredenko99",
+      "year": 2024,
+      "content": "it returns `SyntaxError: Unexpected end of JSON input` for Js\\\\Ts",
+      "voteCount": 0
+    },
+    {
+      "name": "GuG_Shadamu",
+      "year": 2023,
+      "content": "can someone help me with this error?\n\n\n\n![image](https://imgtr.ee/images/2023/06/11/K4H7Y.png)",
+      "voteCount": 0
+    }
+  ]
 }

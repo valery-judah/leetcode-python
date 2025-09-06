@@ -1,110 +1,110 @@
 {
-    "category": "",
-    "id": "582",
-    "name": "Kill Process",
-    "difficulty": "Medium",
-    "leetcode_url": "https://leetcode.com/problems/kill-process/",
-    "slug": "kill-process",
-    "isPaidOnly": true,
-    "tags": [
-        "Array",
-        "Hash Table",
-        "Tree",
-        "Depth-First Search",
-        "Breadth-First Search"
-    ],
-    "similar_questions": [],
-    "questionId": "582",
-    "questionFrontendId": "582",
-    "title": "Kill Process",
-    "titleSlug": "kill-process",
-    "likes": 1125,
-    "dislikes": 21,
-    "stats": {
-        "totalAccepted": "93.2K",
-        "totalSubmission": "132.8K",
-        "totalAcceptedRaw": 93154,
-        "totalSubmissionRaw": 132813,
-        "acRate": "70.1%"
+  "category": "",
+  "id": "582",
+  "name": "Kill Process",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/kill-process/",
+  "slug": "kill-process",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search"
+  ],
+  "similar_questions": [],
+  "questionId": "582",
+  "questionFrontendId": "582",
+  "title": "Kill Process",
+  "titleSlug": "kill-process",
+  "likes": 1125,
+  "dislikes": 21,
+  "stats": {
+    "totalAccepted": "93.2K",
+    "totalSubmission": "132.8K",
+    "totalAcceptedRaw": 93154,
+    "totalSubmissionRaw": 132813,
+    "acRate": "70.1%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
     },
-    "topicTags": [
-        {
-            "name": "Array",
-            "slug": "array"
-        },
-        {
-            "name": "Hash Table",
-            "slug": "hash-table"
-        },
-        {
-            "name": "Tree",
-            "slug": "tree"
-        },
-        {
-            "name": "Depth-First Search",
-            "slug": "depth-first-search"
-        },
-        {
-            "name": "Breadth-First Search",
-            "slug": "breadth-first-search"
-        }
-    ],
-    "metaData": {
-        "name": "killProcess",
-        "params": [
-            {
-                "name": "pid",
-                "type": "list<integer>"
-            },
-            {
-                "name": "ppid",
-                "type": "list<integer>"
-            },
-            {
-                "name": "kill",
-                "type": "integer"
-            }
-        ],
-        "return": {
-            "type": "list<integer>"
-        }
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
     },
-    "discussion_posts": [
-        {
-            "name": "EricHKCA",
-            "year": 2024,
-            "content": "Dont overthink, the only thing about this question is they gave you a tree represented by List.",
-            "voteCount": 3
-        },
-        {
-            "name": "matthewjinmp",
-            "year": 2025,
-            "content": "you only have to connect the parent to its children, not the children to its parent. if you do this, you do not even have to use a visited set ",
-            "voteCount": 1
-        },
-        {
-            "name": "Satansoft",
-            "year": 2025,
-            "content": "Unidirectional graph representation gives option to use dfs and  funny thing with it, when start with `kill` node, it gives result in all  2 possible cases, no matter it\\'s parent or child.",
-            "voteCount": 1
-        },
-        {
-            "name": "dut-a",
-            "year": 2025,
-            "content": "And then the English almost killed my desire to try this! It\\'s \\'child processes\\', NOT \\'children processes\\'!",
-            "voteCount": 0
-        },
-        {
-            "name": "Lulu0711dll",
-            "year": 2025,
-            "content": "Think it as a Graph question",
-            "voteCount": 0
-        },
-        {
-            "name": "unordered_set",
-            "year": 2023,
-            "content": "First!!",
-            "voteCount": 0
-        }
-    ]
+    {
+      "name": "Tree",
+      "slug": "tree"
+    },
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Breadth-First Search",
+      "slug": "breadth-first-search"
+    }
+  ],
+  "metaData": {
+    "name": "killProcess",
+    "params": [
+      {
+        "name": "pid",
+        "type": "list<integer>"
+      },
+      {
+        "name": "ppid",
+        "type": "list<integer>"
+      },
+      {
+        "name": "kill",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "list<integer>"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "EricHKCA",
+      "year": 2024,
+      "content": "Dont overthink, the only thing about this question is they gave you a tree represented by List.",
+      "voteCount": 3
+    },
+    {
+      "name": "matthewjinmp",
+      "year": 2025,
+      "content": "you only have to connect the parent to its children, not the children to its parent. if you do this, you do not even have to use a visited set ",
+      "voteCount": 1
+    },
+    {
+      "name": "Satansoft",
+      "year": 2025,
+      "content": "Unidirectional graph representation gives option to use dfs and  funny thing with it, when start with `kill` node, it gives result in all  2 possible cases, no matter it\\'s parent or child.",
+      "voteCount": 1
+    },
+    {
+      "name": "dut-a",
+      "year": 2025,
+      "content": "And then the English almost killed my desire to try this! It\\'s \\'child processes\\', NOT \\'children processes\\'!",
+      "voteCount": 0
+    },
+    {
+      "name": "Lulu0711dll",
+      "year": 2025,
+      "content": "Think it as a Graph question",
+      "voteCount": 0
+    },
+    {
+      "name": "unordered_set",
+      "year": 2023,
+      "content": "First!!",
+      "voteCount": 0
+    }
+  ]
 }

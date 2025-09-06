@@ -1,140 +1,140 @@
 {
-    "category": "",
-    "id": "734",
-    "name": "Sentence Similarity",
-    "difficulty": "Easy",
-    "leetcode_url": "https://leetcode.com/problems/sentence-similarity/",
-    "slug": "sentence-similarity",
-    "isPaidOnly": true,
-    "tags": [
-        "Array",
-        "Hash Table",
-        "String"
-    ],
-    "similar_questions": [
-        {
-            "title": "Number of Provinces",
-            "difficulty": "Medium",
-            "slug": "number-of-provinces"
-        },
-        {
-            "title": "Accounts Merge",
-            "difficulty": "Medium",
-            "slug": "accounts-merge"
-        },
-        {
-            "title": "Sentence Similarity II",
-            "difficulty": "Medium",
-            "slug": "sentence-similarity-ii"
-        }
-    ],
-    "questionId": "734",
-    "questionFrontendId": "734",
-    "title": "Sentence Similarity",
-    "titleSlug": "sentence-similarity",
-    "likes": 64,
-    "dislikes": 71,
-    "stats": {
-        "totalAccepted": "73.2K",
-        "totalSubmission": "164K",
-        "totalAcceptedRaw": 73244,
-        "totalSubmissionRaw": 164035,
-        "acRate": "44.7%"
+  "category": "",
+  "id": "734",
+  "name": "Sentence Similarity",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/sentence-similarity/",
+  "slug": "sentence-similarity",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Number of Provinces",
+      "difficulty": "Medium",
+      "slug": "number-of-provinces"
     },
-    "topicTags": [
-        {
-            "name": "Array",
-            "slug": "array"
-        },
-        {
-            "name": "Hash Table",
-            "slug": "hash-table"
-        },
-        {
-            "name": "String",
-            "slug": "string"
-        }
-    ],
-    "metaData": {
-        "name": "areSentencesSimilar",
-        "params": [
-            {
-                "name": "sentence1",
-                "type": "string[]"
-            },
-            {
-                "name": "sentence2",
-                "type": "string[]"
-            },
-            {
-                "name": "similarPairs",
-                "type": "list<list<string>>"
-            }
-        ],
-        "return": {
-            "type": "boolean"
-        }
+    {
+      "title": "Accounts Merge",
+      "difficulty": "Medium",
+      "slug": "accounts-merge"
     },
-    "discussion_posts": [
-        {
-            "name": "imsure",
-            "year": 2018,
-            "content": "There is one `ambiguity` of the question: by looking at the official solution, there is an `unspecified assumption` for this problem: the words are matched only at the same position, e.g., `words1[0]` is matched against `words2[0]`, `words1[1]` is matched against `words2[1]`, so on and so forth. However, considering this two sentences: `Bob is a talented actor` and `a talented actor is Bob`, shouldn't they also be similar? But the official solution gave `false` in this case.",
-            "voteCount": 36
-        },
-        {
-            "name": "C1ou6",
-            "year": 2023,
-            "content": "I paid premium for questions like this...",
-            "voteCount": 14
-        },
-        {
-            "name": "XavierElon",
-            "year": 2025,
-            "content": "This problem is most certainly not easy",
-            "voteCount": 2
-        },
-        {
-            "name": "bhavesh3",
-            "year": 2024,
-            "content": "how is it easy? looks equal to many medium problems though",
-            "voteCount": 2
-        },
-        {
-            "name": "mcgga",
-            "year": 2023,
-            "content": "Interesting problem except that the description is long. \\nShould be a `Medium` one as there are some implicit conditions to consider and a `hash table in hash table` to be constructed.",
-            "voteCount": 2
-        },
-        {
-            "name": "Satansoft",
-            "year": 2025,
-            "content": "**Easy**, but same word could be similar to different words, so pairing like `[x, y]` and `[y, x]` are not enough, but `[x, [a, b, c, ...]]` and `[y,  [x, y , z, ...]]` works well.",
-            "voteCount": 1
-        },
-        {
-            "name": "yellowheng",
-            "year": 2025,
-            "content": "This is a very typcial question where the discription make the question seems like a hard one. \\n\\nCheck same index in each sentence. \\n testing = [sentence1[i],sentence2[i]]\\n testing2 = [sentence2[i],sentence1[i]]\\n\\nIf they are in the pair set you you will have a True pair, if not then directly return False. \\n\\nchecking all the pair, the return the truth value. \\nand make a check if the elemenet is the same or not\\n",
-            "voteCount": 1
-        },
-        {
-            "name": "Dattapm",
-            "year": 2025,
-            "content": "stupid fucking question. How are \"great\" and \"fine\" similar words? any explanation?",
-            "voteCount": 1
-        },
-        {
-            "name": "Inveterate_Enthusiast",
-            "year": 2025,
-            "content": "If you\\'re sure in your solution, you might try this test case:\\n\\nsentence1 = [\"one\",\"excellent\",\"meal\"]\\nsentence2 = [\"one\",\"good\",\"dinner\"]\\n[\"great\",\"good\"],[\"extraordinary\",\"good\"],[\"well\",\"good\"],[\"wonderful\",\"good\"],[\"excellent\",\"good\"],[\"fine\",\"good\"],[\"nice\",\"good\"],[\"any\",\"one\"],[\"some\",\"one\"],[\"unique\",\"one\"],[\"the\",\"one\"],[\"an\",\"one\"],[\"single\",\"one\"],[\"a\",\"one\"],[\"truck\",\"car\"],[\"wagon\",\"car\"],[\"automobile\",\"car\"],[\"auto\",\"car\"],[\"vehicle\",\"car\"],[\"entertain\",\"have\"],[\"drink\",\"have\"],[\"eat\",\"have\"],[\"take\",\"have\"],[\"fruits\",\"meal\"],[\"brunch\",\"meal\"],[\"breakfast\",\"meal\"],[\"food\",\"meal\"],[\"dinner\",\"meal\"],[\"super\",\"meal\"],[\"lunch\",\"meal\"],[\"possess\",\"own\"],[\"keep\",\"own\"],[\"have\",\"own\"],[\"extremely\",\"very\"],[\"actually\",\"very\"],[\"really\",\"very\"],[\"super\",\"very\"]",
-            "voteCount": 1
-        },
-        {
-            "name": "tzm41",
-            "year": 2017,
-            "content": "I had a working solution that compiles locally in Xcode. But when submitting the answer, it prompts a compilation error of symbol \"col_size_1\" not found or something, and I had to switch to using Java.",
-            "voteCount": 1
-        }
-    ]
+    {
+      "title": "Sentence Similarity II",
+      "difficulty": "Medium",
+      "slug": "sentence-similarity-ii"
+    }
+  ],
+  "questionId": "734",
+  "questionFrontendId": "734",
+  "title": "Sentence Similarity",
+  "titleSlug": "sentence-similarity",
+  "likes": 64,
+  "dislikes": 71,
+  "stats": {
+    "totalAccepted": "73.2K",
+    "totalSubmission": "164K",
+    "totalAcceptedRaw": 73244,
+    "totalSubmissionRaw": 164035,
+    "acRate": "44.7%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "metaData": {
+    "name": "areSentencesSimilar",
+    "params": [
+      {
+        "name": "sentence1",
+        "type": "string[]"
+      },
+      {
+        "name": "sentence2",
+        "type": "string[]"
+      },
+      {
+        "name": "similarPairs",
+        "type": "list<list<string>>"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "imsure",
+      "year": 2018,
+      "content": "There is one `ambiguity` of the question: by looking at the official solution, there is an `unspecified assumption` for this problem: the words are matched only at the same position, e.g., `words1[0]` is matched against `words2[0]`, `words1[1]` is matched against `words2[1]`, so on and so forth. However, considering this two sentences: `Bob is a talented actor` and `a talented actor is Bob`, shouldn't they also be similar? But the official solution gave `false` in this case.",
+      "voteCount": 36
+    },
+    {
+      "name": "C1ou6",
+      "year": 2023,
+      "content": "I paid premium for questions like this...",
+      "voteCount": 14
+    },
+    {
+      "name": "XavierElon",
+      "year": 2025,
+      "content": "This problem is most certainly not easy",
+      "voteCount": 2
+    },
+    {
+      "name": "bhavesh3",
+      "year": 2024,
+      "content": "how is it easy? looks equal to many medium problems though",
+      "voteCount": 2
+    },
+    {
+      "name": "mcgga",
+      "year": 2023,
+      "content": "Interesting problem except that the description is long. \\nShould be a `Medium` one as there are some implicit conditions to consider and a `hash table in hash table` to be constructed.",
+      "voteCount": 2
+    },
+    {
+      "name": "Satansoft",
+      "year": 2025,
+      "content": "**Easy**, but same word could be similar to different words, so pairing like `[x, y]` and `[y, x]` are not enough, but `[x, [a, b, c, ...]]` and `[y,  [x, y , z, ...]]` works well.",
+      "voteCount": 1
+    },
+    {
+      "name": "yellowheng",
+      "year": 2025,
+      "content": "This is a very typcial question where the discription make the question seems like a hard one. \\n\\nCheck same index in each sentence. \\n testing = [sentence1[i],sentence2[i]]\\n testing2 = [sentence2[i],sentence1[i]]\\n\\nIf they are in the pair set you you will have a True pair, if not then directly return False. \\n\\nchecking all the pair, the return the truth value. \\nand make a check if the elemenet is the same or not\\n",
+      "voteCount": 1
+    },
+    {
+      "name": "Dattapm",
+      "year": 2025,
+      "content": "stupid fucking question. How are \"great\" and \"fine\" similar words? any explanation?",
+      "voteCount": 1
+    },
+    {
+      "name": "Inveterate_Enthusiast",
+      "year": 2025,
+      "content": "If you\\'re sure in your solution, you might try this test case:\\n\\nsentence1 = [\"one\",\"excellent\",\"meal\"]\\nsentence2 = [\"one\",\"good\",\"dinner\"]\\n[\"great\",\"good\"],[\"extraordinary\",\"good\"],[\"well\",\"good\"],[\"wonderful\",\"good\"],[\"excellent\",\"good\"],[\"fine\",\"good\"],[\"nice\",\"good\"],[\"any\",\"one\"],[\"some\",\"one\"],[\"unique\",\"one\"],[\"the\",\"one\"],[\"an\",\"one\"],[\"single\",\"one\"],[\"a\",\"one\"],[\"truck\",\"car\"],[\"wagon\",\"car\"],[\"automobile\",\"car\"],[\"auto\",\"car\"],[\"vehicle\",\"car\"],[\"entertain\",\"have\"],[\"drink\",\"have\"],[\"eat\",\"have\"],[\"take\",\"have\"],[\"fruits\",\"meal\"],[\"brunch\",\"meal\"],[\"breakfast\",\"meal\"],[\"food\",\"meal\"],[\"dinner\",\"meal\"],[\"super\",\"meal\"],[\"lunch\",\"meal\"],[\"possess\",\"own\"],[\"keep\",\"own\"],[\"have\",\"own\"],[\"extremely\",\"very\"],[\"actually\",\"very\"],[\"really\",\"very\"],[\"super\",\"very\"]",
+      "voteCount": 1
+    },
+    {
+      "name": "tzm41",
+      "year": 2017,
+      "content": "I had a working solution that compiles locally in Xcode. But when submitting the answer, it prompts a compilation error of symbol \"col_size_1\" not found or something, and I had to switch to using Java.",
+      "voteCount": 1
+    }
+  ]
 }

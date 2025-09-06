@@ -1,24 +1,10 @@
 from __future__ import annotations
 
-# Common type stubs for annotations and simple local testing
-from common.types import (
-    ListNode,
-    TreeNode,
-    Node,
-    UndirectedGraphNode,
-    RandomListNode,
-    NestedInteger,
-)
-
 
 class Baseline:
     def solve(self, *args, **kwargs):
         """Check with actual signature per problem."""
         raise NotImplementedError
-
-
-# Optional default alias for single-export usage
-Solution = Baseline
 
 # Explicit multi-export for test discovery
 ALL_SOLUTIONS = [Baseline]

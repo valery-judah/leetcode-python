@@ -1,152 +1,152 @@
 {
-    "category": "",
-    "id": "1236",
-    "name": "Web Crawler",
-    "difficulty": "Medium",
-    "leetcode_url": "https://leetcode.com/problems/web-crawler/",
-    "slug": "web-crawler",
-    "isPaidOnly": true,
-    "tags": [
-        "String",
-        "Depth-First Search",
-        "Breadth-First Search",
-        "Interactive"
-    ],
-    "similar_questions": [
-        {
-            "title": "Web Crawler Multithreaded",
-            "difficulty": "Medium",
-            "slug": "web-crawler-multithreaded"
-        }
-    ],
-    "questionId": "1271",
-    "questionFrontendId": "1236",
-    "title": "Web Crawler",
-    "titleSlug": "web-crawler",
-    "likes": 299,
-    "dislikes": 332,
-    "stats": {
-        "totalAccepted": "47.5K",
-        "totalSubmission": "69.1K",
-        "totalAcceptedRaw": 47529,
-        "totalSubmissionRaw": 69104,
-        "acRate": "68.8%"
+  "category": "",
+  "id": "1236",
+  "name": "Web Crawler",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/web-crawler/",
+  "slug": "web-crawler",
+  "isPaidOnly": true,
+  "tags": [
+    "String",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Interactive"
+  ],
+  "similar_questions": [
+    {
+      "title": "Web Crawler Multithreaded",
+      "difficulty": "Medium",
+      "slug": "web-crawler-multithreaded"
+    }
+  ],
+  "questionId": "1271",
+  "questionFrontendId": "1236",
+  "title": "Web Crawler",
+  "titleSlug": "web-crawler",
+  "likes": 299,
+  "dislikes": 332,
+  "stats": {
+    "totalAccepted": "47.5K",
+    "totalSubmission": "69.1K",
+    "totalAcceptedRaw": 47529,
+    "totalSubmissionRaw": 69104,
+    "acRate": "68.8%"
+  },
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
     },
-    "topicTags": [
-        {
-            "name": "String",
-            "slug": "string"
-        },
-        {
-            "name": "Depth-First Search",
-            "slug": "depth-first-search"
-        },
-        {
-            "name": "Breadth-First Search",
-            "slug": "breadth-first-search"
-        },
-        {
-            "name": "Interactive",
-            "slug": "interactive"
-        }
-    ],
-    "metaData": {
-        "name": "crawl",
-        "params": [
-            {
-                "name": "urls",
-                "type": "string[]"
-            },
-            {
-                "type": "integer[][]",
-                "name": "edges"
-            },
-            {
-                "type": "string",
-                "name": "startUrl"
-            }
-        ],
-        "return": {
-            "type": "list<string>"
-        },
-        "manual": true,
-        "languages": [
-            "cpp",
-            "java",
-            "python",
-            "csharp",
-            "python3",
-            "javascript",
-            "kotlin",
-            "ruby",
-            "scala",
-            "swift",
-            "php",
-            "golang",
-            "typescript"
-        ],
-        "typescriptCustomType": "class HtmlParser {\n    maps: Map<string, number>;\n    urls: string[];\n    a: Map<number, number[]>;\n    \n    constructor(urlLib: string[], edges: number[][]) {\n        this.maps = new Map<string, number>();\n        this.urls = urlLib;\n        this.a = new Map<number, number[]>()\n        for (let i = 0; i < urlLib.length; i++) {\n            this.maps.set(urlLib[i], i)\n        }\n        \n        for (let i = 0; i < edges.length; i++) {\n            if(this.a.get(edges[i][0]) == null ){\n                var t: number[] = [];\n                t.push(edges[i][1]);\n                this.a.set(edges[i][0],t) ;\n            }\n            else{\n                var t = this.a.get(edges[i][0])!;\n                t.push(edges[i][1]);\n                this.a.set(edges[i][0],t);\n            }\n        }\n    }\n\n    getUrls(url: string): string[] {\n        var ans: string[] = []\n        if(this.maps.get(url) == undefined) return ans;\n        var cur = this.maps.get(url)!;\n\n        if(this.a.get(cur) == undefined) return ans;\n        var urlList = this.a.get(cur)!;\n\n        for(let i=0; i < urlList.length; i++){\n            ans.push(this.urls[urlList[i]]);\n        }\n\n        return ans;\n    }\n};\n"
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
     },
-    "discussion_posts": [
-        {
-            "name": "beginner_7",
-            "year": 2020,
-            "content": "Hello, I was wondering, what do the edges meain in the test input? Thank you!!!",
-            "voteCount": 18
-        },
-        {
-            "name": "shabri87",
-            "year": 2020,
-            "content": "For input:\\n[\"http://psn.wlyby.edu/wvoz\",\"http://psn.wlyby.edu/shez\",\"http://psn.wlyby.edu/upkr\",\"http://psn.wlyby.edu/ubmr\",\"http://psn.wlyby.edu/apgb\",\"http://psn.wlyby.edu/sbin\",\"http://psn.wlyby.edu/inmj\",\"http://cpq.jkvox.tech/mjkb\",\"http://lqr.shmtu.tech/rsvw\",\"http://ylk.fubmn.com/ypyh\"]\\n[[0,8],[1,6],[1,7],[1,4],[3,3],[3,4],[3,7],[4,1],[4,0],[4,3],[5,5],[5,8],[5,5],[5,0],[6,8],[7,2],[7,7],[7,4],[10,7],[10,4],[10,3],[10,4]]\\n\"http://psn.wlyby.edu/ubmr\"\\n\\n\\nExpected is:[\"http://psn.wlyby.edu/ubmr\",\"http://psn.wlyby.edu/apgb\",\"http://psn.wlyby.edu/shez\",\"http://psn.wlyby.edu/wvoz\",\"http://psn.wlyby.edu/upkr\",\"http://psn.wlyby.edu/inmj\"]\\nWhile expected assumed by leetcode is: [\"http://psn.wlyby.edu/apgb\",\"http://psn.wlyby.edu/inmj\",\"http://psn.wlyby.edu/shez\",\"http://psn.wlyby.edu/ubmr\",\"http://psn.wlyby.edu/wvoz\"] \\nshould have had one more URL \"http://psn.wlyby.edu/upkr\" which is missing.\\n\\n![image](https://assets.leetcode.com/users/shabri87/image_1590087078.png)\\n",
-            "voteCount": 11
-        },
-        {
-            "name": "daringcalf",
-            "year": 2023,
-            "content": "Lol, my turn to say it. \"This is easy, anyone?\"",
-            "voteCount": 9
-        },
-        {
-            "name": "mstaricka",
-            "year": 2023,
-            "content": "In order to get the solution to run in Kotlin I needed to add an import to my solution:\\n```\\nimport java.util.Random\\n```\\n\\nApparently they are instantiating ```Random()``` behind the scenes which is not working as ```kotlin.random.Random()``` requires a seed parameter. Adding the import forces the Java version of Random to be used.",
-            "voteCount": 5
-        },
-        {
-            "name": "kaichamp101",
-            "year": 2023,
-            "content": "How to make simple BFS/DFS question interesting? Here is how.",
-            "voteCount": 5
-        },
-        {
-            "name": "matthewjinmp",
-            "year": 2025,
-            "content": "easy to code + hard to understand = medium problem ",
-            "voteCount": 1
-        },
-        {
-            "name": "Congee",
-            "year": 2023,
-            "content": "The question description left out an important detail - trailing slash.",
-            "voteCount": 1
-        },
-        {
-            "name": "Manukyanq",
-            "year": 2025,
-            "content": "IMHO this is too easy for anyone who ever used DFS/BFS at least one time. \\n\\ntip for JS/TS coders use JS built in URL class to get hostname without any extra logic: \\n\\n ```js\\n  const { hostname } = new URL(startUrl)\\n```",
-            "voteCount": 0
-        },
-        {
-            "name": "sculd",
-            "year": 2025,
-            "content": "I think the test case has a bug. It should excludes the urls whose host ITSELF does not belong to the start url. But instead it excludes those whose intermediate path is not part of the same host even though the url itself has the same host as the start.",
-            "voteCount": 0
-        },
-        {
-            "name": "pengchengchen",
-            "year": 2025,
-            "content": "can you create tests for JS/TS?",
-            "voteCount": 0
-        }
-    ]
+    {
+      "name": "Breadth-First Search",
+      "slug": "breadth-first-search"
+    },
+    {
+      "name": "Interactive",
+      "slug": "interactive"
+    }
+  ],
+  "metaData": {
+    "name": "crawl",
+    "params": [
+      {
+        "name": "urls",
+        "type": "string[]"
+      },
+      {
+        "type": "integer[][]",
+        "name": "edges"
+      },
+      {
+        "type": "string",
+        "name": "startUrl"
+      }
+    ],
+    "return": {
+      "type": "list<string>"
+    },
+    "manual": true,
+    "languages": [
+      "cpp",
+      "java",
+      "python",
+      "csharp",
+      "python3",
+      "javascript",
+      "kotlin",
+      "ruby",
+      "scala",
+      "swift",
+      "php",
+      "golang",
+      "typescript"
+    ],
+    "typescriptCustomType": "class HtmlParser {\n    maps: Map<string, number>;\n    urls: string[];\n    a: Map<number, number[]>;\n    \n    constructor(urlLib: string[], edges: number[][]) {\n        this.maps = new Map<string, number>();\n        this.urls = urlLib;\n        this.a = new Map<number, number[]>()\n        for (let i = 0; i < urlLib.length; i++) {\n            this.maps.set(urlLib[i], i)\n        }\n        \n        for (let i = 0; i < edges.length; i++) {\n            if(this.a.get(edges[i][0]) == null ){\n                var t: number[] = [];\n                t.push(edges[i][1]);\n                this.a.set(edges[i][0],t) ;\n            }\n            else{\n                var t = this.a.get(edges[i][0])!;\n                t.push(edges[i][1]);\n                this.a.set(edges[i][0],t);\n            }\n        }\n    }\n\n    getUrls(url: string): string[] {\n        var ans: string[] = []\n        if(this.maps.get(url) == undefined) return ans;\n        var cur = this.maps.get(url)!;\n\n        if(this.a.get(cur) == undefined) return ans;\n        var urlList = this.a.get(cur)!;\n\n        for(let i=0; i < urlList.length; i++){\n            ans.push(this.urls[urlList[i]]);\n        }\n\n        return ans;\n    }\n};\n"
+  },
+  "discussion_posts": [
+    {
+      "name": "beginner_7",
+      "year": 2020,
+      "content": "Hello, I was wondering, what do the edges meain in the test input? Thank you!!!",
+      "voteCount": 18
+    },
+    {
+      "name": "shabri87",
+      "year": 2020,
+      "content": "For input:\\n[\"http://psn.wlyby.edu/wvoz\",\"http://psn.wlyby.edu/shez\",\"http://psn.wlyby.edu/upkr\",\"http://psn.wlyby.edu/ubmr\",\"http://psn.wlyby.edu/apgb\",\"http://psn.wlyby.edu/sbin\",\"http://psn.wlyby.edu/inmj\",\"http://cpq.jkvox.tech/mjkb\",\"http://lqr.shmtu.tech/rsvw\",\"http://ylk.fubmn.com/ypyh\"]\\n[[0,8],[1,6],[1,7],[1,4],[3,3],[3,4],[3,7],[4,1],[4,0],[4,3],[5,5],[5,8],[5,5],[5,0],[6,8],[7,2],[7,7],[7,4],[10,7],[10,4],[10,3],[10,4]]\\n\"http://psn.wlyby.edu/ubmr\"\\n\\n\\nExpected is:[\"http://psn.wlyby.edu/ubmr\",\"http://psn.wlyby.edu/apgb\",\"http://psn.wlyby.edu/shez\",\"http://psn.wlyby.edu/wvoz\",\"http://psn.wlyby.edu/upkr\",\"http://psn.wlyby.edu/inmj\"]\\nWhile expected assumed by leetcode is: [\"http://psn.wlyby.edu/apgb\",\"http://psn.wlyby.edu/inmj\",\"http://psn.wlyby.edu/shez\",\"http://psn.wlyby.edu/ubmr\",\"http://psn.wlyby.edu/wvoz\"] \\nshould have had one more URL \"http://psn.wlyby.edu/upkr\" which is missing.\\n\\n![image](https://assets.leetcode.com/users/shabri87/image_1590087078.png)\\n",
+      "voteCount": 11
+    },
+    {
+      "name": "daringcalf",
+      "year": 2023,
+      "content": "Lol, my turn to say it. \"This is easy, anyone?\"",
+      "voteCount": 9
+    },
+    {
+      "name": "mstaricka",
+      "year": 2023,
+      "content": "In order to get the solution to run in Kotlin I needed to add an import to my solution:\\n```\\nimport java.util.Random\\n```\\n\\nApparently they are instantiating ```Random()``` behind the scenes which is not working as ```kotlin.random.Random()``` requires a seed parameter. Adding the import forces the Java version of Random to be used.",
+      "voteCount": 5
+    },
+    {
+      "name": "kaichamp101",
+      "year": 2023,
+      "content": "How to make simple BFS/DFS question interesting? Here is how.",
+      "voteCount": 5
+    },
+    {
+      "name": "matthewjinmp",
+      "year": 2025,
+      "content": "easy to code + hard to understand = medium problem ",
+      "voteCount": 1
+    },
+    {
+      "name": "Congee",
+      "year": 2023,
+      "content": "The question description left out an important detail - trailing slash.",
+      "voteCount": 1
+    },
+    {
+      "name": "Manukyanq",
+      "year": 2025,
+      "content": "IMHO this is too easy for anyone who ever used DFS/BFS at least one time. \\n\\ntip for JS/TS coders use JS built in URL class to get hostname without any extra logic: \\n\\n ```js\\n  const { hostname } = new URL(startUrl)\\n```",
+      "voteCount": 0
+    },
+    {
+      "name": "sculd",
+      "year": 2025,
+      "content": "I think the test case has a bug. It should excludes the urls whose host ITSELF does not belong to the start url. But instead it excludes those whose intermediate path is not part of the same host even though the url itself has the same host as the start.",
+      "voteCount": 0
+    },
+    {
+      "name": "pengchengchen",
+      "year": 2025,
+      "content": "can you create tests for JS/TS?",
+      "voteCount": 0
+    }
+  ]
 }

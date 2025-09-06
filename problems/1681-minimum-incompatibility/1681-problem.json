@@ -1,83 +1,83 @@
 {
-    "category": "",
-    "id": "1681",
-    "name": "Minimum Incompatibility",
-    "difficulty": "Hard",
-    "leetcode_url": "https://leetcode.com/problems/minimum-incompatibility/",
-    "slug": "minimum-incompatibility",
-    "isPaidOnly": false,
-    "tags": [
-        "Array",
-        "Dynamic Programming",
-        "Bit Manipulation",
-        "Bitmask"
-    ],
-    "similar_questions": [],
-    "questionId": "1799",
-    "questionFrontendId": "1681",
-    "title": "Minimum Incompatibility",
-    "titleSlug": "minimum-incompatibility",
-    "likes": 289,
-    "dislikes": 100,
-    "stats": {
-        "totalAccepted": "10.3K",
-        "totalSubmission": "25.5K",
-        "totalAcceptedRaw": 10290,
-        "totalSubmissionRaw": 25523,
-        "acRate": "40.3%"
+  "category": "",
+  "id": "1681",
+  "name": "Minimum Incompatibility",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-incompatibility/",
+  "slug": "minimum-incompatibility",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Bitmask"
+  ],
+  "similar_questions": [],
+  "questionId": "1799",
+  "questionFrontendId": "1681",
+  "title": "Minimum Incompatibility",
+  "titleSlug": "minimum-incompatibility",
+  "likes": 289,
+  "dislikes": 100,
+  "stats": {
+    "totalAccepted": "10.3K",
+    "totalSubmission": "25.5K",
+    "totalAcceptedRaw": 10290,
+    "totalSubmissionRaw": 25523,
+    "acRate": "40.3%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
     },
-    "topicTags": [
-        {
-            "name": "Array",
-            "slug": "array"
-        },
-        {
-            "name": "Dynamic Programming",
-            "slug": "dynamic-programming"
-        },
-        {
-            "name": "Bit Manipulation",
-            "slug": "bit-manipulation"
-        },
-        {
-            "name": "Bitmask",
-            "slug": "bitmask"
-        }
-    ],
-    "metaData": {
-        "name": "minimumIncompatibility",
-        "params": [
-            {
-                "name": "nums",
-                "type": "integer[]"
-            },
-            {
-                "type": "integer",
-                "name": "k"
-            }
-        ],
-        "return": {
-            "type": "integer"
-        }
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
     },
-    "discussion_posts": [
-        {
-            "name": "kretash",
-            "year": 2020,
-            "content": "Shouln\\'t this be hard? Not only because it was the last question in the contest but it\\'s also way harder than the 2 other medium ones.",
-            "voteCount": 50
-        },
-        {
-            "name": "gmrehbein",
-            "year": 2025,
-            "content": "A more convoluted and contrived problem statement you are not likely to find.",
-            "voteCount": 0
-        },
-        {
-            "name": "blatter",
-            "year": 2024,
-            "content": "Woah, expected to get a TLE, because I didn\\'t have a better idea than brute force dynamic programming. Greedy doesn\\'t work, already for Example 2.",
-            "voteCount": 0
-        }
-    ]
+    {
+      "name": "Bit Manipulation",
+      "slug": "bit-manipulation"
+    },
+    {
+      "name": "Bitmask",
+      "slug": "bitmask"
+    }
+  ],
+  "metaData": {
+    "name": "minimumIncompatibility",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      },
+      {
+        "type": "integer",
+        "name": "k"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "kretash",
+      "year": 2020,
+      "content": "Shouln\\'t this be hard? Not only because it was the last question in the contest but it\\'s also way harder than the 2 other medium ones.",
+      "voteCount": 50
+    },
+    {
+      "name": "gmrehbein",
+      "year": 2025,
+      "content": "A more convoluted and contrived problem statement you are not likely to find.",
+      "voteCount": 0
+    },
+    {
+      "name": "blatter",
+      "year": 2024,
+      "content": "Woah, expected to get a TLE, because I didn\\'t have a better idea than brute force dynamic programming. Greedy doesn\\'t work, already for Example 2.",
+      "voteCount": 0
+    }
+  ]
 }

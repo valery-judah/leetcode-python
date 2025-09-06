@@ -1,126 +1,126 @@
 {
-    "category": "",
-    "id": "333",
-    "name": "Largest BST Subtree",
-    "difficulty": "Medium",
-    "leetcode_url": "https://leetcode.com/problems/largest-bst-subtree/",
-    "slug": "largest-bst-subtree",
-    "isPaidOnly": true,
-    "tags": [
-        "Dynamic Programming",
-        "Tree",
-        "Depth-First Search",
-        "Binary Search Tree",
-        "Binary Tree"
-    ],
-    "similar_questions": [],
-    "questionId": "333",
-    "questionFrontendId": "333",
-    "title": "Largest BST Subtree",
-    "titleSlug": "largest-bst-subtree",
-    "likes": 1560,
-    "dislikes": 146,
-    "stats": {
-        "totalAccepted": "126.3K",
-        "totalSubmission": "276.6K",
-        "totalAcceptedRaw": 126339,
-        "totalSubmissionRaw": 276566,
-        "acRate": "45.7%"
+  "category": "",
+  "id": "333",
+  "name": "Largest BST Subtree",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/largest-bst-subtree/",
+  "slug": "largest-bst-subtree",
+  "isPaidOnly": true,
+  "tags": [
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "similar_questions": [],
+  "questionId": "333",
+  "questionFrontendId": "333",
+  "title": "Largest BST Subtree",
+  "titleSlug": "largest-bst-subtree",
+  "likes": 1560,
+  "dislikes": 146,
+  "stats": {
+    "totalAccepted": "126.3K",
+    "totalSubmission": "276.6K",
+    "totalAcceptedRaw": 126339,
+    "totalSubmissionRaw": 276566,
+    "acRate": "45.7%"
+  },
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
     },
-    "topicTags": [
-        {
-            "name": "Dynamic Programming",
-            "slug": "dynamic-programming"
-        },
-        {
-            "name": "Tree",
-            "slug": "tree"
-        },
-        {
-            "name": "Depth-First Search",
-            "slug": "depth-first-search"
-        },
-        {
-            "name": "Binary Search Tree",
-            "slug": "binary-search-tree"
-        },
-        {
-            "name": "Binary Tree",
-            "slug": "binary-tree"
-        }
-    ],
-    "metaData": {
-        "name": "largestBSTSubtree",
-        "params": [
-            {
-                "name": "root",
-                "type": "TreeNode"
-            }
-        ],
-        "return": {
-            "type": "integer"
-        }
+    {
+      "name": "Tree",
+      "slug": "tree"
     },
-    "discussion_posts": [
-        {
-            "name": "randing89",
-            "year": 2019,
-            "content": "This is not correct.",
-            "voteCount": 19
-        },
-        {
-            "name": "Frind",
-            "year": 2024,
-            "content": "bad problem, struggled with the definition, what is \"largest \\nsubtree\" exactly ?",
-            "voteCount": 15
-        },
-        {
-            "name": "WorldHello",
-            "year": 2023,
-            "content": "The first test case - [10,5,15,1,8,null,7] has wrong solution. The answer should not be 3. The largest BST subtree is - the one with nodes - 10, 5, 1, 8, 15. The answer should be 5 nodes.\\n\\n",
-            "voteCount": 8
-        },
-        {
-            "name": "user4202S",
-            "year": 2022,
-            "content": "description of BST is not correct",
-            "voteCount": 7
-        },
-        {
-            "name": "alenny",
-            "year": 2018,
-            "content": "The test cases do not treat a subtree with duplicate values as a BST. But in the Wiki definition, https://en.wikipedia.org/wiki/Binary_search_tree, BST allows duplicate values.",
-            "voteCount": 6
-        },
-        {
-            "name": "tin_le",
-            "year": 2024,
-            "content": "Hint : have a tuple [count, minVal, maxVal]",
-            "voteCount": 5
-        },
-        {
-            "name": "andvalsol",
-            "year": 2023,
-            "content": "Why does the answer for the second test case is 2 and not 3? Since the subtree is 4 -> 7 -> 2",
-            "voteCount": 5
-        },
-        {
-            "name": "Hekillno",
-            "year": 2025,
-            "content": "emm, if \"the largest means subtree has the largest number of nodes.\", then isn\\'t the larget subtree the whole tree itself?",
-            "voteCount": 4
-        },
-        {
-            "name": "jkveda",
-            "year": 2019,
-            "content": "Why is [1,2] considered a valid BST and the answer is 1?",
-            "voteCount": 4
-        },
-        {
-            "name": "cswartzell",
-            "year": 2023,
-            "content": "What an awful problem. Not a BST, and expects you to return the *NUMBER* of nodes of said \"BST\", even though that isnt what the problem asks for: it says \"find the largest subtree\", and doesn\\'t give any instructions on what to return. The natural assumption would be to return the node that is the root of this BST. How has this problem stood this long without correction?",
-            "voteCount": 3
-        }
-    ]
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Binary Search Tree",
+      "slug": "binary-search-tree"
+    },
+    {
+      "name": "Binary Tree",
+      "slug": "binary-tree"
+    }
+  ],
+  "metaData": {
+    "name": "largestBSTSubtree",
+    "params": [
+      {
+        "name": "root",
+        "type": "TreeNode"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "randing89",
+      "year": 2019,
+      "content": "This is not correct.",
+      "voteCount": 19
+    },
+    {
+      "name": "Frind",
+      "year": 2024,
+      "content": "bad problem, struggled with the definition, what is \"largest \\nsubtree\" exactly ?",
+      "voteCount": 15
+    },
+    {
+      "name": "WorldHello",
+      "year": 2023,
+      "content": "The first test case - [10,5,15,1,8,null,7] has wrong solution. The answer should not be 3. The largest BST subtree is - the one with nodes - 10, 5, 1, 8, 15. The answer should be 5 nodes.\\n\\n",
+      "voteCount": 8
+    },
+    {
+      "name": "user4202S",
+      "year": 2022,
+      "content": "description of BST is not correct",
+      "voteCount": 7
+    },
+    {
+      "name": "alenny",
+      "year": 2018,
+      "content": "The test cases do not treat a subtree with duplicate values as a BST. But in the Wiki definition, https://en.wikipedia.org/wiki/Binary_search_tree, BST allows duplicate values.",
+      "voteCount": 6
+    },
+    {
+      "name": "tin_le",
+      "year": 2024,
+      "content": "Hint : have a tuple [count, minVal, maxVal]",
+      "voteCount": 5
+    },
+    {
+      "name": "andvalsol",
+      "year": 2023,
+      "content": "Why does the answer for the second test case is 2 and not 3? Since the subtree is 4 -> 7 -> 2",
+      "voteCount": 5
+    },
+    {
+      "name": "Hekillno",
+      "year": 2025,
+      "content": "emm, if \"the largest means subtree has the largest number of nodes.\", then isn\\'t the larget subtree the whole tree itself?",
+      "voteCount": 4
+    },
+    {
+      "name": "jkveda",
+      "year": 2019,
+      "content": "Why is [1,2] considered a valid BST and the answer is 1?",
+      "voteCount": 4
+    },
+    {
+      "name": "cswartzell",
+      "year": 2023,
+      "content": "What an awful problem. Not a BST, and expects you to return the *NUMBER* of nodes of said \"BST\", even though that isnt what the problem asks for: it says \"find the largest subtree\", and doesn\\'t give any instructions on what to return. The natural assumption would be to return the node that is the root of this BST. How has this problem stood this long without correction?",
+      "voteCount": 3
+    }
+  ]
 }

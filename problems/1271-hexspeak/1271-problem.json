@@ -1,81 +1,81 @@
 {
-    "category": "",
-    "id": "1271",
-    "name": "Hexspeak",
-    "difficulty": "Easy",
-    "leetcode_url": "https://leetcode.com/problems/hexspeak/",
-    "slug": "hexspeak",
-    "isPaidOnly": true,
-    "tags": [
-        "Math",
-        "String"
-    ],
-    "similar_questions": [],
-    "questionId": "1199",
-    "questionFrontendId": "1271",
-    "title": "Hexspeak",
-    "titleSlug": "hexspeak",
-    "likes": 79,
-    "dislikes": 126,
-    "stats": {
-        "totalAccepted": "12.5K",
-        "totalSubmission": "21.4K",
-        "totalAcceptedRaw": 12521,
-        "totalSubmissionRaw": 21436,
-        "acRate": "58.4%"
+  "category": "",
+  "id": "1271",
+  "name": "Hexspeak",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/hexspeak/",
+  "slug": "hexspeak",
+  "isPaidOnly": true,
+  "tags": [
+    "Math",
+    "String"
+  ],
+  "similar_questions": [],
+  "questionId": "1199",
+  "questionFrontendId": "1271",
+  "title": "Hexspeak",
+  "titleSlug": "hexspeak",
+  "likes": 79,
+  "dislikes": 126,
+  "stats": {
+    "totalAccepted": "12.5K",
+    "totalSubmission": "21.4K",
+    "totalAcceptedRaw": 12521,
+    "totalSubmissionRaw": 21436,
+    "acRate": "58.4%"
+  },
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
     },
-    "topicTags": [
-        {
-            "name": "Math",
-            "slug": "math"
-        },
-        {
-            "name": "String",
-            "slug": "string"
-        }
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "metaData": {
+    "name": "toHexspeak",
+    "params": [
+      {
+        "name": "num",
+        "type": "string"
+      }
     ],
-    "metaData": {
-        "name": "toHexspeak",
-        "params": [
-            {
-                "name": "num",
-                "type": "string"
-            }
-        ],
-        "return": {
-            "type": "string"
-        }
+    "return": {
+      "type": "string"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "matthewjinmp",
+      "year": 2025,
+      "content": "and for what reason? ",
+      "voteCount": 0
     },
-    "discussion_posts": [
-        {
-            "name": "matthewjinmp",
-            "year": 2025,
-            "content": "and for what reason? ",
-            "voteCount": 0
-        },
-        {
-            "name": "taoo0316",
-            "year": 2024,
-            "content": "neat",
-            "voteCount": 0
-        },
-        {
-            "name": "ckbeg1705",
-            "year": 2024,
-            "content": "Below code doesn\\'t convert to hext for 747823223228 test case:\\nvar digit = long.Parse(num);\\n        var tmp = new StringBuilder();\\n        while(digit != 0){\\n            tmp.Append(digit % 16);\\n            digit /= 16;\\n        }\\n        var str = tmp.ToString();\\n        // var str = digit.ToString(\"X\");\\n        Array.Reverse(str.ToCharArray());\\n\\nI would appreciate if someone find the root cause. Required to use digit.ToString(\"X\") or C#.",
-            "voteCount": 0
-        },
-        {
-            "name": "otenim",
-            "year": 2023,
-            "content": "Caution for C++ users: the range of `num` is [1, 10^12] which is out of 32-bit integer. Use `std::stoll` (string to long long) instead of `std::stoi` if you try to convert `num` to decimal.",
-            "voteCount": 0
-        },
-        {
-            "name": "physicsgtx",
-            "year": 2022,
-            "content": "I can see it",
-            "voteCount": 0
-        }
-    ]
+    {
+      "name": "taoo0316",
+      "year": 2024,
+      "content": "neat",
+      "voteCount": 0
+    },
+    {
+      "name": "ckbeg1705",
+      "year": 2024,
+      "content": "Below code doesn\\'t convert to hext for 747823223228 test case:\\nvar digit = long.Parse(num);\\n        var tmp = new StringBuilder();\\n        while(digit != 0){\\n            tmp.Append(digit % 16);\\n            digit /= 16;\\n        }\\n        var str = tmp.ToString();\\n        // var str = digit.ToString(\"X\");\\n        Array.Reverse(str.ToCharArray());\\n\\nI would appreciate if someone find the root cause. Required to use digit.ToString(\"X\") or C#.",
+      "voteCount": 0
+    },
+    {
+      "name": "otenim",
+      "year": 2023,
+      "content": "Caution for C++ users: the range of `num` is [1, 10^12] which is out of 32-bit integer. Use `std::stoll` (string to long long) instead of `std::stoi` if you try to convert `num` to decimal.",
+      "voteCount": 0
+    },
+    {
+      "name": "physicsgtx",
+      "year": 2022,
+      "content": "I can see it",
+      "voteCount": 0
+    }
+  ]
 }

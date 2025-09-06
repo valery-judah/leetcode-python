@@ -1,131 +1,131 @@
 {
-    "category": "",
-    "id": "1894",
-    "name": "Find the Student that Will Replace the Chalk",
-    "difficulty": "Medium",
-    "leetcode_url": "https://leetcode.com/problems/find-the-student-that-will-replace-the-chalk/",
-    "slug": "find-the-student-that-will-replace-the-chalk",
-    "isPaidOnly": false,
-    "tags": [
-        "Array",
-        "Binary Search",
-        "Simulation",
-        "Prefix Sum"
-    ],
-    "similar_questions": [
-        {
-            "title": "Pass the Pillow",
-            "difficulty": "Easy",
-            "slug": "pass-the-pillow"
-        }
-    ],
-    "questionId": "2006",
-    "questionFrontendId": "1894",
-    "title": "Find the Student that Will Replace the Chalk",
-    "titleSlug": "find-the-student-that-will-replace-the-chalk",
-    "likes": 1203,
-    "dislikes": 134,
-    "stats": {
-        "totalAccepted": "200.1K",
-        "totalSubmission": "376.3K",
-        "totalAcceptedRaw": 200062,
-        "totalSubmissionRaw": 376322,
-        "acRate": "53.2%"
+  "category": "",
+  "id": "1894",
+  "name": "Find the Student that Will Replace the Chalk",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-the-student-that-will-replace-the-chalk/",
+  "slug": "find-the-student-that-will-replace-the-chalk",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Simulation",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Pass the Pillow",
+      "difficulty": "Easy",
+      "slug": "pass-the-pillow"
+    }
+  ],
+  "questionId": "2006",
+  "questionFrontendId": "1894",
+  "title": "Find the Student that Will Replace the Chalk",
+  "titleSlug": "find-the-student-that-will-replace-the-chalk",
+  "likes": 1203,
+  "dislikes": 134,
+  "stats": {
+    "totalAccepted": "200.1K",
+    "totalSubmission": "376.3K",
+    "totalAcceptedRaw": 200062,
+    "totalSubmissionRaw": 376322,
+    "acRate": "53.2%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
     },
-    "topicTags": [
-        {
-            "name": "Array",
-            "slug": "array"
-        },
-        {
-            "name": "Binary Search",
-            "slug": "binary-search"
-        },
-        {
-            "name": "Simulation",
-            "slug": "simulation"
-        },
-        {
-            "name": "Prefix Sum",
-            "slug": "prefix-sum"
-        }
-    ],
-    "metaData": {
-        "name": "chalkReplacer",
-        "params": [
-            {
-                "name": "chalk",
-                "type": "integer[]"
-            },
-            {
-                "type": "integer",
-                "name": "k"
-            }
-        ],
-        "return": {
-            "type": "integer"
-        }
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
     },
-    "discussion_posts": [
-        {
-            "name": "rnyati2000",
-            "year": 2022,
-            "content": "Why was this Medium???",
-            "voteCount": 203
-        },
-        {
-            "name": "Conway4",
-            "year": 2024,
-            "content": "I\\'m gonna comment how easy this question is to boost my ego. I\\'m so cool",
-            "voteCount": 168
-        },
-        {
-            "name": "user4856Vv",
-            "year": 2024,
-            "content": "Imagine there are 10^9 pieces of chalk and you\u2019re the only student...",
-            "voteCount": 98
-        },
-        {
-            "name": "code__HARD",
-            "year": 2024,
-            "content": "Successfully solved 1000 problems after this.\\uD83D\\uDE0D\\u270C\\uFE0F\\nHappy Leetcoding! Keep Grinding!!!",
-            "voteCount": 93
-        },
-        {
-            "name": "fahad_Mubeen",
-            "year": 2024,
-            "content": "Use \\'long long\\' for calculating the sum; otherwise, it will result in a runtime error due to integer overflow.",
-            "voteCount": 64
-        },
-        {
-            "name": "adityakumar8068",
-            "year": 2024,
-            "content": "TESTCASES--------------->\\n```\\n[5,1,5]\\n22\\n[3,4,1,2]\\n25\\n[100000, 1, 100000, 1, 100000, 1, 100000, 1, 100000, 1]\\n500000\\n[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\\n1000000000\\n[7, 7, 3, 9, 2]\\n14\\n[1]\\n1000000000\\n[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\\n10\\n[1,2,3,4,5,6,7,8,9]\\n45",
-            "voteCount": 57
-        },
-        {
-            "name": "tin_le",
-            "year": 2024,
-            "content": "Binary search is unnecessary, O(n) is enough",
-            "voteCount": 27
-        },
-        {
-            "name": "leetcancode",
-            "year": 2023,
-            "content": "I think it should be EASY, but don\\'t understand the low acceptance rate.",
-            "voteCount": 26
-        },
-        {
-            "name": "Antinotmanist",
-            "year": 2024,
-            "content": "I always feel dumb when a question is difficult for me but then I see solution. So sad",
-            "voteCount": 24
-        },
-        {
-            "name": "Satansoft",
-            "year": 2024,
-            "content": "For maximum efficiency calculate **useful k** as `k = k % sum of chalk` for cases when `k >= sum of chalk`.",
-            "voteCount": 12
-        }
-    ]
+    {
+      "name": "Simulation",
+      "slug": "simulation"
+    },
+    {
+      "name": "Prefix Sum",
+      "slug": "prefix-sum"
+    }
+  ],
+  "metaData": {
+    "name": "chalkReplacer",
+    "params": [
+      {
+        "name": "chalk",
+        "type": "integer[]"
+      },
+      {
+        "type": "integer",
+        "name": "k"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "rnyati2000",
+      "year": 2022,
+      "content": "Why was this Medium???",
+      "voteCount": 203
+    },
+    {
+      "name": "Conway4",
+      "year": 2024,
+      "content": "I\\'m gonna comment how easy this question is to boost my ego. I\\'m so cool",
+      "voteCount": 168
+    },
+    {
+      "name": "user4856Vv",
+      "year": 2024,
+      "content": "Imagine there are 10^9 pieces of chalk and you\u2019re the only student...",
+      "voteCount": 98
+    },
+    {
+      "name": "code__HARD",
+      "year": 2024,
+      "content": "Successfully solved 1000 problems after this.\\uD83D\\uDE0D\\u270C\\uFE0F\\nHappy Leetcoding! Keep Grinding!!!",
+      "voteCount": 93
+    },
+    {
+      "name": "fahad_Mubeen",
+      "year": 2024,
+      "content": "Use \\'long long\\' for calculating the sum; otherwise, it will result in a runtime error due to integer overflow.",
+      "voteCount": 64
+    },
+    {
+      "name": "adityakumar8068",
+      "year": 2024,
+      "content": "TESTCASES--------------->\\n```\\n[5,1,5]\\n22\\n[3,4,1,2]\\n25\\n[100000, 1, 100000, 1, 100000, 1, 100000, 1, 100000, 1]\\n500000\\n[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\\n1000000000\\n[7, 7, 3, 9, 2]\\n14\\n[1]\\n1000000000\\n[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\\n10\\n[1,2,3,4,5,6,7,8,9]\\n45",
+      "voteCount": 57
+    },
+    {
+      "name": "tin_le",
+      "year": 2024,
+      "content": "Binary search is unnecessary, O(n) is enough",
+      "voteCount": 27
+    },
+    {
+      "name": "leetcancode",
+      "year": 2023,
+      "content": "I think it should be EASY, but don\\'t understand the low acceptance rate.",
+      "voteCount": 26
+    },
+    {
+      "name": "Antinotmanist",
+      "year": 2024,
+      "content": "I always feel dumb when a question is difficult for me but then I see solution. So sad",
+      "voteCount": 24
+    },
+    {
+      "name": "Satansoft",
+      "year": 2024,
+      "content": "For maximum efficiency calculate **useful k** as `k = k % sum of chalk` for cases when `k >= sum of chalk`.",
+      "voteCount": 12
+    }
+  ]
 }

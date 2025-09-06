@@ -1,66 +1,66 @@
 {
-    "category": "",
-    "id": "2755",
-    "name": "Deep Merge of Two Objects",
-    "difficulty": "Medium",
-    "leetcode_url": "https://leetcode.com/problems/deep-merge-of-two-objects/",
-    "slug": "deep-merge-of-two-objects",
-    "isPaidOnly": true,
-    "tags": [],
-    "similar_questions": [],
-    "questionId": "2795",
-    "questionFrontendId": "2755",
-    "title": "Deep Merge of Two Objects",
-    "titleSlug": "deep-merge-of-two-objects",
-    "likes": 15,
-    "dislikes": 4,
-    "stats": {
-        "totalAccepted": "805",
-        "totalSubmission": "1.2K",
-        "totalAcceptedRaw": 805,
-        "totalSubmissionRaw": 1242,
-        "acRate": "64.8%"
+  "category": "",
+  "id": "2755",
+  "name": "Deep Merge of Two Objects",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/deep-merge-of-two-objects/",
+  "slug": "deep-merge-of-two-objects",
+  "isPaidOnly": true,
+  "tags": [],
+  "similar_questions": [],
+  "questionId": "2795",
+  "questionFrontendId": "2755",
+  "title": "Deep Merge of Two Objects",
+  "titleSlug": "deep-merge-of-two-objects",
+  "likes": 15,
+  "dislikes": 4,
+  "stats": {
+    "totalAccepted": "805",
+    "totalSubmission": "1.2K",
+    "totalAcceptedRaw": 805,
+    "totalSubmissionRaw": 1242,
+    "acRate": "64.8%"
+  },
+  "topicTags": [],
+  "metaData": {
+    "name": "deepMerge",
+    "params": [
+      {
+        "name": "obj1",
+        "type": "string"
+      },
+      {
+        "type": "string",
+        "name": "obj2"
+      }
+    ],
+    "return": {
+      "type": "string"
     },
-    "topicTags": [],
-    "metaData": {
-        "name": "deepMerge",
-        "params": [
-            {
-                "name": "obj1",
-                "type": "string"
-            },
-            {
-                "type": "string",
-                "name": "obj2"
-            }
-        ],
-        "return": {
-            "type": "string"
-        },
-        "languages": [
-            "javascript",
-            "typescript"
-        ],
-        "manual": true
+    "languages": [
+      "javascript",
+      "typescript"
+    ],
+    "manual": true
+  },
+  "discussion_posts": [
+    {
+      "name": "jz516",
+      "year": 2023,
+      "content": "I almost bang my head into the wall while dealing with type checking in this question",
+      "voteCount": 0
     },
-    "discussion_posts": [
-        {
-            "name": "jz516",
-            "year": 2023,
-            "content": "I almost bang my head into the wall while dealing with type checking in this question",
-            "voteCount": 0
-        },
-        {
-            "name": "nika-skybytska",
-            "year": 2023,
-            "content": "Please specify the expected order of keys in the resulting object.",
-            "voteCount": 0
-        },
-        {
-            "name": "calvinchankf",
-            "year": 2023,
-            "content": "As a dev for years, tbh dealing with null and undefined is always the pain in the ass",
-            "voteCount": 0
-        }
-    ]
+    {
+      "name": "nika-skybytska",
+      "year": 2023,
+      "content": "Please specify the expected order of keys in the resulting object.",
+      "voteCount": 0
+    },
+    {
+      "name": "calvinchankf",
+      "year": 2023,
+      "content": "As a dev for years, tbh dealing with null and undefined is always the pain in the ass",
+      "voteCount": 0
+    }
+  ]
 }

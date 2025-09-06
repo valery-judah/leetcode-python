@@ -1,149 +1,149 @@
 {
-    "category": "",
-    "id": "305",
-    "name": "Number of Islands II",
-    "difficulty": "Hard",
-    "leetcode_url": "https://leetcode.com/problems/number-of-islands-ii/",
-    "slug": "number-of-islands-ii",
-    "isPaidOnly": true,
-    "tags": [
-        "Array",
-        "Hash Table",
-        "Union Find"
-    ],
-    "similar_questions": [
-        {
-            "title": "Number of Islands",
-            "difficulty": "Medium",
-            "slug": "number-of-islands"
-        },
-        {
-            "title": "Process Restricted Friend Requests",
-            "difficulty": "Hard",
-            "slug": "process-restricted-friend-requests"
-        }
-    ],
-    "questionId": "305",
-    "questionFrontendId": "305",
-    "title": "Number of Islands II",
-    "titleSlug": "number-of-islands-ii",
-    "likes": 1952,
-    "dislikes": 76,
-    "stats": {
-        "totalAccepted": "168.3K",
-        "totalSubmission": "418.6K",
-        "totalAcceptedRaw": 168301,
-        "totalSubmissionRaw": 418599,
-        "acRate": "40.2%"
+  "category": "",
+  "id": "305",
+  "name": "Number of Islands II",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/number-of-islands-ii/",
+  "slug": "number-of-islands-ii",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Union Find"
+  ],
+  "similar_questions": [
+    {
+      "title": "Number of Islands",
+      "difficulty": "Medium",
+      "slug": "number-of-islands"
     },
-    "topicTags": [
-        {
-            "name": "Array",
-            "slug": "array"
-        },
-        {
-            "name": "Hash Table",
-            "slug": "hash-table"
-        },
-        {
-            "name": "Union Find",
-            "slug": "union-find"
-        }
+    {
+      "title": "Process Restricted Friend Requests",
+      "difficulty": "Hard",
+      "slug": "process-restricted-friend-requests"
+    }
+  ],
+  "questionId": "305",
+  "questionFrontendId": "305",
+  "title": "Number of Islands II",
+  "titleSlug": "number-of-islands-ii",
+  "likes": 1952,
+  "dislikes": 76,
+  "stats": {
+    "totalAccepted": "168.3K",
+    "totalSubmission": "418.6K",
+    "totalAcceptedRaw": 168301,
+    "totalSubmissionRaw": 418599,
+    "acRate": "40.2%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Union Find",
+      "slug": "union-find"
+    }
+  ],
+  "metaData": {
+    "name": "numIslands2",
+    "params": [
+      {
+        "name": "m",
+        "type": "integer",
+        "dealloc": false
+      },
+      {
+        "name": "n",
+        "type": "integer",
+        "dealloc": false
+      },
+      {
+        "name": "positions",
+        "type": "integer[][]",
+        "dealloc": false
+      }
     ],
-    "metaData": {
-        "name": "numIslands2",
-        "params": [
-            {
-                "name": "m",
-                "type": "integer",
-                "dealloc": false
-            },
-            {
-                "name": "n",
-                "type": "integer",
-                "dealloc": false
-            },
-            {
-                "name": "positions",
-                "type": "integer[][]",
-                "dealloc": false
-            }
-        ],
-        "return": {
-            "type": "list<integer>",
-            "dealloc": true
-        }
-    },
-    "company_tag_stats": {
-        "1": [
-            {
-                "taggedByAdmin": false,
-                "name": "Uber",
-                "slug": "uber",
-                "timesEncountered": 13
-            }
-        ]
-    },
-    "discussion_posts": [
-        {
-            "name": "panekk",
-            "year": 2024,
-            "content": "I believe the test case with positions `[[0,0],[0,1],[1,2],[1,2]]` is invalid. The problem description states \"We may perform an add land operation which **turns the water** at position **into a land**\", it says nothing about adding the land twice. Either this testcase (and similar, if any) should be removed, or the description should not mention turning water into a land.",
-            "voteCount": 33
-        },
-        {
-            "name": "jumppo90",
-            "year": 2023,
-            "content": "Anybody without a union find solution, raise your hands!",
-            "voteCount": 18
-        },
-        {
-            "name": "deleted_user",
-            "year": 2023,
-            "content": "The last testcase is evil",
-            "voteCount": 10
-        },
-        {
-            "name": "silverarc",
-            "year": 2018,
-            "content": "Union find by rank with path compression should be O(1) (technically alpha v, v being numbers of union find objects) operation for find and union, so should it technically be O(4 * len(positions) ) as you at most have 4 neighbors?",
-            "voteCount": 10
-        },
-        {
-            "name": "ZQGao",
-            "year": 2024,
-            "content": "One little hint: The elements in `positions` are not unique...",
-            "voteCount": 9
-        },
-        {
-            "name": "Msey",
-            "year": 2023,
-            "content": "Union find is the key to success :)",
-            "voteCount": 7
-        },
-        {
-            "name": "djslim",
-            "year": 2023,
-            "content": "Initialize parent nodes as pointing to nothing rather than pointing to itself like in classic union find",
-            "voteCount": 4
-        },
-        {
-            "name": "apolloydy",
-            "year": 2015,
-            "content": "I write me c++ solution using stranded union-find with \"balance\" feature (with a rank). It passed first time. However, after few days when I trying to solve this problem again. I got a TLE at the 1, 10000 test case. I have cope paste some of the top rank post int c++ language. they actually slow than mine. (and also got a TLE). I do not know why? I saw the Java solution with the same idea only takes 15ms.",
-            "voteCount": 3
-        },
-        {
-            "name": "SR_94",
-            "year": 2024,
-            "content": "Could you give some pointers to the follow up question in the description?\\n`Follow up: Could you solve it in time complexity O(k log(mn)), where k == positions.length?` ?",
-            "voteCount": 1
-        },
-        {
-            "name": "dirlik",
-            "year": 2024,
-            "content": "Anyone with an O(k log(mn)) solution? ",
-            "voteCount": 1
-        }
+    "return": {
+      "type": "list<integer>",
+      "dealloc": true
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Uber",
+        "slug": "uber",
+        "timesEncountered": 13
+      }
     ]
+  },
+  "discussion_posts": [
+    {
+      "name": "panekk",
+      "year": 2024,
+      "content": "I believe the test case with positions `[[0,0],[0,1],[1,2],[1,2]]` is invalid. The problem description states \"We may perform an add land operation which **turns the water** at position **into a land**\", it says nothing about adding the land twice. Either this testcase (and similar, if any) should be removed, or the description should not mention turning water into a land.",
+      "voteCount": 33
+    },
+    {
+      "name": "jumppo90",
+      "year": 2023,
+      "content": "Anybody without a union find solution, raise your hands!",
+      "voteCount": 18
+    },
+    {
+      "name": "deleted_user",
+      "year": 2023,
+      "content": "The last testcase is evil",
+      "voteCount": 10
+    },
+    {
+      "name": "silverarc",
+      "year": 2018,
+      "content": "Union find by rank with path compression should be O(1) (technically alpha v, v being numbers of union find objects) operation for find and union, so should it technically be O(4 * len(positions) ) as you at most have 4 neighbors?",
+      "voteCount": 10
+    },
+    {
+      "name": "ZQGao",
+      "year": 2024,
+      "content": "One little hint: The elements in `positions` are not unique...",
+      "voteCount": 9
+    },
+    {
+      "name": "Msey",
+      "year": 2023,
+      "content": "Union find is the key to success :)",
+      "voteCount": 7
+    },
+    {
+      "name": "djslim",
+      "year": 2023,
+      "content": "Initialize parent nodes as pointing to nothing rather than pointing to itself like in classic union find",
+      "voteCount": 4
+    },
+    {
+      "name": "apolloydy",
+      "year": 2015,
+      "content": "I write me c++ solution using stranded union-find with \"balance\" feature (with a rank). It passed first time. However, after few days when I trying to solve this problem again. I got a TLE at the 1, 10000 test case. I have cope paste some of the top rank post int c++ language. they actually slow than mine. (and also got a TLE). I do not know why? I saw the Java solution with the same idea only takes 15ms.",
+      "voteCount": 3
+    },
+    {
+      "name": "SR_94",
+      "year": 2024,
+      "content": "Could you give some pointers to the follow up question in the description?\\n`Follow up: Could you solve it in time complexity O(k log(mn)), where k == positions.length?` ?",
+      "voteCount": 1
+    },
+    {
+      "name": "dirlik",
+      "year": 2024,
+      "content": "Anyone with an O(k log(mn)) solution? ",
+      "voteCount": 1
+    }
+  ]
 }

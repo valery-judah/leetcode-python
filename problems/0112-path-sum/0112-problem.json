@@ -1,151 +1,151 @@
 {
-    "category": "",
-    "id": "112",
-    "name": "Path Sum",
-    "difficulty": "Easy",
-    "leetcode_url": "https://leetcode.com/problems/path-sum/",
-    "slug": "path-sum",
-    "isPaidOnly": false,
-    "tags": [
-        "Tree",
-        "Depth-First Search",
-        "Breadth-First Search",
-        "Binary Tree"
-    ],
-    "similar_questions": [
-        {
-            "title": "Path Sum II",
-            "difficulty": "Medium",
-            "slug": "path-sum-ii"
-        },
-        {
-            "title": "Binary Tree Maximum Path Sum",
-            "difficulty": "Hard",
-            "slug": "binary-tree-maximum-path-sum"
-        },
-        {
-            "title": "Sum Root to Leaf Numbers",
-            "difficulty": "Medium",
-            "slug": "sum-root-to-leaf-numbers"
-        },
-        {
-            "title": "Path Sum III",
-            "difficulty": "Medium",
-            "slug": "path-sum-iii"
-        },
-        {
-            "title": "Path Sum IV",
-            "difficulty": "Medium",
-            "slug": "path-sum-iv"
-        }
-    ],
-    "questionId": "112",
-    "questionFrontendId": "112",
-    "title": "Path Sum",
-    "titleSlug": "path-sum",
-    "likes": 10379,
-    "dislikes": 1191,
-    "stats": {
-        "totalAccepted": "1.9M",
-        "totalSubmission": "3.6M",
-        "totalAcceptedRaw": 1917491,
-        "totalSubmissionRaw": 3582074,
-        "acRate": "53.5%"
+  "category": "",
+  "id": "112",
+  "name": "Path Sum",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/path-sum/",
+  "slug": "path-sum",
+  "isPaidOnly": false,
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Path Sum II",
+      "difficulty": "Medium",
+      "slug": "path-sum-ii"
     },
-    "topicTags": [
-        {
-            "name": "Tree",
-            "slug": "tree"
-        },
-        {
-            "name": "Depth-First Search",
-            "slug": "depth-first-search"
-        },
-        {
-            "name": "Breadth-First Search",
-            "slug": "breadth-first-search"
-        },
-        {
-            "name": "Binary Tree",
-            "slug": "binary-tree"
-        }
-    ],
-    "metaData": {
-        "name": "hasPathSum",
-        "params": [
-            {
-                "name": "root",
-                "type": "TreeNode"
-            },
-            {
-                "name": "targetSum",
-                "type": "integer"
-            }
-        ],
-        "return": {
-            "type": "boolean"
-        }
+    {
+      "title": "Binary Tree Maximum Path Sum",
+      "difficulty": "Hard",
+      "slug": "binary-tree-maximum-path-sum"
     },
-    "discussion_posts": [
-        {
-            "name": "wjeevika",
-            "year": 2022,
-            "content": "Idk why but I like this question. It\\'s so cute. ",
-            "voteCount": 156
-        },
-        {
-            "name": "dong12",
-            "year": 2015,
-            "content": "why should 'input [],0'   return false?  Isn't it true?",
-            "voteCount": 150
-        },
-        {
-            "name": "hopeNoPip",
-            "year": 2019,
-            "content": "If a root has a value of [1] with a target value 1, the expected answer is True for this problem.\\nHowever, this root has no leaf which means it does not satisfy what the question is asking for....\\n\\n[1,2] 1 will result a false case... how is [1] 1 a true case?\\nPlease explain.",
-            "voteCount": 93
-        },
-        {
-            "name": "obiwon84",
-            "year": 2019,
-            "content": "Just a suggestion but the [] 0 test case makes you create a helper method or add additional complexity for no real gain. Could we perhaps delete that test case?\\n\\nIn all honesty it is rather ambigious if [] 0 should return false or true as there is a path that sums to nothing, the null path. Removing this test case would also remove that ambiguity.",
-            "voteCount": 70
-        },
-        {
-            "name": "Jinlong",
-            "year": 2014,
-            "content": "       1\\n2            *\\n\\nThe struct is like above, and the sum of  right path is 1. Why the output is false?\\n\\nAdditional:\\n\\nFind another problem: the output of \"{1}, 1\" is true......\\n\\nwhy.....",
-            "voteCount": 50
-        },
-        {
-            "name": "ashwani5",
-            "year": 2023,
-            "content": "This question has a lot of inconsistent test cases.\\n\\nroot=[1,2], targetSum=1 is false\\nroot=[1], targetSum=1 is true",
-            "voteCount": 47
-        },
-        {
-            "name": "ravichandrae",
-            "year": 2014,
-            "content": "This problem has a test case for testing whether there is any path sum 0 for an empty binary tree.\\n{},0\\n\\nIt expects the result as false. But I think it's more intuitive to state the result as true.",
-            "voteCount": 45
-        },
-        {
-            "name": "suraj813",
-            "year": 2018,
-            "content": "Root node 1 has 2 children - 2 & None\\nPathSum_1 = 1+2 = 3\\nPathSum_2 = 1+None = 1\\n\\nThe expected answer is false. Is PathSum_2 not valid?",
-            "voteCount": 27
-        },
-        {
-            "name": "kylehue",
-            "year": 2024,
-            "content": "test cases:\\n```\\n[5,4,8,11,null,13,4,7,2,null,null,null,1]\\n22\\n[1,2,3]\\n5\\n[0]\\n0\\n[1,2]\\n1\\n[1,2]\\n2\\n[-2,null,-3]\\n-5\\n[-2,null,-3]\\n0\\n[8,9,-6,null,null,5,9]\\n7\\n```",
-            "voteCount": 14
-        },
-        {
-            "name": "siddh",
-            "year": 2020,
-            "content": "Is this case valid tree= [] , sum=0, expected=false, shouldn\\'t this be true",
-            "voteCount": 10
-        }
-    ]
+    {
+      "title": "Sum Root to Leaf Numbers",
+      "difficulty": "Medium",
+      "slug": "sum-root-to-leaf-numbers"
+    },
+    {
+      "title": "Path Sum III",
+      "difficulty": "Medium",
+      "slug": "path-sum-iii"
+    },
+    {
+      "title": "Path Sum IV",
+      "difficulty": "Medium",
+      "slug": "path-sum-iv"
+    }
+  ],
+  "questionId": "112",
+  "questionFrontendId": "112",
+  "title": "Path Sum",
+  "titleSlug": "path-sum",
+  "likes": 10379,
+  "dislikes": 1191,
+  "stats": {
+    "totalAccepted": "1.9M",
+    "totalSubmission": "3.6M",
+    "totalAcceptedRaw": 1917491,
+    "totalSubmissionRaw": 3582074,
+    "acRate": "53.5%"
+  },
+  "topicTags": [
+    {
+      "name": "Tree",
+      "slug": "tree"
+    },
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Breadth-First Search",
+      "slug": "breadth-first-search"
+    },
+    {
+      "name": "Binary Tree",
+      "slug": "binary-tree"
+    }
+  ],
+  "metaData": {
+    "name": "hasPathSum",
+    "params": [
+      {
+        "name": "root",
+        "type": "TreeNode"
+      },
+      {
+        "name": "targetSum",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "wjeevika",
+      "year": 2022,
+      "content": "Idk why but I like this question. It\\'s so cute. ",
+      "voteCount": 156
+    },
+    {
+      "name": "dong12",
+      "year": 2015,
+      "content": "why should 'input [],0'   return false?  Isn't it true?",
+      "voteCount": 150
+    },
+    {
+      "name": "hopeNoPip",
+      "year": 2019,
+      "content": "If a root has a value of [1] with a target value 1, the expected answer is True for this problem.\\nHowever, this root has no leaf which means it does not satisfy what the question is asking for....\\n\\n[1,2] 1 will result a false case... how is [1] 1 a true case?\\nPlease explain.",
+      "voteCount": 93
+    },
+    {
+      "name": "obiwon84",
+      "year": 2019,
+      "content": "Just a suggestion but the [] 0 test case makes you create a helper method or add additional complexity for no real gain. Could we perhaps delete that test case?\\n\\nIn all honesty it is rather ambigious if [] 0 should return false or true as there is a path that sums to nothing, the null path. Removing this test case would also remove that ambiguity.",
+      "voteCount": 70
+    },
+    {
+      "name": "Jinlong",
+      "year": 2014,
+      "content": "       1\\n2            *\\n\\nThe struct is like above, and the sum of  right path is 1. Why the output is false?\\n\\nAdditional:\\n\\nFind another problem: the output of \"{1}, 1\" is true......\\n\\nwhy.....",
+      "voteCount": 50
+    },
+    {
+      "name": "ashwani5",
+      "year": 2023,
+      "content": "This question has a lot of inconsistent test cases.\\n\\nroot=[1,2], targetSum=1 is false\\nroot=[1], targetSum=1 is true",
+      "voteCount": 47
+    },
+    {
+      "name": "ravichandrae",
+      "year": 2014,
+      "content": "This problem has a test case for testing whether there is any path sum 0 for an empty binary tree.\\n{},0\\n\\nIt expects the result as false. But I think it's more intuitive to state the result as true.",
+      "voteCount": 45
+    },
+    {
+      "name": "suraj813",
+      "year": 2018,
+      "content": "Root node 1 has 2 children - 2 & None\\nPathSum_1 = 1+2 = 3\\nPathSum_2 = 1+None = 1\\n\\nThe expected answer is false. Is PathSum_2 not valid?",
+      "voteCount": 27
+    },
+    {
+      "name": "kylehue",
+      "year": 2024,
+      "content": "test cases:\\n```\\n[5,4,8,11,null,13,4,7,2,null,null,null,1]\\n22\\n[1,2,3]\\n5\\n[0]\\n0\\n[1,2]\\n1\\n[1,2]\\n2\\n[-2,null,-3]\\n-5\\n[-2,null,-3]\\n0\\n[8,9,-6,null,null,5,9]\\n7\\n```",
+      "voteCount": 14
+    },
+    {
+      "name": "siddh",
+      "year": 2020,
+      "content": "Is this case valid tree= [] , sum=0, expected=false, shouldn\\'t this be true",
+      "voteCount": 10
+    }
+  ]
 }

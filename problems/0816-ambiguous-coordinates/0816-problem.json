@@ -1,116 +1,116 @@
 {
-    "category": "",
-    "id": "816",
-    "name": "Ambiguous Coordinates",
-    "difficulty": "Medium",
-    "leetcode_url": "https://leetcode.com/problems/ambiguous-coordinates/",
-    "slug": "ambiguous-coordinates",
-    "isPaidOnly": false,
-    "tags": [
-        "String",
-        "Backtracking",
-        "Enumeration"
-    ],
-    "similar_questions": [],
-    "questionId": "834",
-    "questionFrontendId": "816",
-    "title": "Ambiguous Coordinates",
-    "titleSlug": "ambiguous-coordinates",
-    "likes": 335,
-    "dislikes": 667,
-    "stats": {
-        "totalAccepted": "33.2K",
-        "totalSubmission": "59.2K",
-        "totalAcceptedRaw": 33187,
-        "totalSubmissionRaw": 59156,
-        "acRate": "56.1%"
+  "category": "",
+  "id": "816",
+  "name": "Ambiguous Coordinates",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/ambiguous-coordinates/",
+  "slug": "ambiguous-coordinates",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Backtracking",
+    "Enumeration"
+  ],
+  "similar_questions": [],
+  "questionId": "834",
+  "questionFrontendId": "816",
+  "title": "Ambiguous Coordinates",
+  "titleSlug": "ambiguous-coordinates",
+  "likes": 335,
+  "dislikes": 667,
+  "stats": {
+    "totalAccepted": "33.2K",
+    "totalSubmission": "59.2K",
+    "totalAcceptedRaw": 33187,
+    "totalSubmissionRaw": 59156,
+    "acRate": "56.1%"
+  },
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
     },
-    "topicTags": [
-        {
-            "name": "String",
-            "slug": "string"
-        },
-        {
-            "name": "Backtracking",
-            "slug": "backtracking"
-        },
-        {
-            "name": "Enumeration",
-            "slug": "enumeration"
-        }
-    ],
-    "metaData": {
-        "name": "ambiguousCoordinates",
-        "params": [
-            {
-                "name": "s",
-                "type": "string"
-            }
-        ],
-        "return": {
-            "type": "list<string>"
-        }
+    {
+      "name": "Backtracking",
+      "slug": "backtracking"
     },
-    "discussion_posts": [
-        {
-            "name": "khalilhassam3",
-            "year": 2023,
-            "content": "When you are coming up with the solution don\\'t expect it to look pretty.",
-            "voteCount": 14
-        },
-        {
-            "name": "aleardo",
-            "year": 2023,
-            "content": "Funny test case:\\n\"(00011)\"\\n\"(100)\"\\n\"(0010)\"",
-            "voteCount": 3
-        },
-        {
-            "name": "lovesbumblebees",
-            "year": 2024,
-            "content": "HINT:\\n- when looking for comma positions you need both substrings to be valid. Your substring is valid if and only if one of the following holds:\\n   - it does not start with 0\\n   - it starts with 0 and does not end with 0\\n   - it is one digit long\\n- when looking for decimal positions within a substring, you must follow these rules:\\n   - a string of length 1 has no decimal\\n   - if the string starts with 0, then a decimal MUST immediately follow\\n   - if the string ends with 0, then no decimal may appear anywhere\\n   - if none of the above hold, then a decimal can appear between any two digits",
-            "voteCount": 2
-        },
-        {
-            "name": "edwin14k",
-            "year": 2024,
-            "content": "Not hard, but annoying.",
-            "voteCount": 2
-        },
-        {
-            "name": "diptesh308",
-            "year": 2024,
-            "content": "Test cases are not explained properly, what should be acceptable and what not. What a Un-organized code I had to write to solve this,",
-            "voteCount": 2
-        },
-        {
-            "name": "pratyushnamdev",
-            "year": 2025,
-            "content": "This problem requires a lot of thinking but its not that hard, secondly i solved it without using backtracking and just by pure logic!!\\nA man is happy today !!!\\n\\n",
-            "voteCount": 1
-        },
-        {
-            "name": "zhengweix",
-            "year": 2022,
-            "content": "why new look????",
-            "voteCount": 1
-        },
-        {
-            "name": "notneasd",
-            "year": 2025,
-            "content": "I think backtracking makes it unnecessarily complicated here. Instead:\\n\\n- first create all possible splits (i.e. your comma)\\n- then for every pair (x,y) from the splits, get the valid coordinates for x and for y respectively. (your chance to put optional dots)\\n- use O(n^2) loop to concatenate all valid coordiantes pair together.",
-            "voteCount": 0
-        },
-        {
-            "name": "leetcode_2003",
-            "year": 2025,
-            "content": "how to validate:\\n1.if no decimal then if the number is either 0 or doeesnt starts with 0 gives true,\\n2.if decimal: part1: if not zero and starts with 0 gives false\\n                    part2: must not end with 0.\\n",
-            "voteCount": 0
-        },
-        {
-            "name": "tigerpy",
-            "year": 2025,
-            "content": "Test case: \"(1010)\".\\nMy output: [\"(1, 0.10)\",\"(10, 10)\",\"(10, 1.0)\",\"(1.0, 10)\",\"(1.0, 1.0)\",\"(101, 0)\",\"(1.01, 0)\",\"(10.1, 0)\"]\\nExpected: [\"(10, 10)\",\"(1.01, 0)\",\"(10.1, 0)\",\"(101, 0)\"]\\n\\nCan someone please explain how my output is incorrect?",
-            "voteCount": 0
-        }
-    ]
+    {
+      "name": "Enumeration",
+      "slug": "enumeration"
+    }
+  ],
+  "metaData": {
+    "name": "ambiguousCoordinates",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "list<string>"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "khalilhassam3",
+      "year": 2023,
+      "content": "When you are coming up with the solution don\\'t expect it to look pretty.",
+      "voteCount": 14
+    },
+    {
+      "name": "aleardo",
+      "year": 2023,
+      "content": "Funny test case:\\n\"(00011)\"\\n\"(100)\"\\n\"(0010)\"",
+      "voteCount": 3
+    },
+    {
+      "name": "lovesbumblebees",
+      "year": 2024,
+      "content": "HINT:\\n- when looking for comma positions you need both substrings to be valid. Your substring is valid if and only if one of the following holds:\\n   - it does not start with 0\\n   - it starts with 0 and does not end with 0\\n   - it is one digit long\\n- when looking for decimal positions within a substring, you must follow these rules:\\n   - a string of length 1 has no decimal\\n   - if the string starts with 0, then a decimal MUST immediately follow\\n   - if the string ends with 0, then no decimal may appear anywhere\\n   - if none of the above hold, then a decimal can appear between any two digits",
+      "voteCount": 2
+    },
+    {
+      "name": "edwin14k",
+      "year": 2024,
+      "content": "Not hard, but annoying.",
+      "voteCount": 2
+    },
+    {
+      "name": "diptesh308",
+      "year": 2024,
+      "content": "Test cases are not explained properly, what should be acceptable and what not. What a Un-organized code I had to write to solve this,",
+      "voteCount": 2
+    },
+    {
+      "name": "pratyushnamdev",
+      "year": 2025,
+      "content": "This problem requires a lot of thinking but its not that hard, secondly i solved it without using backtracking and just by pure logic!!\\nA man is happy today !!!\\n\\n",
+      "voteCount": 1
+    },
+    {
+      "name": "zhengweix",
+      "year": 2022,
+      "content": "why new look????",
+      "voteCount": 1
+    },
+    {
+      "name": "notneasd",
+      "year": 2025,
+      "content": "I think backtracking makes it unnecessarily complicated here. Instead:\\n\\n- first create all possible splits (i.e. your comma)\\n- then for every pair (x,y) from the splits, get the valid coordinates for x and for y respectively. (your chance to put optional dots)\\n- use O(n^2) loop to concatenate all valid coordiantes pair together.",
+      "voteCount": 0
+    },
+    {
+      "name": "leetcode_2003",
+      "year": 2025,
+      "content": "how to validate:\\n1.if no decimal then if the number is either 0 or doeesnt starts with 0 gives true,\\n2.if decimal: part1: if not zero and starts with 0 gives false\\n                    part2: must not end with 0.\\n",
+      "voteCount": 0
+    },
+    {
+      "name": "tigerpy",
+      "year": 2025,
+      "content": "Test case: \"(1010)\".\\nMy output: [\"(1, 0.10)\",\"(10, 10)\",\"(10, 1.0)\",\"(1.0, 10)\",\"(1.0, 1.0)\",\"(101, 0)\",\"(1.01, 0)\",\"(10.1, 0)\"]\\nExpected: [\"(10, 10)\",\"(1.01, 0)\",\"(10.1, 0)\",\"(101, 0)\"]\\n\\nCan someone please explain how my output is incorrect?",
+      "voteCount": 0
+    }
+  ]
 }

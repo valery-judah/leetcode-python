@@ -1,79 +1,79 @@
 {
-    "category": "",
-    "id": "549",
-    "name": "Binary Tree Longest Consecutive Sequence II",
-    "difficulty": "Medium",
-    "leetcode_url": "https://leetcode.com/problems/binary-tree-longest-consecutive-sequence-ii/",
-    "slug": "binary-tree-longest-consecutive-sequence-ii",
-    "isPaidOnly": true,
-    "tags": [
-        "Tree",
-        "Depth-First Search",
-        "Binary Tree"
-    ],
-    "similar_questions": [
-        {
-            "title": "Binary Tree Longest Consecutive Sequence",
-            "difficulty": "Medium",
-            "slug": "binary-tree-longest-consecutive-sequence"
-        },
-        {
-            "title": "Check if an Array Is Consecutive",
-            "difficulty": "Easy",
-            "slug": "check-if-an-array-is-consecutive"
-        }
-    ],
-    "questionId": "549",
-    "questionFrontendId": "549",
-    "title": "Binary Tree Longest Consecutive Sequence II",
-    "titleSlug": "binary-tree-longest-consecutive-sequence-ii",
-    "likes": 1178,
-    "dislikes": 98,
-    "stats": {
-        "totalAccepted": "57.6K",
-        "totalSubmission": "116.2K",
-        "totalAcceptedRaw": 57597,
-        "totalSubmissionRaw": 116226,
-        "acRate": "49.6%"
+  "category": "",
+  "id": "549",
+  "name": "Binary Tree Longest Consecutive Sequence II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/binary-tree-longest-consecutive-sequence-ii/",
+  "slug": "binary-tree-longest-consecutive-sequence-ii",
+  "isPaidOnly": true,
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Binary Tree Longest Consecutive Sequence",
+      "difficulty": "Medium",
+      "slug": "binary-tree-longest-consecutive-sequence"
     },
-    "topicTags": [
-        {
-            "name": "Tree",
-            "slug": "tree"
-        },
-        {
-            "name": "Depth-First Search",
-            "slug": "depth-first-search"
-        },
-        {
-            "name": "Binary Tree",
-            "slug": "binary-tree"
-        }
-    ],
-    "metaData": {
-        "name": "longestConsecutive",
-        "params": [
-            {
-                "name": "root",
-                "type": "TreeNode"
-            }
-        ],
-        "return": {
-            "type": "integer"
-        }
+    {
+      "title": "Check if an Array Is Consecutive",
+      "difficulty": "Easy",
+      "slug": "check-if-an-array-is-consecutive"
+    }
+  ],
+  "questionId": "549",
+  "questionFrontendId": "549",
+  "title": "Binary Tree Longest Consecutive Sequence II",
+  "titleSlug": "binary-tree-longest-consecutive-sequence-ii",
+  "likes": 1178,
+  "dislikes": 98,
+  "stats": {
+    "totalAccepted": "57.6K",
+    "totalSubmission": "116.2K",
+    "totalAcceptedRaw": 57597,
+    "totalSubmissionRaw": 116226,
+    "acRate": "49.6%"
+  },
+  "topicTags": [
+    {
+      "name": "Tree",
+      "slug": "tree"
     },
-    "discussion_posts": [
-        {
-            "name": "WilmerKrisp",
-            "year": 2022,
-            "content": "<--please vote\\n\\n- at each step I have to find out whether the previous left/right branch was increasing/decreasing\\n- in order to continue the path higher, I take the maximum piece lower (whether it was increasing or decreasing, whether it was on the left or on the right)\\n- - if, for example, the branch on the left ceases to increase, then the counter of the left-increment is reset to one\\n, the horizontal path consists of the word of the increasing and decreasing piece on the right, then the sum of the increment and decrement is smaller\\n\\n\\n\\n![image](https://assets.leetcode.com/users/images/8c2e347b-d9d3-48d6-bfcd-41d7dadd5c8c_1641461946.7102733.png)\\n\\n![image](https://assets.leetcode.com/users/images/6d83ff17-8283-4085-8c5d-6ab23cc1be08_1641461951.6068883.png)\\n",
-            "voteCount": 2
-        },
-        {
-            "name": "jmzhang18",
-            "year": 2020,
-            "content": "As the tree visualization, \\n\\n\\t\\t\\t1\\n\\t\\t/        \\\\\\n\\t   2            3\\n\\t /\\n\\t 4\\nIsn\\'t the longest path [1,2,4], the answer should be 3, why the correct answer is 2?",
-            "voteCount": 1
-        }
-    ]
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Binary Tree",
+      "slug": "binary-tree"
+    }
+  ],
+  "metaData": {
+    "name": "longestConsecutive",
+    "params": [
+      {
+        "name": "root",
+        "type": "TreeNode"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "WilmerKrisp",
+      "year": 2022,
+      "content": "<--please vote\\n\\n- at each step I have to find out whether the previous left/right branch was increasing/decreasing\\n- in order to continue the path higher, I take the maximum piece lower (whether it was increasing or decreasing, whether it was on the left or on the right)\\n- - if, for example, the branch on the left ceases to increase, then the counter of the left-increment is reset to one\\n, the horizontal path consists of the word of the increasing and decreasing piece on the right, then the sum of the increment and decrement is smaller\\n\\n\\n\\n![image](https://assets.leetcode.com/users/images/8c2e347b-d9d3-48d6-bfcd-41d7dadd5c8c_1641461946.7102733.png)\\n\\n![image](https://assets.leetcode.com/users/images/6d83ff17-8283-4085-8c5d-6ab23cc1be08_1641461951.6068883.png)\\n",
+      "voteCount": 2
+    },
+    {
+      "name": "jmzhang18",
+      "year": 2020,
+      "content": "As the tree visualization, \\n\\n\\t\\t\\t1\\n\\t\\t/        \\\\\\n\\t   2            3\\n\\t /\\n\\t 4\\nIsn\\'t the longest path [1,2,4], the answer should be 3, why the correct answer is 2?",
+      "voteCount": 1
+    }
+  ]
 }

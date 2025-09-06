@@ -1,168 +1,168 @@
 {
-    "category": "",
-    "id": "348",
-    "name": "Design Tic-Tac-Toe",
-    "difficulty": "Medium",
-    "leetcode_url": "https://leetcode.com/problems/design-tic-tac-toe/",
-    "slug": "design-tic-tac-toe",
-    "isPaidOnly": true,
-    "tags": [
-        "Array",
-        "Hash Table",
-        "Design",
-        "Matrix",
-        "Simulation"
-    ],
-    "similar_questions": [
-        {
-            "title": "Valid Tic-Tac-Toe State",
-            "difficulty": "Medium",
-            "slug": "valid-tic-tac-toe-state"
-        }
-    ],
-    "questionId": "348",
-    "questionFrontendId": "348",
-    "title": "Design Tic-Tac-Toe",
-    "titleSlug": "design-tic-tac-toe",
-    "likes": 2147,
-    "dislikes": 120,
-    "stats": {
-        "totalAccepted": "297.2K",
-        "totalSubmission": "506.4K",
-        "totalAcceptedRaw": 297157,
-        "totalSubmissionRaw": 506405,
-        "acRate": "58.7%"
+  "category": "",
+  "id": "348",
+  "name": "Design Tic-Tac-Toe",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/design-tic-tac-toe/",
+  "slug": "design-tic-tac-toe",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Design",
+    "Matrix",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Valid Tic-Tac-Toe State",
+      "difficulty": "Medium",
+      "slug": "valid-tic-tac-toe-state"
+    }
+  ],
+  "questionId": "348",
+  "questionFrontendId": "348",
+  "title": "Design Tic-Tac-Toe",
+  "titleSlug": "design-tic-tac-toe",
+  "likes": 2147,
+  "dislikes": 120,
+  "stats": {
+    "totalAccepted": "297.2K",
+    "totalSubmission": "506.4K",
+    "totalAcceptedRaw": 297157,
+    "totalSubmissionRaw": 506405,
+    "acRate": "58.7%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
     },
-    "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Design",
+      "slug": "design"
+    },
+    {
+      "name": "Matrix",
+      "slug": "matrix"
+    },
+    {
+      "name": "Simulation",
+      "slug": "simulation"
+    }
+  ],
+  "metaData": {
+    "classname": "TicTacToe",
+    "constructor": {
+      "params": [
         {
-            "name": "Array",
-            "slug": "array"
-        },
-        {
-            "name": "Hash Table",
-            "slug": "hash-table"
-        },
-        {
-            "name": "Design",
-            "slug": "design"
-        },
-        {
-            "name": "Matrix",
-            "slug": "matrix"
-        },
-        {
-            "name": "Simulation",
-            "slug": "simulation"
+          "type": "integer",
+          "name": "n"
         }
-    ],
-    "metaData": {
-        "classname": "TicTacToe",
-        "constructor": {
-            "params": [
-                {
-                    "type": "integer",
-                    "name": "n"
-                }
-            ]
-        },
-        "methods": [
-            {
-                "params": [
-                    {
-                        "type": "integer",
-                        "name": "row"
-                    },
-                    {
-                        "type": "integer",
-                        "name": "col"
-                    },
-                    {
-                        "type": "integer",
-                        "name": "player"
-                    }
-                ],
-                "name": "move",
-                "return": {
-                    "type": "integer"
-                }
-            }
+      ]
+    },
+    "methods": [
+      {
+        "params": [
+          {
+            "type": "integer",
+            "name": "row"
+          },
+          {
+            "type": "integer",
+            "name": "col"
+          },
+          {
+            "type": "integer",
+            "name": "player"
+          }
         ],
+        "name": "move",
         "return": {
-            "type": "boolean"
-        },
-        "systemdesign": true,
-        "manual": true
-    },
-    "company_tag_stats": {
-        "1": [
-            {
-                "taggedByAdmin": false,
-                "name": "Meta",
-                "slug": "facebook",
-                "timesEncountered": 17
-            }
-        ]
-    },
-    "discussion_posts": [
-        {
-            "name": "daringcalf",
-            "year": 2023,
-            "content": "Bruteforced my way through it.",
-            "voteCount": 19
-        },
-        {
-            "name": "ursat",
-            "year": 2023,
-            "content": "```\\nFollow-up: Could you do better than O(n2) per move() operation?\\n```\\nI guess that means the space complexity because non of the solution mentioned is O(n2) in time",
-            "voteCount": 4
-        },
-        {
-            "name": "HugoWangzc",
-            "year": 2024,
-            "content": "I should say this is pretty good practice for beginner.",
-            "voteCount": 3
-        },
-        {
-            "name": "kaidul",
-            "year": 2016,
-            "content": "Again \"Run Code\" button is not working. Please fix this :)",
-            "voteCount": 3
-        },
-        {
-            "name": "junhuangli",
-            "year": 2016,
-            "content": "[\"TicTacToe\",\"move\",\"move\",\"move\"]\\n[[2],[0,0,2],[0,1,1],[1,1,2]]\\n\\nThis test case failed when I submit my solution, but it passed if I use \"Run Code\"",
-            "voteCount": 3
-        },
-        {
-            "name": "solosynth1",
-            "year": 2024,
-            "content": "How about a nice game of chess?",
-            "voteCount": 2
-        },
-        {
-            "name": "tin_le",
-            "year": 2024,
-            "content": "That optimal solution feels good to learn about. Thank you lc for these quality problem",
-            "voteCount": 2
-        },
-        {
-            "name": "matthewjinmp",
-            "year": 2025,
-            "content": "only check the row, column, and potential diagonal where the new move was ",
-            "voteCount": 1
-        },
-        {
-            "name": "Satansoft",
-            "year": 2025,
-            "content": "Somebody knows, that:\\n- If we need to check result on each move, everything is need to check rows, cols and 2 diagonals with just current player ;\\n- No needed double loop, all values is reachable with single loop, all variables are provided!\\n- Diagonals could be reachable with `[i][i]` and `[i][n - 1 - i]`;",
-            "voteCount": 1
-        },
-        {
-            "name": "ndsouza786",
-            "year": 2025,
-            "content": "|0 1|\\n|1 2| test case  26 / 33 appears to have the wrong answer. ",
-            "voteCount": 1
+          "type": "integer"
         }
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "systemdesign": true,
+    "manual": true
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Meta",
+        "slug": "facebook",
+        "timesEncountered": 17
+      }
     ]
+  },
+  "discussion_posts": [
+    {
+      "name": "daringcalf",
+      "year": 2023,
+      "content": "Bruteforced my way through it.",
+      "voteCount": 19
+    },
+    {
+      "name": "ursat",
+      "year": 2023,
+      "content": "```\\nFollow-up: Could you do better than O(n2) per move() operation?\\n```\\nI guess that means the space complexity because non of the solution mentioned is O(n2) in time",
+      "voteCount": 4
+    },
+    {
+      "name": "HugoWangzc",
+      "year": 2024,
+      "content": "I should say this is pretty good practice for beginner.",
+      "voteCount": 3
+    },
+    {
+      "name": "kaidul",
+      "year": 2016,
+      "content": "Again \"Run Code\" button is not working. Please fix this :)",
+      "voteCount": 3
+    },
+    {
+      "name": "junhuangli",
+      "year": 2016,
+      "content": "[\"TicTacToe\",\"move\",\"move\",\"move\"]\\n[[2],[0,0,2],[0,1,1],[1,1,2]]\\n\\nThis test case failed when I submit my solution, but it passed if I use \"Run Code\"",
+      "voteCount": 3
+    },
+    {
+      "name": "solosynth1",
+      "year": 2024,
+      "content": "How about a nice game of chess?",
+      "voteCount": 2
+    },
+    {
+      "name": "tin_le",
+      "year": 2024,
+      "content": "That optimal solution feels good to learn about. Thank you lc for these quality problem",
+      "voteCount": 2
+    },
+    {
+      "name": "matthewjinmp",
+      "year": 2025,
+      "content": "only check the row, column, and potential diagonal where the new move was ",
+      "voteCount": 1
+    },
+    {
+      "name": "Satansoft",
+      "year": 2025,
+      "content": "Somebody knows, that:\\n- If we need to check result on each move, everything is need to check rows, cols and 2 diagonals with just current player ;\\n- No needed double loop, all values is reachable with single loop, all variables are provided!\\n- Diagonals could be reachable with `[i][i]` and `[i][n - 1 - i]`;",
+      "voteCount": 1
+    },
+    {
+      "name": "ndsouza786",
+      "year": 2025,
+      "content": "|0 1|\\n|1 2| test case  26 / 33 appears to have the wrong answer. ",
+      "voteCount": 1
+    }
+  ]
 }

@@ -1,126 +1,126 @@
 {
-    "category": "",
-    "id": "1101",
-    "name": "The Earliest Moment When Everyone Become Friends",
-    "difficulty": "Medium",
-    "leetcode_url": "https://leetcode.com/problems/the-earliest-moment-when-everyone-become-friends/",
-    "slug": "the-earliest-moment-when-everyone-become-friends",
-    "isPaidOnly": true,
-    "tags": [
-        "Array",
-        "Union Find",
-        "Sorting"
-    ],
-    "similar_questions": [
-        {
-            "title": "Number of Provinces",
-            "difficulty": "Medium",
-            "slug": "number-of-provinces"
-        }
-    ],
-    "questionId": "1085",
-    "questionFrontendId": "1101",
-    "title": "The Earliest Moment When Everyone Become Friends",
-    "titleSlug": "the-earliest-moment-when-everyone-become-friends",
-    "likes": 1101,
-    "dislikes": 40,
-    "stats": {
-        "totalAccepted": "122.9K",
-        "totalSubmission": "187K",
-        "totalAcceptedRaw": 122870,
-        "totalSubmissionRaw": 186990,
-        "acRate": "65.7%"
+  "category": "",
+  "id": "1101",
+  "name": "The Earliest Moment When Everyone Become Friends",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/the-earliest-moment-when-everyone-become-friends/",
+  "slug": "the-earliest-moment-when-everyone-become-friends",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Union Find",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Number of Provinces",
+      "difficulty": "Medium",
+      "slug": "number-of-provinces"
+    }
+  ],
+  "questionId": "1085",
+  "questionFrontendId": "1101",
+  "title": "The Earliest Moment When Everyone Become Friends",
+  "titleSlug": "the-earliest-moment-when-everyone-become-friends",
+  "likes": 1101,
+  "dislikes": 40,
+  "stats": {
+    "totalAccepted": "122.9K",
+    "totalSubmission": "187K",
+    "totalAcceptedRaw": 122870,
+    "totalSubmissionRaw": 186990,
+    "acRate": "65.7%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
     },
-    "topicTags": [
-        {
-            "name": "Array",
-            "slug": "array"
-        },
-        {
-            "name": "Union Find",
-            "slug": "union-find"
-        },
-        {
-            "name": "Sorting",
-            "slug": "sorting"
-        }
-    ],
-    "metaData": {
-        "name": "earliestAcq",
-        "params": [
-            {
-                "name": "logs",
-                "type": "integer[][]"
-            },
-            {
-                "name": "n",
-                "type": "integer"
-            }
-        ],
-        "return": {
-            "type": "integer"
-        }
+    {
+      "name": "Union Find",
+      "slug": "union-find"
     },
-    "discussion_posts": [
-        {
-            "name": "YuYu_online",
-            "year": 2024,
-            "content": "the problem does not clarify clear if the timestamp is in increasing order",
-            "voteCount": 38
-        },
-        {
-            "name": "etanila",
-            "year": 2024,
-            "content": "The example explanation is a huge hint on Union Find.",
-            "voteCount": 13
-        },
-        {
-            "name": "baxterbarlow",
-            "year": 2024,
-            "content": "Heads up, the logs are not sorted so make sure to do that first (but the author should have definitely specified that)",
-            "voteCount": 7
-        },
-        {
-            "name": "nllsdfx",
-            "year": 2022,
-            "content": "Explain me pls, why my answer (8) is wrong when logs = [[9,3,0],[0,2,1],[8,0,1],[1,3,2],[2,2,0],[3,3,1]], n = 4?\\n\\n3-0, 2-1, 0-1? 0 connected with 1 and 3, and 1 knows about 2, right? Is it a bug?",
-            "voteCount": 7
-        },
-        {
-            "name": "parkr96",
-            "year": 2023,
-            "content": "Took me an embarrassing amount of time to realize logs isn\\'t sorted by timestamp from the start :D lol",
-            "voteCount": 6
-        },
-        {
-            "name": "amt93",
-            "year": 2024,
-            "content": "I should have read the examples closer before starting. This question confused me by using acquaintances and friends interchangeably. I was thinking the acquaintance relation would be a separation of 1 instead of it all being one group. So I may gain someone\\'s friends as my own acquaintances, but I won\\'t gain their acquaintances. That\\'s on me, but better to just use one word imo",
-            "voteCount": 4
-        },
-        {
-            "name": "jasperjoe",
-            "year": 2019,
-            "content": "I am not quite familiar with Union-Find. Hopefully someone could share other ways to solve this kind of problems.",
-            "voteCount": 4
-        },
-        {
-            "name": "navaneeth98",
-            "year": 2024,
-            "content": "Leetcode explore cards on graphs are really great man. I have been doing them and came across this question and was able to solve this in less than 10 mins. From being a noob at graphs to be able to do this, it feels really nice. ",
-            "voteCount": 3
-        },
-        {
-            "name": "anujamin01",
-            "year": 2024,
-            "content": "The interchangeable use of \"acquaintance\" and \"friend\" makes the explanation of this problem way more difficult to understand than it should be.",
-            "voteCount": 3
-        },
-        {
-            "name": "DivSar_15",
-            "year": 2023,
-            "content": "This problem is similar to [Redundant connection](https://leetcode.com/problems/redundant-connection/). We\\'re required to get the timestamp of the last non-redundant connecting edge between two disjoint sets.",
-            "voteCount": 2
-        }
-    ]
+    {
+      "name": "Sorting",
+      "slug": "sorting"
+    }
+  ],
+  "metaData": {
+    "name": "earliestAcq",
+    "params": [
+      {
+        "name": "logs",
+        "type": "integer[][]"
+      },
+      {
+        "name": "n",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "YuYu_online",
+      "year": 2024,
+      "content": "the problem does not clarify clear if the timestamp is in increasing order",
+      "voteCount": 38
+    },
+    {
+      "name": "etanila",
+      "year": 2024,
+      "content": "The example explanation is a huge hint on Union Find.",
+      "voteCount": 13
+    },
+    {
+      "name": "baxterbarlow",
+      "year": 2024,
+      "content": "Heads up, the logs are not sorted so make sure to do that first (but the author should have definitely specified that)",
+      "voteCount": 7
+    },
+    {
+      "name": "nllsdfx",
+      "year": 2022,
+      "content": "Explain me pls, why my answer (8) is wrong when logs = [[9,3,0],[0,2,1],[8,0,1],[1,3,2],[2,2,0],[3,3,1]], n = 4?\\n\\n3-0, 2-1, 0-1? 0 connected with 1 and 3, and 1 knows about 2, right? Is it a bug?",
+      "voteCount": 7
+    },
+    {
+      "name": "parkr96",
+      "year": 2023,
+      "content": "Took me an embarrassing amount of time to realize logs isn\\'t sorted by timestamp from the start :D lol",
+      "voteCount": 6
+    },
+    {
+      "name": "amt93",
+      "year": 2024,
+      "content": "I should have read the examples closer before starting. This question confused me by using acquaintances and friends interchangeably. I was thinking the acquaintance relation would be a separation of 1 instead of it all being one group. So I may gain someone\\'s friends as my own acquaintances, but I won\\'t gain their acquaintances. That\\'s on me, but better to just use one word imo",
+      "voteCount": 4
+    },
+    {
+      "name": "jasperjoe",
+      "year": 2019,
+      "content": "I am not quite familiar with Union-Find. Hopefully someone could share other ways to solve this kind of problems.",
+      "voteCount": 4
+    },
+    {
+      "name": "navaneeth98",
+      "year": 2024,
+      "content": "Leetcode explore cards on graphs are really great man. I have been doing them and came across this question and was able to solve this in less than 10 mins. From being a noob at graphs to be able to do this, it feels really nice. ",
+      "voteCount": 3
+    },
+    {
+      "name": "anujamin01",
+      "year": 2024,
+      "content": "The interchangeable use of \"acquaintance\" and \"friend\" makes the explanation of this problem way more difficult to understand than it should be.",
+      "voteCount": 3
+    },
+    {
+      "name": "DivSar_15",
+      "year": 2023,
+      "content": "This problem is similar to [Redundant connection](https://leetcode.com/problems/redundant-connection/). We\\'re required to get the timestamp of the last non-redundant connecting edge between two disjoint sets.",
+      "voteCount": 2
+    }
+  ]
 }

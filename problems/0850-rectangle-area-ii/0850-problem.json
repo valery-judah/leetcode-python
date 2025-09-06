@@ -1,127 +1,127 @@
 {
-    "category": "",
-    "id": "850",
-    "name": "Rectangle Area II",
-    "difficulty": "Hard",
-    "leetcode_url": "https://leetcode.com/problems/rectangle-area-ii/",
-    "slug": "rectangle-area-ii",
-    "isPaidOnly": false,
-    "tags": [
-        "Array",
-        "Segment Tree",
-        "Line Sweep",
-        "Ordered Set"
-    ],
-    "similar_questions": [
-        {
-            "title": "Separate Squares II",
-            "difficulty": "Hard",
-            "slug": "separate-squares-ii"
-        }
-    ],
-    "questionId": "880",
-    "questionFrontendId": "850",
-    "title": "Rectangle Area II",
-    "titleSlug": "rectangle-area-ii",
-    "likes": 1016,
-    "dislikes": 64,
-    "stats": {
-        "totalAccepted": "39.6K",
-        "totalSubmission": "72.4K",
-        "totalAcceptedRaw": 39621,
-        "totalSubmissionRaw": 72367,
-        "acRate": "54.8%"
+  "category": "",
+  "id": "850",
+  "name": "Rectangle Area II",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/rectangle-area-ii/",
+  "slug": "rectangle-area-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Segment Tree",
+    "Line Sweep",
+    "Ordered Set"
+  ],
+  "similar_questions": [
+    {
+      "title": "Separate Squares II",
+      "difficulty": "Hard",
+      "slug": "separate-squares-ii"
+    }
+  ],
+  "questionId": "880",
+  "questionFrontendId": "850",
+  "title": "Rectangle Area II",
+  "titleSlug": "rectangle-area-ii",
+  "likes": 1016,
+  "dislikes": 64,
+  "stats": {
+    "totalAccepted": "39.6K",
+    "totalSubmission": "72.4K",
+    "totalAcceptedRaw": 39621,
+    "totalSubmissionRaw": 72367,
+    "acRate": "54.8%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
     },
-    "topicTags": [
-        {
-            "name": "Array",
-            "slug": "array"
-        },
-        {
-            "name": "Segment Tree",
-            "slug": "segment-tree"
-        },
-        {
-            "name": "Line Sweep",
-            "slug": "line-sweep"
-        },
-        {
-            "name": "Ordered Set",
-            "slug": "ordered-set"
-        }
-    ],
-    "metaData": {
-        "name": "rectangleArea",
-        "params": [
-            {
-                "name": "rectangles",
-                "type": "integer[][]"
-            }
-        ],
-        "return": {
-            "type": "integer"
-        }
+    {
+      "name": "Segment Tree",
+      "slug": "segment-tree"
     },
-    "discussion_posts": [
-        {
-            "name": "erlichBachman21",
-            "year": 2023,
-            "content": "It\\'s Skyline Problem all over again.",
-            "voteCount": 13
-        },
-        {
-            "name": "MrHaha",
-            "year": 2020,
-            "content": "Example test case for : [[224386961,128668997,546647847,318900555]]\\nThe result area after modulo should be \"997111065\"\\n\\nArea should be equal to this (190231558 * 322260886) % (10 ** 9 + 7)\\n\\nThis will return correct answer \"997111065\" with Python. \\n\\nHowever, it return \"997111061\" for Javascript. \\n\\nHow should I handle this kinda of big number case ? \\n\\n",
-            "voteCount": 4
-        },
-        {
-            "name": "jaiparjapati101",
-            "year": 2024,
-            "content": "218 Skyline Problem , working well here but only for cases when starting point is on x-axis ",
-            "voteCount": 2
-        },
-        {
-            "name": "Goryinyich",
-            "year": 2024,
-            "content": "Actually, platform model solution doesn\\'t work correctly for cases like\\n[[0,0,0,0],[1,1,1,1]]\\nthat are completely standard and allowed by problem statement.",
-            "voteCount": 2
-        },
-        {
-            "name": "doppelgangerOfMeow",
-            "year": 2023,
-            "content": "Test case problem: Input size should be limited to x2 > x1 and y2 > y1. Otherwise, output is undefined. ",
-            "voteCount": 2
-        },
-        {
-            "name": "nypabhishek",
-            "year": 2025,
-            "content": "just asked in flipkart grid 7.0 definately hard af :(",
-            "voteCount": 1
-        },
-        {
-            "name": "4211421036",
-            "year": 2025,
-            "content": "Maybe, if you stuck. Please read my solution\\n\\nhttps://leetcode.com/problems/rectangle-area-ii/solutions/6683738/rectangle-area-ii-by-4211421036-l94q",
-            "voteCount": 1
-        },
-        {
-            "name": "raghavrathore7415",
-            "year": 2024,
-            "content": "Test cases not working when we try x1 == x2",
-            "voteCount": 1
-        },
-        {
-            "name": "sidhantsinghss54321",
-            "year": 2025,
-            "content": "How easily did [166,0,166,808] broke my code after an hour of work \\uD83D\\uDE2D...",
-            "voteCount": 0
-        },
-        {
-            "name": "xbdhshshs",
-            "year": 2025,
-            "content": "Remove the condition that rectangles will have non-zero area. Some rectangles have the same value for both the x co-ordinates. Spent an eternity to figure out why my solution was breaking.",
-            "voteCount": 0
-        }
-    ]
+    {
+      "name": "Line Sweep",
+      "slug": "line-sweep"
+    },
+    {
+      "name": "Ordered Set",
+      "slug": "ordered-set"
+    }
+  ],
+  "metaData": {
+    "name": "rectangleArea",
+    "params": [
+      {
+        "name": "rectangles",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "erlichBachman21",
+      "year": 2023,
+      "content": "It\\'s Skyline Problem all over again.",
+      "voteCount": 13
+    },
+    {
+      "name": "MrHaha",
+      "year": 2020,
+      "content": "Example test case for : [[224386961,128668997,546647847,318900555]]\\nThe result area after modulo should be \"997111065\"\\n\\nArea should be equal to this (190231558 * 322260886) % (10 ** 9 + 7)\\n\\nThis will return correct answer \"997111065\" with Python. \\n\\nHowever, it return \"997111061\" for Javascript. \\n\\nHow should I handle this kinda of big number case ? \\n\\n",
+      "voteCount": 4
+    },
+    {
+      "name": "jaiparjapati101",
+      "year": 2024,
+      "content": "218 Skyline Problem , working well here but only for cases when starting point is on x-axis ",
+      "voteCount": 2
+    },
+    {
+      "name": "Goryinyich",
+      "year": 2024,
+      "content": "Actually, platform model solution doesn\\'t work correctly for cases like\\n[[0,0,0,0],[1,1,1,1]]\\nthat are completely standard and allowed by problem statement.",
+      "voteCount": 2
+    },
+    {
+      "name": "doppelgangerOfMeow",
+      "year": 2023,
+      "content": "Test case problem: Input size should be limited to x2 > x1 and y2 > y1. Otherwise, output is undefined. ",
+      "voteCount": 2
+    },
+    {
+      "name": "nypabhishek",
+      "year": 2025,
+      "content": "just asked in flipkart grid 7.0 definately hard af :(",
+      "voteCount": 1
+    },
+    {
+      "name": "4211421036",
+      "year": 2025,
+      "content": "Maybe, if you stuck. Please read my solution\\n\\nhttps://leetcode.com/problems/rectangle-area-ii/solutions/6683738/rectangle-area-ii-by-4211421036-l94q",
+      "voteCount": 1
+    },
+    {
+      "name": "raghavrathore7415",
+      "year": 2024,
+      "content": "Test cases not working when we try x1 == x2",
+      "voteCount": 1
+    },
+    {
+      "name": "sidhantsinghss54321",
+      "year": 2025,
+      "content": "How easily did [166,0,166,808] broke my code after an hour of work \\uD83D\\uDE2D...",
+      "voteCount": 0
+    },
+    {
+      "name": "xbdhshshs",
+      "year": 2025,
+      "content": "Remove the condition that rectangles will have non-zero area. Some rectangles have the same value for both the x co-ordinates. Spent an eternity to figure out why my solution was breaking.",
+      "voteCount": 0
+    }
+  ]
 }

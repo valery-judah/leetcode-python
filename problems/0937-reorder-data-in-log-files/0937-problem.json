@@ -1,116 +1,116 @@
 {
-    "category": "",
-    "id": "937",
-    "name": "Reorder Data in Log Files",
-    "difficulty": "Medium",
-    "leetcode_url": "https://leetcode.com/problems/reorder-data-in-log-files/",
-    "slug": "reorder-data-in-log-files",
-    "isPaidOnly": false,
-    "tags": [
-        "Array",
-        "String",
-        "Sorting"
-    ],
-    "similar_questions": [],
-    "questionId": "974",
-    "questionFrontendId": "937",
-    "title": "Reorder Data in Log Files",
-    "titleSlug": "reorder-data-in-log-files",
-    "likes": 2177,
-    "dislikes": 4413,
-    "stats": {
-        "totalAccepted": "400.8K",
-        "totalSubmission": "705.4K",
-        "totalAcceptedRaw": 400813,
-        "totalSubmissionRaw": 705384,
-        "acRate": "56.8%"
+  "category": "",
+  "id": "937",
+  "name": "Reorder Data in Log Files",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/reorder-data-in-log-files/",
+  "slug": "reorder-data-in-log-files",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "String",
+    "Sorting"
+  ],
+  "similar_questions": [],
+  "questionId": "974",
+  "questionFrontendId": "937",
+  "title": "Reorder Data in Log Files",
+  "titleSlug": "reorder-data-in-log-files",
+  "likes": 2177,
+  "dislikes": 4413,
+  "stats": {
+    "totalAccepted": "400.8K",
+    "totalSubmission": "705.4K",
+    "totalAcceptedRaw": 400813,
+    "totalSubmissionRaw": 705384,
+    "acRate": "56.8%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
     },
-    "topicTags": [
-        {
-            "name": "Array",
-            "slug": "array"
-        },
-        {
-            "name": "String",
-            "slug": "string"
-        },
-        {
-            "name": "Sorting",
-            "slug": "sorting"
-        }
-    ],
-    "metaData": {
-        "name": "reorderLogFiles",
-        "params": [
-            {
-                "name": "logs",
-                "type": "string[]"
-            }
-        ],
-        "return": {
-            "type": "string[]"
-        }
+    {
+      "name": "String",
+      "slug": "string"
     },
-    "discussion_posts": [
-        {
-            "name": "Jeetaksh",
-            "year": 2023,
-            "content": "Really hate such type of questions",
-            "voteCount": 30
-        },
-        {
-            "name": "daily2432121",
-            "year": 2019,
-            "content": "Array.Sort not stable. Please using the linq version OrderBy",
-            "voteCount": 19
-        },
-        {
-            "name": "nj8020",
-            "year": 2019,
-            "content": "I feel this problem should be marked as medium and not easy. This has lots of consideration and little too much lines of code for it to be an easy problem.",
-            "voteCount": 18
-        },
-        {
-            "name": "Pankaj__123",
-            "year": 2023,
-            "content": "I become abnormal after encountering these types of questions",
-            "voteCount": 15
-        },
-        {
-            "name": "narain44",
-            "year": 2020,
-            "content": "This test case fails for me. Since  the term \\'act\\' is common, based on key \\'a8\\' should come before \\'g1\\'. However the expected result has \\'g1\\' before \\'a8\\'. \\n\\nInput\\n[\"a1 9 2 3 1\",\"g1 act car\",\"zo4 4 7\",\"ab1 off key dog\",\"a8 act zoo\"]\\nOutput\\n[\"a8 act zoo\",\"g1 act car\",\"ab1 off key dog\",\"a1 9 2 3 1\",\"zo4 4 7\"]\\nExpected\\n[\"g1 act car\",\"a8 act zoo\",\"ab1 off key dog\",\"a1 9 2 3 1\",\"zo4 4 7\"]",
-            "voteCount": 7
-        },
-        {
-            "name": "zichengl",
-            "year": 2019,
-            "content": "Test case\\n55 / 62 test cases passed.\\nStatus: Wrong Answer\\nSubmitted: 11 minutes ago\\nInput:\\n[\"j mo\", \"5 m w\", \"g 07\", \"o 2 0\", \"t q h\"]\\nOutput:\\n[\"j mo\",\"5 m w\",\"t q h\",\"g 07\",\"o 2 0\"]\\nExpected:\\n[\"5 m w\",\"j mo\",\"t q h\",\"g 07\",\"o 2 0\"]\\n\\nhow \"5 m w\" is lexicographically less than \"j mo\" ?\\n\\n\"5 m w\" and \"j mo\" are both letter-logs. \"mo\" should be lexicographically less than \"mw\"\\n**I figured out. In the letter-logs, you need to compare the word one by one following the lexicographical order, which means \"m\" is less than \"mo\" in terms of a word.**\\n",
-            "voteCount": 5
-        },
-        {
-            "name": "awadammar",
-            "year": 2024,
-            "content": "Why is it not mentioned that a log identifier could be redundant?",
-            "voteCount": 4
-        },
-        {
-            "name": "mohammedmoin1434",
-            "year": 2023,
-            "content": "i don\\'t understand what to do in this problem\\n",
-            "voteCount": 2
-        },
-        {
-            "name": "qwer9877",
-            "year": 2021,
-            "content": "In the example, \\nInput: logs = [\"a1 9 2 3 1\",\"g1 act car\",\"zo4 4 7\",\"ab1 off key dog\",\"a8 act zoo\"]\\nOutput: [\"g1 act car\",\"a8 act zoo\",\"ab1 off key dog\",\"a1 9 2 3 1\",\"zo4 4 7\"]\\n\\nI don\\'t understand why \"g1 act car\" comes before \"a8 act zoo\". The question says we need to sort it by lexicographically, but my understanding is that \"a8\" should comes before \"g1\" since \"a\" is before \"g\".\\nCan someone explain this?",
-            "voteCount": 2
-        },
-        {
-            "name": "ChrisTrompf",
-            "year": 2018,
-            "content": "I implemented and [posted my solution](https://leetcode.com/problems/reorder-log-files/discuss/192261/c%2B%2B-stl-small-efficent-solutions.) before checking out other solutions.\\n\\nOnly to find out that a lot of them (most?) don\\'t appear to handle the case of falling back to sorting via identifier if the rest of the log is the same. _The letter-logs are ordered lexicographically ignoring identifier, with the identifier used in case of ties_\\n\\n`[\"b abcd\", \"d abcd\", \"a abcd\", \"c abcd\"]`\\n\\nShould become\\n\\n`[\"a abcd\", \"b abcd\", \"c abcd\", \"d abcd\"]`",
-            "voteCount": 2
-        }
-    ]
+    {
+      "name": "Sorting",
+      "slug": "sorting"
+    }
+  ],
+  "metaData": {
+    "name": "reorderLogFiles",
+    "params": [
+      {
+        "name": "logs",
+        "type": "string[]"
+      }
+    ],
+    "return": {
+      "type": "string[]"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "Jeetaksh",
+      "year": 2023,
+      "content": "Really hate such type of questions",
+      "voteCount": 30
+    },
+    {
+      "name": "daily2432121",
+      "year": 2019,
+      "content": "Array.Sort not stable. Please using the linq version OrderBy",
+      "voteCount": 19
+    },
+    {
+      "name": "nj8020",
+      "year": 2019,
+      "content": "I feel this problem should be marked as medium and not easy. This has lots of consideration and little too much lines of code for it to be an easy problem.",
+      "voteCount": 18
+    },
+    {
+      "name": "Pankaj__123",
+      "year": 2023,
+      "content": "I become abnormal after encountering these types of questions",
+      "voteCount": 15
+    },
+    {
+      "name": "narain44",
+      "year": 2020,
+      "content": "This test case fails for me. Since  the term \\'act\\' is common, based on key \\'a8\\' should come before \\'g1\\'. However the expected result has \\'g1\\' before \\'a8\\'. \\n\\nInput\\n[\"a1 9 2 3 1\",\"g1 act car\",\"zo4 4 7\",\"ab1 off key dog\",\"a8 act zoo\"]\\nOutput\\n[\"a8 act zoo\",\"g1 act car\",\"ab1 off key dog\",\"a1 9 2 3 1\",\"zo4 4 7\"]\\nExpected\\n[\"g1 act car\",\"a8 act zoo\",\"ab1 off key dog\",\"a1 9 2 3 1\",\"zo4 4 7\"]",
+      "voteCount": 7
+    },
+    {
+      "name": "zichengl",
+      "year": 2019,
+      "content": "Test case\\n55 / 62 test cases passed.\\nStatus: Wrong Answer\\nSubmitted: 11 minutes ago\\nInput:\\n[\"j mo\", \"5 m w\", \"g 07\", \"o 2 0\", \"t q h\"]\\nOutput:\\n[\"j mo\",\"5 m w\",\"t q h\",\"g 07\",\"o 2 0\"]\\nExpected:\\n[\"5 m w\",\"j mo\",\"t q h\",\"g 07\",\"o 2 0\"]\\n\\nhow \"5 m w\" is lexicographically less than \"j mo\" ?\\n\\n\"5 m w\" and \"j mo\" are both letter-logs. \"mo\" should be lexicographically less than \"mw\"\\n**I figured out. In the letter-logs, you need to compare the word one by one following the lexicographical order, which means \"m\" is less than \"mo\" in terms of a word.**\\n",
+      "voteCount": 5
+    },
+    {
+      "name": "awadammar",
+      "year": 2024,
+      "content": "Why is it not mentioned that a log identifier could be redundant?",
+      "voteCount": 4
+    },
+    {
+      "name": "mohammedmoin1434",
+      "year": 2023,
+      "content": "i don\\'t understand what to do in this problem\\n",
+      "voteCount": 2
+    },
+    {
+      "name": "qwer9877",
+      "year": 2021,
+      "content": "In the example, \\nInput: logs = [\"a1 9 2 3 1\",\"g1 act car\",\"zo4 4 7\",\"ab1 off key dog\",\"a8 act zoo\"]\\nOutput: [\"g1 act car\",\"a8 act zoo\",\"ab1 off key dog\",\"a1 9 2 3 1\",\"zo4 4 7\"]\\n\\nI don\\'t understand why \"g1 act car\" comes before \"a8 act zoo\". The question says we need to sort it by lexicographically, but my understanding is that \"a8\" should comes before \"g1\" since \"a\" is before \"g\".\\nCan someone explain this?",
+      "voteCount": 2
+    },
+    {
+      "name": "ChrisTrompf",
+      "year": 2018,
+      "content": "I implemented and [posted my solution](https://leetcode.com/problems/reorder-log-files/discuss/192261/c%2B%2B-stl-small-efficent-solutions.) before checking out other solutions.\\n\\nOnly to find out that a lot of them (most?) don\\'t appear to handle the case of falling back to sorting via identifier if the rest of the log is the same. _The letter-logs are ordered lexicographically ignoring identifier, with the identifier used in case of ties_\\n\\n`[\"b abcd\", \"d abcd\", \"a abcd\", \"c abcd\"]`\\n\\nShould become\\n\\n`[\"a abcd\", \"b abcd\", \"c abcd\", \"d abcd\"]`",
+      "voteCount": 2
+    }
+  ]
 }
