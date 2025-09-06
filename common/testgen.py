@@ -61,12 +61,6 @@ def make_stub_cases(params: List[Tuple[str, str]]) -> tuple[list[tuple[str, List
     # Comments tailored to parameter list
     lines: list[str] = []
     sig_preview = ", ".join(f"{n}: {t}" for n, t in params) if params else ""
-    lines.append("# TEST_CASES (typed placeholders for stub testing)")
-    lines.append("# Shape: (label: str, args_tuple: tuple, kwargs_dict: dict)")
-    lines.append(
-        "# While TEST_EXPECT_EXCEPTION is set, only label/args/kwargs are used; "
-        "expected values are ignored."
-    )
     if sig_preview:
         lines.append(f"# Signature preview: solve(self, {sig_preview})")
     # Per-param hints
@@ -78,11 +72,6 @@ def make_stub_cases(params: List[Tuple[str, str]]) -> tuple[list[tuple[str, List
             else:
                 hint = _example_for(t)
             lines.append(f"# - {name}: e.g., {hint}")
-    # Evolution hints
-    lines.append(
-        "# To enable assertion-mode later: add expected to each case or switch to "
-        "(label, *args, expected) shape."
-    )
 
     # We also suggest an empty-collection variant when any list is present
     if any(t.startswith("list[") for _, t in params):

@@ -230,11 +230,14 @@ def _render_similar_md(
     by_id: dict[str, dict],
     by_slug: dict[str, dict],
 ) -> str:
-    """Render the Similar Questions markdown list with repo-relative links when possible."""
+    """Render the Similar Questions markdown table.
+
+    Columns: Number | Difficulty | Name (repo link when available) | LeetCode link
+    """
     similar_md = "None"
     if not (isinstance(similars, list) and similars):
         return similar_md
-    items: list[str] = []
+    rows: list[str] = []
     current_base = ROOT / "problems" / f"{number:04d}-{slug}"
     for it in similars:
         if not isinstance(it, dict):
@@ -264,7 +267,6 @@ def _render_similar_md(
             s_diff = _normalize_difficulty((resolved or {}).get("difficulty")) if resolved else None
         if not s_diff and s_id and s_id in SIMILAR_DIFFICULTY_OVERRIDES:
             s_diff = SIMILAR_DIFFICULTY_OVERRIDES[s_id]
-        diff_label = f"[{s_diff.title()}] " if s_diff else ""
 
         # Build repo-relative link to the similar problem's readme when possible
         link_md: str | None = None
@@ -285,18 +287,28 @@ def _render_similar_md(
                 if cands:
                     other_readme = cands[0] / "readme.md"
 
+        # Prepare table columns
+        try:
+            num_col = f"{int(s_id):04d}" if s_id else ""
+        except Exception:
+            num_col = s_id or ""
+        diff_col = s_diff.title() if s_diff else ""
+
+        # Name column: repo-relative link when available, else plain title
         if other_readme is not None:
             rel = Path(os.path.relpath(other_readme, start=current_base)).as_posix()
-            link_md = f"- {diff_label}[{s_title}]({rel})"
-        elif s_url:
-            link_md = f"- {diff_label}[{s_title}]({s_url})"
+            name_col = f"[{s_title}]({rel})"
         else:
-            link_md = f"- {diff_label}{s_title}"
+            name_col = s_title
 
-        items.append(link_md)
+        # LeetCode link column
+        leet_col = f"[link]({s_url})" if s_url else ""
 
-    if items:
-        similar_md = "\n".join(items)
+        rows.append(f"| {num_col} | {diff_col} | {name_col} | {leet_col} |")
+
+    if rows:
+        header = "| Number | Difficulty | Name | LeetCode |\n|---|---|---|---|"
+        similar_md = header + "\n" + "\n".join(rows)
     return similar_md
 
 
@@ -315,6 +327,32 @@ def _build_context(
     tags = ", ".join(tags_list)
     url = _get_url(problem, slug)
     similar_md = _render_similar_md(number, slug, problem.get("similar_questions") or [], by_id, by_slug)
+
+    # Build signature preview from metaData when available
+    def _signature_from_meta(p: dict) -> str:
+        meta = p.get("metaData")
+        if isinstance(meta, str):
+            try:
+                meta = json.loads(meta)
+            except Exception:
+                meta = None
+        if not isinstance(meta, dict):
+            return "`...` → `...`"
+        params = meta.get("params")
+        ret = (meta.get("return") or {}).get("type") if isinstance(meta.get("return"), dict) else None
+        parts: list[str] = []
+        if isinstance(params, list):
+            for it in params:
+                if not isinstance(it, dict):
+                    continue
+                nm = str(it.get("name") or "arg").strip() or "arg"
+                ty = py_type_from_meta(str(it.get("type") or "object"))
+                parts.append(f"`{nm}: {ty}`")
+        rty = py_type_from_meta(str(ret or "object")) if ret is not None else "object"
+        arrow = " → "
+        return (", ".join(parts) if parts else "`...`") + arrow + f"`{rty}`"
+
+    signature = _signature_from_meta(problem)
     dirname = f"{number:04d}-{slug}"
     base = ROOT / "problems" / dirname
     context = dict(
@@ -327,6 +365,7 @@ def _build_context(
         dirname=dirname,
         created=_utc_now_iso_z(),
         similar_md=similar_md,
+        signature=signature,
     )
     return context, number, slug, base
 

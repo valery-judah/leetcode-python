@@ -13,7 +13,7 @@ from common.types import (
 
 class Baseline:
     def solve(self, *args, **kwargs):
-        """Replace with actual signature per problem."""
+        """Check with actual signature per problem."""
         raise NotImplementedError
 
 
@@ -23,8 +23,6 @@ Solution = Baseline
 # Explicit multi-export for test discovery
 ALL_SOLUTIONS = [Baseline]
 
-# Canonical small test cases for generic stub tests
-# Each entry: (label, args_tuple, kwargs_dict)
 TEST_CASES = [
     ("example", (), {{}}),  # replace with concrete inputs
 ]
