@@ -1,0 +1,121 @@
+{
+    "category": "",
+    "id": "762",
+    "name": "Prime Number of Set Bits in Binary Representation",
+    "difficulty": "Easy",
+    "leetcode_url": "https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/",
+    "slug": "prime-number-of-set-bits-in-binary-representation",
+    "isPaidOnly": false,
+    "tags": [
+        "Math",
+        "Bit Manipulation"
+    ],
+    "similar_questions": [
+        {
+            "title": "Number of 1 Bits",
+            "difficulty": "Easy",
+            "slug": "number-of-1-bits"
+        }
+    ],
+    "questionId": "767",
+    "questionFrontendId": "762",
+    "title": "Prime Number of Set Bits in Binary Representation",
+    "titleSlug": "prime-number-of-set-bits-in-binary-representation",
+    "likes": 756,
+    "dislikes": 513,
+    "stats": {
+        "totalAccepted": "125.4K",
+        "totalSubmission": "175K",
+        "totalAcceptedRaw": 125359,
+        "totalSubmissionRaw": 175038,
+        "acRate": "71.6%"
+    },
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        }
+    ],
+    "metaData": {
+        "name": "countPrimeSetBits",
+        "params": [
+            {
+                "name": "left",
+                "type": "integer"
+            },
+            {
+                "name": "right",
+                "type": "integer"
+            }
+        ],
+        "return": {
+            "type": "integer"
+        }
+    },
+    "discussion_posts": [
+        {
+            "name": "tripper",
+            "year": 2023,
+            "content": "Want to solve this problem without using built-in functions, then solve the below LeetCode Problems and **upvote** this comment later:\\n1. [204. Count Primes](https://leetcode.com/problems/count-primes/)\\n2. [191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits)",
+            "voteCount": 12
+        },
+        {
+            "name": "SSHshadow2222",
+            "year": 2023,
+            "content": "The constraint `1 <= left <= right <= 10^6` tells you that the maximum number you can get is `10^6`.\\nThis number is represented as `1111 01000010 01000000` in binary, which means that the most amount of bits set (for this problem) is 19: `111 11111111 11111111`.\\nAll the prime numbers up to 19 (inclusive) are `[2, 3, 5, 7, 11, 13, 17, 19]`.\\nThe only thing left for you is to count the number of bits set for the numbers in the range.",
+            "voteCount": 6
+        },
+        {
+            "name": "Monu_prajapati",
+            "year": 2025,
+            "content": "This is second time today i am last in time Complexity.  \\nQ.construct rectangle  254ms.   and  \\nin this Q.     88ms",
+            "voteCount": 1
+        },
+        {
+            "name": "user0117vZ",
+            "year": 2024,
+            "content": "prime check using seive  C# solution\\npublic class Solution {\\n    \\n    public int CountPrimeSetBits(int left, int right) {\\n        int noOfPrimes = 0;\\n        Dictionary<int , int> bin = new Dictionary<int,int>{\\n            {0,0},\\n            {1,1}\\n        };\\n        bool[] seive = new bool[33];\\n        Array.Fill(seive,true);\\n        seive[0] = seive[1] = false;\\n        for(int i = 2; i<= 32;i++){\\n            for(int j = i * i ; j <=32;j = j + i ){\\n                if(j%i == 0){\\n                    seive[j] = false;\\n                }\\n            }\\n        }\\n        for(int i = left;i<= right; i++){\\n            int count = 0;\\n            int num = i;\\n            while(num != 0){\\n                \\n                count = count+bin[num&1];\\n             \\n                num = num >>> 1;\\n            }\\n            if(seive[count]){\\n                noOfPrimes++;\\n            }\\n        }\\n        return noOfPrimes;\\n    }\\n}",
+            "voteCount": 1
+        },
+        {
+            "name": "M1dn1ght",
+            "year": 2023,
+            "content": "Nice question,  Eratosthenes helped me solve this",
+            "voteCount": 1
+        },
+        {
+            "name": "Ineedchezzborger",
+            "year": 2025,
+            "content": "Sieve of Eratosthenes!? Never heard of it.",
+            "voteCount": 0
+        },
+        {
+            "name": "panzerschrek",
+            "year": 2025,
+            "content": "Pro tip: use `__builtin_popcount`.",
+            "voteCount": 0
+        },
+        {
+            "name": "ramgopaln",
+            "year": 2025,
+            "content": "Can anyone help me why my solution is getting TLE\\n\\n/**\\n * @param {number} left\\n * @param {number} right\\n * @return {number}\\n */\\nvar countPrimeSetBits = function(left, right) {\\n    let count=0;\\n    let primeArray=[2, 3, 5, 7, 11, 13, 17 , 19]\\n    for(let i=left;i<=right;i++){\\n            if(primeArray.includes(countNumberOf1InBinary(i))){\\n                count+=1;\\n            }\\n    }\\n};\\n\\nfunction countNumberOf1InBinary(num){\\n    let count=0;\\n    let mask=1;\\n    while(mask<=num){\\n        if(num&mask>0){\\n            count+=1\\n        }\\n    }\\n    return count;\\n}",
+            "voteCount": 0
+        },
+        {
+            "name": "pth55",
+            "year": 2024,
+            "content": " __builtin_popcount() may help you!",
+            "voteCount": 0
+        },
+        {
+            "name": "lovesbumblebees",
+            "year": 2024,
+            "content": "If you are looking for a challenge, there is an O(log^2(n)) solution that uses O(log^2(n)) extra memory for lookups. If you can solve it even more efficiently in time with similar space usage I would be very interested!  ",
+            "voteCount": 0
+        }
+    ]
+}

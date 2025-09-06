@@ -1,0 +1,141 @@
+{
+    "category": "",
+    "id": "281",
+    "name": "Zigzag Iterator",
+    "difficulty": "Medium",
+    "leetcode_url": "https://leetcode.com/problems/zigzag-iterator/",
+    "slug": "zigzag-iterator",
+    "isPaidOnly": true,
+    "tags": [
+        "Array",
+        "Design",
+        "Queue",
+        "Iterator"
+    ],
+    "similar_questions": [
+        {
+            "title": "Binary Search Tree Iterator",
+            "difficulty": "Medium",
+            "slug": "binary-search-tree-iterator"
+        },
+        {
+            "title": "Flatten 2D Vector",
+            "difficulty": "Medium",
+            "slug": "flatten-2d-vector"
+        },
+        {
+            "title": "Peeking Iterator",
+            "difficulty": "Medium",
+            "slug": "peeking-iterator"
+        },
+        {
+            "title": "Flatten Nested List Iterator",
+            "difficulty": "Medium",
+            "slug": "flatten-nested-list-iterator"
+        },
+        {
+            "title": "Merge Strings Alternately",
+            "difficulty": "Easy",
+            "slug": "merge-strings-alternately"
+        }
+    ],
+    "questionId": "281",
+    "questionFrontendId": "281",
+    "title": "Zigzag Iterator",
+    "titleSlug": "zigzag-iterator",
+    "likes": 704,
+    "dislikes": 41,
+    "stats": {
+        "totalAccepted": "107.3K",
+        "totalSubmission": "162.6K",
+        "totalAcceptedRaw": 107318,
+        "totalSubmissionRaw": 162591,
+        "acRate": "66.0%"
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Queue",
+            "slug": "queue"
+        },
+        {
+            "name": "Iterator",
+            "slug": "iterator"
+        }
+    ],
+    "metaData": {
+        "name": "ZigzagIterator",
+        "params": [
+            {
+                "name": "v1",
+                "type": "list<integer>"
+            },
+            {
+                "name": "v2",
+                "type": "list<integer>"
+            }
+        ],
+        "return": {
+            "type": "list<integer>",
+            "dealloc": true
+        },
+        "manual": true
+    },
+    "discussion_posts": [
+        {
+            "name": "istudy0",
+            "year": 2016,
+            "content": "This is not directly related to the question but it would be good if C++ interface methods are same as iterator class.\\nWhen this question is asked, the interviewer expects to see those operator methods and thus, it will be good to see different interface requirement for C++ so I can learn from others what exactly I need to implement. ;-)",
+            "voteCount": 4
+        },
+        {
+            "name": "jonsneep",
+            "year": 2024,
+            "content": "There\\'s always that one darn testcase that ruins it. Curse you, `v1=[0] v2=[0]`",
+            "voteCount": 1
+        },
+        {
+            "name": "ozgrsvk",
+            "year": 2024,
+            "content": "I solved it merging two lists one by one into a LinkedList, starting from the first list.",
+            "voteCount": 1
+        },
+        {
+            "name": "hi-mark",
+            "year": 2022,
+            "content": "Intuition for python : \\n1. keep a flag variable which keeps track of which vector should you pop out the result of\\n2. Keep two pointers (1  for each vector)",
+            "voteCount": 1
+        },
+        {
+            "name": "matthewjinmp",
+            "year": 2025,
+            "content": "its pretty easy if you just merged the lists together at the start ",
+            "voteCount": 0
+        },
+        {
+            "name": "CanaanYO",
+            "year": 2025,
+            "content": "only 6 discussion too less",
+            "voteCount": 0
+        },
+        {
+            "name": "midwittery",
+            "year": 2025,
+            "content": "This is so easy in python if you are aware of `zip_longest...` ",
+            "voteCount": 0
+        },
+        {
+            "name": "CodeisLit",
+            "year": 2024,
+            "content": "Memory limit exceeded anyone lol? I created 4 iterators as class members in C++ to track v1/v2.begin(), end(). Leetcode is kinda dumb for not allowing that",
+            "voteCount": 0
+        }
+    ]
+}

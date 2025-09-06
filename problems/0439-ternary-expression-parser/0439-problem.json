@@ -1,0 +1,114 @@
+{
+    "category": "",
+    "id": "439",
+    "name": "Ternary Expression Parser",
+    "difficulty": "Medium",
+    "leetcode_url": "https://leetcode.com/problems/ternary-expression-parser/",
+    "slug": "ternary-expression-parser",
+    "isPaidOnly": true,
+    "tags": [
+        "String",
+        "Stack",
+        "Recursion"
+    ],
+    "similar_questions": [
+        {
+            "title": "Mini Parser",
+            "difficulty": "Medium",
+            "slug": "mini-parser"
+        },
+        {
+            "title": "Remove Comments",
+            "difficulty": "Medium",
+            "slug": "remove-comments"
+        },
+        {
+            "title": "Parse Lisp Expression",
+            "difficulty": "Hard",
+            "slug": "parse-lisp-expression"
+        }
+    ],
+    "questionId": "439",
+    "questionFrontendId": "439",
+    "title": "Ternary Expression Parser",
+    "titleSlug": "ternary-expression-parser",
+    "likes": 509,
+    "dislikes": 74,
+    "stats": {
+        "totalAccepted": "37.1K",
+        "totalSubmission": "59.8K",
+        "totalAcceptedRaw": 37128,
+        "totalSubmissionRaw": 59752,
+        "acRate": "62.1%"
+    },
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Stack",
+            "slug": "stack"
+        },
+        {
+            "name": "Recursion",
+            "slug": "recursion"
+        }
+    ],
+    "metaData": {
+        "name": "parseTernary",
+        "params": [
+            {
+                "name": "expression",
+                "type": "string"
+            }
+        ],
+        "return": {
+            "type": "string"
+        }
+    },
+    "discussion_posts": [
+        {
+            "name": "harryyu1994",
+            "year": 2020,
+            "content": "If we start scanning from right to left (order given by the problem), you will notice that we encounter BOTH operands before we encounter the operator (T? or F?). Reverse Polish Notation!\\nReverse Polish Notation can be evaluated using a stack (https://leetcode.com/problems/evaluate-reverse-polish-notation/)",
+            "voteCount": 7
+        },
+        {
+            "name": "MangoTroll34",
+            "year": 2024,
+            "content": "I am working on this and LC shows 1 other online. Whoever you are... you got this \\uD83D\\uDCAA",
+            "voteCount": 3
+        },
+        {
+            "name": "matthew106",
+            "year": 2023,
+            "content": "String parsing tasks are so annoying...",
+            "voteCount": 2
+        },
+        {
+            "name": "badasscodergirl",
+            "year": 2025,
+            "content": "The problem doesn\\'t take into account validity of ternary expression grammar.\\n\\n`F ? F ? F : T ? 5 : 3`\\nThis test case isn\\'t handled and gives \"Interval Error\" in LC.\\n\\nIf you break it down into step by step -\\nStep 1:\\nT ? 5 : 3 \\u2192 T is true \\u2192 result is \\'5\\' \\u2192 So now we have:\\n\\nStep 2:\\n\"F ? (F ? F : 5)\"\\nNow F ? F : 5 \\u2192 F is false \\u2192 result is \\'5\\'\\n\\nSte 3: Breaks here \\nNow the outermost expression is: F ? 5 : ???\\n\\n",
+            "voteCount": 1
+        },
+        {
+            "name": "seredenko99",
+            "year": 2024,
+            "content": "DO like problem says. Iterate from Right to Left!",
+            "voteCount": 1
+        },
+        {
+            "name": "etanila",
+            "year": 2024,
+            "content": "I like parsing problems, they always get you. :-) I figured out the logic right away but it took some time to actually code it.",
+            "voteCount": 0
+        },
+        {
+            "name": "yangwudi398",
+            "year": 2023,
+            "content": "Nice to learn how nested conditional expressions are parsed.",
+            "voteCount": 0
+        }
+    ]
+}

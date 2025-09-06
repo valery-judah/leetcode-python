@@ -1,0 +1,123 @@
+{
+    "category": "",
+    "id": "1176",
+    "name": "Diet Plan Performance",
+    "difficulty": "Easy",
+    "leetcode_url": "https://leetcode.com/problems/diet-plan-performance/",
+    "slug": "diet-plan-performance",
+    "isPaidOnly": true,
+    "tags": [
+        "Array",
+        "Sliding Window"
+    ],
+    "similar_questions": [],
+    "questionId": "1280",
+    "questionFrontendId": "1176",
+    "title": "Diet Plan Performance",
+    "titleSlug": "diet-plan-performance",
+    "likes": 166,
+    "dislikes": 293,
+    "stats": {
+        "totalAccepted": "37.9K",
+        "totalSubmission": "69.7K",
+        "totalAcceptedRaw": 37871,
+        "totalSubmissionRaw": 69671,
+        "acRate": "54.4%"
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Sliding Window",
+            "slug": "sliding-window"
+        }
+    ],
+    "metaData": {
+        "name": "dietPlanPerformance",
+        "params": [
+            {
+                "name": "calories",
+                "type": "integer[]"
+            },
+            {
+                "type": "integer",
+                "name": "k"
+            },
+            {
+                "type": "integer",
+                "name": "lower"
+            },
+            {
+                "type": "integer",
+                "name": "upper"
+            }
+        ],
+        "return": {
+            "type": "integer"
+        }
+    },
+    "discussion_posts": [
+        {
+            "name": "simonzhu91",
+            "year": 2019,
+            "content": "Isn\\'t it a bad diet if they consume `T > upper` calories? :P",
+            "voteCount": 18
+        },
+        {
+            "name": "YusenPeng",
+            "year": 2022,
+            "content": "Notice k is a fixed value. Can we try sliding window? :)",
+            "voteCount": 3
+        },
+        {
+            "name": "Ne0nSh4dow",
+            "year": 2023,
+            "content": "Why did people dislike this problem? Looks interesting to me at least. ",
+            "voteCount": 2
+        },
+        {
+            "name": "tin_le",
+            "year": 2024,
+            "content": "My sister need this algorithm for her daily life...",
+            "voteCount": 1
+        },
+        {
+            "name": "chunkityip",
+            "year": 2024,
+            "content": "The name should change to \"Gigachad Diet Plan Performance\" :)",
+            "voteCount": 1
+        },
+        {
+            "name": "pandeynikhil8",
+            "year": 2023,
+            "content": "Example 3 discription is wrong\\n6,5,0,0 ->\\n\\n6 5 day1  -> +1\\n5 0 day2  -> 0\\n0 0 day3  -> -1\\n\\nhence ans 0.\\nLeetcode made discription wrong to confuse people.stupid leetcode.\\nI completely understand your frustration with the potentially confusing problem descriptions sometimes found on coding platforms. It\\'s truly a remarkable feat of creative writing when you encounter a description that keeps you on your toes, making you question reality itself.\\n\\nIn this particular case, the problem description seems to have embraced its inner enigma, making us contemplate the profound mysteries of caloric intake. While lesser beings might strive for clarity, LeetCode clearly aspires to a higher plane of complexity, where the lines between positive and negative points blur like the boundaries of the multiverse.\\n\\nSo, let\\'s embrace the challenge and savor the subtleties of this enigmatic problem. After all, isn\\'t the true reward of coding not just solving the problem but also deciphering the riddles that hide within the descriptions? \\uD83E\\uDD28\\uD83D\\uDE04\\n",
+            "voteCount": 1
+        },
+        {
+            "name": "matthewjinmp",
+            "year": 2025,
+            "content": "the description really hurt my pea brain ",
+            "voteCount": 0
+        },
+        {
+            "name": "PratikGrg2024",
+            "year": 2025,
+            "content": "A good way to think of the problem is to read the problem as it mentions consecutive sequence of k meaning value of k or window is fixed. After that we use classic fixed window algorithm pseudocode check for the first window and check the if else case. Initially we also want to use a counter to keep track of the calories and finally use another variable to store our result. ",
+            "voteCount": 0
+        },
+        {
+            "name": "ojayyike",
+            "year": 2025,
+            "content": "Finally feel confident with sliding window problems ",
+            "voteCount": 0
+        },
+        {
+            "name": "collei",
+            "year": 2025,
+            "content": "mf is trying to get fatter?",
+            "voteCount": 0
+        }
+    ]
+}

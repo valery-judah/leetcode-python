@@ -1,0 +1,187 @@
+{
+    "category": "",
+    "id": "642",
+    "name": "Design Search Autocomplete System",
+    "difficulty": "Hard",
+    "leetcode_url": "https://leetcode.com/problems/design-search-autocomplete-system/",
+    "slug": "design-search-autocomplete-system",
+    "isPaidOnly": true,
+    "tags": [
+        "String",
+        "Depth-First Search",
+        "Design",
+        "Trie",
+        "Sorting",
+        "Heap (Priority Queue)",
+        "Data Stream"
+    ],
+    "similar_questions": [
+        {
+            "title": "Implement Trie (Prefix Tree)",
+            "difficulty": "Medium",
+            "slug": "implement-trie-prefix-tree"
+        }
+    ],
+    "questionId": "642",
+    "questionFrontendId": "642",
+    "title": "Design Search Autocomplete System",
+    "titleSlug": "design-search-autocomplete-system",
+    "likes": 2161,
+    "dislikes": 195,
+    "stats": {
+        "totalAccepted": "158.3K",
+        "totalSubmission": "320K",
+        "totalAcceptedRaw": 158330,
+        "totalSubmissionRaw": 319954,
+        "acRate": "49.5%"
+    },
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Trie",
+            "slug": "trie"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        },
+        {
+            "name": "Data Stream",
+            "slug": "data-stream"
+        }
+    ],
+    "metaData": {
+        "classname": "AutocompleteSystem",
+        "maxbytesperline": 200000,
+        "constructor": {
+            "params": [
+                {
+                    "type": "string[]",
+                    "name": "sentences"
+                },
+                {
+                    "type": "integer[]",
+                    "name": "times"
+                },
+                {
+                    "type": "integer",
+                    "name": "sentencesSize",
+                    "lang": "c",
+                    "value": "size_1"
+                },
+                {
+                    "type": "integer",
+                    "name": "timesSize",
+                    "lang": "c",
+                    "value": "size_2"
+                }
+            ]
+        },
+        "methods": [
+            {
+                "name": "input",
+                "params": [
+                    {
+                        "type": "character",
+                        "name": "c"
+                    }
+                ],
+                "return": {
+                    "type": "list<string>"
+                }
+            }
+        ],
+        "systemdesign": true,
+        "params": [
+            {
+                "name": "inputs",
+                "type": "integer[]"
+            },
+            {
+                "name": "inputs",
+                "type": "integer[]"
+            }
+        ],
+        "return": {
+            "type": "list<String>",
+            "dealloc": true
+        }
+    },
+    "discussion_posts": [
+        {
+            "name": "AntonBorzenko",
+            "year": 2023,
+            "content": "Understanding the task description is a whole subtask.",
+            "voteCount": 79
+        },
+        {
+            "name": "kun_10",
+            "year": 2023,
+            "content": "Request to problem writers: Please describe clearly what you want. Sometimes, I feel like we are taking English comprehension tests rather than algorithmic problems.",
+            "voteCount": 43
+        },
+        {
+            "name": "sacso",
+            "year": 2024,
+            "content": "If someone asks me this in a 45m interview I'm ending the call",
+            "voteCount": 27
+        },
+        {
+            "name": "jchoubankai",
+            "year": 2023,
+            "content": "bruh this problem description is so bad I had to read the editorial to understand the question.\n\nfor anyone who doesn't understand input:\n- it only takes in 1 char at a time, you need to keep track of the current total input (prefix)\n- calling input adds 1 char at a time to the prefix\n- calling input with '#' means that you reset the input and add the total input as a sentence",
+            "voteCount": 26
+        },
+        {
+            "name": "_noexcuses",
+            "year": 2018,
+            "content": "If so, what kind of interview was it; phone, on-site? How much time were you given?\\nThanks!",
+            "voteCount": 13
+        },
+        {
+            "name": "aronzx",
+            "year": 2024,
+            "content": "If they ask you this question in the interview, you must be interviewing for the CEO\\'s post.",
+            "voteCount": 9
+        },
+        {
+            "name": "PhantomGhost",
+            "year": 2023,
+            "content": "The way the question is worded is very hard to understand.",
+            "voteCount": 5
+        },
+        {
+            "name": "Rimberse",
+            "year": 2023,
+            "content": "If they were to ask me this question during interview, I would waste all the alloted time trying to understand it.",
+            "voteCount": 4
+        },
+        {
+            "name": "mystiquecoder",
+            "year": 2023,
+            "content": "what a ruthless question.",
+            "voteCount": 4
+        },
+        {
+            "name": "Syed_Bilal",
+            "year": 2024,
+            "content": "This question is generally asked in System design HLD round where you are not required to code.",
+            "voteCount": 2
+        }
+    ]
+}

@@ -1,0 +1,138 @@
+{
+    "category": "",
+    "id": "13",
+    "name": "Roman to Integer",
+    "difficulty": "Easy",
+    "leetcode_url": "https://leetcode.com/problems/roman-to-integer/",
+    "slug": "roman-to-integer",
+    "isPaidOnly": false,
+    "tags": [
+        "Hash Table",
+        "Math",
+        "String"
+    ],
+    "similar_questions": [
+        {
+            "title": "Integer to Roman",
+            "difficulty": "Medium",
+            "slug": "integer-to-roman"
+        }
+    ],
+    "questionId": "13",
+    "questionFrontendId": "13",
+    "title": "Roman to Integer",
+    "titleSlug": "roman-to-integer",
+    "likes": 16502,
+    "dislikes": 1152,
+    "stats": {
+        "totalAccepted": "5.2M",
+        "totalSubmission": "7.9M",
+        "totalAcceptedRaw": 5154153,
+        "totalSubmissionRaw": 7881789,
+        "acRate": "65.4%"
+    },
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "metaData": {
+        "name": "romanToInt",
+        "params": [
+            {
+                "name": "s",
+                "type": "string"
+            }
+        ],
+        "return": {
+            "type": "integer"
+        }
+    },
+    "company_tag_stats": {
+        "1": [
+            {
+                "taggedByAdmin": false,
+                "name": "Google",
+                "slug": "google",
+                "timesEncountered": 25
+            },
+            {
+                "taggedByAdmin": false,
+                "name": "Amazon",
+                "slug": "amazon",
+                "timesEncountered": 13
+            }
+        ]
+    },
+    "discussion_posts": [
+        {
+            "name": "alienfuyu",
+            "year": 2022,
+            "content": "I find a little bit nonsense to try to use the less memory and CPU possible. A good solution is not the most efficient one but a balance between clean code / readability and performance. Being a one liner is not to be smart, it's having a ego two mountains tall. Let's not forget we code for others.",
+            "voteCount": 823
+        },
+        {
+            "name": "samikshagodghate22",
+            "year": 2024,
+            "content": "who tf said its easy",
+            "voteCount": 779
+        },
+        {
+            "name": "KhaledLeet",
+            "year": 2023,
+            "content": "My first problem on leetcode :)",
+            "voteCount": 713
+        },
+        {
+            "name": "Numaira-Nawaz",
+            "year": 2023,
+            "content": "My third problem on leetcode :)\\nbut it doesn\\'t look easy :(",
+            "voteCount": 421
+        },
+        {
+            "name": "dpap",
+            "year": 2022,
+            "content": "as a beginner, here are some python hints that might help other newbies start off in the right direction:\\n* use a dictionary for the roman numeral values\\n* use `enumerate` when iterating through the input string (i always forget to use this)\\n* to distinguish \"VI\"=6, but \"IV\"=4, you need to see if the numeric value of the next character is greater than the numeric value of the current character\\n\\n",
+            "voteCount": 339
+        },
+        {
+            "name": "andywanghappy",
+            "year": 2016,
+            "content": "I dont quite understand why the frequency of this problem appeared in real interview is so high.\\n\\nWhat this problem test us?\\n\\nI don't think anyone familiar with the law of roman numbers.",
+            "voteCount": 270
+        },
+        {
+            "name": "kaiyuJiang",
+            "year": 2024,
+            "content": "This is my first algorithm question . I have spent two weeks to solve it . Although the time I spent is so long but when I accomplish it completely , I feel satisfied and delighted . I am writing these words in the hope of keeping a memory. I know that Leetcode has many excellent programmer predecessor, and I want to learn from them. I hope that in the future, I can solve algorithm problems faster and faster, and I also hope that my future self can thank the hardworking self now. Keep up the good work!",
+            "voteCount": 114
+        },
+        {
+            "name": "AlgoEngine",
+            "year": 2023,
+            "content": "Video that visualizes two different solutions:\nhttps://www.youtube.com/watch?v=tsmrUi5M1JU&t=95s",
+            "voteCount": 110
+        },
+        {
+            "name": "bman917",
+            "year": 2020,
+            "content": "The roman numeral for 49 is \"XLIX\". \\n\\nReference:\\n* https://roman-numerals.info/49\\n* https://www.rapidtables.com/math/symbols/roman-numerals-1-100.html\\n* https://www.calculateme.com/roman-numerals/to-roman/49\\n\\nHOWEVER, LeetCode\\'s answer is IL which is wrong according to references cited above. It is also wrong according to their own problem descritpion wherein thay stated:\\n\\n* I can be placed before V (5) and X (10) to make 4 and 9. \\n* X can be placed before L (50) and C (100) to make 40 and 90.\\n\\nGranted, the above description is vague enought that it does not explicity state that \"I\" cannot be placed before \"L\" or \"C\" but I think it can be assumed.",
+            "voteCount": 72
+        },
+        {
+            "name": "codyli520",
+            "year": 2020,
+            "content": "Tried `\"IM\"` which is not a valid Roman numeral in the testcase console, and it says Expected: 999\\nShouldn\\'t such case return None or -1 to indicate invalid input?",
+            "voteCount": 42
+        }
+    ]
+}

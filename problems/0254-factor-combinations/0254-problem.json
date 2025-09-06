@@ -1,0 +1,76 @@
+{
+    "category": "",
+    "id": "254",
+    "name": "Factor Combinations",
+    "difficulty": "Medium",
+    "leetcode_url": "https://leetcode.com/problems/factor-combinations/",
+    "slug": "factor-combinations",
+    "isPaidOnly": true,
+    "tags": [
+        "Backtracking"
+    ],
+    "similar_questions": [
+        {
+            "title": "Combination Sum",
+            "difficulty": "Medium",
+            "slug": "combination-sum"
+        }
+    ],
+    "questionId": "254",
+    "questionFrontendId": "254",
+    "title": "Factor Combinations",
+    "titleSlug": "factor-combinations",
+    "likes": 1169,
+    "dislikes": 75,
+    "stats": {
+        "totalAccepted": "138.2K",
+        "totalSubmission": "274.6K",
+        "totalAcceptedRaw": 138217,
+        "totalSubmissionRaw": 274589,
+        "acRate": "50.3%"
+    },
+    "topicTags": [
+        {
+            "name": "Backtracking",
+            "slug": "backtracking"
+        }
+    ],
+    "metaData": {
+        "name": "getFactors",
+        "params": [
+            {
+                "name": "n",
+                "type": "integer"
+            }
+        ],
+        "return": {
+            "type": "list<list<integer>>"
+        }
+    },
+    "discussion_posts": [
+        {
+            "name": "justyy",
+            "year": 2019,
+            "content": "1. avoid the duplicates by searching next factor that is not less than its previous one.\\n2. exclude 1 and n\\n3. [DFS and BFS](https://helloacm.com/algorithms-to-compute-the-factor-combinations-for-an-integer-using-dfs-and-bfs/)\\n\\n\\n",
+            "voteCount": 8
+        },
+        {
+            "name": "x0fzZhfYXo",
+            "year": 2024,
+            "content": "I beat only 36% and thought  \"ah yea propably some math formula is the best\" but there is just smart loop:\\n\\n ` for (int i = min_value; i * i <= n; ++i)` and I love it.",
+            "voteCount": 1
+        },
+        {
+            "name": "buiqtuan",
+            "year": 2024,
+            "content": "same logic, pass with C# and Java, but fail with Python, haiz",
+            "voteCount": 1
+        },
+        {
+            "name": "xsdnmg",
+            "year": 2022,
+            "content": "oj in this questions is obviously bad. Python time is very strict compared to Java cpp, etc. They let java 1304 ms to pass even that python can finish this after optimization in 100ms. Many solution in java if rewrite in Python cannot pass the OJ. This is quite unfair. Many Java solutions is 1ms in fact",
+            "voteCount": 1
+        }
+    ]
+}

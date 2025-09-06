@@ -1,0 +1,131 @@
+{
+    "category": "",
+    "id": "803",
+    "name": "Bricks Falling When Hit",
+    "difficulty": "Hard",
+    "leetcode_url": "https://leetcode.com/problems/bricks-falling-when-hit/",
+    "slug": "bricks-falling-when-hit",
+    "isPaidOnly": false,
+    "tags": [
+        "Array",
+        "Union Find",
+        "Matrix"
+    ],
+    "similar_questions": [
+        {
+            "title": "Last Day Where You Can Still Cross",
+            "difficulty": "Hard",
+            "slug": "last-day-where-you-can-still-cross"
+        },
+        {
+            "title": "Number of Ways to Build Sturdy Brick Wall",
+            "difficulty": "Medium",
+            "slug": "number-of-ways-to-build-sturdy-brick-wall"
+        }
+    ],
+    "questionId": "821",
+    "questionFrontendId": "803",
+    "title": "Bricks Falling When Hit",
+    "titleSlug": "bricks-falling-when-hit",
+    "likes": 1177,
+    "dislikes": 190,
+    "stats": {
+        "totalAccepted": "35.2K",
+        "totalSubmission": "97.4K",
+        "totalAcceptedRaw": 35195,
+        "totalSubmissionRaw": 97410,
+        "acRate": "36.1%"
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Union Find",
+            "slug": "union-find"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        }
+    ],
+    "metaData": {
+        "name": "hitBricks",
+        "params": [
+            {
+                "name": "grid",
+                "type": "integer[][]"
+            },
+            {
+                "name": "hits",
+                "type": "integer[][]"
+            }
+        ],
+        "return": {
+            "type": "integer[]"
+        }
+    },
+    "discussion_posts": [
+        {
+            "name": "wanglu",
+            "year": 2018,
+            "content": "I just want to share my thoughts here. \\n\\nIf no bircks drop, then after all operations. The grid will be look like a pool with multi islands.\\nfor example:\\n0010000100\\n0111001110\\n1111111111\\nafter operations: [0,2], [2,4], [1,2], [0,7]\\n0000000000\\n0101001110\\n1111011111\\nso total 2 islands. \\n\\nThen add bricks back reversely.\\n[0,7]\\n0000000100\\n0101001110\\n1111011111\\nthe right island attaches top, and its size is 9, which means 8 bricks drop in this operation.\\n\\n[1,2]\\n0000000100\\n0111001110\\n1111011111\\nthe left island does not reach the top, so no brick drops. \\n\\n[2,4]\\n0000000100\\n0111001110\\n1111111111\\nthe left island connects to right island and acttaches top, and left island is original 7, which means 7 bricks drop in this operation.\\n\\n[0,2]\\n0010000100\\n0111001110\\n1111111111\\nthe island size is just enlarged by 1, which means no brick drops. \\n\\nHope this helps:)\\n\\n\\n\\n\\n\\n",
+            "voteCount": 78
+        },
+        {
+            "name": "Msey",
+            "year": 2024,
+            "content": "got my head hit by that brick",
+            "voteCount": 10
+        },
+        {
+            "name": "cppshooter",
+            "year": 2024,
+            "content": "There\\'s a [1D version of this problem](https://leetcode.com/problems/maximum-segment-sum-after-removals/) which can also be solved in a very similar way. If you\\'re stuck on this problem try the 1D version first :)",
+            "voteCount": 8
+        },
+        {
+            "name": "markalavin",
+            "year": 2023,
+            "content": "Can we assume that all initial bricks are stable?",
+            "voteCount": 8
+        },
+        {
+            "name": "Dagar",
+            "year": 2023,
+            "content": "One of the facts that should be present in the problem statement is that all the bricks are stable to begin with.",
+            "voteCount": 6
+        },
+        {
+            "name": "saurabh0707",
+            "year": 2024,
+            "content": "Somebody please pick that same brick and hit me. Please hit me harder than the problem \\uD83E\\uDD72",
+            "voteCount": 5
+        },
+        {
+            "name": "preeti3",
+            "year": 2023,
+            "content": "The problem with \"hard\" problems is understanding the problem is itself hard :-)",
+            "voteCount": 3
+        },
+        {
+            "name": "panzerschrek",
+            "year": 2025,
+            "content": "This piece of shit is designed to be solved in reverse order - just remove all blocks in hits list and then add them back one by one.",
+            "voteCount": 2
+        },
+        {
+            "name": "ashish1729",
+            "year": 2025,
+            "content": "an image in this question will be so helpful",
+            "voteCount": 1
+        },
+        {
+            "name": "You_Know_Me",
+            "year": 2025,
+            "content": "My O(R^2*C^2) solution is faster than 85% submissions and DSU solution with complexity O(R*C*alpha(R*C)) is only beating 69% of solutions. It\\'s strange. \\n\\nLink to my O(R^2*C^2) solution. \\nhttps://leetcode.com/problems/bricks-falling-when-hit/submissions/1613793241",
+            "voteCount": 1
+        }
+    ]
+}

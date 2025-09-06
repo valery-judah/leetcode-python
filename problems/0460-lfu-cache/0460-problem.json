@@ -1,0 +1,187 @@
+{
+    "category": "",
+    "id": "460",
+    "name": "LFU Cache",
+    "difficulty": "Hard",
+    "leetcode_url": "https://leetcode.com/problems/lfu-cache/",
+    "slug": "lfu-cache",
+    "isPaidOnly": false,
+    "tags": [
+        "Hash Table",
+        "Linked List",
+        "Design",
+        "Doubly-Linked List"
+    ],
+    "similar_questions": [
+        {
+            "title": "LRU Cache",
+            "difficulty": "Medium",
+            "slug": "lru-cache"
+        },
+        {
+            "title": "Design In-Memory File System",
+            "difficulty": "Hard",
+            "slug": "design-in-memory-file-system"
+        }
+    ],
+    "questionId": "460",
+    "questionFrontendId": "460",
+    "title": "LFU Cache",
+    "titleSlug": "lfu-cache",
+    "likes": 6123,
+    "dislikes": 342,
+    "stats": {
+        "totalAccepted": "328.2K",
+        "totalSubmission": "692.8K",
+        "totalAcceptedRaw": 328235,
+        "totalSubmissionRaw": 692820,
+        "acRate": "47.4%"
+    },
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Linked List",
+            "slug": "linked-list"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Doubly-Linked List",
+            "slug": "doubly-linked-list"
+        }
+    ],
+    "metaData": {
+        "classname": "LFUCache",
+        "maxbytesperline": 200000,
+        "constructor": {
+            "params": [
+                {
+                    "type": "integer",
+                    "name": "capacity"
+                }
+            ]
+        },
+        "methods": [
+            {
+                "name": "get",
+                "params": [
+                    {
+                        "type": "integer",
+                        "name": "key"
+                    }
+                ],
+                "return": {
+                    "type": "integer"
+                }
+            },
+            {
+                "name": "put",
+                "params": [
+                    {
+                        "type": "integer",
+                        "name": "key"
+                    },
+                    {
+                        "type": "integer",
+                        "name": "value"
+                    }
+                ],
+                "return": {
+                    "type": "void"
+                }
+            }
+        ],
+        "systemdesign": true,
+        "params": [
+            {
+                "name": "inputs",
+                "type": "integer[]"
+            },
+            {
+                "name": "inputs",
+                "type": "integer[]"
+            }
+        ],
+        "return": {
+            "type": "list<String>",
+            "dealloc": true
+        }
+    },
+    "company_tag_stats": {
+        "1": [
+            {
+                "taggedByAdmin": true,
+                "name": "Amazon",
+                "slug": "amazon",
+                "timesEncountered": 18
+            }
+        ]
+    },
+    "discussion_posts": [
+        {
+            "name": "steveo",
+            "year": 2019,
+            "content": "This is a great question for testing people\\'s understanding of algorithms and data structures, but it\\'s way too long for a 45mins interview. Who the heck can come up with the solution without seeing it before and code it out in 45 mins.",
+            "voteCount": 533
+        },
+        {
+            "name": "FrodeSandberg",
+            "year": 2023,
+            "content": "Leetcode trying to kill everyones january badge at the finish line with 3 hards in a row. ",
+            "voteCount": 138
+        },
+        {
+            "name": "aanand07",
+            "year": 2023,
+            "content": "This is a complete user story, I would take 2 story points at least to complete it.",
+            "voteCount": 84
+        },
+        {
+            "name": "manhalfgod",
+            "year": 2022,
+            "content": "If you also feel struggling to understand the ideas / intuition of LFU cache challenge,\\ntry solving these 2 problems first:\\n\\n1. [Maximum frequency stack](https://leetcode.com/problems/maximum-frequency-stack/)\\n2. [LRU cache](https://leetcode.com/problems/lru-cache/)\\n\\nLearn how to track max (min in LFU challenge case) from the 1st question.\\nLearn the concept of ordered / sorted dictionary keys from the 2nd question.\\n\\nFind your own favorite solutions for each question.\\n\\n**Pro tip**: sort by most recent and learn from newer solution to take advantage of newer programming language features. Most voted solutions can be outdated / convoluted quickly.\\n\\nFor example, if you are using Python, since Python 3.7 a regular dictionary is guaranteed to keep keys insertion order; so you do not need to rely on OrderedDict.",
+            "voteCount": 83
+        },
+        {
+            "name": "Jaltair",
+            "year": 2020,
+            "content": "Great way to test if someone lies during the interview ))) \\nCandidate (C), Interviewer (I) at Amazon. \\nI: asks for LPs for part of the interview, uses the remaining 20-30 minutes to ask C to implement LFU\\nC: is able to come up and code optimal solution in 20 minutes\\nI: have you seen the problem before? \\nC: no\\nI (silently) puts a red flag next to Earn Trust/Integrity ))))",
+            "voteCount": 79
+        },
+        {
+            "name": "frmz",
+            "year": 2024,
+            "content": "This should not be marked as `Hard` but rather as `Nightmare`",
+            "voteCount": 41
+        },
+        {
+            "name": "Tribhuwan-Joshi",
+            "year": 2024,
+            "content": "Using a stopwatch, It took total 7 hours to implement the logic that I understand from the article. \\n\\nI am slow but I made progress and I appreciate it.\\n",
+            "voteCount": 23
+        },
+        {
+            "name": "pratikpalashikar",
+            "year": 2016,
+            "content": "Test case is wrong the expected and output  does not match.\\n[\"LFUCache\",\"set\",\"set\",\"get\",\"get\",\"get\",\"set\",\"set\",\"get\",\"get\",\"get\",\"get\"]\\n[[3],[2,2],[1,1],[2],[1],[2],[3,3],[4,4],[3],[2],[1],[4]]\\nMy answer: [null,null,null,2,1,2,null,null,3,2,-1,4]\\n\\nand the out from the leetcode [null,null,null,2,1,2,null,null,-1,2,1,4]",
+            "voteCount": 22
+        },
+        {
+            "name": "demaw",
+            "year": 2023,
+            "content": "after finally solving this question for  around a painstaking half hour full of troubleshooting and little adjustments, I read the problem description again.\\nI missed the fact that all operations must be in O(1) time. I used a priority queue solution and both operations run in O(logn) time.\\nNow I have to redo the entire problem...",
+            "voteCount": 11
+        },
+        {
+            "name": "faroukamr",
+            "year": 2023,
+            "content": "Before solving this problem, you need to solve (895. Maximum Frequency Stack) and (146. LRU Cache)",
+            "voteCount": 11
+        }
+    ]
+}

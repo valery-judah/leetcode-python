@@ -1,0 +1,90 @@
+{
+    "category": "",
+    "id": "2026",
+    "name": "Low-Quality Problems",
+    "difficulty": "Easy",
+    "leetcode_url": "https://leetcode.com/problems/low-quality-problems/",
+    "slug": "low-quality-problems",
+    "isPaidOnly": true,
+    "tags": [
+        "Database"
+    ],
+    "similar_questions": [],
+    "questionId": "2172",
+    "questionFrontendId": "2026",
+    "title": "Low-Quality Problems",
+    "titleSlug": "low-quality-problems",
+    "likes": 55,
+    "dislikes": 12,
+    "stats": {
+        "totalAccepted": "14.7K",
+        "totalSubmission": "17.4K",
+        "totalAcceptedRaw": 14724,
+        "totalSubmissionRaw": 17434,
+        "acRate": "84.5%"
+    },
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "metaData": {
+        "mysql": [
+            "Create table If Not Exists Problems (problem_id int, likes int, dislikes int)"
+        ],
+        "mssql": [
+            "Create table Problems (problem_id int, likes int, dislikes int)"
+        ],
+        "oraclesql": [
+            "Create table Problems (problem_id int, likes int, dislikes int)"
+        ],
+        "database": true,
+        "name": "low_quality_problems",
+        "pythondata": [
+            "Problems = pd.DataFrame([], columns=['problem_id', 'likes', 'dislikes']).astype({'problem_id':'Int64', 'likes':'Int64', 'dislikes':'Int64'})"
+        ],
+        "postgresql": [
+            "Create table If Not Exists Problems (problem_id int, likes int, dislikes int)"
+        ],
+        "database_schema": {
+            "Problems": {
+                "problem_id": "INT",
+                "likes": "INT",
+                "dislikes": "INT"
+            }
+        }
+    },
+    "discussion_posts": [
+        {
+            "name": "AppleFans",
+            "year": 2021,
+            "content": "as the title...",
+            "voteCount": 16
+        },
+        {
+            "name": "deleted_user",
+            "year": 2021,
+            "content": "\\'\\'\\'\\nSELECT problem_id\\nFROM Problems\\nWHERE (likes/(likes+dislikes))*100<60\\nORDER BY problem_id ASC;\\n\\'\\'\\'",
+            "voteCount": 2
+        },
+        {
+            "name": "parklark95",
+            "year": 2023,
+            "content": "Why did I get accepted when I used <= 0.6 instead of < 0.6?\\n\\n\\'Less than\\' means \\'<\\' in Google",
+            "voteCount": 1
+        },
+        {
+            "name": "matthewjinmp",
+            "year": 2025,
+            "content": "man, the title of this problem set itself up for absolute destruction in the comments ",
+            "voteCount": 0
+        },
+        {
+            "name": "dolong2110",
+            "year": 2022,
+            "content": "```\\n# Write your MySQL query statement below\\nselect problem_id\\nfrom problems\\nwhere likes / (likes + dislikes) * 100.0 < 60\\norder by problem_id;\\n```",
+            "voteCount": 0
+        }
+    ]
+}

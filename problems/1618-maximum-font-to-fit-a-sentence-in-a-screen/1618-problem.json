@@ -1,0 +1,100 @@
+{
+    "category": "",
+    "id": "1618",
+    "name": "Maximum Font to Fit a Sentence in a Screen",
+    "difficulty": "Medium",
+    "leetcode_url": "https://leetcode.com/problems/maximum-font-to-fit-a-sentence-in-a-screen/",
+    "slug": "maximum-font-to-fit-a-sentence-in-a-screen",
+    "isPaidOnly": true,
+    "tags": [
+        "Array",
+        "String",
+        "Binary Search",
+        "Interactive"
+    ],
+    "similar_questions": [],
+    "questionId": "1384",
+    "questionFrontendId": "1618",
+    "title": "Maximum Font to Fit a Sentence in a Screen",
+    "titleSlug": "maximum-font-to-fit-a-sentence-in-a-screen",
+    "likes": 113,
+    "dislikes": 22,
+    "stats": {
+        "totalAccepted": "7.3K",
+        "totalSubmission": "11.8K",
+        "totalAcceptedRaw": 7285,
+        "totalSubmissionRaw": 11839,
+        "acRate": "61.5%"
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Interactive",
+            "slug": "interactive"
+        }
+    ],
+    "metaData": {
+        "name": "maxFont",
+        "params": [
+            {
+                "name": "text",
+                "type": "string"
+            },
+            {
+                "type": "integer",
+                "name": "w"
+            },
+            {
+                "type": "integer",
+                "name": "h"
+            },
+            {
+                "type": "integer[]",
+                "name": "fonts"
+            }
+        ],
+        "return": {
+            "type": "integer"
+        },
+        "languages": [
+            "cpp",
+            "java",
+            "python",
+            "csharp",
+            "javascript",
+            "python3"
+        ],
+        "manual": true
+    },
+    "discussion_posts": [
+        {
+            "name": "matthewjinmp",
+            "year": 2025,
+            "content": "a very complicated way to ask a binary search question",
+            "voteCount": 1
+        },
+        {
+            "name": "penny5283",
+            "year": 2025,
+            "content": "simple one, boost confidence",
+            "voteCount": 0
+        },
+        {
+            "name": "nikhilreddydev",
+            "year": 2022,
+            "content": "can someone please tell me whats wrong with my code?\\n\\nint maxFont(string text, int w, int h, vector<int>& fonts, FontInfo fontInfo) {\\n        int freq[26] = {0};\\n        for(auto &ch: text)\\n            ++freq[ch - \\'a\\'];\\n\\n        int left = 0, right = fonts.size() - 1;\\n        while(left < right) {\\n            int mid = left + (right - left) / 2;\\n            if(canDisplay(freq, w, h, fontInfo, mid))\\n                left = mid + 1;\\n            else\\n                right = mid;\\n        }\\n\\n        return left - 1 == -1 ? -1 : fonts[left - 1];\\n    }\\nint maxFont(string text, int w, int h, vector<int>& fonts, FontInfo fontInfo) {\\n        int freq[26] = {0};\\n        for(auto &ch: text)\\n            ++freq[ch - \\'a\\'];\\n\\n        int left = 0, right = fonts.size() - 1;\\n        while(left < right) {\\n            int mid = left + (right - left) / 2;\\n            if(canDisplay(freq, w, h, fontInfo, mid))\\n                left = mid + 1;\\n            else\\n                right = mid;\\n        }\\n\\n        return left - 1 == -1 ? -1 : fonts[left - 1];\\n    }",
+            "voteCount": 0
+        }
+    ]
+}

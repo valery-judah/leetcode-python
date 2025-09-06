@@ -1,0 +1,122 @@
+{
+    "category": "",
+    "id": "422",
+    "name": "Valid Word Square",
+    "difficulty": "Easy",
+    "leetcode_url": "https://leetcode.com/problems/valid-word-square/",
+    "slug": "valid-word-square",
+    "isPaidOnly": true,
+    "tags": [
+        "Array",
+        "Matrix"
+    ],
+    "similar_questions": [
+        {
+            "title": "Word Squares",
+            "difficulty": "Hard",
+            "slug": "word-squares"
+        },
+        {
+            "title": "Toeplitz Matrix",
+            "difficulty": "Easy",
+            "slug": "toeplitz-matrix"
+        }
+    ],
+    "questionId": "422",
+    "questionFrontendId": "422",
+    "title": "Valid Word Square",
+    "titleSlug": "valid-word-square",
+    "likes": 441,
+    "dislikes": 271,
+    "stats": {
+        "totalAccepted": "66K",
+        "totalSubmission": "156.9K",
+        "totalAcceptedRaw": 66024,
+        "totalSubmissionRaw": 156911,
+        "acRate": "42.1%"
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        }
+    ],
+    "metaData": {
+        "name": "validWordSquare",
+        "params": [
+            {
+                "name": "words",
+                "type": "list<string>"
+            }
+        ],
+        "return": {
+            "type": "boolean"
+        }
+    },
+    "discussion_posts": [
+        {
+            "name": "pieceofpie",
+            "year": 2023,
+            "content": "# symmetry... SyMmEtRy... SYMMETRY!!!!!\\n\\nPlease don\\'t forget to check **boundary conditions** too! That the dimensions are equal in **rows** AND in **columns**!",
+            "voteCount": 5
+        },
+        {
+            "name": "karthikeyansundaram08",
+            "year": 2024,
+            "content": "More like medium category, than easy. ",
+            "voteCount": 3
+        },
+        {
+            "name": "PradeepRanjan94",
+            "year": 2025,
+            "content": "this is not ez, pls change to medium.",
+            "voteCount": 2
+        },
+        {
+            "name": "ptt3rn",
+            "year": 2023,
+            "content": "I just added some dashes to the strings to make it easy.",
+            "voteCount": 1
+        },
+        {
+            "name": "TGBBSZWHWDLANZP",
+            "year": 2023,
+            "content": "you can use `zip_longest` to handle cols with fewer characters, e.g. `crm` and `dt` in example 2\\n\\nThere is a keyword arg `zip_longest(*iterables, fillvalue=None)`, where you can pass an empty string, so that `\\'\\'.join()` doesn\\'t crash on `None`\\'s.\\n\\nhttps://devdocs.io/python~3.9/library/itertools#itertools.zip_longest",
+            "voteCount": 1
+        },
+        {
+            "name": "matthewjinmp",
+            "year": 2025,
+            "content": "pad your strings with blank space up to the square length to make your life easier ",
+            "voteCount": 0
+        },
+        {
+            "name": "Satansoft",
+            "year": 2025,
+            "content": "**Easy**, but tricky. Could be solved with double loop and single condition for `false` return, `true` returning by default.",
+            "voteCount": 0
+        },
+        {
+            "name": "Qladstone",
+            "year": 2025,
+            "content": "What an annoying question.",
+            "voteCount": 0
+        },
+        {
+            "name": "bozgurgumus",
+            "year": 2025,
+            "content": "I can say that this is not easy, more like medium. Medium but close to easy",
+            "voteCount": 0
+        },
+        {
+            "name": "etanila",
+            "year": 2024,
+            "content": "Not sure if something is wrong with me or it is nor easy.",
+            "voteCount": 0
+        }
+    ]
+}

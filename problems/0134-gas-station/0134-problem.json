@@ -1,0 +1,121 @@
+{
+    "category": "",
+    "id": "134",
+    "name": "Gas Station",
+    "difficulty": "Medium",
+    "leetcode_url": "https://leetcode.com/problems/gas-station/",
+    "slug": "gas-station",
+    "isPaidOnly": false,
+    "tags": [
+        "Array",
+        "Greedy"
+    ],
+    "similar_questions": [
+        {
+            "title": "Maximize the Topmost Element After K Moves",
+            "difficulty": "Medium",
+            "slug": "maximize-the-topmost-element-after-k-moves"
+        }
+    ],
+    "questionId": "134",
+    "questionFrontendId": "134",
+    "title": "Gas Station",
+    "titleSlug": "gas-station",
+    "likes": 13012,
+    "dislikes": 1327,
+    "stats": {
+        "totalAccepted": "1.2M",
+        "totalSubmission": "2.5M",
+        "totalAcceptedRaw": 1176954,
+        "totalSubmissionRaw": 2514818,
+        "acRate": "46.8%"
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        }
+    ],
+    "metaData": {
+        "name": "canCompleteCircuit",
+        "params": [
+            {
+                "name": "gas",
+                "type": "integer[]"
+            },
+            {
+                "name": "cost",
+                "type": "integer[]"
+            }
+        ],
+        "return": {
+            "type": "integer"
+        }
+    },
+    "discussion_posts": [
+        {
+            "name": "Kratos50",
+            "year": 2023,
+            "content": "`I got interview in a couple hours but LeetCode streak is more important `",
+            "voteCount": 543
+        },
+        {
+            "name": "yomaChoma",
+            "year": 2023,
+            "content": "This question is very confusing. ",
+            "voteCount": 398
+        },
+        {
+            "name": "dadick",
+            "year": 2023,
+            "content": "Hint: if you start from station `a` and stuck at `b`, then you can't get to `b` from any station between `a` and `b`.",
+            "voteCount": 390
+        },
+        {
+            "name": "gjulianm",
+            "year": 2023,
+            "content": "One of the test cases does not have a unique solution. It\\'s gas = [2,0, lotsofzeros] with cost = [0,1,0,lotsofzeros]. With those parameters, any station other than 1 is a valid solution. That test case should be invalidated.",
+            "voteCount": 118
+        },
+        {
+            "name": "naveen17797",
+            "year": 2023,
+            "content": "Replace \"costs\" with \"fuel usage\", had to reread several times to understand the example",
+            "voteCount": 92
+        },
+        {
+            "name": "CourteousCoder",
+            "year": 2018,
+            "content": "In order to prepare for an interview, it is more important that I am able to recognized the pattern in this problem.\\n\\nCan someone please help me identify the pattern of this problem?\\n\\nIs this a variation of a classic problem in Computer Science?\\nIf so, which?",
+            "voteCount": 74
+        },
+        {
+            "name": "yueyunpeng",
+            "year": 2020,
+            "content": "I solved it with a two pass algorithm fairly quickly, the idea is:\\n\\n1. First just assum the gas tank can fall below zero, complete a loop starting at position 0, and record the index with lowest amount of gas (possibly negative) in tank, call it `lowest_idx`.\\n\\n2. Complete a loop starting from `lowest_idx`, break and return `-1` if the tank falls below zero at any point. Return `lowest_idx` if it never fell below zero.\\n\\nSure it\\'s not one pass, but extremely easy to understand, guarantees to be O(N) time and O(1) space, and did pass all tests. Am I missing anything?",
+            "voteCount": 67
+        },
+        {
+            "name": "banty",
+            "year": 2022,
+            "content": "This is not a rant, I genuinly want to know what is it that this problem trying to test so that I can practice it more and be better at it",
+            "voteCount": 57
+        },
+        {
+            "name": "evidem64",
+            "year": 2022,
+            "content": "Problem description states:\\n> If there exists a solution, it is guaranteed to be unique\\n\\nOn submission my solution fails for the following case:\\n> [1,2,3,4,5,6,7,8]\\n> [1,2,3,4,5,6,7,8]\\n\\nClearly, there IS a solution, but it\\'s NOT unique, since\\nyou can start at any of the stations.\\nExpected answer is 0 though, anything else gets rejected.\\n",
+            "voteCount": 41
+        },
+        {
+            "name": "Kaltu",
+            "year": 2023,
+            "content": "The last sentence from the problem description states \"If there exists a solution, it is **guaranteed** to be **unique**\"\n\nThis is violated for testcases similar to the 40th testcase, for example, if `gas=[2,0,0]` `cost=[0,1,0]` the expected answer is `0`.\nHowever, one can also start from `2` and complete the circuit.\n\nSince this is a circular problem, a simple rotation should still work.\nIf the rotated version was manually inputted as a custom testcase `gas=[0,2,0]` `cost=[0,0,1]`, the answer from the official testcase should also be rotated to `1`.\nHowever, the system says \"Invalid Testcase\" and \"The answer should be unique.\"\n\nMeaning that the system successfully detects there are non-unique solutions for `gas=[0,2,0]` `cost=[0,0,1]`, but fails to detect it in the official testcase ` gas=[2,0,0]` `cost=[0,1,0]`",
+            "voteCount": 38
+        }
+    ]
+}

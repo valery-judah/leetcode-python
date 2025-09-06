@@ -1,0 +1,145 @@
+{
+    "category": "",
+    "id": "27",
+    "name": "Remove Element",
+    "difficulty": "Easy",
+    "leetcode_url": "https://leetcode.com/problems/remove-element/",
+    "slug": "remove-element",
+    "isPaidOnly": false,
+    "tags": [
+        "Array",
+        "Two Pointers"
+    ],
+    "similar_questions": [
+        {
+            "title": "Remove Duplicates from Sorted Array",
+            "difficulty": "Easy",
+            "slug": "remove-duplicates-from-sorted-array"
+        },
+        {
+            "title": "Remove Linked List Elements",
+            "difficulty": "Easy",
+            "slug": "remove-linked-list-elements"
+        },
+        {
+            "title": "Move Zeroes",
+            "difficulty": "Easy",
+            "slug": "move-zeroes"
+        }
+    ],
+    "questionId": "27",
+    "questionFrontendId": "27",
+    "title": "Remove Element",
+    "titleSlug": "remove-element",
+    "likes": 4268,
+    "dislikes": 5017,
+    "stats": {
+        "totalAccepted": "4.5M",
+        "totalSubmission": "7.5M",
+        "totalAcceptedRaw": 4515300,
+        "totalSubmissionRaw": 7463305,
+        "acRate": "60.5%"
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        }
+    ],
+    "metaData": {
+        "name": "removeElement",
+        "params": [
+            {
+                "name": "nums",
+                "type": "integer[]"
+            },
+            {
+                "name": "val",
+                "type": "integer"
+            }
+        ],
+        "return": {
+            "type": "integer"
+        },
+        "output": {
+            "paramindex": 0,
+            "size": "ret"
+        }
+    },
+    "company_tag_stats": {
+        "1": [
+            {
+                "taggedByAdmin": false,
+                "name": "Google",
+                "slug": "google",
+                "timesEncountered": 16
+            }
+        ]
+    },
+    "discussion_posts": [
+        {
+            "name": "niamlaylor",
+            "year": 2023,
+            "content": "This is a vert poorly written question. Clarity is key in coding. Bad requests get bad code!",
+            "voteCount": 1478
+        },
+        {
+            "name": "Code_Surgeon",
+            "year": 2023,
+            "content": "LeetCode: It does not matter what you leave beyond the returned K\\nAlso LeetCode :\\noutput [2, 2, 3]\\nexpected [2, 2]",
+            "voteCount": 961
+        },
+        {
+            "name": "HiCode",
+            "year": 2016,
+            "content": "For this input it is giving output as wrong answer.\\n[3,2,2,3] and val=3\\nMy answer is 2\\nIt is saying expected answer is [2,2].\\nNow I am confused that I have to return and array or the count of elements (i. e. and integer).",
+            "voteCount": 554
+        },
+        {
+            "name": "tristancrudge",
+            "year": 2023,
+            "content": "One of the worst questions on the platform hands down. \\n\\nSays: Return k\\nI: Return k\\n\\nResult: Error expected an array\\nI: Change to an array\\n\\nResult: VALUE NOT EXPECTED\\n\\n\\nGet out",
+            "voteCount": 496
+        },
+        {
+            "name": "Benties",
+            "year": 2023,
+            "content": "delete this one",
+            "voteCount": 372
+        },
+        {
+            "name": "steve1031",
+            "year": 2022,
+            "content": "Answer does not seem to be correct for this case.\\n\\nInput\\nnums =\\n[0,1,2,2,3,0,4,2]\\nval =\\n2\\n\\nMy output\\n3, [0, 1, 3, 0, 4] but expected answer is [0, 1, 4, 0, 3]",
+            "voteCount": 346
+        },
+        {
+            "name": "ishbar",
+            "year": 2022,
+            "content": "I really dislike whoever made this, and the other similar problems.\\n\\n`nums[:] = [x for x in nums if x != val]` works, but (for whatever reason) `nums = [x for x in nums if x != val]` does not. \\n\\nThis is really confusing to me when the problem description states \\n\"Do not allocate extra space for another array. You must do this by modifying the input array in-place with O(1) extra memory.\"\\n\\n",
+            "voteCount": 148
+        },
+        {
+            "name": "DyuldinKS",
+            "year": 2023,
+            "content": "The most unclear description I\\'ve ever seen on leetcode. Especially for an easy task. Wasted time.",
+            "voteCount": 135
+        },
+        {
+            "name": "centroid",
+            "year": 2023,
+            "content": "[python]\\n\"Case2\" IS WRONG!\\n========\\nnums = [0,1,2,2,3,0,4,2]\\nval = 2\\nOutput = [0,1,3]      # stop checking elements after getting 3 instead of 4\\nExpected = [0,1,4,0,3]\\n=========\\nCorrect expected nums is [0,1,3,0,4]! so testcase2 is incorrect! ",
+            "voteCount": 128
+        },
+        {
+            "name": "cblakely",
+            "year": 2023,
+            "content": "This question is retarded and I\\'m skipping it.",
+            "voteCount": 76
+        }
+    ]
+}

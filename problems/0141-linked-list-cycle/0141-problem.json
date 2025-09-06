@@ -1,0 +1,158 @@
+{
+    "category": "",
+    "id": "141",
+    "name": "Linked List Cycle",
+    "difficulty": "Easy",
+    "leetcode_url": "https://leetcode.com/problems/linked-list-cycle/",
+    "slug": "linked-list-cycle",
+    "isPaidOnly": false,
+    "tags": [
+        "Hash Table",
+        "Linked List",
+        "Two Pointers"
+    ],
+    "similar_questions": [
+        {
+            "title": "Linked List Cycle II",
+            "difficulty": "Medium",
+            "slug": "linked-list-cycle-ii"
+        },
+        {
+            "title": "Happy Number",
+            "difficulty": "Easy",
+            "slug": "happy-number"
+        }
+    ],
+    "questionId": "141",
+    "questionFrontendId": "141",
+    "title": "Linked List Cycle",
+    "titleSlug": "linked-list-cycle",
+    "likes": 16876,
+    "dislikes": 1530,
+    "stats": {
+        "totalAccepted": "4.3M",
+        "totalSubmission": "8M",
+        "totalAcceptedRaw": 4250324,
+        "totalSubmissionRaw": 8005290,
+        "acRate": "53.1%"
+    },
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Linked List",
+            "slug": "linked-list"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        }
+    ],
+    "metaData": {
+        "name": "hasCycle",
+        "params": [
+            {
+                "name": "head",
+                "type": "ListNode"
+            },
+            {
+                "name": "pos",
+                "type": "integer"
+            }
+        ],
+        "return": {
+            "type": "boolean"
+        },
+        "manual": true,
+        "languages": [
+            "cpp",
+            "java",
+            "python",
+            "c",
+            "csharp",
+            "javascript",
+            "ruby",
+            "swift",
+            "golang",
+            "python3",
+            "scala",
+            "kotlin",
+            "php",
+            "typescript"
+        ]
+    },
+    "company_tag_stats": {
+        "1": [
+            {
+                "taggedByAdmin": false,
+                "name": "Google",
+                "slug": "google",
+                "timesEncountered": 14
+            }
+        ]
+    },
+    "discussion_posts": [
+        {
+            "name": "HT_Wang",
+            "year": 2019,
+            "content": "I don\\'t see why we need \\'pos\\' in the inputs, while we don\\'t see it in the code. It\\'s kind confusing.",
+            "voteCount": 1098
+        },
+        {
+            "name": "4ndr01d",
+            "year": 2023,
+            "content": "terrible description\\n",
+            "voteCount": 959
+        },
+        {
+            "name": "AymenSekhri",
+            "year": 2020,
+            "content": "I\\'m confused why `pos` is a input and not in argument list ?",
+            "voteCount": 266
+        },
+        {
+            "name": "AlgoEngine",
+            "year": 2023,
+            "content": "Visualization of the Tortoise and Hare algorithm\\n\\nhttps://youtu.be/RRSItF-Ts4Q",
+            "voteCount": 184
+        },
+        {
+            "name": "justdvl",
+            "year": 2021,
+            "content": "Can someone please explain this task? Not solution, I don\\'t understand the task itself.",
+            "voteCount": 149
+        },
+        {
+            "name": "jasonbayk",
+            "year": 2019,
+            "content": "The \"pos\" should not be a part of the input, in fact it is not known a priori. Should be removed for better clarity.",
+            "voteCount": 132
+        },
+        {
+            "name": "Darth-InVader15",
+            "year": 2023,
+            "content": "This is the first question I solved on Leetcode, 2 years back. I guess my life\\'s also a cycle :)",
+            "voteCount": 112
+        },
+        {
+            "name": "captainpromoted",
+            "year": 2021,
+            "content": "We can prove it using relative velocity kind of thing.\\n\\nIf there is a cycle then there will be a time when walker will enter the cycle for the first time.\\n\\nAt that moment runner will already be present in the cycle(because he was fast and ahead).\\n\\nNow if the runner is also on the same node as walker problem solved.\\n\\nOtherwise If both fast and slow are on different nodes on cycle then relative velocity of runner with respect to walker is one node per iteration (because walker moves one step then runner moves two step therefore relative velocity is 2 - 1 = 1 it can we viewed as runner is closing in on walker). So that means runner will surely catch the walker.",
+            "voteCount": 103
+        },
+        {
+            "name": "Cyclic8222",
+            "year": 2023,
+            "content": "This is a knowledge based question. \\n\\nIf you\\'ve never heard of `Floyd\\u2019s cycle-finding algorithm` or the `fast-slow method`, you\\'re unlikely to figure it out yourself in 20 mins. ",
+            "voteCount": 92
+        },
+        {
+            "name": "anon301176",
+            "year": 2023,
+            "content": "my solution is failing under this test case: [-21,10,17,8,4,26,5,35,33,-7,-16,27,-12,6,29,-12,5,9,20,14,14,2,13,-24,21,23,-21,5] very clearly there is a loop in this data, but its telling me i should be returning false. can someone explain this?",
+            "voteCount": 44
+        }
+    ]
+}

@@ -1,0 +1,182 @@
+{
+    "category": "",
+    "id": "716",
+    "name": "Max Stack",
+    "difficulty": "Hard",
+    "leetcode_url": "https://leetcode.com/problems/max-stack/",
+    "slug": "max-stack",
+    "isPaidOnly": true,
+    "tags": [
+        "Linked List",
+        "Stack",
+        "Design",
+        "Doubly-Linked List",
+        "Ordered Set"
+    ],
+    "similar_questions": [
+        {
+            "title": "Min Stack",
+            "difficulty": "Medium",
+            "slug": "min-stack"
+        }
+    ],
+    "questionId": "716",
+    "questionFrontendId": "716",
+    "title": "Max Stack",
+    "titleSlug": "max-stack",
+    "likes": 2000,
+    "dislikes": 512,
+    "stats": {
+        "totalAccepted": "175K",
+        "totalSubmission": "384K",
+        "totalAcceptedRaw": 175048,
+        "totalSubmissionRaw": 383956,
+        "acRate": "45.6%"
+    },
+    "topicTags": [
+        {
+            "name": "Linked List",
+            "slug": "linked-list"
+        },
+        {
+            "name": "Stack",
+            "slug": "stack"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Doubly-Linked List",
+            "slug": "doubly-linked-list"
+        },
+        {
+            "name": "Ordered Set",
+            "slug": "ordered-set"
+        }
+    ],
+    "metaData": {
+        "classname": "MaxStack",
+        "constructor": {
+            "params": []
+        },
+        "methods": [
+            {
+                "params": [
+                    {
+                        "type": "integer",
+                        "name": "x"
+                    }
+                ],
+                "return": {
+                    "type": "void"
+                },
+                "name": "push"
+            },
+            {
+                "params": [],
+                "return": {
+                    "type": "integer"
+                },
+                "name": "pop"
+            },
+            {
+                "params": [],
+                "return": {
+                    "type": "integer"
+                },
+                "name": "top"
+            },
+            {
+                "params": [],
+                "return": {
+                    "type": "integer"
+                },
+                "name": "peekMax"
+            },
+            {
+                "params": [],
+                "return": {
+                    "type": "integer"
+                },
+                "name": "popMax"
+            }
+        ],
+        "return": {
+            "type": "boolean"
+        },
+        "systemdesign": true
+    },
+    "company_tag_stats": {
+        "1": [
+            {
+                "taggedByAdmin": true,
+                "name": "LinkedIn",
+                "slug": "linkedin",
+                "timesEncountered": 35
+            }
+        ]
+    },
+    "discussion_posts": [
+        {
+            "name": "brendon4565",
+            "year": 2017,
+            "content": "Because if it were, you could use this data structure to sort an array of numbers in O(n) time.\\n\\nSo, at the very least, either push(x) or popMax() must be O(logn)",
+            "voteCount": 353
+        },
+        {
+            "name": "FlorenceMachine",
+            "year": 2017,
+            "content": "This question is roughly on the same level as LRU Cache in terms of difficulty, so why is this one \"Easy\" and LRU Cache \"Hard\"?\\n\\nIt's easier to get a solution accepted by writing sub-optimal O(n) solutions I guess, but just because the wrong answer is easy doesn't mean the question is easy. This question is very complicated with a lot of different possibilities and time/space trade-offs.\\n\\nHarder than LRU Cache imo.",
+            "voteCount": 209
+        },
+        {
+            "name": "hesher",
+            "year": 2017,
+            "content": "You can't optimise a data structure for all operations.\\nThere are usually trade offs between writing and reading speed and here we don't have enough information to choose a data structure.",
+            "voteCount": 19
+        },
+        {
+            "name": "al-mahi",
+            "year": 2023,
+            "content": "Is it just me or anyone else also believes that none of the accepted solution met the required time complexity here",
+            "voteCount": 6
+        },
+        {
+            "name": "alkons",
+            "year": 2022,
+            "content": "I\\'m curious if it was upgraded to hard recently because I see some solutions with O(N) complexity which were accepted.",
+            "voteCount": 6
+        },
+        {
+            "name": "saltal",
+            "year": 2024,
+            "content": "It seems not a single solution satisfies the requirements of this question, including the editorial, which is wrong. ",
+            "voteCount": 4
+        },
+        {
+            "name": "MaliGoBrrBrr",
+            "year": 2024,
+            "content": "Wow LC are still producing high quality problems at 2017? Sadly at 2024 the new questions are straight up trash.",
+            "voteCount": 4
+        },
+        {
+            "name": "_velasoka",
+            "year": 2024,
+            "content": "Hi folks refer TreeMap, Custom LinkedList Solution. It meets the question requirement for O(1) top & O(log n) for other method calls. [Refer Here](https://leetcode.com/problems/max-stack/solutions/4594359/java-100-easy-o-1-top-o-log-n-for-other-calls/)",
+            "voteCount": 3
+        },
+        {
+            "name": "user9133dZ",
+            "year": 2024,
+            "content": "This is literal torturwe",
+            "voteCount": 1
+        },
+        {
+            "name": "wRhlH",
+            "year": 2022,
+            "content": "so ...Why is this classified as Linked List",
+            "voteCount": 1
+        }
+    ]
+}

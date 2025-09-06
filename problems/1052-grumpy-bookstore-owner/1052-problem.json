@@ -1,0 +1,119 @@
+{
+    "category": "",
+    "id": "1052",
+    "name": "Grumpy Bookstore Owner",
+    "difficulty": "Medium",
+    "leetcode_url": "https://leetcode.com/problems/grumpy-bookstore-owner/",
+    "slug": "grumpy-bookstore-owner",
+    "isPaidOnly": false,
+    "tags": [
+        "Array",
+        "Sliding Window"
+    ],
+    "similar_questions": [],
+    "questionId": "1138",
+    "questionFrontendId": "1052",
+    "title": "Grumpy Bookstore Owner",
+    "titleSlug": "grumpy-bookstore-owner",
+    "likes": 2612,
+    "dislikes": 255,
+    "stats": {
+        "totalAccepted": "220.2K",
+        "totalSubmission": "344.2K",
+        "totalAcceptedRaw": 220228,
+        "totalSubmissionRaw": 344197,
+        "acRate": "64.0%"
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Sliding Window",
+            "slug": "sliding-window"
+        }
+    ],
+    "metaData": {
+        "name": "maxSatisfied",
+        "params": [
+            {
+                "name": "customers",
+                "type": "integer[]"
+            },
+            {
+                "name": "grumpy",
+                "type": "integer[]"
+            },
+            {
+                "name": "minutes",
+                "type": "integer"
+            }
+        ],
+        "return": {
+            "type": "integer"
+        }
+    },
+    "discussion_posts": [
+        {
+            "name": "devjhon97",
+            "year": 2024,
+            "content": "- Binary Search left the chat\\n- Sliding Window join the chat.",
+            "voteCount": 254
+        },
+        {
+            "name": "datalinx",
+            "year": 2023,
+            "content": "Explanation is poor as hell !!!",
+            "voteCount": 184
+        },
+        {
+            "name": "JaxTop",
+            "year": 2024,
+            "content": "Hate it when you finally complete a question and everyone in the Discussion talking about how easy it was :( ",
+            "voteCount": 116
+        },
+        {
+            "name": "iamthegod0120",
+            "year": 2024,
+            "content": "``` python\\nimport grumpy as gp\\n```",
+            "voteCount": 96
+        },
+        {
+            "name": "kakkarotssj",
+            "year": 2021,
+            "content": "customers = [10, 1, 7]\\ngrumpy = [0, 0, 0]\\nminutes = 2\\n\\nFor this case, how is answer 18 and not 11.\\n",
+            "voteCount": 74
+        },
+        {
+            "name": "ayushg32",
+            "year": 2024,
+            "content": "i have no complaint about the question but problem is that there can be maximum 1440 minutes in a day\\uD83D\\uDE05. so array size should be less than or equal to 1440 but limits are 2*10^4.",
+            "voteCount": 62
+        },
+        {
+            "name": "minecraftyugi",
+            "year": 2024,
+            "content": "We all know the secret technique to not be grumpy is to smoke a joint",
+            "voteCount": 55
+        },
+        {
+            "name": "adityakumar8068",
+            "year": 2024,
+            "content": "TESTCASSES--------->\\n```\\n[1,0,1,2,1,1,7,5]\\n[0,1,0,1,0,1,0,1]\\n3\\n[0]\\n[0]\\n1\\n[10,1,7]\\n[0,0,0]\\n2\\n[4,10,10]\\n[1,1,0]\\n2\\n[1, 2, 3, 4, 5]\\n[1, 1, 1, 0, 0]\\n3\\n[10, 1, 10, 1, 10, 1, 10]\\n[1, 1, 1, 1, 1, 1, 1]\\n1\\n[5, 8, 3, 6, 9, 4, 7]\\n[0, 1, 0, 1, 0, 1, 0]\\n3\\n[1, 2, 3, 4, 5]\\n[1, 1, 1, 1, 1]\\n1",
+            "voteCount": 40
+        },
+        {
+            "name": "Is_there_someone",
+            "year": 2024,
+            "content": "Quite tricky question if you try to understand the topic",
+            "voteCount": 20
+        },
+        {
+            "name": "ruthlessloop",
+            "year": 2023,
+            "content": "The question is fairly easy.",
+            "voteCount": 20
+        }
+    ]
+}

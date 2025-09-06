@@ -1,0 +1,146 @@
+{
+    "category": "",
+    "id": "167",
+    "name": "Two Sum II - Input Array Is Sorted",
+    "difficulty": "Medium",
+    "leetcode_url": "https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/",
+    "slug": "two-sum-ii-input-array-is-sorted",
+    "isPaidOnly": false,
+    "tags": [
+        "Array",
+        "Two Pointers",
+        "Binary Search"
+    ],
+    "similar_questions": [
+        {
+            "title": "Two Sum",
+            "difficulty": "Easy",
+            "slug": "two-sum"
+        },
+        {
+            "title": "Two Sum IV - Input is a BST",
+            "difficulty": "Easy",
+            "slug": "two-sum-iv-input-is-a-bst"
+        },
+        {
+            "title": "Two Sum Less Than K",
+            "difficulty": "Easy",
+            "slug": "two-sum-less-than-k"
+        }
+    ],
+    "questionId": "167",
+    "questionFrontendId": "167",
+    "title": "Two Sum II - Input Array Is Sorted",
+    "titleSlug": "two-sum-ii-input-array-is-sorted",
+    "likes": 12830,
+    "dislikes": 1490,
+    "stats": {
+        "totalAccepted": "2.9M",
+        "totalSubmission": "4.5M",
+        "totalAcceptedRaw": 2902520,
+        "totalSubmissionRaw": 4548331,
+        "acRate": "63.8%"
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        }
+    ],
+    "metaData": {
+        "name": "twoSum",
+        "params": [
+            {
+                "name": "numbers",
+                "type": "integer[]"
+            },
+            {
+                "name": "target",
+                "type": "integer"
+            }
+        ],
+        "return": {
+            "type": "integer[]"
+        }
+    },
+    "company_tag_stats": {
+        "1": [
+            {
+                "taggedByAdmin": false,
+                "name": "Google",
+                "slug": "google",
+                "timesEncountered": 13
+            }
+        ]
+    },
+    "discussion_posts": [
+        {
+            "name": "codestarminion",
+            "year": 2020,
+            "content": "Took me sometime to realize why my answer was wrong until I saw the expected output was based on array index starting from 1 :-D",
+            "voteCount": 372
+        },
+        {
+            "name": "Vedantuu",
+            "year": 2023,
+            "content": "How is this a medium Level Question?",
+            "voteCount": 108
+        },
+        {
+            "name": "himanshuhere",
+            "year": 2022,
+            "content": "Shouldn\\'t it be an EASY tagged problem?",
+            "voteCount": 54
+        },
+        {
+            "name": "olsonpm",
+            "year": 2023,
+            "content": "This question is worded incorrectly\n\n> Given a 1-indexed array of integers numbers\n...\n> Return the indices of the two numbers, index1 and index2, added by one\n\nIf we're given a 1-indexed array, then why would we add one to the index of said array ?\n\nIt's crazy how many questions on this site are so poorly written.  Would be great for the questions to be community-based so the community can update them to make sense",
+            "voteCount": 47
+        },
+        {
+            "name": "guillaume8",
+            "year": 2015,
+            "content": "Hello,\\n\\n I am not an english native speaker and I wonder what is an AC solution. I have seen that on several problem already and Google was not useful.\\n\\nthanks",
+            "voteCount": 40
+        },
+        {
+            "name": "Boggers0",
+            "year": 2023,
+            "content": "All my testcases passed, 21/21, why does is return \"time limit exceeded\"",
+            "voteCount": 38
+        },
+        {
+            "name": "zaphdev254",
+            "year": 2022,
+            "content": "# How does the submission work\\nEvery time I hit the submit button, I get a different performance",
+            "voteCount": 28
+        },
+        {
+            "name": "fyh8238865",
+            "year": 2016,
+            "content": "I have seen some discussions in the discussion session about the binary search idea. Even though, they all look better ideas than two pointers, they still need O(N) in the worse case.\\n\\nI am asking is there any idea to solve this question in completely O(logN)?",
+            "voteCount": 23
+        },
+        {
+            "name": "Fabio_Trucco",
+            "year": 2021,
+            "content": "This is the problem used during the mock interview carried out by two software engineers from Google. They go explaining it from te brute force solution until this case where te array is already sorted.\\nA nice example of an easy problem explored all the way until it gets tricky",
+            "voteCount": 11
+        },
+        {
+            "name": "karlapalem",
+            "year": 2018,
+            "content": "The question clearly states that the \"returned answers\" should not have a 0 in it. \n\"Please note that your returned answers (both index1 and index2) are not zero-based.\"\nI assumed that any array with a 0 in it supposed to be incremented by 1.\n\nPlease advise?\n",
+            "voteCount": 11
+        }
+    ]
+}

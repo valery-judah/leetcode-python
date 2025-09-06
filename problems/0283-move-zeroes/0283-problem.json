@@ -1,0 +1,142 @@
+{
+  "category": "",
+  "id": "283",
+  "name": "Move Zeroes",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/move-zeroes/",
+  "slug": "move-zeroes",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers"
+  ],
+  "similar_questions": [
+    {
+      "title": "Remove Element",
+      "difficulty": "Easy",
+      "slug": "remove-element"
+    },
+    {
+      "title": "Apply Operations to an Array",
+      "difficulty": "Easy",
+      "slug": "apply-operations-to-an-array"
+    }
+  ],
+  "questionId": "283",
+  "questionFrontendId": "283",
+  "title": "Move Zeroes",
+  "titleSlug": "move-zeroes",
+  "content": "<p>Given an integer array <code>nums</code>, move all <code>0</code>&#39;s to the end of it while maintaining the relative order of the non-zero elements.</p>\n\n<p><strong>Note</strong> that you must do this in-place without making a copy of the array.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> nums = [0,1,0,3,12]\n<strong>Output:</strong> [1,3,12,0,0]\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> nums = [0]\n<strong>Output:</strong> [0]\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>-2<sup>31</sup> &lt;= nums[i] &lt;= 2<sup>31</sup> - 1</code></li>\n</ul>\n\n<p>&nbsp;</p>\n<strong>Follow up:</strong> Could you minimize the total number of operations done?",
+  "likes": 18405,
+  "dislikes": 546,
+  "stats": {
+    "totalAccepted": "4.4M",
+    "totalSubmission": "6.9M",
+    "totalAcceptedRaw": 4377687,
+    "totalSubmissionRaw": 6943741,
+    "acRate": "63.0%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    }
+  ],
+  "metaData": {
+    "name": "moveZeroes",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "void"
+    },
+    "output": {
+      "paramindex": 0
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Google",
+        "slug": "google",
+        "timesEncountered": 12
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Microsoft",
+        "slug": "microsoft",
+        "timesEncountered": 11
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "Nisha1205092",
+      "year": 2023,
+      "content": "it\\'s sad that I look for hints or ideas, but people just directly post codes here too!!! Whereas there\\'s a \\'solution\\' section separately. ",
+      "voteCount": 363
+    },
+    {
+      "name": "mariusandries25",
+      "year": 2023,
+      "content": "It literally says not to post solutions in the discussion. This section is for tips and questions.",
+      "voteCount": 165
+    },
+    {
+      "name": "BlinkDynamo",
+      "year": 2024,
+      "content": "I\\'m not gonna lie this past few months i\\'ve been in the competitive programming space it seems like the people who are posting their \"INSANE FAANG 1 LINE 0 MILLISECOND SOLUTION\" in the discussion channel are missing the entire point of why people this. These points mean nothing. All of this is ultimately for YOU to improve and learn new concepts and how to apply them. If you want to compete go join a competition. Don\\'t post your code with 3 lines of built in functions that do the entirety of what the problem is trying to teach you how to do. These questions are not high tech projects. They are not game changing ideas. They are bite-size concepts that will stack over time and help you understand more and more complicated things that you use in programming with or without knowing all the time. Sorry for the rant.",
+      "voteCount": 157
+    },
+    {
+      "name": "dianchik",
+      "year": 2024,
+      "content": "I thought I was getting better at this, then I saw this question. Great question, but how to stop being so dumb? ",
+      "voteCount": 135
+    },
+    {
+      "name": "mdegis",
+      "year": 2023,
+      "content": "I really do not understand how accepted solutions distribution works or measured for the solution.  I\\'ve basically submit the same solution 4 minutes apart, first one runtime was 491 ms and beat 25.21%... second one was 340 ms and beat 55.81%. Again, they are the same code! Nothing changed, not even an empty space. Just click \"submit\" button again. \\n\\nShould I stop caring about this number if there is no consistency at all?",
+      "voteCount": 92
+    },
+    {
+      "name": "loyhongshenggg",
+      "year": 2023,
+      "content": "I\\'ve noticed that many people posted their answers here and thought perhaps, I could provide a hint!\\n\\nConsider having two pointers at the start of the array. Iterate through the array and swap between the pointers only when right pointer is non-zero, only after the swap, increment your left pointer (along with the right pointer). Otherwise, only increment your right pointer.\\n\\n(May not be the best solution out there, but feel free to comment and make changes)",
+      "voteCount": 72
+    },
+    {
+      "name": "Akshat0706",
+      "year": 2023,
+      "content": "Remember QuickSort. Use two Pointers and swap non-zeros to left and zeros to right.",
+      "voteCount": 52
+    },
+    {
+      "name": "AbdullahJaved",
+      "year": 2024,
+      "content": "try to think: instead of moving all zero to the right, all the non-zero to the left",
+      "voteCount": 29
+    },
+    {
+      "name": "eggOnion",
+      "year": 2024,
+      "content": "Here are some of the test cases. Good Luck!\\n\\n[16601,78714,11653,-45162,0,-22859,0,36007,19143,-91750,0,-45361,-10715,46528,-91518,-36985,59578,76628,-87592,89803,0,-41430,44290,59831,41824,-30916,-6521,61614,46035,39346,0,0,32417]\\n\\n[45192,0,-659,-52359,-99225,-75991,0,-15155,27382,59818,0,-30645,-17025,81209,887,64648]\\n\\n[0, 0, 0, 0, 0, 0, 1]",
+      "voteCount": 22
+    },
+    {
+      "name": "ldpenrose",
+      "year": 2023,
+      "content": "Is a new array allowed?\n\n(update)\nWhen working \"in-place\" with an array, any modifications or changes are directly applied to the existing array rather than creating a new array or using additional data structures to perform the required operations. This is usually done to optimize memory usage, especially when dealing with large arrays or when minimizing memory overhead is crucial.",
+      "voteCount": 19
+    }
+  ]
+}

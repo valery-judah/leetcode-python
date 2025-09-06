@@ -1,0 +1,121 @@
+{
+    "category": "",
+    "id": "71",
+    "name": "Simplify Path",
+    "difficulty": "Medium",
+    "leetcode_url": "https://leetcode.com/problems/simplify-path/",
+    "slug": "simplify-path",
+    "isPaidOnly": false,
+    "tags": [
+        "String",
+        "Stack"
+    ],
+    "similar_questions": [],
+    "questionId": "71",
+    "questionFrontendId": "71",
+    "title": "Simplify Path",
+    "titleSlug": "simplify-path",
+    "likes": 6269,
+    "dislikes": 1380,
+    "stats": {
+        "totalAccepted": "1.2M",
+        "totalSubmission": "2.4M",
+        "totalAcceptedRaw": 1157772,
+        "totalSubmissionRaw": 2379758,
+        "acRate": "48.7%"
+    },
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Stack",
+            "slug": "stack"
+        }
+    ],
+    "metaData": {
+        "name": "simplifyPath",
+        "params": [
+            {
+                "name": "path",
+                "type": "string"
+            }
+        ],
+        "return": {
+            "type": "string"
+        }
+    },
+    "company_tag_stats": {
+        "1": [
+            {
+                "taggedByAdmin": true,
+                "name": "Meta",
+                "slug": "facebook",
+                "timesEncountered": 85
+            }
+        ]
+    },
+    "discussion_posts": [
+        {
+            "name": "wangchenmeng09",
+            "year": 2023,
+            "content": "I would have liked more examples for this question.",
+            "voteCount": 199
+        },
+        {
+            "name": "shivamkanodia001",
+            "year": 2018,
+            "content": "Simplify the directory path (Unix like)\\nGiven an absolute path for a file (Unix-style), simplify it. Note that absolute path always begin with \\u2018/\\u2019 ( root directory ), a dot in path represent current directory and double dot represents parent directory.\\n\\nExamples:\\n\\n\"/a/./\"   --> means stay at the current directory \\'a\\'\\n\"/a/b/..\" --> means jump to the parent directory\\n              from \\'b\\' to \\'a\\'\\n\"////\"    --> consecutive multiple \\'/\\' are a  valid  \\n              path, they are equivalent to single \"/\".\\n\\nInput : /home/\\nOutput : /home\\n\\nInput : /a/./b/../../c/\\nOutput : /c\\n\\nInput : /a/..\\nOutput : /\\n\\nInput : /a/../\\nOuput : /\\n\\nInput : /../../../../../a\\nOuput : /a\\n\\nInput : /a/./b/./c/./d/\\nOuput : /a/b/c/d\\n\\nInput : /a/../.././../../.\\nOuput : /\\n\\nInput : /a//b//c//////d\\nOuput : /a/b/c/d",
+            "voteCount": 165
+        },
+        {
+            "name": "hosua",
+            "year": 2023,
+            "content": "This problem had a lot of annoying edge cases lol",
+            "voteCount": 105
+        },
+        {
+            "name": "rrdlpl",
+            "year": 2023,
+            "content": "Split by \\'/\\'. Use a stack and ignore empty spaces and \\'.\\'; pop on double dot \\'..\\'",
+            "voteCount": 40
+        },
+        {
+            "name": "xuzhenqi1993",
+            "year": 2014,
+            "content": "My code failed at the test case \"/abc/...\".\\n\\nThe expected output is \"/abc/...\".\\n\\nBut I think it may be \"/...\".\\n\\nCould anybody who have passed this one tell me why it is \"/abc/...\"?",
+            "voteCount": 32
+        },
+        {
+            "name": "piyushkr6161",
+            "year": 2023,
+            "content": "                               APPROACH/PSUEDO CODE\nIf you don't want to see solution then see this approach\n1. Create a Stack of String with following condition.\n2. Iterate the loop till you doesn't reaches the end of string.\n3. If you encounter a \"/\" then ignore it.\n4. Create a temp String & Iterate the while loop till you doesn't find \"/\" and append it to temp.\n5. Now check if temp == \".\" , then ignore it.\n6. If temp == \"..\" then pop the element from the stack if it exists.\n7. If no of the above 2 matches push temp to stack as you find a valid path.\n8. Check out temp string on basis of above conditions till you doesn't find \"/\".\n9. Now add all stack elements to result as res = \"/\" + st.top() + res\n10. If res.size() is 0 then return \"/\" if no directory or file is present.\n     At last return res.\n\n `**See This Testcase for better understanding **`\n\n `input : \"/home/../foo/\"  `\n`output : \"/foo\"` \n\n`input : \"/home/test/../foo/\" `\n `output : \"/home/foo\"`\n\n`input : \"/home/...//foo/\" `\n ` output : \"/home/.../foo\"`\n\nSolution of above approach (Beginner-friendly-code)\nhttps://leetcode.com/problems/simplify-path/solutions/3406777/c-beginner-friendly-explanation-multiple-testcase-using-stack/\n",
+            "voteCount": 26
+        },
+        {
+            "name": "priyanshu1078",
+            "year": 2023,
+            "content": "try these test cases\\n\"/../..ga/b/.f..d/..../e.baaeeh./.a\"\\n\"/hello../world\"\\n\"/..hidden\"",
+            "voteCount": 18
+        },
+        {
+            "name": "Jithesh06-coder",
+            "year": 2025,
+            "content": "This is my 100th medium problem",
+            "voteCount": 16
+        },
+        {
+            "name": "living_delulu",
+            "year": 2024,
+            "content": "Is the explanation is poor or I am dumb.",
+            "voteCount": 14
+        },
+        {
+            "name": "ronaldo123",
+            "year": 2014,
+            "content": "Input:\\t\"/...\"\\nOutput:\\t\"/\"\\nExpected:\\t\"/...\"\\n\\n\\nThe \"/...\" is a legal path command ?  I test it on my mac, but it returns\\n\\n-bash: cd: /...: No such file or directory",
+            "voteCount": 10
+        }
+    ]
+}

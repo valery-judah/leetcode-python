@@ -1,0 +1,139 @@
+{
+    "category": "",
+    "id": "1634",
+    "name": "Add Two Polynomials Represented as Linked Lists",
+    "difficulty": "Medium",
+    "leetcode_url": "https://leetcode.com/problems/add-two-polynomials-represented-as-linked-lists/",
+    "slug": "add-two-polynomials-represented-as-linked-lists",
+    "isPaidOnly": true,
+    "tags": [
+        "Linked List",
+        "Math",
+        "Two Pointers"
+    ],
+    "similar_questions": [
+        {
+            "title": "Add Two Numbers",
+            "difficulty": "Medium",
+            "slug": "add-two-numbers"
+        },
+        {
+            "title": "Merge Two Sorted Lists",
+            "difficulty": "Easy",
+            "slug": "merge-two-sorted-lists"
+        },
+        {
+            "title": "Add Two Numbers II",
+            "difficulty": "Medium",
+            "slug": "add-two-numbers-ii"
+        }
+    ],
+    "questionId": "1774",
+    "questionFrontendId": "1634",
+    "title": "Add Two Polynomials Represented as Linked Lists",
+    "titleSlug": "add-two-polynomials-represented-as-linked-lists",
+    "likes": 173,
+    "dislikes": 14,
+    "stats": {
+        "totalAccepted": "16K",
+        "totalSubmission": "26.4K",
+        "totalAcceptedRaw": 16026,
+        "totalSubmissionRaw": 26350,
+        "acRate": "60.8%"
+    },
+    "topicTags": [
+        {
+            "name": "Linked List",
+            "slug": "linked-list"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        }
+    ],
+    "metaData": {
+        "name": "addPoly",
+        "params": [
+            {
+                "type": "integer[][]",
+                "name": "poly1"
+            },
+            {
+                "type": "integer[][]",
+                "name": "poly2"
+            }
+        ],
+        "return": {
+            "type": "integer"
+        },
+        "manual": true,
+        "languages": [
+            "cpp",
+            "java",
+            "javascript",
+            "python3",
+            "python",
+            "csharp"
+        ]
+    },
+    "discussion_posts": [
+        {
+            "name": "hiPNW",
+            "year": 2024,
+            "content": "A follow up could be to restrict memory, such that we must return either the head of poly1 or poly2 as the result and not create a whole new PolyNode linked list. Thoughts?",
+            "voteCount": 5
+        },
+        {
+            "name": "ilya_myakotin",
+            "year": 2024,
+            "content": "Slightly on the discourteous side to put the problem which is not ported to all programming languages to the weekly. Had to have slight inconveniences with unusual language. But great problem anyway.",
+            "voteCount": 2
+        },
+        {
+            "name": "yendoan007",
+            "year": 2024,
+            "content": "Easy problem to start the month",
+            "voteCount": 2
+        },
+        {
+            "name": "whitneysit",
+            "year": 2024,
+            "content": "It\\'s merging LinkedList with extra crap. The extra crap makes it a medium.",
+            "voteCount": 1
+        },
+        {
+            "name": "daringcalf",
+            "year": 2024,
+            "content": "I don\\'t know why but I think I have a liking for linked lists.",
+            "voteCount": 1
+        },
+        {
+            "name": "chinajiangc",
+            "year": 2024,
+            "content": "https://youtu.be/ddvkAafSMPM",
+            "voteCount": 0
+        },
+        {
+            "name": "user2824D",
+            "year": 2024,
+            "content": "This should be easy.",
+            "voteCount": 0
+        },
+        {
+            "name": "ihor__h",
+            "year": 2024,
+            "content": "Easy",
+            "voteCount": 0
+        },
+        {
+            "name": "1ncu804u",
+            "year": 2023,
+            "content": "i hate linked list problems but this was a nice & easy one \\uD83D\\uDE1D",
+            "voteCount": 0
+        }
+    ]
+}

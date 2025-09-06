@@ -1,0 +1,151 @@
+{
+    "category": "",
+    "id": "310",
+    "name": "Minimum Height Trees",
+    "difficulty": "Medium",
+    "leetcode_url": "https://leetcode.com/problems/minimum-height-trees/",
+    "slug": "minimum-height-trees",
+    "isPaidOnly": false,
+    "tags": [
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Graph",
+        "Topological Sort"
+    ],
+    "similar_questions": [
+        {
+            "title": "Course Schedule",
+            "difficulty": "Medium",
+            "slug": "course-schedule"
+        },
+        {
+            "title": "Course Schedule II",
+            "difficulty": "Medium",
+            "slug": "course-schedule-ii"
+        },
+        {
+            "title": "Collect Coins in a Tree",
+            "difficulty": "Hard",
+            "slug": "collect-coins-in-a-tree"
+        },
+        {
+            "title": "Count Pairs of Connectable Servers in a Weighted Tree Network",
+            "difficulty": "Medium",
+            "slug": "count-pairs-of-connectable-servers-in-a-weighted-tree-network"
+        },
+        {
+            "title": "Find Minimum Diameter After Merging Two Trees",
+            "difficulty": "Hard",
+            "slug": "find-minimum-diameter-after-merging-two-trees"
+        }
+    ],
+    "questionId": "310",
+    "questionFrontendId": "310",
+    "title": "Minimum Height Trees",
+    "titleSlug": "minimum-height-trees",
+    "likes": 8732,
+    "dislikes": 410,
+    "stats": {
+        "totalAccepted": "448.4K",
+        "totalSubmission": "1.1M",
+        "totalAcceptedRaw": 448449,
+        "totalSubmissionRaw": 1064149,
+        "acRate": "42.1%"
+    },
+    "topicTags": [
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Graph",
+            "slug": "graph"
+        },
+        {
+            "name": "Topological Sort",
+            "slug": "topological-sort"
+        }
+    ],
+    "metaData": {
+        "name": "findMinHeightTrees",
+        "params": [
+            {
+                "name": "n",
+                "type": "integer"
+            },
+            {
+                "name": "edges",
+                "type": "integer[][]"
+            }
+        ],
+        "return": {
+            "type": "list<integer>"
+        }
+    },
+    "discussion_posts": [
+        {
+            "name": "Raghavagg",
+            "year": 2023,
+            "content": "just when i thought i have mastered graphs",
+            "voteCount": 472
+        },
+        {
+            "name": "aftabmk",
+            "year": 2023,
+            "content": "Internet : topo sort used for directed acyclical graph.\\nLeetcode: Now apply topo sort for undirected graph.",
+            "voteCount": 170
+        },
+        {
+            "name": "beautyofdeduction",
+            "year": 2022,
+            "content": "While this problem wasn\\'t easy, I found it to be very good practice for the following common tree tasks:\\n* finding the diameter of a tree\\n* finding the path between two vertices of a tree\\n* understanding that the root of the min-height tree is the \"center of gravity\"\\n\\nI realized it was a hard for me because I did not understand these tree fundamentals. I\\'m glad I persevered and learned.",
+            "voteCount": 154
+        },
+        {
+            "name": "SouthernHumor",
+            "year": 2023,
+            "content": "This should be a HARD problem, its not medium. very hard to know what algo to apply here.\\n",
+            "voteCount": 132
+        },
+        {
+            "name": "etanila",
+            "year": 2024,
+            "content": "Just when you think you are getting good at something, LeetCode never fails to prove otherwise.",
+            "voteCount": 113
+        },
+        {
+            "name": "Maksim_Leonov",
+            "year": 2024,
+            "content": "I\\'d rather look at trees in real life ",
+            "voteCount": 85
+        },
+        {
+            "name": "sk4142",
+            "year": 2023,
+            "content": "Hint: If the diameter\\'s length is even, there are exactly two MHT roots. If the diameter\\'s length is odd, there can only be one MHT root.\\n\\nWhy? Let\\'s say we have the diameter of the tree (length of longest path between any two nodes of the tree). If you root the tree at a node in the center of the diameter, it minimizes the height of the tree. This is because any path in the tree from the root to a leaf will be half the diameter or less.\\n\\nImagine the diameter as a stick. If you hold the stick by its end (i.e., root the tree at one end of the diameter), the stick\\'s length is maximized from your hand. If you hold the stick by its center, the length is minimized on either side. \\n\\nDepending on whether the diameter has an odd or even number of nodes:\\n\\n- Odd: There\\'s a single center node. If you root the tree at this node, you ensure the tree\\'s height is minimized.\\n- Even: There are two center nodes. Rooting the tree at either of these will result in the same minimum height. Thus, there are two possible MHTs.",
+            "voteCount": 64
+        },
+        {
+            "name": "shishirRsiam",
+            "year": 2024,
+            "content": "\\uD83D\\uDE4B\\u200D\\u2642\\uFE0F Those who comes early morning to solve daily challenge\\n",
+            "voteCount": 63
+        },
+        {
+            "name": "cenjian",
+            "year": 2023,
+            "content": "hint: delete those nodes with only one connection repeatly, the only 1 or 2 nodes left are the answer. ",
+            "voteCount": 57
+        },
+        {
+            "name": "ltbtb_rise",
+            "year": 2020,
+            "content": "I am just wondering how many of you have worked it out without seeing any hints or saw this problem before?",
+            "voteCount": 37
+        }
+    ]
+}

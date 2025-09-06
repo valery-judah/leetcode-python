@@ -1,0 +1,126 @@
+{
+    "category": "",
+    "id": "30",
+    "name": "Substring with Concatenation of All Words",
+    "difficulty": "Hard",
+    "leetcode_url": "https://leetcode.com/problems/substring-with-concatenation-of-all-words/",
+    "slug": "substring-with-concatenation-of-all-words",
+    "isPaidOnly": false,
+    "tags": [
+        "Hash Table",
+        "String",
+        "Sliding Window"
+    ],
+    "similar_questions": [
+        {
+            "title": "Minimum Window Substring",
+            "difficulty": "Hard",
+            "slug": "minimum-window-substring"
+        }
+    ],
+    "questionId": "30",
+    "questionFrontendId": "30",
+    "title": "Substring with Concatenation of All Words",
+    "titleSlug": "substring-with-concatenation-of-all-words",
+    "likes": 2378,
+    "dislikes": 387,
+    "stats": {
+        "totalAccepted": "616.3K",
+        "totalSubmission": "1.9M",
+        "totalAcceptedRaw": 616320,
+        "totalSubmissionRaw": 1853026,
+        "acRate": "33.3%"
+    },
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Sliding Window",
+            "slug": "sliding-window"
+        }
+    ],
+    "metaData": {
+        "name": "findSubstring",
+        "params": [
+            {
+                "name": "s",
+                "type": "string"
+            },
+            {
+                "name": "words",
+                "type": "string[]"
+            }
+        ],
+        "return": {
+            "type": "list<integer>"
+        }
+    },
+    "discussion_posts": [
+        {
+            "name": "drdamanraaj",
+            "year": 2024,
+            "content": "Failing on test case \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\nMe: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "voteCount": 313
+        },
+        {
+            "name": "kraabhi",
+            "year": 2021,
+            "content": "Description of question is not good , various points are missing",
+            "voteCount": 180
+        },
+        {
+            "name": "cornellouis",
+            "year": 2018,
+            "content": "I thought the question assumed all words were the same length?",
+            "voteCount": 131
+        },
+        {
+            "name": "apulatjonov",
+            "year": 2023,
+            "content": "178 / 179 testcases passed \\uD83E\\uDD23",
+            "voteCount": 94
+        },
+        {
+            "name": "zwright8",
+            "year": 2022,
+            "content": "Can LeetCode start adding the efficiency requirements to all the Description sections? It would make problem solving much less tedious",
+            "voteCount": 87
+        },
+        {
+            "name": "Dany__Guty",
+            "year": 2023,
+            "content": "This will save you: you need to increment the window one by one, there\\'s no way to pass the testcases in increments in the window of n = words[0].size()",
+            "voteCount": 54
+        },
+        {
+            "name": "UnitedIngvar",
+            "year": 2023,
+            "content": "Additional description point:\nThe words can overlap, like in this example from the test cases:\ns =\n\"lingmindraboofooowingdingbarrwingmonkeypoundcake\"\nwords =\n[\"fooo\",\"barr\",\"wing\",\"ding\",\"wing\"]\n\nPlease, add this to the description, it is not clear",
+            "voteCount": 46
+        },
+        {
+            "name": "leolin479",
+            "year": 2021,
+            "content": "For the example case\\n\\nInput: s = \"wordgoodgoodgoodbestword\", words = [\"word\",\"good\",\"best\",\"word\"]\\nOutput: []\\n\\nThe standard answer was \"output: [8]\", which preventing my code to be submitted.",
+            "voteCount": 40
+        },
+        {
+            "name": "darcylmx",
+            "year": 2019,
+            "content": "Ignoring the key information(all the words are the SAME length) will cause exponential time complexity.\\n\\nOtherwise, it is just linear time to check a match.",
+            "voteCount": 33
+        },
+        {
+            "name": "Jerrysuu",
+            "year": 2018,
+            "content": "This example waste me lots of time until I saw others\\' answer.",
+            "voteCount": 29
+        }
+    ]
+}

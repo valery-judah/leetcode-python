@@ -1,0 +1,160 @@
+{
+    "category": "",
+    "id": "658",
+    "name": "Find K Closest Elements",
+    "difficulty": "Medium",
+    "leetcode_url": "https://leetcode.com/problems/find-k-closest-elements/",
+    "slug": "find-k-closest-elements",
+    "isPaidOnly": false,
+    "tags": [
+        "Array",
+        "Two Pointers",
+        "Binary Search",
+        "Sliding Window",
+        "Sorting",
+        "Heap (Priority Queue)"
+    ],
+    "similar_questions": [
+        {
+            "title": "Guess Number Higher or Lower",
+            "difficulty": "Easy",
+            "slug": "guess-number-higher-or-lower"
+        },
+        {
+            "title": "Guess Number Higher or Lower II",
+            "difficulty": "Medium",
+            "slug": "guess-number-higher-or-lower-ii"
+        },
+        {
+            "title": "Find K-th Smallest Pair Distance",
+            "difficulty": "Hard",
+            "slug": "find-k-th-smallest-pair-distance"
+        },
+        {
+            "title": "Find Closest Number to Zero",
+            "difficulty": "Easy",
+            "slug": "find-closest-number-to-zero"
+        }
+    ],
+    "questionId": "658",
+    "questionFrontendId": "658",
+    "title": "Find K Closest Elements",
+    "titleSlug": "find-k-closest-elements",
+    "likes": 8813,
+    "dislikes": 846,
+    "stats": {
+        "totalAccepted": "737.4K",
+        "totalSubmission": "1.5M",
+        "totalAcceptedRaw": 737409,
+        "totalSubmissionRaw": 1505830,
+        "acRate": "49.0%"
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Sliding Window",
+            "slug": "sliding-window"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        }
+    ],
+    "metaData": {
+        "name": "findClosestElements",
+        "params": [
+            {
+                "name": "arr",
+                "type": "integer[]"
+            },
+            {
+                "name": "k",
+                "type": "integer"
+            },
+            {
+                "name": "x",
+                "type": "integer"
+            }
+        ],
+        "return": {
+            "type": "list<integer>"
+        }
+    },
+    "discussion_posts": [
+        {
+            "name": "crescent_park",
+            "year": 2022,
+            "content": "This should be a hard problem",
+            "voteCount": 143
+        },
+        {
+            "name": "aakarshmadhavan",
+            "year": 2017,
+            "content": "I am confused, what does \"k closest\" even mean?",
+            "voteCount": 78
+        },
+        {
+            "name": "fkie4",
+            "year": 2023,
+            "content": "\"easy\" my ass...",
+            "voteCount": 75
+        },
+        {
+            "name": "seredenko99",
+            "year": 2023,
+            "content": "Why does Leetcode hide the number of dislikes? I\\'m pretty sure this problem has a way more dislikes then likes ",
+            "voteCount": 54
+        },
+        {
+            "name": "pvs_praneeth",
+            "year": 2022,
+            "content": "shouldn\\'t the constraints say that the numbers are in `non-descending` order rather than `ascending` order. There is a huge difference between ascending order and non-descending order and the solution will vary for each of these.",
+            "voteCount": 37
+        },
+        {
+            "name": "M_Suleman",
+            "year": 2023,
+            "content": "The problems is too confusing the sample output does not make much sense to me both giving same output to the different value of x.\\nCan somebody help......  ",
+            "voteCount": 28
+        },
+        {
+            "name": "sachinmehta07",
+            "year": 2024,
+            "content": "simple way of understanding : \ngiven array me jo bhi x ke najdeek element hai wo muje dedo per me jitna bolu utne hi elements hi do ( jo que me bola hai \"k\" )  ",
+            "voteCount": 22
+        },
+        {
+            "name": "qqqiiu",
+            "year": 2019,
+            "content": "The soluton code doesn\\'t follow the description when breaks a tie?\\nFor example, if we test [2,4],  k=1, and x = 3, according to the problem description the answer should be 2. However, the solution returns 4. Am I missing something?",
+            "voteCount": 19
+        },
+        {
+            "name": "vectoreal",
+            "year": 2023,
+            "content": "Why do problems with the exact Yandex label make me cry every time?",
+            "voteCount": 13
+        },
+        {
+            "name": "rajat_171",
+            "year": 2023,
+            "content": "does the array contains duplicate elements??\\n",
+            "voteCount": 11
+        }
+    ]
+}
