@@ -69,9 +69,9 @@ def write_track(track_id: str, content: str) -> None:
 def main() -> None:
     problems = load_problems()
     grouped = group_by_category(problems)
-    for category, probs in grouped.items():
+    for idx, (category, probs) in enumerate(grouped.items()):
         slug = slugify(category)
-        track_id = f"track_neetcode_{slug}"
+        track_id = f"track_neetcode_{idx}_{slug}"
         title = f"NeetCode 250 — {category}"
         description = f"Problems from the NeetCode 250 list for {category}."
         yaml_content = build_yaml(track_id, title, description, probs)

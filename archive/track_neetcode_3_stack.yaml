@@ -1,0 +1,50 @@
+version: 1
+track: track_neetcode_3_stack
+title: NeetCode 250 — Stack
+description: Problems from the NeetCode 250 list for Stack.
+problems:
+  - slug: baseball-game
+    title: Baseball Game
+    difficulty: easy
+  - slug: valid-parentheses
+    title: Valid Parentheses
+    difficulty: easy
+  - slug: implement-stack-using-queues
+    title: Implement Stack Using Queues
+    difficulty: easy
+  - slug: implement-queue-using-stacks
+    title: Implement Queue using Stacks
+    difficulty: easy
+  - slug: min-stack
+    title: Min Stack
+    difficulty: medium
+  - slug: evaluate-reverse-polish-notation
+    title: Evaluate Reverse Polish Notation
+    difficulty: medium
+  - slug: generate-parentheses
+    title: Generate Parentheses
+    difficulty: medium
+  - slug: asteroid-collision
+    title: Asteroid Collision
+    difficulty: medium
+  - slug: daily-temperatures
+    title: Daily Temperatures
+    difficulty: medium
+  - slug: online-stock-span
+    title: Online Stock Span
+    difficulty: medium
+  - slug: car-fleet
+    title: Car Fleet
+    difficulty: medium
+  - slug: simplify-path
+    title: Simplify Path
+    difficulty: medium
+  - slug: decode-string
+    title: Decode String
+    difficulty: medium
+  - slug: maximum-frequency-stack
+    title: Maximum Frequency Stack
+    difficulty: hard
+  - slug: largest-rectangle-in-histogram
+    title: Largest Rectangle In Histogram
+    difficulty: hard
