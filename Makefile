@@ -1,141 +1,57 @@
+.RECIPEPREFIX := >
+.PHONY: deps fmt lint type test check docs docs-serve tracks validate tree new-problem
 
-.PHONY: install linters precommit test lint type fmt ci \
-        format-md fmt-json lint-md fix-md validate-stats tracks-report tracks-table markdown build
-
-# Prefer project venv Python, then python3, then python
-PYTHON := $(shell if [ -x "./venv/bin/python" ]; then echo "./venv/bin/python"; \
-                  elif command -v python3 >/dev/null 2>&1; then command -v python3; \
-                  elif command -v python >/dev/null 2>&1; then command -v python; \
-                  else echo python; fi)
-
-install:
-	$(PYTHON) -m pip install -r requirements.txt -r requirements-dev.txt
-
-linters:  # alias
-	make lint
-
-precommit:
-	pre-commit install
-
-TEST_REPORT_DIR := .reports
-TEST_REPORT_FILE := $(TEST_REPORT_DIR)/pytest-last.txt
-
-test:
-	@mkdir -p $(TEST_REPORT_DIR)
-	@PYTHONDONTWRITEBYTECODE=1 $(PYTHON) -m pytest -q > $(TEST_REPORT_FILE) 2>&1; \
-	status=$$?; \
-	if [ $$status -eq 0 ]; then \
-	  echo "Test: all OK"; \
-	else \
-	  summary=$$(grep -E '^=+ .* (failed|error)' $(TEST_REPORT_FILE) | tail -n1); \
-	  if [ -n "$$summary" ]; then \
-	    count=$$(echo "$$summary" | grep -Eo '[0-9]+ (failed|error|errors)' | awk '{s+=$$1} END{print s+0}'); \
-	  else \
-	    count=$$(grep -E '^(ERROR|FAILED) ' $(TEST_REPORT_FILE) | wc -l | awk '{print $$1}'); \
-	  fi; \
-	  echo $$count; \
-	fi; \
-	exit $$status
-
-# Optional: verbose tests for CI or local debugging
-test-ci:
-	PYTHONDONTWRITEBYTECODE=1 $(PYTHON) -m pytest -q
-
-lint:
-	$(PYTHON) -m ruff check .
-	$(PYTHON) -m black --check .
+# Tooling
+deps:
+> python -m pip install -U pip
+> pip install -r requirements-dev.txt
 
 fmt:
-	$(PYTHON) -m ruff check . --fix
-	$(PYTHON) -m black .
+> black .
+> ruff format .
 
-# Optional: run linters on legacy code too
-lint-legacy:
-	$(PYTHON) -m ruff check old_leetcode
-	$(PYTHON) -m black --check old_leetcode
-
-fmt-legacy:
-	$(PYTHON) -m ruff check old_leetcode --fix || true
-	$(PYTHON) -m black old_leetcode || true
+lint:
+> ruff check .
 
 type:
-	$(PYTHON) -m mypy common || true  # problems may contain stubs early
+> mypy .
 
-ci: test lint type validate-stats
+test:
+> pytest -q
 
-# Validate stats.json files against the JSON Schema
-validate-stats:
-	$(PYTHON) scripts/validate_stats.py
+check: fmt lint type test
 
-# Generate markdown reports for all tracks
-tracks-report:
-	$(PYTHON) scripts/generate_track_reports.py
+# Docs
+docs:
+> mkdocs build --strict
 
-# Update README tracks table from tracks/*.md
-tracks-table:
-	$(PYTHON) scripts/update_tracks_table.py
+docs-serve:
+> mkdocs serve -a 0.0.0.0:8000
 
-# Markdown docs pipeline: generate track reports and update README table
-markdown: tracks-report tracks-table
 
-# Build: run formatters, linters, type checks, tests, stats validation, and track reports
-build:
-	@echo "--- Running code formatters ---"
-	make fmt
-	@echo "--- Formatting Markdown ---"
-	make format-md
-	@echo "--- Formatting JSON ---"
-	make fmt-json
-	@echo "--- Running linters ---"
-	make lint
-	@echo "--- Linting Markdown ---"
-	make lint-md || true
-	@echo "--- Type checking ---"
-	make type
-	@echo "--- Running tests ---"
-	make test
-	@echo "--- Validating stats schema ---"
-	make validate-stats
-	@echo "--- Generating Markdown (tracks + README table) ---"
-	make markdown
-	@echo "--- Running pre-commit on all files (final step) ---"
-	make precommit-all
+# Repo-specific scripts
+tracks:
+> python scripts/generate_track_reports.py
+> python scripts/update_tracks_table.py
 
-# Target: format-md
-# Automatically formats all Markdown files in the repository using mdformat.
-# This target should be used locally to fix files.
-format-md:
-	@echo "--- Formatting Markdown files with mdformat ---"
-	$(PYTHON) -m mdformat README.md docs problems tracks archive topics
+validate:
+> python scripts/validate_stats.py
 
-# JSON formatting via pre-commit hook (pretty-format-json)
-fmt-json:
-	@echo "--- Formatting JSON files (pre-commit: pretty-format-json) ---"
-	$(PYTHON) -m pre_commit run --hook-stage manual pretty-format-json --all-files || true
+new-problem:
+> python scripts/new_problem.py
 
-# Run all pre-commit hooks across the repo.
-# - In CI (CI=true), fail if hooks find issues.
-# - Locally, allow hooks to modify files; re-run once; never fail build.
-precommit-all:
-ifeq ($(CI),true)
-	$(PYTHON) -m pre_commit run --all-files
-else
-	$(PYTHON) -m pre_commit run --all-files || \
-	  (echo "--- Re-running pre-commit after auto-fixes ---" && $(PYTHON) -m pre_commit run --all-files) || true
-endif
-
-# Target: fix-md
-# Automatically fixes all supported Markdown linting issues using markdownlint.
-# Respects the .gitignore file. This target should be used locally.
-fix-md:
-	@echo "--- Fixing Markdown files with markdownlint ---"
-	markdownlint --fix "**/*.md" --ignore-path .gitignore .
-
-# Target: lint-md
-# Checks Markdown files for formatting and style issues without modifying them.
-# Ideal for CI pipelines. Fails if any issues are found.
-lint-md:
-	@echo "--- Checking Markdown formatting (mdformat) ---"
-	$(PYTHON) -m mdformat --check README.md docs problems tracks archive topics
-	@echo "--- Linting Markdown files (markdownlint) ---"
-	markdownlint --ignore-path .gitignore . --config .markdownlint.json
+# Utility
+tree:
+> python - <<'PY' > project_tree.txt
+> import os
+> for root, dirs, files in os.walk('.', topdown=True):
+>     dirs[:] = [d for d in dirs if d not in {'.git', '.devcontainer', '.venv', 'venv', '__pycache__', '.pytest_cache'}]
+>     level = root.count(os.sep)
+>     indent = '    ' * level
+>     if level == 0:
+>         print('.')
+>     else:
+>         print(f"{indent}└── {os.path.basename(root)}")
+>     for f in sorted(files):
+>         print(f"{indent}    ├── {f}")
+PY

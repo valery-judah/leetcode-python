@@ -1,0 +1,56 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Check",
+      "type": "shell",
+      "command": "make check"
+    },
+    {
+      "label": "Test",
+      "type": "shell",
+      "command": "pytest -q",
+      "group": "test"
+    },
+    {
+      "label": "Format",
+      "type": "shell",
+      "command": "black . && ruff format ."
+    },
+    {
+      "label": "Lint",
+      "type": "shell",
+      "command": "ruff check ."
+    },
+    {
+      "label": "Type Check",
+      "type": "shell",
+      "command": "mypy ."
+    },
+    {
+      "label": "Docs: build",
+      "type": "shell",
+      "command": "make docs"
+    },
+    {
+      "label": "Docs: serve",
+      "type": "shell",
+      "command": "make docs-serve"
+    },
+    {
+      "label": "Tracks: generate reports",
+      "type": "shell",
+      "command": "make tracks"
+    },
+    {
+      "label": "Validate stats",
+      "type": "shell",
+      "command": "make validate"
+    },
+    {
+      "label": "New problem",
+      "type": "shell",
+      "command": "make new-problem"
+    }
+  ]
+}
