@@ -1,0 +1,126 @@
+{
+  "category": "",
+  "id": "2827",
+  "name": "Number of Beautiful Integers in the Range",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/number-of-beautiful-integers-in-the-range/",
+  "slug": "number-of-beautiful-integers-in-the-range",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Numbers with Non-Decreasing Digits ",
+      "difficulty": "Hard",
+      "slug": "count-numbers-with-non-decreasing-digits"
+    }
+  ],
+  "questionId": "3017",
+  "questionFrontendId": "2827",
+  "title": "Number of Beautiful Integers in the Range",
+  "titleSlug": "number-of-beautiful-integers-in-the-range",
+  "content": "<p>You are given positive integers <code>low</code>, <code>high</code>, and <code>k</code>.</p>\n\n<p>A number is <strong>beautiful</strong> if it meets both of the following conditions:</p>\n\n<ul>\n\t<li>The count of even digits in the number is equal to the count of odd digits.</li>\n\t<li>The number is divisible by <code>k</code>.</li>\n</ul>\n\n<p>Return <em>the number of beautiful integers in the range</em> <code>[low, high]</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> low = 10, high = 20, k = 3\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> There are 2 beautiful integers in the given range: [12,18]. \n- 12 is beautiful because it contains 1 odd digit and 1 even digit, and is divisible by k = 3.\n- 18 is beautiful because it contains 1 odd digit and 1 even digit, and is divisible by k = 3.\nAdditionally we can see that:\n- 16 is not beautiful because it is not divisible by k = 3.\n- 15 is not beautiful because it does not contain equal counts even and odd digits.\nIt can be shown that there are only 2 beautiful integers in the given range.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> low = 1, high = 10, k = 1\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> There is 1 beautiful integer in the given range: [10].\n- 10 is beautiful because it contains 1 odd digit and 1 even digit, and is divisible by k = 1.\nIt can be shown that there is only 1 beautiful integer in the given range.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> low = 5, high = 5, k = 2\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> There are 0 beautiful integers in the given range.\n- 5 is not beautiful because it is not divisible by k = 2 and it does not contain equal even and odd digits.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt; low &lt;= high &lt;= 10<sup>9</sup></code></li>\n\t<li><code>0 &lt; k &lt;= 20</code></li>\n</ul>\n",
+  "likes": 378,
+  "dislikes": 37,
+  "stats": {
+    "totalAccepted": "12K",
+    "totalSubmission": "59.2K",
+    "totalAcceptedRaw": 12044,
+    "totalSubmissionRaw": 59151,
+    "acRate": "20.4%"
+  },
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "metaData": {
+    "name": "numberOfBeautifulIntegers",
+    "params": [
+      {
+        "name": "low",
+        "type": "integer"
+      },
+      {
+        "type": "integer",
+        "name": "high"
+      },
+      {
+        "type": "integer",
+        "name": "k"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "shrthk",
+      "year": 2023,
+      "content": "A 6D DP is an unholy creation, the existence of which i was blissfully unaware of.",
+      "voteCount": 26
+    },
+    {
+      "name": "neembu_mirch",
+      "year": 2023,
+      "content": "i think the brute force solution must be restricted from passing otherwise what is the point of keeping this problem hard",
+      "voteCount": 12
+    },
+    {
+      "name": "A770192",
+      "year": 2023,
+      "content": "It should be made upto 10^18 so that brute force solution cannot pass because range between 10^8 and 10^9 have odd number of digits and number of odd digits cannot be equal to number of even digits.\n*Plz do upvote for the help*",
+      "voteCount": 11
+    },
+    {
+      "name": "tanjul_sarathe",
+      "year": 2023,
+      "content": "It seems like easy but when you write code for this u got frustrated. i got TLE on 573/595\\uD83E\\uDD72\\uD83E\\uDD72\\uD83E\\uDD72\\uD83E\\uDD72\\uD83E\\uDD72",
+      "voteCount": 8
+    },
+    {
+      "name": "aero_coder",
+      "year": 2024,
+      "content": "We can optimise the 6d dp to 5d dp by storing the difference of (even_count - even_count) instead of seperate even_count and odd_count.\\n",
+      "voteCount": 5
+    },
+    {
+      "name": "Maddy_10",
+      "year": 2023,
+      "content": "595/595 testcases passed but still shows TLE\\n",
+      "voteCount": 5
+    },
+    {
+      "name": "SharpBritannia",
+      "year": 2023,
+      "content": "This is unnecessarily hard. 1.1m numbers on a single thread in 800ms is production worthy. I\\'ve seen other solutions and there\\'s no way any self respecting reviewer would accept any of those (6D int arrays with no docs) for anything remotely bound to any sort of maintainability guideline. You want faster results? Give me an IBM Mainframe with unpacked binary coded decimals.",
+      "voteCount": 4
+    },
+    {
+      "name": "AlgorithmicSage",
+      "year": 2023,
+      "content": "I came up with approach which gave TLE on large test case.\\n\\ns1- first thing is to find the nearest greater or equal value to low that is divisible by k let that be m.\\ns2- now run a loop for i between m and high and increment i as i=i+k;\\ns3- for every i check if it has equal no of even and odd digits  in following way\\n     `bool isValid(int num)\\n    {\\n       \\n        int even=0;\\n        int odd=0;\\n        \\n        while(num>0)\\n        {\\n            int d=num%10;\\n            if(d%2==0)even++;\\n            else{\\n                odd++;\\n            }\\n            num=num/10;\\n        }\\n        return (even==odd);\\n    }`\\ns4-if it is valid increment ans\\ns5- return ans\\n\\ncan any one help me optimise it.\\n",
+      "voteCount": 3
+    },
+    {
+      "name": "bikramghoshal6337",
+      "year": 2023,
+      "content": "if you dont know dp and you are a beginner you can see [my solution](https://leetcode.com/problems/number-of-beautiful-integers-in-the-range/solutions/3933529/simple-solution-without-dp/)",
+      "voteCount": 2
+    },
+    {
+      "name": "Hrsh_123",
+      "year": 2024,
+      "content": "Got TLE in 576/595 test case, idk after optimising its giving MLE!!",
+      "voteCount": 1
+    }
+  ]
+}

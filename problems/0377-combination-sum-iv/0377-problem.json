@@ -1,0 +1,127 @@
+{
+  "category": "",
+  "id": "377",
+  "name": "Combination Sum IV",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/combination-sum-iv/",
+  "slug": "combination-sum-iv",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Combination Sum",
+      "difficulty": "Medium",
+      "slug": "combination-sum"
+    },
+    {
+      "title": "Ways to Express an Integer as Sum of Powers",
+      "difficulty": "Medium",
+      "slug": "ways-to-express-an-integer-as-sum-of-powers"
+    }
+  ],
+  "questionId": "377",
+  "questionFrontendId": "377",
+  "title": "Combination Sum IV",
+  "titleSlug": "combination-sum-iv",
+  "content": "<p>Given an array of <strong>distinct</strong> integers <code>nums</code> and a target integer <code>target</code>, return <em>the number of possible combinations that add up to</em>&nbsp;<code>target</code>.</p>\n\n<p>The test cases are generated so that the answer can fit in a <strong>32-bit</strong> integer.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2,3], target = 4\n<strong>Output:</strong> 7\n<strong>Explanation:</strong>\nThe possible combination ways are:\n(1, 1, 1, 1)\n(1, 1, 2)\n(1, 2, 1)\n(1, 3)\n(2, 1, 1)\n(2, 2)\n(3, 1)\nNote that different sequences are counted as different combinations.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [9], target = 3\n<strong>Output:</strong> 0\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 200</code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 1000</code></li>\n\t<li>All the elements of <code>nums</code> are <strong>unique</strong>.</li>\n\t<li><code>1 &lt;= target &lt;= 1000</code></li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Follow up:</strong> What if negative numbers are allowed in the given array? How does it change the problem? What limitation we need to add to the question to allow negative numbers?</p>\n",
+  "likes": 7657,
+  "dislikes": 691,
+  "stats": {
+    "totalAccepted": "567.4K",
+    "totalSubmission": "1M",
+    "totalAcceptedRaw": 567383,
+    "totalSubmissionRaw": 1036512,
+    "acRate": "54.7%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "metaData": {
+    "name": "combinationSum4",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      },
+      {
+        "name": "target",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "codecola",
+      "year": 2016,
+      "content": "[1,1,2] and [2, 1, 1] are two different combinations, never heard this before...\\nMr. Permutation is unhappy and angry~",
+      "voteCount": 1568
+    },
+    {
+      "name": "aakashy18",
+      "year": 2021,
+      "content": "If negative numbers are included in the array then repetition will lead to infinity, thus giving infinite answers. \\nFor example: given array: **[-2,2]** and **target=0** then **possible solutions will go as {-2,2} {-2,-2,2,2} {-2,-2,-2,2,2,2}...**\\nSo in that case the question should specifically mention that each element can only be taken once.\\n**PS:** Please correct me if I am wrong :)",
+      "voteCount": 124
+    },
+    {
+      "name": "dpwang",
+      "year": 2019,
+      "content": "It is a Permutation problem not a combination problem.",
+      "voteCount": 62
+    },
+    {
+      "name": "mandy1339",
+      "year": 2022,
+      "content": "I thought this was going to be a *Coin Change II* clone. LOL It was Permutation instead",
+      "voteCount": 50
+    },
+    {
+      "name": "foodlover",
+      "year": 2019,
+      "content": "Anyone else getting a runtime error for signed integer overflow on this one ? I keep getting this for the [3,33,333] & sum of 10000 test case, with both my soln as well as solns from what others have reported here.",
+      "voteCount": 50
+    },
+    {
+      "name": "newtt",
+      "year": 2016,
+      "content": "IMO this question is better to be named permutation sum.",
+      "voteCount": 32
+    },
+    {
+      "name": "anwendeng",
+      "year": 2023,
+      "content": "\"different sequences are counted as different combinations.\"\nIt 's not combination problem, but a problem for permutations.\n\nAccording to the description for example 1, this problem is a problem for permutations with repetition. Each element in the array nums can be chosen many times as you wish.\n\nA real hint for C/C++ users, use unsigned! Even using long long it overflows, very strange! But try unsigned, it will be fine.\nOne useful testcase\n```\n[10,20,30,40,50,60,70,80,90,100,110,120,130,140,150,160,170,180,190,200,210,220,230,240,250,260,270,280,290,300,310,320,330,340,350,360,370,380,390,400,410,420,430,440,450,460,470,480,490,500,510,520,530,540,550,560,570,580,590,600,610,620,630,640,650,660,670,680,690,700,710,720,730,740,750,760,770,780,790,800,810,820,830,840,850,860,870,880,890,900,910,920,930,940,950,960,970,980,990,111]\n999\n```\nThough LC says \"The test cases are generated so that the answer can fit in a 32-bit integer.\" But not for intermediate values.",
+      "voteCount": 27
+    },
+    {
+      "name": "maimaihu",
+      "year": 2016,
+      "content": "Anyone has concise solution for this case? If we still need to use the same code, it will lead to infinite loop? how to fix it?",
+      "voteCount": 26
+    },
+    {
+      "name": "andywanghappy",
+      "year": 2016,
+      "content": "if negative numbers are allowed in the given array, the number of possible combinations will be infinity.",
+      "voteCount": 20
+    },
+    {
+      "name": "arakee1",
+      "year": 2019,
+      "content": "If we allow negative numbers then we have to put the limitation that for each positive number x in nums, there does not exist a combination of sums of negative numbers y_0, y_1, ..., y_n in nums such that -x = y_0 + y_1 + ... + y_n\\n\\nit is easy to see that if we do have this be the case then we will have a cycle that will lead to us having an infinite number of combinations. E.g if we have nums = [-1,1] and target = 0 then we can have an infinite number of sums such as (-1, 1,), (-1, -1, 1, 1), (-1, -1, -1, 1, 1, 1), .... and so on\\n\\nSo this is actually a really huge limitation on what negative numbers and positive numbers we will accept in our input. For example, if we have any positive number in nums, then we can never have a -1 in nums.\\n\\nIf we assume that our input abides by this limitation then one way we can solve the problem is to:\\niterate i=0..target and compute, dp[0] = 1, dp[i] += dp[i-num] for every positive num x, i >= x.\\niterate i=target..0, and compute dp[i] += dp[i-num] for every negative num x, i-x <= target",
+      "voteCount": 18
+    }
+  ]
+}

@@ -42,6 +42,28 @@ def render(tpl_path: Path, **kw) -> str:
     return tpl.format(**kw)
 
 
+def _max_line_length(default: int = 110) -> int:
+    """Return configured max line length from pyproject.toml, else default.
+
+    Prefers `[tool.ruff].line-length`, then `[tool.black].line-length`.
+    Falls back to `default` when unavailable.
+    """
+    try:
+        txt = (ROOT / "pyproject.toml").read_text()
+    except Exception:
+        return default
+    import re as _re
+
+    m = _re.search(r"(?ms)^\[tool\.ruff\].*?^line-length\s*=\s*(\d+)", txt)
+    if m:
+        return int(m.group(1))
+    m = _re.search(r"(?ms)^\[tool\.black\].*?^line-length\s*=\s*(\d+)", txt)
+    if m:
+        return int(m.group(1))
+    m = _re.search(r"(?m)^line-length\s*=\s*(\d+)", txt)
+    return int(m.group(1)) if m else default
+
+
 def _extract_constraints_md(content_html: str | None) -> str:
     """Extract constraints list items from problem HTML and render as bullets.
 
@@ -597,7 +619,9 @@ def _write_solutions(
         else:
             single_line_sig = f"def solve(self) -> {ret_type}:"
 
-        if 4 + len(single_line_sig) < 120:
+        max_len = _max_line_length(110)
+        # Account for 4 spaces of indentation present in the template.
+        if 4 + len(single_line_sig) <= max_len:
             solve_signature = single_line_sig
         else:
             # Multi-line fallback; indent continuation lines by 8 spaces
@@ -605,7 +629,8 @@ def _write_solutions(
                 cont = "\n".join(["        self,", *[f"        {p}," for p in sig_params_parts]])
             else:
                 cont = "        self,"
-            solve_signature = "def solve(\n" f"{cont}\n" f") -> {ret_type}:"
+            # Closing paren aligns with the 'def' indent (4 spaces inside class)
+            solve_signature = "def solve(\n" f"{cont}\n" f"    ) -> {ret_type}:"
 
         context["import_types"] = type_imports
         context["generated_cases"] = generated_cases

@@ -1,0 +1,210 @@
+{
+  "category": "",
+  "id": "198",
+  "name": "House Robber",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/house-robber/",
+  "slug": "house-robber",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Product Subarray",
+      "difficulty": "Medium",
+      "slug": "maximum-product-subarray"
+    },
+    {
+      "title": "House Robber II",
+      "difficulty": "Medium",
+      "slug": "house-robber-ii"
+    },
+    {
+      "title": "Paint House",
+      "difficulty": "Medium",
+      "slug": "paint-house"
+    },
+    {
+      "title": "Paint Fence",
+      "difficulty": "Medium",
+      "slug": "paint-fence"
+    },
+    {
+      "title": "House Robber III",
+      "difficulty": "Medium",
+      "slug": "house-robber-iii"
+    },
+    {
+      "title": "Non-negative Integers without Consecutive Ones",
+      "difficulty": "Hard",
+      "slug": "non-negative-integers-without-consecutive-ones"
+    },
+    {
+      "title": "Coin Path",
+      "difficulty": "Hard",
+      "slug": "coin-path"
+    },
+    {
+      "title": "Delete and Earn",
+      "difficulty": "Medium",
+      "slug": "delete-and-earn"
+    },
+    {
+      "title": "Solving Questions With Brainpower",
+      "difficulty": "Medium",
+      "slug": "solving-questions-with-brainpower"
+    },
+    {
+      "title": "Count Number of Ways to Place Houses",
+      "difficulty": "Medium",
+      "slug": "count-number-of-ways-to-place-houses"
+    },
+    {
+      "title": "House Robber IV",
+      "difficulty": "Medium",
+      "slug": "house-robber-iv"
+    },
+    {
+      "title": "Mice and Cheese",
+      "difficulty": "Medium",
+      "slug": "mice-and-cheese"
+    },
+    {
+      "title": "Largest Element in an Array after Merge Operations",
+      "difficulty": "Medium",
+      "slug": "largest-element-in-an-array-after-merge-operations"
+    }
+  ],
+  "questionId": "198",
+  "questionFrontendId": "198",
+  "title": "House Robber",
+  "titleSlug": "house-robber",
+  "content": "<p>You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security systems connected and <b>it will automatically contact the police if two adjacent houses were broken into on the same night</b>.</p>\n\n<p>Given an integer array <code>nums</code> representing the amount of money of each house, return <em>the maximum amount of money you can rob tonight <b>without alerting the police</b></em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2,3,1]\n<strong>Output:</strong> 4\n<strong>Explanation:</strong> Rob house 1 (money = 1) and then rob house 3 (money = 3).\nTotal amount you can rob = 1 + 3 = 4.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [2,7,9,3,1]\n<strong>Output:</strong> 12\n<strong>Explanation:</strong> Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1).\nTotal amount you can rob = 2 + 9 + 1 = 12.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 100</code></li>\n\t<li><code>0 &lt;= nums[i] &lt;= 400</code></li>\n</ul>\n",
+  "likes": 22721,
+  "dislikes": 487,
+  "stats": {
+    "totalAccepted": "3.1M",
+    "totalSubmission": "5.9M",
+    "totalAcceptedRaw": 3112703,
+    "totalSubmissionRaw": 5923242,
+    "acRate": "52.6%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "metaData": {
+    "name": "rob",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 28
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Google",
+        "slug": "google",
+        "timesEncountered": 17
+      }
+    ],
+    "3": [
+      {
+        "taggedByAdmin": false,
+        "name": "Apple",
+        "slug": "apple",
+        "timesEncountered": 12
+      }
+    ],
+    "2": [
+      {
+        "taggedByAdmin": false,
+        "name": "TikTok",
+        "slug": "tiktok",
+        "timesEncountered": 11
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "b10s",
+      "year": 2022,
+      "content": "I think the test case `[2,1,1,2]` must be in description. Otherwise from the current two cases we can assume to check odd/even elements only. ",
+      "voteCount": 2459
+    },
+    {
+      "name": "JobHunterPlus",
+      "year": 2023,
+      "content": "I\\'m a law abiding citizen, so I will always return 0 :)",
+      "voteCount": 1254
+    },
+    {
+      "name": "udavid",
+      "year": 2019,
+      "content": "\"You are a professional robber planning to rob houses along a street.\"\\n\\nI refuse to believe that a professional robber would ever attempt to rob a street that had no houses on it. The description should be updated to indicate that the robber is perhaps an amateur robber, or a blind robber.",
+      "voteCount": 1127
+    },
+    {
+      "name": "uniqs",
+      "year": 2023,
+      "content": "The world is so dangerous, even if you are poor than your adjacent houses, you may be robbed. [100, 10, 1, 10, 100].",
+      "voteCount": 637
+    },
+    {
+      "name": "Fful",
+      "year": 2023,
+      "content": "if I can\\'t become a programmer, at least I know how to choose the right house for a robbery..",
+      "voteCount": 526
+    },
+    {
+      "name": "coder1311",
+      "year": 2021,
+      "content": "**We need more posts or explanations like this**\\nhttps://leetcode.com/problems/house-robber/discuss/156523/From-good-to-great.-How-to-approach-most-of-DP-problems.\\nNot only me, everyone wants this kind of explanation.\\nPlease everyone just stop posting direct solutions. Post with as much possible comments.\\nIf anyone want to post One-Liners Solution, they must also post detailed solution before with explanation. Then the one-liner will be more joyful to understand and earn.\\n\\n**WE SHOULD MAKE A RULE----**\\nDownvote the posts which are direct solutions with no or less comments added as needed.\\nUpvote only these kind of solutions.\\nWe have to bring this change, as the direct solutions is frustrating and very time-wasting to understand.\\nRequesting Everyone!!!!\\n**Be a part of this CHANGE.  **",
+      "voteCount": 369
+    },
+    {
+      "name": "nagarajramachandran123",
+      "year": 2023,
+      "content": "Before going, one tip .\\nI failed to notice and ended up with wrong solution first.\\n\\nDon\\'t think like this\\n\\nThe solution is not like this.\\n\\nMaximum of( (1,3,5,9 ) - Odd Elements  ,  (2,4,6,8 ) - Even Elements )\\n\\nIf input is \\n( 40,2,4,10)\\n For this if we apply above solution\\nwe got 44 and 12\\nand maximum is 44 which was wrong\\uD83D\\uDE05\\n\\nWe will steal at first  and  last house, which will give 50.\\n( First and Last is not adjacent house )\\uD83E\\uDDD1\\u200D\\uD83D\\uDCBB\\uD83E\\uDDD1\\u200D\\uD83D\\uDCBB\\uD83E\\uDDD1\\u200D\\uD83D\\uDCBB\\n\\n",
+      "voteCount": 184
+    },
+    {
+      "name": "zyy13",
+      "year": 2024,
+      "content": "As a professional robber, why would I return the max money that I stole.",
+      "voteCount": 177
+    },
+    {
+      "name": "nick46",
+      "year": 2015,
+      "content": "Here is the DP formula that leads to the right answer:\\n\\n - M(k) = money at the kth house\\n - P(0) = 0\\n - P(1) = M(1)\\n - P(k) = max(P(k\\u22122) + M(k), P(k\\u22121))",
+      "voteCount": 174
+    },
+    {
+      "name": "normalpersontryingtopayrent",
+      "year": 2022,
+      "content": "I hope to always be the adjacent house. ",
+      "voteCount": 145
+    }
+  ]
+}

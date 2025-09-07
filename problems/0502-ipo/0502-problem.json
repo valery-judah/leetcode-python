@@ -1,0 +1,145 @@
+{
+  "category": "",
+  "id": "502",
+  "name": "IPO",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/ipo/",
+  "slug": "ipo",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Subsequence Score",
+      "difficulty": "Medium",
+      "slug": "maximum-subsequence-score"
+    },
+    {
+      "title": "Maximum Elegance of a K-Length Subsequence",
+      "difficulty": "Hard",
+      "slug": "maximum-elegance-of-a-k-length-subsequence"
+    }
+  ],
+  "questionId": "502",
+  "questionFrontendId": "502",
+  "title": "IPO",
+  "titleSlug": "ipo",
+  "content": "<p>Suppose LeetCode will start its <strong>IPO</strong> soon. In order to sell a good price of its shares to Venture Capital, LeetCode would like to work on some projects to increase its capital before the <strong>IPO</strong>. Since it has limited resources, it can only finish at most <code>k</code> distinct projects before the <strong>IPO</strong>. Help LeetCode design the best way to maximize its total capital after finishing at most <code>k</code> distinct projects.</p>\n\n<p>You are given <code>n</code> projects where the <code>i<sup>th</sup></code> project has a pure profit <code>profits[i]</code> and a minimum capital of <code>capital[i]</code> is needed to start it.</p>\n\n<p>Initially, you have <code>w</code> capital. When you finish a project, you will obtain its pure profit and the profit will be added to your total capital.</p>\n\n<p>Pick a list of <strong>at most</strong> <code>k</code> distinct projects from given projects to <strong>maximize your final capital</strong>, and return <em>the final maximized capital</em>.</p>\n\n<p>The answer is guaranteed to fit in a 32-bit signed integer.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> k = 2, w = 0, profits = [1,2,3], capital = [0,1,1]\n<strong>Output:</strong> 4\n<strong>Explanation:</strong> Since your initial capital is 0, you can only start the project indexed 0.\nAfter finishing it you will obtain profit 1 and your capital becomes 1.\nWith capital 1, you can either start the project indexed 1 or the project indexed 2.\nSince you can choose at most 2 projects, you need to finish the project indexed 2 to get the maximum capital.\nTherefore, output the final maximized capital, which is 0 + 1 + 3 = 4.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> k = 3, w = 0, profits = [1,2,3], capital = [0,1,2]\n<strong>Output:</strong> 6\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= k &lt;= 10<sup>5</sup></code></li>\n\t<li><code>0 &lt;= w &lt;= 10<sup>9</sup></code></li>\n\t<li><code>n == profits.length</code></li>\n\t<li><code>n == capital.length</code></li>\n\t<li><code>1 &lt;= n &lt;= 10<sup>5</sup></code></li>\n\t<li><code>0 &lt;= profits[i] &lt;= 10<sup>4</sup></code></li>\n\t<li><code>0 &lt;= capital[i] &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+  "likes": 4058,
+  "dislikes": 277,
+  "stats": {
+    "totalAccepted": "284.7K",
+    "totalSubmission": "535.9K",
+    "totalAcceptedRaw": 284709,
+    "totalSubmissionRaw": 535900,
+    "acRate": "53.1%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    },
+    {
+      "name": "Sorting",
+      "slug": "sorting"
+    },
+    {
+      "name": "Heap (Priority Queue)",
+      "slug": "heap-priority-queue"
+    }
+  ],
+  "metaData": {
+    "name": "findMaximizedCapital",
+    "params": [
+      {
+        "name": "k",
+        "type": "integer"
+      },
+      {
+        "name": "w",
+        "type": "integer"
+      },
+      {
+        "name": "profits",
+        "type": "integer[]"
+      },
+      {
+        "name": "capital",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "Finesse",
+      "year": 2023,
+      "content": "Will my LeetCoins be converted to stocks?",
+      "voteCount": 489
+    },
+    {
+      "name": "Lyle_C",
+      "year": 2023,
+      "content": "The question should specify that you don\\'t lose the capital when you use it for a project. The examples also don\\'t do a good job illustrating that. But overall, this is one of the easier \"Hard\" problems",
+      "voteCount": 292
+    },
+    {
+      "name": "deleted_user",
+      "year": 2019,
+      "content": "Shouldn\\'t the capital be spent when you start the project? For example, if you have 1 capital and the project costs 1 capital with a profit of 3. Shouldn\\'t the outcome be 3? Since you spend 1 and gain 3 (1 - 1 + 3)? Not sure why the question is phrased where you get to keep invested capital... Makes it more confusing tbh.",
+      "voteCount": 266
+    },
+    {
+      "name": "RicardoMahfoud",
+      "year": 2023,
+      "content": "The easy problems were the calm before the storm",
+      "voteCount": 115
+    },
+    {
+      "name": "apurva2001",
+      "year": 2024,
+      "content": "Who\\'s half way through 30 days streak for June ?",
+      "voteCount": 87
+    },
+    {
+      "name": "cecilia5",
+      "year": 2023,
+      "content": "The hard problem begins ... !",
+      "voteCount": 62
+    },
+    {
+      "name": "Zein4",
+      "year": 2023,
+      "content": "I thought it was a simple while(k>0) and a simple loop inside and said hmmm this doesn\\'t seem hard then got slammed with a time limit Exceeded. should\\'ve known lol",
+      "voteCount": 47
+    },
+    {
+      "name": "cOde_Ranvir25",
+      "year": 2023,
+      "content": "Here is the Approach(Updated):-\n\nCreate a list of pairs (capital, profit) for all n projects.\n\nSort the list of projects by their minimum capital requirements in ascending order.\n\nInitialize a priority queue to store the profits of the available projects.\n\nCreate an i variable and Iterate over k projects.\n///While i is less than n and the minimum capital requirement of the current project is less than or equal to w.\n// Add the profit of the current project to the priority queue.\n// If the priority queue is empty, break out of the loop because we can't afford any more projects.\n// Select the project with the highest profit from the priority queue and add its profit to w.\n\nAtlast return that maximized capital.",
+      "voteCount": 40
+    },
+    {
+      "name": "Vaibhav_69",
+      "year": 2023,
+      "content": "Monday blues really be hitting hard on Thursdays",
+      "voteCount": 40
+    },
+    {
+      "name": "rohan5",
+      "year": 2018,
+      "content": "Most of these types of problems where we need to find min or max seem to require DP.\\n\\nEg:- Kanpsack Problem\\n\\nI was wondering why this one can be solved by Greedy. \\nI just wanted help to figure out DP vs. Greedy problems and this seems to be a good example.\\n\\nSorry I don\\'t have code to show yet, maybe someone could help me out with that. \\n\\n",
+      "voteCount": 37
+    }
+  ]
+}

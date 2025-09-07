@@ -1,0 +1,172 @@
+{
+  "category": "",
+  "id": "621",
+  "name": "Task Scheduler",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/task-scheduler/",
+  "slug": "task-scheduler",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Rearrange String k Distance Apart",
+      "difficulty": "Hard",
+      "slug": "rearrange-string-k-distance-apart"
+    },
+    {
+      "title": "Reorganize String",
+      "difficulty": "Medium",
+      "slug": "reorganize-string"
+    },
+    {
+      "title": "Maximum Number of Weeks for Which You Can Work",
+      "difficulty": "Medium",
+      "slug": "maximum-number-of-weeks-for-which-you-can-work"
+    },
+    {
+      "title": "Find Minimum Time to Finish All Jobs II",
+      "difficulty": "Medium",
+      "slug": "find-minimum-time-to-finish-all-jobs-ii"
+    },
+    {
+      "title": "Task Scheduler II",
+      "difficulty": "Medium",
+      "slug": "task-scheduler-ii"
+    }
+  ],
+  "questionId": "621",
+  "questionFrontendId": "621",
+  "title": "Task Scheduler",
+  "titleSlug": "task-scheduler",
+  "content": "<p>You are given an array of CPU <code>tasks</code>, each labeled with a letter from A to Z, and a number <code>n</code>. Each CPU interval can be idle or allow the completion of one task. Tasks can be completed in any order, but there&#39;s a constraint: there has to be a gap of <strong>at least</strong> <code>n</code> intervals between two tasks with the same label.</p>\n\n<p>Return the <strong>minimum</strong> number of CPU intervals required to complete all tasks.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\" style=\"\n    border-color: var(--border-tertiary);\n    border-left-width: 2px;\n    color: var(--text-secondary);\n    font-size: .875rem;\n    margin-bottom: 1rem;\n    margin-top: 1rem;\n    overflow: visible;\n    padding-left: 1rem;\n\">\n<p><strong>Input:</strong> <span class=\"example-io\" style=\"\n    font-family: Menlo,sans-serif;\n    font-size: 0.85rem;\n\">tasks = [&quot;A&quot;,&quot;A&quot;,&quot;A&quot;,&quot;B&quot;,&quot;B&quot;,&quot;B&quot;], n = 2</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\" style=\"\nfont-family: Menlo,sans-serif;\nfont-size: 0.85rem;\n\">8</span></p>\n\n<p><strong>Explanation:</strong> A possible sequence is: A -&gt; B -&gt; idle -&gt; A -&gt; B -&gt; idle -&gt; A -&gt; B.</p>\n\n<p>After completing task A, you must wait two intervals before doing A again. The same applies to task B. In the 3<sup>rd</sup> interval, neither A nor B can be done, so you idle. By the 4<sup>th</sup> interval, you can do A again as 2 intervals have passed.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\" style=\"\n    border-color: var(--border-tertiary);\n    border-left-width: 2px;\n    color: var(--text-secondary);\n    font-size: .875rem;\n    margin-bottom: 1rem;\n    margin-top: 1rem;\n    overflow: visible;\n    padding-left: 1rem;\n\">\n<p><strong>Input:</strong> <span class=\"example-io\" style=\"\n    font-family: Menlo,sans-serif;\n    font-size: 0.85rem;\n\">tasks = [&quot;A&quot;,&quot;C&quot;,&quot;A&quot;,&quot;B&quot;,&quot;D&quot;,&quot;B&quot;], n = 1</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\" style=\"\n    font-family: Menlo,sans-serif;\n    font-size: 0.85rem;\n\">6</span></p>\n\n<p><strong>Explanation:</strong> A possible sequence is: A -&gt; B -&gt; C -&gt; D -&gt; A -&gt; B.</p>\n\n<p>With a cooling interval of 1, you can repeat a task after just one other task.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\" style=\"\n    border-color: var(--border-tertiary);\n    border-left-width: 2px;\n    color: var(--text-secondary);\n    font-size: .875rem;\n    margin-bottom: 1rem;\n    margin-top: 1rem;\n    overflow: visible;\n    padding-left: 1rem;\n\">\n<p><strong>Input:</strong> <span class=\"example-io\" style=\"\n    font-family: Menlo,sans-serif;\n    font-size: 0.85rem;\n\">tasks = [&quot;A&quot;,&quot;A&quot;,&quot;A&quot;, &quot;B&quot;,&quot;B&quot;,&quot;B&quot;], n = 3</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\" style=\"\n    font-family: Menlo,sans-serif;\n    font-size: 0.85rem;\n\">10</span></p>\n\n<p><strong>Explanation:</strong> A possible sequence is: A -&gt; B -&gt; idle -&gt; idle -&gt; A -&gt; B -&gt; idle -&gt; idle -&gt; A -&gt; B.</p>\n\n<p>There are only two types of tasks, A and B, which need to be separated by 3 intervals. This leads to idling twice between repetitions of these tasks.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= tasks.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>tasks[i]</code> is an uppercase English letter.</li>\n\t<li><code>0 &lt;= n &lt;= 100</code></li>\n</ul>\n",
+  "likes": 11395,
+  "dislikes": 2174,
+  "stats": {
+    "totalAccepted": "852.5K",
+    "totalSubmission": "1.4M",
+    "totalAcceptedRaw": 852452,
+    "totalSubmissionRaw": 1375152,
+    "acRate": "62.0%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    },
+    {
+      "name": "Sorting",
+      "slug": "sorting"
+    },
+    {
+      "name": "Heap (Priority Queue)",
+      "slug": "heap-priority-queue"
+    },
+    {
+      "name": "Counting",
+      "slug": "counting"
+    }
+  ],
+  "metaData": {
+    "name": "leastInterval",
+    "params": [
+      {
+        "name": "tasks",
+        "type": "character[]"
+      },
+      {
+        "name": "n",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Google",
+        "slug": "google",
+        "timesEncountered": 11
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "sethdbaah",
+      "year": 2018,
+      "content": "I\\'m having trouble understanding what specifically the problem is asking.\\n\\nIt says that\\n\"However, there is a non-negative cooling interval n that means between two same tasks, there must be at least n intervals that CPU are doing different tasks or just be idle.\"\\n\\nBut then the example shows\\nA -> B -> idle -> A -> B -> idle -> A -> B\\nWhere the idle is coming between two DIFFERENT tasks not two SAME tasks\\n\\nCan anyone explain please? Thanks",
+      "voteCount": 355
+    },
+    {
+      "name": "adriansky",
+      "year": 2020,
+      "content": "# Problem\\n\\nYou have an array of CPU **tasks** named from A to Z and cooling time **n**. On each cycle/interval you can complete one task. The tasks can done in any order. The only constraint is that repeated tasks should be at least **n** intervals appart from each other because of the cooling time. \\n\\nReturn the least number of intervals needed to process all the tasks.\\n\\n## Example 1:\\n\\ninput: [\\'A\\', \\'A\\', \\'A\\', \\'B\\', \\'B\\', \\'B\\'], n = 2\\n\\noutput: 8\\n\\nA -> B -> idle -> A -> B -> idle -> A -> B\\n\\n**Explanation**: after you do A, you have to wait two cyles for cooling time to do A again. After doing B, we also have to wait to cyles. So, the 3rd interval, we can\\'t do A again nor B, the only option is idle. For the 4rd cyle, we can do A again since it has been at least 2 interval since the las time.\\n\\n## Example 2:\\n\\ninput: [\\'A\\', \\'C\\', \\'A\\', \\'B\\', \\'D\\', \\'B\\'], n = 1\\n\\noutput: 6\\n\\nA -> B -> C -> D -> A -> B\\n\\n**Explanation**: since the cooling interval is 1, after one task we can repeat the same task.\\n\\n## Example 3:\\n\\ninput: [\\'A\\', \\'A\\', \\'A\\', \\'B\\', \\'B\\', \\'B\\'], n = 3\\n\\noutput: 10\\n\\nA -> B -> idle -> idle -> A -> B -> idle -> idle -> A -> B\\n\\n**Explanation:** since we have only two kinds of tasks: A and B. We have to separate them by 3 intervals before repeating any of them. These causes that we have to idle twice between tasks.",
+      "voteCount": 304
+    },
+    {
+      "name": "Nikhil10i",
+      "year": 2024,
+      "content": "Scheduled this problem for another day \\uD83D\\uDE0C",
+      "voteCount": 253
+    },
+    {
+      "name": "huowa222",
+      "year": 2019,
+      "content": "what the hell meaning of this question?  anybody can explain it in a easy-understand way?",
+      "voteCount": 215
+    },
+    {
+      "name": "Abhinav2707",
+      "year": 2023,
+      "content": "if you get this question in your interview then just quit buddy",
+      "voteCount": 203
+    },
+    {
+      "name": "satyem",
+      "year": 2022,
+      "content": "Very simple explanation using maths. After reading you will never forget the answer for this :)\\n\\nhttps://medium.com/@satyem77/task-scheduler-leetcode-39d579f3440",
+      "voteCount": 155
+    },
+    {
+      "name": "Faamng_fsho",
+      "year": 2020,
+      "content": "Shouldn\\'t this be a hard question, given the complexity and condition checks to implement with a priority queue?",
+      "voteCount": 126
+    },
+    {
+      "name": "vik333",
+      "year": 2022,
+      "content": "How is this just a medium though? This should be a hard in my opinion, given the complexity of using queues and heaps.",
+      "voteCount": 91
+    },
+    {
+      "name": "kwu30",
+      "year": 2020,
+      "content": "![image](https://assets.leetcode.com/users/images/d0b255f6-f8d5-4731-826a-52988b717e65_1596534405.0498543.png)\\n![image](https://assets.leetcode.com/users/images/55cc616a-deb1-4948-ae45-a79c1d1e8937_1596534387.2808952.png)\\nTIME: O(n) because of dictionary population and 26 letters in alphabet takes constant time to sort\\nSPACE: O(1) because 26 letters in alphabet of dictionary is constant\\n",
+      "voteCount": 86
+    },
+    {
+      "name": "pantigalt",
+      "year": 2020,
+      "content": "# **Very intuitive approach**\\n\\nLet\\'s consider situation when there are idles\\n\\n**I marked idles with underscore symbol**\\n\\n**Case 1: Only 1 character with maximum occurence.**\\n\\nExample input:\\nn = 2\\nA occures 3 times \\n\\n**Minimum sequence will be the following:**\\n`A _ _ A _ _ A`\\n\\nAs you see the **minimum possible length will be 7**\\n\\n**Case 2: There are several characters with maximum occurences**\\n\\nExample input:\\nn = 2\\nA occures 3 times \\nB occures 3 times\\n\\n**Minimum sequence will be the following:**\\n`A B _ A B _ A`B\\n\\nAs you see the **minimum possible length will be 8**\\n\\n**Case 3: There one or several characters with maximum occurences and there are other symbols**\\n\\nDepending on the number of symbols there could be 2 situations\\n\\nExample input:\\nn = 2\\nA occures 3 times \\nB occures 3 times\\nC occures 1 time\\n\\n**Minimum sequence will be the following:**\\n`A B C A B _ A`B\\n\\nAs you see there are still gaps between symbols the **minimum possible length will be still 8**\\nNote that the minimum length cannot be less than 8 and the total number of characters 7 is still less than 8\\n\\nExample input:\\nn = 2\\nA occures 3 times \\nB occures 3 times\\nC occures 2 times\\nD occures 2 times\\nE occures 1 time\\n\\n**Minimum sequence will be the following:**\\n`A B C D A B C D A`B E\\n\\nAs you see there are no gaps between characters and **the minimum possible length will be still 11**\\nNote than 11 is the total number of all elements\\n\\n\\n**How we calculate the minimum length of sequence?**\\n**Observe Case 1 and Case 2:**\\n`A _ _ A _ _ A is the same as (A _ _ A _ _) + (A)`\\n`A B _ A B _ AB is the same as (A B _ A B _) + (A B)`\\n\\nThe formula is the following:\\ncount - occurence of symbol with maximum number of occurences\\n(n + 1) - number of elements in repeated interval \\'A _ _\\' or \\'A B _\\'.\\n(count - 1) - maximum occurences of character with maximum maximum occurence except the last occurence of that character\\n(count - 1) * (n + 1) - minimum number of symbols except the last one\\nk - number of characters with maximum occurence. \\nIn Case 1 k = 1 \\nIn Case 2 k = 2\\n\\n(count - 1) * (n + 1) + k - minimum number of elements for Case 1 or Case 2\\n\\n**What about Case 3?**\\nIt is minimum of 2 situations:\\na) if there are gaps then the minimum is the same as for Case 1 and Case 2\\nb) if there are no gaps then the minimum is total number of characters\\n\\nSo final formula for minimum\\nLet\\'s call \\nmin3a = minimum for Case 3a = (count - 1) * (n + 1) + k\\nmin3b = minimum for Case 3b = total number of characters\\n\\n`finalMinimum = Math.Min(min3a, min3b)`\\n\\nn - number of characters in input\\n**Time complexity: O(n)**\\n**Space complexity: O(n)**\\n",
+      "voteCount": 48
+    }
+  ]
+}

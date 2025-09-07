@@ -1,0 +1,144 @@
+{
+  "category": "",
+  "id": "135",
+  "name": "Candy",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/candy/",
+  "slug": "candy",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimize Maximum Value in a Grid",
+      "difficulty": "Hard",
+      "slug": "minimize-maximum-value-in-a-grid"
+    },
+    {
+      "title": "Minimum Number of Operations to Satisfy Conditions",
+      "difficulty": "Medium",
+      "slug": "minimum-number-of-operations-to-satisfy-conditions"
+    },
+    {
+      "title": "Check if Grid Satisfies Conditions",
+      "difficulty": "Easy",
+      "slug": "check-if-grid-satisfies-conditions"
+    }
+  ],
+  "questionId": "135",
+  "questionFrontendId": "135",
+  "title": "Candy",
+  "titleSlug": "candy",
+  "content": "<p>There are <code>n</code> children standing in a line. Each child is assigned a rating value given in the integer array <code>ratings</code>.</p>\n\n<p>You are giving candies to these children subjected to the following requirements:</p>\n\n<ul>\n\t<li>Each child must have at least one candy.</li>\n\t<li>Children with a higher rating get more candies than their neighbors.</li>\n</ul>\n\n<p>Return <em>the minimum number of candies you need to have to distribute the candies to the children</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> ratings = [1,0,2]\n<strong>Output:</strong> 5\n<strong>Explanation:</strong> You can allocate to the first, second and third child with 2, 1, 2 candies respectively.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> ratings = [1,2,2]\n<strong>Output:</strong> 4\n<strong>Explanation:</strong> You can allocate to the first, second and third child with 1, 2, 1 candies respectively.\nThe third child gets 1 candy because it satisfies the above two conditions.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>n == ratings.length</code></li>\n\t<li><code>1 &lt;= n &lt;= 2 * 10<sup>4</sup></code></li>\n\t<li><code>0 &lt;= ratings[i] &lt;= 2 * 10<sup>4</sup></code></li>\n</ul>\n",
+  "likes": 8992,
+  "dislikes": 818,
+  "stats": {
+    "totalAccepted": "909.1K",
+    "totalSubmission": "1.9M",
+    "totalAcceptedRaw": 909076,
+    "totalSubmissionRaw": 1926085,
+    "acRate": "47.2%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "metaData": {
+    "name": "candy",
+    "params": [
+      {
+        "name": "ratings",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 18
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Google",
+        "slug": "google",
+        "timesEncountered": 15
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "sharma_shubham",
+      "year": 2022,
+      "content": "Cool question but IMO all children should get equal candies.",
+      "voteCount": 1438
+    },
+    {
+      "name": "bedmuthaapoorv",
+      "year": 2023,
+      "content": "very poor problem description",
+      "voteCount": 831
+    },
+    {
+      "name": "superpoulenc",
+      "year": 2023,
+      "content": "This problem statement is written by someone who cannot code.",
+      "voteCount": 713
+    },
+    {
+      "name": "fasiloon",
+      "year": 2015,
+      "content": "The expect Output of [1,2,2] is 4, not 5. I think it's not reasonable.",
+      "voteCount": 210
+    },
+    {
+      "name": "anwendeng",
+      "year": 2023,
+      "content": "Children are very greedy for candy. but if ratings[i-1] == ratings[i]==ratings[i+1], c[i]=1.\nThe same rating with the neighbor, it is sad for child i.\n\n# Look at this example. You'll find how unfair this rule is.\n[60, 80, 100, 100, 100, 100, 100]\ncandies for children\n1, 2, 3, 1, 1, 1, 1",
+      "voteCount": 190
+    },
+    {
+      "name": "ssredotime",
+      "year": 2023,
+      "content": "As an interviewer, this is problem is a life saver for when we unexpectedly lose headcount but already scheduled a few interviews for the role!",
+      "voteCount": 180
+    },
+    {
+      "name": "adrian_puscu",
+      "year": 2023,
+      "content": "Sound like a problem written by managers of a cobalt mine in Africa.",
+      "voteCount": 115
+    },
+    {
+      "name": "lifeofpriyam2",
+      "year": 2021,
+      "content": "arr[i] : no of candies ith child have\\n\\n1. First give every child 1 candy so arr[i] = 1 for all i .\\n2. Traverse from left to right and if :\\n\\n\\tratings[i] > ratings[i-1] : we must give ith child atleast one more candy than (i-1)th child :\\n    arr[i] = arr[i-1] +1 ;\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\n3. Traverse from Right to Left and if :\\n\\tratings[i] > ratings[i+1] : we must give ith child atleast one more candy than (i+1)th child:\\n\\tif(arr[i]<=arr[i+1])arr[i]=arr[i+1]+1 ;\\n\\t\\n 4. During the second traversal , we can observe that changing the values of arr doesn\\'t affects the relation maintained in the first traversal\\n 5. Hence, both the right and left neighbours relation are maintained, without affecting each other.\\n 6. We must observe that this is the minimum number of increament we can perform\\n",
+      "voteCount": 115
+    },
+    {
+      "name": "mstuebs",
+      "year": 2023,
+      "content": "Make sure to test against these three testcases:\\n```\\n[100, 80, 70, 60, 70, 80, 90, 100, 90, 80, 70, 60, 60]\\n[6, 7, 6, 5, 4, 3, 2, 1, 0, 0, 0, 1, 0]\\n[20000, 20000, 16001, 16001, 16002, 16002, 16003, 16003, 16004, 16004, 16005, 16005, 16006, 16006, 16007, 16007, 16008, 16008, 16009, 16009, 16010, 16010, 16011, 16011, 16012, 16012, 16013, 16013, 16014, 16014, 16015, 16015, 16016, 16016, 16017, 16017, 16018, 16018, 16019, 16019, 16020, 16020, 16021, 16021, 16022, 16022, 16023, 16023, 16024, 16024]\\n```",
+      "voteCount": 87
+    },
+    {
+      "name": "punchoyeah",
+      "year": 2014,
+      "content": "I got wrong answer here :\\n\\nInput:\\t[1,2,2]\\nOutput:\\t5\\nExpected:\\t4\\n\\n\\nThe requirement is : Children with a higher rating get more candies than their neighbors.\\nHow about equal ratings ? Guys, how do you understand such requirement ?",
+      "voteCount": 78
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "category": "",
+  "id": "346",
+  "name": "Moving Average from Data Stream",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/moving-average-from-data-stream/",
+  "slug": "moving-average-from-data-stream",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Design",
+    "Queue",
+    "Data Stream"
+  ],
+  "similar_questions": [
+    {
+      "title": "K Radius Subarray Averages",
+      "difficulty": "Medium",
+      "slug": "k-radius-subarray-averages"
+    }
+  ],
+  "questionId": "346",
+  "questionFrontendId": "346",
+  "title": "Moving Average from Data Stream",
+  "titleSlug": "moving-average-from-data-stream",
+  "content": "<p>Given a stream of integers and a window size, calculate the moving average of all integers in the sliding window.</p>\n\n<p>Implement the&nbsp;<code>MovingAverage</code> class:</p>\n\n<ul>\n\t<li><code>MovingAverage(int size)</code> Initializes&nbsp;the object with the size of the window <code>size</code>.</li>\n\t<li><code>double next(int val)</code> Returns the moving average of the last <code>size</code> values of the stream.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input</strong>\n[&quot;MovingAverage&quot;, &quot;next&quot;, &quot;next&quot;, &quot;next&quot;, &quot;next&quot;]\n[[3], [1], [10], [3], [5]]\n<strong>Output</strong>\n[null, 1.0, 5.5, 4.66667, 6.0]\n\n<strong>Explanation</strong>\nMovingAverage movingAverage = new MovingAverage(3);\nmovingAverage.next(1); // return 1.0 = 1 / 1\nmovingAverage.next(10); // return 5.5 = (1 + 10) / 2\nmovingAverage.next(3); // return 4.66667 = (1 + 10 + 3) / 3\nmovingAverage.next(5); // return 6.0 = (10 + 3 + 5) / 3\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= size &lt;= 1000</code></li>\n\t<li><code>-10<sup>5</sup> &lt;= val &lt;= 10<sup>5</sup></code></li>\n\t<li>At most <code>10<sup>4</sup></code> calls will be made to <code>next</code>.</li>\n</ul>\n",
+  "likes": 1735,
+  "dislikes": 192,
+  "stats": {
+    "totalAccepted": "504.3K",
+    "totalSubmission": "630.1K",
+    "totalAcceptedRaw": 504303,
+    "totalSubmissionRaw": 630150,
+    "acRate": "80.0%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Design",
+      "slug": "design"
+    },
+    {
+      "name": "Queue",
+      "slug": "queue"
+    },
+    {
+      "name": "Data Stream",
+      "slug": "data-stream"
+    }
+  ],
+  "metaData": {
+    "classname": "MovingAverage",
+    "constructor": {
+      "params": [
+        {
+          "type": "integer",
+          "name": "size"
+        }
+      ]
+    },
+    "methods": [
+      {
+        "params": [
+          {
+            "type": "integer",
+            "name": "val"
+          }
+        ],
+        "name": "next",
+        "return": {
+          "type": "double"
+        }
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "systemdesign": true
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Meta",
+        "slug": "facebook",
+        "timesEncountered": 55
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "pignatelli",
+      "year": 2024,
+      "content": "How can questions be explained so incomprehensibly?\\nI often find myself spending more time to parse what the question says in word (not even translating that into a problem) than anything else.\\n",
+      "voteCount": 81
+    },
+    {
+      "name": "daniel123",
+      "year": 2016,
+      "content": "What if the size is too big to hold in memory?",
+      "voteCount": 34
+    },
+    {
+      "name": "My3Forever",
+      "year": 2020,
+      "content": "Given a stream of integers and a window size, calculate the moving average of all integers in the sliding window.\\n\\nso here is how to read this question: \\ninit an object, with a function \"next\" which gets a value and return the average of all last \"window size\"# previuse nembers given to \"next\" before.\\nfor example, let 3 be the window size.\\ncalling next(1) will return the ave of 1 which is 1\\ncalling next(3) will return (3+1)/2\\ncalling next(1) will return (1+3+1)/3\\ncalling next(2) will return (2+1+3)/3  ** we dropped the first 1 as we are limited to 3 values of \"window size\"",
+      "voteCount": 19
+    },
+    {
+      "name": "cassandrasql",
+      "year": 2024,
+      "content": "Got this problem while doing a tech screen w/MSFT back in Feb 2024",
+      "voteCount": 12
+    },
+    {
+      "name": "letmeleetcodee",
+      "year": 2024,
+      "content": "Honest question : Is this really easy fellow leetcoders?? Seems to me like a medium or even a little more tbh, i got totally stumped for some reason",
+      "voteCount": 11
+    },
+    {
+      "name": "harsh_sahni",
+      "year": 2022,
+      "content": "Issue with LeetCode - multiple submissions of same solution is giving different runtimes.\\n\\nI have submitted the same solution 2-3 times. Sometimes it gives 72ms runtime, and sometimes it gives 40ms runtime. Even though I have not touched the code in both cases. :(",
+      "voteCount": 10
+    },
+    {
+      "name": "shuakequn",
+      "year": 2024,
+      "content": "I can\\'t even understand the problem... the example input really puzzled me.",
+      "voteCount": 9
+    },
+    {
+      "name": "jarrod1937",
+      "year": 2024,
+      "content": "A very poorly presented question. It\\'s actually not hard to program it, just hard to follow the question itself. Basically, it is saying (no solution, just clarification):\\n - You have a class, MovingAverage, it is instantiated and you\\'re to write this class.\\n- You have a function/method called \\'next\\' which passes a value to your object, which is added to your list of values your object holds, and it returns the moving average of this list of a window size originally passed to your class.\\n\\nHow you layout your class and how the next method works is up to you. Hopefully that helps.",
+      "voteCount": 5
+    },
+    {
+      "name": "saiprapu",
+      "year": 2024,
+      "content": "Whats the followup question asked by Meta  and google ? ",
+      "voteCount": 4
+    },
+    {
+      "name": "matthewjinmp",
+      "year": 2025,
+      "content": "keep track of the sum of numbers in the window, and use a deque so that you can take out the oldest number whenever the list goes over the max size ",
+      "voteCount": 1
+    }
+  ]
+}

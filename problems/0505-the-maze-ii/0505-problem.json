@@ -1,0 +1,156 @@
+{
+  "category": "",
+  "id": "505",
+  "name": "The Maze II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/the-maze-ii/",
+  "slug": "the-maze-ii",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph",
+    "Heap (Priority Queue)",
+    "Matrix",
+    "Shortest Path"
+  ],
+  "similar_questions": [
+    {
+      "title": "The Maze",
+      "difficulty": "Medium",
+      "slug": "the-maze"
+    },
+    {
+      "title": "The Maze III",
+      "difficulty": "Hard",
+      "slug": "the-maze-iii"
+    }
+  ],
+  "questionId": "505",
+  "questionFrontendId": "505",
+  "title": "The Maze II",
+  "titleSlug": "the-maze-ii",
+  "content": "<p>There is a ball in a <code>maze</code> with empty spaces (represented as <code>0</code>) and walls (represented as <code>1</code>). The ball can go through the empty spaces by rolling <strong>up, down, left or right</strong>, but it won&#39;t stop rolling until hitting a wall. When the ball stops, it could choose the next direction.</p>\n\n<p>Given the <code>m x n</code> <code>maze</code>, the ball&#39;s <code>start</code> position and the <code>destination</code>, where <code>start = [start<sub>row</sub>, start<sub>col</sub>]</code> and <code>destination = [destination<sub>row</sub>, destination<sub>col</sub>]</code>, return <em>the shortest <strong>distance</strong> for the ball to stop at the destination</em>. If the ball cannot stop at <code>destination</code>, return <code>-1</code>.</p>\n\n<p>The <strong>distance</strong> is the number of <strong>empty spaces</strong> traveled by the ball from the start position (excluded) to the destination (included).</p>\n\n<p>You may assume that <strong>the borders of the maze are all walls</strong> (see examples).</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/31/maze1-1-grid.jpg\" style=\"width: 573px; height: 573px;\" />\n<pre>\n<strong>Input:</strong> maze = [[0,0,1,0,0],[0,0,0,0,0],[0,0,0,1,0],[1,1,0,1,1],[0,0,0,0,0]], start = [0,4], destination = [4,4]\n<strong>Output:</strong> 12\n<strong>Explanation:</strong> One possible way is : left -&gt; down -&gt; left -&gt; down -&gt; right -&gt; down -&gt; right.\nThe length of the path is 1 + 1 + 3 + 1 + 2 + 2 + 2 = 12.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/31/maze1-2-grid.jpg\" style=\"width: 573px; height: 573px;\" />\n<pre>\n<strong>Input:</strong> maze = [[0,0,1,0,0],[0,0,0,0,0],[0,0,0,1,0],[1,1,0,1,1],[0,0,0,0,0]], start = [0,4], destination = [3,2]\n<strong>Output:</strong> -1\n<strong>Explanation:</strong> There is no way for the ball to stop at the destination. Notice that you can pass through the destination but you cannot stop there.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> maze = [[0,0,0,0,0],[1,1,0,0,1],[0,0,0,0,0],[0,1,0,0,1],[0,1,0,0,0]], start = [4,3], destination = [0,1]\n<strong>Output:</strong> -1\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == maze.length</code></li>\n\t<li><code>n == maze[i].length</code></li>\n\t<li><code>1 &lt;= m, n &lt;= 100</code></li>\n\t<li><code>maze[i][j]</code> is <code>0</code> or <code>1</code>.</li>\n\t<li><code>start.length == 2</code></li>\n\t<li><code>destination.length == 2</code></li>\n\t<li><code>0 &lt;= start<sub>row</sub>, destination<sub>row</sub> &lt; m</code></li>\n\t<li><code>0 &lt;= start<sub>col</sub>, destination<sub>col</sub> &lt; n</code></li>\n\t<li>Both the ball and the destination exist in an empty space, and they will not be in the same position initially.</li>\n\t<li>The maze contains <strong>at least 2 empty spaces</strong>.</li>\n</ul>\n",
+  "likes": 1373,
+  "dislikes": 61,
+  "stats": {
+    "totalAccepted": "121.7K",
+    "totalSubmission": "223.7K",
+    "totalAcceptedRaw": 121692,
+    "totalSubmissionRaw": 223743,
+    "acRate": "54.4%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Breadth-First Search",
+      "slug": "breadth-first-search"
+    },
+    {
+      "name": "Graph",
+      "slug": "graph"
+    },
+    {
+      "name": "Heap (Priority Queue)",
+      "slug": "heap-priority-queue"
+    },
+    {
+      "name": "Matrix",
+      "slug": "matrix"
+    },
+    {
+      "name": "Shortest Path",
+      "slug": "shortest-path"
+    }
+  ],
+  "metaData": {
+    "name": "shortestDistance",
+    "params": [
+      {
+        "name": "maze",
+        "type": "integer[][]"
+      },
+      {
+        "name": "start",
+        "type": "integer[]"
+      },
+      {
+        "name": "destination",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "xueshengluanfei",
+      "year": 2021,
+      "content": "I spend hours figured this out why, hope it help others who ran into the same situation.\\nThe issue is with your \"visited\" or \"stopped\" map.\\n**You actually can revisited a location, as long as your current travaled distance is smaller than the previous visit.**\\n",
+      "voteCount": 35
+    },
+    {
+      "name": "mdsrrkhan",
+      "year": 2024,
+      "content": "THIS IS MEDIUM????!!!!!!!",
+      "voteCount": 15
+    },
+    {
+      "name": "sukhija86",
+      "year": 2019,
+      "content": "Can some please explain me the example path\\n\\nleft -> down -> left -> down -> right -> down -> right for the example maze\\n\\nI am not able to understand it. How will we go down after first right because it is a wall?\\n\\n0 0 1 0 0\\n0 0 0 0 0\\n0 0 0 1 0\\n1 1 0 1 1\\n0 0 0 0 0",
+      "voteCount": 5
+    },
+    {
+      "name": "hardcodebb123",
+      "year": 2021,
+      "content": "My theory is that if you apply naive bfs with keeping track of visited\\'s, the first time you hit a cell will always be the shortest distance to that cell. However, clearly that does not work in this question. Can someone give me an example where you get to a cell in say 3 rolls and you visit less number of cells than getting to that cell in 2 rolls. I was not able to find such an example.\\n\\nI pass most of the test cases when I submit a solution using my method above, and the first test case that fails is more than 200 lines long, so i could not trace through it. I would appreciate if someone could demonstrate on a smaller scale.",
+      "voteCount": 5
+    },
+    {
+      "name": "revanthmadasu913",
+      "year": 2024,
+      "content": "did anyone try it with dijkstra and it work ?",
+      "voteCount": 4
+    },
+    {
+      "name": "theodor1289",
+      "year": 2024,
+      "content": "As others have mentioned, there are cases when you need to **mark distances to a cell more than once**. \n\nFor example, below is a matrix where the shortest path to get from S at (2,16) to E at (4,14) is sought:\n\n1) Initial path to E marked as X: [S, (7, 16), (7, 13), (9, 13), (9, 14), E] with distance 16. Note that E is only marked and not actually visited.\n2) Dijsktra's will pursue other (shorter) paths waiting in the heap (with distances x in the interval [11, 13]).\n3) Later path to E marked as Y: [S, (1, 16), (1, 20), (3, 20), (3, 15), (4, 15), E] with distance 14.\n\nThis is because the distance from S to the X right before E has a distance of 11, while from S to the Y right before E there is a distance of 13 (hence this Y will be reached later yet with a shorter total distance to E). In other words, the last jump in the second (slower) path has a smaller distance (1) compared to the last jump in the first (faster) path with a distance of 5: `13 (slow path) + 1 (small jump) < 11 (fast path) + 5 (large jump)`.\n\n```text\n0 , 0 , 0 , 1 , 0 , 1 , 1 , 0 , 1 , 0 , 0 \n0 , 0 , 0 , Y , 0 , 0 , 0 , Y , 1 , 0 , 0 \n0 , 0 , 0 , S , 1 , 0 , 0 , 0 , 1 , 0 , 0 \n1 , 1 , Y , 0 , 0 , 0 , 0 , Y , 1 , 0 , 0 \n1 , E , Y , 0 , 1 , 0 , 1 , 1 , 0 , 1 , 0 \n0 , 0 , 1 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 \n1 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 \nX , 0 , 0 , X , 0 , 1 , 0 , 1 , 1 , 0 , 0 \n0 , 0 , 1 , 1 , 0 , 0 , 0 , 0 , 1 , 0 , 1 \nX , X , 1 , 0 , 0 , 1 , 0 , 0 , 0 , 0 , 1 \n```",
+      "voteCount": 1
+    },
+    {
+      "name": "dasdingo",
+      "year": 2019,
+      "content": "In the BFS solution, we do not use the discovered list. And only add a new node in queue when the distances matrix is updated. I have the feeling that if we use visited list, we might miss some shorter route. But I do not know exactly why. Can someboday help? Thank you in advance!",
+      "voteCount": 1
+    },
+    {
+      "name": "matthewjinmp",
+      "year": 2025,
+      "content": "the solution is too satisfying. great question!",
+      "voteCount": 0
+    },
+    {
+      "name": "AdityaGunjal",
+      "year": 2025,
+      "content": "I think identifying that this is a dijkstra question and not DP  question is the 90% of the work here ...",
+      "voteCount": 0
+    },
+    {
+      "name": "ayushh_garg2412",
+      "year": 2025,
+      "content": "Oh my god",
+      "voteCount": 0
+    }
+  ]
+}

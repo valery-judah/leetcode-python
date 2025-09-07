@@ -1,0 +1,118 @@
+{
+  "category": "",
+  "id": "343",
+  "name": "Integer Break",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/integer-break/",
+  "slug": "integer-break",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximize Number of Nice Divisors",
+      "difficulty": "Hard",
+      "slug": "maximize-number-of-nice-divisors"
+    }
+  ],
+  "questionId": "343",
+  "questionFrontendId": "343",
+  "title": "Integer Break",
+  "titleSlug": "integer-break",
+  "content": "<p>Given an integer <code>n</code>, break it into the sum of <code>k</code> <strong>positive integers</strong>, where <code>k &gt;= 2</code>, and maximize the product of those integers.</p>\n\n<p>Return <em>the maximum product you can get</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 2\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> 2 = 1 + 1, 1 &times; 1 = 1.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 10\n<strong>Output:</strong> 36\n<strong>Explanation:</strong> 10 = 3 + 3 + 4, 3 &times; 3 &times; 4 = 36.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= n &lt;= 58</code></li>\n</ul>\n",
+  "likes": 5297,
+  "dislikes": 460,
+  "stats": {
+    "totalAccepted": "409.1K",
+    "totalSubmission": "666.5K",
+    "totalAcceptedRaw": 409071,
+    "totalSubmissionRaw": 666546,
+    "acRate": "61.4%"
+  },
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "metaData": {
+    "name": "integerBreak",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "lixx2100",
+      "year": 2016,
+      "content": "I saw many solutions were referring to factors of 2 and 3. But why these two magic numbers? Why other factors do not work?\\nLet's study the math behind it.\\n\\nFor convenience, say **n** is sufficiently large and can be broken into any smaller real positive numbers. We now try to calculate which real number generates the largest product.\\nAssume we break **n** into **(n / x)**  **x**'s, then the product will be **x<sup>n/x</sup>**, and we want to maximize it.\\n\\nTaking its derivative gives us **n * x<sup>n/x-2</sup> * (1 - ln(x))**.\\nThe derivative is positive when **0 < x < e**, and equal to **0** when **x = e**, then becomes negative when **x > e**,\\nwhich indicates that the product increases as **x** increases, then reaches its maximum when **x = e**, then starts dropping.\\n\\nThis reveals the fact that if **n** is sufficiently large and we are allowed to break **n** into real numbers,\\nthe best idea is to break it into nearly all **e**'s.\\nOn the other hand, if **n** is sufficiently large and we can only break **n** into integers, we should choose integers that are closer to **e**.\\nThe only potential candidates are **2** and **3** since **2 < e < 3**, but we will generally prefer **3** to **2**. Why?\\n\\nOf course, one can prove it based on the formula above, but there is a more natural way shown as follows.\\n\\n**6 = 2 + 2 + 2 = 3 + 3**. But **2 * 2 * 2 < 3 * 3**.\\nTherefore, if there are three **2**'s in the decomposition, we can replace them by two **3**'s to gain a larger product.\\n\\nAll the analysis above assumes **n** is significantly large. When **n** is small (say **n <= 10**), it may contain flaws.\\nFor instance, when **n = 4**, we have **2 * 2 > 3 * 1**.\\nTo fix it, we keep breaking **n** into **3**'s until **n** gets smaller than **10**, then solve the problem by brute-force.",
+      "voteCount": 895
+    },
+    {
+      "name": "adrianliu0729",
+      "year": 2016,
+      "content": "Who else thinks this question is the worst one ?",
+      "voteCount": 121
+    },
+    {
+      "name": "abhishekrana25112002",
+      "year": 2023,
+      "content": "* Lets convert it to a more interesting problem.\\nIn the heart of London, beneath a shroud of fog, a peculiar puzzle emerged that would challenge the brilliant mind of Sherlock Holmes. A cryptic message arrived at 221B Baker Street, bearing a numeric riddle: \"Break n into the sum of k positive integers, k >= 2, and maximize the product. - A Perplexed Inquirer.\"\\n\\nThis mathematical enigma was unlike any other, and Sherlock Holmes could not resist the lure of such an intellectual challenge. With Dr. John Watson at his side, he embarked on a quest to decipher the secrets hidden within this numerical puzzle.\\n\\nThe central challenge lay in the integer \"n,\" an enigmatic figure ranging from 2 to 58. It begged the question: How could one break down n into the sum of positive integers while maximizing their product?\\n\\nHolmes and Watson contemplated the case of the smallest integer, 2, which could be dissected into two positive integers, both equal to 1, resulting in a product of 1. However, as the numbers grew larger, so did the complexity of the problem.\\n\\nAs Holmes and Watson examined the numbers, they began to discern patterns and relationships that hinted at a solution. For instance, they observed that the number 10 could be dissected into 3 + 3 + 4, achieving a maximum product of 36. Could there be a universal principle governing the optimal decomposition for all integers between 2 and 58?\\n\\nTo unlock the mystery, they needed to discover a systematic method or formula for maximizing the product while adhering to the constraints.\\n\\nAs Sherlock Holmes, how would you solve this problem ?",
+      "voteCount": 66
+    },
+    {
+      "name": "garvitagrawal_02",
+      "year": 2023,
+      "content": "unbounded knapsack",
+      "voteCount": 33
+    },
+    {
+      "name": "mukundsh",
+      "year": 2019,
+      "content": "This solution is beautifully explained for any integer by Alon Amit in this Quora Post\\nhttps://www.quora.com/Math-question-You-are-allowed-to-take-as-many-positive-whole-numbers-as-you-want-that-add-up-to-20-and-then-multiply-them-together-What-is-the-biggest-possible-result-you-can-get",
+      "voteCount": 22
+    },
+    {
+      "name": "zflair_zpz",
+      "year": 2022,
+      "content": "if (n == 2 || n == 3) return (n-1);\\n   \\n   // Keep removing parts of size 3 while n is greater than 4\\n   int res = 1;\\n   while (n > 4)\\n   {\\n       n -= 3;\\n       res *= 3; // Keep multiplying 3 to res\\n   }\\n   return (n * res);",
+      "voteCount": 19
+    },
+    {
+      "name": "AlecLC",
+      "year": 2023,
+      "content": "# <span style='color:green'>Hint 1</span>\nFor all x, y >1, product(x,y) \u2265 sum(x,y)\n\n# <span style='color:green'>Hint 2</span>\nIt follows that it always makes sense to try to split the sum into the most components > 1 possible, as product > sum\n\n# <span style='color:green'>Hint 3</span>\n2 and 3 sum up to any number \u2265 2*, so it always makes sense to break it down into 2s and 3s. The optimal answer will be comprised of only 2s and 3s\n*(you can trivially prove this because 1 and 2 sum up to every number, and 3 is 2+1)",
+      "voteCount": 18
+    },
+    {
+      "name": "anwendeng",
+      "year": 2023,
+      "content": "A hint $2^3=8<9=3^2$, $n=3*k+r$ where $r=0, 2, 4$\nA pow solution is possible.\n# Why not other p!=3? \nIt suffices to prove that $$p^3<3^p$$ for $p!=3$ being a natural number.",
+      "voteCount": 10
+    },
+    {
+      "name": "Shubham_Raj22",
+      "year": 2023,
+      "content": "`Tips:-`\\n\\nWe need to split any number into some specific smaller number to get maximum product.\\n\\nSay we have a number `n`, we split it into only `x\\'s`. So there will be total `(x/n)` splits.\\n\\nThe product will be, `p = x^(x/n)`.\\n\\nTo get the maximum of `p`, we need `dp/dx` then equate it to `0`.\\n\\nDoing this, we get `x == e`. e is `2.718 == 3`.\\n\\nThus we need to split it into maximum `3s`. If at the end you have 4, `no` need to split it into `3+1`, just leave it as it is, this is one corner case to handle.\\n\\n",
+      "voteCount": 8
+    },
+    {
+      "name": "12116116",
+      "year": 2024,
+      "content": "2 => 1 * 1 =2\n3 => 1 * 2 =2\n4 => 2 * 2 =4\n5 => 2 * 3 = 6\n\nreal math start from 6 \n\n6 => 3 * 3 = 9\n7 => 3 * 2 * 2 =12\n8 => 3 * 3 * 2 = 18\n9 => 3 * 3 * 3 = 27\n10 => 3 * 3 * 2 * 2 = 36\n11 => 3 * 3 * 3 * 2 =54\n12 => 3 * 3 * 3 * 3 = 81\n\nso as we can see the formula for \nif(n% 3 == 0) dp[i] = dp[i-1]/2 * 3;\nif(n%3 == 1) dp[i] = dp[i-1]/3 * 4;\nif(n%3 == 2) dp[i] = dp[i-2] * 2;\n\nhope you understand \n thanks me later ( :\n",
+      "voteCount": 7
+    }
+  ]
+}

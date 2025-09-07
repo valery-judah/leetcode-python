@@ -1,0 +1,148 @@
+{
+  "category": "",
+  "id": "50",
+  "name": "Pow(x, n)",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/powx-n/",
+  "slug": "powx-n",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Recursion"
+  ],
+  "similar_questions": [
+    {
+      "title": "Sqrt(x)",
+      "difficulty": "Easy",
+      "slug": "sqrtx"
+    },
+    {
+      "title": "Super Pow",
+      "difficulty": "Medium",
+      "slug": "super-pow"
+    },
+    {
+      "title": "Count Collisions of Monkeys on a Polygon",
+      "difficulty": "Medium",
+      "slug": "count-collisions-of-monkeys-on-a-polygon"
+    }
+  ],
+  "questionId": "50",
+  "questionFrontendId": "50",
+  "title": "Pow(x, n)",
+  "titleSlug": "powx-n",
+  "content": "<p>Implement <a href=\"http://www.cplusplus.com/reference/valarray/pow/\" target=\"_blank\">pow(x, n)</a>, which calculates <code>x</code> raised to the power <code>n</code> (i.e., <code>x<sup>n</sup></code>).</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> x = 2.00000, n = 10\n<strong>Output:</strong> 1024.00000\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> x = 2.10000, n = 3\n<strong>Output:</strong> 9.26100\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> x = 2.00000, n = -2\n<strong>Output:</strong> 0.25000\n<strong>Explanation:</strong> 2<sup>-2</sup> = 1/2<sup>2</sup> = 1/4 = 0.25\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>-100.0 &lt; x &lt; 100.0</code></li>\n\t<li><code>-2<sup>31</sup> &lt;= n &lt;= 2<sup>31</sup>-1</code></li>\n\t<li><code>n</code> is an integer.</li>\n\t<li>Either <code>x</code> is not zero or <code>n &gt; 0</code>.</li>\n\t<li><code>-10<sup>4</sup> &lt;= x<sup>n</sup> &lt;= 10<sup>4</sup></code></li>\n</ul>\n",
+  "likes": 11064,
+  "dislikes": 10327,
+  "stats": {
+    "totalAccepted": "2.4M",
+    "totalSubmission": "6.4M",
+    "totalAcceptedRaw": 2383813,
+    "totalSubmissionRaw": 6358550,
+    "acRate": "37.5%"
+  },
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Recursion",
+      "slug": "recursion"
+    }
+  ],
+  "metaData": {
+    "name": "myPow",
+    "params": [
+      {
+        "name": "x",
+        "type": "double"
+      },
+      {
+        "name": "n",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "double"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": true,
+        "name": "Meta",
+        "slug": "facebook",
+        "timesEncountered": 106
+      },
+      {
+        "taggedByAdmin": true,
+        "name": "Google",
+        "slug": "google",
+        "timesEncountered": 13
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "tylermatchett",
+      "year": 2023,
+      "content": "Here is a test case made by someone who was in a bad mood\\nx=-1\\nn=2147483647",
+      "voteCount": 600
+    },
+    {
+      "name": "Linearly_Independent",
+      "year": 2022,
+      "content": "\\n\\n\\nreturn x**n",
+      "voteCount": 454
+    },
+    {
+      "name": "soumyajit_0",
+      "year": 2023,
+      "content": "return pow(x,n);\\n\\nBeats 100% of the Solution :) \\nI have successfully unlocked my clown outfit.",
+      "voteCount": 436
+    },
+    {
+      "name": "mrkanesir",
+      "year": 2023,
+      "content": "how am i supposed to NOT get stack overflow with n=2147483647 ...",
+      "voteCount": 360
+    },
+    {
+      "name": "olooney",
+      "year": 2018,
+      "content": "This is the 37th problem I\\'ve solved on the site and in the end I got a respectible 4ms solution. But honestly, It seems like its 2% algorithm, 98% fiddling with binary representations of signed integers and floating point numbers. I also note that, as of this writing, the problem has 1160 downvotes to 428 upvotes, so there\\'s certainly some shared negativity out there. \\n\\nPersonally, I didn\\'t enjoy this problem because I felt like I spent more time writing custom test cases for corner cases than I did programming. Frankly I cannot imagine getting this question in an interview and having the interviewer go, \"aha! but your solution doesn\\'t account for the case when n is -2^31 and x is exactly -1.0! There\\'s no way we\\'d hire such an incompetent programmer!\" And yet the way the acceptance tests are written, you need to nail *every* *single* corner case. Perhaps that frustration is limited to C/C++? Or there\\'s a different algorithm that more naturally accounts for these edge cases? \\n\\nWhat was your experience? Would you agree or disagree with my thesis that this is the worst problem on the site? ",
+      "voteCount": 275
+    },
+    {
+      "name": "sylvex",
+      "year": 2023,
+      "content": "```\\nx =\\n2.00000\\nn =\\n-2147483648\\n```\\nWhat even is the point of this edge case???",
+      "voteCount": 190
+    },
+    {
+      "name": "RishabhMishra2710",
+      "year": 2023,
+      "content": "Someone just hates society \\nn = INT_MIN & x = 1.0000000000001 wtf !!",
+      "voteCount": 84
+    },
+    {
+      "name": "shadowfax_",
+      "year": 2022,
+      "content": "just has the onsite and the interviewer tdidn\\'t want the recursive version but wanted the fast one with no recursion. \\n\\n",
+      "voteCount": 72
+    },
+    {
+      "name": "Hitro",
+      "year": 2019,
+      "content": "I\\'m wondering why you guys are not using builtin Math.pow() method??\\nPlease give me some insight.\\nThank you :)",
+      "voteCount": 60
+    },
+    {
+      "name": "natitati",
+      "year": 2023,
+      "content": "Is there something broken about testcase 305?",
+      "voteCount": 42
+    }
+  ]
+}

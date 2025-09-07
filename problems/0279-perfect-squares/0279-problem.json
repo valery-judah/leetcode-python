@@ -1,0 +1,133 @@
+{
+  "category": "",
+  "id": "279",
+  "name": "Perfect Squares",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/perfect-squares/",
+  "slug": "perfect-squares",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Breadth-First Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Primes",
+      "difficulty": "Medium",
+      "slug": "count-primes"
+    },
+    {
+      "title": "Ugly Number II",
+      "difficulty": "Medium",
+      "slug": "ugly-number-ii"
+    },
+    {
+      "title": "Ways to Express an Integer as Sum of Powers",
+      "difficulty": "Medium",
+      "slug": "ways-to-express-an-integer-as-sum-of-powers"
+    }
+  ],
+  "questionId": "279",
+  "questionFrontendId": "279",
+  "title": "Perfect Squares",
+  "titleSlug": "perfect-squares",
+  "content": "<p>Given an integer <code>n</code>, return <em>the least number of perfect square numbers that sum to</em> <code>n</code>.</p>\n\n<p>A <strong>perfect square</strong> is an integer that is the square of an integer; in other words, it is the product of some integer with itself. For example, <code>1</code>, <code>4</code>, <code>9</code>, and <code>16</code> are perfect squares while <code>3</code> and <code>11</code> are not.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 12\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> 12 = 4 + 4 + 4.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 13\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> 13 = 4 + 9.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 10<sup>4</sup></code></li>\n</ul>\n",
+  "likes": 11640,
+  "dislikes": 485,
+  "stats": {
+    "totalAccepted": "991.3K",
+    "totalSubmission": "1.8M",
+    "totalAcceptedRaw": 991254,
+    "totalSubmissionRaw": 1772882,
+    "acRate": "55.9%"
+  },
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    },
+    {
+      "name": "Breadth-First Search",
+      "slug": "breadth-first-search"
+    }
+  ],
+  "metaData": {
+    "name": "numSquares",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "karna001",
+      "year": 2022,
+      "content": "It is similar to coin change problem. just put all the perfect squares less than or equal to n in a vector and now its the same problem as the coin change, You are given an integer array coins representing coins of different denominations and an integer amount representing a total amount of money., You may assume that you have an infinite number of each kind of coin.",
+      "voteCount": 230
+    },
+    {
+      "name": "Garrett-Bodley",
+      "year": 2024,
+      "content": "I hate dynamic programming",
+      "voteCount": 91
+    },
+    {
+      "name": "ayoubmanouz2015",
+      "year": 2023,
+      "content": "For those who are interested in Algorithmic Number Theory, there is a very interesting theorem that can solve the problem directly without recursion.\\n\\nIt is called Lagrange\\u2019s Four-Square Theorem, which states:  `every natural number can be represented as the sum of four integer squares.`\\n\\nIt was proven by Lagrange in 1770.\\n\\nApplying to our problem NumSquares(n) can only be 1, 2, 3, or 4. Not more.\\n\\nIt turns into the problem of `identifying when NumSquares(n) returns 1, 2, 3, or 4.`\\n\\nHere are the cases.\\n\\n1- If n is a perfect square, NumSquares(n) = 1.\\n2- There is another theorem, Legendre\\u2019s Three-Square Theorem, which states that `NumSquares(n) cannot be 1, 2, or 3 if n can be expressed as n = 4^a * (8*b + 7), where a, b are nonnegative integers` . In other words, NumSquares(n) = 4 if n is of this form.",
+      "voteCount": 85
+    },
+    {
+      "name": "sandesh4vivek",
+      "year": 2021,
+      "content": "**Question is** : Given an integer n, return the least number of perfect square numbers that sum to n\\nPerfect square before 43 are 36, 25, 16, 9, 4, 1\\n\\n//43 = 36 + 4   + 1 + 1 +1,   number of perfect square numbers 5\\n//43 = 25 + 16 + 1 + 1, number of perfect square numbers 4\\n// **43 = 25 + 9 + 9,  number of perfect square numbers 3**\\n//43 = 16 + 16 + 9 + 1 + 1, number of perfect square numbers 5\\n\\n\\n\\n",
+      "voteCount": 58
+    },
+    {
+      "name": "pushazhiniao",
+      "year": 2016,
+      "content": "Hi, I have done lots of questions of LC and noticed that with exactly the same algorithm and implementation, Java code is accepted while Python is LTE. Is it possible to adjust the time you allow Python to run?",
+      "voteCount": 56
+    },
+    {
+      "name": "anwendeng",
+      "year": 2024,
+      "content": "There is Math solution by using  Legendre\\'s three-square theorem & Sum of two squares theorem.\\nHave a nice day!",
+      "voteCount": 54
+    },
+    {
+      "name": "letsgobhagesh",
+      "year": 2022,
+      "content": "Can someone please explain the time complexity of the BFS approach in terms of Vertices and Edges.\\n\\n[Please upvote for better reach]\\n\\n\\n",
+      "voteCount": 28
+    },
+    {
+      "name": "kaamehaamehaa",
+      "year": 2019,
+      "content": "Why is it happening that all the python DP solutions are giving TLE .",
+      "voteCount": 28
+    },
+    {
+      "name": "MOHAMMED-IQRAMUL",
+      "year": 2024,
+      "content": "``` \\n Lagrange\\'s Four Square Theorem states that every natural number can be represented as the sum of four integer squares.\\n\\nBased on this theorem, there are only four possible results for any given integer n:\\n\\nIf n itself is a perfect square, then the result is 1.\\nIf n can be expressed as the sum of two perfect squares, then the result is 2.\\nIf n can be expressed as the sum of three perfect squares, then the result is 3.\\nIf none of the above cases apply, then the result is 4.\\n```",
+      "voteCount": 25
+    },
+    {
+      "name": "droidgod",
+      "year": 2018,
+      "content": "This is kind of obnoxious. Same solution in C++  or Go gets top 80% but in Python it gets TLE.\\n\\nWhat is the purpose exactly? \\n\\nWhy restrict the solution which is asymtotically the exact same one?\\n\\nWhy prefer one language over the other. It is kind of annoying and a waste of time trying to fit my solution to the OJ.\\n\\nI am using the static dp solution by the way. Every other language(Java, C, C++, Go, etc use the exact same logic, but in Python it is TLE.)",
+      "voteCount": 22
+    }
+  ]
+}

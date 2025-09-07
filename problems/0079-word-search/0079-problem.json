@@ -1,0 +1,153 @@
+{
+  "category": "",
+  "id": "79",
+  "name": "Word Search",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/word-search/",
+  "slug": "word-search",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "String",
+    "Backtracking",
+    "Depth-First Search",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Word Search II",
+      "difficulty": "Hard",
+      "slug": "word-search-ii"
+    }
+  ],
+  "questionId": "79",
+  "questionFrontendId": "79",
+  "title": "Word Search",
+  "titleSlug": "word-search",
+  "content": "<p>Given an <code>m x n</code> grid of characters <code>board</code> and a string <code>word</code>, return <code>true</code> <em>if</em> <code>word</code> <em>exists in the grid</em>.</p>\n\n<p>The word can be constructed from letters of sequentially adjacent cells, where adjacent cells are horizontally or vertically neighboring. The same letter cell may not be used more than once.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/11/04/word2.jpg\" style=\"width: 322px; height: 242px;\" />\n<pre>\n<strong>Input:</strong> board = [[&quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;E&quot;],[&quot;S&quot;,&quot;F&quot;,&quot;C&quot;,&quot;S&quot;],[&quot;A&quot;,&quot;D&quot;,&quot;E&quot;,&quot;E&quot;]], word = &quot;ABCCED&quot;\n<strong>Output:</strong> true\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/11/04/word-1.jpg\" style=\"width: 322px; height: 242px;\" />\n<pre>\n<strong>Input:</strong> board = [[&quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;E&quot;],[&quot;S&quot;,&quot;F&quot;,&quot;C&quot;,&quot;S&quot;],[&quot;A&quot;,&quot;D&quot;,&quot;E&quot;,&quot;E&quot;]], word = &quot;SEE&quot;\n<strong>Output:</strong> true\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/10/15/word3.jpg\" style=\"width: 322px; height: 242px;\" />\n<pre>\n<strong>Input:</strong> board = [[&quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;E&quot;],[&quot;S&quot;,&quot;F&quot;,&quot;C&quot;,&quot;S&quot;],[&quot;A&quot;,&quot;D&quot;,&quot;E&quot;,&quot;E&quot;]], word = &quot;ABCB&quot;\n<strong>Output:</strong> false\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == board.length</code></li>\n\t<li><code>n = board[i].length</code></li>\n\t<li><code>1 &lt;= m, n &lt;= 6</code></li>\n\t<li><code>1 &lt;= word.length &lt;= 15</code></li>\n\t<li><code>board</code> and <code>word</code> consists of only lowercase and uppercase English letters.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Follow up:</strong> Could you use search pruning to make your solution faster with a larger <code>board</code>?</p>\n",
+  "likes": 17111,
+  "dislikes": 727,
+  "stats": {
+    "totalAccepted": "2.2M",
+    "totalSubmission": "4.8M",
+    "totalAcceptedRaw": 2218082,
+    "totalSubmissionRaw": 4838039,
+    "acRate": "45.8%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Backtracking",
+      "slug": "backtracking"
+    },
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Matrix",
+      "slug": "matrix"
+    }
+  ],
+  "metaData": {
+    "name": "exist",
+    "params": [
+      {
+        "name": "board",
+        "type": "character[][]"
+      },
+      {
+        "name": "word",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 28
+      },
+      {
+        "taggedByAdmin": true,
+        "name": "Bloomberg",
+        "slug": "bloomberg",
+        "timesEncountered": 13
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "im_bhatman",
+      "year": 2024,
+      "content": "(*holding my tears*) 30 days back I was scared to even look at the description and today I just solved it in ~30 mins without any hint.",
+      "voteCount": 348
+    },
+    {
+      "name": "mg5050",
+      "year": 2023,
+      "content": "I find it irritating that some of the test cases on this problem, and more generally on Leetcode are overly adversarial.\n\nI had a decent solution after 15 - 20 minutes. I know it was fairly quick, but of course it gives TLE on the very last test case (for which I was unable to view the input due to some bug). Knowing how Leetcode is, I already knew without even being able to access the input that they would pass a board filled with many instances of the word minus the last letter or something ridiculously skewed like that, in order to lead the algorithm astray.\n\nLo and behold, with the assumption above in mind, I simply reverse the order of the target word to search from end to start, same exact algorithm, and it beats 80% in time, and 90% in space complexity.\n\nIn my opinion, these are poorly written test cases on this problem. Increasingly, the problems focus on \"gotchas!\" instead of actual preparation for interviews or working in the industry.",
+      "voteCount": 167
+    },
+    {
+      "name": "wintryleo",
+      "year": 2021,
+      "content": "Hello!\\n\\nThere is a follow-up question for this problem - \\n\\n**Follow up: Could you use search pruning to make your solution faster with a larger board?**\\n\\nCan someone please provide some insight for that?",
+      "voteCount": 87
+    },
+    {
+      "name": "chillimunchkin",
+      "year": 2021,
+      "content": "Example input:\\n[[\"A\",\"A\",\"A\",\"A\",\"A\",\"A\"],[\"A\",\"A\",\"A\",\"A\",\"A\",\"A\"],[\"A\",\"A\",\"A\",\"A\",\"A\",\"A\"],[\"A\",\"A\",\"A\",\"A\",\"A\",\"A\"],[\"A\",\"A\",\"A\",\"A\",\"A\",\"B\"],[\"A\",\"A\",\"A\",\"A\",\"B\",\"A\"]]\\n\"AAAAAAAAAAAAABB\"\\n\\nThis keeps giving time limit exceeded during submission, but not when run as a test case by itself. Has anyone seen this?\\n",
+      "voteCount": 79
+    },
+    {
+      "name": "pinkfloyda",
+      "year": 2016,
+      "content": "First we have to find the first letter to start, which gives time O(N^2), then for each search step it has 2~4 neighbours to go, and it has k steps, where k is the length of the word to be searched.",
+      "voteCount": 76
+    },
+    {
+      "name": "cs_can",
+      "year": 2023,
+      "content": "U can loop the board until u find the initial char of the word given ...now u can do dfs to see if it has a path ..that makes word...no need to keep visited u can change the board[row][col] to smthng like '.' each time...and while backtracking again u can make it what it was originally ... and if u find a valid path containing the word u can straightaway return true and do no further rec...simple way i solved it by my own and it beats 90% users...feel free to extend this discussion.\nUpvote if it helped!",
+      "voteCount": 63
+    },
+    {
+      "name": "pxwang24",
+      "year": 2024,
+      "content": "This is a hard problem!",
+      "voteCount": 46
+    },
+    {
+      "name": "codeitout",
+      "year": 2018,
+      "content": "[[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"E\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]]\\n\"ABCEFSADEESE\"\\nFor this test case, the output is true, but E in ABCE doesn\\'t have any neighbor starting with F.  How is the output true?",
+      "voteCount": 29
+    },
+    {
+      "name": "primkruskal",
+      "year": 2023,
+      "content": "Bug in question??\\nIt says 85/85 testcases passed\\nIt says time limit exceeded\\nAnd then under last executed input it literally shows\\n\\n\"board = \"\\n\\nAnd nothing else. It\\'s not showing the input where the time limit was exceeded\\n",
+      "voteCount": 26
+    },
+    {
+      "name": "OldCodingFarmer",
+      "year": 2015,
+      "content": "I think the board for Python language should not be `[\\n  [\"ABCE\"],\\n  [\"SFCS\"],\\n  [\"ADEE\"]\\n]`, since for Python language string is immutable, we can not assign value like `board[i][j] = \"#\"`. The board should be initialied as `[\\n  [\"A\", \"B\", \"C\", \"E\"],\\n  [\"S\", \"F\", \"C\", \"S\"],\\n  [\"A\", \"D\", \"E\", \"E\"]\\n]` . The function input is `type board: List[List[str]]`, which implies the inner parameter should be a list of strings . [Word Search II ][1] gives the right figure. \\n\\n\\n  [1]: https://leetcode.com/problems/word-search-ii/",
+      "voteCount": 25
+    }
+  ]
+}

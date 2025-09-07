@@ -1,0 +1,139 @@
+{
+  "category": "",
+  "id": "271",
+  "name": "Encode and Decode Strings",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/encode-and-decode-strings/",
+  "slug": "encode-and-decode-strings",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "String",
+    "Design"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count and Say",
+      "difficulty": "Medium",
+      "slug": "count-and-say"
+    },
+    {
+      "title": "Serialize and Deserialize Binary Tree",
+      "difficulty": "Hard",
+      "slug": "serialize-and-deserialize-binary-tree"
+    },
+    {
+      "title": "String Compression",
+      "difficulty": "Medium",
+      "slug": "string-compression"
+    },
+    {
+      "title": "Count Binary Substrings",
+      "difficulty": "Easy",
+      "slug": "count-binary-substrings"
+    }
+  ],
+  "questionId": "271",
+  "questionFrontendId": "271",
+  "title": "Encode and Decode Strings",
+  "titleSlug": "encode-and-decode-strings",
+  "content": "<p>Design an algorithm to encode <b>a list of strings</b> to <b>a string</b>. The encoded string is then sent over the network and is decoded back to the original list of strings.</p>\n\n<p>Machine 1 (sender) has the function:</p>\n\n<pre>\nstring encode(vector&lt;string&gt; strs) {\n  // ... your code\n  return encoded_string;\n}</pre>\nMachine 2 (receiver) has the function:\n\n<pre>\nvector&lt;string&gt; decode(string s) {\n  //... your code\n  return strs;\n}\n</pre>\n\n<p>So Machine 1 does:</p>\n\n<pre>\nstring encoded_string = encode(strs);\n</pre>\n\n<p>and Machine 2 does:</p>\n\n<pre>\nvector&lt;string&gt; strs2 = decode(encoded_string);\n</pre>\n\n<p><code>strs2</code> in Machine 2 should be the same as <code>strs</code> in Machine 1.</p>\n\n<p>Implement the <code>encode</code> and <code>decode</code> methods.</p>\n\n<p>You are not allowed to&nbsp;solve the problem using any serialize methods (such as <code>eval</code>).</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> dummy_input = [&quot;Hello&quot;,&quot;World&quot;]\n<strong>Output:</strong> [&quot;Hello&quot;,&quot;World&quot;]\n<strong>Explanation:</strong>\nMachine 1:\nCodec encoder = new Codec();\nString msg = encoder.encode(strs);\nMachine 1 ---msg---&gt; Machine 2\n\nMachine 2:\nCodec decoder = new Codec();\nString[] strs = decoder.decode(msg);\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> dummy_input = [&quot;&quot;]\n<strong>Output:</strong> [&quot;&quot;]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= strs.length &lt;= 200</code></li>\n\t<li><code>0 &lt;= strs[i].length &lt;= 200</code></li>\n\t<li><code>strs[i]</code> contains any possible characters out of <code>256</code> valid ASCII characters.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Follow up: </strong>Could you write a generalized algorithm to work on any possible set of characters?</p>\n",
+  "likes": 1544,
+  "dislikes": 445,
+  "stats": {
+    "totalAccepted": "271.8K",
+    "totalSubmission": "541.8K",
+    "totalAcceptedRaw": 271832,
+    "totalSubmissionRaw": 541796,
+    "acRate": "50.2%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Design",
+      "slug": "design"
+    }
+  ],
+  "metaData": {
+    "name": "encode",
+    "params": [
+      {
+        "name": "dummy_input",
+        "type": "list<string>"
+      }
+    ],
+    "return": {
+      "type": "list<string>"
+    },
+    "manual": true
+  },
+  "discussion_posts": [
+    {
+      "name": "10mvasta",
+      "year": 2024,
+      "content": "What a stupid problem",
+      "voteCount": 80
+    },
+    {
+      "name": "shinne",
+      "year": 2023,
+      "content": "Would be helpful to tell me what they mean by encoding. I had to go google it up.",
+      "voteCount": 51
+    },
+    {
+      "name": "TGBBSZWHWDLANZP",
+      "year": 2023,
+      "content": "You can use a utf-8 character as a delimiter in the simple case for this problem.\\nI used snowman \\u2603\\u2603",
+      "voteCount": 25
+    },
+    {
+      "name": "omg_zozobra",
+      "year": 2015,
+      "content": "Is anyone else getting this error? I get it for any input that doesn't have syntax errors, even if I just try to compile the blank problem skeleton.",
+      "voteCount": 14
+    },
+    {
+      "name": "jqma",
+      "year": 2022,
+      "content": "rawr",
+      "voteCount": 11
+    },
+    {
+      "name": "MC_Jin",
+      "year": 2023,
+      "content": "A public member storing original data is accepted. The test method should be changed, at least using two Codec instances, one for encoding another for decoding.",
+      "voteCount": 9
+    },
+    {
+      "name": "VadimGarkusha",
+      "year": 2023,
+      "content": "Funny thing but using a Hashmap is an accepted solution :)",
+      "voteCount": 3
+    },
+    {
+      "name": "FluorescentPink",
+      "year": 2025,
+      "content": "Used a strategy similar to that of malloc where you have a header containing your data length, using that you can easily slice the string to extract the original words",
+      "voteCount": 2
+    },
+    {
+      "name": "daBozz",
+      "year": 2023,
+      "content": "Base64 does the trick: \n> Base64 only contains A\u2013Z , a\u2013z , 0\u20139 , + , / and =\n\nYou can base64-encode every str in the list, and join it together with any separator that is not A\u2013Z , a\u2013z , 0\u20139 , + , / and = (I've used commas). ",
+      "voteCount": 2
+    },
+    {
+      "name": "Satansoft",
+      "year": 2025,
+      "content": "What the amazing problem based on fundamentals of cryptography with wide field of creativity!\\n\\nNeeded realize symmetric encryption system where:\\n- `encode` encoding `strs` and return it;\\n- `decode` decoding `s` (it\\'s encoded `strs`) to restore it to source result.\\n\\nAs mentioned above it\\'s up to you how to encode / decode source result, it\\'s base64 ot just replacing with mapping or any more modern approaches, but anyway I would qualify this problem as useful and funny to solve.",
+      "voteCount": 1
+    }
+  ]
+}

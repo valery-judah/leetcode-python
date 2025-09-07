@@ -1,0 +1,164 @@
+{
+  "category": "",
+  "id": "242",
+  "name": "Valid Anagram",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/valid-anagram/",
+  "slug": "valid-anagram",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Group Anagrams",
+      "difficulty": "Medium",
+      "slug": "group-anagrams"
+    },
+    {
+      "title": "Palindrome Permutation",
+      "difficulty": "Easy",
+      "slug": "palindrome-permutation"
+    },
+    {
+      "title": "Find All Anagrams in a String",
+      "difficulty": "Medium",
+      "slug": "find-all-anagrams-in-a-string"
+    },
+    {
+      "title": "Find Resultant Array After Removing Anagrams",
+      "difficulty": "Easy",
+      "slug": "find-resultant-array-after-removing-anagrams"
+    }
+  ],
+  "questionId": "242",
+  "questionFrontendId": "242",
+  "title": "Valid Anagram",
+  "titleSlug": "valid-anagram",
+  "content": "<p>Given two strings <code>s</code> and <code>t</code>, return <code>true</code> if <code>t</code> is an <span data-keyword=\"anagram\">anagram</span> of <code>s</code>, and <code>false</code> otherwise.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;anagram&quot;, t = &quot;nagaram&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">true</span></p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;rat&quot;, t = &quot;car&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">false</span></p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length, t.length &lt;= 5 * 10<sup>4</sup></code></li>\n\t<li><code>s</code> and <code>t</code> consist of lowercase English letters.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Follow up:</strong> What if the inputs contain Unicode characters? How would you adapt your solution to such a case?</p>\n",
+  "likes": 13475,
+  "dislikes": 452,
+  "stats": {
+    "totalAccepted": "5.2M",
+    "totalSubmission": "7.8M",
+    "totalAcceptedRaw": 5201952,
+    "totalSubmissionRaw": 7752985,
+    "acRate": "67.1%"
+  },
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Sorting",
+      "slug": "sorting"
+    }
+  ],
+  "metaData": {
+    "name": "isAnagram",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      },
+      {
+        "name": "t",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Google",
+        "slug": "google",
+        "timesEncountered": 20
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Bloomberg",
+        "slug": "bloomberg",
+        "timesEncountered": 14
+      },
+      {
+        "taggedByAdmin": true,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 13
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "Django42",
+      "year": 2023,
+      "content": "![leet.png](https://assets.leetcode.com/users/images/4a3f614e-0885-452b-87c7-fb5c39853386_1702689625.7741022.png)",
+      "voteCount": 245
+    },
+    {
+      "name": "45-nobbie",
+      "year": 2022,
+      "content": "If t is the anagram of s then by comparing both sorted strings can give the answer\\n\\nIf t is amagram of s then sorted t must be same as sorted s so,\\n\"\"\"\\nreturn sorted(s) == sorted(t)\\n\"\"\"",
+      "voteCount": 113
+    },
+    {
+      "name": "AlecLC",
+      "year": 2023,
+      "content": "![easy-dec.png](https://assets.leetcode.com/users/images/ad09f75a-4c09-41b7-9e4e-92fda7c7311b_1702682574.9262853.png)\\n",
+      "voteCount": 72
+    },
+    {
+      "name": "Sinosco",
+      "year": 2023,
+      "content": "bro what do you mean \"...typically using all the original letters exactly once.\" Does it use every letter exactly once or not???",
+      "voteCount": 61
+    },
+    {
+      "name": "luborliu",
+      "year": 2016,
+      "content": "Any discussion on how to handle the unicode?",
+      "voteCount": 52
+    },
+    {
+      "name": "AlgoEngine",
+      "year": 2023,
+      "content": "Visualization of hash table approach\\n\\nhttps://youtu.be/vYNRXZ4GXPg",
+      "voteCount": 41
+    },
+    {
+      "name": "jacksonchill",
+      "year": 2017,
+      "content": "There seems no discussion about the followup Unicode question. May I ask that is there any idea about it?\\nThe question is a bit vague for me. I understand that Unicode is a binary coding method regardless of program/platform, but how can it reflect on an input string?",
+      "voteCount": 25
+    },
+    {
+      "name": "user4461nG",
+      "year": 2021,
+      "content": "return Counter(s) == Counter(t)",
+      "voteCount": 24
+    },
+    {
+      "name": "enamespace",
+      "year": 2019,
+      "content": "when i solve the problem by using array[26], i check the NO.1 solution. he solve the problem by using calculation?\\ni wonder whether it\\'s math trick or it\\'s simply a his hash function ?\\ni guess it\\'s a hash function with big probability to ensure no collision so far.\\n![image](https://assets.leetcode.com/users/ku_rt/image_1557989855.png)\\n",
+      "voteCount": 22
+    },
+    {
+      "name": "harnalerohan",
+      "year": 2022,
+      "content": "var isAnagram = (s, t) => s.split(\\'\\').sort().join(\\'\\') === t.split(\\'\\').sort().join(\\'\\') ? true : false",
+      "voteCount": 21
+    }
+  ]
+}

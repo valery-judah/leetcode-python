@@ -1,0 +1,161 @@
+{
+  "category": "",
+  "id": "189",
+  "name": "Rotate Array",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/rotate-array/",
+  "slug": "rotate-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Two Pointers"
+  ],
+  "similar_questions": [
+    {
+      "title": "Rotate List",
+      "difficulty": "Medium",
+      "slug": "rotate-list"
+    },
+    {
+      "title": "Reverse Words in a String II",
+      "difficulty": "Medium",
+      "slug": "reverse-words-in-a-string-ii"
+    },
+    {
+      "title": "Make K-Subarray Sums Equal",
+      "difficulty": "Medium",
+      "slug": "make-k-subarray-sums-equal"
+    },
+    {
+      "title": "Maximum Number of Matching Indices After Right Shifts",
+      "difficulty": "Medium",
+      "slug": "maximum-number-of-matching-indices-after-right-shifts"
+    }
+  ],
+  "questionId": "189",
+  "questionFrontendId": "189",
+  "title": "Rotate Array",
+  "titleSlug": "rotate-array",
+  "content": "<p>Given an integer array <code>nums</code>, rotate the array to the right by <code>k</code> steps, where <code>k</code> is non-negative.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2,3,4,5,6,7], k = 3\n<strong>Output:</strong> [5,6,7,1,2,3,4]\n<strong>Explanation:</strong>\nrotate 1 steps to the right: [7,1,2,3,4,5,6]\nrotate 2 steps to the right: [6,7,1,2,3,4,5]\nrotate 3 steps to the right: [5,6,7,1,2,3,4]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [-1,-100,3,99], k = 2\n<strong>Output:</strong> [3,99,-1,-100]\n<strong>Explanation:</strong> \nrotate 1 steps to the right: [99,-1,-100,3]\nrotate 2 steps to the right: [3,99,-1,-100]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>-2<sup>31</sup> &lt;= nums[i] &lt;= 2<sup>31</sup> - 1</code></li>\n\t<li><code>0 &lt;= k &lt;= 10<sup>5</sup></code></li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Follow up:</strong></p>\n\n<ul>\n\t<li>Try to come up with as many solutions as you can. There are at least <strong>three</strong> different ways to solve this problem.</li>\n\t<li>Could you do it in-place with <code>O(1)</code> extra space?</li>\n</ul>\n",
+  "likes": 19986,
+  "dislikes": 2130,
+  "stats": {
+    "totalAccepted": "3.4M",
+    "totalSubmission": "7.8M",
+    "totalAcceptedRaw": 3395510,
+    "totalSubmissionRaw": 7790758,
+    "acRate": "43.6%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    }
+  ],
+  "metaData": {
+    "name": "rotate",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      },
+      {
+        "name": "k",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "void"
+    },
+    "output": {
+      "paramindex": 0
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Google",
+        "slug": "google",
+        "timesEncountered": 12
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Apple",
+        "slug": "apple",
+        "timesEncountered": 11
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "zerobrine",
+      "year": 2023,
+      "content": "who tf put case 38 in (5000+ long array) wtf",
+      "voteCount": 549
+    },
+    {
+      "name": "xruzty",
+      "year": 2016,
+      "content": "Let the array be - 123456789 and k = 4\\n\\n\\n*Step 1* -  **12345** 6789  --->  **54321** 6789\\n\\n*Step 2* -  54321 **6789**  --->  54321 **9876**\\n\\n*Step 3* -  **543219876**    --->   **678912345**\\n\\n\\n> 678912345 !!",
+      "voteCount": 311
+    },
+    {
+      "name": "artem_se_putem",
+      "year": 2023,
+      "content": "I am very happy because I was able to do my first task at medium level. Good luck, bro, u are super star).",
+      "voteCount": 154
+    },
+    {
+      "name": "_bolu_",
+      "year": 2019,
+      "content": "The index wrapping should be explicitly stated problem description.\\n\\nSolve by adding this line before your computations:\\n\\nk = k % len(nums)",
+      "voteCount": 128
+    },
+    {
+      "name": "Md_Khalander_CSE123",
+      "year": 2024,
+      "content": "All of my testcase got accepted (37/38) , but the hell is timelimit exceeded for the test case which approximately had crores of elements!!!!!!!!!...... ",
+      "voteCount": 90
+    },
+    {
+      "name": "Django42",
+      "year": 2024,
+      "content": "I hate this question",
+      "voteCount": 75
+    },
+    {
+      "name": "Zenpy",
+      "year": 2023,
+      "content": " size = len(nums)\\n x = nums[size- k:]\\n nums = x + nums[: size - k]\\n\\nthis code working on the vscode, pycharm perfectly, but not on leetcode.  even if: input nums = [1, 2, 3, 4, 5, 6] , and in side the coding part, i state , nums = [0 , 0 ,0 ]  and run the code, leetcode says, your output is [ 1, 2, 3, 4, 5, 6] but it should be bla bla....  even intentionally I am making it working, but now showing the exact wrong.  and when its runnig perfectly on other editor, don\\'t run on leedcode.",
+      "voteCount": 52
+    },
+    {
+      "name": "sanket2714",
+      "year": 2019,
+      "content": "reverse(nums.begin()+(nums.size()-k),nums.end());\\nreverse(nums.begin(),nums.end()-k);\\nreverse(nums.begin(),nums.end());",
+      "voteCount": 34
+    },
+    {
+      "name": "rabeeh",
+      "year": 2015,
+      "content": "I wonder what does it mean to rotate a vector for K greater than the length of the word? can someone explain?",
+      "voteCount": 32
+    },
+    {
+      "name": "thisisnotanton",
+      "year": 2018,
+      "content": "var rotate = function(nums, k) {\\n    nums = nums.concat(nums.splice(0, k+1));\\n};\\n\\nthis works on other websites.",
+      "voteCount": 23
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "category": "",
+  "id": "1126",
+  "name": "Active Businesses",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/active-businesses/",
+  "slug": "active-businesses",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": [],
+  "questionId": "1225",
+  "questionFrontendId": "1126",
+  "title": "Active Businesses",
+  "titleSlug": "active-businesses",
+  "content": "<p>Table: <code>Events</code></p>\n\n<pre>\n+---------------+---------+\n| Column Name   | Type    |\n+---------------+---------+\n| business_id   | int     |\n| event_type    | varchar |\n| occurrences   | int     | \n+---------------+---------+\n(business_id, event_type) is the primary key (combination of columns with unique values) of this table.\nEach row in the table logs the info that an event of some type occurred at some business for a number of times.\n</pre>\n\n<p>The <strong>average activity</strong> for a particular <code>event_type</code> is the average <code>occurrences</code> across all companies that have this event.</p>\n\n<p>An <strong>active business</strong> is a business that has <strong>more than one</strong> <code>event_type</code> such that their <code>occurrences</code> is <strong>strictly greater</strong> than the average activity for that event.</p>\n\n<p>Write a solution to find all <strong>active businesses</strong>.</p>\n\n<p>Return the result table in <strong>any order</strong>.</p>\n\n<p>The result format is in the following example.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> \nEvents table:\n+-------------+------------+-------------+\n| business_id | event_type | occurrences |\n+-------------+------------+-------------+\n| 1           | reviews    | 7           |\n| 3           | reviews    | 3           |\n| 1           | ads        | 11          |\n| 2           | ads        | 7           |\n| 3           | ads        | 6           |\n| 1           | page views | 3           |\n| 2           | page views | 12          |\n+-------------+------------+-------------+\n<strong>Output:</strong> \n+-------------+\n| business_id |\n+-------------+\n| 1           |\n+-------------+\n<strong>Explanation:</strong>  \nThe average activity for each event can be calculated as follows:\n- &#39;reviews&#39;: (7+3)/2 = 5\n- &#39;ads&#39;: (11+7+6)/3 = 8\n- &#39;page views&#39;: (3+12)/2 = 7.5\nThe business with id=1 has 7 &#39;reviews&#39; events (more than 5) and 11 &#39;ads&#39; events (more than 8), so it is an active business.\n</pre>\n",
+  "likes": 281,
+  "dislikes": 33,
+  "stats": {
+    "totalAccepted": "50.8K",
+    "totalSubmission": "77.1K",
+    "totalAcceptedRaw": 50838,
+    "totalSubmissionRaw": 77058,
+    "acRate": "66.0%"
+  },
+  "topicTags": [
+    {
+      "name": "Database",
+      "slug": "database"
+    }
+  ],
+  "metaData": {
+    "mysql": [
+      "Create table If Not Exists Events (business_id int, event_type varchar(10), occurrences int)"
+    ],
+    "mssql": [
+      "Create table Events (business_id int, event_type varchar(10), occurrences int)"
+    ],
+    "oraclesql": [
+      "Create table Events (business_id int, event_type varchar(10), occurrences int)"
+    ],
+    "database": true,
+    "name": "active_businesses",
+    "pythondata": [
+      "Events = pd.DataFrame([], columns=['business_id', 'event_type', 'occurences']).astype({'business_id':'Int64', 'event_type':'object', 'occurrences':'Int64'})"
+    ],
+    "postgresql": [
+      "\nCreate table If Not Exists Events (business_id int, event_type varchar(10), occurrences int)"
+    ],
+    "database_schema": {
+      "Events": {
+        "business_id": "INT",
+        "event_type": "VARCHAR(10)",
+        "occurrences": "INT"
+      }
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "shrekk1555",
+      "year": 2020,
+      "content": "Hi All,\\nIn this problem, as per my understanding the output should be 1 and 2 as the business_id, isnt it ?\\n1 for \"reviews\" (7+3/2 = 5) < 7 and ads (11+7+6/3=8) < 11\\n2 for page views (3+12/2=7.5) < 12\\n\\nPlease correct if my understanding is wrong.",
+      "voteCount": 10
+    },
+    {
+      "name": "docxeg249",
+      "year": 2025,
+      "content": "Why is everyone posting the solutions in the discussion section? There is a seperate section for that ! ",
+      "voteCount": 2
+    },
+    {
+      "name": "Bang25",
+      "year": 2019,
+      "content": "/* Write your PL/SQL query statement below */\\n\\n\\nwith subq as\\n(\\nselect event_type, avg(occurences) as average\\n    from events\\n    group by event_type)\\n\\nselect events.business_id as business_id\\nfrom events join subq on events.event_type = subq.event_type\\nand events.occurences > subq.average\\ngroup by events.business_id having count(events.business_id)>1;;",
+      "voteCount": 2
+    },
+    {
+      "name": "caelandavey",
+      "year": 2025,
+      "content": "In the Pandas Schema occurrences is spelt incorrectly.",
+      "voteCount": 1
+    },
+    {
+      "name": "Chaochao1990",
+      "year": 2021,
+      "content": "with t as (select event_type, avg(occurences) o_avg from Events group by 1)\\nselect business_id\\nfrom Events join t using(event_type)\\nwhere occurences>o_avg\\ngroup by 1\\nhaving count(1)>1\\n",
+      "voteCount": 1
+    },
+    {
+      "name": "Jeffrey_Zhao",
+      "year": 2021,
+      "content": "with a as(select business_id,event_type, occurences, avg(occurences) over (partition by event_type) as ave\\nfrom events\\n)\\n\\nselect distinct business_id\\nfrom a\\nwhere occurences>ave\\ngroup by business_id\\nhaving count(distinct event_type)>1\\n",
+      "voteCount": 1
+    },
+    {
+      "name": "mikey121",
+      "year": 2020,
+      "content": "\\'\\'\\'\\nSELECT business_id \\n\\nFROM EVENTS, (select event_type , avg(occurences) av from events  group by event_type) a \\n\\nwhere Events.event_type = a.event_type and Events.occurences > a.av \\n\\ngroup by business_id\\n\\nhaving count(Events.occurences > a.av ) > 1\\n\\n\\'\\'\\'",
+      "voteCount": 1
+    },
+    {
+      "name": "santa_clara_zhazha",
+      "year": 2020,
+      "content": "\\n \\n// use the og table left join to get the avg for each event \\n// then just select id \\n// in the having clause \\n// had the sum >  1 ( sum is the sum of # of event > than 1 )\\n \\nSELECT e1.business_id  \\nFROM  \\nEvents e1 LEFT JOIN\\n(SELECT event_type ,avg(occurences) AS event_avg \\nFROM  Events GROUP BY event_type ) av\\nON e1.event_type  = av.event_type \\nGROUP BY business_id \\nHAVING SUM( CASE WHEN e1.occurences > av.event_avg THEN 1 ELSE 0 END )>1",
+      "voteCount": 1
+    },
+    {
+      "name": "yz541",
+      "year": 2019,
+      "content": "with CTE as (\\nselect business_id, event_type, occurences, avg(occurences)over(partition by event_type) as AVG_OCC from Events)\\n\\nselect business_id FROM CTE where occurences > AVG_OCC group by business_id HAVING COUNT(event_type) > 1",
+      "voteCount": 1
+    },
+    {
+      "name": "aswathr",
+      "year": 2019,
+      "content": "\\'\\'\\' \\nselect \\ne.business_id\\nfrom Events e \\njoin \\n(\\nselect event_type, avg(occurences) as event_avg\\nfrom Events\\ngroup by event_type \\n)a  on e.event_type= a.event_type \\nand e.occurences > a. event_avg  \\ngroup by e.business_id\\nhaving count(distinct e.event_type)>1 \\n\\'\\'\\'",
+      "voteCount": 1
+    }
+  ]
+}

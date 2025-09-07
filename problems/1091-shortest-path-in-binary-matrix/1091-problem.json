@@ -1,0 +1,133 @@
+{
+  "category": "",
+  "id": "1091",
+  "name": "Shortest Path in Binary Matrix",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/shortest-path-in-binary-matrix/",
+  "slug": "shortest-path-in-binary-matrix",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Paths in Matrix Whose Sum Is Divisible by K",
+      "difficulty": "Hard",
+      "slug": "paths-in-matrix-whose-sum-is-divisible-by-k"
+    }
+  ],
+  "questionId": "1171",
+  "questionFrontendId": "1091",
+  "title": "Shortest Path in Binary Matrix",
+  "titleSlug": "shortest-path-in-binary-matrix",
+  "content": "<p>Given an <code>n x n</code> binary matrix <code>grid</code>, return <em>the length of the shortest <strong>clear path</strong> in the matrix</em>. If there is no clear path, return <code>-1</code>.</p>\n\n<p>A <strong>clear path</strong> in a binary matrix is a path from the <strong>top-left</strong> cell (i.e., <code>(0, 0)</code>) to the <strong>bottom-right</strong> cell (i.e., <code>(n - 1, n - 1)</code>) such that:</p>\n\n<ul>\n\t<li>All the visited cells of the path are <code>0</code>.</li>\n\t<li>All the adjacent cells of the path are <strong>8-directionally</strong> connected (i.e., they are different and they share an edge or a corner).</li>\n</ul>\n\n<p>The <strong>length of a clear path</strong> is the number of visited cells of this path.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/02/18/example1_1.png\" style=\"width: 500px; height: 234px;\" />\n<pre>\n<strong>Input:</strong> grid = [[0,1],[1,0]]\n<strong>Output:</strong> 2\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/02/18/example2_1.png\" style=\"height: 216px; width: 500px;\" />\n<pre>\n<strong>Input:</strong> grid = [[0,0,0],[1,1,0],[1,1,0]]\n<strong>Output:</strong> 4\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> grid = [[1,0,0],[1,1,0],[1,1,0]]\n<strong>Output:</strong> -1\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>n == grid.length</code></li>\n\t<li><code>n == grid[i].length</code></li>\n\t<li><code>1 &lt;= n &lt;= 100</code></li>\n\t<li><code>grid[i][j] is 0 or 1</code></li>\n</ul>\n",
+  "likes": 7161,
+  "dislikes": 268,
+  "stats": {
+    "totalAccepted": "737K",
+    "totalSubmission": "1.5M",
+    "totalAcceptedRaw": 737044,
+    "totalSubmissionRaw": 1462709,
+    "acRate": "50.4%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Breadth-First Search",
+      "slug": "breadth-first-search"
+    },
+    {
+      "name": "Matrix",
+      "slug": "matrix"
+    }
+  ],
+  "metaData": {
+    "name": "shortestPathBinaryMatrix",
+    "params": [
+      {
+        "name": "grid",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Meta",
+        "slug": "facebook",
+        "timesEncountered": 93
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "peterx123",
+      "year": 2021,
+      "content": "If your BFS with tracking visited node gets TLE, you could check if you add those new nodes to visited on time.\\nif you are adding the node to visited only when you poll it from queue, then your BFS might get TLE.",
+      "voteCount": 160
+    },
+    {
+      "name": "anarthana",
+      "year": 2023,
+      "content": " <b>All the adjacent cells of the path are 8-directionally connected (i.e., they are different and they share an edge or a corner).</b>\\n\\nThe wording here was a bit confusing to me.  Now that I\\'ve solved the problem, I think all they were trying to say was:\\n\\n<b>The path is made up of horizontal, vertical, and/or diagonal steps</b>",
+      "voteCount": 141
+    },
+    {
+      "name": "noormd",
+      "year": 2023,
+      "content": "Make sure to traverse the array in all 8 directions.  `direction = [[1,0], [0,1], [-1,0], [0,-1], [1,1], [-1,-1], [1,-1], [-1,1]]` ,using this as template could be useful",
+      "voteCount": 42
+    },
+    {
+      "name": "M1dn1ght",
+      "year": 2024,
+      "content": "So you want to be a programmer huh ?  7 hours on this problem .. It was brutal to me.. Never give up !\\n\\nAccepted\\nWrong Answer\\nOutput Limit Exceeded\\nWrong Answer\\nWrong Answer\\nWrong Answer\\nWrong Answer\\nWrong Answer\\nWrong Answer\\nWrong Answer\\nWrong Answer\\nWrong Answer\\nWrong Answer\\nWrong Answer\\nWrong Answer\\nWrong Answer\\nWrong Answer\\nWrong Answer\\nWrong Answer\\nWrong Answer\\nWrong Answer\\nWrong Answer\\nWrong Answer\\nWrong Answer\\nRuntime Error\\n7 hours ago\\n\\n",
+      "voteCount": 30
+    },
+    {
+      "name": "user5400vw",
+      "year": 2023,
+      "content": "Not a hard problem.  Just tedious and lots of potential for repetitive messy code.",
+      "voteCount": 24
+    },
+    {
+      "name": "SandeepKV",
+      "year": 2019,
+      "content": "Can anybody explain the meaning of the problem? I understand that the end goal is to find the shortest path from [0,0] to [n-1,m-1]. But not sure what the constraints exactly are.\\n\\nTIA",
+      "voteCount": 21
+    },
+    {
+      "name": "csazad2702",
+      "year": 2019,
+      "content": "[[0,1],[1,0]] my output is 1 because we can reach diagonally in one step\\nwhy it is 2",
+      "voteCount": 19
+    },
+    {
+      "name": "icespeech",
+      "year": 2022,
+      "content": "In the problem description, it gives two constraints for the definition of a **clear path**.\\nAnd constraint two says:\\n\\n* **All the adjacent cells of the path** are 8-directionally connected (i.e., **they are different** and they share an edge or a corner).\\n\\nWhat does **they are different** mean? Firstly I thought it means they are all 1s, because that\\'s different from the 0s in the path. But in example 2, all the adjacent cells of the path are [[0,2],[1,0],[1,1],[2,1]], and they are not all 1s because cell [0,2] contains a zero. (As the pic shows.)\\n![image](https://assets.leetcode.com/users/images/c89b9e6a-8591-4210-8964-717d5d209d0c_1651877883.2621098.png)\\n\\nSo maybe by **they are different** it means the adjacent cells are not included in the path? But should not that be self-evident?\\n\\nCan anyone please give a clearer definition of it? Many thanks.\\n\\n",
+      "voteCount": 17
+    },
+    {
+      "name": "c4tdog",
+      "year": 2023,
+      "content": "welcome to a new month",
+      "voteCount": 15
+    },
+    {
+      "name": "LeetCode",
+      "year": 2022,
+      "content": "This problem is the Daily LeetCoding Challenge for May, Day 16.\n\nFeel free to share anything related to this problem here!\n\nYou can ask questions, discuss what you've learned from this problem, or show off how many days of streak you've made!\n\n---\n\nIf you'd like to share a detailed solution to the problem, please create a new post in the discuss section and provide\n- **Detailed Explanations**: Describe the algorithm you used to solve this problem. Include any insights you used to solve this problem.\n- **Images** that help explain the algorithm.\n- **Language and Code** you used to pass the problem.\n- **Time and Space complexity analysis**.\n\n---\n\n  **\ud83d\udccc Do you want to learn the problem thoroughly?**\n  Read [**\u2b50  LeetCode Official Solution\u2b50**](https://leetcode.com/problems/shortest-path-in-binary-matrix/solution) to learn the 3 approaches to the problem with detailed explanations to the algorithms, codes, and complexity analysis.\n  <details>\n  <summary> Spoiler Alert! We'll explain these 3 approaches in the official solution</summary>\n\n  \n**Approach 1:** Breadth-first Search (BFS), Overwriting Input\n\n  \n**Approach 2:** Breadth-first Search (Without Overwriting the Input)\n\n  \n**Approach 3:** A* (Advanced)\n\n  \n</details>\n\n\n\nIf you're new to Daily LeetCoding Challenge, [**check out this post**](https://leetcode.com/discuss/general-discussion/655704/)!\n\n\n---\n\n<br>\n\n<p align=\"center\">\n<a href=\"https://leetcode.com/subscribe/?ref=ex_dc\" target=\"_blank\">\n  <img src=\"https://assets.leetcode.com/static_assets/marketing/daily_leetcoding_banner.png\" width=\"560px\" />\n</a>\n</p>\n\n<br>",
+      "voteCount": 10
+    }
+  ]
+}

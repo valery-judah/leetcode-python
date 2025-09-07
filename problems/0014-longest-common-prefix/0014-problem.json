@@ -1,0 +1,172 @@
+{
+  "category": "",
+  "id": "14",
+  "name": "Longest Common Prefix",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/longest-common-prefix/",
+  "slug": "longest-common-prefix",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "String",
+    "Trie"
+  ],
+  "similar_questions": [
+    {
+      "title": "Smallest Missing Integer Greater Than Sequential Prefix Sum",
+      "difficulty": "Easy",
+      "slug": "smallest-missing-integer-greater-than-sequential-prefix-sum"
+    },
+    {
+      "title": "Find the Length of the Longest Common Prefix",
+      "difficulty": "Medium",
+      "slug": "find-the-length-of-the-longest-common-prefix"
+    },
+    {
+      "title": "Longest Common Suffix Queries",
+      "difficulty": "Hard",
+      "slug": "longest-common-suffix-queries"
+    },
+    {
+      "title": "Longest Common Prefix After at Most One Removal",
+      "difficulty": "Medium",
+      "slug": "longest-common-prefix-after-at-most-one-removal"
+    }
+  ],
+  "questionId": "14",
+  "questionFrontendId": "14",
+  "title": "Longest Common Prefix",
+  "titleSlug": "longest-common-prefix",
+  "content": "<p>Write a function to find the longest common prefix string amongst an array of strings.</p>\n\n<p>If there is no common prefix, return an empty string <code>&quot;&quot;</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> strs = [&quot;flower&quot;,&quot;flow&quot;,&quot;flight&quot;]\n<strong>Output:</strong> &quot;fl&quot;\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> strs = [&quot;dog&quot;,&quot;racecar&quot;,&quot;car&quot;]\n<strong>Output:</strong> &quot;&quot;\n<strong>Explanation:</strong> There is no common prefix among the input strings.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= strs.length &lt;= 200</code></li>\n\t<li><code>0 &lt;= strs[i].length &lt;= 200</code></li>\n\t<li><code>strs[i]</code> consists of only lowercase English letters if it is non-empty.</li>\n</ul>\n",
+  "likes": 19883,
+  "dislikes": 4803,
+  "stats": {
+    "totalAccepted": "4.9M",
+    "totalSubmission": "10.6M",
+    "totalAcceptedRaw": 4903473,
+    "totalSubmissionRaw": 10642626,
+    "acRate": "46.1%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Trie",
+      "slug": "trie"
+    }
+  ],
+  "metaData": {
+    "name": "longestCommonPrefix",
+    "params": [
+      {
+        "name": "strs",
+        "type": "string[]"
+      }
+    ],
+    "return": {
+      "type": "string"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Google",
+        "slug": "google",
+        "timesEncountered": 45
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Meta",
+        "slug": "facebook",
+        "timesEncountered": 27
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 24
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Microsoft",
+        "slug": "microsoft",
+        "timesEncountered": 11
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Apple",
+        "slug": "apple",
+        "timesEncountered": 11
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "BrajBliss",
+      "year": 2022,
+      "content": "This is a medium level question man.",
+      "voteCount": 1090
+    },
+    {
+      "name": "Mshashikanth",
+      "year": 2023,
+      "content": "i wrote the slowest solution to this problem ",
+      "voteCount": 768
+    },
+    {
+      "name": "Vgn",
+      "year": 2015,
+      "content": "The problem statement is confusing and unclear. Can someone throw light on this ?\\n\\nIs it to find prefix between each pair of strings and return the one which is longest. Or\\nall the strings has to have a common prefix?",
+      "voteCount": 408
+    },
+    {
+      "name": "jankoziel",
+      "year": 2022,
+      "content": "Not sure about [\"reflower\",\"flow\",\"flight\"] Test Case\\ninput:\\nstrs = [\"reflower\",\"flow\",\"flight\"]\\noutput from my solution: \"fl\"\\nexpected output: \"\"\\n\\nWhy empty string should be outputted here?",
+      "voteCount": 266
+    },
+    {
+      "name": "skymastery",
+      "year": 2023,
+      "content": "\"strs[i] consists of only lowercase English letters.\"\\nMeanwhile, the test contains an empty string... ",
+      "voteCount": 192
+    },
+    {
+      "name": "dkarampi",
+      "year": 2014,
+      "content": "I think there are two (straightforward) solutions:\\n\\n1) \"Horizontal matching (over strings)\". Pick up the first string and compare it with the rest. Return the minimum prefix found among all comparisons.\\n\\n2) \"Vertical matching (over characters)\". Compare the characters between all strings from left to right. Stop whenever a mismatch is found.\\n\\nWhat is the complexity of these two approaches ?\\n\\nIs there a better solution ?",
+      "voteCount": 114
+    },
+    {
+      "name": "ReemAlattas",
+      "year": 2021,
+      "content": "Hello Guys,\\n\\nI wrote this [blog post](https://medium.com/geek-hacker/leetcode-longest-common-prefix-geek-hacker-3cc159207a2d?sk=38e92fe82b1c94abd62a0cfb8b8eb6ac) about solving **Longest Common Prefix** problem using Python.\\n\\nIt includes [analysis, algorithm, and Python3 code](https://medium.com/geek-hacker/leetcode-longest-common-prefix-geek-hacker-3cc159207a2d?sk=38e92fe82b1c94abd62a0cfb8b8eb6ac).\\n\\n**Analysis:**\\nA prefix is a collection of characters at the beginning of a string. For instance, \\u201Cmi\\u201D is a prefix of \\u201Cmint\\u201D and the longest common prefix between \\u201Cmint\\u201D, \\u201Cmini\\u201D, and \\u201Cmineral\\u201D is \\u201Cmin\\u201D.\\nIn order to find the longest common prefix, we sort the array of strings alphabetically. Then, we compare the characters in the first and last strings in the array. If the character in first is in last at the corresponding index, the character must be in the remaining words at the corresponding index as well, because the array of strings have already been sorted.\\n\\n[Click here to read the full blog post with the algorithm and code.](https://medium.com/geek-hacker/leetcode-longest-common-prefix-geek-hacker-3cc159207a2d?sk=38e92fe82b1c94abd62a0cfb8b8eb6ac)\\n\\nPlease follow, like, and comment. Thanks!",
+      "voteCount": 112
+    },
+    {
+      "name": "AlgoEngine",
+      "year": 2023,
+      "content": "Video visualizing the vertical scanning strategy:\n\nhttps://youtube.com/watch?v=SiNDN2M4dtQ",
+      "voteCount": 97
+    },
+    {
+      "name": "jerryy147",
+      "year": 2023,
+      "content": "my 100th problem :D",
+      "voteCount": 50
+    },
+    {
+      "name": "pasindumuth",
+      "year": 2020,
+      "content": "The test case `[]` should be removed.\\n\\nA common prefix among a set of strings `strs` is a string `prefix` such that for all strings `s` in `strs`, `prefix` is a prefix of `s`. A longest common prefix among a set of strings `strs` is a string `prefix` that is a common prefix of `strs` that has length greater than or equal to all other prefixes.\\n\\nFor the case that `strs` is nonempty, we observe that there is a finite set of common prefixes, and that the longest common prefix must be unique. Thus, it makes sense to talk about *the* longest common prefix in the case that `strs` is not be empty.\\n\\nBy this definition, we observe that `[]` has no answer because every string concievable is a prefix of the `strs = []`. Look at the definition again. Suppose `\"ababababa\"` wasn\\'t a comon prefix of `[]`. That means there exists an `s` in `strs` such that `\"ababababa\"` isn\\'t a prefix. Is that true? No. Thus, by contradition, `\"ababababa\"` is a common prefix of `[]`. Since there is no finite string that we can claim to be the longest possible prefix (since there is always a longer prefix), let alone prove that it\\'s unique, there is no answer to this question.\\n\\nAt the end of the problem statement, it says \"If there is no common prefix, return an empty string\". But notice that statement is irrelevent for the test case `[]` because `[]` has plenty of common prefixes (every string is a common prefix of `[]`).\\n\\nThus, `[]` should be removed because it has no answer, and to suggest `\"\"` is the right answer is incorrect.",
+      "voteCount": 43
+    }
+  ]
+}

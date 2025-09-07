@@ -1,0 +1,162 @@
+{
+  "category": "",
+  "id": "270",
+  "name": "Closest Binary Search Tree Value",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/closest-binary-search-tree-value/",
+  "slug": "closest-binary-search-tree-value",
+  "isPaidOnly": true,
+  "tags": [
+    "Binary Search",
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Complete Tree Nodes",
+      "difficulty": "Easy",
+      "slug": "count-complete-tree-nodes"
+    },
+    {
+      "title": "Closest Binary Search Tree Value II",
+      "difficulty": "Hard",
+      "slug": "closest-binary-search-tree-value-ii"
+    },
+    {
+      "title": "Search in a Binary Search Tree",
+      "difficulty": "Easy",
+      "slug": "search-in-a-binary-search-tree"
+    },
+    {
+      "title": "Closest Nodes Queries in a Binary Search Tree",
+      "difficulty": "Medium",
+      "slug": "closest-nodes-queries-in-a-binary-search-tree"
+    }
+  ],
+  "questionId": "270",
+  "questionFrontendId": "270",
+  "title": "Closest Binary Search Tree Value",
+  "titleSlug": "closest-binary-search-tree-value",
+  "content": "<p>Given the <code>root</code> of a binary search tree and a <code>target</code> value, return <em>the value in the BST that is closest to the</em> <code>target</code>. If there are multiple answers, print the smallest.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/12/closest1-1-tree.jpg\" style=\"width: 292px; height: 302px;\" />\n<pre>\n<strong>Input:</strong> root = [4,2,5,1,3], target = 3.714286\n<strong>Output:</strong> 4\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> root = [1], target = 4.428571\n<strong>Output:</strong> 1\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of nodes in the tree is in the range <code>[1, 10<sup>4</sup>]</code>.</li>\n\t<li><code>0 &lt;= Node.val &lt;= 10<sup>9</sup></code></li>\n\t<li><code>-10<sup>9</sup> &lt;= target &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+  "likes": 1883,
+  "dislikes": 163,
+  "stats": {
+    "totalAccepted": "433K",
+    "totalSubmission": "874.1K",
+    "totalAcceptedRaw": 433042,
+    "totalSubmissionRaw": 874111,
+    "acRate": "49.5%"
+  },
+  "topicTags": [
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    },
+    {
+      "name": "Tree",
+      "slug": "tree"
+    },
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Binary Search Tree",
+      "slug": "binary-search-tree"
+    },
+    {
+      "name": "Binary Tree",
+      "slug": "binary-tree"
+    }
+  ],
+  "metaData": {
+    "name": "closestValue",
+    "params": [
+      {
+        "name": "root",
+        "type": "TreeNode"
+      },
+      {
+        "name": "target",
+        "type": "double"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Meta",
+        "slug": "facebook",
+        "timesEncountered": 28
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "darksteam",
+      "year": 2023,
+      "content": "Is this problem an `Easy` level?",
+      "voteCount": 41
+    },
+    {
+      "name": "caspar123456",
+      "year": 2023,
+      "content": "this one comes with bug",
+      "voteCount": 36
+    },
+    {
+      "name": "Bhavyaa_Arora_08",
+      "year": 2023,
+      "content": "This looks like a good question, can be a easy medium",
+      "voteCount": 17
+    },
+    {
+      "name": "sjhunter86",
+      "year": 2024,
+      "content": "Disagree that this is an Easy level question, certainly a Medium, but for those saying the test cases are buggy, they are not. Your logic to check when to update the closest value is buggy.",
+      "voteCount": 12
+    },
+    {
+      "name": "gauravsahni25",
+      "year": 2024,
+      "content": "In case of equal values, choose the smaller one",
+      "voteCount": 9
+    },
+    {
+      "name": "ArchitGuleria",
+      "year": 2024,
+      "content": "Just solved a hard level question before this in a single try and failed the test cases two times here @",
+      "voteCount": 7
+    },
+    {
+      "name": "seredenko99",
+      "year": 2024,
+      "content": "buggy test case\ntest case 64 is buggy. I had to add manually \n```\nif (target === 4.5) {\n  return 4;\n}\n```",
+      "voteCount": 5
+    },
+    {
+      "name": "JustinAdams",
+      "year": 2023,
+      "content": "Please note:\\n\\nThe editorial solutions to this question fail test cases",
+      "voteCount": 4
+    },
+    {
+      "name": "tashriqueahmed",
+      "year": 2024,
+      "content": "        Followup1: What if we need k closest values to the target?\\n        Ans - Inorder + minHeap\\n        Time - O(N + klogk)\\n        Space - O(N)",
+      "voteCount": 3
+    },
+    {
+      "name": "ibramm",
+      "year": 2024,
+      "content": "Tip: The problem statement says \"If there are multiple answers, print the smallest\". So if two values are equally distant to target, say 3.5, then return the smaller of the two.\\n\\nFor example, [3, 4] and target is 3.5. While both 3 and 4 are have equal distances to target, you\\'re supposed to return min(3, 4) according to the problem statement. In this case, it would be 3.",
+      "voteCount": 3
+    }
+  ]
+}

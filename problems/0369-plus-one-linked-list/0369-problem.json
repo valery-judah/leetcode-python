@@ -1,0 +1,113 @@
+{
+  "category": "",
+  "id": "369",
+  "name": "Plus One Linked List",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/plus-one-linked-list/",
+  "slug": "plus-one-linked-list",
+  "isPaidOnly": true,
+  "tags": [
+    "Linked List",
+    "Math"
+  ],
+  "similar_questions": [
+    {
+      "title": "Plus One",
+      "difficulty": "Easy",
+      "slug": "plus-one"
+    },
+    {
+      "title": "Double a Number Represented as a Linked List",
+      "difficulty": "Medium",
+      "slug": "double-a-number-represented-as-a-linked-list"
+    }
+  ],
+  "questionId": "369",
+  "questionFrontendId": "369",
+  "title": "Plus One Linked List",
+  "titleSlug": "plus-one-linked-list",
+  "content": "<p>Given a non-negative integer represented as a linked list of digits, <em>plus one to the integer</em>.</p>\n\n<p>The digits are stored such that the most significant digit is at the <code>head</code> of the list.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> head = [1,2,3]\n<strong>Output:</strong> [1,2,4]\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> head = [0]\n<strong>Output:</strong> [1]\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of nodes in the linked list is in the range <code>[1, 100]</code>.</li>\n\t<li><code>0 &lt;= Node.val &lt;= 9</code></li>\n\t<li>The number represented by the linked list does not contain leading zeros except for the zero itself.&nbsp;</li>\n</ul>\n",
+  "likes": 960,
+  "dislikes": 48,
+  "stats": {
+    "totalAccepted": "85.7K",
+    "totalSubmission": "140.1K",
+    "totalAcceptedRaw": 85720,
+    "totalSubmissionRaw": 140088,
+    "acRate": "61.2%"
+  },
+  "topicTags": [
+    {
+      "name": "Linked List",
+      "slug": "linked-list"
+    },
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "metaData": {
+    "name": "plusOne",
+    "params": [
+      {
+        "name": "head",
+        "type": "ListNode",
+        "dealloc": false
+      }
+    ],
+    "return": {
+      "type": "ListNode",
+      "dealloc": true
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "jonsneep",
+      "year": 2024,
+      "content": "Because the problem description and examples are <b>atrocious</b>, here are to important things to keep in mind:\\nhead = [1,4,9]\\nexpected output: [1,5,0]\\nhead = [9,9]\\nexpected output: [1,0,0]\\n",
+      "voteCount": 8
+    },
+    {
+      "name": "seredenko99",
+      "year": 2024,
+      "content": "I solved it using recursion `O(n)`. No need to iterate over the list to extract numbers and then to add one and return a new list",
+      "voteCount": 5
+    },
+    {
+      "name": "matthewjinmp",
+      "year": 2025,
+      "content": "when are linked lists ever gonna be used to do something actually useful?? ",
+      "voteCount": 1
+    },
+    {
+      "name": "ivanakimovswe",
+      "year": 2024,
+      "content": "I think the most intuitive way is to reverse the list, add 1, and reverse again\\n `return reverse(reverse(add_one(head)))`",
+      "voteCount": 1
+    },
+    {
+      "name": "saada7553",
+      "year": 2024,
+      "content": "Should be marked easy",
+      "voteCount": 0
+    },
+    {
+      "name": "amuldowney3",
+      "year": 2024,
+      "content": "Imagine this like a bit-adding machine. You need to do some computation at a `ListNode`, and then output the `carry`, if you use recursion you have a call-stack waiting to process that `carry` backward at each `ListNode`, just don\\'t forget the final `carry` that can land outside the first `ListNode`!",
+      "voteCount": 0
+    },
+    {
+      "name": "etanila",
+      "year": 2024,
+      "content": "I like how you revisit a problem after several months and it seems so easy. Hard work pays off. Keep going!",
+      "voteCount": 0
+    },
+    {
+      "name": "Satansoft",
+      "year": 2025,
+      "content": "The most obvious is convert to number, add one to it and build new one LL, it\\'s easiest, shorter and faster way, but takes additional memory.",
+      "voteCount": -1
+    }
+  ]
+}

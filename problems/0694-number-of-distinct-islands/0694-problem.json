@@ -1,0 +1,143 @@
+{
+  "category": "",
+  "id": "694",
+  "name": "Number of Distinct Islands",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/number-of-distinct-islands/",
+  "slug": "number-of-distinct-islands",
+  "isPaidOnly": true,
+  "tags": [
+    "Hash Table",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union Find",
+    "Hash Function"
+  ],
+  "similar_questions": [
+    {
+      "title": "Number of Islands",
+      "difficulty": "Medium",
+      "slug": "number-of-islands"
+    },
+    {
+      "title": "Number of Distinct Islands II",
+      "difficulty": "Hard",
+      "slug": "number-of-distinct-islands-ii"
+    },
+    {
+      "title": "Count Sub Islands",
+      "difficulty": "Medium",
+      "slug": "count-sub-islands"
+    }
+  ],
+  "questionId": "694",
+  "questionFrontendId": "694",
+  "title": "Number of Distinct Islands",
+  "titleSlug": "number-of-distinct-islands",
+  "content": "<p>You are given an <code>m x n</code> binary matrix <code>grid</code>. An island is a group of <code>1</code>&#39;s (representing land) connected <strong>4-directionally</strong> (horizontal or vertical.) You may assume all four edges of the grid are surrounded by water.</p>\n\n<p>An island is considered to be the same as another if and only if one island can be translated (and not rotated or reflected) to equal the other.</p>\n\n<p>Return <em>the number of <b>distinct</b> islands</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/05/01/distinctisland1-1-grid.jpg\" style=\"width: 413px; height: 334px;\" />\n<pre>\n<strong>Input:</strong> grid = [[1,1,0,0,0],[1,1,0,0,0],[0,0,0,1,1],[0,0,0,1,1]]\n<strong>Output:</strong> 1\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/05/01/distinctisland1-2-grid.jpg\" style=\"width: 413px; height: 334px;\" />\n<pre>\n<strong>Input:</strong> grid = [[1,1,0,1,1],[1,0,0,0,0],[0,0,0,0,1],[1,1,0,1,1]]\n<strong>Output:</strong> 3\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == grid.length</code></li>\n\t<li><code>n == grid[i].length</code></li>\n\t<li><code>1 &lt;= m, n &lt;= 50</code></li>\n\t<li><code>grid[i][j]</code> is either <code>0</code> or <code>1</code>.</li>\n</ul>\n",
+  "likes": 2311,
+  "dislikes": 151,
+  "stats": {
+    "totalAccepted": "197.1K",
+    "totalSubmission": "315.7K",
+    "totalAcceptedRaw": 197065,
+    "totalSubmissionRaw": 315685,
+    "acRate": "62.4%"
+  },
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Breadth-First Search",
+      "slug": "breadth-first-search"
+    },
+    {
+      "name": "Union Find",
+      "slug": "union-find"
+    },
+    {
+      "name": "Hash Function",
+      "slug": "hash-function"
+    }
+  ],
+  "metaData": {
+    "name": "numDistinctIslands",
+    "params": [
+      {
+        "name": "grid",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "shadowninja540",
+      "year": 2024,
+      "content": "Can\\'t even understand the proble, without editorial.\\n",
+      "voteCount": 13
+    },
+    {
+      "name": "jamshedk",
+      "year": 2024,
+      "content": "Not gonna lie, this problem is a pain. ",
+      "voteCount": 9
+    },
+    {
+      "name": "winston_wolfe",
+      "year": 2024,
+      "content": "Translate here means that you can identify Tx, Ty where (X1, Y1) == (X2 + Tx, Y2 + Ty) for every cell in both islands on the same position",
+      "voteCount": 9
+    },
+    {
+      "name": "theRealBazinga",
+      "year": 2019,
+      "content": "Having trouble understanding how the expression **(r - r0) * 2 * grid[0].length + (c - c0)** can form a unique hash?",
+      "voteCount": 8
+    },
+    {
+      "name": "apjo2009",
+      "year": 2024,
+      "content": "what does \"translated\" means here? and why is it specified \"not rotated, or reflected\" ? what else does translation do?can someone please chime in?",
+      "voteCount": 7
+    },
+    {
+      "name": "albertoueda",
+      "year": 2025,
+      "content": "757 / 759 testcases passed\\n\\n`Not sure if I should be proud or start to cry`",
+      "voteCount": 6
+    },
+    {
+      "name": "itsiashu",
+      "year": 2024,
+      "content": "This is one of the problems that I hate to say, is designed to confuse the candidate.\n\nWhen you mention translate you're giving the \"hint\" that something has to be done in terms of translation ie. transforming island point co-ordinates and bringing each one to closer to Origin or some sort of comparison logic has to be developed.\n\nWhile that idea is messy to the least, gets candidate drawn to rabbit hole and tricks.\n\nWhen you check \"Editorial\" it's just basically, some tricks and nothing else.\n\nUseless question to be asked in Interviews but Sadly preferred by some of the idiots out there.\n",
+      "voteCount": 3
+    },
+    {
+      "name": "criskgl",
+      "year": 2019,
+      "content": "\\xBFIF WE TALK ABOUT ISLANDS, WHAT SHOULD THIS MAP RETURN?:\\n\\n[\\n[0,0,0,0,0],\\n[0,1,0,0,0],\\n[0,0,0,1,0],\\n[0,0,0,0,0]\\n]\\n\\n2 right?... well NO, IT RETURNS 1. WHY???? Because they are one can be converted to the other(in this case it is trivial, only one element).\\n\\nIt is not about checking for conversion only for those islands at the edges. Whenever we can find an island that looks exactly the same as another one we just count it as one.\\n\\nHope that helps. I wish someone had told me that before solving it for something far more complex that what it is asking for.",
+      "voteCount": 3
+    },
+    {
+      "name": "Heroics",
+      "year": 2025,
+      "content": "For anyone looking for a hint: Think of each shape in terms of traversal path. If we scan the grid from coordinate (0,0) to coordinate (n-1 ,n-1) going from top to bottom, left to right, then we are guaranteed to always enter each land mass from the top left corner. Now given we have entered two different land masses from the top left corner, can you determine if these two land masses are the same? How about if we use strings to mark traversal path? Up, Down, Left, Right? ",
+      "voteCount": 1
+    },
+    {
+      "name": "ivanakimovswe",
+      "year": 2024,
+      "content": "How I wrote M*N SC solution and have Memory Limit error ",
+      "voteCount": 1
+    }
+  ]
+}

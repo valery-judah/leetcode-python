@@ -1,0 +1,113 @@
+{
+  "category": "",
+  "id": "52",
+  "name": "N-Queens II",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/n-queens-ii/",
+  "slug": "n-queens-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Backtracking"
+  ],
+  "similar_questions": [
+    {
+      "title": "N-Queens",
+      "difficulty": "Hard",
+      "slug": "n-queens"
+    }
+  ],
+  "questionId": "52",
+  "questionFrontendId": "52",
+  "title": "N-Queens II",
+  "titleSlug": "n-queens-ii",
+  "content": "<p>The <strong>n-queens</strong> puzzle is the problem of placing <code>n</code> queens on an <code>n x n</code> chessboard such that no two queens attack each other.</p>\n\n<p>Given an integer <code>n</code>, return <em>the number of distinct solutions to the&nbsp;<strong>n-queens puzzle</strong></em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/11/13/queens.jpg\" style=\"width: 600px; height: 268px;\" />\n<pre>\n<strong>Input:</strong> n = 4\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> There are two distinct solutions to the 4-queens puzzle as shown.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 1\n<strong>Output:</strong> 1\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 9</code></li>\n</ul>\n",
+  "likes": 4150,
+  "dislikes": 279,
+  "stats": {
+    "totalAccepted": "523.9K",
+    "totalSubmission": "678K",
+    "totalAcceptedRaw": 523863,
+    "totalSubmissionRaw": 677956,
+    "acRate": "77.3%"
+  },
+  "topicTags": [
+    {
+      "name": "Backtracking",
+      "slug": "backtracking"
+    }
+  ],
+  "metaData": {
+    "name": "totalNQueens",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "ddubrava",
+      "year": 2023,
+      "content": "This problem should be N-Queens I, and N-Queens I should be N-Queens II",
+      "voteCount": 249
+    },
+    {
+      "name": "Goldenchest",
+      "year": 2019,
+      "content": "Obviously not contributing anything meaningful, but I thought this was amusing. Anyone wanna try to beat me for slowest accepted answer? :P\\n\\n![image](https://assets.leetcode.com/users/goldenchest/image_1547649143.png)\\n",
+      "voteCount": 179
+    },
+    {
+      "name": "ayushgnitw",
+      "year": 2023,
+      "content": "ctrl C - ctrl V gang ?",
+      "voteCount": 118
+    },
+    {
+      "name": "hongshaoyang",
+      "year": 2019,
+      "content": "How is this question different from #51? By backtracking and generating the solutions you generate the count as well.\\n",
+      "voteCount": 50
+    },
+    {
+      "name": "Anik114911",
+      "year": 2024,
+      "content": "The dopamine hit hard after getting an \"accepted\" on a hard problem.",
+      "voteCount": 39
+    },
+    {
+      "name": "deny_garbuz",
+      "year": 2024,
+      "content": "offtopic\\nMy girl is only queen <3",
+      "voteCount": 38
+    },
+    {
+      "name": "WAECZK",
+      "year": 2023,
+      "content": "so I need to learn chess before working on leetcode?",
+      "voteCount": 32
+    },
+    {
+      "name": "James_Jone",
+      "year": 2024,
+      "content": "GOAT SOLUTION:\\n`func totalNQueens(n int) int {\\n    return [9]int{1, 0, 0, 2, 10, 4, 40, 92, 352}[n-1]\\n} `",
+      "voteCount": 28
+    },
+    {
+      "name": "anwendeng",
+      "year": 2023,
+      "content": "A film demo how the backtracking works for 8 queens problem\\n[https://youtu.be/JTHHu49T-_Q](https://youtu.be/JTHHu49T-_Q)",
+      "voteCount": 15
+    },
+    {
+      "name": "YidaGoo",
+      "year": 2014,
+      "content": "Should we exclude rotations and reflections of the chessboard?\\n\\nFor instance, consider the 2 solutions of 4-queens in N-Queen. Actually you can get the 2nd solution by rotating the 1st solution 180-degree clockwise.\\n\\nLikewise, if we exclude rotations and reflections, 8-queens actually has 12 distinct solutions instead of 92.",
+      "voteCount": 14
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "category": "",
+  "id": "114",
+  "name": "Flatten Binary Tree to Linked List",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/flatten-binary-tree-to-linked-list/",
+  "slug": "flatten-binary-tree-to-linked-list",
+  "isPaidOnly": false,
+  "tags": [
+    "Linked List",
+    "Stack",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Flatten a Multilevel Doubly Linked List",
+      "difficulty": "Medium",
+      "slug": "flatten-a-multilevel-doubly-linked-list"
+    },
+    {
+      "title": "Correct a Binary Tree",
+      "difficulty": "Medium",
+      "slug": "correct-a-binary-tree"
+    }
+  ],
+  "questionId": "114",
+  "questionFrontendId": "114",
+  "title": "Flatten Binary Tree to Linked List",
+  "titleSlug": "flatten-binary-tree-to-linked-list",
+  "content": "<p>Given the <code>root</code> of a binary tree, flatten the tree into a &quot;linked list&quot;:</p>\n\n<ul>\n\t<li>The &quot;linked list&quot; should use the same <code>TreeNode</code> class where the <code>right</code> child pointer points to the next node in the list and the <code>left</code> child pointer is always <code>null</code>.</li>\n\t<li>The &quot;linked list&quot; should be in the same order as a <a href=\"https://en.wikipedia.org/wiki/Tree_traversal#Pre-order,_NLR\" target=\"_blank\"><strong>pre-order</strong><strong> traversal</strong></a> of the binary tree.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/01/14/flaten.jpg\" style=\"width: 500px; height: 226px;\" />\n<pre>\n<strong>Input:</strong> root = [1,2,5,3,4,null,6]\n<strong>Output:</strong> [1,null,2,null,3,null,4,null,5,null,6]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> root = []\n<strong>Output:</strong> []\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> root = [0]\n<strong>Output:</strong> [0]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of nodes in the tree is in the range <code>[0, 2000]</code>.</li>\n\t<li><code>-100 &lt;= Node.val &lt;= 100</code></li>\n</ul>\n\n<p>&nbsp;</p>\n<strong>Follow up:</strong> Can you flatten the tree in-place (with <code>O(1)</code> extra space)?",
+  "likes": 13254,
+  "dislikes": 588,
+  "stats": {
+    "totalAccepted": "1.3M",
+    "totalSubmission": "1.8M",
+    "totalAcceptedRaw": 1258498,
+    "totalSubmissionRaw": 1817854,
+    "acRate": "69.2%"
+  },
+  "topicTags": [
+    {
+      "name": "Linked List",
+      "slug": "linked-list"
+    },
+    {
+      "name": "Stack",
+      "slug": "stack"
+    },
+    {
+      "name": "Tree",
+      "slug": "tree"
+    },
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Binary Tree",
+      "slug": "binary-tree"
+    }
+  ],
+  "metaData": {
+    "name": "flatten",
+    "params": [
+      {
+        "name": "root",
+        "type": "TreeNode"
+      }
+    ],
+    "return": {
+      "type": "void"
+    },
+    "output": {
+      "paramindex": 0
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "poojith_kumar",
+      "year": 2023,
+      "content": "change difficulty to hard",
+      "voteCount": 247
+    },
+    {
+      "name": "parthdharmale008",
+      "year": 2023,
+      "content": "i might take a lot of time to find logic behind this in an actual interview if i haven\\'t done this earlier",
+      "voteCount": 65
+    },
+    {
+      "name": "sdsfa",
+      "year": 2023,
+      "content": "poop",
+      "voteCount": 56
+    },
+    {
+      "name": "user9271OA",
+      "year": 2023,
+      "content": "using Morris traversal can be with O(1) extra space. using recursive way is always with O(h) space.",
+      "voteCount": 27
+    },
+    {
+      "name": "psionl0",
+      "year": 2023,
+      "content": "If the tree is of the form\n```\n   *\n /  \\\n-    +\n \\    \\\n  -    +\n   \\    \\\n    -    +\n```\nThen the flattened tree is of the form\n```\n*\n \\\n  - \n   \\\n    -\n     \\\n      -\n       \\\n        +\n         \\\n          +\n           \\\n            +\n```\nThis suggests a simple recursive algorithm:\n<ul>\n<li>Flatten the left child of root</li>\n<li>Flatten the right child of root</li>\n<li>Set the right child of the last node in``root.left`` to ``root.right``</li>\n<li>Set ``root.right`` to ``root.left``</li>\n<li>Set ``root.left`` to NULL</li>\n</ul>\n",
+      "voteCount": 22
+    },
+    {
+      "name": "dianzipaopao",
+      "year": 2020,
+      "content": "public void flatten(TreeNode root) {\\n        root = null;\\n    }\\n\\t\\n\\tOutput :    [1,2,5,3,4,null,6]\\n\\t\\n\\tI am confused that why it does not return null?",
+      "voteCount": 17
+    },
+    {
+      "name": "dkarampi",
+      "year": 2014,
+      "content": "I'm writing my solution in Java using recursion and I don't understand the result appearing after a wrong submission.\\nThe given method is a void one. Do I have to print the values ? Comma separated ?\\n\\nPlease explain me the output format.",
+      "voteCount": 13
+    },
+    {
+      "name": "pattharock",
+      "year": 2023,
+      "content": "I have simply stored the ROOT -> LEFT -> RIGHT traversal in an array and then once we have the desired nodes in an array - we can rewire the connections in one more pass of the array to achieve desired result. What is wrong with this method compared to the conventional method. Both are using O(N) space time",
+      "voteCount": 11
+    },
+    {
+      "name": "havocPsyche",
+      "year": 2025,
+      "content": "ALL TESTCASES TILL TODAY FROM CMMT SEC\\n[1,2,5,3,4,null,6]\\n[0]\\n[]\\n[1,2,6,3,5,null,7,null,null,4] \\n[1,null,2,3]\\n\\nNO NEED TO GO FURTHER\\n",
+      "voteCount": 9
+    },
+    {
+      "name": "forainychen",
+      "year": 2013,
+      "content": "For preorder traversal of the tree, you cannot avoid using a stack, either iterative or recursive. So if I use a stack in the problem, is it still considered as in place algorithm?",
+      "voteCount": 5
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "category": "",
+  "id": "347",
+  "name": "Top K Frequent Elements",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/top-k-frequent-elements/",
+  "slug": "top-k-frequent-elements",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Divide and Conquer",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Bucket Sort",
+    "Counting",
+    "Quickselect"
+  ],
+  "similar_questions": [
+    {
+      "title": "Word Frequency",
+      "difficulty": "Medium",
+      "slug": "word-frequency"
+    },
+    {
+      "title": "Kth Largest Element in an Array",
+      "difficulty": "Medium",
+      "slug": "kth-largest-element-in-an-array"
+    },
+    {
+      "title": "Sort Characters By Frequency",
+      "difficulty": "Medium",
+      "slug": "sort-characters-by-frequency"
+    },
+    {
+      "title": "Split Array into Consecutive Subsequences",
+      "difficulty": "Medium",
+      "slug": "split-array-into-consecutive-subsequences"
+    },
+    {
+      "title": "Top K Frequent Words",
+      "difficulty": "Medium",
+      "slug": "top-k-frequent-words"
+    },
+    {
+      "title": "K Closest Points to Origin",
+      "difficulty": "Medium",
+      "slug": "k-closest-points-to-origin"
+    },
+    {
+      "title": "Sort Features by Popularity",
+      "difficulty": "Medium",
+      "slug": "sort-features-by-popularity"
+    },
+    {
+      "title": "Sender With Largest Word Count",
+      "difficulty": "Medium",
+      "slug": "sender-with-largest-word-count"
+    },
+    {
+      "title": "Most Frequent Even Element",
+      "difficulty": "Easy",
+      "slug": "most-frequent-even-element"
+    },
+    {
+      "title": "Linked List Frequency",
+      "difficulty": "Easy",
+      "slug": "linked-list-frequency"
+    }
+  ],
+  "questionId": "347",
+  "questionFrontendId": "347",
+  "title": "Top K Frequent Elements",
+  "titleSlug": "top-k-frequent-elements",
+  "content": "<p>Given an integer array <code>nums</code> and an integer <code>k</code>, return <em>the</em> <code>k</code> <em>most frequent elements</em>. You may return the answer in <strong>any order</strong>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,1,1,2,2,3], k = 2</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[1,2]</span></p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1], k = 1</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[1]</span></p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,2,1,2,1,2,3,1,3,2], k = 2</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[1,2]</span></p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>-10<sup>4</sup> &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>\n\t<li><code>k</code> is in the range <code>[1, the number of unique elements in the array]</code>.</li>\n\t<li>It is <strong>guaranteed</strong> that the answer is <strong>unique</strong>.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Follow up:</strong> Your algorithm&#39;s time complexity must be better than <code>O(n log n)</code>, where n is the array&#39;s size.</p>\n",
+  "likes": 18691,
+  "dislikes": 826,
+  "stats": {
+    "totalAccepted": "3.1M",
+    "totalSubmission": "4.7M",
+    "totalAcceptedRaw": 3055590,
+    "totalSubmissionRaw": 4725401,
+    "acRate": "64.7%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Divide and Conquer",
+      "slug": "divide-and-conquer"
+    },
+    {
+      "name": "Sorting",
+      "slug": "sorting"
+    },
+    {
+      "name": "Heap (Priority Queue)",
+      "slug": "heap-priority-queue"
+    },
+    {
+      "name": "Bucket Sort",
+      "slug": "bucket-sort"
+    },
+    {
+      "name": "Counting",
+      "slug": "counting"
+    },
+    {
+      "name": "Quickselect",
+      "slug": "quickselect"
+    }
+  ],
+  "metaData": {
+    "name": "topKFrequent",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      },
+      {
+        "name": "k",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer[]"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Meta",
+        "slug": "facebook",
+        "timesEncountered": 97
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 39
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Google",
+        "slug": "google",
+        "timesEncountered": 22
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Apple",
+        "slug": "apple",
+        "timesEncountered": 13
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "joseph_estrada",
+      "year": 2020,
+      "content": "I\\'ve noticed that there\\'s very little discussion in the Discuss tab, it all seems to be people posting their version of the solution. \\n\\nIs that the point of the discuss tab?",
+      "voteCount": 386
+    },
+    {
+      "name": "Ali2023",
+      "year": 2023,
+      "content": "\\nThe description is disgusting",
+      "voteCount": 321
+    },
+    {
+      "name": "ShellyBot",
+      "year": 2023,
+      "content": "I misunderstood the question for a long time too. So the idea of the question is to find out the K most frequent items and not \"Which element is K times repeated\". So when the test case is [1,2] and k being 2, you need to return 2 most frequent elements which is apparently 1,2 and the occurrences of each element doesn't matter as long as the order of elements to be printed is important . Lets take two cases here \nCase 1. Input : [1,1,2,3] and k = 2 , so 1 has occurred 2 times , 2 has occurred 1 time and 3 has occurred 1 time. So the answer would be [1,2]. \n\nCase 2: Input : [1,1,2,2,3] and K = 2, so 1 has occurred 2 times , 2 has occurred 2 times and 3 has occurred 1 time. So the answer is [1,2] and if the order of printing is important then first 1 and then 2 should be printed. (bcoz 1<2). \n\n(Ultimately choose the first K elements when sorted in descending order of their occurrences.)\n\nLook at this question : https://leetcode.com/problems/top-k-frequent-words/\n\nThis is of the similar type and would help getting a better idea of both the questions . \n\nIdea to approach for both the questions:\n1. Create a map, with the value and occurrences as key, value pair \n2. Somehow sort according to the descending order of their occurrences and also include these cases, if you wish to \n       Case1. if two elements have same occurrences print the elements lexicographically(if strings) or ascending order of the numbers(if integers)\n       Case 2: if the occurrences are distinct, print in descending order of the occurrences of the elements.\n3. Return the first K elements.",
+      "voteCount": 273
+    },
+    {
+      "name": "vetor",
+      "year": 2023,
+      "content": "just a gentle reminder that the input is not sorted order as it seems\\n\\ntest case 8/21\\nnums =\\n[3,0,1,0]\\nK =1;\\n",
+      "voteCount": 213
+    },
+    {
+      "name": "AliesTaha",
+      "year": 2024,
+      "content": "One day, I\\'m going to be the greatest coder of all time",
+      "voteCount": 146
+    },
+    {
+      "name": "simonzhu91",
+      "year": 2018,
+      "content": "This problem seems to be missing a small clarification:\\n\\n *If there are multiple K most frequently appearing elements, you can pick any K of them.*\\n\\nI just tried this with: `[1,1,2,2,3,3], K = 2`. The solution running on the server reports `[1,2]`, but I returned `[1,3]`. It seems to pass OJ, which means judge accepts any subset. \\n\\nNonetheless, this clarification should be mentioned in the problem statement.",
+      "voteCount": 96
+    },
+    {
+      "name": "Aditya11cr7",
+      "year": 2025,
+      "content": "test cases are wrong, kindly fix them",
+      "voteCount": 93
+    },
+    {
+      "name": "yisang1977",
+      "year": 2019,
+      "content": "I encountered a \"wrong answer\" msg. the case was [1,2] 2, what doese it mean?\\n",
+      "voteCount": 83
+    },
+    {
+      "name": "1029384756hhh",
+      "year": 2025,
+      "content": "Is there some issue with the current test cases\\n\\nInput\\nnums =\\n[1,2,1,2,1,2,3,1,3,2]\\nk =\\n2\\nOutput\\n[1,2]\\nExpected\\n[1,2]\\n\\nBut when submitting same test case has [-1] as expected output",
+      "voteCount": 79
+    },
+    {
+      "name": "alsogc",
+      "year": 2025,
+      "content": "Issue in test case :-\\nInput: nums = [1,2,1,2,1,2,3,1,3,2], k = 2\\nOutput: [-1] \\n\\nThe execution runs well when we do \"run as a test case\" but when we submit, it incorrectly expects [-1] as the output. Kindly rectify. Thanks [@LeetCode](/u/LeetCode)",
+      "voteCount": 51
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "category": "",
+  "id": "340",
+  "name": "Longest Substring with At Most K Distinct Characters",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/",
+  "slug": "longest-substring-with-at-most-k-distinct-characters",
+  "isPaidOnly": true,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Sliding Window"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longest Substring Without Repeating Characters",
+      "difficulty": "Medium",
+      "slug": "longest-substring-without-repeating-characters"
+    },
+    {
+      "title": "Longest Substring with At Most Two Distinct Characters",
+      "difficulty": "Medium",
+      "slug": "longest-substring-with-at-most-two-distinct-characters"
+    },
+    {
+      "title": "Longest Repeating Character Replacement",
+      "difficulty": "Medium",
+      "slug": "longest-repeating-character-replacement"
+    },
+    {
+      "title": "Subarrays with K Different Integers",
+      "difficulty": "Hard",
+      "slug": "subarrays-with-k-different-integers"
+    },
+    {
+      "title": "Max Consecutive Ones III",
+      "difficulty": "Medium",
+      "slug": "max-consecutive-ones-iii"
+    },
+    {
+      "title": "Maximize the Confusion of an Exam",
+      "difficulty": "Medium",
+      "slug": "maximize-the-confusion-of-an-exam"
+    }
+  ],
+  "questionId": "340",
+  "questionFrontendId": "340",
+  "title": "Longest Substring with At Most K Distinct Characters",
+  "titleSlug": "longest-substring-with-at-most-k-distinct-characters",
+  "content": "<p>Given a string <code>s</code> and an integer <code>k</code>, return <em>the length of the longest </em><span data-keyword=\"substring-nonempty\"><em>substring</em></span><em> of</em> <code>s</code> <em>that contains at most</em> <code>k</code> <em><strong>distinct</strong> characters</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;eceba&quot;, k = 2\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> The substring is &quot;ece&quot; with length 3.</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;aa&quot;, k = 1\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> The substring is &quot;aa&quot; with length 2.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 5 * 10<sup>4</sup></code></li>\n\t<li><code>0 &lt;= k &lt;= 50</code></li>\n</ul>\n",
+  "likes": 2886,
+  "dislikes": 81,
+  "stats": {
+    "totalAccepted": "385.3K",
+    "totalSubmission": "775.9K",
+    "totalAcceptedRaw": 385274,
+    "totalSubmissionRaw": 775886,
+    "acRate": "49.7%"
+  },
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Sliding Window",
+      "slug": "sliding-window"
+    }
+  ],
+  "metaData": {
+    "name": "lengthOfLongestSubstringKDistinct",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      },
+      {
+        "name": "k",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "bernikovich",
+      "year": 2024,
+      "content": "Allowed characters should be mentioned in the Constraints sections.",
+      "voteCount": 20
+    },
+    {
+      "name": "RomanKornev",
+      "year": 2024,
+      "content": "This feels very similar to [2958. Length of Longest Subarray With at Most K Frequency](https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency). It\\'s also a generalization of [159. Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters).",
+      "voteCount": 7
+    },
+    {
+      "name": "JustinAdams",
+      "year": 2023,
+      "content": "Something to remember is a hashmap itself has a size, and can serve in place of just using a list when you want to track an extra piece of information.",
+      "voteCount": 7
+    },
+    {
+      "name": "kislayabhi",
+      "year": 2016,
+      "content": "I developed some intuition by solving a few problems of Dynamic Programming ... that the Longest Common subsequence (and some similar problems) can be handled nicely using Dynamic Programming. (Also LCS is discussed in great detail in Intro to Algo book [Cormen et. al])\\n\\nGiven you face this in an interview, how to *think* that it is not DP and that another linear time algorithm is possible. Right now I was able to do it since I couldn't come up with a proper recurrence (but to convince myself there is no DP recurrence possible, I had to spend a lot of time!!)\\n\\nWhat is your take on this?",
+      "voteCount": 3
+    },
+    {
+      "name": "PhilipSanM",
+      "year": 2024,
+      "content": "Leetcode pushing with Sliding Window this week ;0!",
+      "voteCount": 2
+    },
+    {
+      "name": "njbrown180",
+      "year": 2024,
+      "content": "Watch out, folks. Based on this test case, it would appear all printable ASCII characters can be in the string. \\uD83D\\uDE43\\n\\n`\"a@b$5!a8alskj234jasdf*()@$&%&#FJAvjjdaurNNMa8ASDF-0321jf?>{}L:fh\"`",
+      "voteCount": 2
+    },
+    {
+      "name": "matthewjinmp",
+      "year": 2025,
+      "content": "sliding window devours these types of problems ",
+      "voteCount": 1
+    },
+    {
+      "name": "Musti_Don",
+      "year": 2024,
+      "content": "EASY as hell \\n",
+      "voteCount": 1
+    },
+    {
+      "name": "jbiesnecker",
+      "year": 2022,
+      "content": "Whenever I\\'m asked for the longest subsequence of something, my first thought it always some sort of sliding window. In this case it\\'s pretty easy and linear, because each letter is either 1) already in the window; 2) new but not causing the unique characters to overflow; or 3) new but causing the unique characters to overflow. Based on which case the new letter causes we can figure out how to move the left side of the window.",
+      "voteCount": 1
+    },
+    {
+      "name": "jooseong",
+      "year": 2019,
+      "content": "Here\\'s my code:\\nhttps://leetcode.com/playground/2cePRrEv\\n\\nFor testcase \"eceba\" / 2, the expected answer is 3:\\nBut if I submit this, the output is 2.\\n\\nStrange thing is that, in my eclipse and even in leetcode\\'s \"playground debug\", the code outputs 3, a right answer.\\nWhy this happens?",
+      "voteCount": 1
+    }
+  ]
+}

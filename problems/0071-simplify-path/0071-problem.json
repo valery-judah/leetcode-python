@@ -1,0 +1,122 @@
+{
+  "category": "",
+  "id": "71",
+  "name": "Simplify Path",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/simplify-path/",
+  "slug": "simplify-path",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Stack"
+  ],
+  "similar_questions": [],
+  "questionId": "71",
+  "questionFrontendId": "71",
+  "title": "Simplify Path",
+  "titleSlug": "simplify-path",
+  "content": "<p>You are given an <em>absolute</em> path for a Unix-style file system, which always begins with a slash <code>&#39;/&#39;</code>. Your task is to transform this absolute path into its <strong>simplified canonical path</strong>.</p>\n\n<p>The <em>rules</em> of a Unix-style file system are as follows:</p>\n\n<ul>\n\t<li>A single period <code>&#39;.&#39;</code> represents the current directory.</li>\n\t<li>A double period <code>&#39;..&#39;</code> represents the previous/parent directory.</li>\n\t<li>Multiple consecutive slashes such as <code>&#39;//&#39;</code> and <code>&#39;///&#39;</code> are treated as a single slash <code>&#39;/&#39;</code>.</li>\n\t<li>Any sequence of periods that does <strong>not match</strong> the rules above should be treated as a <strong>valid directory or</strong> <strong>file </strong><strong>name</strong>. For example, <code>&#39;...&#39; </code>and <code>&#39;....&#39;</code> are valid directory or file names.</li>\n</ul>\n\n<p>The simplified canonical path should follow these <em>rules</em>:</p>\n\n<ul>\n\t<li>The path must start with a single slash <code>&#39;/&#39;</code>.</li>\n\t<li>Directories within the path must be separated by exactly one slash <code>&#39;/&#39;</code>.</li>\n\t<li>The path must not end with a slash <code>&#39;/&#39;</code>, unless it is the root directory.</li>\n\t<li>The path must not have any single or double periods (<code>&#39;.&#39;</code> and <code>&#39;..&#39;</code>) used to denote current or parent directories.</li>\n</ul>\n\n<p>Return the <strong>simplified canonical path</strong>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">path = &quot;/home/&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">&quot;/home&quot;</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The trailing slash should be removed.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">path = &quot;/home//foo/&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">&quot;/home/foo&quot;</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Multiple consecutive slashes are replaced by a single one.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">path = &quot;/home/user/Documents/../Pictures&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">&quot;/home/user/Pictures&quot;</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>A double period <code>&quot;..&quot;</code> refers to the directory up a level (the parent directory).</p>\n</div>\n\n<p><strong class=\"example\">Example 4:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">path = &quot;/../&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">&quot;/&quot;</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>Going one level up from the root directory is not possible.</p>\n</div>\n\n<p><strong class=\"example\">Example 5:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">path = &quot;/.../a/../b/c/../d/./&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">&quot;/.../b/d&quot;</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p><code>&quot;...&quot;</code> is a valid name for a directory in this problem.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= path.length &lt;= 3000</code></li>\n\t<li><code>path</code> consists of English letters, digits, period <code>&#39;.&#39;</code>, slash <code>&#39;/&#39;</code> or <code>&#39;_&#39;</code>.</li>\n\t<li><code>path</code> is a valid absolute Unix path.</li>\n</ul>\n",
+  "likes": 6269,
+  "dislikes": 1380,
+  "stats": {
+    "totalAccepted": "1.2M",
+    "totalSubmission": "2.4M",
+    "totalAcceptedRaw": 1157772,
+    "totalSubmissionRaw": 2379758,
+    "acRate": "48.7%"
+  },
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Stack",
+      "slug": "stack"
+    }
+  ],
+  "metaData": {
+    "name": "simplifyPath",
+    "params": [
+      {
+        "name": "path",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "string"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": true,
+        "name": "Meta",
+        "slug": "facebook",
+        "timesEncountered": 85
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "wangchenmeng09",
+      "year": 2023,
+      "content": "I would have liked more examples for this question.",
+      "voteCount": 199
+    },
+    {
+      "name": "shivamkanodia001",
+      "year": 2018,
+      "content": "Simplify the directory path (Unix like)\\nGiven an absolute path for a file (Unix-style), simplify it. Note that absolute path always begin with \\u2018/\\u2019 ( root directory ), a dot in path represent current directory and double dot represents parent directory.\\n\\nExamples:\\n\\n\"/a/./\"   --> means stay at the current directory \\'a\\'\\n\"/a/b/..\" --> means jump to the parent directory\\n              from \\'b\\' to \\'a\\'\\n\"////\"    --> consecutive multiple \\'/\\' are a  valid  \\n              path, they are equivalent to single \"/\".\\n\\nInput : /home/\\nOutput : /home\\n\\nInput : /a/./b/../../c/\\nOutput : /c\\n\\nInput : /a/..\\nOutput : /\\n\\nInput : /a/../\\nOuput : /\\n\\nInput : /../../../../../a\\nOuput : /a\\n\\nInput : /a/./b/./c/./d/\\nOuput : /a/b/c/d\\n\\nInput : /a/../.././../../.\\nOuput : /\\n\\nInput : /a//b//c//////d\\nOuput : /a/b/c/d",
+      "voteCount": 165
+    },
+    {
+      "name": "hosua",
+      "year": 2023,
+      "content": "This problem had a lot of annoying edge cases lol",
+      "voteCount": 105
+    },
+    {
+      "name": "rrdlpl",
+      "year": 2023,
+      "content": "Split by \\'/\\'. Use a stack and ignore empty spaces and \\'.\\'; pop on double dot \\'..\\'",
+      "voteCount": 40
+    },
+    {
+      "name": "xuzhenqi1993",
+      "year": 2014,
+      "content": "My code failed at the test case \"/abc/...\".\\n\\nThe expected output is \"/abc/...\".\\n\\nBut I think it may be \"/...\".\\n\\nCould anybody who have passed this one tell me why it is \"/abc/...\"?",
+      "voteCount": 32
+    },
+    {
+      "name": "piyushkr6161",
+      "year": 2023,
+      "content": "                               APPROACH/PSUEDO CODE\nIf you don't want to see solution then see this approach\n1. Create a Stack of String with following condition.\n2. Iterate the loop till you doesn't reaches the end of string.\n3. If you encounter a \"/\" then ignore it.\n4. Create a temp String & Iterate the while loop till you doesn't find \"/\" and append it to temp.\n5. Now check if temp == \".\" , then ignore it.\n6. If temp == \"..\" then pop the element from the stack if it exists.\n7. If no of the above 2 matches push temp to stack as you find a valid path.\n8. Check out temp string on basis of above conditions till you doesn't find \"/\".\n9. Now add all stack elements to result as res = \"/\" + st.top() + res\n10. If res.size() is 0 then return \"/\" if no directory or file is present.\n     At last return res.\n\n `**See This Testcase for better understanding **`\n\n `input : \"/home/../foo/\"  `\n`output : \"/foo\"` \n\n`input : \"/home/test/../foo/\" `\n `output : \"/home/foo\"`\n\n`input : \"/home/...//foo/\" `\n ` output : \"/home/.../foo\"`\n\nSolution of above approach (Beginner-friendly-code)\nhttps://leetcode.com/problems/simplify-path/solutions/3406777/c-beginner-friendly-explanation-multiple-testcase-using-stack/\n",
+      "voteCount": 26
+    },
+    {
+      "name": "priyanshu1078",
+      "year": 2023,
+      "content": "try these test cases\\n\"/../..ga/b/.f..d/..../e.baaeeh./.a\"\\n\"/hello../world\"\\n\"/..hidden\"",
+      "voteCount": 18
+    },
+    {
+      "name": "Jithesh06-coder",
+      "year": 2025,
+      "content": "This is my 100th medium problem",
+      "voteCount": 16
+    },
+    {
+      "name": "living_delulu",
+      "year": 2024,
+      "content": "Is the explanation is poor or I am dumb.",
+      "voteCount": 14
+    },
+    {
+      "name": "ronaldo123",
+      "year": 2014,
+      "content": "Input:\\t\"/...\"\\nOutput:\\t\"/\"\\nExpected:\\t\"/...\"\\n\\n\\nThe \"/...\" is a legal path command ?  I test it on my mac, but it returns\\n\\n-bash: cd: /...: No such file or directory",
+      "voteCount": 10
+    }
+  ]
+}

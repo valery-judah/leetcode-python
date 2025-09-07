@@ -1,0 +1,139 @@
+{
+  "category": "",
+  "id": "90",
+  "name": "Subsets II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/subsets-ii/",
+  "slug": "subsets-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Backtracking",
+    "Bit Manipulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Subsets",
+      "difficulty": "Medium",
+      "slug": "subsets"
+    },
+    {
+      "title": "Find Array Given Subset Sums",
+      "difficulty": "Hard",
+      "slug": "find-array-given-subset-sums"
+    }
+  ],
+  "questionId": "90",
+  "questionFrontendId": "90",
+  "title": "Subsets II",
+  "titleSlug": "subsets-ii",
+  "content": "<p>Given an integer array <code>nums</code> that may contain duplicates, return <em>all possible</em> <span data-keyword=\"subset\"><em>subsets</em></span><em> (the power set)</em>.</p>\n\n<p>The solution set <strong>must not</strong> contain duplicate subsets. Return the solution in <strong>any order</strong>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> nums = [1,2,2]\n<strong>Output:</strong> [[],[1],[1,2],[1,2,2],[2],[2,2]]\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> nums = [0]\n<strong>Output:</strong> [[],[0]]\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10</code></li>\n\t<li><code>-10 &lt;= nums[i] &lt;= 10</code></li>\n</ul>\n",
+  "likes": 10564,
+  "dislikes": 386,
+  "stats": {
+    "totalAccepted": "1.3M",
+    "totalSubmission": "2.2M",
+    "totalAcceptedRaw": 1303537,
+    "totalSubmissionRaw": 2170792,
+    "acRate": "60.0%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Backtracking",
+      "slug": "backtracking"
+    },
+    {
+      "name": "Bit Manipulation",
+      "slug": "bit-manipulation"
+    }
+  ],
+  "metaData": {
+    "name": "subsetsWithDup",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "list<list<integer>>",
+      "dealloc": true
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Google",
+        "slug": "google",
+        "timesEncountered": 17
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "pengel1",
+      "year": 2019,
+      "content": "Where does the output should be in sorted order?  This may need further explination or refinement.",
+      "voteCount": 148
+    },
+    {
+      "name": "Oleas",
+      "year": 2023,
+      "content": "This problem is NOT asking for the power set of a set. It is asking for all, sorted, unique combinations of the terms in the input. This caused me a great deal of grief. This problem\\'s description should be changed to remove the power set  wording.",
+      "voteCount": 141
+    },
+    {
+      "name": "yadavsahil28",
+      "year": 2023,
+      "content": "There, the catch is to sort the nums array first.\\nThank you.",
+      "voteCount": 115
+    },
+    {
+      "name": "TerpsX",
+      "year": 2016,
+      "content": "Input:\\n[4,4,4,1,4]\\nOutput:\\n[[],[4],[1],[1,4],[4,4],[4,1],[4,1,4],[4,4,4],[4,4,1],[4,4,1,4],[4,4,4,4],[4,4,4,1],[4,4,4,1,4]]\\nExpected:\\n[[],[1],[1,4],[1,4,4],[1,4,4,4],[1,4,4,4,4],[4],[4,4],[4,4,4],[4,4,4,4]]\\n\\nHow come [1,4,4,4] a subset for [4,4,4,1,4]??",
+      "voteCount": 92
+    },
+    {
+      "name": "charonme",
+      "year": 2023,
+      "content": "This is clearly wrong. When the array contains duplicates, the duplicate elements are either the same element or they are different elements. If they are the same, then [1, 2, 2] and [1, 2] are the same subset of an array given as [1, 2, 2]. But the problem solution expects both [1, 2] and [1, 2, 2], so clearly the first 2 and the second 2 must be different elements, in which case subsets [1, 2] (with the first 2) and [1, 2] (with the second 2) should be accepted too, but they are not.",
+      "voteCount": 36
+    },
+    {
+      "name": "jaggz01",
+      "year": 2023,
+      "content": "Pre-requisite solve Permutation-I, Permutation-II, and Subset-I and this problem will be easy walk for you.",
+      "voteCount": 26
+    },
+    {
+      "name": "rahul_jain89",
+      "year": 2023,
+      "content": "I think description is not clear.\\n\\nI guess they want \"each subset should be sorted and unique\".\\n\\nThat\\'s why first we need to sort to input array, so that it will generate sorted subsets,\\nAnd then we can use a set to store the subsets, it will ensure that only unique subsets will be stored to result.",
+      "voteCount": 25
+    },
+    {
+      "name": "coldz",
+      "year": 2013,
+      "content": "Find a way to adapt subset I solution to subsets II problem.",
+      "voteCount": 18
+    },
+    {
+      "name": "AshleyXM",
+      "year": 2023,
+      "content": "The description of this problem is sooooooo ambiguous. The number of examples is too small to clarify the problem.",
+      "voteCount": 14
+    },
+    {
+      "name": "OmarNaru",
+      "year": 2023,
+      "content": "Idk why we need sorting here :\\nif the given input array is : [3,2,1]\\nthe output if we didn\\'t use sort will be :\\n1\\n2\\n2 1\\n3\\n3 1\\n3 2\\n3 2 1\\n_____________________\\nbut if we used sort it will be :\\n1\\n1 2\\n1 2 3\\n1 3\\n2\\n2 3\\n3\\n\\nit\\'s literally different output, how this even works !?\\nI guess I understood something wrong in the description\\ncan anyone explain ?",
+      "voteCount": 10
+    }
+  ]
+}

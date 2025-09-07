@@ -1,0 +1,122 @@
+{
+  "category": "",
+  "id": "81",
+  "name": "Search in Rotated Sorted Array II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/search-in-rotated-sorted-array-ii/",
+  "slug": "search-in-rotated-sorted-array-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Search in Rotated Sorted Array",
+      "difficulty": "Medium",
+      "slug": "search-in-rotated-sorted-array"
+    }
+  ],
+  "questionId": "81",
+  "questionFrontendId": "81",
+  "title": "Search in Rotated Sorted Array II",
+  "titleSlug": "search-in-rotated-sorted-array-ii",
+  "content": "<p>There is an integer array <code>nums</code> sorted in non-decreasing order (not necessarily with <strong>distinct</strong> values).</p>\n\n<p>Before being passed to your function, <code>nums</code> is <strong>rotated</strong> at an unknown pivot index <code>k</code> (<code>0 &lt;= k &lt; nums.length</code>) such that the resulting array is <code>[nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]]</code> (<strong>0-indexed</strong>). For example, <code>[0,1,2,4,4,4,5,6,6,7]</code> might be rotated at pivot index <code>5</code> and become <code>[4,5,6,6,7,0,1,2,4,4]</code>.</p>\n\n<p>Given the array <code>nums</code> <strong>after</strong> the rotation and an integer <code>target</code>, return <code>true</code><em> if </em><code>target</code><em> is in </em><code>nums</code><em>, or </em><code>false</code><em> if it is not in </em><code>nums</code><em>.</em></p>\n\n<p>You must decrease the overall operation steps as much as possible.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> nums = [2,5,6,0,0,1,2], target = 0\n<strong>Output:</strong> true\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> nums = [2,5,6,0,0,1,2], target = 3\n<strong>Output:</strong> false\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 5000</code></li>\n\t<li><code>-10<sup>4</sup> &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>\n\t<li><code>nums</code> is guaranteed to be rotated at some pivot.</li>\n\t<li><code>-10<sup>4</sup> &lt;= target &lt;= 10<sup>4</sup></code></li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Follow up:</strong> This problem is similar to&nbsp;<a href=\"/problems/search-in-rotated-sorted-array/description/\" target=\"_blank\">Search in Rotated Sorted Array</a>, but&nbsp;<code>nums</code> may contain <strong>duplicates</strong>. Would this affect the runtime complexity? How and why?</p>\n",
+  "likes": 9259,
+  "dislikes": 1096,
+  "stats": {
+    "totalAccepted": "1.1M",
+    "totalSubmission": "2.7M",
+    "totalAcceptedRaw": 1060034,
+    "totalSubmissionRaw": 2707045,
+    "acRate": "39.2%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    }
+  ],
+  "metaData": {
+    "name": "search",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      },
+      {
+        "name": "target",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "anwendeng",
+      "year": 2023,
+      "content": "The worst case is linear time which can not be improved.\neg. nums =\n[1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1] \nIf I'm wrong, please correct me! There are many annoying testcases. In fact the linear search is not slow for those annoying testcases.\n",
+      "voteCount": 91
+    },
+    {
+      "name": "valree",
+      "year": 2021,
+      "content": "I\\'ve just spent half an hour debugging my code only to realize that the stupid test cases are actually looking for a true-false answer not an index where **the question CLEARLY states that we need to return an index...** I kind of suspected this since the outputs were true/false for the test cases but I was sure that someone would have fixed it by now given that this question is at least **6 YEARS OLD!!**\\n\\nI\\'ve been thinking about getting a premium but why would I do that if these people don\\'t care enough to fix a sentence on the question. There are a lot of questions out there where question makes no sense at all or completely incomprehensible with the language they use until you go to the discussion where people literally sit down and try to decipher what they actually mean on multiple topics.",
+      "voteCount": 56
+    },
+    {
+      "name": "aDish_21",
+      "year": 2023,
+      "content": "```\nif(nums[mid] == nums[ll] && nums[mid] == nums[ul])\n{\n       ll++;\n       ul--;\n}\n```\nJust remember this edge case if there r duplicates in the array. This edge case will make your work easier\ud83d\ude42 BUT yaa remember that in worst case TC will go O(n) & not O(log n)",
+      "voteCount": 55
+    },
+    {
+      "name": "m-Just",
+      "year": 2020,
+      "content": "Given a size `n` and two integers `a != b`, we can always construct `n` different arrays of size `n` such that there is a single `a` while the rest are `b`, and clearly they are all valid rotated sorted arrays. In other words, even if `a` exists, it can be at any location; so in the worst case where the input array only contains `b`, an algorithm must access all `n` locations of such array to determine whether `a` exists.",
+      "voteCount": 42
+    },
+    {
+      "name": "whiteSkar",
+      "year": 2015,
+      "content": "It says this problem is a follow up for Search in Rotated Sorted Array.\\n\\nSearch in Rotated Sorted Array is a hard level question.\\n\\nIt is kinda un-intuitive for a medium level question to be a follow up for a hard question since I am doing all medium level questions first before I do hard level questions.\\n\\nIf this problem is easier than Search in Rotated Sorted Array, then I think Search in Rotated Sorted Array should be the follow up problem for this, not the other way around.",
+      "voteCount": 41
+    },
+    {
+      "name": "ouromoros",
+      "year": 2018,
+      "content": "Consider the following array:\\n[0, 0, 0, 1]\\n\\nAfter rotation, the array could basically be any of the following:\\n1. [1, 0, 0, 0]\\n2. [0, 1, 0, 0]\\n3. [0, 0, 1, 0]\\n4. [0, 0, 0, 1]\\n\\nAnd without checking all of the elements (O(n) opeartion), no algorithm can be sure that it hasn\\'t met one of the above scenarios. \\n\\nEven after checking n-1 elements (which are all 0s), the algorithm cannot determine if the remaining one is the target.\\n\\nSummarized, an array whose elements are all of the same value must take O(n) time to check, no matter what clever trick is used.",
+      "voteCount": 29
+    },
+    {
+      "name": "javvajivenkatakoushik",
+      "year": 2023,
+      "content": "if(nums[mid] == nums[low] && nums[mid] == nums[high]){\\n                low++;\\n                high--;\\n            }\\nThis is the best thing to do if there are duplicates.",
+      "voteCount": 27
+    },
+    {
+      "name": "qkhhly",
+      "year": 2020,
+      "content": "first of all, the array is sorted so we must be able to use this information somehow. the rotated array can be visualized as below. We need to figure out a way to eliminate part of the array. we start with regular binary search, but we have to distinguish between the mid point being case A or case B (shown in figure). after that we can compare target with mid and eliminate part of the array.\\n\\n![image](https://assets.leetcode.com/users/qkhhly/image_1581813568.png)\\n\\nbut with duplicates, we will have some difficulty because in the following we cannot distinguish case A and case B. if mid == start, then it could be either case A or case B.\\n\\n![image](https://assets.leetcode.com/users/qkhhly/image_1581813918.png)\\n\\nin this case, we can just ignore start by doing start = start + 1, because we already know target is not nums[mid] (otherwise we would have returned already).\\n\\n#mahoupao",
+      "voteCount": 16
+    },
+    {
+      "name": "sirius_108",
+      "year": 2023,
+      "content": "Leetcode forgive me for this :0\\n\\n\\n        for(int i = 0; i<nums.size(); i++)\\n        {\\n            if(nums[i] == target)\\n                return 1;\\n        }\\n        return 0;\\n    ",
+      "voteCount": 11
+    },
+    {
+      "name": "kAc",
+      "year": 2018,
+      "content": "In general this problem cannot be solved faster than O(n) in worst case. \\nConsider a much simpler problem: given an array arr, there are two possible cases:\\n1. All elements are 0;\\n2. One element is 1, all other elements are 0.\\n\\nWe want to know which case we are in. Even for this simpler problem it requires O(n) time to solve since we easily construct an adversary to force the algorithm to query all positions. ",
+      "voteCount": 11
+    }
+  ]
+}

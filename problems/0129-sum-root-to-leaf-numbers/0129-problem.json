@@ -1,0 +1,143 @@
+{
+  "category": "",
+  "id": "129",
+  "name": "Sum Root to Leaf Numbers",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/sum-root-to-leaf-numbers/",
+  "slug": "sum-root-to-leaf-numbers",
+  "isPaidOnly": false,
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Path Sum",
+      "difficulty": "Easy",
+      "slug": "path-sum"
+    },
+    {
+      "title": "Binary Tree Maximum Path Sum",
+      "difficulty": "Hard",
+      "slug": "binary-tree-maximum-path-sum"
+    },
+    {
+      "title": "Smallest String Starting From Leaf",
+      "difficulty": "Medium",
+      "slug": "smallest-string-starting-from-leaf"
+    }
+  ],
+  "questionId": "129",
+  "questionFrontendId": "129",
+  "title": "Sum Root to Leaf Numbers",
+  "titleSlug": "sum-root-to-leaf-numbers",
+  "content": "<p>You are given the <code>root</code> of a binary tree containing digits from <code>0</code> to <code>9</code> only.</p>\n\n<p>Each root-to-leaf path in the tree represents a number.</p>\n\n<ul>\n\t<li>For example, the root-to-leaf path <code>1 -&gt; 2 -&gt; 3</code> represents the number <code>123</code>.</li>\n</ul>\n\n<p>Return <em>the total sum of all root-to-leaf numbers</em>. Test cases are generated so that the answer will fit in a <strong>32-bit</strong> integer.</p>\n\n<p>A <strong>leaf</strong> node is a node with no children.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/02/19/num1tree.jpg\" style=\"width: 212px; height: 182px;\" />\n<pre>\n<strong>Input:</strong> root = [1,2,3]\n<strong>Output:</strong> 25\n<strong>Explanation:</strong>\nThe root-to-leaf path <code>1-&gt;2</code> represents the number <code>12</code>.\nThe root-to-leaf path <code>1-&gt;3</code> represents the number <code>13</code>.\nTherefore, sum = 12 + 13 = <code>25</code>.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/02/19/num2tree.jpg\" style=\"width: 292px; height: 302px;\" />\n<pre>\n<strong>Input:</strong> root = [4,9,0,5,1]\n<strong>Output:</strong> 1026\n<strong>Explanation:</strong>\nThe root-to-leaf path <code>4-&gt;9-&gt;5</code> represents the number 495.\nThe root-to-leaf path <code>4-&gt;9-&gt;1</code> represents the number 491.\nThe root-to-leaf path <code>4-&gt;0</code> represents the number 40.\nTherefore, sum = 495 + 491 + 40 = <code>1026</code>.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of nodes in the tree is in the range <code>[1, 1000]</code>.</li>\n\t<li><code>0 &lt;= Node.val &lt;= 9</code></li>\n\t<li>The depth of the tree will not exceed <code>10</code>.</li>\n</ul>\n",
+  "likes": 8492,
+  "dislikes": 152,
+  "stats": {
+    "totalAccepted": "1.2M",
+    "totalSubmission": "1.7M",
+    "totalAcceptedRaw": 1163057,
+    "totalSubmissionRaw": 1687470,
+    "acRate": "68.9%"
+  },
+  "topicTags": [
+    {
+      "name": "Tree",
+      "slug": "tree"
+    },
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Binary Tree",
+      "slug": "binary-tree"
+    }
+  ],
+  "metaData": {
+    "name": "sumNumbers",
+    "params": [
+      {
+        "name": "root",
+        "type": "TreeNode"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Meta",
+        "slug": "facebook",
+        "timesEncountered": 78
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "piyushsingh21",
+      "year": 2024,
+      "content": "For those saying  \"This should be in the easy category\", it might be easy for many of us.\nBut think about a newcomer, seeing such comments might demotivate them.\n\nAnd cheers to 50 days coding streak",
+      "voteCount": 138
+    },
+    {
+      "name": "UchihaKim",
+      "year": 2023,
+      "content": "Very good question which can be solved in many approaches. Great suggestion, LeetCode!",
+      "voteCount": 62
+    },
+    {
+      "name": "morspit",
+      "year": 2024,
+      "content": "Comment section being a cringefest as always.",
+      "voteCount": 39
+    },
+    {
+      "name": "LeetCode",
+      "year": 2021,
+      "content": "This problem is the Daily LeetCoding Challenge for November, Day 3.\n\nFeel free to share anything related to this problem here!\n\nYou can ask questions, discuss what you've learned from this problem, or show off how many days of streak you've made!\n\n---\n\nIf you'd like to share a detailed solution to the problem, please create a new post in the discuss section and provide\n- **Detailed Explanations**: Describe the algorithm you used to solve this problem. Include any insights you used to solve this problem.\n- **Images** that help explain the algorithm.\n- **Language and Code** you used to pass the problem.\n- **Time and Space complexity analysis**.\n\n---\n\n  **\ud83d\udccc Do you want to learn the problem thoroughly?**\n  Read [**\u2b50  LeetCode Official Solution\u2b50**](https://leetcode.com/problems/sum-root-to-leaf-numbers/solution) to learn the 3 approaches to the problem with detailed explanations to the algorithms, codes, and complexity analysis.\n  <details>\n  <summary> Spoiler Alert! We'll explain these 3 approaches in the official solution</summary>\n\n  \n**Approach 1:** Iterative Preorder Traversal.\n\n  \n**Approach 2:** Recursive Preorder Traversal.\n\n  \n**Approach 3:** Morris Preorder Traversal.\n\n  \n</details>\n\n\n\nIf you're new to Daily LeetCoding Challenge, [**check out this post**](https://leetcode.com/discuss/general-discussion/655704/)!\n\n\n---\n\n<br>\n\n<p align=\"center\">\n<a href=\"https://leetcode.com/subscribe/?ref=ex_dc\" target=\"_blank\">\n  <img src=\"https://assets.leetcode.com/static_assets/marketing/daily_leetcoding_banner.png\" width=\"560px\" />\n</a>\n</p>\n\n<br>",
+      "voteCount": 39
+    },
+    {
+      "name": "Nick-U",
+      "year": 2024,
+      "content": "The community on this site is really rotten to the core. All these people saying \"joke question, easy, idiot who cannot do it, etc.\" ... it is just soooo annoying",
+      "voteCount": 28
+    },
+    {
+      "name": "AmpiroMax",
+      "year": 2023,
+      "content": "This task should be considered as an easy one, not a medium one because of the simplicity of the solution",
+      "voteCount": 26
+    },
+    {
+      "name": "sasukesharma",
+      "year": 2023,
+      "content": "**so i guess this week topic is BINARY TREE**",
+      "voteCount": 20
+    },
+    {
+      "name": "hiranmay1000",
+      "year": 2024,
+      "content": "## Use this test case before submitting:\\n\\n`[2,1,null,4,null,7,null,4,null,8,null,3,null,6,null,4,null,7]`",
+      "voteCount": 11
+    },
+    {
+      "name": "HARSHIT_4U",
+      "year": 2024,
+      "content": "HINT : \\n1. Create a array `ans` to store all the Root to Leaf Number string.\\n2. Create a function `recur()`, take `node` and `string` as paramter:\\n    - if node.left and node.right is NULL `(leaf node)` : add string into `ans`.\\n    - if node.left exist: recursively call with node.left and add node.left.val to string.\\n    - if node.right exist: recursively call with node.right and add node.right.val to string\\n3. Return sum of all elements of `ans`.",
+      "voteCount": 10
+    },
+    {
+      "name": "raj_g07",
+      "year": 2024,
+      "content": "Hint \\uD83E\\uDDE0 Update the val  = val *  10 + root ->val;\\n        \\uD83E\\uDDE0 Simple return  left_sum + right_sum \\n<<<Happy Coding>>>",
+      "voteCount": 9
+    }
+  ]
+}

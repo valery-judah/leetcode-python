@@ -1,0 +1,124 @@
+{
+  "category": "",
+  "id": "86",
+  "name": "Partition List",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/partition-list/",
+  "slug": "partition-list",
+  "isPaidOnly": false,
+  "tags": [
+    "Linked List",
+    "Two Pointers"
+  ],
+  "similar_questions": [
+    {
+      "title": "Partition Array According to Given Pivot",
+      "difficulty": "Medium",
+      "slug": "partition-array-according-to-given-pivot"
+    }
+  ],
+  "questionId": "86",
+  "questionFrontendId": "86",
+  "title": "Partition List",
+  "titleSlug": "partition-list",
+  "content": "<p>Given the <code>head</code> of a linked list and a value <code>x</code>, partition it such that all nodes <strong>less than</strong> <code>x</code> come before nodes <strong>greater than or equal</strong> to <code>x</code>.</p>\n\n<p>You should <strong>preserve</strong> the original relative order of the nodes in each of the two partitions.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/01/04/partition.jpg\" style=\"width: 662px; height: 222px;\" />\n<pre>\n<strong>Input:</strong> head = [1,4,3,2,5,2], x = 3\n<strong>Output:</strong> [1,2,2,4,3,5]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> head = [2,1], x = 2\n<strong>Output:</strong> [1,2]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of nodes in the list is in the range <code>[0, 200]</code>.</li>\n\t<li><code>-100 &lt;= Node.val &lt;= 100</code></li>\n\t<li><code>-200 &lt;= x &lt;= 200</code></li>\n</ul>\n",
+  "likes": 7831,
+  "dislikes": 958,
+  "stats": {
+    "totalAccepted": "810.2K",
+    "totalSubmission": "1.4M",
+    "totalAcceptedRaw": 810212,
+    "totalSubmissionRaw": 1360230,
+    "acRate": "59.6%"
+  },
+  "topicTags": [
+    {
+      "name": "Linked List",
+      "slug": "linked-list"
+    },
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    }
+  ],
+  "metaData": {
+    "name": "partition",
+    "params": [
+      {
+        "name": "head",
+        "type": "ListNode",
+        "dealloc": false
+      },
+      {
+        "name": "x",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "ListNode",
+      "dealloc": true
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "zdf826504558",
+      "year": 2020,
+      "content": "The description for this problem is somewhat very misleading. \\nI took at least 15 min and tested serval test cases so that I understood what it was asking for.\\n\\nLet me briefly explain it to relieve your pain.\\n\\nBasically, it asks us:\\n`reorder the sequence by the given number x`\\n\\nThe rules are:\\n1. Any number that is `less than x` has to be before `x`, and maintain the relative order with thoese that are less than `x` but already before `x`.\\ne.g. `[3,4,1,2], target = 4` -> `[3,1,2,4]`, so the order of `[3,1,2]` is maintained.\\n2. Any number that is `greater than x` but already before `x` will still be before `x`, but all of them come after those that are less than `x` and at the same time maintain their relative order.\\ne.g. `[3,6,5,4,1,2] target = 4` -> `[3,1,2,6,5,4]`\\n3. Any number that is `greater than x` and after `x` will only need to maintain their relative order\\ne.g. `[3,6,5,4,8,1,7,2] target = 4` -> `[3,1,2,6,5,4,8,7]`\\n\\nHope this helps those who have a difficulty time understanding **\"all nodes less than x come before nodes greater than or equal to x.\"** like me.  \\uD83D\\uDE02\\uD83D\\uDE02\\uD83D\\uDE02\\n",
+      "voteCount": 1009
+    },
+    {
+      "name": "homer_simpson",
+      "year": 2015,
+      "content": "\"For example,\\n\\nGiven 1->4->3->2->5->2 and x = 3,\\n\\nreturn 1->2->2->4->3->5.\"\\n\\nIn the return, why does 4 come before 3 if it's larger???\\n\\n\\nAlso, my code fails this test:\\n\"Input:\\t{2,1}, 1\\n\\nOutput:\\t{1,2}\\n\\nExpected:\\t{2,1}\"\\n\\nIf x is 1, why would the expected output have 2 come before 1?\\n\\nThanks.",
+      "voteCount": 102
+    },
+    {
+      "name": "anuron_das",
+      "year": 2023,
+      "content": "It is an interesting problem, at least to me. If I were to explain the problem statement to anyone in the simplest terms, I would go like this:\n\nYou are given a linked list and a target number `x`.  You have to reorder the list in such a way that any node with a value `strictly less than x` appears `in the beginning` of the list, such that their relative order `among themselves` is preserved.\n\nFor example: `[1,4,3,2,5,2]` and `x=3`. All the numbers `strictly smaller than x` are `[1,2,2]`. So preserve only their relative order and add them in the beginning of the list.\n\nAfter that you have to preserve the relative order of all the `remaining elements` as well, and after that you can return the list `head`.\n\nFor example, let us consider the above example only, in `[1,4,3,2,5,2]` and `x=3`, after removing all the numbers `strictly less than x`, the remaining list is `[4,3,5]`. So their relative order is preserved accordingly.\n\nIn the end just concatenate the two and return the result.\n\nSo if the problem statement is clear, then one can appreciate the importance of `two pointers` approach, as this problem involves the use of `two pointers` on linked lists. I hope the reader finds this helpful. ",
+      "voteCount": 79
+    },
+    {
+      "name": "1ort",
+      "year": 2023,
+      "content": "tip: Don\\'t forget to clear the Next of the last element of the list if you are spreading elements across two lists. I tried for half an hour to figure out why my solution fails with an error until I realized that I was returning a list with a loop",
+      "voteCount": 67
+    },
+    {
+      "name": "anwendeng",
+      "year": 2023,
+      "content": "Divide the given list head into 2 linked lists, greater & smaller. Then connect these 2 lists and return the result. One more hint:\nThe whole process shown by modifying submitted code in playground\n```\n1<3:smaller\nsmaller:0->1->4->3->2->5->2\ngreater:0\n-------\n4>=3: greater\nsmaller:0->1->4->3->2->5->2\ngreater:0->4->3->2->5->2\n-------\n3>=3: greater\nsmaller:0->1->4->3->2->5->2\ngreater:0->4->3->2->5->2\n-------\n2<3:smaller\nsmaller:0->1->2->5->2\ngreater:0->4->3->2->5->2\n-------\n5>=3: greater\nsmaller:0->1->2->5->2\ngreater:0->4->3->5->2\n-------\n2<3:smaller\nsmaller:0->1->2->2\ngreater:0->4->3->5->2\n-------\nans:\n1->2->2->4->3->5\n```",
+      "voteCount": 31
+    },
+    {
+      "name": "Abhishen99",
+      "year": 2021,
+      "content": "\\n[328. Odd Even Linked List ](https://leetcode.com/problems/odd-even-linked-list/)\\n\\nabove problem is quite similiar to this problem after trying this you can solve that too.\\n",
+      "voteCount": 23
+    },
+    {
+      "name": "woodyinho",
+      "year": 2019,
+      "content": "Input: head = 1->4->3->2->5->2, x = 3\\nOutput: 1->2->2->4->3->5\\n\\nwhy 4 is exist before than 3 not after ?\\n",
+      "voteCount": 15
+    },
+    {
+      "name": "oops_moment",
+      "year": 2023,
+      "content": "If handling the swapping with a double pointer feels tricky, here\\'s a hint: consider using two linked lists. In one list, gather elements less than x, and in the other, store elements greater than x. Then, simply connect these two lists together. Happy coding!",
+      "voteCount": 10
+    },
+    {
+      "name": "valige7091",
+      "year": 2021,
+      "content": "All the problem asks one to do is loop through a list and add each element to one of two lists, before combining the two then returning.",
+      "voteCount": 10
+    },
+    {
+      "name": "Ausho_Roup",
+      "year": 2020,
+      "content": "Anyone please explain this question. I am unable to get it. I am trying to understand nearly from two days still not able to figure it out .",
+      "voteCount": 8
+    }
+  ]
+}

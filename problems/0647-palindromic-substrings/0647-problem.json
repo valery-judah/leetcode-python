@@ -1,0 +1,138 @@
+{
+  "category": "",
+  "id": "647",
+  "name": "Palindromic Substrings",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/palindromic-substrings/",
+  "slug": "palindromic-substrings",
+  "isPaidOnly": false,
+  "tags": [
+    "Two Pointers",
+    "String",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longest Palindromic Substring",
+      "difficulty": "Medium",
+      "slug": "longest-palindromic-substring"
+    },
+    {
+      "title": "Longest Palindromic Subsequence",
+      "difficulty": "Medium",
+      "slug": "longest-palindromic-subsequence"
+    }
+  ],
+  "questionId": "647",
+  "questionFrontendId": "647",
+  "title": "Palindromic Substrings",
+  "titleSlug": "palindromic-substrings",
+  "content": "<p>Given a string <code>s</code>, return <em>the number of <strong>palindromic substrings</strong> in it</em>.</p>\n\n<p>A string is a <strong>palindrome</strong> when it reads the same backward as forward.</p>\n\n<p>A <strong>substring</strong> is a contiguous sequence of characters within the string.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;abc&quot;\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> Three palindromic strings: &quot;a&quot;, &quot;b&quot;, &quot;c&quot;.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;aaa&quot;\n<strong>Output:</strong> 6\n<strong>Explanation:</strong> Six palindromic strings: &quot;a&quot;, &quot;a&quot;, &quot;a&quot;, &quot;aa&quot;, &quot;aa&quot;, &quot;aaa&quot;.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 1000</code></li>\n\t<li><code>s</code> consists of lowercase English letters.</li>\n</ul>\n",
+  "likes": 11260,
+  "dislikes": 252,
+  "stats": {
+    "totalAccepted": "1.1M",
+    "totalSubmission": "1.5M",
+    "totalAcceptedRaw": 1059383,
+    "totalSubmissionRaw": 1470814,
+    "acRate": "72.0%"
+  },
+  "topicTags": [
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "metaData": {
+    "name": "countSubstrings",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": true,
+        "name": "Meta",
+        "slug": "facebook",
+        "timesEncountered": 27
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "PhilipSanM",
+      "year": 2024,
+      "content": "lol leetcode\\'s daily questions, really want you to learn DP.",
+      "voteCount": 121
+    },
+    {
+      "name": "tripper",
+      "year": 2024,
+      "content": "### How to solve this?\n| Approach | Time | Space |\n| -- | -- | -- |\n| Brute Force |  $O(n^3)$ | $O(1)$ |\n| DP on string, [LC 5](https://leetcode.com/problems/longest-palindromic-substring); [Editorial 1312](https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/editorial/) |  $O(n^2)$ | $O(n^2)$ |\n| Expand around center, [LC 131](https://leetcode.com/problems/palindrome-partitioning/), [LC 132](https://leetcode.com/problems/palindrome-partitioning-ii/) | $O(n^2)$ | $O(1)$|\n| [Manacher's](https://cp-algorithms.com/string/manacher.html) |  $O(n)$ | $O(n)$ |\n\n",
+      "voteCount": 58
+    },
+    {
+      "name": "anwendeng",
+      "year": 2024,
+      "content": "Have a nice day!\nStart from the center position of string.\nThen expand the substring from both sides!\nIt's doable using DP\n I think that the best solution is used  Manacher's Algorithm which is a linear solution.",
+      "voteCount": 52
+    },
+    {
+      "name": "mstuebs",
+      "year": 2024,
+      "content": "Hey, check out these additional TCs. Good luck!\\n```\\n\"a\"\\n\"tlthpowwythupxaszmxhqbfbxegiqzdxzesppfjgycyprjyscubntihrfwbeebqgeclzdccxwxezasfzclndmnfjjqoplbxuygtopqtnpatixyydboldybmdoyfwkevwgxmsrdkwjiyoksilsorcbotqitujdaavjbvrjjwtnimpldrnkfuftxnhzfiwzkhslzolbfmdkqhulpjxmbmzqhawiztcbbaggcccttokwkznsctemmdgutldvpybalridbjmupbjijmexzjuvdfntqxuvdoijbbmbpwhbtdbxlhrvbxrfcoyjbrfsowdamohdsoojivwgoopfjwzdjhlzelkdxpsrkfdkjktptahoeanuuuujdybotiitmttzpnbyrxtjetxhydhlvlsmveddtvaobbvdkwxzoyugojhoapbaghgcanazkpauaorgjluszsezbnaqjxtvoxfitnpwsmywlxdimemymuyehyabrpedfkgrwtgyjvzkvahcbekqsofcvseswvtdixaxrjwjinvrruoskqlxcnxrvaqvsnpxdwjpjaupdyfaaxqsnrcrmkmzmtnndniqxglucqwargfzzqwxvaopxwafbzuifptayzoedznsljslpaoytiqnnlxeegbebslvbbsfoqlbokxakkaxdqyttxkdermidtoxjnjwibnlrsuvdkfcvoeagzpsogmcoeihbvyvjcdirnbbpqhdgoirclqapqzsvuesezbhdjoumxwhtwwnxnwyrnyhpaeqzbirnqxsufritrjkgbftmnjwpoakrzokpopwmwjsimwkvblwplsammgwonxrdkfbongodjnvadspxuvcyxlwvwhonvagznjsslbfayoxpqwrizxdhwgskewymhdlurtbekqsmghgzufkmsvrchskdoudtllfflromzwwahigprsrydcsyionczumedayyvldefctkuzafmwsvbifaxzyqywhzpqbeun\"\\n\"vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv\"\\n\"mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh\"\\n\"wbsphbopkiurpbducxsusqqrtqivsgmidqwuhdkrpuayyuppyzthumzgjfrpbjabnknomypinjcvrqdsldxnrxyneeiaiwjfuxfgrleksmlciqdwsnskvcxxecdwkfcmuwjqeypouwmwdooarnhrayotofsgtpwpihlvodrxwbypwwczpesvxiahpkktknizavgfkvuqmwgzgppjjvvyxhlwcawqdnrtpmakrvhkxcjozirolthofuvlogqyjtwdhtmqlglbqmaeclfzqooztuujycudlkyzlmlwpjvthlzzsynvwdloakpkyabyeesblrsbhcivqrczinnbztnwiyfufjhqcfvoicqajllqxyaqwqlslwlylolhyqawcnjpvvsneyuryefyjxhwcehrzvytuqpdbvkxwbpebilakqikkcqtkyerlmhtkmgixwaebebonfeapaiazgxgbbxaidrockcefeckcordiaxbbgxgzaiapaefnobebeawxigmkthmlreyktqckkiqkalibepbwxkvbdpqutyvzrhecwhxjyfeyruyensvvpjncwaqyhlolylwlslqwqayxqlljaqciovfcqhjfufyiwntzbnnizcrqvichbsrlbseeybaykpkaoldwvnyszzlhtvjpwlmlzyklducyjuutzooqzflceamqblglqmthdwtjyqgolvufohtlorizojcxkhvrkamptrndqwacwlhxyvvjjppgzgwmquvkfgvazinktkkphaixvsepzcwwpybwxrdovlhipwptgsfotoyarhnraoodwmwuopyeqjwumcfkwdcexxcvksnswdqiclmskelrgfxufjwiaieenyxrnxdlsdqrvcjnipymonknbajbprfjgzmuhtzyppuyyauprkdhuwqdimgsviqtrqqsusxcudbpruikpobhpsbw\"\\n\"wjwjnyyecpwqayghzctgskythyjmrvpgashdbzzthhtzjssddjdgbtswzvteoexngowmfpngrvslggsqcappibwvzjafdwzneocnlhjveeqgilbdoflveuaysghzwnuffjzgayiljrkmlnkrfxfuslswkrxtkmalfgkslnovasfvkcdpjaublmexiguigdteypcnqzhycxdraibxprxvvxvotpjgvghpuhfpbmffhppubpluhcbgalyyrxcgdccvxuvredwghgcmqqvkqeusqogpxmtntsqjaiaulimmxgwxnbhaydkmeeyppjnyrrytfbdrbemrhsusinslrgsavqzyiwuyrzmglfyozsxhvsjivrvecnefoamnstvfxcaijxipvxfigoiwhiyjqokntfwdqnneexzvthuulxgcbhjntawurbastlflmsgfddunnpxibqwalviwjkcejskrkiwhgdqswemmbhsauzcxtcegksisyorggroysiskgectxczuashbmmewsqdghwikrksjeckjwivlawqbixpnnuddfgsmlfltsabruwatnjhbcgxluuhtvzxeennqdwftnkoqjyihwiogifxvpixjiacxfvtsnmaofencevrvijsvhxszoyflgmzryuwiyzqvasgrlsnisushrmebrdbftyrrynjppyeemkdyahbnxwgxmmiluaiajqstntmxpgoqsueqkvqqmcghgwdervuxvccdgcxryylagbchulpbupphffmbpfhuphgvgjptovxvvxrpxbiardxcyhzqncpyetdgiugixemlbuajpdckvfsavonlskgflamktxrkwslsufxfrknlmkrjliyagzjffunwzhgsyauevlfodbligqeevjhlncoenzwdfajzvwbippacqsgglsvrgnpfmwognxeoetvzwstbgdjddssjzthhtzzbdhsagpvrmjyhtyksgtczhgyaqwpceyynjwjw\"\\n\"vutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfezefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqpoopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdef\"\\n\"cbazyxwvutsrqponmlkjihgfedcbazabcdefghijklmnopqrstuvwxyzabcbazyxwvutsrqponmlkjihgfedcbazyzabcdefghijklmnopqrstuvwxyzabsrqponmlkjihgfedcbazyxwvutsrqpqrstuvwxyzabcdefghijklmnopqrshgfedcbazyxwvutsrqponmlkjihgfefghijklmnopqrstuvwxyzabcdefghjihgfedcbazyxwvutsrqponmlkjihghijklmnopqrstuvwxyzabcdefghijtsrqponmlkjihgfedcbazyxwvutsrqrstuvwxyzabcdefghijklmnopqrstwvutsrqponmlkjihgfedcbazyxwvutuvwxyzabcdefghijklmnopqrstuvwyxwvutsrqponmlkjihgfedcbazyxwvwxyzabcdefghijklmnopqrstuvwxy\"\\n```",
+      "voteCount": 45
+    },
+    {
+      "name": "njbrown180",
+      "year": 2024,
+      "content": "Well I solved it, but I solved it the crappy way. \\uD83D\\uDE14",
+      "voteCount": 33
+    },
+    {
+      "name": "kvmial",
+      "year": 2024,
+      "content": "Worst examples ever.",
+      "voteCount": 25
+    },
+    {
+      "name": "magicsign",
+      "year": 2023,
+      "content": "The solution to this problem (or at least one of the solutions) is elegant. You start from the first character of the string and keep expanding until the current expanded string is not a palindrome anymore. Every single character is a palindrome, example:\\n\\n\"aaa\"\\n\\nI know already the initial count is 3, because every character alone, is a palindrome. Let\\'s start with the first char \\'a\\'. I can expand from \\'a\\' going to the left, and right. So we need 2 pointers, left, right, initialized to the current position of \\'a\\', in our case 0. Left obviously needs to be >= 0 and right < \"aaa\" length. Initially the chars at left and right are equal, we are comparing \\'a\\' with itself (remember we said that a single char is a palindrome?), we increase the counter.\\nLeft is now -1, right is 1, this breaks the condition and we can move one to the second character, \\'a\\'.\\n\\nSame as before, the second character \\'a\\' is counted as a palindrome, so now our counter is 2. Left gets decrease by 1 and goes to 0, and right gets increased to 2. The chars at left and right position are equal, \\'a\\' is equal to \\'a\\', we increase the counter to 3. We can\\'t expand at this point anymore and we have to move to our third and last char, \\'a\\'.\\n\\nAt the third char, as usual, we increase the counter to 4 because a single char is a palindrome, left gets decreased becoming 1 and right 3 which is out of range. Something must be wrong because our counter is 4 where it should have been 6 ! Things gets interesting here though. When you expand to check if a string is palindrome you need to consider two cases based on the amount (even or odd*) of the word. Remember before we were always starting with left = right = the position of the current char getting considered. Ok we need to do the same now but having right initialized as left +1, or putting it in other words, right is initialized to the next char of the string. Repeat the same approach as before adding to the same counter and you will reach 6, the final result.\\n\\n*First pass will cover : \\'a\\',\\'a\\',\\'aaa\\',\\'a\\'\\nSecond pass will cover : \\'aa\\',\\'aa\\'\\n",
+      "voteCount": 25
+    },
+    {
+      "name": "Amitdahiya08",
+      "year": 2024,
+      "content": "#  Four Ways to get Accepted \n1. (Brute Force) find all substrings and check each substring is palindrome or not \n2. (Better ) Reduce the palindrome check by using precomputed palindromes ( use Dp ) \n3. ( Optimal ) It need more lines so ... \n  3(a) . For each index i in the string, consider it as a potential center for a palindrome.\n  3(b).   and consider both odd-length and even-length palindromes.\n  3(c) .  For odd-length palindromes, initialize j as i and expand outward\n  3(d)  For even-length palindromes, initialize j as i+1 and expand outward\n  3(e) while expanding check if s[i] == s[j] if yes we got one palindrome \n4. (Best of All ) Manacher's Algorithm [here](https://cp-algorithms.com/string/manacher.html)",
+      "voteCount": 12
+    },
+    {
+      "name": "danieloi",
+      "year": 2024,
+      "content": "Short video explanation with diagrams:\nPlease upvote, like and subscribe if you found it useful\nhttps://youtu.be/TzVEKYMSFdw",
+      "voteCount": 11
+    },
+    {
+      "name": "LeetCode",
+      "year": 2022,
+      "content": "This problem is the Daily LeetCoding Challenge for May, Day 22.\n\nFeel free to share anything related to this problem here!\n\nYou can ask questions, discuss what you've learned from this problem, or show off how many days of streak you've made!\n\n---\n\nIf you'd like to share a detailed solution to the problem, please create a new post in the discuss section and provide\n- **Detailed Explanations**: Describe the algorithm you used to solve this problem. Include any insights you used to solve this problem.\n- **Images** that help explain the algorithm.\n- **Language and Code** you used to pass the problem.\n- **Time and Space complexity analysis**.\n\n---\n\n  **\ud83d\udccc Do you want to learn the problem thoroughly?**\n  Read [**\u2b50  LeetCode Official Solution\u2b50**](https://leetcode.com/problems/palindromic-substrings/solution) to learn the 3 approaches to the problem with detailed explanations to the algorithms, codes, and complexity analysis.\n  <details>\n  <summary> Spoiler Alert! We'll explain these 3 approaches in the official solution</summary>\n\n  \n**Approach 1:** Check All Substrings\n\n  \n**Approach 2:** Dynamic Programming\n\n  \n**Approach 3:** Expand Around Possible Centers\n\n  \n</details>\n\n\n\nIf you're new to Daily LeetCoding Challenge, [**check out this post**](https://leetcode.com/discuss/general-discussion/655704/)!\n\n\n---\n\n<br>\n\n<p align=\"center\">\n<a href=\"https://leetcode.com/subscribe/?ref=ex_dc\" target=\"_blank\">\n  <img src=\"https://assets.leetcode.com/static_assets/marketing/daily_leetcoding_banner.png\" width=\"560px\" />\n</a>\n</p>\n\n<br>",
+      "voteCount": 8
+    }
+  ]
+}

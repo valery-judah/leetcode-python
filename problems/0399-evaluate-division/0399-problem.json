@@ -1,0 +1,166 @@
+{
+  "category": "",
+  "id": "399",
+  "name": "Evaluate Division",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/evaluate-division/",
+  "slug": "evaluate-division",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "String",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union Find",
+    "Graph",
+    "Shortest Path"
+  ],
+  "similar_questions": [
+    {
+      "title": "Check for Contradictions in Equations",
+      "difficulty": "Hard",
+      "slug": "check-for-contradictions-in-equations"
+    },
+    {
+      "title": "Maximize Amount After Two Days of Conversions",
+      "difficulty": "Medium",
+      "slug": "maximize-amount-after-two-days-of-conversions"
+    }
+  ],
+  "questionId": "399",
+  "questionFrontendId": "399",
+  "title": "Evaluate Division",
+  "titleSlug": "evaluate-division",
+  "content": "<p>You are given an array of variable pairs <code>equations</code> and an array of real numbers <code>values</code>, where <code>equations[i] = [A<sub>i</sub>, B<sub>i</sub>]</code> and <code>values[i]</code> represent the equation <code>A<sub>i</sub> / B<sub>i</sub> = values[i]</code>. Each <code>A<sub>i</sub></code> or <code>B<sub>i</sub></code> is a string that represents a single variable.</p>\n\n<p>You are also given some <code>queries</code>, where <code>queries[j] = [C<sub>j</sub>, D<sub>j</sub>]</code> represents the <code>j<sup>th</sup></code> query where you must find the answer for <code>C<sub>j</sub> / D<sub>j</sub> = ?</code>.</p>\n\n<p>Return <em>the answers to all queries</em>. If a single answer cannot be determined, return <code>-1.0</code>.</p>\n\n<p><strong>Note:</strong> The input is always valid. You may assume that evaluating the queries will not result in division by zero and that there is no contradiction.</p>\n\n<p><strong>Note:&nbsp;</strong>The variables that do not occur in the list of equations are undefined, so the answer cannot be determined for them.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> equations = [[&quot;a&quot;,&quot;b&quot;],[&quot;b&quot;,&quot;c&quot;]], values = [2.0,3.0], queries = [[&quot;a&quot;,&quot;c&quot;],[&quot;b&quot;,&quot;a&quot;],[&quot;a&quot;,&quot;e&quot;],[&quot;a&quot;,&quot;a&quot;],[&quot;x&quot;,&quot;x&quot;]]\n<strong>Output:</strong> [6.00000,0.50000,-1.00000,1.00000,-1.00000]\n<strong>Explanation:</strong> \nGiven: <em>a / b = 2.0</em>, <em>b / c = 3.0</em>\nqueries are: <em>a / c = ?</em>, <em>b / a = ?</em>, <em>a / e = ?</em>, <em>a / a = ?</em>, <em>x / x = ? </em>\nreturn: [6.0, 0.5, -1.0, 1.0, -1.0 ]\nnote: x is undefined =&gt; -1.0</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> equations = [[&quot;a&quot;,&quot;b&quot;],[&quot;b&quot;,&quot;c&quot;],[&quot;bc&quot;,&quot;cd&quot;]], values = [1.5,2.5,5.0], queries = [[&quot;a&quot;,&quot;c&quot;],[&quot;c&quot;,&quot;b&quot;],[&quot;bc&quot;,&quot;cd&quot;],[&quot;cd&quot;,&quot;bc&quot;]]\n<strong>Output:</strong> [3.75000,0.40000,5.00000,0.20000]\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> equations = [[&quot;a&quot;,&quot;b&quot;]], values = [0.5], queries = [[&quot;a&quot;,&quot;b&quot;],[&quot;b&quot;,&quot;a&quot;],[&quot;a&quot;,&quot;c&quot;],[&quot;x&quot;,&quot;y&quot;]]\n<strong>Output:</strong> [0.50000,2.00000,-1.00000,-1.00000]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= equations.length &lt;= 20</code></li>\n\t<li><code>equations[i].length == 2</code></li>\n\t<li><code>1 &lt;= A<sub>i</sub>.length, B<sub>i</sub>.length &lt;= 5</code></li>\n\t<li><code>values.length == equations.length</code></li>\n\t<li><code>0.0 &lt; values[i] &lt;= 20.0</code></li>\n\t<li><code>1 &lt;= queries.length &lt;= 20</code></li>\n\t<li><code>queries[i].length == 2</code></li>\n\t<li><code>1 &lt;= C<sub>j</sub>.length, D<sub>j</sub>.length &lt;= 5</code></li>\n\t<li><code>A<sub>i</sub>, B<sub>i</sub>, C<sub>j</sub>, D<sub>j</sub></code> consist of lower case English letters and digits.</li>\n</ul>\n",
+  "likes": 9928,
+  "dislikes": 1060,
+  "stats": {
+    "totalAccepted": "634.7K",
+    "totalSubmission": "1M",
+    "totalAcceptedRaw": 634663,
+    "totalSubmissionRaw": 1000029,
+    "acRate": "63.5%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Breadth-First Search",
+      "slug": "breadth-first-search"
+    },
+    {
+      "name": "Union Find",
+      "slug": "union-find"
+    },
+    {
+      "name": "Graph",
+      "slug": "graph"
+    },
+    {
+      "name": "Shortest Path",
+      "slug": "shortest-path"
+    }
+  ],
+  "metaData": {
+    "name": "calcEquation",
+    "params": [
+      {
+        "name": "equations",
+        "type": "list<list<string>>"
+      },
+      {
+        "name": "values",
+        "type": "double[]"
+      },
+      {
+        "name": "queries",
+        "type": "list<list<string>>"
+      }
+    ],
+    "return": {
+      "type": "double[]"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 16
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "elmubark",
+      "year": 2018,
+      "content": "This is definitely not a medium problem.",
+      "voteCount": 810
+    },
+    {
+      "name": "shivamaggarwal513",
+      "year": 2023,
+      "content": "Few things to be clear before starting:\n1. If `x / y` is asked and either `x` or `y` are not in `equations`, we return -1, even if it is `x / x`.\n2. In Example 2, `\"bc\"` is a single variable, it is **NOT** `b * c`. Treat every string `equations[i][j]` as an atomic variable, not a product of some.\n\n# Hint 1\nOne thing that you might have thought is that if we are given $a/b=n_1$ and $b/c=n_2$, then we can calculate $a/c$ as $(a/b) * (b/c) = n_1 n_2$. We can multiply or divide few given equations to cancel out some variables and generate new equations.\nLet's remove the option to divide by rearranging the equations in the form $a = n_1 b$ and $b = n_2 c$. How can we generate $a$ in terms of $c$ now?\n\n# Hint 2\nTo write $a$ in terms of $c$, let's start with $a = n_1 b$. Put the value of $b$ from $b = n_2 c$. New equation will be $a = n_1 (n_2 c) = n_1 n_2 c = n_3 c$, where $n_3 = n_1 n_2$ is the answer for $a/c$.\nSo, if we want to generate some variable $x$ in terms of some other variable $y$, then we need some set of equations of the form\n$x = n_1 x_1$\n$x_1 = n_2 x_2$\n$x_2 = n_3 x_3$\n$.$\n$.$\n$.$\n$x_k = n_{k+1} y$\nUsing these equations we can start from $x$ and reach $y$ because there exists a **path** of variables $[x_1, x_2,...,x_k]$ between them.\nAnd the final answer would become the product $n_1 n_2 n_3 ... n_{k+1}$.\n\n# Hint 3\nTo get a path from $x$ to $y$, we need to keep track of every equation of the form $x = n_i x_i$ which starts with $x$ and goes to some other variables $x_i$. We need this information for every given variable so that we can check if some variables put together will form a path or not.\nTo do this, we can put them in a graph where each vertex will denote a variable and each edge will denote a relation of variables for equations $a = n b$.\nFor example, if $a = 2b$ then graph will be\n![image.png](https://assets.leetcode.com/users/images/25e9b6d3-a1ad-4d0c-aef1-0a9b31223ad4_1684590881.5234437.png)\nWill this graph be directed or undirected? If $a=2b$ then is $b=2a$?\n\n# Hint 4\nWe need to make a directed graph for equations $a=n b$. But what if we want to calculate $b$ in terms of $a$? If $a = nb$ is an equation, then $b=(1/n)a$ is also another equation by which we can get $b$ in terms of $a$.\nFor example, if $a = 2b$, then graph will have 2 directed edges as\n![image.png](https://assets.leetcode.com/users/images/e1698aa9-a464-4685-b35e-9846e9fdc776_1684590750.7325034.png)\n\n# Hint 5\nLet's make graph for Example 2:\n```\nequations = [[\"a\",\"b\"],[\"b\",\"c\"],[\"bc\",\"cd\"]]\nvalues    = [ 1.5,      2.5,      5.0]\n```\nThe equations are $a=1.5b$, $b=2.5c$, $bc = 5.0cd$. ($bc$ is just another different variable it is **NOT** equal to $b * c$)\nThe graph will be:\n![image.png](https://assets.leetcode.com/users/images/e067d848-dba4-47aa-a1da-aa2158fddcf5_1684590679.972568.png)\n\nNow, calculate for given queries\n```\nqueries = [[\"a\",\"c\"],[\"c\",\"b\"],[\"bc\",\"cd\"],[\"cd\",\"bc\"]]\n```\n1. Calculate $a$ in terms of $c$ as $a=1.5b=1.5(2.5c)=3.75c$\n2. Calculate $c$ in terms of $b$ as $c=0.4b$\n3. Calculate $bc$ in terms of $cd$ as $bc=5cd$\n4. Calculate $cd$ in terms of $bc$ as $cd=0.2bc$\n\n# Hint 6\nCan we calculate $a$ in terms of $bc$? No, there is no path of variables between them.\nCalculating some variable $x$ in terms of some other variable $y$ is same as finding a valid path between $x$ and $y$, where the final answer of $x/y$ will be the product of weights of edges $n_i$'s that are present in the path.\n\n# Hint 7\nMake the graph. For every equation $a=nb$, add two edges `a --n--> b` and `a <--1/n-- b`.\nFor each query $[c,d]$, check if such nodes even exists in the graph or not. If they don't even exist, there is no path, return `-1` (Like in Example 1, `x` does not exists so return `-1` even if we just wanted `x / x`).\nIf both $c$ and $d$ exists in the graph, traverse the graph to get a path between them, maintaining cost of path as product of weights of edges traversed. If path is found return the product, and if not, then `-1`.\n\nUpvote if helps!",
+      "voteCount": 617
+    },
+    {
+      "name": "jd2050",
+      "year": 2023,
+      "content": "How on Earth the \"Number of Provinces\" problem and this monster have the same \"Medium\" difficulty level?",
+      "voteCount": 230
+    },
+    {
+      "name": "marinho",
+      "year": 2022,
+      "content": "Medium??? are you kidding? lol",
+      "voteCount": 173
+    },
+    {
+      "name": "pthread",
+      "year": 2018,
+      "content": "Considering how many possible ways to approach this problem for a more optimal solution there are and how many smaller sub-algorithms can and should be implemented, this is definitely hard level question.",
+      "voteCount": 136
+    },
+    {
+      "name": "spombg",
+      "year": 2024,
+      "content": "I will never remember the solution to this problem nor be able to intuitively solve it in an interview but because I believe in self-fulfilling prophecies, I will instead assert that I, in fact, will remember this solution or will be able to recognize the solution intuitively in an interview, even if that's 100% bollocks. Thank you tech industry and thank you leetcode for creating this bullshit barrier to entry to prove I'm capable of solving programming problems completely detached from adequately assessing whether I'm capable or deserving of a stupid fucking job.",
+      "voteCount": 80
+    },
+    {
+      "name": "pranjaljo",
+      "year": 2023,
+      "content": "Tip: Do not overthink this question.\\n\\nFor eg. bc/ca != b/a,, or x/x != 1. , \\n\\nI followed the wrong rabithole and ended up wasting a lot my time.",
+      "voteCount": 77
+    },
+    {
+      "name": "omnomnious",
+      "year": 2018,
+      "content": "The solution according to the question is -1.0, but x/x should be 1 assuming none of the input is invalid and no division by 0 (which the question says is an assumption).",
+      "voteCount": 70
+    },
+    {
+      "name": "cartesPerforees",
+      "year": 2023,
+      "content": "Never been so proud of a solution to a medium problem! \nI turned it into a graph and solved it with a cached bfs, and I don't wanna hear anything about a \"medium\" difficulty. Let me savor this like I just found a \"hard\" solution\n\nReally cool problem tho!",
+      "voteCount": 68
+    },
+    {
+      "name": "natitati",
+      "year": 2023,
+      "content": "No, no I do not recognize this as a graph problem, leetcode.",
+      "voteCount": 33
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "category": "",
+  "id": "272",
+  "name": "Closest Binary Search Tree Value II",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/closest-binary-search-tree-value-ii/",
+  "slug": "closest-binary-search-tree-value-ii",
+  "isPaidOnly": true,
+  "tags": [
+    "Two Pointers",
+    "Stack",
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Heap (Priority Queue)",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Binary Tree Inorder Traversal",
+      "difficulty": "Easy",
+      "slug": "binary-tree-inorder-traversal"
+    },
+    {
+      "title": "Closest Binary Search Tree Value",
+      "difficulty": "Easy",
+      "slug": "closest-binary-search-tree-value"
+    },
+    {
+      "title": "Closest Nodes Queries in a Binary Search Tree",
+      "difficulty": "Medium",
+      "slug": "closest-nodes-queries-in-a-binary-search-tree"
+    }
+  ],
+  "questionId": "272",
+  "questionFrontendId": "272",
+  "title": "Closest Binary Search Tree Value II",
+  "titleSlug": "closest-binary-search-tree-value-ii",
+  "content": "<p>Given the <code>root</code> of a binary search tree, a <code>target</code> value, and an integer <code>k</code>, return <em>the </em><code>k</code><em> values in the BST that are closest to the</em> <code>target</code>. You may return the answer in <strong>any order</strong>.</p>\n\n<p>You are <strong>guaranteed</strong> to have only one unique set of <code>k</code> values in the BST that are closest to the <code>target</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/12/closest1-1-tree.jpg\" style=\"width: 292px; height: 302px;\" />\n<pre>\n<strong>Input:</strong> root = [4,2,5,1,3], target = 3.714286, k = 2\n<strong>Output:</strong> [4,3]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> root = [1], target = 0.000000, k = 1\n<strong>Output:</strong> [1]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of nodes in the tree is <code>n</code>.</li>\n\t<li><code>1 &lt;= k &lt;= n &lt;= 10<sup>4</sup></code>.</li>\n\t<li><code>0 &lt;= Node.val &lt;= 10<sup>9</sup></code></li>\n\t<li><code>-10<sup>9</sup> &lt;= target &lt;= 10<sup>9</sup></code></li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Follow up:</strong> Assume that the BST is balanced. Could you solve it in less than <code>O(n)</code> runtime (where <code>n = total nodes</code>)?</p>\n",
+  "likes": 1331,
+  "dislikes": 51,
+  "stats": {
+    "totalAccepted": "134K",
+    "totalSubmission": "220.9K",
+    "totalAcceptedRaw": 133996,
+    "totalSubmissionRaw": 220882,
+    "acRate": "60.7%"
+  },
+  "topicTags": [
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    },
+    {
+      "name": "Stack",
+      "slug": "stack"
+    },
+    {
+      "name": "Tree",
+      "slug": "tree"
+    },
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Binary Search Tree",
+      "slug": "binary-search-tree"
+    },
+    {
+      "name": "Heap (Priority Queue)",
+      "slug": "heap-priority-queue"
+    },
+    {
+      "name": "Binary Tree",
+      "slug": "binary-tree"
+    }
+  ],
+  "metaData": {
+    "name": "closestKValues",
+    "params": [
+      {
+        "name": "root",
+        "type": "TreeNode"
+      },
+      {
+        "name": "target",
+        "type": "double"
+      },
+      {
+        "name": "k",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "list<integer>"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "gflanary",
+      "year": 2022,
+      "content": "Difficulty should be reexamined. This is a straightforward traversal + heap problem. :/",
+      "voteCount": 16
+    },
+    {
+      "name": "subscriber6436",
+      "year": 2024,
+      "content": "DFS + Binary Search + Two Pointers.\\nShould be medium, IMO. ",
+      "voteCount": 4
+    },
+    {
+      "name": "anupsindagi",
+      "year": 2025,
+      "content": "Let me take this win for solving hard in 10 mins :/ ",
+      "voteCount": 3
+    },
+    {
+      "name": "jerry_nk",
+      "year": 2024,
+      "content": "any traversal+heap is O(nlogk)\nAnother Simple Approach: a simple k length sliding window on sorted array",
+      "voteCount": 2
+    },
+    {
+      "name": "Satansoft",
+      "year": 2025,
+      "content": "Not sure Heap make sense here, just forming array of node values, sorted in order of differences of `x - target` and slicing it from `0` to `k` that much simpler and faster.",
+      "voteCount": 1
+    },
+    {
+      "name": "HemantSoni",
+      "year": 2024,
+      "content": "Inorder approach with early exit is < O(n), when k is less than n, and answer is not including the last element in the window.",
+      "voteCount": 1
+    },
+    {
+      "name": "mullachv",
+      "year": 2023,
+      "content": "Add statements to question that the entries in the BST (Node.val) are integers, and the target is a floating point number. Current test harness/solution fails for a BST containing floating point numbers. For e.g: \\n```[4,2,5,1,3,null,7,null,null,2.5,3.14,5.3,7.17],  k = 4```",
+      "voteCount": 1
+    },
+    {
+      "name": "ChenxiLu",
+      "year": 2025,
+      "content": "The 4 hints make a medium into hard. ",
+      "voteCount": 0
+    },
+    {
+      "name": "ccolombe12",
+      "year": 2025,
+      "content": "Too easy for a hard problem. ",
+      "voteCount": 0
+    },
+    {
+      "name": "vincentnguyen1732",
+      "year": 2025,
+      "content": "The problem doesn\\'t state how to resolve tiebreakers. I had to find that out myself.\\n\\nExample:\\n[2,1,3], k=2, n=2\\n\\nExpected:\\n[1,2] NOT [2,3] even though 1,3 are both equal in distance from 2.",
+      "voteCount": 0
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "category": "",
+  "id": "230",
+  "name": "Kth Smallest Element in a BST",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/",
+  "slug": "kth-smallest-element-in-a-bst",
+  "isPaidOnly": false,
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Binary Tree Inorder Traversal",
+      "difficulty": "Easy",
+      "slug": "binary-tree-inorder-traversal"
+    },
+    {
+      "title": "Second Minimum Node In a Binary Tree",
+      "difficulty": "Easy",
+      "slug": "second-minimum-node-in-a-binary-tree"
+    }
+  ],
+  "questionId": "230",
+  "questionFrontendId": "230",
+  "title": "Kth Smallest Element in a BST",
+  "titleSlug": "kth-smallest-element-in-a-bst",
+  "content": "<p>Given the <code>root</code> of a binary search tree, and an integer <code>k</code>, return <em>the</em> <code>k<sup>th</sup></code> <em>smallest value (<strong>1-indexed</strong>) of all the values of the nodes in the tree</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/01/28/kthtree1.jpg\" style=\"width: 212px; height: 301px;\" />\n<pre>\n<strong>Input:</strong> root = [3,1,4,null,2], k = 1\n<strong>Output:</strong> 1\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/01/28/kthtree2.jpg\" style=\"width: 382px; height: 302px;\" />\n<pre>\n<strong>Input:</strong> root = [5,3,6,2,4,null,null,1], k = 3\n<strong>Output:</strong> 3\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of nodes in the tree is <code>n</code>.</li>\n\t<li><code>1 &lt;= k &lt;= n &lt;= 10<sup>4</sup></code></li>\n\t<li><code>0 &lt;= Node.val &lt;= 10<sup>4</sup></code></li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Follow up:</strong> If the BST is modified often (i.e., we can do insert and delete operations) and you need to find the kth smallest frequently, how would you optimize?</p>\n",
+  "likes": 12317,
+  "dislikes": 250,
+  "stats": {
+    "totalAccepted": "2M",
+    "totalSubmission": "2.6M",
+    "totalAcceptedRaw": 1995844,
+    "totalSubmissionRaw": 2632452,
+    "acRate": "75.8%"
+  },
+  "topicTags": [
+    {
+      "name": "Tree",
+      "slug": "tree"
+    },
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Binary Search Tree",
+      "slug": "binary-search-tree"
+    },
+    {
+      "name": "Binary Tree",
+      "slug": "binary-tree"
+    }
+  ],
+  "metaData": {
+    "name": "kthSmallest",
+    "params": [
+      {
+        "name": "root",
+        "type": "TreeNode"
+      },
+      {
+        "name": "k",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "Vicky_Prasad",
+      "year": 2022,
+      "content": "My Dummy Approach:\\nGet Inorder of BST and then return k-1 index value.\\nIts simple way to solve this problem.",
+      "voteCount": 221
+    },
+    {
+      "name": "SR2311",
+      "year": 2020,
+      "content": "When you are constructing the BST, at every node maintain a count - which is the number of nodes smaller than current node[ in other words number of nodes to the left of current node]. Also every node has a pointer which points to  it parent [ this is to handle the case when a node is deleted from the BST] .\\n\\nNow lets say everything is done and query comes:\\n\\t Starting at root in O(1) you know if your k is the left half of right half by comparing k with the count of current node. If k is smaller than the count that means our answer lies in the left half otherwise it is in the right half. Keep repeating this until we find our node\\n\\t \\nInsert Operation:\\nJust do normal BST insert and ensure to increment the count of the node if you are going down left of the tree and once you find the spot to insert assign the parent to the node.\\n\\nDelete operation:\\nConsider deleting some x node now since we have reference to the parent of every node we simply check if the node being deleted is to left or right of parent by comparing its value and if it is in the left simply decrement the count of the parent.\\n",
+      "voteCount": 63
+    },
+    {
+      "name": "Evercode",
+      "year": 2017,
+      "content": "I think we can keep both the kth smallest element and (k-1)th smallest element. If we insert or delete an element larger than the kth smallest element, the result remains unaffected. If something smaller than is inserted, compare it with the (k-1)th smallest element. The larger one becomes the new kth smallest element and adjust (k-1)th element accordingly.\\nWe may also need to keep track of the (k+1)th smallest element in case of deleting a node smaller than the kth element. However if we keep deleting nodes, we may need the (k+2, k+3, .... )th smallest element to stay correct.\\nAny other ideas?",
+      "voteCount": 35
+    },
+    {
+      "name": "victCh",
+      "year": 2023,
+      "content": "What is kth smallest value???",
+      "voteCount": 29
+    },
+    {
+      "name": "UmeshKumaar15",
+      "year": 2023,
+      "content": "TIP: Inorder traversal of a Binary Search Tree is always sorted.",
+      "voteCount": 24
+    },
+    {
+      "name": "HARSHIT_4U",
+      "year": 2023,
+      "content": "We know InOrder traversal of BST is ascending order list. So, return k-1th element.",
+      "voteCount": 20
+    },
+    {
+      "name": "monkeykingyan",
+      "year": 2017,
+      "content": "Here are my 4 methods to solve the problem:\\n-> Binary Search\\n-> Recursive\\n-> Iterative\\n-> Morris Traversal\\n[LeetCode Solution](https://techgeekyan.blogspot.ca/2017/09/leetcode-solution-230-kth-smallest.html)",
+      "voteCount": 20
+    },
+    {
+      "name": "LeetCode",
+      "year": 2022,
+      "content": "This problem is the Daily LeetCoding Challenge for April, Day 18.\n\nFeel free to share anything related to this problem here!\n\nYou can ask questions, discuss what you've learned from this problem, or show off how many days of streak you've made!\n\n---\n\nIf you'd like to share a detailed solution to the problem, please create a new post in the discuss section and provide\n- **Detailed Explanations**: Describe the algorithm you used to solve this problem. Include any insights you used to solve this problem.\n- **Images** that help explain the algorithm.\n- **Language and Code** you used to pass the problem.\n- **Time and Space complexity analysis**.\n\n---\n\n  **\ud83d\udccc Do you want to learn the problem thoroughly?**\n  Read [**\u2b50  LeetCode Official Solution\u2b50**](https://leetcode.com/problems/kth-smallest-element-in-a-bst/solution) to learn the 3 approaches to the problem with detailed explanations to the algorithms, codes, and complexity analysis.\n  <details>\n  <summary> Spoiler Alert! We'll explain these 2 approaches in the official solution</summary>\n\n  \n**Approach 1:** Recursive Inorder Traversal\n\n  \n**Approach 2:** Iterative Inorder Traversal\n\n  \n</details>\n\n\n\nIf you're new to Daily LeetCoding Challenge, [**check out this post**](https://leetcode.com/discuss/general-discussion/655704/)!\n\n\n---\n\n<br>\n\n<p align=\"center\">\n<a href=\"https://leetcode.com/subscribe/?ref=ex_dc\" target=\"_blank\">\n  <img src=\"https://assets.leetcode.com/static_assets/marketing/daily_leetcoding_banner.png\" width=\"560px\" />\n</a>\n</p>\n\n<br>",
+      "voteCount": 11
+    },
+    {
+      "name": "MitchellHe",
+      "year": 2017,
+      "content": "Can anybody help solving the follow up?",
+      "voteCount": 7
+    },
+    {
+      "name": "pygirl5",
+      "year": 2020,
+      "content": "![image](https://assets.leetcode.com/users/pygirl5/image_1579402446.png)\\n@Leetcode could you please correct this?\\nThanks in advance!\\n",
+      "voteCount": 6
+    }
+  ]
+}

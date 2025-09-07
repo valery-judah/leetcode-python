@@ -1,0 +1,128 @@
+{
+  "category": "",
+  "id": "250",
+  "name": "Count Univalue Subtrees",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-univalue-subtrees/",
+  "slug": "count-univalue-subtrees",
+  "isPaidOnly": true,
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Subtree of Another Tree",
+      "difficulty": "Easy",
+      "slug": "subtree-of-another-tree"
+    },
+    {
+      "title": "Longest Univalue Path",
+      "difficulty": "Medium",
+      "slug": "longest-univalue-path"
+    }
+  ],
+  "questionId": "250",
+  "questionFrontendId": "250",
+  "title": "Count Univalue Subtrees",
+  "titleSlug": "count-univalue-subtrees",
+  "content": "<p>Given the <code>root</code> of a binary tree, return <em>the number of <strong>uni-value</strong> </em><span data-keyword=\"subtree\"><em>subtrees</em></span>.</p>\n\n<p>A <strong>uni-value subtree</strong> means all nodes of the subtree have the same value.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/08/21/unival_e1.jpg\" style=\"width: 450px; height: 258px;\" />\n<pre>\n<strong>Input:</strong> root = [5,1,5,5,5,null,5]\n<strong>Output:</strong> 4\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> root = []\n<strong>Output:</strong> 0\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> root = [5,5,5,5,5,null,5]\n<strong>Output:</strong> 6\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of the node in the tree will be in the range <code>[0, 1000]</code>.</li>\n\t<li><code>-1000 &lt;= Node.val &lt;= 1000</code></li>\n</ul>\n",
+  "likes": 1238,
+  "dislikes": 453,
+  "stats": {
+    "totalAccepted": "166.4K",
+    "totalSubmission": "290.7K",
+    "totalAcceptedRaw": 166440,
+    "totalSubmissionRaw": 290722,
+    "acRate": "57.3%"
+  },
+  "topicTags": [
+    {
+      "name": "Tree",
+      "slug": "tree"
+    },
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Binary Tree",
+      "slug": "binary-tree"
+    }
+  ],
+  "metaData": {
+    "name": "countUnivalSubtrees",
+    "params": [
+      {
+        "name": "root",
+        "type": "TreeNode"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "guestly",
+      "year": 2019,
+      "content": "Why is `[5,1,5,5,5,null,5]` produce 4? There are obviously 5 `5` nodes in this tree?",
+      "voteCount": 59
+    },
+    {
+      "name": "alphasandhu",
+      "year": 2021,
+      "content": "![image](https://assets.leetcode.com/users/images/da7c7c07-6fb0-49a9-9c62-86b55bbbf1bd_1614552731.8569388.png)\\n",
+      "voteCount": 6
+    },
+    {
+      "name": "bloomer",
+      "year": 2020,
+      "content": "Its not consistent with the example provided to count subtrees.\\nif this tree [5,1,5,5,5,null,5] is 4 counts,\\nthen [5, 1 , 5] should be 1 and not 2.",
+      "voteCount": 6
+    },
+    {
+      "name": "swanseafc",
+      "year": 2023,
+      "content": "This is a bad question, due to the recursive definition of a subtree. You're really going to have to count all leaf nodes, since a single node is by definition a tree as well. Also, the two right (5) nodes from coming down from the root node should actually count as 3 subtrees; there are two separate subtrees of single 5 nodes and then another subtree of two nodes, both with value 5. This question shouldn't have been asked.\n  ```\n     5\n   /    \\\n  1        5\n / \\          \\\n5   5          5\n\n```\n\n                   \n\n                    ",
+      "voteCount": 5
+    },
+    {
+      "name": "ar13101085",
+      "year": 2021,
+      "content": "[1,1,1,5,5,null,5]\\n\\nMy solution give output is 4. actual expected output shows 3. why 3 ? Anyone can explain?",
+      "voteCount": 5
+    },
+    {
+      "name": "Goldilocks97",
+      "year": 2024,
+      "content": "**The worst task description I\\'ve seen so far**\\n\\nJust want to remind you we pay for this 35$ per month \\uD83E\\uDEE0\\n",
+      "voteCount": 4
+    },
+    {
+      "name": "user1345rv",
+      "year": 2024,
+      "content": "For those who struggle with understanding this (ill-worded) question: a uni-val subtree needs to have ALL its descendants with the same value.\\nIf one descendant is different, the whole tree does not count.",
+      "voteCount": 4
+    },
+    {
+      "name": "pk-dev",
+      "year": 2021,
+      "content": "The question was to find \"subtrees\" , why are we also including the root of the tree as part of the count ?",
+      "voteCount": 3
+    },
+    {
+      "name": "jp2338",
+      "year": 2021,
+      "content": "Hi,\\nI find the problem description is way too ambiguous :( \\nHow about below tree ? `\\n[0,5,5,2,3,6,5]` \\n\\nThe expected ans is `4` , how to calculate 4, just b/c there are 4 leave nodes ??\\n![image](https://assets.leetcode.com/users/images/a9e7bcff-a4d6-4e4e-80c1-7ebde4c26212_1622568812.7831693.png)\\n\\n\\n![image](https://assets.leetcode.com/users/images/852cdb01-8fa6-45e0-8a07-5ae9363e6478_1622568718.3118403.png)\\n\\nThanks pals!",
+      "voteCount": 3
+    },
+    {
+      "name": "LixiangZhou01",
+      "year": 2020,
+      "content": "[5,5] --> 2 \\n[5,5,1] --> expected answer is 2  (here root 5 and left leaf 5 is counted as 1,  left leaf 5 is also counted once;  My question is since the Root node has a right leaf 1, why it should be counted?)\\n[5,1,5,5,5,null,5]  --> expected answer is 4 (left side two leaf nodes are counted as 2, right side including root, has 3 nodes, all have value 5, as per the second case, should it be counted as 3 for the right side, even though root has a left child 1, so the total would be 5)\\n\\nFor my understanding, if the third case is 4, the second test case should be 1.\\nAny explanation is welcome.   Thanks in advance.",
+      "voteCount": 3
+    }
+  ]
+}

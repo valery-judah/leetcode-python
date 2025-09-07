@@ -1,0 +1,157 @@
+{
+  "category": "",
+  "id": "235",
+  "name": "Lowest Common Ancestor of a Binary Search Tree",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/",
+  "slug": "lowest-common-ancestor-of-a-binary-search-tree",
+  "isPaidOnly": false,
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Lowest Common Ancestor of a Binary Tree",
+      "difficulty": "Medium",
+      "slug": "lowest-common-ancestor-of-a-binary-tree"
+    },
+    {
+      "title": "Smallest Common Region",
+      "difficulty": "Medium",
+      "slug": "smallest-common-region"
+    },
+    {
+      "title": "Lowest Common Ancestor of a Binary Tree II",
+      "difficulty": "Medium",
+      "slug": "lowest-common-ancestor-of-a-binary-tree-ii"
+    },
+    {
+      "title": "Lowest Common Ancestor of a Binary Tree III",
+      "difficulty": "Medium",
+      "slug": "lowest-common-ancestor-of-a-binary-tree-iii"
+    },
+    {
+      "title": "Lowest Common Ancestor of a Binary Tree IV",
+      "difficulty": "Medium",
+      "slug": "lowest-common-ancestor-of-a-binary-tree-iv"
+    }
+  ],
+  "questionId": "235",
+  "questionFrontendId": "235",
+  "title": "Lowest Common Ancestor of a Binary Search Tree",
+  "titleSlug": "lowest-common-ancestor-of-a-binary-search-tree",
+  "content": "<p>Given a binary search tree (BST), find the lowest common ancestor (LCA) node of two given nodes in the BST.</p>\n\n<p>According to the <a href=\"https://en.wikipedia.org/wiki/Lowest_common_ancestor\" target=\"_blank\">definition of LCA on Wikipedia</a>: &ldquo;The lowest common ancestor is defined between two nodes <code>p</code> and <code>q</code> as the lowest node in <code>T</code> that has both <code>p</code> and <code>q</code> as descendants (where we allow <strong>a node to be a descendant of itself</strong>).&rdquo;</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2018/12/14/binarysearchtree_improved.png\" style=\"width: 200px; height: 190px;\" />\n<pre>\n<strong>Input:</strong> root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8\n<strong>Output:</strong> 6\n<strong>Explanation:</strong> The LCA of nodes 2 and 8 is 6.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2018/12/14/binarysearchtree_improved.png\" style=\"width: 200px; height: 190px;\" />\n<pre>\n<strong>Input:</strong> root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 4\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> The LCA of nodes 2 and 4 is 2, since a node can be a descendant of itself according to the LCA definition.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> root = [2,1], p = 2, q = 1\n<strong>Output:</strong> 2\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of nodes in the tree is in the range <code>[2, 10<sup>5</sup>]</code>.</li>\n\t<li><code>-10<sup>9</sup> &lt;= Node.val &lt;= 10<sup>9</sup></code></li>\n\t<li>All <code>Node.val</code> are <strong>unique</strong>.</li>\n\t<li><code>p != q</code></li>\n\t<li><code>p</code> and <code>q</code> will exist in the BST.</li>\n</ul>\n",
+  "likes": 11930,
+  "dislikes": 346,
+  "stats": {
+    "totalAccepted": "2M",
+    "totalSubmission": "2.9M",
+    "totalAcceptedRaw": 2021101,
+    "totalSubmissionRaw": 2927535,
+    "acRate": "69.0%"
+  },
+  "topicTags": [
+    {
+      "name": "Tree",
+      "slug": "tree"
+    },
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Binary Search Tree",
+      "slug": "binary-search-tree"
+    },
+    {
+      "name": "Binary Tree",
+      "slug": "binary-tree"
+    }
+  ],
+  "metaData": {
+    "name": "lowestCommonAncestor",
+    "params": [
+      {
+        "name": "root",
+        "type": "TreeNode"
+      },
+      {
+        "name": "p",
+        "type": "integer"
+      },
+      {
+        "name": "q",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "TreeNode"
+    },
+    "manual": true
+  },
+  "discussion_posts": [
+    {
+      "name": "IvanStebletsov",
+      "year": 2023,
+      "content": "Refreshing my knowledge about key traits of binary search tree very helped me find simple solution for this problem. I\\'d recommend you start from it.\\n\\nBST has following traits:\\n1) Both root\\'s subtrees also are binary (it is not important for solution, but just FYI);\\n2) All **LEFT** child nodes of **LEFT** subtree have values **less or equal** the value of the current node.\\n2) All **RIGHT** child nodes of **RIGHT** subtree have values **greater** the value of the current node.\\n\\nKeeping in mind these traits we can start traverse tree in depth (DFS).\\n\\nMain idea: \\n- If **current node value > p.value and q.value**, hence according to trait **\\u21162** above, it\\'s useless search common node for **p** and **q** in the **right** subtree -> continue traverse next node in **left** subtree.\\n- If **current node value < p.value and q.value**, hence according to trait **\\u21163** above, it\\'s useless search common node for **p** and **q** in the **left** subtree  -> continue traverse next node in **right** subtree\\n- If according to statements above it\\'s useless search common node in both **left** and **right** subtree, it means that you are in a right place, you have found Lowest Common Ancestor.\\n\\nUsing this idea you can solve problem both iteratively and recursively.\\n\\nIf I\\'m not mistaken time complexity will be O(logN), because every time we chose only one subtree, therefore reduce count of traversable nodes twice. Memory complexity O(1).\\n\\nHope it will be helpful.",
+      "voteCount": 271
+    },
+    {
+      "name": "Jayusc",
+      "year": 2022,
+      "content": "so this is lowest common ancestor, not smallest common ancestor. I am an idiot",
+      "voteCount": 203
+    },
+    {
+      "name": "onomojo",
+      "year": 2023,
+      "content": "I stupidly overlooked the BST part and started trying to solve it as a generic tree. Obviously that way over-complicates it. ",
+      "voteCount": 112
+    },
+    {
+      "name": "yfang82",
+      "year": 2022,
+      "content": "Hint: search for the first value that is between p and q. That will be your lowest common ancestor",
+      "voteCount": 68
+    },
+    {
+      "name": "noseonarug17",
+      "year": 2023,
+      "content": "For anyone who got confused and frustrated because output was inexplicably `undefined` - despite the way it displays the output, it wants you to return the node itself, not the value. This was true for Javascript, anyway.",
+      "voteCount": 40
+    },
+    {
+      "name": "Demaxl",
+      "year": 2023,
+      "content": "Am i the only one who stupidly overlooked the fact that it was  BST and thought it was just a regular BT?\\n",
+      "voteCount": 35
+    },
+    {
+      "name": "advanced-bencoding",
+      "year": 2022,
+      "content": "Remember that lowestCommonAncestor is in terms of depth level and not common node value based!",
+      "voteCount": 28
+    },
+    {
+      "name": "younginterceptor",
+      "year": 2023,
+      "content": "It should probably be an `easy` problem",
+      "voteCount": 27
+    },
+    {
+      "name": "ImRafaelPL",
+      "year": 2024,
+      "content": "If you know binary search this is easy.\\nFirst get which of p and q is bigger and which is smaller. Save that to some variables. Then use a recursive function.\\nIF current node value is between small and big, return it.\\nIF its bigger than big, recurse the left branch of the tree.\\nIF current node value is smaller than small, then recurse the right branch.\\nHope this helps",
+      "voteCount": 10
+    },
+    {
+      "name": "AlexanderPershin",
+      "year": 2024,
+      "content": "Some test cases\n```\n[3,1,4,null,2]\n2\n3\n[5,3,6,2,4,null,null,1]\n1\n4\n```",
+      "voteCount": 7
+    }
+  ]
+}

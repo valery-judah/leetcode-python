@@ -1,0 +1,122 @@
+{
+  "category": "",
+  "id": "80",
+  "name": "Remove Duplicates from Sorted Array II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/",
+  "slug": "remove-duplicates-from-sorted-array-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers"
+  ],
+  "similar_questions": [
+    {
+      "title": "Remove Duplicates from Sorted Array",
+      "difficulty": "Easy",
+      "slug": "remove-duplicates-from-sorted-array"
+    }
+  ],
+  "questionId": "80",
+  "questionFrontendId": "80",
+  "title": "Remove Duplicates from Sorted Array II",
+  "titleSlug": "remove-duplicates-from-sorted-array-ii",
+  "content": "<p>Given an integer array <code>nums</code> sorted in <strong>non-decreasing order</strong>, remove some duplicates <a href=\"https://en.wikipedia.org/wiki/In-place_algorithm\" target=\"_blank\"><strong>in-place</strong></a> such that each unique element appears <strong>at most twice</strong>. The <strong>relative order</strong> of the elements should be kept the <strong>same</strong>.</p>\n\n<p>Since it is impossible to change the length of the array in some languages, you must instead have the result be placed in the <strong>first part</strong> of the array <code>nums</code>. More formally, if there are <code>k</code> elements after removing the duplicates, then the first <code>k</code> elements of <code>nums</code>&nbsp;should hold the final result. It does not matter what you leave beyond the first&nbsp;<code>k</code>&nbsp;elements.</p>\n\n<p>Return <code>k</code><em> after placing the final result in the first </em><code>k</code><em> slots of </em><code>nums</code>.</p>\n\n<p>Do <strong>not</strong> allocate extra space for another array. You must do this by <strong>modifying the input array <a href=\"https://en.wikipedia.org/wiki/In-place_algorithm\" target=\"_blank\">in-place</a></strong> with O(1) extra memory.</p>\n\n<p><strong>Custom Judge:</strong></p>\n\n<p>The judge will test your solution with the following code:</p>\n\n<pre>\nint[] nums = [...]; // Input array\nint[] expectedNums = [...]; // The expected answer with correct length\n\nint k = removeDuplicates(nums); // Calls your implementation\n\nassert k == expectedNums.length;\nfor (int i = 0; i &lt; k; i++) {\n    assert nums[i] == expectedNums[i];\n}\n</pre>\n\n<p>If all assertions pass, then your solution will be <strong>accepted</strong>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,1,1,2,2,3]\n<strong>Output:</strong> 5, nums = [1,1,2,2,3,_]\n<strong>Explanation:</strong> Your function should return k = 5, with the first five elements of nums being 1, 1, 2, 2 and 3 respectively.\nIt does not matter what you leave beyond the returned k (hence they are underscores).\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [0,0,1,1,1,1,2,3,3]\n<strong>Output:</strong> 7, nums = [0,0,1,1,2,3,3,_,_]\n<strong>Explanation:</strong> Your function should return k = 7, with the first seven elements of nums being 0, 0, 1, 1, 2, 3 and 3 respectively.\nIt does not matter what you leave beyond the returned k (hence they are underscores).\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 3 * 10<sup>4</sup></code></li>\n\t<li><code>-10<sup>4</sup> &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>\n\t<li><code>nums</code> is sorted in <strong>non-decreasing</strong> order.</li>\n</ul>\n",
+  "likes": 7842,
+  "dislikes": 1473,
+  "stats": {
+    "totalAccepted": "1.7M",
+    "totalSubmission": "2.6M",
+    "totalAcceptedRaw": 1672564,
+    "totalSubmissionRaw": 2636845,
+    "acRate": "63.4%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    }
+  ],
+  "metaData": {
+    "name": "removeDuplicates",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "output": {
+      "paramindex": 0,
+      "size": "ret"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "leozartino",
+      "year": 2023,
+      "content": "non-decreasing order is just a fancy way to say that the array is sorted in ascending order. \\uD83D\\uDE05",
+      "voteCount": 347
+    },
+    {
+      "name": "Amanzmy00",
+      "year": 2024,
+      "content": "# I Am Coooked !! \\n## Spent 2 Hours On This Still Can\\'t Get It :)",
+      "voteCount": 189
+    },
+    {
+      "name": "sanju1819",
+      "year": 2023,
+      "content": "!!!!!!!!  SPOILER ALERT  !!!!!\\n\\n\\n\\nJust take 2 variables fast and slow and place at 2nd index and check both are equal or not. If it is equal increase the fast variable else nums[slow++] = nums[fast++].\\n\\nHey! are you thinking it\\'s completed,\\nThink what you have to return and what you have to do if size is less than 2 ?  ",
+      "voteCount": 74
+    },
+    {
+      "name": "andrew_yasinsky",
+      "year": 2023,
+      "content": "\" remove some duplicates in-place such that each unique element appears at most twice.\" - this is pidgin English\\n\"remove some duplicates, such unique elements appear twice\"\\n",
+      "voteCount": 67
+    },
+    {
+      "name": "christopherblodgett",
+      "year": 2023,
+      "content": "Works on my machine. It is the second time I've had their TS behave differently than TS loaded locally. This is frustrating.",
+      "voteCount": 61
+    },
+    {
+      "name": "darrendarrendarren",
+      "year": 2023,
+      "content": "\"remove some duplicates in-place such that each unique element appears at most twice\"\\n\\n1. If an element appears twice it is not unique\\n2. \"At most twice\" is a vague constraint because it is satisfied by elements in the output appearing zero times, one time, or two times\\n\\n",
+      "voteCount": 56
+    },
+    {
+      "name": "adarsh20used",
+      "year": 2024,
+      "content": "change the duplicate into INT_MAX and sort \\uD83D\\uDE02\\uD83D\\uDE02",
+      "voteCount": 42
+    },
+    {
+      "name": "farmanmohd124",
+      "year": 2023,
+      "content": "can anyone tell me , in this problem the funtion has a return type of int but in output there is vector . why? ",
+      "voteCount": 25
+    },
+    {
+      "name": "majun8cn",
+      "year": 2014,
+      "content": "I submitted an answer based on a new Array B. I scan the Array A and only put the first 1-2 of the same numbers to B. Then copy the B back to A. \\n\\nIt requires O(N) space. Is there any way to solve this question with O(1) space?",
+      "voteCount": 17
+    },
+    {
+      "name": "ivandurachok",
+      "year": 2024,
+      "content": "The problem is misworded.  The problem statement says \"each unique element appears *at most twice*.\"  \"At most twice\" means 2 times *or less*.  So, firstly, technically if you return an empty array each time, then you will satisfy the problem statement (because unique elements will appear 0 times and 0 is not greater than 2).  But presumably that is not a charitable interpretation.  Secondly, having each unique element appear only once and exactly once in the resulting array, however, would be a perfectly reasonable interpretation of the problem statement.  But if so, then [1,1,1,2,2,3] -> [1,2,3] should be OK.  And yet, the testcase expects only [1,1,2,2,3] and does not accept [1,2,3].  But if so, then the problem statement should ask for each unique element to appear exactly once if it appears once in the original input and to appear exactly twice if it appears twice in the original input, and if it appears more times than that, then it should still appear only twice.",
+      "voteCount": 11
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "category": "",
+  "id": "380",
+  "name": "Insert Delete GetRandom O(1)",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/insert-delete-getrandom-o1/",
+  "slug": "insert-delete-getrandom-o1",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Design",
+    "Randomized"
+  ],
+  "similar_questions": [
+    {
+      "title": "Insert Delete GetRandom O(1) - Duplicates allowed",
+      "difficulty": "Hard",
+      "slug": "insert-delete-getrandom-o1-duplicates-allowed"
+    }
+  ],
+  "questionId": "380",
+  "questionFrontendId": "380",
+  "title": "Insert Delete GetRandom O(1)",
+  "titleSlug": "insert-delete-getrandom-o1",
+  "content": "<p>Implement the <code>RandomizedSet</code> class:</p>\n\n<ul>\n\t<li><code>RandomizedSet()</code> Initializes the <code>RandomizedSet</code> object.</li>\n\t<li><code>bool insert(int val)</code> Inserts an item <code>val</code> into the set if not present. Returns <code>true</code> if the item was not present, <code>false</code> otherwise.</li>\n\t<li><code>bool remove(int val)</code> Removes an item <code>val</code> from the set if present. Returns <code>true</code> if the item was present, <code>false</code> otherwise.</li>\n\t<li><code>int getRandom()</code> Returns a random element from the current set of elements (it&#39;s guaranteed that at least one element exists when this method is called). Each element must have the <b>same probability</b> of being returned.</li>\n</ul>\n\n<p>You must implement the functions of the class such that each function works in&nbsp;<strong>average</strong>&nbsp;<code>O(1)</code>&nbsp;time complexity.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input</strong>\n[&quot;RandomizedSet&quot;, &quot;insert&quot;, &quot;remove&quot;, &quot;insert&quot;, &quot;getRandom&quot;, &quot;remove&quot;, &quot;insert&quot;, &quot;getRandom&quot;]\n[[], [1], [2], [2], [], [1], [2], []]\n<strong>Output</strong>\n[null, true, false, true, 2, true, false, 2]\n\n<strong>Explanation</strong>\nRandomizedSet randomizedSet = new RandomizedSet();\nrandomizedSet.insert(1); // Inserts 1 to the set. Returns true as 1 was inserted successfully.\nrandomizedSet.remove(2); // Returns false as 2 does not exist in the set.\nrandomizedSet.insert(2); // Inserts 2 to the set, returns true. Set now contains [1,2].\nrandomizedSet.getRandom(); // getRandom() should return either 1 or 2 randomly.\nrandomizedSet.remove(1); // Removes 1 from the set, returns true. Set now contains [2].\nrandomizedSet.insert(2); // 2 was already in the set, so return false.\nrandomizedSet.getRandom(); // Since 2 is the only number in the set, getRandom() will always return 2.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>-2<sup>31</sup> &lt;= val &lt;= 2<sup>31</sup> - 1</code></li>\n\t<li>At most <code>2 *&nbsp;</code><code>10<sup>5</sup></code> calls will be made to <code>insert</code>, <code>remove</code>, and <code>getRandom</code>.</li>\n\t<li>There will be <strong>at least one</strong> element in the data structure when <code>getRandom</code> is called.</li>\n</ul>\n",
+  "likes": 9744,
+  "dislikes": 681,
+  "stats": {
+    "totalAccepted": "1.2M",
+    "totalSubmission": "2.2M",
+    "totalAcceptedRaw": 1234818,
+    "totalSubmissionRaw": 2241638,
+    "acRate": "55.1%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Design",
+      "slug": "design"
+    },
+    {
+      "name": "Randomized",
+      "slug": "randomized"
+    }
+  ],
+  "metaData": {
+    "classname": "RandomizedSet",
+    "constructor": {
+      "params": []
+    },
+    "methods": [
+      {
+        "params": [
+          {
+            "type": "integer",
+            "name": "val"
+          }
+        ],
+        "name": "insert",
+        "return": {
+          "type": "boolean"
+        }
+      },
+      {
+        "params": [
+          {
+            "type": "integer",
+            "name": "val"
+          }
+        ],
+        "return": {
+          "type": "boolean"
+        },
+        "name": "remove"
+      },
+      {
+        "params": [],
+        "name": "getRandom",
+        "return": {
+          "type": "integer"
+        }
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "systemdesign": true
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": true,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 21
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "LinkedIn",
+        "slug": "linkedin",
+        "timesEncountered": 16
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "Unnayan2399",
+      "year": 2023,
+      "content": "got this in my deshaw interview ,",
+      "voteCount": 243
+    },
+    {
+      "name": "pawel753",
+      "year": 2020,
+      "content": "Anyone else having troubles with Asserting Random values in unit tests? \\nMy solution was not accepted because ranom values which it generates is sometimes different than defined as expected in Unit tests. Of course it is, because **it\\'s random!**\\nHas anybody overcome this problem for C# solution?",
+      "voteCount": 215
+    },
+    {
+      "name": "psionl0",
+      "year": 2023,
+      "content": "The need for O(1) random access complicates this exercise slightly. You need a hashmap for O(1) insertions and removals and an integer array for the O(1) random access. The hashmap entries should include an index with each value to show where it is in the array.\\n\\nOne way to ensure O(1) removal from the array is to move just the end element to where the gap is (instead of shifting all the elements over). Don\\'t forget to store the new index for this particular value.",
+      "voteCount": 132
+    },
+    {
+      "name": "StefanPochmann",
+      "year": 2016,
+      "content": "I predict that many of us will think of using a hash table, but I'm not aware of any that really offer the needed operations in O(1). Are there any?\\n\\nWe do usually think of them as O(1), and I think that's ok because in practice they do average/amortize O(1) and everybody knows what is meant (right?) and they're usually just a small building block in the actual algorithm. Would be pretty annoying if we had to always asterisk the complexity discussion of every algorithm that uses hash tables. But here, the set data structure isn't just a helping part in the actual thing we're building. It ***is*** the actual thing. And we're explicitly required to achieve O(1), it's even the problem title. So I think we shouldn't be sloppy here.\\n\\n**Update:** The problem has been updated to say \"average\".",
+      "voteCount": 116
+    },
+    {
+      "name": "BatCoder",
+      "year": 2017,
+      "content": "If we just use a hashset (`unordered_set`), then we can implement both `insert()` and `remove()` in O(1) time, by using the `insert()` and `erase()` methods.  [Refer [this](https://stackoverflow.com/questions/222658/multiset-map-and-hash-map-complexity) link for more details].  \\n\\nThe only challenge is with implementing `getRandom()` in `O(1)`.  Something na\\xEFve like just `rand()` cannot be used on a hashset, so we need to use the `std::advance()` method which would inturn result in this being an `O(n)` method.  \\n\\nThus, in order to implement `getRandom()` as well in O(1), we need to use a different method (of using a hashMap and arraylist) than just using a hashset.\\n\\nPlease let me know if you find something incorrect in this post.",
+      "voteCount": 91
+    },
+    {
+      "name": "cosmic_saurabh",
+      "year": 2023,
+      "content": "This question has been asked in ***SAMSUNG R&D 2023*** Oncampus (Offline interview)",
+      "voteCount": 40
+    },
+    {
+      "name": "mstuebs",
+      "year": 2024,
+      "content": "Happy **set** week! Check out these additional TCs and upvote if they are helpful  :-D\n**Edit 1**: Changed out the testcases due to feedback from [@psionl0](/psionl0) - Thank you and please consider contributing to the [git repository](https://github.com/mquintus/l33tcode-testcase-generator/).\n**Edit 2**: [@sergei99](/sergei99) You can find a very large TC in the repository as well. As you say, it doesn't fit into the *discussion section*.\n```\n[\"RandomizedSet\",\"insert\",\"insert\",\"insert\",\"insert\",\"getRandom\",\"getRandom\",\"getRandom\",\"getRandom\",\"remove\",\"remove\",\"remove\",\"remove\"]\n[[],[2],[2],[1],[1],[],[],[],[],[2],[2],[1],[1]]\n[\"RandomizedSet\",\"insert\",\"insert\",\"getRandom\",\"insert\",\"getRandom\",\"remove\",\"insert\",\"remove\",\"getRandom\",\"remove\",\"getRandom\",\"getRandom\",\"getRandom\",\"remove\",\"insert\",\"insert\",\"insert\",\"remove\",\"insert\",\"getRandom\",\"getRandom\",\"getRandom\",\"remove\",\"remove\",\"remove\",\"insert\",\"insert\",\"remove\",\"insert\",\"getRandom\",\"remove\",\"insert\",\"insert\",\"getRandom\",\"insert\",\"insert\",\"insert\",\"insert\",\"remove\",\"remove\",\"insert\",\"getRandom\",\"remove\",\"insert\",\"getRandom\",\"getRandom\",\"remove\",\"getRandom\",\"remove\",\"getRandom\",\"insert\",\"insert\",\"getRandom\",\"getRandom\",\"remove\",\"insert\",\"insert\",\"getRandom\",\"remove\",\"remove\",\"insert\",\"insert\",\"insert\",\"getRandom\",\"getRandom\",\"getRandom\",\"remove\",\"insert\",\"getRandom\",\"insert\",\"insert\",\"remove\",\"remove\",\"insert\",\"getRandom\",\"getRandom\",\"remove\",\"remove\",\"getRandom\",\"insert\",\"insert\",\"insert\",\"getRandom\",\"remove\",\"getRandom\",\"remove\",\"remove\",\"insert\",\"insert\",\"getRandom\",\"insert\",\"insert\",\"remove\",\"getRandom\",\"insert\",\"getRandom\",\"remove\",\"remove\",\"getRandom\",\"remove\",\"remove\",\"getRandom\"]\n[[],[135],[134],[],[50],[],[50],[115],[134],[],[135],[],[],[],[115],[65],[139],[74],[65],[117],[],[],[],[117],[74],[139],[64],[104],[64],[97],[],[104],[54],[62],[],[119],[64],[76],[134],[97],[62],[57],[],[76],[134],[],[],[134],[],[119],[],[138],[147],[],[],[54],[102],[54],[],[57],[57],[132],[95],[109],[],[],[],[95],[100],[],[90],[139],[138],[138],[92],[],[],[132],[109],[],[88],[122],[102],[],[54],[],[90],[92],[89],[91],[],[60],[144],[102],[],[71],[],[144],[71],[],[91],[89],[]]\n[\"RandomizedSet\",\"insert\",\"insert\",\"insert\",\"insert\",\"insert\",\"getRandom\",\"insert\",\"insert\",\"insert\",\"insert\",\"getRandom\",\"remove\",\"remove\",\"remove\",\"remove\",\"getRandom\",\"remove\",\"remove\",\"getRandom\",\"remove\"]\n[[],[45],[46],[47],[48],[49],[],[51],[52],[53],[54],[],[46],[49],[48],[45],[],[47],[54],[],[51]]\n[\"RandomizedSet\",\"insert\",\"insert\",\"insert\",\"insert\",\"insert\",\"insert\",\"insert\",\"insert\",\"insert\",\"insert\",\"insert\",\"getRandom\",\"remove\",\"remove\",\"remove\",\"remove\",\"remove\",\"remove\",\"remove\",\"getRandom\",\"remove\"]\n[[],[1],[2],[3],[3],[4],[5],[6],[7],[8],[9],[10],[],[1],[2],[3],[4],[5],[6],[7],[],[8]]\n[\"RandomizedSet\",\"insert\",\"insert\",\"insert\",\"insert\",\"insert\",\"insert\",\"insert\",\"insert\",\"insert\",\"insert\",\"insert\",\"getRandom\",\"remove\",\"remove\",\"remove\",\"remove\",\"remove\",\"remove\",\"remove\",\"getRandom\",\"remove\"]\n[[],[3],[4],[5],[6],[6],[7],[8],[9],[10],[11],[12],[],[12],[11],[10],[9],[8],[7],[6],[],[5]]\n[\"RandomizedSet\",\"insert\",\"insert\",\"insert\",\"insert\",\"insert\",\"insert\",\"insert\",\"insert\",\"insert\",\"insert\",\"insert\",\"getRandom\",\"remove\",\"getRandom\",\"remove\",\"remove\",\"remove\",\"remove\",\"remove\",\"remove\",\"remove\",\"getRandom\",\"remove\"]\n[[],[-3],[-2],[-1],[0],[1],[2],[2],[3],[4],[5],[6],[],[-2],[],[2],[5],[61687717],[-1],[4],[1],[863798724],[],[6]]\n[\"RandomizedSet\",\"insert\",\"insert\",\"getRandom\",\"remove\",\"insert\",\"getRandom\",\"remove\",\"insert\",\"getRandom\",\"remove\",\"insert\",\"getRandom\",\"remove\",\"insert\",\"getRandom\",\"remove\",\"insert\",\"getRandom\",\"remove\",\"remove\",\"insert\"]\n[[],[1],[2],[],[1],[3],[],[2],[4],[],[3],[5],[],[4],[6],[],[5],[7],[],[6],[-1996846236],[8]]\n[\"RandomizedSet\",\"insert\",\"insert\",\"remove\",\"remove\",\"insert\",\"insert\",\"remove\",\"insert\",\"remove\",\"insert\",\"getRandom\",\"getRandom\",\"getRandom\",\"insert\",\"getRandom\",\"getRandom\",\"remove\",\"getRandom\",\"remove\",\"insert\",\"getRandom\",\"insert\",\"getRandom\",\"getRandom\",\"insert\",\"remove\",\"getRandom\",\"insert\",\"insert\",\"getRandom\",\"insert\",\"remove\",\"insert\",\"getRandom\",\"insert\",\"insert\",\"insert\",\"insert\",\"remove\",\"getRandom\",\"getRandom\",\"insert\",\"insert\",\"getRandom\",\"getRandom\",\"insert\",\"remove\",\"insert\",\"insert\",\"remove\",\"remove\",\"getRandom\",\"insert\",\"insert\",\"insert\",\"remove\",\"getRandom\",\"remove\",\"insert\",\"getRandom\",\"insert\",\"insert\",\"remove\",\"remove\",\"getRandom\",\"insert\",\"getRandom\",\"remove\",\"insert\",\"getRandom\",\"getRandom\",\"insert\",\"insert\",\"insert\",\"insert\",\"remove\",\"remove\",\"insert\",\"insert\",\"getRandom\",\"getRandom\",\"insert\",\"insert\",\"insert\",\"remove\",\"remove\",\"remove\",\"remove\",\"insert\",\"remove\",\"remove\",\"getRandom\",\"insert\",\"getRandom\",\"insert\",\"getRandom\",\"getRandom\",\"insert\",\"remove\",\"getRandom\",\"insert\",\"remove\",\"remove\",\"getRandom\",\"getRandom\",\"getRandom\",\"insert\",\"getRandom\",\"insert\",\"insert\",\"insert\",\"getRandom\",\"getRandom\",\"insert\",\"remove\",\"remove\",\"insert\",\"getRandom\",\"insert\",\"getRandom\",\"remove\",\"getRandom\",\"insert\",\"insert\",\"insert\",\"insert\",\"remove\",\"insert\",\"getRandom\",\"getRandom\",\"getRandom\",\"getRandom\",\"insert\",\"insert\",\"getRandom\",\"getRandom\",\"remove\",\"remove\",\"remove\",\"getRandom\",\"getRandom\",\"insert\",\"getRandom\",\"insert\",\"remove\",\"insert\",\"getRandom\",\"insert\",\"insert\",\"insert\",\"getRandom\",\"insert\",\"getRandom\",\"getRandom\",\"remove\",\"insert\",\"getRandom\",\"insert\",\"remove\",\"remove\",\"remove\",\"remove\",\"remove\",\"insert\",\"remove\",\"remove\",\"remove\",\"getRandom\",\"insert\",\"insert\",\"getRandom\",\"insert\",\"getRandom\",\"remove\",\"remove\",\"insert\",\"getRandom\",\"remove\",\"getRandom\",\"insert\",\"insert\",\"remove\",\"remove\",\"remove\",\"remove\",\"remove\",\"remove\",\"remove\",\"getRandom\",\"getRandom\",\"remove\",\"remove\",\"getRandom\",\"remove\",\"insert\",\"remove\",\"remove\",\"getRandom\",\"insert\",\"insert\",\"remove\",\"insert\",\"remove\",\"remove\",\"insert\",\"remove\",\"insert\",\"remove\",\"getRandom\",\"insert\",\"remove\",\"remove\",\"insert\",\"insert\",\"insert\",\"insert\",\"insert\",\"insert\",\"insert\",\"getRandom\",\"remove\",\"getRandom\",\"insert\",\"getRandom\",\"remove\",\"insert\",\"insert\",\"remove\",\"remove\",\"getRandom\",\"remove\",\"remove\",\"getRandom\",\"getRandom\",\"insert\",\"insert\",\"getRandom\",\"getRandom\",\"insert\",\"getRandom\",\"insert\",\"remove\",\"getRandom\",\"insert\",\"insert\",\"remove\",\"insert\",\"insert\",\"getRandom\",\"remove\",\"insert\",\"getRandom\",\"getRandom\",\"getRandom\",\"getRandom\",\"getRandom\",\"insert\",\"remove\",\"getRandom\",\"insert\",\"getRandom\",\"insert\",\"getRandom\",\"insert\",\"remove\",\"insert\",\"insert\",\"insert\",\"insert\",\"remove\",\"insert\",\"insert\",\"getRandom\",\"insert\",\"getRandom\",\"getRandom\",\"remove\",\"insert\",\"getRandom\",\"getRandom\",\"getRandom\",\"insert\",\"insert\",\"getRandom\",\"getRandom\",\"insert\",\"insert\",\"getRandom\",\"getRandom\",\"remove\",\"getRandom\",\"insert\",\"insert\",\"remove\",\"getRandom\",\"remove\",\"getRandom\",\"remove\",\"getRandom\",\"insert\",\"getRandom\",\"insert\",\"getRandom\",\"remove\",\"remove\",\"getRandom\",\"remove\",\"insert\",\"getRandom\",\"remove\",\"insert\",\"remove\",\"getRandom\",\"getRandom\",\"insert\"]\n[[],[-20],[-47],[-20],[-47],[-119],[-119],[-119],[-99],[-99],[-121],[],[],[],[144],[],[],[-121],[],[144],[154],[],[-13],[],[],[16],[16],[],[-78],[44],[],[57],[154],[-25],[],[142],[142],[-84],[-84],[-78],[],[],[-115],[110],[],[],[26],[-13],[-122],[-14],[26],[-115],[],[-4],[-102],[-35],[44],[],[-84],[153],[],[-28],[-69],[-122],[-4],[],[138],[],[-102],[76],[],[],[133],[115],[31],[-59],[138],[-59],[147],[109],[],[],[84],[-35],[-113],[110],[147],[-25],[109],[66],[133],[84],[],[-71],[],[-19],[],[],[-138],[-138],[],[80],[-71],[31],[],[],[],[-31],[],[104],[104],[142],[],[],[55],[-35],[-69],[-92],[],[-91],[],[55],[],[-59],[104],[126],[14],[-91],[60],[],[],[],[],[135],[57],[],[],[60],[60],[-92],[],[],[-127],[],[-113],[-14],[-77],[],[79],[-20],[25],[],[100],[],[],[126],[-93],[],[128],[-59],[14],[57],[80],[128],[-60],[-60],[-28],[-19],[],[-131],[86],[],[-69],[],[-77],[-77],[11],[],[-31],[],[90],[-20],[76],[-20],[-20],[-93],[153],[25],[115],[],[],[-127],[104],[],[86],[-95],[-131],[-131],[],[47],[112],[90],[-105],[-69],[-69],[28],[-95],[67],[142],[],[118],[-105],[118],[149],[-113],[-8],[150],[150],[0],[0],[],[11],[],[35],[],[0],[76],[128],[-113],[-113],[],[66],[28],[],[],[111],[111],[],[],[50],[],[-76],[112],[],[46],[157],[150],[-36],[-123],[],[149],[134],[],[],[],[],[],[48],[128],[],[-135],[],[-133],[],[-127],[-36],[97],[97],[38],[38],[-127],[150],[75],[],[-75],[],[],[111],[63],[],[],[],[-107],[-107],[],[],[-42],[127],[],[],[-133],[],[62],[106],[135],[],[79],[],[35],[],[-32],[],[-47],[],[97],[-47],[],[-32],[-31],[],[75],[-118],[-107],[],[],[152]]\n```",
+      "voteCount": 32
+    },
+    {
+      "name": "root89",
+      "year": 2023,
+      "content": "Hint:\n* the order of the elements doesn't matter (as we want a random element).\n* On delete: swap the element with the last element. So, we're removing the last position instead of a position in between.\n* get Random: pick a random number from 0 to (items length - 1). \n  now simply just return that position's element.\n\nMore hint: two hash map or, one array & one hash map",
+      "voteCount": 27
+    },
+    {
+      "name": "xiaochenzhou",
+      "year": 2016,
+      "content": "This OJ problem is intrinsically different from all others, as randomness is involved here.\\n\\nLet's say someone comes up with an answer where getRandom always returns the smallest val (or maybe first val in some array or hash set). Then, how can the test cases tell that this solution is wrong?\\n\\nEven when some random choice algorithm is used, how can it be tested that all values are equally likely to be chosen, and different calls of getRandom are independent?",
+      "voteCount": 26
+    },
+    {
+      "name": "piocarz",
+      "year": 2022,
+      "content": "Got question about Python implementation:\nsince set.pop() removes from set random value and then returns it, why such silly implementation wouldnt work? :\n\n`x = self.set_name.pop();\nself.set_name.add(x);\nreturn x`\n\nI know its not best or anything, just wonder why it doesnt work?",
+      "voteCount": 21
+    }
+  ]
+}

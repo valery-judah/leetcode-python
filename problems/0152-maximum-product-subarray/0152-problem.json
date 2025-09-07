@@ -1,0 +1,156 @@
+{
+  "category": "",
+  "id": "152",
+  "name": "Maximum Product Subarray",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-product-subarray/",
+  "slug": "maximum-product-subarray",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Subarray",
+      "difficulty": "Medium",
+      "slug": "maximum-subarray"
+    },
+    {
+      "title": "House Robber",
+      "difficulty": "Medium",
+      "slug": "house-robber"
+    },
+    {
+      "title": "Product of Array Except Self",
+      "difficulty": "Medium",
+      "slug": "product-of-array-except-self"
+    },
+    {
+      "title": "Maximum Product of Three Numbers",
+      "difficulty": "Easy",
+      "slug": "maximum-product-of-three-numbers"
+    },
+    {
+      "title": "Subarray Product Less Than K",
+      "difficulty": "Medium",
+      "slug": "subarray-product-less-than-k"
+    }
+  ],
+  "questionId": "152",
+  "questionFrontendId": "152",
+  "title": "Maximum Product Subarray",
+  "titleSlug": "maximum-product-subarray",
+  "content": "<p>Given an integer array <code>nums</code>, find a <span data-keyword=\"subarray-nonempty\">subarray</span> that has the largest product, and return <em>the product</em>.</p>\n\n<p>The test cases are generated so that the answer will fit in a <strong>32-bit</strong> integer.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [2,3,-2,4]\n<strong>Output:</strong> 6\n<strong>Explanation:</strong> [2,3] has the largest product 6.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [-2,0,-1]\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> The result cannot be 2, because [-2,-1] is not a subarray.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 2 * 10<sup>4</sup></code></li>\n\t<li><code>-10 &lt;= nums[i] &lt;= 10</code></li>\n\t<li>The product of any subarray of <code>nums</code> is <strong>guaranteed</strong> to fit in a <strong>32-bit</strong> integer.</li>\n</ul>\n",
+  "likes": 19775,
+  "dislikes": 799,
+  "stats": {
+    "totalAccepted": "1.8M",
+    "totalSubmission": "5M",
+    "totalAcceptedRaw": 1764287,
+    "totalSubmissionRaw": 4992798,
+    "acRate": "35.3%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "metaData": {
+    "name": "maxProduct",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Google",
+        "slug": "google",
+        "timesEncountered": 12
+      }
+    ],
+    "3": [
+      {
+        "taggedByAdmin": false,
+        "name": "Wayfair",
+        "slug": "wayfair",
+        "timesEncountered": 14
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "siddhantchimankar",
+      "year": 2021,
+      "content": "* Highly non-intuitive.\\n* Even if you figure out the idea, very difficult to implement correctly since there are many corner cases.\\n* A person who has seen and memorized the solution holds a huge advantage.\\n\\n",
+      "voteCount": 675
+    },
+    {
+      "name": "techno_phile",
+      "year": 2023,
+      "content": "How many people initially went ahead with directly implementing Kadane\\'s algorithm only to realize that the direct implementation doesn\\'t work?",
+      "voteCount": 614
+    },
+    {
+      "name": "zfourier18",
+      "year": 2024,
+      "content": "Fuck that guy who added\\n[0,10,10,10,10,10,10,10,10,10,-10,10,10,10,10,10,10,10,10,10,0]",
+      "voteCount": 371
+    },
+    {
+      "name": "Yash2403",
+      "year": 2023,
+      "content": "[0, 10, 10, 10, 10, 10, 10, 10, 10, 10, -10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 0]\\nWho the hell added this test case ?",
+      "voteCount": 365
+    },
+    {
+      "name": "dsacj",
+      "year": 2023,
+      "content": "Try working your solution out for this testcase:\\n[-1,4,-4,5,-2,-1,-1,-2,-3]\\nHope it helps.",
+      "voteCount": 107
+    },
+    {
+      "name": "aftabmk",
+      "year": 2023,
+      "content": "Everyone : Kadane\\'s Algorithm !\\ntestcase [0, 10, 10, 10, 10, 10, 10, 10, 10, 10, -10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 0] : No!",
+      "voteCount": 91
+    },
+    {
+      "name": "anwendeng",
+      "year": 2023,
+      "content": "Kadane\\'s algorithm is used for solving some other problems which are more as follows:\\n\\n[918. Maximum Sum Circular Subarray](https://leetcode.com/problems/maximum-sum-circular-subarray/solutions/3722855/w-explanationc-using-kadanes-algorithm/)\\n\\n[53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/?envType=study-plan-v2&envId=top-interview-150)\\n\\n[2272. Substring With Largest Variance](https://leetcode.com/problems/substring-with-largest-variance/solutions/3738775/c-kadane-s-algorithm/)",
+      "voteCount": 77
+    },
+    {
+      "name": "jun15",
+      "year": 2014,
+      "content": "Since all the elements in the array are integers. If there are even number of negative elements, the maximum product will be the multiplication of all the elements. If there are odd number of negative elements, we can just compare the products of the following two:\\n1. multiplication of all the elements until we find the last negative element.\\n2. multiplication of all the elements starting after the first negative element. \\nBoth cases contain even number of negative elements and the result will be positive. Is this a correct analysis?",
+      "voteCount": 58
+    },
+    {
+      "name": "xjs1997524",
+      "year": 2020,
+      "content": "It is really hard to understand your words contiguously meaning adjacent or including all nums in the array. make sure you give us some examples showing those cases if you want to write your description so ambiguously.",
+      "voteCount": 45
+    },
+    {
+      "name": "CruzJoel3",
+      "year": 2021,
+      "content": "Is there a reason people aren\\'t using sliding window? it\\'s O(N), and it\\'s not bad to implement",
+      "voteCount": 23
+    }
+  ]
+}

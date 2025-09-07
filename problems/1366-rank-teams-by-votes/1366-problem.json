@@ -1,0 +1,133 @@
+{
+  "category": "",
+  "id": "1366",
+  "name": "Rank Teams by Votes",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/rank-teams-by-votes/",
+  "slug": "rank-teams-by-votes",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Sorting",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Online Election",
+      "difficulty": "Medium",
+      "slug": "online-election"
+    }
+  ],
+  "questionId": "1483",
+  "questionFrontendId": "1366",
+  "title": "Rank Teams by Votes",
+  "titleSlug": "rank-teams-by-votes",
+  "content": "<p>In a special ranking system, each voter gives a rank from highest to lowest to all teams participating in the competition.</p>\n\n<p>The ordering of teams is decided by who received the most position-one votes. If two or more teams tie in the first position, we consider the second position to resolve the conflict, if they tie again, we continue this process until the ties are resolved. If two or more teams are still tied after considering all positions, we rank them alphabetically based on their team letter.</p>\n\n<p>You are given an array of strings <code>votes</code> which is the votes of all voters in the ranking systems. Sort all teams according to the ranking system described above.</p>\n\n<p>Return <em>a string of all teams <strong>sorted</strong> by the ranking system</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> votes = [&quot;ABC&quot;,&quot;ACB&quot;,&quot;ABC&quot;,&quot;ACB&quot;,&quot;ACB&quot;]\n<strong>Output:</strong> &quot;ACB&quot;\n<strong>Explanation:</strong> \nTeam A was ranked first place by 5 voters. No other team was voted as first place, so team A is the first team.\nTeam B was ranked second by 2 voters and ranked third by 3 voters.\nTeam C was ranked second by 3 voters and ranked third by 2 voters.\nAs most of the voters ranked C second, team C is the second team, and team B is the third.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> votes = [&quot;WXYZ&quot;,&quot;XYZW&quot;]\n<strong>Output:</strong> &quot;XWYZ&quot;\n<strong>Explanation:</strong>\nX is the winner due to the tie-breaking rule. X has the same votes as W for the first position, but X has one vote in the second position, while W does not have any votes in the second position. \n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> votes = [&quot;ZMNAGUEDSJYLBOPHRQICWFXTVK&quot;]\n<strong>Output:</strong> &quot;ZMNAGUEDSJYLBOPHRQICWFXTVK&quot;\n<strong>Explanation:</strong> Only one voter, so their votes are used for the ranking.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= votes.length &lt;= 1000</code></li>\n\t<li><code>1 &lt;= votes[i].length &lt;= 26</code></li>\n\t<li><code>votes[i].length == votes[j].length</code> for <code>0 &lt;= i, j &lt; votes.length</code>.</li>\n\t<li><code>votes[i][j]</code> is an English <strong>uppercase</strong> letter.</li>\n\t<li>All characters of <code>votes[i]</code> are unique.</li>\n\t<li>All the characters that occur in <code>votes[0]</code> <strong>also occur</strong> in <code>votes[j]</code> where <code>1 &lt;= j &lt; votes.length</code>.</li>\n</ul>\n",
+  "likes": 1546,
+  "dislikes": 194,
+  "stats": {
+    "totalAccepted": "96.3K",
+    "totalSubmission": "161.5K",
+    "totalAcceptedRaw": 96292,
+    "totalSubmissionRaw": 161476,
+    "acRate": "59.6%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Sorting",
+      "slug": "sorting"
+    },
+    {
+      "name": "Counting",
+      "slug": "counting"
+    }
+  ],
+  "metaData": {
+    "name": "rankTeams",
+    "params": [
+      {
+        "name": "votes",
+        "type": "string[]"
+      }
+    ],
+    "return": {
+      "type": "string"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "narutard6",
+      "year": 2023,
+      "content": "I feel bad for whoever was asked this during an interview.  I\\'m a FAANG engineer that\\'s solved a ton of LC problems and this one completely stumped me.",
+      "voteCount": 25
+    },
+    {
+      "name": "AndrewStark",
+      "year": 2022,
+      "content": "See the following error for the test case: `votes =[\"WXYA\",\"XYZA\",\"YAWX\"]`(35/36)\n ```\nKeyError: 'Z'\n    count[v][i] -= 1\nLine 17 in rankTeams (Solution.py)\n    ret = Solution().rankTeams(param_1)\nLine 37 in _driver (Solution.py)\n    _driver()\nLine 48 in <module> (Solution.py)\n```\nI was using @lee215's code, here it is:\n```\n    def rankTeams(self, votes):\n        count = {v: [0] * len(votes[0]) + [v] for v in votes[0]}\n        for vote in votes:\n            for i, v in enumerate(vote):\n                count[v][i] -= 1\n        return ''.join(sorted(votes[0], key=count.get))\n```\n\nThe test case is invalid, because it violates the last rule, which is `All the characters that occur in votes[0] also occur in votes[j] where 1 <= j < votes.length.`. To be specific, character `W` occurs in `votes[0]` but it doesn't occur in `\"XYZA\"`, where `j==1`.",
+      "voteCount": 24
+    },
+    {
+      "name": "shivasaineelam",
+      "year": 2023,
+      "content": " this question is very hard:)",
+      "voteCount": 17
+    },
+    {
+      "name": "jfkdoaiqurncm",
+      "year": 2023,
+      "content": "How come this test case input is correct? \n[\"FVSHJIEMNGYPTQOURLWCZKAX\",\"AITFQORCEHPVJMXGKSLNZWUY\",\"OTERVXFZUMHNIYSCQAWGPKJL\",\"VMSERIJYLZNWCPQTOKFUHAXG\",\"VNHOZWKQCEFYPSGLAMXJIUTR\",\"ANPHQIJMXCWOSKTYGULFVERZ\",\"RFYUXJEWCKQOMGATHZVILNSP\",\"SCPYUMQJTVEXKRNLIOWGHAFZ\",\"VIKTSJCEYQGLOMPZWAHFXURN\",\"SVJICLXKHQZTFWNPYRGMEUAO\",\"JRCTHYKIGSXPOZLUQAVNEWFM\",\"NGMSWJITREHFZVQCUKXYAPOL\",\"WUXJOQKGNSYLHEZAFIPMRCVT\",\"PKYQIOLXFCRGHZNAMJVUTWES\",\"FERSGNMJVZXWAYLIKCPUQHTO\",\"HPLRIUQMTSGYJVAXWNOCZEKF\",\"JUVWPTEGCOFYSKXNRMHQALIZ\",\"MWPIAZCNSLEYRTHFKQXUOVGJ\",\"EZXLUNFVCMORSIWKTYHJAQPG\",\"HRQNLTKJFIEGMCSXAZPYOVUW\",\"LOHXVYGWRIJMCPSQENUAKTZF\",\"XKUTWPRGHOAQFLVYMJSNEIZC\",\"WTCRQMVKPHOSLGAXZUEFYNJI\"]\n\nThe expected output is: \"VWFHSJARNPEMOXLTUKICZGYQ\". \nThe expected output starts with letter V, however comparing positions of the letter V related to R through the data set it is clear that R has lower position in a the whole data set than letter V, therefore making it winner over the letter V, e.g.:\n\n                \"FVSHJIEMNGYPTQOURLWCZKAX\", //R-17 V-1 -> V\n                \"AITFQORCEHPVJMXGKSLNZWUY\", //R-6 V-12 -> R\n                \"OTERVXFZUMHNIYSCQAWGPKJL\", //R-3 V-4 ->R\n                \"VMSERIJYLZNWCPQTOKFUHAXG\", //R-4 V-0 -> V\n                \"VNHOZWKQCEFYPSGLAMXJIUTR\", //R-24 V-0 -> V\n                \"ANPHQIJMXCWOSKTYGULFVERZ\", //R-23 V-21 -> V\n                \"RFYUXJEWCKQOMGATHZVILNSP\", //R-0 V-19 -> R\n                \"SCPYUMQJTVEXKRNLIOWGHAFZ\", //R-14 V-10 -> V\n                \"VIKTSJCEYQGLOMPZWAHFXURN\", //R-23 V-0 -> V\n                \"SVJICLXKHQZTFWNPYRGMEUAO\", //R-18 V-1 -> V\n                \"JRCTHYKIGSXPOZLUQAVNEWFM\", //R-1 V-19 -> R\n                \"NGMSWJITREHFZVQCUKXYAPOL\", //R-9 V-14 -> R\n                \"WUXJOQKGNSYLHEZAFIPMRCVT\", //R-20 V-23 -> R\n                \"PKYQIOLXFCRGHZNAMJVUTWES\", //R-10 V-19 -> R\n                \"FERSGNMJVZXWAYLIKCPUQHTO\", //R-2 V-9 -> R\n                \"HPLRIUQMTSGYJVAXWNOCZEKF\", //R-3 V-14 -> R\n                \"JUVWPTEGCOFYSKXNRMHQALIZ\", //R-16 V-2 -> V\n                \"MWPIAZCNSLEYRTHFKQXUOVGJ\", //R-13 V-22 -> R\n                \"EZXLUNFVCMORSIWKTYHJAQPG\", //R-12 V-8 -> V\n                \"HRQNLTKJFIEGMCSXAZPYOVUW\", //R-1 V-22 -> R\n                \"LOHXVYGWRIJMCPSQENUAKTZF\", //R-9 V-4 -> V\n                \"XKUTWPRGHOAQFLVYMJSNEIZC\", //R-7 V-15 -> R\n                \"WTCRQMVKPHOSLGAXZUEFYNJI\" //R-3 V-7 -> R\n",
+      "voteCount": 14
+    },
+    {
+      "name": "user3316B",
+      "year": 2025,
+      "content": "Atlassian question will be a constant stream of votes instead of just a static input array.\\n\\nWill need a priority queue for that.",
+      "voteCount": 11
+    },
+    {
+      "name": "ASWINNATH123",
+      "year": 2024,
+      "content": "Easy logic hard core implementation.",
+      "voteCount": 11
+    },
+    {
+      "name": "dmitraver",
+      "year": 2021,
+      "content": "Hi,\\n\\nI have problem undestanding example 2 which makes me think I misunderstood the question. \\nWe have [WXYZ and XYZW]. After first position, we have W:1 and X:1, so there is a tie. We continue to position 2. After position 2, we have X:2, W:1, Y:1, so X is first letter of the answer and then we have a tie again (according to example it should be W and no tie). We go to position 3 and get W:1, Z:1, Y:2 so the third letter should be Y. In the provided example second letter should be W but I fail to get why. We should get a tie for the second position as we are getting W:1 and Y:1. Can somebody please help me understand the example.\\n\\n",
+      "voteCount": 9
+    },
+    {
+      "name": "MidhileshMomidi",
+      "year": 2022,
+      "content": "This testcase `votes =[\"WXYA\",\"XYZA\",\"YAWX\"]` is failing for me. It has `Z` in second word but remaining doesn\\'t have. Is it supposed to have same letters in all words",
+      "voteCount": 6
+    },
+    {
+      "name": "PrateekGiri",
+      "year": 2025,
+      "content": "\\n\\n### **Step 1: Understanding the Input and Output**\\n- We are given an array of **votes**, where each string represents a **ranking order** of teams.\\n- Our goal is to determine the **final ranking** of teams based on their positions in each vote.\\n- **Tiebreaker Rule**: If two teams have the same ranking, we should sort them **alphabetically**.\\n\\n#### **Example**\\n```java\\nString[] votes = {\"ABC\", \"ACB\", \"ABC\", \"ACB\", \"BAC\"};\\n```\\nEach string represents the ranking of teams. For example:\\n- `\"ABC\"` means **A** is 1st, **B** is 2nd, **C** is 3rd.\\n\\n---\\n\\n### **Step 2: Choosing the Right Data Structures**\\n#### **1. HashMap to Store Rankings**\\n- Since each team can be ranked at different positions, we use a **HashMap<Character, int[]>**.\\n- The key is the team character (A, B, C, ...).\\n- The value is an **array of size `n`** (where `n` is the number of teams), storing the count of how many times the team was placed at each position.\\n\\n#### **2. Sorting Mechanism**\\n- Once we collect ranking data, we need to sort the teams based on:\\n  1. **Higher votes in higher positions (1st place votes > 2nd place votes, etc.).**\\n  2. **Alphabetical order if there is a tie.**\\n\\n---\\n\\n### **Step 3: Building the Ranking Table**\\n1. **Iterate through the votes** and populate the ranking table.\\n2. **For each team**, count how many times it appears in each position.\\n\\n#### **Example Data Storage**\\nFor `votes = {\"ABC\", \"ACB\", \"ABC\", \"ACB\", \"BAC\"}`:\\n\\n| Team | 1st Place | 2nd Place | 3rd Place |\\n|------|----------|----------|----------|\\n| A    | 3        | 2        | 0        |\\n| B    | 2        | 0        | 3        |\\n| C    | 0        | 3        | 2        |\\n\\n---\\n\\n### **Step 4: Sorting the Teams**\\n- **Primary Sort**: Sort teams based on the highest votes at **each ranking position**.\\n- **Secondary Sort**: If two teams have identical votes, sort **alphabetically**.\\n\\n#### **Sorting Order**\\n- `A` has the most 1st-place votes \\u2192 **A comes first**.\\n- `B` has more 1st-place votes than `C` \\u2192 **B comes second**.\\n- `C` has the lowest votes \\u2192 **C comes last**.\\n\\nFinal ranking:  \\n**\"ABC\"**\\n\\n---\\n\\n### **Step 5: Constructing the Output**\\n- After sorting, concatenate team characters into a **StringBuilder** and return the final result.\\n\\n\\n### **Time and Space Complexity**\\n- **Building the HashMap**: \\\\(O(N times M)\\\\) (N = number of votes, M = number of teams).\\n- **Sorting**: \\\\(O(M log M)\\\\).\\n- **Final Output Construction**: \\\\(O(M)\\\\).\\n- **Overall Complexity**: **\\\\(O(NM + M log M)\\\\)** (Efficient for large inputs).\\n",
+      "voteCount": 5
+    },
+    {
+      "name": "XRancher_1232",
+      "year": 2024,
+      "content": "`I live in India ,and we are having elections right now, so may be the best time to solve it. \\nlmao`",
+      "voteCount": 5
+    }
+  ]
+}

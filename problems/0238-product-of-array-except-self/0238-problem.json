@@ -1,0 +1,153 @@
+{
+  "category": "",
+  "id": "238",
+  "name": "Product of Array Except Self",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/product-of-array-except-self/",
+  "slug": "product-of-array-except-self",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Trapping Rain Water",
+      "difficulty": "Hard",
+      "slug": "trapping-rain-water"
+    },
+    {
+      "title": "Maximum Product Subarray",
+      "difficulty": "Medium",
+      "slug": "maximum-product-subarray"
+    },
+    {
+      "title": "Paint House II",
+      "difficulty": "Hard",
+      "slug": "paint-house-ii"
+    },
+    {
+      "title": "Minimum Difference in Sums After Removal of Elements",
+      "difficulty": "Hard",
+      "slug": "minimum-difference-in-sums-after-removal-of-elements"
+    },
+    {
+      "title": "Construct Product Matrix",
+      "difficulty": "Medium",
+      "slug": "construct-product-matrix"
+    },
+    {
+      "title": "Find Sum of Array Product of Magical Sequences",
+      "difficulty": "Hard",
+      "slug": "find-sum-of-array-product-of-magical-sequences"
+    }
+  ],
+  "questionId": "238",
+  "questionFrontendId": "238",
+  "title": "Product of Array Except Self",
+  "titleSlug": "product-of-array-except-self",
+  "content": "<p>Given an integer array <code>nums</code>, return <em>an array</em> <code>answer</code> <em>such that</em> <code>answer[i]</code> <em>is equal to the product of all the elements of</em> <code>nums</code> <em>except</em> <code>nums[i]</code>.</p>\n\n<p>The product of any prefix or suffix of <code>nums</code> is <strong>guaranteed</strong> to fit in a <strong>32-bit</strong> integer.</p>\n\n<p>You must write an algorithm that runs in&nbsp;<code>O(n)</code>&nbsp;time and without using the division operation.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> nums = [1,2,3,4]\n<strong>Output:</strong> [24,12,8,6]\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> nums = [-1,1,0,-3,3]\n<strong>Output:</strong> [0,0,9,0,0]\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>-30 &lt;= nums[i] &lt;= 30</code></li>\n\t<li>The input is generated such that <code>answer[i]</code> is <strong>guaranteed</strong> to fit in a <strong>32-bit</strong> integer.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Follow up:</strong>&nbsp;Can you solve the problem in <code>O(1)</code>&nbsp;extra&nbsp;space complexity? (The output array <strong>does not</strong> count as extra space for space complexity analysis.)</p>\n",
+  "likes": 24766,
+  "dislikes": 1603,
+  "stats": {
+    "totalAccepted": "3.9M",
+    "totalSubmission": "5.8M",
+    "totalAcceptedRaw": 3915734,
+    "totalSubmissionRaw": 5754471,
+    "acRate": "68.0%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Prefix Sum",
+      "slug": "prefix-sum"
+    }
+  ],
+  "metaData": {
+    "name": "productExceptSelf",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer[]"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": true,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 26
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "romalrj07",
+      "year": 2024,
+      "content": "its all fun until you read \"without using the division operation\"",
+      "voteCount": 1999
+    },
+    {
+      "name": "Rishu_Raj_Anand",
+      "year": 2023,
+      "content": "TAKE HINT AND SOLVE BY YOURSELF:\n\nFor any nums[i], calculate its left product and calculate its right product, without including nums[i].\nThen multiply these left and right product, This will give product of array excluding nums[i].\n\nDo upvote, if you like :)",
+      "voteCount": 1600
+    },
+    {
+      "name": "kbi201",
+      "year": 2023,
+      "content": "my two solutions ive come up with both fail the following testcase: [-1,-1,1,-1,-1,1,-1,-1,-1,1,1,-1,1,1,1,1,-1,1,1,-1,-1,1,-1,-1,-1,1,1,-1,-1,-1,-1,-1,1,1,1,1,1,1,...,-1] whoever came up with this testcase is an opp",
+      "voteCount": 534
+    },
+    {
+      "name": "disturbedbrown1",
+      "year": 2022,
+      "content": "This is hard...",
+      "voteCount": 404
+    },
+    {
+      "name": "_Veil_",
+      "year": 2023,
+      "content": "Am I the only one that doesn\\'t know what the \\'prefix or suffix of nums\\' means? ",
+      "voteCount": 315
+    },
+    {
+      "name": "Manidgyf_6",
+      "year": 2023,
+      "content": "Actually you can see in all the comments mentioning multiply left and right product of index .To be frank yes using that hint we can solve the problem but forming the code for it in order(n) just by that hint is difficult . I came to know how to implement this only by looking at the solution . But i don't want other coders to do that just read these steps and try to implement this by yourself..\n1.firstly create an array of size n this array can be used as your output array tooo. \n2.Now In this array you need to store product of left part of index that is if array is [1,2,3,4,5] the new_array must be [1,1,2,6,24] use a loop for this\n3.Now take another loop and iterate it from backwards this is because here we want to acquire the right product of index that is consider you are at index i = n-1 so now your product should be \nbased on our consideration left * right==new_array[i] * right; here right can be a int variable\nhere right = 1; initially for index n-1; for index n-2 it will be right*array[i];\n\n(Note no need of taking another array for finding right_product within this second loop you can calculate the whole index product and right product. I hope i didn't confuse if so sorry guys :) i tried my best  )\n\nI think you understood the logic guys so now go fella's implement it.....",
+      "voteCount": 304
+    },
+    {
+      "name": "dbekel",
+      "year": 2017,
+      "content": "people are just throwing their code here, not one really explain what is the intuition or the idea behind their solution. \\nI don't see any choice than memorizing it.",
+      "voteCount": 264
+    },
+    {
+      "name": "wangzhangwu",
+      "year": 2023,
+      "content": "Let `dp[i]` to be the product from index `0` to index `i-1`;\nLet `dp2[i]` to be the product from index `n` to index `i+1`;\nCompute `dp` from left to right and compute `dp2` from right to left.\n\nHopefully give you some basic idea to solve this problem in linear time. Plz do upvote if it helps!",
+      "voteCount": 166
+    },
+    {
+      "name": "AlgoEngine",
+      "year": 2023,
+      "content": "Visualization of O(n) solution\\n\\nhttps://youtu.be/5bS636lE_R0?si=qUPiUy6YKb9a4zSL",
+      "voteCount": 140
+    },
+    {
+      "name": "KyleOckerlund",
+      "year": 2020,
+      "content": "I\\'ll leave my hobbled code out of this. However, this is a fundamentally different approach from the given ones, and I figure it\\'s worth considering: Use the Fundamental Theorem of Arithmetic. \\n\\nThe theorem states that any number can be broken into primes. 10 becomes 2x5, 20 becomes 2x2x5, and so on. Further, we can represent every number purely by prime exponents, we need only set a, b, c, ... as desired: -1^a x 1^b x 2^c x 3^d x 5^e x 7^f x....  \\n\\nWe can put those in an array.\\n\\nSuppose we looked at [0, 1, 1, 3, 1, 1]. Using these values as exponents yields the number:  (-1^0) x (1^1) x (2^3) x (3^1) x (5^1)  = 120.\\n\\nThen, division is simply seeing what \"cancels\". So, to \\'divide\\', we need only subtract these exponent arrays. 120/ 2 = [0, 1, 1, 3, 1, 1] - [0, 0, 0, 1, 0, 0] = [0, 1, 1, 2, 1, 1], or, to go through the formula above, 60. For multiplication, add instead, and you\\'re done. \\n\\nThis approach has a major downside: Calculation. You need to calculate maps of numers to their factor-arrays, which takes some time. However, *it only needs to be called once*. So, this concept may work well in production, where a table can be stored. This is especially true if all of the numbers are under, say, 1000.\\n\\nAn advantage you get in return, then, is that manipulation becomes much easier. Want to exclude two indicies? Easily done, just subtract the exponents from index i+1 or whatever the case may be. Want to halve everything? Easily done, just pull out a two. \\n\\nIt\\'s a nifty trick that gives a lot of flexibility, albeit for a hefty initialization time.",
+      "voteCount": 68
+    }
+  ]
+}

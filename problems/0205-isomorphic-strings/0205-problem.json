@@ -1,0 +1,137 @@
+{
+  "category": "",
+  "id": "205",
+  "name": "Isomorphic Strings",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/isomorphic-strings/",
+  "slug": "isomorphic-strings",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Word Pattern",
+      "difficulty": "Easy",
+      "slug": "word-pattern"
+    },
+    {
+      "title": "Find and Replace Pattern",
+      "difficulty": "Medium",
+      "slug": "find-and-replace-pattern"
+    }
+  ],
+  "questionId": "205",
+  "questionFrontendId": "205",
+  "title": "Isomorphic Strings",
+  "titleSlug": "isomorphic-strings",
+  "content": "<p>Given two strings <code>s</code> and <code>t</code>, <em>determine if they are isomorphic</em>.</p>\n\n<p>Two strings <code>s</code> and <code>t</code> are isomorphic if the characters in <code>s</code> can be replaced to get <code>t</code>.</p>\n\n<p>All occurrences of a character must be replaced with another character while preserving the order of characters. No two characters may map to the same character, but a character may map to itself.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;egg&quot;, t = &quot;add&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">true</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The strings <code>s</code> and <code>t</code> can be made identical by:</p>\n\n<ul>\n\t<li>Mapping <code>&#39;e&#39;</code> to <code>&#39;a&#39;</code>.</li>\n\t<li>Mapping <code>&#39;g&#39;</code> to <code>&#39;d&#39;</code>.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;foo&quot;, t = &quot;bar&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">false</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The strings <code>s</code> and <code>t</code> can not be made identical as <code>&#39;o&#39;</code> needs to be mapped to both <code>&#39;a&#39;</code> and <code>&#39;r&#39;</code>.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;paper&quot;, t = &quot;title&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">true</span></p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 5 * 10<sup>4</sup></code></li>\n\t<li><code>t.length == s.length</code></li>\n\t<li><code>s</code> and <code>t</code> consist of any valid ascii character.</li>\n</ul>\n",
+  "likes": 10020,
+  "dislikes": 2230,
+  "stats": {
+    "totalAccepted": "1.9M",
+    "totalSubmission": "4M",
+    "totalAcceptedRaw": 1908191,
+    "totalSubmissionRaw": 4032369,
+    "acRate": "47.3%"
+  },
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "metaData": {
+    "name": "isIsomorphic",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      },
+      {
+        "name": "t",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Google",
+        "slug": "google",
+        "timesEncountered": 12
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "LeetCoder_Hashmap",
+      "year": 2016,
+      "content": "I must admit, this \"easy\" problem confused the hell out of me :) I had hard problems solved like a breeze, but this one... gush :)",
+      "voteCount": 541
+    },
+    {
+      "name": "saikiran816",
+      "year": 2023,
+      "content": "Anyone facing issue in understanding the description of this question. You must understand the this question needs us to check if there is one directional map exist between given string and a pattern. In the given question, we can treat 's' as given string and 't' as pattern. So, essentially, we have to check if there is a one-directional map exist from 's' to 't'.\n\nWhatever character is there in 's' is not same as in 't'. For instance, s = 'PAPER', t = 'TITLE'. If we can see, character 'E' is common between string 's' and pattern 't'. Character 'E' from string 's' is mapped to character 'L' in pattern 't'. Meanwhile, character 'E' in the pattern 't' is being mapped to character 'R' from string 's'.\n\n<table>\n<tr>\n<td>string (s)</td>\n<td>pattern (t)</td>\n</tr>\n<tr>\n<td>P</td>\n<td>T</td>\n</tr>\n<tr>\n<td>A</td>\n<td>I</td>\n</tr>\n<tr>\n<td>E</td>\n<td>L</td>\n</tr>\n<tr>\n<td>R</td>\n<td>E</td>\n</tr>\n</table>\n\nSo, as long as, character from string 's', have only one map towards character in pattern 't', the strings are isomorphic.",
+      "voteCount": 332
+    },
+    {
+      "name": "pavenest",
+      "year": 2023,
+      "content": "The problem itself is very easy, but the description of isomorphic is not explained enough here, after reading so many discussion below I find the what is the meaning of isomorphic in this problem.  \\nLets check examples - \\n\\n1. EGG -> ADD [ E->A, G->D]  --- true\\n\\n2. FOO -> BAR [F->B, O->A|B?] --- here O has different choice either A or B ; false\\n\\n3. BADC -> BABA [B->B, A->A, D->B, C-> A] --> here B has mapping to B & D so false; To think more clearly think from mapping t to s  [B->B, A->A, B->D!, A->C!] now if you see from t to s then both B & A has multiple map --- false\\n\\n4. PEAR -> TILE  [P->T, E->I, A->L, R->E] && t to s [T->P, I->E, L->A,E->R]; so from both side no single character has to be mapped multiple value so its isomorphic -- true;\\n\\n5. BBBAAABA -> AAABBBBA  [B->A, A->B, 7th B->B!, 8th A->A!] --- first 6 char has no problem to map B->A, A->B but when you come to 7th B the mapping become B instead of A so its not isomorphic. --- false\\n\\n6. ABC -> CAC  [A->C, B->A, C-> C] && from t to s [C->A, A->B, last C->C! instead of A] so not isomorphic  -- false\\n\\nConclusion: you have to map from both separately t->s && s->t ; IF any char point to two separate val then its not isomorphic.\\n\\nCheers!........................ ",
+      "voteCount": 151
+    },
+    {
+      "name": "shikhargupta925",
+      "year": 2022,
+      "content": "i dont get why bbbaaaba and aaabbbba are not isometric can someone explain\\n",
+      "voteCount": 102
+    },
+    {
+      "name": "kmousaaa",
+      "year": 2024,
+      "content": "The fuck is this question !??",
+      "voteCount": 72
+    },
+    {
+      "name": "RedLeader",
+      "year": 2023,
+      "content": "This questions reads pretty badly. ",
+      "voteCount": 65
+    },
+    {
+      "name": "tibetan1619",
+      "year": 2019,
+      "content": "By example 3  s = \"paper\", t = \"title\" are isomorphic to each other.\\nBut why the paper is not supposed to isomorphic to tit\"r\"e?\\nor the title isomorphic to pape\"l\"?",
+      "voteCount": 63
+    },
+    {
+      "name": "topcoder811",
+      "year": 2022,
+      "content": "How is \"PAPER\" and \"TITLE\" isomorphic? \\n\\nHere is how it maps\\n\\nP <=> T (P maps to T and vice versa)\\nA <=> I  ( A maps to I and vice versa)\\nE  -> L   (E maps to L)\\nbut R -> E  (R maps to E ??)\\n\\nE and R are throwing me off.   \\nFrom what i understand,  PAPER and TITLE are not isomorphic. \\n",
+      "voteCount": 54
+    },
+    {
+      "name": "user8246tB",
+      "year": 2022,
+      "content": "How do you even check an input like this\\nTest Cases:43/44\\ns =\\n\"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\\\\\"#$%&\\'()*+,-./:;<=>?@[\\\\\\\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\\\\\"#$%&\\'()*+,-./:;<=>?@[\\\\\\\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\\\\\"#$%&\\'()*+,-./:;<=>?@[\\\\\\\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\\\\\"#$%&\\'()*+,-./:;<=>?@[\\\\\\\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\\\\\"#$%&\\'()*+,-./:;<=>?@[\\\\\\\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\\\\\"#$%&\\'()*+,-./:;<=>?@[\\\\\\\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\\\\\"#$%&\\'()*+,-./:;<=>?@[\\\\\\\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\\\\\"#$%&\\'()*+,-./:;<=>?@[\\\\\\\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\\\\\"#$%&\\'()*+,-./:;<=>?@[\\\\\\\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\\\\\"#$%&\\'()*+,-./:;<=>?@[\\\\\\\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABC...\\nt =\\n\"\\\\\"bcdefg&ijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!a#$%h\\'()*+,-./:;<=> @[\\\\\\\\]^_`{|}~?\\\\\"bcdefg&ijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!a#$%h\\'()*+,-./:;<=> @[\\\\\\\\]^_`{|}~?\\\\\"bcdefg&ijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!a#$%h\\'()*+,-./:;<=> @[\\\\\\\\]^_`{|}~?\\\\\"bcdefg&ijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!a#$%h\\'()*+,-./:;<=> @[\\\\\\\\]^_`{|}~?\\\\\"bcdefg&ijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!a#$%h\\'()*+,-./:;<=> @[\\\\\\\\]^_`{|}~?\\\\\"bcdefg&ijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!a#$%h\\'()*+,-./:;<=> @[\\\\\\\\]^_`{|}~?\\\\\"bcdefg&ijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!a#$%h\\'()*+,-./:;<=> @[\\\\\\\\]^_`{|}~?\\\\\"bcdefg&ijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!a#$%h\\'()*+,-./:;<=> @[\\\\\\\\]^_`{|}~?\\\\\"bcdefg&ijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!a#$%h\\'()*+,-./:;<=> @[\\\\\\\\]^_`{|}~?\\\\\"bcdefg&ijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!a#$%h\\'()*+,-./:;<=> @[\\\\\\\\]^_`{|}~?\\\\\"bcdefg&ijklmnopqrstuvwxyzAB...\\n43 / 44 testcases passed\\nOutput\\nfalse\\nExpected\\ntrue",
+      "voteCount": 47
+    },
+    {
+      "name": "Manisha_Meena",
+      "year": 2022,
+      "content": "return  len(set(s)) == len(set(zip(s, t))) == len(set(t))",
+      "voteCount": 47
+    }
+  ]
+}

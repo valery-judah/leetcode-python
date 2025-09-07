@@ -1,0 +1,163 @@
+{
+  "category": "",
+  "id": "140",
+  "name": "Word Break II",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/word-break-ii/",
+  "slug": "word-break-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Dynamic Programming",
+    "Backtracking",
+    "Trie",
+    "Memoization"
+  ],
+  "similar_questions": [
+    {
+      "title": "Word Break",
+      "difficulty": "Medium",
+      "slug": "word-break"
+    },
+    {
+      "title": "Concatenated Words",
+      "difficulty": "Hard",
+      "slug": "concatenated-words"
+    }
+  ],
+  "questionId": "140",
+  "questionFrontendId": "140",
+  "title": "Word Break II",
+  "titleSlug": "word-break-ii",
+  "content": "<p>Given a string <code>s</code> and a dictionary of strings <code>wordDict</code>, add spaces in <code>s</code> to construct a sentence where each word is a valid dictionary word. Return all such possible sentences in <strong>any order</strong>.</p>\n\n<p><strong>Note</strong> that the same word in the dictionary may be reused multiple times in the segmentation.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;catsanddog&quot;, wordDict = [&quot;cat&quot;,&quot;cats&quot;,&quot;and&quot;,&quot;sand&quot;,&quot;dog&quot;]\n<strong>Output:</strong> [&quot;cats and dog&quot;,&quot;cat sand dog&quot;]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;pineapplepenapple&quot;, wordDict = [&quot;apple&quot;,&quot;pen&quot;,&quot;applepen&quot;,&quot;pine&quot;,&quot;pineapple&quot;]\n<strong>Output:</strong> [&quot;pine apple pen apple&quot;,&quot;pineapple pen apple&quot;,&quot;pine applepen apple&quot;]\n<strong>Explanation:</strong> Note that you are allowed to reuse a dictionary word.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;catsandog&quot;, wordDict = [&quot;cats&quot;,&quot;dog&quot;,&quot;sand&quot;,&quot;and&quot;,&quot;cat&quot;]\n<strong>Output:</strong> []\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 20</code></li>\n\t<li><code>1 &lt;= wordDict.length &lt;= 1000</code></li>\n\t<li><code>1 &lt;= wordDict[i].length &lt;= 10</code></li>\n\t<li><code>s</code> and <code>wordDict[i]</code> consist of only lowercase English letters.</li>\n\t<li>All the strings of <code>wordDict</code> are <strong>unique</strong>.</li>\n\t<li>Input is generated in a way that the length of the answer doesn&#39;t exceed&nbsp;10<sup>5</sup>.</li>\n</ul>\n",
+  "likes": 7448,
+  "dislikes": 543,
+  "stats": {
+    "totalAccepted": "766.9K",
+    "totalSubmission": "1.4M",
+    "totalAcceptedRaw": 766924,
+    "totalSubmissionRaw": 1417473,
+    "acRate": "54.1%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    },
+    {
+      "name": "Backtracking",
+      "slug": "backtracking"
+    },
+    {
+      "name": "Trie",
+      "slug": "trie"
+    },
+    {
+      "name": "Memoization",
+      "slug": "memoization"
+    }
+  ],
+  "metaData": {
+    "name": "wordBreak",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      },
+      {
+        "name": "wordDict",
+        "type": "list<string>"
+      }
+    ],
+    "return": {
+      "type": "list<string>",
+      "dealloc": true
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 22
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "golden_teeth",
+      "year": 2015,
+      "content": "if you are getting TLE despite the correct DP or DFS solution, it might be because the largest test input is like this\\n\\n    \\n\\n> [\"aa..(lots of 'a').b\", \"a\",\"aaaaa\"...so on]\\n\\nAs you can see this test case should return empty  as last character in input string is **b**, which is not in the dictionary. So all the work in DP/DFS is a waste\\n\\nTo escape from TLE, just put a check first whether the input string **s** is breakable or not..if breakable then try to break it using your algo",
+      "voteCount": 156
+    },
+    {
+      "name": "parikshitgupta2001",
+      "year": 2023,
+      "content": "I submitted it here in Leetcode, the non DP solution and it worked\\nI was asked the same question in an interview, I wrote the solution but it was giving TLE in interview\\nGot that DP should be used, but as I was implementing the DP solution the time got over, it was of 1 hour\\nI was not selected in the interview\\nMoveworks.ai asked me this in the interview",
+      "voteCount": 60
+    },
+    {
+      "name": "CodingGod",
+      "year": 2014,
+      "content": "firstly I used DP from head of the string to  traverse the dp-map: and then got a \\u201cTime Limit Exceeded\\u201d Error with the unpassed case \"aaaaaaaaa....ab\", but this method can pass such case like \"baaaaaa....a\"\\n\\nsecondly I found the answer on internet with the dp-strategy, and saw  the dp-method  from tail of the string to  traverse the dp-map, then got an \"Accepted\" ,but i tested the case like \"baaaaaa....a\" on my own computer ,finally the result is \\u201cTime Limit Exceeded\\u201d\\n\\nabove all, i think the two strategies are the same ; and the OJ's test cases may have some infulence on different methods!",
+      "voteCount": 53
+    },
+    {
+      "name": "clue",
+      "year": 2015,
+      "content": "The topic has been well discussed in many posts such as [here](https://oj.leetcode.com/discuss/12936/accepted-solution-backtracking-difference-front-tracking) and [here](https://oj.leetcode.com/discuss/8830/two-different-strategies-about-dp-get-different-results). Because the existence of test case `'aaaaa...aaaab', ['a', 'aa', 'aaa', ... 'aaa...aa']`, the forward DP solution will cause MLE while the backward DP is just fine, apparently the test case `'baaaaaaaa...aaaa', ['a', 'aa', 'aaa', ..., 'aaa...aa']` should also be included.",
+      "voteCount": 41
+    },
+    {
+      "name": "rambosalad",
+      "year": 2024,
+      "content": "Should be a medium.",
+      "voteCount": 40
+    },
+    {
+      "name": "Antinotmanist",
+      "year": 2024,
+      "content": "OKAY LEETCODE, I\\'M GONNA LEARN BACKTRACKING NOW",
+      "voteCount": 39
+    },
+    {
+      "name": "binarybelle",
+      "year": 2020,
+      "content": "Maybe this question is too broad, but I\\'m going to ask it anyway.  \\n\\n**When you look at a problem, how do you decide which way to to solve it?  **\\n\\nI wasn\\'t a CS major, but I have been in tech for a long time, doing web development and database work.  I\\'m getting CS questions in interviews, so here I am, learning.  Often, though, it seems to me like there\\'s some guideline many others know about, that I don\\'t.  Is this just experience in this area?  Are there courses to connect those dots?\\n\\nI do break the problem down into smaller pieces.  I do write the pattern out on a white board.  And once I know a type of solution to use, I can code it just fine.  It\\'s figuring out what to look for and which type of solution to use, that\\'s a struggle.\\n\\nFor example, yesterday\\'s word break ii problem...I wrote out the pattern on my whiteboard.  I even \"walked through\" the whole pattern on my grid paper.  I watched several videos, looked at a bunch of tutorials...read comments....etc.  I DID figure out how to implement the solutions.  But until I did all that, I just wasn\\'t getting what to do.  And I still have several \"why this way\" questions.\\n\\nNow, today\\'s Word Break II.  I got as far as having a dictionary with tuples that had each word\\'s start and end slot in the sentence: \\n\\n`[(\\'cat\\', (0, 3)), (\\'cats\\', (0, 4)), (\\'sand\\', (3, 7)), (\\'and\\', (4, 7)), (\\'dog\\', (7, 10)), (\\'cat\\', (10, 13)), (\\'cats\\', (10, 14))]`\\n\\nThen I got stuck on how to reassemble it without doing a bunch of odd gyrations.  So I researched to see how others were solving this. What did I find?  Well, nothing like mine.  LOL.  Instead, I found memoization solutions, DFS solutions, recursive solutions. \\n\\nI did read a lot of the comments in the recent popular post about getting better at problem solving.  They\\'re super helpful...but I\\'m still unsure about how to figure out what type of solution goes with what type of problem.\\n\\nAlso, I\\'m fairly new to Leetcode, so if there are other helpful posts, or any other kind of resource that would be helpful, please share...don\\'t assume I know about it.  LOL. \\n\\nThank you!",
+      "voteCount": 35
+    },
+    {
+      "name": "Tarunchourey007",
+      "year": 2024,
+      "content": "Either I have become a pro or this and yesterday\\'s hard were mistakenly marked as hard.",
+      "voteCount": 23
+    },
+    {
+      "name": "gothambat",
+      "year": 2020,
+      "content": "The official solution gives the time complexity as O(pow(N, 2) + pow(2, N) + W). I claim that the pow(N, 2) term is redundant. Furthermore, the term pow(2, N) should be min(W, N)\\\\*pow(2, N); as it stands, this time complexity undercounts.\\n\\nFirst, some background. In a given string, every pair of adjacent characters is an opportunity to insert a break. In a string of size L, there L - 1 insertion points. Given that there are L - 1 decision points and that there are two possible choices at each decision point, there are pow(2, L - 1) possible ways to break up a string. Each way maps to a sequence of fragments, some of which are valid word sequences.\\n\\nNow onto the problem. The suffixes of the input string have lengths 1, \\u2026, N - 1. Per the preceding discussion, a suffix of length i may have up to pow(2, i - 1) possible word sequences. Each suffix corresponds to a sub-problem, and each sub-problem may be part of min(W, N) super-problems, each of which prepends a word to each of the word sequences. So the work associated with a sub-problem is min(W, N)\\\\*pow(2, i-1). If we add up the work for all sub-problems, we get min(W, N)\\\\*pow(2, N) -- rather than pow(2, N).\\n\\nAs for the O(N^2) term, it is true as the official solutions says that there are O(N^2) edges and that each edge must be visited. In my analysis, these visits are counted when processing the word sequences of a sub-problem.\\n\\nOverall, this was a particularly difficult analysis, and the error aside, the official solution gives a great visualization without which I would have found it difficult to complete my analysis. So thanks to LeetCode.\\n\\n### Side Note\\nFor those who haven\\'t yet encountered geometric series and are wondering why adding up all the work gets us a closed-form expression:\\n\\nS = pow(2, 1) + pow(2, 2) + ... pow(2, N - 1)\\n2\\\\*S = pow(2, 2) + ... + pow(2, N - 1) + pow(2, N)\\nS = 2\\\\*S - S = pow(2, N) - 2",
+      "voteCount": 15
+    },
+    {
+      "name": "danieloi",
+      "year": 2024,
+      "content": "Simple Solution with Diagrams in Video\\nhttps://youtu.be/ZD4AAKOM2AM",
+      "voteCount": 11
+    }
+  ]
+}

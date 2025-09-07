@@ -1,0 +1,132 @@
+{
+  "category": "",
+  "id": "383",
+  "name": "Ransom Note",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/ransom-note/",
+  "slug": "ransom-note",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Stickers to Spell Word",
+      "difficulty": "Hard",
+      "slug": "stickers-to-spell-word"
+    },
+    {
+      "title": "Find Words That Can Be Formed by Characters",
+      "difficulty": "Easy",
+      "slug": "find-words-that-can-be-formed-by-characters"
+    }
+  ],
+  "questionId": "383",
+  "questionFrontendId": "383",
+  "title": "Ransom Note",
+  "titleSlug": "ransom-note",
+  "content": "<p>Given two strings <code>ransomNote</code> and <code>magazine</code>, return <code>true</code><em> if </em><code>ransomNote</code><em> can be constructed by using the letters from </em><code>magazine</code><em> and </em><code>false</code><em> otherwise</em>.</p>\n\n<p>Each letter in <code>magazine</code> can only be used once in <code>ransomNote</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> ransomNote = \"a\", magazine = \"b\"\n<strong>Output:</strong> false\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> ransomNote = \"aa\", magazine = \"ab\"\n<strong>Output:</strong> false\n</pre><p><strong class=\"example\">Example 3:</strong></p>\n<pre><strong>Input:</strong> ransomNote = \"aa\", magazine = \"aab\"\n<strong>Output:</strong> true\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= ransomNote.length, magazine.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>ransomNote</code> and <code>magazine</code> consist of lowercase English letters.</li>\n</ul>\n",
+  "likes": 5465,
+  "dislikes": 535,
+  "stats": {
+    "totalAccepted": "1.7M",
+    "totalSubmission": "2.6M",
+    "totalAcceptedRaw": 1718692,
+    "totalSubmissionRaw": 2647337,
+    "acRate": "64.9%"
+  },
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Counting",
+      "slug": "counting"
+    }
+  ],
+  "metaData": {
+    "name": "canConstruct",
+    "params": [
+      {
+        "name": "ransomNote",
+        "type": "string"
+      },
+      {
+        "name": "magazine",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "NOT_DEADPOOL",
+      "year": 2024,
+      "content": "heyman i need 10 upvotes for reputation can anyone do it pls\\n",
+      "voteCount": 291
+    },
+    {
+      "name": "nbt100jaipur",
+      "year": 2024,
+      "content": "i m gonna downvote those who post solution here",
+      "voteCount": 192
+    },
+    {
+      "name": "goesbyabhi",
+      "year": 2023,
+      "content": "Ok ok I got it. So for those who were lost just like me, just forget about the existence of ransomNote and magazine and consider them as string1 and string2. \\n`string1 = \"aa\", string2 = \"aab\"`\\nWe want to verify if string1 is a subset of string2 i.e if all the letters of string1 are present in string2. If yes then return true else return false",
+      "voteCount": 127
+    },
+    {
+      "name": "veretennikovalexey",
+      "year": 2023,
+      "content": "I have asked chatGPT to solve this problem :)",
+      "voteCount": 56
+    },
+    {
+      "name": "MaxGu",
+      "year": 2023,
+      "content": "For people who are using Python, get yourself familiar with `Counter`",
+      "voteCount": 51
+    },
+    {
+      "name": "ayushsharma014may",
+      "year": 2024,
+      "content": "i though this is a simple question like this \\n`return magazine.contains(ransomNote);` but nope",
+      "voteCount": 40
+    },
+    {
+      "name": "sathishns",
+      "year": 2020,
+      "content": "return (Counter(ransomNote) -  Counter(magazine)) == {}",
+      "voteCount": 38
+    },
+    {
+      "name": "shubham_diwe",
+      "year": 2022,
+      "content": "There are issues with the environment. Initially, I thought i had missed a condition or something. But after testing this in my local environment for the exact same test case where it evaluates to \"true\" in leetcode, but evaluates correctly in local as well as AWS EC2, i can confirm that there is an issue with their environment and test cases.\\n\\nFunny part is , just to check, i returned all values as flag = \\'false\\' for testing in lettcode, and still my output for test case 1 and case 2 is coming as \"true\"",
+      "voteCount": 31
+    },
+    {
+      "name": "adi-raj",
+      "year": 2023,
+      "content": "ransomNote = \"aa\"\\nmagazine = \"aab\"\\nExpected: True\\nEach letter in magazine can only be used once in ransomNote.\\n\\nHow this works? ",
+      "voteCount": 23
+    },
+    {
+      "name": "andrewnguyen-05",
+      "year": 2024,
+      "content": "Help me get 10 reputations please, I really want to downvote some of the comments which post solutions here",
+      "voteCount": 19
+    }
+  ]
+}

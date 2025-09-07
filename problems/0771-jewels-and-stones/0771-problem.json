@@ -1,0 +1,116 @@
+{
+  "category": "",
+  "id": "771",
+  "name": "Jewels and Stones",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/jewels-and-stones/",
+  "slug": "jewels-and-stones",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "similar_questions": [],
+  "questionId": "782",
+  "questionFrontendId": "771",
+  "title": "Jewels and Stones",
+  "titleSlug": "jewels-and-stones",
+  "content": "<p>You&#39;re given strings <code>jewels</code> representing the types of stones that are jewels, and <code>stones</code> representing the stones you have. Each character in <code>stones</code> is a type of stone you have. You want to know how many of the stones you have are also jewels.</p>\n\n<p>Letters are case sensitive, so <code>&quot;a&quot;</code> is considered a different type of stone from <code>&quot;A&quot;</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> jewels = \"aA\", stones = \"aAAbbbb\"\n<strong>Output:</strong> 3\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> jewels = \"z\", stones = \"ZZ\"\n<strong>Output:</strong> 0\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;=&nbsp;jewels.length, stones.length &lt;= 50</code></li>\n\t<li><code>jewels</code> and <code>stones</code> consist of only English letters.</li>\n\t<li>All the characters of&nbsp;<code>jewels</code> are <strong>unique</strong>.</li>\n</ul>\n",
+  "likes": 5335,
+  "dislikes": 620,
+  "stats": {
+    "totalAccepted": "1.3M",
+    "totalSubmission": "1.4M",
+    "totalAcceptedRaw": 1274812,
+    "totalSubmissionRaw": 1426947,
+    "acRate": "89.3%"
+  },
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "metaData": {
+    "name": "numJewelsInStones",
+    "params": [
+      {
+        "name": "jewels",
+        "type": "string"
+      },
+      {
+        "name": "stones",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "odinicc",
+      "year": 2023,
+      "content": "May be it will be helpful for someone. \\n\\nInput: jewels = \"aA\", stones = \"aAAbbbb\"\\nOutput: 3\\n\\nExplanation:\\nFirst stone in \\u201Cstones\\u201D - a -  \"a\"AAbbbb\\nSecond stone in \\u201Cstones\\u201D - A -  a\"A\"Abbbb\\nThird stone in \\u201Cstones\\u201D - A -  aA\"A\"bbbb\"\\n\\nOveral: 3\\n",
+      "voteCount": 123
+    },
+    {
+      "name": "sopheary",
+      "year": 2023,
+      "content": "I noticed some easy problems of the example, the writer do not provide explanation. As my suggestion , the writer should. It would help leetcoder understand in a very quick and save time.",
+      "voteCount": 64
+    },
+    {
+      "name": "a-20200522",
+      "year": 2020,
+      "content": "I used HashSet solution and it only beats 28% \\n\\nshouldn\\'t Map be faster than nested loop? O(n^2) run time vs HashSet of O(n)?",
+      "voteCount": 21
+    },
+    {
+      "name": "priya-301005",
+      "year": 2024,
+      "content": "This is the first Leetcode problem I solved \\nIm so happy",
+      "voteCount": 14
+    },
+    {
+      "name": "samcod0334",
+      "year": 2023,
+      "content": "I don\\'t understand the problem. Someone can explain me that, please.",
+      "voteCount": 14
+    },
+    {
+      "name": "Siddhant0031",
+      "year": 2023,
+      "content": "1. Initialize a counter variable to 0.\\n2. Iterate over the given strings.\\n3. For each string, compare it to the other strings.\\n4. If two strings are equal, increment the counter variable.\\n5. Return the counter variable.\\nI hope it might help . Thank you.",
+      "voteCount": 13
+    },
+    {
+      "name": "chakravarthybatna",
+      "year": 2023,
+      "content": " # Question say\\'s :\\n- you are given two string\\'s $$jewels$$ and $$stones$$\\n- each Character in the String $$jewels$$ are the $$stones$$ and these all characters(stones) are unique in $$jewels$$\\n- each character in the String $$stones$$ are the stones we have\\n- and the $$stones$$ (characters) in jewels are also present in the String $$stones$$\\n- we have to find out how many jewels stones are present in the String stones\\n- we have to count the String stones  that are also present in  the String jewels, if any stone in string stones is not present in the jewels then we don\\'t count\\n- and we have to return the no of stones that are present in jewels\\n- ex : Input: jewels = \"aA\", stones = \"aAAbbbb\"\\n jewels have stones a,A\\n stones have stones are a,A,A,b,b,b,b\\njewels stones a are present in string stones 1 times and A present in 2 times , remaining b,b,b,b stones are not present in jewels so we don\\'t count it ;\\nOutput: 3",
+      "voteCount": 12
+    },
+    {
+      "name": "Yssboern",
+      "year": 2024,
+      "content": "Description would be much clearer if it stated that each character is a jewel or stone. At first glance it seems like string \"aA\" is a jewel that we need to find.",
+      "voteCount": 11
+    },
+    {
+      "name": "llk333",
+      "year": 2020,
+      "content": "I see so many O(m * n) runtime solution that beats O(m + n) where m is size of J and n is size of S. I think the reason is that the O(m * n) solution uses J.indexOf() but the size of J in the tests cases is small enough that indexOf() can be faster than the time to construct HashSet and subsequent O(1) lookups.\\n\\nThis is not good for new comers who are trying to learn algorithms!",
+      "voteCount": 9
+    },
+    {
+      "name": "LincolnDai",
+      "year": 2018,
+      "content": "\\treturn sum([S.count(j) for j in J])",
+      "voteCount": 5
+    }
+  ]
+}

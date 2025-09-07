@@ -1,0 +1,117 @@
+{
+  "category": "",
+  "id": "1240",
+  "name": "Tiling a Rectangle with the Fewest Squares",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares/",
+  "slug": "tiling-a-rectangle-with-the-fewest-squares",
+  "isPaidOnly": false,
+  "tags": [
+    "Backtracking"
+  ],
+  "similar_questions": [
+    {
+      "title": "Selling Pieces of Wood",
+      "difficulty": "Hard",
+      "slug": "selling-pieces-of-wood"
+    }
+  ],
+  "questionId": "1361",
+  "questionFrontendId": "1240",
+  "title": "Tiling a Rectangle with the Fewest Squares",
+  "titleSlug": "tiling-a-rectangle-with-the-fewest-squares",
+  "content": "<p>Given a rectangle of size <code>n</code> x <code>m</code>, return <em>the minimum number of integer-sided squares that tile the rectangle</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/10/17/sample_11_1592.png\" style=\"width: 154px; height: 106px;\" /></p>\n\n<pre>\n<strong>Input:</strong> n = 2, m = 3\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> <code>3</code> squares are necessary to cover the rectangle.\n<code>2</code> (squares of <code>1x1</code>)\n<code>1</code> (square of <code>2x2</code>)</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/10/17/sample_22_1592.png\" style=\"width: 224px; height: 126px;\" /></p>\n\n<pre>\n<strong>Input:</strong> n = 5, m = 8\n<strong>Output:</strong> 5\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/10/17/sample_33_1592.png\" style=\"width: 224px; height: 189px;\" /></p>\n\n<pre>\n<strong>Input:</strong> n = 11, m = 13\n<strong>Output:</strong> 6\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n, m &lt;= 13</code></li>\n</ul>\n",
+  "likes": 714,
+  "dislikes": 579,
+  "stats": {
+    "totalAccepted": "26.3K",
+    "totalSubmission": "48.3K",
+    "totalAcceptedRaw": 26297,
+    "totalSubmissionRaw": 48278,
+    "acRate": "54.5%"
+  },
+  "topicTags": [
+    {
+      "name": "Backtracking",
+      "slug": "backtracking"
+    }
+  ],
+  "metaData": {
+    "name": "tilingRectangle",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      },
+      {
+        "type": "integer",
+        "name": "m"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "lee215",
+      "year": 2019,
+      "content": "Solution [here](http://int-e.eu/~bf3/squares/young.cc)\\n[Cheat Table](http://int-e.eu/~bf3/squares/young.txt)\\n\\nThough it\\'s a well known problem,\\nis it really problem for interview?\\n\\nI think if we can only cuts rectagle into rectaglex,\\nit can be solved by dp,\\nwhich makes more sense as an interview problem.\\n\\nAs you can see in the example 1 and exampl 2,\\nthe original rectangle are cuts into rectagles each time.\\nWhile example 3 has an annoying small square in the middle.\\n\\nBut it seems that, `[11, 13]` in the example 3 is the only special case within size of 13.\\n",
+      "voteCount": 46
+    },
+    {
+      "name": "zerotrac2",
+      "year": 2019,
+      "content": "I have taken the same action (pre-calculated all the answers and stored them into an array) in Weekly Contest 80 Problem 4 but was unfortunately banned by Leetcode.\\n\\nBelow is what I have received when arguing with Leetcode administrators:\\n\\n\"Our contest organizers decided to ban all solutions which pre-calculate the results in order to evade TLE results due to concern of fairness raised by other contestants. We reserve the right to have the final say in the decision. Thanks for your understanding.\"\\n\\nSo PLEASE unrate this contest. Since there are so many solutions with pre-calculation and tricky DP.",
+      "voteCount": 22
+    },
+    {
+      "name": "user3779R",
+      "year": 2021,
+      "content": "that\\'s kind of interesting\\u3002\\nhttp://int-e.eu/~bf3/squares/view.html#13,11",
+      "voteCount": 11
+    },
+    {
+      "name": "pgmreddy",
+      "year": 2021,
+      "content": "---\\n\\nThis one is too hard one to be given in for contest.\\nHowever, solvable in an hour, in theory, even if you dont know earlier by reading below links. And, since some can code in 5 mins, so possible.\\nFeel free to share a code solution based on the below, I am exhausted for the day. :)\\n\\n---\\n\\n**Algo**\\n- Pictorial solution below\\n- Rules in the picture\\n- Related links:\\n  - https://en.wikipedia.org/wiki/Squaring_the_square#Squaring_the_plane\\n  - https://en.wikipedia.org/wiki/Tessellation\\n  - https://en.wikipedia.org/wiki/Squaring_the_square\\n\\nHope it is simple to understand.\\n\\n---\\n\\n![image](https://assets.leetcode.com/users/images/cc8a73c1-43c8-4d61-abaa-9ac59dddcc9f_1625233251.8624575.png)\\n\\n---\\n\\n![image](https://assets.leetcode.com/users/images/8feb8202-9028-4c16-9b96-8a9b00d84d76_1625233272.520392.png)\\n\\n---\\n",
+      "voteCount": 8
+    },
+    {
+      "name": "danielchandg",
+      "year": 2019,
+      "content": "The solutions so far all have an if statement for the special case of 11x13, and assumes every other solution can cut the rectangle. I am wondering if there is a more universal solution. For example, maybe if the problem\\'s parameters were 1<=m,n<=14, how would we solve it, given that we cannot hardcode for special cases?",
+      "voteCount": 4
+    },
+    {
+      "name": "bluecloud",
+      "year": 2020,
+      "content": "Say you\\'re asked this question during interview. Is it best to give DP or backtracking solution?\\n\\nHopefully interviewer would guide in right direction, but what if not?\\n\\nThis problem seems at first like DP. I think it\\'s difficult to uncover the 11, 13 case, and there might be more cases.\\n\\nThe interviewer may prefer DP (accepting the wrong cases), or backtracking due to correctness. Or either is fine.",
+      "voteCount": 2
+    },
+    {
+      "name": "gooooooogle",
+      "year": 2023,
+      "content": "Can those guys using explain how can you come up with the (11, 13) corner case if the interview doesn\\'t provide you with this test case? And how could you demonstrate that (11,13) is the only corner case during a interview?",
+      "voteCount": 1
+    },
+    {
+      "name": "user1434C",
+      "year": 2020,
+      "content": "I see many solutions out here, but do not see much discussion on time complexity. Please help if someone has figured out.\\n\\nI feel O (N\\\\*M\\\\*N). N=rows, M=cols\\n\\nThat is, for each cell (N\\\\*M) we try out N options.",
+      "voteCount": 1
+    },
+    {
+      "name": "Don12138",
+      "year": 2019,
+      "content": "so many people are talking about dp,As a novice,Can i ask what is dp?",
+      "voteCount": 1
+    },
+    {
+      "name": "panzerschrek",
+      "year": 2025,
+      "content": "The only reasonable way to solve it is to hardcode 11x13 case and perform rectangles splitting for other cases.",
+      "voteCount": 0
+    }
+  ]
+}

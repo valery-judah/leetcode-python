@@ -1,0 +1,219 @@
+{
+  "category": "",
+  "id": "3",
+  "name": "Longest Substring Without Repeating Characters",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+  "slug": "longest-substring-without-repeating-characters",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Sliding Window"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longest Substring with At Most Two Distinct Characters",
+      "difficulty": "Medium",
+      "slug": "longest-substring-with-at-most-two-distinct-characters"
+    },
+    {
+      "title": "Longest Substring with At Most K Distinct Characters",
+      "difficulty": "Medium",
+      "slug": "longest-substring-with-at-most-k-distinct-characters"
+    },
+    {
+      "title": "Subarrays with K Different Integers",
+      "difficulty": "Hard",
+      "slug": "subarrays-with-k-different-integers"
+    },
+    {
+      "title": "Maximum Erasure Value",
+      "difficulty": "Medium",
+      "slug": "maximum-erasure-value"
+    },
+    {
+      "title": "Number of Equal Count Substrings",
+      "difficulty": "Medium",
+      "slug": "number-of-equal-count-substrings"
+    },
+    {
+      "title": "Minimum Consecutive Cards to Pick Up",
+      "difficulty": "Medium",
+      "slug": "minimum-consecutive-cards-to-pick-up"
+    },
+    {
+      "title": "Longest Nice Subarray",
+      "difficulty": "Medium",
+      "slug": "longest-nice-subarray"
+    },
+    {
+      "title": "Optimal Partition of String",
+      "difficulty": "Medium",
+      "slug": "optimal-partition-of-string"
+    },
+    {
+      "title": "Count Complete Subarrays in an Array",
+      "difficulty": "Medium",
+      "slug": "count-complete-subarrays-in-an-array"
+    },
+    {
+      "title": "Find Longest Special Substring That Occurs Thrice II",
+      "difficulty": "Medium",
+      "slug": "find-longest-special-substring-that-occurs-thrice-ii"
+    },
+    {
+      "title": "Find Longest Special Substring That Occurs Thrice I",
+      "difficulty": "Medium",
+      "slug": "find-longest-special-substring-that-occurs-thrice-i"
+    }
+  ],
+  "questionId": "3",
+  "questionFrontendId": "3",
+  "title": "Longest Substring Without Repeating Characters",
+  "titleSlug": "longest-substring-without-repeating-characters",
+  "content": "<p>Given a string <code>s</code>, find the length of the <strong>longest</strong> <span data-keyword=\"substring-nonempty\"><strong>substring</strong></span> without duplicate characters.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;abcabcbb&quot;\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> The answer is &quot;abc&quot;, with the length of 3.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;bbbbb&quot;\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> The answer is &quot;b&quot;, with the length of 1.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;pwwkew&quot;\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> The answer is &quot;wke&quot;, with the length of 3.\nNotice that the answer must be a substring, &quot;pwke&quot; is a subsequence and not a substring.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= s.length &lt;= 5 * 10<sup>4</sup></code></li>\n\t<li><code>s</code> consists of English letters, digits, symbols and spaces.</li>\n</ul>\n",
+  "likes": 43004,
+  "dislikes": 2104,
+  "stats": {
+    "totalAccepted": "8.1M",
+    "totalSubmission": "21.5M",
+    "totalAcceptedRaw": 8074414,
+    "totalSubmissionRaw": 21540452,
+    "acRate": "37.5%"
+  },
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Sliding Window",
+      "slug": "sliding-window"
+    }
+  ],
+  "metaData": {
+    "name": "lengthOfLongestSubstring",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": true,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 60
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Google",
+        "slug": "google",
+        "timesEncountered": 47
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Microsoft",
+        "slug": "microsoft",
+        "timesEncountered": 21
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Meta",
+        "slug": "facebook",
+        "timesEncountered": 18
+      },
+      {
+        "taggedByAdmin": true,
+        "name": "Bloomberg",
+        "slug": "bloomberg",
+        "timesEncountered": 16
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Oracle",
+        "slug": "oracle",
+        "timesEncountered": 12
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "TikTok",
+        "slug": "tiktok",
+        "timesEncountered": 11
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "ktranada1403",
+      "year": 2023,
+      "content": "Bruh who tf sat down and wrote 987 testcases. This is sacrilegious. Go touch grass. See the world out there gang. This is not it. ",
+      "voteCount": 3971
+    },
+    {
+      "name": "michaelg02",
+      "year": 2019,
+      "content": "The wording of the question was unclear for me. Example 3 does cover this where \"wke\" was the longest not \"wkew\", but the wording of the question suggests that the substring can have multiple of the same character as long as it is not repeating.\\n\\n\"wkew\" would pass because the substring does not have two w\\'s in a row.\\n\\n*Instead of:\\nGiven a string, find the length of the longest substring without repeating characters.*\\n\\n*I think this is a better wording:\\nGiven a string, find the length of the longest substring without **duplicate** characters.*\\n\\n\\n\\n\\n\\n",
+      "voteCount": 715
+    },
+    {
+      "name": "sourvad",
+      "year": 2024,
+      "content": "When I attempted this question a few months ago I was stumped and demoralized by my ineptitude. Now coming across this question today, it was a breeze. To all those who felt the same way I felt when I struggled with this question, stick with it, the grind is worth it, and you will see personal growth. Don\\'t give up, skeleton!",
+      "voteCount": 584
+    },
+    {
+      "name": "ooPo",
+      "year": 2019,
+      "content": "Do not try to use brute force to pass the problem.",
+      "voteCount": 343
+    },
+    {
+      "name": "artemilin-2023",
+      "year": 2023,
+      "content": "986 / 987 testcases passed T_T",
+      "voteCount": 341
+    },
+    {
+      "name": "technologyaddicted",
+      "year": 2017,
+      "content": "Given \"pwwkew\", the answer is \"wke\", with the length of 3. Note that the answer must be a substring, \"pwke\" is a subsequence and not a substring.\\n\\nI do not understand that in the Example # 3, it mentions 'wke' as the longest substring. Why not \"kew\" selected as the longest one? Help here is much appreciated.",
+      "voteCount": 252
+    },
+    {
+      "name": "anthonyhuang",
+      "year": 2018,
+      "content": "I have some problem understanding the problem, this test case \"dvdf \"says the output should be 3, while I suppose it should be 2.\\n\\n\"dv\" or \"df\" is what I think. It should be substring not subsequence like the question mentioned. Should it confined to \"Consistent String\"?\\n\\n",
+      "voteCount": 143
+    },
+    {
+      "name": "priyanshsingh279",
+      "year": 2022,
+      "content": "Some test cases:\\n\\n\" \"\\n\"dvdf\"\\n\"ckilbkd\"\\n\"tmmzuxt\"",
+      "voteCount": 105
+    },
+    {
+      "name": "uakrongrad",
+      "year": 2021,
+      "content": "I think the task could be better explained by asking the tester to find the length of the longest non repeating set of continous characters in the string.",
+      "voteCount": 87
+    },
+    {
+      "name": "sanyuktakate",
+      "year": 2019,
+      "content": "Did anyone get an error as - *\" is not a valid value of type string* for an input which was a string with space (\" \")?",
+      "voteCount": 60
+    }
+  ]
+}
