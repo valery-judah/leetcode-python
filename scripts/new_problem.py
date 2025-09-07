@@ -162,12 +162,15 @@ def _utc_now_iso_z() -> str:
 
 # --- Field normalization helpers (to support schema variants) ---
 def _get_id(d: dict) -> str:
-    """Return the problem id as a string.
+    """Return the visible LeetCode problem number as a string.
 
-    Prefer `id`, else fall back to `questionFrontendId` or `questionId` when provided.
-    Returns empty string when missing.
+    Prefer the explicit frontend number when present (`questionFrontendId` or
+    `frontendQuestionId`), else fall back to `id`, else `questionId`.
+    Returns empty string when not resolvable.
     """
-    val = d.get("id") or d.get("questionFrontendId") or d.get("questionId") or ""
+    val = (
+        d.get("questionFrontendId") or d.get("frontendQuestionId") or d.get("id") or d.get("questionId") or ""
+    )
     return str(val).strip()
 
 

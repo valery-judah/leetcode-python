@@ -54,7 +54,7 @@ def make_stub_cases(params: List[Tuple[str, str]]) -> list[tuple[str, List[str]]
     # Empty-list variant when any param is list-typed
     if any(t.startswith("list[") and t.endswith("]") for _, t in params):
         empty_variant: List[str] = []
-        # Python 3.9 compatibility: no 'strict' kw in zip
+        # Python 3.9 compatibility: avoid zip(strict=...) which is 3.10+
         for (_, t), dv in zip(params, defaults, strict=False):
             if t.startswith("list[") and t.endswith("]"):
                 empty_variant.append("[]")

@@ -1,6 +1,7 @@
 
 .PHONY: install linters precommit test lint type fmt ci \
-        format-md fmt-json validate-stats tracks-report tracks-table markdown build
+        format-md fmt-json validate-stats validate-ids \
+        tracks-report tracks-table markdown build
 
 # Prefer project venv Python, then python3, then python
 PYTHON := $(shell if [ -x "./venv/bin/python" ]; then echo "./venv/bin/python"; \
@@ -66,6 +67,10 @@ ci: test lint type validate-stats
 # Validate stats.json files against the JSON Schema
 validate-stats:
 	$(PYTHON) scripts/validate_stats.py
+
+# Validate that `problems/` folder IDs and slugs match the archive metadata
+validate-ids:
+	$(PYTHON) scripts/validate_problem_ids.py --strict
 
 # Generate markdown reports for tracks in tracks/
 tracks-report:
