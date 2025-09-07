@@ -106,7 +106,7 @@ build:
 # This target should be used locally to fix files.
 format-md:
 	@echo "--- Formatting Markdown files with mdformat ---"
-	$(PYTHON) -m mdformat README.md docs problems tracks archive topics memory-bank
+	$(PYTHON) -m mdformat README.md docs problems tracks archive topics
 
 # JSON formatting via pre-commit hook (pretty-format-json)
 fmt-json:
@@ -136,6 +136,6 @@ fix-md:
 # Ideal for CI pipelines. Fails if any issues are found.
 lint-md:
 	@echo "--- Checking Markdown formatting (mdformat) ---"
-	$(PYTHON) -m mdformat --check README.md docs problems tracks archive topics memory-bank
+	$(PYTHON) -m mdformat --check README.md docs problems tracks archive topics
 	@echo "--- Linting Markdown files (markdownlint) ---"
 	markdownlint --ignore-path .gitignore . --config .markdownlint.json
