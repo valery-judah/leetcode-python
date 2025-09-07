@@ -1,0 +1,53 @@
+version: 1
+track: track_neetcode_2_d_dynamic_programming
+title: NeetCode 250 — 2-D Dynamic Programming
+description: Problems from the NeetCode 250 list for 2-D Dynamic Programming.
+problems:
+  - slug: unique-paths
+    title: Unique Paths
+    difficulty: medium
+  - slug: unique-paths-ii
+    title: Unique Paths II
+    difficulty: medium
+  - slug: minimum-path-sum
+    title: Minimum Path Sum
+    difficulty: medium
+  - slug: longest-common-subsequence
+    title: Longest Common Subsequence
+    difficulty: medium
+  - slug: last-stone-weight-ii
+    title: Last Stone Weight II
+    difficulty: medium
+  - slug: best-time-to-buy-and-sell-stock-with-cooldown
+    title: Best Time to Buy And Sell Stock With Cooldown
+    difficulty: medium
+  - slug: coin-change-ii
+    title: Coin Change II
+    difficulty: medium
+  - slug: target-sum
+    title: Target Sum
+    difficulty: medium
+  - slug: interleaving-string
+    title: Interleaving String
+    difficulty: medium
+  - slug: stone-game
+    title: Stone Game
+    difficulty: medium
+  - slug: stone-game-ii
+    title: Stone Game II
+    difficulty: medium
+  - slug: longest-increasing-path-in-a-matrix
+    title: Longest Increasing Path In a Matrix
+    difficulty: hard
+  - slug: distinct-subsequences
+    title: Distinct Subsequences
+    difficulty: hard
+  - slug: edit-distance
+    title: Edit Distance
+    difficulty: medium
+  - slug: burst-balloons
+    title: Burst Balloons
+    difficulty: hard
+  - slug: regular-expression-matching
+    title: Regular Expression Matching
+    difficulty: hard

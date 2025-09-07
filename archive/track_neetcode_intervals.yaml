@@ -1,0 +1,26 @@
+version: 1
+track: track_neetcode_intervals
+title: NeetCode 250 — Intervals
+description: Problems from the NeetCode 250 list for Intervals.
+problems:
+  - slug: insert-interval
+    title: Insert Interval
+    difficulty: medium
+  - slug: merge-intervals
+    title: Merge Intervals
+    difficulty: medium
+  - slug: non-overlapping-intervals
+    title: Non Overlapping Intervals
+    difficulty: medium
+  - slug: meeting-rooms
+    title: Meeting Rooms
+    difficulty: easy
+  - slug: meeting-rooms-ii
+    title: Meeting Rooms II
+    difficulty: medium
+  - slug: meeting-rooms-iii
+    title: Meeting Rooms III
+    difficulty: hard
+  - slug: minimum-interval-to-include-each-query
+    title: Minimum Interval to Include Each Query
+    difficulty: hard

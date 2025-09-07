@@ -1,0 +1,47 @@
+version: 1
+track: track_neetcode_linked_list
+title: NeetCode 250 — Linked List
+description: Problems from the NeetCode 250 list for Linked List.
+problems:
+  - slug: reverse-linked-list
+    title: Reverse Linked List
+    difficulty: easy
+  - slug: merge-two-sorted-lists
+    title: Merge Two Sorted Lists
+    difficulty: easy
+  - slug: linked-list-cycle
+    title: Linked List Cycle
+    difficulty: easy
+  - slug: reorder-list
+    title: Reorder List
+    difficulty: medium
+  - slug: remove-nth-node-from-end-of-list
+    title: Remove Nth Node From End of List
+    difficulty: medium
+  - slug: copy-list-with-random-pointer
+    title: Copy List With Random Pointer
+    difficulty: medium
+  - slug: add-two-numbers
+    title: Add Two Numbers
+    difficulty: medium
+  - slug: find-the-duplicate-number
+    title: Find The Duplicate Number
+    difficulty: medium
+  - slug: reverse-linked-list-ii
+    title: Reverse Linked List II
+    difficulty: medium
+  - slug: design-circular-queue
+    title: Design Circular Queue
+    difficulty: medium
+  - slug: lru-cache
+    title: LRU Cache
+    difficulty: medium
+  - slug: lfu-cache
+    title: LFU Cache
+    difficulty: hard
+  - slug: merge-k-sorted-lists
+    title: Merge K Sorted Lists
+    difficulty: hard
+  - slug: reverse-nodes-in-k-group
+    title: Reverse Nodes In K Group
+    difficulty: hard

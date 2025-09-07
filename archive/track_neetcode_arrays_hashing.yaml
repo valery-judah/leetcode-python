@@ -1,0 +1,71 @@
+version: 1
+track: track_neetcode_arrays_hashing
+title: NeetCode 250 — Arrays & Hashing
+description: Problems from the NeetCode 250 list for Arrays & Hashing.
+problems:
+  - slug: concatenation-of-array
+    title: Concatenation of Array
+    difficulty: easy
+  - slug: contains-duplicate
+    title: Contains Duplicate
+    difficulty: easy
+  - slug: valid-anagram
+    title: Valid Anagram
+    difficulty: easy
+  - slug: two-sum
+    title: Two Sum
+    difficulty: easy
+  - slug: longest-common-prefix
+    title: Longest Common Prefix
+    difficulty: easy
+  - slug: group-anagrams
+    title: Group Anagrams
+    difficulty: medium
+  - slug: remove-element
+    title: Remove Element
+    difficulty: easy
+  - slug: majority-element
+    title: Majority Element
+    difficulty: easy
+  - slug: design-hashset
+    title: Design HashSet
+    difficulty: easy
+  - slug: design-hashmap
+    title: Design HashMap
+    difficulty: easy
+  - slug: sort-an-array
+    title: Sort an Array
+    difficulty: medium
+  - slug: sort-colors
+    title: Sort Colors
+    difficulty: medium
+  - slug: top-k-frequent-elements
+    title: Top K Frequent Elements
+    difficulty: medium
+  - slug: encode-and-decode-strings
+    title: Encode and Decode Strings
+    difficulty: medium
+  - slug: range-sum-query-2d-immutable
+    title: Range Sum Query 2D Immutable
+    difficulty: medium
+  - slug: product-of-array-except-self
+    title: Product of Array Except Self
+    difficulty: medium
+  - slug: valid-sudoku
+    title: Valid Sudoku
+    difficulty: medium
+  - slug: longest-consecutive-sequence
+    title: Longest Consecutive Sequence
+    difficulty: medium
+  - slug: best-time-to-buy-and-sell-stock-ii
+    title: Best Time to Buy And Sell Stock II
+    difficulty: medium
+  - slug: majority-element-ii
+    title: Majority Element II
+    difficulty: medium
+  - slug: subarray-sum-equals-k
+    title: Subarray Sum Equals K
+    difficulty: medium
+  - slug: first-missing-positive
+    title: First Missing Positive
+    difficulty: hard

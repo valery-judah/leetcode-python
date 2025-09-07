@@ -1,0 +1,56 @@
+version: 1
+track: track_neetcode_1_d_dynamic_programming
+title: NeetCode 250 — 1-D Dynamic Programming
+description: Problems from the NeetCode 250 list for 1-D Dynamic Programming.
+problems:
+  - slug: climbing-stairs
+    title: Climbing Stairs
+    difficulty: easy
+  - slug: min-cost-climbing-stairs
+    title: Min Cost Climbing Stairs
+    difficulty: easy
+  - slug: n-th-tribonacci-number
+    title: N-th Tribonacci Number
+    difficulty: easy
+  - slug: house-robber
+    title: House Robber
+    difficulty: medium
+  - slug: house-robber-ii
+    title: House Robber II
+    difficulty: medium
+  - slug: longest-palindromic-substring
+    title: Longest Palindromic Substring
+    difficulty: medium
+  - slug: palindromic-substrings
+    title: Palindromic Substrings
+    difficulty: medium
+  - slug: decode-ways
+    title: Decode Ways
+    difficulty: medium
+  - slug: coin-change
+    title: Coin Change
+    difficulty: medium
+  - slug: maximum-product-subarray
+    title: Maximum Product Subarray
+    difficulty: medium
+  - slug: word-break
+    title: Word Break
+    difficulty: medium
+  - slug: longest-increasing-subsequence
+    title: Longest Increasing Subsequence
+    difficulty: medium
+  - slug: partition-equal-subset-sum
+    title: Partition Equal Subset Sum
+    difficulty: medium
+  - slug: combination-sum-iv
+    title: Combination Sum IV
+    difficulty: medium
+  - slug: perfect-squares
+    title: Perfect Squares
+    difficulty: medium
+  - slug: integer-break
+    title: Integer Break
+    difficulty: medium
+  - slug: stone-game-iii
+    title: Stone Game III
+    difficulty: hard
