@@ -2,20 +2,12 @@ from __future__ import annotations
 
 
 class Baseline:
-    def solve(
-        self,
-        nums: list[int] | None = None,
-        val: int = 0,
-    ) -> int:
+    def solve(self, nums: list[int] | None = None, val: int = 0) -> int:
         raise NotImplementedError
 
 
 class Optimized:
-    def solve(
-        self,
-        nums: list[int] | None = None,
-        val: int = 0,
-    ) -> int:
+    def solve(self, nums: list[int] | None = None, val: int = 0) -> int:
         raise NotImplementedError
 
 
