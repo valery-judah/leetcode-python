@@ -1,6 +1,6 @@
 
 .PHONY: install linters precommit test lint type fmt ci \
-        format-md fmt-json lint-md fix-md validate-stats tracks-report tracks-table markdown build
+        format-md fmt-json validate-stats tracks-report tracks-table markdown build
 
 # Prefer project venv Python, then python3, then python
 PYTHON := $(shell if [ -x "./venv/bin/python" ]; then echo "./venv/bin/python"; \
@@ -67,7 +67,7 @@ ci: test lint type validate-stats
 validate-stats:
 	$(PYTHON) scripts/validate_stats.py
 
-# Generate markdown reports for all tracks
+# Generate markdown reports for tracks in tracks/
 tracks-report:
 	$(PYTHON) scripts/generate_track_reports.py
 
@@ -88,8 +88,6 @@ build:
 	make fmt-json
 	@echo "--- Running linters ---"
 	make lint
-	@echo "--- Linting Markdown ---"
-	make lint-md || true
 	@echo "--- Type checking ---"
 	make type
 	@echo "--- Running tests ---"
@@ -124,18 +122,3 @@ else
 	  (echo "--- Re-running pre-commit after auto-fixes ---" && $(PYTHON) -m pre_commit run --all-files) || true
 endif
 
-# Target: fix-md
-# Automatically fixes all supported Markdown linting issues using markdownlint.
-# Respects the .gitignore file. This target should be used locally.
-fix-md:
-	@echo "--- Fixing Markdown files with markdownlint ---"
-	markdownlint --fix "**/*.md" --ignore-path .gitignore .
-
-# Target: lint-md
-# Checks Markdown files for formatting and style issues without modifying them.
-# Ideal for CI pipelines. Fails if any issues are found.
-lint-md:
-	@echo "--- Checking Markdown formatting (mdformat) ---"
-	$(PYTHON) -m mdformat --check README.md docs problems tracks archive topics
-	@echo "--- Linting Markdown files (markdownlint) ---"
-	markdownlint --ignore-path .gitignore . --config .markdownlint.json

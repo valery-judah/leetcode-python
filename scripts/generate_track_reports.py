@@ -85,9 +85,8 @@ def generate_for_track(yaml_path: Path) -> Path:
     description = str(data.get("description") or "")
     problems = data.get("problems") or []
     rows: list[dict] = []
-    # Always emit Markdown reports into ROOT/tracks regardless of YAML location.
+    # Emit Markdown reports into ROOT/tracks.
     out_path = (ROOT / "tracks" / yaml_path.stem).with_suffix(".md")
-    # link_base = out_path.parent
     for item in problems:
         slug = kebab(str(item.get("slug") or "").strip())
         disp_title = str(item.get("title") or slug.replace("-", " ").title())
@@ -174,8 +173,7 @@ def generate_for_track(yaml_path: Path) -> Path:
 
 def main(argv: list[str]) -> int:
     tracks_dir = ROOT / "tracks"
-    archive_dir = ROOT / "archive"
-    yaml_files = sorted(list(tracks_dir.glob("*.yaml")) + list(archive_dir.glob("track_*.yaml")))
+    yaml_files = sorted(tracks_dir.glob("*.yaml"))
     if not yaml_files:
         print("No track YAML files found.")
         return 0
