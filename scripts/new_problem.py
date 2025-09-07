@@ -586,14 +586,23 @@ def _write_solutions(
             sig_params_parts.append(f"{n}: {t} = {default_val}")
         type_imports: str = _determine_type_imports(params, ret_type)
         generated_cases: str = generate_test_cases_from_signature(params, ret_type)
-        # Emit a multi-line signature to keep lines short (E501) and readable.
-        # Template provides 4 spaces indentation before this block. We indent
-        # continuation lines by 8 spaces (relative to file start) here.
+        # Prefer single-line signature when short; otherwise use multi-line for readability (E501).
+        # Template provides 4 spaces indentation before this block.
         if sig_params_parts:
-            cont = "\n".join(["        self,", *[f"        {p}," for p in sig_params_parts]])
+            single_params = ", ".join(sig_params_parts)
+            single_line_sig = f"def solve(self, {single_params}) -> {ret_type}:"
         else:
-            cont = "        self,"
-        solve_signature = "def solve(\n" f"{cont}\n" f") -> {ret_type}:"
+            single_line_sig = f"def solve(self) -> {ret_type}:"
+
+        if 4 + len(single_line_sig) < 120:
+            solve_signature = single_line_sig
+        else:
+            # Multi-line fallback; indent continuation lines by 8 spaces
+            if sig_params_parts:
+                cont = "\n".join(["        self,", *[f"        {p}," for p in sig_params_parts]])
+            else:
+                cont = "        self,"
+            solve_signature = "def solve(\n" f"{cont}\n" f") -> {ret_type}:"
 
         context["import_types"] = type_imports
         context["generated_cases"] = generated_cases

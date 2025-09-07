@@ -2,7 +2,6 @@ from __future__ import annotations
 
 {import_types}
 
-
 class Baseline:
     {solve_signature}
         raise NotImplementedError
