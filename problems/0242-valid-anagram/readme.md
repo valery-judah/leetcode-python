@@ -79,8 +79,6 @@ None
 
 - LeetCode problem and editorial links
 
-
-
 ## 2. Core Intuition: Canonical Representation
 
 The fundamental insight is that the order of characters in a string is irrelevant when checking for an anagram. We only care about the characters themselves and their frequencies. This suggests that if we can convert a string into a **canonical representation** that ignores order, we can solve the problem with a simple comparison.
@@ -89,9 +87,9 @@ The fundamental insight is that the order of characters in a string is irrelevan
 
 - **Canonical Forms**: We can represent this multiset in two primary ways:
 
-    1. A sorted sequence of its characters.
+  1. A sorted sequence of its characters.
 
-    2. A frequency map (or histogram) of its characters.
+  1. A frequency map (or histogram) of its characters.
 
 If the canonical forms of `s` and `t` are equal, they are anagrams.
 
@@ -173,17 +171,17 @@ class SolutionArrayCounter:
 
 1. **Ignoring Character Frequencies**: A common mistake is only checking for character _presence_, not _count_. This fails for cases like `s = "aab"`, `t = "abc"`.
 
-2. **Forgetting the Length Check**: Always start with `if len(s) != len(t): return False`. It's a simple, highly effective optimization that handles many negative cases instantly.
+1. **Forgetting the Length Check**: Always start with `if len(s) != len(t): return False`. It's a simple, highly effective optimization that handles many negative cases instantly.
 
-3. **Overlooking Constraints (The Character Set Discussion)**:
+1. **Overlooking Constraints (The Character Set Discussion)**:
 
-    - **Lowercase English (as per problem)**: An array of size 26 is the most optimal data structure. This demonstrates attention to detail and performance.
+   - **Lowercase English (as per problem)**: An array of size 26 is the most optimal data structure. This demonstrates attention to detail and performance.
 
-    - **Full ASCII**: An array of size 256 would be appropriate.
+   - **Full ASCII**: An array of size 256 would be appropriate.
 
-    - **Unicode**: The character set is vast and sparse. Using an array would be impractical due to its enormous size. A **hash map** is the correct and necessary choice here. A strong candidate can discuss these trade-offs.
+   - **Unicode**: The character set is vast and sparse. Using an array would be impractical due to its enormous size. A **hash map** is the correct and necessary choice here. A strong candidate can discuss these trade-offs.
 
-4. **Choosing a Suboptimal Approach**: While the sorting solution is correct, a candidate should recognize and explain why the frequency counter approach is asymptotically more efficient (O(N) vs. O(N log N)).
+1. **Choosing a Suboptimal Approach**: While the sorting solution is correct, a candidate should recognize and explain why the frequency counter approach is asymptotically more efficient (O(N) vs. O(N log N)).
 
 # Complexity Reasoning
 

@@ -121,4 +121,3 @@ else
 	$(PYTHON) -m pre_commit run --all-files || \
 	  (echo "--- Re-running pre-commit after auto-fixes ---" && $(PYTHON) -m pre_commit run --all-files) || true
 endif
-
