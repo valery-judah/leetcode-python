@@ -31,16 +31,20 @@ Current tracks and progress:
 | Track | Main | Ext | Total | Done | Progress | Linked | Unlinked |
 |---|---:|---:|---:|---:|---:|---:|---:|
 | [Foundations — Arrays, Hashing, Two-Pointers, Prefix, Stack](tracks/track_0_foundations.md) | 17 | 8 | 25 | 0 | 0%                 | 25 | 0 |
-| [Hard Mix — Integration and Advanced Data Structures](tracks/track_10_hard_mix.md) | 13 | 6 | 19 | 0 | 0%                 | 14 | 5 |
 | [Sliding Window — Fixed and Dynamic](tracks/track_1_sliding_window.md) | 12 | 6 | 18 | 0 | 0%                 | 10 | 8 |
 | [Two Pointers — Advanced and In‑Place Transforms](tracks/track_2_two_pointers_advanced.md) | 12 | 8 | 20 | 0 | 0%                 | 17 | 3 |
 | [Binary Search — Predicates, Partitions, and Heaps](tracks/track_3_binary_search_heaps.md) | 12 | 6 | 18 | 0 | 0%                 | 12 | 6 |
 | [Intervals — Sorting, Merging, and Greedy Scheduling](tracks/track_4_intervals.md) | 12 | 10 | 22 | 0 | 0%                 | 14 | 8 |
-| [Linked Lists — Invariants, Rewiring, and Structural Tricks](tracks/track_5_linked_lists.md) | 12 | 9 | 21 | 0 | 0%                 | 19 | 2 |
-| [Trees — Traversals, BST Properties, and LCA](tracks/track_6_trees_basics.md) | 14 | 11 | 25 | 0 | 0%                 | 22 | 3 |
 | [Graphs — BFS/DFS, Topo Sort, Union‑Find, Shortest Paths](tracks/track_7_graphs_basics.md) | 14 | 10 | 24 | 0 | 0%                 | 18 | 6 |
-| [Dynamic Programming I — 1D States, Rolling Arrays, Greedy vs DP](tracks/track_8_dynamic_programming_i.md) | 12 | 7 | 19 | 0 | 0%                 | 17 | 2 |
-| [Dynamic Programming II — 2D Tables, Sequences, and Palindromes](tracks/track_9_dynamic_programming_ii.md) | 14 | 9 | 23 | 0 | 0%                 | 21 | 2 |
+| [NeetCode 250 — Arrays & Hashing](tracks/track_neetcode_0_arrays_hashing.md) | 22 | 0 | 22 | 0 | 0%                 | 18 | 4 |
+| [NeetCode 250 — Graphs](tracks/track_neetcode_10_graphs.md) | 21 | 0 | 21 | 0 | 0%                 | 16 | 5 |
+| [NeetCode 250 — Intervals](tracks/track_neetcode_15_intervals.md) | 7 | 0 | 7 | 0 | 0%                 | 6 | 1 |
+| [NeetCode 250 — Two Pointers](tracks/track_neetcode_1_two_pointers.md) | 13 | 0 | 13 | 0 | 0%                 | 11 | 2 |
+| [NeetCode 250 — Sliding Window](tracks/track_neetcode_2_sliding_window.md) | 9 | 0 | 9 | 0 | 0%                 | 9 | 0 |
+| [NeetCode 250 — Stack](tracks/track_neetcode_3_stack.md) | 15 | 0 | 15 | 0 | 0%                 | 12 | 3 |
+| [NeetCode 250 — Binary Search](tracks/track_neetcode_4_binary_search.md) | 14 | 0 | 14 | 0 | 0%                 | 10 | 4 |
+| [NeetCode 250 — Linked List](tracks/track_neetcode_5_linked_list.md) | 14 | 0 | 14 | 0 | 0%                 | 13 | 1 |
+| [NeetCode 250 — Backtracking](tracks/track_neetcode_8_backtracking.md) | 16 | 0 | 16 | 0 | 0%                 | 15 | 1 |
 <!-- END_TRACKS_TABLE -->
 
 > Manage tracks in `tracks/*.yaml`. Generate reports and update this table with `make markdown` (or run the full pipeline with `make build`).
