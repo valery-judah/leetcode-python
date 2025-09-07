@@ -1,0 +1,158 @@
+{
+  "category": "",
+  "id": "695",
+  "name": "Max Area of Island",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/max-area-of-island/",
+  "slug": "max-area-of-island",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union Find",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Number of Islands",
+      "difficulty": "Medium",
+      "slug": "number-of-islands"
+    },
+    {
+      "title": "Battleships in a Board",
+      "difficulty": "Medium",
+      "slug": "battleships-in-a-board"
+    },
+    {
+      "title": "Island Perimeter",
+      "difficulty": "Easy",
+      "slug": "island-perimeter"
+    },
+    {
+      "title": "Largest Submatrix With Rearrangements",
+      "difficulty": "Medium",
+      "slug": "largest-submatrix-with-rearrangements"
+    },
+    {
+      "title": "Detonate the Maximum Bombs",
+      "difficulty": "Medium",
+      "slug": "detonate-the-maximum-bombs"
+    },
+    {
+      "title": "Maximum Number of Fish in a Grid",
+      "difficulty": "Medium",
+      "slug": "maximum-number-of-fish-in-a-grid"
+    }
+  ],
+  "questionId": "695",
+  "questionFrontendId": "695",
+  "title": "Max Area of Island",
+  "titleSlug": "max-area-of-island",
+  "content": "<p>You are given an <code>m x n</code> binary matrix <code>grid</code>. An island is a group of <code>1</code>&#39;s (representing land) connected <strong>4-directionally</strong> (horizontal or vertical.) You may assume all four edges of the grid are surrounded by water.</p>\n\n<p>The <strong>area</strong> of an island is the number of cells with a value <code>1</code> in the island.</p>\n\n<p>Return <em>the maximum <strong>area</strong> of an island in </em><code>grid</code>. If there is no island, return <code>0</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/05/01/maxarea1-grid.jpg\" style=\"width: 500px; height: 310px;\" />\n<pre>\n<strong>Input:</strong> grid = [[0,0,1,0,0,0,0,1,0,0,0,0,0],[0,0,0,0,0,0,0,1,1,1,0,0,0],[0,1,1,0,1,0,0,0,0,0,0,0,0],[0,1,0,0,1,1,0,0,1,0,1,0,0],[0,1,0,0,1,1,0,0,1,1,1,0,0],[0,0,0,0,0,0,0,0,0,0,1,0,0],[0,0,0,0,0,0,0,1,1,1,0,0,0],[0,0,0,0,0,0,0,1,1,0,0,0,0]]\n<strong>Output:</strong> 6\n<strong>Explanation:</strong> The answer is not 11, because the island must be connected 4-directionally.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> grid = [[0,0,0,0,0,0,0,0]]\n<strong>Output:</strong> 0\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == grid.length</code></li>\n\t<li><code>n == grid[i].length</code></li>\n\t<li><code>1 &lt;= m, n &lt;= 50</code></li>\n\t<li><code>grid[i][j]</code> is either <code>0</code> or <code>1</code>.</li>\n</ul>\n",
+  "likes": 10424,
+  "dislikes": 215,
+  "stats": {
+    "totalAccepted": "1.1M",
+    "totalSubmission": "1.5M",
+    "totalAcceptedRaw": 1116199,
+    "totalSubmissionRaw": 1520743,
+    "acRate": "73.4%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Breadth-First Search",
+      "slug": "breadth-first-search"
+    },
+    {
+      "name": "Union Find",
+      "slug": "union-find"
+    },
+    {
+      "name": "Matrix",
+      "slug": "matrix"
+    }
+  ],
+  "metaData": {
+    "name": "maxAreaOfIsland",
+    "params": [
+      {
+        "name": "grid",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "satyam_mishra13",
+      "year": 2023,
+      "content": "Life Saving Algorithm to traverse a 2-D Matrix:\\n\\n<img src =\"https://i.imgur.com/QHbnWRV.gif\" />",
+      "voteCount": 266
+    },
+    {
+      "name": "defcon",
+      "year": 2018,
+      "content": "But [Number of Islands](https://leetcode.com/problems/number-of-islands/description/) is a Medium problem?\\nThey are both almost exactly the same.",
+      "voteCount": 44
+    },
+    {
+      "name": "ashkaning",
+      "year": 2022,
+      "content": "why this :[[1,1,0,0,0],[1,1,0,0,0],[0,0,0,1,1],[0,0,0,1,1]] has 4 islands? should be 2?\\n",
+      "voteCount": 29
+    },
+    {
+      "name": "browntiger",
+      "year": 2023,
+      "content": "Max area doesn\\'t make any sense. The problem should be labeled as \"Area of the largest Island\".",
+      "voteCount": 25
+    },
+    {
+      "name": "boofyBath",
+      "year": 2024,
+      "content": "Such a good question. Solving this with dfs gives you a very memorizable template for these matrix \"graph\" type problems. ",
+      "voteCount": 17
+    },
+    {
+      "name": "freeze_francis",
+      "year": 2021,
+      "content": "This question was part of the initial screening round of Amazon.\\nFor folks preparing for FAANG interview please read my interview experience.\\nhttps://freezefrancis.medium.com/amazon-sde-interview-experience-on-campus-e8444ee791b",
+      "voteCount": 17
+    },
+    {
+      "name": "teju_5",
+      "year": 2024,
+      "content": "Came here from number of islands questions and was checking if I was on water using a string version of 0 instead of an int....fml too so long to finally see what was going on lol",
+      "voteCount": 11
+    },
+    {
+      "name": "cheng_coding_attack",
+      "year": 2018,
+      "content": "There is a similar problem\\nhttps://leetcode.com/problems/maximal-square/description/\\nwhich is solvable using DP, but why this can\\'t be solved using DP? which of DP\\'s condition it is not satisfying?\\n\\nI know DFS is also a fast solution to this problem but just curious...",
+      "voteCount": 9
+    },
+    {
+      "name": "eostling",
+      "year": 2023,
+      "content": "Honestly, These types of problems I struggle with, but I usually learn more about why I struggled with it. Very insightful problem!",
+      "voteCount": 6
+    },
+    {
+      "name": "dlleet",
+      "year": 2018,
+      "content": "\\'You may assume all four edges of the grid are surrounded by water\\'\\nand\\n[[1,1,0,0,0],[1,1,0,0,0],[0,0,0,1,1],[0,0,0,1,1]] (used as testcase in \\'Run Code\\')\\nmeans killed-by-water.",
+      "voteCount": 5
+    }
+  ]
+}

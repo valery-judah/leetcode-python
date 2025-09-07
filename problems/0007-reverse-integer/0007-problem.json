@@ -1,0 +1,152 @@
+{
+  "category": "",
+  "id": "7",
+  "name": "Reverse Integer",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/reverse-integer/",
+  "slug": "reverse-integer",
+  "isPaidOnly": false,
+  "tags": [
+    "Math"
+  ],
+  "similar_questions": [
+    {
+      "title": "String to Integer (atoi)",
+      "difficulty": "Medium",
+      "slug": "string-to-integer-atoi"
+    },
+    {
+      "title": "Reverse Bits",
+      "difficulty": "Easy",
+      "slug": "reverse-bits"
+    },
+    {
+      "title": "A Number After a Double Reversal",
+      "difficulty": "Easy",
+      "slug": "a-number-after-a-double-reversal"
+    },
+    {
+      "title": "Count Number of Distinct Integers After Reverse Operations",
+      "difficulty": "Medium",
+      "slug": "count-number-of-distinct-integers-after-reverse-operations"
+    }
+  ],
+  "questionId": "7",
+  "questionFrontendId": "7",
+  "title": "Reverse Integer",
+  "titleSlug": "reverse-integer",
+  "content": "<p>Given a signed 32-bit integer <code>x</code>, return <code>x</code><em> with its digits reversed</em>. If reversing <code>x</code> causes the value to go outside the signed 32-bit integer range <code>[-2<sup>31</sup>, 2<sup>31</sup> - 1]</code>, then return <code>0</code>.</p>\n\n<p><strong>Assume the environment does not allow you to store 64-bit integers (signed or unsigned).</strong></p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> x = 123\n<strong>Output:</strong> 321\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> x = -123\n<strong>Output:</strong> -321\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> x = 120\n<strong>Output:</strong> 21\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>-2<sup>31</sup> &lt;= x &lt;= 2<sup>31</sup> - 1</code></li>\n</ul>\n",
+  "likes": 14618,
+  "dislikes": 13861,
+  "stats": {
+    "totalAccepted": "4.4M",
+    "totalSubmission": "14.2M",
+    "totalAcceptedRaw": 4350980,
+    "totalSubmissionRaw": 14169209,
+    "acRate": "30.7%"
+  },
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "metaData": {
+    "name": "reverse",
+    "params": [
+      {
+        "name": "x",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Google",
+        "slug": "google",
+        "timesEncountered": 21
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 15
+      }
+    ],
+    "3": [
+      {
+        "taggedByAdmin": false,
+        "name": "Adobe",
+        "slug": "adobe",
+        "timesEncountered": 14
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "zherebetskyy",
+      "year": 2019,
+      "content": "Looks like the test-values have invalid test cases for x:\\n 1534236469, 1563847412 and -1563847412\\n Because all these numbers are within the required range [-2^31 ; 2^31 -1]",
+      "voteCount": 531
+    },
+    {
+      "name": "Weicheng",
+      "year": 2015,
+      "content": "Input:\\n1534236469\\nOutput:\\n9646324351\\nExpected:\\n0\\n\\nI submit my code,but it give a tip like that.",
+      "voteCount": 287
+    },
+    {
+      "name": "alexarg",
+      "year": 2015,
+      "content": "Does it really makes sense to emulate overflow in JavaScript? There is no int in JS. Number type is a floating point type. If overflow has to be simulated, \"integer\" cell size should be defined as something in the task, e.g. double word.",
+      "voteCount": 105
+    },
+    {
+      "name": "shiyinayuriko",
+      "year": 2016,
+      "content": "for the input of '1534236469'\\nJs can easily return '9646324351', not zero.",
+      "voteCount": 104
+    },
+    {
+      "name": "hh548",
+      "year": 2014,
+      "content": "Here is what I got:\\n\\nInput:\\t1534236469\\nOutput:\\t1056389759\\nExpected:\\t0\\n\\nI believe an int is not sufficient and the output is exceeding the limit of an 32-bit integer.",
+      "voteCount": 83
+    },
+    {
+      "name": "Yixian115",
+      "year": 2015,
+      "content": "Number in Python doesn't have limit, either the input or output number won't overflow anyway.\\nBut OJ still requires 0 as outcome of the huge reversed number.",
+      "voteCount": 78
+    },
+    {
+      "name": "Netttt",
+      "year": 2020,
+      "content": "1534236469 < 2^31 should return the reverse, but the solution from test case was 0. Please check. Thanks!",
+      "voteCount": 69
+    },
+    {
+      "name": "zhaozhongyu_",
+      "year": 2015,
+      "content": "The problem should tell us that when the num is out of range of int, then we need to return 0",
+      "voteCount": 69
+    },
+    {
+      "name": "mddrill",
+      "year": 2020,
+      "content": "Most of the solutions here handle the overflow case by storing the value in a long and checking if that long is over Integer.MAX_VALUE, but the problem clearly says we must assume the environment can only store 32 bit ints. If we could store longs we wouldn\\'t have to worrry about 32 bit int overflow in the first place.",
+      "voteCount": 49
+    },
+    {
+      "name": "pheonixarmvel",
+      "year": 2019,
+      "content": "Input:\\n1534236469\\nOutput:\\n1056389759\\nexpected:\\n0",
+      "voteCount": 41
+    }
+  ]
+}

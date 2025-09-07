@@ -1,0 +1,123 @@
+{
+  "category": "",
+  "id": "545",
+  "name": "Boundary of Binary Tree",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/boundary-of-binary-tree/",
+  "slug": "boundary-of-binary-tree",
+  "isPaidOnly": true,
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Binary Tree Right Side View",
+      "difficulty": "Medium",
+      "slug": "binary-tree-right-side-view"
+    }
+  ],
+  "questionId": "545",
+  "questionFrontendId": "545",
+  "title": "Boundary of Binary Tree",
+  "titleSlug": "boundary-of-binary-tree",
+  "content": "<p>The <strong>boundary</strong> of a binary tree is the concatenation of the <strong>root</strong>, the <strong>left boundary</strong>, the <strong>leaves</strong> ordered from left-to-right, and the <strong>reverse order</strong> of the <strong>right boundary</strong>.</p>\n\n<p>The <strong>left boundary</strong> is the set of nodes defined by the following:</p>\n\n<ul>\n\t<li>The root node&#39;s left child is in the left boundary. If the root does not have a left child, then the left boundary is <strong>empty</strong>.</li>\n\t<li>If a node is in the left boundary and has a left child, then the left child is in the left boundary.</li>\n\t<li>If a node is in the left boundary, has <strong>no</strong> left child, but has a right child, then the right child is in the left boundary.</li>\n\t<li>The leftmost leaf is <strong>not</strong> in the left boundary.</li>\n</ul>\n\n<p>The <strong>right boundary</strong> is similar to the <strong>left boundary</strong>, except it is the right side of the root&#39;s right subtree. Again, the leaf is <strong>not</strong> part of the <strong>right boundary</strong>, and the <strong>right boundary</strong> is empty if the root does not have a right child.</p>\n\n<p>The <strong>leaves</strong> are nodes that do not have any children. For this problem, the root is <strong>not</strong> a leaf.</p>\n\n<p>Given the <code>root</code> of a binary tree, return <em>the values of its <strong>boundary</strong></em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/11/11/boundary1.jpg\" style=\"width: 299px; height: 290px;\" />\n<pre>\n<strong>Input:</strong> root = [1,null,2,3,4]\n<strong>Output:</strong> [1,3,4,2]\n<b>Explanation:</b>\n- The left boundary is empty because the root does not have a left child.\n- The right boundary follows the path starting from the root&#39;s right child 2 -&gt; 4.\n  4 is a leaf, so the right boundary is [2].\n- The leaves from left to right are [3,4].\nConcatenating everything results in [1] + [] + [3,4] + [2] = [1,3,4,2].\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/11/11/boundary2.jpg\" style=\"width: 599px; height: 411px;\" />\n<pre>\n<strong>Input:</strong> root = [1,2,3,4,5,6,null,null,null,7,8,9,10]\n<strong>Output:</strong> [1,2,4,7,8,9,10,6,3]\n<b>Explanation:</b>\n- The left boundary follows the path starting from the root&#39;s left child 2 -&gt; 4.\n  4 is a leaf, so the left boundary is [2].\n- The right boundary follows the path starting from the root&#39;s right child 3 -&gt; 6 -&gt; 10.\n  10 is a leaf, so the right boundary is [3,6], and in reverse order is [6,3].\n- The leaves from left to right are [4,7,8,9,10].\nConcatenating everything results in [1] + [2] + [4,7,8,9,10] + [6,3] = [1,2,4,7,8,9,10,6,3].\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of nodes in the tree is in the range <code>[1, 10<sup>4</sup>]</code>.</li>\n\t<li><code>-1000 &lt;= Node.val &lt;= 1000</code></li>\n</ul>\n",
+  "likes": 1400,
+  "dislikes": 2312,
+  "stats": {
+    "totalAccepted": "163.3K",
+    "totalSubmission": "344.8K",
+    "totalAcceptedRaw": 163268,
+    "totalSubmissionRaw": 344777,
+    "acRate": "47.4%"
+  },
+  "topicTags": [
+    {
+      "name": "Tree",
+      "slug": "tree"
+    },
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Binary Tree",
+      "slug": "binary-tree"
+    }
+  ],
+  "metaData": {
+    "name": "boundaryOfBinaryTree",
+    "params": [
+      {
+        "name": "root",
+        "type": "TreeNode"
+      }
+    ],
+    "return": {
+      "type": "list<integer>"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "as9vd2",
+      "year": 2023,
+      "content": "I hate this question.",
+      "voteCount": 85
+    },
+    {
+      "name": "Code2G",
+      "year": 2018,
+      "content": "I\\'m confusion about the definition about the boundary, more specifically the left most node. \\nIt\\'s defined as \"The left-most node is defined as a leaf node you could reach when you always firstly travel to the left subtree if exists. If not, travel to the right subtree. Repeat until you reach a leaf node.\" And I would expect this applies starting from the root. \\n\\nIn the first example, tree = [1,null,2,3,4], my understanding of the left most node would be 3, and the left boundary is 1->2->3. \\n\\nBut seems the definition of \\'left most\\' does not apply to the root node? \\n",
+      "voteCount": 43
+    },
+    {
+      "name": "ekenk",
+      "year": 2024,
+      "content": "# Boundary Definition:\n\nThe definition of boundary is not very well defined. Here is a better definition of it (or at least what got me through the problem):\n\n## Left Boundary:\n* All nodes in the boundary are non-leaf nodes\n* Given that it is not a leaf node, it must have 1 or 2 children nodes\n   * If the node has a left child, that left child would be in the left boundary UNLESS it is a leaf node\n      * Given that the node has a left child, no right child is in the left boundary\n   * If the node does NOT have a left child but does have a right child, that right child would be in the left boundary UNLESS it is a leaf node\n\n## Right Boundary:\n* All nodes in the boundary are non-leaf nodes\n* Given that it is not a leaf node, it must have 1 or 2 children nodes\n   * If the node has a right child, that right child would be in the right boundary UNLESS it is a leaf node\n      * Given that the node has a right child, no left child is in the right boundary\n   * If the node does NOT have a right child but does have a left child, that left child would be in the right boundary UNLESS it is a leaf node\n\nHope this helps!\n",
+      "voteCount": 16
+    },
+    {
+      "name": "Eastknight",
+      "year": 2024,
+      "content": "Is this description written in English? I can\\'t believe that I seem to understand every single word but still understand nothing about the problem after reading.",
+      "voteCount": 10
+    },
+    {
+      "name": "Apakg",
+      "year": 2024,
+      "content": "I was asked this question in Amazon onsite round :))",
+      "voteCount": 8
+    },
+    {
+      "name": "vlearner",
+      "year": 2019,
+      "content": "My algo fails for below testcase:\\nYour input\\n[4,2,null,3,1,null,null,5]\\nOutput\\n[4,2,3,5,1]\\nExpected\\n[4,2,3,5]\\n\\nin my opinion, 1 belongs in right boundary of [ 4,2,1,5 ]. Hence, it should be part of result. My understanding it incorrect ?",
+      "voteCount": 8
+    },
+    {
+      "name": "umesh499",
+      "year": 2019,
+      "content": "[1,2,7,4,3,8,null,null,null,5,null,null,9,6,null,null,null]\\n\\nfor this example we should have 5 to be as the left boundry ? Correct me if I am wrong .",
+      "voteCount": 7
+    },
+    {
+      "name": "infinitezest",
+      "year": 2024,
+      "content": "> The root node's left child is in the left boundary.\n\n> The leftmost leaf is not in the left boundary.\n\nThese rules contradict each other if the root's left child is the leftmost leaf. The first rule says it **is** in the left boundary, the last one says it **isn't**. If the rules are contradictory, you need to specify the order of precedence, which currently the problem doesn't as of 2024-05-07.\n\nI understood the problem based only on the examples.",
+      "voteCount": 5
+    },
+    {
+      "name": "Shubhangigr8",
+      "year": 2022,
+      "content": "1.2k upvotes and 2k down votes...  seems like its not a difficult one to understand but difficult as algorithm",
+      "voteCount": 5
+    },
+    {
+      "name": "Icarus2000",
+      "year": 2019,
+      "content": "The definitions for left boundary and right boundary are ill defined since they are applicable only to the root node. A good definition would have worked for any sub-tree of the input. For example an easy test for weather a node belonged to the left boundary or right boundary would simply have been to see if it was the left node or the right node.",
+      "voteCount": 2
+    }
+  ]
+}

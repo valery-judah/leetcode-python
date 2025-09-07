@@ -1,0 +1,123 @@
+{
+  "category": "",
+  "id": "740",
+  "name": "Delete and Earn",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/delete-and-earn/",
+  "slug": "delete-and-earn",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "House Robber",
+      "difficulty": "Medium",
+      "slug": "house-robber"
+    }
+  ],
+  "questionId": "740",
+  "questionFrontendId": "740",
+  "title": "Delete and Earn",
+  "titleSlug": "delete-and-earn",
+  "content": "<p>You are given an integer array <code>nums</code>. You want to maximize the number of points you get by performing the following operation any number of times:</p>\n\n<ul>\n\t<li>Pick any <code>nums[i]</code> and delete it to earn <code>nums[i]</code> points. Afterwards, you must delete <b>every</b> element equal to <code>nums[i] - 1</code> and <strong>every</strong> element equal to <code>nums[i] + 1</code>.</li>\n</ul>\n\n<p>Return <em>the <strong>maximum number of points</strong> you can earn by applying the above operation some number of times</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [3,4,2]\n<strong>Output:</strong> 6\n<strong>Explanation:</strong> You can perform the following operations:\n- Delete 4 to earn 4 points. Consequently, 3 is also deleted. nums = [2].\n- Delete 2 to earn 2 points. nums = [].\nYou earn a total of 6 points.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [2,2,3,3,3,4]\n<strong>Output:</strong> 9\n<strong>Explanation:</strong> You can perform the following operations:\n- Delete a 3 to earn 3 points. All 2&#39;s and 4&#39;s are also deleted. nums = [3,3].\n- Delete a 3 again to earn 3 points. nums = [3].\n- Delete a 3 once more to earn 3 points. nums = [].\nYou earn a total of 9 points.</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 2 * 10<sup>4</sup></code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>\n</ul>\n",
+  "likes": 7824,
+  "dislikes": 395,
+  "stats": {
+    "totalAccepted": "414.3K",
+    "totalSubmission": "728.4K",
+    "totalAcceptedRaw": 414252,
+    "totalSubmissionRaw": 728409,
+    "acRate": "56.9%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "metaData": {
+    "name": "deleteAndEarn",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "anhongleetcode",
+      "year": 2019,
+      "content": "sorry I am too stupid.",
+      "voteCount": 275
+    },
+    {
+      "name": "edoxa1",
+      "year": 2023,
+      "content": "this problem motivated me to quit programming",
+      "voteCount": 220
+    },
+    {
+      "name": "yashrajyash",
+      "year": 2022,
+      "content": "**You can solve in your prefered programming language, by understanding the below given recursive tree.**\\n\\n![image](https://assets.leetcode.com/users/images/b8f2e123-3e9d-4332-a694-b3984f74e370_1644223933.8448064.png)\\n",
+      "voteCount": 38
+    },
+    {
+      "name": "xeniawann",
+      "year": 2023,
+      "content": "I didn\\'t get it at first why it\\'s House Robber, now I get it after seeing the solution...\\nHow does their brains work for people who relate them together??",
+      "voteCount": 37
+    },
+    {
+      "name": "n1teshy",
+      "year": 2023,
+      "content": "THINK boys, the house robber couldn't rob the surrounding houses, this robber is the same, it can't rob the numbers surrounding the chosen number\n",
+      "voteCount": 34
+    },
+    {
+      "name": "gstoykow",
+      "year": 2023,
+      "content": "This should be hard lable IMO.",
+      "voteCount": 26
+    },
+    {
+      "name": "caseyjones0208",
+      "year": 2023,
+      "content": "HERE IS A SIMPLE TRICK TO CONVERT THIS PROBLEM INTO HOUSE-ROBBER;\n\nGiven:  unsorted array of positive integers;\n problem: Pick any array[i] and delete it to earn array[i] points. Afterwards, you must delete every element equal to array[i] - 1 and every element equal to array[i] + 1;\n\nsolution :\nstep 1 : sort the array(this will help us to bring all repeated value together and also help us to align array[i] with array[i]-1 and array[i]+1 {if array[i]+1 or array[i]-1 are there })\n\nstep 2 : create a empty integer vector name houses and a int sum=array[0] ;\n\nstep 3: run a loop from 0 to n-2 , where n is array size  and inside this loop \n          \n         \n          if (array[i]==array[i+1] ) {\n          sum+=array[i];}\n// (here we calculate the total of array [i] i.e array[i] * x, where x is no. of times value at array[i] is repeted )\n        \n                                    else\n                                    {\n                                       houses.push_back(sum);    \n                                       sum=array[i+1];  // replace the sum with current integer;\n                                  // ( we enter the total value for our array[i-1] intger )\nstep 4:  we check if next int value is +1 of previous value or not;\n\n                           if(array[i]!=array[i+1]-1) {\n                            houses.push_back(0) \n                           }\n                            }// close braces for else\n(if  next different value is not a +1 value then that means we don't have to delete any one of these values to get our max answer at that point.\n therefore we enter a house with 0 value in middle of these two values \n  houses )\n\nEND; (above array is now converted to houses on which you can apply house-robber solution)\n\n *** this is my first time posting a solution and i know explanation is not good but if you get it please upvote ***\n \nP.S ALSO ONCE LOOPS END PUSH THE LAST SUM VALUE AT END OF HOUSES",
+      "voteCount": 23
+    },
+    {
+      "name": "madhur4127",
+      "year": 2018,
+      "content": "This problem is from codeforces which is most popular in dp tag named \"Boredom\". I used same solution from it and it passes in 4ms;\\nIf you want to try then go on, it also has higher constraints.",
+      "voteCount": 23
+    },
+    {
+      "name": "kirsty",
+      "year": 2023,
+      "content": "I found this question so hard!  Had to revisit some of the DP Explore Card explanation and come back to this question later... _finally_ managed to solve it in almost 2 hours.  Fingers crossed I don\\'t get asked this in an interview...",
+      "voteCount": 16
+    },
+    {
+      "name": "K_Le_Viking",
+      "year": 2024,
+      "content": "Here are some testcases if you want guys ! :\\n```\\n[3,5]\\n[3,4]\\n[9, 7, 5, 3, 1, 100, 1000, 10000, 9, 7, 5, 3, 1, 100, 1000, 10000]\\n[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\\n[12,32,93,17,100,72,40,71,37,92,58,34,29,78,11,84,77,90,92,35,12,5,27,92,91,23,65,91,85,14,42,28,80,85,38,71,62,82,66,3,33,33,55,60,48,78,63,11,20,51,78,42,37,21,100,13,60,57,91,53,49,15,45,19,51,2,96,22,32,2,46,62,58,11,29,6,74,38,70,97,4,22,76,19,1,90,63,55,64,44,90,51,36,16,65,95,64,59,53,93]\\n[1,1,1,2,4,5,5,5,6]\\n[5]\\n[17,15,21,61,51,69,42,48,97,88,2,35,29,72,49,76,54,72,30,94,20,72,21,65,80,31,11,81,14,43,39,83,45,29,94,76,81,1,97,48,71,88,44,34,53,62,25,1,81,79,58,24,99,15,46,63,10,11,50,19,91,56,44,56,86,35,76,22,52,27,52,60,84,15,38,80,99,1,38,86,79,85,43,16,61,68,41,8,67,29,63,64,70,91,24,79,14,62,11,41]\\n```",
+      "voteCount": 11
+    }
+  ]
+}

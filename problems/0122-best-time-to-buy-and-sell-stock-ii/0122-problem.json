@@ -1,0 +1,158 @@
+{
+  "category": "",
+  "id": "122",
+  "name": "Best Time to Buy and Sell Stock II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/",
+  "slug": "best-time-to-buy-and-sell-stock-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "similar_questions": [
+    {
+      "title": "Best Time to Buy and Sell Stock",
+      "difficulty": "Easy",
+      "slug": "best-time-to-buy-and-sell-stock"
+    },
+    {
+      "title": "Best Time to Buy and Sell Stock III",
+      "difficulty": "Hard",
+      "slug": "best-time-to-buy-and-sell-stock-iii"
+    },
+    {
+      "title": "Best Time to Buy and Sell Stock IV",
+      "difficulty": "Hard",
+      "slug": "best-time-to-buy-and-sell-stock-iv"
+    },
+    {
+      "title": "Best Time to Buy and Sell Stock with Cooldown",
+      "difficulty": "Medium",
+      "slug": "best-time-to-buy-and-sell-stock-with-cooldown"
+    },
+    {
+      "title": "Best Time to Buy and Sell Stock with Transaction Fee",
+      "difficulty": "Medium",
+      "slug": "best-time-to-buy-and-sell-stock-with-transaction-fee"
+    },
+    {
+      "title": "Maximum Profit From Trading Stocks",
+      "difficulty": "Medium",
+      "slug": "maximum-profit-from-trading-stocks"
+    }
+  ],
+  "questionId": "122",
+  "questionFrontendId": "122",
+  "title": "Best Time to Buy and Sell Stock II",
+  "titleSlug": "best-time-to-buy-and-sell-stock-ii",
+  "content": "<p>You are given an integer array <code>prices</code> where <code>prices[i]</code> is the price of a given stock on the <code>i<sup>th</sup></code> day.</p>\n\n<p>On each day, you may decide to buy and/or sell the stock. You can only hold <strong>at most one</strong> share of the stock at any time. However, you can buy it then immediately sell it on the <strong>same day</strong>.</p>\n\n<p>Find and return <em>the <strong>maximum</strong> profit you can achieve</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> prices = [7,1,5,3,6,4]\n<strong>Output:</strong> 7\n<strong>Explanation:</strong> Buy on day 2 (price = 1) and sell on day 3 (price = 5), profit = 5-1 = 4.\nThen buy on day 4 (price = 3) and sell on day 5 (price = 6), profit = 6-3 = 3.\nTotal profit is 4 + 3 = 7.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> prices = [1,2,3,4,5]\n<strong>Output:</strong> 4\n<strong>Explanation:</strong> Buy on day 1 (price = 1) and sell on day 5 (price = 5), profit = 5-1 = 4.\nTotal profit is 4.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> prices = [7,6,4,3,1]\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> There is no way to make a positive profit, so we never buy the stock to achieve the maximum profit of 0.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= prices.length &lt;= 3 * 10<sup>4</sup></code></li>\n\t<li><code>0 &lt;= prices[i] &lt;= 10<sup>4</sup></code></li>\n</ul>\n",
+  "likes": 14821,
+  "dislikes": 2782,
+  "stats": {
+    "totalAccepted": "2.7M",
+    "totalSubmission": "3.8M",
+    "totalAcceptedRaw": 2693006,
+    "totalSubmissionRaw": 3848579,
+    "acRate": "70.0%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "metaData": {
+    "name": "maxProfit",
+    "params": [
+      {
+        "name": "prices",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 23
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "biller897",
+      "year": 2023,
+      "content": "i\\'ll tell you the most basic thing to understand before doing any \"Buy and Sell Stock\" problem :-\\n\\nTake ex :- [1,4,7,8,6,4]\\nif you take (1, 8) , diff = 7\\nor if you take (1, 4), (4, 7), (7, 8), diff = 3 + 3 + 1 = 7\\n\\nGoing directly to 8, or going to 8 by adding all differences in between is same in result, so rather than thinking to jump, think it in this way.\\n",
+      "voteCount": 439
+    },
+    {
+      "name": "hanseaston",
+      "year": 2020,
+      "content": "We want to buy all the stocks when the line is going up. And want to ignore all the lines when the line is going down.\\n\\nDo a for loop through the array and only count in the green line that is going up, by comparing the two adjacent elements in the array.\\n\\nMany solutions are already posted here. But I think a picture would make things clearer to see.\\n\\n![image](https://assets.leetcode.com/users/hans00/image_1586103419.png)\\n\\n",
+      "voteCount": 433
+    },
+    {
+      "name": "Bulbasaur2000",
+      "year": 2021,
+      "content": "**Firstly, the second test case explaination might mislead you as it did to me. So, try to avoid that.**\\n\\nLogic: \\nIt is pretty clear that normal brute force approach will take two loops and complexity will become O(n^2). So our objective is to optimise it as far as possible. A **one-pass algorithm** could be used to achieve this optimisation.\\n\\nApproach: \\n1. Initialise a variable(like maxProfit or anything else) which will store the final profit as 0.\\n2. Under a single loop, check for the price which is greater than its previous price. That would be the time when we should sell the stock to earn maximum profit at that instance.\\n3. Add up the profit to the initial variable maxProfit.\\n4. Continue the loop untill it reaches end. Eventually on its way it will keep on checking the profit condition and add up it to your maxProfit.\\n5. Finally return maxProfit.\\n\\nThis approach will take just O(n) time, since only once the entire array is traversed.\\nTry to code it now. Happy Hunting!!! \\n\\n**Do upvote my solution if found useful. It would motivate me furthur and help others.**\\n\\n",
+      "voteCount": 262
+    },
+    {
+      "name": "pranavrocksharma",
+      "year": 2022,
+      "content": "what is the meaning of this buying and selling on the same day, profit will be 0 right , so why they highligted in bold, if was selling and then buying on the same day then it would affect on the recurrence but this statement is just added for the sake.\\n\\nAm i wrong or it means something else , i solved assuming we cannot sell and then buy on the same day, we will buy on the next day .",
+      "voteCount": 167
+    },
+    {
+      "name": "PeaceRoasted",
+      "year": 2023,
+      "content": "This problem is way easier than the first one, how is this medium, both of these should be easy",
+      "voteCount": 75
+    },
+    {
+      "name": "bhargav9427",
+      "year": 2020,
+      "content": "The most important aspect of any problem is how to arrive at a solution. What should be the thinking process behind it. Lets try to understand how can we reach upto the solution and most important how to convince ourselves that its optimal. Please watch the given solution for this problem as a prerequisite.\\n\\nThe first question after seeing the solution that comes to mind is why is it optimal. Why selecting the immediate peak is the optimal choice. Here is a mathematical understanding for that.\\n\\nConsider this input : [a, ......, b, ......., c....., d]. Where `...` refers to some input in between. a&c are valleys and b&d are peaks.\\n\\nPoints to understand. \\n1) If b&d both are peaks then there has to be some value in between them which is less than b. If not b could not have been a peak because the direct next peak immediate to a will be d.\\n2) If a&c are valleys then there has to be some value in between them which is greater than a. If not a could not have been a valley because the first valley will itself will be c.\\n3) Considering the first two points and assuming that not picking immediate next peak will lead to a better answer. Lets try to prove if we can do that.  \\n\\t\\nIf point 3 is true then we can say that \\n\\t d-a > (b-a) + (d-c)\\ni.e d > b+d-c               but as b-c > 0\\ni.e d > +ve + d            \\n\\nwhich is a false. So we can always say that picking up immediate next peak will always yeild a better result.\\n\\nHope this helps.\\n",
+      "voteCount": 70
+    },
+    {
+      "name": "arhankundu99",
+      "year": 2020,
+      "content": "I always feel like a noob while encountering these type of questions. I tried for an hour and all I could manage was brute force method optimised with dp. How do you guys come up with such ideas (Like plotting the points and doing summation of peaks(i)-valeys(i)) ?",
+      "voteCount": 57
+    },
+    {
+      "name": "Novarg",
+      "year": 2020,
+      "content": "Imagine you were a stock trader and you know the future prices for a given stock (This is the problem input). Each day you would buy the stock if you knew you could sell it tomorrow for a profit (This is the greedy solution).",
+      "voteCount": 54
+    },
+    {
+      "name": "deepshiv126",
+      "year": 2023,
+      "content": "In my opinion this explanation is misleading.\nExample 2:\nInput: prices = [1,2,3,4,5]\nOutput: 4\nExplanation: Buy on day 1 (price = 1) and sell on day 5 (price = 5), profit = 5-1 = 4.\nTotal profit is 4.\n\nIn simple words, the logic we have to think like this \n\nprices = [1,2,3,4,5]\n(2-1) +(3-2)+(4-3)+(5-4) \n1 + 1 + 1 + 1 = 4 \n\nprices = [7,1,5,3,6,4]\n(1-7)+(5-1)+(3-5)+(6-3)+(4-6)\n(-6) + 4 + (-2) + 3 + (-2) // ignore all negative\n4+3 = 7 \n",
+      "voteCount": 29
+    },
+    {
+      "name": "youssef",
+      "year": 2015,
+      "content": "Hello,\\n\\nI'd like to know why the greedy algorithm that takes pairwise profits if they are positive only?\\n\\nThanks",
+      "voteCount": 26
+    }
+  ]
+}

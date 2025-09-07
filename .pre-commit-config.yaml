@@ -1,0 +1,23 @@
+
+exclude: "\\.tpl$"
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: pretty-format-json
+        args: ["--autofix", "--indent=2", "--no-sort-keys"]
+  - repo: local
+    hooks:
+      - id: make-fmt
+        name: make fmt (ruff --fix, black .)
+        entry: make fmt
+        language: system
+        pass_filenames: false
+      - id: make-lint
+        name: make lint (ruff check, black --check)
+        entry: make lint
+        language: system
+        pass_filenames: false

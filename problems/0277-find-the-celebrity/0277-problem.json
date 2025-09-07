@@ -1,0 +1,135 @@
+{
+  "category": "",
+  "id": "277",
+  "name": "Find the Celebrity",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-the-celebrity/",
+  "slug": "find-the-celebrity",
+  "isPaidOnly": true,
+  "tags": [
+    "Two Pointers",
+    "Graph",
+    "Interactive"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find the Town Judge",
+      "difficulty": "Easy",
+      "slug": "find-the-town-judge"
+    }
+  ],
+  "questionId": "277",
+  "questionFrontendId": "277",
+  "title": "Find the Celebrity",
+  "titleSlug": "find-the-celebrity",
+  "content": "<p>Suppose you are at a party with <code>n</code> people labeled from <code>0</code> to <code>n - 1</code> and among them, there may exist one celebrity. The definition of a celebrity is that all the other <code>n - 1</code> people know the celebrity, but the celebrity does not know any of them.</p>\n\n<p>Now you want to find out who the celebrity is or verify that there is not one. You are only allowed to ask questions like: &quot;Hi, A. Do you know B?&quot; to get information about whether A knows B. You need to find out the celebrity (or verify there is not one) by asking as few questions as possible (in the asymptotic sense).</p>\n\n<p>You are given an integer <code>n</code> and a helper function <code>bool knows(a, b)</code> that tells you whether <code>a</code> knows <code>b</code>. Implement a function <code>int findCelebrity(n)</code>. There will be exactly one celebrity if they are at the party.</p>\n\n<p>Return <em>the celebrity&#39;s label if there is a celebrity at the party</em>. If there is no celebrity, return <code>-1</code>.</p>\n\n<p><strong>Note</strong> that the <code>n x n</code> 2D array <code>graph</code> given as input is <strong>not</strong> directly available to you, and instead <strong>only</strong> accessible through the helper function <code>knows</code>. <code>graph[i][j] == 1</code> represents person <code>i</code> knows person <code>j</code>, wherease <code>graph[i][j] == 0</code> represents person <code>j</code> does not know person <code>i</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2022/01/19/g1.jpg\" style=\"width: 224px; height: 145px;\" />\n<pre>\n<strong>Input:</strong> graph = [[1,1,0],[0,1,0],[1,1,1]]\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> There are three persons labeled with 0, 1 and 2. graph[i][j] = 1 means person i knows person j, otherwise graph[i][j] = 0 means person i does not know person j. The celebrity is the person labeled as 1 because both 0 and 2 know him but 1 does not know anybody.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2022/01/19/g2.jpg\" style=\"width: 224px; height: 145px;\" />\n<pre>\n<strong>Input:</strong> graph = [[1,0,1],[1,1,0],[0,1,1]]\n<strong>Output:</strong> -1\n<strong>Explanation:</strong> There is no celebrity.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>n == graph.length == graph[i].length</code></li>\n\t<li><code>2 &lt;= n &lt;= 100</code></li>\n\t<li><code>graph[i][j]</code> is <code>0</code> or <code>1</code>.</li>\n\t<li><code>graph[i][i] == 1</code></li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Follow up:</strong> If the maximum number of allowed calls to the API <code>knows</code> is <code>3 * n</code>, could you find a solution without exceeding the maximum number of calls?</p>\n",
+  "likes": 2961,
+  "dislikes": 317,
+  "stats": {
+    "totalAccepted": "309K",
+    "totalSubmission": "636.1K",
+    "totalAcceptedRaw": 308952,
+    "totalSubmissionRaw": 636127,
+    "acRate": "48.6%"
+  },
+  "topicTags": [
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    },
+    {
+      "name": "Graph",
+      "slug": "graph"
+    },
+    {
+      "name": "Interactive",
+      "slug": "interactive"
+    }
+  ],
+  "metaData": {
+    "name": "findCelebrity",
+    "params": [
+      {
+        "name": "graph",
+        "type": "integer[][]",
+        "internal": true
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "manual": true
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": true,
+        "name": "LinkedIn",
+        "slug": "linkedin",
+        "timesEncountered": 14
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "user9260GC",
+      "year": 2022,
+      "content": "There is no \\'graph\\' in the input but it\\'s specified in the input section. Very misleading. Only actual input is \\'n\\'.",
+      "voteCount": 54
+    },
+    {
+      "name": "princessmaja",
+      "year": 2016,
+      "content": "What does the input [[1,1],[1,1]] mean? Problem says \"n people (labeled from 0 to n - 1) \".\\nDoes this input mean there are two people labelled 1?",
+      "voteCount": 26
+    },
+    {
+      "name": "RohitSgh",
+      "year": 2023,
+      "content": "From every API call, we can **rule out one person**. This person **cannot** be celebrity.\\n\\n- if `knows(a, b)` returns `true`, this means `a` cannot be celebrity since the person knows someone.\\n- else if `knows(a, b)` returns `false`, this means `b` cannot be celebrity since there is one person which does not know about `b`\\n\\nThus, with $N-1$ API calls, we can rule out $N-1$ possibilities of celebrity, leaving us with only $1$ candidate for celebrity. ",
+      "voteCount": 23
+    },
+    {
+      "name": "JinZhenlin",
+      "year": 2020,
+      "content": "So in the example 1, the input is:\\n\\n\"graph = [[1,1,0],[0,1,0],[1,1,1]]\"\\n\\nHow does that exactly translate to the explanation? :\\n\\n\"There are three persons labeled with 0, 1 and 2. graph[i][j] = 1 means person i knows person j, otherwise graph[i][j] = 0 means person i does not know person j. The celebrity is the person labeled as 1 because both 0 and 2 know him but 1 does not know anybody.\" \\n\\n\\nIs anyone else just as confused as I am? Clarification is much appreciated! Thanks! \\n",
+      "voteCount": 18
+    },
+    {
+      "name": "nayanjain207",
+      "year": 2024,
+      "content": "Invalid test case:\\n\\n[[1,1],[1,1]]\\n",
+      "voteCount": 14
+    },
+    {
+      "name": "codemaster244",
+      "year": 2020,
+      "content": "I was stuck for a while since the system could not find \\'knows\\' ,We need to replace \\'knows\\' with Knows for c#",
+      "voteCount": 10
+    },
+    {
+      "name": "seredenko99",
+      "year": 2024,
+      "content": "horible problem input. What is [[1,1],[1,1]]????",
+      "voteCount": 8
+    },
+    {
+      "name": "manik_x_mahajan",
+      "year": 2021,
+      "content": "[[1,1,1],[1,1,0],[0,0,1]]\\n\\nThe expected  answer of this testcase is -1.\\nWe can clearly see that \\na. 2 knows no one.\\nb. 1 knows 0.\\nc. 0 knows 1,2.\\n\\nAs 2 don\\'t know anyone. The answer should be 2.\\nCan someone please clear it?\\n",
+      "voteCount": 7
+    },
+    {
+      "name": "vyshnavkr",
+      "year": 2021,
+      "content": "* A superb video solution from LC for bruteforce, optimal approaches and code. \\n* I mistook the question thinking the edges are already given and mentally tried solving using DFS and BFS. But later understood the catch of this problem is there are no edges for the nodes.\\n* I then mentally solved by brute force. Also observed that A knows B means B could be celebrity and A will never be celebrity. And tried to optimise ruling out A from celebrity possibility HashSet (which initially included all nodes). But failed in continuing. What I missed in observing is that if A doesn\\'t know B, then the opposite assumption is also possible, ie, A could be celebrity and B will never be the celebrity. \\n* Lesson learned: think in the opposite way too. Here I thought of the true case, but missed about the false case.",
+      "voteCount": 7
+    },
+    {
+      "name": "prathyusha756",
+      "year": 2024,
+      "content": "Seems like this was typed wrong: \"graph[i][j] == 1 represents person i knows person j, wherease graph[i][j] == 0 represents person j does not know person i.\" Isn\\'t it supposed to be \"graph[i][j] == 0 represents person i does not know person j.\" ?",
+      "voteCount": 3
+    }
+  ]
+}

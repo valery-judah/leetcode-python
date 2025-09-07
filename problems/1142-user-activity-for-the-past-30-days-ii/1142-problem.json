@@ -1,0 +1,123 @@
+{
+  "category": "",
+  "id": "1142",
+  "name": "User Activity for the Past 30 Days II",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/user-activity-for-the-past-30-days-ii/",
+  "slug": "user-activity-for-the-past-30-days-ii",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": [],
+  "questionId": "1246",
+  "questionFrontendId": "1142",
+  "title": "User Activity for the Past 30 Days II",
+  "titleSlug": "user-activity-for-the-past-30-days-ii",
+  "content": "<p>Table: <code>Activity</code></p>\n\n<pre>\n+---------------+---------+\n| Column Name   | Type    |\n+---------------+---------+\n| user_id       | int     |\n| session_id    | int     |\n| activity_date | date    |\n| activity_type | enum    |\n+---------------+---------+\nThis table may have duplicate rows.\nThe activity_type column is an ENUM (category) of type (&#39;open_session&#39;, &#39;end_session&#39;, &#39;scroll_down&#39;, &#39;send_message&#39;).\nThe table shows the user activities for a social media website. \nNote that each session belongs to exactly one user.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Write a solution to find the average number of sessions per user for a period of <code>30</code> days ending <code>2019-07-27</code> inclusively, <strong>rounded to 2 decimal places</strong>. The sessions we want to count for a user are those with at least one activity in that time period.</p>\n\n<p>The&nbsp;result format is in the following example.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> \nActivity table:\n+---------+------------+---------------+---------------+\n| user_id | session_id | activity_date | activity_type |\n+---------+------------+---------------+---------------+\n| 1       | 1          | 2019-07-20    | open_session  |\n| 1       | 1          | 2019-07-20    | scroll_down   |\n| 1       | 1          | 2019-07-20    | end_session   |\n| 2       | 4          | 2019-07-20    | open_session  |\n| 2       | 4          | 2019-07-21    | send_message  |\n| 2       | 4          | 2019-07-21    | end_session   |\n| 3       | 2          | 2019-07-21    | open_session  |\n| 3       | 2          | 2019-07-21    | send_message  |\n| 3       | 2          | 2019-07-21    | end_session   |\n| 3       | 5          | 2019-07-21    | open_session  |\n| 3       | 5          | 2019-07-21    | scroll_down   |\n| 3       | 5          | 2019-07-21    | end_session   |\n| 4       | 3          | 2019-06-25    | open_session  |\n| 4       | 3          | 2019-06-25    | end_session   |\n+---------+------------+---------------+---------------+\n<strong>Output:</strong> \n+---------------------------+ \n| average_sessions_per_user |\n+---------------------------+ \n| 1.33                      |\n+---------------------------+\n<strong>Explanation:</strong> User 1 and 2 each had 1 session in the past 30 days while user 3 had 2 sessions so the average is (1 + 1 + 2) / 3 = 1.33.\n</pre>\n",
+  "likes": 105,
+  "dislikes": 380,
+  "stats": {
+    "totalAccepted": "47.5K",
+    "totalSubmission": "133.1K",
+    "totalAcceptedRaw": 47514,
+    "totalSubmissionRaw": 133104,
+    "acRate": "35.7%"
+  },
+  "topicTags": [
+    {
+      "name": "Database",
+      "slug": "database"
+    }
+  ],
+  "metaData": {
+    "mysql": [
+      "Create table If Not Exists Activity (user_id int, session_id int, activity_date date, activity_type ENUM('open_session', 'end_session', 'scroll_down', 'send_message'))"
+    ],
+    "mssql": [
+      "create table Activity (user_id int, session_id int, activity_date date, activity_type varchar(15) not null check(activity_type in ('open_session', 'end_session', 'scroll_down', 'send_message')))"
+    ],
+    "oraclesql": [
+      "create table Activity (user_id int, session_id int, activity_date date, activity_type varchar(15) not null check(activity_type in ('open_session', 'end_session', 'scroll_down', 'send_message')))",
+      "ALTER SESSION SET nls_date_format='YYYY-MM-DD'"
+    ],
+    "database": true,
+    "name": "user_activity",
+    "pythondata": [
+      "Activity = pd.DataFrame([], columns=['user_id', 'session_id', 'activity_date', 'activity_type']).astype({'user_id':'Int64', 'session_id':'Int64', 'activity_date':'datetime64[ns]', 'activity_type':'object'})"
+    ],
+    "postgresql": [
+      "Create table If Not Exists Activity (user_id int, session_id int, activity_date date, activity_type VARCHAR(30) CHECK (activity_type IN ('open_session', 'end_session', 'scroll_down', 'send_message')))\n"
+    ],
+    "database_schema": {
+      "Activity": {
+        "user_id": "INT",
+        "session_id": "INT",
+        "activity_date": "DATE",
+        "activity_type": "ENUM('open_session', 'end_session', 'scroll_down', 'send_message')"
+      }
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "sudipta_lc",
+      "year": 2019,
+      "content": "Why do none of the solutions here include the logic that would exclude user 4 as it had no activity except open and close the session?",
+      "voteCount": 13
+    },
+    {
+      "name": "parklark95",
+      "year": 2022,
+      "content": "I\\'m not sure why we should consider date from 2019-06-28? Could you explain the reason?",
+      "voteCount": 6
+    },
+    {
+      "name": "yiziwi",
+      "year": 2024,
+      "content": "INTERVAL 29 DAY? Bro ",
+      "voteCount": 2
+    },
+    {
+      "name": "rayjames38",
+      "year": 2023,
+      "content": "it is bad question, because actually you don\\'t need to consider only open then end session. \\nAnd for the case, there are lots of records that only end session and other activity session, no open, and the date are so vary. \\nBAD",
+      "voteCount": 2
+    },
+    {
+      "name": "kuaile1358",
+      "year": 2022,
+      "content": "I understand the IFNULL function but confused about whay we\\'re using it here.",
+      "voteCount": 2
+    },
+    {
+      "name": "samikdada",
+      "year": 2021,
+      "content": "WITH CTE AS(\\nselect user_id, count(distinct session_id) as cnt\\nfrom\\nActivity\\nwhere activity_date BETWEEN DATE_SUB(\\'2019-07-27\\', INTERVAL 29 DAY) and \\'2019-07-27\\'\\ngroup by user_id\\n)\\nselect ifnull(Round(sum(cnt)/count(distinct user_id),2),0.00) as average_sessions_per_user\\nfrom\\nCTE;",
+      "voteCount": 2
+    },
+    {
+      "name": "Selfstudy9860",
+      "year": 2021,
+      "content": "\\'\\'\\'\\n\\nSELECT\\nIFNULL(ROUND((COUNT(DISTINCT CONCAT(user_id,session_id ))/COUNT(DISTINCT user_id)),2),0) AS average_sessions_per_user \\nFROM Activity\\nWHERE DATEDIFF(\\'2019-07-27\\',activity_date) < 30\\n\\n\\'\\'\\'",
+      "voteCount": 1
+    },
+    {
+      "name": "chingtingfang659",
+      "year": 2019,
+      "content": "I think the key to solve this problem is DATATYPE and NULL Value.\\n\\nSELECT\\nISNULL(ROUND(CAST(SUM(sub.num) AS FLOAT)/CAST(COUNT(sub.num) AS FLOAT),2),0) AS average_sessions_per_user\\nFROM\\n(SELECT\\nuser_id, COUNT(DISTINCT session_id) AS num\\nFROM Activity\\nWHERE activity_date BETWEEN DATEADD(day,-29,\\'2019-07-27\\') AND \\'2019-07-27\\'\\nGROUP BY user_id\\nHAVING COUNT(DISTINCT session_id) > 0 ) AS sub",
+      "voteCount": 1
+    },
+    {
+      "name": "matthewjinmp",
+      "year": 2025,
+      "content": "use between \"2019-06-28\" and \"2019-07-27\"\\n\\ngetting this wrong screwed me up\\n\\nits 30 days because it include both dates ",
+      "voteCount": 0
+    },
+    {
+      "name": "Pjamies",
+      "year": 2025,
+      "content": "Add this to your testcase:\\n\\nActivity = \\n| user_id | session_id | activity_date | activity_type |\\n| ------- | ---------- | ------------- | ------------- |\\n| 1       | 1          | 2019-06-20    | open_session  |\\n| 1       | 1          | 2019-06-20    | scroll_down   |\\n| 1       | 1          | 2019-06-20    | end_session   |\\n| 2       | 4          | 2019-06-20    | open_session  |\\n| 2       | 4          | 2019-06-21    | send_message  |\\n| 2       | 4          | 2019-06-21    | end_session   |\\n| 3       | 2          | 2019-06-21    | open_session  |\\n| 3       | 2          | 2019-06-21    | send_message  |\\n| 3       | 2          | 2019-06-21    | end_session   |\\n| 4       | 3          | 2019-06-25    | open_session  |\\n| 4       | 3          | 2019-06-25    | end_session   |\\n\\nExpected Output:\\n| average_sessions_per_user |\\n| ------------------------- |\\n| 0                         |\\n\\nThis should be added to the examples - if there are no sessions in the last 30 days then you should return 0 not NULL. ",
+      "voteCount": 0
+    }
+  ]
+}

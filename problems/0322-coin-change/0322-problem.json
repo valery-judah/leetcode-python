@@ -1,0 +1,177 @@
+{
+  "category": "",
+  "id": "322",
+  "name": "Coin Change",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/coin-change/",
+  "slug": "coin-change",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Breadth-First Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Cost For Tickets",
+      "difficulty": "Medium",
+      "slug": "minimum-cost-for-tickets"
+    },
+    {
+      "title": "Maximum Value of K Coins From Piles",
+      "difficulty": "Hard",
+      "slug": "maximum-value-of-k-coins-from-piles"
+    },
+    {
+      "title": "Minimum Number of Operations to Convert Time",
+      "difficulty": "Easy",
+      "slug": "minimum-number-of-operations-to-convert-time"
+    },
+    {
+      "title": "Minimum Cost to Split an Array",
+      "difficulty": "Hard",
+      "slug": "minimum-cost-to-split-an-array"
+    },
+    {
+      "title": "Count of Sub-Multisets With Bounded Sum",
+      "difficulty": "Hard",
+      "slug": "count-of-sub-multisets-with-bounded-sum"
+    },
+    {
+      "title": "Length of the Longest Subsequence That Sums to Target",
+      "difficulty": "Medium",
+      "slug": "length-of-the-longest-subsequence-that-sums-to-target"
+    },
+    {
+      "title": "Minimum Number of Coins to be Added",
+      "difficulty": "Medium",
+      "slug": "minimum-number-of-coins-to-be-added"
+    },
+    {
+      "title": "Most Expensive Item That Can Not Be Bought",
+      "difficulty": "Medium",
+      "slug": "most-expensive-item-that-can-not-be-bought"
+    },
+    {
+      "title": "Inverse Coin Change",
+      "difficulty": "Medium",
+      "slug": "inverse-coin-change"
+    }
+  ],
+  "questionId": "322",
+  "questionFrontendId": "322",
+  "title": "Coin Change",
+  "titleSlug": "coin-change",
+  "content": "<p>You are given an integer array <code>coins</code> representing coins of different denominations and an integer <code>amount</code> representing a total amount of money.</p>\n\n<p>Return <em>the fewest number of coins that you need to make up that amount</em>. If that amount of money cannot be made up by any combination of the coins, return <code>-1</code>.</p>\n\n<p>You may assume that you have an infinite number of each kind of coin.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> coins = [1,2,5], amount = 11\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> 11 = 5 + 5 + 1\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> coins = [2], amount = 3\n<strong>Output:</strong> -1\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> coins = [1], amount = 0\n<strong>Output:</strong> 0\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= coins.length &lt;= 12</code></li>\n\t<li><code>1 &lt;= coins[i] &lt;= 2<sup>31</sup> - 1</code></li>\n\t<li><code>0 &lt;= amount &lt;= 10<sup>4</sup></code></li>\n</ul>\n",
+  "likes": 20274,
+  "dislikes": 517,
+  "stats": {
+    "totalAccepted": "2.5M",
+    "totalSubmission": "5.3M",
+    "totalAcceptedRaw": 2504250,
+    "totalSubmissionRaw": 5317973,
+    "acRate": "47.1%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    },
+    {
+      "name": "Breadth-First Search",
+      "slug": "breadth-first-search"
+    }
+  ],
+  "metaData": {
+    "name": "coinChange",
+    "params": [
+      {
+        "name": "coins",
+        "type": "integer[]"
+      },
+      {
+        "name": "amount",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 22
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "codebiz",
+      "year": 2023,
+      "content": "## Why not Greedy ?\\nWhile greedy is the first intuitive solution that might come to a person\\'s mind for problems like these, we have to try eliminate greedy by forming test cases. \\n\\nAssume, **coins = [1, 6, 7, 9, 11]** , **amount = 13**. \\nGoing via the greedy way, we will pick the coin with the highest denomination first = 11. And then pick two 1s. Which makes it 13 = 11 + 1 + 1. And return answer as 3.\\nBut clearly, our answer is 13 = 6 + 7 which makes minimum number of coins as 2.\\n\\nThe reason for this is **non-uniformity** of the coin elements, which lead us to wrong results for greedy. Thus, greedy fails for this case.",
+      "voteCount": 545
+    },
+    {
+      "name": "BogdanJava",
+      "year": 2023,
+      "content": "DP is hard. Don\\'t get discouraged if the solution doesn\\'t come up easily. Practice makes perfect!",
+      "voteCount": 542
+    },
+    {
+      "name": "aayush70n",
+      "year": 2024,
+      "content": "i hate dp , i hate coding ,i hate leetcode and  i hate this question",
+      "voteCount": 320
+    },
+    {
+      "name": "alice0217",
+      "year": 2023,
+      "content": "Take `coins=[1,2,5]` and `amount = 11` as an example,\\n\\n- If I use one `1`, I need to know the fewest number of coins I need to make up `10`, i.e., `dp[10]`. Overall I need `1+dp[10]` coins.\\n- If I use one `2`, I need `1+dp[9]` coins.\\n- If I use one `5`, I need `1+dp[6]` coins.\\n\\nTherefore, I need to calculate `dp` from `1` to `amount`.\\n",
+      "voteCount": 192
+    },
+    {
+      "name": "b_umika",
+      "year": 2019,
+      "content": "Hi, \\n\\nIs there anything wrong with this test case ? I am getting -1 as answer, but it says Expected: 20. \\n\\n[186,419,83,408]\\n6249\\n\\nIf I do the math, I am getting 14 coins of 419, and 0 coins for 408, 2 coins for 186. That gives me a balance amount of 11. \\nHow come it is 20 coins ??\\n\\nCan someone please help?\\n\\nThanks",
+      "voteCount": 72
+    },
+    {
+      "name": "tripper",
+      "year": 2023,
+      "content": "Additional Test Case:\n[1,2,5]\n100\n[186,419,83,408]\n6249\n[3,7,405,436]\n8839\n[176,6,366,357,484,226,1,104,160,331]\n5557\n[19,28,176,112,30,260,491,128,70,137,253]\n8539\n[370,417,408,156,143,434,168,83,177,280,117]\n9953\n[2,4,6,8,10,12,14,16,18,20,22,24]\n9999\n[2,4,6]\n9999",
+      "voteCount": 51
+    },
+    {
+      "name": "janacm",
+      "year": 2021,
+      "content": "I tried almost every single solution in the discussion board, searching for a 100%, or at least 90% faster solution in Java. I tried DP, BFS, Top-down, bottom-up, and always ended up with 11 - 20ms runtime, or \"Time Limit Exceeded\". \\n\\nThen I found something interesting. If you click \"details\": \\n![image](https://assets.leetcode.com/users/images/c22eeffa-680d-4a10-bd7c-95a9f262af25_1617414183.2665262.png)\\n\\nIt takes you to a page that shows you all the solutions with all the runtimes!\\n![image](https://assets.leetcode.com/users/images/edf168bf-7744-463b-a3eb-c043aa69725c_1617414232.9364934.png)\\n\\n\\nAnyway, I tried the fastest solutions from this page, and they now give \"Time Limit Exceeded\". So I believe those solutions were submitted before some test cases were changed by Leetcode.\\n\\nSo stop chasing the 100% faster solution - it\\'s no longer possible on this platform. Instead, just understand the most optimal solution. You can find an optimal dynamic programming Java solution with detailed explanations here: https://janac.medium.com/leetcode-coin-change-java-solution-c2c813437fc8\\n\\n\\n",
+      "voteCount": 48
+    },
+    {
+      "name": "anwendeng",
+      "year": 2023,
+      "content": "In the real Taiwan daily life, the number for coin change can be negative, for example, $4=1\u22175\u22121\u22171$, that is the usual way, we change coins!!!\n\nWhy not using greedy? Although the greedy algorithm works for the most currency system and used in the daily life. But there are still some exceptions. There is a very interesting answer by wiki!\n\n> https://en.wikipedia.org/wiki/Change-making_problem\nFor instance, if we consider the old (now withdrawn) Indian coin denominations of 5, 10, 20 and 25 paise, then to make 40 paise, the greedy algorithm would choose three coins (25, 10, 5) whereas the optimal solution is two coins (20, 20). A coin system is called \"canonical\" if the greedy algorithm always solves its change-making problem optimally.",
+      "voteCount": 45
+    },
+    {
+      "name": "haoran6",
+      "year": 2019,
+      "content": "![image](https://assets.leetcode.com/users/haoran6/image_1572833589.png)\\n",
+      "voteCount": 37
+    },
+    {
+      "name": "mstuebs",
+      "year": 2024,
+      "content": "Enjoy these additional testcases :-) Please upvote if it is helpful\\n```\\n[1448861204]\\n0\\n[29,29,17]\\n841\\n[3,31,13,59]\\n1209\\n[37,2,43,31]\\n3182\\n[1495,598,2990,299]\\n5382\\n[2680,5360,536,1072]\\n9648\\n[7,2,14,28,73,132,220,343,518,734,1010,1337]\\n9999\\n[5,11,8,30,72,129,223,349,513,739,1005,1334]\\n9951\\n```\\nAlso check out the git repository \"[L33tcode Testcase Generator](https://github.com/mquintus/l33tcode-testcase-generator)\" :-)",
+      "voteCount": 20
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "category": "",
+  "id": "1665",
+  "name": "Minimum Initial Energy to Finish Tasks",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-initial-energy-to-finish-tasks/",
+  "slug": "minimum-initial-energy-to-finish-tasks",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": [],
+  "questionId": "1784",
+  "questionFrontendId": "1665",
+  "title": "Minimum Initial Energy to Finish Tasks",
+  "titleSlug": "minimum-initial-energy-to-finish-tasks",
+  "content": "<p>You are given an array <code>tasks</code> where <code>tasks[i] = [actual<sub>i</sub>, minimum<sub>i</sub>]</code>:</p>\n\n<ul>\n\t<li><code>actual<sub>i</sub></code> is the actual amount of energy you <strong>spend to finish</strong> the <code>i<sup>th</sup></code> task.</li>\n\t<li><code>minimum<sub>i</sub></code> is the minimum amount of energy you <strong>require to begin</strong> the <code>i<sup>th</sup></code> task.</li>\n</ul>\n\n<p>For example, if the task is <code>[10, 12]</code> and your current energy is <code>11</code>, you cannot start this task. However, if your current energy is <code>13</code>, you can complete this task, and your energy will be <code>3</code> after finishing it.</p>\n\n<p>You can finish the tasks in <strong>any order</strong> you like.</p>\n\n<p>Return <em>the <strong>minimum</strong> initial amount of energy you will need</em> <em>to finish all the tasks</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> tasks = [[1,2],[2,4],[4,8]]\n<strong>Output:</strong> 8\n<strong>Explanation:</strong>\nStarting with 8 energy, we finish the tasks in the following order:\n    - 3rd task. Now energy = 8 - 4 = 4.\n    - 2nd task. Now energy = 4 - 2 = 2.\n    - 1st task. Now energy = 2 - 1 = 1.\nNotice that even though we have leftover energy, starting with 7 energy does not work because we cannot do the 3rd task.</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> tasks = [[1,3],[2,4],[10,11],[10,12],[8,9]]\n<strong>Output:</strong> 32\n<strong>Explanation:</strong>\nStarting with 32 energy, we finish the tasks in the following order:\n    - 1st task. Now energy = 32 - 1 = 31.\n    - 2nd task. Now energy = 31 - 2 = 29.\n    - 3rd task. Now energy = 29 - 10 = 19.\n    - 4th task. Now energy = 19 - 10 = 9.\n    - 5th task. Now energy = 9 - 8 = 1.</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> tasks = [[1,7],[2,8],[3,9],[4,10],[5,11],[6,12]]\n<strong>Output:</strong> 27\n<strong>Explanation:</strong>\nStarting with 27 energy, we finish the tasks in the following order:\n    - 5th task. Now energy = 27 - 5 = 22.\n    - 2nd task. Now energy = 22 - 2 = 20.\n    - 3rd task. Now energy = 20 - 3 = 17.\n    - 1st task. Now energy = 17 - 1 = 16.\n    - 4th task. Now energy = 16 - 4 = 12.\n    - 6th task. Now energy = 12 - 6 = 6.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= tasks.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= actual<sub>\u200bi</sub>&nbsp;&lt;= minimum<sub>i</sub>&nbsp;&lt;= 10<sup>4</sup></code></li>\n</ul>\n",
+  "likes": 608,
+  "dislikes": 40,
+  "stats": {
+    "totalAccepted": "21.2K",
+    "totalSubmission": "35.5K",
+    "totalAcceptedRaw": 21205,
+    "totalSubmissionRaw": 35457,
+    "acRate": "59.8%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    },
+    {
+      "name": "Sorting",
+      "slug": "sorting"
+    }
+  ],
+  "metaData": {
+    "name": "minimumEffort",
+    "params": [
+      {
+        "name": "tasks",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "kaint",
+      "year": 2020,
+      "content": "I don\\'t know why people are posting solution if they are not explaining,\\nDuring contest I was thiking to use DP, binary search on value, sorting, but didn\\'t reach upto sorting by  difference. \\nCan anyone please tell me, how they reach upto that, it would be helpful.",
+      "voteCount": 14
+    },
+    {
+      "name": "gautamsharma22",
+      "year": 2023,
+      "content": "Saw the same in OA of Goldman Sacs :)",
+      "voteCount": 5
+    },
+    {
+      "name": "iAditya1441",
+      "year": 2024,
+      "content": "Sorting with difference in actual and minimum is not at all intutive in nature",
+      "voteCount": 2
+    },
+    {
+      "name": "Java_Programmer_Ujjwal",
+      "year": 2024,
+      "content": "One more greedy problem where i failed :(",
+      "voteCount": 1
+    },
+    {
+      "name": "panzerschrek",
+      "year": 2025,
+      "content": "For some non-obvious reason sorting by difference between `minimum` and `actual` works. What kind of black magic is this?",
+      "voteCount": 0
+    },
+    {
+      "name": "panzerschrek",
+      "year": 2025,
+      "content": "I tried to sort tasks by `minimum` - it seems to be reasonable. But somehow this doesn\\'t work for example 2. WTF? How one suppose to solve it, if such obvious heuristic doesn\\'t work here?",
+      "voteCount": 0
+    },
+    {
+      "name": "freakyshadows",
+      "year": 2025,
+      "content": "For the folks wondering about sorting idea\\nThe trick is in the constraints  `actual\\u200B (i)<= minimum(i)`\\nmeaning the we need more energy to start less to finish\\nso after every task we will have `minimum- actual` as saved energy\\nlet\\'s say `[ [1,100],[2,5],[3,5] ]\\n` if it is so high the saved energy from first task can be roll out on last two task",
+      "voteCount": 0
+    },
+    {
+      "name": "Consistent_",
+      "year": 2025,
+      "content": "Everyone who isn\\'t able to do it , Wake up to reality and ask yourself what makes you so weak to not be able to apply binary search. Stop giving excuses to yourself that question is hard, because hardly anyone cares. Do the struggle on your own.",
+      "voteCount": 0
+    },
+    {
+      "name": "Zaid_Shaikh001",
+      "year": 2025,
+      "content": "sort by (minimum - actual) because a greater (minimum - actual)\nvalue requires a high starting energy but does not consume much\nactual energy hence we might have enough energy to start other tasks as well.",
+      "voteCount": 0
+    },
+    {
+      "name": "anandravishankar_sbu",
+      "year": 2023,
+      "content": "For example 3, isn\\'t 26 the right answer? I did a top down approach with the following transition function dp[i] = dp[i-1] + abs(tasks[i][1] - (tasks[i-1][1] - tasks[i-1][0])). 26 satisfies all the tasks when done in decreasing order. ",
+      "voteCount": 0
+    }
+  ]
+}

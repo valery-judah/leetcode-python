@@ -1,0 +1,116 @@
+{
+  "category": "",
+  "id": "967",
+  "name": "Numbers With Same Consecutive Differences",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/numbers-with-same-consecutive-differences/",
+  "slug": "numbers-with-same-consecutive-differences",
+  "isPaidOnly": false,
+  "tags": [
+    "Backtracking",
+    "Breadth-First Search"
+  ],
+  "similar_questions": [],
+  "questionId": "1007",
+  "questionFrontendId": "967",
+  "title": "Numbers With Same Consecutive Differences",
+  "titleSlug": "numbers-with-same-consecutive-differences",
+  "content": "<p>Given two integers n and k, return <em>an array of all the integers of length </em><code>n</code><em> where the difference between every two consecutive digits is </em><code>k</code>. You may return the answer in <strong>any order</strong>.</p>\n\n<p>Note that the integers should not have leading zeros. Integers as <code>02</code> and <code>043</code> are not allowed.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 3, k = 7\n<strong>Output:</strong> [181,292,707,818,929]\n<strong>Explanation:</strong> Note that 070 is not a valid number, because it has leading zeroes.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 2, k = 1\n<strong>Output:</strong> [10,12,21,23,32,34,43,45,54,56,65,67,76,78,87,89,98]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= n &lt;= 9</code></li>\n\t<li><code>0 &lt;= k &lt;= 9</code></li>\n</ul>\n",
+  "likes": 2865,
+  "dislikes": 200,
+  "stats": {
+    "totalAccepted": "149.5K",
+    "totalSubmission": "253.8K",
+    "totalAcceptedRaw": 149467,
+    "totalSubmissionRaw": 253824,
+    "acRate": "58.9%"
+  },
+  "topicTags": [
+    {
+      "name": "Backtracking",
+      "slug": "backtracking"
+    },
+    {
+      "name": "Breadth-First Search",
+      "slug": "breadth-first-search"
+    }
+  ],
+  "metaData": {
+    "name": "numsSameConsecDiff",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      },
+      {
+        "name": "k",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer[]"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "AnnieW",
+      "year": 2019,
+      "content": "As in the problem discripition:\\n1 <= N <= 9 \\n0 <= K <= 9\\nThere are 9 eligible values for N and 10 values for K, so there are at most 90 combinations, just curious what could the other 2 test cases?\\n",
+      "voteCount": 70
+    },
+    {
+      "name": "Eradicator",
+      "year": 2020,
+      "content": "Can someone explain how you compute the \"absolute difference between every TWO consecutive digits\" when working with ONE-digit numbers? The Expected value for every value of K when N is one is the set of all single digits. In what world does that make sense?",
+      "voteCount": 7
+    },
+    {
+      "name": "theowalton1997",
+      "year": 2019,
+      "content": "code was too large to post here but its on a gist:\\n\\nhttps://gist.github.com/theo-walton/5dc1e0531f5362d7767c72a818515ce9\\n",
+      "voteCount": 6
+    },
+    {
+      "name": "shivasaineelam",
+      "year": 2023,
+      "content": "dont forget  k can be zero too \\ni guess the acceptance is close to 50 because of this",
+      "voteCount": 5
+    },
+    {
+      "name": "Astute_Coder",
+      "year": 2025,
+      "content": "Apply Brute Force Approach",
+      "voteCount": 1
+    },
+    {
+      "name": "Ebrahim7",
+      "year": 2025,
+      "content": "critical thinking involves",
+      "voteCount": 1
+    },
+    {
+      "name": "maihoonmanas",
+      "year": 2025,
+      "content": "try to do this using bfs....you will truely understand what level order traversal actually means...so much to learn!!",
+      "voteCount": 0
+    },
+    {
+      "name": "rithishcodespace",
+      "year": 2025,
+      "content": "use recursive approach with to build the integer, first in the form of strings and then convert them into integers\\n",
+      "voteCount": 0
+    },
+    {
+      "name": "Lulu0711dll",
+      "year": 2025,
+      "content": "Use BFS with queue would be easy",
+      "voteCount": 0
+    },
+    {
+      "name": "BishalPoudel",
+      "year": 2024,
+      "content": "Good one.",
+      "voteCount": 0
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "category": "",
+  "id": "1069",
+  "name": "Product Sales Analysis II",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/product-sales-analysis-ii/",
+  "slug": "product-sales-analysis-ii",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": [
+    {
+      "title": "Product Sales Analysis I",
+      "difficulty": "Easy",
+      "slug": "product-sales-analysis-i"
+    },
+    {
+      "title": "Product Sales Analysis III",
+      "difficulty": "Medium",
+      "slug": "product-sales-analysis-iii"
+    },
+    {
+      "title": "Product Sales Analysis IV",
+      "difficulty": "Medium",
+      "slug": "product-sales-analysis-iv"
+    },
+    {
+      "title": "Product Sales Analysis V",
+      "difficulty": "Easy",
+      "slug": "product-sales-analysis-v"
+    }
+  ],
+  "questionId": "1154",
+  "questionFrontendId": "1069",
+  "title": "Product Sales Analysis II",
+  "titleSlug": "product-sales-analysis-ii",
+  "content": "<p>Table: <code>Sales</code></p>\n\n<pre>\n+-------------+-------+\n| Column Name | Type  |\n+-------------+-------+\n| sale_id     | int   |\n| product_id  | int   |\n| year        | int   |\n| quantity    | int   |\n| price       | int   |\n+-------------+-------+\n(sale_id, year) is the primary key (combination of columns with unique values) of this table.\nproduct_id is a foreign key (reference column) to <code>Product</code> table.\nEach row of this table shows a sale on the product product_id in a certain year.\nNote that the price is per unit.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Table: <code>Product</code></p>\n\n<pre>\n+--------------+---------+\n| Column Name  | Type    |\n+--------------+---------+\n| product_id   | int     |\n| product_name | varchar |\n+--------------+---------+\nproduct_id is the primary key (column with unique values) of this table.\nEach row of this table indicates the product name of each product.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Write a solution that reports the total quantity sold for every product id.</p>\n\n<p>Return the resulting table in <strong>any order</strong>.</p>\n\n<p>The result format is in the following example.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> \nSales table:\n+---------+------------+------+----------+-------+\n| sale_id | product_id | year | quantity | price |\n+---------+------------+------+----------+-------+ \n| 1       | 100        | 2008 | 10       | 5000  |\n| 2       | 100        | 2009 | 12       | 5000  |\n| 7       | 200        | 2011 | 15       | 9000  |\n+---------+------------+------+----------+-------+\nProduct table:\n+------------+--------------+\n| product_id | product_name |\n+------------+--------------+\n| 100        | Nokia        |\n| 200        | Apple        |\n| 300        | Samsung      |\n+------------+--------------+\n<strong>Output:</strong> \n+--------------+----------------+\n| product_id   | total_quantity |\n+--------------+----------------+\n| 100          | 22             |\n| 200          | 15             |\n+--------------+----------------+\n</pre>\n",
+  "likes": 85,
+  "dislikes": 182,
+  "stats": {
+    "totalAccepted": "60K",
+    "totalSubmission": "72.9K",
+    "totalAcceptedRaw": 60039,
+    "totalSubmissionRaw": 72858,
+    "acRate": "82.4%"
+  },
+  "topicTags": [
+    {
+      "name": "Database",
+      "slug": "database"
+    }
+  ],
+  "metaData": {
+    "mysql": [
+      "Create table If Not Exists Sales (sale_id int, product_id int, year int, quantity int, price int)",
+      "Create table If Not Exists Product (product_id int, product_name varchar(10))"
+    ],
+    "mssql": [
+      "Create table Sales (sale_id int, product_id int, year int, quantity int, price int)",
+      "Create table Product (product_id int, product_name varchar(10))"
+    ],
+    "oraclesql": [
+      "Create table Sales (sale_id int, product_id int, year int, quantity int, price int)",
+      "Create table Product (product_id int, product_name varchar(10))"
+    ],
+    "database": true,
+    "name": "sales_analysis",
+    "pythondata": [
+      "Sales = pd.DataFrame([], columns=['sale_id', 'product_id', 'year', 'quantity', 'price']).astype({'sale_id':'Int64', 'product_id':'Int64', 'year':'Int64', 'quantity':'Int64', 'price':'Int64'})",
+      "Product = pd.DataFrame([], columns=['product_id', 'product_name']).astype({'product_id':'Int64', 'product_name':'object'})"
+    ],
+    "postgresql": [
+      "Create table If Not Exists Sales (sale_id int, product_id int, year int, quantity int, price int)\n",
+      "Create table If Not Exists Product (product_id int, product_name varchar(10))"
+    ],
+    "database_schema": {
+      "Sales": {
+        "sale_id": "INT",
+        "product_id": "INT",
+        "year": "INT",
+        "quantity": "INT",
+        "price": "INT"
+      },
+      "Product": {
+        "product_id": "INT",
+        "product_name": "VARCHAR(10)"
+      }
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "qifeicheng",
+      "year": 2019,
+      "content": "It seems that the second product table is useless...",
+      "voteCount": 40
+    },
+    {
+      "name": "karanjbhargava",
+      "year": 2020,
+      "content": "The question wants the total sold for EVERY product ID, but then doesn\\'t use a LEFT JOIN on Product.  Ex: Samsung sold 0 items but it still has a product ID so why doesn\\'t the test case account for that?  It should say [300, 0] but instead ignores product_id 300 entirely.  Seems like a poorly created question/test case set.\\n",
+      "voteCount": 13
+    },
+    {
+      "name": "nishabalu",
+      "year": 2020,
+      "content": "The question asks for EVERY product_id. All product_ids are in Product table.\\n\\nselect p.product_id, coalesce(sum(s.quantity),0) as total_quantity\\nfrom Product p\\nleft outer join Sales s\\non p.product_id = s.product_id\\ngroup by p.product_id;",
+      "voteCount": 5
+    },
+    {
+      "name": "elsah",
+      "year": 2020,
+      "content": "This is the input used in the test:\\n`{\"headers\":{\"Sales\":[\"sale_id\",\"product_id\",\"year\",\"quantity\",\"price\"],\"Product\":[\"product_id\",\"product_name\"]},\"rows\":{\"Sales\":[[1,100,2008,10,5000],[2,100,2009,12,5000],[7,200,2011,15,9000]],\"Product\":[[100,\"Nokia\"],[200,\"Apple\"],[300,\"Samsung\"]]}}`\\n\\nThe expected output from the test is:\\n{\"headers\":[\"product_id\",\"total_quantity\"],\"values\":[[100,22],[200,15]]}\\n\\nHowever, we can see that product_id 300 does not have any sale. Usually it is expected to show product_id 300 with 0 sales when there is no sale. I\\'ve seen this type of edge cases many times before in my interviews.\\n\\n",
+      "voteCount": 4
+    },
+    {
+      "name": "leotaozeng_dev",
+      "year": 2024,
+      "content": "The question asks for every product ID, but in the end Samsung is not included. I don\\'t understand...",
+      "voteCount": 3
+    },
+    {
+      "name": "matthewjinmp",
+      "year": 2025,
+      "content": "if you are ever feeling useless, just remember the Product table",
+      "voteCount": 0
+    },
+    {
+      "name": "zugzwang2201",
+      "year": 2025,
+      "content": "This is a true beginner question, and I say that not as an insult but because so often questions labeled as \\'easy\\' on leetcode are not actually beginner questions. This one though, certainly is. All you need so solve this question is the use of an aggregate function, aliasing, and a GROUP BY clause. Interestingly, you do not even need to use a JOIN because the Product table does not contain any information that is required to solve the question and pass the test cases. So for anyone new to leetcode or SQL, this is an awesome starting place and do not worry if it takes you a while to figure out. Do some deep thinking and have fun. Good luck!",
+      "voteCount": 0
+    },
+    {
+      "name": "Samuel_meshaq",
+      "year": 2025,
+      "content": "You don\\'t really need to use any joins for this question, and not even use the other table for this.",
+      "voteCount": 0
+    },
+    {
+      "name": "Vegebird",
+      "year": 2025,
+      "content": "The question should correct the answer that includes whole set of product_id in the table Product, even if the product_ids whose total sold quantities are 0.",
+      "voteCount": 0
+    },
+    {
+      "name": "dg1223",
+      "year": 2024,
+      "content": "Don\\'t skip to a different question as soon as you get this one correct. You result should ideally show every product ID, even if no item was sold for that product. You\\'ll get incorrect answer from Leetcode, but it is in fact the correct answer.",
+      "voteCount": 0
+    }
+  ]
+}

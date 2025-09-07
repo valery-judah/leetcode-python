@@ -1,0 +1,137 @@
+{
+  "category": "",
+  "id": "1962",
+  "name": "Remove Stones to Minimize the Total",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/remove-stones-to-minimize-the-total/",
+  "slug": "remove-stones-to-minimize-the-total",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Heap (Priority Queue)"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Operations to Halve Array Sum",
+      "difficulty": "Medium",
+      "slug": "minimum-operations-to-halve-array-sum"
+    },
+    {
+      "title": "Maximal Score After Applying K Operations",
+      "difficulty": "Medium",
+      "slug": "maximal-score-after-applying-k-operations"
+    },
+    {
+      "title": "Take Gifts From the Richest Pile",
+      "difficulty": "Easy",
+      "slug": "take-gifts-from-the-richest-pile"
+    }
+  ],
+  "questionId": "2094",
+  "questionFrontendId": "1962",
+  "title": "Remove Stones to Minimize the Total",
+  "titleSlug": "remove-stones-to-minimize-the-total",
+  "content": "<p>You are given a <strong>0-indexed</strong> integer array <code>piles</code>, where <code>piles[i]</code> represents the number of stones in the <code>i<sup>th</sup></code> pile, and an integer <code>k</code>. You should apply the following operation <strong>exactly</strong> <code>k</code> times:</p>\n\n<ul>\n\t<li>Choose any <code>piles[i]</code> and <strong>remove</strong> <code>floor(piles[i] / 2)</code> stones from it.</li>\n</ul>\n\n<p><strong>Notice</strong> that you can apply the operation on the <strong>same</strong> pile more than once.</p>\n\n<p>Return <em>the <strong>minimum</strong> possible total number of stones remaining after applying the </em><code>k</code><em> operations</em>.</p>\n\n<p><code>floor(x)</code> is the <strong>largest</strong>&nbsp;integer that is <strong>smaller</strong> than or <strong>equal</strong> to <code>x</code> (i.e., rounds <code>x</code>&nbsp;down).</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> piles = [5,4,9], k = 2\n<strong>Output:</strong> 12\n<strong>Explanation:</strong>&nbsp;Steps of a possible scenario are:\n- Apply the operation on pile 2. The resulting piles are [5,4,<u>5</u>].\n- Apply the operation on pile 0. The resulting piles are [<u>3</u>,4,5].\nThe total number of stones in [3,4,5] is 12.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> piles = [4,3,6,7], k = 3\n<strong>Output:</strong> 12\n<strong>Explanation:</strong>&nbsp;Steps of a possible scenario are:\n- Apply the operation on pile 2. The resulting piles are [4,3,<u>3</u>,7].\n- Apply the operation on pile 3. The resulting piles are [4,3,3,<u>4</u>].\n- Apply the operation on pile 0. The resulting piles are [<u>2</u>,3,3,4].\nThe total number of stones in [2,3,3,4] is 12.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= piles.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= piles[i] &lt;= 10<sup>4</sup></code></li>\n\t<li><code>1 &lt;= k &lt;= 10<sup>5</sup></code></li>\n</ul>\n",
+  "likes": 1936,
+  "dislikes": 176,
+  "stats": {
+    "totalAccepted": "136K",
+    "totalSubmission": "209.6K",
+    "totalAcceptedRaw": 136007,
+    "totalSubmissionRaw": 209612,
+    "acRate": "64.9%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    },
+    {
+      "name": "Heap (Priority Queue)",
+      "slug": "heap-priority-queue"
+    }
+  ],
+  "metaData": {
+    "name": "minStoneSum",
+    "params": [
+      {
+        "name": "piles",
+        "type": "integer[]"
+      },
+      {
+        "type": "integer",
+        "name": "k"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "thealexs",
+      "year": 2022,
+      "content": "The problem description is wrong.  They say \"floor(x) is the greatest integer that is smaller than or equal to x (i.e., rounds x down).\", but I could only get this to work by rounding x up.",
+      "voteCount": 169
+    },
+    {
+      "name": "jshalaby",
+      "year": 2022,
+      "content": "Thats ceiling, not floor.",
+      "voteCount": 88
+    },
+    {
+      "name": "dumb_me",
+      "year": 2022,
+      "content": "Its floor value which we are removing \\n9 - floor(9) - 4\\n9 - 4 = 5\\nso 5 will be in our pile.",
+      "voteCount": 42
+    },
+    {
+      "name": "ayushluthra62",
+      "year": 2022,
+      "content": "LeetCode needs to check its difficulty level again. It should be marked as easy ",
+      "voteCount": 30
+    },
+    {
+      "name": "kushalnagwanshicloud",
+      "year": 2022,
+      "content": "So many comments about taking the ceil ! It is clearly mentioned in the question that you have to **remove** and not just do floor(piles[i]/2) !! \\n\\nI also didn\\'t read the question thoroughly first , but when the test cases failed I saw this line - \\n\\n*Choose any piles[i] and **remove** floor(piles[i] / 2) stones from it.*",
+      "voteCount": 19
+    },
+    {
+      "name": "hawtsauce-iwnl",
+      "year": 2022,
+      "content": "PRO TIP: Read the question carefully before jumping to conclusions.",
+      "voteCount": 9
+    },
+    {
+      "name": "tjstinso",
+      "year": 2022,
+      "content": "Ended up here from some daily challenge thing. This was pretty clearly a heap problem, but are there any interesting non-heap solutions?",
+      "voteCount": 9
+    },
+    {
+      "name": "VarunbhaiNurav",
+      "year": 2022,
+      "content": "Simple problem to understand Priority Queue.",
+      "voteCount": 8
+    },
+    {
+      "name": "jarrod83miller",
+      "year": 2022,
+      "content": "How amazing is it that the most repeated comment here is \"Read the question carefully, LOL\", and the majority of people commenting seem not to be reading the questions posted here. How about we try to answer questions respectfully and not turn this into a \"Look how great I am at leetcode\" glamour session. Let\\'s give that a try..",
+      "voteCount": 5
+    },
+    {
+      "name": "abhisheksharmayt",
+      "year": 2022,
+      "content": "No need to use floor just dividing by 2 works.\n`piles[i] - piles[i]/2 == piles[i] - floor(piles[i]/2)`",
+      "voteCount": 5
+    }
+  ]
+}

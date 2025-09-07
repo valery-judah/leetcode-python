@@ -1,0 +1,201 @@
+{
+  "category": "",
+  "id": "2",
+  "name": "Add Two Numbers",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/add-two-numbers/",
+  "slug": "add-two-numbers",
+  "isPaidOnly": false,
+  "tags": [
+    "Linked List",
+    "Math",
+    "Recursion"
+  ],
+  "similar_questions": [
+    {
+      "title": "Multiply Strings",
+      "difficulty": "Medium",
+      "slug": "multiply-strings"
+    },
+    {
+      "title": "Add Binary",
+      "difficulty": "Easy",
+      "slug": "add-binary"
+    },
+    {
+      "title": "Sum of Two Integers",
+      "difficulty": "Medium",
+      "slug": "sum-of-two-integers"
+    },
+    {
+      "title": "Add Strings",
+      "difficulty": "Easy",
+      "slug": "add-strings"
+    },
+    {
+      "title": "Add Two Numbers II",
+      "difficulty": "Medium",
+      "slug": "add-two-numbers-ii"
+    },
+    {
+      "title": "Add to Array-Form of Integer",
+      "difficulty": "Easy",
+      "slug": "add-to-array-form-of-integer"
+    },
+    {
+      "title": "Add Two Polynomials Represented as Linked Lists",
+      "difficulty": "Medium",
+      "slug": "add-two-polynomials-represented-as-linked-lists"
+    },
+    {
+      "title": "Double a Number Represented as a Linked List",
+      "difficulty": "Medium",
+      "slug": "double-a-number-represented-as-a-linked-list"
+    }
+  ],
+  "questionId": "2",
+  "questionFrontendId": "2",
+  "title": "Add Two Numbers",
+  "titleSlug": "add-two-numbers",
+  "content": "<p>You are given two <strong>non-empty</strong> linked lists representing two non-negative integers. The digits are stored in <strong>reverse order</strong>, and each of their nodes contains a single digit. Add the two numbers and return the sum&nbsp;as a linked list.</p>\n\n<p>You may assume the two numbers do not contain any leading zero, except the number 0 itself.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/10/02/addtwonumber1.jpg\" style=\"width: 483px; height: 342px;\" />\n<pre>\n<strong>Input:</strong> l1 = [2,4,3], l2 = [5,6,4]\n<strong>Output:</strong> [7,0,8]\n<strong>Explanation:</strong> 342 + 465 = 807.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> l1 = [0], l2 = [0]\n<strong>Output:</strong> [0]\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]\n<strong>Output:</strong> [8,9,9,9,0,0,0,1]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of nodes in each linked list is in the range <code>[1, 100]</code>.</li>\n\t<li><code>0 &lt;= Node.val &lt;= 9</code></li>\n\t<li>It is guaranteed that the list represents a number that does not have leading zeros.</li>\n</ul>\n",
+  "likes": 34666,
+  "dislikes": 6936,
+  "stats": {
+    "totalAccepted": "6.2M",
+    "totalSubmission": "13.1M",
+    "totalAcceptedRaw": 6155667,
+    "totalSubmissionRaw": 13138327,
+    "acRate": "46.9%"
+  },
+  "topicTags": [
+    {
+      "name": "Linked List",
+      "slug": "linked-list"
+    },
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Recursion",
+      "slug": "recursion"
+    }
+  ],
+  "metaData": {
+    "name": "addTwoNumbers",
+    "params": [
+      {
+        "name": "l1",
+        "type": "ListNode",
+        "dealloc": false
+      },
+      {
+        "name": "l2",
+        "type": "ListNode",
+        "dealloc": false
+      }
+    ],
+    "return": {
+      "type": "ListNode",
+      "dealloc": true
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Google",
+        "slug": "google",
+        "timesEncountered": 70
+      },
+      {
+        "taggedByAdmin": true,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 44
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Meta",
+        "slug": "facebook",
+        "timesEncountered": 21
+      },
+      {
+        "taggedByAdmin": true,
+        "name": "Microsoft",
+        "slug": "microsoft",
+        "timesEncountered": 19
+      }
+    ],
+    "3": [
+      {
+        "taggedByAdmin": true,
+        "name": "Adobe",
+        "slug": "adobe",
+        "timesEncountered": 12
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "davidmariluch",
+      "year": 2018,
+      "content": "Does anyone else think the ListNode class given is absolute trash? It isn\\'t a Java class in the Java 8 or 9 library. It has no class methods. It\\'s not static. So accessing anything in it is just a crap shoot trial and error? Who made this trash problem?",
+      "voteCount": 915
+    },
+    {
+      "name": "dabiggmoe",
+      "year": 2020,
+      "content": "I cannot pass this test case\\nl1 = [2,4,9]\\nl2 = [5,6,4,9]\\nmy answer is = [8,9,8,5]\\n\\nBut my submission is failing, saying the expected result is [7,0,4,0,1]\\n\\nAm I missing anything? How can I report this test case?",
+      "voteCount": 315
+    },
+    {
+      "name": "thekipp0",
+      "year": 2019,
+      "content": "Getting reverse() is not a function in javascript when doing\\n\\n[1,2,3].reverse()\\n\\nbut it works in the playground...",
+      "voteCount": 223
+    },
+    {
+      "name": "lazermax",
+      "year": 2018,
+      "content": "The problem description says \"You are given two non-empty linked lists representing two non-negative integers\". But with the test case that doesn\\'t fit into even Int64 these are clearly NOT integers, even though they are numbers. Please, change the problem description not to mislead anyone and add an appropriate section stating that numbers can contain any amount of digits.",
+      "voteCount": 189
+    },
+    {
+      "name": "jerry_lin",
+      "year": 2015,
+      "content": "Look at the example input : (2->4->3)+(5->6->4), why the output is the single link list 7->0->8. How do those numbers calculated?",
+      "voteCount": 175
+    },
+    {
+      "name": "linuxjh",
+      "year": 2019,
+      "content": "there\\'s big input data from test case like this, with commas removed:\\n[1000000000000000000000000000001]\\n[564]\\n\\nthe test data exceeds the unsigned integer range in c++:\\nULLONG_MAX: 18446744073709551615\\n\\n",
+      "voteCount": 158
+    },
+    {
+      "name": "bluezone",
+      "year": 2018,
+      "content": "![image](https://assets.leetcode.com/users/bluezone/image_1544337912.png)\\n\\nWhy the hell do you have test cases that pass such dumbass strings. How do you expect me to parse a value that long into an Integer? Not even a Long will suffice ....\\n",
+      "voteCount": 115
+    },
+    {
+      "name": "antunesleo",
+      "year": 2022,
+      "content": "The tip is to simulate [addition by hand](https://www.youtube.com/watch?v=Nwxa9E_X8K8) on code . The fact that the linked list is backwards only makes it easier, because on addition by hand we start from behind e.g. \n    \n```\n3\u00b9 4  2\n4  6  5\n---------\n8  0  7\n```\nWe can add the results for each \"column\" in the addition by hand in other linked list and return it.\n\n",
+      "voteCount": 111
+    },
+    {
+      "name": "sejoker",
+      "year": 2016,
+      "content": " From the task definition, it is clear that we should return a linked list.",
+      "voteCount": 94
+    },
+    {
+      "name": "sonakshi",
+      "year": 2014,
+      "content": "Do we need to include the cases when l1 and l2 are of different sizes ?",
+      "voteCount": 82
+    }
+  ]
+}

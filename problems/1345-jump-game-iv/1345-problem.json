@@ -1,0 +1,133 @@
+{
+  "category": "",
+  "id": "1345",
+  "name": "Jump Game IV",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/jump-game-iv/",
+  "slug": "jump-game-iv",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Breadth-First Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Jump Game VII",
+      "difficulty": "Medium",
+      "slug": "jump-game-vii"
+    },
+    {
+      "title": "Jump Game VIII",
+      "difficulty": "Medium",
+      "slug": "jump-game-viii"
+    },
+    {
+      "title": "Maximum Number of Jumps to Reach the Last Index",
+      "difficulty": "Medium",
+      "slug": "maximum-number-of-jumps-to-reach-the-last-index"
+    }
+  ],
+  "questionId": "1447",
+  "questionFrontendId": "1345",
+  "title": "Jump Game IV",
+  "titleSlug": "jump-game-iv",
+  "content": "<p>Given an array of&nbsp;integers <code>arr</code>, you are initially positioned at the first index of the array.</p>\n\n<p>In one step you can jump from index <code>i</code> to index:</p>\n\n<ul>\n\t<li><code>i + 1</code> where:&nbsp;<code>i + 1 &lt; arr.length</code>.</li>\n\t<li><code>i - 1</code> where:&nbsp;<code>i - 1 &gt;= 0</code>.</li>\n\t<li><code>j</code> where: <code>arr[i] == arr[j]</code> and <code>i != j</code>.</li>\n</ul>\n\n<p>Return <em>the minimum number of steps</em> to reach the <strong>last index</strong> of the array.</p>\n\n<p>Notice that you can not jump outside of the array at any time.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [100,-23,-23,404,100,23,23,23,3,404]\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> You need three jumps from index 0 --&gt; 4 --&gt; 3 --&gt; 9. Note that index 9 is the last index of the array.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [7]\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> Start index is the last index. You do not need to jump.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [7,6,9,6,9,6,9,7]\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> You can jump directly from index 0 to index 7 which is last index of the array.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= arr.length &lt;= 5 * 10<sup>4</sup></code></li>\n\t<li><code>-10<sup>8</sup> &lt;= arr[i] &lt;= 10<sup>8</sup></code></li>\n</ul>\n",
+  "likes": 3830,
+  "dislikes": 131,
+  "stats": {
+    "totalAccepted": "157.8K",
+    "totalSubmission": "342.1K",
+    "totalAcceptedRaw": 157838,
+    "totalSubmissionRaw": 342112,
+    "acRate": "46.1%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Breadth-First Search",
+      "slug": "breadth-first-search"
+    }
+  ],
+  "metaData": {
+    "name": "minJumps",
+    "params": [
+      {
+        "name": "arr",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "UchihaKim",
+      "year": 2023,
+      "content": "I\\'ve been solving LeetCode medium and hard questions for more than 7 days straight. I think it\\'s time for an \\'Easy\\' day so I can feel like a genius again :).",
+      "voteCount": 41
+    },
+    {
+      "name": "UVSinghK",
+      "year": 2023,
+      "content": "Question tag affects us more than the question itself, this one is kindof easy-medium but tag made us think it's HARD",
+      "voteCount": 31
+    },
+    {
+      "name": "KevinFederline",
+      "year": 2020,
+      "content": "The accepted solutions are all BFS, but smart BFS taking some of the problem structure into account. In general, BFS can require time as much as the number of edges in the graph. If you take your graph to have vertex set equal to the indices of the list, with an edge between to vertices if you can jump from one index to the other, this graph could potentially have O(N^2) many edges. For example, suppose the first N-1 entries in the list are 0, and the last entry is 1. A naive BFS will traverse every edge in the corresponding graph, which is O(N^2) edges, resulting in TLE if N is large.\\n\\nThe upvoted solutions all get around this by basically noting that, once you arrive at a number, you can jump to every other index with the same number immediately. You can remember you\\'ve done this to avoid looking at edges between two indices with the same number ever again.",
+      "voteCount": 23
+    },
+    {
+      "name": "deleted_user",
+      "year": 2023,
+      "content": "weekend = hard",
+      "voteCount": 21
+    },
+    {
+      "name": "beardedone",
+      "year": 2023,
+      "content": "**Breath First Search** - Take a breath, then write some code...",
+      "voteCount": 19
+    },
+    {
+      "name": "sheepmeow",
+      "year": 2020,
+      "content": "**TLDR**\\nWhy doesn\\'t DFS + memo work? I believe it is because of the result we cache may not be the optimal result (shortest path) in DFS, since DFS traverses nodes in **random** order, and we only cache the **first** result it find.\\n\\n@qiuqiushasha said the following\\n> To be very concise, the reason is that the jumper can jump back. For easier jump game question, the jumper never can jump back.\\n\\n\\n\\n**Detailed Explanation**\\nFirst of all, we want to model the problem in a way that we understand. Let `i` be the current index we examine, it can only go to the following indicies: `i + 1, i - 1, list of indicies where for each j in the list arr[j] == arr[i]`. We can think of it as a graph, and the problem becomes `starting at source (index 0), find the shortest path to target (index arr.length - 1)`. \\nThere, the solution becomes clear, since the most efficienct algorithm for shortest path in graph is always BFS, with a time complexity of `O(n)`\\nWhy doesn\\'t DFS + memo work? I believe it is because of the result we cache may not be the optimal result (shortest path) in DFS, since DFS traverses nodes in **random** order, and we only cache the **first** result it find.\\nOf course, you can do this with DFS alone by traverse *ALL* paths and return the shortest, but it has exponential time complexity of O(k^n) where k is the number of neighbours a node have. In this problem, this solution will cause TLE.\\nI am still trying to find a concrete, human-readable example that fails my DFS + memo algorithm. Let me know if you\\'ve already found one!",
+      "voteCount": 18
+    },
+    {
+      "name": "dumb_me",
+      "year": 2023,
+      "content": "tle gang !!!! \\uD83E\\uDD79",
+      "voteCount": 16
+    },
+    {
+      "name": "arghyadas",
+      "year": 2023,
+      "content": "TLE on 22/33 \\uD83D\\uDE2D",
+      "voteCount": 11
+    },
+    {
+      "name": "vhtnguyen",
+      "year": 2023,
+      "content": "If you use basic `BFS` with hashmap (or array) and stuck with `TLE`, consider  `clear`  the `hashmap[arr[i]]` after the first traverse  or using a flag or memorize array or something to mark that you visited every index has the same value `arr[i]` in the hashmap so you don't need to do that anymore. \nOne more thing you need to do to improve perfomance : using a `unordered_map` to access with O(1) instead a `map` cost O(log).\nSee the code below for example:\n```\n   for (int idx : idxMap[arr[i]]) {\n         if (m != i && !visited[m]) {\n              q.push(m);\n              visited[m] = true;\n           }\n  }\n idxMap[arr[i]].clear();  //important\n```\nor no need to spend more to clear with a flag\n```\n //unordered_map<int, pair<bool, vector<int>>>idxMap;\n\nif (!idxMap[arr[i]].first) {\n    for (int m : idxMap[arr[i]].second) {\n       if (m != i && !visited[m]) {\n              q.push(m);\n              visited[m] = true;\n        }\n    }\n    idxMap[arr[i]].first = true;  //important\n }\n```\n",
+      "voteCount": 11
+    },
+    {
+      "name": "LeetCode",
+      "year": 2022,
+      "content": "This problem is the Daily LeetCoding Challenge for January, Day 15.\n\nFeel free to share anything related to this problem here!\n\nYou can ask questions, discuss what you've learned from this problem, or show off how many days of streak you've made!\n\n---\n\nIf you'd like to share a detailed solution to the problem, please create a new post in the discuss section and provide\n- **Detailed Explanations**: Describe the algorithm you used to solve this problem. Include any insights you used to solve this problem.\n- **Images** that help explain the algorithm.\n- **Language and Code** you used to pass the problem.\n- **Time and Space complexity analysis**.\n\n---\n\n  **\ud83d\udccc Do you want to learn the problem thoroughly?**\n  Read [**\u2b50  LeetCode Official Solution\u2b50**](https://leetcode.com/problems/jump-game-iv/solution) to learn the 3 approaches to the problem with detailed explanations to the algorithms, codes, and complexity analysis.\n  <details>\n  <summary> Spoiler Alert! We'll explain these 2 approaches in the official solution</summary>\n\n  \n**Approach 1:** Breadth-First Search\n\n  \n**Approach 2:** Bidirectional BFS\n\n  \n</details>\n\n\n\nIf you're new to Daily LeetCoding Challenge, [**check out this post**](https://leetcode.com/discuss/general-discussion/655704/)!\n\n\n---\n\n<br>\n\n<p align=\"center\">\n<a href=\"https://leetcode.com/subscribe/?ref=ex_dc\" target=\"_blank\">\n  <img src=\"https://assets.leetcode.com/static_assets/marketing/daily_leetcoding_banner.png\" width=\"560px\" />\n</a>\n</p>\n\n<br>",
+      "voteCount": 9
+    }
+  ]
+}

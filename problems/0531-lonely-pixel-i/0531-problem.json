@@ -1,0 +1,99 @@
+{
+  "category": "",
+  "id": "531",
+  "name": "Lonely Pixel I",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/lonely-pixel-i/",
+  "slug": "lonely-pixel-i",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Lonely Pixel II",
+      "difficulty": "Medium",
+      "slug": "lonely-pixel-ii"
+    }
+  ],
+  "questionId": "531",
+  "questionFrontendId": "531",
+  "title": "Lonely Pixel I",
+  "titleSlug": "lonely-pixel-i",
+  "content": "<p>Given an <code>m x n</code> <code>picture</code> consisting of black <code>&#39;B&#39;</code> and white <code>&#39;W&#39;</code> pixels, return <em>the number of <b>black</b> lonely pixels</em>.</p>\n\n<p>A black lonely pixel is a character <code>&#39;B&#39;</code> that located at a specific position where the same row and same column don&#39;t have <strong>any other</strong> black pixels.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/11/11/pixel1.jpg\" style=\"width: 242px; height: 242px;\" />\n<pre>\n<strong>Input:</strong> picture = [[&quot;W&quot;,&quot;W&quot;,&quot;B&quot;],[&quot;W&quot;,&quot;B&quot;,&quot;W&quot;],[&quot;B&quot;,&quot;W&quot;,&quot;W&quot;]]\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> All the three &#39;B&#39;s are black lonely pixels.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/11/11/pixel2.jpg\" style=\"width: 242px; height: 242px;\" />\n<pre>\n<strong>Input:</strong> picture = [[&quot;B&quot;,&quot;B&quot;,&quot;B&quot;],[&quot;B&quot;,&quot;B&quot;,&quot;W&quot;],[&quot;B&quot;,&quot;B&quot;,&quot;B&quot;]]\n<strong>Output:</strong> 0\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m ==&nbsp;picture.length</code></li>\n\t<li><code>n ==&nbsp;picture[i].length</code></li>\n\t<li><code>1 &lt;= m, n &lt;= 500</code></li>\n\t<li><code>picture[i][j]</code> is <code>&#39;W&#39;</code> or <code>&#39;B&#39;</code>.</li>\n</ul>\n",
+  "likes": 450,
+  "dislikes": 41,
+  "stats": {
+    "totalAccepted": "46.7K",
+    "totalSubmission": "74.7K",
+    "totalAcceptedRaw": 46680,
+    "totalSubmissionRaw": 74679,
+    "acRate": "62.5%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Matrix",
+      "slug": "matrix"
+    }
+  ],
+  "metaData": {
+    "name": "findLonelyPixel",
+    "params": [
+      {
+        "name": "picture",
+        "type": "character[][]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "IWantToPass",
+      "year": 2017,
+      "content": "Am just curious, as there is a somewhat similar problem (set matrix zeros) that can be done in O(1) space. Did anyone get this problem in an interview, and if so, were you asked to do it in O(1) space?",
+      "voteCount": 9
+    },
+    {
+      "name": "karkisa",
+      "year": 2023,
+      "content": "Its a simple question. \\nNo need for graph, dfs, bfs. nothing.\\nnested for loops are encouraged. ",
+      "voteCount": 2
+    },
+    {
+      "name": "Satansoft",
+      "year": 2025,
+      "content": "Those **Medium** which optionally could be solved in easy way, but even it\\'s multiple choice problem:\\n- Collecting number of `B`s in each row and column with double traversing (non-optimal by memory and double traversing);\\n- Run row and column traversing for each `B` (repeatable same actions with cheap by memory, but expensive by time in case of all cells are `B`) ;\\n\\nI believe that solution in the middle with traversing row / col for each `B`, collect that and for future `B` get number of `B` from already collected rows / cols if it\\'s available. And even more, no needed to traverse through whole row / col if you already found 2 `B`s there.",
+      "voteCount": 1
+    },
+    {
+      "name": "DemiGreyson",
+      "year": 2025,
+      "content": "Are the black pixels in the first example actually green, or am I colorblind?",
+      "voteCount": 1
+    },
+    {
+      "name": "jonsneep",
+      "year": 2024,
+      "content": "zip's transpose functionality: zip(*picture) in python is very helpful on this challenge",
+      "voteCount": 1
+    },
+    {
+      "name": "matthewjinmp",
+      "year": 2025,
+      "content": "my solution was completely wrong and it still passed 51/52 test cases ",
+      "voteCount": 0
+    }
+  ]
+}

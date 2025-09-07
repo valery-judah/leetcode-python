@@ -1,0 +1,144 @@
+{
+  "category": "",
+  "id": "213",
+  "name": "House Robber II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/house-robber-ii/",
+  "slug": "house-robber-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "House Robber",
+      "difficulty": "Medium",
+      "slug": "house-robber"
+    },
+    {
+      "title": "Paint House",
+      "difficulty": "Medium",
+      "slug": "paint-house"
+    },
+    {
+      "title": "Paint Fence",
+      "difficulty": "Medium",
+      "slug": "paint-fence"
+    },
+    {
+      "title": "House Robber III",
+      "difficulty": "Medium",
+      "slug": "house-robber-iii"
+    },
+    {
+      "title": "Non-negative Integers without Consecutive Ones",
+      "difficulty": "Hard",
+      "slug": "non-negative-integers-without-consecutive-ones"
+    },
+    {
+      "title": "Coin Path",
+      "difficulty": "Hard",
+      "slug": "coin-path"
+    }
+  ],
+  "questionId": "213",
+  "questionFrontendId": "213",
+  "title": "House Robber II",
+  "titleSlug": "house-robber-ii",
+  "content": "<p>You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed. All houses at this place are <strong>arranged in a circle.</strong> That means the first house is the neighbor of the last one. Meanwhile, adjacent houses have a security system connected, and&nbsp;<b>it will automatically contact the police if two adjacent houses were broken into on the same night</b>.</p>\n\n<p>Given an integer array <code>nums</code> representing the amount of money of each house, return <em>the maximum amount of money you can rob tonight <strong>without alerting the police</strong></em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [2,3,2]\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> You cannot rob house 1 (money = 2) and then rob house 3 (money = 2), because they are adjacent houses.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2,3,1]\n<strong>Output:</strong> 4\n<strong>Explanation:</strong> Rob house 1 (money = 1) and then rob house 3 (money = 3).\nTotal amount you can rob = 1 + 3 = 4.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2,3]\n<strong>Output:</strong> 3\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 100</code></li>\n\t<li><code>0 &lt;= nums[i] &lt;= 1000</code></li>\n</ul>\n",
+  "likes": 10693,
+  "dislikes": 179,
+  "stats": {
+    "totalAccepted": "1.1M",
+    "totalSubmission": "2.5M",
+    "totalAcceptedRaw": 1085150,
+    "totalSubmissionRaw": 2466663,
+    "acRate": "44.0%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "metaData": {
+    "name": "rob",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "manual": false
+  },
+  "discussion_posts": [
+    {
+      "name": "r4ge_101",
+      "year": 2023,
+      "content": "After AI has replaced programmers,we now have tips for becoming a house robber \\uD83D\\uDE02",
+      "voteCount": 355
+    },
+    {
+      "name": "mandliyarajendra11",
+      "year": 2023,
+      "content": "Oye Pols Aa Gayi Pols....................",
+      "voteCount": 333
+    },
+    {
+      "name": "sacso",
+      "year": 2024,
+      "content": "In the interview I will just return 0 I don\\'t rob houses, ma\\'am",
+      "voteCount": 101
+    },
+    {
+      "name": "Chronoviser",
+      "year": 2020,
+      "content": "You will be able to do this only if **you have solved HOUSE ROBBER I** :\\n1. apply house robber I on nums(1,n-1)                     //*left to right*\\n2. apply house robber I on nums(n,2)                       //r*ight to left*\\n3. return max(answer obtained in step 1, answer obtained in step 2)\\n",
+      "voteCount": 75
+    },
+    {
+      "name": "unknownunit",
+      "year": 2021,
+      "content": "I have a question: When input is [1, 1], the answer given is 1. Should it not be 0 since you cannot rob either house?",
+      "voteCount": 34
+    },
+    {
+      "name": "bookworm5253",
+      "year": 2023,
+      "content": "Proof that maximum robbed lies in g1 = f[0, n-2] or g2 = f[1, n-1]. i.e max_robbed = max(g1, g2)\ng1, g2 represent maximum that can be robbed from given indices.\nf -> returns max earnings wrt indices passed.\nConsider non-circular case:\nmax_robbed contains:\ni) both 0 & n-1;\nii) either 0 or n-1;\niii) neither 0 or n-1;\n\nIn case-i:\nWe'll have to eliminate either house at 0 or n-1, as adjacent houses are not allowed. If we eliminate 0, we get g2. On the other hand, if we eliminate house at n - 1, we get g1. Now, we have to find out eliminating which will result in a lesser decrease in our earnings. Hence, max_robbed = max(g1, g2);\n\nIn case-ii:\nIf max_robbed contains 0 but not n-1, then g1 == f(0, n-1)\nSimilarly, if max_robbed only contains n-1, g2 == f(0, n-1)\nAgain, we can get max_robbed by getting max(g1, g2)\n\nIn case-iii\nSince, max_robbed does not contain either 0 or n-1;\ng1 == g2 == f(0, n-1) == f(1, n-2)\nhence, max_robbed = max(g1, g2) == f(1, n-2)",
+      "voteCount": 25
+    },
+    {
+      "name": "ar_u",
+      "year": 2024,
+      "content": "# test case :- \\n```\\n[2,3,2]\\n[1,2,3,1]\\n[1,2,3]\\n[1,2,1,1]\\n[1,2,3,4,5,1,2,3,4,5]\\n[200,3,140,20,10]\\n[1]\\n[94,40,49,65,21,21,106,80,92,81,679,4,61,6,237,12,72,74,29,95,265,35,47,1,61,397,52,72,37,51,1,81,45,435,7,36,57,86,81,72]\\n\\n```",
+      "voteCount": 16
+    },
+    {
+      "name": "geekyshark",
+      "year": 2023,
+      "content": "A very weird corner case is present,think hard folks",
+      "voteCount": 15
+    },
+    {
+      "name": "makeapp",
+      "year": 2018,
+      "content": "Can someone point out why this is 16?\\n\\n[1, 2, 3, 4, 5, 1, 2, 3, 4, 5]\\n  Output:\\n  15\\n  Expected:\\n  16\\n\\n",
+      "voteCount": 11
+    },
+    {
+      "name": "stevenwittkopf",
+      "year": 2020,
+      "content": "In any situation with two houses, you cannot rob either house as they are adjacent on both sides. This should give the outcome zero. Instead the solution favors the maximum of either house.",
+      "voteCount": 8
+    }
+  ]
+}

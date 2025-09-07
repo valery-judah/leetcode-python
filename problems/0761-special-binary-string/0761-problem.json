@@ -1,0 +1,141 @@
+{
+  "category": "",
+  "id": "761",
+  "name": "Special Binary String",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/special-binary-string/",
+  "slug": "special-binary-string",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Recursion"
+  ],
+  "similar_questions": [
+    {
+      "title": "Valid Parenthesis String",
+      "difficulty": "Medium",
+      "slug": "valid-parenthesis-string"
+    },
+    {
+      "title": "Number of Good Binary Strings",
+      "difficulty": "Medium",
+      "slug": "number-of-good-binary-strings"
+    }
+  ],
+  "questionId": "763",
+  "questionFrontendId": "761",
+  "title": "Special Binary String",
+  "titleSlug": "special-binary-string",
+  "content": "<p><strong>Special binary strings</strong> are binary strings with the following two properties:</p>\n\n<ul>\n\t<li>The number of <code>0</code>&#39;s is equal to the number of <code>1</code>&#39;s.</li>\n\t<li>Every prefix of the binary string has at least as many <code>1</code>&#39;s as <code>0</code>&#39;s.</li>\n</ul>\n\n<p>You are given a <strong>special binary</strong> string <code>s</code>.</p>\n\n<p>A move consists of choosing two consecutive, non-empty, special substrings of <code>s</code>, and swapping them. Two strings are consecutive if the last character of the first string is exactly one index before the first character of the second string.</p>\n\n<p>Return <em>the lexicographically largest resulting string possible after applying the mentioned operations on the string</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;11011000&quot;\n<strong>Output:</strong> &quot;11100100&quot;\n<strong>Explanation:</strong> The strings &quot;10&quot; [occuring at s[1]] and &quot;1100&quot; [at s[3]] are swapped.\nThis is the lexicographically largest string possible after some number of swaps.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;10&quot;\n<strong>Output:</strong> &quot;10&quot;\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 50</code></li>\n\t<li><code>s[i]</code> is either <code>&#39;0&#39;</code> or <code>&#39;1&#39;</code>.</li>\n\t<li><code>s</code> is a special binary string.</li>\n</ul>\n",
+  "likes": 771,
+  "dislikes": 235,
+  "stats": {
+    "totalAccepted": "25.1K",
+    "totalSubmission": "39K",
+    "totalAcceptedRaw": 25110,
+    "totalSubmissionRaw": 39036,
+    "acRate": "64.3%"
+  },
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Recursion",
+      "slug": "recursion"
+    }
+  ],
+  "metaData": {
+    "name": "makeLargestSpecial",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "string"
+    }
+  },
+  "company_tag_stats": {
+    "2": [
+      {
+        "taggedByAdmin": false,
+        "name": "Nvidia",
+        "slug": "nvidia",
+        "timesEncountered": 13
+      }
+    ],
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Adobe",
+        "slug": "adobe",
+        "timesEncountered": 14
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "lilydenris",
+      "year": 2021,
+      "content": "First the problem can be converted to rearrange valid parentheses.\\n\\n101100 => ()(())\\n\\nFirst we try to split the string into as many sub valid parentheses as possible.\\n\\nCase 1 `()(()())(()) => () | (()()) | (()) `\\n\\nin this example we simply sort 3 parts and will get the answer.\\n\\nThe question is can we always split any string? The answer is no, for example:\\n\\nCase 2 `(()(()))  => ((())())`\\n\\nLet\\'s think about why we cannot split the string:\\n**First \\'(\\' is matching with the last \\')\\' not any \\')\\' in between, otherwise the string can be split into at least two parts.**\\n\\nWith above we can see the relationship between Case1 and Case2:\\n1 Split the string into sub valid parentheses.\\n2 Recursion(rearrange) on every sub valid parentheses.\\n3 When the result comes back, we sort each part and put together.",
+      "voteCount": 30
+    },
+    {
+      "name": "JParks1982",
+      "year": 2024,
+      "content": "The hint is complete rubbish.",
+      "voteCount": 28
+    },
+    {
+      "name": "yimings_",
+      "year": 2018,
+      "content": "What is the definition of \"Special\"?\\n\\nI am not native English speaker, so I am confused about its second property:\\n\\n\"Every prefix of the binary string has at least as many 1's as 0's.\"\\n\\nIt seems to mean that \"every prefix of it has same number of 1's and 0's\". But according to the example of the description of this problem, \"1100\" is also special. I think the prefix \"11\" of \"1100\" is not special because it contains 2 \"1\" and no \"0\". \\n\\nCould anybody tell me about it? Or give me some example of special or non-special strings?\\n\\nThank you!",
+      "voteCount": 23
+    },
+    {
+      "name": "piyuuussshhh",
+      "year": 2024,
+      "content": "THEY ASKED THIS FOR MY UKG online assessment",
+      "voteCount": 13
+    },
+    {
+      "name": "Noopvoid",
+      "year": 2018,
+      "content": "I get confused about the question description. It says we can swap any two consecutive substring as many time as we want. Can\\'t we just swap every 1 with the 0 before it repeatedly until all the 1\\'s before all the 0\\'s?",
+      "voteCount": 10
+    },
+    {
+      "name": "shlykovich",
+      "year": 2019,
+      "content": "The first subproblem of this problem is to make sense of all the properties. This is clearly done on purpose to confuse. Author could simply draw analogy with climbing a mountain, where 1 means you go one step up and 0 means you go one step down. \\n\\nNow lets look at properties:\\n* The number of 0\\'s is equal to the number of 1\\'s.\\n\\t*  This simply means that you have to go back to the same level where you started. If you ascend two levels, you must descend two\\n* Every prefix of the binary string has at least as many 1\\'s as 0\\'s. \\n\\t* This means you must ascend first before you descend. Basically you can\\'t go down and than come back up to the same level, you must go uphill first.\\n\\nActually, here is even better analogy - nested parenthesis. \\nhttps://leetcode.com/problems/special-binary-string/discuss/113212/Think-of-it-as-Valid-Parentheses",
+      "voteCount": 9
+    },
+    {
+      "name": "dsapelnikov",
+      "year": 2025,
+      "content": "I\\'m quite shocked that such a poorly-defined problem with convoluted intuition is asked by some many companies during real interviews. What can companies test with such a problem?!",
+      "voteCount": 3
+    },
+    {
+      "name": "revwali",
+      "year": 2025,
+      "content": "Every prefix of the binary string has at least as many 1's as 0's.\nwhat does this lines mean?? and does  lexicographic means ten is less than ten thousand bu greater then one lakh?",
+      "voteCount": 2
+    },
+    {
+      "name": "Jaiff",
+      "year": 2024,
+      "content": "Asked by Nvidia in OA today.",
+      "voteCount": 2
+    },
+    {
+      "name": "zackzhu20",
+      "year": 2018,
+      "content": "any good solutions there? Got stuck on this problem...sigh...",
+      "voteCount": 2
+    }
+  ]
+}

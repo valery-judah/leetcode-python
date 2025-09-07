@@ -1,0 +1,112 @@
+{
+  "category": "",
+  "id": "1544",
+  "name": "Make The String Great",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/make-the-string-great/",
+  "slug": "make-the-string-great",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Stack"
+  ],
+  "similar_questions": [],
+  "questionId": "1666",
+  "questionFrontendId": "1544",
+  "title": "Make The String Great",
+  "titleSlug": "make-the-string-great",
+  "content": "<p>Given a string <code>s</code> of lower and upper case English letters.</p>\n\n<p>A good string is a string which doesn&#39;t have <strong>two adjacent characters</strong> <code>s[i]</code> and <code>s[i + 1]</code> where:</p>\n\n<ul>\n\t<li><code>0 &lt;= i &lt;= s.length - 2</code></li>\n\t<li><code>s[i]</code> is a lower-case letter and <code>s[i + 1]</code> is the same letter but in upper-case or <strong>vice-versa</strong>.</li>\n</ul>\n\n<p>To make the string good, you can choose <strong>two adjacent</strong> characters that make the string bad and remove them. You can keep doing this until the string becomes good.</p>\n\n<p>Return <em>the string</em> after making it good. The answer is guaranteed to be unique under the given constraints.</p>\n\n<p><strong>Notice</strong> that an empty string is also good.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;leEeetcode&quot;\n<strong>Output:</strong> &quot;leetcode&quot;\n<strong>Explanation:</strong> In the first step, either you choose i = 1 or i = 2, both will result &quot;leEeetcode&quot; to be reduced to &quot;leetcode&quot;.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;abBAcC&quot;\n<strong>Output:</strong> &quot;&quot;\n<strong>Explanation:</strong> We have many possible scenarios, and all lead to the same answer. For example:\n&quot;abBAcC&quot; --&gt; &quot;aAcC&quot; --&gt; &quot;cC&quot; --&gt; &quot;&quot;\n&quot;abBAcC&quot; --&gt; &quot;abBA&quot; --&gt; &quot;aA&quot; --&gt; &quot;&quot;\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;s&quot;\n<strong>Output:</strong> &quot;s&quot;\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 100</code></li>\n\t<li><code>s</code> contains only lower and upper case English letters.</li>\n</ul>\n",
+  "likes": 3173,
+  "dislikes": 181,
+  "stats": {
+    "totalAccepted": "377.4K",
+    "totalSubmission": "552.5K",
+    "totalAcceptedRaw": 377434,
+    "totalSubmissionRaw": 552549,
+    "acRate": "68.3%"
+  },
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Stack",
+      "slug": "stack"
+    }
+  ],
+  "metaData": {
+    "name": "makeGood",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "string"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "drap5468",
+      "year": 2022,
+      "content": "The title requires us to make the string great, but the function only allows us to make it good. Sad day.",
+      "voteCount": 208
+    },
+    {
+      "name": "WKelvinson",
+      "year": 2020,
+      "content": "Just for fun, the name of this problem remindes me of the orange president,  anyway happy coding!",
+      "voteCount": 146
+    },
+    {
+      "name": "District_12",
+      "year": 2023,
+      "content": "Wasted chance to name the question \"Make The String Great Again\".",
+      "voteCount": 145
+    },
+    {
+      "name": "kumarkunal4052002",
+      "year": 2022,
+      "content": "Thing to remember difference between capital and small of alphabet in ascii is 32 . ",
+      "voteCount": 121
+    },
+    {
+      "name": "Zeeshan_2512",
+      "year": 2024,
+      "content": "200 days streak completed.",
+      "voteCount": 66
+    },
+    {
+      "name": "alpharomeo99",
+      "year": 2022,
+      "content": "Try a stack, maybe?",
+      "voteCount": 30
+    },
+    {
+      "name": "kanealdrich12",
+      "year": 2022,
+      "content": "Reading the instructions for this made me smell burnt toast. Anyway, happy coding!",
+      "voteCount": 30
+    },
+    {
+      "name": "mstuebs",
+      "year": 2024,
+      "content": "### Helpful Testcases\\n```\\n\"j\"\\n\"I\"\\n\"vV\"\\n\"Nn\"\\n\"nThYCFZCwfFzjNTsyYuUyYqvVStnxXfFnNdSsBQqPJNnwWnDdZfQqqFWwQqFXxIWXxchzfcGgDdjyHtziInNMEhHqQkKkwyQqgG\"\\n\"qgEqEqeGQQeEGGqQggGeEqQgeEEQqQQqGgeEqeeEEqqeEgEeEQeqQqQEqQGgGQgGGgQQqgGeqQEeqQGgEeEEGGgQQqEeGgeEQqg\"\\n\"orvhVjTTxNpVqfMjBvyIiIhHFfVbJwWmjJXWwDNjJFfkKNnQqQtvJgxXQEedcCPknXWtXtwSZzzZJLlWwvERHoOnNDdVROeEbBuU\"\\n\"RERErEWrWrRRWRRRreweWeEWeEwerREeEeEWERwEreeEWrRrrwrrEewWRrRReERRwEeEewErRRwWwwWeEERERrEeRrrrReeErWww\"\\n```",
+      "voteCount": 27
+    },
+    {
+      "name": "daringcalf",
+      "year": 2024,
+      "content": "I smell stack week coming.",
+      "voteCount": 17
+    },
+    {
+      "name": "Mspatild7",
+      "year": 2022,
+      "content": "Can Plz Someone explain me how \"Leetcode\" is good string, as this string have adjacent e ?",
+      "voteCount": 14
+    }
+  ]
+}

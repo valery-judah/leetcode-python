@@ -1,0 +1,118 @@
+{
+  "category": "",
+  "id": "1013",
+  "name": "Partition Array Into Three Parts With Equal Sum",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/partition-array-into-three-parts-with-equal-sum/",
+  "slug": "partition-array-into-three-parts-with-equal-sum",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find the Middle Index in Array",
+      "difficulty": "Easy",
+      "slug": "find-the-middle-index-in-array"
+    }
+  ],
+  "questionId": "1062",
+  "questionFrontendId": "1013",
+  "title": "Partition Array Into Three Parts With Equal Sum",
+  "titleSlug": "partition-array-into-three-parts-with-equal-sum",
+  "content": "<p>Given an array of integers <code>arr</code>, return <code>true</code> if we can partition the array into three <strong>non-empty</strong> parts with equal sums.</p>\n\n<p>Formally, we can partition the array if we can find indexes <code>i + 1 &lt; j</code> with <code>(arr[0] + arr[1] + ... + arr[i] == arr[i + 1] + arr[i + 2] + ... + arr[j - 1] == arr[j] + arr[j + 1] + ... + arr[arr.length - 1])</code></p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [0,2,1,-6,6,-7,9,1,2,0,1]\n<strong>Output:</strong> true\n<strong>Explanation: </strong>0 + 2 + 1 = -6 + 6 - 7 + 9 + 1 = 2 + 0 + 1\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [0,2,1,-6,6,7,9,-1,2,0,1]\n<strong>Output:</strong> false\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [3,3,6,5,-2,2,5,1,-9,4]\n<strong>Output:</strong> true\n<strong>Explanation: </strong>3 + 3 = 6 = 5 - 2 + 2 + 5 + 1 - 9 + 4\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>3 &lt;= arr.length &lt;= 5 * 10<sup>4</sup></code></li>\n\t<li><code>-10<sup>4</sup> &lt;= arr[i] &lt;= 10<sup>4</sup></code></li>\n</ul>\n",
+  "likes": 1769,
+  "dislikes": 168,
+  "stats": {
+    "totalAccepted": "114.9K",
+    "totalSubmission": "272.2K",
+    "totalAcceptedRaw": 114895,
+    "totalSubmissionRaw": 272227,
+    "acRate": "42.2%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "metaData": {
+    "name": "canThreePartsEqualSum",
+    "params": [
+      {
+        "name": "arr",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "YusenPeng",
+      "year": 2022,
+      "content": "Hint: a classic two-pointer problem.",
+      "voteCount": 22
+    },
+    {
+      "name": "ghostplant",
+      "year": 2019,
+      "content": "For case: [3,-3,0]\\n\\nThe Judge program outputs true, but it is expected to be false.",
+      "voteCount": 16
+    },
+    {
+      "name": "njbrown180",
+      "year": 2024,
+      "content": "Watch out for this guy! \\uD83E\\uDD23 `arr = [0,0,0,0]`",
+      "voteCount": 14
+    },
+    {
+      "name": "peacexiv",
+      "year": 2024,
+      "content": "Should be medium",
+      "voteCount": 14
+    },
+    {
+      "name": "kp1406055",
+      "year": 2024,
+      "content": "Hint:\\n--> Calculate the total sum of the array and divide it by 3. If the sum doesn\\'t get completely divided by 3, we can\\'t partition the array;\\nelse, we \"might\" be able to partition the array\\n\\n--> After checking this condition, we can traverse the array, keeping track of the sum of the elements of the array.\\nAs soon as we encounter the sum to be equal to the previously calculated sum (which we found out by dividing the total sum by 3), we made a partition, hence decrement 3 to 2... and keep on doing this until the end of the array.\\n\\n--> Now, finally check whether all 3 partitions have been successfully made or not and return accordingly",
+      "voteCount": 12
+    },
+    {
+      "name": "ProudDuck",
+      "year": 2019,
+      "content": "is [0,0,0,0,0,0] a missing case?",
+      "voteCount": 10
+    },
+    {
+      "name": "kanoshy",
+      "year": 2024,
+      "content": "I think they should mention at least 3 arrays not strictly 3.",
+      "voteCount": 8
+    },
+    {
+      "name": "noblemanfreeman",
+      "year": 2023,
+      "content": "guys how is this true?\n\n                    [18,12,-18,18,-19,-1,10,10]",
+      "voteCount": 7
+    },
+    {
+      "name": "Eleven_Ritual",
+      "year": 2024,
+      "content": "Test cases You must Consider :---\\n[0,2,1,-6,6,-7,9,1,2,0,1]\\n[0,2,1,-6,6,7,9,-1,2,0,1]\\n[3,3,6,5,-2,2,5,1,-9,4]\\n[1,1,1,1]\\n[0,0,0,0]\\n[2,-2,2,-2,2,-2,2,-2,2,-2]\\n[-3,3,3,-3]\\n[0,2,1,-6,6,7,9,-1,2,0,1]",
+      "voteCount": 5
+    },
+    {
+      "name": "hassansmallah",
+      "year": 2020,
+      "content": "Input: [0,2,1,-6,6,7,9,-1,2,0,1]\\nOutput: false\\n\\n7 = 6 + 1 = - 6 - 1 + 9 + 2 + 1 + 2",
+      "voteCount": 3
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "category": "",
+  "id": "549",
+  "name": "Binary Tree Longest Consecutive Sequence II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/binary-tree-longest-consecutive-sequence-ii/",
+  "slug": "binary-tree-longest-consecutive-sequence-ii",
+  "isPaidOnly": true,
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Binary Tree Longest Consecutive Sequence",
+      "difficulty": "Medium",
+      "slug": "binary-tree-longest-consecutive-sequence"
+    },
+    {
+      "title": "Check if an Array Is Consecutive",
+      "difficulty": "Easy",
+      "slug": "check-if-an-array-is-consecutive"
+    }
+  ],
+  "questionId": "549",
+  "questionFrontendId": "549",
+  "title": "Binary Tree Longest Consecutive Sequence II",
+  "titleSlug": "binary-tree-longest-consecutive-sequence-ii",
+  "content": "<p>Given the <code>root</code> of a binary tree, return <em>the length of the longest consecutive path in the tree</em>.</p>\n\n<p>A consecutive path is a path where the values of the consecutive nodes in the path differ by one. This path can be either increasing or decreasing.</p>\n\n<ul>\n\t<li>For example, <code>[1,2,3,4]</code> and <code>[4,3,2,1]</code> are both considered valid, but the path <code>[1,2,4,3]</code> is not valid.</li>\n</ul>\n\n<p>On the other hand, the path can be in the child-Parent-child order, where not necessarily be parent-child order.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/14/consec2-1-tree.jpg\" style=\"width: 207px; height: 183px;\" />\n<pre>\n<strong>Input:</strong> root = [1,2,3]\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> The longest consecutive path is [1, 2] or [2, 1].\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/14/consec2-2-tree.jpg\" style=\"width: 207px; height: 183px;\" />\n<pre>\n<strong>Input:</strong> root = [2,1,3]\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> The longest consecutive path is [1, 2, 3] or [3, 2, 1].\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of nodes in the tree is in the range <code>[1, 3 * 10<sup>4</sup>]</code>.</li>\n\t<li><code>-3 * 10<sup>4</sup> &lt;= Node.val &lt;= 3 * 10<sup>4</sup></code></li>\n</ul>\n",
+  "likes": 1178,
+  "dislikes": 98,
+  "stats": {
+    "totalAccepted": "57.6K",
+    "totalSubmission": "116.2K",
+    "totalAcceptedRaw": 57597,
+    "totalSubmissionRaw": 116226,
+    "acRate": "49.6%"
+  },
+  "topicTags": [
+    {
+      "name": "Tree",
+      "slug": "tree"
+    },
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Binary Tree",
+      "slug": "binary-tree"
+    }
+  ],
+  "metaData": {
+    "name": "longestConsecutive",
+    "params": [
+      {
+        "name": "root",
+        "type": "TreeNode"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "WilmerKrisp",
+      "year": 2022,
+      "content": "<--please vote\\n\\n- at each step I have to find out whether the previous left/right branch was increasing/decreasing\\n- in order to continue the path higher, I take the maximum piece lower (whether it was increasing or decreasing, whether it was on the left or on the right)\\n- - if, for example, the branch on the left ceases to increase, then the counter of the left-increment is reset to one\\n, the horizontal path consists of the word of the increasing and decreasing piece on the right, then the sum of the increment and decrement is smaller\\n\\n\\n\\n![image](https://assets.leetcode.com/users/images/8c2e347b-d9d3-48d6-bfcd-41d7dadd5c8c_1641461946.7102733.png)\\n\\n![image](https://assets.leetcode.com/users/images/6d83ff17-8283-4085-8c5d-6ab23cc1be08_1641461951.6068883.png)\\n",
+      "voteCount": 2
+    },
+    {
+      "name": "jmzhang18",
+      "year": 2020,
+      "content": "As the tree visualization, \\n\\n\\t\\t\\t1\\n\\t\\t/        \\\\\\n\\t   2            3\\n\\t /\\n\\t 4\\nIsn\\'t the longest path [1,2,4], the answer should be 3, why the correct answer is 2?",
+      "voteCount": 1
+    }
+  ]
+}

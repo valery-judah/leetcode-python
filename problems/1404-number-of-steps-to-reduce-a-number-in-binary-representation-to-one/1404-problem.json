@@ -1,0 +1,123 @@
+{
+  "category": "",
+  "id": "1404",
+  "name": "Number of Steps to Reduce a Number in Binary Representation to One",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/",
+  "slug": "number-of-steps-to-reduce-a-number-in-binary-representation-to-one",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Bit Manipulation",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Moves to Reach Target Score",
+      "difficulty": "Medium",
+      "slug": "minimum-moves-to-reach-target-score"
+    }
+  ],
+  "questionId": "1520",
+  "questionFrontendId": "1404",
+  "title": "Number of Steps to Reduce a Number in Binary Representation to One",
+  "titleSlug": "number-of-steps-to-reduce-a-number-in-binary-representation-to-one",
+  "content": "<p>Given the binary representation of an integer as a string <code>s</code>, return <em>the number of steps to reduce it to </em><code>1</code><em> under the following rules</em>:</p>\n\n<ul>\n\t<li>\n\t<p>If the current number is even, you have to divide it by <code>2</code>.</p>\n\t</li>\n\t<li>\n\t<p>If the current number is odd, you have to add <code>1</code> to it.</p>\n\t</li>\n</ul>\n\n<p>It is guaranteed that you can always reach one for all test cases.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;1101&quot;\n<strong>Output:</strong> 6\n<strong>Explanation:</strong> &quot;1101&quot; corressponds to number 13 in their decimal representation.\nStep 1) 13 is odd, add 1 and obtain 14.&nbsp;\nStep 2) 14 is even, divide by 2 and obtain 7.\nStep 3) 7 is odd, add 1 and obtain 8.\nStep 4) 8 is even, divide by 2 and obtain 4.&nbsp; \nStep 5) 4 is even, divide by 2 and obtain 2.&nbsp;\nStep 6) 2 is even, divide by 2 and obtain 1.&nbsp; \n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;10&quot;\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> &quot;10&quot; corresponds to number 2 in their decimal representation.\nStep 1) 2 is even, divide by 2 and obtain 1.&nbsp; \n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;1&quot;\n<strong>Output:</strong> 0\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length&nbsp;&lt;= 500</code></li>\n\t<li><code>s</code> consists of characters &#39;0&#39; or &#39;1&#39;</li>\n\t<li><code>s[0] == &#39;1&#39;</code></li>\n</ul>\n",
+  "likes": 1410,
+  "dislikes": 87,
+  "stats": {
+    "totalAccepted": "154.5K",
+    "totalSubmission": "251.8K",
+    "totalAcceptedRaw": 154507,
+    "totalSubmissionRaw": 251790,
+    "acRate": "61.4%"
+  },
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Bit Manipulation",
+      "slug": "bit-manipulation"
+    },
+    {
+      "name": "Simulation",
+      "slug": "simulation"
+    }
+  ],
+  "metaData": {
+    "name": "numSteps",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "samarthbansal",
+      "year": 2024,
+      "content": "Day 1 of having a clear description",
+      "voteCount": 154
+    },
+    {
+      "name": "sklyakhW",
+      "year": 2024,
+      "content": "All the python users in the comments not understanding why it\\'s a medium...",
+      "voteCount": 96
+    },
+    {
+      "name": "Is_there_someone",
+      "year": 2024,
+      "content": "I feel that I hate anything that has \"binary\" in its name...",
+      "voteCount": 87
+    },
+    {
+      "name": "soumakpoddar",
+      "year": 2024,
+      "content": "Follow Up  - Do not convert string to integer \\uD83D\\uDE00",
+      "voteCount": 74
+    },
+    {
+      "name": "tin_le",
+      "year": 2024,
+      "content": "Those who said it's easy are python users, ignore them. This problem is about manipulate the string, not converting them into integers. Overall a good problems tho",
+      "voteCount": 45
+    },
+    {
+      "name": "TheEmptiness",
+      "year": 2024,
+      "content": "It\\'s defenitely not easy problem if you don\\'t do ```int(s)``` like some stupid python-brain guy. ",
+      "voteCount": 32
+    },
+    {
+      "name": "ZombieKiler",
+      "year": 2024,
+      "content": "# It's Medium Because You're Not Supposed To Use Big Int\n\nThey might not have specified in the description, but if the problem was designed to be converted into an int, then they wouldn't have made the testcases be 500 bits max. Python's integers support this by default, and many other languages have big int classes. \n\nDo the problem how you want, but you'll learn more if you just manipulate the string directly to do the math. ",
+      "voteCount": 32
+    },
+    {
+      "name": "Coollaitar",
+      "year": 2024,
+      "content": "1. Even : Check if str.back() == \\'0\\' then its even, pop the last character\\n2. Odd : convert all characters to \"0\" till we find \"0\" in given string\\n     -> If all characters converted to \"0\" then push \"1\" in front. \\n      eg: \"111\">\"000\"->\"1000\"\\n     -> else : convert s[idx] = \"1\" where we found \"0\" in give string\\n     eg: \"1101\" -> \"1100\"->\"1110\" ",
+      "voteCount": 28
+    },
+    {
+      "name": "jyscao",
+      "year": 2024,
+      "content": "I do use Python myself, but instead of relying on Python's ability to handle arbitrarily sized integers, I solved it in $O(n)$ time by iterating through the bits from the LSB to the MSB, while keeping track of a `carry` boolean variable.\n\nHere's [my solution](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/solutions/5223460/iterate-from-lsb-to-msb-while-tracking-carrying/) for reference.",
+      "voteCount": 10
+    },
+    {
+      "name": "harshitsachdeva1219",
+      "year": 2024,
+      "content": "Important Test Cases \ud83d\ude09: \n\"11\"\n\"1111\"\n\"11110\"\n\"1111011110000011100000110001011011110010111001010111110001\"\n\"100100001010010101101000111100100111101111000111111010010001100001000100011001\"\n\"100100101101101010111010010000001010000100110001111010011111001100011100111000001001010010001111110110101000110100110101000000010011001011010111100100001100110011001010110010000010101001110101111110000010000110010100011100111100100001111111001111101100110010101100000010011010101010000000011101111110101110111001000001110000000110011100\"\n\"1110111011010101011011001111100101100110011111110110000000110001010010111111001010010010000110000100001110011110100100111010001101010000001011101001111100001111000000100010110100000110111010000110011000011000010101101110101001101111010100111101100111111001101110011010011000001100000101001010111111010111100111110100000001100000011011\"\n\"11111100100010100010010110100111111110000010000010110110110101000001100100110111110001111001110010101001111101101011110011100110101101111001111111101101011110110000110010010011100100100101100100101110000101010101010101010000011101000100001100111101010001010110110011111000000000101010101010011111001111110010010001010000100101101000110000100011100110110011010100101100100110001011011000101001111110110110100111100111110110100111010001000001110111111001111000110111111100010001111000110101001101010000\"",
+      "voteCount": 9
+    }
+  ]
+}

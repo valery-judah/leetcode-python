@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "version",
+    "baseline_impl",
+    "complexity_justified",
+    "optimal_solution",
+    "completed_repeats",
+    "min_impl_time_min",
+    "confidence_1to5",
+    "signals",
+    "mistakes",
+    "problems"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "baseline_impl": {
+      "type": "boolean"
+    },
+    "complexity_justified": {
+      "type": "boolean"
+    },
+    "optimal_solution": {
+      "type": "boolean"
+    },
+    "completed_repeats": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "min_impl_time_min": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "confidence_1to5": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "signals": {
+      "type": "object",
+      "required": [
+        "clarified_assumptions",
+        "communicated_approach",
+        "stated_complexity",
+        "tests_edge_cases",
+        "clean_impl"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "clarified_assumptions": {
+          "type": "boolean"
+        },
+        "communicated_approach": {
+          "type": "boolean"
+        },
+        "stated_complexity": {
+          "type": "boolean"
+        },
+        "tests_edge_cases": {
+          "type": "boolean"
+        },
+        "clean_impl": {
+          "type": "boolean"
+        }
+      }
+    },
+    "mistakes": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "off-by-one",
+          "boundary",
+          "indexing",
+          "null-handling",
+          "overflow",
+          "wrong-ds",
+          "inefficient",
+          "forgot-visited",
+          "misread-constraints",
+          "typo"
+        ]
+      }
+    },
+    "problems": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

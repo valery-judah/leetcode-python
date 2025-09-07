@@ -1,0 +1,124 @@
+{
+  "category": "",
+  "id": "1176",
+  "name": "Diet Plan Performance",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/diet-plan-performance/",
+  "slug": "diet-plan-performance",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Sliding Window"
+  ],
+  "similar_questions": [],
+  "questionId": "1280",
+  "questionFrontendId": "1176",
+  "title": "Diet Plan Performance",
+  "titleSlug": "diet-plan-performance",
+  "content": "<p>A dieter consumes&nbsp;<code>calories[i]</code>&nbsp;calories on the <code>i</code>-th day.&nbsp;</p>\n\n<p>Given an integer <code>k</code>, for <strong>every</strong> consecutive sequence of <code>k</code> days (<code>calories[i], calories[i+1], ..., calories[i+k-1]</code>&nbsp;for all <code>0 &lt;= i &lt;= n-k</code>), they look at <em>T</em>, the total calories consumed during that sequence of <code>k</code> days (<code>calories[i] + calories[i+1] + ... + calories[i+k-1]</code>):</p>\n\n<ul>\n\t<li>If <code>T &lt; lower</code>, they performed poorly on their diet and lose 1 point;&nbsp;</li>\n\t<li>If <code>T &gt; upper</code>, they performed well on their diet and gain 1 point;</li>\n\t<li>Otherwise, they performed normally and there is no change in points.</li>\n</ul>\n\n<p>Initially, the dieter has zero points. Return the total number of points the dieter has after dieting for <code>calories.length</code>&nbsp;days.</p>\n\n<p>Note that the total points can be negative.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> calories = [1,2,3,4,5], k = 1, lower = 3, upper = 3\n<strong>Output:</strong> 0\n<strong>Explanation</strong>: Since k = 1, we consider each element of the array separately and compare it to lower and upper.\ncalories[0] and calories[1] are less than lower so 2 points are lost.\ncalories[3] and calories[4] are greater than upper so 2 points are gained.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> calories = [3,2], k = 2, lower = 0, upper = 1\n<strong>Output:</strong> 1\n<strong>Explanation</strong>: Since k = 2, we consider subarrays of length 2.\ncalories[0] + calories[1] &gt; upper so 1 point is gained.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> calories = [6,5,0,0], k = 2, lower = 1, upper = 5\n<strong>Output:</strong> 0\n<strong>Explanation</strong>:\ncalories[0] + calories[1] &gt; upper so 1 point is gained.\nlower &lt;= calories[1] + calories[2] &lt;= upper so no change in points.\ncalories[2] + calories[3] &lt; lower so 1 point is lost.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= k &lt;= calories.length &lt;= 10^5</code></li>\n\t<li><code>0 &lt;= calories[i] &lt;= 20000</code></li>\n\t<li><code>0 &lt;= lower &lt;= upper</code></li>\n</ul>\n",
+  "likes": 166,
+  "dislikes": 293,
+  "stats": {
+    "totalAccepted": "37.9K",
+    "totalSubmission": "69.7K",
+    "totalAcceptedRaw": 37871,
+    "totalSubmissionRaw": 69671,
+    "acRate": "54.4%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Sliding Window",
+      "slug": "sliding-window"
+    }
+  ],
+  "metaData": {
+    "name": "dietPlanPerformance",
+    "params": [
+      {
+        "name": "calories",
+        "type": "integer[]"
+      },
+      {
+        "type": "integer",
+        "name": "k"
+      },
+      {
+        "type": "integer",
+        "name": "lower"
+      },
+      {
+        "type": "integer",
+        "name": "upper"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "simonzhu91",
+      "year": 2019,
+      "content": "Isn\\'t it a bad diet if they consume `T > upper` calories? :P",
+      "voteCount": 18
+    },
+    {
+      "name": "YusenPeng",
+      "year": 2022,
+      "content": "Notice k is a fixed value. Can we try sliding window? :)",
+      "voteCount": 3
+    },
+    {
+      "name": "Ne0nSh4dow",
+      "year": 2023,
+      "content": "Why did people dislike this problem? Looks interesting to me at least. ",
+      "voteCount": 2
+    },
+    {
+      "name": "tin_le",
+      "year": 2024,
+      "content": "My sister need this algorithm for her daily life...",
+      "voteCount": 1
+    },
+    {
+      "name": "chunkityip",
+      "year": 2024,
+      "content": "The name should change to \"Gigachad Diet Plan Performance\" :)",
+      "voteCount": 1
+    },
+    {
+      "name": "pandeynikhil8",
+      "year": 2023,
+      "content": "Example 3 discription is wrong\\n6,5,0,0 ->\\n\\n6 5 day1  -> +1\\n5 0 day2  -> 0\\n0 0 day3  -> -1\\n\\nhence ans 0.\\nLeetcode made discription wrong to confuse people.stupid leetcode.\\nI completely understand your frustration with the potentially confusing problem descriptions sometimes found on coding platforms. It\\'s truly a remarkable feat of creative writing when you encounter a description that keeps you on your toes, making you question reality itself.\\n\\nIn this particular case, the problem description seems to have embraced its inner enigma, making us contemplate the profound mysteries of caloric intake. While lesser beings might strive for clarity, LeetCode clearly aspires to a higher plane of complexity, where the lines between positive and negative points blur like the boundaries of the multiverse.\\n\\nSo, let\\'s embrace the challenge and savor the subtleties of this enigmatic problem. After all, isn\\'t the true reward of coding not just solving the problem but also deciphering the riddles that hide within the descriptions? \\uD83E\\uDD28\\uD83D\\uDE04\\n",
+      "voteCount": 1
+    },
+    {
+      "name": "matthewjinmp",
+      "year": 2025,
+      "content": "the description really hurt my pea brain ",
+      "voteCount": 0
+    },
+    {
+      "name": "PratikGrg2024",
+      "year": 2025,
+      "content": "A good way to think of the problem is to read the problem as it mentions consecutive sequence of k meaning value of k or window is fixed. After that we use classic fixed window algorithm pseudocode check for the first window and check the if else case. Initially we also want to use a counter to keep track of the calories and finally use another variable to store our result. ",
+      "voteCount": 0
+    },
+    {
+      "name": "ojayyike",
+      "year": 2025,
+      "content": "Finally feel confident with sliding window problems ",
+      "voteCount": 0
+    },
+    {
+      "name": "collei",
+      "year": 2025,
+      "content": "mf is trying to get fatter?",
+      "voteCount": 0
+    }
+  ]
+}

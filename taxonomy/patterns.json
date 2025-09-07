@@ -1,0 +1,363 @@
+{
+  "version": 1,
+  "updated": "2025-09-04",
+  "families": [
+    {
+      "id": "scan",
+      "name": "Scanning & Windows",
+      "desc": "Linear scans, windows, and two-pointer techniques on sequences."
+    },
+    {
+      "id": "precomp",
+      "name": "Precomputation",
+      "desc": "Prefix/suffix, difference arrays, hashing, caching."
+    },
+    {
+      "id": "search",
+      "name": "Searching",
+      "desc": "Binary search on value/index/answer, partition-based search."
+    },
+    {
+      "id": "stackq",
+      "name": "Stacks & Queues",
+      "desc": "Monotonic stack/queue, deque tricks, parentheses, histogram."
+    },
+    {
+      "id": "ds",
+      "name": "Data-structure",
+      "desc": "Heaps, union-find, balanced trees, tries, fenwick/segment tree."
+    },
+    {
+      "id": "graph",
+      "name": "Graphs",
+      "desc": "BFS/DFS, shortest paths, topological order, components."
+    },
+    {
+      "id": "dp",
+      "name": "Dynamic Programming",
+      "desc": "Classic DPs incl. knapsack, intervals, digit DP, bitmask DP."
+    },
+    {
+      "id": "greedy",
+      "name": "Greedy & Intervals",
+      "desc": "Exchange arguments, interval scheduling/merging/sweep line."
+    },
+    {
+      "id": "math",
+      "name": "Math & Bit",
+      "desc": "Number theory, combinatorics, bit hacks, rolling hash."
+    },
+    {
+      "id": "string",
+      "name": "Strings",
+      "desc": "KMP/Z, tries, suffix structures (lightweight entries only)."
+    }
+  ],
+  "field_docs": {
+    "code": "Stable identifier like PAT-SLIDING",
+    "key": "slug, used by other files",
+    "name": "Human-readable pattern name",
+    "family": "One of families[].id",
+    "detects": "Trigger phrases or properties to spot the pattern",
+    "preconditions": "What must be true to apply",
+    "anti_preconditions": "When not to use",
+    "applicable_structures": "Data types where it fits: array,string,tree,graph",
+    "typical_ds": "Core DS used",
+    "variants": "Common subtypes of the pattern",
+    "complexity": "Typical time/space big-O and dominant step",
+    "steps": "Ordered checklist to apply the pattern",
+    "pitfalls": "List of mistake codes from mistakes.json",
+    "edge_cases": "Inputs to always test for this pattern",
+    "examples": "LeetCode problem IDs representative of this pattern",
+    "references": "Optional refs or catalog keys",
+    "signals_boost": "Relevant signals from signals.json to emphasize"
+  },
+  "items": [
+    {
+      "code": "PAT-SLIDING",
+      "key": "sliding-window",
+      "name": "Sliding Window",
+      "family": "scan",
+      "detects": [
+        "contiguous subarray/substring",
+        "at most/exactly k",
+        "no negatives for sum-size windows"
+      ],
+      "preconditions": [
+        "Sequence-like input",
+        "Metric monotone as window grows/shrinks"
+      ],
+      "anti_preconditions": [
+        "Negative numbers break window-sum invariants unless handled"
+      ],
+      "applicable_structures": [
+        "array",
+        "string"
+      ],
+      "typical_ds": [
+        "hashmap",
+        "set",
+        "deque"
+      ],
+      "variants": [
+        "fixed-size",
+        "variable-size",
+        "two-pointers",
+        "monotonic-deque"
+      ],
+      "complexity": {
+        "time": "O(n)",
+        "space": "O(k) or O(\u03a3)"
+      },
+      "steps": [
+        "Choose window definition and invariant",
+        "Advance right; while invariant violated, move left",
+        "Track answer after each step per problem logic"
+      ],
+      "pitfalls": [
+        "BUG-01",
+        "BUG-02",
+        "EDG-03"
+      ],
+      "edge_cases": [
+        "empty or length<k",
+        "all identical",
+        "mixed duplicates"
+      ],
+      "examples": [
+        3,
+        76,
+        239
+      ],
+      "references": [],
+      "signals_boost": [
+        "communicated_approach",
+        "tests_edge_cases",
+        "stated_complexity"
+      ]
+    },
+    {
+      "code": "PAT-TWOPOINTERS",
+      "key": "two-pointers",
+      "name": "Two Pointers",
+      "family": "scan",
+      "detects": [
+        "sorted input unlocks linear scan",
+        "pair/sum/diff in sorted arrays"
+      ],
+      "preconditions": [
+        "Sorted order known or allowed to sort"
+      ],
+      "anti_preconditions": [
+        "Indices required on original order and sorting is disallowed"
+      ],
+      "applicable_structures": [
+        "array",
+        "string",
+        "list"
+      ],
+      "typical_ds": [],
+      "variants": [
+        "converging",
+        "same-direction",
+        "fast-slow"
+      ],
+      "complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "steps": [
+        "Sort if allowed and helpful",
+        "Move pointers based on invariant",
+        "Update best/answer"
+      ],
+      "pitfalls": [
+        "REQ-04",
+        "CMP-03",
+        "BUG-01"
+      ],
+      "edge_cases": [
+        "duplicates",
+        "all negatives/positives"
+      ],
+      "examples": [
+        167,
+        15,
+        125
+      ],
+      "references": [],
+      "signals_boost": [
+        "argued_correctness",
+        "stated_complexity"
+      ]
+    },
+    {
+      "code": "PAT-PREFIXSUM",
+      "key": "prefix-sum",
+      "name": "Prefix/Suffix Sums",
+      "family": "precomp",
+      "detects": [
+        "sum/range queries",
+        "subarray sum equals k",
+        "differences between indices"
+      ],
+      "preconditions": [
+        "Associative operation (usually sum)"
+      ],
+      "anti_preconditions": [
+        "Non-associative/order-dependent ops without transforms"
+      ],
+      "applicable_structures": [
+        "array",
+        "matrix"
+      ],
+      "typical_ds": [
+        "array",
+        "hashmap"
+      ],
+      "variants": [
+        "1D prefix",
+        "2D prefix",
+        "difference-array"
+      ],
+      "complexity": {
+        "time": "O(n)",
+        "space": "O(n) or O(1) for streaming count"
+      },
+      "steps": [
+        "Build prefix array or running count",
+        "Use hashmap for counts of prefix",
+        "Query ranges in O(1)"
+      ],
+      "pitfalls": [
+        "BUG-04",
+        "BUG-05",
+        "EDG-01"
+      ],
+      "edge_cases": [
+        "k=0",
+        "empty/zero-length ranges",
+        "large positive/negative sums"
+      ],
+      "examples": [
+        560,
+        303,
+        238
+      ],
+      "references": [],
+      "signals_boost": [
+        "outlined_bruteforce",
+        "proposed_alternative",
+        "stated_complexity"
+      ]
+    },
+    {
+      "code": "PAT-BS-ANSWER",
+      "key": "binary-search-on-answer",
+      "name": "Binary Search on Answer",
+      "family": "search",
+      "detects": [
+        "minimize/maximize subject to constraint",
+        "feasibility monotone in value"
+      ],
+      "preconditions": [
+        "Monotone predicate over answer space"
+      ],
+      "anti_preconditions": [
+        "Predicate not monotone"
+      ],
+      "applicable_structures": [
+        "numbers",
+        "arrays",
+        "graphs (capacity)"
+      ],
+      "typical_ds": [],
+      "variants": [
+        "integer domain",
+        "real domain with precision"
+      ],
+      "complexity": {
+        "time": "O(log R) * T(feasible)",
+        "space": "O(1) + space of check"
+      },
+      "steps": [
+        "Define low/high bounds on answer",
+        "Implement monotone check",
+        "Binary search with mid and update"
+      ],
+      "pitfalls": [
+        "APP-07",
+        "BUG-01"
+      ],
+      "edge_cases": [
+        "tight bounds equal",
+        "overflow on mid compute"
+      ],
+      "examples": [
+        875,
+        410,
+        1011
+      ],
+      "references": [],
+      "signals_boost": [
+        "argued_correctness",
+        "stated_complexity"
+      ]
+    },
+    {
+      "code": "PAT-MONOSTACK",
+      "key": "monotonic-stack",
+      "name": "Monotonic Stack",
+      "family": "stackq",
+      "detects": [
+        "next/prev greater or smaller",
+        "ranges/histogram areas"
+      ],
+      "preconditions": [
+        "Total order over elements"
+      ],
+      "anti_preconditions": [
+        "Non-orderable elements without a key"
+      ],
+      "applicable_structures": [
+        "array",
+        "string (indices)"
+      ],
+      "typical_ds": [
+        "stack"
+      ],
+      "variants": [
+        "increasing",
+        "decreasing",
+        "monotonic deque"
+      ],
+      "complexity": {
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      "steps": [
+        "Iterate once, pop while invariant violated",
+        "Use popped element to compute answer span",
+        "Push current index/value"
+      ],
+      "pitfalls": [
+        "BUG-01",
+        "BUG-02"
+      ],
+      "edge_cases": [
+        "equal elements tie-breaking",
+        "empty"
+      ],
+      "examples": [
+        739,
+        84,
+        496
+      ],
+      "references": [],
+      "signals_boost": [
+        "communicated_approach",
+        "performed_dry_run"
+      ]
+    }
+  ]
+}

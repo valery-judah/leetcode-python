@@ -1,0 +1,138 @@
+{
+  "category": "",
+  "id": "463",
+  "name": "Island Perimeter",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/island-perimeter/",
+  "slug": "island-perimeter",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Max Area of Island",
+      "difficulty": "Medium",
+      "slug": "max-area-of-island"
+    },
+    {
+      "title": "Flood Fill",
+      "difficulty": "Easy",
+      "slug": "flood-fill"
+    },
+    {
+      "title": "Coloring A Border",
+      "difficulty": "Medium",
+      "slug": "coloring-a-border"
+    }
+  ],
+  "questionId": "463",
+  "questionFrontendId": "463",
+  "title": "Island Perimeter",
+  "titleSlug": "island-perimeter",
+  "content": "<p>You are given <code>row x col</code> <code>grid</code> representing a map where <code>grid[i][j] = 1</code> represents&nbsp;land and <code>grid[i][j] = 0</code> represents water.</p>\n\n<p>Grid cells are connected <strong>horizontally/vertically</strong> (not diagonally). The <code>grid</code> is completely surrounded by water, and there is exactly one island (i.e., one or more connected land cells).</p>\n\n<p>The island doesn&#39;t have &quot;lakes&quot;, meaning the water inside isn&#39;t connected to the water around the island. One cell is a square with side length 1. The grid is rectangular, width and height don&#39;t exceed 100. Determine the perimeter of the island.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img src=\"https://assets.leetcode.com/uploads/2018/10/12/island.png\" style=\"width: 221px; height: 213px;\" />\n<pre>\n<strong>Input:</strong> grid = [[0,1,0,0],[1,1,1,0],[0,1,0,0],[1,1,0,0]]\n<strong>Output:</strong> 16\n<strong>Explanation:</strong> The perimeter is the 16 yellow stripes in the image above.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> grid = [[1]]\n<strong>Output:</strong> 4\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> grid = [[1,0]]\n<strong>Output:</strong> 4\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>row == grid.length</code></li>\n\t<li><code>col == grid[i].length</code></li>\n\t<li><code>1 &lt;= row, col &lt;= 100</code></li>\n\t<li><code>grid[i][j]</code> is <code>0</code> or <code>1</code>.</li>\n\t<li>There is exactly one island in <code>grid</code>.</li>\n</ul>\n",
+  "likes": 7145,
+  "dislikes": 410,
+  "stats": {
+    "totalAccepted": "758.1K",
+    "totalSubmission": "1M",
+    "totalAcceptedRaw": 758146,
+    "totalSubmissionRaw": 1027659,
+    "acRate": "73.8%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Breadth-First Search",
+      "slug": "breadth-first-search"
+    },
+    {
+      "name": "Matrix",
+      "slug": "matrix"
+    }
+  ],
+  "metaData": {
+    "name": "islandPerimeter",
+    "params": [
+      {
+        "name": "grid",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "webguru77777",
+      "year": 2023,
+      "content": "For beginners, don't be frustrated if you weren't able to solve it.\nI have solved 400+ problems, but it looks like a medium problem for me.\nHint: It's a DFS problem. If the next cell is out of boundary or water, then increase the perimeter by 1.",
+      "voteCount": 225
+    },
+    {
+      "name": "HazelDaniel",
+      "year": 2023,
+      "content": "how is this \"easy\"?",
+      "voteCount": 171
+    },
+    {
+      "name": "_shubham10",
+      "year": 2024,
+      "content": "DFS, BFS\\u274C Normal traversal\\u2705",
+      "voteCount": 76
+    },
+    {
+      "name": "tekmark",
+      "year": 2016,
+      "content": "Why the tag is \"Hash Table\"? Is there a hash table solution?",
+      "voteCount": 61
+    },
+    {
+      "name": "SanvuSarvesh",
+      "year": 2023,
+      "content": "If you\\'re finding any land then add 4 in your answer and also check wether (i-1,j) or (i,j-1) were land or not, if yes then subtract -2 for each. At the end print your answer.",
+      "voteCount": 60
+    },
+    {
+      "name": "poojaaa_r",
+      "year": 2021,
+      "content": "//Pls upvote if you agree with me \\n\\n\\nTwo islands are present here which makes the description incorrect \\n    [[1],[1],[1],[0],[1],[1]]",
+      "voteCount": 46
+    },
+    {
+      "name": "mswlogo",
+      "year": 2021,
+      "content": "My code got the right answer (for multiple islands) which is the same code as solution 1.\\nBut this test case says expected as 8 but I get 14 and fails.\\nThe provided Java solution also gets 14 and fails.\\n\\n[[1],[1],[1],[0],[1],[1]]",
+      "voteCount": 25
+    },
+    {
+      "name": "Lax_27",
+      "year": 2023,
+      "content": "i passed 2422 testcases with this formula >> total number of ones *2    +2   . haha",
+      "voteCount": 24
+    },
+    {
+      "name": "kickbuttascii",
+      "year": 2024,
+      "content": "yall doing dfs for this need to stop and think for a bit.",
+      "voteCount": 19
+    },
+    {
+      "name": "rmcr714",
+      "year": 2021,
+      "content": "Dont understand but its said that there would be no water between islands, but this test case doesnt obey that property. I got it accepted by using some hack like an if else condition for this specific test case but i was lucky that i saw it quickly , what if somebody spends days to just work it out. This needs to be fixed",
+      "voteCount": 13
+    }
+  ]
+}

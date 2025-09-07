@@ -1,0 +1,140 @@
+{
+  "category": "",
+  "id": "1034",
+  "name": "Coloring A Border",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/coloring-a-border/",
+  "slug": "coloring-a-border",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Island Perimeter",
+      "difficulty": "Easy",
+      "slug": "island-perimeter"
+    }
+  ],
+  "questionId": "1104",
+  "questionFrontendId": "1034",
+  "title": "Coloring A Border",
+  "titleSlug": "coloring-a-border",
+  "content": "<p>You are given an <code>m x n</code> integer matrix <code>grid</code>, and three integers <code>row</code>, <code>col</code>, and <code>color</code>. Each value in the grid represents the color of the grid square at that location.</p>\n\n<p>Two squares are called <strong>adjacent</strong> if they are next to each other in any of the 4 directions.</p>\n\n<p>Two squares belong to the same <strong>connected component</strong> if they have the same color and they are adjacent.</p>\n\n<p>The <strong>border of a connected component</strong> is all the squares in the connected component that are either adjacent to (at least) a square not in the component, or on the boundary of the grid (the first or last row or column).</p>\n\n<p>You should color the <strong>border</strong> of the <strong>connected component</strong> that contains the square <code>grid[row][col]</code> with <code>color</code>.</p>\n\n<p>Return <em>the final grid</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> grid = [[1,1],[1,2]], row = 0, col = 0, color = 3\n<strong>Output:</strong> [[3,3],[3,2]]\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> grid = [[1,2,2],[2,3,2]], row = 0, col = 1, color = 3\n<strong>Output:</strong> [[1,3,3],[2,3,3]]\n</pre><p><strong class=\"example\">Example 3:</strong></p>\n<pre><strong>Input:</strong> grid = [[1,1,1],[1,1,1],[1,1,1]], row = 1, col = 1, color = 2\n<strong>Output:</strong> [[2,2,2],[2,1,2],[2,2,2]]\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == grid.length</code></li>\n\t<li><code>n == grid[i].length</code></li>\n\t<li><code>1 &lt;= m, n &lt;= 50</code></li>\n\t<li><code>1 &lt;= grid[i][j], color &lt;= 1000</code></li>\n\t<li><code>0 &lt;= row &lt; m</code></li>\n\t<li><code>0 &lt;= col &lt; n</code></li>\n</ul>\n",
+  "likes": 814,
+  "dislikes": 925,
+  "stats": {
+    "totalAccepted": "45.1K",
+    "totalSubmission": "89.9K",
+    "totalAcceptedRaw": 45148,
+    "totalSubmissionRaw": 89869,
+    "acRate": "50.2%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Breadth-First Search",
+      "slug": "breadth-first-search"
+    },
+    {
+      "name": "Matrix",
+      "slug": "matrix"
+    }
+  ],
+  "metaData": {
+    "name": "colorBorder",
+    "params": [
+      {
+        "name": "grid",
+        "type": "integer[][]"
+      },
+      {
+        "name": "row",
+        "type": "integer"
+      },
+      {
+        "name": "col",
+        "type": "integer"
+      },
+      {
+        "name": "color",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer[][]"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "danielkua",
+      "year": 2021,
+      "content": "The border of a connected component is all the squares in the connected component that are either 4-directionally adjacent to a square not in the component, or on the boundary of the grid (the first or last row or column).\\n\\nWhat is this english lmao? Total BS.\\n\\nthe border of a connected component is all the squares in the connected component that are 4-directionally adjacent to a square not in the component. How is this possible?\\nIt is connected and are 4-directionally adjacent to a square not in the component at the same time?\\n\\n",
+      "voteCount": 93
+    },
+    {
+      "name": "ChanVerz",
+      "year": 2021,
+      "content": "No offense but, i think leetcode is employing aliens\\nAnyone who understand the problem fully and has a heart to explain to us who dont, are the real MVP",
+      "voteCount": 37
+    },
+    {
+      "name": "indsonu",
+      "year": 2022,
+      "content": "![image](https://assets.leetcode.com/users/images/b0131d7b-f5d7-4ba0-b9e3-797a4cd9988a_1656059908.4762526.png)\\n\\n***The border of a connected component is all the squares in the connected component that are either 4-directionally adjacent to a square not in the component, or on the boundary of the grid (the first or last row or column).***\\n\\n**Meaning :**\\nBorder of connect component means all the cell which has src color in a connected component ( in our diagram it is 2 ) which are not 4 directionally connected with the src color\\n\\n![image](https://assets.leetcode.com/users/images/318439bd-9369-489b-b758-8c55fe279e28_1656061269.7932894.png)\\n\\n![image](https://assets.leetcode.com/users/images/46708bdf-0e76-4e16-83fd-71baeb8cecde_1656061021.343119.png)\\n\\n**Answer of the image matrix : **\\n![image](https://assets.leetcode.com/users/images/2b7f3e60-f13f-46a9-b9e4-0a58414dae00_1656061153.3725455.png)\\n\\n\\nSolution :  **Try yourself first**\\nSolution for referemce  : https://www.toptal.com/developers/hastebin/efaqavaniy.cpp\\n",
+      "voteCount": 26
+    },
+    {
+      "name": "saumyagupta1",
+      "year": 2023,
+      "content": "mujhe ulti aa gai",
+      "voteCount": 20
+    },
+    {
+      "name": "hosua",
+      "year": 2023,
+      "content": "If you\\'re gonna word the problem statement poorly, the least you could do is provide some explanations in the examples...",
+      "voteCount": 20
+    },
+    {
+      "name": "speedyy",
+      "year": 2023,
+      "content": "Leetcode forgot to add the prerequisite of this Q.\nIELTS 10\n\nI don't know how to add the picture here, so I tried my best to explain easily with pictures in my solution from scratch to the end . [Here](https://leetcode.com/problems/coloring-a-border/solutions/3686098/detailed-explanation-with-pictures/)",
+      "voteCount": 13
+    },
+    {
+      "name": "Vansh_Rana_611",
+      "year": 2024,
+      "content": "Should try this TestCase : \\n `[[76,  76, 480, 480, 167],[ 76,  76, 480, 480, 167],[770, 770, 295, 295, 391],[770, 770, 295, 295, 391],[184, 184, 434, 434, 909],[184, 184, 434, 434, 909],[512, 512, 353, 353, 705],[512, 512, 353, 353, 705],[106, 106, 485, 485, 942],[106, 106, 485, 485, 942],[772, 772,  22,  22, 942],[772, 772,  22,  22, 942],[954, 954, 429, 429, 953],[954, 954, 429, 429, 953],[449, 449,  41,  41, 753],[449, 449,  41,  41, 753],[651, 651, 297, 297, 751],[651, 651, 297, 297, 751],[723, 723, 962, 962, 619],[723, 723, 962, 962, 619],[71,  71, 337, 337, 952],[71,  71, 337, 337, 952],[633, 633, 523, 523, 811],[633, 633, 523, 523, 811]]`\\n19 3\\n1",
+      "voteCount": 3
+    },
+    {
+      "name": "ParthSarthi33",
+      "year": 2024,
+      "content": "Some Hints to solve this......\n\n1. Pass the DFS call to the position {row, col} only, since Only those Border can be painted where the connected component  contains the square grid[row][col].\n\n2. Make a New Grid (initialized all positions as -1)\n for making changes (i.e. to color border) as changing in Original Grid can alter the answer\n\n3.  Now Color those position ON New Grid which are 'Good', Good means - Either It should be on Grid Borders or Should have at least 1 Bad Neighbor. (BAD NBR - adj position with Different color than our position).\n\n4. Now Reclusively pass the DFS call to the next position of our own kind.\n\n5. At the NEW GRID is updated with New Color BUT WAIT, what about the '-1' positions......Obv Just fill it with THE original values from Original Grid.\n\nIf you find this Helpful, Kindly Upvote :-)",
+      "voteCount": 3
+    },
+    {
+      "name": "wangjian4814",
+      "year": 2019,
+      "content": "The example[[1,1,1], [1, 1, 1], [1, 1, 1]] ...",
+      "voteCount": 3
+    },
+    {
+      "name": "Aman__Bhardwaj",
+      "year": 2023,
+      "content": "- **We have ambiguity in the statement:**\n*The border of a connected component is all the squares in the connected component that are either 4-directionally adjacent to a square not in the component, or on the boundary of the grid (the first or last row or column).*\n\n- **Here is the logic, to make your understanding to question better:**\n ```\n// Input 1 :  (1,1)\n\n// 1 1 1      2 2 2\n// 1 1 1  --> 2 1 2\n// 1 1 1      2 2 2\n\n// Input 1.2 : (1,1)\n\n// 2 4 5 3 1      2 4 5 3 1      F F F F F\n// 3 1 1 1 4      3 2 2 2 4      F T T T F\n// 2 1 1 1 6  --> 2 2 1 2 6  --> F T F T F  --> And all the T will be colored with color \n// 9 1 1 1 7      9 2 2 2 7      F T T T F \n// 2 8 3 2 9      2 8 3 2 9      F F F F F\n\n// Input 2 : (0,1)\n\n// 1 2 2  --> 1 3 3\n// 2 3 2      2 3 3\n\n// Input 3 : (0,0)\n\n// 1 1 --> 3 3\n// 1 2     3 2\n```\n\n- **Now lets have a look at my well structured code**\n```\nclass Solution {\n\n    private static void dfs(int row, int col, int Row, int Col, int[] dRow, int[] dCol,\n    int srcColor, int[][] grid, int[][] visited){\n        visited[row][col] = 1;\n        for(int move=0;move<4;move++){\n            int row_ = row + dRow[move], col_ = col + dCol[move];\n            if(row_>=0 && col_>=0 && row_<Row && col_<Col){\n                if(grid[row_][col_]==srcColor && visited[row_][col_]==0){\n                    visited[row_][col_] = 1;\n                    dfs(row_,col_,Row,Col,dRow,dCol,srcColor,grid,visited);\n                }\n            }\n        }\n    }\n\n    public int[][] colorBorder(int[][] grid, int row, int col, int color) {\n        int Row = grid.length, Col = grid[0].length, srcColor = grid[row][col];\n        int[][] visited = new int[Row][Col];\n        int[] dRow = new int[]{-1,0,1,0}, dCol = new int[]{0,1,0,-1};\n        dfs(row,col,Row,Col,dRow,dCol,srcColor,grid,visited);\n        for(int i=0;i<Row;i++){\n            for(int j=0;j<Col;j++){\n                if(visited[i][j]==1){\n                    if(i==0||i==Row-1||j==0||j==Col-1){ visited[i][j] = color; }\n                    else{\n                        boolean isBoundaryCell = false;\n                        for(int move=0;move<4;move++){\n                            int i_ = i + dRow[move], j_ = j + dCol[move];\n                            if(grid[i_][j_]!=srcColor) isBoundaryCell = true;\n                        }\n                        if(isBoundaryCell) visited[i][j] = color;\n                        else visited[i][j] = grid[i][j];\n                    }\n                }else visited[i][j] = grid[i][j];\n            }\n        }\n        return visited;\n    }\n}\n\n// Time Complexity : O(Row x Col)\n// Space Complexity : O(Row x Col)\n```",
+      "voteCount": 2
+    }
+  ]
+}

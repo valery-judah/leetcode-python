@@ -1,0 +1,156 @@
+{
+  "category": "",
+  "id": "48",
+  "name": "Rotate Image",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/rotate-image/",
+  "slug": "rotate-image",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Determine Whether Matrix Can Be Obtained By Rotation",
+      "difficulty": "Easy",
+      "slug": "determine-whether-matrix-can-be-obtained-by-rotation"
+    }
+  ],
+  "questionId": "48",
+  "questionFrontendId": "48",
+  "title": "Rotate Image",
+  "titleSlug": "rotate-image",
+  "content": "<p>You are given an <code>n x n</code> 2D <code>matrix</code> representing an image, rotate the image by <strong>90</strong> degrees (clockwise).</p>\n\n<p>You have to rotate the image <a href=\"https://en.wikipedia.org/wiki/In-place_algorithm\" target=\"_blank\"><strong>in-place</strong></a>, which means you have to modify the input 2D matrix directly. <strong>DO NOT</strong> allocate another 2D matrix and do the rotation.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/08/28/mat1.jpg\" style=\"width: 500px; height: 188px;\" />\n<pre>\n<strong>Input:</strong> matrix = [[1,2,3],[4,5,6],[7,8,9]]\n<strong>Output:</strong> [[7,4,1],[8,5,2],[9,6,3]]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/08/28/mat2.jpg\" style=\"width: 500px; height: 201px;\" />\n<pre>\n<strong>Input:</strong> matrix = [[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]\n<strong>Output:</strong> [[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>n == matrix.length == matrix[i].length</code></li>\n\t<li><code>1 &lt;= n &lt;= 20</code></li>\n\t<li><code>-1000 &lt;= matrix[i][j] &lt;= 1000</code></li>\n</ul>\n",
+  "likes": 19132,
+  "dislikes": 915,
+  "stats": {
+    "totalAccepted": "2.5M",
+    "totalSubmission": "3.1M",
+    "totalAcceptedRaw": 2465194,
+    "totalSubmissionRaw": 3140266,
+    "acRate": "78.5%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Matrix",
+      "slug": "matrix"
+    }
+  ],
+  "metaData": {
+    "name": "rotate",
+    "params": [
+      {
+        "name": "matrix",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "void"
+    },
+    "output": {
+      "paramindex": 0
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Google",
+        "slug": "google",
+        "timesEncountered": 18
+      },
+      {
+        "taggedByAdmin": true,
+        "name": "Microsoft",
+        "slug": "microsoft",
+        "timesEncountered": 12
+      },
+      {
+        "taggedByAdmin": true,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 12
+      }
+    ],
+    "3": [
+      {
+        "taggedByAdmin": true,
+        "name": "Apple",
+        "slug": "apple",
+        "timesEncountered": 11
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "Bobzero",
+      "year": 2022,
+      "content": "I\\'m always having fun reading the discussions \\uD83D\\uDE03",
+      "voteCount": 431
+    },
+    {
+      "name": "LazyBanda",
+      "year": 2020,
+      "content": "I was asked this problem in Amazon for SDE III. I had hardly 25 mins to solve. Since in online interview, first 10 mins went into setup because my interviewer wasnt getting signals. next 25 mins for behavioural. and then this question. Its a tricky problem, nort sure what a company will check with this question. Probably my memorization technique.",
+      "voteCount": 430
+    },
+    {
+      "name": "chiranthanmirle",
+      "year": 2020,
+      "content": "![image](https://assets.leetcode.com/users/images/88356185-85ab-4f53-afcb-d7512abc311e_1607548471.039209.png)\\nSorry for the bad images. I am terrible at it.\\n\\nTranspose: Basically run a line from top left to bottom right as shown. Flip the 2 parts around the line.\\n\\nReverse: Flip the whole image around a line to the left or right.",
+      "voteCount": 319
+    },
+    {
+      "name": "jerry_nk",
+      "year": 2024,
+      "content": "90 = transpose + reverse row\n180 = reverse row + reverse column\n270 = transpose + reverse col",
+      "voteCount": 280
+    },
+    {
+      "name": "k3000001",
+      "year": 2020,
+      "content": "What exactly does it help measure? That the candidate can remember the trick of swapping rows?",
+      "voteCount": 190
+    },
+    {
+      "name": "SaurabhKapade",
+      "year": 2023,
+      "content": "In this question only two things to do-\\n1. Find the transpose of the matrix\\n2. Reverse the rows of the matrix ",
+      "voteCount": 135
+    },
+    {
+      "name": "StefanPochmann",
+      "year": 2015,
+      "content": "    def rotate(matrix)\\n      matrix.replace(matrix.reverse.transpose)\\n    end\\n\\nI like Ruby's wordy style.",
+      "voteCount": 76
+    },
+    {
+      "name": "dkode",
+      "year": 2021,
+      "content": "Diagram:\\n\\n![image](https://assets.leetcode.com/users/images/95016c57-f112-4e79-8be7-0f21c814c800_1630583198.7966883.png)\\n\\n# M[i,j] --> M\\'[j,N-1-i]\\n\\nWe know that transpose relation is \\n#### M[i,j]= M[j,i]\\n#### \\n\\nBut the relation we got is slightly differernt\\n\\nThink how to convert\\nM[i,j] to M[N-1-i,j]\\n\\nThis is equivalent to flipping the matrix horizontally.\\n\\nM[i,j] to M[N-1-i,j]\\n\\nTranspose (M[N-1-i,j]) --> M\\'[j,N-1-i]\\n\\nTranspose and flipping are linear operation\\n\\nSimilary you can solve other cases like 90 degree, 180 degree, 270 degree etc\\n\\n\\n",
+      "voteCount": 63
+    },
+    {
+      "name": "charlesxiao2",
+      "year": 2019,
+      "content": "This post is for rotating the matrix anticlockwise. Sorry, when I post it I didn\\'t notice it. But please read it, because I guarantee you can understand the thought process and came up with your solution for clockwise rotation.\\n\\nSo, we are required to rotate it in place. \\n\\nGive a matrix, there are several operations can be done in matrix in place:\\n\\ntranslation, and swap symmetrically(mirror against diagnal), and probaly some unexpected in place operations.\\n\\nWe are trying to break the rotation operation into these operations that are know to carry on easily in place.\\n\\nFor swap symmetrically, given coordinate (a,b), it will be swapped to (b,a) if following the upper left and buttom right diagnal as mirror.\\nFor translation, given coordinate (a, b), we are able to traslate it to (a, whatever) or (whatever, b) with ease.\\n\\nIf rotated anticlockwise, element at (a,b) will be transfered to the new coordinate of (s-b-1 ,a) with s being the length or width of the matrix.\\nWe are trying to find out the in place operations needed in order to transform the coordinate from (a, b) to (s-b-1, a), with some fundumantal operations\\' coordinate transformation characteristics in mind.\\n\\nwe are trying to fill in the logic path between (a, b) to (s-b-1, a) using the fundamental operations.\\n\\nLet\\'s try to fill the logic break reversely:\\nto get to (s-b-1, a) from (a, b), notice a is swapped, we guess the last operation may be mirror against diagnal. so the path now becomes:\\n(a,b) -> (a, s-b-1) -> (s-b-1, a)//the last mirror can be easily done in place\\n\\nNow we try, how to get to (a, s-b-1) from (a, b) using fundamental in place operations? Well, draw a matrix, and you find out that this is not translation, but some swapping too. Don\\'t worry, you see the operations does not change the row coordinate, so it can be done in place with ease. And you know at this point you design the algorithm for this problem.\\n\\nThis is how the logic flows trying to design the in place algorithm to rotate n*n matrix.\\nBasically, we are trying to break down the operations into easy atomic in place operations. How to break down? Analyze the coordinate characteristics with some basic patterns in mind.\\n\\n",
+      "voteCount": 63
+    },
+    {
+      "name": "chris3109692",
+      "year": 2020,
+      "content": "The complexity analyses in the solution is incorrect. For a NxN matrix, the complexity is O(N^2), but our data size is N^2 by itself, hence the proper way to denote complexity should be O(n). Note big O is always measured against the data size, not the dimension size.",
+      "voteCount": 36
+    }
+  ]
+}

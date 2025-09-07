@@ -1,0 +1,124 @@
+{
+  "category": "",
+  "id": "1613",
+  "name": "Find the Missing IDs",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-the-missing-ids/",
+  "slug": "find-the-missing-ids",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": [
+    {
+      "title": "Report Contiguous Dates",
+      "difficulty": "Hard",
+      "slug": "report-contiguous-dates"
+    },
+    {
+      "title": "Find the Start and End Number of Continuous Ranges",
+      "difficulty": "Medium",
+      "slug": "find-the-start-and-end-number-of-continuous-ranges"
+    },
+    {
+      "title": "Number of Transactions per Visit",
+      "difficulty": "Hard",
+      "slug": "number-of-transactions-per-visit"
+    }
+  ],
+  "questionId": "1759",
+  "questionFrontendId": "1613",
+  "title": "Find the Missing IDs",
+  "titleSlug": "find-the-missing-ids",
+  "content": "<p>Table: <code>Customers</code></p>\n\n<pre>\n+---------------+---------+\n| Column Name   | Type    |\n+---------------+---------+\n| customer_id   | int     |\n| customer_name | varchar |\n+---------------+---------+\ncustomer_id is the column with unique values for this table.\nEach row of this table contains the name and the id customer.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Write a solution to find the missing customer IDs. The missing IDs are ones that are not in the <code>Customers</code> table but are in the range between <code>1</code> and the <strong>maximum</strong> <code>customer_id</code> present in the table.</p>\n\n<p><strong>Notice</strong> that the maximum <code>customer_id</code> will not exceed <code>100</code>.</p>\n\n<p>Return the result table ordered by <code>ids</code> in <strong>ascending order</strong>.</p>\n\n<p>The result format is in the following example.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> \nCustomers table:\n+-------------+---------------+\n| customer_id | customer_name |\n+-------------+---------------+\n| 1           | Alice         |\n| 4           | Bob           |\n| 5           | Charlie       |\n+-------------+---------------+\n<strong>Output:</strong> \n+-----+\n| ids |\n+-----+\n| 2   |\n| 3   |\n+-----+\n<strong>Explanation:</strong> \nThe maximum customer_id present in the table is 5, so in the range [1,5], IDs 2 and 3 are missing from the table.\n</pre>\n",
+  "likes": 234,
+  "dislikes": 30,
+  "stats": {
+    "totalAccepted": "22.1K",
+    "totalSubmission": "30.3K",
+    "totalAcceptedRaw": 22096,
+    "totalSubmissionRaw": 30303,
+    "acRate": "72.9%"
+  },
+  "topicTags": [
+    {
+      "name": "Database",
+      "slug": "database"
+    }
+  ],
+  "metaData": {
+    "mysql": [
+      "Create table If Not Exists Customers (customer_id int, customer_name varchar(20))"
+    ],
+    "mssql": [
+      "Create table Customers (customer_id int, customer_name varchar(20))\n"
+    ],
+    "oraclesql": [
+      "Create table Customers (customer_id int, customer_name varchar(20))\n"
+    ],
+    "database": true,
+    "name": "find_missing_ids",
+    "pythondata": [
+      "Customers = pd.DataFrame([], columns=['customer_id', 'customer_name']).astype({'customer_id':'Int64', 'customer_name':'object'})"
+    ],
+    "postgresql": [
+      "Create table If Not Exists Customers (customer_id int, customer_name varchar(20))"
+    ],
+    "database_schema": {
+      "Customers": {
+        "customer_id": "INT",
+        "customer_name": "VARCHAR(20)"
+      }
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "jwoods0118",
+      "year": 2024,
+      "content": "It literally says don\\'t post any solutions in this discussion and 80% of the comments are solutions. Like no one cares that much about your solution",
+      "voteCount": 3
+    },
+    {
+      "name": "Patholaya",
+      "year": 2021,
+      "content": "-- #JB\\n\\nWITH RECURSIVE numbers (number) AS (\\n\\nselect 1 as number\\nunion all \\nselect number+1\\nfrom numbers\\nwhere number < (select max(customer_id) from customers)\\n\\n)\\n\\nselect number ids\\nfrom numbers\\nleft join customers on number = customer_id\\nwhere customer_id is null",
+      "voteCount": 3
+    },
+    {
+      "name": "djones04",
+      "year": 2020,
+      "content": "with recursive rec_cte as (\\nselect 1 as id\\nunion all\\nselect id + 1\\n\\tfrom rec_cte\\n\\twhere id < (select max(customer_id) from Customers)\\n)\\nselect id as ids\\n\\tfrom rec_cte\\n\\twhere not exists (select customer_id from Customers where rec_cte.id = Customers.customer_id )\\n;",
+      "voteCount": 2
+    },
+    {
+      "name": "Coder_MDC",
+      "year": 2020,
+      "content": "/*Generate all the ids between 1 to Max id and use Minus to find the missing ids) */\\nSELECT level \"ids\"  \\nFROM dual\\nCONNECT by level <= (SELECT MAX(customer_id) FROM customers)\\nMINUS\\nSELECT customer_id\\nFROM customers\\nORDER by 1;",
+      "voteCount": 2
+    },
+    {
+      "name": "matthewjinmp",
+      "year": 2025,
+      "content": "recursion in SQL is wack ",
+      "voteCount": 1
+    },
+    {
+      "name": "karthikamenon",
+      "year": 2021,
+      "content": "with CTE(customer_id,inc) as\\n(select customer_id as customer_id, 1 as inc from Customers\\nunion all\\nselect customer_id,inc+1 as inc from CTE where inc < (select max(customer_id) from customers)\\n)\\n\\nselect distinct inc as \"ids\" from CTE where inc not in (select customer_id from customers) order by inc",
+      "voteCount": 1
+    },
+    {
+      "name": "Ihab-Taher",
+      "year": 2024,
+      "content": "In oracle when naming my column ids, the submissions wasn\\'t accepted but when putting the column name between double quotes such as \"ids\" the submission get accepted.",
+      "voteCount": 0
+    },
+    {
+      "name": "JCharante",
+      "year": 2023,
+      "content": "3m19s just need to know how to make a recursive CTE",
+      "voteCount": 0
+    }
+  ]
+}

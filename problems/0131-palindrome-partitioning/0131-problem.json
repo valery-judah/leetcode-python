@@ -1,0 +1,134 @@
+{
+  "category": "",
+  "id": "131",
+  "name": "Palindrome Partitioning",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/palindrome-partitioning/",
+  "slug": "palindrome-partitioning",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Dynamic Programming",
+    "Backtracking"
+  ],
+  "similar_questions": [
+    {
+      "title": "Palindrome Partitioning II",
+      "difficulty": "Hard",
+      "slug": "palindrome-partitioning-ii"
+    },
+    {
+      "title": "Palindrome Partitioning IV",
+      "difficulty": "Hard",
+      "slug": "palindrome-partitioning-iv"
+    },
+    {
+      "title": "Maximum Number of Non-overlapping Palindrome Substrings",
+      "difficulty": "Hard",
+      "slug": "maximum-number-of-non-overlapping-palindrome-substrings"
+    }
+  ],
+  "questionId": "131",
+  "questionFrontendId": "131",
+  "title": "Palindrome Partitioning",
+  "titleSlug": "palindrome-partitioning",
+  "content": "<p>Given a string <code>s</code>, partition <code>s</code> such that every <span data-keyword=\"substring-nonempty\">substring</span> of the partition is a <span data-keyword=\"palindrome-string\"><strong>palindrome</strong></span>. Return <em>all possible palindrome partitioning of </em><code>s</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> s = \"aab\"\n<strong>Output:</strong> [[\"a\",\"a\",\"b\"],[\"aa\",\"b\"]]\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> s = \"a\"\n<strong>Output:</strong> [[\"a\"]]\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 16</code></li>\n\t<li><code>s</code> contains only lowercase English letters.</li>\n</ul>\n",
+  "likes": 13852,
+  "dislikes": 558,
+  "stats": {
+    "totalAccepted": "1.2M",
+    "totalSubmission": "1.6M",
+    "totalAcceptedRaw": 1196229,
+    "totalSubmissionRaw": 1642917,
+    "acRate": "72.8%"
+  },
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    },
+    {
+      "name": "Backtracking",
+      "slug": "backtracking"
+    }
+  ],
+  "metaData": {
+    "name": "partition",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "list<list<string>>",
+      "dealloc": true
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "mohamed_waseela",
+      "year": 2022,
+      "content": "If you still dont understand the problem check these examples:\\n\\ns = \"aaab\"\\noutput = [[\"a\",\"a\",\"a\",\"b\"],[\"a\",\"aa\",\"b\"],[\"aa\",\"a\",\"b\"],[\"aaa\",\"b\"]]\\n\\ns = \"abcaa\"\\noutput = [[\"a\",\"b\",\"c\",\"a\",\"a\"],[\"a\",\"b\",\"c\",\"aa\"]]\\n\\ns = \"abbab\"\\noutput = [[\"a\",\"b\",\"b\",\"a\",\"b\"],[\"a\",\"b\",\"bab\"],[\"a\",\"bb\",\"a\",\"b\"],[\"abba\",\"b\"]]\\n\\ns = \"abaca\"\\noutput = [[\"a\",\"b\",\"a\",\"c\",\"a\"],[\"a\",\"b\",\"aca\"],[\"aba\",\"c\",\"a\"]]\\n\\ns = \"aaa\"\\noutput = [[\"a\",\"a\",\"a\"],[\"a\",\"aa\"],[\"aa\",\"a\"],[\"aaa\"]]\\n\\nPlease Upvote if this was helpful\\n",
+      "voteCount": 1444
+    },
+    {
+      "name": "mohamed_waseela",
+      "year": 2022,
+      "content": "If you get this question, they dont want to hire you",
+      "voteCount": 667
+    },
+    {
+      "name": "wiredlime",
+      "year": 2024,
+      "content": "![image](https://assets.leetcode.com/users/images/b6f5ade4-d5b8-445e-8ee9-e16a0d4f2292_1711522213.8992066.png)\nHope this would give you a clear view on what to do.",
+      "voteCount": 614
+    },
+    {
+      "name": "bukggong_time",
+      "year": 2024,
+      "content": "I got this on Meta technical interview on Jan 2024",
+      "voteCount": 288
+    },
+    {
+      "name": "disturbedbrown1",
+      "year": 2022,
+      "content": "Problem Description and the first example can be explained better.",
+      "voteCount": 226
+    },
+    {
+      "name": "joybhuiya36",
+      "year": 2024,
+      "content": "An interesting matter is coincidentally this problem's number is also a palindrome. \ud83d\ude01",
+      "voteCount": 178
+    },
+    {
+      "name": "loko2434",
+      "year": 2023,
+      "content": "Leetcode really wants us to understand backtracking lol\\n\\nNot that I hate it though. In fact I like how Leetcode has been giving out series of daily problems of same topic back-to-back, helps me understand the topic a lot better",
+      "voteCount": 177
+    },
+    {
+      "name": "anwendeng",
+      "year": 2024,
+      "content": "Backtracking\\'s question has always high time complexity.\\nHave a good day!",
+      "voteCount": 55
+    },
+    {
+      "name": "denkochev",
+      "year": 2023,
+      "content": "Recursive is hard...",
+      "voteCount": 51
+    },
+    {
+      "name": "coderEmigrant",
+      "year": 2023,
+      "content": "for non-English native speakers, partition is a verb in \"partition s such that every \nsubstring....\"",
+      "voteCount": 29
+    }
+  ]
+}

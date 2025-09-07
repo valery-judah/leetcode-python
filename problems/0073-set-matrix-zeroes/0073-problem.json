@@ -1,0 +1,158 @@
+{
+  "category": "",
+  "id": "73",
+  "name": "Set Matrix Zeroes",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/set-matrix-zeroes/",
+  "slug": "set-matrix-zeroes",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Game of Life",
+      "difficulty": "Medium",
+      "slug": "game-of-life"
+    },
+    {
+      "title": "Number of Laser Beams in a Bank",
+      "difficulty": "Medium",
+      "slug": "number-of-laser-beams-in-a-bank"
+    },
+    {
+      "title": "Minimum Operations to Remove Adjacent Ones in Matrix",
+      "difficulty": "Hard",
+      "slug": "minimum-operations-to-remove-adjacent-ones-in-matrix"
+    },
+    {
+      "title": "Remove All Ones With Row and Column Flips II",
+      "difficulty": "Medium",
+      "slug": "remove-all-ones-with-row-and-column-flips-ii"
+    }
+  ],
+  "questionId": "73",
+  "questionFrontendId": "73",
+  "title": "Set Matrix Zeroes",
+  "titleSlug": "set-matrix-zeroes",
+  "content": "<p>Given an <code>m x n</code> integer matrix <code>matrix</code>, if an element is <code>0</code>, set its entire row and column to <code>0</code>&#39;s.</p>\n\n<p>You must do it <a href=\"https://en.wikipedia.org/wiki/In-place_algorithm\" target=\"_blank\">in place</a>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/08/17/mat1.jpg\" style=\"width: 450px; height: 169px;\" />\n<pre>\n<strong>Input:</strong> matrix = [[1,1,1],[1,0,1],[1,1,1]]\n<strong>Output:</strong> [[1,0,1],[0,0,0],[1,0,1]]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/08/17/mat2.jpg\" style=\"width: 450px; height: 137px;\" />\n<pre>\n<strong>Input:</strong> matrix = [[0,1,2,0],[3,4,5,2],[1,3,1,5]]\n<strong>Output:</strong> [[0,0,0,0],[0,4,5,0],[0,3,1,0]]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == matrix.length</code></li>\n\t<li><code>n == matrix[0].length</code></li>\n\t<li><code>1 &lt;= m, n &lt;= 200</code></li>\n\t<li><code>-2<sup>31</sup> &lt;= matrix[i][j] &lt;= 2<sup>31</sup> - 1</code></li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Follow up:</strong></p>\n\n<ul>\n\t<li>A straightforward solution using <code>O(mn)</code> space is probably a bad idea.</li>\n\t<li>A simple improvement uses <code>O(m + n)</code> space, but still not the best solution.</li>\n\t<li>Could you devise a constant space solution?</li>\n</ul>\n",
+  "likes": 16395,
+  "dislikes": 823,
+  "stats": {
+    "totalAccepted": "2.2M",
+    "totalSubmission": "3.7M",
+    "totalAcceptedRaw": 2245496,
+    "totalSubmissionRaw": 3657417,
+    "acRate": "61.4%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Matrix",
+      "slug": "matrix"
+    }
+  ],
+  "metaData": {
+    "name": "setZeroes",
+    "params": [
+      {
+        "name": "matrix",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "void"
+    },
+    "output": {
+      "paramindex": 0
+    },
+    "manual": false
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Google",
+        "slug": "google",
+        "timesEncountered": 21
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Meta",
+        "slug": "facebook",
+        "timesEncountered": 15
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "s230306",
+      "year": 2022,
+      "content": "Don\\'t Share the code here .",
+      "voteCount": 209
+    },
+    {
+      "name": "Abhi427",
+      "year": 2024,
+      "content": "This is my 100th problem",
+      "voteCount": 199
+    },
+    {
+      "name": "rmglassman",
+      "year": 2020,
+      "content": "Then they should have constrained the range of values allowed in the matrix. Given the (lack of) constraints of the problem as written, it is **not possible** to set an integer flag that couldn\\'t also possibly come up as a value in the matrix. That\\'s an hour of my life I\\'ll never get back.",
+      "voteCount": 127
+    },
+    {
+      "name": "zappro1",
+      "year": 2024,
+      "content": "This sucks",
+      "voteCount": 95
+    },
+    {
+      "name": "zarahan",
+      "year": 2014,
+      "content": "Why the expected output for [[0],[1]] is [[0],[1]]. I think the output should be [[0],[0]] because the first element '0' makes items in first column are set to be 0.",
+      "voteCount": 80
+    },
+    {
+      "name": "xjs1997524",
+      "year": 2020,
+      "content": "in description, it says:\\n\\t-10^9 <= matrix[i][j] <= 10^9\\n\\t\\nAnd I am thinking to use Interger.MAX_VALUE to achieve Space O(1)\\nSince Interger.MAX_VALUE = 2^31 -1 > 10^9\\n\\nHowever it return a bad test case which contain\\n\\nInput : [[2147483647],[2],[3]]\\nOutput : [[0],[2],[3]]\\nExpected : [[2147483647],[2],[3]]\\n\\nLeetcode, make sure you modify the constrains in the description if you want to use test case outside the bound! :(",
+      "voteCount": 73
+    },
+    {
+      "name": "TheMarvelFan",
+      "year": 2023,
+      "content": "The O(1) space solution to this question is actually really intuitive and it can help in many similar questions with larger scopes.",
+      "voteCount": 61
+    },
+    {
+      "name": "jiteshpareek",
+      "year": 2024,
+      "content": "One of the good approach to solve it in in place would be:\\n1. Find if any cell in first row or first column is set as 0.\\n2. Traverse through rest of matrix and if any cell=0 is observed, set corresponding cell in first row and first column as 0.\\n3. Set the rows and columns to 0 for which cell with value 0 is observed in first row and first column.\\n4. If there were cells with 0 value observed intially in first row or first column, set first row and column to 0 respectively.\\n\\nThat\\'s all.",
+      "voteCount": 36
+    },
+    {
+      "name": "AjayCoding",
+      "year": 2025,
+      "content": "test cases\\n\\n```\\n[[1,1,1],[1,0,1],[1,1,1]]\\n[[0,1,2,0],[3,4,5,2],[1,3,1,5]]\\n[[1],[0]]\\n[[0,1,1],[1,1,1],[1,0,0]]\\n[[-4,-2147483648,6,-7,0],[-8,6,-8,-6,0],[2147483647,2,-9,-6,-10]]\\n[[2147483647],[2],[3]]\\n[[1,2,3,4],[5,0,7,8],[0,10,11,12],[13,14,15,0]]\\n```\\n",
+      "voteCount": 24
+    },
+    {
+      "name": "sk4142",
+      "year": 2023,
+      "content": "For the O(1) space solution, consider how we can incorporate the extra arrays in the O(m + n) memory solution into the matrix. \\n\\n- Hint: Use the first row and first column and use one extra boolean for when they overlap. ",
+      "voteCount": 24
+    }
+  ]
+}

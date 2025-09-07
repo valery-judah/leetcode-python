@@ -1,0 +1,161 @@
+{
+  "category": "",
+  "id": "499",
+  "name": "The Maze III",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/the-maze-iii/",
+  "slug": "the-maze-iii",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "String",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph",
+    "Heap (Priority Queue)",
+    "Matrix",
+    "Shortest Path"
+  ],
+  "similar_questions": [
+    {
+      "title": "The Maze",
+      "difficulty": "Medium",
+      "slug": "the-maze"
+    },
+    {
+      "title": "The Maze II",
+      "difficulty": "Medium",
+      "slug": "the-maze-ii"
+    }
+  ],
+  "questionId": "499",
+  "questionFrontendId": "499",
+  "title": "The Maze III",
+  "titleSlug": "the-maze-iii",
+  "content": "<p>There is a ball in a <code>maze</code> with empty spaces (represented as <code>0</code>) and walls (represented as <code>1</code>). The ball can go through the empty spaces by rolling <strong>up, down, left or right</strong>, but it won&#39;t stop rolling until hitting a wall. When the ball stops, it could choose the next direction (must be different from last chosen direction). There is also a hole in this maze. The ball will drop into the hole if it rolls onto the hole.</p>\n\n<p>Given the <code>m x n</code> <code>maze</code>, the ball&#39;s position <code>ball</code> and the hole&#39;s position <code>hole</code>, where <code>ball = [ball<sub>row</sub>, ball<sub>col</sub>]</code> and <code>hole = [hole<sub>row</sub>, hole<sub>col</sub>]</code>, return <em>a string </em><code>instructions</code><em> of all the instructions that the ball should follow to drop in the hole with the <strong>shortest distance</strong> possible</em>. If there are multiple valid instructions, return the <strong>lexicographically minimum</strong> one. If the ball can&#39;t drop in the hole, return <code>&quot;impossible&quot;</code>.</p>\n\n<p>If there is a way for the ball to drop in the hole, the answer <code>instructions</code> should contain the characters <code>&#39;u&#39;</code> (i.e., up), <code>&#39;d&#39;</code> (i.e., down), <code>&#39;l&#39;</code> (i.e., left), and <code>&#39;r&#39;</code> (i.e., right).</p>\n\n<p>The <strong>distance</strong> is the number of <strong>empty spaces</strong> traveled by the ball from the start position (excluded) to the destination (included).</p>\n\n<p>You may assume that <strong>the borders of the maze are all walls</strong> (see examples).</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/31/maze3-1-grid.jpg\" style=\"width: 573px; height: 573px;\" />\n<pre>\n<strong>Input:</strong> maze = [[0,0,0,0,0],[1,1,0,0,1],[0,0,0,0,0],[0,1,0,0,1],[0,1,0,0,0]], ball = [4,3], hole = [0,1]\n<strong>Output:</strong> &quot;lul&quot;\n<strong>Explanation:</strong> There are two shortest ways for the ball to drop into the hole.\nThe first way is left -&gt; up -&gt; left, represented by &quot;lul&quot;.\nThe second way is up -&gt; left, represented by &#39;ul&#39;.\nBoth ways have shortest distance 6, but the first way is lexicographically smaller because &#39;l&#39; &lt; &#39;u&#39;. So the output is &quot;lul&quot;.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/31/maze3-2-grid.jpg\" style=\"width: 573px; height: 573px;\" />\n<pre>\n<strong>Input:</strong> maze = [[0,0,0,0,0],[1,1,0,0,1],[0,0,0,0,0],[0,1,0,0,1],[0,1,0,0,0]], ball = [4,3], hole = [3,0]\n<strong>Output:</strong> &quot;impossible&quot;\n<strong>Explanation:</strong> The ball cannot reach the hole.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> maze = [[0,0,0,0,0,0,0],[0,0,1,0,0,1,0],[0,0,0,0,1,0,0],[0,0,0,0,0,0,1]], ball = [0,4], hole = [3,5]\n<strong>Output:</strong> &quot;dldr&quot;\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == maze.length</code></li>\n\t<li><code>n == maze[i].length</code></li>\n\t<li><code>1 &lt;= m, n &lt;= 100</code></li>\n\t<li><code>maze[i][j]</code> is <code>0</code> or <code>1</code>.</li>\n\t<li><code>ball.length == 2</code></li>\n\t<li><code>hole.length == 2</code></li>\n\t<li><code>0 &lt;= ball<sub>row</sub>, hole<sub>row</sub> &lt;= m</code></li>\n\t<li><code>0 &lt;= ball<sub>col</sub>, hole<sub>col</sub> &lt;= n</code></li>\n\t<li>Both the ball and the hole exist in an empty space, and they will not be in the same position initially.</li>\n\t<li>The maze contains <strong>at least 2 empty spaces</strong>.</li>\n</ul>\n",
+  "likes": 507,
+  "dislikes": 75,
+  "stats": {
+    "totalAccepted": "36.8K",
+    "totalSubmission": "72.4K",
+    "totalAcceptedRaw": 36849,
+    "totalSubmissionRaw": 72376,
+    "acRate": "50.9%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Breadth-First Search",
+      "slug": "breadth-first-search"
+    },
+    {
+      "name": "Graph",
+      "slug": "graph"
+    },
+    {
+      "name": "Heap (Priority Queue)",
+      "slug": "heap-priority-queue"
+    },
+    {
+      "name": "Matrix",
+      "slug": "matrix"
+    },
+    {
+      "name": "Shortest Path",
+      "slug": "shortest-path"
+    }
+  ],
+  "metaData": {
+    "name": "findShortestWay",
+    "params": [
+      {
+        "name": "maze",
+        "type": "integer[][]"
+      },
+      {
+        "name": "ball",
+        "type": "integer[]"
+      },
+      {
+        "name": "hole",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "string"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "chrihop",
+      "year": 2023,
+      "content": "The question is ill-formed. Say, if the instruction is \"u\", and the ball is at the bottom edge of the map. \"du\" has the same distance as \"u\" (bounce back from the wall below) and lexicographically smaller, and \"ddu\" is also valid and even smaller. So the question has no answer.",
+      "voteCount": 23
+    },
+    {
+      "name": "ZXCr",
+      "year": 2020,
+      "content": "`\\nSo the output is \"lul\"\\n`\\nMade me laugh, lul",
+      "voteCount": 14
+    },
+    {
+      "name": "harry_shit",
+      "year": 2023,
+      "content": "cant believe i did this in 1 go",
+      "voteCount": 6
+    },
+    {
+      "name": "AnonymousMich",
+      "year": 2024,
+      "content": "For the test case:\\n\"\"\"\\n[0, 1, 0, 0, 1, 0, 0, 1, 0, 0]\\n[0, 0, 1, 0, 0, 1, 0, 0, 1, 0]\\n[0, 0, 0, 0, S, 0, 1, 0, 0, 1]\\n[0, 0, 0, 0, 0, 0, 1, 0, 0, 1]\\n[0, 1, 0, 0, 1, 0, 0, 1, 0, 0]\\n[0, 0, 1, 0, 0, 1, 0, 0, 0, 0]\\n[0, 0, 0, 0, 0, 0, 1, 0, 0, 0]\\n[1, 0, 0, 1, 0, 0, D, 0, 0, 1]\\n\"\"\"\\n\\nS: Start position\\nD : Hole position\\nthe smallest instruction is \"rdrdrdldl\" rather than \"drdrdrdldl\"",
+      "voteCount": 2
+    },
+    {
+      "name": "The-IKIGAI",
+      "year": 2024,
+      "content": "\\n    cell(int r, int c, string str) {\\n        this->r = r;\\n        this->c = c;\\n        this->str = str;\\n    }\\n\\n\\n    string findShortestWay(vector<vector<int>>& maze, vector<int>& ball,\\n                           vector<int>& hole) {\\n\\n        int n = maze.size(), m = maze[0].size();\\n        vector<vector<pair<int, string>>> dp(\\n            n, vector<pair<int, string>>(m, {INT_MAX, \"\"}));\\n        vector<pair<int, int>> dirs = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};\\n        vector<char> dirChar = {\\'u\\', \\'d\\', \\'l\\', \\'r\\'};\\n\\n        queue<cell> q;\\n        q.push(cell(ball[0], ball[1], \"\"));\\n        dp[ball[0]][ball[1]] = {0, \"\"};\\n\\n        while (!q.empty()) {\\n            auto [r, c, str] = q.front();\\n            q.pop();\\n\\n            for (int i = 0; i < 4; i++) {\\n                int nr = r + dirs[i].first, nc = c + dirs[i].second, steps = 0;\\n                while (nr >= 0 && nc >= 0 && nr < n && nc < m &&\\n                       maze[nr][nc] == 0) {\\n                    steps++;\\n                    if (nr == hole[0] && nc == hole[1]) {\\n                        nr += dirs[i].first, nc += dirs[i].second;\\n                        break;\\n                    }\\n                    nr += dirs[i].first, nc += dirs[i].second;\\n                }\\n                nr -= dirs[i].first, nc -= dirs[i].second;\\n                if (dp[nr][nc].first > dp[r][c].first + steps) {\\n                    dp[nr][nc] = {dp[r][c].first + steps, str + dirChar[i]};\\n                    q.push(cell(nr, nc, str + dirChar[i]));\\n                } else if (dp[nr][nc].first == dp[r][c].first + steps) {\\n                    dp[nr][nc].second =\\n                        min(dp[nr][nc].second, str + dirChar[i]);\\n                }\\n            }\\n        }\\n        return dp[hole[0]][hole[1]].first == INT_MAX\\n                   ? \"impossible\"\\n                   : dp[hole[0]][hole[1]].second;\\n    }\\n\\n\\nCan somebody tell me whats wrong with my approach here, as 61/64 test cases are passing? \\nI am usingBFS + DP here ",
+      "voteCount": 2
+    },
+    {
+      "name": "tin_le",
+      "year": 2024,
+      "content": "if you stuck go solve [Maze II](https://leetcode.com/problems/the-maze-ii/), they\\'re basically the same",
+      "voteCount": 1
+    },
+    {
+      "name": "seredenko99",
+      "year": 2024,
+      "content": "use `maze` to track visited.\nHash set will cause TLE",
+      "voteCount": 1
+    },
+    {
+      "name": "frmz",
+      "year": 2024,
+      "content": "Amazing question.",
+      "voteCount": 0
+    },
+    {
+      "name": "nanzhuangdalao",
+      "year": 2024,
+      "content": "Is this problem still solvable using a 2D distances array? I tried it, but it returns \"Memory Limit Exceeded\".",
+      "voteCount": 0
+    },
+    {
+      "name": "peter1004",
+      "year": 2024,
+      "content": "About the constraints, 0 <= ballrow, holerow <= m and 0 <= ballcol, holecol <= n. I think there would be < m and < n, right?",
+      "voteCount": 0
+    }
+  ]
+}

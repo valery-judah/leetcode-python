@@ -1,0 +1,73 @@
+MetaData summary (archive/problems):
+
+Top function names:
+  minCost: 9
+  foobar: 9
+  minOperations: 8
+  maxProfit: 6
+  sales_analysis: 6
+  countPairs: 5
+  removeDuplicates: 4
+  search: 4
+  minDistance: 4
+  maxProduct: 4
+  lowestCommonAncestor: 4
+  CodecDriver: 4
+  minimumCost: 4
+  maximumScore: 4
+  isPalindrome: 3
+  isValid: 3
+  pathSum: 3
+  longestConsecutive: 3
+  singleNumber: 3
+  reverseWords: 3
+
+Parameter types (top 50):
+  integer: 839 (e.g., archive/problems/0001-two-sum.json)
+  integer[]: 745 (e.g., archive/problems/0001-two-sum.json)
+  string: 452 (e.g., archive/problems/0003-longest-substring-without-repeating-characters.json)
+  integer[][]: 313 (e.g., archive/problems/0048-rotate-image.json)
+  string[]: 119 (e.g., archive/problems/0014-longest-common-prefix.json)
+  TreeNode: 119 (e.g., archive/problems/0094-binary-tree-inorder-traversal.json)
+  ListNode: 42 (e.g., archive/problems/0002-add-two-numbers.json)
+  character[][]: 19 (e.g., archive/problems/0036-valid-sudoku.json)
+  list<integer>: 18 (e.g., archive/problems/0030-substring-with-concatenation-of-all-words.json)
+  list<list<integer>>: 17 (e.g., archive/problems/0015-3sum.json)
+  list<string>: 14 (e.g., archive/problems/0017-letter-combinations-of-a-phone-number.json)
+  list<list<string>>: 13 (e.g., archive/problems/0049-group-anagrams.json)
+  character[]: 6 (e.g., archive/problems/0186-reverse-words-in-a-string-ii.json)
+  character: 5 (e.g., archive/problems/0389-find-the-difference.json)
+  double[]: 4 (e.g., archive/problems/0399-evaluate-division.json)
+  long: 4 (e.g., archive/problems/1915-number-of-wonderful-substrings.json)
+  double: 3 (e.g., archive/problems/0004-median-of-two-sorted-arrays.json)
+  list<NestedInteger>: 3 (e.g., archive/problems/0339-nested-list-weight-sum.json)
+  ListNode[]: 1 (e.g., archive/problems/0023-merge-k-sorted-lists.json)
+
+Return types (top 50):
+  integer: 809 (e.g., archive/problems/0001-two-sum.json)
+  boolean: 236 (e.g., archive/problems/0009-palindrome-number.json)
+  string: 142 (e.g., archive/problems/0003-longest-substring-without-repeating-characters.json)
+  integer[]: 130 (e.g., archive/problems/0001-two-sum.json)
+  long: 59 (e.g., archive/problems/1915-number-of-wonderful-substrings.json)
+  list<integer>: 58 (e.g., archive/problems/0030-substring-with-concatenation-of-all-words.json)
+  list<string>: 44 (e.g., archive/problems/0017-letter-combinations-of-a-phone-number.json)
+  list<list<integer>>: 41 (e.g., archive/problems/0015-3sum.json)
+  TreeNode: 38 (e.g., archive/problems/0094-binary-tree-inorder-traversal.json)
+  integer[][]: 33 (e.g., archive/problems/0048-rotate-image.json)
+  list<String>: 31 (e.g., archive/problems/0146-lru-cache.json)
+  ListNode: 29 (e.g., archive/problems/0002-add-two-numbers.json)
+  void: 22 (e.g., archive/problems/0031-next-permutation.json)
+  double: 19 (e.g., archive/problems/0004-median-of-two-sorted-arrays.json)
+  list<list<string>>: 12 (e.g., archive/problems/0049-group-anagrams.json)
+  string[]: 10 (e.g., archive/problems/0014-longest-common-prefix.json)
+  list<boolean>: 9 (e.g., archive/problems/0703-kth-largest-element-in-a-stream.json)
+  list<TreeNode>: 4 (e.g., archive/problems/0095-unique-binary-search-trees-ii.json)
+  double[]: 4 (e.g., archive/problems/0399-evaluate-division.json)
+  character: 3 (e.g., archive/problems/0389-find-the-difference.json)
+  boolean[]: 3 (e.g., archive/problems/1744-can-you-eat-your-favorite-candy-on-your-favorite-day.json)
+  long[]: 2 (e.g., archive/problems/2217-find-palindrome-with-fixed-length.json)
+  NestedInteger: 1 (e.g., archive/problems/0385-mini-parser.json)
+  character[][]: 1 (e.g., archive/problems/0036-valid-sudoku.json)
+  list<double>: 1 (e.g., archive/problems/0637-average-of-levels-in-binary-tree.json)
+  ListNode[]: 1 (e.g., archive/problems/0023-merge-k-sorted-lists.json)
+  TreeNode[]: 1 (e.g., archive/problems/0776-split-bst.json)

@@ -1,0 +1,190 @@
+{
+  "category": "",
+  "id": "5",
+  "name": "Longest Palindromic Substring",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/longest-palindromic-substring/",
+  "slug": "longest-palindromic-substring",
+  "isPaidOnly": false,
+  "tags": [
+    "Two Pointers",
+    "String",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Shortest Palindrome",
+      "difficulty": "Hard",
+      "slug": "shortest-palindrome"
+    },
+    {
+      "title": "Palindrome Permutation",
+      "difficulty": "Easy",
+      "slug": "palindrome-permutation"
+    },
+    {
+      "title": "Palindrome Pairs",
+      "difficulty": "Hard",
+      "slug": "palindrome-pairs"
+    },
+    {
+      "title": "Longest Palindromic Subsequence",
+      "difficulty": "Medium",
+      "slug": "longest-palindromic-subsequence"
+    },
+    {
+      "title": "Palindromic Substrings",
+      "difficulty": "Medium",
+      "slug": "palindromic-substrings"
+    },
+    {
+      "title": "Maximum Number of Non-overlapping Palindrome Substrings",
+      "difficulty": "Hard",
+      "slug": "maximum-number-of-non-overlapping-palindrome-substrings"
+    }
+  ],
+  "questionId": "5",
+  "questionFrontendId": "5",
+  "title": "Longest Palindromic Substring",
+  "titleSlug": "longest-palindromic-substring",
+  "content": "<p>Given a string <code>s</code>, return <em>the longest</em> <span data-keyword=\"palindromic-string\"><em>palindromic</em></span> <span data-keyword=\"substring-nonempty\"><em>substring</em></span> in <code>s</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;babad&quot;\n<strong>Output:</strong> &quot;bab&quot;\n<strong>Explanation:</strong> &quot;aba&quot; is also a valid answer.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;cbbd&quot;\n<strong>Output:</strong> &quot;bb&quot;\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 1000</code></li>\n\t<li><code>s</code> consist of only digits and English letters.</li>\n</ul>\n",
+  "likes": 31432,
+  "dislikes": 1934,
+  "stats": {
+    "totalAccepted": "4.1M",
+    "totalSubmission": "11.3M",
+    "totalAcceptedRaw": 4120239,
+    "totalSubmissionRaw": 11336483,
+    "acRate": "36.3%"
+  },
+  "topicTags": [
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "metaData": {
+    "name": "longestPalindrome",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "string"
+    }
+  },
+  "company_tag_stats": {
+    "3": [
+      {
+        "taggedByAdmin": false,
+        "name": "Adobe",
+        "slug": "adobe",
+        "timesEncountered": 12
+      }
+    ],
+    "1": [
+      {
+        "taggedByAdmin": true,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 38
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Google",
+        "slug": "google",
+        "timesEncountered": 25
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Meta",
+        "slug": "facebook",
+        "timesEncountered": 22
+      },
+      {
+        "taggedByAdmin": true,
+        "name": "Bloomberg",
+        "slug": "bloomberg",
+        "timesEncountered": 12
+      },
+      {
+        "taggedByAdmin": true,
+        "name": "Microsoft",
+        "slug": "microsoft",
+        "timesEncountered": 11
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "ZenMasterV",
+      "year": 2022,
+      "content": "Seems like too many of the  coding wunderkinds here lack basic reading comprehension skills \\n\" Please don\\'t post any solutions in this discussion tab\"\\nIt\\'s almost the rule to find the exact opposite for the discussion of every question. I don\\'t want to see your damned solution!",
+      "voteCount": 1318
+    },
+    {
+      "name": "PuppetMaster800",
+      "year": 2023,
+      "content": "More like longest palindromic nightmare",
+      "voteCount": 228
+    },
+    {
+      "name": "sanemdeepak",
+      "year": 2019,
+      "content": "For input \"ac\" test case is expecting \"a\" as output, how is just \"a\" a palindromic string?",
+      "voteCount": 178
+    },
+    {
+      "name": "swet_rajput",
+      "year": 2022,
+      "content": "It took me an hour to solve this even though it\\'s not that difficult but anyhow came to the conclusion that I need to do more practice.",
+      "voteCount": 131
+    },
+    {
+      "name": "napoleon",
+      "year": 2013,
+      "content": "My Solution Is Naive, It Cost O(n^2), Is there Any Solution faster?",
+      "voteCount": 102
+    },
+    {
+      "name": "neetika",
+      "year": 2014,
+      "content": "From the leetcode blog, one of the methods of solving this is:\\n\\nA common mistake:\\nSome people will be tempted to come up with a quick solution, which is unfortunately flawed (however can be corrected easily):\\n\\nReverse S and become S\\u2019. Find the longest common substring between S and S\\u2019, which must also be the longest palindromic substring.\\nThis seemed to work, let\\u2019s see some examples below.\\n\\nFor example,\\nS = \\u201ccaba\\u201d, S\\u2019 = \\u201cabac\\u201d.\\nThe longest common substring between S and S\\u2019 is \\u201caba\\u201d, which is the answer.\\n\\nLet\\u2019s try another example:\\nS = \\u201cabacdfgdcaba\\u201d, S\\u2019 = \\u201cabacdgfdcaba\\u201d.\\nThe longest common substring between S and S\\u2019 is \\u201cabacd\\u201d. Clearly, this is not a valid palindrome.\\n\\n**We could see that the longest common substring method fails when there exists a reversed copy of a non-palindromic substring in some other part of S. To rectify this, each time we find a longest common substring candidate, we check if the substring\\u2019s indices are the same as the reversed substring\\u2019s original indices. If it is, then we attempt to update the longest palindrome found so far; if not, we skip this and find the next candidate.**\\n\\nIs this part correct? \\n\\nexample string: abcxycba\\nreverse string:  abcxycba\\n\\nThe substring indices are same as reversed string original indices and yet it is not a palindrome?",
+      "voteCount": 94
+    },
+    {
+      "name": "Hubro",
+      "year": 2023,
+      "content": "I\\'m getting \"Time Limit Exceeded\" with 141/141 testcases passed and \"Last Executed Input\" is:\\n\\n```\\ns =\\n```\\n\\nDid I break it?",
+      "voteCount": 47
+    },
+    {
+      "name": "84danie",
+      "year": 2016,
+      "content": "I submitted my solution, and received a Time Limit Exceeded on this test case:\\n\\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabcaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\\n\\nSo I copied and pasted the TC into a custom test case, and started to think about what I could tweak. However, I ended up accidentally hitting Run Code, but instead of getting a Time Limit Exceeded result, it passed:\\n\\n![0_1479079812693_upload-4af9e94c-2e53-4915-acf6-782780c7bf8b](/uploads/files/1479079813717-upload-4af9e94c-2e53-4915-acf6-782780c7bf8b.png) \\n\\nIs this supposed to happen and I just need to make my code more efficient, or is this a bug? \\n![0_1479079956817_upload-1ef15826-d6e6-4bde-9c06-eb597c5c8d0e](/uploads/files/1479079957639-upload-1ef15826-d6e6-4bde-9c06-eb597c5c8d0e.png)",
+      "voteCount": 44
+    },
+    {
+      "name": "Vinitajain",
+      "year": 2022,
+      "content": "Hi All,\\nI have a test case which is failing, but I feel the testcase result is incorrect.Please refer the screenshot below.\\n![image](https://assets.leetcode.com/users/images/e9e42efb-63d5-4cfa-b420-f1926674f6dc_1654838015.8394327.png)\\n\\nThe longest palindromic substring is \"aaca\" but the test case result is \"aca\". Anyone else faced this problem?",
+      "voteCount": 31
+    },
+    {
+      "name": "mikler",
+      "year": 2017,
+      "content": "So I think I finally understood logic of test creators. \\nEven if you write a classical DP or memorization solution for this one you will timeout on latest tests.\\nI think they consider it edge cases. Because if you add one simple line it will pass! OMG. \\nI have leet code for this. Instead of solving problems I spend hours optimizing the constants.\\n\\nif s == s[::-1]: return s",
+      "voteCount": 27
+    }
+  ]
+}

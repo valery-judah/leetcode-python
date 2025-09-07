@@ -1,0 +1,118 @@
+{
+  "category": "",
+  "id": "917",
+  "name": "Reverse Only Letters",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/reverse-only-letters/",
+  "slug": "reverse-only-letters",
+  "isPaidOnly": false,
+  "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Faulty Keyboard",
+      "difficulty": "Easy",
+      "slug": "faulty-keyboard"
+    }
+  ],
+  "questionId": "953",
+  "questionFrontendId": "917",
+  "title": "Reverse Only Letters",
+  "titleSlug": "reverse-only-letters",
+  "content": "<p>Given a string <code>s</code>, reverse the string according to the following rules:</p>\n\n<ul>\n\t<li>All the characters that are not English letters remain in the same position.</li>\n\t<li>All the English letters (lowercase or uppercase) should be reversed.</li>\n</ul>\n\n<p>Return <code>s</code><em> after reversing it</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> s = \"ab-cd\"\n<strong>Output:</strong> \"dc-ba\"\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> s = \"a-bC-dEf-ghIj\"\n<strong>Output:</strong> \"j-Ih-gfE-dCba\"\n</pre><p><strong class=\"example\">Example 3:</strong></p>\n<pre><strong>Input:</strong> s = \"Test1ng-Leet=code-Q!\"\n<strong>Output:</strong> \"Qedo1ct-eeLg=ntse-T!\"\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 100</code></li>\n\t<li><code>s</code> consists of characters with ASCII values in the range <code>[33, 122]</code>.</li>\n\t<li><code>s</code> does not contain <code>&#39;\\&quot;&#39;</code> or <code>&#39;\\\\&#39;</code>.</li>\n</ul>\n",
+  "likes": 2388,
+  "dislikes": 81,
+  "stats": {
+    "totalAccepted": "289.5K",
+    "totalSubmission": "430.2K",
+    "totalAcceptedRaw": 289510,
+    "totalSubmissionRaw": 430241,
+    "acRate": "67.3%"
+  },
+  "topicTags": [
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "metaData": {
+    "name": "reverseOnlyLetters",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "string"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "YusenPeng",
+      "year": 2022,
+      "content": "Hint: Why not try stack? Last-in, first-out:)",
+      "voteCount": 20
+    },
+    {
+      "name": "backendkolawole",
+      "year": 2023,
+      "content": "Nothing easy about this problem\\n",
+      "voteCount": 11
+    },
+    {
+      "name": "santanu99",
+      "year": 2022,
+      "content": "Hint: Two pointer solution.",
+      "voteCount": 11
+    },
+    {
+      "name": "akshatv1420",
+      "year": 2023,
+      "content": "If you know how to use two pointer then this is an easy problem",
+      "voteCount": 7
+    },
+    {
+      "name": "Mitru",
+      "year": 2024,
+      "content": "alphabet string if you need it:\\n\"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\"",
+      "voteCount": 2
+    },
+    {
+      "name": "Satansoft",
+      "year": 2024,
+      "content": "1. Two pointers is simplest way to solve;\\n2. Maybe working with an array is more comfortable and faster in a language you\\'re using than with a string;\\n3. RegExp example for cheking that character is letter, it might me helpful for someone: `/[a-zA-Z]/`",
+      "voteCount": 2
+    },
+    {
+      "name": "ephrem-ketachew",
+      "year": 2025,
+      "content": "similar to 345. Reverse Vowels of a String\\nin my case i only modified 2 lines of if statements",
+      "voteCount": 1
+    },
+    {
+      "name": "overflowstackdeveloper",
+      "year": 2025,
+      "content": "Traverse the string from the front till it pointe to an alphabet and traverse from back till it is also pointing to an alphabet.\\n\\nIf they are pointing character between [33, 122] reverse them.\\n\\nHint: Two pointer problem\\n\\nSimilar problem: Check valid palindrome.",
+      "voteCount": 1
+    },
+    {
+      "name": "chetannada",
+      "year": 2024,
+      "content": "I hope this Testcases will helps you!\\n\\n```\\n\"z-12#0+_)dsf\"\\n\"fgdngfhjh.,hd=--+-9989843kj%$3gfdfsh\"\\n\"ggsad#@@!4tgre341$#%^hgfbg=-=-0230590dffd904390-034-;fdgfhhfg\"\\n\"sdfdsTR44-LdsfdsfDFeet====-0)codsfdsfde-Q!@##@$%sdfsdfdsfdsf3#@$dsf\"\\n\"sdfdsddsf>,dsfdsFDSfsdf324TR44-LdsfdsfDFeet====-0)codsfdsfde-Q!@##@$%sdfsdfdsfdsf3#@$dsf\"\\n\"arwegrehfdgfdgsd%$#dsffsdfhfd%$fgags-sdsdg=sdgsg===sgdsdgsd-dgdsgf-ghsdgdsggsgdIj\"\\n\"sagtreyty4353466867gvbnghdfg=-fgdg9gf8gf67gf=gf09se88zxnfdhhdfgg4543545sg435df3545dIj\"\\n\"fghfg9gf8=-gfdgfd453f67gf=gf09se88zxnfdhhdfgg=--=-=fgdgfd0-0f)sg4=-=205043d435fgf435Ij\"\\n```",
+      "voteCount": 1
+    },
+    {
+      "name": "Tulika56",
+      "year": 2025,
+      "content": "if u know two pointer then this ques is super easyy\\n!",
+      "voteCount": 0
+    }
+  ]
+}

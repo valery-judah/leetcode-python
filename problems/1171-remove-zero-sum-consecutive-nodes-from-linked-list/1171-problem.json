@@ -1,0 +1,118 @@
+{
+  "category": "",
+  "id": "1171",
+  "name": "Remove Zero Sum Consecutive Nodes from Linked List",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/",
+  "slug": "remove-zero-sum-consecutive-nodes-from-linked-list",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "Linked List"
+  ],
+  "similar_questions": [
+    {
+      "title": "Delete N Nodes After M Nodes of a Linked List",
+      "difficulty": "Easy",
+      "slug": "delete-n-nodes-after-m-nodes-of-a-linked-list"
+    }
+  ],
+  "questionId": "1267",
+  "questionFrontendId": "1171",
+  "title": "Remove Zero Sum Consecutive Nodes from Linked List",
+  "titleSlug": "remove-zero-sum-consecutive-nodes-from-linked-list",
+  "content": "<p>Given the <code>head</code> of a linked list, we repeatedly delete consecutive sequences of nodes that sum to <code>0</code> until there are no such sequences.</p>\r\n\r\n<p>After doing so, return the head of the final linked list.&nbsp; You may return any such answer.</p>\r\n\n<p>&nbsp;</p>\n<p>(Note that in the examples below, all sequences are serializations of <code>ListNode</code> objects.)</p>\n\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> head = [1,2,-3,3,1]\n<strong>Output:</strong> [3,1]\n<strong>Note:</strong> The answer [1,2,1] would also be accepted.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> head = [1,2,3,-3,4]\n<strong>Output:</strong> [1,2,4]\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> head = [1,2,3,-3,-2]\n<strong>Output:</strong> [1]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The given linked list will contain between <code>1</code> and <code>1000</code> nodes.</li>\n\t<li>Each node in the linked list has <code>-1000 &lt;= node.val &lt;= 1000</code>.</li>\n</ul>\n",
+  "likes": 3449,
+  "dislikes": 224,
+  "stats": {
+    "totalAccepted": "180.4K",
+    "totalSubmission": "340.8K",
+    "totalAcceptedRaw": 180447,
+    "totalSubmissionRaw": 340762,
+    "acRate": "53.0%"
+  },
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Linked List",
+      "slug": "linked-list"
+    }
+  ],
+  "metaData": {
+    "name": "removeZeroSumSublists",
+    "params": [
+      {
+        "name": "head",
+        "type": "ListNode"
+      }
+    ],
+    "return": {
+      "type": "ListNode"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "HaoTLee",
+      "year": 2024,
+      "content": "Tip: DO NOT follow the hints",
+      "voteCount": 323
+    },
+    {
+      "name": "StefanelStan",
+      "year": 2024,
+      "content": "1. Compute a prefix sum and store it in a map<int, node>\n2. For current node value, does sum exist in map? If yes, then the nodes between that mapped node and current can be eliminated.\n\nEg: 1,2,3,-3. Prefix sum = 1,3,6,3. At the 3rd index, (-3) the map already contains 3, so the nodes from index 2 until 3 can be eliminated because their sum is 0.",
+      "voteCount": 59
+    },
+    {
+      "name": "austinlimanek",
+      "year": 2024,
+      "content": "Don\\'t the hints go against the point of the question? I have a feeling that most interviewers would expect a candidate to word directly with LinkedLists and not an intermediate array representation.",
+      "voteCount": 56
+    },
+    {
+      "name": "DevOgabek",
+      "year": 2024,
+      "content": "To solve this problem, we can utilize a hashmap to keep track of the running sum as we traverse the linked list. If we encounter the same sum again, it means that the elements between the two occurrences sum to 0. We can then remove those elements from the linked list. We\\'ll also need to handle the edge case where the sum from the beginning of the list to the current node equals 0.",
+      "voteCount": 47
+    },
+    {
+      "name": "alvin480",
+      "year": 2024,
+      "content": "This doesn\\'t feel like a medium question for someone who never seen something similar before",
+      "voteCount": 44
+    },
+    {
+      "name": "DevOgabek",
+      "year": 2024,
+      "content": "### Useful test cases:\\n```\\n[-40, 40, 9, -2, 4]\\n[24, -38, -38, -6, 19]\\n[-11, -14, -40, -1, 30]\\n[1, -36, 14, -27, -29]\\n[30, -13, 32, -36, -1]",
+      "voteCount": 35
+    },
+    {
+      "name": "ttaylor27",
+      "year": 2024,
+      "content": "We can use **Prefix Sum** + **Hash Table** to achieve `O(N)` time.\nA similar problem that uses this relative logic is [560. Subarray Sum Equals K (Medium)](https://leetcode.com/problems/subarray-sum-equals-k/description/) although coming to an `O(N)` solution in that problem is difficult.",
+      "voteCount": 25
+    },
+    {
+      "name": "anwendeng",
+      "year": 2024,
+      "content": "Use hash table to record mp[prefix_sum]=current_node\nHave a nice day.\nIn fact mp could be an array, at best a native static array",
+      "voteCount": 22
+    },
+    {
+      "name": "abhinav_singh22",
+      "year": 2019,
+      "content": "When you run `[1, 2, 3, 4, -10, 1, 3, -3]` as custom test case, the expected answer shows: `[1,3,-3]` which is wrong.\\n\\nEdit: The test cases are fixed now.",
+      "voteCount": 19
+    },
+    {
+      "name": "DevOgabek",
+      "year": 2024,
+      "content": "### Code for create test cases:\\n```\\nimport random\\n\\ndef create_demo_lists(list_length, num_lists, min_value, max_value):\\n    demo_lists = []\\n\\n    for _ in range(num_lists):\\n        new_list = [random.randint(min_value, max_value) for _ in range(list_length)]\\n        demo_lists.append(new_list)\\n\\n    return demo_lists\\n\\nlist_length = int(input(\"Enter the length of each list: \"))\\nnum_lists = int(input(\"Enter the number of lists: \"))\\nmin_value = int(input(\"Enter the minimum value for elements: \"))\\nmax_value = int(input(\"Enter the maximum value for elements: \"))\\n\\nresult_lists = create_demo_lists(list_length, num_lists, min_value, max_value)\\n\\nprint(\"Demo Lists:\")\\nfor demo_list in result_lists:\\n    print(demo_list)",
+      "voteCount": 14
+    }
+  ]
+}

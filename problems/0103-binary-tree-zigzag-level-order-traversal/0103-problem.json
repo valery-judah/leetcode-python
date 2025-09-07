@@ -1,0 +1,139 @@
+{
+  "category": "",
+  "id": "103",
+  "name": "Binary Tree Zigzag Level Order Traversal",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/",
+  "slug": "binary-tree-zigzag-level-order-traversal",
+  "isPaidOnly": false,
+  "tags": [
+    "Tree",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Binary Tree Level Order Traversal",
+      "difficulty": "Medium",
+      "slug": "binary-tree-level-order-traversal"
+    },
+    {
+      "title": "Zigzag Grid Traversal With Skip",
+      "difficulty": "Easy",
+      "slug": "zigzag-grid-traversal-with-skip"
+    }
+  ],
+  "questionId": "103",
+  "questionFrontendId": "103",
+  "title": "Binary Tree Zigzag Level Order Traversal",
+  "titleSlug": "binary-tree-zigzag-level-order-traversal",
+  "content": "<p>Given the <code>root</code> of a binary tree, return <em>the zigzag level order traversal of its nodes&#39; values</em>. (i.e., from left to right, then right to left for the next level and alternate between).</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/02/19/tree1.jpg\" style=\"width: 277px; height: 302px;\" />\n<pre>\n<strong>Input:</strong> root = [3,9,20,null,null,15,7]\n<strong>Output:</strong> [[3],[20,9],[15,7]]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> root = [1]\n<strong>Output:</strong> [[1]]\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> root = []\n<strong>Output:</strong> []\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of nodes in the tree is in the range <code>[0, 2000]</code>.</li>\n\t<li><code>-100 &lt;= Node.val &lt;= 100</code></li>\n</ul>\n",
+  "likes": 11672,
+  "dislikes": 338,
+  "stats": {
+    "totalAccepted": "1.6M",
+    "totalSubmission": "2.5M",
+    "totalAcceptedRaw": 1583272,
+    "totalSubmissionRaw": 2540680,
+    "acRate": "62.3%"
+  },
+  "topicTags": [
+    {
+      "name": "Tree",
+      "slug": "tree"
+    },
+    {
+      "name": "Breadth-First Search",
+      "slug": "breadth-first-search"
+    },
+    {
+      "name": "Binary Tree",
+      "slug": "binary-tree"
+    }
+  ],
+  "metaData": {
+    "name": "zigzagLevelOrder",
+    "params": [
+      {
+        "name": "root",
+        "type": "TreeNode"
+      }
+    ],
+    "return": {
+      "type": "list<list<integer>>",
+      "dealloc": true
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 18
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "thisannie",
+      "year": 2023,
+      "content": "Started this week with :**I am freaking Genius!**\\nAnd ending it with :**back to being dumb**.",
+      "voteCount": 196
+    },
+    {
+      "name": "thisannie",
+      "year": 2023,
+      "content": "Leetcode be like*\\nEnough Trees, let\\'s give them forest now.",
+      "voteCount": 171
+    },
+    {
+      "name": "Amitdahiya08",
+      "year": 2023,
+      "content": "Do they need to pay more ,if they provide some good examples",
+      "voteCount": 162
+    },
+    {
+      "name": "blursh",
+      "year": 2014,
+      "content": "It seems like the solution can be obtained by just manipulating the answer from the level order question.",
+      "voteCount": 82
+    },
+    {
+      "name": "AlecLC",
+      "year": 2023,
+      "content": "# <span style=\\'color:green\\'>Hint</span>\\n\\n### BFS\\n![](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/solutions/461703/Figures/103/103_BFS.png)\\n![](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/solutions/461703/Figures/103/103_deque.png)\\n\\n### DFS\\n![](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/solutions/461703/Figures/103/103_DFS.png)",
+      "voteCount": 58
+    },
+    {
+      "name": "n_jafr",
+      "year": 2014,
+      "content": "Input:\\t{1,2,3,4,#,#,5}\\nOutput:\\t[[1],[3,2],[5,4]]\\nExpected: [[1],[3,2],[4,5]]",
+      "voteCount": 43
+    },
+    {
+      "name": "raymondzheng98",
+      "year": 2023,
+      "content": "even the medium questions are suspiciously easy.",
+      "voteCount": 37
+    },
+    {
+      "name": "Maninder_4",
+      "year": 2023,
+      "content": "Just do the level order traversal but at every odd level , reverse the output",
+      "voteCount": 36
+    },
+    {
+      "name": "Praddyumn",
+      "year": 2023,
+      "content": "Hint: You can use a combination of stack and queue for solving this problem.\\nUnlike BFS, where we directly push the children into the queue, here we can first push them into a stack and then push all the stack elements into the queue for the next level traversal.\\n\\nAlso keep a flag pointer to just check at every level, whether you need to go from left to right or right to left. Based on this flag, you decide whether you should push the left child first or the right child first.",
+      "voteCount": 35
+    },
+    {
+      "name": "JGARG",
+      "year": 2023,
+      "content": "[1,2,3,4,5]  in this test case output is  [[1],[3,2],[5,4]] . but expected is [[1],[3,2],[4,5]] why?",
+      "voteCount": 15
+    }
+  ]
+}

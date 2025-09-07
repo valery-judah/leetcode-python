@@ -1,0 +1,112 @@
+{
+  "category": "",
+  "id": "120",
+  "name": "Triangle",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/triangle/",
+  "slug": "triangle",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [],
+  "questionId": "120",
+  "questionFrontendId": "120",
+  "title": "Triangle",
+  "titleSlug": "triangle",
+  "content": "<p>Given a <code>triangle</code> array, return <em>the minimum path sum from top to bottom</em>.</p>\n\n<p>For each step, you may move to an adjacent number of the row below. More formally, if you are on index <code>i</code> on the current row, you may move to either index <code>i</code> or index <code>i + 1</code> on the next row.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> triangle = [[2],[3,4],[6,5,7],[4,1,8,3]]\n<strong>Output:</strong> 11\n<strong>Explanation:</strong> The triangle looks like:\n   <u>2</u>\n  <u>3</u> 4\n 6 <u>5</u> 7\n4 <u>1</u> 8 3\nThe minimum path sum from top to bottom is 2 + 3 + 5 + 1 = 11 (underlined above).\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> triangle = [[-10]]\n<strong>Output:</strong> -10\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= triangle.length &lt;= 200</code></li>\n\t<li><code>triangle[0].length == 1</code></li>\n\t<li><code>triangle[i].length == triangle[i - 1].length + 1</code></li>\n\t<li><code>-10<sup>4</sup> &lt;= triangle[i][j] &lt;= 10<sup>4</sup></code></li>\n</ul>\n\n<p>&nbsp;</p>\n<strong>Follow up:</strong> Could you&nbsp;do this using only <code>O(n)</code> extra space, where <code>n</code> is the total number of rows in the triangle?",
+  "likes": 10222,
+  "dislikes": 585,
+  "stats": {
+    "totalAccepted": "1.1M",
+    "totalSubmission": "1.8M",
+    "totalAcceptedRaw": 1060763,
+    "totalSubmissionRaw": 1787555,
+    "acRate": "59.3%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "metaData": {
+    "name": "minimumTotal",
+    "params": [
+      {
+        "name": "triangle",
+        "type": "list<list<integer>>"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "shAdow2654",
+      "year": 2019,
+      "content": "\\nInput: [[-1],[2,3],[1,-1,-3]]\\nOutput: -2\\nExpected: -1\\n**The correct ans acc to me is -1 + 2 -3 = -2\\nBut Expected answer is -1.**\\n*How this is possible???*",
+      "voteCount": 180
+    },
+    {
+      "name": "flag_smasher",
+      "year": 2021,
+      "content": "Lets understand with an example.\\nSuppose, the triangle looks like this.\\n\\n2\\n2 3\\n5 6 7\\n2 4 3 1\\n\\nWe can only move to the adjascent nodes in the next line. From 3 we can go to 6/7 not 5.\\nSo the approach is to re-calculate the triangle.\\nNow how?\\nJust see the first element 2. There is nothing before 2 so we will calculate from the 2nd line.\\nfor next 2 there is the 2 of first line is only adjascent. so 2+2=4. So make triangle[1][0]=4.\\nAnd for 3 it becomes 5.\\nSo,the triangle is now like\\n2\\n4 5\\n5 6 7\\n2 4 3 1\\n\\nSame way for triangle[3][1] 6 has two adjascent elements. So we will take the smaller sum.\\n6+4<6+5.\\n\\nUltimately the triangle becomes\\n2\\n4 5\\n9 10 12\\n11 13 13 13\\nnotice last elements of a line has only one adjascent elements.\\nSo, answer is the samllest element of last line.\\n\\nTry it first. If you still don\\'t get it. See the code.\\nhttps://github.com/Shuvro-d/Leetcode-solutions\\n\\nThere is nothing wrong in watching solutions......Happy Coding.....",
+      "voteCount": 79
+    },
+    {
+      "name": "bladderoverflow",
+      "year": 2013,
+      "content": "if we choose index=2 in second row, the range to choose in 3rd row is {2, 3} or {1,2,3} ?\\n\\nmathematically {1,2,3} make sense, \\n\\nbut in a (left right balanced) triangle showing in the question, seems only {2,3} is visually adjacent.",
+      "voteCount": 52
+    },
+    {
+      "name": "K_Le_Viking",
+      "year": 2024,
+      "content": "Here are some testcases for you guys ! :\\n```\\n[[2],[3,4],[6,5,7],[4,1,8,3]]\\n[[-10]]\\n[[0]]\\n[[0], [0, 0]]\\n[[2],[-3,4],[100,99,7],[4,1,-8,3]]\\n[[3],[3,3],[3,3,3],[3,3,3,3],[3,3,3,3,3],[3,3,3,3,3,3],[3,3,3,3,3,0,3]]\\n```",
+      "voteCount": 43
+    },
+    {
+      "name": "AshutoshPatel028",
+      "year": 2023,
+      "content": "Guys don\\'t get confused by seeing pyramid triangular pattern its actually like this:\\n2\\n34\\n657\\n4183\\nfor input:[[2],[3,4],[6,5,7],[4,1,8,3]]\\nwe can more either i or (i+1) of next row if we start from (0,0)",
+      "voteCount": 34
+    },
+    {
+      "name": "vy7Sun",
+      "year": 2015,
+      "content": "          -1\\n      2       3\\n    1     -1     -3\\n\\nWhy I feel the shortest path would be -1, 2, -1 = 0, but the expected answer is -1 according to the submission ?",
+      "voteCount": 33
+    },
+    {
+      "name": "f20200445",
+      "year": 2023,
+      "content": "Why is this giving TLE only for last testcase? I could do the tabulation solution but memoization is giving me TLE.",
+      "voteCount": 18
+    },
+    {
+      "name": "pritijha24",
+      "year": 2020,
+      "content": "Test Case:-        [[-1],[2,3],[1,-1,-3]]\\n\\nAnswer Expected :- -1\\n\\nBut Answer Should be -1+2+(-3)=-2     \\n\\nAm I wrong somewhere?",
+      "voteCount": 18
+    },
+    {
+      "name": "rick21",
+      "year": 2017,
+      "content": "I think we can come out -2 by selecting \\nLevel 0: 0 (-1)\\nLevel 1: 1 (2)\\nLevel 2: 0 (-3)\\nmin = -1 + 2 + (-3) = -2",
+      "voteCount": 14
+    },
+    {
+      "name": "LeetCode",
+      "year": 2022,
+      "content": "This problem is the Daily LeetCoding Challenge for June, Day 13.\n\nFeel free to share anything related to this problem here!\n\nYou can ask questions, discuss what you've learned from this problem, or show off how many days of streak you've made!\n\n---\n\nIf you'd like to share a detailed solution to the problem, please create a new post in the discuss section and provide\n- **Detailed Explanations**: Describe the algorithm you used to solve this problem. Include any insights you used to solve this problem.\n- **Images** that help explain the algorithm.\n- **Language and Code** you used to pass the problem.\n- **Time and Space complexity analysis**.\n\n---\n\n  **\ud83d\udccc Do you want to learn the problem thoroughly?**\n  Read [**\u2b50  LeetCode Official Solution\u2b50**](https://leetcode.com/problems/triangle/solution) to learn the 3 approaches to the problem with detailed explanations to the algorithms, codes, and complexity analysis.\n  <details>\n  <summary> Spoiler Alert! We'll explain these 4 approaches in the official solution</summary>\n\n  \n**Approach 1:** Dynamic Programming (Bottom-up: In-place)\n\n  \n**Approach 2:** Dynamic Programming (Bottom-up: Auxiliary Space)\n\n  \n**Approach 3:** Dynamic Programming (Bottom-up: Flip Triangle Upside Down)\n\n  \n**Approach 4:** Memoization (Top-Down)\n\n  \n</details>\n\n\n\nIf you're new to Daily LeetCoding Challenge, [**check out this post**](https://leetcode.com/discuss/general-discussion/655704/)!\n\n\n---\n\n<br>\n\n<p align=\"center\">\n<a href=\"https://leetcode.com/subscribe/?ref=ex_dc\" target=\"_blank\">\n  <img src=\"https://assets.leetcode.com/static_assets/marketing/daily_leetcoding_banner.png\" width=\"560px\" />\n</a>\n</p>\n\n<br>",
+      "voteCount": 12
+    }
+  ]
+}

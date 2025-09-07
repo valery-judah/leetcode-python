@@ -1,0 +1,195 @@
+{
+  "category": "",
+  "id": "253",
+  "name": "Meeting Rooms II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/meeting-rooms-ii/",
+  "slug": "meeting-rooms-ii",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Merge Intervals",
+      "difficulty": "Medium",
+      "slug": "merge-intervals"
+    },
+    {
+      "title": "Meeting Rooms",
+      "difficulty": "Easy",
+      "slug": "meeting-rooms"
+    },
+    {
+      "title": "Minimum Number of Arrows to Burst Balloons",
+      "difficulty": "Medium",
+      "slug": "minimum-number-of-arrows-to-burst-balloons"
+    },
+    {
+      "title": "Car Pooling",
+      "difficulty": "Medium",
+      "slug": "car-pooling"
+    },
+    {
+      "title": "Number of Flowers in Full Bloom",
+      "difficulty": "Hard",
+      "slug": "number-of-flowers-in-full-bloom"
+    },
+    {
+      "title": "Meeting Rooms III",
+      "difficulty": "Hard",
+      "slug": "meeting-rooms-iii"
+    },
+    {
+      "title": "Total Cost to Hire K Workers",
+      "difficulty": "Medium",
+      "slug": "total-cost-to-hire-k-workers"
+    },
+    {
+      "title": "Points That Intersect With Cars",
+      "difficulty": "Easy",
+      "slug": "points-that-intersect-with-cars"
+    }
+  ],
+  "questionId": "253",
+  "questionFrontendId": "253",
+  "title": "Meeting Rooms II",
+  "titleSlug": "meeting-rooms-ii",
+  "content": "<p>Given an array of meeting time intervals <code>intervals</code> where <code>intervals[i] = [start<sub>i</sub>, end<sub>i</sub>]</code>, return <em>the minimum number of conference rooms required</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> intervals = [[0,30],[5,10],[15,20]]\n<strong>Output:</strong> 2\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> intervals = [[7,10],[2,4]]\n<strong>Output:</strong> 1\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;=&nbsp;intervals.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>0 &lt;= start<sub>i</sub> &lt; end<sub>i</sub> &lt;= 10<sup>6</sup></code></li>\n</ul>\n",
+  "likes": 7161,
+  "dislikes": 174,
+  "stats": {
+    "totalAccepted": "1.1M",
+    "totalSubmission": "2.1M",
+    "totalAcceptedRaw": 1081247,
+    "totalSubmissionRaw": 2068852,
+    "acRate": "52.3%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    },
+    {
+      "name": "Sorting",
+      "slug": "sorting"
+    },
+    {
+      "name": "Heap (Priority Queue)",
+      "slug": "heap-priority-queue"
+    },
+    {
+      "name": "Prefix Sum",
+      "slug": "prefix-sum"
+    }
+  ],
+  "metaData": {
+    "name": "minMeetingRooms",
+    "params": [
+      {
+        "name": "intervals",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 29
+      },
+      {
+        "taggedByAdmin": true,
+        "name": "Google",
+        "slug": "google",
+        "timesEncountered": 21
+      },
+      {
+        "taggedByAdmin": true,
+        "name": "Meta",
+        "slug": "facebook",
+        "timesEncountered": 14
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "aefimov",
+      "year": 2020,
+      "content": "Task not declared clearly for end and start time of different events can be same.\\nThis is confused for comparing to find free slot. For example for times [1, 13], [13, 14] at time 13 both slots are used but \\'right solution\\' is to take end time exclused. Correct time intervals is [1, 13), and [13, 14).",
+      "voteCount": 82
+    },
+    {
+      "name": "bahbahojo",
+      "year": 2016,
+      "content": "Question seems really hard to me. I mean I get it but how many people would have gotten it in a typical 45 min interview setting?",
+      "voteCount": 51
+    },
+    {
+      "name": "kritikm",
+      "year": 2023,
+      "content": "Is it me, who just hates meeting rooms and course schedule type questions?",
+      "voteCount": 21
+    },
+    {
+      "name": "juin0223",
+      "year": 2019,
+      "content": "I can understand most of other problems. But I feel this it\\'s very hard to understand this one even with the answer. It\\'s not very intuitive. what\\'s wrong with me or what\\'s wrong with this problem. Can any one have a very intuitive explanation on this?\\n",
+      "voteCount": 18
+    },
+    {
+      "name": "erlichBachman21",
+      "year": 2023,
+      "content": "My brain hurts....",
+      "voteCount": 9
+    },
+    {
+      "name": "icarussonic",
+      "year": 2024,
+      "content": "I think this is the description should be improved. Are interval [13,15] and [1,13] are considered overlapping? If we interpret 13 as a segment of time, like \\'the 13-th hour in a day\\', those intervals are considered overlapping and we need two rooms for them. Or, we can interpret 13 as a point in the time, like \\'1 PM\\'. Then those intervals are not considered overlapping and we need only one room for them. The description should be clarified with this situation. Obviously, the test cases take the second interpretation.",
+      "voteCount": 5
+    },
+    {
+      "name": "zhiminqiu",
+      "year": 2020,
+      "content": "Can we use the same solution in leetcode 56 \"merge intervals\"?",
+      "voteCount": 4
+    },
+    {
+      "name": "crazyphotonzz",
+      "year": 2019,
+      "content": "I am struggling to comprehend the way we are sorting the array in the greedy approach.\\nWhy are we sorting based on the start time and not by the end time?\\n\\nThanks!",
+      "voteCount": 4
+    },
+    {
+      "name": "sudamini",
+      "year": 2023,
+      "content": "This is not a medium problem, it should be categorized as \\'easy\\'",
+      "voteCount": 3
+    },
+    {
+      "name": "rmn",
+      "year": 2016,
+      "content": "That's all I wanted to say",
+      "voteCount": 3
+    }
+  ]
+}

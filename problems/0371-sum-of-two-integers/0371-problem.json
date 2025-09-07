@@ -1,0 +1,83 @@
+{
+  "category": "",
+  "id": "371",
+  "name": "Sum of Two Integers",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/sum-of-two-integers/",
+  "slug": "sum-of-two-integers",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Bit Manipulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Add Two Numbers",
+      "slug": "add-two-numbers",
+      "id": null,
+      "leetcode_url": "https://leetcode.com/problems/add-two-numbers/"
+    }
+  ],
+  "discussion_posts": [
+    {
+      "name": "kainster",
+      "year": 2016,
+      "content": "If anyone asks me this question in an interview, I won't be willing to work with him/her.",
+      "voteCount": 708
+    },
+    {
+      "name": "CanOrhan",
+      "year": 2019,
+      "content": "I used the += operator.",
+      "voteCount": 693
+    },
+    {
+      "name": "Aakarsh_1504",
+      "year": 2024,
+      "content": "Eat food without opening your mouth",
+      "voteCount": 306
+    },
+    {
+      "name": "chinmay6",
+      "year": 2016,
+      "content": "(a + b) = log(e^a * e^b)",
+      "voteCount": 188
+    },
+    {
+      "name": "zeeshank03",
+      "year": 2021,
+      "content": "![image](https://assets.leetcode.com/users/images/c2e91add-95d5-44ef-8dc1-85d0e25219ad_1620502855.803335.png)\\n",
+      "voteCount": 128
+    },
+    {
+      "name": "iamvucms",
+      "year": 2019,
+      "content": "return sum([a,b])",
+      "voteCount": 80
+    },
+    {
+      "name": "yuangaonyc",
+      "year": 2023,
+      "content": "No matter how many times I\\'ve looked at the solution, I have to relearn this problem every time I see it. ",
+      "voteCount": 61
+    },
+    {
+      "name": "nguoi_em_xom_dao",
+      "year": 2021,
+      "content": "return log10(pow(10,a)*pow(10,b));",
+      "voteCount": 30
+    },
+    {
+      "name": "LieBeARV",
+      "year": 2024,
+      "content": "A moment of silence for those who didn\\'t solve it beforehand and  got in the interview!",
+      "voteCount": 22
+    },
+    {
+      "name": "lcgtfo",
+      "year": 2020,
+      "content": "1) System Design :- Design like camelcamelcamel.com service\\n2) Technical round :-  a) Anagram  b) Verify Alian Dictionary\\n3) Technical round  :- a) https://leetcode.com/problems/minimum-window-substring/\\n                                     b)https://leetcode.com/problems/island-perimeter/\\n4)Technical Round   a) Complete Binary Tree\\n\\t\\t\\t\\t\\t\\t\\t\\t  b) https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/\\n5) Behavioral questions",
+      "voteCount": 22
+    }
+  ]
+}

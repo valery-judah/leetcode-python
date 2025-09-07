@@ -1,0 +1,411 @@
+{
+  "version": 1,
+  "updated": "2025-09-04",
+  "phases": [
+    "clarify",
+    "plan",
+    "code",
+    "test",
+    "optimize"
+  ],
+  "categories": [
+    {
+      "id": "REQ",
+      "name": "Requirements & Understanding"
+    },
+    {
+      "id": "APP",
+      "name": "Approach & DS/Algorithm Choice"
+    },
+    {
+      "id": "CMP",
+      "name": "Complexity & Performance"
+    },
+    {
+      "id": "BUG",
+      "name": "Implementation Bugs"
+    },
+    {
+      "id": "EDG",
+      "name": "Edge Cases & Correctness"
+    },
+    {
+      "id": "TST",
+      "name": "Testing & Validation"
+    },
+    {
+      "id": "QLT",
+      "name": "Code Quality & Maintainability"
+    }
+  ],
+  "items": [
+    {
+      "code": "REQ-01",
+      "category": "REQ",
+      "phase": "clarify",
+      "label": "Misread constraints",
+      "desc": "Overlooked or misinterpreted explicit constraints (n, value ranges, duplicates).",
+      "severity": "high"
+    },
+    {
+      "code": "REQ-02",
+      "category": "REQ",
+      "phase": "clarify",
+      "label": "Wrong IO spec",
+      "desc": "Incorrect function signature, return type, or output ordering.",
+      "severity": "high"
+    },
+    {
+      "code": "REQ-03",
+      "category": "REQ",
+      "phase": "clarify",
+      "label": "Bounds not asked",
+      "desc": "Failed to ask about input size, ranges, or memory limits.",
+      "severity": "medium"
+    },
+    {
+      "code": "REQ-04",
+      "category": "REQ",
+      "phase": "clarify",
+      "label": "Mutation assumption wrong",
+      "desc": "Assumed you could or could not mutate inputs without clarifying.",
+      "severity": "medium"
+    },
+    {
+      "code": "REQ-05",
+      "category": "REQ",
+      "phase": "clarify",
+      "label": "Structure misclassified",
+      "desc": "Treated a graph as a tree, or ignored cycles / direction / weights.",
+      "severity": "high"
+    },
+    {
+      "code": "REQ-06",
+      "category": "REQ",
+      "phase": "clarify",
+      "label": "Duplicates/uniqueness wrong",
+      "desc": "Assumed unique elements or distinct keys incorrectly.",
+      "severity": "medium"
+    },
+    {
+      "code": "REQ-07",
+      "category": "REQ",
+      "phase": "clarify",
+      "label": "Stream vs static",
+      "desc": "Assumed all data is available upfront when it is a stream, or vice versa.",
+      "severity": "medium"
+    },
+    {
+      "code": "REQ-08",
+      "category": "REQ",
+      "phase": "clarify",
+      "label": "Overflow/precision unconsidered",
+      "desc": "Did not confirm numeric ranges or precision requirements.",
+      "severity": "medium"
+    },
+    {
+      "code": "APP-01",
+      "category": "APP",
+      "phase": "plan",
+      "label": "Wrong data structure",
+      "desc": "Chose a DS that complicates operations or violates constraints.",
+      "severity": "high"
+    },
+    {
+      "code": "APP-02",
+      "category": "APP",
+      "phase": "plan",
+      "label": "Missed sorting unlock",
+      "desc": "Did not sort to enable two-pointers, sweep line, or greedy.",
+      "severity": "medium"
+    },
+    {
+      "code": "APP-03",
+      "category": "APP",
+      "phase": "plan",
+      "label": "Missed precomputation",
+      "desc": "Ignored prefix/suffix sums, diffs, frequency maps, or caching.",
+      "severity": "medium"
+    },
+    {
+      "code": "APP-04",
+      "category": "APP",
+      "phase": "plan",
+      "label": "Missed graph model",
+      "desc": "Failed to model as a graph when relationships imply edges.",
+      "severity": "medium"
+    },
+    {
+      "code": "APP-05",
+      "category": "APP",
+      "phase": "plan",
+      "label": "Greedy invariant wrong",
+      "desc": "Claimed a greedy rule without a valid invariant or proof sketch.",
+      "severity": "high"
+    },
+    {
+      "code": "APP-06",
+      "category": "APP",
+      "phase": "plan",
+      "label": "DP state wrong",
+      "desc": "State/transition do not cover cases or violate optimal substructure.",
+      "severity": "high"
+    },
+    {
+      "code": "APP-07",
+      "category": "APP",
+      "phase": "plan",
+      "label": "Binary search on answer missed",
+      "desc": "Overlooked monotone feasibility enabling answer-space search.",
+      "severity": "medium"
+    },
+    {
+      "code": "APP-08",
+      "category": "APP",
+      "phase": "plan",
+      "label": "Overengineering",
+      "desc": "Used advanced DS/algorithms when a simpler approach suffices.",
+      "severity": "low"
+    },
+    {
+      "code": "CMP-01",
+      "category": "CMP",
+      "phase": "plan",
+      "label": "Time over budget",
+      "desc": "Asymptotic time exceeds constraints or typical judge limits.",
+      "severity": "high"
+    },
+    {
+      "code": "CMP-02",
+      "category": "CMP",
+      "phase": "plan",
+      "label": "Space over budget",
+      "desc": "Auxiliary space growth violates constraints.",
+      "severity": "high"
+    },
+    {
+      "code": "CMP-03",
+      "category": "CMP",
+      "phase": "plan",
+      "label": "Pathological worst-case ignored",
+      "desc": "Design fails on adversarial inputs (e.g., degenerate trees, repeated keys).",
+      "severity": "medium"
+    },
+    {
+      "code": "CMP-04",
+      "category": "CMP",
+      "phase": "plan",
+      "label": "Unnecessary passes",
+      "desc": "Multiple full scans where one suffices.",
+      "severity": "low"
+    },
+    {
+      "code": "CMP-05",
+      "category": "CMP",
+      "phase": "plan",
+      "label": "Recursion depth risk",
+      "desc": "Possible stack overflow not mitigated (no tail/iterative version).",
+      "severity": "medium"
+    },
+    {
+      "code": "BUG-01",
+      "category": "BUG",
+      "phase": "code",
+      "label": "Off-by-one",
+      "desc": "Inclusive/exclusive bounds wrong.",
+      "severity": "high"
+    },
+    {
+      "code": "BUG-02",
+      "category": "BUG",
+      "phase": "code",
+      "label": "Indexing error",
+      "desc": "Accessed out of range or wrong index mapping.",
+      "severity": "high"
+    },
+    {
+      "code": "BUG-03",
+      "category": "BUG",
+      "phase": "code",
+      "label": "Bounds check missing",
+      "desc": "Failed to guard empty/singleton or boundary conditions.",
+      "severity": "high"
+    },
+    {
+      "code": "BUG-04",
+      "category": "BUG",
+      "phase": "code",
+      "label": "Overflow/precision bug",
+      "desc": "Arithmetic overflow or float comparison issues.",
+      "severity": "high"
+    },
+    {
+      "code": "BUG-05",
+      "category": "BUG",
+      "phase": "code",
+      "label": "Integer division confusion",
+      "desc": "Used integer division where float needed or vice versa.",
+      "severity": "medium"
+    },
+    {
+      "code": "BUG-06",
+      "category": "BUG",
+      "phase": "code",
+      "label": "Mutate during iteration",
+      "desc": "Modified a container while iterating leading to skipped/duplicated elements.",
+      "severity": "medium"
+    },
+    {
+      "code": "BUG-07",
+      "category": "BUG",
+      "phase": "code",
+      "label": "State not reset",
+      "desc": "Carried state across test cases or calls inadvertently.",
+      "severity": "medium"
+    },
+    {
+      "code": "BUG-08",
+      "category": "BUG",
+      "phase": "code",
+      "label": "Visited handling wrong",
+      "desc": "Incorrect mark/unmark in traversal causing repeats or misses.",
+      "severity": "high"
+    },
+    {
+      "code": "BUG-09",
+      "category": "BUG",
+      "phase": "code",
+      "label": "Early return/continue error",
+      "desc": "Wrong placement of returns causing logic to skip steps.",
+      "severity": "medium"
+    },
+    {
+      "code": "BUG-10",
+      "category": "BUG",
+      "phase": "code",
+      "label": "Shadowing/variable reuse",
+      "desc": "Reused or shadowed variables causing incorrect values.",
+      "severity": "low"
+    },
+    {
+      "code": "BUG-11",
+      "category": "BUG",
+      "phase": "code",
+      "label": "String/Unicode pitfall",
+      "desc": "Incorrect assumptions about characters, casing, or encoding.",
+      "severity": "low"
+    },
+    {
+      "code": "EDG-01",
+      "category": "EDG",
+      "phase": "test",
+      "label": "Empty input",
+      "desc": "Did not handle empty collections or null-like values.",
+      "severity": "high"
+    },
+    {
+      "code": "EDG-02",
+      "category": "EDG",
+      "phase": "test",
+      "label": "Singleton case",
+      "desc": "Single element or minimal structure not handled.",
+      "severity": "medium"
+    },
+    {
+      "code": "EDG-03",
+      "category": "EDG",
+      "phase": "test",
+      "label": "All identical / duplicates",
+      "desc": "Degenerate cases where values repeat not handled.",
+      "severity": "medium"
+    },
+    {
+      "code": "EDG-04",
+      "category": "EDG",
+      "phase": "test",
+      "label": "Sorted / reverse-sorted",
+      "desc": "Best/worst ordering cases missed.",
+      "severity": "low"
+    },
+    {
+      "code": "EDG-05",
+      "category": "EDG",
+      "phase": "test",
+      "label": "Extremes / overflow bounds",
+      "desc": "Min/max integers, long strings, deep trees.",
+      "severity": "medium"
+    },
+    {
+      "code": "EDG-06",
+      "category": "EDG",
+      "phase": "test",
+      "label": "Graph cycles/disconnected",
+      "desc": "Did not handle cycles or multiple components.",
+      "severity": "high"
+    },
+    {
+      "code": "TST-01",
+      "category": "TST",
+      "phase": "test",
+      "label": "No typical cases",
+      "desc": "Skipped representative normal inputs.",
+      "severity": "medium"
+    },
+    {
+      "code": "TST-02",
+      "category": "TST",
+      "phase": "test",
+      "label": "No edge cases",
+      "desc": "Failed to add corner cases to tests.",
+      "severity": "high"
+    },
+    {
+      "code": "TST-03",
+      "category": "TST",
+      "phase": "test",
+      "label": "No dry-run",
+      "desc": "Did not step through code with sample input.",
+      "severity": "low"
+    },
+    {
+      "code": "TST-04",
+      "category": "TST",
+      "phase": "test",
+      "label": "Complexity unstated/incorrect",
+      "desc": "Failed to state or mis-stated time/space complexity.",
+      "severity": "medium"
+    },
+    {
+      "code": "QLT-01",
+      "category": "QLT",
+      "phase": "code",
+      "label": "Messy structure",
+      "desc": "Monolithic function, no helpers, hard to reason.",
+      "severity": "low"
+    },
+    {
+      "code": "QLT-02",
+      "category": "QLT",
+      "phase": "code",
+      "label": "Poor naming/magic numbers",
+      "desc": "Non-descriptive identifiers or unexplained constants.",
+      "severity": "low"
+    },
+    {
+      "code": "QLT-03",
+      "category": "QLT",
+      "phase": "code",
+      "label": "Duplication not refactored",
+      "desc": "Copy-paste blocks not extracted to helpers.",
+      "severity": "low"
+    },
+    {
+      "code": "QLT-04",
+      "category": "QLT",
+      "phase": "optimize",
+      "label": "No invariants/comments",
+      "desc": "Key invariants or loop meanings not stated.",
+      "severity": "low"
+    }
+  ]
+}

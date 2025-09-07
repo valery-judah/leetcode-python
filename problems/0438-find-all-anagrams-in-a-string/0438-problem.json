@@ -1,0 +1,132 @@
+{
+  "category": "",
+  "id": "438",
+  "name": "Find All Anagrams in a String",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-all-anagrams-in-a-string/",
+  "slug": "find-all-anagrams-in-a-string",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Sliding Window"
+  ],
+  "similar_questions": [
+    {
+      "title": "Valid Anagram",
+      "difficulty": "Easy",
+      "slug": "valid-anagram"
+    },
+    {
+      "title": "Permutation in String",
+      "difficulty": "Medium",
+      "slug": "permutation-in-string"
+    }
+  ],
+  "questionId": "438",
+  "questionFrontendId": "438",
+  "title": "Find All Anagrams in a String",
+  "titleSlug": "find-all-anagrams-in-a-string",
+  "content": "<p>Given two strings <code>s</code> and <code>p</code>, return an array of all the start indices of <code>p</code>&#39;s <span data-keyword=\"anagram\">anagrams</span> in <code>s</code>. You may return the answer in <strong>any order</strong>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;cbaebabacd&quot;, p = &quot;abc&quot;\n<strong>Output:</strong> [0,6]\n<strong>Explanation:</strong>\nThe substring with start index = 0 is &quot;cba&quot;, which is an anagram of &quot;abc&quot;.\nThe substring with start index = 6 is &quot;bac&quot;, which is an anagram of &quot;abc&quot;.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;abab&quot;, p = &quot;ab&quot;\n<strong>Output:</strong> [0,1,2]\n<strong>Explanation:</strong>\nThe substring with start index = 0 is &quot;ab&quot;, which is an anagram of &quot;ab&quot;.\nThe substring with start index = 1 is &quot;ba&quot;, which is an anagram of &quot;ab&quot;.\nThe substring with start index = 2 is &quot;ab&quot;, which is an anagram of &quot;ab&quot;.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length, p.length &lt;= 3 * 10<sup>4</sup></code></li>\n\t<li><code>s</code> and <code>p</code> consist of lowercase English letters.</li>\n</ul>\n",
+  "likes": 12893,
+  "dislikes": 362,
+  "stats": {
+    "totalAccepted": "1.1M",
+    "totalSubmission": "2M",
+    "totalAcceptedRaw": 1070129,
+    "totalSubmissionRaw": 2036128,
+    "acRate": "52.6%"
+  },
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Sliding Window",
+      "slug": "sliding-window"
+    }
+  ],
+  "metaData": {
+    "name": "findAnagrams",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      },
+      {
+        "name": "p",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "list<integer>"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "niteshsingh29",
+      "year": 2023,
+      "content": "Seems like same question of yesterday???????????????? \nThere is slight difference though!",
+      "voteCount": 68
+    },
+    {
+      "name": "vishwa10032003",
+      "year": 2023,
+      "content": "The problem asks us to find all the anagrams of the string p in the string s. In other words, we need to find all the substrings in s that have the same letters as p, but in a different order.\\n\\nFor example, if s = \"cbaebabacd\" and p = \"abc\", the solution should be [0, 6], because the substrings \"cba\" and \"bac\" in s are anagrams of p.\\n\\nTo solve this problem, we can use a technique called a \"sliding window\". Here\\'s how it works:\\n\\nCreate two arrays (or hash maps) to store the frequency of each letter in p and in the current substring of s that we\\'re considering.\\nIterate through s, and for each iteration, consider the substring of s that starts from the current index and has a length equal to the length of p.\\nCompare the frequency arrays (or hash maps) of the current substring in s and p. If they are the same, it means that the current substring is an anagram of p.\\nIf they are the same, add the start index of the current substring to the output list.\\nMove the \"sliding window\" one step to the right by removing the first character of the current substring and adding the next character to the end.\\nRepeat steps 3-5 until we reach the end of s.\\nBy using a sliding window, we only need to update the frequency arrays (or hash maps) when moving the window one step to the right, instead of computing the arrays (or hash maps) from scratch for every substring of s. This makes the solution more efficient.",
+      "voteCount": 52
+    },
+    {
+      "name": "galexw",
+      "year": 2018,
+      "content": "The question Minimum Window Substring uses the exact same technique as this question. This should be hard.",
+      "voteCount": 38
+    },
+    {
+      "name": "LeetCode",
+      "year": 2022,
+      "content": "This problem is the Daily LeetCoding Challenge for February, Day 2.\n\nFeel free to share anything related to this problem here!\n\nYou can ask questions, discuss what you've learned from this problem, or show off how many days of streak you've made!\n\n---\n\nIf you'd like to share a detailed solution to the problem, please create a new post in the discuss section and provide\n- **Detailed Explanations**: Describe the algorithm you used to solve this problem. Include any insights you used to solve this problem.\n- **Images** that help explain the algorithm.\n- **Language and Code** you used to pass the problem.\n- **Time and Space complexity analysis**.\n\n---\n\n  **\ud83d\udccc Do you want to learn the problem thoroughly?**\n  Read [**\u2b50  LeetCode Official Solution\u2b50**](https://leetcode.com/problems/find-all-anagrams-in-a-string/solution) to learn the 3 approaches to the problem with detailed explanations to the algorithms, codes, and complexity analysis.\n  <details>\n  <summary> Spoiler Alert! We'll explain these 2 approaches in the official solution</summary>\n\n  \n**Approach 1:** Sliding Window with HashMap\n\n  \n**Approach 2:** Sliding Window with Array\n\n  \n</details>\n\n\n\nIf you're new to Daily LeetCoding Challenge, [**check out this post**](https://leetcode.com/discuss/general-discussion/655704/)!\n\n\n---\n\n<br>\n\n<p align=\"center\">\n<a href=\"https://leetcode.com/subscribe/?ref=ex_dc\" target=\"_blank\">\n  <img src=\"https://assets.leetcode.com/static_assets/marketing/daily_leetcoding_banner.png\" width=\"560px\" />\n</a>\n</p>\n\n<br>",
+      "voteCount": 19
+    },
+    {
+      "name": "oscardoudou",
+      "year": 2018,
+      "content": "1. Change hashmap to array, for me it improves from 34/36 to beat 4%(lol).\\n2. If it\\'s still TLE, then try pass int[] as parameter instead of generating one inside the helper everytime. This improve me from beating 4% to 10%. \\nJust for fun.",
+      "voteCount": 18
+    },
+    {
+      "name": "sidharthan_gn",
+      "year": 2024,
+      "content": "\\nTheorem 2.5:\\nIf the problem seems simple, your solution has the potential to get a time limit exceed error.",
+      "voteCount": 16
+    },
+    {
+      "name": "zaureqs",
+      "year": 2023,
+      "content": "Same as Yesterday so you should do it by yourself and if you are not able to do it then **Instead of directly going to solutions try implementing using this steps**\n\n1. First Check if **p.size() > s.size()** then return {} `empty` vector\n\n2. Now calculate the freq of P \n       - make it a **freqP(26,0)** vector so that we can compare later on \n \n3. Then we will be starting with a window of size 1 initially in s. That means start=0, end=0.\n\n4. Along with this, we will also be maintaining the frequency of the characters in the current window. to check if the freq in current window and FreqP is same or not \n\n5.  We will continue the below steps until we reach a situation where the end of the window reaches the end of s. That means we will be doing the steps while end<length of s.\n         \n`a) Increase the frequency of the character which is just now newly included inside the  window. That means increase the frequency of s[end].`\n              \n `b) Now check if the frequency of the characters in the current window, is same as the frequency of characters int p.` \n                      - But this is only possible if the length of current substring(window) is same as the length of p. If this is true, then we will add the `start index into ans vector`\n\n`c) If the frequency doesn't match, we have to change the window` \t\t\t\n        \n` i) If the length of window in less than the length of p, then we should increase the length of the the window by increasing the end. So end+=1.` \n\n`ii) If not, that means length of window is greater than or equal to the length of s, so we will need to move to a new window. For that we will have to move start to the next character but before that we will have to decrease the frequency of `start` character from the curr window frequency. That means`\n\t\t\t\t\t\t\t`-Decrees the frequency of s[start].`\n\t\t\t\t\t\t\t`-Move start to the next element.`\n\t\t\t\t\t\t\t`-Move end to the next element.`\n \n6 . **return ans** vector;\n\n**Upvote if only if you were able to right the code using this steps : )**\n\nif you are not able to implement then you can check out the [Code here](https://leetcode.com/problems/find-all-anagrams-in-a-string/solutions/3144036/easy-cpp-sliding-window-approach/)",
+      "voteCount": 13
+    },
+    {
+      "name": "jphwang212",
+      "year": 2023,
+      "content": "I have time limit exceeded for 64/64 testcases passed. Not sure what is wrong here.",
+      "voteCount": 12
+    },
+    {
+      "name": "Ashwin_Acharya",
+      "year": 2023,
+      "content": "Isn\\'t it very similar to yesterday\\'s daily problem (Permutation in String)?",
+      "voteCount": 8
+    },
+    {
+      "name": "Maninder_4",
+      "year": 2023,
+      "content": "Literally the same question as yesterday's problem (permutation in string), the only difference is that today\nwe have to return the indices instead of true/false. ",
+      "voteCount": 7
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "category": "",
+  "id": "871",
+  "name": "Minimum Number of Refueling Stops",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-number-of-refueling-stops/",
+  "slug": "minimum-number-of-refueling-stops",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy",
+    "Heap (Priority Queue)"
+  ],
+  "similar_questions": [],
+  "questionId": "902",
+  "questionFrontendId": "871",
+  "title": "Minimum Number of Refueling Stops",
+  "titleSlug": "minimum-number-of-refueling-stops",
+  "content": "<p>A car travels from a starting position to a destination which is <code>target</code> miles east of the starting position.</p>\n\n<p>There are gas stations along the way. The gas stations are represented as an array <code>stations</code> where <code>stations[i] = [position<sub>i</sub>, fuel<sub>i</sub>]</code> indicates that the <code>i<sup>th</sup></code> gas station is <code>position<sub>i</sub></code> miles east of the starting position and has <code>fuel<sub>i</sub></code> liters of gas.</p>\n\n<p>The car starts with an infinite tank of gas, which initially has <code>startFuel</code> liters of fuel in it. It uses one liter of gas per one mile that it drives. When the car reaches a gas station, it may stop and refuel, transferring all the gas from the station into the car.</p>\n\n<p>Return <em>the minimum number of refueling stops the car must make in order to reach its destination</em>. If it cannot reach the destination, return <code>-1</code>.</p>\n\n<p>Note that if the car reaches a gas station with <code>0</code> fuel left, the car can still refuel there. If the car reaches the destination with <code>0</code> fuel left, it is still considered to have arrived.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> target = 1, startFuel = 1, stations = []\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> We can reach the target without refueling.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> target = 100, startFuel = 1, stations = [[10,100]]\n<strong>Output:</strong> -1\n<strong>Explanation:</strong> We can not reach the target (or even the first gas station).\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> target = 100, startFuel = 10, stations = [[10,60],[20,30],[30,30],[60,40]]\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> We start with 10 liters of fuel.\nWe drive to position 10, expending 10 liters of fuel.  We refuel from 0 liters to 60 liters of gas.\nThen, we drive from position 10 to position 60 (expending 50 liters of fuel),\nand refuel from 10 liters to 50 liters of gas.  We then drive to and reach the target.\nWe made 2 refueling stops along the way, so we return 2.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= target, startFuel &lt;= 10<sup>9</sup></code></li>\n\t<li><code>0 &lt;= stations.length &lt;= 500</code></li>\n\t<li><code>1 &lt;= position<sub>i</sub> &lt; position<sub>i+1</sub> &lt; target</code></li>\n\t<li><code>1 &lt;= fuel<sub>i</sub> &lt; 10<sup>9</sup></code></li>\n</ul>\n",
+  "likes": 4809,
+  "dislikes": 92,
+  "stats": {
+    "totalAccepted": "155.8K",
+    "totalSubmission": "382.2K",
+    "totalAcceptedRaw": 155784,
+    "totalSubmissionRaw": 382192,
+    "acRate": "40.8%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    },
+    {
+      "name": "Heap (Priority Queue)",
+      "slug": "heap-priority-queue"
+    }
+  ],
+  "metaData": {
+    "name": "minRefuelStops",
+    "params": [
+      {
+        "name": "target",
+        "type": "integer"
+      },
+      {
+        "name": "startFuel",
+        "type": "integer"
+      },
+      {
+        "name": "stations",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "aftabmk",
+      "year": 2024,
+      "content": "This was asked in DE Shaw",
+      "voteCount": 33
+    },
+    {
+      "name": "vyshnavkr",
+      "year": 2021,
+      "content": "**Google interview variation**: https://leetcode.com/discuss/interview-experience/609015/Google-or-L3-or-Warsaw-or-May-2020-Offer\\n\\n**Some discussions** that thelped me understand the **greedy** approach:\\n - [[Python] Time travel](https://leetcode.com/problems/minimum-number-of-refueling-stops/discuss/911923/Python-Time-travel)\\n - [[Java] Simple Code - Greedy](https://leetcode.com/problems/minimum-number-of-refueling-stops/discuss/294025/Java-Simple-Code-Greedy)\\n\\n**Problems that might be related**:\\n* https://leetcode.com/problems/jump-game-ii/\\n* https://leetcode.com/problems/gas-station/\\n* https://leetcode.com/problems/furthest-building-you-can-reach/\\n* https://leetcode.com/problems/ipo/",
+      "voteCount": 13
+    },
+    {
+      "name": "user1116ek",
+      "year": 2025,
+      "content": "Easiest hard problem I have ever done. Happy.",
+      "voteCount": 10
+    },
+    {
+      "name": "dengzq078",
+      "year": 2020,
+      "content": "similar with [JumpGame2](https://leetcode.com/problems/jump-game-ii/)",
+      "voteCount": 8
+    },
+    {
+      "name": "krishnu9",
+      "year": 2024,
+      "content": "I hate this problem ",
+      "voteCount": 7
+    },
+    {
+      "name": "satyakic",
+      "year": 2021,
+      "content": "A few things to observe:\\n* The total fuel `F` collected (fuel collected from the stations we stopped + initial fuel in the tank) helps us reach a destination which is `F` miles east from the start and of course any station which is less than `F` miles east. Thus **\"maximum destination reachable = maximum total amount of fuel collected.\"** This arguably is the most crucial observation.\\n*  Now, with `k` turns or stops if we could maximize the amount of fuel we can collect, then it let\\'s us reach the maximum destination with `k` stops. Why? Maximum destination in k stops = maximum total fuel collected in k stops + start fuel (previous observation)\\n* Every time we increase `k`, total fuel increases, hence maximum destination reachable moves further east (increases). Why? because fuel is always positive.\\n* Now, if we increase `k` and for each `k` try to find the maximum destination reachable, the smallest value of `k` for which `total_fuel` (or equivalently `maximum_destination`) >= target, is the minimum no. of refuels.\\n* Now let\\'s try to solve the problem iteratively by increasing the value of `k`. \\n\\t* When `k=0`, what is the maximum destination we can reach? Obviously, `start_fuel`. But with `k = 0` stops we have made a certain number of stations (more specifically all stations with position <= `start_fuel` are now refuelling candidates)\\n\\t* So when `k=1`, what is the maximum destination we can reach? or equivalently what is the maximum total amount of fuel we can collect? The answer is maximum amount of fuel we can collect at `k=0` (which we have already solved) + maximum amount of fuel we can collect from all the refuelling candidates at `k=1`. Another important point to note here is that the refuelling candidates right now consists of the new refuelling candidates (which are now available after solving for `k=0`) as well as the initial set of candidates that were available when we were starting. At this point, you can probably guess that we can track the maximums in a max heap.\\n\\t* The logic for `k = 2, 3 ..` follows. And the first time we encounter `total_fuel >= target`, helps us identify the minimum `k`.",
+      "voteCount": 7
+    },
+    {
+      "name": "michaellargent",
+      "year": 2019,
+      "content": "Please correct me if I\\'m misinterpreting the problem.\\nI\\'m provided a target, startFuel, and stations.\\nTarget, startFuel, and stations[i][0] all represent the distance from the origin.\\nIf the startFuel can reach the target without stopping at a station, then we return 0, however if it can\\'t we return -1.\\n\\nGiven this situation:\\ntarget: 1,\\nstartFuel: 1,\\nstations: [ [10,10] ]\\n\\nShouldn\\'t the stations along the way be irrelevant since we can reach the target without stopping?\\nThe expected result in the test is -1 with those variables, but shouldn\\'t it be 0.\\n\\nI\\'m guessing the way the tests are modeled, is the startFuel is suppose to be able to reach each station recursively first and not go directly to the target.",
+      "voteCount": 5
+    },
+    {
+      "name": "satwika-55",
+      "year": 2024,
+      "content": "yes guys there is still a way u could do it even without using dp.. think hard else you'll regret upon sneaking through such an easy solution too quickly!",
+      "voteCount": 4
+    },
+    {
+      "name": "danieloi",
+      "year": 2024,
+      "content": "Excellent Explanation with Diagrams\\nhttps://youtu.be/LahM64phIH0",
+      "voteCount": 2
+    },
+    {
+      "name": "cut_me_half",
+      "year": 2020,
+      "content": "Here the main important thing to consider is `dp[i]` denotes the max target that can be reached with minimum of i fuel stops.\\n\\nIn the second loop, we have to start the t= i -> 0 because if we carefully observe what dp[i] denotes is minimum i stops and max distance.\\n\\nThe first loop denotes how many stops we are considering i = 0 -> N\\ni = 0 means that we are considering only 1 stop so maximum we can go is to dp[1].\\nI = 1 means we can are considering two stops and max we can go is to dp[2] but here we can see if we can reach to second station directly from startfuel i.e dp[0] and can still have max distance than the previous result which was dp[1] = dp[0] + station[0][1] \\n\\nSo, dp[1] = max(dp[0] + station[0][0], dp[0] + station[1][1]) \\n\\nMain thing to understand that outer loop means how many stations we are considering right now, and i denotes the max station we are consider which is current station.\\n\\nInner loop means minimum stops that we are updating taking into account the current station.",
+      "voteCount": 2
+    }
+  ]
+}

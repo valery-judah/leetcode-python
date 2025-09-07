@@ -1,0 +1,118 @@
+{
+  "category": "",
+  "id": "1056",
+  "name": "Confusing Number",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/confusing-number/",
+  "slug": "confusing-number",
+  "isPaidOnly": true,
+  "tags": [
+    "Math"
+  ],
+  "similar_questions": [
+    {
+      "title": "Strobogrammatic Number",
+      "difficulty": "Easy",
+      "slug": "strobogrammatic-number"
+    },
+    {
+      "title": "Confusing Number II",
+      "difficulty": "Hard",
+      "slug": "confusing-number-ii"
+    }
+  ],
+  "questionId": "1069",
+  "questionFrontendId": "1056",
+  "title": "Confusing Number",
+  "titleSlug": "confusing-number",
+  "content": "<p>A <strong>confusing number</strong> is a number that when rotated <code>180</code> degrees becomes a different number with <strong>each digit valid</strong>.</p>\n\n<p>We can rotate digits of a number by <code>180</code> degrees to form new digits.</p>\n\n<ul>\n\t<li>When <code>0</code>, <code>1</code>, <code>6</code>, <code>8</code>, and <code>9</code> are rotated <code>180</code> degrees, they become <code>0</code>, <code>1</code>, <code>9</code>, <code>8</code>, and <code>6</code> respectively.</li>\n\t<li>When <code>2</code>, <code>3</code>, <code>4</code>, <code>5</code>, and <code>7</code> are rotated <code>180</code> degrees, they become <strong>invalid</strong>.</li>\n</ul>\n\n<p>Note that after rotating a number, we can ignore leading zeros.</p>\n\n<ul>\n\t<li>For example, after rotating <code>8000</code>, we have <code>0008</code> which is considered as just <code>8</code>.</li>\n</ul>\n\n<p>Given an integer <code>n</code>, return <code>true</code><em> if it is a <strong>confusing number</strong>, or </em><code>false</code><em> otherwise</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/03/23/1268_1.png\" style=\"width: 281px; height: 121px;\" />\n<pre>\n<strong>Input:</strong> n = 6\n<strong>Output:</strong> true\n<strong>Explanation:</strong> We get 9 after rotating 6, 9 is a valid number, and 9 != 6.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/03/23/1268_2.png\" style=\"width: 312px; height: 121px;\" />\n<pre>\n<strong>Input:</strong> n = 89\n<strong>Output:</strong> true\n<strong>Explanation:</strong> We get 68 after rotating 89, 68 is a valid number and 68 != 89.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/03/26/1268_3.png\" style=\"width: 301px; height: 121px;\" />\n<pre>\n<strong>Input:</strong> n = 11\n<strong>Output:</strong> false\n<strong>Explanation:</strong> We get 11 after rotating 11, 11 is a valid number but the value remains the same, thus 11 is not a confusing number\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= n &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+  "likes": 328,
+  "dislikes": 182,
+  "stats": {
+    "totalAccepted": "53.1K",
+    "totalSubmission": "107.7K",
+    "totalAcceptedRaw": 53105,
+    "totalSubmissionRaw": 107723,
+    "acRate": "49.3%"
+  },
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "metaData": {
+    "name": "confusingNumber",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "mmcclarty",
+      "year": 2019,
+      "content": "916 says it should return False; but it seems to fit the criteria of confusing number (619 on rotation)?",
+      "voteCount": 33
+    },
+    {
+      "name": "pieceofpie",
+      "year": 2023,
+      "content": "This problem makes me confused.",
+      "voteCount": 16
+    },
+    {
+      "name": "StrongMinded",
+      "year": 2020,
+      "content": "Input - 619\\nOutput - false ?",
+      "voteCount": 5
+    },
+    {
+      "name": "vinu_ji",
+      "year": 2025,
+      "content": "Poor explanation of question ",
+      "voteCount": 3
+    },
+    {
+      "name": "shrinidhir",
+      "year": 2019,
+      "content": "If 916 is rotated by 180 degrees, we get 619, which is a confusing number (all digits valid and the final number is different from the input). Why is the expected output false? Am I missing something?",
+      "voteCount": 3
+    },
+    {
+      "name": "ClaraClara",
+      "year": 2019,
+      "content": "This seems to be similar to palindrome but it\\'s different.",
+      "voteCount": 3
+    },
+    {
+      "name": "rajs217",
+      "year": 2023,
+      "content": "Problem is same as 246 LeetCode Problem.",
+      "voteCount": 2
+    },
+    {
+      "name": "Satansoft",
+      "year": 2025,
+      "content": "Surprised that string reverse and numbers replacing confusing people...",
+      "voteCount": 1
+    },
+    {
+      "name": "MingNguyen",
+      "year": 2024,
+      "content": "This problem makes me confused. Please clarify more clearer.",
+      "voteCount": 1
+    },
+    {
+      "name": "shnitsel666",
+      "year": 2023,
+      "content": "916, 906 - why do they must be \\'false\\'?\\n8101, 81010, 88001101, 80 - why do they must be \\'true\\'?\\nInteresting task, but wrong testcases or task description...",
+      "voteCount": 1
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "category": "",
+  "id": "2026",
+  "name": "Low-Quality Problems",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/low-quality-problems/",
+  "slug": "low-quality-problems",
+  "isPaidOnly": true,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": [],
+  "questionId": "2172",
+  "questionFrontendId": "2026",
+  "title": "Low-Quality Problems",
+  "titleSlug": "low-quality-problems",
+  "content": "<p>Table: <code>Problems</code></p>\n\n<pre>\n+-------------+------+\n| Column Name | Type |\n+-------------+------+\n| problem_id  | int  |\n| likes       | int  |\n| dislikes    | int  |\n+-------------+------+\nIn SQL, problem_id is the primary key column for this table.\nEach row of this table indicates the number of likes and dislikes for a LeetCode problem.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Find the IDs of the <strong>low-quality</strong> problems. A LeetCode problem is <strong>low-quality</strong> if the like percentage of the problem (number of likes divided by the total number of votes) is <strong>strictly less than</strong> <code>60%</code>.</p>\n\n<p>Return the result table ordered by <code>problem_id</code> in ascending order.</p>\n\n<p>The result format is in the following example.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> \nProblems table:\n+------------+-------+----------+\n| problem_id | likes | dislikes |\n+------------+-------+----------+\n| 6          | 1290  | 425      |\n| 11         | 2677  | 8659     |\n| 1          | 4446  | 2760     |\n| 7          | 8569  | 6086     |\n| 13         | 2050  | 4164     |\n| 10         | 9002  | 7446     |\n+------------+-------+----------+\n<strong>Output:</strong> \n+------------+\n| problem_id |\n+------------+\n| 7          |\n| 10         |\n| 11         |\n| 13         |\n+------------+\n<strong>Explanation:</strong> The like percentages are as follows:\n- Problem 1: (4446 / (4446 + 2760)) * 100 = 61.69858%\n- Problem 6: (1290 / (1290 + 425)) * 100 = 75.21866%\n- Problem 7: (8569 / (8569 + 6086)) * 100 = 58.47151%\n- Problem 10: (9002 / (9002 + 7446)) * 100 = 54.73006%\n- Problem 11: (2677 / (2677 + 8659)) * 100 = 23.61503%\n- Problem 13: (2050 / (2050 + 4164)) * 100 = 32.99002%\nProblems 7, 10, 11, and 13 are low-quality problems because their like percentages are less than 60%.</pre>\n",
+  "likes": 55,
+  "dislikes": 12,
+  "stats": {
+    "totalAccepted": "14.7K",
+    "totalSubmission": "17.4K",
+    "totalAcceptedRaw": 14724,
+    "totalSubmissionRaw": 17434,
+    "acRate": "84.5%"
+  },
+  "topicTags": [
+    {
+      "name": "Database",
+      "slug": "database"
+    }
+  ],
+  "metaData": {
+    "mysql": [
+      "Create table If Not Exists Problems (problem_id int, likes int, dislikes int)"
+    ],
+    "mssql": [
+      "Create table Problems (problem_id int, likes int, dislikes int)"
+    ],
+    "oraclesql": [
+      "Create table Problems (problem_id int, likes int, dislikes int)"
+    ],
+    "database": true,
+    "name": "low_quality_problems",
+    "pythondata": [
+      "Problems = pd.DataFrame([], columns=['problem_id', 'likes', 'dislikes']).astype({'problem_id':'Int64', 'likes':'Int64', 'dislikes':'Int64'})"
+    ],
+    "postgresql": [
+      "Create table If Not Exists Problems (problem_id int, likes int, dislikes int)"
+    ],
+    "database_schema": {
+      "Problems": {
+        "problem_id": "INT",
+        "likes": "INT",
+        "dislikes": "INT"
+      }
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "AppleFans",
+      "year": 2021,
+      "content": "as the title...",
+      "voteCount": 16
+    },
+    {
+      "name": "deleted_user",
+      "year": 2021,
+      "content": "\\'\\'\\'\\nSELECT problem_id\\nFROM Problems\\nWHERE (likes/(likes+dislikes))*100<60\\nORDER BY problem_id ASC;\\n\\'\\'\\'",
+      "voteCount": 2
+    },
+    {
+      "name": "parklark95",
+      "year": 2023,
+      "content": "Why did I get accepted when I used <= 0.6 instead of < 0.6?\\n\\n\\'Less than\\' means \\'<\\' in Google",
+      "voteCount": 1
+    },
+    {
+      "name": "matthewjinmp",
+      "year": 2025,
+      "content": "man, the title of this problem set itself up for absolute destruction in the comments ",
+      "voteCount": 0
+    },
+    {
+      "name": "dolong2110",
+      "year": 2022,
+      "content": "```\\n# Write your MySQL query statement below\\nselect problem_id\\nfrom problems\\nwhere likes / (likes + dislikes) * 100.0 < 60\\norder by problem_id;\\n```",
+      "voteCount": 0
+    }
+  ]
+}

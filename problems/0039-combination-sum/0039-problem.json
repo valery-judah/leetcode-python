@@ -1,0 +1,163 @@
+{
+  "category": "",
+  "id": "39",
+  "name": "Combination Sum",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/combination-sum/",
+  "slug": "combination-sum",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Backtracking"
+  ],
+  "similar_questions": [
+    {
+      "title": "Letter Combinations of a Phone Number",
+      "difficulty": "Medium",
+      "slug": "letter-combinations-of-a-phone-number"
+    },
+    {
+      "title": "Combination Sum II",
+      "difficulty": "Medium",
+      "slug": "combination-sum-ii"
+    },
+    {
+      "title": "Combinations",
+      "difficulty": "Medium",
+      "slug": "combinations"
+    },
+    {
+      "title": "Combination Sum III",
+      "difficulty": "Medium",
+      "slug": "combination-sum-iii"
+    },
+    {
+      "title": "Factor Combinations",
+      "difficulty": "Medium",
+      "slug": "factor-combinations"
+    },
+    {
+      "title": "Combination Sum IV",
+      "difficulty": "Medium",
+      "slug": "combination-sum-iv"
+    },
+    {
+      "title": "The Number of Ways to Make the Sum",
+      "difficulty": "Medium",
+      "slug": "the-number-of-ways-to-make-the-sum"
+    }
+  ],
+  "questionId": "39",
+  "questionFrontendId": "39",
+  "title": "Combination Sum",
+  "titleSlug": "combination-sum",
+  "content": "<p>Given an array of <strong>distinct</strong> integers <code>candidates</code> and a target integer <code>target</code>, return <em>a list of all <strong>unique combinations</strong> of </em><code>candidates</code><em> where the chosen numbers sum to </em><code>target</code><em>.</em> You may return the combinations in <strong>any order</strong>.</p>\n\n<p>The <strong>same</strong> number may be chosen from <code>candidates</code> an <strong>unlimited number of times</strong>. Two combinations are unique if the <span data-keyword=\"frequency-array\">frequency</span> of at least one of the chosen numbers is different.</p>\n\n<p>The test cases are generated such that the number of unique combinations that sum up to <code>target</code> is less than <code>150</code> combinations for the given input.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> candidates = [2,3,6,7], target = 7\n<strong>Output:</strong> [[2,2,3],[7]]\n<strong>Explanation:</strong>\n2 and 3 are candidates, and 2 + 2 + 3 = 7. Note that 2 can be used multiple times.\n7 is a candidate, and 7 = 7.\nThese are the only two combinations.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> candidates = [2,3,5], target = 8\n<strong>Output:</strong> [[2,2,2,2],[2,3,3],[3,5]]\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> candidates = [2], target = 1\n<strong>Output:</strong> []\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= candidates.length &lt;= 30</code></li>\n\t<li><code>2 &lt;= candidates[i] &lt;= 40</code></li>\n\t<li>All elements of <code>candidates</code> are <strong>distinct</strong>.</li>\n\t<li><code>1 &lt;= target &lt;= 40</code></li>\n</ul>\n",
+  "likes": 20291,
+  "dislikes": 499,
+  "stats": {
+    "totalAccepted": "2.7M",
+    "totalSubmission": "3.6M",
+    "totalAcceptedRaw": 2734087,
+    "totalSubmissionRaw": 3633552,
+    "acRate": "75.2%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Backtracking",
+      "slug": "backtracking"
+    }
+  ],
+  "metaData": {
+    "name": "combinationSum",
+    "params": [
+      {
+        "name": "candidates",
+        "type": "integer[]"
+      },
+      {
+        "name": "target",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "list<list<integer>>",
+      "dealloc": true
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 14
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "yakeenasabha",
+      "year": 2023,
+      "content": "this medium?\\nman this was f_ing hard.",
+      "voteCount": 435
+    },
+    {
+      "name": "Jsn667",
+      "year": 2021,
+      "content": "**The idea is that if the array is sorted and you subtract (target - candidates[i] ) and you get a negative result, then every number in front of candidates[i] will give you a negative result so you can just skip those numbers.**\\n\\n**Also, it is not possible to receive duplicate answers with this method because there are no duplicates in the input and each number is only given the choice of subtracting themselves or any number in front. For example, in [2, 3, 6, 7] tar = 7, the value 2 has the choice between picking itself or any number in front of it, which is why [2, 2, 3] is an answer but, the value 3 will never be able to choose 2 so the result [3, 2, 2] is not possible (hopefully I explained it clearly).**\\n\\n![image](https://assets.leetcode.com/users/images/5c439987-250b-4f89-ae36-8d7428f25b68_1611079433.9667132.png)\\n\\n",
+      "voteCount": 99
+    },
+    {
+      "name": "giacomo",
+      "year": 2015,
+      "content": "In order to express a correct asymptotic time complexity in Big-Oh notation for the average case for the Combination Sum problem, we would need to make arguments on how the average set of candidates looks like and how it relates to the target.\\n\\nOf course, this is not easy to do. If you have ever looked at analysis for sorting algorithms, you know that it is not easy (and the input for sorting algorithms is just a set of numbers, here we also have a target).\\n\\nHowever, if asked to discuss the time complexity, what would you do?\\n\\nWould you take a particular case and pretend that that is the average case, without providing any proof?\\n\\nIf you are in front of two solutions for this problem, how would you decide which one has the lowest time complexity?",
+      "voteCount": 80
+    },
+    {
+      "name": "mdshakib007",
+      "year": 2024,
+      "content": "Isn\\'t it\\'s a `hard` problem?",
+      "voteCount": 77
+    },
+    {
+      "name": "burhanNoori",
+      "year": 2023,
+      "content": "Here in the question it is not mentioned that the given array candidates is sorted and it is assumed.",
+      "voteCount": 53
+    },
+    {
+      "name": "n1teshy",
+      "year": 2023,
+      "content": "The problem with this kind of questions is that you always expect there to be an efficient solution",
+      "voteCount": 26
+    },
+    {
+      "name": "danieloi",
+      "year": 2024,
+      "content": "Short video explanation with diagrams\nUpvote here on Leetcode | Like and Subscribe on YouTube\nhttps://youtu.be/sAKqu8WxRvg",
+      "voteCount": 21
+    },
+    {
+      "name": "bailey8",
+      "year": 2019,
+      "content": "I\\'m confused on trying to calculate the time complexity. Some posts say `O(2^n)`. Some say `O(m^n)` where `m` is the target and `n` is length of array. Another post says `O(l^k)` -  where `l` is the length of the array, `k` is the length of the longest possible combination (namely `target / minInArray`). I do not understand why this is the case using the backtracking approach. Could anyone give a detailed explination and analysis on the time and space complexity? Thanks!",
+      "voteCount": 20
+    },
+    {
+      "name": "henryzhou7",
+      "year": 2019,
+      "content": "If there exists negative value in the candidates, what could be the condition for checking the terminating case? \\n\\nThanks",
+      "voteCount": 18
+    },
+    {
+      "name": "LeetCode",
+      "year": 2022,
+      "content": "This problem is the Daily LeetCoding Challenge for February, Day 17.\n\nFeel free to share anything related to this problem here!\n\nYou can ask questions, discuss what you've learned from this problem, or show off how many days of streak you've made!\n\n---\n\nIf you'd like to share a detailed solution to the problem, please create a new post in the discuss section and provide\n- **Detailed Explanations**: Describe the algorithm you used to solve this problem. Include any insights you used to solve this problem.\n- **Images** that help explain the algorithm.\n- **Language and Code** you used to pass the problem.\n- **Time and Space complexity analysis**.\n\n---\n\n  **\ud83d\udccc Do you want to learn the problem thoroughly?**\n  Read [**\u2b50  LeetCode Official Solution\u2b50**](https://leetcode.com/problems/combination-sum/solution) to learn the 3 approaches to the problem with detailed explanations to the algorithms, codes, and complexity analysis.\n  <details>\n  <summary> Spoiler Alert! We'll explain this 1 approach in the official solution</summary>\n\n  \n**Approach 1:** Backtracking\n\n  \n</details>\n\n\n\nIf you're new to Daily LeetCoding Challenge, [**check out this post**](https://leetcode.com/discuss/general-discussion/655704/)!\n\n\n---\n\n<br>\n\n<p align=\"center\">\n<a href=\"https://leetcode.com/subscribe/?ref=ex_dc\" target=\"_blank\">\n  <img src=\"https://assets.leetcode.com/static_assets/marketing/daily_leetcoding_banner.png\" width=\"560px\" />\n</a>\n</p>\n\n<br>",
+      "voteCount": 18
+    }
+  ]
+}

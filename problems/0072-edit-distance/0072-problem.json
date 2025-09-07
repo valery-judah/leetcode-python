@@ -1,0 +1,162 @@
+{
+  "category": "",
+  "id": "72",
+  "name": "Edit Distance",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/edit-distance/",
+  "slug": "edit-distance",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "One Edit Distance",
+      "difficulty": "Medium",
+      "slug": "one-edit-distance"
+    },
+    {
+      "title": "Delete Operation for Two Strings",
+      "difficulty": "Medium",
+      "slug": "delete-operation-for-two-strings"
+    },
+    {
+      "title": "Minimum ASCII Delete Sum for Two Strings",
+      "difficulty": "Medium",
+      "slug": "minimum-ascii-delete-sum-for-two-strings"
+    },
+    {
+      "title": "Uncrossed Lines",
+      "difficulty": "Medium",
+      "slug": "uncrossed-lines"
+    },
+    {
+      "title": "Minimum White Tiles After Covering With Carpets",
+      "difficulty": "Hard",
+      "slug": "minimum-white-tiles-after-covering-with-carpets"
+    },
+    {
+      "title": "Longest Palindrome After Substring Concatenation II",
+      "difficulty": "Hard",
+      "slug": "longest-palindrome-after-substring-concatenation-ii"
+    },
+    {
+      "title": "Minimum Steps to Convert String with Operations",
+      "difficulty": "Hard",
+      "slug": "minimum-steps-to-convert-string-with-operations"
+    }
+  ],
+  "questionId": "72",
+  "questionFrontendId": "72",
+  "title": "Edit Distance",
+  "titleSlug": "edit-distance",
+  "content": "<p>Given two strings <code>word1</code> and <code>word2</code>, return <em>the minimum number of operations required to convert <code>word1</code> to <code>word2</code></em>.</p>\n\n<p>You have the following three operations permitted on a word:</p>\n\n<ul>\n\t<li>Insert a character</li>\n\t<li>Delete a character</li>\n\t<li>Replace a character</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> word1 = &quot;horse&quot;, word2 = &quot;ros&quot;\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> \nhorse -&gt; rorse (replace &#39;h&#39; with &#39;r&#39;)\nrorse -&gt; rose (remove &#39;r&#39;)\nrose -&gt; ros (remove &#39;e&#39;)\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> word1 = &quot;intention&quot;, word2 = &quot;execution&quot;\n<strong>Output:</strong> 5\n<strong>Explanation:</strong> \nintention -&gt; inention (remove &#39;t&#39;)\ninention -&gt; enention (replace &#39;i&#39; with &#39;e&#39;)\nenention -&gt; exention (replace &#39;n&#39; with &#39;x&#39;)\nexention -&gt; exection (replace &#39;n&#39; with &#39;c&#39;)\nexection -&gt; execution (insert &#39;u&#39;)\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= word1.length, word2.length &lt;= 500</code></li>\n\t<li><code>word1</code> and <code>word2</code> consist of lowercase English letters.</li>\n</ul>\n",
+  "likes": 15943,
+  "dislikes": 294,
+  "stats": {
+    "totalAccepted": "1.3M",
+    "totalSubmission": "2.1M",
+    "totalAcceptedRaw": 1253920,
+    "totalSubmissionRaw": 2113821,
+    "acRate": "59.3%"
+  },
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "metaData": {
+    "name": "minDistance",
+    "params": [
+      {
+        "name": "word1",
+        "type": "string"
+      },
+      {
+        "name": "word2",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 18
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "Jaiff",
+      "year": 2022,
+      "content": "I strongly suggest the reader to not go directly to the solution because you will miss out on the dopamine hit that solving this problem gives. If you want a hint, draw the various options on a paper. You can also see the repeating problem this way.  I am including a [screenshot](https://drive.google.com/file/d/1lj7S3x_Yl01kTeGPKMfVpEfHf_ubZ5V5/view?usp=sharing) of my drawing for your reference.  ",
+      "voteCount": 659
+    },
+    {
+      "name": "deleted_user",
+      "year": 2023,
+      "content": "Brain damage",
+      "voteCount": 385
+    },
+    {
+      "name": "zenfred",
+      "year": 2023,
+      "content": "Earlier today, the problem\\'s difficulty label was changed from Hard to Medium. Do you agree with the change? I\\'m afraid I would not. The DP solution for this problem is analogous to that of Regular Expression Matching and Wildcard Matching, both of which are Hards.",
+      "voteCount": 265
+    },
+    {
+      "name": "vikram_kuruguntla",
+      "year": 2014,
+      "content": "http://www.stanford.edu/class/cs124/lec/med.pdf",
+      "voteCount": 247
+    },
+    {
+      "name": "lin25_",
+      "year": 2023,
+      "content": "not them changing this to a medium",
+      "voteCount": 156
+    },
+    {
+      "name": "seventhrankpawn",
+      "year": 2023,
+      "content": "I ask this question at Microsoft for the AI teams.\\n\\nIt\\'s fundamental to many derivative algorithms for sequence pattern matching, processing, error correction, error rate estimation. \\n\\nHeck most recently I\\'ve seen it applied to the attention outputs of a transformer. \\n\\nIf you\\'re serious about AI, you should know this snazzy DP.",
+      "voteCount": 131
+    },
+    {
+      "name": "dsapelnikov",
+      "year": 2023,
+      "content": "It may be called \\'medium\\', but it\\'s definitely at the top border between medium and hard.",
+      "voteCount": 97
+    },
+    {
+      "name": "cOde_Ranvir25",
+      "year": 2023,
+      "content": "Here is the Approach:-\\n\\n\\nIf either word1 or word2 is empty, return the maximum length of the two strings as the minimum edit distance.\\n\\nIf word1 is equal to word2, return 0 as the minimum edit distance.\\n\\nCreate a 2D array dp of size (m+1) x (n+1), where m and n are the lengths of word1 and word2 respectively. Each element of the array dp[i][j] represents the minimum edit distance between the first i characters of word1 and the first j characters of word2.\\n\\nInitialize the first row of dp to the values from 0 to n, and the first column of dp to the values from 0 to m. This is because the minimum edit distance between an empty string and a string of length j is j, and vice versa.\\n\\nIterate over each character in word1 and word2 and fill in the rest of the dp array based on the following conditions:\\n\\nIf i is 0, dp[i][j] is equal to j, because the minimum edit distance between an empty string and a string of length j is j.\\n\\nIf j is 0, dp[i][j] is equal to i, because the minimum edit distance between a string of length i and an empty string is i.\\n\\nIf the characters at positions i-1 and j-1 of word1 and word2 respectively are equal, dp[i][j] is equal to dp[i-1][j-1], because no edit is needed.\\n\\nIf the characters at positions i-1 and j-1 of word1 and word2 respectively are not equal, dp[i][j] is equal to 1 + min(dp[i-1][j-1], dp[i][j-1], dp[i-1][j]), where dp[i-1][j-1] represents the minimum edit distance after replacing the character at position i-1 in word1 with the character at position j-1 in word2, dp[i][j-1] represents the minimum edit distance after inserting the character at position j-1 of word2 into word1, and dp[i-1][j] represents the minimum edit distance after deleting the character at position i-1 of word1.\\n\\nThe final answer is the value of dp[m][n], which represents the minimum edit distance between the entire strings word1 and word2.",
+      "voteCount": 94
+    },
+    {
+      "name": "msaptarshi",
+      "year": 2023,
+      "content": "THIS IS HARD!!\\n",
+      "voteCount": 92
+    },
+    {
+      "name": "wyldbill",
+      "year": 2023,
+      "content": "This is actually the [Levenshtein Distance](https://en.wikipedia.org/wiki/Levenshtein_distance)\nIt is one of several different \"[Edit Distance](https://en.wikipedia.org/wiki/Edit_distance)\" problems (Hamming, Jaro, LCS, etc.)\n",
+      "voteCount": 41
+    }
+  ]
+}

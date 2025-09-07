@@ -1,0 +1,147 @@
+{
+  "category": "",
+  "id": "518",
+  "name": "Coin Change II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/coin-change-ii/",
+  "slug": "coin-change-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Value of K Coins From Piles",
+      "difficulty": "Hard",
+      "slug": "maximum-value-of-k-coins-from-piles"
+    },
+    {
+      "title": "Number of Ways to Earn Points",
+      "difficulty": "Hard",
+      "slug": "number-of-ways-to-earn-points"
+    },
+    {
+      "title": "Count of Sub-Multisets With Bounded Sum",
+      "difficulty": "Hard",
+      "slug": "count-of-sub-multisets-with-bounded-sum"
+    },
+    {
+      "title": "Length of the Longest Subsequence That Sums to Target",
+      "difficulty": "Medium",
+      "slug": "length-of-the-longest-subsequence-that-sums-to-target"
+    },
+    {
+      "title": "The Number of Ways to Make the Sum",
+      "difficulty": "Medium",
+      "slug": "the-number-of-ways-to-make-the-sum"
+    },
+    {
+      "title": "Inverse Coin Change",
+      "difficulty": "Medium",
+      "slug": "inverse-coin-change"
+    }
+  ],
+  "questionId": "518",
+  "questionFrontendId": "518",
+  "title": "Coin Change II",
+  "titleSlug": "coin-change-ii",
+  "content": "<p>You are given an integer array <code>coins</code> representing coins of different denominations and an integer <code>amount</code> representing a total amount of money.</p>\n\n<p>Return <em>the number of combinations that make up that amount</em>. If that amount of money cannot be made up by any combination of the coins, return <code>0</code>.</p>\n\n<p>You may assume that you have an infinite number of each kind of coin.</p>\n\n<p>The answer is <strong>guaranteed</strong> to fit into a signed <strong>32-bit</strong> integer.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> amount = 5, coins = [1,2,5]\n<strong>Output:</strong> 4\n<strong>Explanation:</strong> there are four ways to make up the amount:\n5=5\n5=2+2+1\n5=2+1+1+1\n5=1+1+1+1+1\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> amount = 3, coins = [2]\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> the amount of 3 cannot be made up just with coins of 2.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> amount = 10, coins = [10]\n<strong>Output:</strong> 1\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= coins.length &lt;= 300</code></li>\n\t<li><code>1 &lt;= coins[i] &lt;= 5000</code></li>\n\t<li>All the values of <code>coins</code> are <strong>unique</strong>.</li>\n\t<li><code>0 &lt;= amount &lt;= 5000</code></li>\n</ul>\n",
+  "likes": 9958,
+  "dislikes": 221,
+  "stats": {
+    "totalAccepted": "874.7K",
+    "totalSubmission": "1.4M",
+    "totalAcceptedRaw": 874672,
+    "totalSubmissionRaw": 1425855,
+    "acRate": "61.3%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "metaData": {
+    "name": "change",
+    "params": [
+      {
+        "name": "amount",
+        "type": "integer"
+      },
+      {
+        "name": "coins",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "shivanigam",
+      "year": 2023,
+      "content": "DP is only one where we smile looking at TLE.",
+      "voteCount": 212
+    },
+    {
+      "name": "k98satyam",
+      "year": 2024,
+      "content": "is anyone else getting runtime error when doing tabulation in cpp?",
+      "voteCount": 118
+    },
+    {
+      "name": "vaibhav_bhosale_",
+      "year": 2024,
+      "content": "if you are facing runtime error at 28/29 test case then simply declare dp of unisgned long long\\n` unsigned long long dp[n+1][amount+1];`",
+      "voteCount": 70
+    },
+    {
+      "name": "rsingh2003",
+      "year": 2023,
+      "content": "Today both Problem of the day of GFG and LeetCode Daily Challenge are same. What a coincidence !!!",
+      "voteCount": 65
+    },
+    {
+      "name": "cssource1156",
+      "year": 2023,
+      "content": "it should be a [hard] ...",
+      "voteCount": 60
+    },
+    {
+      "name": "renatoaraujo",
+      "year": 2020,
+      "content": "In this case I thought the answer would be 0, but the test case says it should be 1:\\n\\nInput:\\namount=0\\ncoins=[7]\\n\\nOutput: 0\\nExpected: 1\\n\\nIf there is no amount to give as change, what coin will the person get? There is no coin with value zero.",
+      "voteCount": 41
+    },
+    {
+      "name": "Hemant_kr03",
+      "year": 2023,
+      "content": "**Me(Reading the problem)**: Pssh, piece of cake! Just gonna sprinkle some recursion + memorization magic.\\n\\n**My Brain(Trying out the code)**: Hold up... wait a sec... something\\'s fishy...\\n\\nTurns out, my code was like counting sheep twice in a dream. So, I had this genius plan: use a **set<vector<int>>** to kick out the extras, but oh boy, that\\'s like inviting space complexity over for tea. Not cool.\\n\\nAfter some Sherlock-level sleuthing, I cracked the code: this question\\'s all about that classic recursion move \\u2013 the **Inclusion and Exclusion** game. Eureka moment, anyone? \\uD83D\\uDE05\\uD83D\\uDD75\\uFE0F\\u200D\\u2642\\uFE0F",
+      "voteCount": 40
+    },
+    {
+      "name": "a_andreasian",
+      "year": 2023,
+      "content": "This one is very hard, not medium at all. ",
+      "voteCount": 35
+    },
+    {
+      "name": "anwendeng",
+      "year": 2023,
+      "content": "Use DP. Easier than Leetcode 322. Coin Change\n\n",
+      "voteCount": 23
+    },
+    {
+      "name": "shunyana",
+      "year": 2020,
+      "content": "I\\'m wondering how to come up with DP solution.\\nThen I found that, first of all, we have to think recurence relation.\\nIt might be natural, but I just realized it.\\n\\nThis is because I read the article, below.\\n\\n-----\\nIf we want to make change for **N** cents, and we have infinite supply of each of **{*S* = *S_1*, *S_2*, ..., *S_m*}** valued coins.\\n\\nThe set of solutions for this problem, **C(N,m)**, can be partitioned into two sets.\\n  - There are those sets that do not contain any ***S_m*** and\\n  - Those sets that contain at least 1  ***S_m***\\n\\nThen we get recurence relation.\\n**C(N, m)** = **C(N, m-1)** + **C(N - *S_m*, m)**\\n\\n(reference)\\n[Coin change - Algorithmist](https://algorithmist.com/wiki/Coin_change)\\n\\n-----",
+      "voteCount": 19
+    }
+  ]
+}

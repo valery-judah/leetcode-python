@@ -1,0 +1,133 @@
+{
+  "category": "",
+  "id": "473",
+  "name": "Matchsticks to Square",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/matchsticks-to-square/",
+  "slug": "matchsticks-to-square",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Backtracking",
+    "Bit Manipulation",
+    "Bitmask"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximum Rows Covered by Columns",
+      "difficulty": "Medium",
+      "slug": "maximum-rows-covered-by-columns"
+    }
+  ],
+  "questionId": "473",
+  "questionFrontendId": "473",
+  "title": "Matchsticks to Square",
+  "titleSlug": "matchsticks-to-square",
+  "content": "<p>You are given an integer array <code>matchsticks</code> where <code>matchsticks[i]</code> is the length of the <code>i<sup>th</sup></code> matchstick. You want to use <strong>all the matchsticks</strong> to make one square. You <strong>should not break</strong> any stick, but you can link them up, and each matchstick must be used <strong>exactly one time</strong>.</p>\n\n<p>Return <code>true</code> if you can make this square and <code>false</code> otherwise.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/04/09/matchsticks1-grid.jpg\" style=\"width: 253px; height: 253px;\" />\n<pre>\n<strong>Input:</strong> matchsticks = [1,1,2,2,2]\n<strong>Output:</strong> true\n<strong>Explanation:</strong> You can form a square with length 2, one side of the square came two sticks with length 1.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> matchsticks = [3,3,3,3,4]\n<strong>Output:</strong> false\n<strong>Explanation:</strong> You cannot find a way to form a square with all the matchsticks.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= matchsticks.length &lt;= 15</code></li>\n\t<li><code>1 &lt;= matchsticks[i] &lt;= 10<sup>8</sup></code></li>\n</ul>\n",
+  "likes": 3955,
+  "dislikes": 311,
+  "stats": {
+    "totalAccepted": "197.8K",
+    "totalSubmission": "480.4K",
+    "totalAcceptedRaw": 197834,
+    "totalSubmissionRaw": 480380,
+    "acRate": "41.2%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    },
+    {
+      "name": "Backtracking",
+      "slug": "backtracking"
+    },
+    {
+      "name": "Bit Manipulation",
+      "slug": "bit-manipulation"
+    },
+    {
+      "name": "Bitmask",
+      "slug": "bitmask"
+    }
+  ],
+  "metaData": {
+    "name": "makesquare",
+    "params": [
+      {
+        "name": "matchsticks",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "raghavrathore7415",
+      "year": 2023,
+      "content": "this is hard",
+      "voteCount": 54
+    },
+    {
+      "name": "Divyam6969",
+      "year": 2023,
+      "content": "This problem should be in hard category",
+      "voteCount": 34
+    },
+    {
+      "name": "Chris1337",
+      "year": 2023,
+      "content": "If you look at solutions from a year ago, they no longer work. This problem got even tougher.\\n\\nTips:\\n1. Sorting is required.\\n2. Memoization is required.\\n3. Create a target var based on the length of one side.\\n\\nGood luck gentlemen.",
+      "voteCount": 15
+    },
+    {
+      "name": "pavan_d7",
+      "year": 2023,
+      "content": "smaller version of partition to k equal sum subset problem; try it out",
+      "voteCount": 14
+    },
+    {
+      "name": "shivasaineelam",
+      "year": 2023,
+      "content": "solve partition to k equal sum subsets  here  k=4",
+      "voteCount": 10
+    },
+    {
+      "name": "puzzle_machine",
+      "year": 2021,
+      "content": "This problem is a fine example why requirements engineering is so important. If any part of a specification allows wierd things, then it must also permit consequences of those oddities. In our case, it is suspicious that a matchstick can be of zero length. For all practical purposes we may regard this as *nonsense*. But this is not the worst issue. What irritates is that a square with zero side length is not accepeted as a valid shape.\\n\\nTry to enter the following test case `[0,0,0,0]`. It will be regarded as `False` by the official solution, although nothing more strange is entered here than what is already allowed. Namely, we have 4 zero length matchsticks that can nicely form a square of zero side length. All matchsticks would be used exactly once and all sides of the square would be equal.",
+      "voteCount": 9
+    },
+    {
+      "name": "autodino",
+      "year": 2018,
+      "content": "When I checked some of the fastest Python solutions, I see several wrong solutions -- Please just try case [2,3,3,3,3,3,3,3,3,4,4,5,13]!!! This case should be included in the test!",
+      "voteCount": 5
+    },
+    {
+      "name": "gamefana",
+      "year": 2023,
+      "content": "This problem\\'s time is way too strict. Problems runtime should test for asymptotic complexity, not count on optimizations that are specific to test cases. Very poor design",
+      "voteCount": 4
+    },
+    {
+      "name": "_srihari_",
+      "year": 2023,
+      "content": "This is a crucial line!!! I used backtracking asusual. But it gave more than 2000ms. But putting a if condition optimised it to 46ms and gave me a 99.98% space. \nfor(int i=0;i<4;i++){\n            if(arr[i]>target)return false;\n            arr[i]+=m[idx];\n            if(backtrack(arr,m,idx+1,n,target))return true;\n            arr[i]-=m[idx];\n            if(arr[i]==0)break; // helps a lot in optimization\n}",
+      "voteCount": 4
+    },
+    {
+      "name": "romaishawaqar",
+      "year": 2024,
+      "content": "damn hard",
+      "voteCount": 2
+    }
+  ]
+}

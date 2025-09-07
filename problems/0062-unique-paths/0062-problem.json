@@ -1,0 +1,173 @@
+{
+  "category": "",
+  "id": "62",
+  "name": "Unique Paths",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/unique-paths/",
+  "slug": "unique-paths",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Combinatorics"
+  ],
+  "similar_questions": [
+    {
+      "title": "Unique Paths II",
+      "difficulty": "Medium",
+      "slug": "unique-paths-ii"
+    },
+    {
+      "title": "Minimum Path Sum",
+      "difficulty": "Medium",
+      "slug": "minimum-path-sum"
+    },
+    {
+      "title": "Dungeon Game",
+      "difficulty": "Hard",
+      "slug": "dungeon-game"
+    },
+    {
+      "title": "Minimum Path Cost in a Grid",
+      "difficulty": "Medium",
+      "slug": "minimum-path-cost-in-a-grid"
+    },
+    {
+      "title": "Minimum Cost Homecoming of a Robot in a Grid",
+      "difficulty": "Medium",
+      "slug": "minimum-cost-homecoming-of-a-robot-in-a-grid"
+    },
+    {
+      "title": "Number of Ways to Reach a Position After Exactly k Steps",
+      "difficulty": "Medium",
+      "slug": "number-of-ways-to-reach-a-position-after-exactly-k-steps"
+    },
+    {
+      "title": "Paths in Matrix Whose Sum Is Divisible by K",
+      "difficulty": "Hard",
+      "slug": "paths-in-matrix-whose-sum-is-divisible-by-k"
+    }
+  ],
+  "questionId": "62",
+  "questionFrontendId": "62",
+  "title": "Unique Paths",
+  "titleSlug": "unique-paths",
+  "content": "<p>There is a robot on an <code>m x n</code> grid. The robot is initially located at the <strong>top-left corner</strong> (i.e., <code>grid[0][0]</code>). The robot tries to move to the <strong>bottom-right corner</strong> (i.e., <code>grid[m - 1][n - 1]</code>). The robot can only move either down or right at any point in time.</p>\n\n<p>Given the two integers <code>m</code> and <code>n</code>, return <em>the number of possible unique paths that the robot can take to reach the bottom-right corner</em>.</p>\n\n<p>The test cases are generated so that the answer will be less than or equal to <code>2 * 10<sup>9</sup></code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img src=\"https://assets.leetcode.com/uploads/2018/10/22/robot_maze.png\" style=\"width: 400px; height: 183px;\" />\n<pre>\n<strong>Input:</strong> m = 3, n = 7\n<strong>Output:</strong> 28\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> m = 3, n = 2\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> From the top-left corner, there are a total of 3 ways to reach the bottom-right corner:\n1. Right -&gt; Down -&gt; Down\n2. Down -&gt; Down -&gt; Right\n3. Down -&gt; Right -&gt; Down\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= m, n &lt;= 100</code></li>\n</ul>\n",
+  "likes": 17820,
+  "dislikes": 476,
+  "stats": {
+    "totalAccepted": "2.5M",
+    "totalSubmission": "3.8M",
+    "totalAcceptedRaw": 2498412,
+    "totalSubmissionRaw": 3782073,
+    "acRate": "66.1%"
+  },
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    },
+    {
+      "name": "Combinatorics",
+      "slug": "combinatorics"
+    }
+  ],
+  "metaData": {
+    "name": "uniquePaths",
+    "params": [
+      {
+        "name": "m",
+        "type": "integer"
+      },
+      {
+        "name": "n",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 20
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Google",
+        "slug": "google",
+        "timesEncountered": 15
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "anwendeng",
+      "year": 2023,
+      "content": "This problem is very similar to Pascal triangle! DP is a suggestion.\nIf python is used. 1 line is enough!\n![unigue_path.png](https://assets.leetcode.com/users/images/bab16c1d-e39a-4683-9bd4-fbe4085cff63_1693703164.5031812.png)",
+      "voteCount": 390
+    },
+    {
+      "name": "wyc1997",
+      "year": 2019,
+      "content": "A pure mathematics solution for people who are interested.\\nThis can be seen as a counting problem in discrete math.\\nIf we can only travel down or right, then every path from the starting point to the ending point is of fixed length m+n. \\n\\nIn this m+n steps we need to make m rightward steps and n downward steps. The difference between each path is at each point whether you choose to go down or right. Therefore, out of m+n steps to take, we have to choose m steps to go right, and the others go down. There are C(m+n, m) number of ways to do this, where C stands for the mathematics combination. \\n\\n(Official definition for C(m+n,m): the number of subsets of length m of a set that has m+n elements)",
+      "voteCount": 190
+    },
+    {
+      "name": "suhbell",
+      "year": 2023,
+      "content": "Explanation of a mathematical approach: \\n\\nIn the first test case m=3 and n=7. Based on these dimensions the robot can move 2 spaces down and 6 spaces to the right. These moves can be made in any order but there must always be 2 moves down and 6 moves to the right to get to the destination. Generalizing this, there will always be `(m-1)` moves down and `(n-1)` moves right so there will always be `(m-1)+(n-1)` total moves. \\n\\nWe want to find all combinations of the `(m-1)` moves down and `(n-1)` moves to the right. The combination formula is as follows:  \\n`N!/(r!(N-r)!` \\nwhere N is the total number of options and r is the number of choices you have to make. As we saw above, the total number of choices is `(m-1)+(n-1)` which can be simplified to `m+n-2`. So we can substitute `m+n-2` for `N` in the combination formula:\\n`(m+n-2)!/(r!(m+n-2-r)!` \\nWe can then select either the total number of possible moves to the right OR down for r in the combination formula. First, let\\'s try `m-1` for `r`:\\n`(m+n-2)!/((m-1)!(m+n-2-(m-1))!` \\n`(m+n-2)!/((m-1)!(m+n-2-m+1))!` \\n`(m+n-2)!/((m-1)!(n-1))!` \\nTo show that wither m-1 or n-1 for r would produce the same answer, let\\'s use n-1 for r:\\n`(m+n-2)!/((n-1)!(m+n-2-(n-1))!` \\n`(m+n-2)!/((n-1)!(m+n-2-n+1))!` \\n`(m+n-2)!/((n-1)!(m-1))!` \\nSince `(m+n-2)!/((n-1)!(m-1))!`  is equal to `(m+n-2)!/((m-1)!(n-1))!` , then choosing wither m-1 or n-1 for r in the combination formula is valid. \\n",
+      "voteCount": 105
+    },
+    {
+      "name": "abhaykumar05",
+      "year": 2021,
+      "content": "During google screening round, I gave same solution as given in solution \"Approach 1: Dynamic Programming\". I was rejected, HR said i solved in complicated way with high memory requirement. \\nThe interviewer also asked \"Unique Paths II\" as second question, i solved it again using matrix, which uses m*n space.\\n \\n",
+      "voteCount": 65
+    },
+    {
+      "name": "dejunchen",
+      "year": 2019,
+      "content": "why output of 1X1 is 1?not 0?",
+      "voteCount": 41
+    },
+    {
+      "name": "yoonl",
+      "year": 2020,
+      "content": "So, robot in (m x n) grid needs to take total (m-1) down move and (n-1) right move. For an example, (3 x 7) grid, robot needs 2 down moves, 6 right moves, one of which is DDRRRRRR. Now this is about math combination problem picking up 2 D (or 6 R) from 8 spots, 8C2 (the number of way picking 2 from 8) then fill all others with R, 8x7 / 2x1 = 28.",
+      "voteCount": 36
+    },
+    {
+      "name": "LJXLJXLJX",
+      "year": 2018,
+      "content": "It should be 0 , because the robot is at the destination on the beginning...",
+      "voteCount": 31
+    },
+    {
+      "name": "NithinSas3",
+      "year": 2024,
+      "content": "can we have a smiling robot please?",
+      "voteCount": 30
+    },
+    {
+      "name": "saifrhman03",
+      "year": 2023,
+      "content": "Hi guys , if you are facing trouble understanding the problem , checkout this program, It will help you visualize  [visualizer](https://amazing-taffy-810899.netlify.app/)",
+      "voteCount": 26
+    },
+    {
+      "name": "Moore",
+      "year": 2015,
+      "content": "I dont think int is enough for the result of uniquepaths(m = 100 and n = 100)",
+      "voteCount": 26
+    }
+  ]
+}

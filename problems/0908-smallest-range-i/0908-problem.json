@@ -1,0 +1,116 @@
+{
+  "category": "",
+  "id": "908",
+  "name": "Smallest Range I",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/smallest-range-i/",
+  "slug": "smallest-range-i",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math"
+  ],
+  "similar_questions": [],
+  "questionId": "944",
+  "questionFrontendId": "908",
+  "title": "Smallest Range I",
+  "titleSlug": "smallest-range-i",
+  "content": "<p>You are given an integer array <code>nums</code> and an integer <code>k</code>.</p>\n\n<p>In one operation, you can choose any index <code>i</code> where <code>0 &lt;= i &lt; nums.length</code> and change <code>nums[i]</code> to <code>nums[i] + x</code> where <code>x</code> is an integer from the range <code>[-k, k]</code>. You can apply this operation <strong>at most once</strong> for each index <code>i</code>.</p>\n\n<p>The <strong>score</strong> of <code>nums</code> is the difference between the maximum and minimum elements in <code>nums</code>.</p>\n\n<p>Return <em>the minimum <strong>score</strong> of </em><code>nums</code><em> after applying the mentioned operation at most once for each index in it</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1], k = 0\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> The score is max(nums) - min(nums) = 1 - 1 = 0.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [0,10], k = 2\n<strong>Output:</strong> 6\n<strong>Explanation:</strong> Change nums to be [2, 8]. The score is max(nums) - min(nums) = 8 - 2 = 6.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,3,6], k = 3\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> Change nums to be [4, 4, 4]. The score is max(nums) - min(nums) = 4 - 4 = 0.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>0 &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>\n\t<li><code>0 &lt;= k &lt;= 10<sup>4</sup></code></li>\n</ul>\n",
+  "likes": 761,
+  "dislikes": 2081,
+  "stats": {
+    "totalAccepted": "111.5K",
+    "totalSubmission": "154.3K",
+    "totalAcceptedRaw": 111506,
+    "totalSubmissionRaw": 154254,
+    "acRate": "72.3%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "metaData": {
+    "name": "smallestRangeI",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      },
+      {
+        "name": "k",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "abkosar",
+      "year": 2018,
+      "content": "Sorry but I read the description 15 times and the solution also 2-3 times, and one of the worst stated questions I have ever seen.",
+      "voteCount": 330
+    },
+    {
+      "name": "munu8998rai",
+      "year": 2023,
+      "content": "I need to learn first Leetcode English!",
+      "voteCount": 83
+    },
+    {
+      "name": "atmosphere77777",
+      "year": 2019,
+      "content": "![image](https://assets.leetcode.com/users/atmosphere77777/image_1548821419.png)\\nPlease correct me if I\\'m wrong, also forgive my poor drawing skill, my passedArtClass = None.",
+      "voteCount": 67
+    },
+    {
+      "name": "arrowmaster1252",
+      "year": 2022,
+      "content": "Better explanation:\\nReturn the smallest possible range (largest element - smallest element) you can have after increasing or decreasing all in the array nums by any number less than or equal to k.",
+      "voteCount": 46
+    },
+    {
+      "name": "iabhishek15",
+      "year": 2020,
+      "content": "The problem was good but the explanation was bad.\\nIt took me 15 minute to understand the question.",
+      "voteCount": 36
+    },
+    {
+      "name": "ajiamiis",
+      "year": 2021,
+      "content": "Maybe understanding this itself is the question, not a coding one though",
+      "voteCount": 32
+    },
+    {
+      "name": "Cocamo1337",
+      "year": 2023,
+      "content": "All that really matters is the max value and the min value of nums. If you can make min >= max by subtracting k from max and adding k to min, then you know that the resulting score can be 0. Figure the rest out for yourself :D",
+      "voteCount": 13
+    },
+    {
+      "name": "Jayesh101",
+      "year": 2024,
+      "content": "How nums change to [4, 4, 4] in 3rd example?",
+      "voteCount": 8
+    },
+    {
+      "name": "Aditya_Makwana",
+      "year": 2024,
+      "content": "so here is a logic ::\\n 1).  find max and min\\n2). run the loop k times\\n                  --> decrease max -1 and increase min +1;\\n                  --> if min>max or max == min then return 0;\\n                 ---> if loop ends then return max - min (where both are updated in loop)\\n\\n\\nnow let me explain:: Since we are finding minimum difference than we need to make max and min  closer to each other as much  as we can...and so we are subtract MAX and add MIN..to make them closer ....by using \"k\" value",
+      "voteCount": 5
+    },
+    {
+      "name": "EverettHanke",
+      "year": 2024,
+      "content": "This may be the worst worded question I\\'ve ever seen on leetcode. ",
+      "voteCount": 3
+    }
+  ]
+}

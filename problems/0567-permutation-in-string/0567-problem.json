@@ -1,0 +1,137 @@
+{
+  "category": "",
+  "id": "567",
+  "name": "Permutation in String",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/permutation-in-string/",
+  "slug": "permutation-in-string",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "Two Pointers",
+    "String",
+    "Sliding Window"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Window Substring",
+      "difficulty": "Hard",
+      "slug": "minimum-window-substring"
+    },
+    {
+      "title": "Find All Anagrams in a String",
+      "difficulty": "Medium",
+      "slug": "find-all-anagrams-in-a-string"
+    }
+  ],
+  "questionId": "567",
+  "questionFrontendId": "567",
+  "title": "Permutation in String",
+  "titleSlug": "permutation-in-string",
+  "content": "<p>Given two strings <code>s1</code> and <code>s2</code>, return <code>true</code> if <code>s2</code> contains a <span data-keyword=\"permutation-string\">permutation</span> of <code>s1</code>, or <code>false</code> otherwise.</p>\n\n<p>In other words, return <code>true</code> if one of <code>s1</code>&#39;s permutations is the substring of <code>s2</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s1 = &quot;ab&quot;, s2 = &quot;eidbaooo&quot;\n<strong>Output:</strong> true\n<strong>Explanation:</strong> s2 contains one permutation of s1 (&quot;ba&quot;).\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s1 = &quot;ab&quot;, s2 = &quot;eidboaoo&quot;\n<strong>Output:</strong> false\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s1.length, s2.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>s1</code> and <code>s2</code> consist of lowercase English letters.</li>\n</ul>\n",
+  "likes": 12557,
+  "dislikes": 501,
+  "stats": {
+    "totalAccepted": "1.3M",
+    "totalSubmission": "2.7M",
+    "totalAcceptedRaw": 1299487,
+    "totalSubmissionRaw": 2724677,
+    "acRate": "47.7%"
+  },
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Sliding Window",
+      "slug": "sliding-window"
+    }
+  ],
+  "metaData": {
+    "name": "checkInclusion",
+    "params": [
+      {
+        "name": "s1",
+        "type": "string"
+      },
+      {
+        "name": "s2",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "saadkhan_king",
+      "year": 2023,
+      "content": "you will love this edge case :\\ns1 = \"adc\"\\ns2 = \"dcda\"",
+      "voteCount": 321
+    },
+    {
+      "name": "JhnBwrs",
+      "year": 2021,
+      "content": "I don\\'t feel like \"permutation\" is well enough defined to tackle this problem.  Does a permutation require the re-use of all characters or only some?  Can any character be used more in the permutation that in the original?",
+      "voteCount": 179
+    },
+    {
+      "name": "ryankupk",
+      "year": 2024,
+      "content": "6 hints is kinda crazy",
+      "voteCount": 172
+    },
+    {
+      "name": "ibra7",
+      "year": 2020,
+      "content": "Is this not basically the same problem as yesterday, just checking if there is at least one anagram in the string? leetcode cmon man",
+      "voteCount": 125
+    },
+    {
+      "name": "adityakumar8068",
+      "year": 2024,
+      "content": "TESTCASES--------------->\\n```\\n\"adc\"\\n\"dcda\"\\n\"bc\"\\n\"ad\"\\n\"abc\"\\n\"defabc\"\\n\"cgzvjlgigiosbizrtoyxexeijhqzzgbwxnmyhmanpaagjblooflawusyjiayocqhpxkybgkkybkostijmntcaxpjrfrvirvwdvlcrnrdsceldnhihrftexsdykkzcbelecdjhnwfuvnwwyxvowugdhpxfbigotfajpitxuvvcmbiipjzctrrlyxswgcvkaklfkocmathfdsgddmtstzqedazztmutaqgyiywsufcgejubzsuwcawpxwwdnzfvkpbdjuvhkrifzdtzpssbvqetzejjpdfzxczfnfoucfkvyspmpscpljmchrsfdtfcyvhfyqiaxfqdmewxtwavbxreeogxeelvrashuelrkrmxmdxriayxfmhfmxelwbydycfornyqpuhjrbgbukotgtgbtlnqljjxktnysnayiutkxuzdimbaocjymgledptwavfhlnauiafqiaoyngspnmttcxkgzufpvfvfulclgqekmehwqmfqtcrtvkfnjifrhmrsbcixlopgxkrgwnqjdhrftrwqmnfgjhwmbbmbnuawyjliarjgafybqvcigmpiyqguiwzvthtwqjvwmgfxvfwcyxizavpwwwuoqzhjyjxnjxyzpdmajxtckzdkklipdldzobgjnhyrcexggtjbilqrnfgvmtwrvhxsuysxyuumnxaucvkuafpbegihgcsuhfqqljrxrquaqpjmsegzisqogtvxcqfhnrxedovyjgyknqlfmdlpfbcyfrdokvlzlgbsnajwgnybmutvljqwovppctbadmkmujpwnggqbrcqmjbdaodixjsozzrmgoycpfkhwomujbuxqdyjmrqbchhfpwgbigboxseknxdptgoejsgewykoszssnnwaocaodqsghprzqbtnfosgotvdwxzwhjdlqhlwgidlrdudgwkgrtzdxjlhbkdjkjxjvmkvdimdeejvsmqjkagffrfsdspstowzcablbtcbpdovfinpyatkgcrzotmtztiyqnxycsawmdpfdeubekhzktgnqabfhqkfrszwpaylarurklzrfjeruqpjhhjibojcovcbccbscgwwjkixhufvbmrbbcbjiaxhhryqgbbpbzwbbbyxukrervckfislgwunqbyzandfqlsturgrssnzneqtgbsrfugstirqholqmftjacnqapjdxzrcpqfnkiuaqeyawhobemdnkshevtkywueowgekedmjdledcddtoomnkkzgvyqbonynqlakhcxynsfoxjlkevqscltkyroiiymzcxvmvhtojspzwezdxabuxuhhrgeynczmnujzglzhgywtpbyygwvazmqbcnlbjwcyzkurnsrvuxltsymrvoonasiquqvtgcffaphsfklonlsdvrmmobdafchuyntcciugpfgkuszgwrcfkbpfztiwpcczlnjoabxvtkldmtyjlbhorvhiuvzqidypyzwxqjefdhztbgcunthxzimaszfvzzfbnydxsmnplqgtrkcbadmvbqlonrxdgxpunwptatdvgxnybmviiwdrkcplezholphdenmvywilaqfujnmbeydvovytlmzpjalkekwbljwvrmemfcthyickamqdszdglrsapjjhehbiqoxhgynfyypljxhpfjxlckfxvhetcylewtnbhvgvhbpsmftgzsrzawwcunjdarwdgsqrihyshnraiizbsavcdqmjvezehjjgaxnmffdtapkzbhimygljaimqncsrynjzvkdcenndicaxnorrcbhvkgrouchpzqxtchmqabktglnjbpxhuroxjxskfppkyzbsvkenecglzbgvkxdpkjoykcsobkjnzwhbyycvkxwdwqbfzjeoakbadlaekmqgdxbojwpvkftckuparzpeyytdowcxrupeoidlirdqseqhkpfxcvfuuyqybgosfppscdtwetliojdztckjarmlkmtpuhqfhshdwummaphq\"\\n\"vnndchsddonunovgxxlrrdtnfjidmocdrdcnousrajalpsgvxolzhujffwszxhqhojtmdluwdrzwqwqvbebztgghadtdroxujmzwmftiwamymwmpysqwffjuxtdebqoglbqobxfixdlircftggnezxyxrjzytffudihaespkhdpeqnalqohjqtypsobhrxtovxskqvtdqulgaeozlxazpubdveorkytajakzagxmhrlcvfwyuteboazjnecgrggpmmxplndhbvkhmkaozlqpgxenkchjjtaegwfcbquxlsldlbxzyfwahdpybheugrysnbjizbpgpwzwfdnriscqlrndkvibkqczjbiwkahypuujuexwtbtiqpnixwcslojlowxxjhpxvmxssciyhxpbmfpoeiizuhlkswctwkzguwyvyqvtemnerodalfuocyaduvyjwcgyxtcdhggskcdazjsqnowkkklmnocgrjpgrwdwjbhvvwtgfuialbafnycigyhnphhvnibinvadcoprwdnreuwukosnlatsymuqxtgdvsrvmercfpfaaeszkhknurpqxhyyxclzvzjqkztoqrpszcmhbcdvxwbdokmflzcsepejdemzvtzhtkmhhjhducxxijvgjidjaemzwkeyggircxivxyxcogasotyfnuamfavpkcjbnvxddhyiiybwkqobmzuzmegdiqvzjptiwhujpndvxzlaclqsemhtqwufeonsdjgnbkkjjsyxtpdytfsgpmknjibjyxctwmprbcyjhlfiyaofvjryiicpoaxeonayvztnkvzpoprnbdtwllozlqyedvnezxxxuspenwxjekkgaeajhxriahqcutakhifqkzgcjldlkbxapqrwvwshpyvnbukblgcdyyhikloslaxrsfrkwexzbrndopgnwejltpdiiwykwfymmwtsbjcvtmnakjyeqcbcbdtcuxuueaxzurixojxqdfcsdmfejajqlissfkkowchuyabccuazveqmegrtdnsoqsqxgmilxnyewpkiheajdvcnyjuuuvhonjumnshoinriazaxrqizrkuhyadjmkwdizkuamgseqibgnhgovccxmgtcywroxctticxbmvvqenvmuzdobfcxqffzgcojdhvvvkgajmuelevryxxjcvfbgpztrpzjpmttwjalllbltzmfqiwoodlvnnoviwiotmpjkjwfdnjfcsylhtioszxytvkkhrunwqxuivzukynbrdjryxkivngsecgskxhtpffrvfpwrpcythjbjdjocxcaemznunyhhrvcchmubozsqnfbgwrtzhhaprjkiwwrxzggkamvzdeidbckwyctuspdmfjhhrujobvvzuhhimutzlqfleimwechdemrztldrqwtevkbmttsdxcpmkzogegytvtrwevzbvszsxpohqqndstnstnaltilpeqdixpokcgzvjlgigiosbizrtoyxexeijkqzzgbwxnmyhmanpmagjblooflawusyjiayocqhpxkpbgkkybkostijmntcaxpjrfrvirvwdvlcrnrdsceldnhihrfyexsdykkzcbelecdjhnqcuvnwwyxvowugdhpxfbigotfajpitxuvvcmbiipjzctrrlyxswgcvkahlfkocmathfdsgddmtstzqedazztmutaqgyitwsufcgejufzsuwcawpxwwdnzfvkpbdjuvhkrifzdtzpssbvqetzejjpdfzxczfnfoucfkvyspmpscpljmchrsfdqfcyvhfyqiaxfqdmewxtwavbxreeogxeelvrashuelrkrmxmdxriayxfmhfmxelwbydycfornyqpuhjrbgbukotgtgbtlnqljjxktnysnayiutkxuzdimbsocjyagledptwavfhlnauiafqiaoyngspnmttcxkgzubpvfvfulclgqekmehwqmfqtcrtxkfnjifrhmrsbcixlougxkrgwnqjdhrftrwqmnfgjhwmbbmbnuawyjliarjgafylqvcigmpiyqguiwzvthtwqjvwmgfxvfwcyvizavpwwwuoqzhjyjxnjxyzpdmajxtckzdkklipdldzobgjnhyrcexggtjbilqrnfgvmtwrvhxsuysxyuumnxaucvkuafpbegihgcsuhfqqljrxrquaqpjmsegzisqogtvxcqfhnrxedovyjgykntlfmdlpfbcyfrdokvlzlgbsnajwgnybmutvljqwovppctbadmkmujpwnggqbrcqmjbdaodixjsozzrmgoyfpfkhwomajbuxqdyjmrqbchhfpwgbigboxseknxdptgoejsgewykoszssnywaocaodqsghprzqbtnfosgotvdwxuwhjdlqhlwgidbrdudgwkgrtzdxjlhbkdjkjxjvmkvdimdeejvsmqjkagffrfsdspstowzcablbtcbpdovfinpyutkgcrzotmtztiyqnxycsawmdpfdezbekhzktgnqabfhqkfrszwpaylarurklzrfjeruqpjhhjibojcovcbccbscgwwjkixhpfvbmrbbcbjiaxhhryqgbbpbzwbbbyxukrervckfislgwunqbyzandfqlsturgrssnzneqtgbsrfugstirqholqmftjacnqapjdxzrcpqfnkiuaqeyawhobemdnkshevtkywueowgekedmjdledcddtoomnkkzgvnqbonynqlakkcxynsfoxjlkevqsyltkyroiiymzcxvmvhtojspzwezdxabuxuhhrgecnczmnujzglzhgywtpbyygwvazmqbcnlbjwcyzkurnsrvuxltsymrvoonasiquqvtgcffaphsfklonlsdvrmmobdafchuyntcciugpfgkuszgwrcfkbpfztiwpcczlnjoabxvtkldmtyjlbhorvhiuvzqidypyzwxqjefdhztbgcunthxzimaszfvzzfbnydxsmnplqgtrkcbadmvbqlonrxdgxpunwptatdvgxnybmviiwdrkcplezholphdenmvywilaqfujnmbeydvovytlmzpjalkekwbljwvrmemfcthyickamqdszdglrsapjjhehbiqoxhgynfyypljxhpfjxlckfxvhetcylewtnbhvgvhbpsmftgzsrzawwcunjdarwdgaqrihyshnraiizbsavcdqmjvezehjjgaxnmrfdtapkzbhimygljaimqncsrynjzvkdcenndicaxnorrcbhvkgrouchpzqxtchmqabktglnjbpxhuroxjxskfppkyzbsvkenecglzbgvkxdykjoykcsobkjnzwhbyycvkxwdwqbfzjeoakbadlaehmwgdxbojwpvkftckuparzpeyytdowcxrupeoidlirdqseqhkpfxcvfuuyqybgosfppscdtwetliojdztckjafmlkmtpuhqfhshdwummaphqccfbvtdzgqhgxefzzpggjsilrfchvpzmkmmdxncnqiauqkpxldmynhhqceijcmucekiqtojnotkaqrjpdhxdpxhtabmxnszocainqyzuciyktazyksdvrcerptpjrbkszgehypijcqmvpezufyhscxgowkuhexfikfqdkxemkkowkfofxskwyumvmfvpparszcldalecfmkltqmxubmbmbnanciofqaxxz\"\\n\"buaazippreruicgigmibjdwgccj\"\\n\"mhcxsgijiiyufscvuriehshzyagiqxsovhlylpfrdygajnodcboddosdjklsyaoknkwkpevpfltnjittulvlepndestinhzvpquzzvsaoohacpkxsdybqpzjgxpawzwdvaqwzahublqerlvuwyzwlhremtlmlscpxrnyhuchovlrmpaopndeqfurgitnnwqxiaxvllmrgjwcqiphixzooauguojrwxmniaqtldqqjopggpjlhjkovkzoquxbkzcsjskhbrobbwfumnlzycklalrhqmjqakmyfumytzlgkbkndtnlsjcpjspwuldiytoqxctwtglhneobrvxmeksarsdgdsjuopulzipowbdduuccnevqmulgxkarymxzqfgblbixyrwvkbvambwtrnxoxuwslylyyvwgzyhywempwoapuuvextwzvqrfjkwdlehluqspsmkgowgrqupmgnvgivmclgspjuxvtbeluecisddeonjlwnzvlgqasvnbspqrrlmtnejbnhxrphimhxfszaomdgvkcsdebigzfvhjtrdvrmxgnzewsjassqiuvuproqtfdobrrsmmqqzmjluwofkeziagepkjouzzzjlaaqyqdsiqrphlottdeavxielcqanerjfovidwwkimgtlztylclnumcgugdpxasputqsskutgdzqtamoanpaotjlhfjbetrnuugtdjilsbuzdarntsnwmeduzxhizjxoowmfsgewohkgusiohqtqqlrdoaqyfilxxncccaocricpntjyhbpgrgccwfrxpjqedynyaekvaagtkjhidaverzlhnhhfivthcbrckwrihvjedzegucutpgxtziylylgelmhbrbnqjfedwfubsxdqzxqxieuppkypzakvdqbjfuaajmrelvztaellgmkmxuuokygdcplkzfmoeaiydfgzrkjtihbiudylrcofdzdwbvuyjelrjvkgtimrytmexchwpddzlecwvjemmwcwvrutidacqhtaobzcjycpuagncugtvkixlrsstddytdmkmbzdvkiedeqxllrzdrqziufblnaycutmgvntrxycglwovigtvmpmyazdcigmqupqybiasvyhfdoldnvjxarjssasjwqgosjrixnmndxuiptsxzsfppupsxqnjglvsrchgsiokuyzxmokvacrmmmtxyrrnfnvfsspwnobaacubzpimgriigicgurwjdbpcexzvgpcdeumqdoikikmbndjsbgopmuecxyulpmpttugibibkbcpzvofkgfbvgnmnrgjuzpfdvxewweahduleppqolyfqusqoylgqtwtfubvpzbhbkfxgzaavnzvxgwpqcbzcvzhoeqjommvrejnosqjuhnpjzbcdhvimgthntsbdukxxkgfqjdvihwegysrdoppwjorxiodcdrycofjprawhdqulhgopvdwyufziabypuqmgamwlaxtpqndmrnrbihrxhikjjarruduidcgvjswqywsnevuvaalkkiwteudjrcdsjvtqllqvwcfoyqireaejamzhkcqodawajliebckekntmpvlhhpzyvocwljvmvpidbtvaugzyqwebbvelbegdieiqswiqrtoqvcctvlbqmdzsveqhyfabtdwmtxyyzqgcwzyzfcsjhgbpkhorzplufiwhiznfkizwzkjkgragtivgewrmgtufqmjryemvskquwntcerojuqrgmutidxvwymlaebdlbrqecwbgsnxntkevgvwdjxrpfrwjvxptyvwxnjyrlexdlcvmcsjowqjswgduygqibpehpqfeqtttkxcviksmhlsseqbpukoyrwmcjntujeghthcerbdvzdvwomjtjzaofwqvuqzfdgtzlfdendtrziimzrorktbhamfkihwklabsairjrvgkzgxsabwhguizkaaqddzlibcmbcvotmhiiruhoutbbsondcuuhygyrdlbaokjgmxtdadrbjxuhwgolfydylliifgxjnusibsgwgexgfigxqqwdzfmxpsmyfmkylyzatquoonpvomoknhiqhyfqpsnuypvvmhdzdvyyrxxdbazxnpzrpgiypfndtqxfyiaryakqckmpigyeukzeflswdpxmjplqhjluzgworpvtnfgmafbvvnxuhsmxbdfmxcbcxqtpofptpqxencjckiawqcgqxfnpzufzlpnvbnnfovfsuooferqgwyxkxezrlreoriaetxdddibvunfctzeewpkhjnnawbqmngwldyhnrvudqbmlupaqldmwnnpamujnstmjbotqhoebmgiemdhrnzpoowskutugxhcohfcyeqoyjogmqemcgdftknykmkxrabreidgiqegunqmqzyfdnundrpxtkvrkasiihznid\"\\n\"fhofaenqgrwaznzhtqwpxntaoklllgtcufuqorgvwbiznvqmzelqojhggmyqruyewgyxvctyrlbojubsdbclroetglwmjazwwqxowmjngvupowyxrfwlnacqeifmisbcnqidrkdazcqcystlhxbxybhxcllnxvepzlrsbbyytcowptdsazvnyvblunjffbelhxjazamhlaudirwsegxefsbiykleicozczyemvqmlmyscvksvlmxisynvpucqmgwdamgxzazhaftwtijjzztawrzcfekyebrvdzkwyzdmyebhecaptqvcxljcpviozsuqdroxwchzgctadzzolrhmlwffxyvwanxzbweyxvyrahcyuvlfkfiuftezszeyxnckabgoetyndabloudcuvydaqkrhttehzkoppuykwgqfcagjftjijnwnzqngjtvszfufamvjbacddfhavsezsetvrgezsfjgdvzvtoykkrvvmlpxriusfcweiscsptddwqodxaboaxbiacoihhooyowklokzfeqvozrjilvkyewmldwxsmswjujzqsrzcjkaoesgxmdrebqbzsvwgbbpietlcrufuicpppfmnrfvspxaehlvshazcpcvyuremsllvtuujrrvhfwcrenzojwzvcqonnihjybxgpeotraeeqmocnybtyyeelpnbtzckzjapcmndqcduobznwrqadnwhexodzabriwocldxcmzquvmvikxciktyrqerlrlgwvxkyalracymxjwnewvwsywicgukzozpnokpltijzfbasoawmftoqphhuibpgjczxdiwysxtlimphxjzidmltfvrndslygduwnodlsqbapdrbehdugthycbyfdxprtozvmmahhhbcolwybwphaamtybueqyxaunybkqeoswiskgzfijbmeiilngvcrpkruprfvkpbhuqqxqchdgfjvfnucpcfnfrbtelhhimhnlbluspqjyqlxiklakqijihreumaorlpdnpbkbhtfumkqqolydvnrduemhzeazxegxhsmmkytglpddpknxexeadidgktjxtwykdvwdcjbsckdgwjcrkwuxqfgsujlhwciasyghcgdefnvbsiybxvpymmmyxlxbselmueftuoveoiblsjohcsgqgjsczhzjmwbavgdinrjwhkoydxngjaspalxkzwusupenpshwycisyiyyiqvyfcfgqrjokkpvhfnuwjeivtextmvjnesxwrkvkqavmifmcrfhmqmssgmpnobufrewizmgeszjugduznedlcvghpfjpwwcazaxtnkhaucntdpgpvydaqsvkkklwhbfjpsgxjtsoyreefknpwbmgadiybtvcxjbspoeitcdvubgowryfcfkpkheutpwnaeiestoqvsaxuckncviojigewgfunvdbagomhjxxcyrjjtjyapoqzxkblkwndwtmacvsmdxuruedcphryybaanooipehmfqnkzgotqcwaeptvyecznygdvyjqlimoaynhwrwnhrjxluuvvbkgjsevnjzvnhjsvsvpavvwyehmazuyemodduvwaoqrsxezzcmrboujgostzanrgrvnqyutkrpasgbtguqystvlfjyzzidqkonefupnqookmdtudysvffvfbxdrwiiijkabtnzpbrwebeqszvisjajskmkmehjbmbddmnyppgbeobbnxjonujqxfzvzinvbwpsxuvabvdwwcexriprlqzmkmjddyltwhykxzksuwbnmcufwztctcsinjwnmrpqdzvkhacyjvzxihimtihmhzgcsqtprkpbybhilxfxvwhzxerbvgcfukgmxjablbslielgoknriwhwawiohjknrqcoedkvsgcwrxopvbzgfpenityqtx\"\\n\"paoolrbebsqumnolusfdaavvkdmyulelajnilqxsujdycieizlwvuwcnwfemijpyixbjamphkufjfvfvjvdjbdkthlxrtyahuifdjqlvpvccajaosgffminewnhyzymgvwbsgirfwnjszjswffrolsuupwkiwjjtbcgqbyarskbyxdigcusygjpvdcubzmmpfzzwhuwibivbxjklpptfryfbamafxuzpzagivenlctomtcymlmkbzozyncdwvabqjvvzuwivzfjcqhrixwinyxqsnckkhjmfsomdkujzecihamydgkyntwztemhawvxpahtiwrjwysrzmrhwxkbazynwmgtyclyjqsrfkddjdmvxhtwnvxrlxfxnpyevsafmqmbvbnueqxegkcuwzwdmqqpdlegyrjhgytgfxtzagazguoadzycnwwhdlkogbzrwiwjxxvlpvxfbtrxtqahcfrbzixqyftlddwmwtorfvjzenksaukrevkddgnafwqtgsizisktrrmqvkeagjngtngqiithdxxefqpcdwmglvvjerwcwitdzlsozczimmbwxwvpccjyemhyyekruqejgrnhpfnxiodwmworpenustqtaswegjordqwqmdsmgbpxytptvnwtjmxwhfsnszscafeiyyuikthfnzcoassldzlkdgclyezsquhksisjvmcsxlwdpplwrwxthuipsjjfhtfqhcrnfcomnkbthyvhaelbtsyhrmjharxzhymxxbcwtxansrcwqsgzzdxzcqbphtccnjhikhhovezgbkgcwkavkrbydyctgizqferucmghsihyxgbpmehtwpwcwunitcrgdmcnodipruqegudtkluswpnvbdqyukspwvgchexiaxuebqfvitnmukebchkzmtnwcuymbnmyqgmzefnelwqnhleaadekwjehlkydpuwybendymsluptckrvbglxmamohiyszwkslittmdbfmxkmqomxfuskubytbgfvnlebmzxcsreqnjuctcjriszjpojywsitudelqljtufsbxmnykadnryjz\"\\n\"paoolrbebsqumnolusfdaavvkdmyulelajnilqxsujdycieizlwvuwcnwfemijpyixbjamphkufjfvfvjvdjbdkthlxrtyahuifdjqlvpvccajaosgffminewnhyzymgvwbsgirfwnjszjswffrolsuupwkiwjjtbcgqbyarskbyxdigcusygjpvdcubzmmpfzzwhuwibivbxjklpptfryfbamafxuzpzagivenlctomtcymlmkbzozyncdwvabqjvvzuwivzfjcqhrixwinyxqsnckkhjmfsomdkujzecihamydgkyntwztemhawvxpahtiwrjwysrzmrhwxkbazynwmgtyclyjqsrfkddjdmvxhtwnvxrlxfxnpyevsafmqmbvbnueqxegkcuwzwdmqqpdlegyrjhgytgfxtzagazguoadzycnwwhdlkogbzrwiwjxxvlpvxfbtrxtqahcfrbzixqyftlddwmwtorfvjzenksaukrevkddgnafwqtgsizisktrrmqvkeagjngtngqiithdxxefqpcdwmglvvjerwcwitdzlsozczimmbwxwvpccjyemhyyekruqejgrnhpfnxiodwmworpenustqtaswegjordqwqmdsmgbpxytptvnwtjmxwhfsnszscafeiyyuikthfnzcoassldzlkdgclyezsquhksisjvmcsxlwdpplwrwxthuipsjjfhtfqhcrnfcomnkbthyvhaelbtsyhrmjharxzhymxxbcwtxansrcwqsgzzdxzcqbphtccnjhikhhovezgbkgcwkavkrbydyctgizqferucmghsihyxgbpmehtwpwcwunitcrgdmcnodipruqegudtkluswpnvbdqyukspwvgchexiaxuebqfvitnmukebchkzmtnwcuymbnmyqgmzefnelwqnhleaadekwjehlkydpuwybendymsluptckrvbglxmamohiyszwkslittmdbfmxkmqomxfuskubytbgfvnlebmzxcsreqnjuctcjriszjpojywsitudelqljtufsbxmnykadnryjz\"\\n\"pwjurfxfwxotemsiyitndgrtvzksgniyqolgwfhofhmnwmxbmphratrwdskjwutemrzivnndkxfmzzpenueyiztqcydbeftbuobqwyazibaettbqbueeaiayutaoqvmckemxhrecvptegifgemdsjkepzsedvkfixtvikviadomqsrwowftrnqdumlabwtbfsxkoytkgznmkfzbtntumlbjhxeaoxbuoshxsjnosnsrtzrtcqdifbiyvmrbwteajksskklrpkmbylwwprapfdhujoigcrqhtgtwolwjmoudnzlnmpnchwslpibwvffbcbbefpvfygnpluzyjrqipupidoxtgglbvnxmtzjaglglpkryudoskkyspuxmxrkmcxkueluiuvxsdwkorxgjikyoniicljvddfgfuhujplkakjnvskuozvmmavmyzdgzbohjrnfvsslyarxscfxscijsyhcqxnceqfavyzofvysilqdnpjypgtpjatklrnzhkygyfoaupibuqtuxbfsfcawiiulgohigutukhywypthyymvcabnsdsjtrdrtmifarhrcimzrpcbdfjtpwqsndlpiuletacqcccpnziupvclsinkdffnojfrvgypdajujzkdixugrbhqmwyjztfvvokmgdrbfmrdprmzoslldcssvkofxqsdrwapobietvmoonfipeejlgtuvpcbcfnsmupwjsgliheexediefcfrglliqoxjjsdjtpehqmkxkvkkflhwbvohryjpfgebcvkjqtcetxzhtfysomusfzsztqweekxbdcruwjgpdrwokseyaqznhihjulevycglkuacfgzlargjoquxoupfrhdegpqzrshmbierjjvzsdwsibinlrslimfgrsaacxijthbzmxnyuslffnfxziudxcdwfwnkmdeucbyydkhqkestxzvdraxjjcuzdgayabmxsltqdnsikxaasugkcovnvwfxiuozaphegpkhtmtqxxmwhrtblrtxvrtidkcluorcrksklgmismylsrwwtlhlnqnqlfmmefzltunpqozqpnxhtqvpovckbiaaejtwejjuuzmtargntaqehigzibxfczkwcthqijyhcdtupeqbtnnorrgmktlsgjortvsgjhrgzccgvlfjeqjfywufbqwnerpzxlnczxwjttiiokqfigqhgqaatzwynivuhpukuzgsijrfpganfroohnruzlijwinapnemwsxveqfremhwqwqwhxlmvfsnuglnkkqynvflxgdqayxpklerojawlidelttqlfvfmjoiwhylwrillyjjoxrfkayddfeytomjphsgzzbgxhbgdwonzrqrcbnrztgvoodyxrzbinqgeaptvyfkdizuzbxdiulvfqlsllkxkvmprritvhkdoghouifwpprblaeauyxyhlipccqjnorphmrelbsashkmmhnperidnmmizijbtfqkhgboniuphozbdgmlfieqjjpywvqggmsliocmvdkhxszrvqyjoxdvspqlljtbztjybmpwebavgmldxxohjfrmxpljszfjploblpsenjxqxdvmmwljoxmagpgxunlnoibvupfluyclemsywizdmrzchiujcqnlmcjkutxbzeibruvvknviojcflxfhyjhjkwerwgfowucgtyrimxiehdgwrifbpdaaqffgzssxiemrcyxpezijuyptdynatoivsqbkqbgutgmikqywkhcwhknunsnfsdkkhwwxvttohjwydlzihsjtwbzbtbemhssndaubxegtvinucugvvascicyfgqnhsidgcrrctjwrjjqbgcsfioebytsmalmnnnpznxcjlyvfykwsqbewxfgiazugkqdoggrjukpplsnaovwsliyiojnyhmiloyjkkwtrdcsyjxllfhvizydwlqlojidvzjylhzfvksneyduudibadamaoifenrvdduvljircjtlnohxxckjnfeiaagyqxyoyezloucybulpjrlhdwkdkagbukvjrkxjddpsahymtcfaivfaeioyynxykdacbloejpnnhtcxepzzuhzrnjrmpwvngrivioukkolckoskxjmjyzaqysaqbjevvqibbimxhehlkuyknwqkhfabgdnuwgzofmyetruzxszdcypmqouxyqyuvfvijircklyfifwbypgwbwvwrvxxmoyzdlpecfsbinlthrdnckqagstfgyzhduluvscnmmwzapxaraxcvkndddlfrcnzpkyhksxerhgaulwetciqaefwmmzdsqfldtouxlqqgrqsvksyrnspqmkiewwhrjkoahzpacgylikhnoswnsyzuvxzdrlxgcfflogzezkofstastmpvftshxvizunhsuakqqjscycfrqejprsogqzlkuskvnbgbjisbasgdjlmgpiklkhbfoaqjfrjmmtzfggyrsyymtfkuuqtrbvtnnzcaiuqjlgosortmyjqqzmadqgjijrofedppddtfdyijinvxehpbanizoqtowugvzflscmcfqelycotzwpwhxzmdsaxrwhgvlaookontbwunqfiuxarlztainztyooiuazebwmukvgcpvnkllkjoazejdmocpeuurhfarzjdybgxusmocaiaqxicgdorwdrvrrmjczfajbbmjnmvohjfsprufofokpaoolrbebsqumnolusfdaavvkdmyelelajniwqxsujdycieizlwviwcnwfcmijpyixbjamphkufkmvfvjvdjbdkthlxrtyahuifdjqlvpvccajaosgffminewnhyzymgvwbsgirfwnjszjswffkolsuupwkiwjjtbcgqbyarskbyxdigcusygjpvdcubzmmpfzzwhuwibivbxjklpptfryfbamafxuzpzagivenlctomtcymlmkbzozyncdwvabqjvvbuwivzfjcqhrixwinyxqsnckkhimfsomdkujtecihamydgkyntwztemhawvxpahtiwrjwysrzmrhwxkfazynwmgtyclyjqsrfkddjdmvxhzwnvxrlxfxnpyevsafmqmbvbnueqxegkcuwzidmqqpdlegyrjhgytgfxtzagazguoydzycnwwhdlkogbzrwiwjxxvlgvxfbtrxtqahcfrbzixqyftlddwmwtorfvjzenksaukrevkddgnafwqtgswzisktrrmqvkeagjngtnjqiithdxxefqpcdwmglvvjerwcwitdzlsozczimmbwxwvpccjyemhyyekruqejgrnhpfnxjodwmworpenustqoaswegjordqlqmdsmgbpxytptvnwtjmxwhfsnszscafeiyyuikthfnzcoassldzlkdgclyezsquhksisjvmcsxlwdpplwrwxthuupsjjfhtfqhcrnfcomnkbthyvhaelbtsyhrhjharxzhymxxbcwtxansrcwqsgzzdxzcqbpmtccnjhikhhovezgbkgcwkavkrbydyctgizqferucmghsihyxgbpmehtwpwewunitcrgdmcnodipruqegudtkluswpnvbdqyukspwvgchexiakuebqfvitnmukebchkzmtnwcuymbnmyqgfzefnelwqnhleaadekwjehljydpuwybendymsluptckrvbplxmamohiyszwrslittmdbfmxkmqtmxfusxubatbgfvnlebmzxcsruqnjuctcjriszjpogywsitudelqljtubszxmnykadnryjzhosyorgzvpzolmpbafnvcrrzfaxoqaulbcbnrucuydqbppnpgrdoyugbpiqdafccgordlqbwcgzirbbpaftoqtujqrljdqjrtwaqskcfqjqhvlgzbdmarajevjjrphkdzturmpqomzcewxxrpglsjehpfhmwmgeotxbswzswftewfchvxpqjyzlwwkxmssxpmdrtclakalcsgpwkvntjshydpvjauqilqkeyjojgehwwlattlhlgdgpotxhlrmffspdyxmjfonkzwdjkambqnwicehfzjvrxwsrbkztmtermdjjlaxlremdxnnfavmtclhvhesujoasmqonrjzlznywprupsfdafmuhunpigohenjnmpwdxcolvwuyptjigbihzcotxqjgskupqeomwlosbxqdjxwhmifbxzptjmvnfbpswtbjlmijpprzfelgzxbigrijgxlvmurzdvhxskpczyqrdelsyuqmfdxhzodxlhtsfxapwreaqtmzdhkibnwvsfsdolvwzwwjmgysrqfihakhhbbpfhbtvknsenzyvwyzudvvwgxjavcjyweomjfkucztlevmbbxqwznytbhdaowmecfkcfmiyvcfundeflybuifpvkvezezadmauwjzyfmdkxdvsfqkdkwydqhmmxfblfhnzqanonlmj\"\\n\"hello\"\\n\"ooolleoooleh\"\\n\"abcd\"\\n\"abcaabdbcdeafgbcdiabcbbcaabclcabcababccabd\"",
+      "voteCount": 64
+    },
+    {
+      "name": "rdgarg1",
+      "year": 2021,
+      "content": "In this question I was comparing two Integers using ==.\\nThis works only when the Integer\\'s value is less than 128. Always use equals with Objects.\\nI learnt this hard way by debugging for almost an hour.",
+      "voteCount": 60
+    },
+    {
+      "name": "shaiwart",
+      "year": 2022,
+      "content": "IMPORTANT TIP FOR BEGINNER LIKE ME: \n\nWhile doing sliding window part take care about the right pointer ( j ), try to think of an algorithm by which when you are at  right pointer ( j ) you are done with the calculations for j'th element before you check for any conditions like ( j-i+1 < k ) or (sum <= or == k ) etc. \n\nIf you don't take care of  j and its calculations then your algorithm might be giving wrong result. ",
+      "voteCount": 43
+    },
+    {
+      "name": "FranciscoMunoz",
+      "year": 2022,
+      "content": "How can i solve this one in an interview?",
+      "voteCount": 42
+    },
+    {
+      "name": "simplychark",
+      "year": 2023,
+      "content": "How isnt \"ab\" a permutation of \"eidboaoo\"?",
+      "voteCount": 22
+    },
+    {
+      "name": "dethaliya",
+      "year": 2023,
+      "content": "can any one tell me what is 107 test case? because i am not able to solve only last test case\\n",
+      "voteCount": 17
+    }
+  ]
+}

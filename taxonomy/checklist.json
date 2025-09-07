@@ -1,0 +1,368 @@
+{
+  "version": 2,
+  "updated": "2025-09-04",
+  "phases": [
+    "clarify",
+    "plan",
+    "code",
+    "test",
+    "optimize",
+    "reflect"
+  ],
+  "defaults": {
+    "time_budget_min": 20,
+    "stuck_prompts": [
+      "List repeated work to cache",
+      "Sort to unlock two-pointers/greedy?",
+      "Graph model possible?",
+      "Monotone predicate \u2192 binary search on answer?",
+      "Reframe as DP: state, transition, base"
+    ]
+  },
+  "items": [
+    {
+      "code": "CL-00",
+      "phase": "clarify",
+      "label": "Start timer & skim prompt",
+      "prompt": "Start stopwatch. Skim once to collect nouns/verbs and constraints.",
+      "required": true
+    },
+    {
+      "code": "CL-01",
+      "phase": "clarify",
+      "label": "Restate problem and I/O",
+      "prompt": "Paraphrase the task. Define input types, output, and constraints.",
+      "required": true,
+      "signal_key": "communicated_approach"
+    },
+    {
+      "code": "CL-02",
+      "phase": "clarify",
+      "label": "Work a concrete example",
+      "prompt": "Create a non-trivial example and expected output.",
+      "required": true,
+      "signal_key": "clarified_assumptions"
+    },
+    {
+      "code": "CL-03",
+      "phase": "clarify",
+      "label": "Confirm constraints",
+      "prompt": "n ranges, value ranges, duplicates, negatives, mutation allowed, streaming vs static, memory/precision.",
+      "required": true,
+      "signal_key": "clarified_assumptions",
+      "avoid_mistakes": [
+        "REQ-01",
+        "REQ-03",
+        "REQ-04",
+        "REQ-07",
+        "REQ-08"
+      ]
+    },
+    {
+      "code": "CL-04",
+      "phase": "clarify",
+      "label": "Target complexity",
+      "prompt": "Ask for desired time/space or provide a reasonable target.",
+      "required": false,
+      "signal_key": "stated_complexity"
+    },
+    {
+      "code": "CL-05",
+      "phase": "clarify",
+      "label": "Agree on success criteria",
+      "prompt": "What correctness means, allowed libraries, and output ordering.",
+      "required": false
+    },
+    {
+      "code": "PL-01",
+      "phase": "plan",
+      "label": "Outline brute force",
+      "prompt": "State the baseline approach and its complexity.",
+      "required": true,
+      "signal_key": "outlined_bruteforce"
+    },
+    {
+      "code": "PL-02",
+      "phase": "plan",
+      "label": "Pick DS/technique",
+      "prompt": "Choose data structure and technique that match ops. Justify choice.",
+      "required": true,
+      "signal_key": "ds_choice_fits_ops",
+      "avoid_mistakes": [
+        "APP-01",
+        "APP-02",
+        "APP-03",
+        "APP-07"
+      ]
+    },
+    {
+      "code": "PL-03",
+      "phase": "plan",
+      "label": "Correctness sketch",
+      "prompt": "State invariant, exchange argument, or proof idea.",
+      "required": true,
+      "signal_key": "argued_correctness",
+      "avoid_mistakes": [
+        "APP-05",
+        "APP-06"
+      ]
+    },
+    {
+      "code": "PL-04",
+      "phase": "plan",
+      "label": "Check complexity budget",
+      "prompt": "Verify time and space vs constraints and worst-case inputs.",
+      "required": true,
+      "signal_key": "stated_complexity",
+      "avoid_mistakes": [
+        "CMP-01",
+        "CMP-02",
+        "CMP-03",
+        "CMP-05"
+      ]
+    },
+    {
+      "code": "PL-05",
+      "phase": "plan",
+      "label": "Test plan",
+      "prompt": "List typical and edge cases you will run.",
+      "required": false,
+      "signal_key": "tests_edge_cases"
+    },
+    {
+      "code": "PL-06",
+      "phase": "plan",
+      "label": "Alternative path",
+      "prompt": "Briefly note a second approach and its trade-offs.",
+      "required": false,
+      "signal_key": "proposed_alternative"
+    },
+    {
+      "code": "PL-07",
+      "phase": "plan",
+      "label": "Use hints effectively",
+      "prompt": "If hints appear, integrate quickly and restate plan.",
+      "required": false,
+      "signal_key": "used_hints_effectively"
+    },
+    {
+      "code": "CD-01",
+      "phase": "code",
+      "label": "Signature and guards first",
+      "prompt": "Write function signature. Handle empties, singleton, and invalid ranges upfront.",
+      "required": true,
+      "signal_key": "guarded_edge_cases",
+      "avoid_mistakes": [
+        "BUG-03",
+        "EDG-01",
+        "EDG-02"
+      ]
+    },
+    {
+      "code": "CD-02",
+      "phase": "code",
+      "label": "Modular structure",
+      "prompt": "Extract helpers for repeated logic.",
+      "required": false,
+      "signal_key": "modular_structure"
+    },
+    {
+      "code": "CD-03",
+      "phase": "code",
+      "label": "Think-aloud while coding",
+      "prompt": "Explain intent at a high level as you write.",
+      "required": true,
+      "signal_key": "thought_process_clear"
+    },
+    {
+      "code": "CD-04",
+      "phase": "code",
+      "label": "Index and bounds sanity",
+      "prompt": "Check loop bounds, indices, and early returns.",
+      "required": true,
+      "signal_key": "clean_impl",
+      "avoid_mistakes": [
+        "BUG-01",
+        "BUG-02",
+        "BUG-09"
+      ]
+    },
+    {
+      "code": "CD-05",
+      "phase": "code",
+      "label": "Idiomatic API use",
+      "prompt": "Prefer safe stdlib methods, avoid footguns.",
+      "required": false,
+      "signal_key": "idiomatic_api_use",
+      "avoid_mistakes": [
+        "BUG-06",
+        "BUG-10",
+        "BUG-11"
+      ]
+    },
+    {
+      "code": "CD-06",
+      "phase": "code",
+      "label": "No mutation during iteration",
+      "prompt": "Avoid changing containers while iterating; if needed, iterate over a copy.",
+      "required": false,
+      "avoid_mistakes": [
+        "BUG-06"
+      ]
+    },
+    {
+      "code": "CD-07",
+      "phase": "code",
+      "label": "Visited/state handling",
+      "prompt": "Initialize, mark, and reset visited or state variables correctly.",
+      "required": false,
+      "avoid_mistakes": [
+        "BUG-08",
+        "BUG-07"
+      ]
+    },
+    {
+      "code": "TS-01",
+      "phase": "test",
+      "label": "Dry run main example",
+      "prompt": "Step through code with your worked example.",
+      "required": true,
+      "signal_key": "performed_dry_run",
+      "avoid_mistakes": [
+        "TST-03"
+      ]
+    },
+    {
+      "code": "TS-02",
+      "phase": "test",
+      "label": "Typical cases",
+      "prompt": "Run representative normal inputs.",
+      "required": true,
+      "signal_key": "wrote_unit_tests",
+      "avoid_mistakes": [
+        "TST-01"
+      ]
+    },
+    {
+      "code": "TS-03",
+      "phase": "test",
+      "label": "Edge cases",
+      "prompt": "Empty, singleton, duplicates, extremes, sorted/reverse, cycles/components.",
+      "required": true,
+      "signal_key": "tests_edge_cases",
+      "avoid_mistakes": [
+        "TST-02",
+        "EDG-03",
+        "EDG-04",
+        "EDG-05",
+        "EDG-06"
+      ]
+    },
+    {
+      "code": "TS-04",
+      "phase": "test",
+      "label": "State complexity",
+      "prompt": "Confirm big-O time/space for the code you wrote.",
+      "required": true,
+      "signal_key": "stated_complexity",
+      "avoid_mistakes": [
+        "TST-04"
+      ]
+    },
+    {
+      "code": "TS-05",
+      "phase": "test",
+      "label": "Self-correct defects",
+      "prompt": "Fix issues found and re-run tests.",
+      "required": true
+    },
+    {
+      "code": "TS-06",
+      "phase": "test",
+      "label": "Add regression test",
+      "prompt": "For any bug fixed, add a minimal failing case to tests.",
+      "required": false
+    },
+    {
+      "code": "OP-01",
+      "phase": "optimize",
+      "label": "Remove repeated work",
+      "prompt": "Cache, precompute, or restructure to cut passes.",
+      "required": false,
+      "avoid_mistakes": [
+        "CMP-04"
+      ]
+    },
+    {
+      "code": "OP-02",
+      "phase": "optimize",
+      "label": "Memory review",
+      "prompt": "Reduce auxiliary structures or compress state.",
+      "required": false
+    },
+    {
+      "code": "OP-03",
+      "phase": "optimize",
+      "label": "Alternative approach",
+      "prompt": "Consider sorted + two-pointers, monotonic stack, BS on answer, etc.",
+      "required": false
+    },
+    {
+      "code": "OP-04",
+      "phase": "optimize",
+      "label": "Re-check complexity",
+      "prompt": "Restate time/space after optimizations.",
+      "required": false,
+      "signal_key": "stated_complexity"
+    },
+    {
+      "code": "RF-01",
+      "phase": "reflect",
+      "label": "Update stats.json",
+      "prompt": "Set baseline_impl, optimal_solution, complexity_justified, repeats, min_impl_time_min, confidence_1to5.",
+      "required": true
+    },
+    {
+      "code": "RF-02",
+      "phase": "reflect",
+      "label": "Log mistakes",
+      "prompt": "Tag with taxonomy codes (e.g., BUG-01, REQ-05).",
+      "required": true
+    },
+    {
+      "code": "RF-03",
+      "phase": "reflect",
+      "label": "Mark signals",
+      "prompt": "Set achieved signal booleans for this task.",
+      "required": true
+    },
+    {
+      "code": "RF-04",
+      "phase": "reflect",
+      "label": "Capture insight",
+      "prompt": "One sentence on the key idea/pattern.",
+      "required": false
+    },
+    {
+      "code": "RF-05",
+      "phase": "reflect",
+      "label": "Schedule review",
+      "prompt": "Pick a date if confidence \u2264 3 or mistakes were severe.",
+      "required": false
+    },
+    {
+      "code": "RF-06",
+      "phase": "reflect",
+      "label": "Update notes.md",
+      "prompt": "Record logical flow, invariant, and final approach.",
+      "required": false
+    },
+    {
+      "code": "RF-07",
+      "phase": "reflect",
+      "label": "Commit artifacts",
+      "prompt": "Commit code/tests/notes with message: feat(<id>): <slug> [time Xmin]",
+      "required": false
+    }
+  ]
+}

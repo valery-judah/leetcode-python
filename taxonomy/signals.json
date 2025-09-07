@@ -1,0 +1,185 @@
+{
+  "version": 1,
+  "updated": "2025-09-04",
+  "phases": [
+    "clarify",
+    "plan",
+    "code",
+    "test",
+    "optimize",
+    "reflect"
+  ],
+  "categories": [
+    {
+      "id": "PS",
+      "name": "Problem Solving"
+    },
+    {
+      "id": "TC",
+      "name": "Technical Competency"
+    },
+    {
+      "id": "TS",
+      "name": "Testing"
+    },
+    {
+      "id": "CM",
+      "name": "Communication"
+    },
+    {
+      "id": "CQ",
+      "name": "Code Quality"
+    }
+  ],
+  "items": [
+    {
+      "code": "SIG-CLARIFY-ASKS",
+      "key": "clarified_assumptions",
+      "category": "CM",
+      "phase": "clarify",
+      "label": "Clarified assumptions",
+      "desc": "Asked targeted questions on input ranges, duplicates, mutation, error handling.",
+      "weight": 1,
+      "core": true
+    },
+    {
+      "code": "SIG-COMM-APPROACH",
+      "key": "communicated_approach",
+      "category": "CM",
+      "phase": "plan",
+      "label": "Communicated approach",
+      "desc": "Explained high-level plan and alternatives before coding.",
+      "weight": 1,
+      "core": true
+    },
+    {
+      "code": "SIG-CPLX-STATE",
+      "key": "stated_complexity",
+      "category": "TC",
+      "phase": "reflect",
+      "label": "Stated complexity",
+      "desc": "Gave correct big-O time and space and the dominating term.",
+      "weight": 1,
+      "core": true
+    },
+    {
+      "code": "SIG-TEST-EDGES",
+      "key": "tests_edge_cases",
+      "category": "TS",
+      "phase": "test",
+      "label": "Tests edge cases",
+      "desc": "Proposed and ran representative corner cases.",
+      "weight": 1,
+      "core": true
+    },
+    {
+      "code": "SIG-QLT-CLEAN",
+      "key": "clean_impl",
+      "category": "CQ",
+      "phase": "code",
+      "label": "Clean implementation",
+      "desc": "Readable structure, clear names, minimal duplication.",
+      "weight": 1,
+      "core": true
+    },
+    {
+      "code": "SIG-PS-BRUTE",
+      "key": "outlined_bruteforce",
+      "category": "PS",
+      "phase": "plan",
+      "label": "Outlined brute force",
+      "desc": "Stated baseline solution and its limits.",
+      "weight": 1
+    },
+    {
+      "code": "SIG-PS-ALT",
+      "key": "proposed_alternative",
+      "category": "PS",
+      "phase": "plan",
+      "label": "Proposed alternative",
+      "desc": "Offered improved approach with trade-offs.",
+      "weight": 1
+    },
+    {
+      "code": "SIG-PS-INVARIANT",
+      "key": "argued_correctness",
+      "category": "PS",
+      "phase": "plan",
+      "label": "Argued correctness",
+      "desc": "Provided invariant or proof sketch for core logic.",
+      "weight": 1
+    },
+    {
+      "code": "SIG-TC-DSFIT",
+      "key": "ds_choice_fits_ops",
+      "category": "TC",
+      "phase": "plan",
+      "label": "Right DS for ops",
+      "desc": "Chose data structure matching operation costs.",
+      "weight": 1
+    },
+    {
+      "code": "SIG-TC-API",
+      "key": "idiomatic_api_use",
+      "category": "TC",
+      "phase": "code",
+      "label": "Idiomatic API use",
+      "desc": "Used language APIs correctly without footguns.",
+      "weight": 1
+    },
+    {
+      "code": "SIG-TS-DRYRUN",
+      "key": "performed_dry_run",
+      "category": "TS",
+      "phase": "test",
+      "label": "Performed dry run",
+      "desc": "Stepped through non-trivial example.",
+      "weight": 1
+    },
+    {
+      "code": "SIG-TS-UNIT",
+      "key": "wrote_unit_tests",
+      "category": "TS",
+      "phase": "test",
+      "label": "Wrote unit tests",
+      "desc": "Added representative and edge test cases.",
+      "weight": 1
+    },
+    {
+      "code": "SIG-CM-THINKALOUD",
+      "key": "thought_process_clear",
+      "category": "CM",
+      "phase": "code",
+      "label": "Thought process clear",
+      "desc": "Explained intent during coding at a useful level.",
+      "weight": 1
+    },
+    {
+      "code": "SIG-CM-HINTS",
+      "key": "used_hints_effectively",
+      "category": "CM",
+      "phase": "plan",
+      "label": "Used hints effectively",
+      "desc": "Integrated interviewer hints quickly and correctly.",
+      "weight": 1
+    },
+    {
+      "code": "SIG-CQ-MODULAR",
+      "key": "modular_structure",
+      "category": "CQ",
+      "phase": "code",
+      "label": "Modular structure",
+      "desc": "Factored helpers and avoided repetition.",
+      "weight": 1
+    },
+    {
+      "code": "SIG-CQ-EDGESFIRST",
+      "key": "guarded_edge_cases",
+      "category": "CQ",
+      "phase": "code",
+      "label": "Guarded edge cases first",
+      "desc": "Handled empties, nulls, and bounds upfront.",
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "category": "",
+  "id": "69",
+  "name": "Sqrt(x)",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/sqrtx/",
+  "slug": "sqrtx",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Binary Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Pow(x, n)",
+      "difficulty": "Medium",
+      "slug": "powx-n"
+    },
+    {
+      "title": "Valid Perfect Square",
+      "difficulty": "Easy",
+      "slug": "valid-perfect-square"
+    }
+  ],
+  "questionId": "69",
+  "questionFrontendId": "69",
+  "title": "Sqrt(x)",
+  "titleSlug": "sqrtx",
+  "content": "<p>Given a non-negative integer <code>x</code>, return <em>the square root of </em><code>x</code><em> rounded down to the nearest integer</em>. The returned integer should be <strong>non-negative</strong> as well.</p>\n\n<p>You <strong>must not use</strong> any built-in exponent function or operator.</p>\n\n<ul>\n\t<li>For example, do not use <code>pow(x, 0.5)</code> in c++ or <code>x ** 0.5</code> in python.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> x = 4\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> The square root of 4 is 2, so we return 2.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> x = 8\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> The square root of 8 is 2.82842..., and since we round it down to the nearest integer, 2 is returned.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= x &lt;= 2<sup>31</sup> - 1</code></li>\n</ul>\n",
+  "likes": 9166,
+  "dislikes": 4607,
+  "stats": {
+    "totalAccepted": "2.8M",
+    "totalSubmission": "6.8M",
+    "totalAcceptedRaw": 2759581,
+    "totalSubmissionRaw": 6780087,
+    "acRate": "40.7%"
+  },
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    }
+  ],
+  "metaData": {
+    "name": "mySqrt",
+    "params": [
+      {
+        "name": "x",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "onedaywillmake",
+      "year": 2022,
+      "content": "This is a great beginner question, however the addition of values such as `2147395600` which cause an integer overflow take away from spirit of the question which is to find the algorithm. \\n\\nMany users would not expect having to cast things to long in an question labeled \"beginner\", I\\'ve seen a lot of frustration for users thinking their approach is wrong and throwing it away thinking it must be something wrong with their algorithm. \\n\\nRemove those extreme edge cases, or let\\'s call the question at least a \\'medium\\' level - or add a note about integer overflow",
+      "voteCount": 427
+    },
+    {
+      "name": "Twitnithegirl",
+      "year": 2021,
+      "content": "\"You are not allowed to use any built-in exponent function or operator, such as pow(x, 0.5) or x ** 0.5.\"\\n\\nWhat is the practical application of not using the standard library of the language you work in?",
+      "voteCount": 326
+    },
+    {
+      "name": "niklas5559",
+      "year": 2019,
+      "content": "Python3\\nFeel free to ask questions if the code is too complex\\n\\n`return int(x ** 0.5)`",
+      "voteCount": 270
+    },
+    {
+      "name": "mohiwalla",
+      "year": 2023,
+      "content": "Two minutes of silence for the Python and JavaScript users. :)",
+      "voteCount": 151
+    },
+    {
+      "name": "sakethbhardwajV",
+      "year": 2023,
+      "content": "this problem has an edge cases where it causes integer overflow..\\nso instead of checking `(mid * mid == x)` which causes integer overflow write the condition as `(x / mid == mid)` and similar condition for else if cases... ",
+      "voteCount": 72
+    },
+    {
+      "name": "devesh_kumar_kushwaha",
+      "year": 2023,
+      "content": "\\uD83D\\uDFE2 beginner\\'s tip :: just a binary search application",
+      "voteCount": 59
+    },
+    {
+      "name": "aslankobzhanov6",
+      "year": 2023,
+      "content": "Please don\\'t post any solutions in this discussion.",
+      "voteCount": 55
+    },
+    {
+      "name": "Antinormanist",
+      "year": 2023,
+      "content": "import math \\uD83D\\uDE08",
+      "voteCount": 40
+    },
+    {
+      "name": "NNrdymXSqS",
+      "year": 2025,
+      "content": "Of course question 69 is named Sqrt",
+      "voteCount": 34
+    },
+    {
+      "name": "amrreza786",
+      "year": 2023,
+      "content": "Why are the people posting answers in the comment box? please stop this and discuss the approaches we can follow to solve the question.\\n\\n\\nthank you ... !!!",
+      "voteCount": 33
+    }
+  ]
+}

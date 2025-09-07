@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "baseline_impl": false,
+  "complexity_justified": false,
+  "optimal_solution": false,
+  "completed_repeats": 0,
+  "min_impl_time_min": 0,
+  "confidence_1to5": 1,
+  "signals": {
+    "clarified_assumptions": false,
+    "communicated_approach": false,
+    "stated_complexity": false,
+    "tests_edge_cases": false,
+    "clean_impl": false
+  },
+  "mistakes": [],
+  "problems": []
+}

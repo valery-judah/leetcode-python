@@ -1,0 +1,138 @@
+{
+  "category": "",
+  "id": "739",
+  "name": "Daily Temperatures",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/daily-temperatures/",
+  "slug": "daily-temperatures",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Stack",
+    "Monotonic Stack"
+  ],
+  "similar_questions": [
+    {
+      "title": "Next Greater Element I",
+      "difficulty": "Easy",
+      "slug": "next-greater-element-i"
+    },
+    {
+      "title": "Online Stock Span",
+      "difficulty": "Medium",
+      "slug": "online-stock-span"
+    }
+  ],
+  "questionId": "739",
+  "questionFrontendId": "739",
+  "title": "Daily Temperatures",
+  "titleSlug": "daily-temperatures",
+  "content": "<p>Given an array of integers <code>temperatures</code> represents the daily temperatures, return <em>an array</em> <code>answer</code> <em>such that</em> <code>answer[i]</code> <em>is the number of days you have to wait after the</em> <code>i<sup>th</sup></code> <em>day to get a warmer temperature</em>. If there is no future day for which this is possible, keep <code>answer[i] == 0</code> instead.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> temperatures = [73,74,75,71,69,72,76,73]\n<strong>Output:</strong> [1,1,4,2,1,1,0,0]\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> temperatures = [30,40,50,60]\n<strong>Output:</strong> [1,1,1,0]\n</pre><p><strong class=\"example\">Example 3:</strong></p>\n<pre><strong>Input:</strong> temperatures = [30,60,90]\n<strong>Output:</strong> [1,1,0]\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;=&nbsp;temperatures.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>30 &lt;=&nbsp;temperatures[i] &lt;= 100</code></li>\n</ul>\n",
+  "likes": 14119,
+  "dislikes": 358,
+  "stats": {
+    "totalAccepted": "1.4M",
+    "totalSubmission": "2.1M",
+    "totalAcceptedRaw": 1420121,
+    "totalSubmissionRaw": 2098935,
+    "acRate": "67.7%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Stack",
+      "slug": "stack"
+    },
+    {
+      "name": "Monotonic Stack",
+      "slug": "monotonic-stack"
+    }
+  ],
+  "metaData": {
+    "name": "dailyTemperatures",
+    "params": [
+      {
+        "name": "temperatures",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer[]"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 11
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "user2366HD",
+      "year": 2024,
+      "content": "Upvote me so I can downvote individuals who provide solutions in the discussion",
+      "voteCount": 687
+    },
+    {
+      "name": "durjoyovi76",
+      "year": 2022,
+      "content": "Please don\\'t share your code here. Share your idea or give some tips to solve this problem.",
+      "voteCount": 309
+    },
+    {
+      "name": "devle79",
+      "year": 2024,
+      "content": "[30, 60, 90]?? Global warming is real deal..",
+      "voteCount": 282
+    },
+    {
+      "name": "jd_Kdcgc",
+      "year": 2022,
+      "content": "HINT:\\n\\nWhat can we notice in the problem?\\nWe can see that we need the next greater element for every number, right?\\n\\nWhat we can do is -> \\n1. Make a stack and push index 0 in it  (because for index 0, we donot have any greater element right now)\\n2. Check for every index from 1 to n\\n3. If element less than this number is/are present in stack just keep on popping them and update in your answer array the difference in indexes of both of these (we want distance between index of these 2 numbers, right)\\n4. Push the index for which you were checking in the stack (bcoz we have not got any element greater than this element)\\n\\neg.  [73,74,75,71,69,72,76,73]\\n\\n We push 0 in stack\\nNow, we checked for index i = 1, its 74 and element less than it (73) is present in stack\\nSo, we did (ans [stk.top ()} = 1 - stk.top ()) (1 is i in this case)\\nNow, stack is empty and we add index 1 in stack bcoz we need to find the element greater than 74\\nNext, for i = 2, it will be the same procedure\\nnow, stack will have 2 (index of 75) after i = 2\\nNow, when we check for i = 3, i..e 71, we cant find any element greater than it in stack, so, we just push this index without popping anything\\nNow, after i = 3, stack has {71, 75} from top to bottom\\nNext, for i = 4 i.e. 69, we can see than only index 3 is greater than 69, so we pop index 3 and push the current index i.e. 4\\n\\nLike this, we will work till index n\\nAfter checking till end, if stack has any indexes left, the answers for them will be 0\\n\\nIf you guys wanna see the implementation\\nhttps://leetcode.com/problems/daily-temperatures/submissions/861460644/\\n\\nPlease UPVOTE\\n",
+      "voteCount": 207
+    },
+    {
+      "name": "amanchandna",
+      "year": 2022,
+      "content": "Must Solve this question first for better fundamentals : https://leetcode.com/problems/next-greater-element-i/",
+      "voteCount": 172
+    },
+    {
+      "name": "ttaylor27",
+      "year": 2024,
+      "content": "Here are some of my favorite problems relating to monotonic stacks:\n\n[1475. Final Prices With a Special Discount in a Shop (Easy)](https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/)\n[496. Next Greater Element I (Easy)](https://leetcode.com/problems/next-greater-element-i/)\n[503. Next Greater Element II (Medium)](https://leetcode.com/problems/next-greater-element-ii/)\n[1019. Next Greater Node In Linked List (Medium)](https://leetcode.com/problems/next-greater-node-in-linked-list/)\n[456. 132 Pattern (Medium)](https://leetcode.com/problems/132-pattern/)\n[1504. Count Submatrices With All Ones (Medium)](https://leetcode.com/problems/count-submatrices-with-all-ones/)\n[1673. Find the Most Competitive Subsequence (Medium)](https://leetcode.com/problems/find-the-most-competitive-subsequence/)\n[907. Sum of Subarray Minimums (Medium)](https://leetcode.com/problems/sum-of-subarray-minimums/)\n[1856. Maximum Subarray Min-Product (Medium)](https://leetcode.com/problems/maximum-subarray-min-product/)\n[1124. Longest Well-Performing Interval (Medium)](https://leetcode.com/problems/longest-well-performing-interval/)\n[402. Remove K Digits (Medium)](https://leetcode.com/problems/remove-k-digits/)\n[84. Largest Rectangle in Histogram (Hard)](https://leetcode.com/problems/largest-rectangle-in-histogram/)\n[85. Maximal Rectangle (Hard)](https://leetcode.com/problems/maximal-rectangle/)",
+      "voteCount": 145
+    },
+    {
+      "name": "SayYesToTrees",
+      "year": 2022,
+      "content": "the last input is bonkers",
+      "voteCount": 107
+    },
+    {
+      "name": "tejasree438",
+      "year": 2023,
+      "content": "Lets try to understand the problem\\n\\ntemp  =73  74  75  71  69  72  76  73\\nIndex =0    1   2  3   4   5   6   7\\n\\nAssume that index are days\\nNo .of days to wait warm temprature:\\nGeneral analysis for the output are  [1,1,4,2,1,1,0,0]\\n\\nAt Index[0]=73->Need to wait one day because next warm temparature is in just next index[1]=1-0 =1days\\n\\nAt Index[1]=74->Need to wait one day because next warm temparature is in just next index[2]=2-1=1 days\\n\\nAt Index[2]=75->Need to wait four days because next warm temparature is in at index[6]= 6-1= 4 days\\n\\nAt Index[3]=71->Need to wait two days because next warm temparature is in at index[5]= 5-3= 2 days\\n\\nAt Index[4]=69->Need to wait one day because next warm temparature is in at index[5]= 5-4= 1 days\\n\\nAt Index[5]=72->Need to wait one day because next warm temparature is in at index[6]= 6-5= 1 days\\n\\nAt Index[6]=76->Its already high temparature so geater temparature than the last day temeparature .so keep it as 0.ignore. Index [6]=0 days\\n\\nAt Index[7]=76->Its last high temparature so other days .so keep it as 0.\\n Index [7]=0 days\\n\\nThen take this values in Monotonic Stack to find the higher number ,remember to come back from last day temparature as last day temp is constant.",
+      "voteCount": 66
+    },
+    {
+      "name": "CyberRedPanda",
+      "year": 2022,
+      "content": "It feels as though at least half the time I use a nested loop in Python I hit a time limit exceeded error even when the algorithm is valid. I understand that it may be faster to use stack, but if using stack is a requirement to solve the problem in time, it would be nice to have some warning in the description.",
+      "voteCount": 32
+    },
+    {
+      "name": "piyush4299",
+      "year": 2022,
+      "content": "Try to think of some data structure other than Array to perform the operation needed like how we can find next warmer temperature for every day. Once you know which data structure to use here then rest of it is just a piece of cake.",
+      "voteCount": 31
+    }
+  ]
+}
