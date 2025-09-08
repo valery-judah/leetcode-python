@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 
-
 class Baseline:
     def solve(self, routes: list[list[int]] | None = None, source: int = 0, target: int = 0) -> int:
         raise NotImplementedError

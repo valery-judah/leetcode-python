@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 
-
 class Baseline:
     def solve(self, stonevalue: list[int] | None = None) -> str:
         raise NotImplementedError

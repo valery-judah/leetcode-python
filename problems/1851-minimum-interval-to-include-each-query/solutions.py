@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 
-
 class Baseline:
     def solve(self, intervals: list[list[int]] | None = None, queries: list[int] | None = None) -> list[int]:
         raise NotImplementedError

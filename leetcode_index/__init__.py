@@ -17,8 +17,8 @@ def _ensure_maps_loaded():
     if ID_TO_SLUG is None:
         try:
             from ._maps import ID_TO_SLUG as ID_TO_SLUG_map
-            from ._maps import SLUG_TO_ID as SLUG_TO_ID_map
             from ._maps import INDEX_VERSION as INDEX_VERSION_map
+            from ._maps import SLUG_TO_ID as SLUG_TO_ID_map
 
             ID_TO_SLUG = {int(k): v for k, v in ID_TO_SLUG_map.items()}
             SLUG_TO_ID = SLUG_TO_ID_map

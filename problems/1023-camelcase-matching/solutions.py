@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 
-
 class Baseline:
     def solve(self, queries: list[str] | None = None, pattern: str = "") -> list[bool]:
         raise NotImplementedError

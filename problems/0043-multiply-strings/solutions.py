@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 
-
 class Baseline:
     def solve(self, num1: str = "", num2: str = "") -> str:
         raise NotImplementedError

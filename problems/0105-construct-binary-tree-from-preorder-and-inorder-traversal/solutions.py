@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from common.types import TreeNode
 
+
 class Baseline:
     def solve(self, preorder: list[int] | None = None, inorder: list[int] | None = None) -> TreeNode | None:
         raise NotImplementedError

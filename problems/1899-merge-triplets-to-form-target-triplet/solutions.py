@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 
-
 class Baseline:
     def solve(self, triplets: list[list[int]] | None = None, target: list[int] | None = None) -> bool:
         raise NotImplementedError

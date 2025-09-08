@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 
-
 class Baseline:
     def solve(self, calories: list[int] | None = None, k: int = 0, lower: int = 0, upper: int = 0) -> int:
         raise NotImplementedError

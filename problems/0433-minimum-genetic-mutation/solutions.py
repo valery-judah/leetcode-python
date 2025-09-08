@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 
-
 class Baseline:
     def solve(self, startgene: str = "", endgene: str = "", bank: list[str] | None = None) -> int:
         raise NotImplementedError

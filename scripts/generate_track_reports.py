@@ -55,7 +55,8 @@ def build_table(rows: list[dict]) -> str:
     for r in rows:
         lines.append(
             "| {problem} | {diff} | {baseline} | {complex_just} | {optimal} | {repeats} | {min_time} | "
-            "{conf} | {clarified} | {communicated} | {stated} | {edge_tests} | {clean_impl} | {mistakes} |".format(
+            "{conf} | {clarified} | {communicated} | {stated} | {edge_tests} \
+                | {clean_impl} | {mistakes} |".format(
                 problem=r["problem"],
                 diff=r.get("diff", ""),
                 baseline=r.get("baseline", ""),
@@ -92,7 +93,7 @@ def _process_problem_list(problem_list: list[dict], out_path: Path) -> list[dict
             slug = get_slug(problem_id)
             if "slug" in item and item["slug"] != slug:
                 print(
-                    f"W101: Slug for problem {problem_id} ('{item['slug']}') does not match index ('{slug}'). "
+                    f"W101: Slug for problem {problem_id} ('{item['slug']}') does not match index ('{slug}')."
                     "Using slug from index.",
                     file=sys.stderr,
                 )

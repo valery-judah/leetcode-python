@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 
-
 class Baseline:
     def solve(self, hand: list[int] | None = None, groupsize: int = 0) -> bool:
         raise NotImplementedError

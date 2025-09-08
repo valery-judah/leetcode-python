@@ -6,11 +6,11 @@ from pathlib import Path
 # When running as a script, we need to add the package to the path
 if __name__ == "__main__" and __package__ is None:
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+    from leetcode_index import ID_TO_SLUG, SLUG_TO_ID, get_id, get_slug
     from leetcode_index._build import build
-    from leetcode_index import get_id, get_slug, ID_TO_SLUG, SLUG_TO_ID
 else:
+    from . import ID_TO_SLUG, SLUG_TO_ID, get_id, get_slug
     from ._build import build
-    from . import get_id, get_slug, ID_TO_SLUG, SLUG_TO_ID
 
 
 def main():

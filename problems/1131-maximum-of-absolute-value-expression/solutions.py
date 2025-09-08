@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 
-
 class Baseline:
     def solve(self, arr1: list[int] | None = None, arr2: list[int] | None = None) -> int:
         raise NotImplementedError

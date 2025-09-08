@@ -14,12 +14,13 @@ extend-exclude = """
 (
   ^old_leetcode/
   | ^venv/
+  | ^generated/
 )
 """
 
 [tool.ruff]
 line-length = 110
-extend-exclude = ["venv"]
+extend-exclude = ["venv", "generated"]
 
 [tool.ruff.lint]
 # The 'UP' rules are opinionated and can be noisy.

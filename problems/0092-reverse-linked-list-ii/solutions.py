@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from common.types import ListNode
 
+
 class Baseline:
     def solve(self, head: ListNode | None = None, left: int = 0, right: int = 0) -> ListNode | None:
         raise NotImplementedError

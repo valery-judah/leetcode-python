@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 
-
 class Baseline:
     def solve(self, words: list[str] | None = None, maxwidth: int = 0) -> list[str]:
         raise NotImplementedError

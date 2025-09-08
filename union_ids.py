@@ -1,5 +1,5 @@
-import subprocess
 import re
+import subprocess
 
 
 def get_ids_from_script():
@@ -21,7 +21,7 @@ def get_ids_from_file(filepath):
     """Reads a file and returns a set of IDs."""
     ids = set()
     try:
-        with open(filepath, "r") as f:
+        with open(filepath) as f:
             for line in f:
                 if line.strip().isdigit():
                     ids.add(int(line.strip()))

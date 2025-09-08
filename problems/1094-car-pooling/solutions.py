@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 
-
 class Baseline:
     def solve(self, trips: list[list[int]] | None = None, capacity: int = 0) -> bool:
         raise NotImplementedError

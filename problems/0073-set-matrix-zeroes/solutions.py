@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 
-
 class Baseline:
     def solve(self, matrix: list[list[int]] | None = None) -> None:
         raise NotImplementedError

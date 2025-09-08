@@ -1,12 +1,13 @@
 import glob
-import yaml
 import re
+
+import yaml
 
 
 def extract_slugs_from_file(filepath):
     """Extracts slugs from a single YAML track file."""
     slugs = []
-    with open(filepath, "r") as f:
+    with open(filepath) as f:
         try:
             data = yaml.safe_load(f)
             if data and "problems" in data:

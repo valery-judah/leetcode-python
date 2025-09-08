@@ -5,7 +5,7 @@ from pathlib import Path
 # Ensure the project root is in the path to import leetcode_index
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from leetcode_index import get_id, exists_slug
+from leetcode_index import exists_slug, get_id
 
 
 def get_slugs_from_script():
