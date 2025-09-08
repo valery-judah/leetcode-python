@@ -1,8 +1,11 @@
 
 [project]
-name = "leetcode-python-workspace"
+name = "leetcode-index-local"
 version = "0.1.0"
-requires-python = ">=3.11"
+requires-python = ">=3.10"
+
+[project.scripts]
+leetcode-index = "leetcode_index.__main__:main"
 
 [tool.black]
 line-length = 110
@@ -16,10 +19,7 @@ extend-exclude = """
 
 [tool.ruff]
 line-length = 110
-extend-exclude = [
-
-  "venv",
-]
+extend-exclude = ["venv"]
 
 [tool.ruff.lint]
 # The 'UP' rules are opinionated and can be noisy.
@@ -41,4 +41,4 @@ no_implicit_optional = true
 strict_optional = true
 
 [tool.setuptools]
-packages = ["common"]
+packages = ["common", "leetcode_index"]
