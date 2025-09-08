@@ -30,5 +30,5 @@ See generation instructions in ../README.md.
 | [Longest Consecutive Sequence](../problems/0128-longest-consecutive-sequence/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Best Time to Buy And Sell Stock II](../problems/0122-best-time-to-buy-and-sell-stock-ii/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Majority Element II](../problems/0229-majority-element-ii/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
-| Subarray Sum Equals K | Medium |  |  |  |  |  |  |  |  |  |                  |  |  |
+| [Subarray Sum Equals K](../problems/0560-subarray-sum-equals-k/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [First Missing Positive](../problems/0041-first-missing-positive/readme.md) | Hard | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |

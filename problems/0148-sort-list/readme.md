@@ -1,4 +1,4 @@
-# 0147. Insertion Sort List
+# 0148. Insertion Sort List
 
 ## Quick Facts
 
@@ -54,7 +54,7 @@
 
 - Deterministic cases covering all edge cases above
 - Optional fuzz/property checks as applicable
-- Run: `pytest -q -k "0147"`
+- Run: `pytest -q -k "0148"`
 
 ## Common Pitfalls
 

@@ -261,15 +261,15 @@ def _parse_args() -> argparse.Namespace:
     return ap.parse_args()
 
 
-def _resolve_problem(query: str) -> dict | None:
+def _resolve_problem(query: str) -> tuple[dict | None, int | None, str | None]:
     """Resolve a problem by id/slug, first from leetcode_index, then archive."""
     problem = None
+    problem_id_resolved = None
+    slug_resolved = None
     try:
         # Prioritize resolving from the index
-        problem_id, slug = leetcode_index.resolve(int(query) if query.isdigit() else query)
-        problem = _load_problem_from_archive(slug)
-        if not problem:
-            problem = _load_problem_from_archive(str(problem_id))
+        problem_id_resolved, slug_resolved = leetcode_index.resolve(int(query) if query.isdigit() else query)
+        problem = _load_problem_from_archive(slug_resolved)
     except (KeyError, ValueError):
         # Fallback to archive-only if index fails
         problem = _load_problem_from_archive(query)
@@ -279,7 +279,7 @@ def _resolve_problem(query: str) -> dict | None:
 
     if not problem:
         print(f"W: Problem '{query}' not found in leetcode_index or archive.", file=sys.stderr)
-    return problem
+    return problem, problem_id_resolved, slug_resolved
 
 
 def _render_similar_md(
@@ -360,13 +360,17 @@ def _render_similar_md(
     return similar_md
 
 
-def _build_context(problem: dict) -> tuple[dict, int, str, Path]:
+def _build_context(
+    problem: dict, resolved_id: int | None, resolved_slug: str | None
+) -> tuple[dict, int, str, Path]:
     pid_str = _get_id(problem)
     try:
-        number = int(pid_str)
-    except ValueError as e:
-        raise SystemExit(f"Invalid problem id: {pid_str}") from e
-    slug = _get_slug(problem)
+        # Prioritize the ID from the index resolver, as archive data may be inconsistent
+        number = resolved_id if resolved_id is not None else int(pid_str)
+    except (ValueError, TypeError) as e:
+        raise SystemExit(f"Invalid problem id: {pid_str} (resolved: {resolved_id})") from e
+    # Prioritize slug from index resolver
+    slug = resolved_slug or _get_slug(problem)
     title = _get_title(problem, slug=slug)
     difficulty = _normalize_difficulty(problem.get("difficulty")) or "easy"
     tags_list = _get_tags(problem)
@@ -712,12 +716,14 @@ def main() -> None:
     args = _parse_args()
 
     q = args.query.strip()
-    problem = _resolve_problem(q)
+    problem, resolved_id, resolved_slug = _resolve_problem(q)
     if not problem:
         raise SystemExit(f"Problem not found by query: {q}")
 
     # Build context and target base dir
-    context, number, slug, base = _build_context(problem)
+    context, number, slug, base = _build_context(
+        problem, resolved_id=resolved_id, resolved_slug=resolved_slug
+    )
 
     full_rewrite = bool(args.full_rewrite)
     rewrite_files = not bool(args.no_overwrite)
@@ -732,7 +738,7 @@ def main() -> None:
 
     print(f"Created {base.relative_to(ROOT)}")
     print("Next:")
-    print(f"  - Edit {base / 'solutions.py'} and add classes to ALL_SOLUTIONS")
+    print(f"  - Edit {(base / 'solutions.py').relative_to(ROOT)} and add classes to ALL_SOLUTIONS")
     print("  - Add TEST_CASES in solutions.py; run: pytest -q")
 
 

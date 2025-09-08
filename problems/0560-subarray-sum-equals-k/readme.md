@@ -1,4 +1,4 @@
-# 0325. Maximum Size Subarray Sum Equals k
+# 0560. Maximum Size Subarray Sum Equals k
 
 ## Quick Facts
 
@@ -55,7 +55,7 @@
 
 - Deterministic cases covering all edge cases above
 - Optional fuzz/property checks as applicable
-- Run: `pytest -q -k "0325"`
+- Run: `pytest -q -k "0560"`
 
 ## Common Pitfalls
 

@@ -23,7 +23,7 @@ See generation instructions in ../README.md.
 | [Two Sum II - Input Array Is Sorted](../problems/0167-two-sum-ii-input-array-is-sorted/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [3Sum](../problems/0015-3sum/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Container With Most Water](../problems/0011-container-with-most-water/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
-| Subarray Sum Equals K | Medium |  |  |  |  |  |  |  |  |  |                  |  |  |
+| [Subarray Sum Equals K](../problems/0560-subarray-sum-equals-k/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Valid Parentheses](../problems/0020-valid-parentheses/readme.md) | Easy | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Min Stack](../problems/0155-min-stack/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Daily Temperatures](../problems/0739-daily-temperatures/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |

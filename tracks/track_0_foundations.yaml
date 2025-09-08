@@ -99,7 +99,8 @@ problems:
       Move the limiting side heuristic. Sharpens reasoning about which pointer to advance.
 
   # Prefix Sum
-  - slug: subarray-sum-equals-k
+  - id: 560
+    slug: subarray-sum-equals-k
     title: Subarray Sum Equals K
     difficulty: medium
     primary_pattern: prefix-sum

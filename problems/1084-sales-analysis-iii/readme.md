@@ -1,4 +1,4 @@
-# 1070. Product Sales Analysis III
+# 1084. Product Sales Analysis III
 
 ## Quick Facts
 
@@ -53,7 +53,7 @@ None
 
 - Deterministic cases covering all edge cases above
 - Optional fuzz/property checks as applicable
-- Run: `pytest -q -k "1070"`
+- Run: `pytest -q -k "1084"`
 
 ## Common Pitfalls
 
@@ -93,20 +93,20 @@ Note that the per-unit price.
 ### Example 2
 
 ```text
-Input:
+Input: 
 Sales table:
 +---------+------------+------+----------+-------+
 | sale_id | product_id | year | quantity | price |
-+---------+------------+------+----------+-------+
++---------+------------+------+----------+-------+ 
 | 1       | 100        | 2008 | 10       | 5000  |
 | 2       | 100        | 2009 | 12       | 5000  |
 | 7       | 200        | 2011 | 15       | 9000  |
 +---------+------------+------+----------+-------+
 
-Output:
+Output: 
 +------------+------------+----------+-------+
 | product_id | first_year | quantity | price |
-+------------+------------+----------+-------+
++------------+------------+----------+-------+ 
 | 100        | 2008       | 10       | 5000  |
 | 200        | 2011       | 15       | 9000  |
 +------------+------------+----------+-------+

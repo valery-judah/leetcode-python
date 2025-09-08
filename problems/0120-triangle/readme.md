@@ -1,4 +1,4 @@
-# 0118. Pascal's Triangle
+# 0120. Pascal's Triangle
 
 ## Quick Facts
 
@@ -53,7 +53,7 @@
 
 - Deterministic cases covering all edge cases above
 - Optional fuzz/property checks as applicable
-- Run: `pytest -q -k "0118"`
+- Run: `pytest -q -k "0120"`
 
 ## Common Pitfalls
 
