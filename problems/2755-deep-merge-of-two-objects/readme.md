@@ -5,7 +5,7 @@
 - URL: [Deep Merge of Two Objects](https://leetcode.com/problems/deep-merge-of-two-objects/)
 - Function: `deepMerge`
 - Signature: `(obj1: str, obj2: str)  -> str`
-- Primary pattern: ****
+- Primary pattern: \*\*\*\*
 
 ## Constraints
 
@@ -88,11 +88,11 @@ Explanation: result[0] = obj2[0] because obj1[0] and obj2[0] have different type
 ### Example 3
 
 ```text
-Input: 
-obj1 = {{"a": 1, "b": {{"c": [1 , [2, 7], 5], "d": 2}}}}, 
+Input:
+obj1 = {{"a": 1, "b": {{"c": [1 , [2, 7], 5], "d": 2}}}},
 obj2 = {{"a": 1, "b": {{"c": [6, [6], [9]], "e": 3}}}}
 Output: {{"a": 1, "b": {{"c": [6, [6, 7], [9]], "d": 2, "e": 3}}}}
-Explanation: 
+Explanation:
 Arrays obj1["b"]["c"] and obj2["b"]["c"] have been merged in way that obj2 values overwrite obj1 values deeply only if they are not arrays or objects.
 obj2["b"]["c"] has key "e" that obj1 doesn't have so it's added to obj1.
 ```

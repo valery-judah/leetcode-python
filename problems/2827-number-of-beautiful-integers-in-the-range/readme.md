@@ -75,7 +75,7 @@
 ```text
 Input: low = 10, high = 20, k = 3
 Output: 2
-Explanation: There are 2 beautiful integers in the given range: [12,18]. 
+Explanation: There are 2 beautiful integers in the given range: [12,18].
 - 12 is beautiful because it contains 1 odd digit and 1 even digit, and is divisible by k = 3.
 - 18 is beautiful because it contains 1 odd digit and 1 even digit, and is divisible by k = 3.
 Additionally we can see that:

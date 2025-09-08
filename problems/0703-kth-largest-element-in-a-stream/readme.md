@@ -3,7 +3,7 @@
 ## Quick Facts
 
 - URL: [Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/)
-- Function: ``
+- Function: \`\`
 - Signature: `(starts: list[int], ends: list[int])  -> list[bool]`
 - Primary pattern: **Tree**
 

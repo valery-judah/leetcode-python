@@ -71,7 +71,7 @@
 | 2305 | Medium | [Fair Distribution of Cookies](../2305-fair-distribution-of-cookies/readme.md) | [Fair Distribution of Cookies](https://leetcode.com/problems/fair-distribution-of-cookies/) |
 | 2025 | Hard | [Maximum Number of Ways to Partition an Array](../2025-maximum-number-of-ways-to-partition-an-array/readme.md) | [Maximum Number of Ways to Partition an Array](https://leetcode.com/problems/maximum-number-of-ways-to-partition-an-array/) |
 | 2397 | Medium | [Maximum Rows Covered by Columns](../2397-maximum-rows-covered-by-columns/readme.md) | [Maximum Rows Covered by Columns](https://leetcode.com/problems/maximum-rows-covered-by-columns/) |
-|  | Medium | Maximum Product of Two Integers With No Common Bits | [Maximum Product of Two Integers With No Common Bits](https://leetcode.com/problems/maximum-product-of-two-integers-with-no-common-bits/) |
+| | Medium | Maximum Product of Two Integers With No Common Bits | [Maximum Product of Two Integers With No Common Bits](https://leetcode.com/problems/maximum-product-of-two-integers-with-no-common-bits/) |
 
 ## Examples
 

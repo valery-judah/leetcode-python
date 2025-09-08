@@ -3,5 +3,10 @@
     "key": "cmd+alt+t",
     "command": "workbench.action.tasks.runTestTask",
     "when": "editorTextFocus || terminalFocus"
+  },
+  {
+    "key": "cmd+shift+n", // Or your preferred shortcut
+    "command": "workbench.action.tasks.runTask",
+    "args": "Create New LeetCode Attempt"
   }
 ]

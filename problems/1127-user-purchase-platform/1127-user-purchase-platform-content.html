@@ -17,7 +17,7 @@
 +-------------+---------+
 | user_id     | int     |
 | spend_date  | date    |
-| platform    | enum    | 
+| platform    | enum    |
 | amount      | int     |
 +-------------+---------+
 The table logs the history of the spending of users that make purchases from an online shopping website that has a desktop and a mobile application.
@@ -37,7 +37,7 @@ The platform column is an ENUM (category) type of (&#39;desktop&#39;, &#39;mobil
 <p><strong class="example">Example 1:</strong></p>
 
 <pre>
-<strong>Input:</strong> 
+<strong>Input:</strong>
 Spending table:
 +---------+------------+----------+--------+
 | user_id | spend_date | platform | amount |
@@ -49,7 +49,7 @@ Spending table:
 | 3       | 2019-07-01 | desktop  | 100    |
 | 3       | 2019-07-02 | desktop  | 100    |
 +---------+------------+----------+--------+
-<strong>Output:</strong> 
+<strong>Output:</strong>
 +------------+----------+--------------+-------------+
 | spend_date | platform | total_amount | total_users |
 +------------+----------+--------------+-------------+
@@ -59,8 +59,8 @@ Spending table:
 | 2019-07-02 | desktop  | 100          | 1           |
 | 2019-07-02 | mobile   | 100          | 1           |
 | 2019-07-02 | both     | 0            | 0           |
-+------------+----------+--------------+-------------+ 
-<strong>Explanation:</strong> 
++------------+----------+--------------+-------------+
+<strong>Explanation:</strong>
 On 2019-07-01, user 1 purchased using <strong>both</strong> desktop and mobile, user 2 purchased using mobile <strong>only</strong> and user 3 purchased using desktop <strong>only</strong>.
 On 2019-07-02, user 2 purchased using mobile <strong>only</strong>, user 3 purchased using desktop <strong>only</strong> and no one purchased using <strong>both</strong> platforms.
 </pre>

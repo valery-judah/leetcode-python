@@ -62,7 +62,7 @@
     {
       "name": "dj_ios1988",
       "year": 2018,
-      "content": "from the description:\nInput: \"(()\"\nOutput: 2\n\nand in the testcase\nInput: “\"()(()\"”\nOutput: 4\nExpected :2\n\nwhy these two have diferent answer of \"(()\" ?\n",
+      "content": "from the description:\nInput: \"(()\"\nOutput: 2\n\nand in the testcase\nInput: \u201c\"()(()\"\u201d\nOutput: 4\nExpected :2\n\nwhy these two have diferent answer of \"(()\" ?\n",
       "voteCount": 70
     },
     {

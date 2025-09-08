@@ -79,7 +79,7 @@
 ```text
 Input: votes = ["ABC","ACB","ABC","ACB","ACB"]
 Output: "ACB"
-Explanation: 
+Explanation:
 Team A was ranked first place by 5 voters. No other team was voted as first place, so team A is the first team.
 Team B was ranked second by 2 voters and ranked third by 3 voters.
 Team C was ranked second by 3 voters and ranked third by 2 voters.

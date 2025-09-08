@@ -158,7 +158,7 @@
     {
       "name": "anwendeng",
       "year": 2023,
-      "content": "In the real Taiwan daily life, the number for coin change can be negative, for example, $4=1∗5−1∗1$, that is the usual way, we change coins!!!\n\nWhy not using greedy? Although the greedy algorithm works for the most currency system and used in the daily life. But there are still some exceptions. There is a very interesting answer by wiki!\n\n> https://en.wikipedia.org/wiki/Change-making_problem\nFor instance, if we consider the old (now withdrawn) Indian coin denominations of 5, 10, 20 and 25 paise, then to make 40 paise, the greedy algorithm would choose three coins (25, 10, 5) whereas the optimal solution is two coins (20, 20). A coin system is called \"canonical\" if the greedy algorithm always solves its change-making problem optimally.",
+      "content": "In the real Taiwan daily life, the number for coin change can be negative, for example, $4=1\u22175\u22121\u22171$, that is the usual way, we change coins!!!\n\nWhy not using greedy? Although the greedy algorithm works for the most currency system and used in the daily life. But there are still some exceptions. There is a very interesting answer by wiki!\n\n> https://en.wikipedia.org/wiki/Change-making_problem\nFor instance, if we consider the old (now withdrawn) Indian coin denominations of 5, 10, 20 and 25 paise, then to make 40 paise, the greedy algorithm would choose three coins (25, 10, 5) whereas the optimal solution is two coins (20, 20). A coin system is called \"canonical\" if the greedy algorithm always solves its change-making problem optimally.",
       "voteCount": 45
     },
     {

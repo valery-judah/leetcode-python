@@ -3,7 +3,7 @@
 ## Quick Facts
 
 - URL: [Maximum Frequency Stack](https://leetcode.com/problems/maximum-frequency-stack/)
-- Function: ``
+- Function: \`\`
 - Signature: `(inputs: list[int], inputs: list[int])  -> list[str]`
 - Primary pattern: **Stack**
 

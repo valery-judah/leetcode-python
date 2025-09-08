@@ -16,7 +16,7 @@ else:
 def main():
     p = argparse.ArgumentParser()
     sub = p.add_subparsers(dest="cmd", required=True)
-    build_parser = sub.add_parser("build")
+    # build_parser = sub.add_parser("build")
     lu = sub.add_parser("lookup")
     g = lu.add_mutually_exclusive_group(required=True)
     g.add_argument("--id", type=int)

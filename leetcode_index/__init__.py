@@ -23,8 +23,8 @@ def _ensure_maps_loaded():
             ID_TO_SLUG = {int(k): v for k, v in ID_TO_SLUG_map.items()}
             SLUG_TO_ID = SLUG_TO_ID_map
             INDEX_VERSION = INDEX_VERSION_map
-        except ImportError:
-            raise RuntimeError("E300 index not built. Run: python -m leetcode_index build")
+        except ImportError as err:
+            raise RuntimeError("E300 index not built. Run: python -m leetcode_index build") from err
 
 
 def get_slug(problem_id: int) -> str:

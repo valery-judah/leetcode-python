@@ -81,12 +81,14 @@ def build() -> None:
     # Also emit JSONL artifacts in the package directory for easy consumption.
     # - leetcode_index/id_to_slug.jsonl: one {"id", "slug"} per line
     # - leetcode_index/slug_to_id.jsonl: one {"slug", "id"} per line (includes aliases)
-    id_jsonl = "\n".join(
-        json.dumps({"id": k, "slug": v}, sort_keys=True) for k, v in sorted(id_to_slug.items())
-    ) + "\n"
-    slug_jsonl = "\n".join(
-        json.dumps({"slug": k, "id": v}, sort_keys=True) for k, v in sorted(slug_to_id.items())
-    ) + "\n"
+    id_jsonl = (
+        "\n".join(json.dumps({"id": k, "slug": v}, sort_keys=True) for k, v in sorted(id_to_slug.items()))
+        + "\n"
+    )
+    slug_jsonl = (
+        "\n".join(json.dumps({"slug": k, "id": v}, sort_keys=True) for k, v in sorted(slug_to_id.items()))
+        + "\n"
+    )
     atomic_write(PKG_DIR / "id_to_slug.jsonl", id_jsonl)
     atomic_write(PKG_DIR / "slug_to_id.jsonl", slug_jsonl)
     atomic_write(MAPS, py)

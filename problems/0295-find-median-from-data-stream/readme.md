@@ -3,7 +3,7 @@
 ## Quick Facts
 
 - URL: [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)
-- Function: ``
+- Function: \`\`
 - Signature: `()  -> bool`
 - Primary pattern: **Two Pointers**
 

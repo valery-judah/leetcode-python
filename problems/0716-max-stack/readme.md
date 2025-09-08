@@ -3,7 +3,7 @@
 ## Quick Facts
 
 - URL: [Max Stack](https://leetcode.com/problems/max-stack/)
-- Function: ``
+- Function: \`\`
 - Signature: `()  -> bool`
 - Primary pattern: **Stack**
 

@@ -3,7 +3,7 @@
 ## Quick Facts
 
 - URL: [My Calendar I](https://leetcode.com/problems/my-calendar-i/)
-- Function: ``
+- Function: \`\`
 - Signature: `(starts: list[int], ends: list[int])  -> list[bool]`
 - Primary pattern: **Binary Search**
 

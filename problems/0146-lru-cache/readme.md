@@ -3,7 +3,7 @@
 ## Quick Facts
 
 - URL: [LRU Cache](https://leetcode.com/problems/lru-cache/)
-- Function: ``
+- Function: \`\`
 - Signature: `(inputs: list[int], inputs: list[int])  -> list[str]`
 - Primary pattern: **Hash Table**
 

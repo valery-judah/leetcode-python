@@ -23,5 +23,3 @@ See generation instructions in ../README.md.
 | [Container With Most Water](../problems/0011-container-with-most-water/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Boats to Save People](../problems/0881-boats-to-save-people/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Trapping Rain Water](../problems/0042-trapping-rain-water/readme.md) | Hard | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
-
-

@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Create New LeetCode Attempt",
+      "type": "process",
+      "command": "${workspaceFolder}/venv/bin/python",
+      "args": [
+        "${workspaceFolder}/scripts/new_attempt.py",
+        "${fileDirname}"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "VSCODE_TASK": "1"
+        }
+      }
+    }
+  ]
+}

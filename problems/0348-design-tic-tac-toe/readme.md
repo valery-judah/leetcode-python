@@ -3,7 +3,7 @@
 ## Quick Facts
 
 - URL: [Design Tic-Tac-Toe](https://leetcode.com/problems/design-tic-tac-toe/)
-- Function: ``
+- Function: \`\`
 - Signature: `()  -> bool`
 - Primary pattern: **Hash Table**
 

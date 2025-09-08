@@ -108,7 +108,7 @@ Output: [
 ### Example 3
 
 ```text
-Input: 
+Input:
 urls = [
   "http://news.yahoo.com",
   "http://news.yahoo.com/news",

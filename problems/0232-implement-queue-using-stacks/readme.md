@@ -3,7 +3,7 @@
 ## Quick Facts
 
 - URL: [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)
-- Function: ``
+- Function: \`\`
 - Signature: `()  -> bool`
 - Primary pattern: **Stack**
 

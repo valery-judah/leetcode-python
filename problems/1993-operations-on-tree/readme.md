@@ -3,7 +3,7 @@
 ## Quick Facts
 
 - URL: [Operations on Tree](https://leetcode.com/problems/operations-on-tree/)
-- Function: ``
+- Function: \`\`
 - Signature: `()  -> bool`
 - Primary pattern: **Tree**
 

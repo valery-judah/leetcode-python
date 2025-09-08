@@ -101,7 +101,7 @@
     {
       "name": "anwendeng",
       "year": 2023,
-      "content": "That's Euler's path problem, probably for finding path.\nThe initial v   must have indeg(v)+1=outdeg(v) or indeg(v)=outdeg(v) (if an Euler cycle) the terminal vertex w has indeg(w)=outdeg(w)+1 or indeg(w)=outdeg(w) (if an Euler cycle v=w)\nFor other vertex vi has indeg(vi)=outdeg(vi).\nHopefully, it's useful for solving question\nProvide a solution using priority_queue different from others.\nSolve Leetcode 2097. Valid Arrangement of Pairs!!!\n# Königsberg  7 bridges problem\n![images.jfif](https://assets.leetcode.com/users/images/44b9b15a-6e6b-4ee1-bdff-95c952ff421d_1694703689.5281713.jpeg)",
+      "content": "That's Euler's path problem, probably for finding path.\nThe initial v   must have indeg(v)+1=outdeg(v) or indeg(v)=outdeg(v) (if an Euler cycle) the terminal vertex w has indeg(w)=outdeg(w)+1 or indeg(w)=outdeg(w) (if an Euler cycle v=w)\nFor other vertex vi has indeg(vi)=outdeg(vi).\nHopefully, it's useful for solving question\nProvide a solution using priority_queue different from others.\nSolve Leetcode 2097. Valid Arrangement of Pairs!!!\n# K\u00f6nigsberg  7 bridges problem\n![images.jfif](https://assets.leetcode.com/users/images/44b9b15a-6e6b-4ee1-bdff-95c952ff421d_1694703689.5281713.jpeg)",
       "voteCount": 33
     },
     {

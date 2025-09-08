@@ -27,7 +27,7 @@
 <pre>
 <strong>Input:</strong> obj1 = {&quot;a&quot;: 1, &quot;c&quot;: 3}, obj2 = {&quot;a&quot;: 2, &quot;b&quot;: 2}
 <strong>Output:</strong> {&quot;a&quot;: 2, &quot;c&quot;: 3, &quot;b&quot;: 2}
-<strong>Explanation:</strong> The value of obj1[&quot;a&quot;] changed to 2 because if both objects have the same key and their value is not an array or object then we change the obj1 value to the obj2 value. Key &quot;b&quot; with value was added to obj1 as it doesn&#39;t exist in obj1. 
+<strong>Explanation:</strong> The value of obj1[&quot;a&quot;] changed to 2 because if both objects have the same key and their value is not an array or object then we change the obj1 value to the obj2 value. Key &quot;b&quot; with value was added to obj1 as it doesn&#39;t exist in obj1.
 </pre>
 
 <p><strong class="example">Example 2:</strong></p>
@@ -41,11 +41,11 @@
 <p><strong class="example">Example 3:</strong></p>
 
 <pre>
-<strong>Input:</strong> 
-obj1 = {&quot;a&quot;: 1, &quot;b&quot;: {&quot;c&quot;: [1 , [2, 7], 5], &quot;d&quot;: 2}}, 
+<strong>Input:</strong>
+obj1 = {&quot;a&quot;: 1, &quot;b&quot;: {&quot;c&quot;: [1 , [2, 7], 5], &quot;d&quot;: 2}},
 obj2 = {&quot;a&quot;: 1, &quot;b&quot;: {&quot;c&quot;: [6, [6], [9]], &quot;e&quot;: 3}}
 <strong>Output:</strong> {&quot;a&quot;: 1, &quot;b&quot;: {&quot;c&quot;: [6, [6, 7], [9]], &quot;d&quot;: 2, &quot;e&quot;: 3}}
-<strong>Explanation:</strong> 
+<strong>Explanation:</strong>
 Arrays obj1[&quot;b&quot;][&quot;c&quot;] and obj2[&quot;b&quot;][&quot;c&quot;] have been merged in way that obj2 values overwrite obj1 values deeply only if they are not arrays or objects.
 obj2[&quot;b&quot;][&quot;c&quot;] has key &quot;e&quot; that obj1 doesn&#39;t have so it&#39;s added to obj1.
 </pre>

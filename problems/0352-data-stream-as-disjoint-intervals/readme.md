@@ -3,7 +3,7 @@
 ## Quick Facts
 
 - URL: [Data Stream as Disjoint Intervals](https://leetcode.com/problems/data-stream-as-disjoint-intervals/)
-- Function: ``
+- Function: \`\`
 - Signature: `()  -> bool`
 - Primary pattern: **Binary Search**
 

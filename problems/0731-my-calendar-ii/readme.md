@@ -3,7 +3,7 @@
 ## Quick Facts
 
 - URL: [My Calendar II](https://leetcode.com/problems/my-calendar-ii/)
-- Function: ``
+- Function: \`\`
 - Signature: `(starts: list[int], ends: list[int])  -> list[bool]`
 - Primary pattern: **Binary Search**
 
@@ -82,9 +82,9 @@ Output
 
 Explanation
 MyCalendarTwo myCalendarTwo = new MyCalendarTwo();
-myCalendarTwo.book(10, 20); // return True, The event can be booked. 
-myCalendarTwo.book(50, 60); // return True, The event can be booked. 
-myCalendarTwo.book(10, 40); // return True, The event can be double booked. 
+myCalendarTwo.book(10, 20); // return True, The event can be booked.
+myCalendarTwo.book(50, 60); // return True, The event can be booked.
+myCalendarTwo.book(10, 40); // return True, The event can be double booked.
 myCalendarTwo.book(5, 15);  // return False, The event cannot be booked, because it would result in a triple booking.
 myCalendarTwo.book(5, 10); // return True, The event can be booked, as it does not use time 10 which is already double booked.
 myCalendarTwo.book(25, 55); // return True, The event can be booked, as the time in [25, 40) will be double booked with the third event, the time [40, 50) will be single booked, and the time [50, 55) will be double booked with the second event.

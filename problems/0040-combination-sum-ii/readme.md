@@ -75,7 +75,7 @@
 
 ```text
 Input: candidates = [10,1,2,7,6,1,5], target = 8
-Output: 
+Output:
 [
 [1,1,6],
 [1,2,5],
@@ -88,7 +88,7 @@ Output:
 
 ```text
 Input: candidates = [2,5,2,1,2], target = 5
-Output: 
+Output:
 [
 [1,2,2],
 [5]

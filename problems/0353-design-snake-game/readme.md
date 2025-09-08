@@ -3,7 +3,7 @@
 ## Quick Facts
 
 - URL: [Design Snake Game](https://leetcode.com/problems/design-snake-game/)
-- Function: ``
+- Function: \`\`
 - Signature: `()  -> bool`
 - Primary pattern: **Hash Table**
 

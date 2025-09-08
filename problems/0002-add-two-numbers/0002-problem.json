@@ -182,7 +182,7 @@
     {
       "name": "antunesleo",
       "year": 2022,
-      "content": "The tip is to simulate [addition by hand](https://www.youtube.com/watch?v=Nwxa9E_X8K8) on code . The fact that the linked list is backwards only makes it easier, because on addition by hand we start from behind e.g. \n    \n```\n3¹ 4  2\n4  6  5\n---------\n8  0  7\n```\nWe can add the results for each \"column\" in the addition by hand in other linked list and return it.\n\n",
+      "content": "The tip is to simulate [addition by hand](https://www.youtube.com/watch?v=Nwxa9E_X8K8) on code . The fact that the linked list is backwards only makes it easier, because on addition by hand we start from behind e.g. \n    \n```\n3\u00b9 4  2\n4  6  5\n---------\n8  0  7\n```\nWe can add the results for each \"column\" in the addition by hand in other linked list and return it.\n\n",
       "voteCount": 111
     },
     {

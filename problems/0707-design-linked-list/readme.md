@@ -3,7 +3,7 @@
 ## Quick Facts
 
 - URL: [Design Linked List](https://leetcode.com/problems/design-linked-list/)
-- Function: ``
+- Function: \`\`
 - Signature: `()  -> bool`
 - Primary pattern: **Linked List**
 
