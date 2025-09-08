@@ -83,7 +83,7 @@
 ```text
 Input: piles = [5,3,4,5]
 Output: true
-Explanation: 
+Explanation:
 Alice starts first, and can only take the first 5 or the last 5.
 Say she takes the first 5, so that the row becomes [3, 4, 5].
 If Bob takes 3, then the board is [4, 5], and Alice takes 5 to win with 10 points.

@@ -73,7 +73,7 @@
     {
       "name": "aDish_21",
       "year": 2023,
-      "content": "```\nif(nums[mid] == nums[ll] && nums[mid] == nums[ul])\n{\n       ll++;\n       ul--;\n}\n```\nJust remember this edge case if there r duplicates in the array. This edge case will make your work easier🙂 BUT yaa remember that in worst case TC will go O(n) & not O(log n)",
+      "content": "```\nif(nums[mid] == nums[ll] && nums[mid] == nums[ul])\n{\n       ll++;\n       ul--;\n}\n```\nJust remember this edge case if there r duplicates in the array. This edge case will make your work easier\ud83d\ude42 BUT yaa remember that in worst case TC will go O(n) & not O(log n)",
       "voteCount": 55
     },
     {

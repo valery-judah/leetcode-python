@@ -3,7 +3,7 @@
 ## Quick Facts
 
 - URL: [Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/)
-- Function: ``
+- Function: \`\`
 - Signature: `()  -> bool`
 - Primary pattern: **String**
 

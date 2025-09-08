@@ -77,7 +77,7 @@
 ```text
 Input: tasks = [[1,2],[2,4],[3,2],[4,1]]
 Output: [0,2,3,1]
-Explanation: The events go as follows: 
+Explanation: The events go as follows:
 - At time = 1, task 0 is available to process. Available tasks = {{0}}.
 - Also at time = 1, the idle CPU starts processing task 0. Available tasks = {{}}.
 - At time = 2, task 1 is available to process. Available tasks = {{1}}.

@@ -75,7 +75,7 @@ None
 +---------------+---------+
 | business_id   | int     |
 | event_type    | varchar |
-| occurrences   | int     | 
+| occurrences   | int     |
 +---------------+---------+
 (business_id, event_type) is the primary key (combination of columns with unique values) of this table.
 Each row in the table logs the info that an event of some type occurred at some business for a number of times.
@@ -84,7 +84,7 @@ Each row in the table logs the info that an event of some type occurred at some 
 ### Example 2
 
 ```text
-Input: 
+Input:
 Events table:
 +-------------+------------+-------------+
 | business_id | event_type | occurrences |
@@ -97,13 +97,13 @@ Events table:
 | 1           | page views | 3           |
 | 2           | page views | 12          |
 +-------------+------------+-------------+
-Output: 
+Output:
 +-------------+
 | business_id |
 +-------------+
 | 1           |
 +-------------+
-Explanation:  
+Explanation:
 The average activity for each event can be calculated as follows:
 - 'reviews': (7+3)/2 = 5
 - 'ads': (11+7+6)/3 = 8

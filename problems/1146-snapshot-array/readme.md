@@ -3,7 +3,7 @@
 ## Quick Facts
 
 - URL: [Snapshot Array](https://leetcode.com/problems/snapshot-array/)
-- Function: ``
+- Function: \`\`
 - Signature: `(inputs: list[int], inputs: list[int])  -> bool`
 - Primary pattern: **Binary Search**
 
@@ -77,7 +77,7 @@ None
 Input: ["SnapshotArray","set","snap","set","get"]
 [[3],[0,5],[],[0,6],[0,0]]
 Output: [null,null,0,null,5]
-Explanation: 
+Explanation:
 SnapshotArray snapshotArr = new SnapshotArray(3); // set the length to be 3
 snapshotArr.set(0,5);  // Set array[0] = 5
 snapshotArr.snap();  // Take a snapshot, return snap_id = 0

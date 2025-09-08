@@ -3,7 +3,7 @@
 ## Quick Facts
 
 - URL: [Design HashSet](https://leetcode.com/problems/design-hashset/)
-- Function: ``
+- Function: \`\`
 - Signature: `()  -> bool`
 - Primary pattern: **Hash Table**
 

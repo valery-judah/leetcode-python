@@ -98,7 +98,7 @@ book_id is a foreign key (reference column) to the Books table.
 ### Example 3
 
 ```text
-Input: 
+Input:
 Books table:
 +---------+--------------------+----------------+
 | book_id | name               | available_from |
@@ -121,7 +121,7 @@ Orders table:
 | 6        | 5       | 9        | 2009-02-02    |
 | 7        | 5       | 8        | 2010-04-13    |
 +----------+---------+----------+---------------+
-Output: 
+Output:
 +-----------+--------------------+
 | book_id   | name               |
 +-----------+--------------------+

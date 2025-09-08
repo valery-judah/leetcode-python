@@ -3,7 +3,7 @@
 ## Quick Facts
 
 - URL: [Design Twitter](https://leetcode.com/problems/design-twitter/)
-- Function: ``
+- Function: \`\`
 - Signature: `()  -> bool`
 - Primary pattern: **Heap (Priority Queue)**
 

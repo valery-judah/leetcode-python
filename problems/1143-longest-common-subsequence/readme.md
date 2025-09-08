@@ -77,8 +77,8 @@
 ### Example 1
 
 ```text
-Input: text1 = "abcde", text2 = "ace" 
-Output: 3  
+Input: text1 = "abcde", text2 = "ace"
+Output: 3
 Explanation: The longest common subsequence is "ace" and its length is 3.
 ```
 

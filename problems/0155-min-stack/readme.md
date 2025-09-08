@@ -3,7 +3,7 @@
 ## Quick Facts
 
 - URL: [Min Stack](https://leetcode.com/problems/min-stack/)
-- Function: ``
+- Function: \`\`
 - Signature: `()  -> bool`
 - Primary pattern: **Stack**
 

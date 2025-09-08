@@ -80,7 +80,7 @@
     {
       "name": "brijKhajuria",
       "year": 2023,
-      "content": "💡Hint💡 \nWhat if there were only the top row? Which balls will get stuck? Which balls will move and to which cell?\nDetermine this information and use it for the next row. \n\nHere's the [solution](https://leetcode.com/problems/where-will-the-ball-fall/solutions/3023710/fast-iterative-o-m-x-n-solution-in-c-easy-to-understand/) if you need more help.",
+      "content": "\ud83d\udca1Hint\ud83d\udca1 \nWhat if there were only the top row? Which balls will get stuck? Which balls will move and to which cell?\nDetermine this information and use it for the next row. \n\nHere's the [solution](https://leetcode.com/problems/where-will-the-ball-fall/solutions/3023710/fast-iterative-o-m-x-n-solution-in-c-easy-to-understand/) if you need more help.",
       "voteCount": 5
     },
     {

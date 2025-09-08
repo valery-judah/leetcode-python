@@ -126,7 +126,7 @@
     {
       "name": "daBozz",
       "year": 2023,
-      "content": "Base64 does the trick: \n> Base64 only contains A–Z , a–z , 0–9 , + , / and =\n\nYou can base64-encode every str in the list, and join it together with any separator that is not A–Z , a–z , 0–9 , + , / and = (I've used commas). ",
+      "content": "Base64 does the trick: \n> Base64 only contains A\u2013Z , a\u2013z , 0\u20139 , + , / and =\n\nYou can base64-encode every str in the list, and join it together with any separator that is not A\u2013Z , a\u2013z , 0\u20139 , + , / and = (I've used commas). ",
       "voteCount": 2
     },
     {

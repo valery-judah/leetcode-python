@@ -84,7 +84,7 @@ Each row of this table indicates the number of likes and dislikes for a LeetCode
 ### Example 2
 
 ```text
-Input: 
+Input:
 Problems table:
 +------------+-------+----------+
 | problem_id | likes | dislikes |
@@ -96,7 +96,7 @@ Problems table:
 | 13         | 2050  | 4164     |
 | 10         | 9002  | 7446     |
 +------------+-------+----------+
-Output: 
+Output:
 +------------+
 | problem_id |
 +------------+

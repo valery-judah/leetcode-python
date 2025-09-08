@@ -76,7 +76,7 @@
 ```text
 Input: points = [[0,0],[2,2],[3,10],[5,2],[7,0]]
 Output: 20
-Explanation: 
+Explanation:
 
 We can connect the points as shown above to get the minimum cost of 20.
 Notice that there is a unique path between every pair of points.

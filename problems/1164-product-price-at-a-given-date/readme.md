@@ -84,7 +84,7 @@ Each row of this table indicates that the price of some product was changed to a
 ### Example 2
 
 ```text
-Input: 
+Input:
 Products table:
 +------------+-----------+-------------+
 | product_id | new_price | change_date |
@@ -96,7 +96,7 @@ Products table:
 | 2          | 65        | 2019-08-17  |
 | 3          | 20        | 2019-08-18  |
 +------------+-----------+-------------+
-Output: 
+Output:
 +------------+-------+
 | product_id | price |
 +------------+-------+

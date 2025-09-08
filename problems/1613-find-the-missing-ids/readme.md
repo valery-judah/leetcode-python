@@ -87,7 +87,7 @@ Each row of this table contains the name and the id customer.
 ### Example 2
 
 ```text
-Input: 
+Input:
 Customers table:
 +-------------+---------------+
 | customer_id | customer_name |
@@ -96,14 +96,14 @@ Customers table:
 | 4           | Bob           |
 | 5           | Charlie       |
 +-------------+---------------+
-Output: 
+Output:
 +-----+
 | ids |
 +-----+
 | 2   |
 | 3   |
 +-----+
-Explanation: 
+Explanation:
 The maximum customer_id present in the table is 5, so in the range [1,5], IDs 2 and 3 are missing from the table.
 ```
 

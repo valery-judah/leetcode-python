@@ -3,7 +3,7 @@
 ## Quick Facts
 
 - URL: [Online Stock Span](https://leetcode.com/problems/online-stock-span/)
-- Function: ``
+- Function: \`\`
 - Signature: `(inputs: list[int], inputs: list[int])  -> list[str]`
 - Primary pattern: **Stack**
 

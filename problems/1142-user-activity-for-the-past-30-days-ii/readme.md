@@ -80,14 +80,14 @@ None
 +---------------+---------+
 This table may have duplicate rows.
 The activity_type column is an ENUM (category) of type ('open_session', 'end_session', 'scroll_down', 'send_message').
-The table shows the user activities for a social media website. 
+The table shows the user activities for a social media website.
 Note that each session belongs to exactly one user.
 ```
 
 ### Example 2
 
 ```text
-Input: 
+Input:
 Activity table:
 +---------+------------+---------------+---------------+
 | user_id | session_id | activity_date | activity_type |
@@ -107,10 +107,10 @@ Activity table:
 | 4       | 3          | 2019-06-25    | open_session  |
 | 4       | 3          | 2019-06-25    | end_session   |
 +---------+------------+---------------+---------------+
-Output: 
-+---------------------------+ 
+Output:
++---------------------------+
 | average_sessions_per_user |
-+---------------------------+ 
++---------------------------+
 | 1.33                      |
 +---------------------------+
 Explanation: User 1 and 2 each had 1 session in the past 30 days while user 3 had 2 sessions so the average is (1 + 1 + 2) / 3 = 1.33.

@@ -88,7 +88,7 @@ We add <b> before each substring and </b> after each substring.
 ```text
 Input: s = "aaabbb", words = ["aa","b"]
 Output: "<b>aaabbb</b>"
-Explanation: 
+Explanation:
 "aa" appears as a substring two times: "aaabbb" and "aaabbb".
 "b" appears as a substring three times: "aaabbb", "aaabbb", and "aaabbb".
 We add <b> before each substring and </b> after each substring: "<b>a<b>a</b>a</b><b>b</b><b>b</b><b>b</b>".

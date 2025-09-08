@@ -3,7 +3,7 @@
 ## Quick Facts
 
 - URL: [Detect Squares](https://leetcode.com/problems/detect-squares/)
-- Function: ``
+- Function: \`\`
 - Signature: `()  -> bool`
 - Primary pattern: **Hash Table**
 

@@ -101,7 +101,7 @@ Each row of this table contains information about one employee.
 ### Example 3
 
 ```text
-Input: 
+Input:
 Project table:
 +-------------+-------------+
 | project_id  | employee_id |
@@ -121,7 +121,7 @@ Employee table:
 | 3           | John   | 1                |
 | 4           | Doe    | 2                |
 +-------------+--------+------------------+
-Output: 
+Output:
 +-------------+
 | project_id  |
 +-------------+

@@ -3,7 +3,7 @@
 ## Quick Facts
 
 - URL: [Design In-Memory File System](https://leetcode.com/problems/design-in-memory-file-system/)
-- Function: ``
+- Function: \`\`
 - Signature: `(inputs: list[int], inputs: list[int])  -> list[str]`
 - Primary pattern: **Hash Table**
 

@@ -3,7 +3,7 @@
 ## Quick Facts
 
 - URL: [Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system/)
-- Function: ``
+- Function: \`\`
 - Signature: `(inputs: list[int], inputs: list[int])  -> list[str]`
 - Primary pattern: **Heap (Priority Queue)**
 

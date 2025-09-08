@@ -3,7 +3,7 @@
 ## Quick Facts
 
 - URL: [Design Compressed String Iterator](https://leetcode.com/problems/design-compressed-string-iterator/)
-- Function: ``
+- Function: \`\`
 - Signature: `(inputs: list[int], inputs: list[int])  -> list[str]`
 - Primary pattern: **Array**
 

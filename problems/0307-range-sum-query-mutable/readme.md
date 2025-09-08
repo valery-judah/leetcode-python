@@ -3,7 +3,7 @@
 ## Quick Facts
 
 - URL: [Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable/)
-- Function: ``
+- Function: \`\`
 - Signature: `(inputs: list[int], inputs: list[int])  -> list[str]`
 - Primary pattern: **Array**
 

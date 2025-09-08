@@ -3,7 +3,7 @@
 ## Quick Facts
 
 - URL: [Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/)
-- Function: ``
+- Function: \`\`
 - Signature: `()  -> bool`
 - Primary pattern: **Hash Table**
 

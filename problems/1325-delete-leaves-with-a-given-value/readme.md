@@ -73,7 +73,7 @@ None
 ```text
 Input: root = [1,2,3,2,null,2,4], target = 2
 Output: [1,null,3,null,4]
-Explanation: Leaf nodes in green with value (target = 2) are removed (Picture in left). 
+Explanation: Leaf nodes in green with value (target = 2) are removed (Picture in left).
 After removing, new nodes become leaf nodes with value (target = 2) (Picture in center).
 ```
 

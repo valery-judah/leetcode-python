@@ -3,7 +3,7 @@
 ## Quick Facts
 
 - URL: [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)
-- Function: ``
+- Function: \`\`
 - Signature: `()  -> bool`
 - Primary pattern: **Hash Table**
 

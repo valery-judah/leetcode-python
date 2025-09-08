@@ -79,7 +79,7 @@
 ```text
 Input: rooms = [[1],[2],[3],[]]
 Output: true
-Explanation: 
+Explanation:
 We visit room 0 and pick up key 1.
 We then visit room 1 and pick up key 2.
 We then visit room 2 and pick up key 3.

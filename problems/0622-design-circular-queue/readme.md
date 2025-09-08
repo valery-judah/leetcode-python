@@ -3,7 +3,7 @@
 ## Quick Facts
 
 - URL: [Design Circular Queue](https://leetcode.com/problems/design-circular-queue/)
-- Function: ``
+- Function: \`\`
 - Signature: `()  -> bool`
 - Primary pattern: **Queue**
 

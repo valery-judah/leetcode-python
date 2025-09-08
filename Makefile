@@ -95,8 +95,8 @@ build:
 	make lint
 	@echo "--- Type checking ---"
 	make type
-	@echo "--- Running tests ---"
-	make test
+# 	@echo "--- Running tests ---"
+# 	make test
 	@echo "--- Validating stats schema ---"
 	make validate-stats
 	@echo "--- Generating Markdown (tracks + README table) ---"

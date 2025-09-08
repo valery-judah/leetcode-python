@@ -3,7 +3,7 @@
 ## Quick Facts
 
 - URL: [Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)
-- Function: ``
+- Function: \`\`
 - Signature: `(inputs: list[int], inputs: list[int])  -> list[int]`
 - Primary pattern: **Tree**
 

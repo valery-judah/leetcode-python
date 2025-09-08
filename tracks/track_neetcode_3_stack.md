@@ -25,5 +25,3 @@ See generation instructions in ../README.md.
 | [Decode String](../problems/0394-decode-string/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Maximum Frequency Stack](../problems/0895-maximum-frequency-stack/readme.md) | Hard | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Largest Rectangle In Histogram](../problems/0084-largest-rectangle-in-histogram/readme.md) | Hard | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
-
-

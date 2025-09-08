@@ -93,7 +93,7 @@
     {
       "name": "AlecLC",
       "year": 2023,
-      "content": "# <span style='color:green'>Hint 1</span>\nFor all x, y >1, product(x,y) ≥ sum(x,y)\n\n# <span style='color:green'>Hint 2</span>\nIt follows that it always makes sense to try to split the sum into the most components > 1 possible, as product > sum\n\n# <span style='color:green'>Hint 3</span>\n2 and 3 sum up to any number ≥ 2*, so it always makes sense to break it down into 2s and 3s. The optimal answer will be comprised of only 2s and 3s\n*(you can trivially prove this because 1 and 2 sum up to every number, and 3 is 2+1)",
+      "content": "# <span style='color:green'>Hint 1</span>\nFor all x, y >1, product(x,y) \u2265 sum(x,y)\n\n# <span style='color:green'>Hint 2</span>\nIt follows that it always makes sense to try to split the sum into the most components > 1 possible, as product > sum\n\n# <span style='color:green'>Hint 3</span>\n2 and 3 sum up to any number \u2265 2*, so it always makes sense to break it down into 2s and 3s. The optimal answer will be comprised of only 2s and 3s\n*(you can trivially prove this because 1 and 2 sum up to every number, and 3 is 2+1)",
       "voteCount": 18
     },
     {

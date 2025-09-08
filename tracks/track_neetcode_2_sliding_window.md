@@ -19,5 +19,3 @@ See generation instructions in ../README.md.
 | [Find K Closest Elements](../problems/0658-find-k-closest-elements/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Minimum Window Substring](../problems/0076-minimum-window-substring/readme.md) | Hard | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Sliding Window Maximum](../problems/0239-sliding-window-maximum/readme.md) | Hard | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
-
-

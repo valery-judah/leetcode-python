@@ -32,5 +32,3 @@ See generation instructions in ../README.md.
 | [Majority Element II](../problems/0229-majority-element-ii/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | Subarray Sum Equals K | Medium |  |  |  |  |  |  |  |  |  |                  |  |  |
 | [First Missing Positive](../problems/0041-first-missing-positive/readme.md) | Hard | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
-
-

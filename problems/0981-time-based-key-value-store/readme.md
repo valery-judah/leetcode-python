@@ -3,7 +3,7 @@
 ## Quick Facts
 
 - URL: [Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store/)
-- Function: ``
+- Function: \`\`
 - Signature: `()  -> bool`
 - Primary pattern: **Binary Search**
 

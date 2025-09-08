@@ -3,7 +3,7 @@
 ## Quick Facts
 
 - URL: [Design HashMap](https://leetcode.com/problems/design-hashmap/)
-- Function: ``
+- Function: \`\`
 - Signature: `()  -> bool`
 - Primary pattern: **Hash Table**
 

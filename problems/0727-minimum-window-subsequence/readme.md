@@ -77,7 +77,7 @@
 ```text
 Input: s1 = "abcdebdde", s2 = "bde"
 Output: "bcde"
-Explanation: 
+Explanation:
 "bcde" is the answer because it occurs before "bdde" which has the same length.
 "deb" is not a smaller window because the elements of s2 in the window must occur in order.
 ```

@@ -1,6 +1,11 @@
 #!/bin/bash
 # This script is executed every time a new terminal is opened in VSCode.
 
+# Exit early if this is a non-interactive VSCode task
+if [ -n "$VSCODE_TASK" ]; then
+  return 0
+fi
+
 # Prevent prompt noise and conda auto-activation
 # - Show venv only once (let your shell/theme handle it)
 # - Keep Conda's base from auto-activating in VS Code terminals
