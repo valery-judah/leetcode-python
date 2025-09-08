@@ -1,0 +1,127 @@
+{
+  "category": "",
+  "id": "1109",
+  "name": "Corporate Flight Bookings",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/corporate-flight-bookings/",
+  "slug": "corporate-flight-bookings",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Zero Array Transformation II",
+      "difficulty": "Medium",
+      "slug": "zero-array-transformation-ii"
+    },
+    {
+      "title": "Zero Array Transformation III",
+      "difficulty": "Medium",
+      "slug": "zero-array-transformation-iii"
+    }
+  ],
+  "questionId": "1206",
+  "questionFrontendId": "1109",
+  "title": "Corporate Flight Bookings",
+  "titleSlug": "corporate-flight-bookings",
+  "content": "<p>There are <code>n</code> flights that are labeled from <code>1</code> to <code>n</code>.</p>\n\n<p>You are given an array of flight bookings <code>bookings</code>, where <code>bookings[i] = [first<sub>i</sub>, last<sub>i</sub>, seats<sub>i</sub>]</code> represents a booking for flights <code>first<sub>i</sub></code> through <code>last<sub>i</sub></code> (<strong>inclusive</strong>) with <code>seats<sub>i</sub></code> seats reserved for <strong>each flight</strong> in the range.</p>\n\n<p>Return <em>an array </em><code>answer</code><em> of length </em><code>n</code><em>, where </em><code>answer[i]</code><em> is the total number of seats reserved for flight </em><code>i</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> bookings = [[1,2,10],[2,3,20],[2,5,25]], n = 5\n<strong>Output:</strong> [10,55,45,25,25]\n<strong>Explanation:</strong>\nFlight labels:        1   2   3   4   5\nBooking 1 reserved:  10  10\nBooking 2 reserved:      20  20\nBooking 3 reserved:      25  25  25  25\nTotal seats:         10  55  45  25  25\nHence, answer = [10,55,45,25,25]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> bookings = [[1,2,10],[2,2,15]], n = 2\n<strong>Output:</strong> [10,25]\n<strong>Explanation:</strong>\nFlight labels:        1   2\nBooking 1 reserved:  10  10\nBooking 2 reserved:      15\nTotal seats:         10  25\nHence, answer = [10,25]\n\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 2 * 10<sup>4</sup></code></li>\n\t<li><code>1 &lt;= bookings.length &lt;= 2 * 10<sup>4</sup></code></li>\n\t<li><code>bookings[i].length == 3</code></li>\n\t<li><code>1 &lt;= first<sub>i</sub> &lt;= last<sub>i</sub> &lt;= n</code></li>\n\t<li><code>1 &lt;= seats<sub>i</sub> &lt;= 10<sup>4</sup></code></li>\n</ul>\n",
+  "likes": 1804,
+  "dislikes": 166,
+  "stats": {
+    "totalAccepted": "88.7K",
+    "totalSubmission": "136.1K",
+    "totalAcceptedRaw": 88694,
+    "totalSubmissionRaw": 136071,
+    "acRate": "65.2%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Prefix Sum",
+      "slug": "prefix-sum"
+    }
+  ],
+  "metaData": {
+    "name": "corpFlightBookings",
+    "params": [
+      {
+        "name": "bookings",
+        "type": "integer[][]"
+      },
+      {
+        "type": "integer",
+        "name": "n"
+      }
+    ],
+    "return": {
+      "type": "integer[]"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "yorkshire",
+      "year": 2019,
+      "content": "\"The i-th booking `bookings[i] = [i, j, k]` means that we booked k seats from flights labeled i to j inclusive.\"\\nThis is wrong, it\\'s not the same `i`. `bookings[0]` does not start from flight 0.\\n\\nIt should say:\\nA booking `[i, j, k]` means that we booked k seats from flights labeled i to j inclusive.\\n",
+      "voteCount": 30
+    },
+    {
+      "name": "adhyyanbabbar",
+      "year": 2025,
+      "content": "Good time to learn Difference Array.\\uD83D\\uDCDD",
+      "voteCount": 19
+    },
+    {
+      "name": "Ricky0xB7",
+      "year": 2024,
+      "content": "Why the flight is 1-indexed and answer is 0-indexed?",
+      "voteCount": 17
+    },
+    {
+      "name": "parthasarathireddy",
+      "year": 2025,
+      "content": "i curious how the flight goes up with 10^4 seats..??",
+      "voteCount": 16
+    },
+    {
+      "name": "notneasd",
+      "year": 2024,
+      "content": "even after doing 300+ questions, the intuition for this is extremely difficult to come up with personally",
+      "voteCount": 13
+    },
+    {
+      "name": "codeSpicer",
+      "year": 2025,
+      "content": "if you\\'re looking to practice the difference array / prefix sum on updates technique used here, check out these similar problems! They all share a core logic for handling range updates efficiently:\\n\\n      3355. Zero Array Transformation I\\n      1109. Corporate Flight Bookings\\n      1094. Car Pooling\\n      1854. Maximum Population Year\\n      2381. Shifting Letters II\\n      3356. Zero Array Transformation II\\nGood luck practicing! \\uD83D\\uDC4D",
+      "voteCount": 8
+    },
+    {
+      "name": "HassanAlizadeh",
+      "year": 2021,
+      "content": "Hey guys,\\nI have a problem with this code challenge. Before writting any code, I try to run the code. but there is an error. \"global name \\'num_flights\\' is not defined\".",
+      "voteCount": 8
+    },
+    {
+      "name": "nolimitmac",
+      "year": 2024,
+      "content": "learnt something new from this",
+      "voteCount": 7
+    },
+    {
+      "name": "bhuppidhamii",
+      "year": 2025,
+      "content": "difference array technique - thanks mik",
+      "voteCount": 5
+    },
+    {
+      "name": "BamBamBhole07",
+      "year": 2025,
+      "content": "58/63 gang",
+      "voteCount": 4
+    }
+  ]
+}

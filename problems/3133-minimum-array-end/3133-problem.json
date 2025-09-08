@@ -1,0 +1,111 @@
+{
+  "category": "",
+  "id": "3133",
+  "name": "Minimum Array End",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-array-end/",
+  "slug": "minimum-array-end",
+  "isPaidOnly": false,
+  "tags": [
+    "Bit Manipulation"
+  ],
+  "similar_questions": [],
+  "questionId": "3394",
+  "questionFrontendId": "3133",
+  "title": "Minimum Array End",
+  "titleSlug": "minimum-array-end",
+  "content": "<p>You are given two integers <code>n</code> and <code>x</code>. You have to construct an array of <strong>positive</strong> integers <code>nums</code> of size <code>n</code> where for every <code>0 &lt;= i &lt; n - 1</code>, <code>nums[i + 1]</code> is <strong>greater than</strong> <code>nums[i]</code>, and the result of the bitwise <code>AND</code> operation between all elements of <code>nums</code> is <code>x</code>.</p>\n\n<p>Return the <strong>minimum</strong> possible value of <code>nums[n - 1]</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 3, x = 4</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">6</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p><code>nums</code> can be <code>[4,5,6]</code> and its last element is 6.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 2, x = 7</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">15</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p><code>nums</code> can be <code>[7,15]</code> and its last element is 15.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n, x &lt;= 10<sup>8</sup></code></li>\n</ul>\n",
+  "likes": 798,
+  "dislikes": 98,
+  "stats": {
+    "totalAccepted": "107.3K",
+    "totalSubmission": "193.5K",
+    "totalAcceptedRaw": 107346,
+    "totalSubmissionRaw": 193534,
+    "acRate": "55.5%"
+  },
+  "topicTags": [
+    {
+      "name": "Bit Manipulation",
+      "slug": "bit-manipulation"
+    }
+  ],
+  "metaData": {
+    "name": "minEnd",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      },
+      {
+        "type": "integer",
+        "name": "x"
+      }
+    ],
+    "return": {
+      "type": "long"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "HereForLearning_JS",
+      "year": 2024,
+      "content": "Upvote button for HATE BITWISE",
+      "voteCount": 258
+    },
+    {
+      "name": "SuperPowered-Cat",
+      "year": 2024,
+      "content": "So it\\'s going to be a bitwise week huh...\\n\\n*Goes back to sleep*",
+      "voteCount": 219
+    },
+    {
+      "name": "jaymehta1466",
+      "year": 2024,
+      "content": "I contributed this question but i didnt got any reward for this question leetcode please answer.",
+      "voteCount": 128
+    },
+    {
+      "name": "knotri",
+      "year": 2024,
+      "content": "**Visual explanation**\n\n\nIf you think hints are sophisticated: what is merge, and why we need to merge x with every integer number? \n\n![image.png](https://assets.leetcode.com/users/images/9fc85266-2d84-4e54-9231-708e6426eca8_1731117475.6603277.png)\n\nhttps://leetcode.com/problems/minimum-array-end/solutions/6025009/visual-explanation-intuition-image/",
+      "voteCount": 84
+    },
+    {
+      "name": "psionl0",
+      "year": 2024,
+      "content": "I like it when I figure out the solution without any hints whatsoever, my first submission is accepted and gives a 0 ms run time. It gives me the illusion that I am smrt.",
+      "voteCount": 63
+    },
+    {
+      "name": "adityakumar8068",
+      "year": 2024,
+      "content": "TESTCASES----------------------->\\n```\\n1\\n1\\n21\\n16\\n16\\n16\\n18\\n22\\n792\\n283\\n72491516\\n30095903\\n48270567\\n77098793\\n100000000\\n100000000",
+      "voteCount": 41
+    },
+    {
+      "name": "sJQpVnXqyHEg",
+      "year": 2024,
+      "content": "the result of the bitwise AND operation between all elements of nums is x\\n\\nshould be the result of the bitwise AND operation \"of\" all elements of nums is x\\n\\nAmong all elements not between all elements. ",
+      "voteCount": 38
+    },
+    {
+      "name": "santrupta",
+      "year": 2024,
+      "content": "Brilliant question!",
+      "voteCount": 30
+    },
+    {
+      "name": "coderdayanuj",
+      "year": 2024,
+      "content": "My logic is :-\n1) Find the binary representation of n-1.   (Let say 1011)\n2) Find binary representation of x. (Let say 0000001001)\n3) Put the binary representation of n-1 in zeroes of binary representation of x.\nHere it will be replaced as :-\n_________0000001001  (binary of x)\n______________10 _11-  (put binary of n at zeroes of x from right)\n_________0000101111    {This in decimal is our required answer}",
+      "voteCount": 25
+    },
+    {
+      "name": "anwendeng",
+      "year": 2024,
+      "content": "Suggestion for C++ users, bitset is good for this problem.\\nHave a nice day.",
+      "voteCount": 20
+    }
+  ]
+}

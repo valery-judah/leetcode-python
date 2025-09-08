@@ -1,0 +1,121 @@
+{
+  "category": "",
+  "id": "1024",
+  "name": "Video Stitching",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/video-stitching/",
+  "slug": "video-stitching",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "similar_questions": [],
+  "questionId": "1081",
+  "questionFrontendId": "1024",
+  "title": "Video Stitching",
+  "titleSlug": "video-stitching",
+  "content": "<p>You are given a series of video clips from a sporting event that lasted <code>time</code> seconds. These video clips can be overlapping with each other and have varying lengths.</p>\n\n<p>Each video clip is described by an array <code>clips</code> where <code>clips[i] = [start<sub>i</sub>, end<sub>i</sub>]</code> indicates that the ith clip started at <code>start<sub>i</sub></code> and ended at <code>end<sub>i</sub></code>.</p>\n\n<p>We can cut these clips into segments freely.</p>\n\n<ul>\n\t<li>For example, a clip <code>[0, 7]</code> can be cut into segments <code>[0, 1] + [1, 3] + [3, 7]</code>.</li>\n</ul>\n\n<p>Return <em>the minimum number of clips needed so that we can cut the clips into segments that cover the entire sporting event</em> <code>[0, time]</code>. If the task is impossible, return <code>-1</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> clips = [[0,2],[4,6],[8,10],[1,9],[1,5],[5,9]], time = 10\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> We take the clips [0,2], [8,10], [1,9]; a total of 3 clips.\nThen, we can reconstruct the sporting event as follows:\nWe cut [1,9] into segments [1,2] + [2,8] + [8,9].\nNow we have segments [0,2] + [2,8] + [8,10] which cover the sporting event [0, 10].\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> clips = [[0,1],[1,2]], time = 5\n<strong>Output:</strong> -1\n<strong>Explanation:</strong> We cannot cover [0,5] with only [0,1] and [1,2].\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> clips = [[0,1],[6,8],[0,2],[5,6],[0,4],[0,3],[6,7],[1,3],[4,7],[1,4],[2,5],[2,6],[3,4],[4,5],[5,7],[6,9]], time = 9\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> We can take clips [0,4], [4,7], and [6,9].\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= clips.length &lt;= 100</code></li>\n\t<li><code>0 &lt;= start<sub>i</sub> &lt;= end<sub>i</sub> &lt;= 100</code></li>\n\t<li><code>1 &lt;= time &lt;= 100</code></li>\n</ul>\n",
+  "likes": 1824,
+  "dislikes": 63,
+  "stats": {
+    "totalAccepted": "81.1K",
+    "totalSubmission": "155.6K",
+    "totalAcceptedRaw": 81131,
+    "totalSubmissionRaw": 155562,
+    "acRate": "52.2%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "metaData": {
+    "name": "videoStitching",
+    "params": [
+      {
+        "name": "clips",
+        "type": "integer[][]"
+      },
+      {
+        "name": "time",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "Dirk41",
+      "year": 2020,
+      "content": "I saw so many great solutions, and they are brililant! I feel so dump everytime when I don\\'t have a clue. Instead of just understading how solutino works, I am very curious how do people come up with those solutions ? What is the thought process ? I don\\'t know where to start when I face such a problem.",
+      "voteCount": 31
+    },
+    {
+      "name": "vectoreal",
+      "year": 2023,
+      "content": "It is hard",
+      "voteCount": 12
+    },
+    {
+      "name": "ALS_Venky",
+      "year": 2023,
+      "content": "This question is similar to https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/description/",
+      "voteCount": 8
+    },
+    {
+      "name": "dragonman164",
+      "year": 2023,
+      "content": "clips = [[0,5],[6,8]]\\ntime = 7 \\nWhy expected output of this test case is -1? \\nAll intervals are covered from [0,7] for this case.",
+      "voteCount": 3
+    },
+    {
+      "name": "aftabmk",
+      "year": 2024,
+      "content": "Similar\\n[871. Minimum Number of Refueling Stops *](https://leetcode.com/problems/minimum-number-of-refueling-stops/description/?envType=list&envId=p9uvaelm)\\n[1326. Minimum Number of Taps to Open to Water a Garden](https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/)",
+      "voteCount": 1
+    },
+    {
+      "name": "21bcs069",
+      "year": 2024,
+      "content": "greedy is approach is beat for it ,rather than dp. ",
+      "voteCount": 1
+    },
+    {
+      "name": "jabirhaque123",
+      "year": 2025,
+      "content": "Am I missing something? Why does this question have so many unnecessary detail? The solution is way easier than the question sets it up to be, i mean you don\\'t even need to sort it, a brute force O(n^2) solution gives you 100% effeciency, wierd.",
+      "voteCount": 0
+    },
+    {
+      "name": "Aniruddha_Joshi",
+      "year": 2025,
+      "content": "[[0,2],[4,6],[8,10],[1,9],[1,5],[5,9]] \\n10 \\n[[0,1],[1,2]]\\n5\\n[[0,1],[6,8],[0,2],[5,6],[0,4],[0,3],[6,7],[1,3],[4,7],[1,4],[2,5],[2,6],[3,4],[4,5],[5,7],[6,9]]\\n9\\n[[0,5],[1,6],[2,7],[3,8],[4,9],[5,10],[6,11],[7,12],[8,13],[9,14],[10,15],[11,16],[12,17],[13,18],[14,19],[15,20],[16,21],[17,22],[18,23],[19,24],[20,25],[21,26],[22,27],[23,28],[24,29],[25,30],[26,31],[27,32],[28,33],[29,34],[30,35],[31,36],[32,37],[33,38],[34,39],[35,40],[36,41],[37,42],[38,43],[39,44],[40,45],[41,46],[42,47],[43,48],[44,49],[45,50],[46,51],[47,52],[48,53],[49,54]]\\n50\\n[[0,4],[2,8]] 5 [[5,7],[1,8],[0,0],[2,3],[4,5],[0,6],[5,10],[7,10]]\\n5\\n[[8,10],[17,39],[18,19],[8,16],[13,35],[33,39],[11,19],[18,35]]\\n20",
+      "voteCount": 0
+    },
+    {
+      "name": "tpt5cu",
+      "year": 2025,
+      "content": "absurdly difficult. should be a hard. super tricky. ",
+      "voteCount": 0
+    },
+    {
+      "name": "OndrisVydris",
+      "year": 2025,
+      "content": "This is a nice question but I misunderstood the formulation for the first time, thinking I can cover [0,7] with [0,5] + [6,8]. The confusion stems from the fact that integers are used for each interval, leading to impression that they coincide with frame numbers. While I understand that having 1 frame per second for a sport video would be terrible, this should be clarified in the description. ",
+      "voteCount": 0
+    }
+  ]
+}

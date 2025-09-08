@@ -1,0 +1,207 @@
+{
+  "category": "",
+  "id": "588",
+  "name": "Design In-Memory File System",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/design-in-memory-file-system/",
+  "slug": "design-in-memory-file-system",
+  "isPaidOnly": true,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Design",
+    "Trie",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "LRU Cache",
+      "difficulty": "Medium",
+      "slug": "lru-cache"
+    },
+    {
+      "title": "LFU Cache",
+      "difficulty": "Hard",
+      "slug": "lfu-cache"
+    },
+    {
+      "title": "Design Log Storage System",
+      "difficulty": "Medium",
+      "slug": "design-log-storage-system"
+    }
+  ],
+  "questionId": "588",
+  "questionFrontendId": "588",
+  "title": "Design In-Memory File System",
+  "titleSlug": "design-in-memory-file-system",
+  "content": "<p>Design a data structure that simulates an in-memory file system.</p>\n\n<p>Implement the FileSystem class:</p>\n\n<ul>\n\t<li><code>FileSystem()</code> Initializes the object of the system.</li>\n\t<li><code>List&lt;String&gt; ls(String path)</code>\n\t<ul>\n\t\t<li>If <code>path</code> is a file path, returns a list that only contains this file&#39;s name.</li>\n\t\t<li>If <code>path</code> is a directory path, returns the list of file and directory names <strong>in this directory</strong>.</li>\n\t</ul>\n\tThe answer should in <strong>lexicographic order</strong>.</li>\n\t<li><code>void mkdir(String path)</code> Makes a new directory according to the given <code>path</code>. The given directory path does not exist. If the middle directories in the path do not exist, you should create them as well.</li>\n\t<li><code>void addContentToFile(String filePath, String content)</code>\n\t<ul>\n\t\t<li>If <code>filePath</code> does not exist, creates that file containing given <code>content</code>.</li>\n\t\t<li>If <code>filePath</code> already exists, appends the given <code>content</code> to original content.</li>\n\t</ul>\n\t</li>\n\t<li><code>String readContentFromFile(String filePath)</code> Returns the content in the file at <code>filePath</code>.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/04/28/filesystem.png\" style=\"width: 650px; height: 315px;\" />\n<pre>\n<strong>Input</strong>\n[&quot;FileSystem&quot;, &quot;ls&quot;, &quot;mkdir&quot;, &quot;addContentToFile&quot;, &quot;ls&quot;, &quot;readContentFromFile&quot;]\n[[], [&quot;/&quot;], [&quot;/a/b/c&quot;], [&quot;/a/b/c/d&quot;, &quot;hello&quot;], [&quot;/&quot;], [&quot;/a/b/c/d&quot;]]\n<strong>Output</strong>\n[null, [], null, null, [&quot;a&quot;], &quot;hello&quot;]\n\n<strong>Explanation</strong>\nFileSystem fileSystem = new FileSystem();\nfileSystem.ls(&quot;/&quot;);                         // return []\nfileSystem.mkdir(&quot;/a/b/c&quot;);\nfileSystem.addContentToFile(&quot;/a/b/c/d&quot;, &quot;hello&quot;);\nfileSystem.ls(&quot;/&quot;);                         // return [&quot;a&quot;]\nfileSystem.readContentFromFile(&quot;/a/b/c/d&quot;); // return &quot;hello&quot;\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= path.length,&nbsp;filePath.length &lt;= 100</code></li>\n\t<li><code>path</code> and <code>filePath</code>&nbsp;are absolute paths which begin with <code>&#39;/&#39;</code>&nbsp;and do not end with <code>&#39;/&#39;</code>&nbsp;except that the path is just&nbsp;<code>&quot;/&quot;</code>.</li>\n\t<li>You can assume that all directory names and file names only contain lowercase letters, and the same names will not exist in the same directory.</li>\n\t<li>You can assume that all operations will be passed valid parameters, and users will not attempt to retrieve file content or list a directory or file that does not exist.</li>\n\t<li>You can assume that the parent directory for the file in <code>addContentToFile</code> will exist.</li>\n\t<li><code>1 &lt;= content.length &lt;= 50</code></li>\n\t<li>At most <code>300</code> calls will be made to <code>ls</code>, <code>mkdir</code>,&nbsp;<code>addContentToFile</code>, and&nbsp;<code>readContentFromFile</code>.</li>\n</ul>\n",
+  "likes": 1555,
+  "dislikes": 174,
+  "stats": {
+    "totalAccepted": "128.6K",
+    "totalSubmission": "266.4K",
+    "totalAcceptedRaw": 128638,
+    "totalSubmissionRaw": 266429,
+    "acRate": "48.3%"
+  },
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Design",
+      "slug": "design"
+    },
+    {
+      "name": "Trie",
+      "slug": "trie"
+    },
+    {
+      "name": "Sorting",
+      "slug": "sorting"
+    }
+  ],
+  "metaData": {
+    "classname": "FileSystem",
+    "maxbytesperline": 200000,
+    "constructor": {
+      "params": []
+    },
+    "methods": [
+      {
+        "name": "ls",
+        "params": [
+          {
+            "type": "string",
+            "name": "path"
+          }
+        ],
+        "return": {
+          "type": "list<string>"
+        }
+      },
+      {
+        "name": "mkdir",
+        "params": [
+          {
+            "type": "string",
+            "name": "path"
+          }
+        ],
+        "return": {
+          "type": "void"
+        }
+      },
+      {
+        "name": "addContentToFile",
+        "params": [
+          {
+            "type": "string",
+            "name": "filePath"
+          },
+          {
+            "type": "string",
+            "name": "content"
+          }
+        ],
+        "return": {
+          "type": "void"
+        }
+      },
+      {
+        "name": "readContentFromFile",
+        "params": [
+          {
+            "type": "string",
+            "name": "filePath"
+          }
+        ],
+        "return": {
+          "type": "string"
+        }
+      }
+    ],
+    "systemdesign": true,
+    "params": [
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      },
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "list<String>",
+      "dealloc": true
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "olegmak",
+      "year": 2023,
+      "content": "One of the rare interview problems that actually tests real-life programmer skills and not competitive programming skills.",
+      "voteCount": 61
+    },
+    {
+      "name": "logingood",
+      "year": 2023,
+      "content": "this question should be medium I guess ? Probably even easier than LRU cache.",
+      "voteCount": 19
+    },
+    {
+      "name": "ameypalav",
+      "year": 2025,
+      "content": "Asked to me in Doordash technical screening round on 5/1/2025",
+      "voteCount": 11
+    },
+    {
+      "name": "lambda826",
+      "year": 2019,
+      "content": "input:\\n[\"FileSystem\",\"mkdir\",\"ls\",\"ls\",\"mkdir\",\"ls\",\"ls\",\"addContentToFile\",\"ls\",\"ls\",\"ls\"]\\n[[],[\"/goowmfn\"],[\"/goowmfn\"],[\"/\"],[\"/z\"],[\"/\"],[\"/\"],[\"/goowmfn/c\",\"shetopcy\"],[\"/z\"],[\"/goowmfn/c\"],[\"/goowmfn\"]]\\n\\noutput:\\n[null,null,[],[\"goowmfn\"],null,[\"goowmfn\",\"z\"],[\"goowmfn\",\"z\"],null,[],[\"shetopcy\"],[\"c\"]]\\n\\nexpected:\\n[null,null,[],[\"goowmfn\"],null,[\"goowmfn\",\"z\"],[\"goowmfn\",\"z\"],null,[],[\"c\"],[\"c\"]]\\n\\n\\nCan any explain why the last 2th ls(\"/goowmfn/c\") shouldn\\'t output \\u201Cshetopcy\\u201D \\uFF1F\\n\\n\\nps:\\nroot - goowmfn\\n                -c (\"shetopcy\")\\n        - z",
+      "voteCount": 9
+    },
+    {
+      "name": "MaliGoBrrBrr",
+      "year": 2024,
+      "content": "whoever is saying this is medium ... just how? I found this to be harder than LRU , even harder than LFU because the sheer amount of things we have to deal with.",
+      "voteCount": 8
+    },
+    {
+      "name": "code__HARD",
+      "year": 2024,
+      "content": "Similar to a TRIE DataStructure.\\nThe difficult part is understanding the ls function.",
+      "voteCount": 7
+    },
+    {
+      "name": "msseekers",
+      "year": 2021,
+      "content": "I have seen Leetcode framing the question in wrong way multiple times and here it\\'s more on LLD side for e.g. when this question was asked to me in Amazon it was bar raiser and he was expecting LLD + DS for the same and that too with how level code that can be extended to add more command and feature for e.g. find command with different parameter.",
+      "voteCount": 7
+    },
+    {
+      "name": "phillipc",
+      "year": 2025,
+      "content": "The problem description is unclear and misleading:\\n\\t\\u2022\\tIt never defines how to distinguish a file path from a directory path, yet this distinction is central to ls().\\n\\t\\u2022\\tThe behavior of addContentToFile() is inconsistent with mkdir(). It silently expects you to create missing parent directories, but the prompt doesn\\u2019t say so \\u2014 unlike mkdir(), which does.",
+      "voteCount": 3
+    },
+    {
+      "name": "alementuev",
+      "year": 2021,
+      "content": "Jimfs is an in-memory file system for Java 7 and above, implementing the java.nio.file abstract file system APIs.\\nhttps://github.com/google/jimfs",
+      "voteCount": 3
+    },
+    {
+      "name": "LeetCode",
+      "year": 2022,
+      "content": "This problem is the Daily LeetCoding Challenge for January, Week 2.\n\nFeel free to share anything related to this problem here!\n\nYou can ask questions, discuss what you've learned from this problem, or show off how many days of streak you've made!\n\n---\n\nIf you'd like to share a detailed solution to the problem, please create a new post in the discuss section and provide\n- **Detailed Explanations**: Describe the algorithm you used to solve this problem. Include any insights you used to solve this problem.\n- **Images** that help explain the algorithm.\n- **Language and Code** you used to pass the problem.\n- **Time and Space complexity analysis**.\n\n---\n\n  **📌 Do you want to learn the problem thoroughly?**\n  Read [**⭐  LeetCode Official Solution⭐**](https://leetcode.com/problems/design-in-memory-file-system/solution) to learn the 3 approaches to the problem with detailed explanations to the algorithms, codes, and complexity analysis.\n  <details>\n  <summary> Spoiler Alert! We'll explain these 2 approaches in the official solution</summary>\n\n  \n**Approach 1:** Using separate Directory and File List[Accepted]\n\n  \n**Approach 2:** Using unified Directory and File List[Accepted]\n\n  \n</details>\n\n\n\nIf you're new to Daily LeetCoding Challenge, [**check out this post**](https://leetcode.com/discuss/general-discussion/655704/)!\n\n\n---\n\n<br>\n\n<p align=\"center\">\n<a href=\"https://leetcode.com/subscribe/?ref=ex_dc\" target=\"_blank\">\n  <img src=\"https://assets.leetcode.com/static_assets/marketing/daily_leetcoding_banner.png\" width=\"560px\" />\n</a>\n</p>\n\n<br>",
+      "voteCount": 2
+    }
+  ]
+}

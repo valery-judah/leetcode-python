@@ -1,0 +1,144 @@
+{
+  "category": "",
+  "id": "19",
+  "name": "Remove Nth Node From End of List",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
+  "slug": "remove-nth-node-from-end-of-list",
+  "isPaidOnly": false,
+  "tags": [
+    "Linked List",
+    "Two Pointers"
+  ],
+  "similar_questions": [
+    {
+      "title": "Swapping Nodes in a Linked List",
+      "difficulty": "Medium",
+      "slug": "swapping-nodes-in-a-linked-list"
+    },
+    {
+      "title": "Delete N Nodes After M Nodes of a Linked List",
+      "difficulty": "Easy",
+      "slug": "delete-n-nodes-after-m-nodes-of-a-linked-list"
+    },
+    {
+      "title": "Delete the Middle Node of a Linked List",
+      "difficulty": "Medium",
+      "slug": "delete-the-middle-node-of-a-linked-list"
+    }
+  ],
+  "questionId": "19",
+  "questionFrontendId": "19",
+  "title": "Remove Nth Node From End of List",
+  "titleSlug": "remove-nth-node-from-end-of-list",
+  "content": "<p>Given the <code>head</code> of a linked list, remove the <code>n<sup>th</sup></code> node from the end of the list and return its head.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/10/03/remove_ex1.jpg\" style=\"width: 542px; height: 222px;\" />\n<pre>\n<strong>Input:</strong> head = [1,2,3,4,5], n = 2\n<strong>Output:</strong> [1,2,3,5]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> head = [1], n = 1\n<strong>Output:</strong> []\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> head = [1,2], n = 1\n<strong>Output:</strong> [1]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of nodes in the list is <code>sz</code>.</li>\n\t<li><code>1 &lt;= sz &lt;= 30</code></li>\n\t<li><code>0 &lt;= Node.val &lt;= 100</code></li>\n\t<li><code>1 &lt;= n &lt;= sz</code></li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Follow up:</strong> Could you do this in one pass?</p>\n",
+  "likes": 20457,
+  "dislikes": 871,
+  "stats": {
+    "totalAccepted": "3.7M",
+    "totalSubmission": "7.5M",
+    "totalAcceptedRaw": 3705611,
+    "totalSubmissionRaw": 7450457,
+    "acRate": "49.7%"
+  },
+  "topicTags": [
+    {
+      "name": "Linked List",
+      "slug": "linked-list"
+    },
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    }
+  ],
+  "metaData": {
+    "name": "removeNthFromEnd",
+    "params": [
+      {
+        "name": "head",
+        "type": "ListNode",
+        "dealloc": false
+      },
+      {
+        "name": "n",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "ListNode",
+      "dealloc": true
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Meta",
+        "slug": "facebook",
+        "timesEncountered": 28
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "intijk",
+      "year": 2015,
+      "content": "It is meaningless to use the 2 pointers technique, you won't get benefit from that, it still has the same dereference compare to 1 pointer 2 pass. \\n\\nYou want to have cache benefit when n is small?\\n\\nI hope leetcode can remove this misleading question because it encourages those people to use this \"technique\" to \"optimize\" code. It is silly.",
+      "voteCount": 151
+    },
+    {
+      "name": "antx2021",
+      "year": 2021,
+      "content": "Leet code expects the answer to be [1] but i understood that we have to remove the 2nd element from end which would be 1 in this case and answer should be [2]. \\nMy submission is failing only due to this case and remaining pass which means I have understood and coded the problem correctly except for this input - [1,2] , 2.\\nPlease let me know what am I not able to understand.",
+      "voteCount": 102
+    },
+    {
+      "name": "Alpher",
+      "year": 2016,
+      "content": "Many people think a fast-slow pointer solution is one-pass. Actually, it is not. It is more than one pass and less than two.\\n\\nThis is the same as if the list is iterated once to count the number of nodes, and then traversed from the beginning again for the count of slow-pointer.",
+      "voteCount": 100
+    },
+    {
+      "name": "hiranmay1000",
+      "year": 2024,
+      "content": "Try this test case before submittting...\n\n ```\nhead = [1,2]\nn = 2\n```",
+      "voteCount": 80
+    },
+    {
+      "name": "dd99_dunder",
+      "year": 2024,
+      "content": "Where is the testcase guy?",
+      "voteCount": 53
+    },
+    {
+      "name": "superMask",
+      "year": 2015,
+      "content": "Hi,\\n\\nAs the question suggests, do you think there is a more efficient way besides counting the length of the list and decide the position of the node to delete from the front?\\n\\nMany thanks.",
+      "voteCount": 32
+    },
+    {
+      "name": "nikhilreddydev",
+      "year": 2022,
+      "content": "Is it okay to ignore the memory leakage here?",
+      "voteCount": 31
+    },
+    {
+      "name": "anwendeng",
+      "year": 2024,
+      "content": "It  is not hard to solve this problem with 2 pointer.\\nBut for C/C++ programmers it might cause memory leaking problem without delete the remove nodes!\\nHave a nice day.",
+      "voteCount": 28
+    },
+    {
+      "name": "seansean",
+      "year": 2013,
+      "content": "My solution has one pass and uses an ArrayList to capture all nodes. I wonder if there is a better solution to this problem, with O(1) space.",
+      "voteCount": 26
+    },
+    {
+      "name": "Aravind_1234567",
+      "year": 2022,
+      "content": "![image](https://assets.leetcode.com/users/images/4b0ae1a8-4cf7-435c-ad13-383a108d096a_1655265646.3596597.png)\\n",
+      "voteCount": 18
+    }
+  ]
+}

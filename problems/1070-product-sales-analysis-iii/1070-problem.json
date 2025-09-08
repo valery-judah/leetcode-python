@@ -1,0 +1,139 @@
+{
+  "category": "",
+  "id": "1070",
+  "name": "Product Sales Analysis III",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/product-sales-analysis-iii/",
+  "slug": "product-sales-analysis-iii",
+  "isPaidOnly": false,
+  "tags": [
+    "Database"
+  ],
+  "similar_questions": [
+    {
+      "title": "Product Sales Analysis II",
+      "difficulty": "Easy",
+      "slug": "product-sales-analysis-ii"
+    },
+    {
+      "title": "Product Sales Analysis IV",
+      "difficulty": "Medium",
+      "slug": "product-sales-analysis-iv"
+    },
+    {
+      "title": "Product Sales Analysis V",
+      "difficulty": "Easy",
+      "slug": "product-sales-analysis-v"
+    }
+  ],
+  "questionId": "1155",
+  "questionFrontendId": "1070",
+  "title": "Product Sales Analysis III",
+  "titleSlug": "product-sales-analysis-iii",
+  "content": "<p>Table: <code>Sales</code></p>\n\n<pre>\n+-------------+-------+\n| Column Name | Type  |\n+-------------+-------+\n| sale_id     | int   |\n| product_id  | int   |\n| year        | int   |\n| quantity    | int   |\n| price       | int   |\n+-------------+-------+\n(sale_id, year) is the primary key (combination of columns with unique values) of this table.\nproduct_id is a foreign key (reference column) to <code>Product</code> table.\nEach row records a sale of a product in a given year.\nA product may have multiple sales entries in the same year.\nNote that the per-unit price.\n\n</pre>\n\n<p>Write a solution to find all sales that occurred in the <strong data-end=\"967\" data-start=\"953\">first year</strong> each product was sold.</p>\n\n<ul data-end=\"1234\" data-start=\"992\">\n\t<li data-end=\"1078\" data-start=\"992\">\n\t<p data-end=\"1078\" data-start=\"994\">For each <code data-end=\"1015\" data-start=\"1003\">product_id</code>, identify the earliest <code data-end=\"1045\" data-start=\"1039\">year</code> it appears in the <code data-end=\"1071\" data-start=\"1064\">Sales</code> table.</p>\n\t</li>\n\t<li data-end=\"1140\" data-start=\"1079\">\n\t<p data-end=\"1140\" data-start=\"1081\">Return <strong data-end=\"1095\" data-start=\"1088\">all</strong> sales entries for that product in that year.</p>\n\t</li>\n</ul>\n\n<p data-end=\"1234\" data-start=\"1143\">Return a table with the following columns: <strong>product_id</strong>,<strong> first_year</strong>, <strong>quantity, </strong>and<strong> price</strong>.<br />\nReturn the result in any order.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> \nSales table:\n+---------+------------+------+----------+-------+\n| sale_id | product_id | year | quantity | price |\n+---------+------------+------+----------+-------+ \n| 1       | 100        | 2008 | 10       | 5000  |\n| 2       | 100        | 2009 | 12       | 5000  |\n| 7       | 200        | 2011 | 15       | 9000  |\n+---------+------------+------+----------+-------+\n\n<strong>Output:</strong> \n+------------+------------+----------+-------+\n| product_id | first_year | quantity | price |\n+------------+------------+----------+-------+ \n| 100        | 2008       | 10       | 5000  |\n| 200        | 2011       | 15       | 9000  |\n+------------+------------+----------+-------+\n</pre>\n",
+  "likes": 658,
+  "dislikes": 1092,
+  "stats": {
+    "totalAccepted": "353.3K",
+    "totalSubmission": "786.4K",
+    "totalAcceptedRaw": 353277,
+    "totalSubmissionRaw": 786423,
+    "acRate": "44.9%"
+  },
+  "topicTags": [
+    {
+      "name": "Database",
+      "slug": "database"
+    }
+  ],
+  "metaData": {
+    "mysql": [
+      "Create table If Not Exists Sales (sale_id int, product_id int, year int, quantity int, price int)"
+    ],
+    "mssql": [
+      "Create table Sales (sale_id int, product_id int, year int, quantity int, price int)"
+    ],
+    "oraclesql": [
+      "Create table Sales (sale_id int, product_id int, year int, quantity int, price int)"
+    ],
+    "database": true,
+    "name": "sales_analysis",
+    "pythondata": [
+      "Sales = pd.DataFrame([], columns=['sale_id', 'product_id', 'year', 'quantity', 'price']).astype({'sale_id':'Int64', 'product_id':'Int64', 'year':'Int64', 'quantity':'Int64', 'price':'Int64'})"
+    ],
+    "postgresql": [
+      "Create table If Not Exists Sales (sale_id int, product_id int, year int, quantity int, price int)\n"
+    ],
+    "database_schema": {
+      "Sales": {
+        "sale_id": "INT",
+        "product_id": "INT",
+        "year": "INT",
+        "quantity": "INT",
+        "price": "INT"
+      }
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "hxtmike",
+      "year": 2023,
+      "content": "The question description is INCORRECT!\n\n1. There are multiple sales in first year for each product. just return all of them separately. \n2. There are some product_id are not in the Product Table, which should be removed from the query\n\nThis problem sucks",
+      "voteCount": 446
+    },
+    {
+      "name": "bilalkhan86",
+      "year": 2020,
+      "content": "I think the question is either worded incorrectly or the grader might be wrong. It is possible that the same product was sold twice in the first year. In which case, you would need to retrieve both the sales and sum over the quantity.",
+      "voteCount": 162
+    },
+    {
+      "name": "Suffolk",
+      "year": 2023,
+      "content": "Why give Product? ",
+      "voteCount": 138
+    },
+    {
+      "name": "IgorPykhtin",
+      "year": 2023,
+      "content": "MS SQL Server fails with Time Limit Exceeded on valid solutions. This is the third problem in series I'm facing Time Limit Exceeded these days even on the quickest correct solutions (FYI, the same solutions pass tests successfully in MySQL).\nIt seems, something is wrong with MS SQL Server test engine (timeouts?).\n\nUpdate: also there is a red warning message \"Something went wrong with the testcase\" appears in the editor area when I switch into Result tab.",
+      "voteCount": 43
+    },
+    {
+      "name": "mrunmayee0109",
+      "year": 2023,
+      "content": "The description of the problem is incorrect\\n\\n-The product table is of no use\\n-There may be multiple entries of sales of same product in a year\\n-You need to return ALL the entries of the products in their first year SEPARATELY",
+      "voteCount": 41
+    },
+    {
+      "name": "anna_meng",
+      "year": 2022,
+      "content": "Could I get help on whey my answer is wrong during submission?\\n\\nSELECT product_id, min(year) as first_year, quantity, price\\nFROM Sales\\nGROUP BY product_id;",
+      "voteCount": 20
+    },
+    {
+      "name": "mohitrajput01",
+      "year": 2023,
+      "content": "```\nWITH FirstYearSales AS (\n    SELECT\n        s.product_id,\n        MIN(s.year) AS first_year\n    FROM Sales s\n    GROUP BY s.product_id\n)\nSELECT\n    fys.product_id,\n    fys.first_year,\n    s.quantity,\n    s.price\nFROM FirstYearSales fys\nJOIN Sales s ON fys.product_id = s.product_id AND fys.first_year = s.year\nORDER BY fys.product_id;\n```\n\nIn this query, we first create a common table expression (CTE) called \"FirstYearSales\" to find the first year of sale for each product. We do this by selecting the minimum year for each product using the MIN function and grouping by product_id.\n\nThen, we join the \"Sales\" table with the \"FirstYearSales\" CTE on both product_id and year, which allows us to retrieve the quantity and price for the first year of each product sold.\n\nThe result will be a table with four columns: \"product_id,\" \"first_year,\" \"quantity,\" and \"price,\" and it will contain the first year's sales data for each product sold.",
+      "voteCount": 17
+    },
+    {
+      "name": "qlcheng",
+      "year": 2019,
+      "content": "in the solution, when product_id=200, there are 2 rows of same year but different price and quantity. this does not make sense becasue no one says the first row of the the two rows is earlier than the second row.",
+      "voteCount": 12
+    },
+    {
+      "name": "r_roy",
+      "year": 2023,
+      "content": "Can someone please explain why this wont work\\n\\n `select product_id, year as first_year, quantity, price from sales group by product_id having year = min(year)`",
+      "voteCount": 10
+    },
+    {
+      "name": "yik9990",
+      "year": 2022,
+      "content": "\\nselect product_id, year as first_year, quantity, price\\nfrom sales\\ngroup by product_id\\nhaving year = min(year)",
+      "voteCount": 6
+    }
+  ]
+}

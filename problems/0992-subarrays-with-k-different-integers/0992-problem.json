@@ -1,0 +1,162 @@
+{
+  "category": "",
+  "id": "992",
+  "name": "Subarrays with K Different Integers",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/subarrays-with-k-different-integers/",
+  "slug": "subarrays-with-k-different-integers",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longest Substring Without Repeating Characters",
+      "difficulty": "Medium",
+      "slug": "longest-substring-without-repeating-characters"
+    },
+    {
+      "title": "Longest Substring with At Most Two Distinct Characters",
+      "difficulty": "Medium",
+      "slug": "longest-substring-with-at-most-two-distinct-characters"
+    },
+    {
+      "title": "Longest Substring with At Most K Distinct Characters",
+      "difficulty": "Medium",
+      "slug": "longest-substring-with-at-most-k-distinct-characters"
+    },
+    {
+      "title": "Count Vowel Substrings of a String",
+      "difficulty": "Easy",
+      "slug": "count-vowel-substrings-of-a-string"
+    },
+    {
+      "title": "Number of Unique Flavors After Sharing K Candies",
+      "difficulty": "Medium",
+      "slug": "number-of-unique-flavors-after-sharing-k-candies"
+    },
+    {
+      "title": "K Divisible Elements Subarrays",
+      "difficulty": "Medium",
+      "slug": "k-divisible-elements-subarrays"
+    },
+    {
+      "title": "Count Complete Subarrays in an Array",
+      "difficulty": "Medium",
+      "slug": "count-complete-subarrays-in-an-array"
+    }
+  ],
+  "questionId": "1034",
+  "questionFrontendId": "992",
+  "title": "Subarrays with K Different Integers",
+  "titleSlug": "subarrays-with-k-different-integers",
+  "content": "<p>Given an integer array <code>nums</code> and an integer <code>k</code>, return <em>the number of <strong>good subarrays</strong> of </em><code>nums</code>.</p>\n\n<p>A <strong>good array</strong> is an array where the number of different integers in that array is exactly <code>k</code>.</p>\n\n<ul>\n\t<li>For example, <code>[1,2,3,1,2]</code> has <code>3</code> different integers: <code>1</code>, <code>2</code>, and <code>3</code>.</li>\n</ul>\n\n<p>A <strong>subarray</strong> is a <strong>contiguous</strong> part of an array.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2,1,2,3], k = 2\n<strong>Output:</strong> 7\n<strong>Explanation:</strong> Subarrays formed with exactly 2 different integers: [1,2], [2,1], [1,2], [2,3], [1,2,1], [2,1,2], [1,2,1,2]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2,1,3,4], k = 3\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> Subarrays formed with exactly 3 different integers: [1,2,1,3], [2,1,3], [1,3,4].\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 2 * 10<sup>4</sup></code></li>\n\t<li><code>1 &lt;= nums[i], k &lt;= nums.length</code></li>\n</ul>\n",
+  "likes": 6656,
+  "dislikes": 110,
+  "stats": {
+    "totalAccepted": "330.5K",
+    "totalSubmission": "495.6K",
+    "totalAcceptedRaw": 330518,
+    "totalSubmissionRaw": 495599,
+    "acRate": "66.7%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Sliding Window",
+      "slug": "sliding-window"
+    },
+    {
+      "name": "Counting",
+      "slug": "counting"
+    }
+  ],
+  "metaData": {
+    "name": "subarraysWithKDistinct",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      },
+      {
+        "name": "k",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "RomanKornev",
+      "year": 2024,
+      "content": "This is like the final boss after a week of subarray problems",
+      "voteCount": 396
+    },
+    {
+      "name": "Shakthi5136",
+      "year": 2024,
+      "content": "i need 10 reputation to downvote all those mfs who post answers in the discussion can anyone help me with that?",
+      "voteCount": 366
+    },
+    {
+      "name": "Puneet7373",
+      "year": 2024,
+      "content": "This month leetcode strategically following good pattern questions in consecutives days, taking it from easy to hard.\\nThat\\'s Nice",
+      "voteCount": 238
+    },
+    {
+      "name": "nishant7372",
+      "year": 2023,
+      "content": "Warning: Spoiler Ahead\\n\\n----------------------------\\n----------------------------\\n----------------------------\\n----------------------------\\n----------------------------\\n----------------------------\\n----------------------------\\n----------------------------\\n----------------------------\\n\\nCount of SubArrays with K Distinct Elements = Count of SubArrays with At Most K Distinct Elements - Count of SubArrays with At Most K-1 Distinct Elements[leetcode] ",
+      "voteCount": 219
+    },
+    {
+      "name": "D4rk_snowStorm",
+      "year": 2024,
+      "content": "guys I can\\'t believe i\\'m saying this, but leetcode has officially taught me sliding window.",
+      "voteCount": 178
+    },
+    {
+      "name": "mdsalmankhader",
+      "year": 2023,
+      "content": "I got this question in amazon with slight modification.\nit was asking to return the count of no. of distinct elements in all the subarrays of the given array.\nex: [1,2,1]\nthe subarrays are \n1            -> Distinct elements are 1\n2            -> Distinct elements are 1\n1            -> Distinct elements are 1\n1 2          -> Distinct elements are 2\n2 1          -> Distinct elements are 2\n1 2 1       -> Distinct elements are 2\nans=1+1+1+2+2+2=9",
+      "voteCount": 44
+    },
+    {
+      "name": "anwendeng",
+      "year": 2024,
+      "content": "Holy Siding window!\\ncount subarrays with at most K  distinct elements. it makes problem to much easier!\\nThe rest is the same method used for several days\\n",
+      "voteCount": 37
+    },
+    {
+      "name": "Himanshu_079",
+      "year": 2024,
+      "content": "Same question with little bit modification \\n[https://leetcode.com/problems/binary-subarrays-with-sum/description/](https://leetcode.com/problems/binary-subarrays-with-sum/description/)\\nI suggest first try this then it will be a piece of cake \\n!(important use Sliding window)",
+      "voteCount": 37
+    },
+    {
+      "name": "sebalabs",
+      "year": 2024,
+      "content": "Some random test cases, good luck! ^^\\n[1, 2, 2]\\n1\\n[6, 9, 11, 12, 3, 2, 6, 1, 13, 11, 7, 13, 12]\\n13\\n[3, 2, 2]\\n1\\n[7, 9, 6, 10, 3, 7, 6, 14, 9, 14, 7, 6, 13, 5]\\n4\\n[3, 3, 3, 7, 2, 7, 5]\\n1\\n[2, 7, 3, 9, 4, 11, 2, 2, 2, 6, 4]\\n4\\n[5, 1, 4, 4, 5]\\n3\\n[9, 10, 7, 7, 2, 8, 1, 10, 9, 15, 7, 6, 3, 11, 12]\\n9",
+      "voteCount": 30
+    },
+    {
+      "name": "z3eg",
+      "year": 2024,
+      "content": "ah yes, another subarray problem!",
+      "voteCount": 21
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "category": "",
+  "id": "746",
+  "name": "Min Cost Climbing Stairs",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/min-cost-climbing-stairs/",
+  "slug": "min-cost-climbing-stairs",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Climbing Stairs",
+      "difficulty": "Easy",
+      "slug": "climbing-stairs"
+    },
+    {
+      "title": "Find Number of Ways to Reach the K-th Stair",
+      "difficulty": "Hard",
+      "slug": "find-number-of-ways-to-reach-the-k-th-stair"
+    }
+  ],
+  "questionId": "747",
+  "questionFrontendId": "746",
+  "title": "Min Cost Climbing Stairs",
+  "titleSlug": "min-cost-climbing-stairs",
+  "content": "<p>You are given an integer array <code>cost</code> where <code>cost[i]</code> is the cost of <code>i<sup>th</sup></code> step on a staircase. Once you pay the cost, you can either climb one or two steps.</p>\n\n<p>You can either start from the step with index <code>0</code>, or the step with index <code>1</code>.</p>\n\n<p>Return <em>the minimum cost to reach the top of the floor</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> cost = [10,<u>15</u>,20]\n<strong>Output:</strong> 15\n<strong>Explanation:</strong> You will start at index 1.\n- Pay 15 and climb two steps to reach the top.\nThe total cost is 15.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> cost = [<u>1</u>,100,<u>1</u>,1,<u>1</u>,100,<u>1</u>,<u>1</u>,100,<u>1</u>]\n<strong>Output:</strong> 6\n<strong>Explanation:</strong> You will start at index 0.\n- Pay 1 and climb two steps to reach index 2.\n- Pay 1 and climb two steps to reach index 4.\n- Pay 1 and climb two steps to reach index 6.\n- Pay 1 and climb one step to reach index 7.\n- Pay 1 and climb two steps to reach index 9.\n- Pay 1 and climb one step to reach the top.\nThe total cost is 6.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= cost.length &lt;= 1000</code></li>\n\t<li><code>0 &lt;= cost[i] &lt;= 999</code></li>\n</ul>\n",
+  "likes": 12083,
+  "dislikes": 1861,
+  "stats": {
+    "totalAccepted": "1.6M",
+    "totalSubmission": "2.3M",
+    "totalAcceptedRaw": 1570436,
+    "totalSubmissionRaw": 2325872,
+    "acRate": "67.5%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "metaData": {
+    "name": "minCostClimbingStairs",
+    "params": [
+      {
+        "name": "cost",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "erjan",
+      "year": 2022,
+      "content": "this is just misleading, i wasted so much time, not clearly worded.",
+      "voteCount": 387
+    },
+    {
+      "name": "Yaswanth017",
+      "year": 2023,
+      "content": "Consider this a medium problem for beginners!",
+      "voteCount": 327
+    },
+    {
+      "name": "deepoison",
+      "year": 2019,
+      "content": "Why does the first example ([10, 15, 20]) have an expected outcome of 15?\\n\\nOne could go to first step (10), pay its cost and climb 2 steps",
+      "voteCount": 245
+    },
+    {
+      "name": "TYork",
+      "year": 2023,
+      "content": "This question reflects how bad we\\'re communicating nowadays. Very poorly worded",
+      "voteCount": 134
+    },
+    {
+      "name": "damarowen",
+      "year": 2022,
+      "content": "hello guys, if you need help about this problem, you can check out AndreyGrehov video on youtube , the title is 07 - Optimization Problem (Dynamic Programming for Beginners)\n\ni'm able to solve this problem, because i learn DP mechanism from that video\n\nhope this helps",
+      "voteCount": 133
+    },
+    {
+      "name": "av8304",
+      "year": 2020,
+      "content": "Can someone explain me what exactly the question is asking ? I am not able to understand the question ?",
+      "voteCount": 94
+    },
+    {
+      "name": "MrAke",
+      "year": 2023,
+      "content": "It\\'s easy here after five days of hard problems in a row",
+      "voteCount": 56
+    },
+    {
+      "name": "Sayan_19",
+      "year": 2023,
+      "content": "So, Leetcode has started treating 1D DP problems as \"Easy\" now :\\\\",
+      "voteCount": 41
+    },
+    {
+      "name": "distructfruct",
+      "year": 2023,
+      "content": "Not easy at all !",
+      "voteCount": 36
+    },
+    {
+      "name": "rajudevolla2010",
+      "year": 2021,
+      "content": "In the sample test case #1 it is given that cost is 15 when we just take index 1 step and go to top. That means it is considering last step cost. It is also mentioned one you pay the cost for step i you can go to step i+1 or i+2. So if i choose step 0, cost is 10 and i goto last step which i+2, once i am on the step which is top i will not considered. So the total cost 10 which is minimum.\\nwhy no one considered this?",
+      "voteCount": 20
+    }
+  ]
+}

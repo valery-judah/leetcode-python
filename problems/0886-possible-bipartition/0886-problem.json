@@ -1,0 +1,126 @@
+{
+  "category": "",
+  "id": "886",
+  "name": "Possible Bipartition",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/possible-bipartition/",
+  "slug": "possible-bipartition",
+  "isPaidOnly": false,
+  "tags": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union Find",
+    "Graph"
+  ],
+  "similar_questions": [],
+  "questionId": "922",
+  "questionFrontendId": "886",
+  "title": "Possible Bipartition",
+  "titleSlug": "possible-bipartition",
+  "content": "<p>We want to split a group of <code>n</code> people (labeled from <code>1</code> to <code>n</code>) into two groups of <strong>any size</strong>. Each person may dislike some other people, and they should not go into the same group.</p>\n\n<p>Given the integer <code>n</code> and the array <code>dislikes</code> where <code>dislikes[i] = [a<sub>i</sub>, b<sub>i</sub>]</code> indicates that the person labeled <code>a<sub>i</sub></code> does not like the person labeled <code>b<sub>i</sub></code>, return <code>true</code> <em>if it is possible to split everyone into two groups in this way</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 4, dislikes = [[1,2],[1,3],[2,4]]\n<strong>Output:</strong> true\n<strong>Explanation:</strong> The first group has [1,4], and the second group has [2,3].\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 3, dislikes = [[1,2],[1,3],[2,3]]\n<strong>Output:</strong> false\n<strong>Explanation:</strong> We need at least 3 groups to divide them. We cannot put them in two groups.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 2000</code></li>\n\t<li><code>0 &lt;= dislikes.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>dislikes[i].length == 2</code></li>\n\t<li><code>1 &lt;= a<sub>i</sub> &lt; b<sub>i</sub> &lt;= n</code></li>\n\t<li>All the pairs of <code>dislikes</code> are <strong>unique</strong>.</li>\n</ul>\n",
+  "likes": 4847,
+  "dislikes": 114,
+  "stats": {
+    "totalAccepted": "246.8K",
+    "totalSubmission": "476.3K",
+    "totalAcceptedRaw": 246847,
+    "totalSubmissionRaw": 476285,
+    "acRate": "51.8%"
+  },
+  "topicTags": [
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Breadth-First Search",
+      "slug": "breadth-first-search"
+    },
+    {
+      "name": "Union Find",
+      "slug": "union-find"
+    },
+    {
+      "name": "Graph",
+      "slug": "graph"
+    }
+  ],
+  "metaData": {
+    "name": "possibleBipartition",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      },
+      {
+        "name": "dislikes",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "DeltaLF",
+      "year": 2022,
+      "content": "Should we return false if people hate themselves?",
+      "voteCount": 148
+    },
+    {
+      "name": "thevirtuoso1973",
+      "year": 2020,
+      "content": "If you\\'re like me and don\\'t like looking at solutions when stuck here\\'s a hint:\\n\\nRephrase the problem as a *graph*. Now, the [2-coloring problem](http://https://en.wikipedia.org/wiki/Graph_coloring) seems quite familiar to choosing two groups...\\n\\n### Further hint/spoilers:\\n\\nLet the numbers 1-N be vertices/nodes in a graph, and \\'dislikes\\' represent edges between them. Use DFS.",
+      "voteCount": 45
+    },
+    {
+      "name": "kaleen_981",
+      "year": 2022,
+      "content": "The above question is an application of checking bipartite graph.I can be visualise easily by drawing the graph using given nodes ( n ) and edges ( dislikes ) value. The testcase where the answer is true in that case the graph is bipartite or vice-versa.So before approaching this problem , it will be good if you have a basic idea of bfs/dfs approach alongwith bipartite graph checking algorithm. \\n\\nHope this will help you.If you like this then upvote :))",
+      "voteCount": 36
+    },
+    {
+      "name": "qiushile",
+      "year": 2022,
+      "content": " you should realize it is a bi-directional graph, after that, it becomes easy",
+      "voteCount": 28
+    },
+    {
+      "name": "abdelmohaymn",
+      "year": 2022,
+      "content": "If you can\\'t solve it search about (Bipartite graph)\\n\\n\\nthe idea of Bipartite graph is you color node with white and its children with black, then at any\\ntime if you want to color node and it is having a color that different\\nfrom the color you want now return false",
+      "voteCount": 19
+    },
+    {
+      "name": "RagingCorgi",
+      "year": 2023,
+      "content": "The question needs to clearly state the dislike is bi-directional",
+      "voteCount": 14
+    },
+    {
+      "name": "ironmonger1",
+      "year": 2022,
+      "content": "I am confused ,this is a directed graph ,so why when implementing coloring algo it is showing wrong ans for directed graph but when I use it as a undirected graph it is all correct?",
+      "voteCount": 10
+    },
+    {
+      "name": "dsapelnikov",
+      "year": 2024,
+      "content": "The formulation is poor: it does not tell that if person A dislikes person B, then person B dislikes person A too.",
+      "voteCount": 9
+    },
+    {
+      "name": "amanchandna",
+      "year": 2022,
+      "content": "For intuition : \\n1 - Build an adjacency matrix first compulsory,\\n2 - Think of filling adjacent vertex with different colors,\\n3 - Use only two colors\\n4 - Question1 , what is color?\\nAnswer : 2 color can be any two number (1,-1),(1,0),(0,1) use as per language compatibility.\\n5 - Question 2, How to fill colors?\\nAnswer : Any traversal technique : BFS,DFS",
+      "voteCount": 7
+    },
+    {
+      "name": "jakariyabd",
+      "year": 2022,
+      "content": "I suggest adding this test case on the judge:\n`n = 4`\n`[ [1,2], [2,3], [3,4], [2,4] ]`\nMy earlier submission passed all of the test cases on the judge. So, I got accepted.\nBut it failed in this corner case ( I made this test case ). So, please add such cases so that people have to be more accurate of their solutions.",
+      "voteCount": 6
+    }
+  ]
+}

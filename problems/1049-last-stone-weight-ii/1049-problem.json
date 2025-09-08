@@ -1,0 +1,118 @@
+{
+  "category": "",
+  "id": "1049",
+  "name": "Last Stone Weight II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/last-stone-weight-ii/",
+  "slug": "last-stone-weight-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Partition Array Into Two Arrays to Minimize Sum Difference",
+      "difficulty": "Hard",
+      "slug": "partition-array-into-two-arrays-to-minimize-sum-difference"
+    }
+  ],
+  "questionId": "1130",
+  "questionFrontendId": "1049",
+  "title": "Last Stone Weight II",
+  "titleSlug": "last-stone-weight-ii",
+  "content": "<p>You are given an array of integers <code>stones</code> where <code>stones[i]</code> is the weight of the <code>i<sup>th</sup></code> stone.</p>\n\n<p>We are playing a game with the stones. On each turn, we choose any two stones and smash them together. Suppose the stones have weights <code>x</code> and <code>y</code> with <code>x &lt;= y</code>. The result of this smash is:</p>\n\n<ul>\n\t<li>If <code>x == y</code>, both stones are destroyed, and</li>\n\t<li>If <code>x != y</code>, the stone of weight <code>x</code> is destroyed, and the stone of weight <code>y</code> has new weight <code>y - x</code>.</li>\n</ul>\n\n<p>At the end of the game, there is <strong>at most one</strong> stone left.</p>\n\n<p>Return <em>the smallest possible weight of the left stone</em>. If there are no stones left, return <code>0</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> stones = [2,7,4,1,8,1]\n<strong>Output:</strong> 1\n<strong>Explanation:</strong>\nWe can combine 2 and 4 to get 2, so the array converts to [2,7,1,8,1] then,\nwe can combine 7 and 8 to get 1, so the array converts to [2,1,1,1] then,\nwe can combine 2 and 1 to get 1, so the array converts to [1,1,1] then,\nwe can combine 1 and 1 to get 0, so the array converts to [1], then that&#39;s the optimal value.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> stones = [31,26,33,21,40]\n<strong>Output:</strong> 5\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= stones.length &lt;= 30</code></li>\n\t<li><code>1 &lt;= stones[i] &lt;= 100</code></li>\n</ul>\n",
+  "likes": 3302,
+  "dislikes": 135,
+  "stats": {
+    "totalAccepted": "118.5K",
+    "totalSubmission": "203.5K",
+    "totalAcceptedRaw": 118537,
+    "totalSubmissionRaw": 203475,
+    "acRate": "58.3%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "metaData": {
+    "name": "lastStoneWeightII",
+    "params": [
+      {
+        "name": "stones",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "renato4",
+      "year": 2019,
+      "content": "**NOTE**: I previously explained this in another post. But I\\'m posting it now as a standalone post to help others finding this answer easily. [Link to the post where I answered this in the form of reply](https://leetcode.com/problems/last-stone-weight-ii/discuss/295325/Why-DP-is-applicable-here)\\n\\nSuppose you have rock a, b, c and d.\\nIf you subtract them in the following order: b-c, then d-(b-c). Then it is the same as doing d-b+c.\\nThen doing (d-b+c)-a is the same as -a+d-b+c, which is d+c-a-b, which is (d+c)-(a+b). So doing things in that order will lead to this shortcut.\\n\\nLets try another order.\\nSuppose you have rock a, b, c and d.\\nIf you do a-d, then b-c, then (a-d)-(b-c).\\nThen (a-d)-(b-c) is the same as a-d-b+c, which is the same as -d-b+a+c, which is -(d+b)+(a+c), which is (a+c)-(d+b). Another shortcut.\\n\\nThen you can see that depending on the order of the subtractions, we get a different setting of difference between two groups.",
+      "voteCount": 198
+    },
+    {
+      "name": "apun_ko_level_badhane_ka",
+      "year": 2020,
+      "content": "Say you have four stones a,b,c,d.\\nfirst you smash b against c, you get (b-c)\\nnow you smash (b-c) against a\\nyou get a-(b-c) which is same as (a+c)-(b)\\nnow you smash d against (a+c)-b\\nyou get d-((a+c)-b) which is same as (d+b)-(a+c).\\nBasically for the given stones we can create two sets,the sum of  second set of stones to be subtracted from sum of first one.\\nideally we want sum of each set to be sum(stones)/2 so that they cancel each other out.\\n\\nSo to solve the problem we try to select a set of stones such that their sum comes as close as possible to sum(stones)/2 from the lower side.\\nClearly this subproblem is analogous to the knapsack problem.\\n\\nSince we went from the lower side we have created the second set, that is the set to be subtracted. The first set then becomes sum-dp\\\\[n\\\\]\\\\[sum/2\\\\].\\nTherefore the answer becomes sum-2*(dp\\\\[n\\\\]\\\\[sum/2\\\\])\\n",
+      "voteCount": 171
+    },
+    {
+      "name": "sharathnarayan",
+      "year": 2019,
+      "content": "I am sure that greedy algorithm doesn\\'t work here. But how to prove that it doesn\\'t work?\\n\\nDuring contest I came up with a solution to pop out the largest two elements calculate their difference and push it back in. Using a heap to pop the largest two elements.\\n\\nI was sure that this wouldn\\'t work but I didn\\'t know how to write a test case to prove that it doesn\\'t work. Can somone please help me with understanding on how to prove greedy doesn\\'t work and how you guys/gals confirm that greedy doesn\\'t work during contest?",
+      "voteCount": 66
+    },
+    {
+      "name": "abhishek_108",
+      "year": 2019,
+      "content": "My understanding of Knapsack problem is this-\\n\\nYou are given a set of items , for each of which we have a weight w[i] and value v[i] . Now we have a bag for capcaity W and we have to select items in such a way that we can maximize our profit and the total weight of items that we select should be <W.\\n\\nCan somebody explain to me now that how does the Last Stone Weight II problem boils down to Knapsack as many have claimed in their Articles?",
+      "voteCount": 36
+    },
+    {
+      "name": "2f317609",
+      "year": 2019,
+      "content": "How to prove that we can achieve any sum with +/- in front of every number  with the process from the problem description? It\\'s not obvious, at least to me.",
+      "voteCount": 34
+    },
+    {
+      "name": "deleted_user",
+      "year": 2021,
+      "content": "Lets suppose we have [a,b,c,d,e]\\nSuppose we smash a&b, our new array is [a-b,c,d,e]\\nSuppose we smash c&d, our new array is [a-b,c-d,e]\\nSuppose we smash (a-b)&e, our new array is [a-b-e,c-d]\\nNow we smash remaining two, our answer is ( (a-b-e) - (c-d) ) == (a-b-e-c+d) = (a+d) - (b+c+e)\\nSince we subtract lighter stone from heavier one we can\\'t get negative answer,\\nso goal is to partition the array in two sets whose absolute difference is minimum.\\n(It\\'s the question TARGET SUM which is variation of SUBSET SUM which is variation of KNAPSACK)",
+      "voteCount": 21
+    },
+    {
+      "name": "hmygrace",
+      "year": 2020,
+      "content": "It really took me sometime to think it through, so I want to share my understanding with you.\\n\\nSay we have 3 stones: a, b, c. We could do following steps as one possible solution\\n\\ni. smash a, b, get new stone x = |a-b|\\nii. smash x, c, get one result = |x-c|\\n\\nIn this case, the result we get is ||a-b|-c|, and we can look at it closer.\\na.\\ta>b & a-b>c  => a-b-c = a-(b+c)\\nb.\\ta>b & a-b<c  => c-(a-b) = (b+c)-a\\nc.\\ta<b & a-b>c  => b-a-c = b-(a+c)\\nd.\\ta<b & a-b<c  => c-(b-a) = (a+c)-b\\n\\nYou could easily noticed the result would be the weight different of two group of stones, but this is not happened by accident. \\n\\nNo matter what ||a-b|-c| is, it can always be presented as (+/-)a(+/-)b(+/-)c, there is no other symbols. And you can always separate the stones to two groups by their symbols. Then you would get something as sum(group1)-sum(group2), and what makes the result closer to zero would be the correct answer.\\n",
+      "voteCount": 20
+    },
+    {
+      "name": "michaelkogan987777",
+      "year": 2022,
+      "content": "Let\\'s assume we have a set of stones, for the purposes of this example say 5. Our stones array would be [s1, s2, s3, s4, s5]. We will smash the stones in some order such that the result is optimal.\\n\\nWe can look at the second example to understand this formulation. In that example, stones = [31, 26, 33, 21, 40].\\n\\nThe optimal order is:\\n\\n1. stones[4] smash stones[3] = 19 = res1\\n2. stones[1] smash res1 = 7 = res2\\n3. stones[2] smash stones[0] = 2 = res3\\n4. res2 smash res3 = 5 = ans\\n\\nWe can express this using the following equation:\\n\\nans = stones[1] - (stones[4] - stones[3]) - (stones[2] - stones[0])\\n\\nWe can then simplify this equation by breaking apart the brackets, and grouping positive and negative stone values:\\n\\nans = stones[1] - stones[4] + stones[3] - stones[2] + stones[0]\\nans = (stones[1] + stones[3] + stones[0]) - (stones[4] + stones[2])\\n\\nSo it turns out that the answer can be expressed as the difference between two complimentary sums of stones. This will apply to any arbitrary array of stones.\\n\\nIt took me a while to understand exactly why so I wanted to share this logic in case anyone else is struggling. Needless to say, from here this can be solved as a 0/1 knapsack problem.",
+      "voteCount": 18
+    },
+    {
+      "name": "mixl18",
+      "year": 2023,
+      "content": "I don\\'t understand. Why this problem is medium, while Partition Array Into Two Arrays to Minimize Sum Difference is hard. The former one needs one more layer to reformulate.",
+      "voteCount": 10
+    },
+    {
+      "name": "kryvokrysenko",
+      "year": 2021,
+      "content": "What logic process can be used during the interview to come from the problem statement to \"diff between 2 set of rocks\" if you never seen this problem before? This seems like a big jump and it\\'s not intuitive at all.\\n\\nIf you figured out this problem yourself, please share your thought process.",
+      "voteCount": 9
+    }
+  ]
+}

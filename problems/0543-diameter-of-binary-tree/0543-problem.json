@@ -1,0 +1,138 @@
+{
+  "category": "",
+  "id": "543",
+  "name": "Diameter of Binary Tree",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/diameter-of-binary-tree/",
+  "slug": "diameter-of-binary-tree",
+  "isPaidOnly": false,
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Diameter of N-Ary Tree",
+      "difficulty": "Medium",
+      "slug": "diameter-of-n-ary-tree"
+    },
+    {
+      "title": "Longest Path With Different Adjacent Characters",
+      "difficulty": "Hard",
+      "slug": "longest-path-with-different-adjacent-characters"
+    }
+  ],
+  "questionId": "543",
+  "questionFrontendId": "543",
+  "title": "Diameter of Binary Tree",
+  "titleSlug": "diameter-of-binary-tree",
+  "content": "<p>Given the <code>root</code> of a binary tree, return <em>the length of the <strong>diameter</strong> of the tree</em>.</p>\n\n<p>The <strong>diameter</strong> of a binary tree is the <strong>length</strong> of the longest path between any two nodes in a tree. This path may or may not pass through the <code>root</code>.</p>\n\n<p>The <strong>length</strong> of a path between two nodes is represented by the number of edges between them.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/06/diamtree.jpg\" style=\"width: 292px; height: 302px;\" />\n<pre>\n<strong>Input:</strong> root = [1,2,3,4,5]\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> 3 is the length of the path [4,2,1,3] or [5,2,1,3].\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> root = [1,2]\n<strong>Output:</strong> 1\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of nodes in the tree is in the range <code>[1, 10<sup>4</sup>]</code>.</li>\n\t<li><code>-100 &lt;= Node.val &lt;= 100</code></li>\n</ul>\n",
+  "likes": 15059,
+  "dislikes": 1190,
+  "stats": {
+    "totalAccepted": "2.2M",
+    "totalSubmission": "3.4M",
+    "totalAcceptedRaw": 2190080,
+    "totalSubmissionRaw": 3410594,
+    "acRate": "64.2%"
+  },
+  "topicTags": [
+    {
+      "name": "Tree",
+      "slug": "tree"
+    },
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Binary Tree",
+      "slug": "binary-tree"
+    }
+  ],
+  "metaData": {
+    "name": "diameterOfBinaryTree",
+    "params": [
+      {
+        "name": "root",
+        "type": "TreeNode"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": true,
+        "name": "Meta",
+        "slug": "facebook",
+        "timesEncountered": 107
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "OBAAT",
+      "year": 2023,
+      "content": "Bullshit problem description. \\nBullshit definition for \"diameter\". \\nIs it so difficult to say instead \"longest path\"? \\nProblem writers are morons. ",
+      "voteCount": 673
+    },
+    {
+      "name": "SouthernHumor",
+      "year": 2021,
+      "content": "How the hek is this problem/program marked easy ? Solutions I\\'m seeing involve 2 recursive functions and this is just not quick or straightforward",
+      "voteCount": 617
+    },
+    {
+      "name": "WizTheProgrammer",
+      "year": 2023,
+      "content": "\"Easy\"",
+      "voteCount": 400
+    },
+    {
+      "name": "rajat_171",
+      "year": 2023,
+      "content": "This question is of medium level, There\\'s no doubt about it. I request leetcode to please mark this problem as medium.\\nThank you \\uD83D\\uDE0C",
+      "voteCount": 397
+    },
+    {
+      "name": "rana_afifi",
+      "year": 2022,
+      "content": "Rather tricky. Don\\'t think it is considered easy ",
+      "voteCount": 253
+    },
+    {
+      "name": "jd2050",
+      "year": 2023,
+      "content": "It\\'s not \"easy\", should be \"medium\"",
+      "voteCount": 165
+    },
+    {
+      "name": "mayursonowal7",
+      "year": 2023,
+      "content": "If this is easy, then I have no hope.",
+      "voteCount": 164
+    },
+    {
+      "name": "Dummyy",
+      "year": 2021,
+      "content": "sdcs jhfb wi wiufhw eiu uhweofuwe hfowe fowefowe fhwoe",
+      "voteCount": 141
+    },
+    {
+      "name": "alvinato",
+      "year": 2018,
+      "content": "[4,-7,-3,null,null,-9,-3,9,-7,-4,null,6,null,-6,-6,null,null,0,6,5,null,9,null,null,-1,-4,null,null,null,-2]\\n\\n^ the above test case expects an answer of 8.  But I only count 7 edges between every node.  Between which two nodes are there 8 edges?",
+      "voteCount": 125
+    },
+    {
+      "name": "myih",
+      "year": 2018,
+      "content": "Scrolling down the discussions and most of the solutions are basically the same as the solution for no.124, yet this one is marked as easy and 124 is hard? Is there a easier way for this problem?",
+      "voteCount": 50
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "category": "",
+  "id": "211",
+  "name": "Design Add and Search Words Data Structure",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/design-add-and-search-words-data-structure/",
+  "slug": "design-add-and-search-words-data-structure",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Depth-First Search",
+    "Design",
+    "Trie"
+  ],
+  "similar_questions": [
+    {
+      "title": "Implement Trie (Prefix Tree)",
+      "difficulty": "Medium",
+      "slug": "implement-trie-prefix-tree"
+    },
+    {
+      "title": "Prefix and Suffix Search",
+      "difficulty": "Hard",
+      "slug": "prefix-and-suffix-search"
+    },
+    {
+      "title": "Match Substring After Replacement",
+      "difficulty": "Hard",
+      "slug": "match-substring-after-replacement"
+    },
+    {
+      "title": "Sum of Prefix Scores of Strings",
+      "difficulty": "Hard",
+      "slug": "sum-of-prefix-scores-of-strings"
+    },
+    {
+      "title": "Count Prefix and Suffix Pairs II",
+      "difficulty": "Hard",
+      "slug": "count-prefix-and-suffix-pairs-ii"
+    },
+    {
+      "title": "Count Prefix and Suffix Pairs I",
+      "difficulty": "Easy",
+      "slug": "count-prefix-and-suffix-pairs-i"
+    }
+  ],
+  "questionId": "211",
+  "questionFrontendId": "211",
+  "title": "Design Add and Search Words Data Structure",
+  "titleSlug": "design-add-and-search-words-data-structure",
+  "content": "<p>Design a data structure that supports adding new words and finding if a string matches any previously added string.</p>\n\n<p>Implement the <code>WordDictionary</code> class:</p>\n\n<ul>\n\t<li><code>WordDictionary()</code>&nbsp;Initializes the object.</li>\n\t<li><code>void addWord(word)</code> Adds <code>word</code> to the data structure, it can be matched later.</li>\n\t<li><code>bool search(word)</code>&nbsp;Returns <code>true</code> if there is any string in the data structure that matches <code>word</code>&nbsp;or <code>false</code> otherwise. <code>word</code> may contain dots <code>&#39;.&#39;</code> where dots can be matched with any letter.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example:</strong></p>\n\n<pre>\n<strong>Input</strong>\n[&quot;WordDictionary&quot;,&quot;addWord&quot;,&quot;addWord&quot;,&quot;addWord&quot;,&quot;search&quot;,&quot;search&quot;,&quot;search&quot;,&quot;search&quot;]\n[[],[&quot;bad&quot;],[&quot;dad&quot;],[&quot;mad&quot;],[&quot;pad&quot;],[&quot;bad&quot;],[&quot;.ad&quot;],[&quot;b..&quot;]]\n<strong>Output</strong>\n[null,null,null,null,false,true,true,true]\n\n<strong>Explanation</strong>\nWordDictionary wordDictionary = new WordDictionary();\nwordDictionary.addWord(&quot;bad&quot;);\nwordDictionary.addWord(&quot;dad&quot;);\nwordDictionary.addWord(&quot;mad&quot;);\nwordDictionary.search(&quot;pad&quot;); // return False\nwordDictionary.search(&quot;bad&quot;); // return True\nwordDictionary.search(&quot;.ad&quot;); // return True\nwordDictionary.search(&quot;b..&quot;); // return True\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= word.length &lt;= 25</code></li>\n\t<li><code>word</code> in <code>addWord</code> consists of lowercase English letters.</li>\n\t<li><code>word</code> in <code>search</code> consist of <code>&#39;.&#39;</code> or lowercase English letters.</li>\n\t<li>There will be at most <code>2</code> dots in <code>word</code> for <code>search</code> queries.</li>\n\t<li>At most <code>10<sup>4</sup></code> calls will be made to <code>addWord</code> and <code>search</code>.</li>\n</ul>\n",
+  "likes": 7948,
+  "dislikes": 484,
+  "stats": {
+    "totalAccepted": "807K",
+    "totalSubmission": "1.7M",
+    "totalAcceptedRaw": 806961,
+    "totalSubmissionRaw": 1700784,
+    "acRate": "47.4%"
+  },
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Design",
+      "slug": "design"
+    },
+    {
+      "name": "Trie",
+      "slug": "trie"
+    }
+  ],
+  "metaData": {
+    "classname": "WordDictionary",
+    "constructor": {
+      "params": []
+    },
+    "methods": [
+      {
+        "params": [
+          {
+            "type": "string",
+            "name": "word"
+          }
+        ],
+        "name": "addWord",
+        "return": {
+          "type": "void"
+        }
+      },
+      {
+        "params": [
+          {
+            "type": "string",
+            "name": "word"
+          }
+        ],
+        "name": "search",
+        "return": {
+          "type": "boolean"
+        }
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "systemdesign": true
+  },
+  "discussion_posts": [
+    {
+      "name": "rntongo",
+      "year": 2023,
+      "content": "I hate to be that guy but this should be a hard!",
+      "voteCount": 145
+    },
+    {
+      "name": "steiner",
+      "year": 2022,
+      "content": "I must confess, I totally dislike these types of problems on leetcode. \\n\\nIt is unclear which solution complexity is intended, and almost any brute-force solution passes with some heuristics on top of that.\\n\\nFor example, just caching the answers worked for me. Here, in discussions, I see a lot of solutions that group all the words by size. However, it is quite obvious that both heuristics are extremely easy to break. So the actual reason all of that works is a set of unbelievably weak tests.\\n\\nSeeing these heuristics work may create the wrong impression of being the \"correct\" approaches. They are not, and it could be very misleading.\\n\\nP.S. would be glad to help to improve this and other dubious problems here :)",
+      "voteCount": 53
+    },
+    {
+      "name": "bittergreen",
+      "year": 2022,
+      "content": "vectors, unordered_map\\'s, raw array\\'s alll get Time Limit exceeded for Test Case 14.\\n\\nCopy and pasted several of the top voted: All TLE.\\n\\nCopy and pasted the official java solution.  That gets TLE.  Test case 14 needs to be removed.",
+      "voteCount": 34
+    },
+    {
+      "name": "ftpsmtp",
+      "year": 2016,
+      "content": "There is an insert (\"aa\"). However, the search for test string (\"a.\") is returning FALSE in the test case ? Should it not be TRUE as the '.' could have been replaced by another 'a' which exists there in the input \"aa\"?",
+      "voteCount": 24
+    },
+    {
+      "name": "guna_hawk",
+      "year": 2022,
+      "content": "well new leetcode ui sucks",
+      "voteCount": 21
+    },
+    {
+      "name": "4K45H",
+      "year": 2024,
+      "content": "Very bad Test cases. Can\\'t detect which operation is giving wrong answer!",
+      "voteCount": 16
+    },
+    {
+      "name": "pmcspmcspmcs",
+      "year": 2022,
+      "content": "The C++ trie solution using std::vector to store children trie nodes gets TLE (or barely passes). I took a look at how other people were solving the problem and found that some people were using built-in arrays instead of std::vector. After switching to built-in arrays, the runtime was cut in half and it now doesn\\'t TLE.\\n\\nI think it is silly that we have to resort to doing something like this to pass the test cases...this isn\\'t competitive programming.\\n",
+      "voteCount": 15
+    },
+    {
+      "name": "foxkanda",
+      "year": 2020,
+      "content": "[\"WordDictionary\",\"addWord\",\"addWord\",\"search\",\"search\",\"search\",\"search\",\"search\",\"search\"]\\n[[],[\"a\"],[\"a\"],[\".\"],[\"a\"],[\"aa\"],[\"a\"],[\".a\"],[\"a.\"]]\\n\\nmy output: [null,null,null,true,true,false,true,false,true]\\n\\nleetcode expected : [null,null,null,true,true,false,true,false,false]\\n\\nSince the word \"aa\" in present in the Trie, wouldnt searching for \"a.\" return true ?",
+      "voteCount": 9
+    },
+    {
+      "name": "nr1286",
+      "year": 2017,
+      "content": "for all of the trie solutions where they use a vector of trienodes of size 26\\n\\ncan someone explain the space and runtime complexity. especially of the search method dealing with the case of a . or all .\\n\\nBest,\\n\\nNick",
+      "voteCount": 8
+    },
+    {
+      "name": "Diamantis",
+      "year": 2023,
+      "content": "If you brute force with a `map` you get `TLE`.\\nIf you brute force with a `vector` or `array` it passes.",
+      "voteCount": 6
+    }
+  ]
+}

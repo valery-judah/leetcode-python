@@ -1,0 +1,132 @@
+{
+  "category": "",
+  "id": "290",
+  "name": "Word Pattern",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/word-pattern/",
+  "slug": "word-pattern",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Isomorphic Strings",
+      "difficulty": "Easy",
+      "slug": "isomorphic-strings"
+    },
+    {
+      "title": "Word Pattern II",
+      "difficulty": "Medium",
+      "slug": "word-pattern-ii"
+    },
+    {
+      "title": "Find and Replace Pattern",
+      "difficulty": "Medium",
+      "slug": "find-and-replace-pattern"
+    }
+  ],
+  "questionId": "290",
+  "questionFrontendId": "290",
+  "title": "Word Pattern",
+  "titleSlug": "word-pattern",
+  "content": "<p>Given a <code>pattern</code> and a string <code>s</code>, find if <code>s</code>&nbsp;follows the same pattern.</p>\n\n<p>Here <b>follow</b> means a full match, such that there is a bijection between a letter in <code>pattern</code> and a <b>non-empty</b> word in <code>s</code>. Specifically:</p>\n\n<ul>\n\t<li>Each letter in <code>pattern</code> maps to <strong>exactly</strong> one unique word in <code>s</code>.</li>\n\t<li>Each unique word in <code>s</code> maps to <strong>exactly</strong> one letter in <code>pattern</code>.</li>\n\t<li>No two letters map to the same word, and no two words map to the same letter.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">pattern = &quot;abba&quot;, s = &quot;dog cat cat dog&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">true</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The bijection can be established as:</p>\n\n<ul>\n\t<li><code>&#39;a&#39;</code> maps to <code>&quot;dog&quot;</code>.</li>\n\t<li><code>&#39;b&#39;</code> maps to <code>&quot;cat&quot;</code>.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">pattern = &quot;abba&quot;, s = &quot;dog cat cat fish&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">false</span></p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">pattern = &quot;aaaa&quot;, s = &quot;dog cat cat dog&quot;</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">false</span></p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= pattern.length &lt;= 300</code></li>\n\t<li><code>pattern</code> contains only lower-case English letters.</li>\n\t<li><code>1 &lt;= s.length &lt;= 3000</code></li>\n\t<li><code>s</code> contains only lowercase English letters and spaces <code>&#39; &#39;</code>.</li>\n\t<li><code>s</code> <strong>does not contain</strong> any leading or trailing spaces.</li>\n\t<li>All the words in <code>s</code> are separated by a <strong>single space</strong>.</li>\n</ul>\n",
+  "likes": 7768,
+  "dislikes": 1113,
+  "stats": {
+    "totalAccepted": "992.7K",
+    "totalSubmission": "2.3M",
+    "totalAcceptedRaw": 992749,
+    "totalSubmissionRaw": 2291965,
+    "acRate": "43.3%"
+  },
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "metaData": {
+    "name": "wordPattern",
+    "params": [
+      {
+        "name": "pattern",
+        "type": "string"
+      },
+      {
+        "name": "s",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "dkashi",
+      "year": 2023,
+      "content": "Poorly worded problem. Here is an attempt to explain it better. \\n\\nGiven a pattern and a string s, find if s follows the same pattern. pattern and s are same if:\\n1. each character in pattern represents a word in s\\n2. No two distinct characters in pattern can represent the same word in s\\n3. No single character in pattern can represent two distinct words in s.\\n\\ne.g.:\\n1. pattern = \\'abab\\'; s = \\'dog cat dog cat\\'; return True\\n\\'a\\'  represents \\'dog\\' and \\'b\\' represents cat\\n\\n2. pattern = \\'abcb\\'; s = \\'dog cat dog cat\\'; return False\\n\\'a\\' represents \\'dog\\', \\'b\\' represents \\'cat\\'. Then \\'c\\' cannot represent \\'dog\\' again as \\'a\\' already represents \\'dog\\' (#2 condition is: No two distinct characters in pattern i.e. \\'a\\' and \\'c\\' can represent same word i.e \\'dog\\'.) \\n\\n3. pattern = \\'abcb\\'; s = \\'dog cat hat cat\\'; return True\\n\\'a\\' represents \\'dog\\'; \\'b\\' represents \\'cat\\'; \\'c\\' represents \\'hat\\'; and last \\'cat\\' is already represented by \\'b\\' and last character in pattern is also \\'b\\'.\\n\\nHope this helps!",
+      "voteCount": 711
+    },
+    {
+      "name": "rohitramteke",
+      "year": 2023,
+      "content": "This question level needs to medium..\\nagree or not..",
+      "voteCount": 304
+    },
+    {
+      "name": "rohitmittal",
+      "year": 2015,
+      "content": "Worst problem statement ever! Please explain and re-write the problem statement.",
+      "voteCount": 288
+    },
+    {
+      "name": "pieceofpie",
+      "year": 2023,
+      "content": "Easy-difficulty problem to start out the year 2023! Happy new year and wish you all the best!!!",
+      "voteCount": 137
+    },
+    {
+      "name": "namanpokhriyal",
+      "year": 2023,
+      "content": "A Hard but easy problem to finish the year.\\nAnd now An Easy but hard problem to start the year.\\n\\nWell Played LeetCode \\uD83D\\uDC4F",
+      "voteCount": 70
+    },
+    {
+      "name": "frederic.chen.35",
+      "year": 2015,
+      "content": "when input\\n 'aaa'\\n'aa aa aa aa'\\n\\nleetcode give true and it should be false I think",
+      "voteCount": 52
+    },
+    {
+      "name": "luofun",
+      "year": 2017,
+      "content": "![0_1509037172269_0c49ce74-866a-4e1f-85d1-10f906c54af3-image.png](/assets/uploads/files/1509037178417-0c49ce74-866a-4e1f-85d1-10f906c54af3-image-resized.png)",
+      "voteCount": 48
+    },
+    {
+      "name": "devhindo",
+      "year": 2023,
+      "content": "this should be a medium problem",
+      "voteCount": 42
+    },
+    {
+      "name": "72engineers",
+      "year": 2023,
+      "content": "Thanks God, 2023 begins with an easy problem, this would mean all of the people in LeetCode community would have an easy 2023! Happy new year to Everyone!",
+      "voteCount": 41
+    },
+    {
+      "name": "webguru77777",
+      "year": 2023,
+      "content": "For javascript/typescript leetcoders. Watch out \"constructor\" for when using plain object (`{}`). Test case 40 has \"constructor\" to fail the codes using plain objects. Use Map instead of plain objects.",
+      "voteCount": 31
+    }
+  ]
+}

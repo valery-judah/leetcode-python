@@ -1,0 +1,168 @@
+{
+  "category": "",
+  "id": "224",
+  "name": "Basic Calculator",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/basic-calculator/",
+  "slug": "basic-calculator",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "String",
+    "Stack",
+    "Recursion"
+  ],
+  "similar_questions": [
+    {
+      "title": "Evaluate Reverse Polish Notation",
+      "difficulty": "Medium",
+      "slug": "evaluate-reverse-polish-notation"
+    },
+    {
+      "title": "Basic Calculator II",
+      "difficulty": "Medium",
+      "slug": "basic-calculator-ii"
+    },
+    {
+      "title": "Different Ways to Add Parentheses",
+      "difficulty": "Medium",
+      "slug": "different-ways-to-add-parentheses"
+    },
+    {
+      "title": "Expression Add Operators",
+      "difficulty": "Hard",
+      "slug": "expression-add-operators"
+    },
+    {
+      "title": "Basic Calculator III",
+      "difficulty": "Hard",
+      "slug": "basic-calculator-iii"
+    },
+    {
+      "title": "The Score of Students Solving Math Expression",
+      "difficulty": "Hard",
+      "slug": "the-score-of-students-solving-math-expression"
+    },
+    {
+      "title": "Minimize Result by Adding Parentheses to Expression",
+      "difficulty": "Medium",
+      "slug": "minimize-result-by-adding-parentheses-to-expression"
+    }
+  ],
+  "questionId": "224",
+  "questionFrontendId": "224",
+  "title": "Basic Calculator",
+  "titleSlug": "basic-calculator",
+  "content": "<p>Given a string <code>s</code> representing a valid expression, implement a basic calculator to evaluate it, and return <em>the result of the evaluation</em>.</p>\n\n<p><strong>Note:</strong> You are <strong>not</strong> allowed to use any built-in function which evaluates strings as mathematical expressions, such as <code>eval()</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;1 + 1&quot;\n<strong>Output:</strong> 2\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot; 2-1 + 2 &quot;\n<strong>Output:</strong> 3\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;(1+(4+5+2)-3)+(6+8)&quot;\n<strong>Output:</strong> 23\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 3 * 10<sup>5</sup></code></li>\n\t<li><code>s</code> consists of digits, <code>&#39;+&#39;</code>, <code>&#39;-&#39;</code>, <code>&#39;(&#39;</code>, <code>&#39;)&#39;</code>, and <code>&#39; &#39;</code>.</li>\n\t<li><code>s</code> represents a valid expression.</li>\n\t<li><code>&#39;+&#39;</code> is <strong>not</strong> used as a unary operation (i.e., <code>&quot;+1&quot;</code> and <code>&quot;+(2 + 3)&quot;</code> is invalid).</li>\n\t<li><code>&#39;-&#39;</code> could be used as a unary operation (i.e., <code>&quot;-1&quot;</code> and <code>&quot;-(2 + 3)&quot;</code> is valid).</li>\n\t<li>There will be no two consecutive operators in the input.</li>\n\t<li>Every number and running calculation will fit in a signed 32-bit integer.</li>\n</ul>\n",
+  "likes": 6759,
+  "dislikes": 543,
+  "stats": {
+    "totalAccepted": "630.3K",
+    "totalSubmission": "1.4M",
+    "totalAcceptedRaw": 630299,
+    "totalSubmissionRaw": 1369234,
+    "acRate": "46.0%"
+  },
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Stack",
+      "slug": "stack"
+    },
+    {
+      "name": "Recursion",
+      "slug": "recursion"
+    }
+  ],
+  "metaData": {
+    "name": "calculate",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": true,
+        "name": "Google",
+        "slug": "google",
+        "timesEncountered": 11
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "anonydon89",
+      "year": 2023,
+      "content": "a basic calculator shouldnt be allowed to have parenthesis. ",
+      "voteCount": 408
+    },
+    {
+      "name": "zaphdev254",
+      "year": 2024,
+      "content": "I have solved this problem successfully and now I can\\'t even remember my own name",
+      "voteCount": 235
+    },
+    {
+      "name": "zzandland",
+      "year": 2022,
+      "content": "Damn should have read the description first. I thought multiplication and division were also part of the requirements and implemented that as well..",
+      "voteCount": 152
+    },
+    {
+      "name": "Tribhuwan-Joshi",
+      "year": 2023,
+      "content": "There must be an example with multi digit numbers , so coder can know beforehand .",
+      "voteCount": 113
+    },
+    {
+      "name": "renol",
+      "year": 2023,
+      "content": "stupid calulator",
+      "voteCount": 109
+    },
+    {
+      "name": "suuuuperbai",
+      "year": 2024,
+      "content": "The description makes me forget there could be number bigger than 9 \\uD83E\\uDD21",
+      "voteCount": 60
+    },
+    {
+      "name": "chymcakmilan",
+      "year": 2022,
+      "content": "If first item is not number or bracket, just add 0 ..it makes it much easier.\\n `\"-2+ 1\"` becomes `0 - 2 + 1`",
+      "voteCount": 59
+    },
+    {
+      "name": "lkwq007",
+      "year": 2021,
+      "content": "Input:\\n`\"-2+ 1\"`\\n`\"- (3 + (4 + 5))\"`\\n\\nHowever, the problem clearly states that\\n> \\'-\\' could be used as a unary operation but it has to be inside parentheses",
+      "voteCount": 50
+    },
+    {
+      "name": "TERNION2205",
+      "year": 2023,
+      "content": "Sat for the whole day to figure out its solution,\\nGot it using simple recursion and a bunch of conditionals.\\nJust to figure out it was NOT enough to pass tests 43 and onwards.\\nConfused whether I should be glad to find out the \"at least working\" solution, or should sit for another day to get this problem done :c",
+      "voteCount": 34
+    },
+    {
+      "name": "TheAsh",
+      "year": 2019,
+      "content": "I think that the problem description should include information on the desired efficiency. I\\'m probably not the only one who first designed a working solution that got rejected after test `36` because of its runtime, and then had to go back and write a solution in `O(N)`. I find it frustrating when information that can be easily added to the problem statement has to be inferred from test cases. Regarding this problem, jus adding something along the lines of \"just make a single pass on the input string\" would be fine.",
+      "voteCount": 23
+    }
+  ]
+}

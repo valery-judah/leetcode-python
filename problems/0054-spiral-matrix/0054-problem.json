@@ -1,0 +1,165 @@
+{
+  "category": "",
+  "id": "54",
+  "name": "Spiral Matrix",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/spiral-matrix/",
+  "slug": "spiral-matrix",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Spiral Matrix II",
+      "difficulty": "Medium",
+      "slug": "spiral-matrix-ii"
+    },
+    {
+      "title": "Spiral Matrix III",
+      "difficulty": "Medium",
+      "slug": "spiral-matrix-iii"
+    },
+    {
+      "title": "Spiral Matrix IV",
+      "difficulty": "Medium",
+      "slug": "spiral-matrix-iv"
+    }
+  ],
+  "questionId": "54",
+  "questionFrontendId": "54",
+  "title": "Spiral Matrix",
+  "titleSlug": "spiral-matrix",
+  "content": "<p>Given an <code>m x n</code> <code>matrix</code>, return <em>all elements of the</em> <code>matrix</code> <em>in spiral order</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/11/13/spiral1.jpg\" style=\"width: 242px; height: 242px;\" />\n<pre>\n<strong>Input:</strong> matrix = [[1,2,3],[4,5,6],[7,8,9]]\n<strong>Output:</strong> [1,2,3,6,9,8,7,4,5]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/11/13/spiral.jpg\" style=\"width: 322px; height: 242px;\" />\n<pre>\n<strong>Input:</strong> matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]\n<strong>Output:</strong> [1,2,3,4,8,12,11,10,9,5,6,7]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == matrix.length</code></li>\n\t<li><code>n == matrix[i].length</code></li>\n\t<li><code>1 &lt;= m, n &lt;= 10</code></li>\n\t<li><code>-100 &lt;= matrix[i][j] &lt;= 100</code></li>\n</ul>\n",
+  "likes": 16575,
+  "dislikes": 1481,
+  "stats": {
+    "totalAccepted": "2.1M",
+    "totalSubmission": "3.8M",
+    "totalAcceptedRaw": 2073151,
+    "totalSubmissionRaw": 3782751,
+    "acRate": "54.8%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Matrix",
+      "slug": "matrix"
+    },
+    {
+      "name": "Simulation",
+      "slug": "simulation"
+    }
+  ],
+  "metaData": {
+    "name": "spiralOrder",
+    "params": [
+      {
+        "name": "matrix",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "list<integer>",
+      "size": "size_1 * col_size_1",
+      "dealloc": true
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 17
+      },
+      {
+        "taggedByAdmin": true,
+        "name": "Google",
+        "slug": "google",
+        "timesEncountered": 16
+      },
+      {
+        "taggedByAdmin": true,
+        "name": "Microsoft",
+        "slug": "microsoft",
+        "timesEncountered": 11
+      }
+    ],
+    "2": [
+      {
+        "taggedByAdmin": false,
+        "name": "Capital One",
+        "slug": "capital-one",
+        "timesEncountered": 11
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "user4990pi",
+      "year": 2022,
+      "content": "Truly hate this question ",
+      "voteCount": 868
+    },
+    {
+      "name": "cOde_Ranvir25",
+      "year": 2023,
+      "content": "Just Completed My 100 Day\\'s Streak \\uD83D\\uDE0A",
+      "voteCount": 324
+    },
+    {
+      "name": "AclassDev47",
+      "year": 2023,
+      "content": "I am slapping whoever's face that is gonna give me this question during an interview\n",
+      "voteCount": 265
+    },
+    {
+      "name": "daringcalf",
+      "year": 2023,
+      "content": "Let\\'s hit down arrow on the solutions posted here so it won\\'t show on the first page.",
+      "voteCount": 186
+    },
+    {
+      "name": "mayursonowal7",
+      "year": 2023,
+      "content": "don\\'t like these kinda questions man... Cannot seem to visualize properly",
+      "voteCount": 85
+    },
+    {
+      "name": "kevinchung0921",
+      "year": 2023,
+      "content": "I solved this years ago by 70 lines, today I use 20+ lines.\\n[My simple idea](https://leetcode.com/problems/spiral-matrix/solutions/3502873/check-on-boundary-and-visited-positions-single-loop/)",
+      "voteCount": 57
+    },
+    {
+      "name": "Tribhuwan-Joshi",
+      "year": 2023,
+      "content": "I took literally 1 whole day to find a solution and it was worth it , the feeling is good",
+      "voteCount": 47
+    },
+    {
+      "name": "sohampatel1306",
+      "year": 2024,
+      "content": "This is what I understood from Hint 1: Just solve the question",
+      "voteCount": 41
+    },
+    {
+      "name": "jinhui2",
+      "year": 2014,
+      "content": "I tested my code on my own machine and it works fine. However, after submitting my code to leetcode, the result always says Runtime Error without any details. I don't know why this happens.",
+      "voteCount": 40
+    },
+    {
+      "name": "alexfromapex",
+      "year": 2023,
+      "content": "Why is there no example of an even-numbered height? How are we supposed to know what is expected?",
+      "voteCount": 33
+    }
+  ]
+}

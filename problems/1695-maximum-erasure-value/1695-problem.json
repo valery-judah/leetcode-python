@@ -1,0 +1,123 @@
+{
+  "category": "",
+  "id": "1695",
+  "name": "Maximum Erasure Value",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-erasure-value/",
+  "slug": "maximum-erasure-value",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longest Substring Without Repeating Characters",
+      "difficulty": "Medium",
+      "slug": "longest-substring-without-repeating-characters"
+    }
+  ],
+  "questionId": "1813",
+  "questionFrontendId": "1695",
+  "title": "Maximum Erasure Value",
+  "titleSlug": "maximum-erasure-value",
+  "content": "<p>You are given an array of positive integers <code>nums</code> and want to erase a subarray containing&nbsp;<strong>unique elements</strong>. The <strong>score</strong> you get by erasing the subarray is equal to the <strong>sum</strong> of its elements.</p>\n\n<p>Return <em>the <strong>maximum score</strong> you can get by erasing <strong>exactly one</strong> subarray.</em></p>\n\n<p>An array <code>b</code> is called to be a <span class=\"tex-font-style-it\">subarray</span> of <code>a</code> if it forms a contiguous subsequence of <code>a</code>, that is, if it is equal to <code>a[l],a[l+1],...,a[r]</code> for some <code>(l,r)</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [4,2,4,5,6]\n<strong>Output:</strong> 17\n<strong>Explanation:</strong> The optimal subarray here is [2,4,5,6].\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [5,2,1,2,5,2,1,2,5]\n<strong>Output:</strong> 8\n<strong>Explanation:</strong> The optimal subarray here is [5,2,1] or [1,2,5].\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>\n</ul>\n",
+  "likes": 3354,
+  "dislikes": 64,
+  "stats": {
+    "totalAccepted": "279.1K",
+    "totalSubmission": "436.6K",
+    "totalAcceptedRaw": 279105,
+    "totalSubmissionRaw": 436565,
+    "acRate": "63.9%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Sliding Window",
+      "slug": "sliding-window"
+    }
+  ],
+  "metaData": {
+    "name": "maximumUniqueSubarray",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "johnnychang",
+      "year": 2023,
+      "content": "This is such a weirdly worded problem. Just be straightforward and say \"please find the subarray with maximum sum that has unique elements\".",
+      "voteCount": 329
+    },
+    {
+      "name": "MakHey",
+      "year": 2025,
+      "content": "Its my 600-day streak and 1111 problems solved!",
+      "voteCount": 112
+    },
+    {
+      "name": "adityachavhan01",
+      "year": 2025,
+      "content": "There were days in the past i feel very scared from such above type problems.\\nBut today , in only one try solution got accepted.\\nwe all are growing guys just do practise and believe in your self and your efforts and then see the magic.\\nMany times you don;t even have to lift your pen for tracing.",
+      "voteCount": 101
+    },
+    {
+      "name": "euphori_A",
+      "year": 2024,
+      "content": "i think this one is preety easy.",
+      "voteCount": 68
+    },
+    {
+      "name": "code2477",
+      "year": 2025,
+      "content": "Here are some testcases for you guys ------------------->\\n```python3\\n[1, 1, 1, 1, 2, 2, 2]\\n[1, 9, 7, 10, 7, 8, 8, 2, 2, 2, 3, 1, 5, 7, 7, 10, 10, 4, 3, 8]\\n[1, 7, 10, 10, 9, 10, 2, 3, 2, 1, 6, 2, 5, 7, 9, 8, 4, 9, 6, 8]\\n[8, 15, 6, 12, 3, 4, 2, 15, 10, 20, 7, 14, 5, 17, 1, 20, 7, 2, 3, 16, 13, 19, 8, 15, 16, 15, 7, 15, 18, 9, 17, 3, 8, 14, 4, 9, 13, 19, 1, 7, 8, 15, 19, 2, 10, 20, 7, 16, 6, 8]\\n[1, 10, 3, 8, 19, 5, 12, 3, 17, 3, 8, 18, 19, 9, 5, 11, 1, 6, 8, 1, 7, 20, 2, 8, 11, 15, 4, 14, 11, 13, 20, 18, 6, 16, 5, 11, 8, 1, 5, 13, 19, 11, 15, 9, 8, 4, 4, 6, 7, 2]\\n[10, 17, 10, 7, 4, 12, 16, 4, 20, 13, 7, 18, 9, 16, 20, 3, 5, 6, 1, 6, 12, 16, 15, 10, 13, 3, 4, 17, 1, 11, 11, 6, 15, 12, 1, 17, 11, 10, 2, 18, 15, 4, 5, 1, 14, 15, 9, 8, 8, 5]\\n[10, 1, 4, 15, 14, 14, 1, 6, 11, 14, 1, 9, 12, 17, 4, 7, 8, 1, 1, 5, 20, 9, 6, 17, 17, 11, 5, 18, 7, 17, 13, 10, 17, 20, 5, 10, 9, 3, 17, 2, 1, 2, 20, 11, 3, 10, 7, 15, 1, 19]\\n[18, 8, 8, 19, 3, 1, 19, 1, 15, 13, 10, 4, 12, 2, 3, 3, 11, 4, 20, 11, 12, 4, 14, 9, 8, 1, 13, 15, 9, 20, 12, 13, 11, 8, 7, 8, 15, 10, 5, 17, 4, 10, 18, 5, 12, 18, 5, 16, 13, 2]\\n```\\nRandomly generated test cases using the web extension LeetTest!\\nAlso provides up to date company tags and elo rating for problems!\\nDownloadable on the Chrome webstore or Firefox addons and works for most leetcode problems\\n",
+      "voteCount": 56
+    },
+    {
+      "name": "syn_anti",
+      "year": 2025,
+      "content": "\\u2018Maximum Erasure Value\\u2019 sounds exactly like what my professor did to all my partial marks\\uD83D\\uDE16",
+      "voteCount": 46
+    },
+    {
+      "name": "sarashs",
+      "year": 2025,
+      "content": "3 years ago I attempted this problem 11 times and I could not solve it. I didn\\'t look at the answer either, I just moved on. Now after about 300 days of doing daily leetcode problem I got this again and solved it in 5 minutes. I know it is not a very hard problem but I was very happy with my progress. I hope this encourages those who couldn\\'t do it.",
+      "voteCount": 40
+    },
+    {
+      "name": "Ixa8488",
+      "year": 2023,
+      "content": "Similar to [3. Longest Substring Without Repeating Characters\\n](https://leetcode.com/problems/longest-substring-without-repeating-characters/)Just need to add elements.",
+      "voteCount": 34
+    },
+    {
+      "name": "Utkarsh_Lambade",
+      "year": 2025,
+      "content": "Me and bro used to solve this type of problems, but as a naive coder without proper understanding the correct approach, we used scratch our brain almost 1:30-2 hrs a day , but that scratching & practice taught us so much that , today we are able to solve such type of problems without even tracing it using pen and paper.\\nThis gives you a kick of different level.\\n [@adityachavhan01](/u/adityachavhan01)",
+      "voteCount": 27
+    },
+    {
+      "name": "_Vietnamese_",
+      "year": 2025,
+      "content": "Check this test case before submitting your code:\\n```\\n[187,470,25,436,538,809,441,167,477,110,275,133,666,345,411,459,490,266,987,965,429,166,809,340,467,318,125,165,809,610,31,585,970,306,42,189,169,743,78,810,70,382,367,490,787,670,476,278,775,673,299,19,893,817,971,458,409,886,434]\\n```",
+      "voteCount": 27
+    }
+  ]
+}

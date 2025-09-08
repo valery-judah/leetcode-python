@@ -1,0 +1,142 @@
+{
+  "category": "",
+  "id": "74",
+  "name": "Search a 2D Matrix",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/search-a-2d-matrix/",
+  "slug": "search-a-2d-matrix",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Search a 2D Matrix II",
+      "difficulty": "Medium",
+      "slug": "search-a-2d-matrix-ii"
+    },
+    {
+      "title": "Split Message Based on Limit",
+      "difficulty": "Hard",
+      "slug": "split-message-based-on-limit"
+    }
+  ],
+  "questionId": "74",
+  "questionFrontendId": "74",
+  "title": "Search a 2D Matrix",
+  "titleSlug": "search-a-2d-matrix",
+  "content": "<p>You are given an <code>m x n</code> integer matrix <code>matrix</code> with the following two properties:</p>\n\n<ul>\n\t<li>Each row is sorted in non-decreasing order.</li>\n\t<li>The first integer of each row is greater than the last integer of the previous row.</li>\n</ul>\n\n<p>Given an integer <code>target</code>, return <code>true</code> <em>if</em> <code>target</code> <em>is in</em> <code>matrix</code> <em>or</em> <code>false</code> <em>otherwise</em>.</p>\n\n<p>You must write a solution in <code>O(log(m * n))</code> time complexity.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/10/05/mat.jpg\" style=\"width: 322px; height: 242px;\" />\n<pre>\n<strong>Input:</strong> matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 3\n<strong>Output:</strong> true\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/10/05/mat2.jpg\" style=\"width: 322px; height: 242px;\" />\n<pre>\n<strong>Input:</strong> matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 13\n<strong>Output:</strong> false\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == matrix.length</code></li>\n\t<li><code>n == matrix[i].length</code></li>\n\t<li><code>1 &lt;= m, n &lt;= 100</code></li>\n\t<li><code>-10<sup>4</sup> &lt;= matrix[i][j], target &lt;= 10<sup>4</sup></code></li>\n</ul>\n",
+  "likes": 17227,
+  "dislikes": 465,
+  "stats": {
+    "totalAccepted": "2.5M",
+    "totalSubmission": "4.8M",
+    "totalAcceptedRaw": 2533955,
+    "totalSubmissionRaw": 4800316,
+    "acRate": "52.8%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    },
+    {
+      "name": "Matrix",
+      "slug": "matrix"
+    }
+  ],
+  "metaData": {
+    "name": "searchMatrix",
+    "params": [
+      {
+        "name": "matrix",
+        "type": "integer[][]"
+      },
+      {
+        "name": "target",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 19
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "Batraaaaaa",
+      "year": 2023,
+      "content": "Its simple binary search, just in a 2d matrix.\\nHere, no. of rows and cols can be found as:\\n`int r = matrix.size();\\nint c = matrix[0].size();`\\nAnd the low and high will be:\\n`int low = 0, high = (r*c)-1;`\\n\\nThe real thing that you\\'ll get stuck in is how to do the comparison between the mid element and the target element. Its simple, you can find the row index by dividing the mid (index of the number) by number of columns, the quotient will be the row index, while the remainder will be the column index. In simple words, it\\'ll be like:\\n`matrix[mid/c][mid%c]`\\n\\nNow, question comes in mind, that why is this so? Why do we get row index as the quotient and col index as the remainder if we divide the index of the number by number of cols?\\nBelow is its explanation:\\nIn a 2D matrix, each element can be uniquely identified by its row index and column index. Let\\'s say we have a matrix of size m x n (m rows and n columns) and we want to find the row and column index of an element at index i in the matrix.\\nTo find the row index, we can divide the index i by the number of columns n. The quotient of this division gives us the row index. This is because every n elements in the matrix belong to the same row. For example, in a matrix of size 3 x 4, the first 4 elements belong to the first row, the next 4 elements belong to the second row, and so on.\\nTo find the column index, we can take the remainder of the same division (i divided by n). This is because the remainder gives us the position of the element within the row. For example, if i is 5 and n is 4, then the row index is i/n = 5/4 = 1 (integer division gives us 1) and the column index is i mod n = 5 mod 4 = 1.\\n\\nIf you like the exlanation, kindly upvote.\\u2764\\uFE0F",
+      "voteCount": 516
+    },
+    {
+      "name": "sumantaraj",
+      "year": 2022,
+      "content": "just a simple tip always remember\\nin 2d matrix of m*n\\n no. of rows = mid/n \\nno. of cols= mid%n\\n\\nThank You\\n",
+      "voteCount": 210
+    },
+    {
+      "name": "Jkpgiitian",
+      "year": 2022,
+      "content": "This is very bad.\\nQuestion is asked for binary search ,and i write the solution of linear search ... and code accepted... why?? ",
+      "voteCount": 132
+    },
+    {
+      "name": "gd03champ",
+      "year": 2023,
+      "content": "My linear search solution beats 100% lol. Constrains should really be adjusted",
+      "voteCount": 60
+    },
+    {
+      "name": "mbed",
+      "year": 2023,
+      "content": "Imagine (rather actually draw it out) how a 2D array (m * n matrix) would be placed 'row-wise' into a 1D array - \neach row from a 2D array is placed as successive blocks of rows starting from row 0 to row m - 1 (of the 2D array);\n\n(Note that here the array could be placed 'column-wise' (opportunity to trick someone) into the 1D array and below translation of\nindices may not work as-is; hence how the 2D array is placed into the 1D array is important to know/imagine)\n\nGiven 'row-wise' placement, the 1D array now consists of 'blocks' of m rows and each 'block' contains column (n) number of elements; \n\nTake a 3x4 Matix placed row-wise into a 1D array as an example -\n\n`1D-Index:   | 0 1 2 3 | 4 5 6 7 | 8  9   10 11 |`\n`Elements:   | 1 2 3 4 | 5 6 7 8 | 8 10 11 12 |`\n\nTo find out the 2D Row index from a 1D array index, is equal to telling which row-block does this index belong to;\n\nwhich is = 1D index / # elements in the row-block\nwhich is = 1D index / # columns\n\ne.g.\nif 1D index is 7;\n       2D Row index = 7 / #columns\n\t                = 7 / 4\n\t\t\t\t\t= 1\n\t\t\t\t\t\nNow onto column index,\n\nIf you look at above example, column index is just an offest inside a given row-block.\nWhile this seems less intuitive to derive, the remainder of the division operation we performed above\nto get the row index gives you the offset in that row, which turns out to be the column index.\n\nSo 2D Col Index =  Remainder of (1D-Index / #columns)\n                          =  (1D-index % #columns)\n\n\ne.g.\nif 1D index is 7;\n2D Col index = 7 % 4\n\t                = 3\n\t\t\t\n\t\t\t\nGiving us (for a 1D array index 'i' and an m * n matrix placed row-wise into the 1D array), \n1D to 2D index transformation:\n\n`[i]  =>  [i / n][i % n]`\n\n\nBonus:\nIf the matrix is sorted column-wise,  an so we imagine placing the matrix as 'column-wise' blocks into the 1D array, then,\n1D to 2D index transformation:\n`[i]  =>  [i % m][i / m]`\n\n2D to 1D (row-wise) transformation:\n`[i][j] => [i * n + j]`",
+      "voteCount": 29
+    },
+    {
+      "name": "hfiroz86",
+      "year": 2023,
+      "content": "we can consider 2d as 1d and we can simply apply binary search to search the target \\nto get element= s[mid/col][mid%col]\\nwhere mid is calculated mid value\\nmiid/col give row value \\nmid%col give you column value \\nplease do upvotes",
+      "voteCount": 27
+    },
+    {
+      "name": "pg99285",
+      "year": 2023,
+      "content": "I think of approach, I got an approach, I implemented approach, It worked for the sample testcases. Now what the hell is [[1]]. Frustration at its max.",
+      "voteCount": 25
+    },
+    {
+      "name": "KateMelnykova",
+      "year": 2019,
+      "content": "I think that the testcase where matrix=[] and target=0 is incorrect. [] is not a matrix.\\n\\nMaybe this testcase should be removed? Who should I contact about it?",
+      "voteCount": 24
+    },
+    {
+      "name": "adrians99",
+      "year": 2023,
+      "content": "Useful tests to check extreme cases\\n\\n`matrix = [[1],[3],[5]] target = 3`\\n`matrix = [[1, 3]] target = 3`\\n`matrix = [[1, 3]] target = 2`\\n`matrix = [[1]] target = 1`",
+      "voteCount": 20
+    },
+    {
+      "name": "LeetCode",
+      "year": 2022,
+      "content": "This problem is the Daily LeetCoding Challenge for March, Day 30.\n\nFeel free to share anything related to this problem here!\n\nYou can ask questions, discuss what you've learned from this problem, or show off how many days of streak you've made!\n\n---\n\nIf you'd like to share a detailed solution to the problem, please create a new post in the discuss section and provide\n- **Detailed Explanations**: Describe the algorithm you used to solve this problem. Include any insights you used to solve this problem.\n- **Images** that help explain the algorithm.\n- **Language and Code** you used to pass the problem.\n- **Time and Space complexity analysis**.\n\n---\n\n  **📌 Do you want to learn the problem thoroughly?**\n  Read [**⭐  LeetCode Official Solution⭐**](https://leetcode.com/problems/search-a-2d-matrix/solution) to learn the 3 approaches to the problem with detailed explanations to the algorithms, codes, and complexity analysis.\n  <details>\n  <summary> Spoiler Alert! We'll explain this 1 approach in the official solution</summary>\n\n  \n**Approach 1:** Binary Search\n\n  \n</details>\n\n\n\nIf you're new to Daily LeetCoding Challenge, [**check out this post**](https://leetcode.com/discuss/general-discussion/655704/)!\n\n\n---\n\n<br>\n\n<p align=\"center\">\n<a href=\"https://leetcode.com/subscribe/?ref=ex_dc\" target=\"_blank\">\n  <img src=\"https://assets.leetcode.com/static_assets/marketing/daily_leetcoding_banner.png\" width=\"560px\" />\n</a>\n</p>\n\n<br>",
+      "voteCount": 11
+    }
+  ]
+}

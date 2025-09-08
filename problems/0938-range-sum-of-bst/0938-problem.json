@@ -1,0 +1,140 @@
+{
+  "category": "",
+  "id": "938",
+  "name": "Range Sum of BST",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/range-sum-of-bst/",
+  "slug": "range-sum-of-bst",
+  "isPaidOnly": false,
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "similar_questions": [],
+  "questionId": "975",
+  "questionFrontendId": "938",
+  "title": "Range Sum of BST",
+  "titleSlug": "range-sum-of-bst",
+  "content": "<p>Given the <code>root</code> node of a binary search tree and two integers <code>low</code> and <code>high</code>, return <em>the sum of values of all nodes with a value in the <strong>inclusive</strong> range </em><code>[low, high]</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/11/05/bst1.jpg\" style=\"width: 400px; height: 222px;\" />\n<pre>\n<strong>Input:</strong> root = [10,5,15,3,7,null,18], low = 7, high = 15\n<strong>Output:</strong> 32\n<strong>Explanation:</strong> Nodes 7, 10, and 15 are in the range [7, 15]. 7 + 10 + 15 = 32.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/11/05/bst2.jpg\" style=\"width: 400px; height: 335px;\" />\n<pre>\n<strong>Input:</strong> root = [10,5,15,3,7,13,18,1,null,6], low = 6, high = 10\n<strong>Output:</strong> 23\n<strong>Explanation:</strong> Nodes 6, 7, and 10 are in the range [6, 10]. 6 + 7 + 10 = 23.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of nodes in the tree is in the range <code>[1, 2 * 10<sup>4</sup>]</code>.</li>\n\t<li><code>1 &lt;= Node.val &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= low &lt;= high &lt;= 10<sup>5</sup></code></li>\n\t<li>All <code>Node.val</code> are <strong>unique</strong>.</li>\n</ul>\n",
+  "likes": 7170,
+  "dislikes": 388,
+  "stats": {
+    "totalAccepted": "1.3M",
+    "totalSubmission": "1.5M",
+    "totalAcceptedRaw": 1284279,
+    "totalSubmissionRaw": 1467737,
+    "acRate": "87.5%"
+  },
+  "topicTags": [
+    {
+      "name": "Tree",
+      "slug": "tree"
+    },
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Binary Search Tree",
+      "slug": "binary-search-tree"
+    },
+    {
+      "name": "Binary Tree",
+      "slug": "binary-tree"
+    }
+  ],
+  "metaData": {
+    "name": "rangeSumBST",
+    "params": [
+      {
+        "name": "root",
+        "type": "TreeNode"
+      },
+      {
+        "name": "low",
+        "type": "integer"
+      },
+      {
+        "name": "high",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": true,
+        "name": "Meta",
+        "slug": "facebook",
+        "timesEncountered": 62
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "Letitia_Xi",
+      "year": 2019,
+      "content": "I was confused about it for a while, hope it can help. So for the first example, it is 7+10+15=32, 5 is in the path but not counted.",
+      "voteCount": 140
+    },
+    {
+      "name": "Un_kn0wn",
+      "year": 2024,
+      "content": "breath of fresh air after two hards!",
+      "voteCount": 70
+    },
+    {
+      "name": "anwendeng",
+      "year": 2024,
+      "content": "Have a nice day.\nAlthough it is an easy problem, it's a binary search tree problem; not every is familiar with this stuff.\nTried different ways of traversals, preorder, postorder & inorder to refresh this part for data structure",
+      "voteCount": 45
+    },
+    {
+      "name": "shaniko",
+      "year": 2019,
+      "content": "Hi I m having a hard time on what the question is asking.  I wish it was more clear. Would someone please help me understand. I know how to draw the tree from the array. I just can understand the question",
+      "voteCount": 30
+    },
+    {
+      "name": "mstuebs",
+      "year": 2024,
+      "content": "Fresh testcases :-) Please upvote if helpful to you\n```\n[98237]\n98237\n98237\n[21717,21716,null,21715,null,21714,null,21713,null,21712,null,21711,null,21710,null,21709,null,21708,null,21707,null,21706,null,21705,null,21704,null,21703,null,21702,null,21701,null,21700,null,21699,null,21698]\n21710\n21718\n[99703,null,99704,null,99705,null,99706,null,99707,null,99708,null,99709,null,99710,null,99711,null,99712,null,99713,null,99714,null,99715,null,99716,null,99717,null,99718,null,99719,null,99720,null,99721,null,99722]\n99705\n99707\n[81913,81912,81915,null,null,81914,81917,null,null,81916,81918,null,null,null,81919,null,81920,null,81921,null,81922,null,81923,null,81924,null,81925,null,81926,null,81927,null,81928,null,81929,null,81930,null,81931,null,81932,null,81933,null,81934,null,81935,null,81936,null,81937,null,81938,null,81939,null,81940,null,81941,null,81942,null,81943,null,81944,null,81945,null,81946,null,81947,null,81948,null,81949,null,81950,null,81951,null,81952,null,81953,null,81954,null,81955,null,81956,null,81957,null,81958,null,81959,null,81960,null,81961,null,81962,null,81963,null,81964,null,81965,null,81966,null,81967,null,81968,null,81969,null,81970,null,81971,null,81972,null,81973,null,81974,null,81975,null,81976,null,81977,null,81978,null,81979,null,81980,null,81981,null,81982,null,81983,null,81984,null,81985,null,81986,null,81987,null,81988,null,81989,null,81990,null,81991,null,81992,null,81993,null,81994,null,81995,null,81996,null,81997,null,81998,null,81999,null,82000,null,82001,null,82002,null,82003,null,82004,null,82005,null,82006,null,82007,null,82008,null,82009,null,82010,null,82011]\n81928\n81950\n[4904,4901,4908,null,4902,4905,4912,null,4903,null,4906,4909,4916,null,null,null,4907,null,4910,4913,4920,null,null,null,4911,null,4914,4917,4924,null,null,null,4915,null,4918,4921,4928,null,null,null,4919,null,4922,4925,4932,null,null,null,4923,null,4926,4929,4936,null,null,null,4927,null,4930,4933,4939,null,null,null,4931,null,4934,4937,4942,null,null,null,4935,null,4938,4940,4945,null,null,null,null,null,4941,4943,4948,null,null,null,4944,4946,4951,null,null,null,4947,4949,4954,null,null,null,4950,4952,4957,null,null,null,4953,4955,4960,null,null,null,4956,4958,4963,null,null,null,4959,4961,4966,null,null,null,4962,4964,4969,null,null,null,4965,4967,4972,null,null,null,4968,4970,4975,null,null,null,4971,4973,4978,null,null,null,4974,4976,4981,null,null,null,4977,4979,4984,null,null,null,4980,4982,4987,null,null,null,4983,4985,4990,null,null,null,4986,4988,4993,null,null,null,4989,4991,4995,null,null,null,4992,4994,4997,null,null,null,null,4996,4999,null,null,4998,5001,null,null,5000,5003,null,null,5002,5005,null,null,5004,5007,null,null,5006,5009,null,null,5008,5011,null,null,5010,5013,null,null,5012,5015,null,null,5014,5017,null,null,5016,5019,null,null,5018,5021,null,null,5020,5023,null,null,5022,5025,null,null,5024,5027,null,null,5026,5029,null,null,5028,5031,null,null,5030,5033,null,null,5032,5035,null,null,5034,5037,null,null,5036,5039,null,null,5038,5041,null,null,5040,5043,null,null,5042,5045,null,null,5044,5047,null,null,5046,5048,null,null,null,5049,null,5050,null,5051,null,5052,null,5053,null,5054,null,5055,null,5056,null,5057,null,5058,null,5059,null,5060,null,5061,null,5062,null,5063,null,5064,null,5065,null,5066,null,5067,null,5068,null,5069,null,5070,null,5071,null,5072,null,5073,null,5074,null,5075,null,5076,null,5077,null,5078,null,5079,null,5080,null,5081,null,5082,null,5083,null,5084,null,5085,null,5086,null,5087,null,5088,null,5089,null,5090,null,5091,null,5092,null,5093,null,5094,null,5095,null,5096,null,5097,null,5098,null,5099,null,5100]\n5058\n5091\n[36637,36624,36651,null,36625,36638,36665,null,36626,null,36639,36652,36678,null,36627,null,36640,null,36653,36666,36691,null,36628,null,36641,null,36654,null,36667,36679,36704,null,36629,null,36642,null,36655,null,36668,null,36680,36692,36717,null,36630,null,36643,null,36656,null,36669,null,36681,null,36693,36705,36730,null,36631,null,36644,null,36657,null,36670,null,36682,null,36694,null,36706,36718,36742,null,36632,null,36645,null,36658,null,36671,null,36683,null,36695,null,36707,null,36719,36731,36754,null,36633,null,36646,null,36659,null,36672,null,36684,null,36696,null,36708,null,36720,null,36732,36743,36766,null,36634,null,36647,null,36660,null,36673,null,36685,null,36697,null,36709,null,36721,null,36733,null,36744,36755,36778,null,36635,null,36648,null,36661,null,36674,null,36686,null,36698,null,36710,null,36722,null,36734,null,36745,null,36756,36767,36790,null,36636,null,36649,null,36662,null,36675,null,36687,null,36699,null,36711,null,36723,null,36735,null,36746,null,36757,null,36768,36779,36802,null,null,null,36650,null,36663,null,36676,null,36688,null,36700,null,36712,null,36724,null,36736,null,36747,null,36758,null,36769,null,36780,36791,36813,null,null,null,36664,null,36677,null,36689,null,36701,null,36713,null,36725,null,36737,null,36748,null,36759,null,36770,null,36781,null,36792,36803,36824,null,null,null,null,null,36690,null,36702,null,36714,null,36726,null,36738,null,36749,null,36760,null,36771,null,36782,null,36793,null,36804,36814,36835,null,null,null,36703,null,36715,null,36727,null,36739,null,36750,null,36761,null,36772,null,36783,null,36794,null,36805,null,36815,36825,36846,null,null,null,36716,null,36728,null,36740,null,36751,null,36762,null,36773,null,36784,null,36795,null,36806,null,36816,null,36826,36836,36857,null,null,null,36729,null,36741,null,36752,null,36763,null,36774,null,36785,null,36796,null,36807,null,36817,null,36827,null,36837,36847,36868,null,null,null,null,null,36753,null,36764,null,36775,null,36786,null,36797,null,36808,null,36818,null,36828,null,36838,null,36848,36858,36878,null,null,null,36765,null,36776,null,36787,null,36798,null,36809,null,36819,null,36829,null,36839,null,36849,null,36859,36869,36888,null,null,null,36777,null,36788,null,36799,null,36810,null,36820,null,36830,null,36840,null,36850,null,36860,null,36870,36879,36898,null,null,null,36789,null,36800,null,36811,null,36821,null,36831,null,36841,null,36851,null,36861,null,36871,null,36880,36889,36908,null,null,null,36801,null,36812,null,36822,null,36832,null,36842,null,36852,null,36862,null,36872,null,36881,null,36890,36899,36918,null,null,null,null,null,36823,null,36833,null,36843,null,36853,null,36863,null,36873,null,36882,null,36891,null,36900,36909,36928,null,null,null,36834,null,36844,null,36854,null,36864,null,36874,null,36883,null,36892,null,36901,null,36910,36919,36937,null,null,null,36845,null,36855,null,36865,null,36875,null,36884,null,36893,null,36902,null,36911,null,36920,36929,36946,null,null,null,36856,null,36866,null,36876,null,36885,null,36894,null,36903,null,36912,null,36921,null,36930,36938,36955,null,null,null,36867,null,36877,null,36886,null,36895,null,36904,null,36913,null,36922,null,36931,null,36939,36947,36964,null,null,null,null,null,36887,null,36896,null,36905,null,36914,null,36923,null,36932,null,36940,null,36948,36956,36973,null,null,null,36897,null,36906,null,36915,null,36924,null,36933,null,36941,null,36949,null,36957,36965,36982,null,null,null,36907,null,36916,null,36925,null,36934,null,36942,null,36950,null,36958,null,36966,36974,36991,null,null,null,36917,null,36926,null,36935,null,36943,null,36951,null,36959,null,36967,null,36975,36983,36999,null,null,null,36927,null,36936,null,36944,null,36952,null,36960,null,36968,null,36976,null,36984,36992,37007,null,null,null,null,null,36945,null,36953,null,36961,null,36969,null,36977,null,36985,null,36993,37000,37015,null,null,null,36954,null,36962,null,36970,null,36978,null,36986,null,36994,null,37001,37008,37023,null,null,null,36963,null,36971,null,36979,null,36987,null,36995,null,37002,null,37009,37016,37031,null,null,null,36972,null,36980,null,36988,null,36996,null,37003,null,37010,null,37017,37024,37039,null,null,null,36981,null,36989,null,36997,null,37004,null,37011,null,37018,null,37025,37032,37047,null,null,null,36990,null,36998,null,37005,null,37012,null,37019,null,37026,null,37033,37040,37055,null,null,null,null,null,37006,null,37013,null,37020,null,37027,null,37034,null,37041,37048,37063,null,null,null,37014,null,37021,null,37028,null,37035,null,37042,null,37049,37056,37070,null,null,null,37022,null,37029,null,37036,null,37043,null,37050,null,37057,37064,37077,null,null,null,37030,null,37037,null,37044,null,37051,null,37058,null,37065,37071,37084,null,null,null,37038,null,37045,null,37052,null,37059,null,37066,null,37072,37078,37091,null,null,null,37046,null,37053,null,37060,null,37067,null,37073,null,37079,37085,37098,null,null,null,37054,null,37061,null,37068,null,37074,null,37080,null,37086,37092,37105,null,null,null,37062,null,37069,null,37075,null,37081,null,37087,null,37093,37099,37112,null,null,null,null,null,37076,null,37082,null,37088,null,37094,null,37100,37106,37119,null,null,null,37083,null,37089,null,37095,null,37101,null,37107,37113,37126,null,null,null,37090,null,37096,null,37102,null,37108,null,37114,37120,37132,null,null,null,37097,null,37103,null,37109,null,37115,null,37121,37127,37138,null,null,null,37104,null,37110,null,37116,null,37122,null,37128,37133,37144,null,null,null,37111,null,37117,null,37123,null,37129,null,37134,37139,37150,null,null,null,37118,null,37124,null,37130,null,37135,null,37140,37145,37156,null,null,null,37125,null,37131,null,37136,null,37141,null,37146,37151,37162,null,null,null,null,null,37137,null,37142,null,37147,null,37152,37157,37168,null,null,null,37143,null,37148,null,37153,null,37158,37163,37174,null,null,null,37149,null,37154,null,37159,null,37164,37169,37180,null,null,null,37155,null,37160,null,37165,null,37170,37175,37186,null,null,null,37161,null,37166,null,37171,null,37176,37181,37192,null,null,null,37167,null,37172,null,37177,null,37182,37187,37197,null,null,null,37173,null,37178,null,37183,null,37188,37193,37202,null,null,null,37179,null,37184,null,37189,null,37194,37198,37207,null,null,null,37185,null,37190,null,37195,null,37199,37203,37212,null,null,null,37191,null,37196,null,37200,null,37204,37208,37217,null,null,null,null,null,37201,null,37205,null,37209,37213,37222,null,null,null,37206,null,37210,null,37214,37218,37227,null,null,null,37211,null,37215,null,37219,37223,37232,null,null,null,37216,null,37220,null,37224,37228,37237,null,null,null,37221,null,37225,null,37229,37233,37242,null,null,null,37226,null,37230,null,37234,37238,37247,null,null,null,37231,null,37235,null,37239,37243,37252,null,null,null,37236,null,37240,null,37244,37248,37257,null,null,null,37241,null,37245,null,37249,37253,37261,null,null,null,37246,null,37250,null,37254,37258,37265,null,null,null,37251,null,37255,null,37259,37262,37269,null,null,null,37256,null,37260,null,37263,37266,37273,null,null,null,null,null,37264,null,37267,37270,37277,null,null,null,37268,null,37271,37274,37281,null,null,null,37272,null,37275,37278,37285,null,null,null,37276,null,37279,37282,37289,null,null,null,37280,null,37283,37286,37293,null,null,null,37284,null,37287,37290,37297,null,null,null,37288,null,37291,37294,37301,null,null,null,37292,null,37295,37298,37305,null,null,null,37296,null,37299,37302,37309,null,null,null,37300,null,37303,37306,37313,null,null,null,37304,null,37307,37310,37317,null,null,null,37308,null,37311,37314,37321,null,null,null,37312,null,37315,37318,37325,null,null,null,37316,null,37319,37322,37328,null,null,null,37320,null,37323,37326,37331,null,null,null,37324,null,37327,37329,37334,null,null,null,null,null,37330,37332,37337,null,null,null,37333,37335,37340,null,null,null,37336,37338,37343,null,null,null,37339,37341,37346,null,null,null,37342,37344,37349,null,null,null,37345,37347,37352,null,null,null,37348,37350,37355,null,null,null,37351,37353,37358,null,null,null,37354,37356,37361,null,null,null,37357,37359,37364,null,null,null,37360,37362,37367,null,null,null,37363,37365,37370,null,null,null,37366,37368,37373,null,null,null,37369,37371,37376,null,null,null,37372,37374,37379,null,null,null,37375,37377,37382,null,null,null,37378,37380,37385,null,null,null,37381,37383,37388,null,null,null,37384,37386,37391,null,null,null,37387,37389,37393,null,null,null,37390,37392,37395,null,null,null,null,37394,37397,null,null,37396,37399,null,null,37398,37401,null,null,37400,37403,null,null,37402,37405,null,null,37404,37407,null,null,37406,37409,null,null,37408,37411,null,null,37410,37413,null,null,37412,37415,null,null,37414,37417,null,null,37416,37419,null,null,37418,37421,null,null,37420,37423,null,null,37422,37425,null,null,37424,37427,null,null,37426,37429,null,null,37428,37431,null,null,37430,37433,null,null,37432,37435,null,null,37434,37437,null,null,37436,37439,null,null,37438,37441,null,null,37440,37443,null,null,37442,37445,null,null,37444,37447,null,null,37446,37449,null,null,37448,37451,null,null,37450,37453,null,null,37452,37455,null,null,37454,37457,null,null,37456,37458,null,null,null,37459,null,37460,null,37461,null,37462,null,37463,null,37464,null,37465,null,37466,null,37467,null,37468,null,37469,null,37470,null,37471,null,37472,null,37473,null,37474,null,37475,null,37476,null,37477,null,37478,null,37479,null,37480,null,37481,null,37482,null,37483,null,37484,null,37485,null,37486,null,37487,null,37488,null,37489,null,37490,null,37491,null,37492,null,37493,null,37494,null,37495,null,37496,null,37497,null,37498,null,37499,null,37500,null,37501,null,37502,null,37503,null,37504,null,37505,null,37506,null,37507,null,37508,null,37509,null,37510,null,37511,null,37512,null,37513,null,37514,null,37515,null,37516,null,37517,null,37518,null,37519,null,37520,null,37521,null,37522,null,37523]\n37518\n37522\n```\nPlease give my [github repository](https://github.com/mquintus/l33tcode-testcase-generator) a star :-)",
+      "voteCount": 17
+    },
+    {
+      "name": "LeetCode",
+      "year": 2021,
+      "content": "This problem is the Daily LeetCoding Challenge for December, Day 14.\n\nFeel free to share anything related to this problem here!\n\nYou can ask questions, discuss what you've learned from this problem, or show off how many days of streak you've made!\n\n---\n\nIf you'd like to share a detailed solution to the problem, please create a new post in the discuss section and provide\n- **Detailed Explanations**: Describe the algorithm you used to solve this problem. Include any insights you used to solve this problem.\n- **Images** that help explain the algorithm.\n- **Language and Code** you used to pass the problem.\n- **Time and Space complexity analysis**.\n\n---\n\n  **📌 Do you want to learn the problem thoroughly?**\n  Read [**⭐  LeetCode Official Solution⭐**](https://leetcode.com/problems/range-sum-of-bst/solution) to learn the 3 approaches to the problem with detailed explanations to the algorithms, codes, and complexity analysis.\n  <details>\n  <summary> Spoiler Alert! We'll explain this 1 approach in the official solution</summary>\n\n  \n**Approach 1:** Depth First Search\n\n  \n</details>\n\n\n\nIf you're new to Daily LeetCoding Challenge, [**check out this post**](https://leetcode.com/discuss/general-discussion/655704/)!\n\n\n---\n\n<br>\n\n<p align=\"center\">\n<a href=\"https://leetcode.com/subscribe/?ref=ex_dc\" target=\"_blank\">\n  <img src=\"https://assets.leetcode.com/static_assets/marketing/daily_leetcoding_banner.png\" width=\"560px\" />\n</a>\n</p>\n\n<br>",
+      "voteCount": 14
+    },
+    {
+      "name": "NGC7023",
+      "year": 2019,
+      "content": "The type of root is TreeNode, but the input parameter \\'root\\' is a list.\\nHow the BST is initialized? Why node.left and node.right can be set to the right number?\\n",
+      "voteCount": 13
+    },
+    {
+      "name": "mdasifhussain786",
+      "year": 2024,
+      "content": "Don\\'t traverse the whole tree use the definition of BST ",
+      "voteCount": 9
+    },
+    {
+      "name": "krgtm05",
+      "year": 2024,
+      "content": "leetcode showing mercy",
+      "voteCount": 7
+    },
+    {
+      "name": "maria_q",
+      "year": 2024,
+      "content": "There is [python one line solution](https://leetcode.com/problems/range-sum-of-bst/solutions/4528060/one-line-solution/) for this task!",
+      "voteCount": 5
+    }
+  ]
+}

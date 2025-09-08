@@ -1,0 +1,152 @@
+{
+  "category": "",
+  "id": "862",
+  "name": "Shortest Subarray with Sum at Least K",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/",
+  "slug": "shortest-subarray-with-sum-at-least-k",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Queue",
+    "Sliding Window",
+    "Heap (Priority Queue)",
+    "Prefix Sum",
+    "Monotonic Queue"
+  ],
+  "similar_questions": [
+    {
+      "title": "Shortest Subarray With OR at Least K II",
+      "difficulty": "Medium",
+      "slug": "shortest-subarray-with-or-at-least-k-ii"
+    },
+    {
+      "title": "Shortest Subarray With OR at Least K I",
+      "difficulty": "Easy",
+      "slug": "shortest-subarray-with-or-at-least-k-i"
+    }
+  ],
+  "questionId": "892",
+  "questionFrontendId": "862",
+  "title": "Shortest Subarray with Sum at Least K",
+  "titleSlug": "shortest-subarray-with-sum-at-least-k",
+  "content": "<p>Given an integer array <code>nums</code> and an integer <code>k</code>, return <em>the length of the shortest non-empty <strong>subarray</strong> of </em><code>nums</code><em> with a sum of at least </em><code>k</code>. If there is no such <strong>subarray</strong>, return <code>-1</code>.</p>\n\n<p>A <strong>subarray</strong> is a <strong>contiguous</strong> part of an array.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> nums = [1], k = 1\n<strong>Output:</strong> 1\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> nums = [1,2], k = 4\n<strong>Output:</strong> -1\n</pre><p><strong class=\"example\">Example 3:</strong></p>\n<pre><strong>Input:</strong> nums = [2,-1,2], k = 3\n<strong>Output:</strong> 3\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>-10<sup>5</sup> &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= k &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+  "likes": 5082,
+  "dislikes": 142,
+  "stats": {
+    "totalAccepted": "195.5K",
+    "totalSubmission": "604.7K",
+    "totalAcceptedRaw": 195543,
+    "totalSubmissionRaw": 604666,
+    "acRate": "32.3%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    },
+    {
+      "name": "Queue",
+      "slug": "queue"
+    },
+    {
+      "name": "Sliding Window",
+      "slug": "sliding-window"
+    },
+    {
+      "name": "Heap (Priority Queue)",
+      "slug": "heap-priority-queue"
+    },
+    {
+      "name": "Prefix Sum",
+      "slug": "prefix-sum"
+    },
+    {
+      "name": "Monotonic Queue",
+      "slug": "monotonic-queue"
+    }
+  ],
+  "metaData": {
+    "name": "shortestSubarray",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      },
+      {
+        "name": "k",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "kevin0123056",
+      "year": 2024,
+      "content": "sliding window is a dead end. Don\\'t try to use it. \\n ..................................................................................a died soldier\\'s note",
+      "voteCount": 438
+    },
+    {
+      "name": "NULLgorithm",
+      "year": 2024,
+      "content": "A good example of how including negative people in your life affects your mental health",
+      "voteCount": 346
+    },
+    {
+      "name": "pbalogh",
+      "year": 2020,
+      "content": "One way to look at the purpose of the queue....\\n\\nSo let\\'s say our original array of numbers was [10, -5, 200] and K was 150.\\n\\nRemember, we want a range of elements that adds up to our K of 150 but which includes the *fewest* possible elements. Yes, we could reach our 150 threshold with [10, -5, 200], but that\\'s the wrong answer, because the *shortest* subarray that is >= 150 is simply [200].\\n\\nFor the range [10, -5, 200], the sum will be above K -- it\\'ll be 205 -- so let\\'s look at our oldest element and see if we\\'re still above K without it.\\n\\nIf we stop including that oldest element, we\\'re at [-5, 200]. Still above K, but *less* so. And more worrisome, we can now see that if that negative number had a bigger effect, it could ruin our results.\\n\\nSay our array was [60, -70, 10, 200] and K was 150.\\n\\nIf we started with a range including all the numbers, we\\'d reach that 200 and our sum would be 200 -- that\\'s great! We\\'re above K!\\n\\nWe\\'d remove our oldest element and suddenly we\\'d be in trouble, because our candidate range would be [-70, 10, 200] and that -70 is bringing our sum down to 140, and that *isn\\'t* above K anymore.\\n\\nThe problem is that we\\'ll stop taking old items off the front of our range, thinking we\\'ve gone too far, when in fact the real problem is that we haven\\'t gone far enough.\\n\\nThat negative number messed us up.\\n\\nThe thing is, we shouldn\\'t have had that -70 in there in the first place. Why? Because it will *never* be a good first element. We want an efficient sequence that adds up to some positive K, so any negative number in the front will be *bad* for any sequence that starts with it.\\n\\nSo when we build our \"P\" array of \"sums of all elements before this element\", those sums can help us see something useful: numbers that can never be good first elements.\\n\\nWhat\\'s more, a negative number can undo the positive effects of any number before it.\\n\\nThis means that not only are negative numbers themselves impossible candidates for the first element in a successful answer, they can ruin numbers in front of them as well.\\n\\nLet\\'s say K is 1500.\\n\\n[1400, -500, 50, 1490]\\n\\nThat 1400 is really, really good. \\n\\nBut including that 1400 in any range means we\\'ll be bringing along that -500 after it.\\n\\nOur \"sums of all elements before this one\" tell the whole story.\\n\\n[0, 1400, 900, 950, 2440]\\n\\nOur queue would be [0, 1, 2, 3, 4]\\n\\nThat early 1400 looks great, but it doesn\\'t last. We need to get it out of our queue.\\n\\nWhy?\\n\\nBecause it\\'ll mess up our naive approach. We\\'ll say \"2440 is the sum of all elements. What if we remove the first element? Will we still hit our K?\"\\n\\nBut 2440 - 1400 is only 1040, so we\\'ll just say \"No!\" and keep our answer range of [1400, -500, 50, 1490]. Which is the wrong answer.\\n\\nThat optimistic 1400 sum is poisoned by the negative number following it. There\\'s no way to include that 1400 in our answer range without including the numbers after it, so if the numbers after it are bad, we need to get that 1400 out of our queue. \\n\\nIt\\'s like telling a hungry person they can eat a chocolate cake but only if they pour a bucket of sand on it first.\\n\\nIf someone offers you that deal, don\\'t think about the cake -- think about the cake covered with sand, and then decide if *that\\'s* what you want to eat.\\n\\nSimilarly, when looking at the \"P\" sums array of [0, 1400, 900, 950, 2440], our queue needs to exclude that early, happy 1400. It\\'s the chocolate cake that we won\\'t want to eat. We need to focus on the 900 -- the chocolate cake covered with sand. If we remove that from our lives, will we still be happy? Yes. Yes, we will.\\n\\n2440 - 900 is 1540, and that\\'s still >= K, so we can keep going.\\n\\nGet the oldest elements off our queue until we\\'re left with pointers to the sums [950, 2440].\\n\\nReferring back to our original array of numbers, [1400, -500, 50, 1490], we see that the 950 represents all the goodness we\\'d lose if we cut the 50 out of our range. Can we live without it?\\n\\nWell, 2440 - 950 < 1500, so no. No, we can\\'t live without the 50.\\n\\nOur range has to be [50, 1490].\\n\\nAnd when I say \"the 950 represents all the goodness we\\'d lose if we cut the 50 out of our range\", remember that when we\\'re trying to come up with our answer range, there are two things to consider: the sum at the end of the range (is 2440 big enough?) and all the numbers at the front of the range. \\n\\nDo we need them all? Is there wastefulness there? Can we chop off the front of our range and still meet the K threshold?\\n\\nThat\\'s where the sums come in -- they tell us what we\\'d lose if we chopped off the front of our range at a certain point.\\n\\nSo an intuition there is that small sums at the front of our P sums array are good, since they tell us we can keep chopping.\\n\\nNegative numbers in our original array of raw numbers are deceptive, because they\\'ll create falsely high numbers early on that are followed by lower numbers which are what we should focus on.\\n\\nLooking at it that way, the 1400 would be misleading because right after that is a *smaller* number. Warning someone not to get rid of that 1400 sum is ridiculous, because right after that is a smaller sum. In other words, we can ignore that 1400 because right after it is a nice little 900 that we *can* chop off.\\n\\nSo our queue should never include a sum that is followed by a lower sum, because that lower sum might be something we *can* chop off.\\n\\nIn looping through the sums array [0, 1400, 900, 950, 2440], we\\'re going to make our queue of \"how much it would cost us to chop off everything up to this point.\" And it\\'s going to exclude the ridiculous 1400, because we know for a fact you can keep going and do better.\\n\\nWe know this because our loop reached that 900 and realized that this was actually a better deal than the 1400 and so it removed the 1400 from the queue altogether.\\n\\nIt\\'s like if you saw a listing for a new TV and one link said \"Buy this for $1400\" and another link said \"Buy this for $900.\" Are you going to seriously consider that first link? Ever?\\n\\nOur queue will be [0, 2, 3, 4].\\n",
+      "voteCount": 143
+    },
+    {
+      "name": "Paviter",
+      "year": 2024,
+      "content": "If the question comes in an interview and you have not seen this question before. \\nBye bye offer",
+      "voteCount": 132
+    },
+    {
+      "name": "heijihattori",
+      "year": 2019,
+      "content": "This problem looks similar to different problems like [Subarray sum equals K](https://leetcode.com/problems/subarray-sum-equals-k/) [Maximum Size subarray sum equals K](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/). On the first look the approaches that comes to mind are two pointer approach or hashmap similar to mentioned problems but these techniques can not be applied directly to the given problem. \\n\\n## Approach 1 - Brute Force:\\n* Brute force approach is very easy to code and shouldn\\'t take long to come up with the approach. My idea was to consider each index lets say y and go backwards in the array until the cumulative sum is less than K. The position,  x, at which the sum becomes greater than K indicates the smallest window x-> y with sum exceeding K with the window ending at position y. So for each index we can compute the smallest window with length y - x. \\n* This solution works fine but given the constraints this approach will exceed the Time Limit.\\n\\n## Approach 2 - Two pointer:\\n* In this approach we maintain two pointers let\\'s say start and end. So the end pointer accumulates the sum and start pointer depreceates the sum. The idea here is to keep track of cumulative sum for the window between start and end pointers. At every step we increment the end pointer and add it to the cumulative sum as long as the sum doesn\\'t exceed K. When we encounter sum greater than K we start shrinking the window from the start pointer depreceating the sum in the window and keep shortening the window unless the sum is still greater than K. In this process we also keep track of the minimum length of window. \\n* The approach at first seems pretty fair but there is a pitfall in this approach. \\nConsider the array [84,-37,32,40,95] and K = 167. The shortest window is of size 3. But the approach gives us the answer 5. The reason is that because of the negative number in the array the sum in the window goes down.\\n* This leads to the idea that the negative number leads to the decrease in the sum. This gave another idea to only accumulate sum between the negative numbers only. But this approach has a pitfall as well.\\nConsider the array:[-28,81,-20,28,-29]  and K = 89. The approach here fails because the we can form a window of {81,-20,28}.\\nThis leads to an idea that we want to include negative numbers as long as we can know for sure that in future we have enough positive number(s) that can overcome the deficit caused because of that negative number. \\n\\n## Approach 3 - Using queue\\nThe approach is very similar to the the problem [Sliding Window Maximum](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/). Keeping prefix sum of the array will help us in approaching the solution as explained below. Some of the interesting observations concerning the solution:\\n* At each step we consider the cumulative sum until the current position. We also maintain a queue of monotonic increasing prefix sums that we have encountered iterating the array. \\n* At each position we want the earliest position on the left where the sum exceeds K. This information is available to us through queue. The important part of the algorithm is how to maintain this queue: \\nAt every position we perform following steps:\\n\\t* Check from the rear end of the queue if we have the prefix sums that are greater than what we have at current position. Pop each of these because we are sure that for any prefix sum later in the array let\\'s say pref_sum[j] if the sum exceeds for the index let\\'s say i in the queue i.e pref_sum >= pref_sum[i] + K, we are sure that the pref_sum[j] will also exceed by at least K in the current position because we only pop those elements from the queue whose prefix sum is greater than the prefix sum at current position thus ensuring this property.\\n\\t* Moreover, at each step we also keep calculating minimum length array such that the sum exceeds K. The way we do it is to start looking from the front end of the queue. As long as the difference between the prefix_sum at front and the prefix_sum at current position exceeds K we pop the front element and also calculate the length as this subarray sum exceeds K. We keep on doing it until we find a position where the difference between prefix_sum at current position and prefix_sum at the front of queue is no longer greater than K. We can be sure that we do not miss any subarray because of how the queue is always monotonically increasing. \\n",
+      "voteCount": 56
+    },
+    {
+      "name": "adityakumar8068",
+      "year": 2024,
+      "content": "TESTCASES------------------->\n```\n[-28,81,-20,28,-29]\n89\n[56,-21,56,35,-9]\n61\n[17,85,93,-45,-21]\n150\n[84,-37,32,40,95]\n167\n[48,99,37,4,-31]\n140\n[2,-1,1,-1,1,2]\n3\n[44,-25,75,-50,-38,-42,-32,-6,-40,-46,-47]\n19\n[-34,37,51,3,-12,-50,51,100,-47,99,34,14,-13,89,31,-14,-44,23,-38,6]\n151",
+      "voteCount": 55
+    },
+    {
+      "name": "wyp70627768",
+      "year": 2019,
+      "content": "I wonder why this question has to use queue instead of simply using two pointers to slide window",
+      "voteCount": 54
+    },
+    {
+      "name": "vyshnavkr",
+      "year": 2021,
+      "content": "[Must read on prefix sum pattern](https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/discuss/877884/C-A-few-steps-to-solve-a-hard-level-algorithm)\\n\\n**Update**:\\nI got stuck infinitely! I started thinking from [Sliding Window approach](https://leetcode.com/problems/minimum-size-subarray-sum/) (for positive int array), then a little bit of Breaking Cumulative Sum approach as in [Kadane](https://leetcode.com/problems/maximum-subarray/) and [Gas Station](https://leetcode.com/problems/gas-station/) (introducing negatives). But soon understood these approaches are incorrect to this problem as test case 64 failed (nums = [84,-37,32,40,95], k = 167). The reason being I can\\'t slide left pointer more, even if required for the best answer since negatives are present either in front/end/middle of current subarray, once the subarray sum is less than k. Though I did some tweaks like computing the logic for reveresed nums as well, later test cases showed me negatives could come up in anywhere inside the subarray failing the logic entirely. \\nLesson learned: When stuck, I should have thought of another approach like \\'storing cumulative sums in some DS\\' so any current cumulative sum can leverage previous cumulative sums and find a way to Deque from test cases.\\n\\n**Original**:\\nFirst time I took 6 hours to solve this from scratch with Deque. After a week when I completely forgot the approach I solved it in 30 min from scratch. The patterns immediately clicked me: Cumulative sum pattern for subarray problems and Next Greater Element pattern since I have been practising these patterns recently. This time I spent more time on building the test cases (cumulative sums, not original input array) mentioned at the bottom. Lesson learned: Build your test cases  beautifully and they will show you the solution. (My approach was exactly similar to Lee\\'s code mentioned in the link below). Happy to realize this is a LC Hard!  \\n\\n**For BST/Treemap/O(nlogn) approach** : https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/discuss/999004/Evolve-from-brute-force-to-optimal\\n\\n**For Deque/O(n) approach**\\nhttps://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/discuss/143726/C%2B%2BJavaPython-O(N)-Using-Deque\\n\\nhttps://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/discuss/751834/Intuition-for-Deque-questions-on-WHY-to-use-and-WHAT-to-store-in-deque-with-FULL-explanation\\n\\nhttps://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/discuss/204290/Monotonic-Queue-Summary\\n https://github.com/xiaoylu/leetcode_category/tree/master/MonotonicQueue\\n\\n**Test cases** that helped me solve it. Note: these are cumulative sum or prefix sum elements of some random input array and not the original input elements themselves. You may build any input array based on these cumulative sums.\\n* 5, 6, 7, 8 and k = 3 (To pair 5 and 8. And store the future pair makers 6 and 7)\\n* 5, 6, 7, 11 and k = 3 (To pair 7 and 11. This is why 6 and 7 were stored as future pair makers)\\n* 5, 6, 7, 4, 8 and k = 3 (To break (5,8) pair with 4. Also to pop out 6 and 7 along with 5 that could have been future pair makers. Coz 4 provides a better range and will form the shorter length henceforth)\\n* 5, 6, 7, 6, 11 and k = 3 (To break (7,11) pair with new 6 and remove 7 and previous 6. Coz new 6 provides better range and will form shorter length henceforth.)",
+      "voteCount": 40
+    },
+    {
+      "name": "johnfredricks",
+      "year": 2023,
+      "content": "Hard as shit",
+      "voteCount": 37
+    },
+    {
+      "name": "rosemelon",
+      "year": 2019,
+      "content": "I tried to solve this questiom with a normal sliding window technique but it only passed a little more than half of the test cases. \\n\\nI tried to figure out how to get it to work, but couldn\\'t quite get it quite right. \\n\\nHow did you guys come up with a monotonic queue sliding window solution vs a normal sliding window? Trying to gauge how you guys thought of your answer.",
+      "voteCount": 18
+    }
+  ]
+}

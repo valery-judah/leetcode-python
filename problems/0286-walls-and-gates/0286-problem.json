@@ -1,0 +1,171 @@
+{
+  "category": "",
+  "id": "286",
+  "name": "Walls and Gates",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/walls-and-gates/",
+  "slug": "walls-and-gates",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Surrounded Regions",
+      "difficulty": "Medium",
+      "slug": "surrounded-regions"
+    },
+    {
+      "title": "Number of Islands",
+      "difficulty": "Medium",
+      "slug": "number-of-islands"
+    },
+    {
+      "title": "Shortest Distance from All Buildings",
+      "difficulty": "Hard",
+      "slug": "shortest-distance-from-all-buildings"
+    },
+    {
+      "title": "Battleships in a Board",
+      "difficulty": "Medium",
+      "slug": "battleships-in-a-board"
+    },
+    {
+      "title": "Robot Room Cleaner",
+      "difficulty": "Hard",
+      "slug": "robot-room-cleaner"
+    },
+    {
+      "title": "Rotting Oranges",
+      "difficulty": "Medium",
+      "slug": "rotting-oranges"
+    },
+    {
+      "title": "Count the Number of Houses at a Certain Distance I",
+      "difficulty": "Medium",
+      "slug": "count-the-number-of-houses-at-a-certain-distance-i"
+    },
+    {
+      "title": "Count the Number of Houses at a Certain Distance II",
+      "difficulty": "Hard",
+      "slug": "count-the-number-of-houses-at-a-certain-distance-ii"
+    }
+  ],
+  "questionId": "286",
+  "questionFrontendId": "286",
+  "title": "Walls and Gates",
+  "titleSlug": "walls-and-gates",
+  "content": "<p>You are given an <code>m x n</code> grid <code>rooms</code>&nbsp;initialized with these three possible values.</p>\n\n<ul>\n\t<li><code>-1</code>&nbsp;A wall or an obstacle.</li>\n\t<li><code>0</code> A gate.</li>\n\t<li><code>INF</code> Infinity means an empty room. We use the value <code>2<sup>31</sup> - 1 = 2147483647</code> to represent <code>INF</code> as you may assume that the distance to a gate is less than <code>2147483647</code>.</li>\n</ul>\n\n<p>Fill each empty room with the distance to <em>its nearest gate</em>. If it is impossible to reach a gate, it should be filled with <code>INF</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/01/03/grid.jpg\" style=\"width: 500px; height: 223px;\" />\n<pre>\n<strong>Input:</strong> rooms = [[2147483647,-1,0,2147483647],[2147483647,2147483647,2147483647,-1],[2147483647,-1,2147483647,-1],[0,-1,2147483647,2147483647]]\n<strong>Output:</strong> [[3,-1,0,1],[2,2,1,-1],[1,-1,2,-1],[0,-1,3,4]]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> rooms = [[-1]]\n<strong>Output:</strong> [[-1]]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == rooms.length</code></li>\n\t<li><code>n == rooms[i].length</code></li>\n\t<li><code>1 &lt;= m, n &lt;= 250</code></li>\n\t<li><code>rooms[i][j]</code> is <code>-1</code>, <code>0</code>, or <code>2<sup>31</sup> - 1</code>.</li>\n</ul>\n",
+  "likes": 3281,
+  "dislikes": 71,
+  "stats": {
+    "totalAccepted": "395.7K",
+    "totalSubmission": "626K",
+    "totalAcceptedRaw": 395719,
+    "totalSubmissionRaw": 626016,
+    "acRate": "63.2%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Breadth-First Search",
+      "slug": "breadth-first-search"
+    },
+    {
+      "name": "Matrix",
+      "slug": "matrix"
+    }
+  ],
+  "metaData": {
+    "name": "wallsAndGates",
+    "params": [
+      {
+        "name": "rooms",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "void"
+    },
+    "output": {
+      "paramindex": 0
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "DoorDash",
+        "slug": "doordash",
+        "timesEncountered": 40
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "EugenYushin",
+      "year": 2022,
+      "content": "This problem lacks the description of possible directions to move. For example, is the diagonal distance is the same as vertical/horizontal? It\\'s turned out that you can move in 4 directions: up/down/left/right.",
+      "voteCount": 39
+    },
+    {
+      "name": "wzhwawhxm",
+      "year": 2015,
+      "content": "I think the time complexity of BFS and DFS are almost the same at the worst case, if we take care of the base case in recursion, we return as long as the current step is smaller than the cumulative one. Time(BFS) = Time(DFS) + 4mn\\n\\nI am confused about the time complexity here, what is the TC of DFS here, is it O((mn)^2)? If this is the worst case than what about the TC of BFS? Could someone help?...",
+      "voteCount": 9
+    },
+    {
+      "name": "santana_",
+      "year": 2024,
+      "content": "This is nearly the same problem as rotting oranges.",
+      "voteCount": 8
+    },
+    {
+      "name": "batchgott",
+      "year": 2022,
+      "content": "For anyone wondering: You can move **up**, **down**, **left** and **right**",
+      "voteCount": 8
+    },
+    {
+      "name": "crackcoding2020",
+      "year": 2019,
+      "content": "When we are doing a BFS from a gate to an empty room, what if there is another gate on the way. Shouldn\\'t we just pass through the gate or are we assuming we wont encounter another gate when searching for the empty room. How does this solution takes care of that scenario?",
+      "voteCount": 8
+    },
+    {
+      "name": "David-Hackro",
+      "year": 2024,
+      "content": "TLE test\\n\\n`[[0,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647],[2147483647,0,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647],[2147483647,2147483647,0,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647],[2147483647,2147483647,2147483647,0,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647],[2147483647,2147483647,2147483647,2147483647,0,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647],[2147483647,2147483647,2147483647,2147483647,2147483647,0,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647],[2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,0,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647],[2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,0,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647],[2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,0,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647],[2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,0,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647],[2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,0,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647],[2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,0,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647],[2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,0,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647],[2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,0,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647],[2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,0,2147483647,2147483647,2147483647,2147483647,2147483647],[2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,0,2147483647,2147483647,2147483647,2147483647],[2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,0,2147483647,2147483647,2147483647],[2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,0,2147483647,2147483647],[2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,0,2147483647],[2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,0]]`",
+      "voteCount": 6
+    },
+    {
+      "name": "datfob",
+      "year": 2023,
+      "content": "HELP!! \\n\\nI got the solution but i\\'m a bit confused. If we run BFS from the first Gate, and updates all the empty rooms with shortest distance to the first Gate. When we run BFS on the second Gate, it won\\'t update the empty rooms anymore since it\\'s already updated. But what if there exists such room that is closer to the second gate than the first one? Then it will get the distance to the first gate but never the second gate?!!",
+      "voteCount": 4
+    },
+    {
+      "name": "edwincmj",
+      "year": 2024,
+      "content": "Will multisource BFS be faster than regular BFS for each gate?",
+      "voteCount": 3
+    },
+    {
+      "name": "825800401",
+      "year": 2015,
+      "content": "I was wondering why dfs is about 2x faster than bfs? Aren't they all O(n)?",
+      "voteCount": 3
+    },
+    {
+      "name": "NandishPatel",
+      "year": 2025,
+      "content": "Big Brain",
+      "voteCount": 1
+    }
+  ]
+}

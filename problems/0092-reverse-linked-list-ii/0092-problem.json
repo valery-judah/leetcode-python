@@ -1,0 +1,123 @@
+{
+  "category": "",
+  "id": "92",
+  "name": "Reverse Linked List II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/reverse-linked-list-ii/",
+  "slug": "reverse-linked-list-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Linked List"
+  ],
+  "similar_questions": [
+    {
+      "title": "Reverse Linked List",
+      "difficulty": "Easy",
+      "slug": "reverse-linked-list"
+    }
+  ],
+  "questionId": "92",
+  "questionFrontendId": "92",
+  "title": "Reverse Linked List II",
+  "titleSlug": "reverse-linked-list-ii",
+  "content": "<p>Given the <code>head</code> of a singly linked list and two integers <code>left</code> and <code>right</code> where <code>left &lt;= right</code>, reverse the nodes of the list from position <code>left</code> to position <code>right</code>, and return <em>the reversed list</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/02/19/rev2ex2.jpg\" style=\"width: 542px; height: 222px;\" />\n<pre>\n<strong>Input:</strong> head = [1,2,3,4,5], left = 2, right = 4\n<strong>Output:</strong> [1,4,3,2,5]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> head = [5], left = 1, right = 1\n<strong>Output:</strong> [5]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of nodes in the list is <code>n</code>.</li>\n\t<li><code>1 &lt;= n &lt;= 500</code></li>\n\t<li><code>-500 &lt;= Node.val &lt;= 500</code></li>\n\t<li><code>1 &lt;= left &lt;= right &lt;= n</code></li>\n</ul>\n\n<p>&nbsp;</p>\n<strong>Follow up:</strong> Could you do it in one pass?",
+  "likes": 12506,
+  "dislikes": 742,
+  "stats": {
+    "totalAccepted": "1.2M",
+    "totalSubmission": "2.3M",
+    "totalAcceptedRaw": 1158495,
+    "totalSubmissionRaw": 2313396,
+    "acRate": "50.1%"
+  },
+  "topicTags": [
+    {
+      "name": "Linked List",
+      "slug": "linked-list"
+    }
+  ],
+  "metaData": {
+    "name": "reverseBetween",
+    "params": [
+      {
+        "name": "head",
+        "type": "ListNode",
+        "dealloc": false
+      },
+      {
+        "name": "left",
+        "type": "integer"
+      },
+      {
+        "name": "right",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "ListNode",
+      "dealloc": true
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "zeroand1only",
+      "year": 2022,
+      "content": "What the hell? so the Left and Right are 1-based POSITIONs, not node.val?  who the hell uses 1-based positions.",
+      "voteCount": 428
+    },
+    {
+      "name": "ALS_Venky",
+      "year": 2023,
+      "content": "So, this is a Linked list week.\nBy the way, `Happy Janmastami :)`",
+      "voteCount": 312
+    },
+    {
+      "name": "sameer89",
+      "year": 2023,
+      "content": "Wasted so much time coding up the solution assuming that left and right are node values. Who would\\'ve guessed they are indices (with 1 based indexing btw). And to confuse you even more they have come up with the most ambiguous first test case.",
+      "voteCount": 238
+    },
+    {
+      "name": "pqow16",
+      "year": 2023,
+      "content": "This problem should explicitly state that it is 1-indexed",
+      "voteCount": 148
+    },
+    {
+      "name": "DmitryPopov1988",
+      "year": 2024,
+      "content": "I spent maybe 3 hours to solve this problem. Sometimes I think that I am stupid (:",
+      "voteCount": 61
+    },
+    {
+      "name": "rajharshyadav2",
+      "year": 2022,
+      "content": "What you can do here is:\nstep 1: create dummy node and put address of head int it next;\nstep2: find node  at place (left-1 and right);\nstep3:  reverse letft node to right node;\nstep4: put address of node at left->next in right->next && store head of reverse node(i.e right) address in next of node at (left-1) position;\nstep 5: if left is node at head then send dummy->next; else send head;",
+      "voteCount": 51
+    },
+    {
+      "name": "MushyBear",
+      "year": 2023,
+      "content": "Who writes these discriptions and examples? The left and right are indices, not node.vals... wouldve been great to know before wasting my time.",
+      "voteCount": 42
+    },
+    {
+      "name": "zhizhipaint",
+      "year": 2014,
+      "content": "My submission failed for this test case, but unless I misunderstood the question, I think mine is actually the expected output?\\n\\nSubmission Result: Wrong Answer\\n\\nInput:\\t{1,2,3,4}, 1, 4\\nOutput:\\t{4,2,3,1}\\nExpected:\\t{4,3,2,1}",
+      "voteCount": 24
+    },
+    {
+      "name": "uzia35",
+      "year": 2023,
+      "content": "I think the first example is confusing people, it should probably have different numbers, left and right being numbers would make this question much harder if you had to account for duplicates with no constraints specifying so.",
+      "voteCount": 22
+    },
+    {
+      "name": "leetcancode",
+      "year": 2023,
+      "content": "Few more test cases:\\n[1,2,3,4,5]\\n2\\n4\\n[5]\\n1\\n1\\n[1,2,3,4,5]\\n2\\n3\\n[1,2,3,4,5]\\n2\\n2\\n[1,2,3,4,5]\\n1\\n4\\n[1,2,3,4,5]\\n1\\n5\\n[1,2,3,4,5]\\n5\\n5\\n[1,2]\\n1\\n2",
+      "voteCount": 21
+    }
+  ]
+}

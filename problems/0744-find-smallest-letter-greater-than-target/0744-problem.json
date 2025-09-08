@@ -1,0 +1,122 @@
+{
+  "category": "",
+  "id": "744",
+  "name": "Find Smallest Letter Greater Than Target",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/find-smallest-letter-greater-than-target/",
+  "slug": "find-smallest-letter-greater-than-target",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Elements With Strictly Smaller and Greater Elements ",
+      "difficulty": "Easy",
+      "slug": "count-elements-with-strictly-smaller-and-greater-elements"
+    }
+  ],
+  "questionId": "745",
+  "questionFrontendId": "744",
+  "title": "Find Smallest Letter Greater Than Target",
+  "titleSlug": "find-smallest-letter-greater-than-target",
+  "content": "<p>You are given an array of characters <code>letters</code> that is sorted in <strong>non-decreasing order</strong>, and a character <code>target</code>. There are <strong>at least two different</strong> characters in <code>letters</code>.</p>\n\n<p>Return <em>the smallest character in </em><code>letters</code><em> that is lexicographically greater than </em><code>target</code>. If such a character does not exist, return the first character in <code>letters</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> letters = [&quot;c&quot;,&quot;f&quot;,&quot;j&quot;], target = &quot;a&quot;\n<strong>Output:</strong> &quot;c&quot;\n<strong>Explanation:</strong> The smallest character that is lexicographically greater than &#39;a&#39; in letters is &#39;c&#39;.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> letters = [&quot;c&quot;,&quot;f&quot;,&quot;j&quot;], target = &quot;c&quot;\n<strong>Output:</strong> &quot;f&quot;\n<strong>Explanation:</strong> The smallest character that is lexicographically greater than &#39;c&#39; in letters is &#39;f&#39;.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> letters = [&quot;x&quot;,&quot;x&quot;,&quot;y&quot;,&quot;y&quot;], target = &quot;z&quot;\n<strong>Output:</strong> &quot;x&quot;\n<strong>Explanation:</strong> There are no characters in letters that is lexicographically greater than &#39;z&#39; so we return letters[0].\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= letters.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>letters[i]</code> is a lowercase English letter.</li>\n\t<li><code>letters</code> is sorted in <strong>non-decreasing</strong> order.</li>\n\t<li><code>letters</code> contains at least two different characters.</li>\n\t<li><code>target</code> is a lowercase English letter.</li>\n</ul>\n",
+  "likes": 4743,
+  "dislikes": 2216,
+  "stats": {
+    "totalAccepted": "632.1K",
+    "totalSubmission": "1.2M",
+    "totalAcceptedRaw": 632090,
+    "totalSubmissionRaw": 1159091,
+    "acRate": "54.5%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    }
+  ],
+  "metaData": {
+    "name": "nextGreatestLetter",
+    "params": [
+      {
+        "name": "letters",
+        "type": "character[]"
+      },
+      {
+        "name": "target",
+        "type": "character"
+      }
+    ],
+    "return": {
+      "type": "character"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "onebigsalmon",
+      "year": 2018,
+      "content": "\"find the smallest element in the list that is larger than the given target. Letters also wrap around.\"\\n\\nI read this 5 times and still didn\\'t understand. If my input is:\\n\\n[\"a\",\"z\"]\\ntarget: \"y\"\\n\\nThen \\'a\\' is returned due to the wrap around.\\n\\nBut if the input is:\\n\\n[\"c\",\"f\"]\\ntarget: \"d\"\\n\\nThen how come \"c\" is not returned? \"c\" is bigger than \"d\" with wrap around and it is smaller than \"f\" (which is supposed to be the right answer. How does this make sense?",
+      "voteCount": 160
+    },
+    {
+      "name": "ilya-chumakov",
+      "year": 2023,
+      "content": "It should be highlighted that solving the problem with $$O(log(n))$$ time complexity is better for educational purposes. Way too easy with bruteforce.",
+      "voteCount": 57
+    },
+    {
+      "name": "SigmaCoder106",
+      "year": 2023,
+      "content": "The calm before the storm.",
+      "voteCount": 49
+    },
+    {
+      "name": "arghyadas",
+      "year": 2023,
+      "content": "My linear search takes less time than my binary search \\uD83E\\uDD23\\n\\nLeetcode\\u2615",
+      "voteCount": 35
+    },
+    {
+      "name": "swati_dubey",
+      "year": 2023,
+      "content": "Easiest question I have ever solved.",
+      "voteCount": 25
+    },
+    {
+      "name": "Avi0320",
+      "year": 2023,
+      "content": "Soldiers be ready for Dp and graph..",
+      "voteCount": 16
+    },
+    {
+      "name": "harsh_jani",
+      "year": 2024,
+      "content": "Add this test cases:\\n\\n[\"e\",\"e\",\"e\",\"e\",\"e\",\"e\",\"n\",\"n\",\"n\",\"n\"]\\n\"e\"\\n[\"c\",\"f\",\"j\"]\\n\"g\"\\n[\"c\",\"f\",\"j\"]\\n\"d\"\\n[\"c\",\"f\",\"j\", \"k\", \"m\", \"p\"]\\n\"l\"\\n[\"a\",\"b\",\"b\",\"b\",\"c\",\"c\",\"d\"]\\n\"b\"\\n\\ni think this might help\\n",
+      "voteCount": 13
+    },
+    {
+      "name": "anwendeng",
+      "year": 2023,
+      "content": " In C++ upper_bound can find the least upper bound for sorted data!\nbisect_right has the same function in Python.",
+      "voteCount": 8
+    },
+    {
+      "name": "vijay__bhaskar",
+      "year": 2023,
+      "content": "The Question could have been framed better .\n\n### Just ask to return a  Ist letter    lexicographically greater than target. if  doesn't exist just return Ist letter.\n\nWhat they have made mess out of it . It took me 10 minutes to understand the question and 2 minutes to solve.",
+      "voteCount": 7
+    },
+    {
+      "name": "sk1122",
+      "year": 2020,
+      "content": "This Question Just tells to find Upper Bound of target character using binary search. \\nYou can use upper_bound method in c++ or use binary search to get upper bound\\nBut dont forget to check if the returned index is greater than size of string if it is then return the first char or use %size",
+      "voteCount": 6
+    }
+  ]
+}

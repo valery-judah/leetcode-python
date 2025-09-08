@@ -1,0 +1,155 @@
+{
+  "category": "",
+  "id": "430",
+  "name": "Flatten a Multilevel Doubly Linked List",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/",
+  "slug": "flatten-a-multilevel-doubly-linked-list",
+  "isPaidOnly": false,
+  "tags": [
+    "Linked List",
+    "Depth-First Search",
+    "Doubly-Linked List"
+  ],
+  "similar_questions": [
+    {
+      "title": "Flatten Binary Tree to Linked List",
+      "difficulty": "Medium",
+      "slug": "flatten-binary-tree-to-linked-list"
+    },
+    {
+      "title": "Correct a Binary Tree",
+      "difficulty": "Medium",
+      "slug": "correct-a-binary-tree"
+    }
+  ],
+  "questionId": "766",
+  "questionFrontendId": "430",
+  "title": "Flatten a Multilevel Doubly Linked List",
+  "titleSlug": "flatten-a-multilevel-doubly-linked-list",
+  "content": "<p>You are given a doubly linked list, which contains nodes that have a next pointer, a previous pointer, and an additional <strong>child pointer</strong>. This child pointer may or may not point to a separate doubly linked list, also containing these special nodes. These child lists may have one or more children of their own, and so on, to produce a <strong>multilevel data structure</strong> as shown in the example below.</p>\n\n<p>Given the <code>head</code> of the first level of the list, <strong>flatten</strong> the list so that all the nodes appear in a single-level, doubly linked list. Let <code>curr</code> be a node with a child list. The nodes in the child list should appear <strong>after</strong> <code>curr</code> and <strong>before</strong> <code>curr.next</code> in the flattened list.</p>\n\n<p>Return <em>the </em><code>head</code><em> of the flattened list. The nodes in the list must have <strong>all</strong> of their child pointers set to </em><code>null</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/11/09/flatten11.jpg\" style=\"width: 700px; height: 339px;\" />\n<pre>\n<strong>Input:</strong> head = [1,2,3,4,5,6,null,null,null,7,8,9,10,null,null,11,12]\n<strong>Output:</strong> [1,2,3,7,8,11,12,9,10,4,5,6]\n<strong>Explanation:</strong> The multilevel linked list in the input is shown.\nAfter flattening the multilevel linked list it becomes:\n<img src=\"https://assets.leetcode.com/uploads/2021/11/09/flatten12.jpg\" style=\"width: 1000px; height: 69px;\" />\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/11/09/flatten2.1jpg\" style=\"width: 200px; height: 200px;\" />\n<pre>\n<strong>Input:</strong> head = [1,2,null,3]\n<strong>Output:</strong> [1,3,2]\n<strong>Explanation:</strong> The multilevel linked list in the input is shown.\nAfter flattening the multilevel linked list it becomes:\n<img src=\"https://assets.leetcode.com/uploads/2021/11/24/list.jpg\" style=\"width: 300px; height: 87px;\" />\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> head = []\n<strong>Output:</strong> []\n<strong>Explanation:</strong> There could be empty list in the input.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of Nodes will not exceed <code>1000</code>.</li>\n\t<li><code>1 &lt;= Node.val &lt;= 10<sup>5</sup></code></li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>How the multilevel linked list is represented in test cases:</strong></p>\n\n<p>We use the multilevel linked list from <strong>Example 1</strong> above:</p>\n\n<pre>\n 1---2---3---4---5---6--NULL\n         |\n         7---8---9---10--NULL\n             |\n             11--12--NULL</pre>\n\n<p>The serialization of each level is as follows:</p>\n\n<pre>\n[1,2,3,4,5,6,null]\n[7,8,9,10,null]\n[11,12,null]\n</pre>\n\n<p>To serialize all levels together, we will add nulls in each level to signify no node connects to the upper node of the previous level. The serialization becomes:</p>\n\n<pre>\n[1,    2,    3, 4, 5, 6, null]\n             |\n[null, null, 7,    8, 9, 10, null]\n                   |\n[            null, 11, 12, null]\n</pre>\n\n<p>Merging the serialization of each level and removing trailing nulls we obtain:</p>\n\n<pre>\n[1,2,3,4,5,6,null,null,null,7,8,9,10,null,null,11,12]\n</pre>\n",
+  "likes": 5317,
+  "dislikes": 343,
+  "stats": {
+    "totalAccepted": "393.2K",
+    "totalSubmission": "637.1K",
+    "totalAcceptedRaw": 393194,
+    "totalSubmissionRaw": 637080,
+    "acRate": "61.7%"
+  },
+  "topicTags": [
+    {
+      "name": "Linked List",
+      "slug": "linked-list"
+    },
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Doubly-Linked List",
+      "slug": "doubly-linked-list"
+    }
+  ],
+  "metaData": {
+    "name": "flatten",
+    "params": [
+      {
+        "name": "head",
+        "type": "ListNode"
+      }
+    ],
+    "return": {
+      "type": "ListNode"
+    },
+    "languages": [
+      "cpp",
+      "java",
+      "python",
+      "csharp",
+      "javascript",
+      "python3",
+      "kotlin",
+      "ruby",
+      "scala",
+      "golang",
+      "swift",
+      "php",
+      "typescript"
+    ],
+    "manual": true,
+    "typescriptCustomType": "class _Node {\n    val: number\n    prev: _Node | null\n    next: _Node | null\n    child: _Node | null\n    \n    constructor(val?: number, prev? : _Node, next? : _Node, child? : _Node) {\n        this.val = (val===undefined ? 0 : val);\n        this.prev = (prev===undefined ? null : prev);\n        this.next = (next===undefined ? null : next);\n        this.child = (child===undefined ? null : child);\n    }\n}\n"
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Bloomberg",
+        "slug": "bloomberg",
+        "timesEncountered": 14
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "limitless_f",
+      "year": 2022,
+      "content": "seeing the graph in the question i felt like bunch of \"faces\" staring at me ....",
+      "voteCount": 180
+    },
+    {
+      "name": "LeetCode",
+      "year": 2021,
+      "content": "This problem is the Daily LeetCoding Challenge for October, Day 31.\n\nFeel free to share anything related to this problem here!\n\nYou can ask questions, discuss what you've learned from this problem, or show off how many days of streak you've made!\n\n---\n\nIf you'd like to share a detailed solution to the problem, please create a new post in the discuss section and provide\n- **Detailed Explanations**: Describe the algorithm you used to solve this problem. Include any insights you used to solve this problem.\n- **Images** that help explain the algorithm.\n- **Language and Code** you used to pass the problem.\n- **Time and Space complexity analysis**.\n\n---\n\n  **📌 Do you want to learn the problem thoroughly?**\n  Read [**⭐  LeetCode Official Solution⭐**](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/solution) to learn the 3 approaches to the problem with detailed explanations to the algorithms, codes, and complexity analysis.\n  <details>\n  <summary> Spoiler Alert! We'll explain these 2 approaches in the official solution</summary>\n\n  \n**Approach 1:** DFS by Recursion\n\n  \n**Approach 2:** DFS by Iteration\n\n  \n</details>\n\n\n\nIf you're new to Daily LeetCoding Challenge, [**check out this post**](https://leetcode.com/discuss/general-discussion/655704/)!\n\n\n---\n\n<br>\n\n<p align=\"center\">\n<a href=\"https://leetcode.com/subscribe/?ref=ex_dc\" target=\"_blank\">\n  <img src=\"https://assets.leetcode.com/static_assets/marketing/daily_leetcoding_banner.png\" width=\"560px\" />\n</a>\n</p>\n\n<br>",
+      "voteCount": 29
+    },
+    {
+      "name": "akuppili45",
+      "year": 2019,
+      "content": "I don\\'t understand how the system reads the input. How do I create my own testcase for this problem?",
+      "voteCount": 28
+    },
+    {
+      "name": "berkeoral",
+      "year": 2021,
+      "content": "Why do we assume child always points to head of the child linked list?",
+      "voteCount": 22
+    },
+    {
+      "name": "rhtdm",
+      "year": 2018,
+      "content": "I see most of the solutions here are flattening the lists breadth first and that seems to be expected solution, but the example shared in the question expects flattening the list Depth first! Someone needs to correct the example or clarify the question itself.\\n",
+      "voteCount": 14
+    },
+    {
+      "name": "deepaksahusbp",
+      "year": 2022,
+      "content": "My answer is coming correct but it is showing \\n\\nThe linked list [1,2,3,7,8,11,12,9,10,4,5,6] is not a valid doubly linked list.\\n\\nWhat does it signify?",
+      "voteCount": 10
+    },
+    {
+      "name": "shivaninp",
+      "year": 2025,
+      "content": "if life hits hard.  trust me bro solve this prblm, your life becomes easy lol",
+      "voteCount": 8
+    },
+    {
+      "name": "debdeepsanyal",
+      "year": 2023,
+      "content": "take a note of the pointers. you\\'ll probably encounter a \"[     (some input)    ] is not a valid doubly linked list\", it merely signifies that you have missed some prev pointers, or have not assigned some next pointers, or havent set the child pointers to null. ",
+      "voteCount": 7
+    },
+    {
+      "name": "transer",
+      "year": 2023,
+      "content": "The problem\\'s graph makes me feel bad.",
+      "voteCount": 6
+    },
+    {
+      "name": "M1dn1ght",
+      "year": 2024,
+      "content": "beautiful relaxing problem ! ",
+      "voteCount": 4
+    }
+  ]
+}

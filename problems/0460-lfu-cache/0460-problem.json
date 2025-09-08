@@ -1,0 +1,188 @@
+{
+  "category": "",
+  "id": "460",
+  "name": "LFU Cache",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/lfu-cache/",
+  "slug": "lfu-cache",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "Linked List",
+    "Design",
+    "Doubly-Linked List"
+  ],
+  "similar_questions": [
+    {
+      "title": "LRU Cache",
+      "difficulty": "Medium",
+      "slug": "lru-cache"
+    },
+    {
+      "title": "Design In-Memory File System",
+      "difficulty": "Hard",
+      "slug": "design-in-memory-file-system"
+    }
+  ],
+  "questionId": "460",
+  "questionFrontendId": "460",
+  "title": "LFU Cache",
+  "titleSlug": "lfu-cache",
+  "content": "<p>Design and implement a data structure for a <a href=\"https://en.wikipedia.org/wiki/Least_frequently_used\" target=\"_blank\">Least Frequently Used (LFU)</a> cache.</p>\n\n<p>Implement the <code>LFUCache</code> class:</p>\n\n<ul>\n\t<li><code>LFUCache(int capacity)</code> Initializes the object with the <code>capacity</code> of the data structure.</li>\n\t<li><code>int get(int key)</code> Gets the value of the <code>key</code> if the <code>key</code> exists in the cache. Otherwise, returns <code>-1</code>.</li>\n\t<li><code>void put(int key, int value)</code> Update the value of the <code>key</code> if present, or inserts the <code>key</code> if not already present. When the cache reaches its <code>capacity</code>, it should invalidate and remove the <strong>least frequently used</strong> key before inserting a new item. For this problem, when there is a <strong>tie</strong> (i.e., two or more keys with the same frequency), the <strong>least recently used</strong> <code>key</code> would be invalidated.</li>\n</ul>\n\n<p>To determine the least frequently used key, a <strong>use counter</strong> is maintained for each key in the cache. The key with the smallest <strong>use counter</strong> is the least frequently used key.</p>\n\n<p>When a key is first inserted into the cache, its <strong>use counter</strong> is set to <code>1</code> (due to the <code>put</code> operation). The <strong>use counter</strong> for a key in the cache is incremented either a <code>get</code> or <code>put</code> operation is called on it.</p>\n\n<p>The functions&nbsp;<code data-stringify-type=\"code\">get</code>&nbsp;and&nbsp;<code data-stringify-type=\"code\">put</code>&nbsp;must each run in <code>O(1)</code> average time complexity.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input</strong>\n[&quot;LFUCache&quot;, &quot;put&quot;, &quot;put&quot;, &quot;get&quot;, &quot;put&quot;, &quot;get&quot;, &quot;get&quot;, &quot;put&quot;, &quot;get&quot;, &quot;get&quot;, &quot;get&quot;]\n[[2], [1, 1], [2, 2], [1], [3, 3], [2], [3], [4, 4], [1], [3], [4]]\n<strong>Output</strong>\n[null, null, null, 1, null, -1, 3, null, -1, 3, 4]\n\n<strong>Explanation</strong>\n// cnt(x) = the use counter for key x\n// cache=[] will show the last used order for tiebreakers (leftmost element is  most recent)\nLFUCache lfu = new LFUCache(2);\nlfu.put(1, 1);   // cache=[1,_], cnt(1)=1\nlfu.put(2, 2);   // cache=[2,1], cnt(2)=1, cnt(1)=1\nlfu.get(1);      // return 1\n                 // cache=[1,2], cnt(2)=1, cnt(1)=2\nlfu.put(3, 3);   // 2 is the LFU key because cnt(2)=1 is the smallest, invalidate 2.\n&nbsp;                // cache=[3,1], cnt(3)=1, cnt(1)=2\nlfu.get(2);      // return -1 (not found)\nlfu.get(3);      // return 3\n                 // cache=[3,1], cnt(3)=2, cnt(1)=2\nlfu.put(4, 4);   // Both 1 and 3 have the same cnt, but 1 is LRU, invalidate 1.\n                 // cache=[4,3], cnt(4)=1, cnt(3)=2\nlfu.get(1);      // return -1 (not found)\nlfu.get(3);      // return 3\n                 // cache=[3,4], cnt(4)=1, cnt(3)=3\nlfu.get(4);      // return 4\n                 // cache=[4,3], cnt(4)=2, cnt(3)=3\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= capacity&nbsp;&lt;= 10<sup>4</sup></code></li>\n\t<li><code>0 &lt;= key &lt;= 10<sup>5</sup></code></li>\n\t<li><code>0 &lt;= value &lt;= 10<sup>9</sup></code></li>\n\t<li>At most <code>2 * 10<sup>5</sup></code>&nbsp;calls will be made to <code>get</code> and <code>put</code>.</li>\n</ul>\n\n<p>&nbsp;</p>\n<span style=\"display: none;\">&nbsp;</span>",
+  "likes": 6123,
+  "dislikes": 342,
+  "stats": {
+    "totalAccepted": "328.2K",
+    "totalSubmission": "692.8K",
+    "totalAcceptedRaw": 328235,
+    "totalSubmissionRaw": 692820,
+    "acRate": "47.4%"
+  },
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Linked List",
+      "slug": "linked-list"
+    },
+    {
+      "name": "Design",
+      "slug": "design"
+    },
+    {
+      "name": "Doubly-Linked List",
+      "slug": "doubly-linked-list"
+    }
+  ],
+  "metaData": {
+    "classname": "LFUCache",
+    "maxbytesperline": 200000,
+    "constructor": {
+      "params": [
+        {
+          "type": "integer",
+          "name": "capacity"
+        }
+      ]
+    },
+    "methods": [
+      {
+        "name": "get",
+        "params": [
+          {
+            "type": "integer",
+            "name": "key"
+          }
+        ],
+        "return": {
+          "type": "integer"
+        }
+      },
+      {
+        "name": "put",
+        "params": [
+          {
+            "type": "integer",
+            "name": "key"
+          },
+          {
+            "type": "integer",
+            "name": "value"
+          }
+        ],
+        "return": {
+          "type": "void"
+        }
+      }
+    ],
+    "systemdesign": true,
+    "params": [
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      },
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "list<String>",
+      "dealloc": true
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": true,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 18
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "steveo",
+      "year": 2019,
+      "content": "This is a great question for testing people\\'s understanding of algorithms and data structures, but it\\'s way too long for a 45mins interview. Who the heck can come up with the solution without seeing it before and code it out in 45 mins.",
+      "voteCount": 533
+    },
+    {
+      "name": "FrodeSandberg",
+      "year": 2023,
+      "content": "Leetcode trying to kill everyones january badge at the finish line with 3 hards in a row. ",
+      "voteCount": 138
+    },
+    {
+      "name": "aanand07",
+      "year": 2023,
+      "content": "This is a complete user story, I would take 2 story points at least to complete it.",
+      "voteCount": 84
+    },
+    {
+      "name": "manhalfgod",
+      "year": 2022,
+      "content": "If you also feel struggling to understand the ideas / intuition of LFU cache challenge,\\ntry solving these 2 problems first:\\n\\n1. [Maximum frequency stack](https://leetcode.com/problems/maximum-frequency-stack/)\\n2. [LRU cache](https://leetcode.com/problems/lru-cache/)\\n\\nLearn how to track max (min in LFU challenge case) from the 1st question.\\nLearn the concept of ordered / sorted dictionary keys from the 2nd question.\\n\\nFind your own favorite solutions for each question.\\n\\n**Pro tip**: sort by most recent and learn from newer solution to take advantage of newer programming language features. Most voted solutions can be outdated / convoluted quickly.\\n\\nFor example, if you are using Python, since Python 3.7 a regular dictionary is guaranteed to keep keys insertion order; so you do not need to rely on OrderedDict.",
+      "voteCount": 83
+    },
+    {
+      "name": "Jaltair",
+      "year": 2020,
+      "content": "Great way to test if someone lies during the interview ))) \\nCandidate (C), Interviewer (I) at Amazon. \\nI: asks for LPs for part of the interview, uses the remaining 20-30 minutes to ask C to implement LFU\\nC: is able to come up and code optimal solution in 20 minutes\\nI: have you seen the problem before? \\nC: no\\nI (silently) puts a red flag next to Earn Trust/Integrity ))))",
+      "voteCount": 79
+    },
+    {
+      "name": "frmz",
+      "year": 2024,
+      "content": "This should not be marked as `Hard` but rather as `Nightmare`",
+      "voteCount": 41
+    },
+    {
+      "name": "Tribhuwan-Joshi",
+      "year": 2024,
+      "content": "Using a stopwatch, It took total 7 hours to implement the logic that I understand from the article. \\n\\nI am slow but I made progress and I appreciate it.\\n",
+      "voteCount": 23
+    },
+    {
+      "name": "pratikpalashikar",
+      "year": 2016,
+      "content": "Test case is wrong the expected and output  does not match.\\n[\"LFUCache\",\"set\",\"set\",\"get\",\"get\",\"get\",\"set\",\"set\",\"get\",\"get\",\"get\",\"get\"]\\n[[3],[2,2],[1,1],[2],[1],[2],[3,3],[4,4],[3],[2],[1],[4]]\\nMy answer: [null,null,null,2,1,2,null,null,3,2,-1,4]\\n\\nand the out from the leetcode [null,null,null,2,1,2,null,null,-1,2,1,4]",
+      "voteCount": 22
+    },
+    {
+      "name": "demaw",
+      "year": 2023,
+      "content": "after finally solving this question for  around a painstaking half hour full of troubleshooting and little adjustments, I read the problem description again.\\nI missed the fact that all operations must be in O(1) time. I used a priority queue solution and both operations run in O(logn) time.\\nNow I have to redo the entire problem...",
+      "voteCount": 11
+    },
+    {
+      "name": "faroukamr",
+      "year": 2023,
+      "content": "Before solving this problem, you need to solve (895. Maximum Frequency Stack) and (146. LRU Cache)",
+      "voteCount": 11
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "category": "",
+  "id": "747",
+  "name": "Largest Number At Least Twice of Others",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/largest-number-at-least-twice-of-others/",
+  "slug": "largest-number-at-least-twice-of-others",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Keep Multiplying Found Values by Two",
+      "difficulty": "Easy",
+      "slug": "keep-multiplying-found-values-by-two"
+    },
+    {
+      "title": "Largest Number After Digit Swaps by Parity",
+      "difficulty": "Easy",
+      "slug": "largest-number-after-digit-swaps-by-parity"
+    }
+  ],
+  "questionId": "748",
+  "questionFrontendId": "747",
+  "title": "Largest Number At Least Twice of Others",
+  "titleSlug": "largest-number-at-least-twice-of-others",
+  "content": "<p>You are given an integer array <code>nums</code> where the largest integer is <strong>unique</strong>.</p>\n\n<p>Determine whether the largest element in the array is <strong>at least twice</strong> as much as every other number in the array. If it is, return <em>the <strong>index</strong> of the largest element, or return </em><code>-1</code><em> otherwise</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [3,6,1,0]\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> 6 is the largest integer.\nFor every other number in the array x, 6 is at least twice as big as x.\nThe index of value 6 is 1, so we return 1.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2,3,4]\n<strong>Output:</strong> -1\n<strong>Explanation:</strong> 4 is less than twice the value of 3, so we return -1.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= nums.length &lt;= 50</code></li>\n\t<li><code>0 &lt;= nums[i] &lt;= 100</code></li>\n\t<li>The largest element in <code>nums</code> is unique.</li>\n</ul>\n",
+  "likes": 1305,
+  "dislikes": 935,
+  "stats": {
+    "totalAccepted": "307.8K",
+    "totalSubmission": "601.1K",
+    "totalAcceptedRaw": 307766,
+    "totalSubmissionRaw": 601109,
+    "acRate": "51.2%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Sorting",
+      "slug": "sorting"
+    }
+  ],
+  "metaData": {
+    "name": "dominantIndex",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "BhanuChaddha",
+      "year": 2018,
+      "content": "3 is not greater than equal to 2* 2=4.",
+      "voteCount": 20
+    },
+    {
+      "name": "M1dn1ght",
+      "year": 2023,
+      "content": "Why all the hate for this easy relaxing problem?",
+      "voteCount": 12
+    },
+    {
+      "name": "ttaylor27",
+      "year": 2024,
+      "content": "We can do this in one pass with `O(1)` space...\\n\\nThink about what we need to keep track of. Really we only need to know the largest and second largest numbers. Then we can multiply the second largest by two and see if that is less than or equal to the largest. If it is, return the position of the largest, if it is not, return -1;",
+      "voteCount": 7
+    },
+    {
+      "name": "deleted_user",
+      "year": 2022,
+      "content": "why all these dislikes? ",
+      "voteCount": 7
+    },
+    {
+      "name": "efficientgoose",
+      "year": 2022,
+      "content": "WHATS THE REASON FOR DISLIKES?",
+      "voteCount": 4
+    },
+    {
+      "name": "Kirnata",
+      "year": 2022,
+      "content": "I do not quite understand why it is said about uniqueness...",
+      "voteCount": 3
+    },
+    {
+      "name": "anandsant24",
+      "year": 2019,
+      "content": "how come [1,1] returns 0 not -1, Largest number is 1 and it is not at least twice others.",
+      "voteCount": 3
+    },
+    {
+      "name": "KellyBundy",
+      "year": 2017,
+      "content": "@contributors @awice\\n\\n- Title says \"Greater Than\" but problem is really about \"greater than or equal to\".\\n- Note says `nums` will have a length in the range `[1, 50]` but in reality all test cases have at least length **4**. That doesn't catch solutions that fail for length 1. Is nobody ensuring that all limits are tested?",
+      "voteCount": 3
+    },
+    {
+      "name": "krestovik",
+      "year": 2023,
+      "content": "I think it\\'s a good task, and I even liked it. The task itself is not a problem. The problem is that the task is a step or two easier than the usual easy-class tasks.\\n\\nI think Leetcode really needs such tasks, so as not to discourage complete beginners, making them cry over perverted trees or dynamic programming. However, they should, in a good way, be allocated to a separate class of tasks: pre-easy or something like that.",
+      "voteCount": 2
+    }
+  ]
+}

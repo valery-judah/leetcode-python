@@ -1,0 +1,160 @@
+{
+  "category": "",
+  "id": "49",
+  "name": "Group Anagrams",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/group-anagrams/",
+  "slug": "group-anagrams",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Valid Anagram",
+      "difficulty": "Easy",
+      "slug": "valid-anagram"
+    },
+    {
+      "title": "Group Shifted Strings",
+      "difficulty": "Medium",
+      "slug": "group-shifted-strings"
+    },
+    {
+      "title": "Find Resultant Array After Removing Anagrams",
+      "difficulty": "Easy",
+      "slug": "find-resultant-array-after-removing-anagrams"
+    },
+    {
+      "title": "Count Anagrams",
+      "difficulty": "Hard",
+      "slug": "count-anagrams"
+    }
+  ],
+  "questionId": "49",
+  "questionFrontendId": "49",
+  "title": "Group Anagrams",
+  "titleSlug": "group-anagrams",
+  "content": "<p>Given an array of strings <code>strs</code>, group the <span data-keyword=\"anagram\">anagrams</span> together. You can return the answer in <strong>any order</strong>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">strs = [&quot;eat&quot;,&quot;tea&quot;,&quot;tan&quot;,&quot;ate&quot;,&quot;nat&quot;,&quot;bat&quot;]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[[&quot;bat&quot;],[&quot;nat&quot;,&quot;tan&quot;],[&quot;ate&quot;,&quot;eat&quot;,&quot;tea&quot;]]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>There is no string in strs that can be rearranged to form <code>&quot;bat&quot;</code>.</li>\n\t<li>The strings <code>&quot;nat&quot;</code> and <code>&quot;tan&quot;</code> are anagrams as they can be rearranged to form each other.</li>\n\t<li>The strings <code>&quot;ate&quot;</code>, <code>&quot;eat&quot;</code>, and <code>&quot;tea&quot;</code> are anagrams as they can be rearranged to form each other.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">strs = [&quot;&quot;]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[[&quot;&quot;]]</span></p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">strs = [&quot;a&quot;]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[[&quot;a&quot;]]</span></p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= strs.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>0 &lt;= strs[i].length &lt;= 100</code></li>\n\t<li><code>strs[i]</code> consists of lowercase English letters.</li>\n</ul>\n",
+  "likes": 21038,
+  "dislikes": 718,
+  "stats": {
+    "totalAccepted": "4.1M",
+    "totalSubmission": "5.7M",
+    "totalAcceptedRaw": 4075218,
+    "totalSubmissionRaw": 5707952,
+    "acRate": "71.4%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Sorting",
+      "slug": "sorting"
+    }
+  ],
+  "metaData": {
+    "name": "groupAnagrams",
+    "params": [
+      {
+        "name": "strs",
+        "type": "string[]"
+      }
+    ],
+    "return": {
+      "type": "list<list<string>>",
+      "dealloc": true
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": true,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 44
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Microsoft",
+        "slug": "microsoft",
+        "timesEncountered": 20
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "JensHandsomeUwe",
+      "year": 2024,
+      "content": "Just wanna give props to myself. This was my first medium :)",
+      "voteCount": 549
+    },
+    {
+      "name": "exemplles",
+      "year": 2023,
+      "content": "`\\nAn Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.`\\nInput:\\n`strs = [\"\",\"\"]`\\nExpected:\\n`[[\"\",\"\"]]`\\n\\nWhere are the letters or words?",
+      "voteCount": 200
+    },
+    {
+      "name": "SawanKushwah",
+      "year": 2023,
+      "content": "Approach \\ntake out string \\nchar array \\nsort it \\nconvert to string \\nuse this string as a key \\nthen push all the related element to key ",
+      "voteCount": 180
+    },
+    {
+      "name": "dineshd7",
+      "year": 2024,
+      "content": "Finally can solve this after revisiting 5 times in 6 months.\\nThis journey is going incredibly well. \\uD83D\\uDE80",
+      "voteCount": 149
+    },
+    {
+      "name": "freeze_francis",
+      "year": 2021,
+      "content": "This question was part of interview rounds of Amazon.\\nFor folks preparing for FAANG interview please read my interview experience.\\nhttps://freezefrancis.medium.com/amazon-sde-interview-experience-on-campus-e8444ee791b",
+      "voteCount": 138
+    },
+    {
+      "name": "htzfun",
+      "year": 2013,
+      "content": "What does it mean \"return all groups\"? But the return result is vector<string>? How can we return all groups? I mean, for example, we have such vector [\"dog\",\"cat\",\"god\",\"tac\"]. What should I return?",
+      "voteCount": 108
+    },
+    {
+      "name": "MrLebovsky",
+      "year": 2023,
+      "content": "It says: \" You can return the answer in any order\", but console result is:\\n\\nOutput\\n[[\"ddddddddddg\",\"dgggggggggg\"]]\\nExpected\\n[[\"dgggggggggg\"],[\"ddddddddddg\"]]\\n\\nWhy?",
+      "voteCount": 45
+    },
+    {
+      "name": "anwendeng",
+      "year": 2024,
+      "content": "Hash table must be used, because this is a strings' question.\nOne tip:  strings are anagrams <=> same string after sorting. No need for frequency count unless the string is super long.\nHave a nice day!",
+      "voteCount": 40
+    },
+    {
+      "name": "mahdy",
+      "year": 2015,
+      "content": "Why the output is list and not a list of list. What If there are multiple groups of anagrams?",
+      "voteCount": 37
+    },
+    {
+      "name": "enoch1974",
+      "year": 2024,
+      "content": "help me by voting",
+      "voteCount": 23
+    }
+  ]
+}

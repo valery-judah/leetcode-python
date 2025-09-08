@@ -1,0 +1,128 @@
+{
+  "category": "",
+  "id": "172",
+  "name": "Factorial Trailing Zeroes",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/factorial-trailing-zeroes/",
+  "slug": "factorial-trailing-zeroes",
+  "isPaidOnly": false,
+  "tags": [
+    "Math"
+  ],
+  "similar_questions": [
+    {
+      "title": "Number of Digit One",
+      "difficulty": "Hard",
+      "slug": "number-of-digit-one"
+    },
+    {
+      "title": "Preimage Size of Factorial Zeroes Function",
+      "difficulty": "Hard",
+      "slug": "preimage-size-of-factorial-zeroes-function"
+    },
+    {
+      "title": "Abbreviating the Product of a Range",
+      "difficulty": "Hard",
+      "slug": "abbreviating-the-product-of-a-range"
+    },
+    {
+      "title": "Maximum Trailing Zeros in a Cornered Path",
+      "difficulty": "Medium",
+      "slug": "maximum-trailing-zeros-in-a-cornered-path"
+    }
+  ],
+  "questionId": "172",
+  "questionFrontendId": "172",
+  "title": "Factorial Trailing Zeroes",
+  "titleSlug": "factorial-trailing-zeroes",
+  "content": "<p>Given an integer <code>n</code>, return <em>the number of trailing zeroes in </em><code>n!</code>.</p>\n\n<p>Note that <code>n! = n * (n - 1) * (n - 2) * ... * 3 * 2 * 1</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 3\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> 3! = 6, no trailing zero.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 5\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> 5! = 120, one trailing zero.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 0\n<strong>Output:</strong> 0\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= n &lt;= 10<sup>4</sup></code></li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Follow up:</strong> Could you write a solution that works in logarithmic time complexity?</p>\n",
+  "likes": 3419,
+  "dislikes": 1981,
+  "stats": {
+    "totalAccepted": "587.9K",
+    "totalSubmission": "1.3M",
+    "totalAcceptedRaw": 587902,
+    "totalSubmissionRaw": 1300592,
+    "acRate": "45.2%"
+  },
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "metaData": {
+    "name": "trailingZeroes",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "nextsde",
+      "year": 2020,
+      "content": "How can we tell from a number, how many trailing zeroes are at the end?\\n\\n10 = 10\\n1200 = 12 x 10 x 10\\n145000 = 145 x 10 x 10 x10\\n\\nFrom above example, we can clearly see number of 10\\'s in a number gives us number of trailing zeros in that number.\\n\\nSo, in our first brute force solution we can calcualte the n! and check how many 10\\'s are in there. That will give us the solution.\\n\\nBut, since n! will become very very large to calculate as n becomes bigger. So, this is not a feasible solution.\\n\\nWhat can we do?\\n\\nLet\\'s build some more intuition to see if we can find out the final hint we need.\\n\\nWhat is the property of 10?\\n\\nWe can get 10 from 2 & 5 (2x5). Can you get 10 in any other way? No.\\n\\nSo, let\\'s break it down further.\\n\\n10 = 2 x 5 [1(2),1(5)]\\n100 = 2 x 2 x 5 x 5 [2(2),2(5)]\\n120 = 2 x 2 x 2 x 3 x 5 [3(2),1(3),1(5)]\\n1200 = 2 x 2 x 2 x 2 x 3 x 5 x 5 [4(2),1(3),2(5)] //2 appears 4 times, 3 appears 1 time, 5 appears 2 times}\\n50 = 2 x 5 x 5 [1(2),2(5)]\\n\\nFrom above you will see, among 5 and 2 whichever appears lowest amount is the count of our trailing zeros.\\nBut for n!, we know we will have more 2\\'s than 5.\\nLet\\'s see an example:\\n5! = 1 x 2 x 3  x 4(2x2) x 5 = [3(2),1(5)]\\n\\nTry writing down couple more example and you will understand. So, in 25! how many 5 will be there?\\n\\n....x5....x10....x15....x20....x25 = x5...x2x5....x3x5....x4x5....x5x5 = 6 , Because 25 itself has 2 5\\'s in it.\\n\\nOk, up till this point we were still analyzing n!.\\n\\nBut we know if n>=5 it will have 5 as a factor.\\n\\nSo, based on our intuition so far.\\n\\nIf n=5 ... there will be 1(5)\\nIf n=10 ... there will be 2(5)\\nIf n=15 ... there will be 3(5)\\nIf n=25 ... there will be 5(5) + 1 (5)\\n\\nNow all we need to do is keep dividing n by 5 and add the result to our existing result until n get to 0.\\n\\nIf you are still having trouble getting the code, see this post https://nextswe.com/leetcode-172-factorial-trailing-zeroes/ . Code is provided at the end of explanation.\\nThanks",
+      "voteCount": 174
+    },
+    {
+      "name": "alex86",
+      "year": 2023,
+      "content": "Factorial of 0 is 1. ",
+      "voteCount": 46
+    },
+    {
+      "name": "heisenbergknocks",
+      "year": 2021,
+      "content": "\\t\\n\\tThis seems long but just read on.\\n\\n\\tThe number of 0s in n! is the number of 10s that can be generated by numbers\\n\\tfrom 1 to n!. 10 is a product of 2 and 5, so we just need to check\\n\\thow many 2x5 are present in n!\\n\\n\\tIf n = 5, then n! = 1x2x3x4x5. There is one 2 and 5 pair present\\n\\tin 5! which can make one 10. So numbers of 0s in 5! is one.\\n\\n\\tIf n = 10, then n! = 1x2x3x4x5x6x7x8x9x10 => this would have two zeros one from the\\n\\t2x5 and one from another 2x5 in 10.\\n\\n\\tIf n = 15, then n! = 1x2x3x4x5x6x7x8x9x10x11x12x13x14x15 => this would have three\\n\\tzeros one from the 2x5 and one from another 2x5 in 10 and one from a 5 in 15 which\\n\\twould give us a 0 by multiplying with any 2 from any even num from 1 to 15.\\n\\n\\tSince there are a lot more 2s than 5s in any n!, we just need to find the\\n\\tnumber of 5s in n! and that will be the answer. Eg.\\n\\n\\t5! -> one 0 as there is only one 5 from 1 to 5.\\n\\t10! -> two 0s as there are two 5s from 1 to 10.\\n\\t15! -> three 0s as there are three 5s from 1 to 10.\\n\\t20! -> four 0s as there are four 5s from 1 to 10.\\n\\n\\tHow to quickly count number of 5s in n!? Use n/5.\\n\\tAssume n = 15, using n / 5 we get 3, this tells us that there are at least\\n\\tthree multiples of 5 present in numbers from 1 to 15 namely\\n\\t5x1 = 5, 5x2 = 10 and 5x3 = 15.\\n\\tSo, we can get the number of 5s in n! and hence the number of 0s in n! using n / 5.\\n\\n\\tBut there is still one issue for numbers like 25, 125,\\n\\t625, which contain more than one 5 as their factor.\\n\\n\\tEg. for 25!, the number of 0s is = number of 0s in 20! + number of 0s which can be generated from 21 to 25\\n\\t= number of 0s in 20! + two 0s as there are two 5s present in 25 which would\\n\\tmultiple with any two 2s and make a 100 and give us 2 zeros.\\n\\t= so 25! has six 0s.\\n\\n\\tBut, going by the original formula we will calculate number of 0s in 25! as\\n\\t25/5 which is 5. So five 0s.\\n\\tNow, what we need to do is just divide this result of 5 again by 5\\n\\twhich gives us a 1 and add it to previous five 0s\\n\\n\\tIntuition: Keep dividing by 5 and adding the result to number of 0s.",
+      "voteCount": 33
+    },
+    {
+      "name": "naveen12124139",
+      "year": 2020,
+      "content": "//just return this\\nreturn n/3125+n/625+n/125+n/25+n/5;",
+      "voteCount": 29
+    },
+    {
+      "name": "johngroves",
+      "year": 2017,
+      "content": "` return n//5 + self.trailingZeroes(n//5) if n else 0`\\nHelpful background here:\\nhttp://www.purplemath.com/modules/factzero.htm",
+      "voteCount": 26
+    },
+    {
+      "name": "BradV",
+      "year": 2024,
+      "content": "It\\'s easy if you know the formula. But if they expect you to come up with this on the spot, they don\\'t want to hire you!",
+      "voteCount": 22
+    },
+    {
+      "name": "ArghaM",
+      "year": 2023,
+      "content": "I really suggest you to check this site first, learn the concept, coding can be done easily: https://www.purplemath.com/modules/factzero.htm",
+      "voteCount": 16
+    },
+    {
+      "name": "nangao",
+      "year": 2014,
+      "content": "I Can't understand this problem",
+      "voteCount": 16
+    },
+    {
+      "name": "21bcs069",
+      "year": 2023,
+      "content": "this problem is  related to  Legendre\\'s formula . to get it go through wikipedia.",
+      "voteCount": 11
+    },
+    {
+      "name": "Aishwarya_Omar",
+      "year": 2023,
+      "content": "This should be easy, not medium  :)",
+      "voteCount": 11
+    }
+  ]
+}

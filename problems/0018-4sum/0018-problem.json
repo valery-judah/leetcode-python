@@ -1,0 +1,154 @@
+{
+  "category": "",
+  "id": "18",
+  "name": "4Sum",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/4sum/",
+  "slug": "4sum",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "slug": "two-sum"
+    },
+    {
+      "title": "3Sum",
+      "difficulty": "Medium",
+      "slug": "3sum"
+    },
+    {
+      "title": "4Sum II",
+      "difficulty": "Medium",
+      "slug": "4sum-ii"
+    },
+    {
+      "title": "Count Special Quadruplets",
+      "difficulty": "Easy",
+      "slug": "count-special-quadruplets"
+    }
+  ],
+  "questionId": "18",
+  "questionFrontendId": "18",
+  "title": "4Sum",
+  "titleSlug": "4sum",
+  "content": "<p>Given an array <code>nums</code> of <code>n</code> integers, return <em>an array of all the <strong>unique</strong> quadruplets</em> <code>[nums[a], nums[b], nums[c], nums[d]]</code> such that:</p>\n\n<ul>\n\t<li><code>0 &lt;= a, b, c, d&nbsp;&lt; n</code></li>\n\t<li><code>a</code>, <code>b</code>, <code>c</code>, and <code>d</code> are <strong>distinct</strong>.</li>\n\t<li><code>nums[a] + nums[b] + nums[c] + nums[d] == target</code></li>\n</ul>\n\n<p>You may return the answer in <strong>any order</strong>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,0,-1,0,-2,2], target = 0\n<strong>Output:</strong> [[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [2,2,2,2,2], target = 8\n<strong>Output:</strong> [[2,2,2,2]]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 200</code></li>\n\t<li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>\n\t<li><code>-10<sup>9</sup> &lt;= target &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+  "likes": 12362,
+  "dislikes": 1482,
+  "stats": {
+    "totalAccepted": "1.4M",
+    "totalSubmission": "3.6M",
+    "totalAcceptedRaw": 1409820,
+    "totalSubmissionRaw": 3631159,
+    "acRate": "38.8%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    },
+    {
+      "name": "Sorting",
+      "slug": "sorting"
+    }
+  ],
+  "metaData": {
+    "name": "fourSum",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      },
+      {
+        "name": "target",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "list<list<integer>>",
+      "colsize": 4,
+      "dealloc": true
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Google",
+        "slug": "google",
+        "timesEncountered": 22
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "efficientgoose",
+      "year": 2024,
+      "content": "Passing all test cases of this problem is more satisfying than having an actual foursome",
+      "voteCount": 1011
+    },
+    {
+      "name": "Swapnil510",
+      "year": 2020,
+      "content": "This problem should be in Hard category",
+      "voteCount": 410
+    },
+    {
+      "name": "StefanPochmann",
+      "year": 2015,
+      "content": "Some people say their solutions are O(n<sup>2</sup> log n) or even O(n<sup>2</sup>), but...\\n\\nConsider cases where nums is the n numbers from 1 to n.  \\n=> There are \\u0398(n<sup>4</sup>) different quadruplets (nC4, to be exact, so about n<sup>4</sup> / 24).  \\n=> There are \\u0398(n) possible sums (from 1+2+3+4 to (n-3)+(n-2)+(n-1)+n, so about 4n sums).  \\n=> At least one sum must have \\u03a9(n<sup>3</sup>) different quadruplets.  \\n=> For that sum, we must generate those \\u03a9(n<sup>3</sup>) quadruplets.  \\n=> **For these cases we have to do \\u03a9(n<sup>3</sup>) work.**\\n=> **O(n<sup>2</sup> log n) or even O(n<sup>2</sup>) are impossible.**\\n\\n(I have seen some previous talk about this, but only in a few answers/comments and I found it lacking. So I thought there should be a question directly stating and proving it.)",
+      "voteCount": 388
+    },
+    {
+      "name": "Hamza_the_codar_786",
+      "year": 2024,
+      "content": "I am worried for 5Sum problem to be announced soon...",
+      "voteCount": 249
+    },
+    {
+      "name": "qiren96",
+      "year": 2023,
+      "content": "who give this test case?\\n\\n[1000000000,1000000000,1000000000,1000000000]\\n\\n-294967296\\n\\ngive you 1000000000 dislikes and -294967296 likes :(",
+      "voteCount": 170
+    },
+    {
+      "name": "uiopuiop",
+      "year": 2019,
+      "content": "I have solved many questions now and this question\\'s hardness is similar to other question marked as Hard.\\n \\n Can some moderator please review this and check if it should be marked as Hard?",
+      "voteCount": 153
+    },
+    {
+      "name": "thejavamentor",
+      "year": 2022,
+      "content": "For test nums= [2,2,2,2,2] with target = 8.\\nI think this would have nC4 = 5 different answers, as indexes are different for each answer. \\n\\nOutput in my case is:\\n[\\n[2,2,2,2], indexes are like [0,1,2,3]\\n[2,2,2,2], indexes are like [0,1,2,4]\\n[2,2,2,2], indexes are like [0,1,3,4]\\n[2,2,2,2], indexes are like [0,2,3,4]\\n[2,2,2,2], indexes are like [1,2,3,4]\\n]\\n\\nDo we need to consider unique values along with unique indexes?\\n\\n",
+      "voteCount": 80
+    },
+    {
+      "name": "tlorance",
+      "year": 2021,
+      "content": "The specifications of this problem require that \"a, b, c, and d are distinct\", which most people would interpret to mean \"unique\", \"not equal in value\"; however, their test case accepts results with duplicate values for one or more of the four values.",
+      "voteCount": 70
+    },
+    {
+      "name": "sandip93291",
+      "year": 2022,
+      "content": "I get Wrong Answer for [1000000000,1000000000,1000000000,1000000000] -294967296\\n\\nthis is my solution link\\nhttps://leetcode.com/submissions/detail/723679975/",
+      "voteCount": 57
+    },
+    {
+      "name": "alok5",
+      "year": 2019,
+      "content": "This should be a hard question to generalize to k sum",
+      "voteCount": 55
+    }
+  ]
+}

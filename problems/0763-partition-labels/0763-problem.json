@@ -1,0 +1,133 @@
+{
+  "category": "",
+  "id": "763",
+  "name": "Partition Labels",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/partition-labels/",
+  "slug": "partition-labels",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "Two Pointers",
+    "String",
+    "Greedy"
+  ],
+  "similar_questions": [
+    {
+      "title": "Merge Intervals",
+      "difficulty": "Medium",
+      "slug": "merge-intervals"
+    },
+    {
+      "title": "Optimal Partition of String",
+      "difficulty": "Medium",
+      "slug": "optimal-partition-of-string"
+    }
+  ],
+  "questionId": "768",
+  "questionFrontendId": "763",
+  "title": "Partition Labels",
+  "titleSlug": "partition-labels",
+  "content": "<p>You are given a string <code>s</code>. We want to partition the string into as many parts as possible so that each letter appears in at most one part. For example, the string <code>&quot;ababcc&quot;</code> can be partitioned into <code>[&quot;abab&quot;, &quot;cc&quot;]</code>, but partitions such as <code>[&quot;aba&quot;, &quot;bcc&quot;]</code> or <code>[&quot;ab&quot;, &quot;ab&quot;, &quot;cc&quot;]</code> are invalid.</p>\n\n<p>Note that the partition is done so that after concatenating all the parts in order, the resultant string should be <code>s</code>.</p>\n\n<p>Return <em>a list of integers representing the size of these parts</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;ababcbacadefegdehijhklij&quot;\n<strong>Output:</strong> [9,7,8]\n<strong>Explanation:</strong>\nThe partition is &quot;ababcbaca&quot;, &quot;defegde&quot;, &quot;hijhklij&quot;.\nThis is a partition so that each letter appears in at most one part.\nA partition like &quot;ababcbacadefegde&quot;, &quot;hijhklij&quot; is incorrect, because it splits s into less parts.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;eccbbbbdec&quot;\n<strong>Output:</strong> [10]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 500</code></li>\n\t<li><code>s</code> consists of lowercase English letters.</li>\n</ul>\n",
+  "likes": 11065,
+  "dislikes": 435,
+  "stats": {
+    "totalAccepted": "742.4K",
+    "totalSubmission": "909.4K",
+    "totalAcceptedRaw": 742382,
+    "totalSubmissionRaw": 909387,
+    "acRate": "81.6%"
+  },
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "metaData": {
+    "name": "partitionLabels",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "list<integer>"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "RowidaNurElDin",
+      "year": 2023,
+      "content": "Problem Explanation:\\n\\nGiven a string, divide it into partitions where:\\n- characters at each partition DOES NOT appear in any other partition\\nthen return the length of each one.\\n\\nGood Luck!",
+      "voteCount": 209
+    },
+    {
+      "name": "fadi17",
+      "year": 2020,
+      "content": "Can someone please explain me this question :(",
+      "voteCount": 134
+    },
+    {
+      "name": "Lee_fan_Ak_The_Boss",
+      "year": 2023,
+      "content": "what the hell is this Question...",
+      "voteCount": 130
+    },
+    {
+      "name": "deepak_cobra_kai",
+      "year": 2024,
+      "content": "If you have solved Merge Interval problem, you can easily solve this too with the same logic almost.",
+      "voteCount": 76
+    },
+    {
+      "name": "cOde_Ranvir25",
+      "year": 2023,
+      "content": "Here is the Approach:-\\n\\n\\nCreate a map that stores the last index of each character in the string.\\n\\nInitialize two variables, \"start\" and \"end\", to keep track of the current partition. Set them both to 0 initially.\\n\\nIterate through the string. For each character:\\n\\nUpdate the value of \"end\" to be the maximum of its current value and the last index of the character in the map.\\n\\nIf the current index is equal to \"end\", we have found a partition. Add its length (which is \"end\" - \"start\" + 1) to the list of partition sizes, and update \"start\" to be the next index.\\n\\nReturn the list of partition sizes.",
+      "voteCount": 75
+    },
+    {
+      "name": "SirCryptiic",
+      "year": 2024,
+      "content": "It\\'s funny.  I intuitively know how to solve this but am having trouble coding it.",
+      "voteCount": 50
+    },
+    {
+      "name": "YusenPeng",
+      "year": 2023,
+      "content": "Hints: 1. two pointers;\\n           2. lastIndexOf() method is useful.",
+      "voteCount": 47
+    },
+    {
+      "name": "efficientgoose",
+      "year": 2023,
+      "content": "This question is really good. It forces you to think out of the box.",
+      "voteCount": 35
+    },
+    {
+      "name": "ahad____",
+      "year": 2025,
+      "content": "Eid mubarak brothers \\uD83C\\uDF19\\n",
+      "voteCount": 22
+    },
+    {
+      "name": "farhan786",
+      "year": 2020,
+      "content": "Can someone explain the problem ???? I don\\'t understand it!",
+      "voteCount": 18
+    }
+  ]
+}

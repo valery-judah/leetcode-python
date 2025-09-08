@@ -1,0 +1,148 @@
+{
+  "category": "",
+  "id": "1406",
+  "name": "Stone Game III",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/stone-game-iii/",
+  "slug": "stone-game-iii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Game Theory"
+  ],
+  "similar_questions": [
+    {
+      "title": "Stone Game V",
+      "difficulty": "Hard",
+      "slug": "stone-game-v"
+    },
+    {
+      "title": "Stone Game VI",
+      "difficulty": "Medium",
+      "slug": "stone-game-vi"
+    },
+    {
+      "title": "Stone Game VII",
+      "difficulty": "Medium",
+      "slug": "stone-game-vii"
+    },
+    {
+      "title": "Stone Game VIII",
+      "difficulty": "Hard",
+      "slug": "stone-game-viii"
+    },
+    {
+      "title": "Stone Game IX",
+      "difficulty": "Medium",
+      "slug": "stone-game-ix"
+    }
+  ],
+  "questionId": "1522",
+  "questionFrontendId": "1406",
+  "title": "Stone Game III",
+  "titleSlug": "stone-game-iii",
+  "content": "<p>Alice and Bob continue their games with piles of stones. There are several stones <strong>arranged in a row</strong>, and each stone has an associated value which is an integer given in the array <code>stoneValue</code>.</p>\n\n<p>Alice and Bob take turns, with Alice starting first. On each player&#39;s turn, that player can take <code>1</code>, <code>2</code>, or <code>3</code> stones from the <strong>first</strong> remaining stones in the row.</p>\n\n<p>The score of each player is the sum of the values of the stones taken. The score of each player is <code>0</code> initially.</p>\n\n<p>The objective of the game is to end with the highest score, and the winner is the player with the highest score and there could be a tie. The game continues until all the stones have been taken.</p>\n\n<p>Assume Alice and Bob <strong>play optimally</strong>.</p>\n\n<p>Return <code>&quot;Alice&quot;</code><em> if Alice will win, </em><code>&quot;Bob&quot;</code><em> if Bob will win, or </em><code>&quot;Tie&quot;</code><em> if they will end the game with the same score</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> stoneValue = [1,2,3,7]\n<strong>Output:</strong> &quot;Bob&quot;\n<strong>Explanation:</strong> Alice will always lose. Her best move will be to take three piles and the score become 6. Now the score of Bob is 7 and Bob wins.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> stoneValue = [1,2,3,-9]\n<strong>Output:</strong> &quot;Alice&quot;\n<strong>Explanation:</strong> Alice must choose all the three piles at the first move to win and leave Bob with negative score.\nIf Alice chooses one pile her score will be 1 and the next move Bob&#39;s score becomes 5. In the next move, Alice will take the pile with value = -9 and lose.\nIf Alice chooses two piles her score will be 3 and the next move Bob&#39;s score becomes 3. In the next move, Alice will take the pile with value = -9 and also lose.\nRemember that both play optimally so here Alice will choose the scenario that makes her win.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> stoneValue = [1,2,3,6]\n<strong>Output:</strong> &quot;Tie&quot;\n<strong>Explanation:</strong> Alice cannot win this game. She can end the game in a draw if she decided to choose all the first three piles, otherwise she will lose.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= stoneValue.length &lt;= 5 * 10<sup>4</sup></code></li>\n\t<li><code>-1000 &lt;= stoneValue[i] &lt;= 1000</code></li>\n</ul>\n",
+  "likes": 2274,
+  "dislikes": 77,
+  "stats": {
+    "totalAccepted": "104.7K",
+    "totalSubmission": "165.7K",
+    "totalAcceptedRaw": 104706,
+    "totalSubmissionRaw": 165747,
+    "acRate": "63.2%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    },
+    {
+      "name": "Game Theory",
+      "slug": "game-theory"
+    }
+  ],
+  "metaData": {
+    "name": "stoneGameIII",
+    "params": [
+      {
+        "name": "stoneValue",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "string"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "UJ15",
+      "year": 2023,
+      "content": "Somebody buy them PS5 ",
+      "voteCount": 177
+    },
+    {
+      "name": "anyvchyk",
+      "year": 2023,
+      "content": "Tried to return \"Alice\" only. You know... Just in case xD",
+      "voteCount": 76
+    },
+    {
+      "name": "mgbt",
+      "year": 2023,
+      "content": "```\\n877.\\xA0Stone Game\\n1140.\\xA0Stone Game II\\n1406.\\xA0Stone Game III\\n1510.\\xA0Stone Game IV\\n1563.\\xA0Stone Game V\\n1686.\\xA0Stone Game VI\\n1690.\\xA0Stone Game VII\\n1872.\\xA0Stone Game VIII\\n2029.\\xA0Stone Game IX\\n```\\nOh boy, here we go",
+      "voteCount": 46
+    },
+    {
+      "name": "kiryu_0",
+      "year": 2023,
+      "content": "After doing yesterday\\'s problem, this was just too trivial.",
+      "voteCount": 43
+    },
+    {
+      "name": "jasperjoe",
+      "year": 2020,
+      "content": "1140. Stone Game II (Medium)  is more complicated and there are more states we need to think about to write transfer formula.",
+      "voteCount": 39
+    },
+    {
+      "name": "orioncyngus",
+      "year": 2020,
+      "content": "This problem is easier than the second Stone Game, and not any more difficult than the first. The first 2 were marked as Medium.",
+      "voteCount": 10
+    },
+    {
+      "name": "dev-null0",
+      "year": 2023,
+      "content": "Essentially the same question as yesterday, yet this one is marked hard while yesterday was medium.\\n\\nBTW there\\'s like 7 of these stone game questions, I wonder if we\\'re going to get all of them this week lol",
+      "voteCount": 9
+    },
+    {
+      "name": "halfengineer",
+      "year": 2023,
+      "content": "\\uD83D\\uDE29\\uD83D\\uDE29TESTCASE 183/185",
+      "voteCount": 7
+    },
+    {
+      "name": "leeten__1500",
+      "year": 2023,
+      "content": "Non Leetcoders on weekends : Vacationing\\nLeetcoders on weekends : [ You know better ]",
+      "voteCount": 6
+    },
+    {
+      "name": "rajeshsingh505",
+      "year": 2023,
+      "content": "couldn't do yesterday ques but did todays. Although both are similar I got some ideas from yesterday ques that I applied here and got the ans.  I spent 3 hrs on yesterday ques and still couldn't figure it out. But that struggling on that ques helped me develop the strategy for this ques. All in all you put effort even if you're feeling like you're not getting anything, you're still learning .",
+      "voteCount": 5
+    }
+  ]
+}

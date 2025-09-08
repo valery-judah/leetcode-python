@@ -1,0 +1,148 @@
+{
+  "category": "",
+  "id": "994",
+  "name": "Rotting Oranges",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/rotting-oranges/",
+  "slug": "rotting-oranges",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Walls and Gates",
+      "difficulty": "Medium",
+      "slug": "walls-and-gates"
+    },
+    {
+      "title": "Battleships in a Board",
+      "difficulty": "Medium",
+      "slug": "battleships-in-a-board"
+    },
+    {
+      "title": "Detonate the Maximum Bombs",
+      "difficulty": "Medium",
+      "slug": "detonate-the-maximum-bombs"
+    },
+    {
+      "title": "Escape the Spreading Fire",
+      "difficulty": "Hard",
+      "slug": "escape-the-spreading-fire"
+    }
+  ],
+  "questionId": "1036",
+  "questionFrontendId": "994",
+  "title": "Rotting Oranges",
+  "titleSlug": "rotting-oranges",
+  "content": "<p>You are given an <code>m x n</code> <code>grid</code> where each cell can have one of three values:</p>\n\n<ul>\n\t<li><code>0</code> representing an empty cell,</li>\n\t<li><code>1</code> representing a fresh orange, or</li>\n\t<li><code>2</code> representing a rotten orange.</li>\n</ul>\n\n<p>Every minute, any fresh orange that is <strong>4-directionally adjacent</strong> to a rotten orange becomes rotten.</p>\n\n<p>Return <em>the minimum number of minutes that must elapse until no cell has a fresh orange</em>. If <em>this is impossible, return</em> <code>-1</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/02/16/oranges.png\" style=\"width: 650px; height: 137px;\" />\n<pre>\n<strong>Input:</strong> grid = [[2,1,1],[1,1,0],[0,1,1]]\n<strong>Output:</strong> 4\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> grid = [[2,1,1],[0,1,1],[1,0,1]]\n<strong>Output:</strong> -1\n<strong>Explanation:</strong> The orange in the bottom left corner (row 2, column 0) is never rotten, because rotting only happens 4-directionally.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> grid = [[0,2]]\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> Since there are already no fresh oranges at minute 0, the answer is just 0.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == grid.length</code></li>\n\t<li><code>n == grid[i].length</code></li>\n\t<li><code>1 &lt;= m, n &lt;= 10</code></li>\n\t<li><code>grid[i][j]</code> is <code>0</code>, <code>1</code>, or <code>2</code>.</li>\n</ul>\n",
+  "likes": 14390,
+  "dislikes": 457,
+  "stats": {
+    "totalAccepted": "1.4M",
+    "totalSubmission": "2.4M",
+    "totalAcceptedRaw": 1372451,
+    "totalSubmissionRaw": 2396424,
+    "acRate": "57.3%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Breadth-First Search",
+      "slug": "breadth-first-search"
+    },
+    {
+      "name": "Matrix",
+      "slug": "matrix"
+    }
+  ],
+  "metaData": {
+    "name": "orangesRotting",
+    "params": [
+      {
+        "name": "grid",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": true,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 44
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "amanraj199825",
+      "year": 2020,
+      "content": "I am really grateful to the almighty that the person who decided the difficulty of this question isn\\'t my professor",
+      "voteCount": 371
+    },
+    {
+      "name": "Jeetaksh",
+      "year": 2023,
+      "content": "\"One bad fish can spoil the entire pond.\"\\nRotten Orange - I am no lesser.",
+      "voteCount": 277
+    },
+    {
+      "name": "marcoazer",
+      "year": 2020,
+      "content": "I might be overthinking this but is it one or multiple rotten oranges at the begining?\\n\\nIf one, then it could be solved with BFS or DFS. But if it\\'s multiple then we need to look at the whole grid every minute. Please add this detail in the question description.",
+      "voteCount": 242
+    },
+    {
+      "name": "prayag",
+      "year": 2023,
+      "content": "Goodluck solving this problem in 30 mins unless you have seen this before.",
+      "voteCount": 101
+    },
+    {
+      "name": "2uringTested",
+      "year": 2023,
+      "content": "To everyone who is wondering if more than one rotten orange is allowed at the beginning or not :\\n\\nYes more than one rotting orange is allowed \\nand it can still be solved with a single BFS run just by inserting all the rotten oranges in the queue at the beginning, also called as multi source BFS.",
+      "voteCount": 100
+    },
+    {
+      "name": "zuohuang2021",
+      "year": 2021,
+      "content": "If there is no fruits at all... it\\'s impossible to rotten any... so should it be -1 for no fruits cases?",
+      "voteCount": 60
+    },
+    {
+      "name": "vishalshrm539",
+      "year": 2021,
+      "content": "1. We just need to run BFS once. \\n2. We\\'ll start the BFS at all rotten oranges(i.e. push all the (i , j) pairs of rotten oranges initially in the Queue).\\n3. Keep a map to track visited elements, we\\'ll visit each element(fresh orange) only once.\\n4. Each fresh orange will be reached by its closest rotten orange due to BFS.\\n5. We can use a map to keep track of distances(\\'k\\' distance means \\'k\\' unit time) of fresh oranges with their closest rotten orange and return the maximum distance in the end if all fresh oranges are reached otherwise return -1.",
+      "voteCount": 52
+    },
+    {
+      "name": "anchalgarg0-0",
+      "year": 2022,
+      "content": "https://leetcode.com/problems/01-matrix/\\nTry this question too, it\\'s somewhat similar to Rotting Oranges.",
+      "voteCount": 39
+    },
+    {
+      "name": "tripathishashank998",
+      "year": 2019,
+      "content": "can there be more than one rotten oranges..",
+      "voteCount": 30
+    },
+    {
+      "name": "dojoce",
+      "year": 2024,
+      "content": "My first introduction to multi source BFS, very cool! Glad I stuck it out. Also a good reminder that if you\\'re spending long on figuring out a question out it\\'s probably because you\\'re missing an underlying algorithm. So it\\'s usually better to \"give up\" and look at the solution and learn the algorithm.",
+      "voteCount": 26
+    }
+  ]
+}

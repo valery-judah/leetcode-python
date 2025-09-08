@@ -1,0 +1,128 @@
+{
+  "category": "",
+  "id": "2709",
+  "name": "Greatest Common Divisor Traversal",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/greatest-common-divisor-traversal/",
+  "slug": "greatest-common-divisor-traversal",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Union Find",
+    "Number Theory"
+  ],
+  "similar_questions": [
+    {
+      "title": "Graph Connectivity With Threshold",
+      "difficulty": "Hard",
+      "slug": "graph-connectivity-with-threshold"
+    }
+  ],
+  "questionId": "2827",
+  "questionFrontendId": "2709",
+  "title": "Greatest Common Divisor Traversal",
+  "titleSlug": "greatest-common-divisor-traversal",
+  "content": "<p>You are given a <strong>0-indexed</strong> integer array <code>nums</code>, and you are allowed to <strong>traverse</strong> between its indices. You can traverse between index <code>i</code> and index <code>j</code>, <code>i != j</code>, if and only if <code>gcd(nums[i], nums[j]) &gt; 1</code>, where <code>gcd</code> is the <strong>greatest common divisor</strong>.</p>\n\n<p>Your task is to determine if for <strong>every pair</strong> of indices <code>i</code> and <code>j</code> in nums, where <code>i &lt; j</code>, there exists a <strong>sequence of traversals</strong> that can take us from <code>i</code> to <code>j</code>.</p>\n\n<p>Return <code>true</code><em> if it is possible to traverse between all such pairs of indices,</em><em> or </em><code>false</code><em> otherwise.</em></p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [2,3,6]\n<strong>Output:</strong> true\n<strong>Explanation:</strong> In this example, there are 3 possible pairs of indices: (0, 1), (0, 2), and (1, 2).\nTo go from index 0 to index 1, we can use the sequence of traversals 0 -&gt; 2 -&gt; 1, where we move from index 0 to index 2 because gcd(nums[0], nums[2]) = gcd(2, 6) = 2 &gt; 1, and then move from index 2 to index 1 because gcd(nums[2], nums[1]) = gcd(6, 3) = 3 &gt; 1.\nTo go from index 0 to index 2, we can just go directly because gcd(nums[0], nums[2]) = gcd(2, 6) = 2 &gt; 1. Likewise, to go from index 1 to index 2, we can just go directly because gcd(nums[1], nums[2]) = gcd(3, 6) = 3 &gt; 1.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [3,9,5]\n<strong>Output:</strong> false\n<strong>Explanation:</strong> No sequence of traversals can take us from index 0 to index 2 in this example. So, we return false.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [4,3,12,8]\n<strong>Output:</strong> true\n<strong>Explanation:</strong> There are 6 possible pairs of indices to traverse between: (0, 1), (0, 2), (0, 3), (1, 2), (1, 3), and (2, 3). A valid sequence of traversals exists for each pair, so we return true.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>\n</ul>\n",
+  "likes": 847,
+  "dislikes": 141,
+  "stats": {
+    "totalAccepted": "74.5K",
+    "totalSubmission": "178.3K",
+    "totalAcceptedRaw": 74465,
+    "totalSubmissionRaw": 178300,
+    "acRate": "41.8%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Union Find",
+      "slug": "union-find"
+    },
+    {
+      "name": "Number Theory",
+      "slug": "number-theory"
+    }
+  ],
+  "metaData": {
+    "name": "canTraverseAllPairs",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "Driver12",
+      "year": 2023,
+      "content": "Upvote if u thought that looking for all prime divisors for every number is too long for these constraints...",
+      "voteCount": 102
+    },
+    {
+      "name": "Ditdo",
+      "year": 2024,
+      "content": "I think LeetCode wanna filter us from badge this week, two hards in a row. Good luck!",
+      "voteCount": 67
+    },
+    {
+      "name": "deleted_user",
+      "year": 2023,
+      "content": "Fuck you 1",
+      "voteCount": 57
+    },
+    {
+      "name": "taruunmalik",
+      "year": 2024,
+      "content": "Bruh whoever wrote 925 test cases needs to touch grass.",
+      "voteCount": 53
+    },
+    {
+      "name": "cartesPerforees",
+      "year": 2023,
+      "content": "Hiding the testcase [1,1] during the contest was a nasty, nasty move.",
+      "voteCount": 41
+    },
+    {
+      "name": "IamHazra",
+      "year": 2024,
+      "content": "Me :  Hard question ha chup chap code solutions se utha leta hu streak important ha ",
+      "voteCount": 29
+    },
+    {
+      "name": "czjnbb",
+      "year": 2023,
+      "content": "I only failed on this case: [1]. Very SAD.",
+      "voteCount": 25
+    },
+    {
+      "name": "anwendeng",
+      "year": 2024,
+      "content": "Sieve method is useful to  build a common factor path.\nHave a good day!\nCareful with the testcases :\n```\n[1]\n[1,1]\n[30, 30]\n\n```\nA demo video  for Sieve method done by my C++/opencv code\nhttps://youtu.be/7GGhURLPnIs?si=i6COzPMySHRVCSsB",
+      "voteCount": 21
+    },
+    {
+      "name": "v1kstrand",
+      "year": 2024,
+      "content": "another one - dj khaled",
+      "voteCount": 19
+    },
+    {
+      "name": "Jayant0709",
+      "year": 2024,
+      "content": "back to back another difficult one.. ahh it hurts",
+      "voteCount": 18
+    }
+  ]
+}

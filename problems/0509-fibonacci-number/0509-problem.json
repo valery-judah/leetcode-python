@@ -1,0 +1,143 @@
+{
+  "category": "",
+  "id": "509",
+  "name": "Fibonacci Number",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/fibonacci-number/",
+  "slug": "fibonacci-number",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Recursion",
+    "Memoization"
+  ],
+  "similar_questions": [
+    {
+      "title": "Climbing Stairs",
+      "difficulty": "Easy",
+      "slug": "climbing-stairs"
+    },
+    {
+      "title": "Split Array into Fibonacci Sequence",
+      "difficulty": "Medium",
+      "slug": "split-array-into-fibonacci-sequence"
+    },
+    {
+      "title": "Length of Longest Fibonacci Subsequence",
+      "difficulty": "Medium",
+      "slug": "length-of-longest-fibonacci-subsequence"
+    },
+    {
+      "title": "N-th Tribonacci Number",
+      "difficulty": "Easy",
+      "slug": "n-th-tribonacci-number"
+    }
+  ],
+  "questionId": "1013",
+  "questionFrontendId": "509",
+  "title": "Fibonacci Number",
+  "titleSlug": "fibonacci-number",
+  "content": "<p>The <b>Fibonacci numbers</b>, commonly denoted <code>F(n)</code> form a sequence, called the <b>Fibonacci sequence</b>, such that each number is the sum of the two preceding ones, starting from <code>0</code> and <code>1</code>. That is,</p>\n\n<pre>\nF(0) = 0, F(1) = 1\nF(n) = F(n - 1) + F(n - 2), for n &gt; 1.\n</pre>\n\n<p>Given <code>n</code>, calculate <code>F(n)</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 2\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> F(2) = F(1) + F(0) = 1 + 0 = 1.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 3\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> F(3) = F(2) + F(1) = 1 + 1 = 2.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 4\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> F(4) = F(3) + F(2) = 2 + 1 = 3.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= n &lt;= 30</code></li>\n</ul>\n",
+  "likes": 8933,
+  "dislikes": 391,
+  "stats": {
+    "totalAccepted": "2.6M",
+    "totalSubmission": "3.6M",
+    "totalAcceptedRaw": 2623625,
+    "totalSubmissionRaw": 3577288,
+    "acRate": "73.3%"
+  },
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    },
+    {
+      "name": "Recursion",
+      "slug": "recursion"
+    },
+    {
+      "name": "Memoization",
+      "slug": "memoization"
+    }
+  ],
+  "metaData": {
+    "name": "fib",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "BristolJ",
+      "year": 2023,
+      "content": "I'm just gonna drop this right here...\n```\nint[] ans = \n{0,1,1,2,3,5,8,13,21,34,55,89,144,\n233,377,610,987,1597,2584,4181,\n6765,10946,17711,28657,46368,\n75025,121393,196418,317811,514229,832040};\n```\nGo ahead, nobody is watching😈",
+      "voteCount": 208
+    },
+    {
+      "name": "tarbaev",
+      "year": 2023,
+      "content": "There is a little hack: we don\\'t have to memoize all fibonacci numbers in a DP approach, only last two numbers",
+      "voteCount": 35
+    },
+    {
+      "name": "Alpher",
+      "year": 2019,
+      "content": "Wrong test cases. When input is 2, it expects 2. Off by 1?",
+      "voteCount": 34
+    },
+    {
+      "name": "AdrianOjeda",
+      "year": 2024,
+      "content": "I solved this problem, why I'm not getting calls from FAANG?",
+      "voteCount": 33
+    },
+    {
+      "name": "kt_codes",
+      "year": 2024,
+      "content": "Beginners:  If you have tried to solve the problem don\\'t assume thats the only solution for this dig deeper you will find this is the best example for recursion and meomisation  and many other smarter approaches you will be using later ",
+      "voteCount": 27
+    },
+    {
+      "name": "najwer23",
+      "year": 2023,
+      "content": "binet\\'s formula",
+      "voteCount": 17
+    },
+    {
+      "name": "longluo",
+      "year": 2022,
+      "content": "9 Approaches to Solve the Fibonacci Numbers:\\n\\n[9 Fibonacci Algorithms | The Most Complete Solutions | Image Explanation](https://leetcode.com/problems/fibonacci-number/discuss/1854398/9-fibonacci-algorithms-the-most-complete-solutions-all-in-one-graphical-easy-to-understand)\\n\\n[Leetcode Discuss: Fibonacci Numbers](https://leetcode.com/discuss/study-guide/1854405/9-fibonacci-algorithms-the-most-complete-solutions-all-in-one-easy-to-understand)\\n\\nAs the Leetcode don\\'t support Latex, so the equation didn\\'t display well, visit my website: https://github.com/longluo/leetcode/blob/master/Solutions/English/509.%20Fibonacci%20Number(Easy).md\\n\\n\\n------------\\n\\nAll suggestions are welcome. \\nIf you have any query or suggestion please comment below.\\nPlease upvote\\uD83D\\uDC4D if you like\\uD83D\\uDC97 it. Thank you:-)\\n\\nExplore More [Leetcode Solutions](https://leetcode.com/discuss/general-discussion/1868912/My-Leetcode-Solutions-All-In-One). \\uD83D\\uDE09\\uD83D\\uDE03\\uD83D\\uDC97\\n",
+      "voteCount": 13
+    },
+    {
+      "name": "LeetCode",
+      "year": 2022,
+      "content": "This problem is the Daily LeetCoding Challenge for July, Day 6.\n\nFeel free to share anything related to this problem here!\n\nYou can ask questions, discuss what you've learned from this problem, or show off how many days of streak you've made!\n\n---\n\nIf you'd like to share a detailed solution to the problem, please create a new post in the discuss section and provide\n- **Detailed Explanations**: Describe the algorithm you used to solve this problem. Include any insights you used to solve this problem.\n- **Images** that help explain the algorithm.\n- **Language and Code** you used to pass the problem.\n- **Time and Space complexity analysis**.\n\n---\n\n  **📌 Do you want to learn the problem thoroughly?**\n  Read [**⭐  LeetCode Official Solution⭐**](https://leetcode.com/problems/fibonacci-number/solution) to learn the 3 approaches to the problem with detailed explanations to the algorithms, codes, and complexity analysis.\n  <details>\n  <summary> Spoiler Alert! We'll explain these 6 approaches in the official solution</summary>\n\n  \n**Approach 1:** Recursion\n\n  \n**Approach 2:** Bottom-Up Approach using Tabulation\n\n  \n**Approach 3:** Top-Down Approach using Memoization\n\n  \n**Approach 4:** Iterative Bottom-Up Approach\n\n  \n**Approach 5:** Matrix Exponentiation\n\n  \n**Approach 6:** Math\n\n  \n</details>\n\n\n\nIf you're new to Daily LeetCoding Challenge, [**check out this post**](https://leetcode.com/discuss/general-discussion/655704/)!\n\n\n---\n\n<br>\n\n<p align=\"center\">\n<a href=\"https://leetcode.com/subscribe/?ref=ex_dc\" target=\"_blank\">\n  <img src=\"https://assets.leetcode.com/static_assets/marketing/daily_leetcoding_banner.png\" width=\"560px\" />\n</a>\n</p>\n\n<br>",
+      "voteCount": 12
+    },
+    {
+      "name": "albertoyao",
+      "year": 2022,
+      "content": "This question is wrong. \\n\\nFibonacci sequence:\\n0, 1, 1, 2, 3, 5\\n\\nLeetcode says the third term should be 2, but should be 1.\\n",
+      "voteCount": 7
+    },
+    {
+      "name": "dhirajkumar",
+      "year": 2020,
+      "content": "return round((pow(((math.sqrt(5)+1)/2),N))/math.sqrt(5))",
+      "voteCount": 6
+    }
+  ]
+}

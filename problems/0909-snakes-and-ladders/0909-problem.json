@@ -1,0 +1,123 @@
+{
+  "category": "",
+  "id": "909",
+  "name": "Snakes and Ladders",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/snakes-and-ladders/",
+  "slug": "snakes-and-ladders",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Most Profitable Path in a Tree",
+      "difficulty": "Medium",
+      "slug": "most-profitable-path-in-a-tree"
+    }
+  ],
+  "questionId": "945",
+  "questionFrontendId": "909",
+  "title": "Snakes and Ladders",
+  "titleSlug": "snakes-and-ladders",
+  "content": "<p>You are given an <code>n x n</code> integer matrix <code>board</code> where the cells are labeled from <code>1</code> to <code>n<sup>2</sup></code> in a <a href=\"https://en.wikipedia.org/wiki/Boustrophedon\" target=\"_blank\"><strong>Boustrophedon style</strong></a> starting from the bottom left of the board (i.e. <code>board[n - 1][0]</code>) and alternating direction each row.</p>\n\n<p>You start on square <code>1</code> of the board. In each move, starting from square <code>curr</code>, do the following:</p>\n\n<ul>\n\t<li>Choose a destination square <code>next</code> with a label in the range <code>[curr + 1, min(curr + 6, n<sup>2</sup>)]</code>.\n\n\t<ul>\n\t\t<li>This choice simulates the result of a standard <strong>6-sided die roll</strong>: i.e., there are always at most 6 destinations, regardless of the size of the board.</li>\n\t</ul>\n\t</li>\n\t<li>If <code>next</code> has a snake or ladder, you <strong>must</strong> move to the destination of that snake or ladder. Otherwise, you move to <code>next</code>.</li>\n\t<li>The game ends when you reach the square <code>n<sup>2</sup></code>.</li>\n</ul>\n\n<p>A board square on row <code>r</code> and column <code>c</code> has a snake or ladder if <code>board[r][c] != -1</code>. The destination of that snake or ladder is <code>board[r][c]</code>. Squares <code>1</code> and <code>n<sup>2</sup></code> are not the starting points of any snake or ladder.</p>\n\n<p>Note that you only take a snake or ladder at most once per dice roll. If the destination to a snake or ladder is the start of another snake or ladder, you do <strong>not</strong> follow the subsequent&nbsp;snake or ladder.</p>\n\n<ul>\n\t<li>For example, suppose the board is <code>[[-1,4],[-1,3]]</code>, and on the first move, your destination square is <code>2</code>. You follow the ladder to square <code>3</code>, but do <strong>not</strong> follow the subsequent ladder to <code>4</code>.</li>\n</ul>\n\n<p>Return <em>the least number of dice rolls required to reach the square </em><code>n<sup>2</sup></code><em>. If it is not possible to reach the square, return </em><code>-1</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2018/09/23/snakes.png\" style=\"width: 500px; height: 394px;\" />\n<pre>\n<strong>Input:</strong> board = [[-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1],[-1,35,-1,-1,13,-1],[-1,-1,-1,-1,-1,-1],[-1,15,-1,-1,-1,-1]]\n<strong>Output:</strong> 4\n<strong>Explanation:</strong> \nIn the beginning, you start at square 1 (at row 5, column 0).\nYou decide to move to square 2 and must take the ladder to square 15.\nYou then decide to move to square 17 and must take the snake to square 13.\nYou then decide to move to square 14 and must take the ladder to square 35.\nYou then decide to move to square 36, ending the game.\nThis is the lowest possible number of moves to reach the last square, so return 4.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> board = [[-1,-1],[-1,3]]\n<strong>Output:</strong> 1\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>n == board.length == board[i].length</code></li>\n\t<li><code>2 &lt;= n &lt;= 20</code></li>\n\t<li><code>board[i][j]</code> is either <code>-1</code> or in the range <code>[1, n<sup>2</sup>]</code>.</li>\n\t<li>The squares labeled <code>1</code> and <code>n<sup>2</sup></code> are not the starting points of any snake or ladder.</li>\n</ul>\n",
+  "likes": 3563,
+  "dislikes": 1292,
+  "stats": {
+    "totalAccepted": "334K",
+    "totalSubmission": "696.3K",
+    "totalAcceptedRaw": 334034,
+    "totalSubmissionRaw": 696339,
+    "acRate": "48.0%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Breadth-First Search",
+      "slug": "breadth-first-search"
+    },
+    {
+      "name": "Matrix",
+      "slug": "matrix"
+    }
+  ],
+  "metaData": {
+    "name": "snakesAndLadders",
+    "params": [
+      {
+        "name": "board",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "paulLyu",
+      "year": 2020,
+      "content": "seems like not a difficult question, but reading words is even more challenging",
+      "voteCount": 522
+    },
+    {
+      "name": "santanusen",
+      "year": 2023,
+      "content": "44 minutes to understand the question in a 45 minute interview.",
+      "voteCount": 318
+    },
+    {
+      "name": "achabense",
+      "year": 2023,
+      "content": "the main challenge of this problem is to put up with \"Boustrophedon style\"",
+      "voteCount": 242
+    },
+    {
+      "name": "sequoia777",
+      "year": 2020,
+      "content": "This is not helping anyone or anything.",
+      "voteCount": 209
+    },
+    {
+      "name": "stevenzhang0",
+      "year": 2019,
+      "content": "Why won\\'t DP work here? Because there are loops?",
+      "voteCount": 60
+    },
+    {
+      "name": "Singhanianilesh",
+      "year": 2018,
+      "content": "How is this input giving expected result 2. I get result 3 and cant even seem to tell what will give result 2.\\n[[-1,1,2,-1],[2,13,15,-1],[-1,10,-1,-1],[-1,6,2,8]]",
+      "voteCount": 55
+    },
+    {
+      "name": "meow_power",
+      "year": 2023,
+      "content": "I hate snakes and this question!!!!!!!!!",
+      "voteCount": 52
+    },
+    {
+      "name": "amaroraiko",
+      "year": 2019,
+      "content": "I found this problem to be really good. It has multiple levels of complexity and it\\'s well explained with good examples. It is overall a good practice problem, and one you definitely don\\'t want to skip if you\\'re preparing for an interview.\\n\\nAt the time I\\'m writing this, the problem has 526 downvotes vs 195 upvotes. I looked around the comments and found no justification for the many downvotes, so I just think people downvote because they had a hard time solving it. Please **do not vote down only because you had a hard time solving a problem**.\\n\\nThis matters because this problem is really good for practicing, and people may not work on it thinking it\\'s low quality (has failing tests, bad explanation, etc). I almost didn\\'t work on it because of this reason.",
+      "voteCount": 42
+    },
+    {
+      "name": "farie88",
+      "year": 2018,
+      "content": "attattattattattatt\\n\\n: (\\n\\n",
+      "voteCount": 38
+    },
+    {
+      "name": "igeniusshah",
+      "year": 2019,
+      "content": "[[-1,-1,30,14,15,-1],[23,9,-1,-1,-1,9],[12,5,7,24,-1,30],[10,-1,-1,-1,25,17],[32,-1,28,-1,-1,32],[-1,-1,23,-1,13,19]]",
+      "voteCount": 35
+    }
+  ]
+}

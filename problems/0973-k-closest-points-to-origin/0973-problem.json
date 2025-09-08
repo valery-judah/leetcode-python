@@ -1,0 +1,182 @@
+{
+  "category": "",
+  "id": "973",
+  "name": "K Closest Points to Origin",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/k-closest-points-to-origin/",
+  "slug": "k-closest-points-to-origin",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Divide and Conquer",
+    "Geometry",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Quickselect"
+  ],
+  "similar_questions": [
+    {
+      "title": "Kth Largest Element in an Array",
+      "difficulty": "Medium",
+      "slug": "kth-largest-element-in-an-array"
+    },
+    {
+      "title": "Top K Frequent Elements",
+      "difficulty": "Medium",
+      "slug": "top-k-frequent-elements"
+    },
+    {
+      "title": "Top K Frequent Words",
+      "difficulty": "Medium",
+      "slug": "top-k-frequent-words"
+    },
+    {
+      "title": "Find Nearest Point That Has the Same X or Y Coordinate",
+      "difficulty": "Easy",
+      "slug": "find-nearest-point-that-has-the-same-x-or-y-coordinate"
+    },
+    {
+      "title": "Minimum Rectangles to Cover Points",
+      "difficulty": "Medium",
+      "slug": "minimum-rectangles-to-cover-points"
+    },
+    {
+      "title": "K-th Nearest Obstacle Queries",
+      "difficulty": "Medium",
+      "slug": "k-th-nearest-obstacle-queries"
+    }
+  ],
+  "questionId": "1014",
+  "questionFrontendId": "973",
+  "title": "K Closest Points to Origin",
+  "titleSlug": "k-closest-points-to-origin",
+  "content": "<p>Given an array of <code>points</code> where <code>points[i] = [x<sub>i</sub>, y<sub>i</sub>]</code> represents a point on the <strong>X-Y</strong> plane and an integer <code>k</code>, return the <code>k</code> closest points to the origin <code>(0, 0)</code>.</p>\n\n<p>The distance between two points on the <strong>X-Y</strong> plane is the Euclidean distance (i.e., <code>&radic;(x<sub>1</sub> - x<sub>2</sub>)<sup>2</sup> + (y<sub>1</sub> - y<sub>2</sub>)<sup>2</sup></code>).</p>\n\n<p>You may return the answer in <strong>any order</strong>. The answer is <strong>guaranteed</strong> to be <strong>unique</strong> (except for the order that it is in).</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/03/closestplane1.jpg\" style=\"width: 400px; height: 400px;\" />\n<pre>\n<strong>Input:</strong> points = [[1,3],[-2,2]], k = 1\n<strong>Output:</strong> [[-2,2]]\n<strong>Explanation:</strong>\nThe distance between (1, 3) and the origin is sqrt(10).\nThe distance between (-2, 2) and the origin is sqrt(8).\nSince sqrt(8) &lt; sqrt(10), (-2, 2) is closer to the origin.\nWe only want the closest k = 1 points from the origin, so the answer is just [[-2,2]].\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> points = [[3,3],[5,-1],[-2,4]], k = 2\n<strong>Output:</strong> [[3,3],[-2,4]]\n<strong>Explanation:</strong> The answer [[-2,4],[3,3]] would also be accepted.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= k &lt;= points.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>-10<sup>4</sup> &lt;= x<sub>i</sub>, y<sub>i</sub> &lt;= 10<sup>4</sup></code></li>\n</ul>\n",
+  "likes": 8872,
+  "dislikes": 332,
+  "stats": {
+    "totalAccepted": "1.6M",
+    "totalSubmission": "2.3M",
+    "totalAcceptedRaw": 1577123,
+    "totalSubmissionRaw": 2311000,
+    "acRate": "68.2%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Divide and Conquer",
+      "slug": "divide-and-conquer"
+    },
+    {
+      "name": "Geometry",
+      "slug": "geometry"
+    },
+    {
+      "name": "Sorting",
+      "slug": "sorting"
+    },
+    {
+      "name": "Heap (Priority Queue)",
+      "slug": "heap-priority-queue"
+    },
+    {
+      "name": "Quickselect",
+      "slug": "quickselect"
+    }
+  ],
+  "metaData": {
+    "name": "kClosest",
+    "params": [
+      {
+        "name": "points",
+        "type": "integer[][]"
+      },
+      {
+        "name": "k",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer[][]"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": true,
+        "name": "Meta",
+        "slug": "facebook",
+        "timesEncountered": 63
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "aryamangodara",
+      "year": 2023,
+      "content": "The Guys who added 85-87 testcases are true gentleman !!",
+      "voteCount": 58
+    },
+    {
+      "name": "neo9729",
+      "year": 2023,
+      "content": "Don\\'t rush to solve the problem. Read carefully and euclidean distance should be considered as double",
+      "voteCount": 39
+    },
+    {
+      "name": "GavinBelson",
+      "year": 2020,
+      "content": "For those of you who got asked this question by facebook, do they make you do the quick select solution since it is the best asymptotic O(n) on average, or is a \"sorting\" solution of O(nlogn) acceptable?  I\\'m sure it might vary by interviewer and by the level you\\'re applying to, but I am curious how this situation may play out in real life.",
+      "voteCount": 34
+    },
+    {
+      "name": "Kaltu",
+      "year": 2023,
+      "content": "how on earth the sorting solution beats 99.87%\\nI was expecting a TLE, LeetCode\\uD83E\\uDD23\\n```\\nclass Solution:\\n    def kClosest(self, points: List[List[int]], k: int) -> List[List[int]]:\\n        return sorted(points, key=lambda x: x[0] * x[0] + x[1] * x[1])[:k]\\n```",
+      "voteCount": 23
+    },
+    {
+      "name": "Divyam6969",
+      "year": 2023,
+      "content": "It should be in easy category",
+      "voteCount": 22
+    },
+    {
+      "name": "LeetCode",
+      "year": 2021,
+      "content": "This problem is the Daily LeetCoding Challenge for December, Day 26.\n\nFeel free to share anything related to this problem here!\n\nYou can ask questions, discuss what you've learned from this problem, or show off how many days of streak you've made!\n\n---\n\nIf you'd like to share a detailed solution to the problem, please create a new post in the discuss section and provide\n- **Detailed Explanations**: Describe the algorithm you used to solve this problem. Include any insights you used to solve this problem.\n- **Images** that help explain the algorithm.\n- **Language and Code** you used to pass the problem.\n- **Time and Space complexity analysis**.\n\n---\n\n  **📌 Do you want to learn the problem thoroughly?**\n  Read [**⭐  LeetCode Official Solution⭐**](https://leetcode.com/problems/k-closest-points-to-origin/solution) to learn the 3 approaches to the problem with detailed explanations to the algorithms, codes, and complexity analysis.\n  <details>\n  <summary> Spoiler Alert! We'll explain these 4 approaches in the official solution</summary>\n\n  \n**Approach 1:** Sort with Custom Comparator\n\n  \n**Approach 2:** Max Heap or Max Priority Queue\n\n  \n**Approach 3:** Binary Search\n\n  \n**Approach 4:** QuickSelect\n\n  \n</details>\n\n\n\nIf you're new to Daily LeetCoding Challenge, [**check out this post**](https://leetcode.com/discuss/general-discussion/655704/)!\n\n\n---\n\n<br>\n\n<p align=\"center\">\n<a href=\"https://leetcode.com/subscribe/?ref=ex_dc\" target=\"_blank\">\n  <img src=\"https://assets.leetcode.com/static_assets/marketing/daily_leetcoding_banner.png\" width=\"560px\" />\n</a>\n</p>\n\n<br>",
+      "voteCount": 21
+    },
+    {
+      "name": "peterx123",
+      "year": 2021,
+      "content": "Using sqrt and casting to int definitly would give wrong answer. The formla given by the description is a bait.",
+      "voteCount": 17
+    },
+    {
+      "name": "cannellajs2",
+      "year": 2019,
+      "content": "`\\nstd::ios::sync_with_stdio(false);std::cin.tie(NULL);std::cout.tie(NULL); \\n`\\nWas wondering what this was on the fastest submission. Simply added it at the top of my function and it decreased my runtime.\\nUSER BEWARE:\\nFrom what I just read about this it allows C++ IOs to not have to be Synchronized to C IOs. This can allow it to run faster but can cause real issues if you use both stdio and cin/cout. Also cin and cout will be desynchronized.\\nFor better description look here: https://stackoverflow.com/questions/31162367/significance-of-ios-basesync-with-stdiofalse-cin-tienull",
+      "voteCount": 12
+    },
+    {
+      "name": "gbiems",
+      "year": 2023,
+      "content": "If you\\'re using python and don\\'t about heappushpop, definitely look it up. Greatly simplifies the code. \\n\\nI came across this question when I decided to review some of my early leetcode solutions now that I have a better sense of how to solve these problems. Looks like when I first tried this problem, I processed all points and sorted, a solution which does work, but is much slower.\\n\\nThis time around, I went with a heap, but I didn\\'t know about heappushpop, so my code was kind of complicated. \\n\\nFinally looked at solutions and learned something. I didn\\'t know about heappushpop. Good to know. \\n\\n ",
+      "voteCount": 7
+    },
+    {
+      "name": "pntay_orange",
+      "year": 2024,
+      "content": "Amazing, i solved with 2580 ms :))",
+      "voteCount": 6
+    }
+  ]
+}

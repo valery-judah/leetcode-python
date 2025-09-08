@@ -1,0 +1,163 @@
+{
+  "category": "",
+  "id": "1011",
+  "name": "Capacity To Ship Packages Within D Days",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/",
+  "slug": "capacity-to-ship-packages-within-d-days",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Split Array Largest Sum",
+      "difficulty": "Hard",
+      "slug": "split-array-largest-sum"
+    },
+    {
+      "title": "Divide Chocolate",
+      "difficulty": "Hard",
+      "slug": "divide-chocolate"
+    },
+    {
+      "title": "Cutting Ribbons",
+      "difficulty": "Medium",
+      "slug": "cutting-ribbons"
+    },
+    {
+      "title": "Minimized Maximum of Products Distributed to Any Store",
+      "difficulty": "Medium",
+      "slug": "minimized-maximum-of-products-distributed-to-any-store"
+    },
+    {
+      "title": "Maximum Bags With Full Capacity of Rocks",
+      "difficulty": "Medium",
+      "slug": "maximum-bags-with-full-capacity-of-rocks"
+    },
+    {
+      "title": "Minimum Total Distance Traveled",
+      "difficulty": "Hard",
+      "slug": "minimum-total-distance-traveled"
+    }
+  ],
+  "questionId": "1056",
+  "questionFrontendId": "1011",
+  "title": "Capacity To Ship Packages Within D Days",
+  "titleSlug": "capacity-to-ship-packages-within-d-days",
+  "content": "<p>A conveyor belt has packages that must be shipped from one port to another within <code>days</code> days.</p>\n\n<p>The <code>i<sup>th</sup></code> package on the conveyor belt has a weight of <code>weights[i]</code>. Each day, we load the ship with packages on the conveyor belt (in the order given by <code>weights</code>). We may not load more weight than the maximum weight capacity of the ship.</p>\n\n<p>Return the least weight capacity of the ship that will result in all the packages on the conveyor belt being shipped within <code>days</code> days.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> weights = [1,2,3,4,5,6,7,8,9,10], days = 5\n<strong>Output:</strong> 15\n<strong>Explanation:</strong> A ship capacity of 15 is the minimum to ship all the packages in 5 days like this:\n1st day: 1, 2, 3, 4, 5\n2nd day: 6, 7\n3rd day: 8\n4th day: 9\n5th day: 10\n\nNote that the cargo must be shipped in the order given, so using a ship of capacity 14 and splitting the packages into parts like (2, 3, 4, 5), (1, 6, 7), (8), (9), (10) is not allowed.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> weights = [3,2,2,4,1,4], days = 3\n<strong>Output:</strong> 6\n<strong>Explanation:</strong> A ship capacity of 6 is the minimum to ship all the packages in 3 days like this:\n1st day: 3, 2\n2nd day: 2, 4\n3rd day: 1, 4\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> weights = [1,2,3,1,1], days = 4\n<strong>Output:</strong> 3\n<strong>Explanation:</strong>\n1st day: 1\n2nd day: 2\n3rd day: 3\n4th day: 1, 1\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= days &lt;= weights.length &lt;= 5 * 10<sup>4</sup></code></li>\n\t<li><code>1 &lt;= weights[i] &lt;= 500</code></li>\n</ul>\n",
+  "likes": 10547,
+  "dislikes": 269,
+  "stats": {
+    "totalAccepted": "633K",
+    "totalSubmission": "869.9K",
+    "totalAcceptedRaw": 633001,
+    "totalSubmissionRaw": 869886,
+    "acRate": "72.8%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    }
+  ],
+  "metaData": {
+    "name": "shipWithinDays",
+    "params": [
+      {
+        "name": "weights",
+        "type": "integer[]"
+      },
+      {
+        "name": "days",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 16
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Meta",
+        "slug": "facebook",
+        "timesEncountered": 12
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "herbertzou",
+      "year": 2019,
+      "content": "Too hard to be a medium one.",
+      "voteCount": 302
+    },
+    {
+      "name": "ttaylor27",
+      "year": 2023,
+      "content": "The issue many people have when it comes to understanding how a problem like this can be approached using binary search comes down to the way most people learn binary search at first. The traditional implementation of binary search which is shown to most first-time learners gives the impression that the array in question must be sorted, however, the reality is that binary search only cares about a \"sorted\" search space. Most people assume that the search space of the binary search algorithm has to be the specific elements at a given index in the given array, because those are the examples people tend to be shown when learning binary search. In more advanced binary search problems such as this one, the real trick is figuring out two things: the ***search space*** and the ***condition***. \n\nIn this problem the search space is the range between the min possible capacity of the ship (which is the max weight of a single package in the entire array) and the max capacity of a ship, which is the total of all the weights of the packages. We can justify this by realizing the max a ship will need to hold is when you put all the packages on it at once, and the minimum a ship needs to be able to hold is the heaviest package in the array. Now we can see that the search space is going to be a range from min->max, which will be sorted inherently by the fact that every number in the range is larger than the previous one. \n\nNow to identify the condition: Essentially if we find our \"mid\" which is the middle of the range we are searching, we can use that as the ship capacity for the iteration, and then determine how long (how many days) it takes us to pack the boats using this given capacity. If we finish too fast (or on time), we know that we have found a valid capacity, and want to look for a smaller one (since we need to minimize the capacity) so we will look to the left of mid. If we finish too slow, we know that our capacity was not big enough to finish in time (or at all), and therefore we need to look to the right of mid for a bigger capacity. We keep doing this until we find the smallest capacity possible to get the packages shipped in the allotted time period.\n\nIn short: If we want to minimize or maximize something based on a specific condition, we probably can use binary search. To use it, we need to identify the search space (which does not have to be the array itself unlike in a traditional binary search problem), and the condition.\n\nHope this helped a bit.",
+      "voteCount": 259
+    },
+    {
+      "name": "cOde_Ranvir25",
+      "year": 2023,
+      "content": "here\\'s a thought process for solving the problem:\\n\\nTo find the least weight capacity of the ship that will result in all the packages on the conveyor belt being shipped within days days, we can use binary search.\\n\\nWe can set the minimum weight capacity of the ship to the maximum weight of any single package, since the ship must be able to carry at least one package.\\n\\nWe can set the maximum weight capacity of the ship to the sum of all the package weights, since the ship must be able to carry all the packages in a single day.\\n\\nWe can then use binary search to find the weight capacity of the ship that will result in all the packages being shipped within days days.\\n\\nIn each iteration of the binary search, we calculate the mid-point between the minimum and maximum weight capacities of the ship. We then simulate the shipment of the packages with this mid-point weight capacity, keeping track of the number of days required to ship all the packages.\\n\\nIf the number of days required to ship all the packages is greater than days, then we know that the weight capacity of the ship must be increased, so we set the minimum weight capacity to mid + 1.\\n\\nOtherwise, we know that the weight capacity of the ship is sufficient, so we set the maximum weight capacity to mid.\\n\\nWe continue the binary search until the minimum weight capacity equals the maximum weight capacity.\\n\\nAt this point, the minimum weight capacity of the ship is the least weight capacity that will result in all the packages being shipped within days days. We return this value as the result of the function.\\n\\n\\n\\n",
+      "voteCount": 182
+    },
+    {
+      "name": "taxaditya13121989",
+      "year": 2022,
+      "content": "This question is similar to koko eating bananas in leetcode",
+      "voteCount": 170
+    },
+    {
+      "name": "yadavs12",
+      "year": 2019,
+      "content": "Whenever there is an optimization problem, my first guess is DP or even greedy. But here DP solutions are of order O(n^3) and getting TLE.\\nSo, in an interview, how would I figure out that binary search would be applicable here? Is it ONLY because of time complexity or there are other factors too which I need to keep in mind?\\n\\nThanks!",
+      "voteCount": 126
+    },
+    {
+      "name": "leet_alok",
+      "year": 2023,
+      "content": "One of the best binary search problem I did on my own!\\uD83D\\uDE00 ",
+      "voteCount": 72
+    },
+    {
+      "name": "galaxy410",
+      "year": 2020,
+      "content": "The problem description looks unclear and seems assuming the packages must be loaded in the given order. Otherwise, the answer would be incorrect.\\n",
+      "voteCount": 55
+    },
+    {
+      "name": "statx2",
+      "year": 2023,
+      "content": "The test case-3 is wrong, why is nobody complaning?",
+      "voteCount": 38
+    },
+    {
+      "name": "mangoslicer",
+      "year": 2019,
+      "content": "From someone who was able to solve this, I\\'d appreciate if they could share their thought process. I was initially thinking that this was a DP problem where you place a partition for day D and then try to partition the rest of the array for D - 1.",
+      "voteCount": 35
+    },
+    {
+      "name": "Bawaal_londa",
+      "year": 2020,
+      "content": "I knew it after reading, this can be done via DP.\\nThis questions is exactly same as https://leetcode.com/problems/split-array-largest-sum/",
+      "voteCount": 17
+    }
+  ]
+}

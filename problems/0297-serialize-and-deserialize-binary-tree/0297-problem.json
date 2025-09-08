@@ -1,0 +1,164 @@
+{
+  "category": "",
+  "id": "297",
+  "name": "Serialize and Deserialize Binary Tree",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/",
+  "slug": "serialize-and-deserialize-binary-tree",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Design",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Encode and Decode Strings",
+      "difficulty": "Medium",
+      "slug": "encode-and-decode-strings"
+    },
+    {
+      "title": "Serialize and Deserialize BST",
+      "difficulty": "Medium",
+      "slug": "serialize-and-deserialize-bst"
+    },
+    {
+      "title": "Find Duplicate Subtrees",
+      "difficulty": "Medium",
+      "slug": "find-duplicate-subtrees"
+    },
+    {
+      "title": "Serialize and Deserialize N-ary Tree",
+      "difficulty": "Hard",
+      "slug": "serialize-and-deserialize-n-ary-tree"
+    }
+  ],
+  "questionId": "297",
+  "questionFrontendId": "297",
+  "title": "Serialize and Deserialize Binary Tree",
+  "titleSlug": "serialize-and-deserialize-binary-tree",
+  "content": "<p>Serialization is the process of converting a data structure or object into a sequence of bits so that it can be stored in a file or memory buffer, or transmitted across a network connection link to be reconstructed later in the same or another computer environment.</p>\n\n<p>Design an algorithm to serialize and deserialize a binary tree. There is no restriction on how your serialization/deserialization algorithm should work. You just need to ensure that a binary tree can be serialized to a string and this string can be deserialized to the original tree structure.</p>\n\n<p><strong>Clarification:</strong> The input/output format is the same as <a href=\"https://support.leetcode.com/hc/en-us/articles/32442719377939-How-to-create-test-cases-on-LeetCode#h_01J5EGREAW3NAEJ14XC07GRW1A\" target=\"_blank\">how LeetCode serializes a binary tree</a>. You do not necessarily need to follow this format, so please be creative and come up with different approaches yourself.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/09/15/serdeser.jpg\" style=\"width: 442px; height: 324px;\" />\n<pre>\n<strong>Input:</strong> root = [1,2,3,null,null,4,5]\n<strong>Output:</strong> [1,2,3,null,null,4,5]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> root = []\n<strong>Output:</strong> []\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of nodes in the tree is in the range <code>[0, 10<sup>4</sup>]</code>.</li>\n\t<li><code>-1000 &lt;= Node.val &lt;= 1000</code></li>\n</ul>\n",
+  "likes": 10836,
+  "dislikes": 421,
+  "stats": {
+    "totalAccepted": "1.1M",
+    "totalSubmission": "1.8M",
+    "totalAcceptedRaw": 1089512,
+    "totalSubmissionRaw": 1830690,
+    "acRate": "59.5%"
+  },
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Tree",
+      "slug": "tree"
+    },
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Breadth-First Search",
+      "slug": "breadth-first-search"
+    },
+    {
+      "name": "Design",
+      "slug": "design"
+    },
+    {
+      "name": "Binary Tree",
+      "slug": "binary-tree"
+    }
+  ],
+  "metaData": {
+    "name": "Codec",
+    "params": [
+      {
+        "name": "root",
+        "type": "TreeNode"
+      }
+    ],
+    "return": {
+      "type": "string"
+    },
+    "manual": true
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": true,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 12
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "calnastic",
+      "year": 2021,
+      "content": "My first ever submission with good speed and mem usage \\uD83D\\uDE0A. \\n\\n![image](https://assets.leetcode.com/users/images/d76751a9-9ee2-4f2c-9a90-6a5a27befe56_1639235914.627587.png)\\n",
+      "voteCount": 199
+    },
+    {
+      "name": "naman1686",
+      "year": 2024,
+      "content": "If you are coding in c++ and getting memory limit exceeded, its because you are using += with strings instead of .append().\\n\\n+= : creates a new string and then assign it to the variable.\\n.append() : Appends the original string with the string provided.",
+      "voteCount": 90
+    },
+    {
+      "name": "Cocamo1337",
+      "year": 2023,
+      "content": "I was getting 431 MS runtime, and was sad because I worked hard on making my algorithm efficient. I looked at my code to try to figure out what I was doing inefficiently. The only thing I could see was I was building the serialized string using concatenation. I knew that StringBuilder was more efficient but I didn\\'t think it was a big deal. Well I re-wrote it to use a StringBuilder.... and it ran at 83 ms, beats 99.16%. Moral of the story... Build strings with StringBuilder. ",
+      "voteCount": 73
+    },
+    {
+      "name": "trashw1n",
+      "year": 2023,
+      "content": "Initially it can be confusing as to how a preorder traversal can uniquely identify a binary tree. Turns out that it can do so ONLY if we include null nodes in the preorder traversal serialization.",
+      "voteCount": 48
+    },
+    {
+      "name": "Rishabh_yaduwanshi",
+      "year": 2023,
+      "content": "As leetcode presents the level order traversal of the tree,it seems quite intriguing  to serialize the tree by level order traversal. As level order and Dfs solutions have their own pros and cones but skipping creation of a whole memory stack just to perform a simple step makes level order traversal my choice here and yes a pure level order based solution exists,but the parent-child relation obtained in the array representation of complete binary tree fails here,so don\\'t use it.\\nconsider the 0-indexed array [1,2,3,null,null,4,5,6] \\nin this array index 7 claims index 3 as it\\'s parent using the formula (index-1)/2 but there is null at that index this happens because in a complete binary tree the value at index 3 would have inserted it\\'s child at index 7 but since there existed no child the gap between 5 and 6 is never filled producing the failure.",
+      "voteCount": 17
+    },
+    {
+      "name": "vinyx",
+      "year": 2024,
+      "content": "YOU SHOULD HAVE SPECIFIED THAT THERE ARE NOT DUPLICATES",
+      "voteCount": 16
+    },
+    {
+      "name": "Snooperlock",
+      "year": 2017,
+      "content": "Most of the solutions are done with PreOrder traversal. Is it possible to solve it with InOrder or Postorder traversal?",
+      "voteCount": 15
+    },
+    {
+      "name": "Pancakeshacks",
+      "year": 2024,
+      "content": "This question is way easier than the one to remake a tree from two arrays, but that one is a medium...",
+      "voteCount": 12
+    },
+    {
+      "name": "dashenswen",
+      "year": 2016,
+      "content": "The idea of using preorder is brilliant, I think the process is similar to inorder and postorder. But I can not write a right solution. Does there exist solution using inorder?\\nIn other word. why does preorder work? why does other solutions seem not working?",
+      "voteCount": 11
+    },
+    {
+      "name": "psionl0",
+      "year": 2023,
+      "content": "This has been a very interesting exercise for me.",
+      "voteCount": 10
+    }
+  ]
+}

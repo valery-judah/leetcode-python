@@ -1,0 +1,121 @@
+{
+  "category": "",
+  "id": "1184",
+  "name": "Distance Between Bus Stops",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/distance-between-bus-stops/",
+  "slug": "distance-between-bus-stops",
+  "isPaidOnly": false,
+  "tags": [
+    "Array"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Costs Using the Train Line",
+      "difficulty": "Hard",
+      "slug": "minimum-costs-using-the-train-line"
+    }
+  ],
+  "questionId": "1287",
+  "questionFrontendId": "1184",
+  "title": "Distance Between Bus Stops",
+  "titleSlug": "distance-between-bus-stops",
+  "content": "<p>A bus&nbsp;has <code>n</code> stops numbered from <code>0</code> to <code>n - 1</code> that form&nbsp;a circle. We know the distance between all pairs of neighboring stops where <code>distance[i]</code> is the distance between the stops number&nbsp;<code>i</code> and <code>(i + 1) % n</code>.</p>\r\n\r\n<p>The bus goes along both directions&nbsp;i.e. clockwise and counterclockwise.</p>\r\n\r\n<p>Return the shortest distance between the given&nbsp;<code>start</code>&nbsp;and <code>destination</code>&nbsp;stops.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n\r\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/09/03/untitled-diagram-1.jpg\" style=\"width: 388px; height: 240px;\" /></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> distance = [1,2,3,4], start = 0, destination = 1\r\n<strong>Output:</strong> 1\r\n<strong>Explanation:</strong> Distance between 0 and 1 is 1 or 9, minimum is 1.</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n\r\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/09/03/untitled-diagram-1-1.jpg\" style=\"width: 388px; height: 240px;\" /></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> distance = [1,2,3,4], start = 0, destination = 2\r\n<strong>Output:</strong> 3\r\n<strong>Explanation:</strong> Distance between 0 and 2 is 3 or 7, minimum is 3.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong class=\"example\">Example 3:</strong></p>\r\n\r\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/09/03/untitled-diagram-1-2.jpg\" style=\"width: 388px; height: 240px;\" /></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> distance = [1,2,3,4], start = 0, destination = 3\r\n<strong>Output:</strong> 4\r\n<strong>Explanation:</strong> Distance between 0 and 3 is 6 or 4, minimum is 4.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= n&nbsp;&lt;= 10^4</code></li>\r\n\t<li><code>distance.length == n</code></li>\r\n\t<li><code>0 &lt;= start, destination &lt; n</code></li>\r\n\t<li><code>0 &lt;= distance[i] &lt;= 10^4</code></li>\r\n</ul>",
+  "likes": 800,
+  "dislikes": 95,
+  "stats": {
+    "totalAccepted": "73.4K",
+    "totalSubmission": "133.8K",
+    "totalAcceptedRaw": 73391,
+    "totalSubmissionRaw": 133766,
+    "acRate": "54.9%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "metaData": {
+    "name": "distanceBetweenBusStops",
+    "params": [
+      {
+        "name": "distance",
+        "type": "integer[]"
+      },
+      {
+        "type": "integer",
+        "name": "start"
+      },
+      {
+        "type": "integer",
+        "name": "destination"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "knotri",
+      "year": 2024,
+      "content": "tips, find distance to move whole circle, then find distance to move one way. To move other way u can subtract one way distance from whole circle",
+      "voteCount": 5
+    },
+    {
+      "name": "Anitkrun",
+      "year": 2024,
+      "content": "distance between (a,b) = distance between(b,a). Very obvious thing but simplifies the traversal.",
+      "voteCount": 5
+    },
+    {
+      "name": "mageshsrinivasulu",
+      "year": 2025,
+      "content": "Brain got cooked trying to solve this problem",
+      "voteCount": 4
+    },
+    {
+      "name": "Mmanav10",
+      "year": 2023,
+      "content": "Good Question For Beginners!",
+      "voteCount": 2
+    },
+    {
+      "name": "bredtost",
+      "year": 2023,
+      "content": "Can someone explain this problem?",
+      "voteCount": 2
+    },
+    {
+      "name": "user9473N",
+      "year": 2025,
+      "content": "it looks easy but so tough,  I tried using DFS but felt it difficult.",
+      "voteCount": 1
+    },
+    {
+      "name": "p13rr0t",
+      "year": 2025,
+      "content": "start does not necessarily comes \"earlier\" than destination",
+      "voteCount": 1
+    },
+    {
+      "name": "taoo0316",
+      "year": 2024,
+      "content": "a little tricky for me",
+      "voteCount": 1
+    },
+    {
+      "name": "Chris1337",
+      "year": 2023,
+      "content": "This should have been a graph easy.\\n\\nTips:\\n- Compute distance going from start to destination going forward through the array.\\n- Compute distance going from start to destination going forward through the array.\\n- Account for when i meets 0 for both going forwards in backwards(make the array loop).\\n\\nGood luck Gentlemen",
+      "voteCount": 1
+    },
+    {
+      "name": "edl73GizlJ",
+      "year": 2025,
+      "content": "You don\\'t need knowledge of graphs for this problem, since the connections are all circular, each having 2 neighbours.",
+      "voteCount": 0
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "category": "",
+  "id": "102",
+  "name": "Binary Tree Level Order Traversal",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/binary-tree-level-order-traversal/",
+  "slug": "binary-tree-level-order-traversal",
+  "isPaidOnly": false,
+  "tags": [
+    "Tree",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Binary Tree Zigzag Level Order Traversal",
+      "difficulty": "Medium",
+      "slug": "binary-tree-zigzag-level-order-traversal"
+    },
+    {
+      "title": "Binary Tree Level Order Traversal II",
+      "difficulty": "Medium",
+      "slug": "binary-tree-level-order-traversal-ii"
+    },
+    {
+      "title": "Minimum Depth of Binary Tree",
+      "difficulty": "Easy",
+      "slug": "minimum-depth-of-binary-tree"
+    },
+    {
+      "title": "Binary Tree Vertical Order Traversal",
+      "difficulty": "Medium",
+      "slug": "binary-tree-vertical-order-traversal"
+    },
+    {
+      "title": "Average of Levels in Binary Tree",
+      "difficulty": "Easy",
+      "slug": "average-of-levels-in-binary-tree"
+    },
+    {
+      "title": "N-ary Tree Level Order Traversal",
+      "difficulty": "Medium",
+      "slug": "n-ary-tree-level-order-traversal"
+    },
+    {
+      "title": "Cousins in Binary Tree",
+      "difficulty": "Easy",
+      "slug": "cousins-in-binary-tree"
+    },
+    {
+      "title": "Minimum Number of Operations to Sort a Binary Tree by Level",
+      "difficulty": "Medium",
+      "slug": "minimum-number-of-operations-to-sort-a-binary-tree-by-level"
+    },
+    {
+      "title": "Divide Nodes Into the Maximum Number of Groups",
+      "difficulty": "Hard",
+      "slug": "divide-nodes-into-the-maximum-number-of-groups"
+    }
+  ],
+  "questionId": "102",
+  "questionFrontendId": "102",
+  "title": "Binary Tree Level Order Traversal",
+  "titleSlug": "binary-tree-level-order-traversal",
+  "content": "<p>Given the <code>root</code> of a binary tree, return <em>the level order traversal of its nodes&#39; values</em>. (i.e., from left to right, level by level).</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/02/19/tree1.jpg\" style=\"width: 277px; height: 302px;\" />\n<pre>\n<strong>Input:</strong> root = [3,9,20,null,null,15,7]\n<strong>Output:</strong> [[3],[9,20],[15,7]]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> root = [1]\n<strong>Output:</strong> [[1]]\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> root = []\n<strong>Output:</strong> []\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of nodes in the tree is in the range <code>[0, 2000]</code>.</li>\n\t<li><code>-1000 &lt;= Node.val &lt;= 1000</code></li>\n</ul>\n",
+  "likes": 16488,
+  "dislikes": 358,
+  "stats": {
+    "totalAccepted": "3M",
+    "totalSubmission": "4.2M",
+    "totalAcceptedRaw": 3012489,
+    "totalSubmissionRaw": 4229157,
+    "acRate": "71.2%"
+  },
+  "topicTags": [
+    {
+      "name": "Tree",
+      "slug": "tree"
+    },
+    {
+      "name": "Breadth-First Search",
+      "slug": "breadth-first-search"
+    },
+    {
+      "name": "Binary Tree",
+      "slug": "binary-tree"
+    }
+  ],
+  "metaData": {
+    "name": "levelOrder",
+    "params": [
+      {
+        "name": "root",
+        "type": "TreeNode"
+      }
+    ],
+    "return": {
+      "type": "list<list<integer>>",
+      "dealloc": true
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": true,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 14
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "haCo_",
+      "year": 2022,
+      "content": "[Here](https://leetcode.com/problems/binary-tree-level-order-traversal/discuss/1777659/What\\'s-wrong/1270808)\\nUpvote if you also don\\'t know",
+      "voteCount": 406
+    },
+    {
+      "name": "Dreamoochy",
+      "year": 2023,
+      "content": "Maybe I\\'m the only stupid here, but I think that more examples should be added to the description for better understanding. E.g. [1,2,3,4,5,null,7]",
+      "voteCount": 95
+    },
+    {
+      "name": "int-i",
+      "year": 2020,
+      "content": "You just have to print out the order of the nodes level by level, which is a simple algorithm on the tree using a queue. Shouldn\\'t this be an easy level Q since you\\'re just practising the basic level order traversal mechanism ?",
+      "voteCount": 59
+    },
+    {
+      "name": "gbargota",
+      "year": 2021,
+      "content": "how come the output of [1,2,3,4,null,null,5] is [[1],[2,3],[4,5]] and not [[1],[2,3],[4],[5]]?\\nif you visualize[4,null] is [4] and [null,5] is [5]. so the elements [4] and [5] should be separate and not [4,5]\\n",
+      "voteCount": 44
+    },
+    {
+      "name": "jachang820",
+      "year": 2018,
+      "content": "Why is this medium level when it is almost exactly the same thing as [N-ary tree level order traversal](https://leetcode.com/problems/n-ary-tree-level-order-traversal/description/)?",
+      "voteCount": 35
+    },
+    {
+      "name": "mohamed_waseela",
+      "year": 2022,
+      "content": "Use a regular binary tree BFS, but the trick is to keep track of the levels, so we need to have a list of all nodes at each level.\\n\\nHint: We can do this by adding a simple loop that run as much as their is nodes in the queue,\\n\\nPlease Upvote if this was helpful\\n\\nthis is my solution:\\nhttps://leetcode.com/problems/binary-tree-level-order-traversal/solutions/2910969/java-easy-clean-solution-100-faster-code/",
+      "voteCount": 28
+    },
+    {
+      "name": "daniel_9650",
+      "year": 2023,
+      "content": "Algorithm is very straightforward but the output format for C is pretty bizarre; why not just allow us to return a straight array of the values listed in level-order from left to right instead of making an array containing separate arrays for each level...? Very unnecessary inconvenience",
+      "voteCount": 16
+    },
+    {
+      "name": "alex-coder",
+      "year": 2014,
+      "content": "Looks like I cannot \"import Queue\", and Queue is not automatically imported",
+      "voteCount": 12
+    },
+    {
+      "name": "senadev42",
+      "year": 2023,
+      "content": "I honestly don\\'t know if it\\'s harder to do this with recursion or iteration. Should go brush up on BFS and queues, regardless.",
+      "voteCount": 7
+    },
+    {
+      "name": "vyshnavkr",
+      "year": 2020,
+      "content": "- I coded my accepted solution myself and that too only after getting the whole code, base case and edge cases in mind. Its an iterative solution. Its similar to LC approach 2 - just compare.\\n- LC recursive approach is worth noting // Imp: how new ArrayList is created for the first time a level is reached is worth studying!\\n- LC diagrams on DFS - pre/post/in and BFS are worth picturising in mind",
+      "voteCount": 7
+    }
+  ]
+}

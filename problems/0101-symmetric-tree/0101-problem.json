@@ -1,0 +1,122 @@
+{
+  "category": "",
+  "id": "101",
+  "name": "Symmetric Tree",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/symmetric-tree/",
+  "slug": "symmetric-tree",
+  "isPaidOnly": false,
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": [],
+  "questionId": "101",
+  "questionFrontendId": "101",
+  "title": "Symmetric Tree",
+  "titleSlug": "symmetric-tree",
+  "content": "<p>Given the <code>root</code> of a binary tree, <em>check whether it is a mirror of itself</em> (i.e., symmetric around its center).</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/02/19/symtree1.jpg\" style=\"width: 354px; height: 291px;\" />\n<pre>\n<strong>Input:</strong> root = [1,2,2,3,4,4,3]\n<strong>Output:</strong> true\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/02/19/symtree2.jpg\" style=\"width: 308px; height: 258px;\" />\n<pre>\n<strong>Input:</strong> root = [1,2,2,null,3,null,3]\n<strong>Output:</strong> false\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of nodes in the tree is in the range <code>[1, 1000]</code>.</li>\n\t<li><code>-100 &lt;= Node.val &lt;= 100</code></li>\n</ul>\n\n<p>&nbsp;</p>\n<strong>Follow up:</strong> Could you solve it both recursively and iteratively?",
+  "likes": 16372,
+  "dislikes": 429,
+  "stats": {
+    "totalAccepted": "2.6M",
+    "totalSubmission": "4.3M",
+    "totalAcceptedRaw": 2588768,
+    "totalSubmissionRaw": 4326627,
+    "acRate": "59.8%"
+  },
+  "topicTags": [
+    {
+      "name": "Tree",
+      "slug": "tree"
+    },
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Breadth-First Search",
+      "slug": "breadth-first-search"
+    },
+    {
+      "name": "Binary Tree",
+      "slug": "binary-tree"
+    }
+  ],
+  "metaData": {
+    "name": "isSymmetric",
+    "params": [
+      {
+        "name": "root",
+        "type": "TreeNode"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "AasheeshLikePanner",
+      "year": 2023,
+      "content": "I think this question difficulty is needed to be increased. Its difficulty should be medium.",
+      "voteCount": 581
+    },
+    {
+      "name": "sharabiania",
+      "year": 2019,
+      "content": "Should change the title of the question to Mirror Tree. Symetric Tree can cause confusion.",
+      "voteCount": 372
+    },
+    {
+      "name": "CodeDEVotion",
+      "year": 2024,
+      "content": "If you want to do this question in seconds, first solve Leetcode quesestions [Invert Tree](https://leetcode.com/problems/invert-binary-tree/description/) and [Same tree](https://leetcode.com/problems/same-tree/).\\nTrust me you will do it easily after considering this question as a combo of two.",
+      "voteCount": 186
+    },
+    {
+      "name": "teddacodet",
+      "year": 2023,
+      "content": "i miss her",
+      "voteCount": 181
+    },
+    {
+      "name": "mandy1339",
+      "year": 2022,
+      "content": "The solution was not trivial. You have to know how to traverse to trees simultaneously in inverse order. I couldn\\'t think of any trivial solutions. Took me too long for an easy problem. What do you think?",
+      "voteCount": 152
+    },
+    {
+      "name": "Paco98",
+      "year": 2023,
+      "content": "I tried to solve it using BFS and splitting it into levels, then checking if each level was a palindrome. I feel that is a more intuitive solution than traversing both halves at the same time. I got it to work for 197 out of 199 of cases before giving up.",
+      "voteCount": 94
+    },
+    {
+      "name": "meow_power",
+      "year": 2023,
+      "content": "It\\'s a shame that even on solving this problem before I can\\'t think on how to solve this problem :(",
+      "voteCount": 53
+    },
+    {
+      "name": "dark",
+      "year": 2014,
+      "content": "This problem involves two point:\\n\\n**symmetric:**\\n\\nconsider tree T:\\n\\nif T is null, then T is symmetric\\n\\nif T->left is mirror of T->right,then T is symmetric\\n\\n**mirror**\\n\\nconsider two tree T and R:\\n\\nif T=R=NULL, then T is mirror of R\\n\\nif T and R both not NULL,and T->left is mirror of R->right,and T->right is mirror of R->left,then T and R is mirror\\n\\notherwise the mirror relationship cannot estabished",
+      "voteCount": 49
+    },
+    {
+      "name": "kushalnagwanshicloud",
+      "year": 2022,
+      "content": "just move inorder in the leftsubtree and move reverse inorder in the rightsubtree simultaneously and check if they have the same value. ",
+      "voteCount": 35
+    },
+    {
+      "name": "pranavop2580",
+      "year": 2024,
+      "content": "Edge Case \\n `[1,2,2,2,null,2]`",
+      "voteCount": 17
+    }
+  ]
+}

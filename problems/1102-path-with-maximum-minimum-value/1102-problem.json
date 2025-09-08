@@ -1,0 +1,143 @@
+{
+  "category": "",
+  "id": "1102",
+  "name": "Path With Maximum Minimum Value",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/path-with-maximum-minimum-value/",
+  "slug": "path-with-maximum-minimum-value",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union Find",
+    "Heap (Priority Queue)",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Path With Minimum Effort",
+      "difficulty": "Medium",
+      "slug": "path-with-minimum-effort"
+    }
+  ],
+  "questionId": "1099",
+  "questionFrontendId": "1102",
+  "title": "Path With Maximum Minimum Value",
+  "titleSlug": "path-with-maximum-minimum-value",
+  "content": "<p>Given an <code>m x n</code> integer matrix <code>grid</code>, return <em>the maximum <strong>score</strong> of a path starting at </em><code>(0, 0)</code><em> and ending at </em><code>(m - 1, n - 1)</code> moving in the 4 cardinal directions.</p>\n\n<p>The <strong>score</strong> of a path is the minimum value in that path.</p>\n\n<ul>\n\t<li>For example, the score of the path <code>8 &rarr; 4 &rarr; 5 &rarr; 9</code> is <code>4</code>.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/08/05/maxgrid1.jpg\" style=\"width: 244px; height: 245px;\" />\n<pre>\n<strong>Input:</strong> grid = [[5,4,5],[1,2,6],[7,4,6]]\n<strong>Output:</strong> 4\n<strong>Explanation:</strong> The path with the maximum score is highlighted in yellow. \n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/08/05/maxgrid2.jpg\" style=\"width: 484px; height: 165px;\" />\n<pre>\n<strong>Input:</strong> grid = [[2,2,1,2,2,2],[1,2,2,2,1,2]]\n<strong>Output:</strong> 2\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/08/05/maxgrid3.jpg\" style=\"width: 404px; height: 485px;\" />\n<pre>\n<strong>Input:</strong> grid = [[3,4,6,3,4],[0,2,1,1,7],[8,8,3,2,7],[3,2,4,9,8],[4,1,2,0,0],[4,6,5,4,3]]\n<strong>Output:</strong> 3\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == grid.length</code></li>\n\t<li><code>n == grid[i].length</code></li>\n\t<li><code>1 &lt;= m, n &lt;= 100</code></li>\n\t<li><code>0 &lt;= grid[i][j] &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+  "likes": 1338,
+  "dislikes": 126,
+  "stats": {
+    "totalAccepted": "69.1K",
+    "totalSubmission": "127.4K",
+    "totalAcceptedRaw": 69094,
+    "totalSubmissionRaw": 127418,
+    "acRate": "54.2%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    },
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Breadth-First Search",
+      "slug": "breadth-first-search"
+    },
+    {
+      "name": "Union Find",
+      "slug": "union-find"
+    },
+    {
+      "name": "Heap (Priority Queue)",
+      "slug": "heap-priority-queue"
+    },
+    {
+      "name": "Matrix",
+      "slug": "matrix"
+    }
+  ],
+  "metaData": {
+    "name": "maximumMinimumPath",
+    "params": [
+      {
+        "name": "grid",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "kabirtocode",
+      "year": 2020,
+      "content": "Is it just me who feels that it is surely a hard problem. Lot of hints required in an interview setting for sure.",
+      "voteCount": 54
+    },
+    {
+      "name": "SJSU153",
+      "year": 2020,
+      "content": "Can someone explain, if we want maximum sum of path, then why dont we cover all the elements of the graph?",
+      "voteCount": 34
+    },
+    {
+      "name": "amrx101",
+      "year": 2020,
+      "content": "I looked at the examples in the description and recognised a pattern that choose the largest value grid at every step. So I implemented Dijsktra. I have no fucking clue why it works. Could some one offer some proof or insight.\\n\\nThanks.",
+      "voteCount": 3
+    },
+    {
+      "name": "ykdong2",
+      "year": 2022,
+      "content": "Similar to 1631, using Dijsktra.",
+      "voteCount": 2
+    },
+    {
+      "name": "joeyoo",
+      "year": 2020,
+      "content": "For the input: [[0,1,0,0,0,1],[0,1,1,0,0,0],[0,0,1,1,0,1],[0,1,1,1,1,0],[1,1,1,1,1,1]],\\nthe expected answer is 0. Shouldn\\'t it be 1? There are multiple valid paths of only 1\\'s from [0,0] to [R-1,C-1]. For example:\\n[  0,  **1**,  0,  0,  0,  1]\\n[  0,  **1**,  **1**,  0,  0,  0]\\n[  0,  0,  **1**,  1,  0,  1]\\n[  0,  1,  **1**,  **1**,  1,  0]\\n[  1,  1,  1,  **1**,  **1**,  1]\\n\\nThis would mean that the minimum value of this path, the score, is 1. The maximum score should then be 1, right? Am I not understanding the question?",
+      "voteCount": 2
+    },
+    {
+      "name": "LeetCode",
+      "year": 2022,
+      "content": "This problem is the Daily LeetCoding Challenge for March, Week 5.\n\nFeel free to share anything related to this problem here!\n\nYou can ask questions, discuss what you've learned from this problem, or show off how many days of streak you've made!\n\n---\n\nIf you'd like to share a detailed solution to the problem, please create a new post in the discuss section and provide\n- **Detailed Explanations**: Describe the algorithm you used to solve this problem. Include any insights you used to solve this problem.\n- **Images** that help explain the algorithm.\n- **Language and Code** you used to pass the problem.\n- **Time and Space complexity analysis**.\n\n---\n\n  **📌 Do you want to learn the problem thoroughly?**\n  Read [**⭐  LeetCode Official Solution⭐**](https://leetcode.com/problems/path-with-maximum-minimum-value/solution) to learn the 3 approaches to the problem with detailed explanations to the algorithms, codes, and complexity analysis.\n  <details>\n  <summary> Spoiler Alert! We'll explain these 5 approaches in the official solution</summary>\n\n  \n**Approach 1:** Iteration + BFS\n\n  \n**Approach 2:** Binary Search + Breadth First Search (BFS)\n\n  \n**Approach 3:** Binary Search + Depth First Search (DFS)\n\n  \n**Approach 4:** BFS + PriorityQueue\n\n  \n**Approach 5:** Union Find\n\n  \n</details>\n\n\n\nIf you're new to Daily LeetCoding Challenge, [**check out this post**](https://leetcode.com/discuss/general-discussion/655704/)!\n\n\n---\n\n<br>\n\n<p align=\"center\">\n<a href=\"https://leetcode.com/subscribe/?ref=ex_dc\" target=\"_blank\">\n  <img src=\"https://assets.leetcode.com/static_assets/marketing/daily_leetcoding_banner.png\" width=\"560px\" />\n</a>\n</p>\n\n<br>",
+      "voteCount": 2
+    },
+    {
+      "name": "matthewjinmp",
+      "year": 2025,
+      "content": "graphs problems are always so beautiful ",
+      "voteCount": 0
+    },
+    {
+      "name": "lightserna171",
+      "year": 2024,
+      "content": "Solve [778. Swim in Rising Water](https://leetcode.com/problems/swim-in-rising-water/) first, then this question becomes really easy to work out on your own. Or vice versa",
+      "voteCount": 0
+    },
+    {
+      "name": "gabbar8814",
+      "year": 2024,
+      "content": "the problem description is giving me brainrot",
+      "voteCount": 0
+    },
+    {
+      "name": "fleum",
+      "year": 2023,
+      "content": "dijkstra + union find = kruskal",
+      "voteCount": 0
+    }
+  ]
+}

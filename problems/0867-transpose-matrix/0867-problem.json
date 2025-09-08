@@ -1,0 +1,117 @@
+{
+  "category": "",
+  "id": "867",
+  "name": "Transpose Matrix",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/transpose-matrix/",
+  "slug": "transpose-matrix",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "similar_questions": [],
+  "questionId": "898",
+  "questionFrontendId": "867",
+  "title": "Transpose Matrix",
+  "titleSlug": "transpose-matrix",
+  "content": "<p>Given a 2D integer array <code>matrix</code>, return <em>the <strong>transpose</strong> of</em> <code>matrix</code>.</p>\n\n<p>The <strong>transpose</strong> of a matrix is the matrix flipped over its main diagonal, switching the matrix&#39;s row and column indices.</p>\n\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/02/10/hint_transpose.png\" style=\"width: 600px; height: 197px;\" /></p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> matrix = [[1,2,3],[4,5,6],[7,8,9]]\n<strong>Output:</strong> [[1,4,7],[2,5,8],[3,6,9]]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> matrix = [[1,2,3],[4,5,6]]\n<strong>Output:</strong> [[1,4],[2,5],[3,6]]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == matrix.length</code></li>\n\t<li><code>n == matrix[i].length</code></li>\n\t<li><code>1 &lt;= m, n &lt;= 1000</code></li>\n\t<li><code>1 &lt;= m * n &lt;= 10<sup>5</sup></code></li>\n\t<li><code>-10<sup>9</sup> &lt;= matrix[i][j] &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+  "likes": 4032,
+  "dislikes": 454,
+  "stats": {
+    "totalAccepted": "521.5K",
+    "totalSubmission": "696.7K",
+    "totalAcceptedRaw": 521478,
+    "totalSubmissionRaw": 696684,
+    "acRate": "74.9%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Matrix",
+      "slug": "matrix"
+    },
+    {
+      "name": "Simulation",
+      "slug": "simulation"
+    }
+  ],
+  "metaData": {
+    "name": "transpose",
+    "params": [
+      {
+        "name": "matrix",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "integer[][]"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "aceanojjj",
+      "year": 2023,
+      "content": "Has this type of 'easy' streak ever happened in recent leetcode history? 🤯",
+      "voteCount": 81
+    },
+    {
+      "name": "AlecLC",
+      "year": 2023,
+      "content": "Leetcode boss on Dec 1: \"Prepare a hard daily by EOD\"\nLeetcode intern: \"Sure!\"\nBoss: \"It's been 10 easy's in a row, wtf??\"\nIntern: \"I thought you meant end of December\"",
+      "voteCount": 67
+    },
+    {
+      "name": "courage1026",
+      "year": 2023,
+      "content": "Easy questions for 10 straight days...Feels like the calm before an \\'Impossible Week\\' storm.",
+      "voteCount": 47
+    },
+    {
+      "name": "el777",
+      "year": 2023,
+      "content": "I hope to see on December 31 task like:\\n\\n> You are given two numbers $$a$$ and $$b$$. Return their sum.\\n\\n :) ",
+      "voteCount": 43
+    },
+    {
+      "name": "sumit_verma_77",
+      "year": 2023,
+      "content": "we can't do it without using space. if it is N*N matrix then only we can .",
+      "voteCount": 29
+    },
+    {
+      "name": "meteahmetyakar",
+      "year": 2023,
+      "content": "Apparently, leetcode is determined to distribute \"Dec LeetCoding Challenge\" tokens to everyone as a Christmas gift\\n\\n",
+      "voteCount": 24
+    },
+    {
+      "name": "Chakri264",
+      "year": 2023,
+      "content": "Hardotber -> Mediuomber -> Easyember",
+      "voteCount": 13
+    },
+    {
+      "name": "LeetCode",
+      "year": 2022,
+      "content": "This problem is the Daily LeetCoding Challenge for June, Day 2.\n\nFeel free to share anything related to this problem here!\n\nYou can ask questions, discuss what you've learned from this problem, or show off how many days of streak you've made!\n\n---\n\nIf you'd like to share a detailed solution to the problem, please create a new post in the discuss section and provide\n- **Detailed Explanations**: Describe the algorithm you used to solve this problem. Include any insights you used to solve this problem.\n- **Images** that help explain the algorithm.\n- **Language and Code** you used to pass the problem.\n- **Time and Space complexity analysis**.\n\n---\n\n  **📌 Do you want to learn the problem thoroughly?**\n  Read [**⭐  LeetCode Official Solution⭐**](https://leetcode.com/problems/transpose-matrix/solution) to learn the 3 approaches to the problem with detailed explanations to the algorithms, codes, and complexity analysis.\n  <details>\n  <summary> Spoiler Alert! We'll explain this 1 approach in the official solution</summary>\n\n  \n**Approach 1:** Copy Directly\n\n  \n</details>\n\n\n\nIf you're new to Daily LeetCoding Challenge, [**check out this post**](https://leetcode.com/discuss/general-discussion/655704/)!\n\n\n---\n\n<br>\n\n<p align=\"center\">\n<a href=\"https://leetcode.com/subscribe/?ref=ex_dc\" target=\"_blank\">\n  <img src=\"https://assets.leetcode.com/static_assets/marketing/daily_leetcoding_banner.png\" width=\"560px\" />\n</a>\n</p>\n\n<br>",
+      "voteCount": 12
+    },
+    {
+      "name": "JarJuicy",
+      "year": 2020,
+      "content": "return zip(*A)",
+      "voteCount": 9
+    },
+    {
+      "name": "at218808",
+      "year": 2023,
+      "content": "why easy everyday leetcode",
+      "voteCount": 4
+    }
+  ]
+}

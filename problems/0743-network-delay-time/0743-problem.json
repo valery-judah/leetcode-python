@@ -1,0 +1,147 @@
+{
+  "category": "",
+  "id": "743",
+  "name": "Network Delay Time",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/network-delay-time/",
+  "slug": "network-delay-time",
+  "isPaidOnly": false,
+  "tags": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph",
+    "Heap (Priority Queue)",
+    "Shortest Path"
+  ],
+  "similar_questions": [
+    {
+      "title": "The Time When the Network Becomes Idle",
+      "difficulty": "Medium",
+      "slug": "the-time-when-the-network-becomes-idle"
+    },
+    {
+      "title": "Second Minimum Time to Reach Destination",
+      "difficulty": "Hard",
+      "slug": "second-minimum-time-to-reach-destination"
+    }
+  ],
+  "questionId": "744",
+  "questionFrontendId": "743",
+  "title": "Network Delay Time",
+  "titleSlug": "network-delay-time",
+  "content": "<p>You are given a network of <code>n</code> nodes, labeled from <code>1</code> to <code>n</code>. You are also given <code>times</code>, a list of travel times as directed edges <code>times[i] = (u<sub>i</sub>, v<sub>i</sub>, w<sub>i</sub>)</code>, where <code>u<sub>i</sub></code> is the source node, <code>v<sub>i</sub></code> is the target node, and <code>w<sub>i</sub></code> is the time it takes for a signal to travel from source to target.</p>\n\n<p>We will send a signal from a given node <code>k</code>. Return <em>the <strong>minimum</strong> time it takes for all the</em> <code>n</code> <em>nodes to receive the signal</em>. If it is impossible for all the <code>n</code> nodes to receive the signal, return <code>-1</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/05/23/931_example_1.png\" style=\"width: 217px; height: 239px;\" />\n<pre>\n<strong>Input:</strong> times = [[2,1,1],[2,3,1],[3,4,1]], n = 4, k = 2\n<strong>Output:</strong> 2\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> times = [[1,2,1]], n = 2, k = 1\n<strong>Output:</strong> 1\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> times = [[1,2,1]], n = 2, k = 2\n<strong>Output:</strong> -1\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= k &lt;= n &lt;= 100</code></li>\n\t<li><code>1 &lt;= times.length &lt;= 6000</code></li>\n\t<li><code>times[i].length == 3</code></li>\n\t<li><code>1 &lt;= u<sub>i</sub>, v<sub>i</sub> &lt;= n</code></li>\n\t<li><code>u<sub>i</sub> != v<sub>i</sub></code></li>\n\t<li><code>0 &lt;= w<sub>i</sub> &lt;= 100</code></li>\n\t<li>All the pairs <code>(u<sub>i</sub>, v<sub>i</sub>)</code> are <strong>unique</strong>. (i.e., no multiple edges.)</li>\n</ul>\n",
+  "likes": 8092,
+  "dislikes": 388,
+  "stats": {
+    "totalAccepted": "736.8K",
+    "totalSubmission": "1.3M",
+    "totalAcceptedRaw": 736847,
+    "totalSubmissionRaw": 1260987,
+    "acRate": "58.4%"
+  },
+  "topicTags": [
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Breadth-First Search",
+      "slug": "breadth-first-search"
+    },
+    {
+      "name": "Graph",
+      "slug": "graph"
+    },
+    {
+      "name": "Heap (Priority Queue)",
+      "slug": "heap-priority-queue"
+    },
+    {
+      "name": "Shortest Path",
+      "slug": "shortest-path"
+    }
+  ],
+  "metaData": {
+    "name": "networkDelayTime",
+    "params": [
+      {
+        "name": "times",
+        "type": "integer[][]"
+      },
+      {
+        "name": "n",
+        "type": "integer"
+      },
+      {
+        "name": "k",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "manual": false
+  },
+  "discussion_posts": [
+    {
+      "name": "aftabmk",
+      "year": 2023,
+      "content": "After solving this using $$Dijkstra-algorithm$$ you can implement this in the following questions\\n[787. Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/)\\n[778. Swim in Rising Water](https://leetcode.com/problems/swim-in-rising-water/description/)\\n[815. Bus Routes](https://leetcode.com/problems/bus-routes/description/)\\n[1091. Shortest Path in Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix/description/)\\n[1631. Path With Minimum Effort](https://leetcode.com/problems/path-with-minimum-effort/description/)\\n[2812. Find the Safest Path in a Grid](https://leetcode.com/problems/find-the-safest-path-in-a-grid/description/)\\n[2642. Design Graph With Shortest Path Calculator](https://leetcode.com/problems/design-graph-with-shortest-path-calculator/description/)\\nfor more open my `profile` > `list` > `dijkstra` ",
+      "voteCount": 291
+    },
+    {
+      "name": "Shikharishere",
+      "year": 2024,
+      "content": "Dijkstra\\'s name is more difficult than his algorithm........",
+      "voteCount": 68
+    },
+    {
+      "name": "ixiondbz",
+      "year": 2022,
+      "content": "The question isn\\'t clear in what it actually means to say that \\n`\"Return the time it takes for all the n nodes to receive the signal.\"`\\nReading this one is ought to think that the signal needs to pass through all of the n nodes, which isn\\'t the case. \\n\\nThe problem should instead simply state that: \\n`Return the minimum time it takes for the signal to travel from source node to target node` \\n\\n",
+      "voteCount": 35
+    },
+    {
+      "name": "amaaannn_16",
+      "year": 2023,
+      "content": "So, means return max from distance array of dijkstra and if anyone if infinite then give -1",
+      "voteCount": 33
+    },
+    {
+      "name": "brunocscabral",
+      "year": 2022,
+      "content": "Input \\ntimes = [[1,2,1],[2,1,3]]\\nn = 2  ---- k = 2\\nOutput = 4  ----- Expected = 3\\n\\n1 ---- 1 ----> 2\\n1<--- 3 -----  2\\n\\n(2 to 1 = 1) + (1 to 2 = 3 ) =  should be 4\\n\\nwhat I don\\'t understand in this problem?\\n",
+      "voteCount": 19
+    },
+    {
+      "name": "ParthSarthi33",
+      "year": 2024,
+      "content": "A cute Problem, if you know the `Dijkstra\\u2212algorithm`",
+      "voteCount": 18
+    },
+    {
+      "name": "miuki",
+      "year": 2018,
+      "content": "Why are there \\'0\\' distances between some vertices in this input?\\nInput:\\n[[3,5,78],[2,1,1],**[1,3,0]**,[4,3,59],[5,3,85],[5,2,22],[2,4,23],[1,4,43],[4,5,75],[5,1,15],[1,5,91],[4,1,16],[3,2,98],[3,4,22],[5,4,31],**[1,2,0]**,[2,5,4],[4,2,51],[3,1,36],[2,3,59]]\\n5\\n5\\n\\nAm I missing something? \\nThe description says all edge length should be between 1 and 100:\\n*directed edges times[i] = (u, v, w), where u is the source node, v is the target node, and w is the time it takes for a signal to travel from source to target.*\\nand\\n*All edges times[i] = (u, v, w) will have 1 <= u, v <= N and **1 <= w <= 100.***",
+      "voteCount": 10
+    },
+    {
+      "name": "xhnsylk",
+      "year": 2022,
+      "content": "Assume there are negative edges \\n\\n<details>\\n<summary> Case1:No negative cycles</summary>\\n\\n**Example 1**\\n![image](https://assets.leetcode.com/users/images/1ad0bfe3-2aa1-4ae9-bccc-a6fca99a97a9_1643658344.5855982.jpeg)\\n\\n<details>\\n<summary> Consider this exampel, what is dist[2], the shortest path from 1 to 2, if we use Dijastra algorithm?</summary>\\n\\n<pre>\\nFor Dijastra algo, after we visited the neighbors of vertex 1 (vertex 2 and 3), min-heap = [(distant=6, vertex=2), (distant=7, vertex=3)]. \\nWe will visit vertex 2 in the next while iteration. \\nBased on the implementation of dijastra algo, the shortest distance for vertex 2 is determined (dist[2] = 6) and we will no longer change it. \\nThis is because the shortest distance that is one step away from vertex 1 is 6. If there is another 1-2 path, then it must be > 1 step away from vertex 1. If all edges are positive, 6 + x > 6 for x > 0. \\n</pre>\\n</details>\\n\\nHowever, this is not true if there are negative edges since it is possible that y + x < 6 for y > 6 and x < 0. We could easily see from the example above. \\n\\nDijastra algo no longer works cause we must try all posible u-v paths before we know the shortest u-v path\\n\\nLet\\'s assume the shortest u-v path is like this\\n![image](https://assets.leetcode.com/users/images/f65f554b-76d9-4662-a6c2-cd8d1c202430_1643659229.8689365.jpeg)\\n\\n\\n<details>\\n<summary> Should there be any cycles in the shortest u-v path?</summary>\\n<pre>\\nThere should be NO cycle in the shortest u-v path. BWOC (by way of contradiction), there is a cycle, which means we have a v-v subpath. \\nThe green cycle shown below should always be positive based on the assumption (no negative cycles). If we remove the green cycle we can still get a u-v path and it should be shorter.\\n</pre>\\n\\n![image](https://assets.leetcode.com/users/images/0337a85b-01a8-4cb0-a3b9-da05c129cbbc_1643659336.966775.jpeg)\\n\\n</details>            \\n        \\nThus, we know the shortest u-v path should have maximum |V|=n vertices and n-1 edges. (go through each node maximum once)\\nAnother thing we should notice is that v_j must be the neighbor of v_{j-1}. For example, v_1 must be the neighbor of u\\nIf we loop through all edges n times, we should get dist[v_j] at the jth iteration.\\nTo be clear, let\\'s look at the **Example 1** again, the shortest 1-2 path is 1->3->2. At the first iteration, we wll get dist[v_1]=7 for this path (1->3->2). \\nTherefore, we should relax maximum n-1 times before we get dist[v], the shortest u-v path, for v belongs to V and u=k\\n</details>\\n\\n<details>\\n<summary>Case 2: Contain negative cycles</summary>\\nWhat will happen if there are negative cycles?\\nConsider this example, \\n\\n![image](https://assets.leetcode.com/users/images/4e67bf6f-b358-4ed2-8eb8-51c1ac5f3a46_1643659806.306936.png)\\n\\n<details>\\n<summary>What is the shortest 1-2 path?</summary>\\nNegative infinite. cause path(1->2->3->4->2) = 1, path(1->2->3->4->2->3->4->2) = -4 ...\\n</details>\\n\\nSo we need a way to detect the path contains negative cycles and update it to negative infinite.\\n\\nTo be continued ...\\n\\n</details>        \\n",
+      "voteCount": 9
+    },
+    {
+      "name": "nolanemirot",
+      "year": 2019,
+      "content": "Here is test 50:\\n[[1,2,1],[2,3,7],[1,3,4],[2,1,2]]\\n4\\n1\\n\\nWhy is that returning -1\\n\\nAll the nodes can receive a signal.",
+      "voteCount": 6
+    },
+    {
+      "name": "LeetCode",
+      "year": 2022,
+      "content": "This problem is the Daily LeetCoding Challenge for May, Day 14.\n\nFeel free to share anything related to this problem here!\n\nYou can ask questions, discuss what you've learned from this problem, or show off how many days of streak you've made!\n\n---\n\nIf you'd like to share a detailed solution to the problem, please create a new post in the discuss section and provide\n- **Detailed Explanations**: Describe the algorithm you used to solve this problem. Include any insights you used to solve this problem.\n- **Images** that help explain the algorithm.\n- **Language and Code** you used to pass the problem.\n- **Time and Space complexity analysis**.\n\n---\n\n  **📌 Do you want to learn the problem thoroughly?**\n  Read [**⭐  LeetCode Official Solution⭐**](https://leetcode.com/problems/network-delay-time/solution) to learn the 3 approaches to the problem with detailed explanations to the algorithms, codes, and complexity analysis.\n  <details>\n  <summary> Spoiler Alert! We'll explain these 3 approaches in the official solution</summary>\n\n  \n**Approach 1:** Depth-First Search (DFS)\n\n  \n**Approach 2:** Breadth-First Search (BFS)\n\n  \n**Approach 3:** Dijkstra's Algorithm\n\n  \n</details>\n\n\n\nIf you're new to Daily LeetCoding Challenge, [**check out this post**](https://leetcode.com/discuss/general-discussion/655704/)!\n\n\n---\n\n<br>\n\n<p align=\"center\">\n<a href=\"https://leetcode.com/subscribe/?ref=ex_dc\" target=\"_blank\">\n  <img src=\"https://assets.leetcode.com/static_assets/marketing/daily_leetcoding_banner.png\" width=\"560px\" />\n</a>\n</p>\n\n<br>",
+      "voteCount": 6
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "category": "",
+  "id": "875",
+  "name": "Koko Eating Bananas",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/koko-eating-bananas/",
+  "slug": "koko-eating-bananas",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimize Max Distance to Gas Station",
+      "difficulty": "Hard",
+      "slug": "minimize-max-distance-to-gas-station"
+    },
+    {
+      "title": "Maximum Candies Allocated to K Children",
+      "difficulty": "Medium",
+      "slug": "maximum-candies-allocated-to-k-children"
+    },
+    {
+      "title": "Minimized Maximum of Products Distributed to Any Store",
+      "difficulty": "Medium",
+      "slug": "minimized-maximum-of-products-distributed-to-any-store"
+    },
+    {
+      "title": "Frog Jump II",
+      "difficulty": "Medium",
+      "slug": "frog-jump-ii"
+    },
+    {
+      "title": "Minimum Time to Repair Cars",
+      "difficulty": "Medium",
+      "slug": "minimum-time-to-repair-cars"
+    }
+  ],
+  "questionId": "907",
+  "questionFrontendId": "875",
+  "title": "Koko Eating Bananas",
+  "titleSlug": "koko-eating-bananas",
+  "content": "<p>Koko loves to eat bananas. There are <code>n</code> piles of bananas, the <code>i<sup>th</sup></code> pile has <code>piles[i]</code> bananas. The guards have gone and will come back in <code>h</code> hours.</p>\n\n<p>Koko can decide her bananas-per-hour eating speed of <code>k</code>. Each hour, she chooses some pile of bananas and eats <code>k</code> bananas from that pile. If the pile has less than <code>k</code> bananas, she eats all of them instead and will not eat any more bananas during this hour.</p>\n\n<p>Koko likes to eat slowly but still wants to finish eating all the bananas before the guards return.</p>\n\n<p>Return <em>the minimum integer</em> <code>k</code> <em>such that she can eat all the bananas within</em> <code>h</code> <em>hours</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> piles = [3,6,7,11], h = 8\n<strong>Output:</strong> 4\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> piles = [30,11,23,4,20], h = 5\n<strong>Output:</strong> 30\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> piles = [30,11,23,4,20], h = 6\n<strong>Output:</strong> 23\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= piles.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>piles.length &lt;= h &lt;= 10<sup>9</sup></code></li>\n\t<li><code>1 &lt;= piles[i] &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+  "likes": 12732,
+  "dislikes": 836,
+  "stats": {
+    "totalAccepted": "1.3M",
+    "totalSubmission": "2.6M",
+    "totalAcceptedRaw": 1261444,
+    "totalSubmissionRaw": 2570182,
+    "acRate": "49.1%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    }
+  ],
+  "metaData": {
+    "name": "minEatingSpeed",
+    "params": [
+      {
+        "name": "piles",
+        "type": "integer[]"
+      },
+      {
+        "name": "h",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 33
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Google",
+        "slug": "google",
+        "timesEncountered": 18
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Meta",
+        "slug": "facebook",
+        "timesEncountered": 12
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "dankCoder007",
+      "year": 2023,
+      "content": "double it and give it to the next monkey.",
+      "voteCount": 2382
+    },
+    {
+      "name": "sanchit1417",
+      "year": 2023,
+      "content": "Am i the only one who couldn\\'t think of any way to start this problem?",
+      "voteCount": 1410
+    },
+    {
+      "name": "the__doer",
+      "year": 2023,
+      "content": "The bigger question is - will coco be able to eat 80553579 in 1 hour or even in 1 life?",
+      "voteCount": 397
+    },
+    {
+      "name": "Shahad-H",
+      "year": 2023,
+      "content": "Finally, I solved it without seeing any video or discussion or solution \\nit took me 2 hours",
+      "voteCount": 382
+    },
+    {
+      "name": "JiayingGao",
+      "year": 2023,
+      "content": "Hey, I am koko, i love bananas.",
+      "voteCount": 312
+    },
+    {
+      "name": "pokerboy_leet",
+      "year": 2023,
+      "content": "Happy Holi to all LeetCoders \\uD83D\\uDE0A",
+      "voteCount": 241
+    },
+    {
+      "name": "joseville",
+      "year": 2022,
+      "content": "I was able to solve this problem using binary search, but I was wondering if there\\'s a more mathematical way to solve it and I asked about it on math.stackexchange.com.\\n\\nIf anyone\\'s interested, here\\'s the link:\\n\\nhttps://math.stackexchange.com/q/4361332/833760\\n\\nBest!",
+      "voteCount": 122
+    },
+    {
+      "name": "mustafiz7",
+      "year": 2023,
+      "content": "Tight!  ..  Tight! Tight! Hey .. Koko, Trips, Lolo whatever man, Just keep bringing these Binary Search questions!",
+      "voteCount": 118
+    },
+    {
+      "name": "lowerkinded",
+      "year": 2023,
+      "content": "I\\'ve been solving this for 3 days and I\\'m genuinely crying because of this problem",
+      "voteCount": 80
+    },
+    {
+      "name": "waxm",
+      "year": 2023,
+      "content": "I don\\'t understand the question ",
+      "voteCount": 71
+    }
+  ]
+}

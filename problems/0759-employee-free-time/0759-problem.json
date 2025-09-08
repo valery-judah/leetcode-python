@@ -1,0 +1,151 @@
+{
+  "category": "",
+  "id": "759",
+  "name": "Employee Free Time",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/employee-free-time/",
+  "slug": "employee-free-time",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Line Sweep",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "similar_questions": [
+    {
+      "title": "Merge Intervals",
+      "difficulty": "Medium",
+      "slug": "merge-intervals"
+    },
+    {
+      "title": "Interval List Intersections",
+      "difficulty": "Medium",
+      "slug": "interval-list-intersections"
+    }
+  ],
+  "questionId": "761",
+  "questionFrontendId": "759",
+  "title": "Employee Free Time",
+  "titleSlug": "employee-free-time",
+  "content": "<p>We are given a list <code>schedule</code> of employees, which represents the working time for each employee.</p>\r\n\r\n<p>Each employee has a list of non-overlapping <code>Intervals</code>, and these intervals are in sorted order.</p>\r\n\r\n<p>Return the list of finite intervals representing <b>common, positive-length free time</b> for <i>all</i> employees, also in sorted order.</p>\r\n\r\n<p>(Even though we are representing <code>Intervals</code> in the form <code>[x, y]</code>, the objects inside are <code>Intervals</code>, not lists or arrays. For example, <code>schedule[0][0].start = 1</code>, <code>schedule[0][0].end = 2</code>, and <code>schedule[0][0][0]</code> is not defined).&nbsp; Also, we wouldn&#39;t include intervals like [5, 5] in our answer, as they have zero length.</p>\r\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> schedule = [[[1,2],[5,6]],[[1,3]],[[4,10]]]\n<strong>Output:</strong> [[3,4]]\n<strong>Explanation:</strong> There are a total of three employees, and all common\nfree time intervals would be [-inf, 1], [3, 4], [10, inf].\nWe discard any intervals that contain inf as they aren&#39;t finite.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> schedule = [[[1,3],[6,7]],[[2,4]],[[2,5],[9,12]]]\n<strong>Output:</strong> [[5,6],[7,9]]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= schedule.length , schedule[i].length &lt;= 50</code></li>\n\t<li><code>0 &lt;= schedule[i].start &lt; schedule[i].end &lt;= 10^8</code></li>\n</ul>\n",
+  "likes": 1940,
+  "dislikes": 140,
+  "stats": {
+    "totalAccepted": "170.1K",
+    "totalSubmission": "234.2K",
+    "totalAcceptedRaw": 170120,
+    "totalSubmissionRaw": 234234,
+    "acRate": "72.6%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Line Sweep",
+      "slug": "line-sweep"
+    },
+    {
+      "name": "Sorting",
+      "slug": "sorting"
+    },
+    {
+      "name": "Heap (Priority Queue)",
+      "slug": "heap-priority-queue"
+    }
+  ],
+  "metaData": {
+    "name": "employeeFreeTime",
+    "params": [
+      {
+        "name": "schedule",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "languages": [
+      "cpp",
+      "java",
+      "python",
+      "csharp",
+      "javascript",
+      "python3",
+      "golang",
+      "ruby",
+      "kotlin",
+      "scala",
+      "swift",
+      "php",
+      "typescript",
+      "rust"
+    ],
+    "manual": true,
+    "typescriptCustomType": "class Interval {\n    start: number;\n    end: number;\n    constructor(start: number, end: number) {\n        this.start = start;\n        this.end = end;\n    }\n}"
+  },
+  "discussion_posts": [
+    {
+      "name": "sorokus-dev",
+      "year": 2022,
+      "content": "IMO should go to \"Medium\" category.",
+      "voteCount": 57
+    },
+    {
+      "name": "CaptainKidd",
+      "year": 2023,
+      "content": "I think it would be better to make a slight change to this problem description and add at the end.\n\nFollow-up: Can you solve this problem in O(N log K) time where K = schedule.size(). \n\nI think that would allow people who come up the O(N Log N) time solutions to walk away with a win but also hint that there is an optimized solution which in turn justifies why this is a hard vs a mislabeled medium. ",
+      "voteCount": 17
+    },
+    {
+      "name": "h4o4",
+      "year": 2023,
+      "content": "LeetCode 23 - Merge k Sorted Lists\\n+\\nLeetCode 57 - Insert Interval",
+      "voteCount": 13
+    },
+    {
+      "name": "ginchang",
+      "year": 2021,
+      "content": "Tip: \\nConsider all intervals are from one person - reduce this problem to interval merge topic where the only difference is to output the free slots.",
+      "voteCount": 9
+    },
+    {
+      "name": "nimbus2020",
+      "year": 2025,
+      "content": "Please for the love of god, mention clearly in the fukin question if the intervals are inclusive of exclusive with respect to `endTime`",
+      "voteCount": 6
+    },
+    {
+      "name": "yelun",
+      "year": 2021,
+      "content": "This is almost the same as the first merge intervals question, once identified. \\n\\nThe only trick is to use a heap. You can even shove it into a gigantic List and then sort the list after. Its the same time complexity and space.\\n\\nThen take the open windows (gaps) of the merged list",
+      "voteCount": 5
+    },
+    {
+      "name": "tech_bro_ceo",
+      "year": 2025,
+      "content": "Description is so verbose. IMO here\\'s a simpler one to quickly grasp what the problem is asking:\\n\\nGiven a list schedule that represent multiple employees\\' work time, return the intervals during the day (ie: not at the edges) where all employees have free time.",
+      "voteCount": 4
+    },
+    {
+      "name": "Mabo123ksju",
+      "year": 2024,
+      "content": "medium at best",
+      "voteCount": 4
+    },
+    {
+      "name": "prayag",
+      "year": 2023,
+      "content": "There are Mediums more challenging than this Hard.",
+      "voteCount": 4
+    },
+    {
+      "name": "gamefana",
+      "year": 2023,
+      "content": "Very similar to another hard problem called RangeModule",
+      "voteCount": 2
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "category": "",
+  "id": "208",
+  "name": "Implement Trie (Prefix Tree)",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/implement-trie-prefix-tree/",
+  "slug": "implement-trie-prefix-tree",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Design",
+    "Trie"
+  ],
+  "similar_questions": [
+    {
+      "title": "Design Add and Search Words Data Structure",
+      "difficulty": "Medium",
+      "slug": "design-add-and-search-words-data-structure"
+    },
+    {
+      "title": "Design Search Autocomplete System",
+      "difficulty": "Hard",
+      "slug": "design-search-autocomplete-system"
+    },
+    {
+      "title": "Replace Words",
+      "difficulty": "Medium",
+      "slug": "replace-words"
+    },
+    {
+      "title": "Implement Magic Dictionary",
+      "difficulty": "Medium",
+      "slug": "implement-magic-dictionary"
+    },
+    {
+      "title": "Encrypt and Decrypt Strings",
+      "difficulty": "Hard",
+      "slug": "encrypt-and-decrypt-strings"
+    },
+    {
+      "title": "Implement Trie II (Prefix Tree)",
+      "difficulty": "Medium",
+      "slug": "implement-trie-ii-prefix-tree"
+    },
+    {
+      "title": "Count Prefix and Suffix Pairs II",
+      "difficulty": "Hard",
+      "slug": "count-prefix-and-suffix-pairs-ii"
+    },
+    {
+      "title": "Count Prefix and Suffix Pairs I",
+      "difficulty": "Easy",
+      "slug": "count-prefix-and-suffix-pairs-i"
+    }
+  ],
+  "questionId": "208",
+  "questionFrontendId": "208",
+  "title": "Implement Trie (Prefix Tree)",
+  "titleSlug": "implement-trie-prefix-tree",
+  "content": "<p>A <a href=\"https://en.wikipedia.org/wiki/Trie\" target=\"_blank\"><strong>trie</strong></a> (pronounced as &quot;try&quot;) or <strong>prefix tree</strong> is a tree data structure used to efficiently store and retrieve keys in a dataset of strings. There are various applications of this data structure, such as autocomplete and spellchecker.</p>\n\n<p>Implement the Trie class:</p>\n\n<ul>\n\t<li><code>Trie()</code> Initializes the trie object.</li>\n\t<li><code>void insert(String word)</code> Inserts the string <code>word</code> into the trie.</li>\n\t<li><code>boolean search(String word)</code> Returns <code>true</code> if the string <code>word</code> is in the trie (i.e., was inserted before), and <code>false</code> otherwise.</li>\n\t<li><code>boolean startsWith(String prefix)</code> Returns <code>true</code> if there is a previously inserted string <code>word</code> that has the prefix <code>prefix</code>, and <code>false</code> otherwise.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input</strong>\n[&quot;Trie&quot;, &quot;insert&quot;, &quot;search&quot;, &quot;search&quot;, &quot;startsWith&quot;, &quot;insert&quot;, &quot;search&quot;]\n[[], [&quot;apple&quot;], [&quot;apple&quot;], [&quot;app&quot;], [&quot;app&quot;], [&quot;app&quot;], [&quot;app&quot;]]\n<strong>Output</strong>\n[null, null, true, false, true, null, true]\n\n<strong>Explanation</strong>\nTrie trie = new Trie();\ntrie.insert(&quot;apple&quot;);\ntrie.search(&quot;apple&quot;);   // return True\ntrie.search(&quot;app&quot;);     // return False\ntrie.startsWith(&quot;app&quot;); // return True\ntrie.insert(&quot;app&quot;);\ntrie.search(&quot;app&quot;);     // return True\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= word.length, prefix.length &lt;= 2000</code></li>\n\t<li><code>word</code> and <code>prefix</code> consist only of lowercase English letters.</li>\n\t<li>At most <code>3 * 10<sup>4</sup></code> calls <strong>in total</strong> will be made to <code>insert</code>, <code>search</code>, and <code>startsWith</code>.</li>\n</ul>\n",
+  "likes": 12198,
+  "dislikes": 154,
+  "stats": {
+    "totalAccepted": "1.4M",
+    "totalSubmission": "2M",
+    "totalAcceptedRaw": 1390727,
+    "totalSubmissionRaw": 2032290,
+    "acRate": "68.4%"
+  },
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Design",
+      "slug": "design"
+    },
+    {
+      "name": "Trie",
+      "slug": "trie"
+    }
+  ],
+  "metaData": {
+    "classname": "Trie",
+    "constructor": {
+      "params": []
+    },
+    "methods": [
+      {
+        "params": [
+          {
+            "type": "string",
+            "name": "word"
+          }
+        ],
+        "name": "insert",
+        "return": {
+          "type": "void"
+        }
+      },
+      {
+        "params": [
+          {
+            "type": "string",
+            "name": "word"
+          }
+        ],
+        "name": "search",
+        "return": {
+          "type": "boolean"
+        }
+      },
+      {
+        "params": [
+          {
+            "type": "string",
+            "name": "prefix"
+          }
+        ],
+        "name": "startsWith",
+        "return": {
+          "type": "boolean"
+        }
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "systemdesign": true
+  },
+  "discussion_posts": [
+    {
+      "name": "simonzhu91",
+      "year": 2016,
+      "content": "Admin, it would be really nice to also implement delete method and include delete test cases for this question!",
+      "voteCount": 199
+    },
+    {
+      "name": "Dhruv_Gupta1",
+      "year": 2023,
+      "content": "why i am addicted to leetcode discussion panel",
+      "voteCount": 192
+    },
+    {
+      "name": "CaptainKidd",
+      "year": 2023,
+      "content": "Future readers please do not rely on this style of implementing the Trie Tree data structure as anything other than academic purity. Use a hashmap instead so you don\\'t blow your interview time writing a 30 line boilerplate component for a TrieNode when you could do the same in two lines. ",
+      "voteCount": 77
+    },
+    {
+      "name": "mohankrishnanie",
+      "year": 2024,
+      "content": "completed my 200th problem!\\n",
+      "voteCount": 70
+    },
+    {
+      "name": "arvin4181",
+      "year": 2019,
+      "content": "When I run following test case from Console, it passes, but it fails when I submit my code.\\n\\n[\"Trie\",\"startsWith\"]\\n[[],[\"a\"]]\\n\\n",
+      "voteCount": 31
+    },
+    {
+      "name": "Jeetaksh",
+      "year": 2023,
+      "content": "I was able to solve it just by using vector or strings and using brute force. The constraints should be designed tougher to pass such methods in order to solve the purpose of the question.",
+      "voteCount": 23
+    },
+    {
+      "name": "dumb_me",
+      "year": 2023,
+      "content": "Finally Learned Trie Thank You leetcode ......\\n",
+      "voteCount": 22
+    },
+    {
+      "name": "varshini-S",
+      "year": 2023,
+      "content": "agree if this question is supposed to be mentioned as HARD",
+      "voteCount": 20
+    },
+    {
+      "name": "deleted_user",
+      "year": 2020,
+      "content": "https://youtu.be/Kqfckuz0pcw\\n\\nI have tried to explain Trie data structure simply but in detail from scratch. \\nIf you like my work please do consider subscribing to my YouTube channel.\\n\\nDisclaimer: The language of the video is Hindi because I can best express myself in my native language.",
+      "voteCount": 20
+    },
+    {
+      "name": "rohan_pothireddy",
+      "year": 2024,
+      "content": "I was asked trie in my interview, did not know anything about it. Now I know!",
+      "voteCount": 14
+    }
+  ]
+}

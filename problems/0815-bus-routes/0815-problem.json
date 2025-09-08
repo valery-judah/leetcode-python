@@ -1,0 +1,147 @@
+{
+  "category": "",
+  "id": "815",
+  "name": "Bus Routes",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/bus-routes/",
+  "slug": "bus-routes",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Breadth-First Search"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Costs Using the Train Line",
+      "difficulty": "Hard",
+      "slug": "minimum-costs-using-the-train-line"
+    }
+  ],
+  "questionId": "833",
+  "questionFrontendId": "815",
+  "title": "Bus Routes",
+  "titleSlug": "bus-routes",
+  "content": "<p>You are given an array <code>routes</code> representing bus routes where <code>routes[i]</code> is a bus route that the <code>i<sup>th</sup></code> bus repeats forever.</p>\n\n<ul>\n\t<li>For example, if <code>routes[0] = [1, 5, 7]</code>, this means that the <code>0<sup>th</sup></code> bus travels in the sequence <code>1 -&gt; 5 -&gt; 7 -&gt; 1 -&gt; 5 -&gt; 7 -&gt; 1 -&gt; ...</code> forever.</li>\n</ul>\n\n<p>You will start at the bus stop <code>source</code> (You are not on any bus initially), and you want to go to the bus stop <code>target</code>. You can travel between bus stops by buses only.</p>\n\n<p>Return <em>the least number of buses you must take to travel from </em><code>source</code><em> to </em><code>target</code>. Return <code>-1</code> if it is not possible.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> routes = [[1,2,7],[3,6,7]], source = 1, target = 6\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> The best strategy is take the first bus to the bus stop 7, then take the second bus to the bus stop 6.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> routes = [[7,12],[4,5,15],[6],[15,19],[9,12,13]], source = 15, target = 12\n<strong>Output:</strong> -1\n</pre>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= routes.length &lt;= 500</code>.</li>\n\t<li><code>1 &lt;= routes[i].length &lt;= 10<sup>5</sup></code></li>\n\t<li>All the values of <code>routes[i]</code> are <strong>unique</strong>.</li>\n\t<li><code>sum(routes[i].length) &lt;= 10<sup>5</sup></code></li>\n\t<li><code>0 &lt;= routes[i][j] &lt; 10<sup>6</sup></code></li>\n\t<li><code>0 &lt;= source, target &lt; 10<sup>6</sup></code></li>\n</ul>\n",
+  "likes": 4554,
+  "dislikes": 133,
+  "stats": {
+    "totalAccepted": "258.2K",
+    "totalSubmission": "549.8K",
+    "totalAcceptedRaw": 258218,
+    "totalSubmissionRaw": 549777,
+    "acRate": "47.0%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Breadth-First Search",
+      "slug": "breadth-first-search"
+    }
+  ],
+  "metaData": {
+    "name": "numBusesToDestination",
+    "params": [
+      {
+        "name": "routes",
+        "type": "integer[][]"
+      },
+      {
+        "name": "source",
+        "type": "integer"
+      },
+      {
+        "name": "target",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Uber",
+        "slug": "uber",
+        "timesEncountered": 22
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Pinterest",
+        "slug": "pinterest",
+        "timesEncountered": 13
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "ujjawal_kr",
+      "year": 2023,
+      "content": "Happy DIWALI  everyone \\uD83D\\uDD25\\uD83D\\uDD25\\nDon\\'t Feel Bad if u are not at Home this Diwali. \\nSuccess takes sacrifice and hard work as fuel to ignite.\\uD83D\\uDE4F\\uD83C\\uDFFB\\uD83D\\uDE4F\\uD83C\\uDFFB",
+      "voteCount": 176
+    },
+    {
+      "name": "pieceofpie",
+      "year": 2023,
+      "content": "The bus driver with one bus stop be chilling :)",
+      "voteCount": 168
+    },
+    {
+      "name": "im-naime",
+      "year": 2023,
+      "content": "Man, if I come across this question during an interview, I might as well start scouting for the nearest bus stop ;) ",
+      "voteCount": 134
+    },
+    {
+      "name": "xeniawann",
+      "year": 2023,
+      "content": "***Hint:*** I first wrote a BFS using bus **stops** as nodes in a graph, but got TLE in 44/47 test case. So the hint is to use **bus** as graph nodes and think how to determine if two buses are \"connected\", ie. they share at least 1 common bus stops.\n\nAfter that, find all the nodes you can start from (ie. all buses whose stops include `source`) and all the nodes you want to reach (ie. all buses whose stops include `target`). Then you can see a BFS coming into shape, remember to record the distance along the way. \n\nHopefully this makes the problem more approachable.",
+      "voteCount": 123
+    },
+    {
+      "name": "grean_peas2020",
+      "year": 2023,
+      "content": "Head hurts when one is unable to solve the question that has been already been solved in the past.",
+      "voteCount": 67
+    },
+    {
+      "name": "dmasc",
+      "year": 2023,
+      "content": "I couldn\\'t stop noticing but half of the comments are about Indian holidays these days. I feel like living in India already \\uD83D\\uDE01. Respect to all my Indian brothers from Brazil ",
+      "voteCount": 61
+    },
+    {
+      "name": "sthetix",
+      "year": 2023,
+      "content": "Happy Diwali Fam💥💥🚀🚀",
+      "voteCount": 53
+    },
+    {
+      "name": "NinjaFire",
+      "year": 2023,
+      "content": "Happy Diwali Leetcoders \\uD83E\\uDDE8\\uD83E\\uDDE8",
+      "voteCount": 38
+    },
+    {
+      "name": "sthetix",
+      "year": 2023,
+      "content": "## Ninja Technique\nWanna see a **Drastic Decrease in Runtime** \nGo target-> Source instead of source->target\nIt will reduce exploring the redundant paths and will explore only useful paths\nThank me later😊💯.\nHappy Diwali !🚀💥🚀✨.\n<img width=\"250\" src=\"https://assets.leetcode.com/users/images/d5341391-036e-4af5-a58f-d9d77651eead_1699750751.8709846.jpeg\"/>",
+      "voteCount": 21
+    },
+    {
+      "name": "vishalgunawad",
+      "year": 2023,
+      "content": "\\uD83C\\uDFF9\\uD83C\\uDFF9 \\uD83D\\uDE4F\\uD83C\\uDFFB Happy Diwali to all \\uD83E\\uDE94\\uD83C\\uDF86\\uD83C\\uDF87\\u2728\\uD83C\\uDF1F\\uD83D\\uDC96",
+      "voteCount": 20
+    }
+  ]
+}

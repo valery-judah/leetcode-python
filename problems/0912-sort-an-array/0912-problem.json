@@ -1,0 +1,142 @@
+{
+  "category": "",
+  "id": "912",
+  "name": "Sort an Array",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/sort-an-array/",
+  "slug": "sort-an-array",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Divide and Conquer",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Merge Sort",
+    "Bucket Sort",
+    "Radix Sort",
+    "Counting Sort"
+  ],
+  "similar_questions": [],
+  "questionId": "948",
+  "questionFrontendId": "912",
+  "title": "Sort an Array",
+  "titleSlug": "sort-an-array",
+  "content": "<p>Given an array of integers <code>nums</code>, sort the array in ascending order and return it.</p>\n\n<p>You must solve the problem <strong>without using any built-in</strong> functions in <code>O(nlog(n))</code> time complexity and with the smallest space complexity possible.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [5,2,3,1]\n<strong>Output:</strong> [1,2,3,5]\n<strong>Explanation:</strong> After sorting the array, the positions of some numbers are not changed (for example, 2 and 3), while the positions of other numbers are changed (for example, 1 and 5).\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [5,1,1,2,0,0]\n<strong>Output:</strong> [0,0,1,1,2,5]\n<strong>Explanation:</strong> Note that the values of nums are not necessarily unique.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 5 * 10<sup>4</sup></code></li>\n\t<li><code>-5 * 10<sup>4</sup> &lt;= nums[i] &lt;= 5 * 10<sup>4</sup></code></li>\n</ul>\n",
+  "likes": 6936,
+  "dislikes": 832,
+  "stats": {
+    "totalAccepted": "978K",
+    "totalSubmission": "1.7M",
+    "totalAcceptedRaw": 978018,
+    "totalSubmissionRaw": 1738114,
+    "acRate": "56.3%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Divide and Conquer",
+      "slug": "divide-and-conquer"
+    },
+    {
+      "name": "Sorting",
+      "slug": "sorting"
+    },
+    {
+      "name": "Heap (Priority Queue)",
+      "slug": "heap-priority-queue"
+    },
+    {
+      "name": "Merge Sort",
+      "slug": "merge-sort"
+    },
+    {
+      "name": "Bucket Sort",
+      "slug": "bucket-sort"
+    },
+    {
+      "name": "Radix Sort",
+      "slug": "radix-sort"
+    },
+    {
+      "name": "Counting Sort",
+      "slug": "counting-sort"
+    }
+  ],
+  "metaData": {
+    "name": "sortArray",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer[]"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "pieceofpie",
+      "year": 2023,
+      "content": "Let's be honest, who here were as lazy as me and wrote ```sort(nums.begin(), nums.end())``` or ```Arrays.sort(nums)``` instead of actually writing merge sort algorithm?",
+      "voteCount": 391
+    },
+    {
+      "name": "arghyadas",
+      "year": 2023,
+      "content": "This is a reminder from Leetcode to revise old topics \\uD83D\\uDE02.",
+      "voteCount": 285
+    },
+    {
+      "name": "glorialearncoding",
+      "year": 2021,
+      "content": "The first time I tried the classic quicksort algorithm, it passed perfectly, with 11 cases passed.\\nTwo months later, I got \"Time Limit Exceeded\" with 11/13 passed.",
+      "voteCount": 189
+    },
+    {
+      "name": "omeraktepe",
+      "year": 2024,
+      "content": "`You must solve the problem without using any built-in functions`\n\nI don't see any cops around :)",
+      "voteCount": 172
+    },
+    {
+      "name": "kurtischarnock",
+      "year": 2023,
+      "content": "This isn\\'t a useful thing to practice or test. There\\'s no room for creativity or interpretation - it\\'s seeing if you know canonical sorting algorithms.",
+      "voteCount": 110
+    },
+    {
+      "name": "Satansoft",
+      "year": 2024,
+      "content": "Depending on language, but in Javascript:\n\n`Bubble sort` - **TLE**\n`Insertion sort` - **TLE**\n`Selection sort` - **TLE**\n`Quick sort` - **Runtime Error**\n`Merge sort` - **~300ms**\n`Heap sort` - **~180ms**\n\nDidn't try `Radix sort`, who knows, maybe it's the best.\n\nConclusion: not only time complexity, but memory important as well!",
+      "voteCount": 86
+    },
+    {
+      "name": "ayodudewth",
+      "year": 2023,
+      "content": "Use QuickSort, but don\\'t pick the rightmost element as the pivot. Instead, use a random element as the pivot.",
+      "voteCount": 40
+    },
+    {
+      "name": "anwendeng",
+      "year": 2024,
+      "content": "Have a nice day.\\nIs there someone who tries the quick sort? \\nThe worst case is time O(n^2) which can not be eliminated, but reduced.\\nMaybe heap sort is the right choice; its worst case has time O(nlog n); and O(1) space.",
+      "voteCount": 28
+    },
+    {
+      "name": "sshrey06",
+      "year": 2021,
+      "content": "I was trying to implement quicksort in C++, but it is exceeding time limit. I even tried to submit answers that were posted in discussion. I also pasted exact solutions of quick sort in C++, even they were not working. \\nAnd exactly same/similar implementation in JAVA is working fine. Why and How?",
+      "voteCount": 28
+    },
+    {
+      "name": "Shanezzz",
+      "year": 2019,
+      "content": "Why is this question a medium level?",
+      "voteCount": 26
+    }
+  ]
+}

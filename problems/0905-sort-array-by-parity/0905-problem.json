@@ -1,0 +1,133 @@
+{
+  "category": "",
+  "id": "905",
+  "name": "Sort Array By Parity",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/sort-array-by-parity/",
+  "slug": "sort-array-by-parity",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Sort Array By Parity II",
+      "difficulty": "Easy",
+      "slug": "sort-array-by-parity-ii"
+    },
+    {
+      "title": "Sort Even and Odd Indices Independently",
+      "difficulty": "Easy",
+      "slug": "sort-even-and-odd-indices-independently"
+    },
+    {
+      "title": "Largest Number After Digit Swaps by Parity",
+      "difficulty": "Easy",
+      "slug": "largest-number-after-digit-swaps-by-parity"
+    }
+  ],
+  "questionId": "941",
+  "questionFrontendId": "905",
+  "title": "Sort Array By Parity",
+  "titleSlug": "sort-array-by-parity",
+  "content": "<p>Given an integer array <code>nums</code>, move all the even integers at the beginning of the array followed by all the odd integers.</p>\n\n<p>Return <em><strong>any array</strong> that satisfies this condition</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [3,1,2,4]\n<strong>Output:</strong> [2,4,3,1]\n<strong>Explanation:</strong> The outputs [4,2,3,1], [2,4,1,3], and [4,2,1,3] would also be accepted.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [0]\n<strong>Output:</strong> [0]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 5000</code></li>\n\t<li><code>0 &lt;= nums[i] &lt;= 5000</code></li>\n</ul>\n",
+  "likes": 5579,
+  "dislikes": 156,
+  "stats": {
+    "totalAccepted": "939.2K",
+    "totalSubmission": "1.2M",
+    "totalAcceptedRaw": 939168,
+    "totalSubmissionRaw": 1230239,
+    "acRate": "76.3%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    },
+    {
+      "name": "Sorting",
+      "slug": "sorting"
+    }
+  ],
+  "metaData": {
+    "name": "sortArrayByParity",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer[]"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "anwendeng",
+      "year": 2023,
+      "content": "It seems that every one can solve this problem! Have a good day.\nI saw no one used deque, so  I made one!",
+      "voteCount": 55
+    },
+    {
+      "name": "yren996",
+      "year": 2023,
+      "content": "Why is the discussion section full of solutions \\uD83E\\uDD23\\uD83E\\uDD26\\u200D\\u2642\\uFE0F",
+      "voteCount": 30
+    },
+    {
+      "name": "deCodeIt",
+      "year": 2023,
+      "content": "To Everyone using `nums[ i ] % 2 == 0` to check for even element. Read the question carefully and use bitmask to determine even numbers which is fast computation wise.\\n`( nums[ i ] & 0x1 ) == 0` instead of `nums[ i ] % 2 == 0`",
+      "voteCount": 26
+    },
+    {
+      "name": "reassurance",
+      "year": 2023,
+      "content": "This is a fairly odd question which evens out difficulty!",
+      "voteCount": 24
+    },
+    {
+      "name": "LeetCode",
+      "year": 2022,
+      "content": "This problem is the Daily LeetCoding Challenge for May, Day 2.\n\nFeel free to share anything related to this problem here!\n\nYou can ask questions, discuss what you've learned from this problem, or show off how many days of streak you've made!\n\n---\n\nIf you'd like to share a detailed solution to the problem, please create a new post in the discuss section and provide\n- **Detailed Explanations**: Describe the algorithm you used to solve this problem. Include any insights you used to solve this problem.\n- **Images** that help explain the algorithm.\n- **Language and Code** you used to pass the problem.\n- **Time and Space complexity analysis**.\n\n---\n\n  **📌 Do you want to learn the problem thoroughly?**\n  Read [**⭐  LeetCode Official Solution⭐**](https://leetcode.com/problems/sort-array-by-parity/solution) to learn the 3 approaches to the problem with detailed explanations to the algorithms, codes, and complexity analysis.\n  <details>\n  <summary> Spoiler Alert! We'll explain these 3 approaches in the official solution</summary>\n\n  \n**Approach 1:** Sort\n\n  \n**Approach 2:** Two Pass\n\n  \n**Approach 3:** In-Place\n\n  \n</details>\n\n\n\nIf you're new to Daily LeetCoding Challenge, [**check out this post**](https://leetcode.com/discuss/general-discussion/655704/)!\n\n\n---\n\n<br>\n\n<p align=\"center\">\n<a href=\"https://leetcode.com/subscribe/?ref=ex_dc\" target=\"_blank\">\n  <img src=\"https://assets.leetcode.com/static_assets/marketing/daily_leetcoding_banner.png\" width=\"560px\" />\n</a>\n</p>\n\n<br>",
+      "voteCount": 17
+    },
+    {
+      "name": "ListowelAdolwin",
+      "year": 2023,
+      "content": "Easy-peasy today. Leetcode reserving the hard problems for the weekend as usual",
+      "voteCount": 12
+    },
+    {
+      "name": "vivekgarg2906",
+      "year": 2023,
+      "content": "Problem is bit easy, let make the problem little harder, how can we approach the problem if we have to do the parity sorting in-place with keeping the relative order of even and odd elements as in the original array.\\nHappy Coding!",
+      "voteCount": 10
+    },
+    {
+      "name": "Rubiya1090",
+      "year": 2023,
+      "content": "Almost everyone will be happy today. Most happy If we get the same problem in the interview (at least one out of two).",
+      "voteCount": 9
+    },
+    {
+      "name": "dmitryartux",
+      "year": 2023,
+      "content": "**Possible complications:** solve with O(1) memory or solve in place.",
+      "voteCount": 4
+    },
+    {
+      "name": "_Novice_Coder_",
+      "year": 2020,
+      "content": "\\tcount = 0\\n\\tfor i in range(len(A)):\\n\\t\\tif A[i] % 2 == 0:\\n\\t\\t\\tA[i],A[count] = A[count],A[i]\\n\\t\\t\\tcount += 1\\n\\treturn A",
+      "voteCount": 4
+    }
+  ]
+}

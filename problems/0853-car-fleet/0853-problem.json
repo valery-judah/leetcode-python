@@ -1,0 +1,141 @@
+{
+  "category": "",
+  "id": "853",
+  "name": "Car Fleet",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/car-fleet/",
+  "slug": "car-fleet",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Stack",
+    "Sorting",
+    "Monotonic Stack"
+  ],
+  "similar_questions": [
+    {
+      "title": "Car Fleet II",
+      "difficulty": "Hard",
+      "slug": "car-fleet-ii"
+    },
+    {
+      "title": "Count Collisions on a Road",
+      "difficulty": "Medium",
+      "slug": "count-collisions-on-a-road"
+    }
+  ],
+  "questionId": "883",
+  "questionFrontendId": "853",
+  "title": "Car Fleet",
+  "titleSlug": "car-fleet",
+  "content": "<p>There are <code>n</code> cars at given miles away from the starting mile 0, traveling to reach the mile <code>target</code>.</p>\n\n<p>You are given two integer arrays&nbsp;<code>position</code> and <code>speed</code>, both of length <code>n</code>, where <code>position[i]</code> is the starting mile of the <code>i<sup>th</sup></code> car and <code>speed[i]</code> is the speed of the <code>i<sup>th</sup></code> car in miles per hour.</p>\n\n<p>A car cannot pass another car, but it can catch up and then travel next to it at the speed of the slower car.</p>\n\n<p>A <strong>car fleet</strong> is a single car or a group of cars driving next to each other. The speed of the car fleet is the <strong>minimum</strong> speed of any car in the fleet.</p>\n\n<p>If a car catches up to a car fleet at the mile <code>target</code>, it will still be considered as part of the car fleet.</p>\n\n<p>Return the number of car fleets that will arrive at the destination.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">target = 12, position = [10,8,0,5,3], speed = [2,4,1,1,3]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">3</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>The cars starting at 10 (speed 2) and 8 (speed 4) become a fleet, meeting each other at 12. The fleet forms at <code>target</code>.</li>\n\t<li>The car starting at 0 (speed 1) does not catch up to any other car, so it is a fleet by itself.</li>\n\t<li>The cars starting at 5 (speed 1) and 3 (speed 3) become a fleet, meeting each other at 6. The fleet moves at speed 1 until it reaches <code>target</code>.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">target = 10, position = [3], speed = [3]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">1</span></p>\n\n<p><strong>Explanation:</strong></p>\nThere is only one car, hence there is only one fleet.</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">target = 100, position = [0,2,4], speed = [4,2,1]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>The cars starting at 0 (speed 4) and 2 (speed 2) become a fleet, meeting each other at 4. The car starting at 4 (speed 1) travels to 5.</li>\n\t<li>Then, the fleet at 4 (speed 2) and the car at position 5 (speed 1) become one fleet, meeting each other at 6. The fleet moves at speed 1 until it reaches <code>target</code>.</li>\n</ul>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>n == position.length == speed.length</code></li>\n\t<li><code>1 &lt;= n &lt;= 10<sup>5</sup></code></li>\n\t<li><code>0 &lt; target &lt;= 10<sup>6</sup></code></li>\n\t<li><code>0 &lt;= position[i] &lt; target</code></li>\n\t<li>All the values of <code>position</code> are <strong>unique</strong>.</li>\n\t<li><code>0 &lt; speed[i] &lt;= 10<sup>6</sup></code></li>\n</ul>\n",
+  "likes": 4067,
+  "dislikes": 1168,
+  "stats": {
+    "totalAccepted": "410.2K",
+    "totalSubmission": "760.9K",
+    "totalAcceptedRaw": 410238,
+    "totalSubmissionRaw": 760918,
+    "acRate": "53.9%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Stack",
+      "slug": "stack"
+    },
+    {
+      "name": "Sorting",
+      "slug": "sorting"
+    },
+    {
+      "name": "Monotonic Stack",
+      "slug": "monotonic-stack"
+    }
+  ],
+  "metaData": {
+    "name": "carFleet",
+    "params": [
+      {
+        "name": "target",
+        "type": "integer"
+      },
+      {
+        "name": "position",
+        "type": "integer[]"
+      },
+      {
+        "name": "speed",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "tiagodsilva",
+      "year": 2022,
+      "content": "this problem could really use some re-wording.",
+      "voteCount": 554
+    },
+    {
+      "name": "just__do__it",
+      "year": 2023,
+      "content": "Problem description is poor but the problem is a good one.\\nIf you are stuck some of these points may help.\\n1. The position give is nearer to destination . eg: if pos = 8 it is just 4 unit away from destination ie 12. and time taken can be calculated by (float)(target - pos)/speed.\\n2. Whether 2 car will collide or not . It can be found by comparing a time taken by cars to reach a destination.\\n3. You should sort the cars on the basis of their position but  NOTE: that you need both the speed and position to calculate the time taken by each car to reach destination.\\n4. Last thing which you will be needing is the stack so that you can compare the time taken by the cars and perform some operations based your requirement. \\n!!!!  UPVOTE IF IT HELPED !!!!!!",
+      "voteCount": 187
+    },
+    {
+      "name": "BNtFtWtR",
+      "year": 2023,
+      "content": "If in a time crunch and preparing for interviews it's better to skip these questions.  ",
+      "voteCount": 120
+    },
+    {
+      "name": "wwtgwu",
+      "year": 2023,
+      "content": "it should be hard...",
+      "voteCount": 101
+    },
+    {
+      "name": "user5435BK",
+      "year": 2023,
+      "content": "For anyone stuck in the same way I was:\\n- go through the cars in a sorted order\\n- instead of using a discreet approach where you calculate the position after each time step, try using the time it takes for cars to reach the target to determine when blocking happens. ",
+      "voteCount": 84
+    },
+    {
+      "name": "i_0x6c1_i",
+      "year": 2023,
+      "content": "genuinely frustrated with the way leetcode use wordings. I expect leetcode to do better in this case. ",
+      "voteCount": 62
+    },
+    {
+      "name": "TurtleInPajamas",
+      "year": 2018,
+      "content": "In the statement of the question, It didn\\'t provide further instructions after several cars become a fleet.\\n\\n10\\n[0,4,2]\\n[2,1,3]\\n\\n1st run: 2 5 5 (1st and 2nd became a fleet, I assume the answer should be TWO since there are no further instructions on the question or the example)\\nHowever, after a couple of runs:\\n2nd run: 4,6,8\\n3rd run: 6,7,11\\n4th run: 8,8,14 (0th and 1st became a fleet, the answer is ONE)\\n\\nBased on the result of the test, I assume that the until all cars arrive at or pass the destination, there are some potential cases that any car could join to a fleet. It\\'s better to state or clarify this part. \\n",
+      "voteCount": 59
+    },
+    {
+      "name": "user1685d",
+      "year": 2023,
+      "content": "This below use case:\\ntarget =10\\nposition =[8,3,7,4,6,5]\\nspeed =[4,4,4,4,4,4]\\n\\nI think the correct answer is 2, but their test case returns 6. \\n\\nThis is the rule: If a car catches up to a car fleet right at the destination point, it will still be considered as one car fleet.\\n\\n8,7,6 arrive together at the first iteration , then the rest arrive in second iteration. How do they get 6? ",
+      "voteCount": 42
+    },
+    {
+      "name": "khalilhassam3",
+      "year": 2023,
+      "content": "To realize you are not supposed to calculate position after each time step and then realizing that if you sort position array and then calculate the time each car takes to reach target the resulting time array is a monotonic stack makes this question hard",
+      "voteCount": 27
+    },
+    {
+      "name": "yashwa",
+      "year": 2021,
+      "content": "**What will happen to the speed after car fleet ??**\\n\\n*Problem statement should have included the below statement:*\\nThe cars in the formed fleet will have the same position and the same speed, which is the initial speed of the **slowest** car in the fleet.",
+      "voteCount": 27
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "category": "",
+  "id": "23",
+  "name": "Merge k Sorted Lists",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/merge-k-sorted-lists/",
+  "slug": "merge-k-sorted-lists",
+  "isPaidOnly": false,
+  "tags": [
+    "Linked List",
+    "Divide and Conquer",
+    "Heap (Priority Queue)",
+    "Merge Sort"
+  ],
+  "similar_questions": [
+    {
+      "title": "Merge Two Sorted Lists",
+      "difficulty": "Easy",
+      "slug": "merge-two-sorted-lists"
+    },
+    {
+      "title": "Ugly Number II",
+      "difficulty": "Medium",
+      "slug": "ugly-number-ii"
+    },
+    {
+      "title": "Smallest Subarrays With Maximum Bitwise OR",
+      "difficulty": "Medium",
+      "slug": "smallest-subarrays-with-maximum-bitwise-or"
+    }
+  ],
+  "questionId": "23",
+  "questionFrontendId": "23",
+  "title": "Merge k Sorted Lists",
+  "titleSlug": "merge-k-sorted-lists",
+  "content": "<p>You are given an array of <code>k</code> linked-lists <code>lists</code>, each linked-list is sorted in ascending order.</p>\n\n<p><em>Merge all the linked-lists into one sorted linked-list and return it.</em></p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> lists = [[1,4,5],[1,3,4],[2,6]]\n<strong>Output:</strong> [1,1,2,3,4,4,5,6]\n<strong>Explanation:</strong> The linked-lists are:\n[\n  1-&gt;4-&gt;5,\n  1-&gt;3-&gt;4,\n  2-&gt;6\n]\nmerging them into one sorted linked list:\n1-&gt;1-&gt;2-&gt;3-&gt;4-&gt;4-&gt;5-&gt;6\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> lists = []\n<strong>Output:</strong> []\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> lists = [[]]\n<strong>Output:</strong> []\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>k == lists.length</code></li>\n\t<li><code>0 &lt;= k &lt;= 10<sup>4</sup></code></li>\n\t<li><code>0 &lt;= lists[i].length &lt;= 500</code></li>\n\t<li><code>-10<sup>4</sup> &lt;= lists[i][j] &lt;= 10<sup>4</sup></code></li>\n\t<li><code>lists[i]</code> is sorted in <strong>ascending order</strong>.</li>\n\t<li>The sum of <code>lists[i].length</code> will not exceed <code>10<sup>4</sup></code>.</li>\n</ul>\n",
+  "likes": 20710,
+  "dislikes": 768,
+  "stats": {
+    "totalAccepted": "2.6M",
+    "totalSubmission": "4.6M",
+    "totalAcceptedRaw": 2645633,
+    "totalSubmissionRaw": 4596760,
+    "acRate": "57.6%"
+  },
+  "topicTags": [
+    {
+      "name": "Linked List",
+      "slug": "linked-list"
+    },
+    {
+      "name": "Divide and Conquer",
+      "slug": "divide-and-conquer"
+    },
+    {
+      "name": "Heap (Priority Queue)",
+      "slug": "heap-priority-queue"
+    },
+    {
+      "name": "Merge Sort",
+      "slug": "merge-sort"
+    }
+  ],
+  "metaData": {
+    "name": "mergeKLists",
+    "params": [
+      {
+        "name": "lists",
+        "type": "ListNode[]",
+        "dealloc": false
+      }
+    ],
+    "return": {
+      "type": "ListNode",
+      "dealloc": true
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": true,
+        "name": "Meta",
+        "slug": "facebook",
+        "timesEncountered": 52
+      },
+      {
+        "taggedByAdmin": true,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 41
+      },
+      {
+        "taggedByAdmin": true,
+        "name": "Google",
+        "slug": "google",
+        "timesEncountered": 11
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "franciscocw0101",
+      "year": 2024,
+      "content": "The one hard problem I feel confident solving but then gets ruined by a top comment saying it shouldn\\'t be a hard problem :( ",
+      "voteCount": 519
+    },
+    {
+      "name": "adambene",
+      "year": 2019,
+      "content": "This problem should not be marked as hard.\\nMedium is more proper based on the other problems on leetcode.",
+      "voteCount": 505
+    },
+    {
+      "name": "yeedaKing",
+      "year": 2023,
+      "content": "first hard problem solved!",
+      "voteCount": 175
+    },
+    {
+      "name": "David_E_something",
+      "year": 2023,
+      "content": "If you somehow use a priority queue (heap), this problem becomes very easy.",
+      "voteCount": 174
+    },
+    {
+      "name": "viocost",
+      "year": 2018,
+      "content": "The problem is interesting, but why there are test cases such as [[], []] \\nand not a word about possible inputs expected output?\\n\\nIs it also a telepathy exercise?\\n",
+      "voteCount": 151
+    },
+    {
+      "name": "Salmondita007",
+      "year": 2023,
+      "content": "They should add Deloitte to the list for companies because I got this exact problem in a coding interview with Deloitte",
+      "voteCount": 78
+    },
+    {
+      "name": "Kouei",
+      "year": 2015,
+      "content": "The fastest C++ code can achieve a time about 370ms ~ 380ms\\n\\nwhile Python code can achieve 100ms, and even amazing, JAVA can do it in just 4ms !\\n\\nThis result is quite counterintuitive.",
+      "voteCount": 42
+    },
+    {
+      "name": "alistar",
+      "year": 2020,
+      "content": "With empty list it seems to expect an empty list as an output, however, it doest not accept it with type-error.\\nLitterally copied and pasted one of the official solutions, it doesn\\'t go through with the same issue!",
+      "voteCount": 34
+    },
+    {
+      "name": "dkrants",
+      "year": 2023,
+      "content": "This problem indeed gets solved easily by throwing all node values into one array and then sorting it. This makes the \"sorted in ascending order\" part of the problem statement irrelevant.\\n\\nIMO the problem should explicitly state that you are not allowed to mutate list nodes.  Then it would justify its \"hard\" rating.",
+      "voteCount": 31
+    },
+    {
+      "name": "JaviOverflow",
+      "year": 2020,
+      "content": "When I submit my solution, it fails on the input `[[]]`, how is that input even posible? `ListNode` requires `val` as argument in its constructor. Returning `None` doesn\\'t make the test pass. I\\'m not sure how to tackle that.",
+      "voteCount": 24
+    }
+  ]
+}

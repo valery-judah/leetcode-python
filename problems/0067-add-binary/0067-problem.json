@@ -1,0 +1,157 @@
+{
+  "category": "",
+  "id": "67",
+  "name": "Add Binary",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/add-binary/",
+  "slug": "add-binary",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "String",
+    "Bit Manipulation",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Add Two Numbers",
+      "difficulty": "Medium",
+      "slug": "add-two-numbers"
+    },
+    {
+      "title": "Multiply Strings",
+      "difficulty": "Medium",
+      "slug": "multiply-strings"
+    },
+    {
+      "title": "Plus One",
+      "difficulty": "Easy",
+      "slug": "plus-one"
+    },
+    {
+      "title": "Add to Array-Form of Integer",
+      "difficulty": "Easy",
+      "slug": "add-to-array-form-of-integer"
+    }
+  ],
+  "questionId": "67",
+  "questionFrontendId": "67",
+  "title": "Add Binary",
+  "titleSlug": "add-binary",
+  "content": "<p>Given two binary strings <code>a</code> and <code>b</code>, return <em>their sum as a binary string</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> a = \"11\", b = \"1\"\n<strong>Output:</strong> \"100\"\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> a = \"1010\", b = \"1011\"\n<strong>Output:</strong> \"10101\"\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= a.length, b.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>a</code> and <code>b</code> consist&nbsp;only of <code>&#39;0&#39;</code> or <code>&#39;1&#39;</code> characters.</li>\n\t<li>Each string does not contain leading zeros except for the zero itself.</li>\n</ul>\n",
+  "likes": 10134,
+  "dislikes": 1067,
+  "stats": {
+    "totalAccepted": "2M",
+    "totalSubmission": "3.5M",
+    "totalAcceptedRaw": 1971172,
+    "totalSubmissionRaw": 3516727,
+    "acRate": "56.1%"
+  },
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Bit Manipulation",
+      "slug": "bit-manipulation"
+    },
+    {
+      "name": "Simulation",
+      "slug": "simulation"
+    }
+  ],
+  "metaData": {
+    "name": "addBinary",
+    "params": [
+      {
+        "name": "a",
+        "type": "string"
+      },
+      {
+        "name": "b",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "string"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Google",
+        "slug": "google",
+        "timesEncountered": 17
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "MeetaHaldar",
+      "year": 2022,
+      "content": "I am a beginner and i do not think it s an easy question.",
+      "voteCount": 573
+    },
+    {
+      "name": "Subhashish_Panda-123",
+      "year": 2020,
+      "content": "**Concept of Binary Addition.**\\n\\n**Rememeber,\\n1+1=0 with carry 1\\n1+0=1 with carry 0\\n0+1=1 with carry 0\\n0+0=0 with carry 0\\nImp:1+1=1 with carry 1 if previous carry was 1.\\nThe carry gets added in next step(scanning from right to left).\\n**\\n\\n*Know the algorithm first,then write your own code~Problem solving*",
+      "voteCount": 245
+    },
+    {
+      "name": "sepac",
+      "year": 2023,
+      "content": "If you are trying to convert the input strings into decimals, add them, and convert the number into a string, you're going to exceed a 64-bit integer. Therefore, think of a different approach.",
+      "voteCount": 188
+    },
+    {
+      "name": "sugarteddy",
+      "year": 2023,
+      "content": "easy for two days, leetcode think we need to get a life for valentines ig",
+      "voteCount": 145
+    },
+    {
+      "name": "shaw-code",
+      "year": 2023,
+      "content": "Whoever categorized this question to \\'Easy\\' must be a genius that he/she found this question a walk in the park. This question should be placed at \\'Medium\\'. Idk if we can somehow change the category of a question on this platform.",
+      "voteCount": 118
+    },
+    {
+      "name": "yabdelaziz123",
+      "year": 2023,
+      "content": "How there is a test case with input \"10100000100100110110010000010101111011011001101110111111111101000000101111001110\" and there is a constraint with a max length of 10^4?!!!!!",
+      "voteCount": 75
+    },
+    {
+      "name": "Shantanulm30",
+      "year": 2023,
+      "content": "I think it is a medium level question",
+      "voteCount": 61
+    },
+    {
+      "name": "JiayingGao",
+      "year": 2023,
+      "content": "Bless every leetcoder to become romantic and wisdom!",
+      "voteCount": 55
+    },
+    {
+      "name": "rohankolhatkar",
+      "year": 2023,
+      "content": "does anyone else get a runtime error at the 194th test case?\\n  `java.lang.NumberFormatException: For input string: \"10100000100100110110010000010101111011011001101110111111111101000000101111001110001111100001101\" under radix 2\\n  at line 67, java.base/java.lang.NumberFormatException.forInputString\\n  at line 668, java.base/java.lang.Integer.parseInt\\n  at line 3, Solution.addBinary\\n  at line 54, __DriverSolution__.__helper__\\n  at line 87, __Driver__.main`",
+      "voteCount": 45
+    },
+    {
+      "name": "whatsinanamebrother",
+      "year": 2020,
+      "content": "return str(bin(int(a,2)+int(b,2)))[2:]\\n",
+      "voteCount": 29
+    }
+  ]
+}

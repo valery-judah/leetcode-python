@@ -1,0 +1,122 @@
+{
+  "category": "",
+  "id": "161",
+  "name": "One Edit Distance",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/one-edit-distance/",
+  "slug": "one-edit-distance",
+  "isPaidOnly": true,
+  "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Edit Distance",
+      "difficulty": "Medium",
+      "slug": "edit-distance"
+    }
+  ],
+  "questionId": "161",
+  "questionFrontendId": "161",
+  "title": "One Edit Distance",
+  "titleSlug": "one-edit-distance",
+  "content": "<p>Given two strings <code>s</code> and <code>t</code>, return <code>true</code> if they are both one edit distance apart, otherwise return <code>false</code>.</p>\n\n<p>A string <code>s</code> is said to be one distance apart from a string <code>t</code> if you can:</p>\n\n<ul>\n\t<li>Insert <strong>exactly one</strong> character into <code>s</code> to get <code>t</code>.</li>\n\t<li>Delete <strong>exactly one</strong> character from <code>s</code> to get <code>t</code>.</li>\n\t<li>Replace <strong>exactly one</strong> character of <code>s</code> with <strong>a different character</strong> to get <code>t</code>.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;ab&quot;, t = &quot;acb&quot;\n<strong>Output:</strong> true\n<strong>Explanation:</strong> We can insert &#39;c&#39; into s&nbsp;to get&nbsp;t.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;&quot;, t = &quot;&quot;\n<strong>Output:</strong> false\n<strong>Explanation:</strong> We cannot get t from s by only one step.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= s.length, t.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>s</code> and <code>t</code> consist of lowercase letters, uppercase letters, and digits.</li>\n</ul>\n",
+  "likes": 1433,
+  "dislikes": 193,
+  "stats": {
+    "totalAccepted": "229K",
+    "totalSubmission": "663.3K",
+    "totalAcceptedRaw": 228971,
+    "totalSubmissionRaw": 663329,
+    "acRate": "34.5%"
+  },
+  "topicTags": [
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "metaData": {
+    "name": "isOneEditDistance",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      },
+      {
+        "name": "t",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "xunrui",
+      "year": 2016,
+      "content": "One edit means remove/add/change 1 character.\\n\\nA tip: the problem asks if they are EXACTLY one edit distance apart",
+      "voteCount": 27
+    },
+    {
+      "name": "kmp1084",
+      "year": 2023,
+      "content": "One of the purposes of this question is to check how many people will get trapped into going the dynamic programming way :)",
+      "voteCount": 16
+    },
+    {
+      "name": "eliasjunior",
+      "year": 2023,
+      "content": "I think the problem should mention that inputs like \"ab\" and \"bca\" are NOT one distance apart, to make sure we don't make wrong assumptions, I took a while to figure this out, in a real interview I'd have asked that.",
+      "voteCount": 11
+    },
+    {
+      "name": "nullptrexcep",
+      "year": 2016,
+      "content": "if s == \"\" and t == \"\", why the expected answer is false? Empty strings should be equal.",
+      "voteCount": 9
+    },
+    {
+      "name": "MeloWang0308",
+      "year": 2024,
+      "content": "These test cases just killed me.",
+      "voteCount": 7
+    },
+    {
+      "name": "user3801tN",
+      "year": 2023,
+      "content": "Did anyone else get really mad when they realized that equal string\\'s aren\\'t considered within 1 edit distance apart lmao.",
+      "voteCount": 4
+    },
+    {
+      "name": "nelson_matos",
+      "year": 2024,
+      "content": "I had trouble with the edge cases for this problem. Try these test cases before submitting. :)\\n```\\n\"teacher\"\\n\"tache\"\\n\"ab\"\\n\"cab\"\\n\"ba\"\\n\"a\"\\n\"aca\"\\n\"caca\"\\n\"a\"\\n\"\"\\n\"cb\"\\n\"ab\"\\n\"a\"\\n\"A\"\\n```",
+      "voteCount": 3
+    },
+    {
+      "name": "matthewjinmp",
+      "year": 2025,
+      "content": "there\\'s some tricky edge cases here, like \\n\\n\"aaaaa\"\\n\"aaaa\"\\n\\nthat\\'s why the acceptance rate is so low",
+      "voteCount": 1
+    },
+    {
+      "name": "Satansoft",
+      "year": 2025,
+      "content": "It\\'s classical two pointers with handling 3 cases within while loop with counting differences (**differnce should be EXACTLY one**) with shifting left pointer in one case, right in another case and just find differences in third one. The best for understanding way, write separated 3 loops to handle each case and then combine in one!\\n\\nAlso, good to cut case when `s` and `t` are equal, it\\'s `false` by default!",
+      "voteCount": 1
+    },
+    {
+      "name": "Dark--------Shadow",
+      "year": 2024,
+      "content": "should be more than hard.Testcases is more hard than problem.",
+      "voteCount": 0
+    }
+  ]
+}

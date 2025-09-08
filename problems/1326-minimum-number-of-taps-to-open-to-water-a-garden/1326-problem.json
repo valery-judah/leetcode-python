@@ -1,0 +1,121 @@
+{
+  "category": "",
+  "id": "1326",
+  "name": "Minimum Number of Taps to Open to Water a Garden",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/",
+  "slug": "minimum-number-of-taps-to-open-to-water-a-garden",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "similar_questions": [],
+  "questionId": "1451",
+  "questionFrontendId": "1326",
+  "title": "Minimum Number of Taps to Open to Water a Garden",
+  "titleSlug": "minimum-number-of-taps-to-open-to-water-a-garden",
+  "content": "<p>There is a one-dimensional garden on the x-axis. The garden starts at the point <code>0</code> and ends at the point <code>n</code>. (i.e., the&nbsp;length of the garden is <code>n</code>).</p>\n\n<p>There are <code>n + 1</code> taps located at points <code>[0, 1, ..., n]</code> in the garden.</p>\n\n<p>Given an integer <code>n</code> and an integer array <code>ranges</code> of length <code>n + 1</code> where <code>ranges[i]</code> (0-indexed) means the <code>i-th</code> tap can water the area <code>[i - ranges[i], i + ranges[i]]</code> if it was open.</p>\n\n<p>Return <em>the minimum number of taps</em> that should be open to water the whole garden, If the garden cannot be watered return <strong>-1</strong>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/01/16/1685_example_1.png\" style=\"width: 525px; height: 255px;\" />\n<pre>\n<strong>Input:</strong> n = 5, ranges = [3,4,1,1,0,0]\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> The tap at point 0 can cover the interval [-3,3]\nThe tap at point 1 can cover the interval [-3,5]\nThe tap at point 2 can cover the interval [1,3]\nThe tap at point 3 can cover the interval [2,4]\nThe tap at point 4 can cover the interval [4,4]\nThe tap at point 5 can cover the interval [5,5]\nOpening Only the second tap will water the whole garden [0,5]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 3, ranges = [0,0,0,0]\n<strong>Output:</strong> -1\n<strong>Explanation:</strong> Even if you activate all the four taps you cannot water the whole garden.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 10<sup>4</sup></code></li>\n\t<li><code>ranges.length == n + 1</code></li>\n\t<li><code>0 &lt;= ranges[i] &lt;= 100</code></li>\n</ul>\n",
+  "likes": 3565,
+  "dislikes": 197,
+  "stats": {
+    "totalAccepted": "150.8K",
+    "totalSubmission": "297.1K",
+    "totalAcceptedRaw": 150804,
+    "totalSubmissionRaw": 297074,
+    "acRate": "50.8%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "metaData": {
+    "name": "minTaps",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      },
+      {
+        "type": "integer[]",
+        "name": "ranges"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "rahulranaa7",
+      "year": 2023,
+      "content": "Leetcode hitting us with that Rakshabandhan present a little too hard. Happy Rakshabandhan btw! <3",
+      "voteCount": 127
+    },
+    {
+      "name": "bbbbeetroot",
+      "year": 2023,
+      "content": "\"there is a one-dimensional garden...\" Did you hear what you just said?? ",
+      "voteCount": 111
+    },
+    {
+      "name": "tsun_ud",
+      "year": 2023,
+      "content": "Note: The space between the taps needs to be watered too. Therefore all taps with range 0 are useless.",
+      "voteCount": 92
+    },
+    {
+      "name": "user3572BF",
+      "year": 2021,
+      "content": "why the output of the example, Input: n = 3, ranges = [0,0,0,0] has output -1?\\nIf I openup all the taps then the entire garden can be watered, bcoz\\nfor point 0, range is [0, 0]\\npoint 1, range is [1, 1]\\npoint 2, range is [2, 2]\\npoint 3, range is [3, 3], thus all the points are getting covered.Then why the output is -1?\\n",
+      "voteCount": 75
+    },
+    {
+      "name": "Sunny007",
+      "year": 2020,
+      "content": "35\\n[1,0,4,0,4,1,4,3,1,1,1,2,1,4,0,3,0,3,0,3,0,5,3,0,0,1,2,1,2,4,3,0,1,0,5,2]\\n\\nWe can open just 5 taps below to cover garden. Why answer of question is 6?\\n\\n4 - [0,8]\\n13 - [9, 17]\\n21 - [16, 26]\\n29 - [25, 33]\\n34 - [29,39]",
+      "voteCount": 34
+    },
+    {
+      "name": "thatHimanshu",
+      "year": 2023,
+      "content": "This was the first month I started doing daily challenges..did 12 days of it..Will definitely try to get next months badge  ",
+      "voteCount": 24
+    },
+    {
+      "name": "ktnaneri",
+      "year": 2023,
+      "content": "Oh no my Daily Challenge 0 day streak is in danger... ",
+      "voteCount": 21
+    },
+    {
+      "name": "tripper",
+      "year": 2023,
+      "content": "Additional Test cases:\n35\n[1,0,4,0,4,1,4,3,1,1,1,2,1,4,0,3,0,3,0,3,0,5,3,0,0,1,2,1,2,4,3,0,1,0,5,2]\n11\n[2,1,2,1,2,4,3,0,1,0,5,2]\n6\n[1,1, 0, 1, 0, 0, 1]\n5\n[0, 1, 0, 0, 1, 0]\n6\n[1,0,0,2,0,3,0]\n7\n[1,2,1,0,2,1,0,1]\n8\n[4,0,0,0,0,0,0,0,4]\n\n`Idea`\n[300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)\n[673. Number of Longest Increasing Subsequence](https://leetcode.com/problems/number-of-longest-increasing-subsequence/)\n`Similar`\n[1024. Video Stitching](https://leetcode.com/problems/video-stitching/)\n[45. Jump Game II](https://leetcode.com/problems/jump-game-ii/)",
+      "voteCount": 15
+    },
+    {
+      "name": "anwendeng",
+      "year": 2023,
+      "content": "Greedy questions for two consecutive days at the end of the month!\nI'm not so greedy. So, also provide a solution using Dijkstra's algorithm, slow but accepted.",
+      "voteCount": 15
+    },
+    {
+      "name": "dEAthWednesday",
+      "year": 2023,
+      "content": "who else thought this was a binary search problem?",
+      "voteCount": 9
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "category": "",
+  "id": "337",
+  "name": "House Robber III",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/house-robber-iii/",
+  "slug": "house-robber-iii",
+  "isPaidOnly": false,
+  "tags": [
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "House Robber",
+      "difficulty": "Medium",
+      "slug": "house-robber"
+    },
+    {
+      "title": "House Robber II",
+      "difficulty": "Medium",
+      "slug": "house-robber-ii"
+    }
+  ],
+  "questionId": "337",
+  "questionFrontendId": "337",
+  "title": "House Robber III",
+  "titleSlug": "house-robber-iii",
+  "content": "<p>The thief has found himself a new place for his thievery again. There is only one entrance to this area, called <code>root</code>.</p>\n\n<p>Besides the <code>root</code>, each house has one and only one parent house. After a tour, the smart thief realized that all houses in this place form a binary tree. It will automatically contact the police if <strong>two directly-linked houses were broken into on the same night</strong>.</p>\n\n<p>Given the <code>root</code> of the binary tree, return <em>the maximum amount of money the thief can rob <strong>without alerting the police</strong></em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/10/rob1-tree.jpg\" style=\"width: 277px; height: 293px;\" />\n<pre>\n<strong>Input:</strong> root = [3,2,3,null,3,null,1]\n<strong>Output:</strong> 7\n<strong>Explanation:</strong> Maximum amount of money the thief can rob = 3 + 3 + 1 = 7.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/10/rob2-tree.jpg\" style=\"width: 357px; height: 293px;\" />\n<pre>\n<strong>Input:</strong> root = [3,4,5,1,3,null,1]\n<strong>Output:</strong> 9\n<strong>Explanation:</strong> Maximum amount of money the thief can rob = 4 + 5 = 9.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of nodes in the tree is in the range <code>[1, 10<sup>4</sup>]</code>.</li>\n\t<li><code>0 &lt;= Node.val &lt;= 10<sup>4</sup></code></li>\n</ul>\n",
+  "likes": 8923,
+  "dislikes": 154,
+  "stats": {
+    "totalAccepted": "460.2K",
+    "totalSubmission": "834.3K",
+    "totalAcceptedRaw": 460199,
+    "totalSubmissionRaw": 834337,
+    "acRate": "55.2%"
+  },
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    },
+    {
+      "name": "Tree",
+      "slug": "tree"
+    },
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Binary Tree",
+      "slug": "binary-tree"
+    }
+  ],
+  "metaData": {
+    "name": "rob",
+    "params": [
+      {
+        "name": "root",
+        "type": "TreeNode"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 12
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "t1lu",
+      "year": 2020,
+      "content": "Not very good at dp questions, wish this thief be arrested soon lol.",
+      "voteCount": 369
+    },
+    {
+      "name": "roshanbishi7890",
+      "year": 2025,
+      "content": "Like if you tried Level Order Traversal first \\uD83D\\uDE02",
+      "voteCount": 225
+    },
+    {
+      "name": "Lakshya12",
+      "year": 2021,
+      "content": "Why do you want us to help a theif? lol",
+      "voteCount": 181
+    },
+    {
+      "name": "prmems",
+      "year": 2023,
+      "content": "Can we bust this house robber? Every time we help him, he seems to find another place to rob.",
+      "voteCount": 173
+    },
+    {
+      "name": "bobacat3",
+      "year": 2023,
+      "content": "Leetcode, please stop robbing the house... It\\'s illegal.",
+      "voteCount": 105
+    },
+    {
+      "name": "aksharkashyap",
+      "year": 2020,
+      "content": "This question can be asked in this way also:\\nIn every house certain number of thief are hiding (instead of money)\\nmaximize the number of thief caught by a police man.\\ngiven that two directly-linked houses cant be broken on the same night.",
+      "voteCount": 64
+    },
+    {
+      "name": "aftabmk",
+      "year": 2023,
+      "content": "Next : Please help our injured robber find the shortest to exit from 2D matrix jail using Dijkstra!",
+      "voteCount": 45
+    },
+    {
+      "name": "coldstone87",
+      "year": 2022,
+      "content": "[4,1,null,2,null,3]\\n\\nWhere will we keep last 3 in the tree and how does it affect the output?\\nMy submission is failing due to this.",
+      "voteCount": 24
+    },
+    {
+      "name": "XinweiWalt",
+      "year": 2021,
+      "content": "Anyone interested about how to print out the robber house?",
+      "voteCount": 21
+    },
+    {
+      "name": "svbrkr545",
+      "year": 2022,
+      "content": "You can look at the tree in a top-down manner, there will be two cases \\n1. max containing the root node\\n2. max excluding the root and including the child nodes\\n\\nIn a dfs manner, traverse the tree and for each root return these values as a pair.\\n\\nSo for each node we have a pair containing the max value possible by including/excluding the particular node",
+      "voteCount": 15
+    }
+  ]
+}

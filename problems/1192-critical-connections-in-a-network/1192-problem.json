@@ -1,0 +1,121 @@
+{
+  "category": "",
+  "id": "1192",
+  "name": "Critical Connections in a Network",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/critical-connections-in-a-network/",
+  "slug": "critical-connections-in-a-network",
+  "isPaidOnly": false,
+  "tags": [
+    "Depth-First Search",
+    "Graph",
+    "Biconnected Component"
+  ],
+  "similar_questions": [],
+  "questionId": "1300",
+  "questionFrontendId": "1192",
+  "title": "Critical Connections in a Network",
+  "titleSlug": "critical-connections-in-a-network",
+  "content": "<p>There are <code>n</code> servers numbered from <code>0</code> to <code>n - 1</code> connected by undirected server-to-server <code>connections</code> forming a network where <code>connections[i] = [a<sub>i</sub>, b<sub>i</sub>]</code> represents a connection between servers <code>a<sub>i</sub></code> and <code>b<sub>i</sub></code>. Any server can reach other servers directly or indirectly through the network.</p>\n\n<p>A <em>critical connection</em> is a connection that, if removed, will make some servers unable to reach some other server.</p>\n\n<p>Return all critical connections in the network in any order.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/09/03/1537_ex1_2.png\" style=\"width: 198px; height: 248px;\" />\n<pre>\n<strong>Input:</strong> n = 4, connections = [[0,1],[1,2],[2,0],[1,3]]\n<strong>Output:</strong> [[1,3]]\n<strong>Explanation:</strong> [[3,1]] is also accepted.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 2, connections = [[0,1]]\n<strong>Output:</strong> [[0,1]]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= n &lt;= 10<sup>5</sup></code></li>\n\t<li><code>n - 1 &lt;= connections.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>0 &lt;= a<sub>i</sub>, b<sub>i</sub> &lt;= n - 1</code></li>\n\t<li><code>a<sub>i</sub> != b<sub>i</sub></code></li>\n\t<li>There are no repeated connections.</li>\n</ul>\n",
+  "likes": 6562,
+  "dislikes": 189,
+  "stats": {
+    "totalAccepted": "294.3K",
+    "totalSubmission": "502.9K",
+    "totalAcceptedRaw": 294333,
+    "totalSubmissionRaw": 502901,
+    "acRate": "58.5%"
+  },
+  "topicTags": [
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Graph",
+      "slug": "graph"
+    },
+    {
+      "name": "Biconnected Component",
+      "slug": "biconnected-component"
+    }
+  ],
+  "metaData": {
+    "name": "criticalConnections",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      },
+      {
+        "type": "list<list<integer>>",
+        "name": "connections"
+      }
+    ],
+    "return": {
+      "type": "list<list<integer>>"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "parthdharmale008",
+      "year": 2023,
+      "content": "striver has the best explanation for this \\n",
+      "voteCount": 86
+    },
+    {
+      "name": "sw-devendra",
+      "year": 2020,
+      "content": "I am bit surprised to see it\\'s frequency in amazon interviews.\\nThis is a very difficult question and even if someone has an idea of Tarzan\\'s algo, it looks almost impossible to code it perfectly in an interview, unless someone has memorized it.\\nI watched two youtube videos to understand it, and coded it finally. But still to do it again after 2 weeks, I need to rewatch the videos. In fact, in one of the videos, the youtuber told that no interviewer should ask such a question in an interview.\\n\\nSo I cannot understand how it was aksed so many times in Amazon.\\n\\nCould someone please share an experience when this question was asked?",
+      "voteCount": 60
+    },
+    {
+      "name": "lakshitcodes",
+      "year": 2024,
+      "content": "Pat your back if you made it this far in the striver\\'s A2Z DSA sheet.",
+      "voteCount": 37
+    },
+    {
+      "name": "balabasik",
+      "year": 2019,
+      "content": "I saw wrong solutions (e.g., enumerating all nodes with unit edge count) got accepted by the competition system.\\nCan invalidate by a simple testcase:\\n\\n6\\n[[0,1],[1,2],[2,0],[1,3],[3,4],[4,5],[5,3]]",
+      "voteCount": 30
+    },
+    {
+      "name": "crazysamurai",
+      "year": 2022,
+      "content": "Questioning my life decisions",
+      "voteCount": 25
+    },
+    {
+      "name": "crazyPixel",
+      "year": 2020,
+      "content": "Is that reasonable to expect a candiate to come up with Tarjan\\'s algorithm during interview?\\nI\\'ve solved this question by going through the connections and doing a dfs (on 0) after removing every connection which result in O(N) * O(V+E) runtime (and a time limit exceeded answer on LC), Can\\'t beilive I\\'d come up with Tarjan\\'s algorithm under interview pressure, will it effect my score?",
+      "voteCount": 17
+    },
+    {
+      "name": "user1128I",
+      "year": 2019,
+      "content": "To find cycles, union and find is also a good way to do so. I wonder why no one post this method. Amost all of them use DFS.",
+      "voteCount": 15
+    },
+    {
+      "name": "joey_coder",
+      "year": 2020,
+      "content": "I have a question regarding this, can we use bfs for this problem? As far as I understand, this problem involves an undirected graph, and this problem\\'s solution involves finding a cycle, which can be done by bfs as well. Although I have not tried the solution using bfs myself, I am interested in knowing more about this. Given this, is there any reason why one would prefer bfs over dfs? Thank you, any help is appreciated!",
+      "voteCount": 12
+    },
+    {
+      "name": "zhukuan042",
+      "year": 2019,
+      "content": "Many solutions below mention about topological sorting which assumes that a \"critical node\" can not appear in any loop.\\nImage this example:\\n### [**[0,1],[0,2],[1,2]**,*[3,4],[3,5],[4,5]*,[1,3]]\\nin this case, node#0,1,2 forms a loop and node#3,4,5 froms another loop and bridge [1,3] connects these two loops. According to this problem description, I would say [1,3] is a \"critical connection\" because without it, the above two loops can not reach each. However, by using topological sorting, since all nodes are in at least one loop, it will give empty result.\\nIs my thinking correct?",
+      "voteCount": 7
+    },
+    {
+      "name": "LeetCode",
+      "year": 2022,
+      "content": "This problem is the Daily LeetCoding Challenge for May, Day 18.\n\nFeel free to share anything related to this problem here!\n\nYou can ask questions, discuss what you've learned from this problem, or show off how many days of streak you've made!\n\n---\n\nIf you'd like to share a detailed solution to the problem, please create a new post in the discuss section and provide\n- **Detailed Explanations**: Describe the algorithm you used to solve this problem. Include any insights you used to solve this problem.\n- **Images** that help explain the algorithm.\n- **Language and Code** you used to pass the problem.\n- **Time and Space complexity analysis**.\n\n---\n\n  **📌 Do you want to learn the problem thoroughly?**\n  Read [**⭐  LeetCode Official Solution⭐**](https://leetcode.com/problems/critical-connections-in-a-network/solution) to learn the 3 approaches to the problem with detailed explanations to the algorithms, codes, and complexity analysis.\n  <details>\n  <summary> Spoiler Alert! We'll explain this 1 approach in the official solution</summary>\n\n  \n**Approach 1:** Depth First Search for Cycle Detection\n\n  \n</details>\n\n\n\nIf you're new to Daily LeetCoding Challenge, [**check out this post**](https://leetcode.com/discuss/general-discussion/655704/)!\n\n\n---\n\n<br>\n\n<p align=\"center\">\n<a href=\"https://leetcode.com/subscribe/?ref=ex_dc\" target=\"_blank\">\n  <img src=\"https://assets.leetcode.com/static_assets/marketing/daily_leetcoding_banner.png\" width=\"560px\" />\n</a>\n</p>\n\n<br>",
+      "voteCount": 7
+    }
+  ]
+}

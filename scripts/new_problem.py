@@ -4,7 +4,10 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import sys
 from pathlib import Path
+
+import leetcode_index
 
 ROOT = Path(__file__).resolve().parents[1]
 try:
@@ -119,49 +122,6 @@ def _extract_examples_md(content_html: str | None) -> str:
         text = text.replace("{", "{{").replace("}", "}}")
         parts.append(f"### Example {i}\n\n```text\n{text}\n```")
     return "\n\n".join(parts) if parts else "None"
-
-
-def _iter_list_files() -> list[Path]:
-    lists_dir = ROOT / "lists"
-    if not lists_dir.exists():
-        return []
-    return sorted(lists_dir.glob("*.json"))
-
-
-def _load_problems_index() -> tuple[dict[str, dict], dict[str, dict]]:
-    by_id: dict[str, dict] = {}
-    by_slug: dict[str, dict] = {}
-    for fp in _iter_list_files():
-        try:
-            data = json.loads(fp.read_text())
-        except Exception:
-            continue
-        problems = data.get("problems")
-        if not isinstance(problems, list):
-            continue
-        for item in problems:
-            if not isinstance(item, dict):
-                continue
-            pid = str(item.get("id") or "").strip()
-            slug = str(item.get("slug") or "").strip().lower()
-            if not pid and not slug:
-                continue
-            if pid:
-                existing = by_id.get(pid)
-                if not existing:
-                    by_id[pid] = item
-                else:
-                    # Prefer entry that has a concrete difficulty if existing lacks it
-                    if (not existing.get("difficulty")) and item.get("difficulty"):
-                        by_id[pid] = item
-            if slug:
-                existing_s = by_slug.get(slug)
-                if not existing_s:
-                    by_slug[slug] = item
-                else:
-                    if (not existing_s.get("difficulty")) and item.get("difficulty"):
-                        by_slug[slug] = item
-    return by_id, by_slug
 
 
 def _normalize_difficulty(s: str | None) -> str | None:
@@ -301,11 +261,24 @@ def _parse_args() -> argparse.Namespace:
     return ap.parse_args()
 
 
-def _resolve_problem(query: str, by_id: dict[str, dict], by_slug: dict[str, dict]) -> dict | None:
-    is_id = query.isdigit()
-    problem = _load_problem_from_archive(query)
+def _resolve_problem(query: str) -> dict | None:
+    """Resolve a problem by id/slug, first from leetcode_index, then archive."""
+    problem = None
+    try:
+        # Prioritize resolving from the index
+        problem_id, slug = leetcode_index.resolve(int(query) if query.isdigit() else query)
+        problem = _load_problem_from_archive(slug)
+        if not problem:
+            problem = _load_problem_from_archive(str(problem_id))
+    except (KeyError, ValueError):
+        # Fallback to archive-only if index fails
+        problem = _load_problem_from_archive(query)
+    except Exception as e:
+        print(f"E: Unexpected error resolving problem '{query}': {e}", file=sys.stderr)
+        problem = _load_problem_from_archive(query)
+
     if not problem:
-        problem = by_id.get(query) if is_id else by_slug.get(kebab(query))
+        print(f"W: Problem '{query}' not found in leetcode_index or archive.", file=sys.stderr)
     return problem
 
 
@@ -313,8 +286,6 @@ def _render_similar_md(
     number: int,
     slug: str,
     similars: list,
-    by_id: dict[str, dict],
-    by_slug: dict[str, dict],
 ) -> str:
     """Render the Similar Questions markdown table.
 
@@ -335,19 +306,9 @@ def _render_similar_md(
         s_url = str(it.get("leetcode_url") or (f"https://leetcode.com/problems/{s_slug}/" if s_slug else ""))
         # Try to resolve difficulty and id from lists by id/slug or archive
         s_id = str(it.get("id") or "").strip()
-        resolved = None
-        if s_id and s_id in by_id:
-            resolved = by_id[s_id]
-        elif s_slug and s_slug in by_slug:
-            resolved = by_slug[s_slug]
-            if not s_id:
-                s_id = str(resolved.get("id") or "").strip()
-        if (not s_id) and s_slug:
-            arch = _load_problem_from_archive(s_slug)
-            if isinstance(arch, dict):
-                s_id = str(arch.get("id") or "").strip()
-                if not resolved:
-                    resolved = arch
+        resolved = _load_problem_from_archive(s_slug or s_id)
+        if not s_id and resolved:
+            s_id = _get_id(resolved)
 
         # Prefer difficulty provided on the similar item itself; else use resolved metadata
         s_diff = _normalize_difficulty(it.get("difficulty"))
@@ -399,9 +360,7 @@ def _render_similar_md(
     return similar_md
 
 
-def _build_context(
-    problem: dict, by_id: dict[str, dict], by_slug: dict[str, dict]
-) -> tuple[dict, int, str, Path]:
+def _build_context(problem: dict) -> tuple[dict, int, str, Path]:
     pid_str = _get_id(problem)
     try:
         number = int(pid_str)
@@ -413,7 +372,7 @@ def _build_context(
     tags_list = _get_tags(problem)
     tags = ", ".join(tags_list)
     url = _get_url(problem, slug)
-    similar_md = _render_similar_md(number, slug, problem.get("similar_questions") or [], by_id, by_slug)
+    similar_md = _render_similar_md(number, slug, problem.get("similar_questions") or [])
 
     # Build signature preview from metaData when available
     def _signature_from_meta(p: dict) -> str:
@@ -751,15 +710,14 @@ def _write_content_html(
 
 def main() -> None:
     args = _parse_args()
-    by_id, by_slug = _load_problems_index()
 
     q = args.query.strip()
-    problem = _resolve_problem(q, by_id, by_slug)
+    problem = _resolve_problem(q)
     if not problem:
-        raise SystemExit(f"Problem not found in lists by {'id' if q.isdigit() else 'slug'}: {q}")
+        raise SystemExit(f"Problem not found by query: {q}")
 
     # Build context and target base dir
-    context, number, slug, base = _build_context(problem, by_id, by_slug)
+    context, number, slug, base = _build_context(problem)
 
     full_rewrite = bool(args.full_rewrite)
     rewrite_files = not bool(args.no_overwrite)

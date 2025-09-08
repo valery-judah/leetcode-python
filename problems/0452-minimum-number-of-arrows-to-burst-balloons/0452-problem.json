@@ -1,0 +1,128 @@
+{
+  "category": "",
+  "id": "452",
+  "name": "Minimum Number of Arrows to Burst Balloons",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/",
+  "slug": "minimum-number-of-arrows-to-burst-balloons",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Meeting Rooms II",
+      "difficulty": "Medium",
+      "slug": "meeting-rooms-ii"
+    },
+    {
+      "title": "Non-overlapping Intervals",
+      "difficulty": "Medium",
+      "slug": "non-overlapping-intervals"
+    }
+  ],
+  "questionId": "452",
+  "questionFrontendId": "452",
+  "title": "Minimum Number of Arrows to Burst Balloons",
+  "titleSlug": "minimum-number-of-arrows-to-burst-balloons",
+  "content": "<p>There are some spherical balloons taped onto a flat wall that represents the XY-plane. The balloons are represented as a 2D integer array <code>points</code> where <code>points[i] = [x<sub>start</sub>, x<sub>end</sub>]</code> denotes a balloon whose <strong>horizontal diameter</strong> stretches between <code>x<sub>start</sub></code> and <code>x<sub>end</sub></code>. You do not know the exact y-coordinates of the balloons.</p>\n\n<p>Arrows can be shot up <strong>directly vertically</strong> (in the positive y-direction) from different points along the x-axis. A balloon with <code>x<sub>start</sub></code> and <code>x<sub>end</sub></code> is <strong>burst</strong> by an arrow shot at <code>x</code> if <code>x<sub>start</sub> &lt;= x &lt;= x<sub>end</sub></code>. There is <strong>no limit</strong> to the number of arrows that can be shot. A shot arrow keeps traveling up infinitely, bursting any balloons in its path.</p>\n\n<p>Given the array <code>points</code>, return <em>the <strong>minimum</strong> number of arrows that must be shot to burst all balloons</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> points = [[10,16],[2,8],[1,6],[7,12]]\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> The balloons can be burst by 2 arrows:\n- Shoot an arrow at x = 6, bursting the balloons [2,8] and [1,6].\n- Shoot an arrow at x = 11, bursting the balloons [10,16] and [7,12].\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> points = [[1,2],[3,4],[5,6],[7,8]]\n<strong>Output:</strong> 4\n<strong>Explanation:</strong> One arrow needs to be shot for each balloon for a total of 4 arrows.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> points = [[1,2],[2,3],[3,4],[4,5]]\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> The balloons can be burst by 2 arrows:\n- Shoot an arrow at x = 2, bursting the balloons [1,2] and [2,3].\n- Shoot an arrow at x = 4, bursting the balloons [3,4] and [4,5].\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= points.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>points[i].length == 2</code></li>\n\t<li><code>-2<sup>31</sup> &lt;= x<sub>start</sub> &lt; x<sub>end</sub> &lt;= 2<sup>31</sup> - 1</code></li>\n</ul>\n",
+  "likes": 7899,
+  "dislikes": 264,
+  "stats": {
+    "totalAccepted": "705.2K",
+    "totalSubmission": "1.2M",
+    "totalAcceptedRaw": 705168,
+    "totalSubmissionRaw": 1161409,
+    "acRate": "60.7%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    },
+    {
+      "name": "Sorting",
+      "slug": "sorting"
+    }
+  ],
+  "metaData": {
+    "name": "findMinArrowShots",
+    "params": [
+      {
+        "name": "points",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "sachinbaral02",
+      "year": 2023,
+      "content": "MentalHealth--;\\nStress++;",
+      "voteCount": 365
+    },
+    {
+      "name": "trpaslik",
+      "year": 2023,
+      "content": "Description is really stupid.\n\"spherical balloon\" is a 3D object. If you know only single coordinate of each ballon on some plane then there is many configurations.\nI always try to solve problem by my self. I did over 700 but this one is really poorly stated.\nAfter looking at official solution and the image there it turns to be really simple (just intervals on a 1D).\n[@LeetCode](/LeetCode) plese add this image to the problem descrition.\n\n![image](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/solutions/288049/Figures/452/arrows.png)\n",
+      "voteCount": 296
+    },
+    {
+      "name": "carloseddy397",
+      "year": 2022,
+      "content": "`\\u201CLet me take a break of 5 minutes to browse the internet.\\u201D That\\u2019s how it starts. An hour later, you are still browsing.`",
+      "voteCount": 259
+    },
+    {
+      "name": "wateryan17",
+      "year": 2020,
+      "content": "Apparently a new test case has been added recently. If you cannot pass this one, then it is because the result of subtraction is too large and thus the overflow is encountered. So don\\'t use `a-b` to compare when sorting. Use `Integer.compare(a,b)` instead!!!",
+      "voteCount": 215
+    },
+    {
+      "name": "santanusen",
+      "year": 2023,
+      "content": "It would have taken me hours to solve such problems a few months back. I was able to solve it in 15 mins today thanks to daily leetcoding. Leetcode definitely helps.\\n\\nTip:\\nsort the points, track how many consecutive points intersect (keep tracking and narrowing down the intersecting coordinates).",
+      "voteCount": 96
+    },
+    {
+      "name": "vaibhavbhardwaj1987",
+      "year": 2020,
+      "content": "![image](https://assets.leetcode.com/users/images/743abf3b-788a-4da7-b576-f043cefe87c0_1603097643.8374152.png)\\n",
+      "voteCount": 77
+    },
+    {
+      "name": "soumita_basu",
+      "year": 2023,
+      "content": "This problem is based on Greedy algorithm and we can solve this problem using this concept:\\n\\nWe can understand by using an example:\\n\\nGiven an 2d array of size 4 with  [10,16] , [2,8] , [1,6] , [7,12]\\n\\nSuppose we shoot an arrow to [10,16] it also shoots [7,12] and if we shoot [2,8] the arrow also hits [1,6]. In simpler words, we can say if the first element of the current sub array is lesser than the targeted second element of any sub-array, the arrow hits both of them. If not, the arrow has to be shot again.\\n\\nBut the above theory will only work if the array is sorted for that we will get all the first elements of the array in increasing order hence, makes comparison easier without any loopholes.\\n\\nAfter sorting the array looks like : [ [1,6] , [2,8] , [7,12] , [10,16] ]\\n\\nNow we can check if the first element of the current sub array is greater than the targeted second element of any sub-array (we can also check for lesser than but then you have to subtract the result from the array length).\\n\\nHere, we initialize arrow with 1 as the arrow has to be shot to start the process.\\nAnd, the current comparison element with which the first element of the current sub array will be compared will be set as points[0][1] as it is the targeted second element of first sub-array.\\n\\nAs 7>6, the arrow shot for [1,6] did not shoot [7,12], for which we had to shoot again.\\n\\nFor every ith element greater, we increment the arrow counter and update the comparing element to the second element of the current sub-array. This checks if there are any more elements left to be checked for given comparison element. As the array is sorted, if the comparison condition is true that means no other sub-array can be shot with the same arrow. So we update the comparison element for next shot.\\n\\nIf the condition does not fits then we check the minimum between the comparing element and the second element of current sub-array. As we have to check for minimums first to get correct result (that is why, we had sorted the array). We cannot jump as the current indicator is incrementing with every fulfilled or unfulfilled comparison.\\n\\nAt last, return the arrow counter.\\n\\nSolution link for better understanding: [https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/solutions/3000437/simple-c-code/?orderBy=newest_to_oldest](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/solutions/3000437/simple-c-code/?orderBy=newest_to_oldest)\\n\\nI hope it helps ^_^",
+      "voteCount": 72
+    },
+    {
+      "name": "DevOgabek",
+      "year": 2024,
+      "content": "## Useful test cases:\n```\n[[1, 2], [2, 3], [3, 4], [4, 5], [5, 6]]\n[[0, 10], [20, 30], [40, 50], [60, 70]]\n[[-10, -5], [-7, 0], [2, 5], [7, 10]]\n[[100, 200], [150, 250], [180, 220], [210, 230]]\n[[-50, -40], [-30, -20], [-10, 0], [10, 20], [30, 40]]\n[[500, 510], [520, 530], [540, 550], [560, 570], [580, 590]]\n[[0, 1], [1, 2], [2, 3], [3, 4], [4, 5]]\n[[10, 20], [30, 40], [50, 60], [70, 80], [90, 100]]\n[[9,12],[1,10],[4,11],[8,12],[3,9],[6,9],[6,7]]\n```",
+      "voteCount": 48
+    },
+    {
+      "name": "MC_Jin",
+      "year": 2022,
+      "content": "TIP: For `C++`, the input of annonymous compare function shold be reference, or you will get TLE.",
+      "voteCount": 40
+    },
+    {
+      "name": "mausami",
+      "year": 2020,
+      "content": "Take care of the following test cases while sorting the array:\\n1. []\\n2. [[1,2],[2,3],[3,4],[4,5]]\\n3. [[-2147483646,-2147483645],[2147483646,2147483647]]\\n4. [[10,16],[2,8],[1,6],[7,12]]\\n5. [[1,2],[3,4],[5,6],[7,8]]\\n6. [[1,2]]\\n7. [[2,3],[2,3]]\\n",
+      "voteCount": 38
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "category": "",
+  "id": "304",
+  "name": "Range Sum Query 2D - Immutable",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/range-sum-query-2d-immutable/",
+  "slug": "range-sum-query-2d-immutable",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Design",
+    "Matrix",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Range Sum Query - Immutable",
+      "difficulty": "Easy",
+      "slug": "range-sum-query-immutable"
+    },
+    {
+      "title": "Range Sum Query 2D - Mutable",
+      "difficulty": "Medium",
+      "slug": "range-sum-query-2d-mutable"
+    },
+    {
+      "title": "Find the Grid of Region Average",
+      "difficulty": "Medium",
+      "slug": "find-the-grid-of-region-average"
+    }
+  ],
+  "questionId": "304",
+  "questionFrontendId": "304",
+  "title": "Range Sum Query 2D - Immutable",
+  "titleSlug": "range-sum-query-2d-immutable",
+  "content": "<p>Given a 2D matrix <code>matrix</code>, handle multiple queries of the following type:</p>\n\n<ul>\n\t<li>Calculate the <strong>sum</strong> of the elements of <code>matrix</code> inside the rectangle defined by its <strong>upper left corner</strong> <code>(row1, col1)</code> and <strong>lower right corner</strong> <code>(row2, col2)</code>.</li>\n</ul>\n\n<p>Implement the <code>NumMatrix</code> class:</p>\n\n<ul>\n\t<li><code>NumMatrix(int[][] matrix)</code> Initializes the object with the integer matrix <code>matrix</code>.</li>\n\t<li><code>int sumRegion(int row1, int col1, int row2, int col2)</code> Returns the <strong>sum</strong> of the elements of <code>matrix</code> inside the rectangle defined by its <strong>upper left corner</strong> <code>(row1, col1)</code> and <strong>lower right corner</strong> <code>(row2, col2)</code>.</li>\n</ul>\n\n<p>You must design an algorithm where <code>sumRegion</code> works on <code>O(1)</code> time complexity.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/14/sum-grid.jpg\" style=\"width: 415px; height: 415px;\" />\n<pre>\n<strong>Input</strong>\n[&quot;NumMatrix&quot;, &quot;sumRegion&quot;, &quot;sumRegion&quot;, &quot;sumRegion&quot;]\n[[[[3, 0, 1, 4, 2], [5, 6, 3, 2, 1], [1, 2, 0, 1, 5], [4, 1, 0, 1, 7], [1, 0, 3, 0, 5]]], [2, 1, 4, 3], [1, 1, 2, 2], [1, 2, 2, 4]]\n<strong>Output</strong>\n[null, 8, 11, 12]\n\n<strong>Explanation</strong>\nNumMatrix numMatrix = new NumMatrix([[3, 0, 1, 4, 2], [5, 6, 3, 2, 1], [1, 2, 0, 1, 5], [4, 1, 0, 1, 7], [1, 0, 3, 0, 5]]);\nnumMatrix.sumRegion(2, 1, 4, 3); // return 8 (i.e sum of the red rectangle)\nnumMatrix.sumRegion(1, 1, 2, 2); // return 11 (i.e sum of the green rectangle)\nnumMatrix.sumRegion(1, 2, 2, 4); // return 12 (i.e sum of the blue rectangle)\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == matrix.length</code></li>\n\t<li><code>n == matrix[i].length</code></li>\n\t<li><code>1 &lt;= m, n &lt;= 200</code></li>\n\t<li><code>-10<sup>4</sup> &lt;= matrix[i][j] &lt;= 10<sup>4</sup></code></li>\n\t<li><code>0 &lt;= row1 &lt;= row2 &lt; m</code></li>\n\t<li><code>0 &lt;= col1 &lt;= col2 &lt; n</code></li>\n\t<li>At most <code>10<sup>4</sup></code> calls will be made to <code>sumRegion</code>.</li>\n</ul>\n",
+  "likes": 5237,
+  "dislikes": 363,
+  "stats": {
+    "totalAccepted": "438.4K",
+    "totalSubmission": "769.5K",
+    "totalAcceptedRaw": 438376,
+    "totalSubmissionRaw": 769478,
+    "acRate": "57.0%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Design",
+      "slug": "design"
+    },
+    {
+      "name": "Matrix",
+      "slug": "matrix"
+    },
+    {
+      "name": "Prefix Sum",
+      "slug": "prefix-sum"
+    }
+  ],
+  "metaData": {
+    "classname": "NumMatrix",
+    "maxbytesperline": 150000,
+    "constructor": {
+      "params": [
+        {
+          "type": "integer[][]",
+          "name": "matrix"
+        },
+        {
+          "type": "integer",
+          "name": "matrixRowSize",
+          "lang": "c",
+          "value": "size_1"
+        },
+        {
+          "type": "integer",
+          "name": "matrixColSize",
+          "lang": "c",
+          "value": "col_size_1"
+        }
+      ]
+    },
+    "methods": [
+      {
+        "name": "sumRegion",
+        "params": [
+          {
+            "type": "integer",
+            "name": "row1"
+          },
+          {
+            "type": "integer",
+            "name": "col1"
+          },
+          {
+            "type": "integer",
+            "name": "row2"
+          },
+          {
+            "type": "integer",
+            "name": "col2"
+          }
+        ],
+        "return": {
+          "type": "integer"
+        }
+      }
+    ],
+    "systemdesign": true,
+    "params": [
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      },
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "list<String>",
+      "dealloc": true
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "strange_fellow",
+      "year": 2024,
+      "content": "It is Easy only for those who knows the idea of prefix sum on a grid, \\nMedium for those who know the idea of prefix sum of an array,\\n and Hard for those who doesn\\'t know what is prefix sum approach.\\n\\nso my advice is, first know about prefix sum if you don\\'t know, then try this out. ",
+      "voteCount": 63
+    },
+    {
+      "name": "anonymous_swe",
+      "year": 2019,
+      "content": "I was looking over face detection and compare across a very well recognized research paper that uses this algorithm as part of the process. look under \"Integral Image\"\\n\\nhttps://www.researchgate.net/profile/Michael_Jones20/publication/3940582_Rapid_Object_Detection_using_a_Boosted_Cascade_of_Simple_Features/links/0f31753b419c639337000000.pdf\\n",
+      "voteCount": 33
+    },
+    {
+      "name": "legiatuan1998",
+      "year": 2024,
+      "content": "borderline hard",
+      "voteCount": 16
+    },
+    {
+      "name": "3R1C_",
+      "year": 2023,
+      "content": "Hint: A + B - (A and B)",
+      "voteCount": 13
+    },
+    {
+      "name": "LeetCode",
+      "year": 2022,
+      "content": "This problem is the Daily LeetCoding Challenge for June, Day 3.\n\nFeel free to share anything related to this problem here!\n\nYou can ask questions, discuss what you've learned from this problem, or show off how many days of streak you've made!\n\n---\n\nIf you'd like to share a detailed solution to the problem, please create a new post in the discuss section and provide\n- **Detailed Explanations**: Describe the algorithm you used to solve this problem. Include any insights you used to solve this problem.\n- **Images** that help explain the algorithm.\n- **Language and Code** you used to pass the problem.\n- **Time and Space complexity analysis**.\n\n---\n\n  **📌 Do you want to learn the problem thoroughly?**\n  Read [**⭐  LeetCode Official Solution⭐**](https://leetcode.com/problems/range-sum-query-2d-immutable/solution) to learn the 3 approaches to the problem with detailed explanations to the algorithms, codes, and complexity analysis.\n  <details>\n  <summary> Spoiler Alert! We'll explain these 4 approaches in the official solution</summary>\n\n  \n**Approach 1:** (Brute Force) [Time Limit Exceeded]\n\n  \n**Approach 2:** (Caching) [Memory Limit Exceeded]\n\n  \n**Approach 3:** (Caching Rows) [Accepted]\n\n  \n**Approach 4:** (Caching Smarter) [Accepted]\n\n  \n</details>\n\n\n\nIf you're new to Daily LeetCoding Challenge, [**check out this post**](https://leetcode.com/discuss/general-discussion/655704/)!\n\n\n---\n\n<br>\n\n<p align=\"center\">\n<a href=\"https://leetcode.com/subscribe/?ref=ex_dc\" target=\"_blank\">\n  <img src=\"https://assets.leetcode.com/static_assets/marketing/daily_leetcoding_banner.png\" width=\"560px\" />\n</a>\n</p>\n\n<br>",
+      "voteCount": 10
+    },
+    {
+      "name": "Gaurav_Mangal",
+      "year": 2023,
+      "content": "wtf [@LeetCode](/LeetCode) its showing that my last test case exceeded the time limit but it is not showing what the test case was.",
+      "voteCount": 6
+    },
+    {
+      "name": "lovesbumblebees",
+      "year": 2024,
+      "content": "protip: if you make your prefix matrix bigger by one unit in both dimensions, then you can avoid coding for boundaries. You write half as much code and you don\\'t need any branches in the sumRegion method. ",
+      "voteCount": 5
+    },
+    {
+      "name": "umeshCodesJAVA",
+      "year": 2024,
+      "content": "Wow cool problem. Learned a new concept today!\\nDefinitely a medium-hard one if one is seeing it for the first time, but once you know the concept you would be able to do similar problems easily.\\n\\nHappy Leetcoding :)",
+      "voteCount": 5
+    },
+    {
+      "name": "lincolnnotabraham",
+      "year": 2025,
+      "content": "Stupid Question",
+      "voteCount": 3
+    },
+    {
+      "name": "khanna111",
+      "year": 2025,
+      "content": "O(1) solution is hard to visualize without having seen it earlier.",
+      "voteCount": 3
+    }
+  ]
+}

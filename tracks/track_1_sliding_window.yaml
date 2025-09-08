@@ -79,7 +79,7 @@ problems:
     section: window-dynamic
     why: >
       Budget window: allow at most k violations (zeros). Practice shrinking based on a counter rather than exact matches.
-  - slug: fruits-into-baskets
+  - slug: fruit-into-baskets
     title: Fruit Into Baskets
     difficulty: medium
     primary_pattern: window-dynamic-k-types
@@ -116,7 +116,7 @@ extensions:
       section: window-extensions
       why: >
         Multiplicative window on positive integers. Maintain running product and shrink while product >= k.
-    - slug: longest-subarray-of-1s-after-deleting-one
+    - slug: longest-subarray-of-1s-after-deleting-one-element
       title: Longest Subarray of 1s After Deleting One
       difficulty: medium
       primary_pattern: window-dynamic-budget

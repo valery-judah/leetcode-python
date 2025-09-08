@@ -1,0 +1,137 @@
+{
+  "category": "",
+  "id": "844",
+  "name": "Backspace String Compare",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/backspace-string-compare/",
+  "slug": "backspace-string-compare",
+  "isPaidOnly": false,
+  "tags": [
+    "Two Pointers",
+    "String",
+    "Stack",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Crawler Log Folder",
+      "difficulty": "Easy",
+      "slug": "crawler-log-folder"
+    },
+    {
+      "title": "Removing Stars From a String",
+      "difficulty": "Medium",
+      "slug": "removing-stars-from-a-string"
+    }
+  ],
+  "questionId": "874",
+  "questionFrontendId": "844",
+  "title": "Backspace String Compare",
+  "titleSlug": "backspace-string-compare",
+  "content": "<p>Given two strings <code>s</code> and <code>t</code>, return <code>true</code> <em>if they are equal when both are typed into empty text editors</em>. <code>&#39;#&#39;</code> means a backspace character.</p>\n\n<p>Note that after backspacing an empty text, the text will continue empty.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;ab#c&quot;, t = &quot;ad#c&quot;\n<strong>Output:</strong> true\n<strong>Explanation:</strong> Both s and t become &quot;ac&quot;.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;ab##&quot;, t = &quot;c#d#&quot;\n<strong>Output:</strong> true\n<strong>Explanation:</strong> Both s and t become &quot;&quot;.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;a#c&quot;, t = &quot;b&quot;\n<strong>Output:</strong> false\n<strong>Explanation:</strong> s becomes &quot;c&quot; while t becomes &quot;b&quot;.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code><span>1 &lt;= s.length, t.length &lt;= 200</span></code></li>\n\t<li><span><code>s</code> and <code>t</code> only contain lowercase letters and <code>&#39;#&#39;</code> characters.</span></li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Follow up:</strong> Can you solve it in <code>O(n)</code> time and <code>O(1)</code> space?</p>\n",
+  "likes": 7787,
+  "dislikes": 375,
+  "stats": {
+    "totalAccepted": "972K",
+    "totalSubmission": "2M",
+    "totalAcceptedRaw": 971986,
+    "totalSubmissionRaw": 1960653,
+    "acRate": "49.6%"
+  },
+  "topicTags": [
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Stack",
+      "slug": "stack"
+    },
+    {
+      "name": "Simulation",
+      "slug": "simulation"
+    }
+  ],
+  "metaData": {
+    "name": "backspaceCompare",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      },
+      {
+        "name": "t",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "ametz",
+      "year": 2019,
+      "content": "I saw this one in a Google interview. I solved it both ways in less than 45 minutes. Still didn\\'t get the job :(",
+      "voteCount": 190
+    },
+    {
+      "name": "verauva",
+      "year": 2022,
+      "content": "I  think it\\'s medium, not easy",
+      "voteCount": 135
+    },
+    {
+      "name": "anwendeng",
+      "year": 2023,
+      "content": "Solving it in O(n)  is easy. But solving it in O(n) time with O(1) space needs tricks!",
+      "voteCount": 40
+    },
+    {
+      "name": "ogbe",
+      "year": 2020,
+      "content": "With the requirement for constant space, I was able to solve this question by reversing the iteration of the string and counting the number of times to skip items if I find a \\'#\\' character, but that might not be very easy to find and implement correctly, so I would say thsi question is a medium or maybe a medium version should be created for the constant space requirement.",
+      "voteCount": 37
+    },
+    {
+      "name": "spookie886",
+      "year": 2023,
+      "content": "solved it using stack in under 3 mins. Had a really difficult time trying two pointer appraoch in contant space...",
+      "voteCount": 27
+    },
+    {
+      "name": "tripper",
+      "year": 2023,
+      "content": "Additional Test Cases which annoys the most > order(s, t):\\n\"a##c\"\\n\"#a#c\"\\n\"y#fo##f\"\\n\"y#f#o##f\"\\n",
+      "voteCount": 23
+    },
+    {
+      "name": "supermarine",
+      "year": 2023,
+      "content": "Good problem, isn\\'t this?",
+      "voteCount": 23
+    },
+    {
+      "name": "bhardwajprakarsh",
+      "year": 2021,
+      "content": "Their are so many things to handle in a question like this, I got confused halfway twice before I got it right and even then I had to dubug it again for some test cases. \\n\\nHow can I even code something like this in real interview ?",
+      "voteCount": 13
+    },
+    {
+      "name": "LeetCode",
+      "year": 2022,
+      "content": "This problem is the Daily LeetCoding Challenge for May, Day 1.\n\nFeel free to share anything related to this problem here!\n\nYou can ask questions, discuss what you've learned from this problem, or show off how many days of streak you've made!\n\n---\n\nIf you'd like to share a detailed solution to the problem, please create a new post in the discuss section and provide\n- **Detailed Explanations**: Describe the algorithm you used to solve this problem. Include any insights you used to solve this problem.\n- **Images** that help explain the algorithm.\n- **Language and Code** you used to pass the problem.\n- **Time and Space complexity analysis**.\n\n---\n\n  **📌 Do you want to learn the problem thoroughly?**\n  Read [**⭐  LeetCode Official Solution⭐**](https://leetcode.com/problems/backspace-string-compare/solution) to learn the 3 approaches to the problem with detailed explanations to the algorithms, codes, and complexity analysis.\n  <details>\n  <summary> Spoiler Alert! We'll explain these 2 approaches in the official solution</summary>\n\n  \n**Approach 1:** Build String [Accepted]\n\n  \n**Approach 2:** Two Pointer [Accepted]\n\n  \n</details>\n\n\n\nIf you're new to Daily LeetCoding Challenge, [**check out this post**](https://leetcode.com/discuss/general-discussion/655704/)!\n\n\n---\n\n<br>\n\n<p align=\"center\">\n<a href=\"https://leetcode.com/subscribe/?ref=ex_dc\" target=\"_blank\">\n  <img src=\"https://assets.leetcode.com/static_assets/marketing/daily_leetcoding_banner.png\" width=\"560px\" />\n</a>\n</p>\n\n<br>",
+      "voteCount": 12
+    },
+    {
+      "name": "Noobcoooooder",
+      "year": 2023,
+      "content": "Using Stack\\nThe idea here is to use the inherent nature of stacks to simulate the backspace operation.\\n\\nIterate through each character of the string.\\nIf the character isn\\'t #, it\\'s pushed onto the stack.\\nIf the character is # and the stack isn\\'t empty, the top element (last typed character) is popped (i.e., \"erased\").\\nAfter processing, the contents of the stacks for both strings are compared.\\n\\nupvote if liked",
+      "voteCount": 9
+    }
+  ]
+}

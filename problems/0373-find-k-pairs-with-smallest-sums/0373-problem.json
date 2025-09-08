@@ -1,0 +1,137 @@
+{
+  "category": "",
+  "id": "373",
+  "name": "Find K Pairs with Smallest Sums",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/find-k-pairs-with-smallest-sums/",
+  "slug": "find-k-pairs-with-smallest-sums",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Heap (Priority Queue)"
+  ],
+  "similar_questions": [
+    {
+      "title": "Kth Smallest Element in a Sorted Matrix",
+      "difficulty": "Medium",
+      "slug": "kth-smallest-element-in-a-sorted-matrix"
+    },
+    {
+      "title": "Find K-th Smallest Pair Distance",
+      "difficulty": "Hard",
+      "slug": "find-k-th-smallest-pair-distance"
+    },
+    {
+      "title": "Kth Smallest Product of Two Sorted Arrays",
+      "difficulty": "Hard",
+      "slug": "kth-smallest-product-of-two-sorted-arrays"
+    }
+  ],
+  "questionId": "373",
+  "questionFrontendId": "373",
+  "title": "Find K Pairs with Smallest Sums",
+  "titleSlug": "find-k-pairs-with-smallest-sums",
+  "content": "<p>You are given two integer arrays <code>nums1</code> and <code>nums2</code> sorted in <strong>non-decreasing&nbsp;order</strong> and an integer <code>k</code>.</p>\n\n<p>Define a pair <code>(u, v)</code> which consists of one element from the first array and one element from the second array.</p>\n\n<p>Return <em>the</em> <code>k</code> <em>pairs</em> <code>(u<sub>1</sub>, v<sub>1</sub>), (u<sub>2</sub>, v<sub>2</sub>), ..., (u<sub>k</sub>, v<sub>k</sub>)</code> <em>with the smallest sums</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums1 = [1,7,11], nums2 = [2,4,6], k = 3\n<strong>Output:</strong> [[1,2],[1,4],[1,6]]\n<strong>Explanation:</strong> The first 3 pairs are returned from the sequence: [1,2],[1,4],[1,6],[7,2],[7,4],[11,2],[7,6],[11,4],[11,6]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums1 = [1,1,2], nums2 = [1,2,3], k = 2\n<strong>Output:</strong> [[1,1],[1,1]]\n<strong>Explanation:</strong> The first 2 pairs are returned from the sequence: [1,1],[1,1],[1,2],[2,1],[1,2],[2,2],[1,3],[1,3],[2,3]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums1.length, nums2.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>-10<sup>9</sup> &lt;= nums1[i], nums2[i] &lt;= 10<sup>9</sup></code></li>\n\t<li><code>nums1</code> and <code>nums2</code> both are sorted in <strong>non-decreasing order</strong>.</li>\n\t<li><code>1 &lt;= k &lt;= 10<sup>4</sup></code></li>\n\t<li><code>k &lt;=&nbsp;nums1.length *&nbsp;nums2.length</code></li>\n</ul>\n",
+  "likes": 6715,
+  "dislikes": 480,
+  "stats": {
+    "totalAccepted": "397.1K",
+    "totalSubmission": "969.8K",
+    "totalAcceptedRaw": 397142,
+    "totalSubmissionRaw": 969819,
+    "acRate": "41.0%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Heap (Priority Queue)",
+      "slug": "heap-priority-queue"
+    }
+  ],
+  "metaData": {
+    "name": "kSmallestPairs",
+    "params": [
+      {
+        "name": "nums1",
+        "type": "integer[]"
+      },
+      {
+        "name": "nums2",
+        "type": "integer[]"
+      },
+      {
+        "name": "k",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "list<list<integer>>"
+    },
+    "manual": false
+  },
+  "discussion_posts": [
+    {
+      "name": "onebigsalmon",
+      "year": 2021,
+      "content": "I read the popular solutions using a priority queue and understand how it works. However, intuitively, doesn\\'t this problem seem like it can be done with 2 pointers? One pointer for each array, advance them in a certain way. I can\\'t get it to work and I guess it cannot be done. Can anyone explain why?",
+      "voteCount": 110
+    },
+    {
+      "name": "acrenwelge",
+      "year": 2023,
+      "content": "In case anyone else started down the same wrong path I did - I thought I could use two pointers and compare the values of the next numbers in each list to find the smaller value. But this will not work because it will not search all possible pairs - need to think of a new approach",
+      "voteCount": 89
+    },
+    {
+      "name": "gaurav_rawat369",
+      "year": 2023,
+      "content": "Me trying to solve DP and Graph questions but nowadays these simple question also fuck me!!!!!!!!!!!!!!!!!!! ",
+      "voteCount": 88
+    },
+    {
+      "name": "Goblin_Cyanide",
+      "year": 2023,
+      "content": "This problem is so easy yet so frustrating :((((",
+      "voteCount": 86
+    },
+    {
+      "name": "Minnikeswar",
+      "year": 2023,
+      "content": "Correction in the question: Return Minimum(k , availablePairs).",
+      "voteCount": 38
+    },
+    {
+      "name": "Lawliet4733",
+      "year": 2023,
+      "content": "1) The smallest sum will be formed by index 0 of nums1 and index 0 of nums2. \n2) The next smaller sum will be either from {index 0 of nums1 and index1 of nums2} or {index 1 of nums1 and index 0 of nums2}. \n\n\n\n",
+      "voteCount": 28
+    },
+    {
+      "name": "Timbuk2",
+      "year": 2016,
+      "content": "Question says: \"Find the k pairs (u1,v1),(u2,v2) ...(uk,vk) with the smallest sums.\"\\n\\nOne of the test case\\nInput:\\n[1,1,2]\\n[1,2,3]\\n10\\n\\nExpected solution:\\n[[1,1],[1,1],[2,1],[1,2],[1,2],[2,2],[1,3],[1,3],[2,3]]\\n\\nHere k =10, but the solution have 9 pairs. \\n\\nK should not be greater than nums1.length * nums2.length. \\nIf its greater, then expected answer should be null or empty list.\\n\\nPlease fix it.",
+      "voteCount": 24
+    },
+    {
+      "name": "victCh",
+      "year": 2023,
+      "content": "LeetCode, your oficial solution now brings TLE on test case nums1 = 1,1,1,1,1,1,1,1,....., nums2 = 1,1,1,1,1,1,1,1,....., \\nk =10000.",
+      "voteCount": 20
+    },
+    {
+      "name": "parasmn4",
+      "year": 2023,
+      "content": "First thought that it can be solved using two pointers but realized that it will not consider all the pairs.\\n\\nThen solved it using Max heap taking in all pairs in O(N*M*LogK) but got TLE.\\n\\n",
+      "voteCount": 17
+    },
+    {
+      "name": "anwendeng",
+      "year": 2023,
+      "content": "I solved some problems about  heap and hit this one!\nA hit: the pair (i, j) has possible 2 adjacent vertices (i+1,j ) and (i, j+1).",
+      "voteCount": 17
+    }
+  ]
+}

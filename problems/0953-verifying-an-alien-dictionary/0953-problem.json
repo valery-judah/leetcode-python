@@ -1,0 +1,121 @@
+{
+  "category": "",
+  "id": "953",
+  "name": "Verifying an Alien Dictionary",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/verifying-an-alien-dictionary/",
+  "slug": "verifying-an-alien-dictionary",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "similar_questions": [],
+  "questionId": "990",
+  "questionFrontendId": "953",
+  "title": "Verifying an Alien Dictionary",
+  "titleSlug": "verifying-an-alien-dictionary",
+  "content": "<p>In an alien language, surprisingly, they also use English lowercase letters, but possibly in a different <code>order</code>. The <code>order</code> of the alphabet is some permutation of lowercase letters.</p>\n\n<p>Given a sequence of <code>words</code> written in the alien language, and the <code>order</code> of the alphabet, return <code>true</code> if and only if the given <code>words</code> are sorted lexicographically in this alien language.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> words = [&quot;hello&quot;,&quot;leetcode&quot;], order = &quot;hlabcdefgijkmnopqrstuvwxyz&quot;\n<strong>Output:</strong> true\n<strong>Explanation: </strong>As &#39;h&#39; comes before &#39;l&#39; in this language, then the sequence is sorted.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> words = [&quot;word&quot;,&quot;world&quot;,&quot;row&quot;], order = &quot;worldabcefghijkmnpqstuvxyz&quot;\n<strong>Output:</strong> false\n<strong>Explanation: </strong>As &#39;d&#39; comes after &#39;l&#39; in this language, then words[0] &gt; words[1], hence the sequence is unsorted.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> words = [&quot;apple&quot;,&quot;app&quot;], order = &quot;abcdefghijklmnopqrstuvwxyz&quot;\n<strong>Output:</strong> false\n<strong>Explanation: </strong>The first three characters &quot;app&quot; match, and the second string is shorter (in size.) According to lexicographical rules &quot;apple&quot; &gt; &quot;app&quot;, because &#39;l&#39; &gt; &#39;&empty;&#39;, where &#39;&empty;&#39; is defined as the blank character which is less than any other character (<a href=\"https://en.wikipedia.org/wiki/Lexicographical_order\" target=\"_blank\">More info</a>).\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= words.length &lt;= 100</code></li>\n\t<li><code>1 &lt;= words[i].length &lt;= 20</code></li>\n\t<li><code>order.length == 26</code></li>\n\t<li>All characters in <code>words[i]</code> and <code>order</code> are English lowercase letters.</li>\n</ul>\n",
+  "likes": 5006,
+  "dislikes": 1671,
+  "stats": {
+    "totalAccepted": "561.1K",
+    "totalSubmission": "1M",
+    "totalAcceptedRaw": 561062,
+    "totalSubmissionRaw": 1007745,
+    "acRate": "55.7%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "metaData": {
+    "name": "isAlienSorted",
+    "params": [
+      {
+        "name": "words",
+        "type": "string[]"
+      },
+      {
+        "name": "order",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "shubham_kamdi",
+      "year": 2022,
+      "content": "please move this to medium ",
+      "voteCount": 228
+    },
+    {
+      "name": "Unbeknownstguy",
+      "year": 2023,
+      "content": "Somewhere Aliens are laughing...",
+      "voteCount": 138
+    },
+    {
+      "name": "fadi17",
+      "year": 2020,
+      "content": "Can someone please explain this question to me :/",
+      "voteCount": 112
+    },
+    {
+      "name": "ersarthaksethi",
+      "year": 2023,
+      "content": "is my skill going down or the easy questions are getting difficult ?",
+      "voteCount": 109
+    },
+    {
+      "name": "bluecode2017",
+      "year": 2019,
+      "content": "![image](https://assets.leetcode.com/users/bluecode2017/image_1561259655.png)\\n",
+      "voteCount": 64
+    },
+    {
+      "name": "mhhs",
+      "year": 2022,
+      "content": "I think this one is a medium problem. It\\'s take a long time for me to grasp the concept clearly",
+      "voteCount": 43
+    },
+    {
+      "name": "coolgal",
+      "year": 2019,
+      "content": "Why is following testcase returning true ?\\n\\n[\"kuvp\",\"q\"]\\n\"ngxlkthsjuoqcpavbfdermiywz\"\\n\\nIn example 3, it says if second string length is less then first string than return false?\\n\\nInput: words = [\"apple\",\"app\"], order = \"abcdefghijklmnopqrstuvwxyz\"\\nOutput: false\\nExplanation: The first three characters \"app\" match, and the second string is shorter (in size.) According to lexicographical rules \"apple\" > \"app\", because \\'l\\' > \\'\\u2205\\', where \\'\\u2205\\' is defined as the blank character which is less than any other character (More info).",
+      "voteCount": 22
+    },
+    {
+      "name": "pradeep11",
+      "year": 2018,
+      "content": "Example 1:\\nInput: words = [\"hello\",\"leetcode\"], order = \"hlabcdefgijkmnopqrstuvwxyz\"\\nOutput: true\\n\\nthe 4th index position - char \\'o\\' comes after 4th index position of second word \\'c\\' . How it is sorted? It should return false?",
+      "voteCount": 22
+    },
+    {
+      "name": "tr1ten",
+      "year": 2023,
+      "content": "Hint: check next character only if current character is equal.\\n\\nThey should\\'ve mentioned it, i\\'m not sure how it is obvious",
+      "voteCount": 20
+    },
+    {
+      "name": "ajaxWin",
+      "year": 2023,
+      "content": "Fuck this question i m copy pasting. Fuck off",
+      "voteCount": 7
+    }
+  ]
+}

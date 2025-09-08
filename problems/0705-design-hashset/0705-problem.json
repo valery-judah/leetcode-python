@@ -1,0 +1,174 @@
+{
+  "category": "",
+  "id": "705",
+  "name": "Design HashSet",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/design-hashset/",
+  "slug": "design-hashset",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Linked List",
+    "Design",
+    "Hash Function"
+  ],
+  "similar_questions": [
+    {
+      "title": "Design HashMap",
+      "difficulty": "Easy",
+      "slug": "design-hashmap"
+    },
+    {
+      "title": "Design Skiplist",
+      "difficulty": "Hard",
+      "slug": "design-skiplist"
+    }
+  ],
+  "questionId": "816",
+  "questionFrontendId": "705",
+  "title": "Design HashSet",
+  "titleSlug": "design-hashset",
+  "content": "<p>Design a HashSet without using any built-in hash table libraries.</p>\n\n<p>Implement <code>MyHashSet</code> class:</p>\n\n<ul>\n\t<li><code>void add(key)</code> Inserts the value <code>key</code> into the HashSet.</li>\n\t<li><code>bool contains(key)</code> Returns whether the value <code>key</code> exists in the HashSet or not.</li>\n\t<li><code>void remove(key)</code> Removes the value <code>key</code> in the HashSet. If <code>key</code> does not exist in the HashSet, do nothing.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input</strong>\n[&quot;MyHashSet&quot;, &quot;add&quot;, &quot;add&quot;, &quot;contains&quot;, &quot;contains&quot;, &quot;add&quot;, &quot;contains&quot;, &quot;remove&quot;, &quot;contains&quot;]\n[[], [1], [2], [1], [3], [2], [2], [2], [2]]\n<strong>Output</strong>\n[null, null, null, true, false, null, true, null, false]\n\n<strong>Explanation</strong>\nMyHashSet myHashSet = new MyHashSet();\nmyHashSet.add(1);      // set = [1]\nmyHashSet.add(2);      // set = [1, 2]\nmyHashSet.contains(1); // return True\nmyHashSet.contains(3); // return False, (not found)\nmyHashSet.add(2);      // set = [1, 2]\nmyHashSet.contains(2); // return True\nmyHashSet.remove(2);   // set = [1]\nmyHashSet.contains(2); // return False, (already removed)</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= key &lt;= 10<sup>6</sup></code></li>\n\t<li>At most <code>10<sup>4</sup></code> calls will be made to <code>add</code>, <code>remove</code>, and <code>contains</code>.</li>\n</ul>\n",
+  "likes": 3953,
+  "dislikes": 324,
+  "stats": {
+    "totalAccepted": "519.7K",
+    "totalSubmission": "772.6K",
+    "totalAcceptedRaw": 519710,
+    "totalSubmissionRaw": 772556,
+    "acRate": "67.3%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Linked List",
+      "slug": "linked-list"
+    },
+    {
+      "name": "Design",
+      "slug": "design"
+    },
+    {
+      "name": "Hash Function",
+      "slug": "hash-function"
+    }
+  ],
+  "metaData": {
+    "classname": "MyHashSet",
+    "constructor": {
+      "params": []
+    },
+    "methods": [
+      {
+        "params": [
+          {
+            "type": "integer",
+            "name": "key"
+          }
+        ],
+        "name": "add",
+        "return": {
+          "type": "void"
+        }
+      },
+      {
+        "params": [
+          {
+            "type": "integer",
+            "name": "key"
+          }
+        ],
+        "return": {
+          "type": "void"
+        },
+        "name": "remove"
+      },
+      {
+        "params": [
+          {
+            "type": "integer",
+            "name": "key"
+          }
+        ],
+        "return": {
+          "type": "boolean"
+        },
+        "name": "contains"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "systemdesign": true
+  },
+  "discussion_posts": [
+    {
+      "name": "fluency03",
+      "year": 2018,
+      "content": "the purpose of this leetcode question is not to pass all the test.  it is for understanding how hashset or hashmap works under the hood. \\n\\nSo please do not post any answers using built-in hashset/hashmap, or just use a single array. Ask yourself, are you going to do the same stupid thing if this is the question you are asked in a real interview?",
+      "voteCount": 563
+    },
+    {
+      "name": "musicmaker99",
+      "year": 2021,
+      "content": "Why is this classified as \"Easy\"? Really not Easy is it?",
+      "voteCount": 89
+    },
+    {
+      "name": "VladimirTheLeet",
+      "year": 2023,
+      "content": "I love how this problem offers something to both the beginner and the experienced person. At first you're like - easy, I'll just use an array and that's it. And you could be satisfied with that, but then you think - hmm, but checking if the key is contained can be done much faster if I keep the array ordered, then I can use Binary Search. Then you realize that insertion in the middle of ordered array would be a slow operation. And the $O(log(n))$ time for everything can be achieved by using a Binary Search Tree.\nAnd all that for seemingly an elementary problem.",
+      "voteCount": 87
+    },
+    {
+      "name": "Wiblz",
+      "year": 2023,
+      "content": "Implementing a hash set is not supposed to be in \"easy\".",
+      "voteCount": 71
+    },
+    {
+      "name": "darian-catalin-cucer",
+      "year": 2022,
+      "content": "\\n       class MyHashSet extends HashSet<Integer> {}\\n\\t",
+      "voteCount": 44
+    },
+    {
+      "name": "cesarbretana",
+      "year": 2023,
+      "content": "This problem has multiple solutions, you just have to optimize for the constraints provided in the exercise (I guess in a real interview the interviewer might play around with it a bit). I will list what I came with from worst to best.\\n \\n1. Use a normal array where you lookup, insert, and delete information. Time complexity: Lookup (`O(n)` - if used a binary search, can be scoped to `O(logN)` which for the size of the set makes sense), Add, and delete will internally use the lookup function so the time complexity for these two operations is the same.\\n2. Use a boolean array where the elements that are inserted to or deleted from the set can be marked as true or false respectively, and lookup will be just checking the value of the array position corresponding to the key. The time complexity for this one is `O(1)` as you don\\'t have to traverse the array at any point.\\n\\nBoth solutions make the program suffer from memory, as the maximum size provided in the constraints must be pre-allocated. An alternative for that would be to initialize with a fixed size, and then extend the array to the maximum key that has been seen. But in this case, some of the operations will take `O(n)` time cause a copy of the array must be done.\\n\\nIf memory is a real concern, then a 3rd solution can be applied where the concept of HashMaps are applied, the unit of magnitude for the inbound key can be steered by hashing it, and then as values of the array, there would be a linked list to avoid collision of hashes. That way the data container will always have a fixed size, but be wary that this approach will sacrifice performance, as the linked list inside of each element must be traversed to find out whether such element exists in the set or not.\\n\\nHope this is helpful, and any feedback is appreciated.",
+      "voteCount": 42
+    },
+    {
+      "name": "tleland",
+      "year": 2018,
+      "content": "The \"Design HashSet\" description states that \"all values will be in the range of [1, 1000000],\" but the test cases use 0. Please update the description, as it is much harder to learn when the material is erroneous. ",
+      "voteCount": 17
+    },
+    {
+      "name": "MahsaAbadian",
+      "year": 2019,
+      "content": "[\"MyHashSet\",\"contains\",\"remove\",\"add\",\"add\",\"add\",\"add\",\"contains\",\"add\",\"add\",\"contains\",\"contains\",\"add\",\"contains\",\"add\",\"add\",\"add\",\"contains\",\"remove\",\"add\",\"add\",\"contains\",\"add\",\"add\",\"add\",\"add\",\"remove\",\"add\",\"add\",\"add\",\"add\",\"contains\",\"add\",\"add\",\"contains\",\"contains\",\"contains\",\"remove\",\"add\",\"add\",\"contains\",\"remove\",\"remove\",\"add\",\"add\",\"add\",\"add\",\"add\",\"contains\",\"remove\",\"contains\",\"add\",\"contains\",\"add\",\"contains\",\"remove\",\"add\",\"add\",\"remove\",\"contains\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"contains\",\"remove\",\"add\",\"add\",\"remove\",\"remove\",\"add\",\"remove\",\"add\",\"remove\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"remove\",\"add\",\"remove\",\"remove\",\"add\",\"add\",\"add\",\"add\",\"contains\",\"add\",\"add\",\"remove\",\"add\",\"add\",\"add\",\"remove\",\"add\",\"add\",\"add\",\"add\",\"contains\",\"add\",\"add\",\"add\",\"remove\",\"contains\",\"add\",\"add\",\"add\",\"add\",\"add\",\"remove\",\"add\",\"contains\",\"contains\",\"add\",\"add\",\"add\",\"add\",\"contains\",\"remove\",\"add\",\"contains\",\"add\",\"contains\",\"contains\",\"add\",\"add\",\"contains\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"contains\",\"remove\",\"add\",\"contains\",\"add\",\"remove\",\"add\",\"remove\",\"remove\",\"add\",\"add\",\"contains\",\"add\",\"remove\",\"contains\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"contains\",\"remove\",\"remove\",\"contains\",\"add\",\"contains\",\"remove\",\"add\",\"add\",\"add\",\"add\",\"contains\",\"add\",\"remove\",\"add\",\"remove\",\"add\",\"remove\",\"add\",\"add\",\"add\",\"remove\",\"contains\",\"add\",\"add\",\"add\",\"add\",\"remove\",\"add\",\"add\",\"contains\",\"contains\",\"contains\",\"remove\",\"contains\",\"remove\",\"add\",\"contains\",\"add\",\"add\",\"add\",\"add\",\"remove\",\"add\",\"add\",\"add\",\"remove\",\"remove\",\"add\",\"add\",\"add\",\"add\",\"remove\",\"add\",\"remove\",\"contains\",\"add\",\"contains\",\"add\",\"contains\",\"add\",\"contains\",\"add\",\"add\",\"add\",\"remove\",\"add\",\"add\",\"add\",\"add\",\"add\",\"contains\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"remove\",\"add\",\"remove\",\"add\",\"add\",\"add\",\"contains\",\"add\",\"add\",\"remove\",\"remove\",\"remove\",\"contains\",\"remove\",\"add\",\"add\",\"remove\",\"add\",\"contains\",\"add\",\"add\",\"remove\",\"contains\",\"add\",\"add\",\"add\",\"contains\",\"remove\",\"add\",\"add\",\"remove\",\"contains\",\"remove\",\"add\",\"contains\",\"remove\",\"add\",\"add\",\"add\",\"add\",\"contains\",\"add\",\"contains\",\"add\",\"remove\",\"contains\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"remove\",\"contains\",\"contains\",\"add\",\"remove\",\"add\",\"remove\",\"contains\",\"add\",\"contains\",\"add\",\"remove\",\"add\",\"add\",\"add\",\"add\",\"remove\",\"add\",\"add\",\"add\",\"add\",\"add\",\"remove\",\"contains\",\"add\",\"add\",\"remove\",\"contains\",\"add\",\"add\",\"contains\",\"add\",\"remove\",\"add\",\"remove\",\"add\",\"add\",\"remove\",\"contains\",\"add\",\"add\",\"add\",\"contains\",\"add\",\"add\",\"add\",\"remove\",\"add\",\"remove\",\"contains\",\"add\",\"add\",\"contains\",\"add\",\"contains\",\"add\",\"add\",\"remove\",\"add\",\"contains\",\"contains\",\"remove\",\"contains\",\"add\",\"contains\",\"add\",\"add\",\"remove\",\"remove\",\"add\",\"add\",\"remove\",\"add\",\"contains\",\"add\",\"add\",\"add\",\"contains\",\"add\",\"add\",\"add\",\"add\",\"add\",\"contains\",\"add\",\"add\",\"contains\",\"add\",\"add\",\"add\",\"remove\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"remove\",\"add\",\"add\",\"contains\",\"remove\",\"add\",\"remove\",\"contains\",\"add\",\"add\",\"add\",\"remove\",\"add\",\"add\",\"contains\",\"contains\",\"add\",\"contains\",\"add\",\"add\",\"remove\",\"add\",\"add\",\"remove\",\"remove\",\"add\",\"add\",\"add\",\"contains\",\"add\",\"add\",\"remove\",\"add\",\"remove\",\"add\",\"add\",\"add\",\"contains\",\"add\",\"add\",\"add\",\"add\",\"contains\",\"add\",\"remove\",\"add\",\"add\",\"remove\",\"add\",\"add\",\"contains\",\"add\",\"add\",\"add\",\"add\",\"contains\",\"add\",\"contains\",\"add\",\"add\",\"add\",\"add\",\"add\",\"remove\",\"remove\",\"remove\",\"remove\",\"contains\",\"add\",\"add\",\"add\",\"contains\",\"add\",\"contains\",\"remove\",\"add\",\"add\",\"contains\",\"add\",\"add\",\"contains\",\"add\",\"contains\",\"add\",\"remove\",\"add\",\"remove\",\"add\",\"add\",\"contains\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"contains\",\"add\",\"add\",\"remove\",\"add\",\"add\",\"remove\",\"add\",\"remove\",\"remove\",\"remove\",\"contains\",\"remove\",\"contains\",\"remove\",\"add\",\"remove\",\"add\",\"add\",\"remove\",\"add\",\"add\",\"remove\",\"add\",\"add\",\"remove\",\"add\",\"contains\",\"remove\",\"add\",\"contains\",\"contains\",\"remove\",\"add\",\"contains\",\"add\",\"add\",\"contains\",\"contains\",\"add\",\"add\",\"add\",\"add\",\"contains\",\"add\",\"contains\",\"add\",\"add\",\"remove\",\"add\",\"remove\",\"contains\",\"add\",\"remove\",\"remove\",\"add\",\"add\",\"contains\",\"contains\",\"contains\",\"add\",\"contains\",\"add\",\"add\",\"remove\",\"add\",\"add\",\"add\",\"remove\",\"add\",\"add\",\"add\",\"add\",\"contains\",\"remove\",\"remove\",\"contains\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"remove\",\"contains\",\"remove\",\"add\",\"add\",\"add\",\"contains\",\"add\",\"remove\",\"add\",\"add\",\"remove\",\"add\",\"add\",\"add\",\"add\",\"remove\",\"remove\",\"remove\",\"add\",\"contains\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"remove\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"remove\",\"add\",\"add\",\"add\",\"add\",\"remove\",\"add\",\"add\",\"add\",\"contains\",\"add\",\"remove\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"contains\",\"remove\",\"remove\",\"contains\",\"add\",\"remove\",\"add\",\"contains\",\"add\",\"remove\",\"add\",\"contains\",\"add\",\"add\",\"add\",\"add\",\"contains\",\"add\",\"add\",\"contains\",\"contains\",\"contains\",\"add\",\"remove\",\"contains\",\"add\",\"add\",\"remove\",\"add\",\"add\",\"add\",\"add\",\"remove\",\"add\",\"contains\",\"add\",\"add\",\"remove\",\"contains\",\"contains\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"remove\",\"contains\",\"remove\",\"add\",\"add\",\"add\",\"remove\",\"contains\",\"remove\",\"contains\",\"add\",\"add\",\"remove\",\"remove\",\"remove\",\"add\",\"add\",\"contains\",\"add\",\"add\",\"add\",\"add\",\"remove\",\"add\",\"add\",\"add\",\"add\",\"remove\",\"add\",\"add\",\"contains\",\"add\",\"add\",\"add\",\"remove\",\"contains\",\"remove\",\"contains\",\"contains\",\"add\",\"add\",\"add\",\"add\",\"contains\",\"add\",\"add\",\"remove\",\"add\",\"add\",\"add\",\"contains\",\"add\",\"add\",\"add\",\"contains\",\"add\",\"remove\",\"add\",\"add\",\"remove\",\"add\",\"add\",\"add\",\"add\",\"add\",\"contains\",\"add\",\"add\",\"add\",\"contains\",\"add\",\"contains\",\"contains\",\"remove\",\"remove\",\"add\",\"add\",\"remove\",\"add\",\"add\",\"contains\",\"add\",\"add\",\"contains\",\"add\",\"add\",\"contains\",\"add\",\"add\",\"add\",\"contains\",\"add\",\"add\",\"add\",\"add\",\"add\",\"remove\",\"add\",\"remove\",\"add\",\"add\",\"remove\",\"add\",\"add\",\"remove\",\"add\",\"add\",\"add\",\"add\",\"remove\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"remove\",\"add\",\"contains\",\"add\",\"add\",\"add\",\"contains\",\"contains\",\"remove\",\"add\",\"add\",\"contains\",\"remove\",\"add\",\"remove\",\"contains\",\"remove\",\"add\",\"add\",\"add\",\"contains\",\"contains\",\"add\",\"contains\",\"add\",\"add\",\"add\",\"contains\",\"add\",\"add\",\"add\",\"contains\",\"add\",\"add\",\"contains\",\"contains\",\"remove\",\"add\",\"contains\",\"contains\",\"remove\",\"add\",\"add\",\"contains\",\"remove\",\"add\",\"add\",\"contains\",\"remove\",\"add\",\"add\",\"add\",\"contains\",\"add\",\"add\",\"remove\",\"add\",\"add\",\"add\",\"add\",\"contains\",\"remove\",\"remove\",\"contains\",\"contains\",\"remove\",\"add\",\"add\",\"contains\",\"add\",\"remove\",\"contains\",\"add\",\"add\",\"contains\",\"contains\",\"remove\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"contains\",\"remove\",\"contains\",\"add\",\"remove\",\"add\",\"add\",\"remove\",\"contains\",\"remove\",\"remove\",\"remove\",\"remove\",\"add\",\"add\",\"add\",\"contains\",\"contains\",\"add\",\"add\",\"add\",\"add\",\"add\",\"remove\",\"remove\",\"add\",\"contains\",\"contains\",\"add\",\"add\",\"contains\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"remove\",\"remove\",\"add\",\"add\",\"add\",\"contains\",\"add\",\"add\",\"add\",\"contains\",\"add\",\"add\",\"remove\",\"contains\",\"add\",\"remove\",\"remove\",\"add\",\"add\",\"add\",\"add\",\"add\",\"add\",\"contains\",\"add\",\"add\",\"add\",\"remove\",\"add\",\"contains\",\"add\",\"remove\",\"add\",\"add\",\"add\",\"contains\",\"add\",\"add\",\"add\",\"add\",\"remove\",\"add\",\"contains\",\"remove\",\"contains\",\"remove\",\"add\",\"contains\",\"add\",\"add\",\"remove\",\"add\",\"add\",\"remove\",\"add\",\"remove\",\"add\",\"remove\",\"add\",\"contains\",\"contains\",\"add\",\"contains\",\"remove\",\"contains\",\"remove\",\"add\",\"remove\",\"add\",\"remove\",\"add\",\"remove\",\"add\",\"contains\",\"add\",\"remove\"]\\n[[],[624],[182],[74],[647],[724],[575],[802],[343],[320],[329],[343],[339],[618],[493],[592],[894],[724],[537],[404],[301],[727],[750],[437],[364],[243],[436],[262],[412],[246],[985],[592],[187],[644],[578],[320],[412],[31],[297],[887],[74],[601],[995],[498],[808],[821],[443],[139],[808],[90],[703],[275],[364],[839],[785],[151],[575],[937],[615],[571],[459],[978],[530],[649],[743],[672],[539],[644],[955],[509],[692],[320],[19],[726],[242],[426],[242],[359],[969],[208],[963],[205],[687],[527],[435],[969],[387],[723],[46],[124],[584],[754],[359],[981],[753],[275],[277],[99],[849],[237],[855],[398],[170],[977],[965],[832],[371],[284],[968],[978],[106],[815],[737],[503],[72],[203],[685],[647],[268],[315],[753],[602],[353],[626],[96],[637],[521],[292],[654],[686],[774],[148],[72],[146],[384],[760],[769],[51],[606],[993],[80],[349],[13],[731],[120],[525],[656],[18],[445],[448],[4],[126],[214],[569],[774],[594],[814],[57],[823],[240],[92],[424],[165],[879],[1],[555],[317],[969],[145],[530],[364],[402],[617],[398],[71],[213],[290],[488],[702],[522],[837],[361],[247],[352],[575],[623],[760],[139],[224],[547],[283],[985],[57],[590],[302],[816],[277],[690],[65],[80],[185],[780],[238],[484],[906],[445],[429],[59],[475],[562],[989],[524],[946],[599],[543],[573],[753],[150],[290],[588],[415],[173],[828],[57],[550],[180],[977],[474],[378],[64],[436],[377],[2],[837],[646],[947],[937],[234],[388],[988],[90],[221],[960],[592],[576],[247],[769],[134],[216],[973],[868],[262],[836],[629],[766],[998],[141],[992],[36],[317],[547],[765],[320],[976],[556],[784],[606],[289],[504],[112],[10],[402],[28],[175],[489],[459],[237],[711],[787],[913],[814],[162],[343],[265],[865],[750],[787],[986],[112],[417],[51],[40],[745],[433],[584],[212],[408],[644],[591],[59],[298],[16],[989],[986],[304],[506],[85],[131],[934],[257],[372],[690],[960],[151],[712],[976],[643],[900],[853],[33],[58],[220],[217],[498],[825],[116],[586],[69],[158],[121],[388],[112],[474],[750],[253],[77],[110],[987],[680],[227],[60],[495],[586],[989],[727],[649],[199],[985],[554],[848],[522],[943],[831],[121],[390],[106],[717],[220],[563],[15],[24],[840],[674],[936],[973],[111],[260],[586],[341],[422],[806],[966],[694],[99],[425],[860],[493],[157],[487],[509],[967],[370],[790],[460],[383],[777],[660],[144],[106],[728],[192],[953],[456],[936],[81],[69],[988],[732],[836],[301],[882],[906],[637],[438],[334],[456],[848],[38],[288],[563],[653],[30],[110],[230],[144],[561],[404],[216],[360],[639],[509],[764],[253],[385],[114],[552],[255],[549],[752],[441],[464],[862],[747],[870],[717],[296],[491],[155],[500],[513],[25],[894],[192],[199],[24],[737],[486],[4],[227],[895],[998],[387],[126],[68],[772],[594],[710],[243],[279],[191],[730],[160],[784],[378],[53],[260],[564],[974],[751],[913],[167],[303],[81],[552],[405],[348],[775],[222],[731],[594],[953],[255],[740],[110],[980],[175],[500],[921],[366],[805],[476],[738],[869],[114],[348],[916],[598],[815],[632],[24],[968],[78],[285],[182],[229],[247],[745],[574],[837],[908],[314],[990],[577],[22],[221],[525],[628],[228],[696],[145],[398],[652],[431],[380],[574],[253],[408],[137],[71],[120],[185],[156],[392],[395],[875],[957],[241],[938],[525],[902],[706],[416],[699],[265],[39],[810],[963],[288],[991],[483],[991],[520],[190],[772],[432],[695],[112],[321],[447],[234],[55],[239],[993],[937],[624],[689],[787],[921],[292],[611],[888],[151],[463],[745],[367],[694],[567],[352],[439],[377],[616],[499],[995],[454],[578],[743],[771],[758],[279],[349],[721],[831],[394],[412],[454],[344],[920],[832],[151],[312],[830],[217],[815],[254],[497],[882],[997],[380],[734],[399],[720],[568],[860],[689],[814],[194],[503],[169],[459],[99],[99],[142],[301],[784],[472],[812],[204],[618],[675],[267],[725],[572],[77],[786],[634],[980],[829],[930],[754],[481],[484],[423],[377],[425],[521],[53],[552],[698],[664],[412],[666],[255],[308],[822],[931],[99],[123],[667],[931],[724],[515],[99],[270],[240],[808],[129],[6],[266],[806],[314],[235],[668],[236],[966],[173],[639],[306],[782],[135],[918],[285],[185],[880],[686],[58],[598],[290],[623],[71],[726],[436],[55],[305],[410],[313],[777],[554],[177],[456],[85],[436],[921],[523],[623],[736],[917],[860],[572],[183],[630],[676],[866],[754],[723],[400],[533],[606],[583],[524],[624],[407],[697],[823],[917],[192],[514],[535],[131],[966],[100],[639],[383],[35],[251],[838],[614],[118],[654],[927],[111],[674],[431],[816],[679],[352],[734],[887],[129],[185],[257],[332],[187],[727],[434],[750],[949],[335],[427],[259],[365],[642],[422],[121],[212],[857],[208],[148],[175],[945],[522],[197],[619],[862],[768],[835],[595],[841],[528],[113],[560],[449],[795],[421],[40],[314],[417],[219],[655],[859],[293],[10],[844],[263],[98],[682],[120],[809],[810],[235],[587],[681],[121],[410],[661],[806],[976],[3],[938],[806],[648],[227],[351],[192],[266],[694],[736],[428],[123],[933],[147],[407],[612],[619],[488],[608],[897],[87],[214],[275],[567],[259],[78],[288],[614],[338],[313],[498],[519],[421],[968],[742],[8],[170],[421],[977],[293],[941],[702],[841],[953],[210],[176],[487],[849],[846],[484],[339],[397],[249],[645],[285],[974],[975],[844],[670],[560],[951],[2],[661],[57],[580],[56],[693],[254],[751],[366],[97],[423],[625],[452],[34],[140],[285],[235],[873],[366],[81],[590],[229],[722],[669],[753],[797],[55],[400],[838],[34],[635],[97],[657],[910],[201],[223],[841],[248],[657],[545],[240],[622],[180],[201],[795],[571],[864],[632],[492],[857],[73],[849],[826],[513],[468],[114],[122],[643],[553],[907],[276],[874],[99],[1],[172],[239],[520],[148],[761],[100],[227],[592],[442],[652],[7],[105],[624],[780],[247],[772],[862],[57],[676],[191],[762],[116],[327],[859],[198],[596],[565],[119],[112],[219],[296],[982],[502],[623],[57],[513],[260],[368],[118],[118],[69],[795],[766],[481],[499],[433],[66],[374],[44],[981],[294],[418],[552],[384],[999],[196],[400],[925],[222],[678],[657],[684],[308],[423],[282],[487],[229],[598],[149],[247]]",
+      "voteCount": 13
+    },
+    {
+      "name": "anwendeng",
+      "year": 2023,
+      "content": "Learning data structure and algorithm.  This is a problem how  to create a Hash set from scratch!\nA standard method to implement is definitive not easy. But the constraint  \" 0 <= key <= 10^6\" makes it much easier!!\n===============\nFind a prime p\ndefine the hash function\nh(key)=key%p\nConstruct a table with table[h(key)] as a list.",
+      "voteCount": 10
+    },
+    {
+      "name": "sarpalmadhav",
+      "year": 2023,
+      "content": "Hah! No limit to what level of difficulty this has, some people might just use library, others might write bucket array + hash + compression function + rehashing all by themselves. \\uD83D\\uDE03\\uD83D\\uDE03",
+      "voteCount": 9
+    }
+  ]
+}

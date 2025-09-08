@@ -1,0 +1,172 @@
+{
+  "category": "",
+  "id": "767",
+  "name": "Reorganize String",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/reorganize-string/",
+  "slug": "reorganize-string",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Counting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Rearrange String k Distance Apart",
+      "difficulty": "Hard",
+      "slug": "rearrange-string-k-distance-apart"
+    },
+    {
+      "title": "Task Scheduler",
+      "difficulty": "Medium",
+      "slug": "task-scheduler"
+    },
+    {
+      "title": "Longest Happy String",
+      "difficulty": "Medium",
+      "slug": "longest-happy-string"
+    }
+  ],
+  "questionId": "778",
+  "questionFrontendId": "767",
+  "title": "Reorganize String",
+  "titleSlug": "reorganize-string",
+  "content": "<p>Given a string <code>s</code>, rearrange the characters of <code>s</code> so that any two adjacent characters are not the same.</p>\n\n<p>Return <em>any possible rearrangement of</em> <code>s</code> <em>or return</em> <code>&quot;&quot;</code> <em>if not possible</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> s = \"aab\"\n<strong>Output:</strong> \"aba\"\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> s = \"aaab\"\n<strong>Output:</strong> \"\"\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 500</code></li>\n\t<li><code>s</code> consists of lowercase English letters.</li>\n</ul>\n",
+  "likes": 9023,
+  "dislikes": 280,
+  "stats": {
+    "totalAccepted": "545K",
+    "totalSubmission": "965.5K",
+    "totalAcceptedRaw": 544996,
+    "totalSubmissionRaw": 965465,
+    "acRate": "56.4%"
+  },
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    },
+    {
+      "name": "Sorting",
+      "slug": "sorting"
+    },
+    {
+      "name": "Heap (Priority Queue)",
+      "slug": "heap-priority-queue"
+    },
+    {
+      "name": "Counting",
+      "slug": "counting"
+    }
+  ],
+  "metaData": {
+    "name": "reorganizeString",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "string"
+    }
+  },
+  "company_tag_stats": {
+    "3": [
+      {
+        "taggedByAdmin": false,
+        "name": "Pinterest",
+        "slug": "pinterest",
+        "timesEncountered": 15
+      }
+    ],
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 87
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Roblox",
+        "slug": "roblox",
+        "timesEncountered": 13
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "souvikmkhrj",
+      "year": 2023,
+      "content": "<a href=\"https://imgur.com/GaUxskL\">\\n  <img src=\"https://i.imgur.com/GaUxskL.jpg\" title=\"source: imgur.com\" style=\"height: 300px;\" width=\"300px\" />\\n</a>\\n",
+      "voteCount": 228
+    },
+    {
+      "name": "daringcalf",
+      "year": 2023,
+      "content": "I will learn priority queue, but not today.",
+      "voteCount": 137
+    },
+    {
+      "name": "Shubham_Raj22",
+      "year": 2023,
+      "content": "`Tips:-`\\n\\nIt\\'s easy to realise what we need to do here, alternatively put characters with maximum frequency. The problem lies in implementing this.\\n\\nEven if you get the intuition of using `Heaps`, it\\'s still a tricky one to implement.\\n\\nSo, the trick is to store pair of `{frequency,char}` in a Heap. Then while `Heap.size()>1` , at every iteration, take out the top two elements, append them to the ans string, decrease their frequency by `1` and push them again in the Heap.\\n\\nWhen the loop will break, either the Heap became `empty` or of `1 size.`\\n\\nIf it\\'s empty, return the ans string.\\n\\nif it has `size == 1`, check the remaining frequency of the top/last element, if its `1`, append it and return ans.\\n\\nOtherwise, return `\"\"`",
+      "voteCount": 94
+    },
+    {
+      "name": "thatHimanshu",
+      "year": 2023,
+      "content": "seemed easy at first... until it wasn\\'t",
+      "voteCount": 64
+    },
+    {
+      "name": "anwendeng",
+      "year": 2023,
+      "content": "\"Alternate placing the most common letters. \" Use this hint to know\n If there is some character c with freq(c)>(n+1)/2 then it is impossible",
+      "voteCount": 44
+    },
+    {
+      "name": "Limon020",
+      "year": 2023,
+      "content": "This problem is very similar to Task Scheduler, https://leetcode.com/problems/task-scheduler/. If you have done Task Scheduler you should recognize the pattern quickly",
+      "voteCount": 38
+    },
+    {
+      "name": "deleted_user",
+      "year": 2024,
+      "content": "Whenever i face a LC problem, i spend  a few minutes, no idea comes up, and i end up seeing the answer.\\n\\nA few days later, i remember nothing.\\n",
+      "voteCount": 30
+    },
+    {
+      "name": "cOde_Ranvir25",
+      "year": 2023,
+      "content": "The approach to solve this problem is to use a priority queue to store the characters based on their frequency. We first count the frequency of each character in the string and store it in a hash map. Then, we create a priority queue and add all the characters from the hash map to it. We use a comparator to order the characters in the priority queue based on their frequency in decreasing order.\n\nThen, we take out two characters from the priority queue and append them to the output string. We keep track of the last character appended to the output string. If the next character in the priority queue is the same as the last character appended to the output string, we take out the next character from the priority queue and append it to the output string. We continue this process until the priority queue is empty or we cannot append any more characters to the output string.\n\nIf we cannot append any more characters to the output string, we return an empty string.",
+      "voteCount": 24
+    },
+    {
+      "name": "vishaljoshi1998",
+      "year": 2023,
+      "content": "tricky one\\n",
+      "voteCount": 16
+    },
+    {
+      "name": "dec0de",
+      "year": 2019,
+      "content": "Input: \\n\"tndsewnllhrtwsvxenkscbivijfqnysamckzoyfnapuotmdexzkkrpmppttficzerdndssuveompqkemtbwbodrhwsfpbmkafpwyedpcowruntvymxtyyejqtajkcjakghtdwmuygecjncxzcxezgecrxonnszmqmecgvqqkdagvaaucewelchsmebikscciegzoiamovdojrmmwgbxeygibxxltemfgpogjkhobmhwquizuwvhfaiavsxhiknysdghcawcrphaykyashchyomklvghkyabxatmrkmrfsppfhgrwywtlxebgzmevefcqquvhvgounldxkdzndwybxhtycmlybhaaqvodntsvfhwcuhvuccwcsxelafyzushjhfyklvghpfvknprfouevsxmcuhiiiewcluehpmzrjzffnrptwbuhnyahrbzqvirvmffbxvrmynfcnupnukayjghpusewdwrbkhvjnveuiionefmnfxao\"\\\\\\\\\\\\\\\\\\n\\nMy output: \\n\"ehehehehehehehehehehehehehehehehehehehehehehehehehehehehcmcmcmcmcmcmcmcmcmcmcmcmcmcmcmcmcmcmcmcmcmcmcmcmcmcmvnvnvnvnvnvnvnvnvnvnvnvnvnvnvnvnvnvnvnvnvnvnvnvayayayayayayayayayayayayayayayayayayayayayayfwfwfwfwfwfwfwfwfwfwfwfwfwfwfwfwfwfwfwfwfwfkukukukukukukukukukukukukukukukukukukukuksxsxsxsxsxsxsxsxsxsxsxsxsxsxsxsxsxsxsprprprprprprprprprprprprprprprprprprgogogogogogogogogogogogogogogogogobtbtbtbtbtbtbtbtbtbtbtbtbtbtbtbtidididididididididididididididizqzqzqzqzqzqzqzqzqzqzqzlzlzljljljljljljljljlj\"\\n\\nExpected:\\n\"eweweweweweweweweweweweweweueueueueueueueueueueueueueueuhuhuhuhuhuhshshshshshshshshshshshshshshshshshshshphphphpcpcpcpcpcpcpcpcpcpcpcpcpcpcpcrcrcrcrcrcrcrcrcrcrcrcrmrmrmrmrmrmrmxmxmxmxmxmxmxmxmxmxmxmxmxmxmxmxmxmxmgmgvgvgvgvgvgvgvgvgvgvgvgvgvgvgvgvovovovovovovovovonononononononononbnbnbnbnbnbnbnbnbnbnbnbnbnbnbabaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiatatatatatftftftftftftftftftftftfdfdfdfdfdfdfdfdfdfdfdydydydydyzyzyzyzyzyzyzyzyzyzyzyzyzyzyjyjyjyjkjkjkjkjkjkjkjklklklklklklklklklklklkqkqkqwqwqwqwqwqwqwqwq\"\\n\\nMy output seems correct to me as there are no chars that are same and adajacent.\\nCan anybody point me where did i miss something?\\nThis the last test case",
+      "voteCount": 16
+    }
+  ]
+}

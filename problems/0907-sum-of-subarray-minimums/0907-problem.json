@@ -1,0 +1,133 @@
+{
+  "category": "",
+  "id": "907",
+  "name": "Sum of Subarray Minimums",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/sum-of-subarray-minimums/",
+  "slug": "sum-of-subarray-minimums",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Stack",
+    "Monotonic Stack"
+  ],
+  "similar_questions": [
+    {
+      "title": "Sum of Subarray Ranges",
+      "difficulty": "Medium",
+      "slug": "sum-of-subarray-ranges"
+    },
+    {
+      "title": "Sum of Total Strength of Wizards",
+      "difficulty": "Hard",
+      "slug": "sum-of-total-strength-of-wizards"
+    }
+  ],
+  "questionId": "943",
+  "questionFrontendId": "907",
+  "title": "Sum of Subarray Minimums",
+  "titleSlug": "sum-of-subarray-minimums",
+  "content": "<p>Given an array of integers arr, find the sum of <code>min(b)</code>, where <code>b</code> ranges over every (contiguous) subarray of <code>arr</code>. Since the answer may be large, return the answer <strong>modulo</strong> <code>10<sup>9</sup> + 7</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [3,1,2,4]\n<strong>Output:</strong> 17\n<strong>Explanation:</strong> \nSubarrays are [3], [1], [2], [4], [3,1], [1,2], [2,4], [3,1,2], [1,2,4], [3,1,2,4]. \nMinimums are 3, 1, 2, 4, 1, 1, 2, 1, 1, 1.\nSum is 17.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [11,81,94,43,3]\n<strong>Output:</strong> 444\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= arr.length &lt;= 3 * 10<sup>4</sup></code></li>\n\t<li><code>1 &lt;= arr[i] &lt;= 3 * 10<sup>4</sup></code></li>\n</ul>\n",
+  "likes": 8856,
+  "dislikes": 709,
+  "stats": {
+    "totalAccepted": "383K",
+    "totalSubmission": "1M",
+    "totalAcceptedRaw": 383041,
+    "totalSubmissionRaw": 1010818,
+    "acRate": "37.9%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    },
+    {
+      "name": "Stack",
+      "slug": "stack"
+    },
+    {
+      "name": "Monotonic Stack",
+      "slug": "monotonic-stack"
+    }
+  ],
+  "metaData": {
+    "name": "sumSubarrayMins",
+    "params": [
+      {
+        "name": "arr",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "avneets2103",
+      "year": 2023,
+      "content": "when they dont want to hire you",
+      "voteCount": 880
+    },
+    {
+      "name": "ajaygonepuri",
+      "year": 2024,
+      "content": "This type of Questions on weekend make me think to change the Career-path",
+      "voteCount": 501
+    },
+    {
+      "name": "Jaiff",
+      "year": 2022,
+      "content": "I spent 1 hour on this problem. But after finally solving it, I would say that it was worth it. Don\\'t look at someone\\'s solution and deny yourself the satisfaction of solving it.",
+      "voteCount": 328
+    },
+    {
+      "name": "shivamgoyal204",
+      "year": 2022,
+      "content": "Isn\\'t it should be a hard question ?\\nAs it\\'s very similar to largest rectangle in the histogram which is a hard problem ",
+      "voteCount": 231
+    },
+    {
+      "name": "Mr_TaAk",
+      "year": 2023,
+      "content": "Guys this question is never asked in any interview this is only for your practice so if you are here only for placement you can ignore this like your crush ignores you  in tuition class\nPLEASE UP VOTE MY COMMENT ",
+      "voteCount": 192
+    },
+    {
+      "name": "erlichBachman21",
+      "year": 2023,
+      "content": "This is f**king hard problem, ain\\'t no way somebody can come-up with its solution in an interview.",
+      "voteCount": 105
+    },
+    {
+      "name": "nirutgupta",
+      "year": 2022,
+      "content": "well if you are really struggling, just think about each element in the array and in how many subarrays that element will be minimum.\\n\\nsomething like from that element how many elements are less than that on the left and similarly how many elements are less than that on the right. Then try to find out how many subarrays you can make with this info including the element you are considering.",
+      "voteCount": 80
+    },
+    {
+      "name": "Cocamo1337",
+      "year": 2024,
+      "content": "I read the problem description, then let my brain digest it for 20-30 minutes while I showered. Here are some thoughts that helped me come up with the right answer:\\n\\n1. Question would be an easy if we could just solve it in O(n^2), so it\\'s almost certainly not that.\\n\\n2. So lets say we allow ourselves 1 O(n) loop to designate the first element of a subarray - How can I then reduce the computations required to find the sum of all minimum elements in the subarrays with the first element being known?\\n\\n3. Wait.. There is a pattern. Lets say we\\'re iterating from the last element to the first element - for example, [1, 2, 3, 4] we start on 4, and we only count subarrays formed using numbers at or to the right of the current number. 4 has only 1 possible subarray, [4], and its minimum is 4. Now we get to 3, something interesting happens. Because 3 is less than 4, it subsumes that minimum slot for all possible subarrays created. So the subarrays that can be made are [3, 4], and [3], which both have a minimum of 3 (total sum 6).\\nBut what about for a more mixed up array - lets try [3, 1, 4, 2].\\nStart at 2, 1 subarray can be formed with a total min sum of 2.\\nGet to 4 - what do we do now? 2 is smaller than 4 so 4 can\\'t just subsume every subarray minimum.\\n What we want to do is when we find a number greater than the previously saved 1, we now just calculate the result of this number to be:\\nThe result of the previous, smaller number +\\n(the difference between indexes of the current number and the index of the previous smaller number, multiplied by the current number).\\nSo 4 adds ((4 * 1) + (result of 2)) = 6.\\nNow we can save the result of 4 to be (potentially) used by the next num.\\nGet to 1, 1 is equal to or smaller than 4. 1 subsumes 4\\'s subarrays, as the new minimum element.\\n1 is equal to or smaller than 2, 1 subsumes 2\\'s subarrays, as the new minimum element.\\nThere are no more arrays to subsume so the result for 1 is: (len - (1\\'s index)) * 1 = 3.\\n3 is larger than 1, so the result for 3 is: (1\\'s index - 3\\'s index) * 3 + result for 1 = (1 - 0) * 3 + 3 = 6\\n\\nTotal result is then 2 + 6 + 3 + 6 = 17.\\n\\n\\n4. Ok so then we probably need some kind of data structure to store these results - How about a list or something? Oh hmm.. it sounds like we might be wanting to frequently remove elements as part of our algorithm, and a list could have terrible time complexity for removals if we aren\\'t removing from the end of the list. Maybe a queue or a stack?\\n\\n5. Also need to keep in mind possible edge cases where if I\\'m not careful the algorithm could still run in $$n^2$$ time.. In particular, try to make the time complexity for figuring out the result of summing all subarray minimums starting at a particular element to be as close to O(1) as possible.\\n",
+      "voteCount": 73
+    },
+    {
+      "name": "HaoTLee",
+      "year": 2022,
+      "content": "If 239. Sliding Window Maximum is a hard question, this should be a hard hard one. ",
+      "voteCount": 62
+    },
+    {
+      "name": "saranyamaity2000",
+      "year": 2022,
+      "content": "`Those who are wondering how to solve it logically in O(n) ? `\\n\\nJust a suggestion , start from left and start taking elements one by one , and see how 1 element makes an impact to result. Eventually even if you don\\'t get the solution  then search MONOTONIC STACK in internet and read some articles  and come back to this problem.",
+      "voteCount": 45
+    }
+  ]
+}

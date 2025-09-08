@@ -1,0 +1,128 @@
+{
+  "category": "",
+  "id": "785",
+  "name": "Is Graph Bipartite?",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/is-graph-bipartite/",
+  "slug": "is-graph-bipartite",
+  "isPaidOnly": false,
+  "tags": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union Find",
+    "Graph"
+  ],
+  "similar_questions": [
+    {
+      "title": "Divide Nodes Into the Maximum Number of Groups",
+      "difficulty": "Hard",
+      "slug": "divide-nodes-into-the-maximum-number-of-groups"
+    }
+  ],
+  "questionId": "801",
+  "questionFrontendId": "785",
+  "title": "Is Graph Bipartite?",
+  "titleSlug": "is-graph-bipartite",
+  "content": "<p>There is an <strong>undirected</strong> graph with <code>n</code> nodes, where each node is numbered between <code>0</code> and <code>n - 1</code>. You are given a 2D array <code>graph</code>, where <code>graph[u]</code> is an array of nodes that node <code>u</code> is adjacent to. More formally, for each <code>v</code> in <code>graph[u]</code>, there is an undirected edge between node <code>u</code> and node <code>v</code>. The graph has the following properties:</p>\n\n<ul>\n\t<li>There are no self-edges (<code>graph[u]</code> does not contain <code>u</code>).</li>\n\t<li>There are no parallel edges (<code>graph[u]</code> does not contain duplicate values).</li>\n\t<li>If <code>v</code> is in <code>graph[u]</code>, then <code>u</code> is in <code>graph[v]</code> (the graph is undirected).</li>\n\t<li>The graph may not be connected, meaning there may be two nodes <code>u</code> and <code>v</code> such that there is no path between them.</li>\n</ul>\n\n<p>A graph is <strong>bipartite</strong> if the nodes can be partitioned into two independent sets <code>A</code> and <code>B</code> such that <strong>every</strong> edge in the graph connects a node in set <code>A</code> and a node in set <code>B</code>.</p>\n\n<p>Return <code>true</code><em> if and only if it is <strong>bipartite</strong></em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/10/21/bi2.jpg\" style=\"width: 222px; height: 222px;\" />\n<pre>\n<strong>Input:</strong> graph = [[1,2,3],[0,2],[0,1,3],[0,2]]\n<strong>Output:</strong> false\n<strong>Explanation:</strong> There is no way to partition the nodes into two independent sets such that every edge connects a node in one and a node in the other.</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/10/21/bi1.jpg\" style=\"width: 222px; height: 222px;\" />\n<pre>\n<strong>Input:</strong> graph = [[1,3],[0,2],[1,3],[0,2]]\n<strong>Output:</strong> true\n<strong>Explanation:</strong> We can partition the nodes into two sets: {0, 2} and {1, 3}.</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>graph.length == n</code></li>\n\t<li><code>1 &lt;= n &lt;= 100</code></li>\n\t<li><code>0 &lt;= graph[u].length &lt; n</code></li>\n\t<li><code>0 &lt;= graph[u][i] &lt;= n - 1</code></li>\n\t<li><code>graph[u]</code>&nbsp;does not contain&nbsp;<code>u</code>.</li>\n\t<li>All the values of <code>graph[u]</code> are <strong>unique</strong>.</li>\n\t<li>If <code>graph[u]</code> contains <code>v</code>, then <code>graph[v]</code> contains <code>u</code>.</li>\n</ul>\n",
+  "likes": 8962,
+  "dislikes": 404,
+  "stats": {
+    "totalAccepted": "777.3K",
+    "totalSubmission": "1.3M",
+    "totalAcceptedRaw": 777254,
+    "totalSubmissionRaw": 1334325,
+    "acRate": "58.3%"
+  },
+  "topicTags": [
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Breadth-First Search",
+      "slug": "breadth-first-search"
+    },
+    {
+      "name": "Union Find",
+      "slug": "union-find"
+    },
+    {
+      "name": "Graph",
+      "slug": "graph"
+    }
+  ],
+  "metaData": {
+    "name": "isBipartite",
+    "params": [
+      {
+        "name": "graph",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "dmitryartux",
+      "year": 2023,
+      "content": "My respect for **76 / 81 testcase**",
+      "voteCount": 146
+    },
+    {
+      "name": "gflanary",
+      "year": 2022,
+      "content": "This is a straightforward problem, but the description is positively awful.\\n\\nIf they had an image with disjoint sets and especially if they had one with colorized groupings, it would be clear what the intent was.",
+      "voteCount": 146
+    },
+    {
+      "name": "sasuke_uchiha",
+      "year": 2018,
+      "content": "Hi, Can please someone help me explainning How the input\\n[[1,3], [0,2], [1,3], [0,2]] \\nis working. I am not able to understand How does this input make this graph\\n0----1\\n|      |\\n|      |\\n3----2",
+      "voteCount": 77
+    },
+    {
+      "name": "user8228j",
+      "year": 2023,
+      "content": "an hour and 15 minutes of my life gone.",
+      "voteCount": 74
+    },
+    {
+      "name": "meow_power",
+      "year": 2023,
+      "content": "Equivalent definitions of a bipartite graph:\\n1) There is no cycle of odd length\\n\\n2) we can split the nodes of the graph\\n(vertex set of the graph) into 2 subsets so\\nthat there is all the edges go from 1 subset\\nto the other subset.\\n\\n3.The graph should be bi-colourable.\\n\\f",
+      "voteCount": 71
+    },
+    {
+      "name": "aftabmk",
+      "year": 2024,
+      "content": "![img](https://miro.medium.com/v2/resize:fit:828/format:webp/0*eHf-wW8cPuxTA64A.png)\\n[More info..](https://rohithv63.medium.com/graph-algorithm-bipartite-graph-dfs-f7f6a4afed4c)",
+      "voteCount": 63
+    },
+    {
+      "name": "Pankaj__123",
+      "year": 2023,
+      "content": "The good description can be -- color the graph with 2 colors such that no adjacent nodes have same color.",
+      "voteCount": 30
+    },
+    {
+      "name": "sasukesharma",
+      "year": 2023,
+      "content": "Is this description so good that they locked the editorial \\uD83D\\uDE44",
+      "voteCount": 29
+    },
+    {
+      "name": "mc_montecarlo",
+      "year": 2020,
+      "content": "I have a doubt with the test-case:\\n[[4],[],[4],[4],[0,2,3]]\\n\\nAbove test-case represents a graph is isn\\'t connected. But, the expected result of above is true. So my question is, how can a dis-connected graph be bi-partite?",
+      "voteCount": 24
+    },
+    {
+      "name": "lukevastus",
+      "year": 2018,
+      "content": "Apparently the graph should look like a triangle. \t\nSo why is the number 2 neither in graph[0] or in graph[1]?\nThe correct test case should be [[1, 2], [0, 2], [0, 1]]\n",
+      "voteCount": 19
+    }
+  ]
+}

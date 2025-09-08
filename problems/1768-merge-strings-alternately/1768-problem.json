@@ -1,0 +1,145 @@
+{
+  "category": "",
+  "id": "1768",
+  "name": "Merge Strings Alternately",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/merge-strings-alternately/",
+  "slug": "merge-strings-alternately",
+  "isPaidOnly": false,
+  "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Zigzag Iterator",
+      "difficulty": "Medium",
+      "slug": "zigzag-iterator"
+    },
+    {
+      "title": "Minimum Additions to Make Valid String",
+      "difficulty": "Medium",
+      "slug": "minimum-additions-to-make-valid-string"
+    }
+  ],
+  "questionId": "1894",
+  "questionFrontendId": "1768",
+  "title": "Merge Strings Alternately",
+  "titleSlug": "merge-strings-alternately",
+  "content": "<p>You are given two strings <code>word1</code> and <code>word2</code>. Merge the strings by adding letters in alternating order, starting with <code>word1</code>. If a string is longer than the other, append the additional letters onto the end of the merged string.</p>\r\n\r\n<p>Return <em>the merged string.</em></p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> word1 = &quot;abc&quot;, word2 = &quot;pqr&quot;\r\n<strong>Output:</strong> &quot;apbqcr&quot;\r\n<strong>Explanation:</strong>&nbsp;The merged string will be merged as so:\r\nword1:  a   b   c\r\nword2:    p   q   r\r\nmerged: a p b q c r\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> word1 = &quot;ab&quot;, word2 = &quot;pqrs&quot;\r\n<strong>Output:</strong> &quot;apbqrs&quot;\r\n<strong>Explanation:</strong>&nbsp;Notice that as word2 is longer, &quot;rs&quot; is appended to the end.\r\nword1:  a   b \r\nword2:    p   q   r   s\r\nmerged: a p b q   r   s\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> word1 = &quot;abcd&quot;, word2 = &quot;pq&quot;\r\n<strong>Output:</strong> &quot;apbqcd&quot;\r\n<strong>Explanation:</strong>&nbsp;Notice that as word1 is longer, &quot;cd&quot; is appended to the end.\r\nword1:  a   b   c   d\r\nword2:    p   q \r\nmerged: a p b q c   d\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= word1.length, word2.length &lt;= 100</code></li>\r\n\t<li><code>word1</code> and <code>word2</code> consist of lowercase English letters.</li>\r\n</ul>",
+  "likes": 4655,
+  "dislikes": 136,
+  "stats": {
+    "totalAccepted": "1.8M",
+    "totalSubmission": "2.2M",
+    "totalAcceptedRaw": 1782085,
+    "totalSubmissionRaw": 2168107,
+    "acRate": "82.2%"
+  },
+  "topicTags": [
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "metaData": {
+    "name": "mergeAlternately",
+    "params": [
+      {
+        "name": "word1",
+        "type": "string"
+      },
+      {
+        "type": "string",
+        "name": "word2"
+      }
+    ],
+    "return": {
+      "type": "string"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Google",
+        "slug": "google",
+        "timesEncountered": 30
+      }
+    ],
+    "2": [
+      {
+        "taggedByAdmin": false,
+        "name": "Microsoft",
+        "slug": "microsoft",
+        "timesEncountered": 24
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "andreyscott",
+      "year": 2023,
+      "content": "my first letecode question and i\\'m  failing it like crazy",
+      "voteCount": 1106
+    },
+    {
+      "name": "karan_cpp_py",
+      "year": 2023,
+      "content": "There are two types of people in discussion section : \\nThe one who cries when there is hard problem as daily challenge,\\nand the other one who cries when there is an easy problem.",
+      "voteCount": 228
+    },
+    {
+      "name": "Rishabh901",
+      "year": 2023,
+      "content": "One tip for solving this problem is to consider using a loop to alternate between characters from both word1 and word2. This can be done by iterating over the characters of both strings simultaneously, appending one character from each string to a new string on each iteration.\\n\\nAnother tip is to consider using a StringBuilder to efficiently construct the merged string. StringBuilder allows for efficient string concatenation, especially when dealing with large strings, and can be used to append characters to a new string in a loop.\\n\\nFinally, make sure to handle the case where one of the input strings is longer than the other. This can be done by appending any remaining characters from the longer string to the end of the merged string.",
+      "voteCount": 93
+    },
+    {
+      "name": "arunkarthiksuperuser",
+      "year": 2024,
+      "content": "Friends , for all those take a sigh of relief thinking this is a EASY Problem , it is NOT. There is a small trap here if in case you\\'re using PYTHON Language to code.\\n\\nNOTE : Don\\'t use STRING Concatenation in PYTHON for the output variable \"merged\" . Instead use LIST for output variable \"merged\" and then join with a string. This is because time complexity of STRING Concatenation is O(N^2) because in PYTHON string is immutable and everytime new string is created when you do concatenation. Due to this your time complexity for this code will be O(N2). Instead create a empty Python list merged = []  and finally, you join the list into a string: s = \"\".join(lst). This step creates a string once, rather than each time in a loop.",
+      "voteCount": 79
+    },
+    {
+      "name": "Heisenburgerrr",
+      "year": 2023,
+      "content": "gifts after two hard dp lol",
+      "voteCount": 61
+    },
+    {
+      "name": "EloCode",
+      "year": 2023,
+      "content": "C++ test cases are broken for me\\n\"\\nWrong Answer\\nOutput   \"apbqcr\"\\nExpected \"apbqcr\"\\n\"",
+      "voteCount": 50
+    },
+    {
+      "name": "UchihaKim",
+      "year": 2023,
+      "content": "**in Java, the += operator for string concatenation is not a constant time operation, and its time complexity depends on the size of the strings involved. So When you use the += operator to concatenate a string to another string, a new String object is created and the original string is copied over along with the new string. This means the overall time complexity with the loop will be o(x(x+1)/2) where x = n+m with n is word1.length() and m is word2.length()**\n\n[Solution](https://leetcode.com/problems/merge-strings-alternately/solutions/3428786/easy-and-fast-solution-o-n-time-o-n-space-beat-100-in-java/)",
+      "voteCount": 45
+    },
+    {
+      "name": "RohithRathna",
+      "year": 2023,
+      "content": "My first leetcode problem solved on my own.\\nfeeling happy. \\n\\nclass Solution:\\n    def mergeAlternately(self, word1: str, word2: str) -> str:\\n        result = \"\"\\n        n1 = len(word1)\\n        n2 = len(word2)\\n        n = min(n1,n2)\\n        for i in range(n):\\n            result += word1[i] + word2[i]\\n        if n1 == n2:\\n            return result\\n        elif n1 > n2:\\n            return result+word1[n:]\\n        else:\\n            return result+word2[n:]\\nNote:\\nsorry for posting this on discussions",
+      "voteCount": 42
+    },
+    {
+      "name": "behruz2008",
+      "year": 2023,
+      "content": "Bruh it\\'s really difficult",
+      "voteCount": 41
+    },
+    {
+      "name": "Marwan_Mohammed",
+      "year": 2023,
+      "content": "Ok so, i test my code on my IDE and it works just fine and gives the right output, then i come here and it gives a wrong answer with supposedly a different output\\nwhat is going on?",
+      "voteCount": 20
+    }
+  ]
+}

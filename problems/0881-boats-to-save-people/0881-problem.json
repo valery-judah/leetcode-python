@@ -1,0 +1,126 @@
+{
+  "category": "",
+  "id": "881",
+  "name": "Boats to Save People",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/boats-to-save-people/",
+  "slug": "boats-to-save-people",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": [],
+  "questionId": "917",
+  "questionFrontendId": "881",
+  "title": "Boats to Save People",
+  "titleSlug": "boats-to-save-people",
+  "content": "<p>You are given an array <code>people</code> where <code>people[i]</code> is the weight of the <code>i<sup>th</sup></code> person, and an <strong>infinite number of boats</strong> where each boat can carry a maximum weight of <code>limit</code>. Each boat carries at most two people at the same time, provided the sum of the weight of those people is at most <code>limit</code>.</p>\n\n<p>Return <em>the minimum number of boats to carry every given person</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> people = [1,2], limit = 3\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> 1 boat (1, 2)\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> people = [3,2,2,1], limit = 3\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> 3 boats (1, 2), (2) and (3)\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> people = [3,5,3,4], limit = 5\n<strong>Output:</strong> 4\n<strong>Explanation:</strong> 4 boats (3), (3), (4), (5)\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= people.length &lt;= 5 * 10<sup>4</sup></code></li>\n\t<li><code>1 &lt;= people[i] &lt;= limit &lt;= 3 * 10<sup>4</sup></code></li>\n</ul>\n",
+  "likes": 6720,
+  "dislikes": 172,
+  "stats": {
+    "totalAccepted": "503.5K",
+    "totalSubmission": "829.2K",
+    "totalAcceptedRaw": 503469,
+    "totalSubmissionRaw": 829205,
+    "acRate": "60.7%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    },
+    {
+      "name": "Sorting",
+      "slug": "sorting"
+    }
+  ],
+  "metaData": {
+    "name": "numRescueBoats",
+    "params": [
+      {
+        "name": "people",
+        "type": "integer[]"
+      },
+      {
+        "name": "limit",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "rmn",
+      "year": 2018,
+      "content": "It would be a very interesting (and definitely Hard) question if a boat could carry more than two people. ",
+      "voteCount": 206
+    },
+    {
+      "name": "anuron_das",
+      "year": 2023,
+      "content": "The thinking for this problem must be like this :\\nI need at least `n/2` boats for the job, so greedily I will try to fit two people in one boat. At the same time I also have to make sure that the total weights of the two people I am pairing up does not exceed `limit`. So if I pare up minimum and second minimum together, and keep on pairing them up like this, then at some later stage I risk the combined weights of the two people exceeding `limit`. \\nSo for this let us remove all the people with `weight >= limit`, as they will take one complete boat. For the remaining ones, the maximum one of them has to be paired up with someone. So let us try to pair him up with the minimum weighted person. Now notice that if the maximum guy cannot be paired with the minimum guy then he cannot be paired up with anyone else (I hope that the reader is getting the intuition so as to why we pair max with min). Otherwise we assign one boat to the max guy and proceed like this till everyone has got at least one boat.",
+      "voteCount": 93
+    },
+    {
+      "name": "borjaf696",
+      "year": 2024,
+      "content": "DiCaprio would have loved one of these boats in Titanic, in these ones at least 2 fit",
+      "voteCount": 78
+    },
+    {
+      "name": "shishirRsiam",
+      "year": 2024,
+      "content": "\\uD83D\\uDE4B\\u200D\\u2642\\uFE0F Those who comes early morning to solve daily challenge ",
+      "voteCount": 63
+    },
+    {
+      "name": "Skycocoo",
+      "year": 2018,
+      "content": "then it becomes a modified knapsack problem?",
+      "voteCount": 59
+    },
+    {
+      "name": "Shivam_Sikotra",
+      "year": 2023,
+      "content": "1.Try sorting the array.\\n2.Initialize one pointer to start and one to end and traverse untill both passes each other.\\nNow Try to think for conditions of 2 pointers..\\n\\n",
+      "voteCount": 57
+    },
+    {
+      "name": "Boich",
+      "year": 2023,
+      "content": "They tricked me into thinking it was binary search week - meanwhile the best solution is so simple!",
+      "voteCount": 36
+    },
+    {
+      "name": "veeyikpong",
+      "year": 2023,
+      "content": "The most effective way to fit a ship within its weight limit is to place the heaviest people and the lightest people into one ship, if possible.\nUse this idea to calculate the minimum ship needed, you can use 2 pointers to achieve this.",
+      "voteCount": 30
+    },
+    {
+      "name": "deep5204",
+      "year": 2023,
+      "content": "Algorithm\n1. sort array\n2. Take two pointer start and end\n3. loop start less than end\n4. if(people[end] == limit)\n      i. Decrese end by 1 and count boat by 1\n5. else \n      calculate s = people[start] + people[end}\n            i. if(s == limit)\n                      Increse start by 1, decrese end by 1 and count boat\n            ii. else if(s > limit)\n                      decrese end by 1 and count boat by 1\n            iii. else\n                      Increse start by 1, decrese end by 1 and count boat\n6. if(start == end && people[end] <= limit )\n     i. count boat by 1 and return boat\n7. return boat\n",
+      "voteCount": 25
+    },
+    {
+      "name": "BatMe",
+      "year": 2023,
+      "content": "My offer letter would become wet if the interviewer asked this question. \\n",
+      "voteCount": 24
+    }
+  ]
+}

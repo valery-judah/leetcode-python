@@ -96,7 +96,7 @@ problems:
       Inorder counter or stack. Introduces iterative traversal where useful.
 
   # Lowest Common Ancestor
-  - slug: lowest-common-ancestor-of-a-bst
+  - slug: lowest-common-ancestor-of-a-binary-search-tree
     title: Lowest Common Ancestor of a BST
     difficulty: easy
     primary_pattern: lca-bst

@@ -1,0 +1,128 @@
+{
+  "category": "",
+  "id": "1584",
+  "name": "Min Cost to Connect All Points",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/min-cost-to-connect-all-points/",
+  "slug": "min-cost-to-connect-all-points",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Union Find",
+    "Graph",
+    "Minimum Spanning Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Number of Lines to Cover Points",
+      "difficulty": "Medium",
+      "slug": "minimum-number-of-lines-to-cover-points"
+    }
+  ],
+  "questionId": "1706",
+  "questionFrontendId": "1584",
+  "title": "Min Cost to Connect All Points",
+  "titleSlug": "min-cost-to-connect-all-points",
+  "content": "<p>You are given an array <code>points</code> representing integer coordinates of some points on a 2D-plane, where <code>points[i] = [x<sub>i</sub>, y<sub>i</sub>]</code>.</p>\n\n<p>The cost of connecting two points <code>[x<sub>i</sub>, y<sub>i</sub>]</code> and <code>[x<sub>j</sub>, y<sub>j</sub>]</code> is the <strong>manhattan distance</strong> between them: <code>|x<sub>i</sub> - x<sub>j</sub>| + |y<sub>i</sub> - y<sub>j</sub>|</code>, where <code>|val|</code> denotes the absolute value of <code>val</code>.</p>\n\n<p>Return <em>the minimum cost to make all points connected.</em> All points are connected if there is <strong>exactly one</strong> simple path between any two points.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/08/26/d.png\" style=\"width: 214px; height: 268px;\" />\n<pre>\n<strong>Input:</strong> points = [[0,0],[2,2],[3,10],[5,2],[7,0]]\n<strong>Output:</strong> 20\n<strong>Explanation:</strong> \n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/08/26/c.png\" style=\"width: 214px; height: 268px;\" />\nWe can connect the points as shown above to get the minimum cost of 20.\nNotice that there is a unique path between every pair of points.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> points = [[3,12],[-2,5],[-4,1]]\n<strong>Output:</strong> 18\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= points.length &lt;= 1000</code></li>\n\t<li><code>-10<sup>6</sup> &lt;= x<sub>i</sub>, y<sub>i</sub> &lt;= 10<sup>6</sup></code></li>\n\t<li>All pairs <code>(x<sub>i</sub>, y<sub>i</sub>)</code> are distinct.</li>\n</ul>\n",
+  "likes": 5434,
+  "dislikes": 142,
+  "stats": {
+    "totalAccepted": "407.8K",
+    "totalSubmission": "586.3K",
+    "totalAcceptedRaw": 407789,
+    "totalSubmissionRaw": 586337,
+    "acRate": "69.5%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Union Find",
+      "slug": "union-find"
+    },
+    {
+      "name": "Graph",
+      "slug": "graph"
+    },
+    {
+      "name": "Minimum Spanning Tree",
+      "slug": "minimum-spanning-tree"
+    }
+  ],
+  "metaData": {
+    "name": "minCostConnectPoints",
+    "params": [
+      {
+        "name": "points",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "dipherent_1",
+      "year": 2024,
+      "content": "Words of advice, use light mode",
+      "voteCount": 74
+    },
+    {
+      "name": "daringcalf",
+      "year": 2023,
+      "content": "Spanning tree and union-find together, and only medium?",
+      "voteCount": 47
+    },
+    {
+      "name": "mawhadmd",
+      "year": 2023,
+      "content": "I\\'m done with this...",
+      "voteCount": 31
+    },
+    {
+      "name": "TheMrAI",
+      "year": 2023,
+      "content": "The example has an incorrect edges drawn in. They do not represent the manhattan distance and this could confuse some readers.",
+      "voteCount": 31
+    },
+    {
+      "name": "cai_lw",
+      "year": 2020,
+      "content": "FYI. It\\'s way too complicated to be implemented during an interview.\\n\\nLee, D. T. (1980). Two-dimensional Voronoi diagrams in the Lp-metric. Journal of the ACM (JACM), 27(4), 604-618.\\nhttps://www.researchgate.net/profile/D_Lee2/publication/220431260_Two-Dimensional_Voronoi_Diagrams_in_the_L/links/54256e9b0cf26120b7ac98d8/Two-Dimensional-Voronoi-Diagrams-in-the-L.pdf\\n\\nBasically, a graph (Delaunay graph) that contains only O(N) edges connecting \"neighboring\" points can be constructed in O(NlogN). And, it can be shown that all edges in the MST must be in the Delaunay graph as well. So, you can run any efficient MST algorithm on the Delaunay graph to get the answer in O(NlogN).\\n\\nThis result is better known in Euclidean distance, but this paper showed that it holds for any Lp distance, including Manhattan distance (aka L1 distance) in this problem.",
+      "voteCount": 23
+    },
+    {
+      "name": "rtoprakce",
+      "year": 2023,
+      "content": "I cannot see the images while using dark mode. please fix",
+      "voteCount": 12
+    },
+    {
+      "name": "anwendeng",
+      "year": 2023,
+      "content": "Minimum spanning tree Problem! ? there are several algorithms which can be applied to.\\n Kruskal\\u2019s algorithm? or Prim\\u2019s algorithm?",
+      "voteCount": 11
+    },
+    {
+      "name": "Demaxl",
+      "year": 2024,
+      "content": "Aint no way this is a medium",
+      "voteCount": 10
+    },
+    {
+      "name": "RCchoudhary",
+      "year": 2023,
+      "content": " `HINT`\\n\\n1. Find Minimum Spanning tree using (Prim\\'s or Kruskal\\'s Algorithm).\\n2. Number of nodes equal to size of array.\\n3. Consider each coordinate as index for example (0,0) as index 0 ,(2,2) as index 1,(3,10) as 2 and similarly.\\n4. Make Undirected weighted Adjancy List.",
+      "voteCount": 8
+    },
+    {
+      "name": "KOCMOHABT",
+      "year": 2023,
+      "content": "Hint\n1. Forget about graph theory\n2. Main idea is to maintain an array of distances from current path to all points that are not on the path",
+      "voteCount": 6
+    }
+  ]
+}

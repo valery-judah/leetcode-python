@@ -1,0 +1,147 @@
+{
+  "category": "",
+  "id": "43",
+  "name": "Multiply Strings",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/multiply-strings/",
+  "slug": "multiply-strings",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "String",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Add Two Numbers",
+      "difficulty": "Medium",
+      "slug": "add-two-numbers"
+    },
+    {
+      "title": "Plus One",
+      "difficulty": "Easy",
+      "slug": "plus-one"
+    },
+    {
+      "title": "Add Binary",
+      "difficulty": "Easy",
+      "slug": "add-binary"
+    },
+    {
+      "title": "Add Strings",
+      "difficulty": "Easy",
+      "slug": "add-strings"
+    },
+    {
+      "title": "Apply Discount to Prices",
+      "difficulty": "Medium",
+      "slug": "apply-discount-to-prices"
+    }
+  ],
+  "questionId": "43",
+  "questionFrontendId": "43",
+  "title": "Multiply Strings",
+  "titleSlug": "multiply-strings",
+  "content": "<p>Given two non-negative integers <code>num1</code> and <code>num2</code> represented as strings, return the product of <code>num1</code> and <code>num2</code>, also represented as a string.</p>\n\n<p><strong>Note:</strong>&nbsp;You must not use any built-in BigInteger library or convert the inputs to integer directly.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> num1 = \"2\", num2 = \"3\"\n<strong>Output:</strong> \"6\"\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> num1 = \"123\", num2 = \"456\"\n<strong>Output:</strong> \"56088\"\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= num1.length, num2.length &lt;= 200</code></li>\n\t<li><code>num1</code> and <code>num2</code> consist of digits only.</li>\n\t<li>Both <code>num1</code> and <code>num2</code>&nbsp;do not contain any leading zero, except the number <code>0</code> itself.</li>\n</ul>\n",
+  "likes": 7489,
+  "dislikes": 3584,
+  "stats": {
+    "totalAccepted": "1M",
+    "totalSubmission": "2.4M",
+    "totalAcceptedRaw": 1024709,
+    "totalSubmissionRaw": 2404016,
+    "acRate": "42.6%"
+  },
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Simulation",
+      "slug": "simulation"
+    }
+  ],
+  "metaData": {
+    "name": "multiply",
+    "params": [
+      {
+        "name": "num1",
+        "type": "string"
+      },
+      {
+        "name": "num2",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "string"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "bcronrath",
+      "year": 2018,
+      "content": "Honestly I don\\'t understand why these type of questions exist.  They should be removed, or leetcode should at least build in a way to have validation rules such as checking that variables aren\\'t converted to integers.  Look at all the top runtime submissions for this one, literally they are one line where they just convert the strings to integers and multiply them, it\\'s a joke.",
+      "voteCount": 526
+    },
+    {
+      "name": "juicebox2",
+      "year": 2022,
+      "content": "Pretty silly question. I feel it teaches devs to try to find complex solutions to simple problems. Why wouldn\\'t we leverage the basic functionality of a language and convert the strings to integer?\\n",
+      "voteCount": 380
+    },
+    {
+      "name": "Krrabs",
+      "year": 2023,
+      "content": "For those saying, _why is it a medium? or it should be marked as easy._\n\nIn the question they specifically asked not to use `BigInt` or **convert** the input number **directly.**\n\nThat means in your solution there should never be an instance of `Integer/BigInt` having full value of inputs `num1` and `num2`.\n\nNo one is stopping you from doing that and solving your solution. But then, leaving comments like _\"this is an easy question\"_ you are only making a fool out of yourself.",
+      "voteCount": 279
+    },
+    {
+      "name": "QuazarGuy",
+      "year": 2023,
+      "content": "This type of question should be removed so interviewers don\\'t see it and think it\\'s a good question. Implement a tedious and detailed already built-in function that\\'s highly prone to error. I will reject a job if this type of question is asked. Test me on algorithms, not my ability to detect potential off-by-one errors.",
+      "voteCount": 113
+    },
+    {
+      "name": "sri_datta",
+      "year": 2023,
+      "content": "how does this have so many likes?",
+      "voteCount": 52
+    },
+    {
+      "name": "Sanjeet-Kumar",
+      "year": 2017,
+      "content": "![alt text](image url)![0_1497347622870_string.jpg](/assets/uploads/files/1497347627240-string-resized.jpg) \\nGuys As i have found most difficulties to understand the problem.Here From the above picture we can see that the product of ith and jth number will be stroed in position i+j and i+j+1, \\ni.e., res[i+j] is used to store the carry value and res[i+j+1] is used to rightmost digit of the sum.\\n![0_1497347660069_Screenshot (99).png](/assets/uploads/files/1497347665657-screenshot-99.png) \\nI hope it will help you.",
+      "voteCount": 40
+    },
+    {
+      "name": "A770192",
+      "year": 2023,
+      "content": "This should be marked as hard due to tricky implementation",
+      "voteCount": 31
+    },
+    {
+      "name": "TranPhucVinh",
+      "year": 2024,
+      "content": "This is my feedback for anyone who rejects or criticizes this problem, thinking it's useless. You are all wrong. This problem is extremely useful and has real-world applications, such as in calculators. The reason involves with the overflow issue.\n\nLet's take an example with C/C++. You will certainly fail at this problem if you represent those strings using the largest data type, i.e., \"long long\" with a MAX_VAL of 9223372036854775807. Converting \"string number\" to \"long number\" or \"int number\" isn't how calculators operate in real life, as you can easily notice that all calculators nowadays can multiply numbers bigger than the long long MAX_VAL.\n\nThat's why the solution to perform multiplication with two string numbers manually comes into play.",
+      "voteCount": 30
+    },
+    {
+      "name": "LeetCode",
+      "year": 2021,
+      "content": "This problem is the Daily LeetCoding Challenge for November, Day 7.\n\nFeel free to share anything related to this problem here!\n\nYou can ask questions, discuss what you've learned from this problem, or show off how many days of streak you've made!\n\n---\n\nIf you'd like to share a detailed solution to the problem, please create a new post in the discuss section and provide\n- **Detailed Explanations**: Describe the algorithm you used to solve this problem. Include any insights you used to solve this problem.\n- **Images** that help explain the algorithm.\n- **Language and Code** you used to pass the problem.\n- **Time and Space complexity analysis**.\n\n---\n\n  **📌 Do you want to learn the problem thoroughly?**\n  Read [**⭐  LeetCode Official Solution⭐**](https://leetcode.com/problems/multiply-strings/solution) to learn the 3 approaches to the problem with detailed explanations to the algorithms, codes, and complexity analysis.\n  <details>\n  <summary> Spoiler Alert! We'll explain these 3 approaches in the official solution</summary>\n\n  \n**Approach 1:** Elementary Math\n\n  \n**Approach 2:** Elementary math using less intermediate space\n\n  \n**Approach 3:** Sum the products from all pairs of digits\n\n  \n</details>\n\n\n\nIf you're new to Daily LeetCoding Challenge, [**check out this post**](https://leetcode.com/discuss/general-discussion/655704/)!\n\n\n---\n\n<br>\n\n<p align=\"center\">\n<a href=\"https://leetcode.com/subscribe/?ref=ex_dc\" target=\"_blank\">\n  <img src=\"https://assets.leetcode.com/static_assets/marketing/daily_leetcoding_banner.png\" width=\"560px\" />\n</a>\n</p>\n\n<br>",
+      "voteCount": 27
+    },
+    {
+      "name": "quagswagEthanZhao",
+      "year": 2024,
+      "content": "Meta OA question.",
+      "voteCount": 22
+    }
+  ]
+}

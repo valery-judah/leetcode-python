@@ -1,0 +1,152 @@
+{
+  "category": "",
+  "id": "986",
+  "name": "Interval List Intersections",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/interval-list-intersections/",
+  "slug": "interval-list-intersections",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Line Sweep"
+  ],
+  "similar_questions": [
+    {
+      "title": "Merge Intervals",
+      "difficulty": "Medium",
+      "slug": "merge-intervals"
+    },
+    {
+      "title": "Merge Sorted Array",
+      "difficulty": "Easy",
+      "slug": "merge-sorted-array"
+    },
+    {
+      "title": "Employee Free Time",
+      "difficulty": "Hard",
+      "slug": "employee-free-time"
+    },
+    {
+      "title": "Maximum Matching of Players With Trainers",
+      "difficulty": "Medium",
+      "slug": "maximum-matching-of-players-with-trainers"
+    }
+  ],
+  "questionId": "1028",
+  "questionFrontendId": "986",
+  "title": "Interval List Intersections",
+  "titleSlug": "interval-list-intersections",
+  "content": "<p>You are given two lists of closed intervals, <code>firstList</code> and <code>secondList</code>, where <code>firstList[i] = [start<sub>i</sub>, end<sub>i</sub>]</code> and <code>secondList[j] = [start<sub>j</sub>, end<sub>j</sub>]</code>. Each list of intervals is pairwise <strong>disjoint</strong> and in <strong>sorted order</strong>.</p>\n\n<p>Return <em>the intersection of these two interval lists</em>.</p>\n\n<p>A <strong>closed interval</strong> <code>[a, b]</code> (with <code>a &lt;= b</code>) denotes the set of real numbers <code>x</code> with <code>a &lt;= x &lt;= b</code>.</p>\n\n<p>The <strong>intersection</strong> of two closed intervals is a set of real numbers that are either empty or represented as a closed interval. For example, the intersection of <code>[1, 3]</code> and <code>[2, 4]</code> is <code>[2, 3]</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/01/30/interval1.png\" style=\"width: 700px; height: 194px;\" />\n<pre>\n<strong>Input:</strong> firstList = [[0,2],[5,10],[13,23],[24,25]], secondList = [[1,5],[8,12],[15,24],[25,26]]\n<strong>Output:</strong> [[1,2],[5,5],[8,10],[15,23],[24,24],[25,25]]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> firstList = [[1,3],[5,9]], secondList = []\n<strong>Output:</strong> []\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= firstList.length, secondList.length &lt;= 1000</code></li>\n\t<li><code>firstList.length + secondList.length &gt;= 1</code></li>\n\t<li><code>0 &lt;= start<sub>i</sub> &lt; end<sub>i</sub> &lt;= 10<sup>9</sup></code></li>\n\t<li><code>end<sub>i</sub> &lt; start<sub>i+1</sub></code></li>\n\t<li><code>0 &lt;= start<sub>j</sub> &lt; end<sub>j</sub> &lt;= 10<sup>9</sup> </code></li>\n\t<li><code>end<sub>j</sub> &lt; start<sub>j+1</sub></code></li>\n</ul>\n",
+  "likes": 5822,
+  "dislikes": 128,
+  "stats": {
+    "totalAccepted": "531.4K",
+    "totalSubmission": "730.1K",
+    "totalAcceptedRaw": 531384,
+    "totalSubmissionRaw": 730066,
+    "acRate": "72.8%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    },
+    {
+      "name": "Line Sweep",
+      "slug": "line-sweep"
+    }
+  ],
+  "metaData": {
+    "name": "intervalIntersection",
+    "params": [
+      {
+        "name": "firstList",
+        "type": "integer[][]"
+      },
+      {
+        "name": "secondList",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "integer[][]"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Meta",
+        "slug": "facebook",
+        "timesEncountered": 48
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "ayush0704",
+      "year": 2024,
+      "content": "Not that easy as mentioned in Discuss section\\n(By some so called ProCODDDRRRRRs)",
+      "voteCount": 20
+    },
+    {
+      "name": "LeetCode",
+      "year": 2021,
+      "content": "This problem is the Daily LeetCoding Challenge for November, Day 24.\n\nFeel free to share anything related to this problem here!\n\nYou can ask questions, discuss what you've learned from this problem, or show off how many days of streak you've made!\n\n---\n\nIf you'd like to share a detailed solution to the problem, please create a new post in the discuss section and provide\n- **Detailed Explanations**: Describe the algorithm you used to solve this problem. Include any insights you used to solve this problem.\n- **Images** that help explain the algorithm.\n- **Language and Code** you used to pass the problem.\n- **Time and Space complexity analysis**.\n\n---\n\n  **📌 Do you want to learn the problem thoroughly?**\n  Read [**⭐  LeetCode Official Solution⭐**](https://leetcode.com/problems/interval-list-intersections/solution) to learn the 3 approaches to the problem with detailed explanations to the algorithms, codes, and complexity analysis.\n  <details>\n  <summary> Spoiler Alert! We'll explain this 1 approach in the official solution</summary>\n\n  \n**Approach 1:** Merge Intervals\n\n  \n</details>\n\n\n\nIf you're new to Daily LeetCoding Challenge, [**check out this post**](https://leetcode.com/discuss/general-discussion/655704/)!\n\n\n---\n\n<br>\n\n<p align=\"center\">\n<a href=\"https://leetcode.com/subscribe/?ref=ex_dc\" target=\"_blank\">\n  <img src=\"https://assets.leetcode.com/static_assets/marketing/daily_leetcoding_banner.png\" width=\"560px\" />\n</a>\n</p>\n\n<br>",
+      "voteCount": 20
+    },
+    {
+      "name": "Embedded_avionic",
+      "year": 2023,
+      "content": "It turned out that this problem is so simple. Don\\'t try to overcomplicate it!!! Hint: two pointers",
+      "voteCount": 13
+    },
+    {
+      "name": "florencehehe",
+      "year": 2024,
+      "content": "im too dumb to leetcode",
+      "voteCount": 8
+    },
+    {
+      "name": "pssanth1",
+      "year": 2023,
+      "content": "Relatively easy problem. But I\\'m such a noob that I took almost an hour to solve this completely",
+      "voteCount": 8
+    },
+    {
+      "name": "Kanishk_16",
+      "year": 2024,
+      "content": "passing on what i got from some other awesome guy who passed it in the comments:\\nhttps://leetcode.com/discuss/general-discussion/990277/complete-list-of-all-interval-related-questions\\na list of all the impo interval questions",
+      "voteCount": 6
+    },
+    {
+      "name": "akashc30",
+      "year": 2024,
+      "content": "Testcases\\n\\n```\\n[[0,2],[5,10],[13,23],[24,25]]\\n[[1,5],[8,12],[15,24],[25,26]]\\n[[1,3],[5,9]]\\n[]\\n[[0,4],[7,8],[12,19]]\\n[[0,10],[14,15],[18,20]]\\n[[4,11]]\\n[[1,2],[8,11],[12,13],[14,15],[17,19]]\\n[[10,12],[18,19]]\\n[[1,6],[8,11],[13,17],[19,20]]\\n[[0,5],[12,14],[15,18]]\\n[[11,15],[18,19]]\\n```",
+      "voteCount": 6
+    },
+    {
+      "name": "user4853FQ",
+      "year": 2024,
+      "content": "I got something similar in Meta onsite, but it was about finding any point with the maximum amount of overlaps.",
+      "voteCount": 5
+    },
+    {
+      "name": "amaaannn_16",
+      "year": 2024,
+      "content": "Solution used a small approach.\\nBut i used my pen and paper and made 6 if  else ifs\\nBut worked.\\n",
+      "voteCount": 5
+    },
+    {
+      "name": "mochiball",
+      "year": 2023,
+      "content": "Easy question compared to Insert Interval ",
+      "voteCount": 4
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "category": "",
+  "id": "846",
+  "name": "Hand of Straights",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/hand-of-straights/",
+  "slug": "hand-of-straights",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": [],
+  "questionId": "876",
+  "questionFrontendId": "846",
+  "title": "Hand of Straights",
+  "titleSlug": "hand-of-straights",
+  "content": "<p>Alice has some number of cards and she wants to rearrange the cards into groups so that each group is of size <code>groupSize</code>, and consists of <code>groupSize</code> consecutive cards.</p>\n\n<p>Given an integer array <code>hand</code> where <code>hand[i]</code> is the value written on the <code>i<sup>th</sup></code> card and an integer <code>groupSize</code>, return <code>true</code> if she can rearrange the cards, or <code>false</code> otherwise.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> hand = [1,2,3,6,2,3,4,7,8], groupSize = 3\n<strong>Output:</strong> true\n<strong>Explanation:</strong> Alice&#39;s hand can be rearranged as [1,2,3],[2,3,4],[6,7,8]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> hand = [1,2,3,4,5], groupSize = 4\n<strong>Output:</strong> false\n<strong>Explanation:</strong> Alice&#39;s hand can not be rearranged into groups of 4.\n\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= hand.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>0 &lt;= hand[i] &lt;= 10<sup>9</sup></code></li>\n\t<li><code>1 &lt;= groupSize &lt;= hand.length</code></li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Note:</strong> This question is the same as 1296: <a href=\"https://leetcode.com/problems/divide-array-in-sets-of-k-consecutive-numbers/\" target=\"_blank\">https://leetcode.com/problems/divide-array-in-sets-of-k-consecutive-numbers/</a></p>\n",
+  "likes": 3565,
+  "dislikes": 286,
+  "stats": {
+    "totalAccepted": "400.8K",
+    "totalSubmission": "698.1K",
+    "totalAcceptedRaw": 400823,
+    "totalSubmissionRaw": 698099,
+    "acRate": "57.4%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    },
+    {
+      "name": "Sorting",
+      "slug": "sorting"
+    }
+  ],
+  "metaData": {
+    "name": "isNStraightHand",
+    "params": [
+      {
+        "name": "hand",
+        "type": "integer[]"
+      },
+      {
+        "name": "groupSize",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "NULLgorithm",
+      "year": 2024,
+      "content": "Life would\\'ve been so easy if Alice and Bob would\\'ve learnt Data Structures and Algorithms",
+      "voteCount": 675
+    },
+    {
+      "name": "itztjbarter",
+      "year": 2024,
+      "content": "I keep consistently getting around 42 / 84 test cases passed. this random.randint(0,1) command might work eventually...",
+      "voteCount": 189
+    },
+    {
+      "name": "mihir5191",
+      "year": 2022,
+      "content": "The question here is confusing. Posting following 1 testcase where earlier expected answer was different than leetcode's testcase output\n\n**input = [8,10,12], groupSize=3**\n\nLeetcode testcase answer = false.\nEarlier I thought output should have been true\n\n**Why is output = false?**\n\nOne of the problem's condition is, groupSize = 3. There can be any number of group. So in above input, i can make 1 group of size=3 which is array itself [8,10,12]\n\nOther main condition is, numbers in groups should be consecutive i.e. nextNumber = prevNumber + 1 in each group.\nAbove condition is not satisfied as gap between number is greater than 1 and hence they are not consecutive.\n\n For answer to be true, possible inputs could have been [8,9,10] or [9,10,11] etc.",
+      "voteCount": 164
+    },
+    {
+      "name": "TGBBSZWHWDLANZP",
+      "year": 2023,
+      "content": "I solved this without reading the editorial! I must be getting better at greedy algorithms.",
+      "voteCount": 66
+    },
+    {
+      "name": "bhavaniprasadsammana",
+      "year": 2024,
+      "content": "Fun fact: You can pass 43 test cases by just checking len(hand)%groupSize == 0",
+      "voteCount": 58
+    },
+    {
+      "name": "stym_rj",
+      "year": 2024,
+      "content": "# Some life saving TestCases\\n```\\n[2,3,4,5,6,7,8,9]\\n8\\n[8,8,9,7,7,7,6,7,10,6]\\n2\\n[66,75,4,37,92,87,68,65,58,100,97,42,19,66,73,1,5,44,30,29,76,31,12,35,26,93,9,36,90,16,86,15,4,9,13,98,10,14,18,90,89,3,10,65,24,31,43,25,54,55,54,81,10,80,31,12,15,14,59,27,64,93,32,26,69,79,13,32,29,24,27,91,92,82,37,101,100,61,74,30,91,62,36,92,28,23,4,63,55,3,11,11,101,22,34,25,2,75,43,72]\\n2\\n[1,1,2,2,3,3]\\n2\\n```",
+      "voteCount": 58
+    },
+    {
+      "name": "saurabh_555",
+      "year": 2024,
+      "content": "Think of it !\\n1) can we group cards if our array is not divisible by groupSize ?\\n2) How can we check if our group has consecutive cards or not ? ( think of something like sorting or min heap )",
+      "voteCount": 40
+    },
+    {
+      "name": "sayanshaw98",
+      "year": 2024,
+      "content": "ok enough !!  today either Alice will die or I.",
+      "voteCount": 35
+    },
+    {
+      "name": "hridoyahmed",
+      "year": 2024,
+      "content": "1. **Initial Check:** If the total number of cards in hand is not a multiple of `groupSize`, return false immediately as it is impossible to partition the cards into groups of the desired size.\\n2. **Frequency Count:** Use a hashmap to count the occurrences of each card.\\n3. **Sorting:** Extract the unique cards from the hashmap and sort them.\\n4. **Group Formation:** Iterate through the sorted unique cards. For each card, if its frequency is greater than zero, attempt to form a group starting from this card and extending for `groupSize` consecutive cards. If at any point, a required card is not available in the needed quantity, return false.\\n5. **Frequency Update:** Decrease the frequency of cards used to form each group.",
+      "voteCount": 33
+    },
+    {
+      "name": "NeaI_Wu",
+      "year": 2018,
+      "content": "Isn\\'t there only 2 groups [1,2,3], [1,2,3]? How can there be 3 groups?",
+      "voteCount": 20
+    }
+  ]
+}

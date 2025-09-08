@@ -1,0 +1,131 @@
+{
+  "category": "",
+  "id": "1405",
+  "name": "Longest Happy String",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/longest-happy-string/",
+  "slug": "longest-happy-string",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Greedy",
+    "Heap (Priority Queue)"
+  ],
+  "similar_questions": [
+    {
+      "title": "Reorganize String",
+      "difficulty": "Medium",
+      "slug": "reorganize-string"
+    }
+  ],
+  "questionId": "1304",
+  "questionFrontendId": "1405",
+  "title": "Longest Happy String",
+  "titleSlug": "longest-happy-string",
+  "content": "<p>A string <code>s</code> is called <strong>happy</strong> if it satisfies the following conditions:</p>\n\n<ul>\n\t<li><code>s</code> only contains the letters <code>&#39;a&#39;</code>, <code>&#39;b&#39;</code>, and <code>&#39;c&#39;</code>.</li>\n\t<li><code>s</code> does not contain any of <code>&quot;aaa&quot;</code>, <code>&quot;bbb&quot;</code>, or <code>&quot;ccc&quot;</code> as a substring.</li>\n\t<li><code>s</code> contains <strong>at most</strong> <code>a</code> occurrences of the letter <code>&#39;a&#39;</code>.</li>\n\t<li><code>s</code> contains <strong>at most</strong> <code>b</code> occurrences of the letter <code>&#39;b&#39;</code>.</li>\n\t<li><code>s</code> contains <strong>at most</strong> <code>c</code> occurrences of the letter <code>&#39;c&#39;</code>.</li>\n</ul>\n\n<p>Given three integers <code>a</code>, <code>b</code>, and <code>c</code>, return <em>the <strong>longest possible happy </strong>string</em>. If there are multiple longest happy strings, return <em>any of them</em>. If there is no such string, return <em>the empty string </em><code>&quot;&quot;</code>.</p>\n\n<p>A <strong>substring</strong> is a contiguous sequence of characters within a string.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> a = 1, b = 1, c = 7\n<strong>Output:</strong> &quot;ccaccbcc&quot;\n<strong>Explanation:</strong> &quot;ccbccacc&quot; would also be a correct answer.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> a = 7, b = 1, c = 0\n<strong>Output:</strong> &quot;aabaa&quot;\n<strong>Explanation:</strong> It is the only correct answer in this case.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= a, b, c &lt;= 100</code></li>\n\t<li><code>a + b + c &gt; 0</code></li>\n</ul>\n",
+  "likes": 2750,
+  "dislikes": 317,
+  "stats": {
+    "totalAccepted": "207.7K",
+    "totalSubmission": "317.2K",
+    "totalAcceptedRaw": 207650,
+    "totalSubmissionRaw": 317168,
+    "acRate": "65.5%"
+  },
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    },
+    {
+      "name": "Heap (Priority Queue)",
+      "slug": "heap-priority-queue"
+    }
+  ],
+  "metaData": {
+    "name": "longestDiverseString",
+    "params": [
+      {
+        "name": "a",
+        "type": "integer"
+      },
+      {
+        "type": "integer",
+        "name": "b"
+      },
+      {
+        "type": "integer",
+        "name": "c"
+      }
+    ],
+    "return": {
+      "type": "string"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "melon_musk8888",
+      "year": 2023,
+      "content": "very difficult in implementation",
+      "voteCount": 135
+    },
+    {
+      "name": "Vanguard_25",
+      "year": 2024,
+      "content": "Keep count of `a`,  `b` and `c`  inserted  to string consecutively \n\n....and for the rest think and type out all the edge cases.\n\nPS: And I have a feeling this question is gonna be asked this week, so PRE-SOLVED it.",
+      "voteCount": 88
+    },
+    {
+      "name": "barathsiva_23",
+      "year": 2024,
+      "content": "Woke up ....see the question .....return to sleep",
+      "voteCount": 75
+    },
+    {
+      "name": "AnywaySo",
+      "year": 2023,
+      "content": "This problem should be hard, because correct greedy strategy is not easy to get. Waste me 5 hours, but I still couldn\\'t solve it in the end!",
+      "voteCount": 68
+    },
+    {
+      "name": "mscharan1313",
+      "year": 2024,
+      "content": "Solving a happy string question itself is  unhappy. ",
+      "voteCount": 61
+    },
+    {
+      "name": "adityakumar8068",
+      "year": 2024,
+      "content": "TESTCASES----------------->\n```\n0\n9\n12\n100\n100\n100\n0\n0\n7\n58\n50\n87\n65\n56\n95\n67\n53\n99\n5\n4\n3\n3\n40\n7",
+      "voteCount": 47
+    },
+    {
+      "name": "BradV",
+      "year": 2024,
+      "content": "All the people in he comments that always saying \"oOoOoHh tHiS qUeStIoN sHoUlD bE aN eAsY\" seem awfully quiet today",
+      "voteCount": 43
+    },
+    {
+      "name": "rohan_banik__",
+      "year": 2024,
+      "content": "Happy Lakshmi Puja to all my Indian brothers and sisters. Hope this day brings a lot of happiness in your life.",
+      "voteCount": 39
+    },
+    {
+      "name": "SahilNikam",
+      "year": 2023,
+      "content": "solved it without using priority queue or any other data structure even beats 100%\\nfeeling proud",
+      "voteCount": 33
+    },
+    {
+      "name": "wenzhenl",
+      "year": 2022,
+      "content": "I am following greedy approach from https://leetcode.com/problems/longest-happy-string/discuss/564248/Python-HEAP-solution-with-explanation, here is my proof why it always gives the longest string.\\n\\nThe greedy approach is take `\"a\"`, `\"b\"`, `\"c\"` , always append the most abudant one to the result if not breaking the rule. I am gonna show you the result from this greedy approach either uses up all `\"a\"`, `\"b\"`, `\"c\"` which by default gives the longest string. Or if something left, that something must be `\"a\"` and the result must be a string with format `\"aa*aa*aa*aa*...*aa\"` where `\"*\"` is either `\"b\"` or `\"c\"`.\\n\\nWithout losing generalarity, let\\'s assume `a` >= `b` >= `c`, and we can look at the last two characters of the resulting string, it could be `\"aa\"`, `\"bb\"`, `\"cc\"`, or something like `\"ab\"`, `\"ac\"`, `\"ba\"`, `\"bc\"` ... which are not repeating.\\n\\nAt the end of the algorithm, there are `x` `\"a\"` left, `y` `\"b\"` left, and `z` `\"c\"` left. If the last two characters are not repeating, then this must hold true `x=y=z=0`, otherwise one more character can still be appended to the result. As `x=y=z=0` this is of course the longest string we can get, so we can ignore these cases.\\n\\nOK, here comes the hardest one, the result ends with `\"aa\"`. In this case, obvisouly `y=z=0`. If `x` is also `0`, we get the longest. What\\'s remaining is to prove when `x>0`, the result is still the longest. I can show you when this is the case, the result must be some string like `\"aa*aa*aa*aa*...*aa\"` where `\"*\"` is either `\"b\"` or `\"c\"`, so the result is always two `\"a\"` followed by `\"b\"` or `\"c\"`. Why? Let\\'s look at the string backwards. It ends with `\"aa\"`, and `y=z=0`, so the third to last character, no matter it\\'s `\"b\"` or `\"c\"`, it\\'s the last one of it. So for the forth to last character, as the greedy goes, we have at least 2 `\"a\"` left which is the most abudant, so the forth to last must be `\"a\"`, same goes for the fifth to the last. \\nWait! Why the forth to the last must be `\"a\"`? If its previous two characters are `\"aa\"`, then it\\'s forced to not be `\"a\"`? Good catch! But if this happens, the third to the last must be `\"a\"` since `\"a\"` is the most abundant. Contradiction! So the forth to the last must be `\"a\"`. \\n\\nAnd for the format `\"aa*aa*aa*aa*...*aa\"`, we know `2(b+c+1) <= a`, and when this is true, the longest string we can get is to use `\"b\"` and `\"c\"` to separate sequence of 2 `\"a\"`, the longest we can get is `2(b+c+1)+b+c` which is already given by the greedy approach. \\n\\nFor case ends with `\"bb\"` or `\"cc\"`, it\\'s impossible when `a` is the largest, following same logic for case ends with `\"aa\"`, if it ends with `\"bb\"`, the result should be string like `\"bb*bb*...*bb\"` which contradicts with the fact the result should start with `\"a\"` as `a` is the largest.\\n\\nSo the greedy always gives the longest string. \\n\\n",
+      "voteCount": 27
+    }
+  ]
+}

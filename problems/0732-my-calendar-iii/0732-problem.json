@@ -1,0 +1,170 @@
+{
+  "category": "",
+  "id": "732",
+  "name": "My Calendar III",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/my-calendar-iii/",
+  "slug": "my-calendar-iii",
+  "isPaidOnly": false,
+  "tags": [
+    "Binary Search",
+    "Design",
+    "Segment Tree",
+    "Prefix Sum",
+    "Ordered Set"
+  ],
+  "similar_questions": [
+    {
+      "title": "My Calendar I",
+      "difficulty": "Medium",
+      "slug": "my-calendar-i"
+    },
+    {
+      "title": "My Calendar II",
+      "difficulty": "Medium",
+      "slug": "my-calendar-ii"
+    },
+    {
+      "title": "Count Integers in Intervals",
+      "difficulty": "Hard",
+      "slug": "count-integers-in-intervals"
+    }
+  ],
+  "questionId": "732",
+  "questionFrontendId": "732",
+  "title": "My Calendar III",
+  "titleSlug": "my-calendar-iii",
+  "content": "<p>A <code>k</code>-booking happens when <code>k</code> events have some non-empty intersection (i.e., there is some time that is common to all <code>k</code> events.)</p>\n\n<p>You are given some events <code>[startTime, endTime)</code>, after each given event, return an integer <code>k</code> representing the maximum <code>k</code>-booking between all the previous events.</p>\n\n<p>Implement the <code>MyCalendarThree</code> class:</p>\n\n<ul>\n\t<li><code>MyCalendarThree()</code> Initializes the object.</li>\n\t<li><code>int book(int startTime, int endTime)</code> Returns an integer <code>k</code> representing the largest integer such that there exists a <code>k</code>-booking in the calendar.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input</strong>\n[&quot;MyCalendarThree&quot;, &quot;book&quot;, &quot;book&quot;, &quot;book&quot;, &quot;book&quot;, &quot;book&quot;, &quot;book&quot;]\n[[], [10, 20], [50, 60], [10, 40], [5, 15], [5, 10], [25, 55]]\n<strong>Output</strong>\n[null, 1, 1, 2, 3, 3, 3]\n\n<strong>Explanation</strong>\nMyCalendarThree myCalendarThree = new MyCalendarThree();\nmyCalendarThree.book(10, 20); // return 1\nmyCalendarThree.book(50, 60); // return 1\nmyCalendarThree.book(10, 40); // return 2\nmyCalendarThree.book(5, 15); // return 3\nmyCalendarThree.book(5, 10); // return 3\nmyCalendarThree.book(25, 55); // return 3\n\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= startTime &lt; endTime &lt;= 10<sup>9</sup></code></li>\n\t<li>At most <code>400</code> calls will be made to <code>book</code>.</li>\n</ul>\n",
+  "likes": 2050,
+  "dislikes": 274,
+  "stats": {
+    "totalAccepted": "104.1K",
+    "totalSubmission": "146.9K",
+    "totalAcceptedRaw": 104098,
+    "totalSubmissionRaw": 146892,
+    "acRate": "70.9%"
+  },
+  "topicTags": [
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    },
+    {
+      "name": "Design",
+      "slug": "design"
+    },
+    {
+      "name": "Segment Tree",
+      "slug": "segment-tree"
+    },
+    {
+      "name": "Prefix Sum",
+      "slug": "prefix-sum"
+    },
+    {
+      "name": "Ordered Set",
+      "slug": "ordered-set"
+    }
+  ],
+  "metaData": {
+    "classname": "MyCalendarThree",
+    "constructor": {
+      "params": []
+    },
+    "methods": [
+      {
+        "name": "book",
+        "params": [
+          {
+            "type": "integer",
+            "name": "startTime"
+          },
+          {
+            "type": "integer",
+            "name": "endTime"
+          }
+        ],
+        "return": {
+          "type": "integer"
+        }
+      }
+    ],
+    "systemdesign": true,
+    "params": [
+      {
+        "name": "starts",
+        "type": "integer[]"
+      },
+      {
+        "name": "ends",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "list<boolean>",
+      "dealloc": true
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "SeineAle",
+      "year": 2023,
+      "content": "Line sweep makes this question \"EASY\". Not even \"Medium\" , but \"EASY\"",
+      "voteCount": 42
+    },
+    {
+      "name": "amarkanala",
+      "year": 2017,
+      "content": "Can some one explain me,\\n1. Why would *MyCalendarThree.book(5, 10);*  return 3 graphing it shows only one other overlap so it should be 2\\n2. And this sentence *\"Note that the last event locally causes a 2-booking, but the answer is still 3 because\\neg. [10, 20), [10, 40), and [5, 15) are still triple booked.\"* the last event refers to MyCalendarThree.book(25, 55); why would it locally return 2",
+      "voteCount": 37
+    },
+    {
+      "name": "suanna756",
+      "year": 2018,
+      "content": "![image](https://s3-lc-upload.s3.amazonaws.com/users/suanna756/image_1529177142.png)\\n\\n",
+      "voteCount": 28
+    },
+    {
+      "name": "j9988",
+      "year": 2018,
+      "content": "![0_1516074380167_Screen Shot 2018-01-15 at 9.42.10 PM.png](/assets/uploads/files/1516074382791-screen-shot-2018-01-15-at-9.42.10-pm-resized.png) \\n[14,29] overlaps with 3 previous item:[24,40],[27,43],[5,21], so the result should be 4 i/o 3. ?",
+      "voteCount": 26
+    },
+    {
+      "name": "aero_coder",
+      "year": 2024,
+      "content": "May be tomorrow\\'s potd",
+      "voteCount": 12
+    },
+    {
+      "name": "xzpx",
+      "year": 2022,
+      "content": "This doesn't make any sense to me:\n\nmyCalendarThree.book(10, 20);  ===> overlaps by itself so return 1\nmyCalendarThree.book(50, 60); ===> overlaps by itself so return 1 (previous window has no overlap)\nmyCalendarThree.book(10, 40); ===> time 11 intersects with both (10, 20) and the new window (10, 40) so return 2\nmyCalendarThree.book(5, 15); ===> time 11 intersects with (10, 20), (10, 40) and the new window (5, 15) so return 3\nmyCalendarThree.book(5, 10); ===============> I get confused...... this intersects with (5, 15) so the answer should be 2. If the second digit is inclusive then it intersects with (10, 20), (10, 40), (5, 15) and the newly added window (5, 10) so the answer should be 4. I don't see how you get 3 here???\n\n\n",
+      "voteCount": 12
+    },
+    {
+      "name": "ZhiYangLim",
+      "year": 2024,
+      "content": "coming here after seeing My Calendar I and My Calendar II for back to back daily",
+      "voteCount": 10
+    },
+    {
+      "name": "MeteorJune",
+      "year": 2019,
+      "content": "For Example 1, shouldn\\'t test case result of MyCalendarThree.book(5, 10) is 2 intead of 3? Since only there are 2 bookings: [5, 15) and [5, 10)?\\n\\nDid I misunderstand the problem, where maximum bookings (a.k.a k-bookings) should be returned?",
+      "voteCount": 8
+    },
+    {
+      "name": "sushilrawat1720",
+      "year": 2022,
+      "content": "BIG HINT :  \\nFirst Solve previous My Calendar Question  i.e My Calendar I and My Calendar II .\\n\\nThen it will be super easy . Just Try it :)",
+      "voteCount": 5
+    },
+    {
+      "name": "riyan372828",
+      "year": 2022,
+      "content": "**Watch this video \\uD83E\\uDC83 for the better explanation of this problem and it\\'s solution.**\\n[Watch](https://www.youtube.com/watch?v=gbJKlcokAIo://)\\nhttps://www.youtube.com/watch?v=gbJKlcokAIo\\n\\n\\n\\nAlso you can SUBSCRIBE \\uD83E\\uDC81 \\uD83E\\uDC81 \\uD83E\\uDC81 this channel for the daily leetcode challange solution.\\nhttps://t.me/dsacoder \\u2B05\\u2B05 Telegram link to discuss leetcode daily questions and other dsa problems",
+      "voteCount": 4
+    }
+  ]
+}

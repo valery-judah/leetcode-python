@@ -1,0 +1,178 @@
+{
+  "category": "",
+  "id": "706",
+  "name": "Design HashMap",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/design-hashmap/",
+  "slug": "design-hashmap",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Linked List",
+    "Design",
+    "Hash Function"
+  ],
+  "similar_questions": [
+    {
+      "title": "Design HashSet",
+      "difficulty": "Easy",
+      "slug": "design-hashset"
+    },
+    {
+      "title": "Design Skiplist",
+      "difficulty": "Hard",
+      "slug": "design-skiplist"
+    }
+  ],
+  "questionId": "817",
+  "questionFrontendId": "706",
+  "title": "Design HashMap",
+  "titleSlug": "design-hashmap",
+  "content": "<p>Design a HashMap without using any built-in hash table libraries.</p>\n\n<p>Implement the <code>MyHashMap</code> class:</p>\n\n<ul>\n\t<li><code>MyHashMap()</code> initializes the object with an empty map.</li>\n\t<li><code>void put(int key, int value)</code> inserts a <code>(key, value)</code> pair into the HashMap. If the <code>key</code> already exists in the map, update the corresponding <code>value</code>.</li>\n\t<li><code>int get(int key)</code> returns the <code>value</code> to which the specified <code>key</code> is mapped, or <code>-1</code> if this map contains no mapping for the <code>key</code>.</li>\n\t<li><code>void remove(key)</code> removes the <code>key</code> and its corresponding <code>value</code> if the map contains the mapping for the <code>key</code>.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input</strong>\n[&quot;MyHashMap&quot;, &quot;put&quot;, &quot;put&quot;, &quot;get&quot;, &quot;get&quot;, &quot;put&quot;, &quot;get&quot;, &quot;remove&quot;, &quot;get&quot;]\n[[], [1, 1], [2, 2], [1], [3], [2, 1], [2], [2], [2]]\n<strong>Output</strong>\n[null, null, null, 1, -1, null, 1, null, -1]\n\n<strong>Explanation</strong>\nMyHashMap myHashMap = new MyHashMap();\nmyHashMap.put(1, 1); // The map is now [[1,1]]\nmyHashMap.put(2, 2); // The map is now [[1,1], [2,2]]\nmyHashMap.get(1);    // return 1, The map is now [[1,1], [2,2]]\nmyHashMap.get(3);    // return -1 (i.e., not found), The map is now [[1,1], [2,2]]\nmyHashMap.put(2, 1); // The map is now [[1,1], [2,1]] (i.e., update the existing value)\nmyHashMap.get(2);    // return 1, The map is now [[1,1], [2,1]]\nmyHashMap.remove(2); // remove the mapping for 2, The map is now [[1,1]]\nmyHashMap.get(2);    // return -1 (i.e., not found), The map is now [[1,1]]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= key, value &lt;= 10<sup>6</sup></code></li>\n\t<li>At most <code>10<sup>4</sup></code> calls will be made to <code>put</code>, <code>get</code>, and <code>remove</code>.</li>\n</ul>\n",
+  "likes": 5331,
+  "dislikes": 493,
+  "stats": {
+    "totalAccepted": "701K",
+    "totalSubmission": "1.1M",
+    "totalAcceptedRaw": 700966,
+    "totalSubmissionRaw": 1061406,
+    "acRate": "66.0%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Linked List",
+      "slug": "linked-list"
+    },
+    {
+      "name": "Design",
+      "slug": "design"
+    },
+    {
+      "name": "Hash Function",
+      "slug": "hash-function"
+    }
+  ],
+  "metaData": {
+    "classname": "MyHashMap",
+    "constructor": {
+      "params": []
+    },
+    "methods": [
+      {
+        "params": [
+          {
+            "type": "integer",
+            "name": "key"
+          },
+          {
+            "type": "integer",
+            "name": "value"
+          }
+        ],
+        "return": {
+          "type": "void"
+        },
+        "name": "put"
+      },
+      {
+        "params": [
+          {
+            "type": "integer",
+            "name": "key"
+          }
+        ],
+        "return": {
+          "type": "integer"
+        },
+        "name": "get"
+      },
+      {
+        "params": [
+          {
+            "type": "integer",
+            "name": "key"
+          }
+        ],
+        "return": {
+          "type": "void"
+        },
+        "name": "remove"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "systemdesign": true
+  },
+  "discussion_posts": [
+    {
+      "name": "firefly1",
+      "year": 2023,
+      "content": "I think this should be marked as medium not easy",
+      "voteCount": 153
+    },
+    {
+      "name": "souvikmkhrj",
+      "year": 2023,
+      "content": "People Who watched a YT video and still struggling :\\n\\n<a href=\"https://imgur.com/m3nKyZw\"><img src=\"https://i.imgur.com/m3nKyZw.jpg\" title=\"source: imgur.com\" width=\"350px\" /></a>",
+      "voteCount": 133
+    },
+    {
+      "name": "TheSithPadawan",
+      "year": 2018,
+      "content": "I was just skimming through the solutions in the discuss section and I'm curious why no one incorporated load factor and rehash in their design? From the mostly voted solutions, it seems like they did not change the size of the hashmap from the beginning.",
+      "voteCount": 60
+    },
+    {
+      "name": "c-m-d-",
+      "year": 2023,
+      "content": "Solving this problem \"optimally\" is maybe the hardest question on this site, should it still be Easy just because its trivial to cheese it?",
+      "voteCount": 56
+    },
+    {
+      "name": "MrAke",
+      "year": 2023,
+      "content": "I think this is not an easy problem!!",
+      "voteCount": 42
+    },
+    {
+      "name": "akialter",
+      "year": 2023,
+      "content": "The requirements need to be more specific (i.e. what is the expected runtime of each operation, what is the memory constraint)",
+      "voteCount": 39
+    },
+    {
+      "name": "anwendeng",
+      "year": 2023,
+      "content": "How can be designing hash map easy? I used `(a*x+b)%p` as hash function, and implement it in a standard way. Of course, Due to the constraint 0 <= key, value <= 10^6, there is some very very supereasy way, the most of posted solutions use the easy way. Learn the standard way to design a hash map is a lesson for programmers!",
+      "voteCount": 33
+    },
+    {
+      "name": "TheDevCactus",
+      "year": 2023,
+      "content": "Don\\'t play yourself and try and implement a good hashing method. this is a Leetcode easy question...just do what is obvious and move on with your life. ",
+      "voteCount": 20
+    },
+    {
+      "name": "Msey",
+      "year": 2023,
+      "content": "If we do \"rehashing\" then it\\'s definitely not an easy question",
+      "voteCount": 18
+    },
+    {
+      "name": "timtam85",
+      "year": 2018,
+      "content": "One of the follow-ups for this question is how to make it a concurrent hashmap. Using one lock will serialize all the operations which leads to a very low efficiency. Based on the assumption that the number of read operation will be much more than write operation, my idea is to have separate read and write lock. Any other ideas?",
+      "voteCount": 16
+    }
+  ]
+}

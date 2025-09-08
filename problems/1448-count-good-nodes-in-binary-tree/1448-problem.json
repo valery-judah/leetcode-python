@@ -1,0 +1,122 @@
+{
+  "category": "",
+  "id": "1448",
+  "name": "Count Good Nodes in Binary Tree",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/count-good-nodes-in-binary-tree/",
+  "slug": "count-good-nodes-in-binary-tree",
+  "isPaidOnly": false,
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": [],
+  "questionId": "1544",
+  "questionFrontendId": "1448",
+  "title": "Count Good Nodes in Binary Tree",
+  "titleSlug": "count-good-nodes-in-binary-tree",
+  "content": "<p>Given a binary tree <code>root</code>, a node <em>X</em> in the tree is named&nbsp;<strong>good</strong> if in the path from root to <em>X</em> there are no nodes with a value <em>greater than</em> X.</p>\r\n\r\n<p>Return the number of <strong>good</strong> nodes in the binary tree.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n\r\n<p><strong><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/04/02/test_sample_1.png\" style=\"width: 263px; height: 156px;\" /></strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> root = [3,1,4,3,null,1,5]\r\n<strong>Output:</strong> 4\r\n<strong>Explanation:</strong> Nodes in blue are <strong>good</strong>.\r\nRoot Node (3) is always a good node.\r\nNode 4 -&gt; (3,4) is the maximum value in the path starting from the root.\r\nNode 5 -&gt; (3,4,5) is the maximum value in the path\r\nNode 3 -&gt; (3,1,3) is the maximum value in the path.</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n\r\n<p><strong><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/04/02/test_sample_2.png\" style=\"width: 157px; height: 161px;\" /></strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> root = [3,3,null,4,2]\r\n<strong>Output:</strong> 3\r\n<strong>Explanation:</strong> Node 2 -&gt; (3, 3, 2) is not good, because &quot;3&quot; is higher than it.</pre>\r\n\r\n<p><strong class=\"example\">Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> root = [1]\r\n<strong>Output:</strong> 1\r\n<strong>Explanation:</strong> Root is considered as <strong>good</strong>.</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li>The number of nodes in the binary tree is in the range&nbsp;<code>[1, 10^5]</code>.</li>\r\n\t<li>Each node&#39;s value is between <code>[-10^4, 10^4]</code>.</li>\r\n</ul>",
+  "likes": 6193,
+  "dislikes": 203,
+  "stats": {
+    "totalAccepted": "770.5K",
+    "totalSubmission": "1M",
+    "totalAcceptedRaw": 770471,
+    "totalSubmissionRaw": 1046956,
+    "acRate": "73.6%"
+  },
+  "topicTags": [
+    {
+      "name": "Tree",
+      "slug": "tree"
+    },
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Breadth-First Search",
+      "slug": "breadth-first-search"
+    },
+    {
+      "name": "Binary Tree",
+      "slug": "binary-tree"
+    }
+  ],
+  "metaData": {
+    "name": "goodNodes",
+    "params": [
+      {
+        "name": "root",
+        "type": "TreeNode"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "user2898ZR",
+      "year": 2023,
+      "content": "If you think that this is too easy, may be you already very good with trees)",
+      "voteCount": 130
+    },
+    {
+      "name": "yogeshwarb",
+      "year": 2022,
+      "content": "Just try to remember max in the path you dont have to worry about other numbers.",
+      "voteCount": 63
+    },
+    {
+      "name": "TGBBSZWHWDLANZP",
+      "year": 2023,
+      "content": "I\\'m having trouble understanding the question.\\nI thought it said, the root node\\'s value is the max and any children nodes with a value greater than the root node should be counted as bad.",
+      "voteCount": 43
+    },
+    {
+      "name": "GOBurrito",
+      "year": 2023,
+      "content": "It's a bit strange to me how this question, which is just traversing a tree, is marked medium. A question like [subtree of another tree](https://leetcode.com/problems/subtree-of-another-tree/) is marked easy and that seems objectively more complex, you couldn't do that question without the capability to do this one.",
+      "voteCount": 39
+    },
+    {
+      "name": "rtanishka",
+      "year": 2024,
+      "content": "Don't say this is easy. Trying since half an hour! Demotivated af. I think we should read the discussion after we solve the question.",
+      "voteCount": 31
+    },
+    {
+      "name": "bohdanlopatkin",
+      "year": 2023,
+      "content": "Why is this question marked as medium? Shouldn\\u2019t it be easy? It\\'s just a simple dfs/bfs with little extra logic. Or am I missing something?",
+      "voteCount": 19
+    },
+    {
+      "name": "Chan0202",
+      "year": 2025,
+      "content": "I was able to think and code a working solution in just 5 minutes. Yes it felt easy for me only because I have been studying and practicing DSA very consistently for almost a year. Before this, I\\'m pretty sure I couldn\\'t have even solved it, let alone the timing. If you find it difficult now, don\\'t get demotivated, practice consistently and look yourself after a year.\\n\\nAnd yes, I used to get annoyed by people saying \"it should be marked easy\". But hey, brush it off and just focus on yourself! And when you find it easy, remember to comment only about how the difficulty level is for you and not how it should be.",
+      "voteCount": 18
+    },
+    {
+      "name": "BharathDubbaka",
+      "year": 2024,
+      "content": "Some useful Testcases:\n[3,4,4,3,null,1,5, null, null, null, null, null , 4]\n[3,1,4,3,null,1,5, null, null, null, null, null , 4]\n[3,4,4,5,null,1,5, null, null, 4, null, null , 4]\n\n",
+      "voteCount": 10
+    },
+    {
+      "name": "monomarh",
+      "year": 2024,
+      "content": "Damn, the first example is confusing because there are two threes. Initially I thought that the value in node should just be greater or equal to the previous node val. But in fact, the node value should be equal to or greater than the max value in all previous node values in the branch",
+      "voteCount": 8
+    },
+    {
+      "name": "sim1029",
+      "year": 2022,
+      "content": "# Hints + Github Gist Solution\\nAs we traverse the paths, the current node can be one of three things:\\n\\n1. Less than a node in the current path\\n2. Equal to a node in the current path\\n3. Greater than a node in the current path\\n\\nIn the first case, we ignore this node from our result.\\n\\nIn cases two and three we need to update the \"greatest\" node in the current path so far and pass this along to the rest of our recursive calls. You can think of it like: \"nodes further down the tree have a harder time being included in the result since there are more nodes in front of them to drive up the minimum value to be included\"\\n\\nThen just setup the correct base case and recursive calls and you are done. \\n\\nMy recursive solution used:\\n- Two parameters: current_node and current_min_of_path\\n- Two new recursive calls spawned at each valid node\\n- Base case when a node is null. Consider carefully what value we want to return in this case...\\n\\n## Still stuck?\\n[Solution](https://gist.github.com/sim1029/696ad81cd02f7627d96a9b9fe991e73f)",
+      "voteCount": 6
+    }
+  ]
+}

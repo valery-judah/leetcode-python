@@ -1,0 +1,132 @@
+{
+  "category": "",
+  "id": "1071",
+  "name": "Greatest Common Divisor of Strings",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/greatest-common-divisor-of-strings/",
+  "slug": "greatest-common-divisor-of-strings",
+  "isPaidOnly": false,
+  "tags": [
+    "Math",
+    "String"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find Greatest Common Divisor of Array",
+      "difficulty": "Easy",
+      "slug": "find-greatest-common-divisor-of-array"
+    },
+    {
+      "title": "Smallest Even Multiple",
+      "difficulty": "Easy",
+      "slug": "smallest-even-multiple"
+    },
+    {
+      "title": "Find the Maximum Factor Score of Array",
+      "difficulty": "Medium",
+      "slug": "find-the-maximum-factor-score-of-array"
+    }
+  ],
+  "questionId": "1146",
+  "questionFrontendId": "1071",
+  "title": "Greatest Common Divisor of Strings",
+  "titleSlug": "greatest-common-divisor-of-strings",
+  "content": "<p>For two strings <code>s</code> and <code>t</code>, we say &quot;<code>t</code> divides <code>s</code>&quot; if and only if <code>s = t + t + t + ... + t + t</code> (i.e., <code>t</code> is concatenated with itself one or more times).</p>\n\n<p>Given two strings <code>str1</code> and <code>str2</code>, return <em>the largest string </em><code>x</code><em> such that </em><code>x</code><em> divides both </em><code>str1</code><em> and </em><code>str2</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> str1 = &quot;ABCABC&quot;, str2 = &quot;ABC&quot;\n<strong>Output:</strong> &quot;ABC&quot;\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> str1 = &quot;ABABAB&quot;, str2 = &quot;ABAB&quot;\n<strong>Output:</strong> &quot;AB&quot;\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> str1 = &quot;LEET&quot;, str2 = &quot;CODE&quot;\n<strong>Output:</strong> &quot;&quot;\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= str1.length, str2.length &lt;= 1000</code></li>\n\t<li><code>str1</code> and <code>str2</code> consist of English uppercase letters.</li>\n</ul>\n",
+  "likes": 5807,
+  "dislikes": 1613,
+  "stats": {
+    "totalAccepted": "837.2K",
+    "totalSubmission": "1.6M",
+    "totalAcceptedRaw": 837161,
+    "totalSubmissionRaw": 1581464,
+    "acRate": "52.9%"
+  },
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "metaData": {
+    "name": "gcdOfStrings",
+    "params": [
+      {
+        "name": "str1",
+        "type": "string"
+      },
+      {
+        "name": "str2",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "string"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "Fermi-4",
+      "year": 2022,
+      "content": "Problem is poorly stated",
+      "voteCount": 1002
+    },
+    {
+      "name": "dvvalabs",
+      "year": 2020,
+      "content": "This is a medium level problem, I guess.",
+      "voteCount": 866
+    },
+    {
+      "name": "trannguyen",
+      "year": 2020,
+      "content": "I understood the question differently until I got the wrong answer with this test case:\\n\\nInput:\\n\"TAUXXTAUXXTAUXXTAUXXTAUXX\"\\n\"TAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXX\"\\n\\nExpected result:\\n\"TAUXX\"\\n\\nMy result:\\n\"TAUXXTAUXXTAUXXTAUXX\"\\n\\nIt is better to include this test case into the Description so that people can understand clearly what is \"common divisor of strings is\".\\n",
+      "voteCount": 640
+    },
+    {
+      "name": "averydl",
+      "year": 2021,
+      "content": "I understand that this is a managable problem, and it can be brute-forced. However, I think that in the same way Euclid\\'s algorithm is \"easy\" once you know it, this problem is only \"easy\" once you\\'ve reviewed the solutions and explanations.\\n\\nTo get a general poll, how many of you (being honest) would have had no difficulty coming up with this solution without having some prior knowledge, or glancing at hints/solutions beforehand? Maybe my leetcode skill is just stagnating, but to me, this seems like a pretty tricky problem.",
+      "voteCount": 562
+    },
+    {
+      "name": "ishujain05",
+      "year": 2019,
+      "content": "**Given**\\nInput: str1 = \"ABABAB\", str2 = \"ABAB\"\\nOutput: \"AB\"\\n\\nI think the answer should be ABAB right because it is the greatest common divisor. Let me know if I am misunderstanding something.",
+      "voteCount": 545
+    },
+    {
+      "name": "hosua",
+      "year": 2023,
+      "content": "This problem needs to be a medium and needs to be reworded, I still don't understand wth I'm supposed to be doing lol",
+      "voteCount": 256
+    },
+    {
+      "name": "readwriteryan",
+      "year": 2023,
+      "content": "If you\\'re stuck on this and need a hint, there are a few observations that may be helpful:\\n\\n1) Since the candidate string needs to evenly divide str1 and str2 we only need to consider candidate strings with a length that is evenly divisible into the length of both str1 and str2. This quickly provides us with a solution that significantly outperforms brute-force.\\n2) As a result of the above, we only need to try string lengths up to the length of the shorter of our two input strings. This gives us our bounds for determining candidate string lengths.\\n3) Since we are looking for the longest candidate we can begin our iteration from the largest string length that evenly divides both strings and work downward to smaller length strings. The first string that fits our criteria is then our answer.",
+      "voteCount": 230
+    },
+    {
+      "name": "Applesmack",
+      "year": 2020,
+      "content": "This question is anything but easy. I\\'d say it is a contender for hard. Must be lots of geniuses here if this qualifies as an \\'easy\\' question.",
+      "voteCount": 160
+    },
+    {
+      "name": "Jeetaksh",
+      "year": 2023,
+      "content": "S1+S2=S2+S1\\nCommutative property for strings!",
+      "voteCount": 80
+    },
+    {
+      "name": "dunglee30",
+      "year": 2023,
+      "content": "Finding GCD of 2 string length will give us the divisor string length and then perfrom some string evaluation is good to solve this problem. ",
+      "voteCount": 43
+    }
+  ]
+}

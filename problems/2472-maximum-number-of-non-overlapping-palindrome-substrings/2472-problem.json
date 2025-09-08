@@ -1,0 +1,157 @@
+{
+  "category": "",
+  "id": "2472",
+  "name": "Maximum Number of Non-overlapping Palindrome Substrings",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings/",
+  "slug": "maximum-number-of-non-overlapping-palindrome-substrings",
+  "isPaidOnly": false,
+  "tags": [
+    "Two Pointers",
+    "String",
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longest Palindromic Substring",
+      "difficulty": "Medium",
+      "slug": "longest-palindromic-substring"
+    },
+    {
+      "title": "Palindrome Partitioning",
+      "difficulty": "Medium",
+      "slug": "palindrome-partitioning"
+    },
+    {
+      "title": "Palindrome Partitioning II",
+      "difficulty": "Hard",
+      "slug": "palindrome-partitioning-ii"
+    },
+    {
+      "title": "Palindrome Partitioning III",
+      "difficulty": "Hard",
+      "slug": "palindrome-partitioning-iii"
+    },
+    {
+      "title": "Maximum Number of Non-Overlapping Substrings",
+      "difficulty": "Hard",
+      "slug": "maximum-number-of-non-overlapping-substrings"
+    },
+    {
+      "title": "Palindrome Partitioning IV",
+      "difficulty": "Hard",
+      "slug": "palindrome-partitioning-iv"
+    }
+  ],
+  "questionId": "2559",
+  "questionFrontendId": "2472",
+  "title": "Maximum Number of Non-overlapping Palindrome Substrings",
+  "titleSlug": "maximum-number-of-non-overlapping-palindrome-substrings",
+  "content": "<p>You are given a string <code>s</code> and a <strong>positive</strong> integer <code>k</code>.</p>\n\n<p>Select a set of <strong>non-overlapping</strong> substrings from the string <code>s</code> that satisfy the following conditions:</p>\n\n<ul>\n\t<li>The <strong>length</strong> of each substring is <strong>at least</strong> <code>k</code>.</li>\n\t<li>Each substring is a <strong>palindrome</strong>.</li>\n</ul>\n\n<p>Return <em>the <strong>maximum</strong> number of substrings in an optimal selection</em>.</p>\n\n<p>A <strong>substring</strong> is a contiguous sequence of characters within a string.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;abaccdbbd&quot;, k = 3\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> We can select the substrings underlined in s = &quot;<u><strong>aba</strong></u>cc<u><strong>dbbd</strong></u>&quot;. Both &quot;aba&quot; and &quot;dbbd&quot; are palindromes and have a length of at least k = 3.\nIt can be shown that we cannot find a selection with more than two valid substrings.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;adbcda&quot;, k = 2\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> There is no palindrome substring of length at least 2 in the string.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= k &lt;= s.length &lt;= 2000</code></li>\n\t<li><code>s</code> consists of lowercase English letters.</li>\n</ul>\n",
+  "likes": 492,
+  "dislikes": 9,
+  "stats": {
+    "totalAccepted": "20.9K",
+    "totalSubmission": "49.7K",
+    "totalAcceptedRaw": 20912,
+    "totalSubmissionRaw": 49707,
+    "acRate": "42.1%"
+  },
+  "topicTags": [
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "metaData": {
+    "name": "maxPalindromes",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      },
+      {
+        "type": "integer",
+        "name": "k"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "Zanark",
+      "year": 2024,
+      "content": "I got this on my PhonePe interview",
+      "voteCount": 13
+    },
+    {
+      "name": "mythsky",
+      "year": 2024,
+      "content": "The \"non-overlapping\" in question means non-overlapping in the position of letter. \\n\\nE.g. \"aaaa\" can be divided into \\'aa\\' & \\'aa\\'. The valid substrings can be the same. \\nHowever \\'aaa\\' & \\'aaa\\' is not allowed. Because in this case they share one \\'overlapping\\' letter",
+      "voteCount": 3
+    },
+    {
+      "name": "ngocbao",
+      "year": 2024,
+      "content": "Greedy works fine with this problem. You don\\'t need DP.",
+      "voteCount": 3
+    },
+    {
+      "name": "arthur_g",
+      "year": 2022,
+      "content": "I wrote two versions of the same code - once in Py and another in CPP. The Py version will  time out but CPP will pass :( \\n\\nI think Big O wise, the code should be fine. I think the Py time limits should be extended. \\n\\n\\n`class Solution {\\npublic:\\n    int maxPalindromes(string s, int k) {\\n        vector<vector<bool>> is_pal(s.size(),vector<bool>(s.size(), false));\\n        for(int l = 0;l<s.size();l++){\\n            for(int start = 0;start<s.size();start++){\\n                auto end = start + l;\\n                if(end >= s.size()){\\n                    break;\\n                }else if (start == end || start + 1 == end){\\n                // cout << start << \" \" << end << endl;\\n                    is_pal[start][end] = s[start] == s[end];\\n                } else{\\n                // cout << start << \" \" << end << endl;\\n                    is_pal[start][end] = (s[start] == s[end] && is_pal[start+1][end-1]);\\n                }\\n            }\\n        }\\n        vector<int> dp(s.size()+1, 0);\\n        for(int i = 0;i<s.size();i++){\\n            dp[i+1] = max(dp[i], dp[i+1]);\\n            for(int end = i+k-1;end<s.size();end++){\\n                if(is_pal[i][end]){\\n                    // t << i << \" \" << end << endl;\\n                    dp[end+1] = max(dp[end+1], dp[i]+1);\\n                    break;\\n                }\\n            }\\n            \\n        } \\n        // t << dp.size() << endl;\\n        return dp[s.size()];\\n    }\\n};`\\n\\n\\n`class Solution:\\n    def maxPalindromes(self, s: str, k: int) -> int:\\n        is_pal = [[False] * len(s) for let in s]\\n        for l in range(len(s)):\\n            for start in range(len(s)):\\n                end = start + l\\n                if end >= len(s):\\n                    break\\n                elif start == end or start+1 == end:\\n                    is_pal[start][end] = s[start] == s[end]\\n                else:\\n                    is_pal[start][end] = s[start] == s[end] and is_pal[start+1][end-1]\\n            \\n        dp = [0] * (len(s) + 1)\\n        for i in range(len(s)):\\n            dp[i+1] = max(dp[i], dp[i+1]) \\n            \\n            for end in range(i+k-1, len(s)):\\n                if is_pal[i][end]:\\n                    # print(\"Found\", start, end)\\n                    dp[end+1] = max(dp[end+1], dp[i] + 1)\\n                    break\\n        \\n        # print(dp)\\n        return dp[-1]`",
+      "voteCount": 3
+    },
+    {
+      "name": "vivek781113",
+      "year": 2025,
+      "content": "Greedy works \\n- You can jump immeditely by k steps to find the next valid palindrome\\n- Can be solved in O(n * k)",
+      "voteCount": 1
+    },
+    {
+      "name": "subhm2003",
+      "year": 2025,
+      "content": "Typical Partition DP",
+      "voteCount": 1
+    },
+    {
+      "name": "rajeshswami",
+      "year": 2024,
+      "content": "I got this question in my crickbuzz HackerRank test",
+      "voteCount": 1
+    },
+    {
+      "name": "adityakumar8068",
+      "year": 2024,
+      "content": "no way i myself came up with greedy solution feel so good now",
+      "voteCount": 1
+    },
+    {
+      "name": "heenahmed08",
+      "year": 2024,
+      "content": "Can some one give sample test case , where we have should not take into acount the current palindrome , because without taking it gives optimal solution ?",
+      "voteCount": 1
+    },
+    {
+      "name": "gjbgpr",
+      "year": 2023,
+      "content": "My code is failing this test case and I can\\'t find the bug (P.S. yes I am a rookie):\\n\"sjbxiufnaanqkwsqswkqrcznzcddhtuhtthuttjfuufjtcfywgecegwyhhnnhtozczirynhhnyrire\"\\n\\n `\\nint maxPalindromes(string s, int k) {\\n        \\n        if (s.size() < k)\\n            return 0;\\n\\n        if (k == 1)\\n            return s.size();\\n\\n        int left = 0, right = 0, count = 0;\\n        while (left < s.size() && right < s.size())\\n        {\\n            while (right < s.size())\\n            {\\n                while (right < s.size() && right - left < k - 1)\\n                    right++;\\n\\n                if (s[left] == s[right])\\n                {\\n                    int inLeft = left, inRight = right;\\n                    bool isPalin = true;\\n                    while (inLeft < inRight)\\n                    {\\n                        if (s[inLeft] != s[inRight])\\n                        {\\n                            isPalin = false;\\n                            break;\\n                        }\\n                        inLeft++;\\n                        inRight--;\\n                    }\\n                    if (isPalin)\\n                    {\\n                        count++;\\n                        left = right + 1;\\n                    }\\n                }\\n                right++;\\n            }\\n            left++;\\n            right = left + 1;\\n        }\\n        return count;\\n    }\\n`",
+      "voteCount": 1
+    }
+  ]
+}

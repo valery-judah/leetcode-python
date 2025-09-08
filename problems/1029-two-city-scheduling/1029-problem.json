@@ -1,0 +1,123 @@
+{
+  "category": "",
+  "id": "1029",
+  "name": "Two City Scheduling",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/two-city-scheduling/",
+  "slug": "two-city-scheduling",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Rearrange Array to Maximize Prefix Score",
+      "difficulty": "Medium",
+      "slug": "rearrange-array-to-maximize-prefix-score"
+    }
+  ],
+  "questionId": "1095",
+  "questionFrontendId": "1029",
+  "title": "Two City Scheduling",
+  "titleSlug": "two-city-scheduling",
+  "content": "<p>A company is planning to interview <code>2n</code> people. Given the array <code>costs</code> where <code>costs[i] = [aCost<sub>i</sub>, bCost<sub>i</sub>]</code>,&nbsp;the cost of flying the <code>i<sup>th</sup></code> person to city <code>a</code> is <code>aCost<sub>i</sub></code>, and the cost of flying the <code>i<sup>th</sup></code> person to city <code>b</code> is <code>bCost<sub>i</sub></code>.</p>\n\n<p>Return <em>the minimum cost to fly every person to a city</em> such that exactly <code>n</code> people arrive in each city.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> costs = [[10,20],[30,200],[400,50],[30,20]]\n<strong>Output:</strong> 110\n<strong>Explanation: </strong>\nThe first person goes to city A for a cost of 10.\nThe second person goes to city A for a cost of 30.\nThe third person goes to city B for a cost of 50.\nThe fourth person goes to city B for a cost of 20.\n\nThe total minimum cost is 10 + 30 + 50 + 20 = 110 to have half the people interviewing in each city.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> costs = [[259,770],[448,54],[926,667],[184,139],[840,118],[577,469]]\n<strong>Output:</strong> 1859\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> costs = [[515,563],[451,713],[537,709],[343,819],[855,779],[457,60],[650,359],[631,42]]\n<strong>Output:</strong> 3086\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 * n == costs.length</code></li>\n\t<li><code>2 &lt;= costs.length &lt;= 100</code></li>\n\t<li><code>costs.length</code> is even.</li>\n\t<li><code>1 &lt;= aCost<sub>i</sub>, bCost<sub>i</sub> &lt;= 1000</code></li>\n</ul>\n",
+  "likes": 4830,
+  "dislikes": 363,
+  "stats": {
+    "totalAccepted": "271.3K",
+    "totalSubmission": "399.9K",
+    "totalAcceptedRaw": 271305,
+    "totalSubmissionRaw": 399863,
+    "acRate": "67.8%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    },
+    {
+      "name": "Sorting",
+      "slug": "sorting"
+    }
+  ],
+  "metaData": {
+    "name": "twoCitySchedCost",
+    "params": [
+      {
+        "name": "costs",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "thevirtuoso1973",
+      "year": 2020,
+      "content": "It seems like it\\'s considered easy because its easy to implement, *but only once you\\'ve figured it out*.\\nFor those that wish to earn that satisfaction (of figuring it out) themselves, here is a hint.\\n\\nAs a human, we would solve this question by looking at the values and noticing, for example with [400, 50], \"Of course we should send them to City B it\\'s much cheaper!\"\\n\\nAs a computer, we would encode this as the *absolute difference between the values*. Perhaps, we can use this value to determine the order of how we check them? Maybe we could greedily deal with the obvious choices first...",
+      "voteCount": 172
+    },
+    {
+      "name": "zkang",
+      "year": 2019,
+      "content": "I don\\'t think so",
+      "voteCount": 163
+    },
+    {
+      "name": "IamVaibhave53",
+      "year": 2020,
+      "content": "This question is ridiculously easy and ridiculously hard at the same time",
+      "voteCount": 53
+    },
+    {
+      "name": "vkr1997",
+      "year": 2020,
+      "content": "All of the posts I see immediately jump to the idea that we only need to care about the savings. But the intuition is lacking. Here is another way to understand that indeed the savings, the delta between the costs to A and B, is what matters the most.\\n\\nImagine we didn\\'t have the restriction that half the people need to go to `A` and the other half to `B`. How would you minimize the cost then? Easy, you would simply send each person to the location that minimizes their cost! Now, given this purely optimal assignment of people to locations, how could we modify this assignment to accomodate the restriction that half the people need to go to A and the other half to B? \\n\\nLet `Q` be the cost of the purely optimal assignment of people to locations, with `a` people assigned to `A` and `b` people assigned to `B`. Without loss of generality, let `A` be the majority location such that `a > n` (there are `2n` people). Then, if we now wanted to accomodate this new restriction, all we want to do is flip `a - n` people in `A` whose delta (i.e. `abs(cost[0] - cost[1])`) to `Q` is **minimized**! Why delta? Because say we flip person `i `in `A`, then the value `Q` becomes nothing other than `Q - cost_i[0] + cost_i[1]` = `Q + (cost_i[1] - cost_i[0])` `= Q + delta` since by definition of the optimal assignment without restrictions `cost_i[0] < cost_i[1]`. Now because the delta increase in `Q` of flipping person `i` in `A` does not impact the delta increase in `Q` of flipping person` j` in `A`, to minimize the overall increase in `Q` after `a - n` flips, we want to greedily flip the `a - n` people in `A` with the least delta.",
+      "voteCount": 20
+    },
+    {
+      "name": "naveenfy",
+      "year": 2020,
+      "content": "I tried to read and understand the question multiple times but I was not able to get it until I read the solution.",
+      "voteCount": 17
+    },
+    {
+      "name": "dsir9527",
+      "year": 2019,
+      "content": "When I am first asked in a interview with this question I also do not understand why sort of simple cost(B)-cost(A) works.\\n\\nHere is the proof:\\nLet\\'s assume there are only two people, and for person1, the cost would be [a, a+a\\']; same thing of person2, the cost would be [b, b+b\\'], so the choice would only be either person1 to A and 2 to B or 1 to B and 2 to B. Then the cost would be either a+b+b\\' or a+b+a\\'. Now, we want to pick up the smaller, and the only thing that the result depends on would be a\\' or b\\'. (a\\' and b\\') just be what we sort for. Like if we sort them one way, there are only a\\' left in that sorted array, and vice versa. Then if we picked up the per-half for A and the left half for B, then we could just get a+b+a\\' and avoid b\\'.\\nIf there are more than 2 persons, we could think it by divid and conquer idea and finally there are only 2 \"peoples\" left in that array.  \\n",
+      "voteCount": 17
+    },
+    {
+      "name": "Riyafa",
+      "year": 2020,
+      "content": "I think this has to be a medium question. It is not so easy to solve as the other easy questions on leetcode. Or is it so only for me?",
+      "voteCount": 11
+    },
+    {
+      "name": "webguru77777",
+      "year": 2023,
+      "content": "This kind of question makes me feel so stupid.",
+      "voteCount": 5
+    },
+    {
+      "name": "LeetCode",
+      "year": 2022,
+      "content": "This problem is the Daily LeetCoding Challenge for March, Day 25.\n\nFeel free to share anything related to this problem here!\n\nYou can ask questions, discuss what you've learned from this problem, or show off how many days of streak you've made!\n\n---\n\nIf you'd like to share a detailed solution to the problem, please create a new post in the discuss section and provide\n- **Detailed Explanations**: Describe the algorithm you used to solve this problem. Include any insights you used to solve this problem.\n- **Images** that help explain the algorithm.\n- **Language and Code** you used to pass the problem.\n- **Time and Space complexity analysis**.\n\n---\n\n  **📌 Do you want to learn the problem thoroughly?**\n  Read [**⭐  LeetCode Official Solution⭐**](https://leetcode.com/problems/two-city-scheduling/solution) to learn the 3 approaches to the problem with detailed explanations to the algorithms, codes, and complexity analysis.\n  <details>\n  <summary> Spoiler Alert! We'll explain this 1 approach in the official solution</summary>\n\n  \n**Approach 1:** Greedy.\n\n  \n</details>\n\n\n\nIf you're new to Daily LeetCoding Challenge, [**check out this post**](https://leetcode.com/discuss/general-discussion/655704/)!\n\n\n---\n\n<br>\n\n<p align=\"center\">\n<a href=\"https://leetcode.com/subscribe/?ref=ex_dc\" target=\"_blank\">\n  <img src=\"https://assets.leetcode.com/static_assets/marketing/daily_leetcoding_banner.png\" width=\"560px\" />\n</a>\n</p>\n\n<br>",
+      "voteCount": 4
+    },
+    {
+      "name": "danieloi",
+      "year": 2024,
+      "content": "Short Video Explainer with Diagrams\\nhttps://youtu.be/ywpjwQA214Y",
+      "voteCount": 3
+    }
+  ]
+}

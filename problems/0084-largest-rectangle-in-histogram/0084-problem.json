@@ -1,0 +1,144 @@
+{
+  "category": "",
+  "id": "84",
+  "name": "Largest Rectangle in Histogram",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/largest-rectangle-in-histogram/",
+  "slug": "largest-rectangle-in-histogram",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Stack",
+    "Monotonic Stack"
+  ],
+  "similar_questions": [
+    {
+      "title": "Maximal Rectangle",
+      "difficulty": "Hard",
+      "slug": "maximal-rectangle"
+    },
+    {
+      "title": "Maximum Score of a Good Subarray",
+      "difficulty": "Hard",
+      "slug": "maximum-score-of-a-good-subarray"
+    }
+  ],
+  "questionId": "84",
+  "questionFrontendId": "84",
+  "title": "Largest Rectangle in Histogram",
+  "titleSlug": "largest-rectangle-in-histogram",
+  "content": "<p>Given an array of integers <code>heights</code> representing the histogram&#39;s bar height where the width of each bar is <code>1</code>, return <em>the area of the largest rectangle in the histogram</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/01/04/histogram.jpg\" style=\"width: 522px; height: 242px;\" />\n<pre>\n<strong>Input:</strong> heights = [2,1,5,6,2,3]\n<strong>Output:</strong> 10\n<strong>Explanation:</strong> The above is a histogram where width of each bar is 1.\nThe largest rectangle is shown in the red area, which has an area = 10 units.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/01/04/histogram-1.jpg\" style=\"width: 202px; height: 362px;\" />\n<pre>\n<strong>Input:</strong> heights = [2,4]\n<strong>Output:</strong> 4\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= heights.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>0 &lt;= heights[i] &lt;= 10<sup>4</sup></code></li>\n</ul>\n",
+  "likes": 18730,
+  "dislikes": 359,
+  "stats": {
+    "totalAccepted": "1.3M",
+    "totalSubmission": "2.7M",
+    "totalAcceptedRaw": 1302977,
+    "totalSubmissionRaw": 2705656,
+    "acRate": "48.2%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Stack",
+      "slug": "stack"
+    },
+    {
+      "name": "Monotonic Stack",
+      "slug": "monotonic-stack"
+    }
+  ],
+  "metaData": {
+    "name": "largestRectangleArea",
+    "params": [
+      {
+        "name": "heights",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Google",
+        "slug": "google",
+        "timesEncountered": 13
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 12
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "keidakira1412",
+      "year": 2022,
+      "content": "I started thinking solution in terms of stack like \"What should I do with stacks to make it work?\" but it never worked.\nRather, I thought \"Forget stack, what should I do non-algorithmically like logic wise to get the answer?\" then I realized. When I came up with a logic,  I was like \"Oh to do this logic, we need a stack!\"",
+      "voteCount": 549
+    },
+    {
+      "name": "stevenzhang0",
+      "year": 2019,
+      "content": "I appreciate the stack solution, but I feel like I would never derive this in an interview without having seen it before. What first principles could one use to figure this out?\\n\\nThe divide and conquer solution I could see someone deriving in an interview, (as well as the better brute force one).\\n\\nAny ideas?",
+      "voteCount": 131
+    },
+    {
+      "name": "Toshito",
+      "year": 2023,
+      "content": "It took me 5 hours to solve this problem. Nevertheless, it was worth it. \nApproach: Use Next Smaller Element & Previous Smaller Element.",
+      "voteCount": 124
+    },
+    {
+      "name": "krishnam_12",
+      "year": 2024,
+      "content": "Who all here from today\\'s daily question (Maximal Rextangle) ? \\uD83D\\uDE03",
+      "voteCount": 90
+    },
+    {
+      "name": "ayuanx",
+      "year": 2016,
+      "content": "Not to mention in a short window like 30min or less in interview?\\nI highly doubt that.\\nThis is the kind of problem that if you haven't seen it before, you won't be able to answer it in interview anyway.\\nSo basically there is no point to have a problem like this in interview.",
+      "voteCount": 62
+    },
+    {
+      "name": "rishantkohli23",
+      "year": 2024,
+      "content": "Test cases u can use:\\n[4,3,5,5,9,2,8,4,7,2,3,8,3,5,4,7,9]\\n[2,1,2]\\n[3,6,5,7,4,8,1,0]\\n",
+      "voteCount": 56
+    },
+    {
+      "name": "anuragadhikari2003",
+      "year": 2024,
+      "content": "HARD Questions are good, there is no one to write \"This question should be in hard\". lol\\n ",
+      "voteCount": 55
+    },
+    {
+      "name": "zenzen5",
+      "year": 2019,
+      "content": "**Brute force:**\\nEvery index i consider the first element smaller than a[i] on the right, same on the left. Then the area built using i will be (right-left-1)*a[i]. We do this for each index and take the max. Note that this formula does not change.\\n\\n**Observation 1:**\\nInefficiency in the brute force solution is that we have to (re)scan right and left for every index. Maybe we can avoid the rescan by changing the order in which we consider i (not necessarily i to n). To do this we will need to store indexes in a list and iterate in a different order somehow.\\n\\n**Observation 2 (eliminate right scan):**\\nFor a special case, we observe that we don\\'t need to rescan to the right. Assume in the array [a,b,c,d,e] a<=b<=c<=d and e<d. If we consider d, the first element less than d to the right is e. We can look for elements like d by iterating till, let\\'s say, the first i where a[i]<a[i-1]. Then if we consider a[i-1] first to calculate area (which is d) we have eliminated the need for a right side scan. We still have to scan to the left, but we should make sure that once we have established this state, we maintain it to avoid right scan, ever.\\n\\n**Observation 3:**\\nBy right elimination strategy in observation 2, we also notice that everything to the left of a[i-1] is <=d. What this means is that if a[i-k] where k>1 wants to make a rectangle with its height, it can at least do that upto a[i-1] (a[i-1] can \"absorb\" all possible height rectangles before it since it is bigger). We don\\'t know the relationship between a[i-k] and a[i] though, a[i] may or may not be able to absorb a[i-k]. What this means is that after we consider a[i-1], we have to re-evaluate the relationshuip between a[i-2] and a[i] and make sure the constraint in Observation 2 holds.\\n\\n**Observation 4 (eliminate left scan):**\\nLets say we\\'ve been using a list L to store indices to consider them out of order to avoid rescanning. When we consider L[L.Length-1], we know that the element before it (L[L.Length-2]) could be equal or smaller to it. If it is strictly smaller, we know the left smaller element and can calculate the area which would be the max using a[i-1] with the brute force formula. If it is equal, it means after removing L[L.Length-1], the constraint in observation 2 still holds (a[L[Length-2]] > a[i]). So for L[L.Length-2] we still know the right and left smaller and can calculate area which would include L[L.Length-1]. This means it is ok to consider L[L.Length-2] as the left min while considering L[L.Length-1] while maintain right side constraint, and the left side falls into place (if equal, in the next iteration, when we consider L[L.Length-2]).\\n\\n**Observation 5 (order of consideration):**\\nIt should be clear that it is ok to consider indexes one at a time, the last one in L as long as we maintain the constraint in (2). When we remove L we may need to iterate i and add more things to L to maintain the constraint between L[Length-2] and i. So now it should be obvious why the List is just a stack since we only care about the last 2 at a time.\\n\\n\\n**Recap**\\nWe look for the pattern in observation 2 and store its indices in a stack. So we store the indices of [a,b,c,d] in a stack S and i is the next index (so a[i] == e). We must maintain this stack with this constraint in mind, that the top element must be the greatest in the stack and a[i] must be smaller than it to avoid right scan (a[L[L.Length-1]] > a[i]). We can always consider stack[top-1] to be the left min to avoid left scan, and the max area will fall into place eventually. At any point stack[top] is the index we are considering with a[i] the right min and stack[top-1] the left min.",
+      "voteCount": 40
+    },
+    {
+      "name": "gentlezephyr95",
+      "year": 2021,
+      "content": "This is a very good explanation of the thought process to come up with the algorithm.\\nhttps://medium.com/algorithms-digest/largest-rectangle-in-histogram-234004ecd15a",
+      "voteCount": 31
+    },
+    {
+      "name": "BlueCocoa",
+      "year": 2019,
+      "content": "Just done this problem and got AC. \\n\\nI wrote a detailed blog post of my thought process. Because I saw some discussion here which goes straightly using stack without the reason of using stack, or **how did they came up with the idea**. It indeed solved the problem, only without a trace that makes they think of using stack.\\n\\nSo the post goes from the beginning to the blink of the lightblub, using stack. \\n\\nThere may be grammar mistakes (as English isn\\'t my native language, I\\'ll try my best), but I just want to help people who are confused of how did the idea formed.\\n\\n[https://blog.0xbbc.com/2019/08/maximum-rectangular-area-in-histogram/](https://blog.0xbbc.com/2019/08/maximum-rectangular-area-in-histogram/)",
+      "voteCount": 19
+    }
+  ]
+}

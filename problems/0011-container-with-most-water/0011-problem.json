@@ -1,0 +1,149 @@
+{
+  "category": "",
+  "id": "11",
+  "name": "Container With Most Water",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/container-with-most-water/",
+  "slug": "container-with-most-water",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Greedy"
+  ],
+  "similar_questions": [
+    {
+      "title": "Trapping Rain Water",
+      "difficulty": "Hard",
+      "slug": "trapping-rain-water"
+    },
+    {
+      "title": "Maximum Tastiness of Candy Basket",
+      "difficulty": "Medium",
+      "slug": "maximum-tastiness-of-candy-basket"
+    },
+    {
+      "title": "House Robber IV",
+      "difficulty": "Medium",
+      "slug": "house-robber-iv"
+    }
+  ],
+  "questionId": "11",
+  "questionFrontendId": "11",
+  "title": "Container With Most Water",
+  "titleSlug": "container-with-most-water",
+  "content": "<p>You are given an integer array <code>height</code> of length <code>n</code>. There are <code>n</code> vertical lines drawn such that the two endpoints of the <code>i<sup>th</sup></code> line are <code>(i, 0)</code> and <code>(i, height[i])</code>.</p>\n\n<p>Find two lines that together with the x-axis form a container, such that the container contains the most water.</p>\n\n<p>Return <em>the maximum amount of water a container can store</em>.</p>\n\n<p><strong>Notice</strong> that you may not slant the container.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/17/question_11.jpg\" style=\"width: 600px; height: 287px;\" />\n<pre>\n<strong>Input:</strong> height = [1,8,6,2,5,4,8,3,7]\n<strong>Output:</strong> 49\n<strong>Explanation:</strong> The above vertical lines are represented by array [1,8,6,2,5,4,8,3,7]. In this case, the max area of water (blue section) the container can contain is 49.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> height = [1,1]\n<strong>Output:</strong> 1\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>n == height.length</code></li>\n\t<li><code>2 &lt;= n &lt;= 10<sup>5</sup></code></li>\n\t<li><code>0 &lt;= height[i] &lt;= 10<sup>4</sup></code></li>\n</ul>\n",
+  "likes": 32164,
+  "dislikes": 2070,
+  "stats": {
+    "totalAccepted": "4.4M",
+    "totalSubmission": "7.6M",
+    "totalAcceptedRaw": 4422915,
+    "totalSubmissionRaw": 7593021,
+    "acRate": "58.2%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "metaData": {
+    "name": "maxArea",
+    "params": [
+      {
+        "name": "height",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 30
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Google",
+        "slug": "google",
+        "timesEncountered": 25
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "jadekler",
+      "year": 2017,
+      "content": "This question is exceptionally unclear. Anyone else having that trouble?",
+      "voteCount": 1187
+    },
+    {
+      "name": "halleknast",
+      "year": 2016,
+      "content": "The current formulation of the problem doesn't make any sense. After having seen the solution, I've found the following clarification to be needed:\\n\\nForget about water; that only confuses things. The problem is just about finding a maximum area rectangle. The water formulation made me think that for there to be a container, all lines between the container ends must be lower than the ends. I didn't get to see examples of this not being the case because my solution timed out.\\n\\nAlso, the formulation doesn't tell what the function should actually return. A more correct formulation would thus be something like:\\n\\n\"[...]. All pairs of the <i>n</i> lines define a rectangle with a height given by the shorter line and a width given by the distance between the lines. Return the area of the rectangle with the largest area.\"",
+      "voteCount": 917
+    },
+    {
+      "name": "waitingtodie",
+      "year": 2017,
+      "content": "Whoever designed this problem has no ability whatsoever to speak in plain English.",
+      "voteCount": 561
+    },
+    {
+      "name": "shiva97",
+      "year": 2021,
+      "content": "The proof of why the solution works is important to understand. Following is its summary:\\n* Consider we start with i = 0 and j = height.size() - 1. That is, i points to the first column and j points to the last column.\\n* Now suppose that `h(i)>h(j)` (we are not loosing generality by this assumption)\\n* We calculate the water capacity for the i, j. It will be `h(j)*(j-i)`.\\n* Now see that if we fix j at height.size() - 1 and vary i, we cannot get a greater water capacity. Why?\\n\\t* capacity = min of both heights * width between them. Since capacity is the product of these two terms, we will look at each term individually.\\n\\t* First about the width. It is easy to see that for all other i\\'s (`i = 1, 2,... ,height.size()-2`) we will have a lesser width.\\n\\t* Second, the height will be the minimum of the column at i and at j, i.e. `min(h(i),h(j))`. But this value will be always less than `h(j)`\\n\\t* So both factors in the calculation of the capacity will be smaller and hence we can skip considering all the cases where `i = 1, 2, 3, ..., height.size()-2 and j = height.size()-1`\\n\\t* Which basically means that we can simply move j to j-1.\\n\\nThis is how I understood it and I hope this explanation makes it easy to understand.",
+      "voteCount": 543
+    },
+    {
+      "name": "alec_cs",
+      "year": 2021,
+      "content": "Some of these proofs are not very clear. I want to expand on [Steven Pochmann\\'s](https://leetcode.com/problems/container-with-most-water/discuss/6100/Simple-and-clear-proofexplanation) idea and hopefully make it clearer.\\n\\n**Explanation**\\n* To start, we place both pointers at the beginning and end of the array. While this is common with most two pointer approaches, in this specific problem it allows us to consider all potential possibilities. Thus, in a way we are still *brute forcing* the solution, however we are carefully optimizing the possibilities at each iteration so that the optimal solution is not missed.\\n* At each iteration, no matter what, the width will decrease. This is because we must move either the left and right pointer. Therefore, we must consider the potential outcomes after we either increase the left pointer or decrease the right pointer.\\n\\t * Outcome A: If we decrease a pointer and the height of the pillar is smaller than the previous height (where the pointer was originally before we moved it), the overall area will have to be smaller. This is because we take the minumum of the two heights that the pointers are pointing at, and because the width will be decreased by 1, the new area will have to be the same or smaller.\\n\\t * Outcome B: If we decrease a pointer and the height of the pillar is larger or the same as the previous height, the width *may or may not* be larger than the previous height, because it depends on whether the height difference between the new pillar and the previous pillar can compensate for the loss of width.\\n\\n**So why do we always move the pointer of the smallest pillar?**\\n\\nThe reason for this is simple. There is no reason to hang onto the pillar of the smallest size in the current range because in the next iteration, the overall width will decrease by one. Thus, a potential greater area will never be reached by hanging onto the smaller pillar, because even if another taller pillar is found by moving the pointer at the taller pillar, the area must always be calculated with the minimum of the two pillars. Due to the smaller width by decreasing the pointer range, the overall area will be smaller regardless. Thus, we can safely disregard the smaller pillar at each iteration.",
+      "voteCount": 256
+    },
+    {
+      "name": "IndigoBeast",
+      "year": 2018,
+      "content": "This is a formal proof of the O(n) algorithm mentioned in the tutorial.\\n\\nProblem Description:\\nCondition: We have two pointers at i & j, suppose h[i] <= h[j].\\nGoal to Prove: If there is a better answer within the sub-range of [i, j], then the range [i + 1, j] must contain that optimal sub-range. (This doesn\\'t mean range [i, j - 1] can\\'t contain it, we just want to prove range [i + 1, j] will contain it).\\n\\nProof:\\nSince we assume there is a better answer in the sub-range of [i, j], then this optimal range must be contained by either [i + 1, j] or [i, j - 1], or both. \\n\\nLet\\'s assume [i + 1, j] doesn\\'t contain the optimal range, but [i, j - 1] contains it. Then this means two things: \\n1. the optimal range is not in [i + 1, j - 1], otherwise, [i + 1, j] will contain it. \\n2. The optimal range contains the block [i, i + 1] (since this is the part which exists in [i, j - 1] but not in [i+1, j]). \\n\\nHowever, notice that, len(i, j - 1) < len(i, j), and in the range [i, j], the area is constrained by the height of h[i] (even in the case h[i] == h[j]). Thus, in the range [i, j - 1], even all pillar are no shorter than h[j], the maximum area is smaller than the area formed by i & j, which contradicts our assumption there is a better answer in the sub-range of [i, j]. This contradiction suggests [i + 1, j] contains the optimal sub-range, if such sub-range exists.\\n\\nAccording to above theorem, we can design the algorithm, whenever h[i] < h[j], we advance the pointer i.",
+      "voteCount": 241
+    },
+    {
+      "name": "bvelarde",
+      "year": 2021,
+      "content": "Isn\\'t it obvious that 8x8 will hold more water than the 7x7 implied in the expected answer?",
+      "voteCount": 220
+    },
+    {
+      "name": "labrador_peninsula",
+      "year": 2022,
+      "content": "**Algorithm:**\\n* Designate two pointers `ptr_lo = 0` and `ptr_hi = length(height) - 1` i.e. set the two pointers at the two ends.\\n* If `height[ptr_lo] <= height[ptr_hi]` then increment `ptr_lo`.\\n* If `height[ptr_lo] > height[ptr_hi]` then decrement `ptr_hi` (i.e. iteratively move the smaller of the two edges closer to the other).\\n* Calculate the area after each change and keep track of the maximum area.\\n* End when the two pointers are equal to each other.\\n\\n**Why the algorithm works**\\nLet `i, j` be the left and right edges of the container with most water (`0 <= i < j < length(height)`). If there are multiple such containers, then `i, j` can be the edges of any one of them. We will prove that between the start and end condition, there must be one moment when `ptr_lo == i` and `ptr_hi == j` i.e. the maximum area is always considered.\\n\\n![image](https://assets.leetcode.com/users/images/511aae4e-7436-4cee-87f4-b6592219c54a_1652078458.8835633.png)\\n![image](https://assets.leetcode.com/users/images/817b6573-f2a3-4969-b78c-b94eac189e36_1652078458.9361658.png)\\n\\nNote that between the start and end condition, there must be a pointer that reaches one of the edge of the maximum container (the dashed border in our figure). We can now devise three scenarios:\\n\\n**Scenario 1:** `ptr_lo == i` and `ptr_hi == j` at the same time\\nThis means we proved our hypothesis.\\n\\n**Scenario 2:** `ptr_lo` reaches the left edge first\\nHere, we have `ptr_lo == i` and `j < ptr_hi < length(height)`. We can now have two sub-scenarios:\\n\\n***Sub-scenario 1*** If `height[ptr_hi] >= height[ptr_lo]` i.e. the right edge `>=` left edge\\n ![image](https://assets.leetcode.com/users/images/c3af9451-9074-42a0-8f7e-f0b60e80b030_1652078857.1577551.png)\\n\\nIn this situation, we see that by letting  `height[ptr_hi] >= height[ptr_lo]`, we create a new area strictly greater than the maximum area. This contradicts our original stipulation. Therefore, sub-scenario 1 is impossible.\\n\\n***Sub-scenario 2*** If `height[ptr_lo] > height[ptr_hi]` i.e. the left edge `>` right edge\\n![image](https://assets.leetcode.com/users/images/76fb8c39-b700-481d-9d76-22a293741810_1652078995.2830222.png)\\n\\nUsing the algorithm, we will just keep decrementing `ptr_hi`. In fact, because sub-scenario 1 is impossible, once `ptr_lo == i`, then for all `j < ptr_hi < length(height)` we have `height[ptr_lo] > height[ptr_hi]`.\\n\\nTherefore, once `ptr_lo` reaches `i`, it will stays there until `ptr_hi` reaches `j`. We proved our hypothesis\\n\\n**Scenario 3:** `ptr_hi` reaches the right edge first\\nThis is the same as scenario 2, only reversed.\\n\\nHope this helps.",
+      "voteCount": 90
+    },
+    {
+      "name": "summerbleach",
+      "year": 2024,
+      "content": " `Notice that you may not slant the container.`\\n\\nNo one is even trying that, why the notice?",
+      "voteCount": 62
+    },
+    {
+      "name": "Sachi-nandan",
+      "year": 2023,
+      "content": "just disgusting test cases",
+      "voteCount": 62
+    }
+  ]
+}

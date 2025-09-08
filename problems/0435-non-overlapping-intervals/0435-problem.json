@@ -1,0 +1,133 @@
+{
+  "category": "",
+  "id": "435",
+  "name": "Non-overlapping Intervals",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/non-overlapping-intervals/",
+  "slug": "non-overlapping-intervals",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Number of Arrows to Burst Balloons",
+      "difficulty": "Medium",
+      "slug": "minimum-number-of-arrows-to-burst-balloons"
+    },
+    {
+      "title": "Determine if Two Events Have Conflict",
+      "difficulty": "Easy",
+      "slug": "determine-if-two-events-have-conflict"
+    }
+  ],
+  "questionId": "435",
+  "questionFrontendId": "435",
+  "title": "Non-overlapping Intervals",
+  "titleSlug": "non-overlapping-intervals",
+  "content": "<p>Given an array of intervals <code>intervals</code> where <code>intervals[i] = [start<sub>i</sub>, end<sub>i</sub>]</code>, return <em>the minimum number of intervals you need to remove to make the rest of the intervals non-overlapping</em>.</p>\n\n<p><strong>Note</strong> that intervals which only touch at a point are <strong>non-overlapping</strong>. For example, <code>[1, 2]</code> and <code>[2, 3]</code> are non-overlapping.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> intervals = [[1,2],[2,3],[3,4],[1,3]]\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> [1,3] can be removed and the rest of the intervals are non-overlapping.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> intervals = [[1,2],[1,2],[1,2]]\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> You need to remove two [1,2] to make the rest of the intervals non-overlapping.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> intervals = [[1,2],[2,3]]\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> You don&#39;t need to remove any of the intervals since they&#39;re already non-overlapping.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= intervals.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>intervals[i].length == 2</code></li>\n\t<li><code>-5 * 10<sup>4</sup> &lt;= start<sub>i</sub> &lt; end<sub>i</sub> &lt;= 5 * 10<sup>4</sup></code></li>\n</ul>\n",
+  "likes": 8826,
+  "dislikes": 246,
+  "stats": {
+    "totalAccepted": "859.8K",
+    "totalSubmission": "1.5M",
+    "totalAcceptedRaw": 859786,
+    "totalSubmissionRaw": 1535770,
+    "acRate": "56.0%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    },
+    {
+      "name": "Sorting",
+      "slug": "sorting"
+    }
+  ],
+  "metaData": {
+    "name": "eraseOverlapIntervals",
+    "params": [
+      {
+        "name": "intervals",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "ZimmAgu",
+      "year": 2022,
+      "content": "#### Initial Steps\\n* Sort the given intervals based on starting points\\n* While considering the intervals in the ascending order of starting points\\n\\t* we make use of a pointer prev pointer \\n\\t* to keep track of the interval just included in the final list\\n![image](https://assets.leetcode.com/users/images/515fa83b-44c2-4c42-8ef5-d41c7942ec32_1653774876.169032.jpeg)\\n\\n\\n\\n#### Case 1\\n* You don\\'t need to remove any intervals\\n* Continue by simply assigning the *prev* pointer to the later interval\\n* The count of intervals removed remains unchanged\\n\\n\\n#### Case 2\\n* Remove the interval with the later end point \\n* The *prev* pointer is updated to current interval\\n* count of intervals removed is incremented by 1\\n\\n\\n#### Case 3\\n* Remove the interval with the later end point \\n* The *prev* pointer remains unchanged\\n* count of intervals removed is incremented by 1\\n\\n\\n#### Rule of Thumb\\n* Always choose the interval that ends first\\n\\n",
+      "voteCount": 215
+    },
+    {
+      "name": "ashutosh357",
+      "year": 2023,
+      "content": "And this marks my 200 days of streak...",
+      "voteCount": 188
+    },
+    {
+      "name": "oops_moment",
+      "year": 2023,
+      "content": "If you\\'ve already cracked this challenging problem, kudos to you! If not, fret not! Let\\'s go step by step to find the perfect solution together! \\uD83D\\uDCAA\\n\\n\\uD83D\\uDD75\\uFE0F\\u200D\\u2642\\uFE0F Problem Analysis:\\nWe\\'re given an array of intervals, and the goal is to find the minimum number of intervals to remove to make the rest non-overlapping. To achieve this, we\\'ll apply the greedy approach.\\n\\n\\u2B50 Greedy Insight:\\nLet\\'s try out a few greedy strategies. Say we select the interval with the smallest start time. Oops! This fails when the interval with the smallest start time also happens to be the longest one, leading to many overlapping intervals that need to be discarded.\\n\\n\\uD83D\\uDCA1 The Winning Greedy Strategy:\\nInstead, let\\'s sort the intervals based on their end times. Why? Imagine two intervals, one ending at x and the other ending at y (where x < y). If we skip the interval ending at x and take the one ending at y, we\\'ll may have to remove at least one interval that starts in the range (x, y). So, we should always sort based on the end time of intervals.\\n\\n\\uD83D\\uDEE0\\uFE0F Implementation:\\n\\n1: Sort the intervals based on their end times in ascending order.\\n\\n2: Initialize a variable \\'answer\\' to keep track of the number of intervals to be removed.\\n\\n3: Consider the first interval as \\'last\\' or the last taken interval.\\n\\n4: Iterate through the intervals, and for each interval:\\n\\n- If the current interval\\'s start time is less than the end time of the \\'last\\' interval, they overlap. Increment \\'answer\\' as we need to remove an interval to avoid overlap.\\n\\n- Otherwise, update \\'last\\' to the current interval.\\n\\n5: Return the final value of answer.\\n\\nNow you can confidently explain this solution to others and spread the joy of problem-solving! Happy coding! \\uD83D\\uDE80",
+      "voteCount": 104
+    },
+    {
+      "name": "jkswapnil99",
+      "year": 2023,
+      "content": "Why is greedy solution correct for this problem. How do we know that, of all the ways in which intervals can be deleted the greedy approach is the optimal strategy?\\n\\nI always have trouble proving this for greedy solutions",
+      "voteCount": 49
+    },
+    {
+      "name": "anwendeng",
+      "year": 2023,
+      "content": "Sort & Greedy make people happy!",
+      "voteCount": 42
+    },
+    {
+      "name": "user4653c",
+      "year": 2023,
+      "content": "Labeling this problem as Dynamic Programming is a bit of a nasty move. To solve it, you need to find the right intuition, attempting the DP approach will just make things more confusing",
+      "voteCount": 36
+    },
+    {
+      "name": "ashu-xx",
+      "year": 2020,
+      "content": "[[1,100],[11,22],[1,11],[2,12]] \\nExpect: 2\\n\\nAccording to me expected answer should be 3 because [1,100] cannot be removed and all other 3 intervals are sub-intervals of [1,100].\\n\\nCan someone explain why is expected answer 2?",
+      "voteCount": 22
+    },
+    {
+      "name": "abhay3141",
+      "year": 2023,
+      "content": "Getting Time limit Exceeded even though all 58/58 case passed. Any help ?",
+      "voteCount": 16
+    },
+    {
+      "name": "zebra-f",
+      "year": 2023,
+      "content": "Two test cases that helped me to figure out the solution:    \n  \n    [[-73,-26],[-65,-11],[-62,-49]]\n    [[1,100],[11,22],[1,11],[2,12]]",
+      "voteCount": 15
+    },
+    {
+      "name": "uayushi73",
+      "year": 2024,
+      "content": "Can someone please tell why [[-52,31],[-73,-26],[82,97],[-65,-11],[-62,-49],[95,99],[58,95],[-31,49],[66,98],[-63,2],[30,47],[-40,-26]] This testcase has answer 7 and not 8??",
+      "voteCount": 9
+    }
+  ]
+}

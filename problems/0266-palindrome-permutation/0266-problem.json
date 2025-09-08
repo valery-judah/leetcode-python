@@ -1,0 +1,138 @@
+{
+  "category": "",
+  "id": "266",
+  "name": "Palindrome Permutation",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/palindrome-permutation/",
+  "slug": "palindrome-permutation",
+  "isPaidOnly": true,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Bit Manipulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Longest Palindromic Substring",
+      "difficulty": "Medium",
+      "slug": "longest-palindromic-substring"
+    },
+    {
+      "title": "Valid Anagram",
+      "difficulty": "Easy",
+      "slug": "valid-anagram"
+    },
+    {
+      "title": "Palindrome Permutation II",
+      "difficulty": "Medium",
+      "slug": "palindrome-permutation-ii"
+    },
+    {
+      "title": "Longest Palindrome",
+      "difficulty": "Easy",
+      "slug": "longest-palindrome"
+    }
+  ],
+  "questionId": "266",
+  "questionFrontendId": "266",
+  "title": "Palindrome Permutation",
+  "titleSlug": "palindrome-permutation",
+  "content": "<p>Given a string <code>s</code>, return <code>true</code> <em>if a permutation of the string could form a </em><span data-keyword=\"palindrome-string\"><em><strong>palindrome</strong></em></span><em> and </em><code>false</code><em> otherwise</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;code&quot;\n<strong>Output:</strong> false\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;aab&quot;\n<strong>Output:</strong> true\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;carerac&quot;\n<strong>Output:</strong> true\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 5000</code></li>\n\t<li><code>s</code> consists of only lowercase English letters.</li>\n</ul>\n",
+  "likes": 1100,
+  "dislikes": 73,
+  "stats": {
+    "totalAccepted": "229.5K",
+    "totalSubmission": "334.8K",
+    "totalAcceptedRaw": 229455,
+    "totalSubmissionRaw": 334782,
+    "acRate": "68.5%"
+  },
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Bit Manipulation",
+      "slug": "bit-manipulation"
+    }
+  ],
+  "metaData": {
+    "name": "canPermutePalindrome",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "mkprajapati1614",
+      "year": 2023,
+      "content": "I late realized that, by \"a permutation of the string could form a palindrome\" it means to say \\n\"by rearranging the given set of characters in any order, it should be able to form a palindrome\"\\n\\nFor Example: \\n(i) \"code\" can be transformed into \"odce\", \"doce\", \"ecod\" etc but none of them makes a palindrome\\n(ii) \"aabab\" can be transformed into \"aaabb\", \"ababa\", \"bbaaa\" etc, where \"ababa\" makes a palindrome",
+      "voteCount": 16
+    },
+    {
+      "name": "YusenPeng",
+      "year": 2022,
+      "content": "Hint: try to think about the frequency of each letter. What if all characters appear with even times? What if some characters appear with odd times? :)",
+      "voteCount": 12
+    },
+    {
+      "name": "no-neet-code",
+      "year": 2024,
+      "content": "You should clarify what permutation of the string means in the description.",
+      "voteCount": 6
+    },
+    {
+      "name": "AlecLC",
+      "year": 2023,
+      "content": "# <span style=\\'color:green\\'>Hint</span>\\n\\nEvery letter in the word must be matched, except for possibly the middle one",
+      "voteCount": 6
+    },
+    {
+      "name": "Asyncy99",
+      "year": 2024,
+      "content": "A string can form a palindrome if, at most, one character has an odd frequency. In other words:\\n\\nFor even-length palindromes, every character must appear an even number of times.\\nFor odd-length palindromes, all characters except one must have even counts (and that one can appear an odd number of times).",
+      "voteCount": 2
+    },
+    {
+      "name": "Satansoft",
+      "year": 2025,
+      "content": "Palindrome is possible when and only when no more than one letter has an odd count.",
+      "voteCount": 1
+    },
+    {
+      "name": "matthewjinmp",
+      "year": 2025,
+      "content": "if there is more than 1 letter with an odd count, then a palindrome cannot be formed. otherwise, it can be formed ",
+      "voteCount": 1
+    },
+    {
+      "name": "den1732",
+      "year": 2025,
+      "content": "A poorly worded task that wastes your time deserves to be called out and this person must be banned ",
+      "voteCount": 1
+    },
+    {
+      "name": "hello444",
+      "year": 2025,
+      "content": "I did this question nonchalantly",
+      "voteCount": 1
+    },
+    {
+      "name": "edgardowardo",
+      "year": 2025,
+      "content": "Only the odd one counts",
+      "voteCount": 0
+    }
+  ]
+}

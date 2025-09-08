@@ -1,0 +1,130 @@
+{
+  "category": "",
+  "id": "1036",
+  "name": "Escape a Large Maze",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/escape-a-large-maze/",
+  "slug": "escape-a-large-maze",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Depth-First Search",
+    "Breadth-First Search"
+  ],
+  "similar_questions": [],
+  "questionId": "1106",
+  "questionFrontendId": "1036",
+  "title": "Escape a Large Maze",
+  "titleSlug": "escape-a-large-maze",
+  "content": "<p>There is a 1 million by 1 million grid on an XY-plane, and the coordinates of each grid square are <code>(x, y)</code>.</p>\n\n<p>We start at the <code>source = [s<sub>x</sub>, s<sub>y</sub>]</code> square and want to reach the <code>target = [t<sub>x</sub>, t<sub>y</sub>]</code> square. There is also an array of <code>blocked</code> squares, where each <code>blocked[i] = [x<sub>i</sub>, y<sub>i</sub>]</code> represents a blocked square with coordinates <code>(x<sub>i</sub>, y<sub>i</sub>)</code>.</p>\n\n<p>Each move, we can walk one square north, east, south, or west if the square is <strong>not</strong> in the array of <code>blocked</code> squares. We are also not allowed to walk outside of the grid.</p>\n\n<p>Return <code>true</code><em> if and only if it is possible to reach the </em><code>target</code><em> square from the </em><code>source</code><em> square through a sequence of valid moves</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> blocked = [[0,1],[1,0]], source = [0,0], target = [0,2]\n<strong>Output:</strong> false\n<strong>Explanation:</strong> The target square is inaccessible starting from the source square because we cannot move.\nWe cannot move north or east because those squares are blocked.\nWe cannot move south or west because we cannot go outside of the grid.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> blocked = [], source = [0,0], target = [999999,999999]\n<strong>Output:</strong> true\n<strong>Explanation:</strong> Because there are no blocked cells, it is possible to reach the target square.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= blocked.length &lt;= 200</code></li>\n\t<li><code>blocked[i].length == 2</code></li>\n\t<li><code>0 &lt;= x<sub>i</sub>, y<sub>i</sub> &lt; 10<sup>6</sup></code></li>\n\t<li><code>source.length == target.length == 2</code></li>\n\t<li><code>0 &lt;= s<sub>x</sub>, s<sub>y</sub>, t<sub>x</sub>, t<sub>y</sub> &lt; 10<sup>6</sup></code></li>\n\t<li><code>source != target</code></li>\n\t<li>It is guaranteed that <code>source</code> and <code>target</code> are not blocked.</li>\n</ul>\n",
+  "likes": 697,
+  "dislikes": 171,
+  "stats": {
+    "totalAccepted": "26.3K",
+    "totalSubmission": "73.7K",
+    "totalAcceptedRaw": 26338,
+    "totalSubmissionRaw": 73738,
+    "acRate": "35.7%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Breadth-First Search",
+      "slug": "breadth-first-search"
+    }
+  ],
+  "metaData": {
+    "name": "isEscapePossible",
+    "params": [
+      {
+        "name": "blocked",
+        "type": "integer[][]"
+      },
+      {
+        "name": "source",
+        "type": "integer[]"
+      },
+      {
+        "name": "target",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "samizzy18",
+      "year": 2020,
+      "content": "You want to traverse from a src point to a target point but there are certain blocks that are not accessible.\\nThis would have been a very easy dfs/bfs problem, had the max array length had not been 10^6\\n\\nThere is a hacky solution which takes into consideration the blocked list length constraint which is only 200.\\nIts going to be hard to block a element from traversal in 10^ by 10^6 grid with only max 200 blocks\\n\\nTherefore, we do normal bfs from source to target and check 2 conditions\\n    1. Whether we have reached target\\n    2. Whether we have exceeded 200 distance, here distance is calculated using manhattan distance, |(diff of x)| + |(diff of y)|\\nIf any of above is true, then return result true.\\n\\nBut wait, what if blocked points are not trying to surround source point but have surrounded the target point?\\n\\nFor above, scenario we again do a bfs bt this time from target to source, if we are able to reach now , we return true.\\n\\nOnly if both traversal return true then we can truly escape.............\\n\\nAlso first check should be whether the src/target point lie on blocked list if yes, then escape is impossible\\n",
+      "voteCount": 48
+    },
+    {
+      "name": "anwendeng",
+      "year": 2023,
+      "content": "It is to notice that the \"circle\" w.r.t Manhattan distance is in fact  a diamond. Since there are at most B=200 blocked grids, you can use DFS/BFS for solving this 1M^2 size maze, either up to $B(B+1)/2)$ visited grids or up to Manhattan distance to the initial point larger or equal to $B$.\n\nDFS w.r.t Manhattan distance is much faster DFS w.r.t. visited grid size.",
+      "voteCount": 8
+    },
+    {
+      "name": "1yangshuang",
+      "year": 2019,
+      "content": "I submitted multiple instances of the discussion forum where the AC code is wrong.\\n\\n[[0,199],[1,198],[2,197],[3,196],[4,195],[5,194],[6,193],[7,192],[8,191],[9,190],[10,189],[11,188],[12,187],[13,186],[14,185],[15,184],[16,183],[17,182],[18,181],[19,180],[20,179],[21,178],[22,177],[23,176],[24,175],[25,174],[26,173],[27,172],[28,171],[29,170],[30,169],[31,168],[32,167],[33,166],[34,165],[35,164],[36,163],[37,162],[38,161],[39,160],[40,159],[41,158],[42,157],[43,156],[44,155],[45,154],[46,153],[47,152],[48,151],[49,150],[50,149],[51,148],[52,147],[53,146],[54,145],[55,144],[56,143],[57,142],[58,141],[59,140],[60,139],[61,138],[62,137],[63,136],[64,135],[65,134],[66,133],[67,132],[68,131],[69,130],[70,129],[71,128],[72,127],[73,126],[74,125],[75,124],[76,123],[77,122],[78,121],[79,120],[80,119],[81,118],[82,117],[83,116],[84,115],[85,114],[86,113],[87,112],[88,111],[89,110],[90,109],[91,108],[92,107],[93,106],[94,105],[95,104],[96,103],[97,102],[98,101],[99,100],[100,99],[101,98],[102,97],[103,96],[104,95],[105,94],[106,93],[107,92],[108,91],[109,90],[110,89],[111,88],[112,87],[113,86],[114,85],[115,84],[116,83],[117,82],[118,81],[119,80],[120,79],[121,78],[122,77],[123,76],[124,75],[125,74],[126,73],[127,72],[128,71],[129,70],[130,69],[131,68],[132,67],[133,66],[134,65],[135,64],[136,63],[137,62],[138,61],[139,60],[140,59],[141,58],[142,57],[143,56],[144,55],[145,54],[146,53],[147,52],[148,51],[149,50],[150,49],[151,48],[152,47],[153,46],[154,45],[155,44],[156,43],[157,42],[158,41],[159,40],[160,39],[161,38],[162,37],[163,36],[164,35],[165,34],[166,33],[167,32],[168,31],[169,30],[170,29],[171,28],[172,27],[173,26],[174,25],[175,24],[176,23],[177,22],[178,21],[179,20],[180,19],[181,18],[182,17],[183,16],[184,15],[185,14],[186,13],[187,12],[188,11],[189,10],[190,9],[191,8],[192,7],[193,6],[194,5],[195,4],[196,3],[197,2],[198,1],[199,0]]\\n[0,0]\\n[200,200]\\n",
+      "voteCount": 8
+    },
+    {
+      "name": "obiwon84",
+      "year": 2019,
+      "content": "I didnt notice the 200 blocked array until after I implemented A* and discovered it was too slow for a couple test cases ... honestly im not sure how i feel about such a small amount of blocked squares as it really trivializes the problem but I had a blast!\\n\\nCheers",
+      "voteCount": 5
+    },
+    {
+      "name": "sminghan",
+      "year": 2024,
+      "content": "to the peeps copying solutions, they added a test case with source in a triangle with length 200 diagonal. breaks all the code that only tests up to len(blocked) or 200 in manhattan distance",
+      "voteCount": 4
+    },
+    {
+      "name": "Indefinite",
+      "year": 2025,
+      "content": "Hey, you can actually use your simple BFS approach with this optimization. So, you need to understand this simple point\\n\\n\" A closed polygon made of n boundary points (in this case, n \\u2264 200) can enclose at most \\n(n * (n - 1)) / 2 \"\\nIn case of 200, what you get is 19900\\n\\nThis statement might be confusing, let me break it down for you. If you start at source, what will be the worst case in reaching the target? All the ways are in blocked. i.e, there is a circle of blocked points waiting for you. But as we use manhattan distance instead of eucledian, it may be some other shape.\\n\\nAnyways, in that worst case, the atmost blocked coordinates can be 200 (mentioned in constraints). So, in order to reach the circle in worst case, you need 19900 steps. i.e, with source as centre and radius as 19900, you\\'ll reach the circle\\'s border. If you have exceeded 19900, then you can directly reach target\\n\\nHINT : Similarly apply BFS from target in order to check for the circle around you \\n\\nHappy leetcoding :)",
+      "voteCount": 2
+    },
+    {
+      "name": "cv1024",
+      "year": 2025,
+      "content": "A very easy \"coordinate compression\" problem. Just compress the coordinates both horizontally and vertically, also include the start and end of the grid (0 and one million) as coordinates to compress, and include the source and target too. Then do a DFS/BFS (the final grid will be less than 500x500).",
+      "voteCount": 2
+    },
+    {
+      "name": "real_kakarot",
+      "year": 2025,
+      "content": "Got asked variation of this in amzaon sde intern interview - infinite matrix, you have a knight, start position, end position and and a list of co-ordiantes for obstacles is given. Find min number of steps to reach target, return -1 if impossible.\n\nPretty fu***ng stupid of interviewer to ask this man when almost everywhere i see amazon asking easy/mediums to interns",
+      "voteCount": 2
+    },
+    {
+      "name": "gupta41sandeep",
+      "year": 2024,
+      "content": "Initially thought of the grid as infinite instead of finite 1Million x 1 Million and spent lot of time finding why it wasn\\'t working for a corner case. Please keep a note of 1Million x 1 Million square grid while solving.",
+      "voteCount": 2
+    },
+    {
+      "name": "raumanian",
+      "year": 2025,
+      "content": "maximum length a point can travel in the worst case that it is inside a closed area is 2* blocked_point, hope this help\\n",
+      "voteCount": 0
+    }
+  ]
+}

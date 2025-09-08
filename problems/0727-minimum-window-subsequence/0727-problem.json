@@ -1,0 +1,114 @@
+{
+  "category": "",
+  "id": "727",
+  "name": "Minimum Window Subsequence",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-window-subsequence/",
+  "slug": "minimum-window-subsequence",
+  "isPaidOnly": true,
+  "tags": [
+    "String",
+    "Dynamic Programming",
+    "Sliding Window"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Window Substring",
+      "difficulty": "Hard",
+      "slug": "minimum-window-substring"
+    },
+    {
+      "title": "Longest Continuous Increasing Subsequence",
+      "difficulty": "Easy",
+      "slug": "longest-continuous-increasing-subsequence"
+    }
+  ],
+  "questionId": "727",
+  "questionFrontendId": "727",
+  "title": "Minimum Window Subsequence",
+  "titleSlug": "minimum-window-subsequence",
+  "content": "<p>Given strings <code>s1</code> and <code>s2</code>, return <em>the minimum contiguous&nbsp;substring part of </em><code>s1</code><em>, so that </em><code>s2</code><em> is a subsequence of the part</em>.</p>\n\n<p>If there is no such window in <code>s1</code> that covers all characters in <code>s2</code>, return the empty string <code>&quot;&quot;</code>. If there are multiple such minimum-length windows, return the one with the <strong>left-most starting index</strong>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s1 = &quot;abcdebdde&quot;, s2 = &quot;bde&quot;\n<strong>Output:</strong> &quot;bcde&quot;\n<strong>Explanation:</strong> \n&quot;bcde&quot; is the answer because it occurs before &quot;bdde&quot; which has the same length.\n&quot;deb&quot; is not a smaller window because the elements of s2 in the window must occur in order.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s1 = &quot;jmeqksfrsdcmsiwvaovztaqenprpvnbstl&quot;, s2 = &quot;u&quot;\n<strong>Output:</strong> &quot;&quot;\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s1.length &lt;= 2 * 10<sup>4</sup></code></li>\n\t<li><code>1 &lt;= s2.length &lt;= 100</code></li>\n\t<li><code>s1</code> and <code>s2</code> consist of lowercase English letters.</li>\n</ul>\n",
+  "likes": 1477,
+  "dislikes": 95,
+  "stats": {
+    "totalAccepted": "97.1K",
+    "totalSubmission": "222.5K",
+    "totalAcceptedRaw": 97065,
+    "totalSubmissionRaw": 222544,
+    "acRate": "43.6%"
+  },
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    },
+    {
+      "name": "Sliding Window",
+      "slug": "sliding-window"
+    }
+  ],
+  "metaData": {
+    "name": "minWindow",
+    "params": [
+      {
+        "name": "s1",
+        "type": "string"
+      },
+      {
+        "name": "s2",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "string"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "biggerfish",
+      "year": 2019,
+      "content": "My first thought was another problem \"Minimal Window Substring\", which leads me to a slidind window solution. Then I find it looks the same with brute-forcing in this problem.\\n\\nUnder no circumstances will I have think about DP right away when I first saw this problem in an interview. How do you guys first come up with DP?",
+      "voteCount": 16
+    },
+    {
+      "name": "lex217",
+      "year": 2024,
+      "content": "The Minimum Window Substring and Minimum Window Subsequence problems on LeetCode both involve finding the smallest window in a string that contains a certain pattern. However, they differ in their requirements:\\n\\nMinimum Window Substring Problem: In this problem, you\\'re given two strings: a longer string (the \"source\") and a shorter string (the \"target\"). The task is to find the minimum window in the source string which contains all the characters from the target string in any order. The characters in the window don\\'t have to be contiguous.For example, if the source string is \"ADOBECODEBANC\" and the target string is \"ABC\", the minimum window substring is \"BANC\" because it contains all the characters \\'A\\', \\'B\\', and \\'C\\'.\\n\\n\\n\\nMinimum Window Subsequence Problem: In this problem, you\\'re given two strings: a longer string (the \"source\") and a shorter string (the \"target\"). The task is to find the minimum window in the source string such that the sequence of characters in the window forms the target string. Unlike the substring problem, the characters in the window must appear in the same order as they do in the target string.For example, if the source string is \"abcdebdde\" and the target string is \"bde\", the minimum window subsequence is \"bcde\" because it contains the characters \\'b\\', \\'d\\', and \\'e\\' in the same order as they appear in the target string.\\nIn summary, the main difference lies in whether the characters need to appear in any order (substring) or in a specific order (subsequence) within the window.",
+      "voteCount": 7
+    },
+    {
+      "name": "thesmashten",
+      "year": 2024,
+      "content": "Is Meta actually asking this? Wtf",
+      "voteCount": 1
+    },
+    {
+      "name": "r08922172",
+      "year": 2024,
+      "content": "Don't overthink, it helps you save lots of time.",
+      "voteCount": 1
+    },
+    {
+      "name": "sulerhy",
+      "year": 2024,
+      "content": "even optimal Memoization get MLE. ",
+      "voteCount": 0
+    },
+    {
+      "name": "furrukhkhan10",
+      "year": 2024,
+      "content": "Damnnnn O(n) solution and still finished at the botttommmmmm wotttttt?",
+      "voteCount": 0
+    },
+    {
+      "name": "geekzeus",
+      "year": 2024,
+      "content": "wrong title. Even this is a Minimum Window Subsequence, just that expectation is a subsequence match, instead of character match",
+      "voteCount": 0
+    }
+  ]
+}

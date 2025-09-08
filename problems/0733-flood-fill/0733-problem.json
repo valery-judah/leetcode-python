@@ -1,0 +1,150 @@
+{
+  "category": "",
+  "id": "733",
+  "name": "Flood Fill",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/flood-fill/",
+  "slug": "flood-fill",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Island Perimeter",
+      "difficulty": "Easy",
+      "slug": "island-perimeter"
+    }
+  ],
+  "questionId": "733",
+  "questionFrontendId": "733",
+  "title": "Flood Fill",
+  "titleSlug": "flood-fill",
+  "content": "<p>You are given an image represented by an <code>m x n</code> grid of integers <code>image</code>, where <code>image[i][j]</code> represents the pixel value of the image. You are also given three integers <code>sr</code>, <code>sc</code>, and <code>color</code>. Your task is to perform a <strong>flood fill</strong> on the image starting from the pixel <code>image[sr][sc]</code>.</p>\n\n<p>To perform a <strong>flood fill</strong>:</p>\n\n<ol>\n\t<li>Begin with the starting pixel and change its color to <code>color</code>.</li>\n\t<li>Perform the same process for each pixel that is <strong>directly adjacent</strong> (pixels that share a side with the original pixel, either horizontally or vertically) and shares the <strong>same color</strong> as the starting pixel.</li>\n\t<li>Keep <strong>repeating</strong> this process by checking neighboring pixels of the <em>updated</em> pixels&nbsp;and modifying their color if it matches the original color of the starting pixel.</li>\n\t<li>The process <strong>stops</strong> when there are <strong>no more</strong> adjacent pixels of the original color to update.</li>\n</ol>\n\n<p>Return the <strong>modified</strong> image after performing the flood fill.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">image = [[1,1,1],[1,1,0],[1,0,1]], sr = 1, sc = 1, color = 2</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[[2,2,2],[2,2,0],[2,0,1]]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/06/01/flood1-grid.jpg\" style=\"width: 613px; height: 253px;\" /></p>\n\n<p>From the center of the image with position <code>(sr, sc) = (1, 1)</code> (i.e., the red pixel), all pixels connected by a path of the same color as the starting pixel (i.e., the blue pixels) are colored with the new color.</p>\n\n<p>Note the bottom corner is <strong>not</strong> colored 2, because it is not horizontally or vertically connected to the starting pixel.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">image = [[0,0,0],[0,0,0]], sr = 0, sc = 0, color = 0</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[[0,0,0],[0,0,0]]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The starting pixel is already colored with 0, which is the same as the target color. Therefore, no changes are made to the image.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == image.length</code></li>\n\t<li><code>n == image[i].length</code></li>\n\t<li><code>1 &lt;= m, n &lt;= 50</code></li>\n\t<li><code>0 &lt;= image[i][j], color &lt; 2<sup>16</sup></code></li>\n\t<li><code>0 &lt;= sr &lt; m</code></li>\n\t<li><code>0 &lt;= sc &lt; n</code></li>\n</ul>\n",
+  "likes": 9135,
+  "dislikes": 936,
+  "stats": {
+    "totalAccepted": "1.2M",
+    "totalSubmission": "1.8M",
+    "totalAcceptedRaw": 1239100,
+    "totalSubmissionRaw": 1847649,
+    "acRate": "67.1%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Breadth-First Search",
+      "slug": "breadth-first-search"
+    },
+    {
+      "name": "Matrix",
+      "slug": "matrix"
+    }
+  ],
+  "metaData": {
+    "name": "floodFill",
+    "params": [
+      {
+        "name": "image",
+        "type": "integer[][]"
+      },
+      {
+        "name": "sr",
+        "type": "integer"
+      },
+      {
+        "name": "sc",
+        "type": "integer"
+      },
+      {
+        "name": "color",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer[][]"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 18
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "aditya_42",
+      "year": 2023,
+      "content": "I like cats",
+      "voteCount": 273
+    },
+    {
+      "name": "user0049Bu",
+      "year": 2023,
+      "content": "I don\\'t like the task description. It\\'s unclear from  my point of view.\\nI can not think about how to solve the task, I had to try to undertand this unclear description.",
+      "voteCount": 266
+    },
+    {
+      "name": "poorsolutions",
+      "year": 2019,
+      "content": "I spent like an hour trying to figure this out. Why is this considered a easy? Are dynamic/bfs problems that are more than a basic question still considered easy? Seems like this problem should be a medium.",
+      "voteCount": 263
+    },
+    {
+      "name": "chikmid",
+      "year": 2022,
+      "content": "I dont understand what they mean by 4-directionally connected. What does it mean? why is the 1 in the right bottom corner ignored in the example?",
+      "voteCount": 115
+    },
+    {
+      "name": "honeybadgerofdoom",
+      "year": 2022,
+      "content": "4-Directionally connected means connected horizontally or vertically. In the first example, upper-left, upper-right, and lower-left are colored because they are connected to pixels that are 4-directionally connected (specification says \"plus any pixels connected 4-directionally to those pixels (also with the same color), and so on\"). Lower-right is not colored because it is not 4-directionally connected nor is it touching any pixel which is.",
+      "voteCount": 45
+    },
+    {
+      "name": "guddnr2424",
+      "year": 2023,
+      "content": "second case is really ambiguous. you should read second-case carefully",
+      "voteCount": 25
+    },
+    {
+      "name": "danieloi",
+      "year": 2024,
+      "content": "Simple Explanation with Diagrams and heavily commented code\\nhttps://youtu.be/TBPNkwcMteA",
+      "voteCount": 16
+    },
+    {
+      "name": "karteek1999",
+      "year": 2023,
+      "content": "I am facing StackOverflowError when I try to run the solution in leetcode, where as the exact same code works properly in my local IDE, Any idea why this might be happening?\\n",
+      "voteCount": 15
+    },
+    {
+      "name": "Satansoft",
+      "year": 2024,
+      "content": "How did you dare marked bfs / dfs problem as **Easy**!",
+      "voteCount": 14
+    },
+    {
+      "name": "jpjitendrapal",
+      "year": 2023,
+      "content": "4-directionally should be explained in detail",
+      "voteCount": 11
+    }
+  ]
+}

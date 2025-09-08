@@ -1,0 +1,112 @@
+{
+  "category": "",
+  "id": "1288",
+  "name": "Remove Covered Intervals",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/remove-covered-intervals/",
+  "slug": "remove-covered-intervals",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "similar_questions": [],
+  "questionId": "1222",
+  "questionFrontendId": "1288",
+  "title": "Remove Covered Intervals",
+  "titleSlug": "remove-covered-intervals",
+  "content": "<p>Given an array <code>intervals</code> where <code>intervals[i] = [l<sub>i</sub>, r<sub>i</sub>]</code> represent the interval <code>[l<sub>i</sub>, r<sub>i</sub>)</code>, remove all intervals that are covered by another interval in the list.</p>\n\n<p>The interval <code>[a, b)</code> is covered by the interval <code>[c, d)</code> if and only if <code>c &lt;= a</code> and <code>b &lt;= d</code>.</p>\n\n<p>Return <em>the number of remaining intervals</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> intervals = [[1,4],[3,6],[2,8]]\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> Interval [3,6] is covered by [2,8], therefore it is removed.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> intervals = [[1,4],[2,3]]\n<strong>Output:</strong> 1\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= intervals.length &lt;= 1000</code></li>\n\t<li><code>intervals[i].length == 2</code></li>\n\t<li><code>0 &lt;= l<sub>i</sub> &lt; r<sub>i</sub> &lt;= 10<sup>5</sup></code></li>\n\t<li>All the given intervals are <strong>unique</strong>.</li>\n</ul>\n",
+  "likes": 2291,
+  "dislikes": 61,
+  "stats": {
+    "totalAccepted": "135.4K",
+    "totalSubmission": "241.1K",
+    "totalAcceptedRaw": 135405,
+    "totalSubmissionRaw": 241104,
+    "acRate": "56.2%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Sorting",
+      "slug": "sorting"
+    }
+  ],
+  "metaData": {
+    "name": "removeCoveredIntervals",
+    "params": [
+      {
+        "name": "intervals",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "LeetCode",
+      "year": 2022,
+      "content": "This problem is the Daily LeetCoding Challenge for February, Day 20.\n\nFeel free to share anything related to this problem here!\n\nYou can ask questions, discuss what you've learned from this problem, or show off how many days of streak you've made!\n\n---\n\nIf you'd like to share a detailed solution to the problem, please create a new post in the discuss section and provide\n- **Detailed Explanations**: Describe the algorithm you used to solve this problem. Include any insights you used to solve this problem.\n- **Images** that help explain the algorithm.\n- **Language and Code** you used to pass the problem.\n- **Time and Space complexity analysis**.\n\n---\n\n  **📌 Do you want to learn the problem thoroughly?**\n  Read [**⭐  LeetCode Official Solution⭐**](https://leetcode.com/problems/remove-covered-intervals/solution) to learn the 3 approaches to the problem with detailed explanations to the algorithms, codes, and complexity analysis.\n  <details>\n  <summary> Spoiler Alert! We'll explain this 1 approach in the official solution</summary>\n\n  \n**Approach 1:** Greedy Algorithm\n\n  \n</details>\n\n\n\nIf you're new to Daily LeetCoding Challenge, [**check out this post**](https://leetcode.com/discuss/general-discussion/655704/)!\n\n\n---\n\n<br>\n\n<p align=\"center\">\n<a href=\"https://leetcode.com/subscribe/?ref=ex_dc\" target=\"_blank\">\n  <img src=\"https://assets.leetcode.com/static_assets/marketing/daily_leetcoding_banner.png\" width=\"560px\" />\n</a>\n</p>\n\n<br>",
+      "voteCount": 8
+    },
+    {
+      "name": "Eckhart01",
+      "year": 2023,
+      "content": "nah this is a stack problem",
+      "voteCount": 7
+    },
+    {
+      "name": "LavenderViking",
+      "year": 2020,
+      "content": "Solutions pass w/o getting [[1,4],[3,6],[2,8],[1,9]] correctly. I.e. users will be accepted even if they forgot sorting decreasing by second value.",
+      "voteCount": 7
+    },
+    {
+      "name": "Samrat1001",
+      "year": 2025,
+      "content": "Approach O(n2)\\n\\nuse 2 for loops\\nCheck for each pair that it covers by another or not \\nif cover inc the counter and break",
+      "voteCount": 2
+    },
+    {
+      "name": "tin_le",
+      "year": 2024,
+      "content": "Hint For All Interval Problem : Sort the vector first before doing anything",
+      "voteCount": 2
+    },
+    {
+      "name": "ruokay",
+      "year": 2023,
+      "content": "just like every interval problem :)",
+      "voteCount": 2
+    },
+    {
+      "name": "pr0107",
+      "year": 2025,
+      "content": "What a Hint : How to check if an interval is covered by another?\\nHands Down !! ",
+      "voteCount": 1
+    },
+    {
+      "name": "nilay_c",
+      "year": 2025,
+      "content": "i like this question. i went from sorting to sweep line to sorting again.\\nits like an easier version of [2054](https://leetcode.com/problems/two-best-non-overlapping-events/)",
+      "voteCount": 1
+    },
+    {
+      "name": "vibhuprof",
+      "year": 2025,
+      "content": "Custom compartor comes to rescue !!!",
+      "voteCount": 1
+    },
+    {
+      "name": "noob_java_coder",
+      "year": 2024,
+      "content": "Hint: While sorting , if the start times are equal for 2 intervals, arrange them in descending order.\\nE.g: {1,2},{1,4},{3,4}}\\nThis should be sorted to:\\n{1,4},{1,2},{3,4}}",
+      "voteCount": 1
+    }
+  ]
+}

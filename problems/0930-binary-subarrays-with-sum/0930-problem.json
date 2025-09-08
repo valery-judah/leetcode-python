@@ -1,0 +1,147 @@
+{
+  "category": "",
+  "id": "930",
+  "name": "Binary Subarrays With Sum",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/binary-subarrays-with-sum/",
+  "slug": "binary-subarrays-with-sum",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window",
+    "Prefix Sum"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count Subarrays With Score Less Than K",
+      "difficulty": "Hard",
+      "slug": "count-subarrays-with-score-less-than-k"
+    },
+    {
+      "title": "Ways to Split Array Into Good Subarrays",
+      "difficulty": "Medium",
+      "slug": "ways-to-split-array-into-good-subarrays"
+    },
+    {
+      "title": "Find All Possible Stable Binary Arrays I",
+      "difficulty": "Medium",
+      "slug": "find-all-possible-stable-binary-arrays-i"
+    },
+    {
+      "title": "Find All Possible Stable Binary Arrays II",
+      "difficulty": "Hard",
+      "slug": "find-all-possible-stable-binary-arrays-ii"
+    }
+  ],
+  "questionId": "966",
+  "questionFrontendId": "930",
+  "title": "Binary Subarrays With Sum",
+  "titleSlug": "binary-subarrays-with-sum",
+  "content": "<p>Given a binary array <code>nums</code> and an integer <code>goal</code>, return <em>the number of non-empty <strong>subarrays</strong> with a sum</em> <code>goal</code>.</p>\n\n<p>A <strong>subarray</strong> is a contiguous part of the array.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,0,1,0,1], goal = 2\n<strong>Output:</strong> 4\n<strong>Explanation:</strong> The 4 subarrays are bolded and underlined below:\n[<u><strong>1,0,1</strong></u>,0,1]\n[<u><strong>1,0,1,0</strong></u>,1]\n[1,<u><strong>0,1,0,1</strong></u>]\n[1,0,<u><strong>1,0,1</strong></u>]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [0,0,0,0,0], goal = 0\n<strong>Output:</strong> 15\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 3 * 10<sup>4</sup></code></li>\n\t<li><code>nums[i]</code> is either <code>0</code> or <code>1</code>.</li>\n\t<li><code>0 &lt;= goal &lt;= nums.length</code></li>\n</ul>\n",
+  "likes": 4548,
+  "dislikes": 155,
+  "stats": {
+    "totalAccepted": "422.7K",
+    "totalSubmission": "630.4K",
+    "totalAcceptedRaw": 422654,
+    "totalSubmissionRaw": 630393,
+    "acRate": "67.0%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Sliding Window",
+      "slug": "sliding-window"
+    },
+    {
+      "name": "Prefix Sum",
+      "slug": "prefix-sum"
+    }
+  ],
+  "metaData": {
+    "name": "numSubarraysWithSum",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      },
+      {
+        "name": "goal",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "debdeepsanyal",
+      "year": 2024,
+      "content": "if you find this difficult to solve with the sliding window approach, that\\'s because it is. it\\'s completely okay if you\\'ve watched videos or have looked at solutions, the only important thing is to learn and identify the technique used to solve this. you\\'ll make it :)",
+      "voteCount": 394
+    },
+    {
+      "name": "etanila",
+      "year": 2024,
+      "content": "This marks my 800th  problem on LeetCode! My next goal is 1000.",
+      "voteCount": 393
+    },
+    {
+      "name": "DevOgabek",
+      "year": 2024,
+      "content": "## Useful test cases\\n```\\n[0, 0, 0, 0, 0]\\n0\\n[1, 1, 1, 1, 1]\\n3\\n[0, 1, 0, 1, 0]\\n2\\n[1, 0, 1, 0, 1]\\n3\\n[1, 0, 0, 1]\\n2\\n[0, 1, 0, 0]\\n1\\n[1, 1, 1, 0]\\n3\\n[0, 0, 0]\\n0\\n[1, 1, 0]\\n2\\n[1, 1, 0, 0, 0, 1, 1]\\n4\\n[0, 1, 1, 0, 1, 0, 0]\\n3\\n[1, 1, 1, 1, 1, 1, 1]\\n4\\n[0, 0, 0, 1, 1, 1]\\n3\\n[1, 0, 1, 0]\\n2\\n[0, 0, 1, 0, 0]\\n1\\n[1, 1, 0, 1, 0, 1, 0]\\n4\\n[1, 1, 1, 0, 0, 1, 1, 0]\\n5\\n[0, 1, 0, 1, 0, 1, 0, 1, 0]\\n4\\n[1, 0, 1, 1, 0, 1, 1, 0, 0]\\n5\\n[0, 1, 1, 0, 0, 1, 0, 1, 1]\\n5\\n```\\n",
+      "voteCount": 48
+    },
+    {
+      "name": "berrytchaks",
+      "year": 2023,
+      "content": "This question is exactly the same as https://leetcode.com/problems/subarray-sum-equals-k/",
+      "voteCount": 46
+    },
+    {
+      "name": "johnegus",
+      "year": 2024,
+      "content": "I passed all the testcases but got time limit exceeded anyway. That\\'s a new one.",
+      "voteCount": 40
+    },
+    {
+      "name": "Aadil42",
+      "year": 2024,
+      "content": "Happy \\u03C0 day to all!",
+      "voteCount": 39
+    },
+    {
+      "name": "TraderCoder",
+      "year": 2024,
+      "content": "if you think this is hard.. try to solved it using pen and paper first",
+      "voteCount": 37
+    },
+    {
+      "name": "Codeezz",
+      "year": 2023,
+      "content": "I\\'m unable to solve this question ?? is it really hard?Anyone else?",
+      "voteCount": 32
+    },
+    {
+      "name": "Cocamo1337",
+      "year": 2024,
+      "content": "I\\'ve done a lot of LeetCode problems, IMO this deserves a hard rating. In particular I found the O(N) / O(1) sliding window approach required a decent amount of forethought. ",
+      "voteCount": 23
+    },
+    {
+      "name": "_Shushant",
+      "year": 2024,
+      "content": "The first milestone achieved Today from this question, I solved 100 questions from leetcode.",
+      "voteCount": 18
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "category": "",
+  "id": "16",
+  "name": "3Sum Closest",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/3sum-closest/",
+  "slug": "3sum-closest",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "3Sum",
+      "difficulty": "Medium",
+      "slug": "3sum"
+    },
+    {
+      "title": "3Sum Smaller",
+      "difficulty": "Medium",
+      "slug": "3sum-smaller"
+    }
+  ],
+  "questionId": "16",
+  "questionFrontendId": "16",
+  "title": "3Sum Closest",
+  "titleSlug": "3sum-closest",
+  "content": "<p>Given an integer array <code>nums</code> of length <code>n</code> and an integer <code>target</code>, find three integers in <code>nums</code> such that the sum is closest to <code>target</code>.</p>\n\n<p>Return <em>the sum of the three integers</em>.</p>\n\n<p>You may assume that each input would have exactly one solution.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [-1,2,1,-4], target = 1\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [0,0,0], target = 1\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> The sum that is closest to the target is 0. (0 + 0 + 0 = 0).\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>3 &lt;= nums.length &lt;= 500</code></li>\n\t<li><code>-1000 &lt;= nums[i] &lt;= 1000</code></li>\n\t<li><code>-10<sup>4</sup> &lt;= target &lt;= 10<sup>4</sup></code></li>\n</ul>\n",
+  "likes": 11185,
+  "dislikes": 608,
+  "stats": {
+    "totalAccepted": "1.6M",
+    "totalSubmission": "3.4M",
+    "totalAcceptedRaw": 1582649,
+    "totalSubmissionRaw": 3352348,
+    "acRate": "47.2%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    },
+    {
+      "name": "Sorting",
+      "slug": "sorting"
+    }
+  ],
+  "metaData": {
+    "name": "threeSumClosest",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      },
+      {
+        "name": "target",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Google",
+        "slug": "google",
+        "timesEncountered": 11
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "adrian_marcelo",
+      "year": 2023,
+      "content": "Huge tip: I think you should solve 3Sum before this one. It will help a lot",
+      "voteCount": 107
+    },
+    {
+      "name": "porwalu",
+      "year": 2021,
+      "content": "What does closest to target specify.\\ne.g. for this input-\\n[-1,-1,2,4]\\n1 -- target\\nShould the closest be 0 or 2",
+      "voteCount": 87
+    },
+    {
+      "name": "BatMe",
+      "year": 2023,
+      "content": "Am i dumb? or everyone looked at the answer?\\n",
+      "voteCount": 43
+    },
+    {
+      "name": "fantasyfish667",
+      "year": 2018,
+      "content": "If the target is 1, we have two solutions 0 and 2. Which should we pick?",
+      "voteCount": 39
+    },
+    {
+      "name": "rabeeh",
+      "year": 2015,
+      "content": "I got the wrong answer for this testcase:\\n\\n    Input: [1,1,1,0], -100\\n    Output: 3\\n    Expected: 2 \\n\\nto me the output is correct as  diff= fabs(-100+3)=97 which is smaller than diff=fabs(-100+2)=98 to me closeness means having the absolute difference smaller.  So what does closeness mean here?",
+      "voteCount": 23
+    },
+    {
+      "name": "niknov",
+      "year": 2023,
+      "content": "what do you think guys, what is closest to target result in this case?\\n[4,0,5,-5,3,3,0,-4,-5]\\ntarget = -2",
+      "voteCount": 18
+    },
+    {
+      "name": "Woors",
+      "year": 2022,
+      "content": "TLE Python folks... switch to C instead",
+      "voteCount": 15
+    },
+    {
+      "name": "bluething",
+      "year": 2017,
+      "content": "if this was an interview, then I have just blackboxed FFT to solve this in n log n + n time. Did anybody actually implement this, so I can take a peep at it?",
+      "voteCount": 13
+    },
+    {
+      "name": "anilnandhan42",
+      "year": 2024,
+      "content": "200th medium question :)",
+      "voteCount": 12
+    },
+    {
+      "name": "stevenzhang0",
+      "year": 2018,
+      "content": "Is it a variation on sliding window or is a greedy algo?",
+      "voteCount": 8
+    }
+  ]
+}

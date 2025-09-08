@@ -1,0 +1,132 @@
+{
+  "category": "",
+  "id": "1863",
+  "name": "Sum of All Subset XOR Totals",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/sum-of-all-subset-xor-totals/",
+  "slug": "sum-of-all-subset-xor-totals",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Math",
+    "Backtracking",
+    "Bit Manipulation",
+    "Combinatorics",
+    "Enumeration"
+  ],
+  "similar_questions": [],
+  "questionId": "1993",
+  "questionFrontendId": "1863",
+  "title": "Sum of All Subset XOR Totals",
+  "titleSlug": "sum-of-all-subset-xor-totals",
+  "content": "<p>The <strong>XOR total</strong> of an array is defined as the bitwise <code>XOR</code> of<strong> all its elements</strong>, or <code>0</code> if the array is<strong> empty</strong>.</p>\n\n<ul>\n\t<li>For example, the <strong>XOR total</strong> of the array <code>[2,5,6]</code> is <code>2 XOR 5 XOR 6 = 1</code>.</li>\n</ul>\n\n<p>Given an array <code>nums</code>, return <em>the <strong>sum</strong> of all <strong>XOR totals</strong> for every <strong>subset</strong> of </em><code>nums</code>.&nbsp;</p>\n\n<p><strong>Note:</strong> Subsets with the <strong>same</strong> elements should be counted <strong>multiple</strong> times.</p>\n\n<p>An array <code>a</code> is a <strong>subset</strong> of an array <code>b</code> if <code>a</code> can be obtained from <code>b</code> by deleting some (possibly zero) elements of <code>b</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,3]\n<strong>Output:</strong> 6\n<strong>Explanation: </strong>The 4 subsets of [1,3] are:\n- The empty subset has an XOR total of 0.\n- [1] has an XOR total of 1.\n- [3] has an XOR total of 3.\n- [1,3] has an XOR total of 1 XOR 3 = 2.\n0 + 1 + 3 + 2 = 6\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [5,1,6]\n<strong>Output:</strong> 28\n<strong>Explanation: </strong>The 8 subsets of [5,1,6] are:\n- The empty subset has an XOR total of 0.\n- [5] has an XOR total of 5.\n- [1] has an XOR total of 1.\n- [6] has an XOR total of 6.\n- [5,1] has an XOR total of 5 XOR 1 = 4.\n- [5,6] has an XOR total of 5 XOR 6 = 3.\n- [1,6] has an XOR total of 1 XOR 6 = 7.\n- [5,1,6] has an XOR total of 5 XOR 1 XOR 6 = 2.\n0 + 5 + 1 + 6 + 4 + 3 + 7 + 2 = 28\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [3,4,5,6,7,8]\n<strong>Output:</strong> 480\n<strong>Explanation:</strong> The sum of all XOR totals for every subset is 480.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 12</code></li>\n\t<li><code>1 &lt;= nums[i] &lt;= 20</code></li>\n</ul>\n",
+  "likes": 2620,
+  "dislikes": 335,
+  "stats": {
+    "totalAccepted": "331.6K",
+    "totalSubmission": "368.1K",
+    "totalAcceptedRaw": 331592,
+    "totalSubmissionRaw": 368120,
+    "acRate": "90.1%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Backtracking",
+      "slug": "backtracking"
+    },
+    {
+      "name": "Bit Manipulation",
+      "slug": "bit-manipulation"
+    },
+    {
+      "name": "Combinatorics",
+      "slug": "combinatorics"
+    },
+    {
+      "name": "Enumeration",
+      "slug": "enumeration"
+    }
+  ],
+  "metaData": {
+    "name": "subsetXORSum",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "IamUday",
+      "year": 2022,
+      "content": "Is this really an Easy level Question ?",
+      "voteCount": 457
+    },
+    {
+      "name": "YusenPeng",
+      "year": 2022,
+      "content": "It requires strong foundation of recursion and backtracking. This is definitely not a easy problem:|",
+      "voteCount": 248
+    },
+    {
+      "name": "stefannovak",
+      "year": 2024,
+      "content": "In over 3 years of software engineering I have never had to use a bitwise operator. ",
+      "voteCount": 237
+    },
+    {
+      "name": "ujjawal_OP",
+      "year": 2023,
+      "content": "Holy crap....this is definitely not an easy question........if i don\\'t want to hire someone I would ask them this question and will tell them that you can\\'t even do an easy leetcode question what did you do in ICPC ",
+      "voteCount": 226
+    },
+    {
+      "name": "FirozMars",
+      "year": 2022,
+      "content": "why this is in easy section?\natleast medium ",
+      "voteCount": 116
+    },
+    {
+      "name": "Francklin99",
+      "year": 2024,
+      "content": "I hate bit manipulation",
+      "voteCount": 86
+    },
+    {
+      "name": "cursed_archer",
+      "year": 2023,
+      "content": "How is this question an easy question, but the printing subset ones is the medium?\\nAnd why is the acceptance rate so high? smh",
+      "voteCount": 70
+    },
+    {
+      "name": "Gurugubelli_Anil",
+      "year": 2023,
+      "content": "bitwise XOR for subsets of array can be solved by   performing bitwise OR for every element and  final answer multiply by 2**len(nums)-1",
+      "voteCount": 47
+    },
+    {
+      "name": "sparklehsr",
+      "year": 2024,
+      "content": "Since the last week all questions make me feel like I\\'m getting dumber day by day",
+      "voteCount": 45
+    },
+    {
+      "name": "KovDimaY",
+      "year": 2023,
+      "content": "More and more often I started noticing the solutions like \\n\\n```\\ntestNumber = 0;\\nvar fakeSolution = function(params) {\\n  return [15, 1432, 5234, ... ][testNumber++];  \\n};\\n```\\n\\nFirst of all, what is the point to submit this kind of solutions? In the end, as I understand, this platform is about studying and self improvement, by \"faking\" solution people just fool themselves \\uD83E\\uDD37\\u200D\\u2642\\uFE0F\\nSecondly, it is just so easy to avoid this kind of solutions by creating randomised tests, this is quite weird to me that platforms like this do not have this approach as a requirement \\uD83D\\uDE15",
+      "voteCount": 33
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "category": "",
+  "id": "47",
+  "name": "Permutations II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/permutations-ii/",
+  "slug": "permutations-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Backtracking",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Next Permutation",
+      "difficulty": "Medium",
+      "slug": "next-permutation"
+    },
+    {
+      "title": "Permutations",
+      "difficulty": "Medium",
+      "slug": "permutations"
+    },
+    {
+      "title": "Palindrome Permutation II",
+      "difficulty": "Medium",
+      "slug": "palindrome-permutation-ii"
+    },
+    {
+      "title": "Number of Squareful Arrays",
+      "difficulty": "Hard",
+      "slug": "number-of-squareful-arrays"
+    }
+  ],
+  "questionId": "47",
+  "questionFrontendId": "47",
+  "title": "Permutations II",
+  "titleSlug": "permutations-ii",
+  "content": "<p>Given a collection of numbers, <code>nums</code>,&nbsp;that might contain duplicates, return <em>all possible unique permutations <strong>in any order</strong>.</em></p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,1,2]\n<strong>Output:</strong>\n[[1,1,2],\n [1,2,1],\n [2,1,1]]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2,3]\n<strong>Output:</strong> [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 8</code></li>\n\t<li><code>-10 &lt;= nums[i] &lt;= 10</code></li>\n</ul>\n",
+  "likes": 8942,
+  "dislikes": 158,
+  "stats": {
+    "totalAccepted": "1.2M",
+    "totalSubmission": "1.9M",
+    "totalAcceptedRaw": 1161744,
+    "totalSubmissionRaw": 1870800,
+    "acRate": "62.1%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Backtracking",
+      "slug": "backtracking"
+    },
+    {
+      "name": "Sorting",
+      "slug": "sorting"
+    }
+  ],
+  "metaData": {
+    "name": "permuteUnique",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "list<list<integer>>",
+      "colsize": "size_1",
+      "dealloc": true
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "sonnylaskar",
+      "year": 2022,
+      "content": "This is same as `permutations-i` problem except that there can be `duplicates`. So we need to avoid processing the same node, so checking `nums[i] != nums[i-1]` is important. So we need `sorting` - Tip",
+      "voteCount": 61
+    },
+    {
+      "name": "slazz11",
+      "year": 2021,
+      "content": "For those who are having trouble understanding time complexity....check this out\\n\\n![image](https://assets.leetcode.com/users/images/ef3d10aa-b95b-4d86-9c09-dd2f1ecff599_1625104463.423103.png)\\n\\nIt takes N steps to generate a single permutation. Since there are in total N! possible permutations, at most it would take O(N * N!) steps to generate all permutations. Multiply Horizontal vs Vertical\\n\\n",
+      "voteCount": 50
+    },
+    {
+      "name": "varu_chirag",
+      "year": 2024,
+      "content": "i do not like permutation and combination questions \\uD83D\\uDE2D",
+      "voteCount": 43
+    },
+    {
+      "name": "ahrix268",
+      "year": 2023,
+      "content": "i had been stucking for hours for checking `nums[i] != nums[i-1]` like what people suggested\n\nthen i used `lastRemoved` and it became extremely easier. only one line more than the permutations i\n\nanyway, [here's](https://leetcode.com/problems/permutations-ii/solutions/4201633/2ms-java-solution-only-1-line-more-than-permutations-i/) my solution",
+      "voteCount": 22
+    },
+    {
+      "name": "Atharva1203",
+      "year": 2024,
+      "content": "you could use a set for this code if you have already implemented permutations 1\\njust create a set\\nadd given num\\nthen for each new permutation check if it exists, if not then push it in set and the answer vector ",
+      "voteCount": 9
+    },
+    {
+      "name": "ShashankChaturvedi",
+      "year": 2022,
+      "content": "Just like the question  47. Permutations, use a dictionary .\nIn that question every element appeared only once so we were checking whether we have seen a particular element previously or not (using dictionary).\nBut here repetitions are there so just maintain a dictionary and see if the element have appeared less than k times(i.e the count of any element>0) where k is the number of occurance of that number in nums.\nRest of the things will be same like reducing the count(in dictionary) of elements before recursive call and popping the array storing the curr elements and increasing the count (for backtracking).\n\np.s --Dictionary in python=map in c++",
+      "voteCount": 9
+    },
+    {
+      "name": "singhpratapvarang",
+      "year": 2025,
+      "content": "Great For Beginners",
+      "voteCount": 5
+    },
+    {
+      "name": "Ayushi_01",
+      "year": 2023,
+      "content": "why does it work fine without backtracking ( swapping the elements again to retain the original structure) even if the nums array is passed by reference?",
+      "voteCount": 5
+    },
+    {
+      "name": "iiioooiso",
+      "year": 2025,
+      "content": "https://leetcode.com/problems/permutations-ii/submissions/1648530555/?envType=problem-list-v2&envId=sorting\\nDuplicate Handling : set\\nAll permutations : Backtracking ",
+      "voteCount": 4
+    },
+    {
+      "name": "LeetCode",
+      "year": 2022,
+      "content": "This problem is the Daily LeetCoding Challenge for May, Day 12.\n\nFeel free to share anything related to this problem here!\n\nYou can ask questions, discuss what you've learned from this problem, or show off how many days of streak you've made!\n\n---\n\nIf you'd like to share a detailed solution to the problem, please create a new post in the discuss section and provide\n- **Detailed Explanations**: Describe the algorithm you used to solve this problem. Include any insights you used to solve this problem.\n- **Images** that help explain the algorithm.\n- **Language and Code** you used to pass the problem.\n- **Time and Space complexity analysis**.\n\n---\n\n  **📌 Do you want to learn the problem thoroughly?**\n  Read [**⭐  LeetCode Official Solution⭐**](https://leetcode.com/problems/permutations-ii/solution) to learn the 3 approaches to the problem with detailed explanations to the algorithms, codes, and complexity analysis.\n  <details>\n  <summary> Spoiler Alert! We'll explain this 1 approach in the official solution</summary>\n\n  \n**Approach 1:** Backtracking with Groups of Numbers\n\n  \n</details>\n\n\n\nIf you're new to Daily LeetCoding Challenge, [**check out this post**](https://leetcode.com/discuss/general-discussion/655704/)!\n\n\n---\n\n<br>\n\n<p align=\"center\">\n<a href=\"https://leetcode.com/subscribe/?ref=ex_dc\" target=\"_blank\">\n  <img src=\"https://assets.leetcode.com/static_assets/marketing/daily_leetcoding_banner.png\" width=\"560px\" />\n</a>\n</p>\n\n<br>",
+      "voteCount": 4
+    }
+  ]
+}

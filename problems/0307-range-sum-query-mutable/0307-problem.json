@@ -1,0 +1,192 @@
+{
+  "category": "",
+  "id": "307",
+  "name": "Range Sum Query - Mutable",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/range-sum-query-mutable/",
+  "slug": "range-sum-query-mutable",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Divide and Conquer",
+    "Design",
+    "Binary Indexed Tree",
+    "Segment Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Range Sum Query - Immutable",
+      "difficulty": "Easy",
+      "slug": "range-sum-query-immutable"
+    },
+    {
+      "title": "Range Sum Query 2D - Mutable",
+      "difficulty": "Medium",
+      "slug": "range-sum-query-2d-mutable"
+    },
+    {
+      "title": "Shifting Letters II",
+      "difficulty": "Medium",
+      "slug": "shifting-letters-ii"
+    }
+  ],
+  "questionId": "307",
+  "questionFrontendId": "307",
+  "title": "Range Sum Query - Mutable",
+  "titleSlug": "range-sum-query-mutable",
+  "content": "<p>Given an integer array <code>nums</code>, handle multiple queries of the following types:</p>\n\n<ol>\n\t<li><strong>Update</strong> the value of an element in <code>nums</code>.</li>\n\t<li>Calculate the <strong>sum</strong> of the elements of <code>nums</code> between indices <code>left</code> and <code>right</code> <strong>inclusive</strong> where <code>left &lt;= right</code>.</li>\n</ol>\n\n<p>Implement the <code>NumArray</code> class:</p>\n\n<ul>\n\t<li><code>NumArray(int[] nums)</code> Initializes the object with the integer array <code>nums</code>.</li>\n\t<li><code>void update(int index, int val)</code> <strong>Updates</strong> the value of <code>nums[index]</code> to be <code>val</code>.</li>\n\t<li><code>int sumRange(int left, int right)</code> Returns the <strong>sum</strong> of the elements of <code>nums</code> between indices <code>left</code> and <code>right</code> <strong>inclusive</strong> (i.e. <code>nums[left] + nums[left + 1] + ... + nums[right]</code>).</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input</strong>\n[&quot;NumArray&quot;, &quot;sumRange&quot;, &quot;update&quot;, &quot;sumRange&quot;]\n[[[1, 3, 5]], [0, 2], [1, 2], [0, 2]]\n<strong>Output</strong>\n[null, 9, null, 8]\n\n<strong>Explanation</strong>\nNumArray numArray = new NumArray([1, 3, 5]);\nnumArray.sumRange(0, 2); // return 1 + 3 + 5 = 9\nnumArray.update(1, 2);   // nums = [1, 2, 5]\nnumArray.sumRange(0, 2); // return 1 + 2 + 5 = 8\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 3 * 10<sup>4</sup></code></li>\n\t<li><code>-100 &lt;= nums[i] &lt;= 100</code></li>\n\t<li><code>0 &lt;= index &lt; nums.length</code></li>\n\t<li><code>-100 &lt;= val &lt;= 100</code></li>\n\t<li><code>0 &lt;= left &lt;= right &lt; nums.length</code></li>\n\t<li>At most <code>3 * 10<sup>4</sup></code> calls will be made to <code>update</code> and <code>sumRange</code>.</li>\n</ul>\n",
+  "likes": 5014,
+  "dislikes": 262,
+  "stats": {
+    "totalAccepted": "317.6K",
+    "totalSubmission": "755.7K",
+    "totalAcceptedRaw": 317562,
+    "totalSubmissionRaw": 755720,
+    "acRate": "42.0%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Divide and Conquer",
+      "slug": "divide-and-conquer"
+    },
+    {
+      "name": "Design",
+      "slug": "design"
+    },
+    {
+      "name": "Binary Indexed Tree",
+      "slug": "binary-indexed-tree"
+    },
+    {
+      "name": "Segment Tree",
+      "slug": "segment-tree"
+    }
+  ],
+  "metaData": {
+    "classname": "NumArray",
+    "maxbytesperline": 170000,
+    "constructor": {
+      "params": [
+        {
+          "type": "integer[]",
+          "name": "nums"
+        }
+      ]
+    },
+    "methods": [
+      {
+        "name": "update",
+        "params": [
+          {
+            "type": "integer",
+            "name": "index"
+          },
+          {
+            "type": "integer",
+            "name": "val"
+          }
+        ],
+        "return": {
+          "type": "void"
+        }
+      },
+      {
+        "name": "sumRange",
+        "params": [
+          {
+            "type": "integer",
+            "name": "left"
+          },
+          {
+            "type": "integer",
+            "name": "right"
+          }
+        ],
+        "return": {
+          "type": "integer"
+        }
+      }
+    ],
+    "systemdesign": true,
+    "params": [
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      },
+      {
+        "name": "inputs",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "list<String>",
+      "dealloc": true
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "sanemiliano",
+      "year": 2022,
+      "content": "Excellent problem to implement your first segment tree.",
+      "voteCount": 122
+    },
+    {
+      "name": "ronitroushan21102",
+      "year": 2023,
+      "content": "poor me trying to solve it using prefix_sum :(",
+      "voteCount": 112
+    },
+    {
+      "name": "aalmos",
+      "year": 2023,
+      "content": "So this problem literally only tests if the candidate knows about segment trees and can implement them...",
+      "voteCount": 37
+    },
+    {
+      "name": "etanila",
+      "year": 2024,
+      "content": "I think this is a Hard. \n\nI've been avoiding Fenwick and Segment trees, but I guess the time to learn them has come.",
+      "voteCount": 24
+    },
+    {
+      "name": "Cocamo1337",
+      "year": 2023,
+      "content": "I got TLE but it says 16/16 testcases passed, and the testcase that it said I TLE\\'d on is just blank. This has happened to me before on other questions and it\\'s very annoying. \\nThe language I used is c#, if anyone else wants to test and see if its an issue with the testcases for the language.",
+      "voteCount": 8
+    },
+    {
+      "name": "vickeysingh35",
+      "year": 2019,
+      "content": "Use binary indexed  tree or segment tree for solving any RMQ problem. BIT and segment tree have same time complexity but the former is more space efficient and easy to code.\\n\\nRead about BIT https://www.topcoder.com/community/competitive-programming/tutorials/binary-indexed-trees/\\nRead about Segment Tree https://www.topcoder.com/community/competitive-programming/tutorials/range-minimum-query-and-lowest-common-ancestor/",
+      "voteCount": 8
+    },
+    {
+      "name": "songzy12",
+      "year": 2015,
+      "content": "There is a bug for the python code given for this problem, where the first line is \\n\\n    aclass NumArray(object):\\n\\nwhich should be \\n\\n    class NumArray(object):\\n\\nJust to mention it.",
+      "voteCount": 7
+    },
+    {
+      "name": "Dyras",
+      "year": 2024,
+      "content": "prefix sum not applicable :{",
+      "voteCount": 4
+    },
+    {
+      "name": "TheSithPadawan",
+      "year": 2019,
+      "content": "So the follow up goes like:\\nHow would you give an efficient algorithm for querying the range if sometimes we are not only updating the values in the array, but also adding new values to the array?\\n\\nHow would you solve this? Just want to get some insights on this question.\\n",
+      "voteCount": 4
+    },
+    {
+      "name": "dsapelnikov",
+      "year": 2023,
+      "content": "Without a hint on segment tree it is definitely a hard problem.",
+      "voteCount": 2
+    }
+  ]
+}

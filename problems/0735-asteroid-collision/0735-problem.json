@@ -1,0 +1,148 @@
+{
+  "category": "",
+  "id": "735",
+  "name": "Asteroid Collision",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/asteroid-collision/",
+  "slug": "asteroid-collision",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Stack",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Can Place Flowers",
+      "difficulty": "Easy",
+      "slug": "can-place-flowers"
+    },
+    {
+      "title": "Destroying Asteroids",
+      "difficulty": "Medium",
+      "slug": "destroying-asteroids"
+    },
+    {
+      "title": "Count Collisions on a Road",
+      "difficulty": "Medium",
+      "slug": "count-collisions-on-a-road"
+    },
+    {
+      "title": "Robot Collisions",
+      "difficulty": "Hard",
+      "slug": "robot-collisions"
+    }
+  ],
+  "questionId": "735",
+  "questionFrontendId": "735",
+  "title": "Asteroid Collision",
+  "titleSlug": "asteroid-collision",
+  "content": "<p>We are given an array <code>asteroids</code> of integers representing asteroids in a row. The indices of the asteriod in the array represent their relative position in space.</p>\n\n<p>For each asteroid, the absolute value represents its size, and the sign represents its direction (positive meaning right, negative meaning left). Each asteroid moves at the same speed.</p>\n\n<p>Find out the state of the asteroids after all collisions. If two asteroids meet, the smaller one will explode. If both are the same size, both will explode. Two asteroids moving in the same direction will never meet.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> asteroids = [5,10,-5]\n<strong>Output:</strong> [5,10]\n<strong>Explanation:</strong> The 10 and -5 collide resulting in 10. The 5 and 10 never collide.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> asteroids = [8,-8]\n<strong>Output:</strong> []\n<strong>Explanation:</strong> The 8 and -8 collide exploding each other.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> asteroids = [10,2,-5]\n<strong>Output:</strong> [10]\n<strong>Explanation:</strong> The 2 and -5 collide resulting in -5. The 10 and -5 collide resulting in 10.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= asteroids.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>-1000 &lt;= asteroids[i] &lt;= 1000</code></li>\n\t<li><code>asteroids[i] != 0</code></li>\n</ul>\n",
+  "likes": 8927,
+  "dislikes": 1274,
+  "stats": {
+    "totalAccepted": "865.4K",
+    "totalSubmission": "1.9M",
+    "totalAcceptedRaw": 865372,
+    "totalSubmissionRaw": 1881762,
+    "acRate": "46.0%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Stack",
+      "slug": "stack"
+    },
+    {
+      "name": "Simulation",
+      "slug": "simulation"
+    }
+  ],
+  "metaData": {
+    "name": "asteroidCollision",
+    "params": [
+      {
+        "name": "asteroids",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer[]"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 22
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "georgezakharov",
+      "year": 2023,
+      "content": "It feels like the description is poor.",
+      "voteCount": 974
+    },
+    {
+      "name": "mxie220",
+      "year": 2020,
+      "content": "If -1, -2 are moving left and 1 and 2 are moving right. Shouldn\\'t they all collide and the output is []? Why is the output the same as the input?",
+      "voteCount": 715
+    },
+    {
+      "name": "nirajthakare",
+      "year": 2023,
+      "content": "wanna have self doubt ?? leetcode everyday .",
+      "voteCount": 486
+    },
+    {
+      "name": "therishuraj",
+      "year": 2023,
+      "content": "In addition to the question description.\\nAssume the asteroids index is there position in space and negative signed asteroids are moving towards 0th index and positive asteroids are moving towards lasts index.\\nfor example :-  \\n1.    [1,-2,10,-5]\\nhere, 1 and -2 will collide and 10 and -5 will collide but -2 and 10 wont collide.\\nresult -> [-2, 10]\\n2.    [-4, 6]\\nhere, -4 will move left and 6 to its right and will never collide \\nresult -> [-4, 6]\\nbut in \\n3. [4, -6] 4 and -6 will collide and stronger asteroids will remain, as 6 is stronger than 4 , so -6 will remain resulting [-6].",
+      "voteCount": 332
+    },
+    {
+      "name": "abcdefg100",
+      "year": 2023,
+      "content": "terrible question!",
+      "voteCount": 196
+    },
+    {
+      "name": "jeffliao",
+      "year": 2018,
+      "content": "what is the expected output of [-2,-1,1,2]?\\nshouldn\\'t it be [], why is the expected output  [-2,-1,1,2]? can someone explanins?",
+      "voteCount": 165
+    },
+    {
+      "name": "superogatory",
+      "year": 2023,
+      "content": "Draw a row and place asteroids in that row in the same order you see them in your input. For example with [-2,-1,1,2], draw two lines on a piece of paper or whiteboard or whatever medium works best for you, and place asteroids from left to right in the same order as the input.\n\n------------------------------------------\n-2(<-)     -1(<-)     1(->)     2(->)\n------------------------------------------\n\nJot down the direction of each asteroid as well. For example, right above your negative 2, draw a left arrow. Right above your positive 1, draw a right arrow. Assuming that asteroids moving in the same direction never meet, and thus never explode. Do any asteroids meet in this case? Well, no. -2 moves left, -1 moves left, 1 moves right, 2 moves right. None meet, none explode.\n\nTry this with [1,-2,10,5]\n------------------------------------------\n1(->)     -2(<-)     10(->)     5(->)\n------------------------------------------\n\nWait, hang on a second, 1 and -2 are destined to collide. Take note of their directions. If element at index i is moving right, and element at index i + 1 is moving left, NOW we can have a collision. Examine the case where element at index i is moving left, and element at index i + 1 is moving right, will they collide? Don't know? Draw it!\n\n------------------------------------------\n-1(<-)     2(->)     10(->)     5(->)\n------------------------------------------\n\nSo if element at index i is moving left and element at index i + 1 is moving right, they will not collide. Thus, collisions can ONLY occur if the element at index i (previous asteroid) is moving right and the element at index i + 1 (current asteroid) is moving left.\n\nWhat does it mean for an element/asteroid to be moving left or right? That means that the asteroid is negative or positive, respectively. Thus we can revise our previous hypothesis, collisions can occur ONLY if the element at index i is positive and the element at index i + 1 is negative.\n\nNeedless to say, in order for a collision to occur we need to be able to examine two asteroids.\n\nWe can use a stack (or a vector/list/array), up to you really, to solve this problem. Where you place elements onto the stack one by one, the moment we encounter an element that is less than 0 then we have \"collision potential\", because an element before the one we just found, if it be positive, indicates a collision. And if we have multiple right moving asteroids (positive value) on the stack, then we can have multiple collisions with current asteroid we are looking at. We can extend this idea to flesh out a proper solution where we keep placing elements onto the stack until we encounter an asteroid that is left-moving, as this kind of asteroid could cause a collision with the one(s) before it that is/are right-moving. \n\nTo clarify:\nFor each asteroid, check if it is moving to the left (negative) and if the stack is not empty.\n\nIf the current asteroid is moving left (negative) and there are right-moving (positive) asteroids on the stack, we have a potential collision scenario.\nCompare the absolute values of the asteroids on the stack with the current asteroid to determine the outcome of the collision.\n\nIf the absolute value of the current asteroid is greater, it will destroy the smaller asteroid(s) on the stack. Remove the smaller asteroid(s) from the stack.\n\nIf the absolute value of the current asteroid is smaller, it will be destroyed. Skip pushing it onto the stack.\n\nIf the absolute values are equal, both asteroids will be destroyed. Remove the top asteroid from the stack.",
+      "voteCount": 70
+    },
+    {
+      "name": "_SID_",
+      "year": 2023,
+      "content": "Seriously if you think of doing it using monotonic stack you will waste a hell lot of time.\nDon't think complex \n it's more easy than it looks .",
+      "voteCount": 69
+    },
+    {
+      "name": "sunny8080",
+      "year": 2023,
+      "content": "Finally completed my `200+` Days of LeetCode daily challenges !!",
+      "voteCount": 48
+    },
+    {
+      "name": "bparanj",
+      "year": 2023,
+      "content": "The Asteroid Collision problem can be considered a variation of the classic Balancing Symbols problem, although it might not be immediately apparent.\\n\\nThe Balancing Symbols problem is a classic problem where you have a sequence of symbols, such as parentheses, and you want to determine if they are \"balanced\". That is, for every opening symbol, there should be a corresponding closing symbol. One common way to solve this problem is by using a stack data structure.\\n\\nIn the case of the Asteroid Collision problem, the \"opening\" and \"closing\" symbols are replaced by positive and negative integers respectively, with positive integers moving right and negative integers moving left. We can imagine the problem as trying to determine if the movements of the asteroids are \"balanced\", similar to the parentheses in the Balancing Symbols problem. That is, for every right-moving asteroid, is there a corresponding left-moving asteroid that would collide with it, and vice versa.\\n\\nTherefore, the stack can be used in a similar way: When we encounter a right-moving asteroid (positive integer), we push it into the stack. When we encounter a left-moving asteroid (negative integer), we compare it with the top of the stack. If the left-moving asteroid is larger, we pop the right-moving asteroid from the stack (analogous to matching and removing a pair of opening and closing symbols), and continue the process until the stack is empty or the top of the stack is a left-moving asteroid.\\n\\nThus, while the problems are different in their specific details, they share a common structure that allows us to apply similar problem-solving strategies. It\\'s this underlying structure that allows us to identify the Asteroid Collision problem as a variation of the Balancing Symbols problem.",
+      "voteCount": 42
+    }
+  ]
+}

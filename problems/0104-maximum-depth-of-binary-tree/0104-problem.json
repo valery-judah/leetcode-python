@@ -1,0 +1,153 @@
+{
+  "category": "",
+  "id": "104",
+  "name": "Maximum Depth of Binary Tree",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
+  "slug": "maximum-depth-of-binary-tree",
+  "isPaidOnly": false,
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Balanced Binary Tree",
+      "difficulty": "Easy",
+      "slug": "balanced-binary-tree"
+    },
+    {
+      "title": "Minimum Depth of Binary Tree",
+      "difficulty": "Easy",
+      "slug": "minimum-depth-of-binary-tree"
+    },
+    {
+      "title": "Maximum Depth of N-ary Tree",
+      "difficulty": "Easy",
+      "slug": "maximum-depth-of-n-ary-tree"
+    },
+    {
+      "title": "Time Needed to Inform All Employees",
+      "difficulty": "Medium",
+      "slug": "time-needed-to-inform-all-employees"
+    },
+    {
+      "title": "Amount of Time for Binary Tree to Be Infected",
+      "difficulty": "Medium",
+      "slug": "amount-of-time-for-binary-tree-to-be-infected"
+    },
+    {
+      "title": "Height of Binary Tree After Subtree Removal Queries",
+      "difficulty": "Hard",
+      "slug": "height-of-binary-tree-after-subtree-removal-queries"
+    }
+  ],
+  "questionId": "104",
+  "questionFrontendId": "104",
+  "title": "Maximum Depth of Binary Tree",
+  "titleSlug": "maximum-depth-of-binary-tree",
+  "content": "<p>Given the <code>root</code> of a binary tree, return <em>its maximum depth</em>.</p>\n\n<p>A binary tree&#39;s <strong>maximum depth</strong>&nbsp;is the number of nodes along the longest path from the root node down to the farthest leaf node.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/11/26/tmp-tree.jpg\" style=\"width: 400px; height: 277px;\" />\n<pre>\n<strong>Input:</strong> root = [3,9,20,null,null,15,7]\n<strong>Output:</strong> 3\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> root = [1,null,2]\n<strong>Output:</strong> 2\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of nodes in the tree is in the range <code>[0, 10<sup>4</sup>]</code>.</li>\n\t<li><code>-100 &lt;= Node.val &lt;= 100</code></li>\n</ul>\n",
+  "likes": 13842,
+  "dislikes": 273,
+  "stats": {
+    "totalAccepted": "4.2M",
+    "totalSubmission": "5.5M",
+    "totalAcceptedRaw": 4238541,
+    "totalSubmissionRaw": 5472605,
+    "acRate": "77.5%"
+  },
+  "topicTags": [
+    {
+      "name": "Tree",
+      "slug": "tree"
+    },
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Breadth-First Search",
+      "slug": "breadth-first-search"
+    },
+    {
+      "name": "Binary Tree",
+      "slug": "binary-tree"
+    }
+  ],
+  "metaData": {
+    "name": "maxDepth",
+    "params": [
+      {
+        "name": "root",
+        "type": "TreeNode"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "dumb_me",
+      "year": 2023,
+      "content": "double it and give it to next day \\n",
+      "voteCount": 505
+    },
+    {
+      "name": "rainhacker",
+      "year": 2015,
+      "content": "After a solution is accepted it would be very helpful to know how to make it run faster looking at better performing solution(s).",
+      "voteCount": 443
+    },
+    {
+      "name": "nhanhem2ui",
+      "year": 2023,
+      "content": "i once thought i\\'ve understood recursion until learning tree",
+      "voteCount": 253
+    },
+    {
+      "name": "atebitbyte",
+      "year": 2017,
+      "content": "This problem's solution set is inaccurate. It's counting the number of nodes from root to furthest leaf, when it should be counting the number of edges (it's using an incorrect definition of tree depth/height). Please correct this.",
+      "voteCount": 136
+    },
+    {
+      "name": "AlgoEngine",
+      "year": 2023,
+      "content": "Visualization of recursive depth-first search\\n\\nhttps://youtu.be/p-eMCRpvbIY?si=wNAVx_6WQ7i9umSp",
+      "voteCount": 107
+    },
+    {
+      "name": "huda24",
+      "year": 2024,
+      "content": "SOLVED THIS ONE USING RECURSION MYSELF LESGOOOOO",
+      "voteCount": 77
+    },
+    {
+      "name": "shivanikohlii",
+      "year": 2018,
+      "content": "From my understanding of depth of tree, it is supposed to be the number of edges from the root to the lowest leaf, explained in [this post](https://stackoverflow.com/questions/2603692/what-is-the-difference-between-tree-depth-and-heightp://). In the example in the description shouldn\\'t the depth be 2?",
+      "voteCount": 40
+    },
+    {
+      "name": "rushi_4123",
+      "year": 2023,
+      "content": "Cannot believe 4 consecutive easy leetcode days!!\\nBut ideal for newbie programmers :)",
+      "voteCount": 10
+    },
+    {
+      "name": "LeetCode",
+      "year": 2022,
+      "content": "This problem is the Daily LeetCoding Challenge for February, Day 14.\n\nFeel free to share anything related to this problem here!\n\nYou can ask questions, discuss what you've learned from this problem, or show off how many days of streak you've made!\n\n---\n\nIf you'd like to share a detailed solution to the problem, please create a new post in the discuss section and provide\n- **Detailed Explanations**: Describe the algorithm you used to solve this problem. Include any insights you used to solve this problem.\n- **Images** that help explain the algorithm.\n- **Language and Code** you used to pass the problem.\n- **Time and Space complexity analysis**.\n\n---\n\n  **📌 Do you want to learn the problem thoroughly?**\n  Read [**⭐  LeetCode Official Solution⭐**](https://leetcode.com/problems/maximum-depth-of-binary-tree/solution) to learn the 3 approaches to the problem with detailed explanations to the algorithms, codes, and complexity analysis.\n  <details>\n  <summary> Spoiler Alert! We'll explain these 3 approaches in the official solution</summary>\n\n  \n**Approach 1:** Recursion\n\n  \n**Approach 2:** Tail Recursion + BFS\n\n  \n**Approach 3:** Iteration\n\n  \n</details>\n\n\n\nIf you're new to Daily LeetCoding Challenge, [**check out this post**](https://leetcode.com/discuss/general-discussion/655704/)!\n\n\n---\n\n<br>\n\n<p align=\"center\">\n<a href=\"https://leetcode.com/subscribe/?ref=ex_dc\" target=\"_blank\">\n  <img src=\"https://assets.leetcode.com/static_assets/marketing/daily_leetcoding_banner.png\" width=\"560px\" />\n</a>\n</p>\n\n<br>",
+      "voteCount": 10
+    },
+    {
+      "name": "chinzeshen",
+      "year": 2024,
+      "content": "I was really confused how leetcode converts a list into a binary tree. It wasn\\'t shown, but somehow it does it.",
+      "voteCount": 9
+    }
+  ]
+}

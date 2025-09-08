@@ -1,0 +1,156 @@
+{
+  "category": "",
+  "id": "217",
+  "name": "Contains Duplicate",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/contains-duplicate/",
+  "slug": "contains-duplicate",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Contains Duplicate II",
+      "difficulty": "Easy",
+      "slug": "contains-duplicate-ii"
+    },
+    {
+      "title": "Contains Duplicate III",
+      "difficulty": "Hard",
+      "slug": "contains-duplicate-iii"
+    },
+    {
+      "title": "Make Array Zero by Subtracting Equal Amounts",
+      "difficulty": "Easy",
+      "slug": "make-array-zero-by-subtracting-equal-amounts"
+    },
+    {
+      "title": "Find Valid Pair of Adjacent Digits in String",
+      "difficulty": "Easy",
+      "slug": "find-valid-pair-of-adjacent-digits-in-string"
+    }
+  ],
+  "questionId": "217",
+  "questionFrontendId": "217",
+  "title": "Contains Duplicate",
+  "titleSlug": "contains-duplicate",
+  "content": "<p>Given an integer array <code>nums</code>, return <code>true</code> if any value appears <strong>at least twice</strong> in the array, and return <code>false</code> if every element is distinct.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,2,3,1]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">true</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The element 1 occurs at the indices 0 and 3.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,2,3,4]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">false</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>All elements are distinct.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,1,1,3,3,4,3,2,4,2]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">true</span></p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>\n</ul>\n",
+  "likes": 13211,
+  "dislikes": 1339,
+  "stats": {
+    "totalAccepted": "5.5M",
+    "totalSubmission": "8.7M",
+    "totalAcceptedRaw": 5527649,
+    "totalSubmissionRaw": 8702341,
+    "acRate": "63.5%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Sorting",
+      "slug": "sorting"
+    }
+  ],
+  "metaData": {
+    "name": "containsDuplicate",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Google",
+        "slug": "google",
+        "timesEncountered": 12
+      }
+    ],
+    "3": [
+      {
+        "taggedByAdmin": false,
+        "name": "Apple",
+        "slug": "apple",
+        "timesEncountered": 11
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "Spenderr",
+      "year": 2023,
+      "content": "its all fun until you hit the time limit exceed error",
+      "voteCount": 1344
+    },
+    {
+      "name": "henriquebelotto",
+      "year": 2021,
+      "content": "I noticed that I submit the same solution multiple times, the run time varies a lot.\\nThat is a quite bad design of LeetCode as it makes things harder to compare, since one solution might have a very fast response and 1 minute later, that same solution is \"Slow\".",
+      "voteCount": 219
+    },
+    {
+      "name": "Neemdar",
+      "year": 2017,
+      "content": "Can you solve it in N time without using extra memory? I.e. no hash set or dictionary and not a n^2 solution where you check every other element.",
+      "voteCount": 52
+    },
+    {
+      "name": "Nightywind",
+      "year": 2019,
+      "content": "I used 2 for-loops to solve this problem, it\\'s easy to understand.",
+      "voteCount": 34
+    },
+    {
+      "name": "mirchandani",
+      "year": 2022,
+      "content": "return len(nums) != len(set(nums))",
+      "voteCount": 33
+    },
+    {
+      "name": "bangbang93",
+      "year": 2016,
+      "content": "    var containsDuplicate = (nums) =>new Set(nums).size != nums.length;",
+      "voteCount": 32
+    },
+    {
+      "name": "suyash_23",
+      "year": 2022,
+      "content": "return !(nums.size()==set<int>(nums.begin(),nums.end()).size());",
+      "voteCount": 30
+    },
+    {
+      "name": "aechtee42",
+      "year": 2021,
+      "content": "I can understand why Arrays.sort() is a better option in terms of space but how usingArrays.Sort() (3ms) is giving faster results than using HashSet (5ms) ?",
+      "voteCount": 17
+    },
+    {
+      "name": "callback_suman",
+      "year": 2022,
+      "content": "Fastest Solution and easy-to-understand and detailed video explanation \\nIf you have any doubts, let me know in the comments section\\nIf it helps you please upvote.\\nhttps://coderfact.com/data-structures/contains-duplicate-fastest-solution-explained/",
+      "voteCount": 10
+    },
+    {
+      "name": "tejaschauhan2003",
+      "year": 2023,
+      "content": "what means of time limit exceeded",
+      "voteCount": 7
+    }
+  ]
+}

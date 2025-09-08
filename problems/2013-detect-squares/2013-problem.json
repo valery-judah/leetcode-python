@@ -1,0 +1,146 @@
+{
+  "category": "",
+  "id": "2013",
+  "name": "Detect Squares",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/detect-squares/",
+  "slug": "detect-squares",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Design",
+    "Counting"
+  ],
+  "similar_questions": [],
+  "questionId": "2139",
+  "questionFrontendId": "2013",
+  "title": "Detect Squares",
+  "titleSlug": "detect-squares",
+  "content": "<p>You are given a stream of points on the X-Y plane. Design an algorithm that:</p>\n\n<ul>\n\t<li><strong>Adds</strong> new points from the stream into a data structure. <strong>Duplicate</strong> points are allowed and should be treated as different points.</li>\n\t<li>Given a query point, <strong>counts</strong> the number of ways to choose three points from the data structure such that the three points and the query point form an <strong>axis-aligned square</strong> with <strong>positive area</strong>.</li>\n</ul>\n\n<p>An <strong>axis-aligned square</strong> is a square whose edges are all the same length and are either parallel or perpendicular to the x-axis and y-axis.</p>\n\n<p>Implement the <code>DetectSquares</code> class:</p>\n\n<ul>\n\t<li><code>DetectSquares()</code> Initializes the object with an empty data structure.</li>\n\t<li><code>void add(int[] point)</code> Adds a new point <code>point = [x, y]</code> to the data structure.</li>\n\t<li><code>int count(int[] point)</code> Counts the number of ways to form <strong>axis-aligned squares</strong> with point <code>point = [x, y]</code> as described above.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/09/01/image.png\" style=\"width: 869px; height: 504px;\" />\n<pre>\n<strong>Input</strong>\n[&quot;DetectSquares&quot;, &quot;add&quot;, &quot;add&quot;, &quot;add&quot;, &quot;count&quot;, &quot;count&quot;, &quot;add&quot;, &quot;count&quot;]\n[[], [[3, 10]], [[11, 2]], [[3, 2]], [[11, 10]], [[14, 8]], [[11, 2]], [[11, 10]]]\n<strong>Output</strong>\n[null, null, null, null, 1, 0, null, 2]\n\n<strong>Explanation</strong>\nDetectSquares detectSquares = new DetectSquares();\ndetectSquares.add([3, 10]);\ndetectSquares.add([11, 2]);\ndetectSquares.add([3, 2]);\ndetectSquares.count([11, 10]); // return 1. You can choose:\n                               //   - The first, second, and third points\ndetectSquares.count([14, 8]);  // return 0. The query point cannot form a square with any points in the data structure.\ndetectSquares.add([11, 2]);    // Adding duplicate points is allowed.\ndetectSquares.count([11, 10]); // return 2. You can choose:\n                               //   - The first, second, and third points\n                               //   - The first, third, and fourth points\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>point.length == 2</code></li>\n\t<li><code>0 &lt;= x, y &lt;= 1000</code></li>\n\t<li>At most <code>3000</code> calls <strong>in total</strong> will be made to <code>add</code> and <code>count</code>.</li>\n</ul>\n",
+  "likes": 974,
+  "dislikes": 256,
+  "stats": {
+    "totalAccepted": "96.1K",
+    "totalSubmission": "186.1K",
+    "totalAcceptedRaw": 96121,
+    "totalSubmissionRaw": 186067,
+    "acRate": "51.7%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Design",
+      "slug": "design"
+    },
+    {
+      "name": "Counting",
+      "slug": "counting"
+    }
+  ],
+  "metaData": {
+    "classname": "DetectSquares",
+    "constructor": {
+      "params": []
+    },
+    "methods": [
+      {
+        "params": [
+          {
+            "type": "integer[]",
+            "name": "point"
+          }
+        ],
+        "name": "add",
+        "return": {
+          "type": "void"
+        }
+      },
+      {
+        "params": [
+          {
+            "type": "integer[]",
+            "name": "point"
+          }
+        ],
+        "name": "count",
+        "return": {
+          "type": "integer"
+        }
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "systemdesign": true
+  },
+  "discussion_posts": [
+    {
+      "name": "feliposz",
+      "year": 2023,
+      "content": "Axis-aligned SQUARE... not rectangle!!!",
+      "voteCount": 103
+    },
+    {
+      "name": "sparklehsr",
+      "year": 2024,
+      "content": "last question in neetcode\\'s roadmap? who else",
+      "voteCount": 92
+    },
+    {
+      "name": "xiao_ming_",
+      "year": 2024,
+      "content": "Mistook it as rectangle for a second time after 3 months...",
+      "voteCount": 22
+    },
+    {
+      "name": "ayushman11011995",
+      "year": 2023,
+      "content": "Keep in mind that square of zero area is not allowed",
+      "voteCount": 22
+    },
+    {
+      "name": "xbtchunky",
+      "year": 2024,
+      "content": "The question requirements were really unclear for me, so for anyone else reading this:\n\nA point sent in to `count` *always* counts as just `1` point, it does not count as all the points stored there. Was scratching my head for a while...\n\nThat is, if you have a point `[0, 0]` `3` times, and it calls `count([0, 0])`, the # of points at `[0, 0]` should be `1`, not `3` or `4`.\n\nVery confusing...",
+      "voteCount": 12
+    },
+    {
+      "name": "cOde_Ranvir25",
+      "year": 2023,
+      "content": "Another tricky Question",
+      "voteCount": 10
+    },
+    {
+      "name": "Elevation",
+      "year": 2024,
+      "content": "What is positive area? What is negative area? Why not just state the area should be greater than zero?",
+      "voteCount": 6
+    },
+    {
+      "name": "CapShijin",
+      "year": 2024,
+      "content": "I think this is one of the questions with worst description, very unclear and confusing...!",
+      "voteCount": 5
+    },
+    {
+      "name": "WolaVola",
+      "year": 2025,
+      "content": "If anyone asks me to implement this in 20 minutes in an interview I\\'m crashing out bruh",
+      "voteCount": 2
+    },
+    {
+      "name": "matthewjinmp",
+      "year": 2025,
+      "content": "very tricky problem ",
+      "voteCount": 1
+    }
+  ]
+}

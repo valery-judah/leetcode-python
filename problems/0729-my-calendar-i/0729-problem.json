@@ -1,0 +1,170 @@
+{
+  "category": "",
+  "id": "729",
+  "name": "My Calendar I",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/my-calendar-i/",
+  "slug": "my-calendar-i",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Design",
+    "Segment Tree",
+    "Ordered Set"
+  ],
+  "similar_questions": [
+    {
+      "title": "My Calendar II",
+      "difficulty": "Medium",
+      "slug": "my-calendar-ii"
+    },
+    {
+      "title": "My Calendar III",
+      "difficulty": "Hard",
+      "slug": "my-calendar-iii"
+    },
+    {
+      "title": "Determine if Two Events Have Conflict",
+      "difficulty": "Easy",
+      "slug": "determine-if-two-events-have-conflict"
+    }
+  ],
+  "questionId": "729",
+  "questionFrontendId": "729",
+  "title": "My Calendar I",
+  "titleSlug": "my-calendar-i",
+  "content": "<p>You are implementing a program to use as your calendar. We can add a new event if adding the event will not cause a <strong>double booking</strong>.</p>\n\n<p>A <strong>double booking</strong> happens when two events have some non-empty intersection (i.e., some moment is common to both events.).</p>\n\n<p>The event can be represented as a pair of integers <code>startTime</code> and <code>endTime</code> that represents a booking on the half-open interval <code>[startTime, endTime)</code>, the range of real numbers <code>x</code> such that <code>startTime &lt;= x &lt; endTime</code>.</p>\n\n<p>Implement the <code>MyCalendar</code> class:</p>\n\n<ul>\n\t<li><code>MyCalendar()</code> Initializes the calendar object.</li>\n\t<li><code>boolean book(int startTime, int endTime)</code> Returns <code>true</code> if the event can be added to the calendar successfully without causing a <strong>double booking</strong>. Otherwise, return <code>false</code> and do not add the event to the calendar.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input</strong>\n[&quot;MyCalendar&quot;, &quot;book&quot;, &quot;book&quot;, &quot;book&quot;]\n[[], [10, 20], [15, 25], [20, 30]]\n<strong>Output</strong>\n[null, true, false, true]\n\n<strong>Explanation</strong>\nMyCalendar myCalendar = new MyCalendar();\nmyCalendar.book(10, 20); // return True\nmyCalendar.book(15, 25); // return False, It can not be booked because time 15 is already booked by another event.\nmyCalendar.book(20, 30); // return True, The event can be booked, as the first event takes every time less than 20, but not including 20.</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= start &lt; end &lt;= 10<sup>9</sup></code></li>\n\t<li>At most <code>1000</code> calls will be made to <code>book</code>.</li>\n</ul>\n",
+  "likes": 4756,
+  "dislikes": 133,
+  "stats": {
+    "totalAccepted": "436.4K",
+    "totalSubmission": "749.9K",
+    "totalAcceptedRaw": 436409,
+    "totalSubmissionRaw": 749858,
+    "acRate": "58.2%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    },
+    {
+      "name": "Design",
+      "slug": "design"
+    },
+    {
+      "name": "Segment Tree",
+      "slug": "segment-tree"
+    },
+    {
+      "name": "Ordered Set",
+      "slug": "ordered-set"
+    }
+  ],
+  "metaData": {
+    "classname": "MyCalendar",
+    "constructor": {
+      "params": []
+    },
+    "methods": [
+      {
+        "name": "book",
+        "params": [
+          {
+            "type": "integer",
+            "name": "startTime"
+          },
+          {
+            "type": "integer",
+            "name": "endTime"
+          }
+        ],
+        "return": {
+          "type": "boolean"
+        }
+      }
+    ],
+    "systemdesign": true,
+    "params": [
+      {
+        "name": "starts",
+        "type": "integer[]"
+      },
+      {
+        "name": "ends",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "list<boolean>",
+      "dealloc": true
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "mageshyt",
+      "year": 2024,
+      "content": "![1000days](https://utfs.io/f/qVf4rg0WewmML9dQ5KIkA6JxzbITNHayWrmu4U2QqZX5ljD3)\nHey LeetCode folks,\n\nToday marks my 1000th day on LeetCode, and I wanted to share a bit of my journey and everything I’ve learned along the way. 🚀\n\n**The Journey:**\nI began my LeetCode journey simply to improve my problem-solving skills, but it turned out to be a much longer and more fulfilling adventure.\n\nI want to thank you all for your active participation in the discussions; it has helped me learn so much and discover new approaches.\n\nHappy LeetCoding :)\n",
+      "voteCount": 141
+    },
+    {
+      "name": "user7312022",
+      "year": 2021,
+      "content": "Here are some test cases to run your code against to check its validity before submitting it. Hope it helps!\\n\\n[\"MyCalendar\",\"book\",\"book\",\"book\"]\\n[[],[10,20],[15,25],[20,30]]\\n[\"MyCalendar\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\"]\\n[[],[47,50],[33,41],[39,45],[33,42],[25,32],[26,35],[19,25],[3,8],[8,13],[18,27]]\\n[\"MyCalendar\",\"book\",\"book\",\"book\",\"book\",\"book\"]\\n[[],[37,50],[33,50],[4,17],[35,48],[8,25]]\\n[\"MyCalendar\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\"]\\n[[],[97,100],[33,51],[89,100],[83,100],[75,92],[76,95],[19,30],[53,63],[8,23],[18,37],[87,100],[83,100],[54,67],[35,48],[58,75],[70,89],[13,32],[44,63],[51,62],[2,15]]\\n[\"MyCalendar\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\"]\\n[[],[20,29],[13,22],[44,50],[1,7],[2,10],[14,20]]\\n[\"MyCalendar\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\"]\\n[[],[20,29],[13,22],[44,50],[1,7],[2,10],[14,20],[19,25],[36,42],[45,50],[47,50],[39,45],[44,50],[16,25],[45,50],[45,50],[12,20],[21,29],[11,20],[12,17],[34,40],[10,18],[38,44],[23,32],[38,44],[15,20],[27,33],[34,42],[44,50],[35,40],[24,31]]",
+      "voteCount": 79
+    },
+    {
+      "name": "NAVNEETkharb",
+      "year": 2024,
+      "content": "Pretty easy problem tbh if we look back at the last 5 days.",
+      "voteCount": 54
+    },
+    {
+      "name": "Edwards310",
+      "year": 2024,
+      "content": "***🌚🌚Waking up early just to solve the LeetCode POTD💀💀is the real challenge to maintain that 300+ streak  🗿🗿but I'll make sure that I will maintain this streak forever ♾️♾️***",
+      "voteCount": 28
+    },
+    {
+      "name": "yeedaKing",
+      "year": 2024,
+      "content": "Great binary search question!",
+      "voteCount": 26
+    },
+    {
+      "name": "lenka91",
+      "year": 2022,
+      "content": "The BST solutions are very cool, but I wonder why to do such structure, if we can use simple array with for cycle. As several people shared for solution (Worst: T: O(n), S: O(n)). Does someone know why to do it the complex BST way?",
+      "voteCount": 11
+    },
+    {
+      "name": "summerbleach",
+      "year": 2024,
+      "content": "O(n) using vector, why was i sorting the vector, it is unnecssary? just go through the vectors.\\nto further make it better, we can use: BST and it will be logN. In case of a skewed bst, there is a chance of becoming O(N) however,\\nso height balanced- bst, maybe????",
+      "voteCount": 10
+    },
+    {
+      "name": "PuneethaPai",
+      "year": 2021,
+      "content": "Question only says:\\n- In calls to MyCalendar.book(start, end), `start` and `end` are integers in the range [0, 10^9].\\n\\nBut never asserts that `start <= end`. Even in test case when I reverse `[start, end]` to `[end, start]` it is producing same results. \\n\\nIn my opinion I expect `MyCalendar.book(start, end)` to return `False` when `end < start`, irrespective of previous calls.\\n\\n![image](https://assets.leetcode.com/users/images/310486f0-6c3b-49f5-be31-8ed8755e2834_1623317065.4192786.png)\\n\\n\\n",
+      "voteCount": 10
+    },
+    {
+      "name": "notKakar0t",
+      "year": 2020,
+      "content": "I\\'m having different test case result shown to me. In the screen shot here, I have the same test case running correctly on my machine and \"Run Code\". But the same test case fails when I submit my code. Not cool, as my acceptance rate gets skewed up because of this. Any input for this issue would be great. I\\'m still working on my coding.\\n\\n![image](https://assets.leetcode.com/users/images/d63d43de-dcc1-4eb1-af3c-5b92dfde46cc_1603747189.404004.png)\\n",
+      "voteCount": 9
+    },
+    {
+      "name": "anwendeng",
+      "year": 2024,
+      "content": "It's doable by dfs to build a binary  tree\nHave a nice day",
+      "voteCount": 7
+    }
+  ]
+}

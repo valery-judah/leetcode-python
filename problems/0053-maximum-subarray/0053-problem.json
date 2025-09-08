@@ -1,0 +1,216 @@
+{
+  "category": "",
+  "id": "53",
+  "name": "Maximum Subarray",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/maximum-subarray/",
+  "slug": "maximum-subarray",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Divide and Conquer",
+    "Dynamic Programming"
+  ],
+  "similar_questions": [
+    {
+      "title": "Best Time to Buy and Sell Stock",
+      "difficulty": "Easy",
+      "slug": "best-time-to-buy-and-sell-stock"
+    },
+    {
+      "title": "Maximum Product Subarray",
+      "difficulty": "Medium",
+      "slug": "maximum-product-subarray"
+    },
+    {
+      "title": "Degree of an Array",
+      "difficulty": "Easy",
+      "slug": "degree-of-an-array"
+    },
+    {
+      "title": "Longest Turbulent Subarray",
+      "difficulty": "Medium",
+      "slug": "longest-turbulent-subarray"
+    },
+    {
+      "title": "Maximum Score Of Spliced Array",
+      "difficulty": "Hard",
+      "slug": "maximum-score-of-spliced-array"
+    },
+    {
+      "title": "Maximum Absolute Sum of Any Subarray",
+      "difficulty": "Medium",
+      "slug": "maximum-absolute-sum-of-any-subarray"
+    },
+    {
+      "title": "Maximum Subarray Sum After One Operation",
+      "difficulty": "Medium",
+      "slug": "maximum-subarray-sum-after-one-operation"
+    },
+    {
+      "title": "Substring With Largest Variance",
+      "difficulty": "Hard",
+      "slug": "substring-with-largest-variance"
+    },
+    {
+      "title": "Count Subarrays With Score Less Than K",
+      "difficulty": "Hard",
+      "slug": "count-subarrays-with-score-less-than-k"
+    },
+    {
+      "title": "Maximum Value of a String in an Array",
+      "difficulty": "Easy",
+      "slug": "maximum-value-of-a-string-in-an-array"
+    },
+    {
+      "title": "Find the Substring With Maximum Cost",
+      "difficulty": "Medium",
+      "slug": "find-the-substring-with-maximum-cost"
+    },
+    {
+      "title": "K Items With the Maximum Sum",
+      "difficulty": "Easy",
+      "slug": "k-items-with-the-maximum-sum"
+    },
+    {
+      "title": "Maximum Good Subarray Sum",
+      "difficulty": "Medium",
+      "slug": "maximum-good-subarray-sum"
+    },
+    {
+      "title": "Maximize Subarray Sum After Removing All Occurrences of One Element",
+      "difficulty": "Hard",
+      "slug": "maximize-subarray-sum-after-removing-all-occurrences-of-one-element"
+    }
+  ],
+  "questionId": "53",
+  "questionFrontendId": "53",
+  "title": "Maximum Subarray",
+  "titleSlug": "maximum-subarray",
+  "content": "<p>Given an integer array <code>nums</code>, find the <span data-keyword=\"subarray-nonempty\">subarray</span> with the largest sum, and return <em>its sum</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [-2,1,-3,4,-1,2,1,-5,4]\n<strong>Output:</strong> 6\n<strong>Explanation:</strong> The subarray [4,-1,2,1] has the largest sum 6.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1]\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> The subarray [1] has the largest sum 1.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [5,4,-1,7,8]\n<strong>Output:</strong> 23\n<strong>Explanation:</strong> The subarray [5,4,-1,7,8] has the largest sum 23.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>-10<sup>4</sup> &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Follow up:</strong> If you have figured out the <code>O(n)</code> solution, try coding another solution using the <strong>divide and conquer</strong> approach, which is more subtle.</p>\n",
+  "likes": 36457,
+  "dislikes": 1546,
+  "stats": {
+    "totalAccepted": "5.3M",
+    "totalSubmission": "10.2M",
+    "totalAcceptedRaw": 5336788,
+    "totalSubmissionRaw": 10183464,
+    "acRate": "52.4%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Divide and Conquer",
+      "slug": "divide-and-conquer"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "metaData": {
+    "name": "maxSubArray",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 37
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Google",
+        "slug": "google",
+        "timesEncountered": 26
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Meta",
+        "slug": "facebook",
+        "timesEncountered": 17
+      },
+      {
+        "taggedByAdmin": true,
+        "name": "Microsoft",
+        "slug": "microsoft",
+        "timesEncountered": 14
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "xcznu",
+      "year": 2022,
+      "content": "I feel its misleading to instruct to \"find\" the subarray (int[]), when function is returning the max sum (int).  May be use another word for \"find\" - eg. \"calculate\" the sum of largest contigous subarray \\xAF\\\\\\\\_(\\u30C4)_/\\xAF",
+      "voteCount": 393
+    },
+    {
+      "name": "BenSwitala",
+      "year": 2020,
+      "content": "This is a hard problem, not an easy one!  An algorithm to solve it is named after a person, Kadane!",
+      "voteCount": 379
+    },
+    {
+      "name": "nathanad",
+      "year": 2020,
+      "content": "I don\\'t understand why this is considered an easy question when it took University professors years to come up with an O(n)",
+      "voteCount": 217
+    },
+    {
+      "name": "chentao169",
+      "year": 2013,
+      "content": "I solve this problem in O(n). But the hint says it would be solved by using the divide and conquer approach.\\nI cannot figure out how to do it with divide and conquer.\\nYou guys have ideas?",
+      "voteCount": 177
+    },
+    {
+      "name": "mandy1339",
+      "year": 2022,
+      "content": "Brute force solution doesn\\'t pass and Optimized solutions are not obvious.",
+      "voteCount": 126
+    },
+    {
+      "name": "usaar33",
+      "year": 2019,
+      "content": "Certainly, the O(n^3) algorithm (brute force) is \"easy\" (even a slightly optimized O(n^2) using sliding windows), but I fail to see how the O(n) algorithm (Kadane\\'s) is \"easy\".  Having done this in an interview setting, I found it more challenging than most \"medium\" problems here (subsets, iterative binary tree inorder traversal, permutations, group anagrams, merge intervals, just to name a few).  \\n\\n1. With the before-mentioned \"medium\" problems, basically understanding the problem definition and drawing it out and knowing recursion/core CS data structures -- you can pull off an algorithm pretty directly.   But even if you get as far as recognizing this as a 1-D DP problem, building the subproblems and advancing them aren\\'t obvious. (let alone convincing yourself what you are doing is valid)\\n2. That the algorithm has someone\\'s name attached to it (Kadane) makes me question whether it is trivial. :)\\n\\nAdmitedly, once you\\'ve done it before, it feels trivial to code. In that sense, this problem reminds me a bit of the linked list cycle problem (with no prior context) -- trivial in O(n) time/O(n) space - a lot harder (admitedly more difficult than coming up with Kadane\\'s algorithm) with O(1) space.\\n\\nAs a comparison to another leetcode problem, this feels about as challenging as [Best time to buy & sell stock with txn fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/), a 1D DP problem with not-so-obvious subproblems.",
+      "voteCount": 124
+    },
+    {
+      "name": "xiangu",
+      "year": 2020,
+      "content": "DP solution:\\n- Define dp[i] = max sum of sub-array ending with nums[i]\\n- result = max(dp) because the max sum subarray has to end at some element\\n- Base case: dp[0] = nums[0]\\n- Recurrence: dp[i] = nums[i] + max(0, dp[i-1])\\n\\nLet\\'s first accept the meaning of the dp array (I know it\\'s not natural to come up with this representation but let\\'s for now accept it. I will try to illustrate why we have this recurrence).\\n\\ninterpretation of the recurrence: To find the max subarray ending in element i, literally, it means we need to consider all subarrays that ends in element i:\\n\\n[element i],\\n[element i-1, element i],\\n[element i-2, element i-1, element i],\\n... \\n[element 0, ..., element i].\\n\\nThen we find the one with highest sum as dp[i]; that is, dp[i] = max(sum([element i]), sum([element i-1, element i]), ..., sum([element 0, ..., element i]))\\n\\n= nums[i] + max(sum([]), sum([element i-1]), sum([element i-2, element i-1]), ..., sum([element 0, ..., element i-1]))\\n\\n\\n= nums[i] + max(0, sum([element i-1]), sum([element i-2, element i-1]), ..., sum([element 0, ..., element i-1])) \\n\\n= nums[i] + max(0, *max(sum([element i-1]), sum([element i-2, element i-1]), ..., sum([element 0, ..., element i-1]))*) \\n\\nHey, boy, look at this part *max(sum([element i-1]), sum([element i-2, element i-1]), ..., sum([element 0, ..., element i-1]))*; this is exactly dp[i-1]!\\nThus, the recurrence equation can be expressed as dp[i] = nums[i] + max(0, dp[i-1]).\\n\\nNow, you can look at other posts to undersand how to further optimize this solution (on the space complexity from O(n) to O(1)) but I find this explanation most natural for first attempt!\\n\\n           \\n",
+      "voteCount": 79
+    },
+    {
+      "name": "parambole",
+      "year": 2019,
+      "content": "There are several articles out there that mention ways to solve DP problems. But, the problem is that every DP problem is different. \\n\\nWhat one needs to learn is how to reach to the DP solution. \\n\\n**STEP 1: Start with Brute Force:** \\n\\nYes, you heard it right. Because DP is nothing but intelligent guessing. We need to do an exhaustive search on every possible combination and pick the most optimal combination. \\n\\n**STEP 2: Draw out your solution - > This is the most critical step**\\n\\nDraw the steps that your brute force solution is taking. Because unless you visualize what your algorithm is doing. You can never come up with a DP solution.\\n\\n**STEP 3: Think about repeated steps and how to store and use them**\\n\\nIt is not just important to know what steps are getting repeated. What is essential is to understand how can you store your calculations and re-usage them.",
+      "voteCount": 47
+    },
+    {
+      "name": "Jayaramachandran",
+      "year": 2019,
+      "content": "Video explaining how to solve the maximum sub-array problem using the kadane\\'s algorithm\\n\\nhttps://youtu.be/Id_hZTV7_IA\\n\\n\\n\\nThe kadane algorithm helps us to compute the maximum sum at each index position. The core of kadane algorithm is, the maximum sum at any given index position is either the value at that index or the sum of value at current index position and the maximum sum at the previous index position.\\nLet\\u2019s see the pseudo code of kadane algorithm,\\nStep 1: Assign the zeroth index value to the current index maximum sum and overall maximum sum.\\nStep 2: Start from the index position one and iterate till n and find the max value between the current index position value and sum of current index position value and last index maximum sum.\\nStep 3: if the current index maximum value is greater than overall maximum value, then replace the overall maximum value with the current index maximum value.",
+      "voteCount": 42
+    },
+    {
+      "name": "LeetCode",
+      "year": 2021,
+      "content": "This problem is the Daily LeetCoding Challenge for November, Day 25.\n\nFeel free to share anything related to this problem here!\n\nYou can ask questions, discuss what you've learned from this problem, or show off how many days of streak you've made!\n\n---\n\nIf you'd like to share a detailed solution to the problem, please create a new post in the discuss section and provide\n- **Detailed Explanations**: Describe the algorithm you used to solve this problem. Include any insights you used to solve this problem.\n- **Images** that help explain the algorithm.\n- **Language and Code** you used to pass the problem.\n- **Time and Space complexity analysis**.\n\n---\n\n  **📌 Do you want to learn the problem thoroughly?**\n  Read [**⭐  LeetCode Official Solution⭐**](https://leetcode.com/problems/maximum-subarray/solution) to learn the 3 approaches to the problem with detailed explanations to the algorithms, codes, and complexity analysis.\n  <details>\n  <summary> Spoiler Alert! We'll explain these 3 approaches in the official solution</summary>\n\n  \n**Approach 1:** Optimized Brute Force\n\n  \n**Approach 2:** Dynamic Programming, Kadane's Algorithm\n\n  \n**Approach 3:** Divide and Conquer (Advanced)\n\n  \n</details>\n\n\n\nIf you're new to Daily LeetCoding Challenge, [**check out this post**](https://leetcode.com/discuss/general-discussion/655704/)!\n\n\n---\n\n<br>\n\n<p align=\"center\">\n<a href=\"https://leetcode.com/subscribe/?ref=ex_dc\" target=\"_blank\">\n  <img src=\"https://assets.leetcode.com/static_assets/marketing/daily_leetcoding_banner.png\" width=\"560px\" />\n</a>\n</p>\n\n<br>",
+      "voteCount": 30
+    }
+  ]
+}

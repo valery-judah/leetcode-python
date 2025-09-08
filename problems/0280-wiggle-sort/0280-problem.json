@@ -1,0 +1,136 @@
+{
+  "category": "",
+  "id": "280",
+  "name": "Wiggle Sort",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/wiggle-sort/",
+  "slug": "wiggle-sort",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Sort Colors",
+      "difficulty": "Medium",
+      "slug": "sort-colors"
+    },
+    {
+      "title": "Wiggle Sort II",
+      "difficulty": "Medium",
+      "slug": "wiggle-sort-ii"
+    },
+    {
+      "title": "Array With Elements Not Equal to Average of Neighbors",
+      "difficulty": "Medium",
+      "slug": "array-with-elements-not-equal-to-average-of-neighbors"
+    }
+  ],
+  "questionId": "280",
+  "questionFrontendId": "280",
+  "title": "Wiggle Sort",
+  "titleSlug": "wiggle-sort",
+  "content": "<p>Given an integer array <code>nums</code>, reorder it such that <code>nums[0] &lt;= nums[1] &gt;= nums[2] &lt;= nums[3]...</code>.</p>\n\n<p>You may assume the input array always has a valid answer.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [3,5,2,1,6,4]\n<strong>Output:</strong> [3,5,1,6,2,4]\n<strong>Explanation:</strong> [1,6,2,5,3,4] is also accepted.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [6,6,5,6,3,8]\n<strong>Output:</strong> [6,6,5,6,3,8]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 5 * 10<sup>4</sup></code></li>\n\t<li><code>0 &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>\n\t<li>It is guaranteed that there will be an answer for the given input <code>nums</code>.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Follow up:</strong> Could you solve the problem in <code>O(n)</code> time complexity?</p>\n",
+  "likes": 1238,
+  "dislikes": 103,
+  "stats": {
+    "totalAccepted": "154.4K",
+    "totalSubmission": "226K",
+    "totalAcceptedRaw": 154364,
+    "totalSubmissionRaw": 226040,
+    "acRate": "68.3%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    },
+    {
+      "name": "Sorting",
+      "slug": "sorting"
+    }
+  ],
+  "metaData": {
+    "name": "wiggleSort",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "void"
+    },
+    "output": {
+      "paramindex": 0
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "RohitSgh",
+      "year": 2023,
+      "content": "The question can be **reworded** as\\n> **Reorder** given array in such a manner that \"every element at an `odd index` is greater than or equal to its adjoining elements at `even indices`\"",
+      "voteCount": 24
+    },
+    {
+      "name": "user8228j",
+      "year": 2023,
+      "content": "For Python, if you are reassigning the entire value of the nums array at once, instead of doing \\nnums = ...\\ndo nums[:] = ...\\nThat way python doesnt create a new local variable nums with the same name",
+      "voteCount": 8
+    },
+    {
+      "name": "rajs217",
+      "year": 2023,
+      "content": "Observation.\\nOne array with increasing order\\nOne array with decreasing order\\n\\nMerge them to the same length of original array.\\n\\neg: \\nOriginal Array: [3,5,2,1,6,4]\\nIncreasing Order Array: [ 1,2,3,4,5,6]\\nDecreasing Order Array: [6,5,4,3,2,1]\\n\\nMerge them ( merge doesnt mean directly add, one element from increasing array and in next turn one element from decreasing array )\\n\\n[1,6,2,5,3,4] ( stop length is same as orignal array )\\n\\nFOR ODD LENGTH OF ARRAY\\n\\nsame steps as even length but in the and add one extra element from increasing array.",
+      "voteCount": 7
+    },
+    {
+      "name": "laodasb",
+      "year": 2020,
+      "content": "If you learned discreted mathematics...I\\' m sure that you may need a proof,  here is it, if I was wrong, please correct me, thanks.\\n\\nWe claim that: **If we make odd-indexed element larger than its neighbour elements, it can result a wiggle sorted array.**\\n\\n**Base case: **\\n\\nwhen index i is 0 or 1, that \\'s good--->[2],[2,3].\\nif  i == 2, we simply swap elements to result a array [x,y,z], and y is larger than x and z, the claim is also good.**\\n\\n**Assumption:**\\n\\nAssume that our claim is good for i == k, we need to prove it is also true for i== k+1:\\n\\n4 cases:\\n\\tcase1:i is odd, nums[i-1] smaller: good.\\n\\tcase2:i is odd, nums[i-1] larger:then,swap(i,i-1)--->doesn\\'t matter previous sorted array, because nums[i] is smaller...\\n\\tcase3:i is even, nums[i-1] larger:good.\\n\\tcase4:i is even,nums[i-1] smaller:then,swap(i,i-1)--->doesn\\'t matter previous sorted array, because nums[i] is larger.\\n\\t\\nConclusion: \\n\\tFrom above proof, no matter the newly element is an odd-indexed or even-indexed, only if we make the odd-indexed element larger than its neighbour elements, we maintain a wiggle sort array.\\n\\n\\n",
+      "voteCount": 5
+    },
+    {
+      "name": "yetong_li",
+      "year": 2024,
+      "content": "**The ultimate tip :\\')**\\n![image](https://github.com/XwanXuanX/Misim/assets/114088825/0ffaa091-9381-4a47-b7ba-1e156142d8e3)",
+      "voteCount": 4
+    },
+    {
+      "name": "reddddddd",
+      "year": 2018,
+      "content": "I could not find any example where we cannot wiggle sort an array. \\n\\nBut, do we have a formal proof that every array can be wiggle sorted ?",
+      "voteCount": 4
+    },
+    {
+      "name": "PhilipSanM",
+      "year": 2024,
+      "content": "I literally spent 30 minutes trying my best, without giving me the satisfaction of just looking the solution, and it works ;)",
+      "voteCount": 1
+    },
+    {
+      "name": "ajinkyagavane",
+      "year": 2023,
+      "content": "*** APPROACH 1****\nTwo hints: I hope you don't need the second hint ;)\n\n**** HINT 1 ****\nObserve alternate terms in the condition: nums[0] <= nums[1] >= nums[2] <= nums[3]...\nPut them under two lists such that all the numbers in list1 are less than all the numbers in list2\n\n*\n*\n*\n**** HINT 2 ****\nWhat if nums[0] >= nums[2], and nums[1] >= nums[3]? \n- we still satisfy the given condition\n\nThus, if we have a sorted list1, and list2.. we should arrive at the solution with a little rearrangement.\n\n\n*** APPROACH 2 ****\n**** HINT *****\nPerhaps, traverse the list and satisfy the given condition in a pairwise fashion.",
+      "voteCount": 1
+    },
+    {
+      "name": "johnsonys",
+      "year": 2015,
+      "content": "Given an unsorted array nums, reorder it in-place such that nums[0] < nums[1] > nums[2] < nums[3]...\\nFor example, given nums = [1, 1, 1, 3, 3, 3, 2, 2, 2], one possible answer is [1, 3, 2, 3, 2, 3, 1, 2, 1].\\n\\nNote: the difference between this and the former question is that two adjacent number cannot be the same.",
+      "voteCount": 1
+    },
+    {
+      "name": "bbaner",
+      "year": 2025,
+      "content": "All you need to do is fix a window of 3 inplace.",
+      "voteCount": 0
+    }
+  ]
+}

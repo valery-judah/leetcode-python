@@ -1,0 +1,126 @@
+{
+  "category": "",
+  "id": "289",
+  "name": "Game of Life",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/game-of-life/",
+  "slug": "game-of-life",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "similar_questions": [
+    {
+      "title": "Set Matrix Zeroes",
+      "difficulty": "Medium",
+      "slug": "set-matrix-zeroes"
+    }
+  ],
+  "questionId": "289",
+  "questionFrontendId": "289",
+  "title": "Game of Life",
+  "titleSlug": "game-of-life",
+  "content": "<p>According to <a href=\"https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life\" target=\"_blank\">Wikipedia&#39;s article</a>: &quot;The <b>Game of Life</b>, also known simply as <b>Life</b>, is a cellular automaton devised by the British mathematician John Horton Conway in 1970.&quot;</p>\n\n<p>The board is made up of an <code>m x n</code> grid of cells, where each cell has an initial state: <b>live</b> (represented by a <code>1</code>) or <b>dead</b> (represented by a <code>0</code>). Each cell interacts with its <a href=\"https://en.wikipedia.org/wiki/Moore_neighborhood\" target=\"_blank\">eight neighbors</a> (horizontal, vertical, diagonal) using the following four rules (taken from the above Wikipedia article):</p>\n\n<ol>\n\t<li>Any live cell with fewer than two live neighbors dies as if caused by under-population.</li>\n\t<li>Any live cell with two or three live neighbors lives on to the next generation.</li>\n\t<li>Any live cell with more than three live neighbors dies, as if by over-population.</li>\n\t<li>Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.</li>\n</ol>\n\n<p><span>The next state of the board is determined by applying the above rules simultaneously to every cell in the current state of the <code>m x n</code> grid <code>board</code>. In this process, births and deaths occur <strong>simultaneously</strong>.</span></p>\n\n<p><span>Given the current state of the <code>board</code>, <strong>update</strong> the <code>board</code> to reflect its next state.</span></p>\n\n<p><strong>Note</strong> that you do not need to return anything.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/12/26/grid1.jpg\" style=\"width: 562px; height: 322px;\" />\n<pre>\n<strong>Input:</strong> board = [[0,1,0],[0,0,1],[1,1,1],[0,0,0]]\n<strong>Output:</strong> [[0,0,0],[1,0,1],[0,1,1],[0,1,0]]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/12/26/grid2.jpg\" style=\"width: 402px; height: 162px;\" />\n<pre>\n<strong>Input:</strong> board = [[1,1],[1,0]]\n<strong>Output:</strong> [[1,1],[1,1]]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == board.length</code></li>\n\t<li><code>n == board[i].length</code></li>\n\t<li><code>1 &lt;= m, n &lt;= 25</code></li>\n\t<li><code>board[i][j]</code> is <code>0</code> or <code>1</code>.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Follow up:</strong></p>\n\n<ul>\n\t<li>Could you solve it in-place? Remember that the board needs to be updated simultaneously: You cannot update some cells first and then use their updated values to update other cells.</li>\n\t<li>In this question, we represent the board using a 2D array. In principle, the board is infinite, which would cause problems when the active area encroaches upon the border of the array (i.e., live cells reach the border). How would you address these problems?</li>\n</ul>\n",
+  "likes": 6694,
+  "dislikes": 608,
+  "stats": {
+    "totalAccepted": "590.4K",
+    "totalSubmission": "822.8K",
+    "totalAcceptedRaw": 590430,
+    "totalSubmissionRaw": 822836,
+    "acRate": "71.8%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Matrix",
+      "slug": "matrix"
+    },
+    {
+      "name": "Simulation",
+      "slug": "simulation"
+    }
+  ],
+  "metaData": {
+    "name": "gameOfLife",
+    "params": [
+      {
+        "name": "board",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "void"
+    },
+    "output": {
+      "paramindex": 0
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "fakename_bill",
+      "year": 2023,
+      "content": "To do it in-place, you need to traverse the board in two passes.\\n\\nIn the first pass, add 2 to the value of all cells that will be live in the next generation. Test whether neighbors are live or dead by checking if (cell % 2 == 1) instead of (cell == 1). This way, adding 2 to mark a cell as live in the next generation will not affect neighbors checking the cell\\'s current state. After the first pass is complete, every cell will contain one of the following values:\\n0 : Dead now, dead in the next generation.\\n1: Live now, dead in the next generation.\\n2: Dead now, live in the next generation.\\n3: Live now, live in the next generation.\\n\\nIn the second pass, divide the value in each cell by 2 to get the final results for the next generation.\\n0, 1: Now 0, or dead.\\n2, 3: Now 1, or live.",
+      "voteCount": 157
+    },
+    {
+      "name": "huowa222",
+      "year": 2019,
+      "content": "\\ni think this problem is meaningless nonsense.",
+      "voteCount": 157
+    },
+    {
+      "name": "EthanLi",
+      "year": 2015,
+      "content": "It seems that encoding inside original int[][] just utilized spare spaces from matrix. What if the input matrix is a boolean matrix? Is there still a way to solve it without extra space? Thanks.",
+      "voteCount": 73
+    },
+    {
+      "name": "xuyirui",
+      "year": 2016,
+      "content": "1.In this question, we represent the board using a 2D array. In principle, the board is infinite, which would cause problems when the active area encroaches the border of the array. How would you address these problems?\\n\\n2.What If the matrix is too big that it cannot store completely in RAM?\\nI know One way is to read and process line by line. can you provide implementation details?\\n\\n3.How do you solve this problem using multithreads?",
+      "voteCount": 49
+    },
+    {
+      "name": "ImNotGoodAtThis",
+      "year": 2024,
+      "content": "I want to add a comment for my self and to everyone that everything pays off eventually, I got this interview question and never understood it until I started leet coding and I solved it on my first try, what a ride ...",
+      "voteCount": 26
+    },
+    {
+      "name": "w22we33",
+      "year": 2020,
+      "content": "This question is originated from Conway\\'s Game of Life. RIP to Prof. Conway.\\nConway\\'s Game of Life: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life\\nNews: https://twitter.com/CardColm/status/1249038195880341505",
+      "voteCount": 22
+    },
+    {
+      "name": "quanglegopro01",
+      "year": 2024,
+      "content": "I don\\'t understand this follow up question. Could anyone please explain it for me? Thank you so much\\n> In this question, we represent the board using a 2D array. In principle, the board is infinite, which would cause problems when the active area encroaches upon the border of the array (i.e., live cells reach the border). How would you address these problems?",
+      "voteCount": 11
+    },
+    {
+      "name": "jstrohm",
+      "year": 2023,
+      "content": "Beware, the question is misleading and does not have enough information to solve correctly.  They say to refer to the Wikipedia article which gives an example of the game where the coordinates wrap (basically a torus) but they seem to assume you will not wrap for their answers.  ",
+      "voteCount": 7
+    },
+    {
+      "name": "LeetCode",
+      "year": 2022,
+      "content": "This problem is the Daily LeetCoding Challenge for April, Day 12.\n\nFeel free to share anything related to this problem here!\n\nYou can ask questions, discuss what you've learned from this problem, or show off how many days of streak you've made!\n\n---\n\nIf you'd like to share a detailed solution to the problem, please create a new post in the discuss section and provide\n- **Detailed Explanations**: Describe the algorithm you used to solve this problem. Include any insights you used to solve this problem.\n- **Images** that help explain the algorithm.\n- **Language and Code** you used to pass the problem.\n- **Time and Space complexity analysis**.\n\n---\n\n  **📌 Do you want to learn the problem thoroughly?**\n  Read [**⭐  LeetCode Official Solution⭐**](https://leetcode.com/problems/game-of-life/solution) to learn the 3 approaches to the problem with detailed explanations to the algorithms, codes, and complexity analysis.\n  <details>\n  <summary> Spoiler Alert! We'll explain these 2 approaches in the official solution</summary>\n\n  \n**Approach 1:** O(mn) Space Solution\n\n  \n**Approach 2:** O(1) Space Solution\n\n  \n</details>\n\n\n\nIf you're new to Daily LeetCoding Challenge, [**check out this post**](https://leetcode.com/discuss/general-discussion/655704/)!\n\n\n---\n\n<br>\n\n<p align=\"center\">\n<a href=\"https://leetcode.com/subscribe/?ref=ex_dc\" target=\"_blank\">\n  <img src=\"https://assets.leetcode.com/static_assets/marketing/daily_leetcoding_banner.png\" width=\"560px\" />\n</a>\n</p>\n\n<br>",
+      "voteCount": 6
+    },
+    {
+      "name": "Sainathpatil",
+      "year": 2024,
+      "content": "int[] dirRow ={-1, -1, -1, 0, +1, +1, +1, 0}\\nint[] dirCol ={-1, 0, +1, +1, +1, 0, -1, -1}\\n\\nyou need this : )",
+      "voteCount": 5
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "category": "",
+  "id": "45",
+  "name": "Jump Game II",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/jump-game-ii/",
+  "slug": "jump-game-ii",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "similar_questions": [
+    {
+      "title": "Jump Game",
+      "difficulty": "Medium",
+      "slug": "jump-game"
+    },
+    {
+      "title": "Jump Game III",
+      "difficulty": "Medium",
+      "slug": "jump-game-iii"
+    },
+    {
+      "title": "Jump Game VII",
+      "difficulty": "Medium",
+      "slug": "jump-game-vii"
+    },
+    {
+      "title": "Jump Game VIII",
+      "difficulty": "Medium",
+      "slug": "jump-game-viii"
+    },
+    {
+      "title": "Minimum Number of Visited Cells in a Grid",
+      "difficulty": "Hard",
+      "slug": "minimum-number-of-visited-cells-in-a-grid"
+    },
+    {
+      "title": "Maximum Number of Jumps to Reach the Last Index",
+      "difficulty": "Medium",
+      "slug": "maximum-number-of-jumps-to-reach-the-last-index"
+    },
+    {
+      "title": "Visit Array Positions to Maximize Score",
+      "difficulty": "Medium",
+      "slug": "visit-array-positions-to-maximize-score"
+    }
+  ],
+  "questionId": "45",
+  "questionFrontendId": "45",
+  "title": "Jump Game II",
+  "titleSlug": "jump-game-ii",
+  "content": "<p>You are given a <strong>0-indexed</strong> array of integers <code>nums</code> of length <code>n</code>. You are initially positioned at&nbsp;index 0.</p>\n\n<p>Each element <code>nums[i]</code> represents the maximum length of a forward jump from index <code>i</code>. In other words, if you are at index <code>i</code>, you can jump to any index <code>(i + j)</code>&nbsp;where:</p>\n\n<ul>\n\t<li><code>0 &lt;= j &lt;= nums[i]</code> and</li>\n\t<li><code>i + j &lt; n</code></li>\n</ul>\n\n<p>Return <em>the minimum number of jumps to reach index </em><code>n - 1</code>. The test cases are generated such that you can reach index&nbsp;<code>n - 1</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [2,3,1,1,4]\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> The minimum number of jumps to reach the last index is 2. Jump 1 step from index 0 to 1, then 3 steps to the last index.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [2,3,0,1,4]\n<strong>Output:</strong> 2\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>0 &lt;= nums[i] &lt;= 1000</code></li>\n\t<li>It&#39;s guaranteed that you can reach <code>nums[n - 1]</code>.</li>\n</ul>\n",
+  "likes": 15903,
+  "dislikes": 679,
+  "stats": {
+    "totalAccepted": "1.9M",
+    "totalSubmission": "4.4M",
+    "totalAcceptedRaw": 1858024,
+    "totalSubmissionRaw": 4439324,
+    "acRate": "41.9%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "metaData": {
+    "name": "jump",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Amazon",
+        "slug": "amazon",
+        "timesEncountered": 19
+      },
+      {
+        "taggedByAdmin": false,
+        "name": "Google",
+        "slug": "google",
+        "timesEncountered": 11
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "tanti1234arjun",
+      "year": 2022,
+      "content": "i cant uderstand what is the question actually",
+      "voteCount": 289
+    },
+    {
+      "name": "gepo",
+      "year": 2015,
+      "content": "if the first jump step is 0, it means you can never reach the end.\\nthen what is the result?",
+      "voteCount": 97
+    },
+    {
+      "name": "abhishek0207",
+      "year": 2019,
+      "content": "![image](https://assets.leetcode.com/users/abhishek0207/image_1574817265.png)\\n",
+      "voteCount": 88
+    },
+    {
+      "name": "DebashishDeka",
+      "year": 2021,
+      "content": "Jump Game 2:\\n\\n[A -- B -- C -- D -- E -- F -- G]\\n\\nAssume, you can jump from A to D at max. So you jumped (+1)\\nand came to D. At D, you are thinking to jump further right\\nBut then some QS came to your mind.\\n\\n1. Is D is the best place to jump further right ?\\n2. What if B was having a better jump beyond D in right side. What if C does even better ?\\n3. So, basically, we have three choices - [B,C,D] to jump beyond D assuming the fact that\\nwe already jumped from A (where ? not sure yet, no need also, we just need count)\\n4. So, we will keep maintaining maximum possible jump provided by B, C and D and choose the best one.\\n5. B,C,D becomes kind of similar in terms of jumping beyond D, we just need to choose the best jump \\nat D and do a +1",
+      "voteCount": 82
+    },
+    {
+      "name": "miosokic",
+      "year": 2022,
+      "content": "goal it to reach n-1 not nums[n-1]",
+      "voteCount": 69
+    },
+    {
+      "name": "supermatthew",
+      "year": 2019,
+      "content": "My first thought for this problem, before learning the O(N) solution, was to make a memo:\\n**MinJumpsToEnd[i]**=minimum jumps to the end, starting from index i.\\nThe base case is MinJumpsToEnd[n-1]=0.\\nThen we fill the remaining entries from back to front. \\n\\nThe rule is:\\n**MinJumpsToEnd[i] = 1 + min { MinJumpsToEnd[i+1],MinJumpsToEnd[i+2],...,MinJumpsToEnd[i+k] }**\\nwhere k = nums[i].  However, taking this minimum requires k operations, and since k is an int, then computing this for the entire array can take **O(N^2)** time since the span of elements over which we take the minimum could go to the end of the memo.\\n\\nThere is a data structure called [segment tree](https://www.geeksforgeeks.org/segment-tree-set-1-range-minimum-query/), that given some array, A[i], allows computations of min{A[i],...,A[j]) in O(Log N) time rather than O(N).  It also allows updates of A[i] in O(Log N) time.\\n\\nConsider this with nums = [2,3,1,1,4].\\nInitially the memo MinJumpsToEnd = [\\u221E,\\u221E,\\u221E,\\u221E,0].\\nWe now build our segment tree off of this memo;\\nFor i = 3 (second-to-last element), we calculate minimum{memo[4]} = minimum{0} = 0, to get\\nMinJumpsToEnd = [\\u221E,\\u221E,\\u221E,1,0]. Then we update the segment tree with the \\u221E becoming 1.\\nFor i = 2, we calculate minimum{memo[3]} = minimum{1} = 1 to get\\nMinJumpsToEnd = [\\u221E,\\u221E,2,1,0]. Again we update the segment tree with the \\u221E becoming 2.\\nFor i = 1, we calculate minimum{memo[2],memo[3],memo[4]} = minimum{2,1,0} = 0, to get \\nMinJumpsToEnd = [\\u221E,1,2,1,0]. Update segment tree.\\nLastlt for i = 0, we calculate minimum{memo[1],memo[2]} = minimum{1,2} = 1 to get\\nMinJumpsToEnd = [2,1,2,1,0] and return 2.\\n\\nThe point is that we keep the segment tree accurate at each step to allow the potentially linear time calculation of minimum{...} to take place in Log N time instead.\\n\\n*Don\\'t do this since there is an O(N) solution.  This is just to demonstrate how you can do a DP solution in better than O(N^2) time.*",
+      "voteCount": 54
+    },
+    {
+      "name": "Saat_55",
+      "year": 2024,
+      "content": "For the first time I have actually understood and solved a DP problem completely on my own. Feeling happy :,)",
+      "voteCount": 53
+    },
+    {
+      "name": "silver_archon",
+      "year": 2020,
+      "content": "Most important rule: \\nYou **DO NOT** have to jump EXACTLY *x* spaces. Rather, you can **CHOOSE** to jump 1. 2. 3....*x* spaces.\\n\\nTherefore, suppose *num[i] < num[j*] and  *i< j*, then simply jump to *num[j]* if given the choice, since *num[j]* can cover all the positition coverd by *num[i]*. Therefore bigger the number the better, it means more choice.\\n\\nFor example:\\nnum[2] = 3, num[3] = 5.\\nIf you can choose between jump to idex 2 or 3, then you should jump to index 3. Because index 2 can jump to index 3, 4, 5, while index 3 can jump to 4, 5, 6, 7.\\n\\nIn conclusion: The problem can be solved using this simple greedy algorithm. The key to improving run speed of the solution is to realize that when choosing which index to jump to, always pick the the one that gives the maximum possible distance, which is given by ***index + num[index]***",
+      "voteCount": 22
+    },
+    {
+      "name": "Vikram1511",
+      "year": 2019,
+      "content": "testing as custom input for [1,2] case giving me correct answer as expected, but when i submit the code it shows that my answer is wrong for the same test case? whats wrong",
+      "voteCount": 16
+    },
+    {
+      "name": "dennychen31415926",
+      "year": 2022,
+      "content": "The common solution here is a BFS, ie. consider all possible nodes that can be reached in one step, then expand those nodes to get the range of possibilities for the next step.\\n\\nConsider the following counterexample for a BFS solution:\\n\\n[5000, 5000, 4999, 4998, 4997, 4996... 1, 1, 1, (1 repeated until end of 10000 length array)]\\n\\nOf note is that:\\n\\n1. On the first step, the first 5000 elements of the array are visible.\\n2. On all subsequent steps, the first 5000 elements do not help push the right pointer any further. It only moves 1 element each step.\\n3. The left pointer also only moves 1 element each step, as all possibilities need to be considered. ie. even if nums[i] is 50, nums[i+1] still must be considered, as it could be 10000.\\n\\nSo the algorithm will need to run 5000 steps, each of which must consider 5000 nodes. This seems like O(n^2) behavior to me, rather than O(n). Did I miss something?\\n\\nAdmittedly, this is a contrived input I designed from adversarial thinking, but iirc big O notation was \\'worst case\\'.",
+      "voteCount": 15
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "category": "",
+  "id": "378",
+  "name": "Kth Smallest Element in a Sorted Matrix",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/",
+  "slug": "kth-smallest-element-in-a-sorted-matrix",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find K Pairs with Smallest Sums",
+      "difficulty": "Medium",
+      "slug": "find-k-pairs-with-smallest-sums"
+    },
+    {
+      "title": "Kth Smallest Number in Multiplication Table",
+      "difficulty": "Hard",
+      "slug": "kth-smallest-number-in-multiplication-table"
+    },
+    {
+      "title": "Find K-th Smallest Pair Distance",
+      "difficulty": "Hard",
+      "slug": "find-k-th-smallest-pair-distance"
+    },
+    {
+      "title": "K-th Smallest Prime Fraction",
+      "difficulty": "Medium",
+      "slug": "k-th-smallest-prime-fraction"
+    }
+  ],
+  "questionId": "378",
+  "questionFrontendId": "378",
+  "title": "Kth Smallest Element in a Sorted Matrix",
+  "titleSlug": "kth-smallest-element-in-a-sorted-matrix",
+  "content": "<p>Given an <code>n x n</code> <code>matrix</code> where each of the rows and columns is sorted in ascending order, return <em>the</em> <code>k<sup>th</sup></code> <em>smallest element in the matrix</em>.</p>\n\n<p>Note that it is the <code>k<sup>th</sup></code> smallest element <strong>in the sorted order</strong>, not the <code>k<sup>th</sup></code> <strong>distinct</strong> element.</p>\n\n<p>You must find a solution with a memory complexity better than <code>O(n<sup>2</sup>)</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> matrix = [[1,5,9],[10,11,13],[12,13,15]], k = 8\n<strong>Output:</strong> 13\n<strong>Explanation:</strong> The elements in the matrix are [1,5,9,10,11,12,13,<u><strong>13</strong></u>,15], and the 8<sup>th</sup> smallest number is 13\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> matrix = [[-5]], k = 1\n<strong>Output:</strong> -5\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>n == matrix.length == matrix[i].length</code></li>\n\t<li><code>1 &lt;= n &lt;= 300</code></li>\n\t<li><code>-10<sup>9</sup> &lt;= matrix[i][j] &lt;= 10<sup>9</sup></code></li>\n\t<li>All the rows and columns of <code>matrix</code> are <strong>guaranteed</strong> to be sorted in <strong>non-decreasing order</strong>.</li>\n\t<li><code>1 &lt;= k &lt;= n<sup>2</sup></code></li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Follow up:</strong></p>\n\n<ul>\n\t<li>Could you solve the problem with a constant memory (i.e., <code>O(1)</code> memory complexity)?</li>\n\t<li>Could you solve the problem in <code>O(n)</code> time complexity? The solution may be too advanced for an interview but you may find reading <a href=\"http://www.cse.yorku.ca/~andy/pubs/X+Y.pdf\" target=\"_blank\">this paper</a> fun.</li>\n</ul>\n",
+  "likes": 10361,
+  "dislikes": 383,
+  "stats": {
+    "totalAccepted": "743.8K",
+    "totalSubmission": "1.2M",
+    "totalAcceptedRaw": 743819,
+    "totalSubmissionRaw": 1164973,
+    "acRate": "63.8%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    },
+    {
+      "name": "Sorting",
+      "slug": "sorting"
+    },
+    {
+      "name": "Heap (Priority Queue)",
+      "slug": "heap-priority-queue"
+    },
+    {
+      "name": "Matrix",
+      "slug": "matrix"
+    }
+  ],
+  "metaData": {
+    "name": "kthSmallest",
+    "params": [
+      {
+        "name": "matrix",
+        "type": "integer[][]"
+      },
+      {
+        "name": "k",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "company_tag_stats": {
+    "1": [
+      {
+        "taggedByAdmin": false,
+        "name": "Meta",
+        "slug": "facebook",
+        "timesEncountered": 16
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "amrinders433",
+      "year": 2021,
+      "content": "# Kth Smallest Element in a Sorted Matrix\\n![image](https://assets.leetcode.com/users/images/dc1a846a-126c-49cb-b9fa-e7a529d86182_1614142241.31893.png)\\n",
+      "voteCount": 119
+    },
+    {
+      "name": "argonaut16",
+      "year": 2023,
+      "content": "The example test cases are not illustrative; it would be better if they included something like `matrix=[[1,2],[1,3]]` and `k=2` here.",
+      "voteCount": 99
+    },
+    {
+      "name": "solosynth1",
+      "year": 2024,
+      "content": "Reading paper from 1984 is not my idea of fun but okay",
+      "voteCount": 47
+    },
+    {
+      "name": "CominBuck",
+      "year": 2019,
+      "content": "I share my whole thinking process in this [article](https://medium.com/brain-framework/kth-smallest-element-in-sorted-matrix-b20400cf878e). Hope it helps !",
+      "voteCount": 45
+    },
+    {
+      "name": "Ben_Van",
+      "year": 2021,
+      "content": "Right now since the arrays are in \\'non-degreasing order\\' according to the problem description, we had better move this question  from\\'Algorithm\\' to the category of \\'Harware/Mechanical/Lubrication\\' .\\nOh wait, there is no such a category on Leetcode? Then it is a good time to add one!",
+      "voteCount": 39
+    },
+    {
+      "name": "zakcoder",
+      "year": 2024,
+      "content": "Why do we put ourselves through this S H I T!!!!!",
+      "voteCount": 35
+    },
+    {
+      "name": "swaroopr",
+      "year": 2024,
+      "content": "The binary search is hard! ",
+      "voteCount": 12
+    },
+    {
+      "name": "OT_Chen",
+      "year": 2017,
+      "content": "I've seen multiple solutions using binary search to narrow down the `[lo, hi]` to get `mid = (hi - lo) / 2` until the count of elements smaller mid is exactly `k`. \\n\\nThey all directly return the `mid` as result to represent mid is the kth-smallest element in array. But how can we be sure that `mid` really exist in array?\\n\\nI can understand the priority-queue solution and merge sort solution. But for binary search, the `mid existence problem` still bothers me.",
+      "voteCount": 10
+    },
+    {
+      "name": "vv_1801",
+      "year": 2020,
+      "content": "Hey Guys, \\nHere is the link to the video solution for this question by **alGOds**.\\n**https://youtu.be/G5wLN4UweAM**\\nIt has the **perfect explanation** to solve this using **binary search** along with some other optimisations.",
+      "voteCount": 9
+    },
+    {
+      "name": "apsharam",
+      "year": 2020,
+      "content": "Following test case failed for me:\\n![image](https://assets.leetcode.com/users/ashram/image_1580946697.png)\\n\\nHow I understand the question, kth smallest element in Matrix mean\\n\\n1 is the first smallest element\\n2 is the second smallest element\\n3 is the third smallest element\\n\\nSo for k=2, the answer should be 2 right?",
+      "voteCount": 7
+    }
+  ]
+}

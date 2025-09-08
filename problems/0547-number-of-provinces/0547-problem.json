@@ -1,0 +1,154 @@
+{
+  "category": "",
+  "id": "547",
+  "name": "Number of Provinces",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/number-of-provinces/",
+  "slug": "number-of-provinces",
+  "isPaidOnly": false,
+  "tags": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union Find",
+    "Graph"
+  ],
+  "similar_questions": [
+    {
+      "title": "Number of Connected Components in an Undirected Graph",
+      "difficulty": "Medium",
+      "slug": "number-of-connected-components-in-an-undirected-graph"
+    },
+    {
+      "title": "Robot Return to Origin",
+      "difficulty": "Easy",
+      "slug": "robot-return-to-origin"
+    },
+    {
+      "title": "Sentence Similarity",
+      "difficulty": "Easy",
+      "slug": "sentence-similarity"
+    },
+    {
+      "title": "Sentence Similarity II",
+      "difficulty": "Medium",
+      "slug": "sentence-similarity-ii"
+    },
+    {
+      "title": "The Earliest Moment When Everyone Become Friends",
+      "difficulty": "Medium",
+      "slug": "the-earliest-moment-when-everyone-become-friends"
+    },
+    {
+      "title": "Detonate the Maximum Bombs",
+      "difficulty": "Medium",
+      "slug": "detonate-the-maximum-bombs"
+    }
+  ],
+  "questionId": "547",
+  "questionFrontendId": "547",
+  "title": "Number of Provinces",
+  "titleSlug": "number-of-provinces",
+  "content": "<p>There are <code>n</code> cities. Some of them are connected, while some are not. If city <code>a</code> is connected directly with city <code>b</code>, and city <code>b</code> is connected directly with city <code>c</code>, then city <code>a</code> is connected indirectly with city <code>c</code>.</p>\n\n<p>A <strong>province</strong> is a group of directly or indirectly connected cities and no other cities outside of the group.</p>\n\n<p>You are given an <code>n x n</code> matrix <code>isConnected</code> where <code>isConnected[i][j] = 1</code> if the <code>i<sup>th</sup></code> city and the <code>j<sup>th</sup></code> city are directly connected, and <code>isConnected[i][j] = 0</code> otherwise.</p>\n\n<p>Return <em>the total number of <strong>provinces</strong></em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/12/24/graph1.jpg\" style=\"width: 222px; height: 142px;\" />\n<pre>\n<strong>Input:</strong> isConnected = [[1,1,0],[1,1,0],[0,0,1]]\n<strong>Output:</strong> 2\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/12/24/graph2.jpg\" style=\"width: 222px; height: 142px;\" />\n<pre>\n<strong>Input:</strong> isConnected = [[1,0,0],[0,1,0],[0,0,1]]\n<strong>Output:</strong> 3\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 200</code></li>\n\t<li><code>n == isConnected.length</code></li>\n\t<li><code>n == isConnected[i].length</code></li>\n\t<li><code>isConnected[i][j]</code> is <code>1</code> or <code>0</code>.</li>\n\t<li><code>isConnected[i][i] == 1</code></li>\n\t<li><code>isConnected[i][j] == isConnected[j][i]</code></li>\n</ul>\n",
+  "likes": 10716,
+  "dislikes": 401,
+  "stats": {
+    "totalAccepted": "1.3M",
+    "totalSubmission": "1.9M",
+    "totalAcceptedRaw": 1324029,
+    "totalSubmissionRaw": 1911237,
+    "acRate": "69.3%"
+  },
+  "topicTags": [
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Breadth-First Search",
+      "slug": "breadth-first-search"
+    },
+    {
+      "name": "Union Find",
+      "slug": "union-find"
+    },
+    {
+      "name": "Graph",
+      "slug": "graph"
+    }
+  ],
+  "metaData": {
+    "name": "findCircleNum",
+    "params": [
+      {
+        "name": "isConnected",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "manual": false
+  },
+  "discussion_posts": [
+    {
+      "name": "krazyfox",
+      "year": 2023,
+      "content": "Who else hate Matrix Representation Adjacency are way better ",
+      "voteCount": 272
+    },
+    {
+      "name": "CIement",
+      "year": 2023,
+      "content": "# Explanation\\n\\nI\\'m writing this for anyone having truble to understand the input of this problem, like I had.\\n\\nAs the problem says `isConnected[i][j] EQ 1 if the i-th city and the j-th city are directly connected`. isConnected is a matrix of the connection between the x-coordinate and the y-coordinate, each axis is a city.\\n\\nHere is a more visual explanation of the input:\\n\\n```\\n/**\\n\\nExample 1:\\n\\nisConnected = [[1,1,0],[1,1,0],[0,0,1]]\\n\\n CITY |0 1 2\\n------|------\\n     0|1 1 0 \\n     1|1 1 0\\n     2|0 0 1\\n\\n\\nConnections:\\n0 \\u25BA 1\\n1 \\u25BA 0\\n2 \\u25BA none\\n\\n\\nExample 2:\\n\\nisConnected = [[1,0,0],[0,1,0],[0,0,1]]\\n\\n |0 1 2\\n-|------\\n0|1 0 0 \\n1|0 1 0\\n2|0 0 1\\n\\n\\nConnections:\\n0 \\u25BA none\\n1 \\u25BA none\\n2 \\u25BA none\\n\\n\\nExample 3: \\n\\n |0 1 2 3\\n---------\\n0|1 1 0 0 \\n1|1 1 1 0\\n2|0 1 1 1\\n3|0 0 1 1\\n\\n\\n0 \\u25BA 1\\n1 \\u25BA 0 2\\n2 \\u25BA 1 3\\n3 \\u25BA 2\\n\\n**/\\n```\\n\\nI hope it helped you and I let you dive back into the problem to solve it !!",
+      "voteCount": 241
+    },
+    {
+      "name": "wozhenaishuati",
+      "year": 2017,
+      "content": "At first glance, aren't they the same?",
+      "voteCount": 182
+    },
+    {
+      "name": "chenwu",
+      "year": 2017,
+      "content": "The matrix representation is a bit confusing by looking at it. It appears to be asking to number the disjoint sets in the graph. But what it actually asks is who are forming a single disjoint set and how many disjoint sets are there. M[i][i] can simply be ignored. M[i][j] means i and j are connected.",
+      "voteCount": 133
+    },
+    {
+      "name": "JosephHauter",
+      "year": 2024,
+      "content": "input is really confusing so heres an explanation on it basically like a truth table\\nbased on this input:\\n`[[1,1,0],\\n[1,1,0],\\n[0,0,1]]`\\n\\n```\\ncity |  which node city connects to\\n--------\\n0     | (connects to city 0) , (connects to city 1), (not connect to city 2) \\n1     | (connects to city 0) , (connects to city 1), (not connect to city 2) \\n2     | (not connect to city 0), (not connect to city 1), (connects to city 2)\\n```  \\nI hope it helps good luck on solving :D please upvote so more see it",
+      "voteCount": 59
+    },
+    {
+      "name": "theD",
+      "year": 2017,
+      "content": "[[1,0,0,1],[0,1,1,0],[0,1,1,1],[1,0,1,1]]\\nwhy does this test case expect 1 as result? Shouldn't it be 4?",
+      "voteCount": 56
+    },
+    {
+      "name": "aakankshas",
+      "year": 2020,
+      "content": "What is the diff btw this problem and [https://leetcode.com/problems/number-of-islands/]",
+      "voteCount": 32
+    },
+    {
+      "name": "henrique",
+      "year": 2019,
+      "content": "The definition of a circle given in the statement is not the one the judge uses. This comes from a wrong definition of undirect friendship. Please someone fix this soon!\\n\\nIn fact, it is never said that two people that share an undirect friend also are undirect friends.\\n\\nLet\\'s go through an example:  A-B-C-D. In this example, A and D are not friends (even undirectly), since they do not share a direct friend. According to the problem statement, the circles (subsets with mutual friends of maximal size) would be  A-B-C and B-C-D. However the online judger expects 1 as the correct answer.\\n\\nFinding such kind of circles seems to be a much harder problem (in half an hour I could not come up with a reasonable solution), and probably is not a medium level problem.",
+      "voteCount": 32
+    },
+    {
+      "name": "najwer23",
+      "year": 2023,
+      "content": "isConnected suggests Boolean",
+      "voteCount": 27
+    },
+    {
+      "name": "joy_banerjee",
+      "year": 2024,
+      "content": "Seems easy at first sight, but its not\\n\\nPlease make sure to check for these TCs\\n[\\n[1,1,0,0,0,0,0,1,0,0,0,0,0,0,0],[1,1,0,0,0,0,0,0,0,0,0,0,0,0,0],\\n[0,0,1,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,1,0,1,1,0,0,0,0,0,0,0,0],[0,0,0,0,1,0,0,0,0,1,1,0,0,0,0],[0,0,0,1,0,1,0,0,0,0,1,0,0,0,0],[0,0,0,1,0,0,1,0,1,0,0,0,0,1,0],[1,0,0,0,0,0,0,1,1,0,0,0,0,0,0],[0,0,0,0,0,0,1,1,1,0,0,0,0,1,0],[0,0,0,0,1,0,0,0,0,1,0,1,0,0,1],[0,0,0,0,1,1,0,0,0,0,1,1,0,0,0],[0,0,0,0,0,0,0,0,0,1,1,1,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,1,0,0],[0,0,0,0,0,0,1,0,1,0,0,0,0,1,0],[0,0,0,0,0,0,0,0,0,1,0,0,0,0,1]\\n]\\n\\n[[1,0,0,0,1,0,0,0,0,0,0,0,0,0,0],[0,1,0,0,0,1,0,0,0,0,0,0,0,0,0],[0,0,1,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,1,0,0,0,0,0,0,0,0,0,0,0],[1,0,0,0,1,0,0,0,0,0,0,0,1,0,0],[0,1,0,0,0,1,0,0,0,0,0,0,1,0,0],[0,0,0,0,0,0,1,0,0,0,0,1,0,0,0],[0,0,0,0,0,0,0,1,0,0,0,1,1,0,0],[0,0,0,0,0,0,0,0,1,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,1,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,1,1,0,0,0],[0,0,0,0,0,0,1,1,0,0,1,1,0,0,1],[0,0,0,0,1,1,0,1,0,0,0,0,1,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,1,0],[0,0,0,0,0,0,0,0,0,0,0,1,0,0,1]]\\n\\n",
+      "voteCount": 19
+    }
+  ]
+}

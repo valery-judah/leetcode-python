@@ -1,0 +1,166 @@
+{
+  "category": "",
+  "id": "327",
+  "name": "Count of Range Sum",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/count-of-range-sum/",
+  "slug": "count-of-range-sum",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Divide and Conquer",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Merge Sort",
+    "Ordered Set"
+  ],
+  "similar_questions": [
+    {
+      "title": "Count of Smaller Numbers After Self",
+      "difficulty": "Hard",
+      "slug": "count-of-smaller-numbers-after-self"
+    },
+    {
+      "title": "Reverse Pairs",
+      "difficulty": "Hard",
+      "slug": "reverse-pairs"
+    },
+    {
+      "title": "Count the Number of Fair Pairs",
+      "difficulty": "Medium",
+      "slug": "count-the-number-of-fair-pairs"
+    },
+    {
+      "title": "Find the Number of Copy Arrays",
+      "difficulty": "Medium",
+      "slug": "find-the-number-of-copy-arrays"
+    }
+  ],
+  "questionId": "327",
+  "questionFrontendId": "327",
+  "title": "Count of Range Sum",
+  "titleSlug": "count-of-range-sum",
+  "content": "<p>Given an integer array <code>nums</code> and two integers <code>lower</code> and <code>upper</code>, return <em>the number of range sums that lie in</em> <code>[lower, upper]</code> <em>inclusive</em>.</p>\n\n<p>Range sum <code>S(i, j)</code> is defined as the sum of the elements in <code>nums</code> between indices <code>i</code> and <code>j</code> inclusive, where <code>i &lt;= j</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [-2,5,-1], lower = -2, upper = 2\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> The three ranges are: [0,0], [2,2], and [0,2] and their respective sums are: -2, -1, 2.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [0], lower = 0, upper = 0\n<strong>Output:</strong> 1\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>-2<sup>31</sup> &lt;= nums[i] &lt;= 2<sup>31</sup> - 1</code></li>\n\t<li><code>-10<sup>5</sup> &lt;= lower &lt;= upper &lt;= 10<sup>5</sup></code></li>\n\t<li>The answer is <strong>guaranteed</strong> to fit in a <strong>32-bit</strong> integer.</li>\n</ul>\n",
+  "likes": 2451,
+  "dislikes": 259,
+  "stats": {
+    "totalAccepted": "93.7K",
+    "totalSubmission": "250.7K",
+    "totalAcceptedRaw": 93656,
+    "totalSubmissionRaw": 250664,
+    "acRate": "37.4%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    },
+    {
+      "name": "Divide and Conquer",
+      "slug": "divide-and-conquer"
+    },
+    {
+      "name": "Binary Indexed Tree",
+      "slug": "binary-indexed-tree"
+    },
+    {
+      "name": "Segment Tree",
+      "slug": "segment-tree"
+    },
+    {
+      "name": "Merge Sort",
+      "slug": "merge-sort"
+    },
+    {
+      "name": "Ordered Set",
+      "slug": "ordered-set"
+    }
+  ],
+  "metaData": {
+    "name": "countRangeSum",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      },
+      {
+        "name": "lower",
+        "type": "integer"
+      },
+      {
+        "name": "upper",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "jigyansunanda",
+      "year": 2022,
+      "content": "It is amazing how hard it is to understand the description and how easy-classic it is to solve once you understand the problem description. There should be a better problem statement.",
+      "voteCount": 82
+    },
+    {
+      "name": "Electron1997",
+      "year": 2023,
+      "content": "The problem statement is incorrect! You have to find the number of distinct ranges with sum in [lower, upper], not the number of distinct range sums in [lower, upper]. For example, for nums = [2, 2, 2], lower = 0 and upper = 6 there are 6 ranges with sum in [lower, upper]: these are [0, 0], [1, 1], [2, 2], [0, 1], [1, 2] and [0, 2]. On the other hand there are only 3 different range sums in [lower, upper]: 2, 4 and 6. Your program should return 6 (the number of distinct ranges), not 3 as the problem description suggests!",
+      "voteCount": 29
+    },
+    {
+      "name": "overstic",
+      "year": 2020,
+      "content": "1. Get the sum of the first k number, [1,2,3,1] -> [1,3,6,7].Then the problem is to find the number of AvailableSet i,j  so that j - i is between lower and upper bound\\n2. using merge sort and every time when you try to merge 2 sorted array Left, Right , Find the total number of AvailableSet i,j if i in Left and j in Right, using 2 pointers.\\n3. The time complexity should in O(nlog(n))\\n",
+      "voteCount": 18
+    },
+    {
+      "name": "rainman1993",
+      "year": 2016,
+      "content": "Why when lower = -2 and upper = 2, the interval will be divided into [0,0], [0,2] and [2,2]? where is the interval like [0,1], etc.?",
+      "voteCount": 18
+    },
+    {
+      "name": "primkruskal",
+      "year": 2023,
+      "content": "Was this problem a walk in the park for anyone? Been doing this a long time and the absolute last technique I would\\'ve guessed to use would be merge sort here",
+      "voteCount": 10
+    },
+    {
+      "name": "abhijeet5000kumar",
+      "year": 2024,
+      "content": "1. Merge Sort on Prefix array\\n2. Use binary search inside Merge Sort Code",
+      "voteCount": 9
+    },
+    {
+      "name": "agarwalayushmaan88",
+      "year": 2024,
+      "content": "Simple Explanation  It says that you have to find such  indexes (i , j) whose sum of all elements from i to j (i and j inclusive )  is in between lower and upper (inclusive) bound  . ",
+      "voteCount": 7
+    },
+    {
+      "name": "KMR-86",
+      "year": 2023,
+      "content": "anyone getting wrong answer for this test case in cpp?\\n[-677945463,-677945463,-677945463,...,-677945463]",
+      "voteCount": 5
+    },
+    {
+      "name": "Martician",
+      "year": 2024,
+      "content": "prefix sum TLEs :(",
+      "voteCount": 4
+    },
+    {
+      "name": "1aniket234",
+      "year": 2025,
+      "content": "The main problem is to find the number of ranges, not the range sum. You can easily find the range sum through prefix sum or fenwick tree. Don\\'t forget to use long long. (Generate the ranges, somehow in nlogn)",
+      "voteCount": 2
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "category": "",
+  "id": "490",
+  "name": "The Maze",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/the-maze/",
+  "slug": "the-maze",
+  "isPaidOnly": true,
+  "tags": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "similar_questions": [
+    {
+      "title": "The Maze III",
+      "difficulty": "Hard",
+      "slug": "the-maze-iii"
+    },
+    {
+      "title": "The Maze II",
+      "difficulty": "Medium",
+      "slug": "the-maze-ii"
+    }
+  ],
+  "questionId": "490",
+  "questionFrontendId": "490",
+  "title": "The Maze",
+  "titleSlug": "the-maze",
+  "content": "<p>There is a ball in a <code>maze</code> with empty spaces (represented as <code>0</code>) and walls (represented as <code>1</code>). The ball can go through the empty spaces by rolling <strong>up, down, left or right</strong>, but it won&#39;t stop rolling until hitting a wall. When the ball stops, it could choose the next direction.</p>\n\n<p>Given the <code>m x n</code> <code>maze</code>, the ball&#39;s <code>start</code> position and the <code>destination</code>, where <code>start = [start<sub>row</sub>, start<sub>col</sub>]</code> and <code>destination = [destination<sub>row</sub>, destination<sub>col</sub>]</code>, return <code>true</code> if the ball can stop at the destination, otherwise return <code>false</code>.</p>\n\n<p>You may assume that <strong>the borders of the maze are all walls</strong> (see examples).</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/31/maze1-1-grid.jpg\" style=\"width: 573px; height: 573px;\" />\n<pre>\n<strong>Input:</strong> maze = [[0,0,1,0,0],[0,0,0,0,0],[0,0,0,1,0],[1,1,0,1,1],[0,0,0,0,0]], start = [0,4], destination = [4,4]\n<strong>Output:</strong> true\n<strong>Explanation:</strong> One possible way is : left -&gt; down -&gt; left -&gt; down -&gt; right -&gt; down -&gt; right.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/31/maze1-2-grid.jpg\" style=\"width: 573px; height: 573px;\" />\n<pre>\n<strong>Input:</strong> maze = [[0,0,1,0,0],[0,0,0,0,0],[0,0,0,1,0],[1,1,0,1,1],[0,0,0,0,0]], start = [0,4], destination = [3,2]\n<strong>Output:</strong> false\n<strong>Explanation:</strong> There is no way for the ball to stop at the destination. Notice that you can pass through the destination but you cannot stop there.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> maze = [[0,0,0,0,0],[1,1,0,0,1],[0,0,0,0,0],[0,1,0,0,1],[0,1,0,0,0]], start = [4,3], destination = [0,1]\n<strong>Output:</strong> false\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == maze.length</code></li>\n\t<li><code>n == maze[i].length</code></li>\n\t<li><code>1 &lt;= m, n &lt;= 100</code></li>\n\t<li><code>maze[i][j]</code> is <code>0</code> or <code>1</code>.</li>\n\t<li><code>start.length == 2</code></li>\n\t<li><code>destination.length == 2</code></li>\n\t<li><code>0 &lt;= start<sub>row</sub>, destination<sub>row</sub> &lt; m</code></li>\n\t<li><code>0 &lt;= start<sub>col</sub>, destination<sub>col</sub> &lt; n</code></li>\n\t<li>Both the ball and the destination exist in an empty space, and they will not be in the same position initially.</li>\n\t<li>The maze contains <strong>at least 2 empty spaces</strong>.</li>\n</ul>\n",
+  "likes": 1894,
+  "dislikes": 198,
+  "stats": {
+    "totalAccepted": "199.1K",
+    "totalSubmission": "333.2K",
+    "totalAcceptedRaw": 199140,
+    "totalSubmissionRaw": 333218,
+    "acRate": "59.8%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Breadth-First Search",
+      "slug": "breadth-first-search"
+    },
+    {
+      "name": "Matrix",
+      "slug": "matrix"
+    }
+  ],
+  "metaData": {
+    "name": "hasPath",
+    "params": [
+      {
+        "name": "maze",
+        "type": "integer[][]"
+      },
+      {
+        "name": "start",
+        "type": "integer[]"
+      },
+      {
+        "name": "destination",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "esters123",
+      "year": 2021,
+      "content": "My code return False for thsi test case:\\n\\n[[0,0,1,0,0],[0,0,0,0,0],[0,0,0,1,0],[1,1,0,1,1],[0,0,0,0,0]]\\n[0,4]\\n[1,2]\\n\\nHow can the ball stop at (1,2) --- ?",
+      "voteCount": 32
+    },
+    {
+      "name": "thisispudi",
+      "year": 2018,
+      "content": "Why \\n\\n[[0,0,0],[0,0,0],[0,0,0]]\\n[0,0]\\n[1,2]\\n\\nexpect false?",
+      "voteCount": 17
+    },
+    {
+      "name": "VRAMJI",
+      "year": 2017,
+      "content": "[[0,0,1,0,0],\\n [0,0,0,0,0],\\n [0,0,0,1,0],\\n [1,1,0,1,1],\\n [0,0,0,0,0]]\\n[0,4]\\n[3,2]\\nOutput:\\ntrue\\nExpected:\\nfalse\\n\\nHow is the expected result false when there's a path (0,4)-(0,3)-(1,3)-(1,2)-(1,1)-(1,0)-(2,0)-(2,1)-(2,2)-(3,2)?\\n\\n@savardjf",
+      "voteCount": 16
+    },
+    {
+      "name": "z5294w93",
+      "year": 2017,
+      "content": "I don't think I understand the question clearly. For the Example 1, why the ball can reach the destination following the possible way given in the explanation. It looks to me that one of the paths should be left->down->left->down->down->down->down->right->right. When the path is as given in the explanation, shouldn't the ball hit the wall at the first right direction?\\n\\nFor the second example, why the ball cannot hit the wall to its left and stop?\\n\\nThanks. I'm not sure which part of the question I am missing here.",
+      "voteCount": 12
+    },
+    {
+      "name": "stephenming228",
+      "year": 2023,
+      "content": "Reminds me of the ice puzzles from Pokemon. Good times...",
+      "voteCount": 10
+    },
+    {
+      "name": "techno_phile",
+      "year": 2023,
+      "content": "Just a simple DFS/BFS won\\'t be enough. You have to slightly modify it. If you\\'re unable to come up with the solution in a reasonable amount of time, just look at the solution because it\\'s definitely kinda different than the usual dfs/bfs implementation.",
+      "voteCount": 10
+    },
+    {
+      "name": "jeet1995",
+      "year": 2020,
+      "content": "The test case is \\n[ \\n0 0 0\\n0 0 0\\n0 0 0\\n]\\nand the start and end points are [0,0] and [1,2]\\n\\nIt is possible to reach the destination using the following path :  (0,0)->(2,0)->(2,2)->(0,2)->(0,1)->(1,1)->(1,2)\\nThe expected answer is false, not sure why. Can someone explain why it is the case?\\n\\nI have a visited array to keep track of visited cells. In another example below, at every move based on direction, the ball if it hits 1 or wall, switches to other direction.\\n[[0,0,1,0,0],\\n [0,0,0,0,0],\\n [0,0,0,1,0],\\n [1,1,0,1,1],\\n [0,0,0,0,0]\\n]\\n[0,4]\\n[1,2]\\n\\nMany of the other test cases are also confusing as given in other discussion questions.\\n\\n",
+      "voteCount": 8
+    },
+    {
+      "name": "kayysean",
+      "year": 2024,
+      "content": "Description is incorrect and misleading and it does not match with input data. \\n\"You may assume that the borders of the maze are all walls (see examples).\"\\nAccording to the description AND the example images, there must be a \"wall\" of 1s in the input data. \\nHowever, according to the input data, there is no real \"Wall\" of 1s. we are supposed to assume that there is a virtual wall (a.k.a a wall when we hit the boundaries). This must be properly explained in the description and the images must be updated to avoid confusion. \\n\\n\\n",
+      "voteCount": 5
+    },
+    {
+      "name": "kosambi",
+      "year": 2020,
+      "content": "[[0,0,1,0,0],[0,0,0,0,0],[0,0,0,1,0],[1,1,0,1,1],[0,0,0,0,0]]\\n[0,4]\\n[1,2]\\n\\nwhen the ball rolls to 1,2 it will keep rolling down till the last row.\\nwhen the ball rolls to 1,2 it will keep rolling left till the first column.\\nI don\\'t see the ball staying at 1,2 destination.\\n\\nCan someone pls help me?",
+      "voteCount": 5
+    },
+    {
+      "name": "__thalaiva__",
+      "year": 2020,
+      "content": "I could not understand which the output should be true in this case. The left and right of destination is not a wall\\n[[0,0,1,0,0],[0,0,0,0,0],[0,0,0,1,0],[1,1,0,1,1],[0,0,0,0,0]]\\n[0,4]\\n[1,2]\\nOutput\\nfalse\\nExpected\\ntrue",
+      "voteCount": 5
+    }
+  ]
+}

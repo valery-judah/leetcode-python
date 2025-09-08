@@ -1,0 +1,127 @@
+{
+  "category": "",
+  "id": "1020",
+  "name": "Number of Enclaves",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/number-of-enclaves/",
+  "slug": "number-of-enclaves",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union Find",
+    "Matrix"
+  ],
+  "similar_questions": [],
+  "questionId": "1073",
+  "questionFrontendId": "1020",
+  "title": "Number of Enclaves",
+  "titleSlug": "number-of-enclaves",
+  "content": "<p>You are given an <code>m x n</code> binary matrix <code>grid</code>, where <code>0</code> represents a sea cell and <code>1</code> represents a land cell.</p>\n\n<p>A <strong>move</strong> consists of walking from one land cell to another adjacent (<strong>4-directionally</strong>) land cell or walking off the boundary of the <code>grid</code>.</p>\n\n<p>Return <em>the number of land cells in</em> <code>grid</code> <em>for which we cannot walk off the boundary of the grid in any number of <strong>moves</strong></em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/02/18/enclaves1.jpg\" style=\"width: 333px; height: 333px;\" />\n<pre>\n<strong>Input:</strong> grid = [[0,0,0,0],[1,0,1,0],[0,1,1,0],[0,0,0,0]]\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> There are three 1s that are enclosed by 0s, and one 1 that is not enclosed because its on the boundary.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/02/18/enclaves2.jpg\" style=\"width: 333px; height: 333px;\" />\n<pre>\n<strong>Input:</strong> grid = [[0,1,1,0],[0,0,1,0],[0,0,1,0],[0,0,0,0]]\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> All 1s are either on the boundary or can reach the boundary.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == grid.length</code></li>\n\t<li><code>n == grid[i].length</code></li>\n\t<li><code>1 &lt;= m, n &lt;= 500</code></li>\n\t<li><code>grid[i][j]</code> is either <code>0</code> or <code>1</code>.</li>\n</ul>\n",
+  "likes": 4450,
+  "dislikes": 86,
+  "stats": {
+    "totalAccepted": "354.6K",
+    "totalSubmission": "498.8K",
+    "totalAcceptedRaw": 354566,
+    "totalSubmissionRaw": 498840,
+    "acRate": "71.1%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Breadth-First Search",
+      "slug": "breadth-first-search"
+    },
+    {
+      "name": "Union Find",
+      "slug": "union-find"
+    },
+    {
+      "name": "Matrix",
+      "slug": "matrix"
+    }
+  ],
+  "metaData": {
+    "name": "numEnclaves",
+    "params": [
+      {
+        "name": "grid",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "Anirudh_Purohit",
+      "year": 2023,
+      "content": "i used to be afraid of  matrix grid questions then I studied graph\\uD83D\\uDE0B",
+      "voteCount": 127
+    },
+    {
+      "name": "alt909",
+      "year": 2023,
+      "content": "Welcome fellow graph enjoyers.",
+      "voteCount": 88
+    },
+    {
+      "name": "Michael_Teng6",
+      "year": 2023,
+      "content": "This question is almost same  as yesterday\\'s question.",
+      "voteCount": 69
+    },
+    {
+      "name": "alpharomeo99",
+      "year": 2023,
+      "content": "Instead of traversing the entire grid and finding the right cells, only traverse over the edges and find unwanted cells. Mark the unwanted cells. Count the remaining cells.\nThis way you won't need to DFS or BFS the entire grid which would bring down the overall complexity.",
+      "voteCount": 56
+    },
+    {
+      "name": "praveendass2005",
+      "year": 2024,
+      "content": "This question is same as Surrounded region(leetcode 130) problem",
+      "voteCount": 39
+    },
+    {
+      "name": "jamessong",
+      "year": 2019,
+      "content": "IMHO, this question should be removed.",
+      "voteCount": 18
+    },
+    {
+      "name": "Amarjeet2909",
+      "year": 2023,
+      "content": "My DFS Solution is giving TLE on the last test case:\\n\\n",
+      "voteCount": 12
+    },
+    {
+      "name": "iammateus",
+      "year": 2023,
+      "content": "While some may initially view this question as a mere repetition of the previous one (\"1254. Number of Closed Islands\"), it would be incorrect to assume that it does not present a challenge to those who have already solved the prior problem. In my personal experience, I found solving this question to be a great exercise that tested my understanding of both problems. It required me to tweak my previous solution and approach the problem with a fresh perspective to achieve the desired outcome. ",
+      "voteCount": 9
+    },
+    {
+      "name": "tilemahosM",
+      "year": 2023,
+      "content": "how to the right answer to\n  `[[0,0,0,1,1,1,0,1,0,0],\n[1,1,0,0,0,1,0,1,1,1],\n[0,0,0,1,1,1,0,1,0,0],\n[0,1,1,0,0,0,1,0,1,0],\n[0,1,1,1,1,1,0,0,1,0],\n[0,0,1,0,1,1,1,1,0,1],\n[0,1,1,0,0,0,1,1,1,1],\n[0,0,1,0,0,1,0,1,0,1],\n[1,0,1,0,1,1,0,0,0,0],\n[0,0,0,0,1,1,0,0,0,1]].`\n is 3? Visually it should be 2",
+      "voteCount": 7
+    },
+    {
+      "name": "daringcalf",
+      "year": 2023,
+      "content": "Lands should always be \\'1\\'!",
+      "voteCount": 6
+    }
+  ]
+}

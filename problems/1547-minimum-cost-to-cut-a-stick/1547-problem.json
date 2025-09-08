@@ -1,0 +1,132 @@
+{
+  "category": "",
+  "id": "1547",
+  "name": "Minimum Cost to Cut a Stick",
+  "difficulty": "Hard",
+  "leetcode_url": "https://leetcode.com/problems/minimum-cost-to-cut-a-stick/",
+  "slug": "minimum-cost-to-cut-a-stick",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Number of Ways to Divide a Long Corridor",
+      "difficulty": "Hard",
+      "slug": "number-of-ways-to-divide-a-long-corridor"
+    },
+    {
+      "title": "Divide an Array Into Subarrays With Minimum Cost II",
+      "difficulty": "Hard",
+      "slug": "divide-an-array-into-subarrays-with-minimum-cost-ii"
+    }
+  ],
+  "questionId": "1669",
+  "questionFrontendId": "1547",
+  "title": "Minimum Cost to Cut a Stick",
+  "titleSlug": "minimum-cost-to-cut-a-stick",
+  "content": "<p>Given a wooden stick of length <code>n</code> units. The stick is labelled from <code>0</code> to <code>n</code>. For example, a stick of length <strong>6</strong> is labelled as follows:</p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/07/21/statement.jpg\" style=\"width: 521px; height: 111px;\" />\n<p>Given an integer array <code>cuts</code> where <code>cuts[i]</code> denotes a position you should perform a cut at.</p>\n\n<p>You should perform the cuts in order, you can change the order of the cuts as you wish.</p>\n\n<p>The cost of one cut is the length of the stick to be cut, the total cost is the sum of costs of all cuts. When you cut a stick, it will be split into two smaller sticks (i.e. the sum of their lengths is the length of the stick before the cut). Please refer to the first example for a better explanation.</p>\n\n<p>Return <em>the minimum total cost</em> of the cuts.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/07/23/e1.jpg\" style=\"width: 350px; height: 284px;\" />\n<pre>\n<strong>Input:</strong> n = 7, cuts = [1,3,4,5]\n<strong>Output:</strong> 16\n<strong>Explanation:</strong> Using cuts order = [1, 3, 4, 5] as in the input leads to the following scenario:\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/07/21/e11.jpg\" style=\"width: 350px; height: 284px;\" />\nThe first cut is done to a rod of length 7 so the cost is 7. The second cut is done to a rod of length 6 (i.e. the second part of the first cut), the third is done to a rod of length 4 and the last cut is to a rod of length 3. The total cost is 7 + 6 + 4 + 3 = 20.\nRearranging the cuts to be [3, 5, 1, 4] for example will lead to a scenario with total cost = 16 (as shown in the example photo 7 + 4 + 3 + 2 = 16).</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 9, cuts = [5,6,1,4,2]\n<strong>Output:</strong> 22\n<strong>Explanation:</strong> If you try the given cuts ordering the cost will be 25.\nThere are much ordering with total cost &lt;= 25, for example, the order [4, 6, 5, 2, 1] has total cost = 22 which is the minimum possible.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= n &lt;= 10<sup>6</sup></code></li>\n\t<li><code>1 &lt;= cuts.length &lt;= min(n - 1, 100)</code></li>\n\t<li><code>1 &lt;= cuts[i] &lt;= n - 1</code></li>\n\t<li>All the integers in <code>cuts</code> array are <strong>distinct</strong>.</li>\n</ul>\n",
+  "likes": 4657,
+  "dislikes": 150,
+  "stats": {
+    "totalAccepted": "195.9K",
+    "totalSubmission": "314.1K",
+    "totalAcceptedRaw": 195901,
+    "totalSubmissionRaw": 314092,
+    "acRate": "62.4%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    },
+    {
+      "name": "Sorting",
+      "slug": "sorting"
+    }
+  ],
+  "metaData": {
+    "name": "minCost",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      },
+      {
+        "type": "integer[]",
+        "name": "cuts"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "khe1154",
+      "year": 2023,
+      "content": "> You should perform the cuts in order, you can change the order of the cuts as you wish.\\n\\uD83E\\uDD26\\n",
+      "voteCount": 393
+    },
+    {
+      "name": "wf5432",
+      "year": 2023,
+      "content": "Greedy algorithm _just won't cut it_.",
+      "voteCount": 103
+    },
+    {
+      "name": "adas12321",
+      "year": 2025,
+      "content": "I\\'m gonna cut my wrist at this point.",
+      "voteCount": 66
+    },
+    {
+      "name": "SeineAle",
+      "year": 2023,
+      "content": "\"Please refer to the first example for a better explanation.\"\\nhe is even more confused than I am ..",
+      "voteCount": 66
+    },
+    {
+      "name": "shivamaggarwal513",
+      "year": 2023,
+      "content": "# Hint 1\nWe need to reorder the cuts in such a way that total cost is minimum. If we have to make a total of $cn$ ($cn = cuts.length$) cuts, then we need to decide which is the first cut out of those $cn$. Brute force can be to make every cut as the first cut and go further.\n\n# Hint 2\nSo, for every $0 \\le i < cn$, make $cuts[i]$ as the first cut. Cost for this will be $n$ (stick length).\n![image.png](https://assets.leetcode.com/users/images/b98e652e-fa23-4f6d-b166-371c298b883a_1685256963.0648935.png)\nNow we will have two sticks of lengths $(cuts[i] - 0)$ and $(n - cuts[i])$.\n\n# Hint 3\nNow, to make the second cut, we can choose any one of the two sticks because their cost will be dependent on only their length. It is the same problem but with smaller stick length. And we have to reorder all the cuts that are to be made on first smaller stick ($0 ... cuts[i]$). And similarly reorder the cuts for the second smaller stick ($cuts[i]...n$).\nTherefore, sorting the $cuts$ might be better so that we can get all the cuts of first smaller stick on the left of $cuts[i]$ and all the cuts of second smaller stick on the right of $cuts[i]$.\n\n# Hint 4\nLet's say we made two cuts as $cuts[i]$ and $cuts[j]$, and now left with the stick in between them ($cuts[i]...cuts[j]$). Let's denote the cost of this stick as $f(i, j)$.\n![image.png](https://assets.leetcode.com/users/images/69fe281f-f237-4706-af30-57b1f489b7e3_1685258382.4234831.png)\nInitially, there were no cuts so we can assume two boundaries as two cuts, $i=0$ and $j=n$. Add these two cuts in $cuts$ array, sort them and call $f(0, cuts.length - 1)$.\n\n# Hint 5\nFor every cut $cuts[x]$ ($i < x < j$) that is present in the stick $cuts[i]...cuts[j]$, make it the first cut with cost as current length $cuts[j] - cuts[i]$. \n![image.png](https://assets.leetcode.com/users/images/d7e0bd2a-5f7f-47ea-b1b3-4c262c429149_1685259059.9072826.png)\nWe will be left with two smaller sticks $(cuts[i]...cuts[x])$ and $(cuts[x]...cuts[j])$. Calculate cost of these two sticks by calling $f(i, x)$ and $f(x, j)$. The final cost will be the cost of the first cut plus cost of two smaller sticks. $f(i, j) = (cuts[j] - cuts[i]) + f(i, x) + f(x, j)$.\nDo this for every $x$, making it the first cut and take minimum of them.\n$f(i, j) = (cuts[j] - cuts[i]) + \\displaystyle\\min_{i < x < j} f(i, x) + f(x, j)$\n\nNow build Recursive -> Memoization -> Iterative.\nUpvote if helps!",
+      "voteCount": 50
+    },
+    {
+      "name": "saurabh09700",
+      "year": 2023,
+      "content": "`You should perform the cuts in order, you can change the order of the cuts as you wish.`\\n\\nWhat does this even mean?",
+      "voteCount": 49
+    },
+    {
+      "name": "Aswin-Sk",
+      "year": 2023,
+      "content": "when n is huge the vector dp will need so much space, but most of it is wasted as the cuts can only come in each of element of cuts and not in every n. I had the issue of memory limit exceeded and I fixed it by changing dp from a vector to a map",
+      "voteCount": 20
+    },
+    {
+      "name": "aniket_4971",
+      "year": 2023,
+      "content": "Memory Limit Exceeded :(\\n",
+      "voteCount": 16
+    },
+    {
+      "name": "ferdinand069",
+      "year": 2020,
+      "content": "Can anyone explain why greedy would not work for this problem ?",
+      "voteCount": 13
+    },
+    {
+      "name": "kanikaa01",
+      "year": 2024,
+      "content": "hard? yes hard to understand what they\\'re trying to say",
+      "voteCount": 8
+    }
+  ]
+}

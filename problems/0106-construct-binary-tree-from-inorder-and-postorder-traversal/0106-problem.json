@@ -1,0 +1,138 @@
+{
+  "category": "",
+  "id": "106",
+  "name": "Construct Binary Tree from Inorder and Postorder Traversal",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/",
+  "slug": "construct-binary-tree-from-inorder-and-postorder-traversal",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Divide and Conquer",
+    "Tree",
+    "Binary Tree"
+  ],
+  "similar_questions": [
+    {
+      "title": "Construct Binary Tree from Preorder and Inorder Traversal",
+      "difficulty": "Medium",
+      "slug": "construct-binary-tree-from-preorder-and-inorder-traversal"
+    }
+  ],
+  "questionId": "106",
+  "questionFrontendId": "106",
+  "title": "Construct Binary Tree from Inorder and Postorder Traversal",
+  "titleSlug": "construct-binary-tree-from-inorder-and-postorder-traversal",
+  "content": "<p>Given two integer arrays <code>inorder</code> and <code>postorder</code> where <code>inorder</code> is the inorder traversal of a binary tree and <code>postorder</code> is the postorder traversal of the same tree, construct and return <em>the binary tree</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/02/19/tree.jpg\" style=\"width: 277px; height: 302px;\" />\n<pre>\n<strong>Input:</strong> inorder = [9,3,15,20,7], postorder = [9,15,7,20,3]\n<strong>Output:</strong> [3,9,20,null,null,15,7]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> inorder = [-1], postorder = [-1]\n<strong>Output:</strong> [-1]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= inorder.length &lt;= 3000</code></li>\n\t<li><code>postorder.length == inorder.length</code></li>\n\t<li><code>-3000 &lt;= inorder[i], postorder[i] &lt;= 3000</code></li>\n\t<li><code>inorder</code> and <code>postorder</code> consist of <strong>unique</strong> values.</li>\n\t<li>Each value of <code>postorder</code> also appears in <code>inorder</code>.</li>\n\t<li><code>inorder</code> is <strong>guaranteed</strong> to be the inorder traversal of the tree.</li>\n\t<li><code>postorder</code> is <strong>guaranteed</strong> to be the postorder traversal of the tree.</li>\n</ul>\n",
+  "likes": 8507,
+  "dislikes": 149,
+  "stats": {
+    "totalAccepted": "853.7K",
+    "totalSubmission": "1.3M",
+    "totalAcceptedRaw": 853712,
+    "totalSubmissionRaw": 1276564,
+    "acRate": "66.9%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Divide and Conquer",
+      "slug": "divide-and-conquer"
+    },
+    {
+      "name": "Tree",
+      "slug": "tree"
+    },
+    {
+      "name": "Binary Tree",
+      "slug": "binary-tree"
+    }
+  ],
+  "metaData": {
+    "name": "buildTree",
+    "params": [
+      {
+        "name": "inorder",
+        "type": "integer[]"
+      },
+      {
+        "name": "postorder",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "TreeNode",
+      "dealloc": true
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "tejpratapp468",
+      "year": 2021,
+      "content": "Completed 400 days of streak today!!! Thank you @LeetCode :)\\n\\n![image](https://assets.leetcode.com/users/images/8b62ff64-d611-4d14-8668-820c2fc31d62_1637483861.5668375.png)\\n",
+      "voteCount": 149
+    },
+    {
+      "name": "wjeevika",
+      "year": 2022,
+      "content": "What gives people a feeling of power: Solving this question",
+      "voteCount": 108
+    },
+    {
+      "name": "cameron7",
+      "year": 2019,
+      "content": "Hi all, \\n\\nIf you were like me and were struggling with this problem, try this one first: https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/\\n\\nIt has the same recursive approach that you can use in this problem\\n\\nGood luck, I believe in you :)",
+      "voteCount": 64
+    },
+    {
+      "name": "Udit2021",
+      "year": 2023,
+      "content": "sometimes the tree gives me the feeling I can do anything.\\nthen back to reality need more grind ",
+      "voteCount": 55
+    },
+    {
+      "name": "daringcalf",
+      "year": 2023,
+      "content": "This week we trek the amazon rainforest.",
+      "voteCount": 50
+    },
+    {
+      "name": "john_112",
+      "year": 2020,
+      "content": "Here\\'re few more related problems if anyone interested:\\n\\n<li><a href=\"//www.techiedelight.com/construct-binary-tree-from-inorder-preorder-traversal/\" target=\"_blank\" rel=\"noopener noreferrer\">Construct a binary tree from inorder and preorder traversal</a>\\n&nbsp;</li>\\n<li><a href=\"//www.techiedelight.com/construct-binary-tree-from-inorder-level-order-traversals/\" target=\"_blank\" rel=\"noopener noreferrer\">Construct a binary tree from inorder and level order sequence</a>\\n&nbsp;</li>\\n<li><a href=\"//www.techiedelight.com/construct-full-binary-tree-from-preorder-sequence-with-leaf-information/\" target=\"_blank\" rel=\"noopener noreferrer\">Construct a full binary tree from preorder sequence with leaf node information</a>\\n&nbsp;</li>\\n<li><a href=\"//www.techiedelight.com/construct-full-binary-tree-from-preorder-postorder-sequence/\" target=\"_blank\" rel=\"noopener noreferrer\">Construct a full binary tree from a preorder and postorder sequence</a>\\n&nbsp;</li>",
+      "voteCount": 47
+    },
+    {
+      "name": "anwendeng",
+      "year": 2023,
+      "content": "Without this constraint \"inorder and postorder consist of unique values\", it would be very hard. ",
+      "voteCount": 42
+    },
+    {
+      "name": "Matexa",
+      "year": 2024,
+      "content": "Adding here some test cases, you\\'re welcome :)\\n\\ninorder = [10,9,3,11,15,20,7], postorder = [10,9,11,15,7,20,3]\\ninorder = [4,2,5,6,1,3,8,9,7,10], postorder = [4,5,6,2,9,8,10,7,3,1]\\ninorder = [3,2,6,17,1,7,5,9,8,4,10,14,13,11,20,15,19], postorder = [6,2,1,7,17,3,8,9,5,14,13,20,19,15,11,10,4]",
+      "voteCount": 33
+    },
+    {
+      "name": "arghyadas",
+      "year": 2023,
+      "content": "201 / 202 testcases passed\\uD83E\\uDD72",
+      "voteCount": 33
+    },
+    {
+      "name": "LeetCode",
+      "year": 2021,
+      "content": "This problem is the Daily LeetCoding Challenge for November, Day 21.\n\nFeel free to share anything related to this problem here!\n\nYou can ask questions, discuss what you've learned from this problem, or show off how many days of streak you've made!\n\n---\n\nIf you'd like to share a detailed solution to the problem, please create a new post in the discuss section and provide\n- **Detailed Explanations**: Describe the algorithm you used to solve this problem. Include any insights you used to solve this problem.\n- **Images** that help explain the algorithm.\n- **Language and Code** you used to pass the problem.\n- **Time and Space complexity analysis**.\n\n---\n\n  **📌 Do you want to learn the problem thoroughly?**\n  Read [**⭐  LeetCode Official Solution⭐**](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/solution) to learn the 3 approaches to the problem with detailed explanations to the algorithms, codes, and complexity analysis.\n  <details>\n  <summary> Spoiler Alert! We'll explain this 1 approach in the official solution</summary>\n\n  \n**Approach 1:** Recursion\n\n  \n</details>\n\n\n\nIf you're new to Daily LeetCoding Challenge, [**check out this post**](https://leetcode.com/discuss/general-discussion/655704/)!\n\n\n---\n\n<br>\n\n<p align=\"center\">\n<a href=\"https://leetcode.com/subscribe/?ref=ex_dc\" target=\"_blank\">\n  <img src=\"https://assets.leetcode.com/static_assets/marketing/daily_leetcoding_banner.png\" width=\"560px\" />\n</a>\n</p>\n\n<br>",
+      "voteCount": 28
+    }
+  ]
+}

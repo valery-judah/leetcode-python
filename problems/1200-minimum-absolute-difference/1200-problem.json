@@ -1,0 +1,143 @@
+{
+  "category": "",
+  "id": 1200,
+  "name": "Minimum Absolute Difference",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/minimum-absolute-difference/",
+  "slug": "minimum-absolute-difference",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Cost of Buying Candies With Discount",
+      "difficulty": "Easy",
+      "slug": "minimum-cost-of-buying-candies-with-discount"
+    },
+    {
+      "title": "Minimize the Maximum Difference of Pairs",
+      "difficulty": "Medium",
+      "slug": "minimize-the-maximum-difference-of-pairs"
+    }
+  ],
+  "questionId": "1306",
+  "questionFrontendId": "1200",
+  "title": "Minimum Absolute Difference",
+  "titleSlug": "minimum-absolute-difference",
+  "content": "<p>Given an array of <strong>distinct</strong> integers <code>arr</code>, find all pairs of elements with the minimum absolute difference of any two elements.</p>\n\n<p>Return a list of pairs in ascending order(with respect to pairs), each pair <code>[a, b]</code> follows</p>\n\n<ul>\n\t<li><code>a, b</code> are from <code>arr</code></li>\n\t<li><code>a &lt; b</code></li>\n\t<li><code>b - a</code> equals to the minimum absolute difference of any two elements in <code>arr</code></li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [4,2,1,3]\n<strong>Output:</strong> [[1,2],[2,3],[3,4]]\n<strong>Explanation: </strong>The minimum absolute difference is 1. List all pairs with difference equal to 1 in ascending order.</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [1,3,6,10,15]\n<strong>Output:</strong> [[1,3]]\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [3,8,-10,23,19,-4,-14,27]\n<strong>Output:</strong> [[-14,-10],[19,23],[23,27]]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= arr.length &lt;= 10<sup>5</sup></code></li>\n\t<li><code>-10<sup>6</sup> &lt;= arr[i] &lt;= 10<sup>6</sup></code></li>\n</ul>\n",
+  "likes": 2475,
+  "dislikes": 80,
+  "stats": {
+    "totalAccepted": "256.7K",
+    "totalSubmission": "362.4K",
+    "totalAcceptedRaw": 256711,
+    "totalSubmissionRaw": 362410,
+    "acRate": "70.8%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Sorting",
+      "slug": "sorting"
+    }
+  ],
+  "metaData": {
+    "name": "minimumAbsDifference",
+    "params": [
+      {
+        "name": "arr",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "list<list<integer>>"
+    }
+  },
+  "company_tag_stats": {
+    "3": [
+      {
+        "taggedByAdmin": false,
+        "name": "J.P. Morgan",
+        "slug": "jpmorgan",
+        "timesEncountered": 13
+      }
+    ]
+  },
+  "discussion_posts": [
+    {
+      "name": "Vihaanx001",
+      "year": 2024,
+      "content": "GOT THIS QUESTION IN JP MORGAN INTERVIEW TODAY ! AND SURPRISINGLY JUST AFTER INTERVIEW I GOT THIS QUESTION HERE ON LC Xd ! bc pehle nai mila \\n\\nanyway tip to solve this question \\n\\n1. sort the array and use a variable to store the minDiff and make a pair vector to store the result.\\n2. use abs() to get the absolute diff between numbers \\n3.  if mindiff >diff , update the value of mindiff to diff and clear all the previous pairs because you found the lowest diff now and push the numbers in pair vector.\\n4. also if mindiff == diff we have to push the numbers .(you will understand once you will start coding)\\n5.this is the part where i got stuck as i forgot how to use const and push pair vector data to a single vector .\\n\\nDone.\\n\\n",
+      "voteCount": 14
+    },
+    {
+      "name": "IamHazra",
+      "year": 2024,
+      "content": "# Just remember this:-\\n` JS:--->            ans.push([arr[i],arr[i+1]]); `\\n`JAVA:->            list.add(Arrays.asList(arr[i],arr[i+1]));`\\n\\n\\n",
+      "voteCount": 11
+    },
+    {
+      "name": "LeetCode",
+      "year": 2021,
+      "content": "This problem is the Daily LeetCoding Challenge for December, Day 20.\n\nFeel free to share anything related to this problem here!\n\nYou can ask questions, discuss what you've learned from this problem, or show off how many days of streak you've made!\n\n---\n\nIf you'd like to share a detailed solution to the problem, please create a new post in the discuss section and provide\n- **Detailed Explanations**: Describe the algorithm you used to solve this problem. Include any insights you used to solve this problem.\n- **Images** that help explain the algorithm.\n- **Language and Code** you used to pass the problem.\n- **Time and Space complexity analysis**.\n\n---\n\n  **📌 Do you want to learn the problem thoroughly?**\n  Read [**⭐  LeetCode Official Solution⭐**](https://leetcode.com/problems/minimum-absolute-difference/solution) to learn the 3 approaches to the problem with detailed explanations to the algorithms, codes, and complexity analysis.\n  <details>\n  <summary> Spoiler Alert! We'll explain these 3 approaches in the official solution</summary>\n\n  \n**Approach 1:** Sort + 2 Traversals\n\n  \n**Approach 2:** Sort + 1 Traversal\n\n  \n**Approach 3:** Counting Sort\n\n  \n</details>\n\n\n\nIf you're new to Daily LeetCoding Challenge, [**check out this post**](https://leetcode.com/discuss/general-discussion/655704/)!\n\n\n---\n\n<br>\n\n<p align=\"center\">\n<a href=\"https://leetcode.com/subscribe/?ref=ex_dc\" target=\"_blank\">\n  <img src=\"https://assets.leetcode.com/static_assets/marketing/daily_leetcoding_banner.png\" width=\"560px\" />\n</a>\n</p>\n\n<br>",
+      "voteCount": 10
+    },
+    {
+      "name": "Antinotmanist",
+      "year": 2024,
+      "content": "It's diffcult. Medium",
+      "voteCount": 9
+    },
+    {
+      "name": "Nidhi_Kamal",
+      "year": 2025,
+      "content": "264th problem solved.....",
+      "voteCount": 4
+    },
+    {
+      "name": "SurendraChakravarthula",
+      "year": 2023,
+      "content": "Sorting makes this so easy.\n**Tip:** \n**1.** Sort array  \n**2.** Iterate through the array and find minimum difference between adjacent integers(In sorted array minimum occurs only between adjacent integers).\n**3.** Iterate again ,if two adjacent integers difference is equals to minimum difference then add them to list(list).(Since difference occurs between adjacent integers, result list will also contains adjacent integers of sorted array).\n\nRefer this Java solution for reference:\nhttps://leetcode.com/problems/minimum-absolute-difference/solutions/3019044/java-easy-code-detailed-solution/",
+      "voteCount": 4
+    },
+    {
+      "name": "Prajesh8484",
+      "year": 2025,
+      "content": "**Importat test case:**  ```[40,11,26,27,-20]```\\n\\n**P.S.** Don\\'t give up, this is the type of question that will feel easy after a hint or the solution",
+      "voteCount": 1
+    },
+    {
+      "name": "tM9ybwxHYD",
+      "year": 2025,
+      "content": "This is definitely medium question DUE to constraints and possibilities of negative integers in arr, otherwise, easy.",
+      "voteCount": 1
+    },
+    {
+      "name": "mdfaizan78620",
+      "year": 2024,
+      "content": "can anybody solve this is N time complexity if yes do help and explain .",
+      "voteCount": 1
+    },
+    {
+      "name": "DTR",
+      "year": 2023,
+      "content": "Tip:\\n1.sort the array\\n2. while finding the absolute minimum difference only we can find the pairs no need to iterate again\\n\\nHint: if u find new  absolute minimum difference empty the list",
+      "voteCount": 1
+    }
+  ],
+  "sampleTestCase": "[4,2,1,3]",
+  "exampleTestcases": "[4,2,1,3]\n[1,3,6,10,15]\n[3,8,-10,23,19,-4,-14,27]",
+  "python3_snippet": {
+    "imports": "from typing import List",
+    "class_name": "Solution",
+    "method_name": "minimumAbsDifference",
+    "signature": "def minimumAbsDifference(self, arr):",
+    "body_placeholder": "        # Your code here\\n        pass",
+    "example_call": "solution = Solution()\\nresult = solution.minimumAbsDifference([4,2,1,3])\\nprint(result)"
+  }
+}

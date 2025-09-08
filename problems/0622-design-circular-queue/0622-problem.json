@@ -1,0 +1,185 @@
+{
+  "category": "",
+  "id": "622",
+  "name": "Design Circular Queue",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/design-circular-queue/",
+  "slug": "design-circular-queue",
+  "isPaidOnly": false,
+  "tags": [
+    "Array",
+    "Linked List",
+    "Design",
+    "Queue"
+  ],
+  "similar_questions": [
+    {
+      "title": "Design Circular Deque",
+      "difficulty": "Medium",
+      "slug": "design-circular-deque"
+    },
+    {
+      "title": "Design Front Middle Back Queue",
+      "difficulty": "Medium",
+      "slug": "design-front-middle-back-queue"
+    }
+  ],
+  "questionId": "860",
+  "questionFrontendId": "622",
+  "title": "Design Circular Queue",
+  "titleSlug": "design-circular-queue",
+  "content": "<p>Design your implementation of the circular queue. The circular queue is a linear data structure in which the operations are performed based on FIFO (First In First Out) principle, and the last position is connected back to the first position to make a circle. It is also called &quot;Ring Buffer&quot;.</p>\n\n<p>One of the benefits of the circular queue is that we can make use of the spaces in front of the queue. In a normal queue, once the queue becomes full, we cannot insert the next element even if there is a space in front of the queue. But using the circular queue, we can use the space to store new values.</p>\n\n<p>Implement the <code>MyCircularQueue</code> class:</p>\n\n<ul>\n\t<li><code>MyCircularQueue(k)</code> Initializes the object with the size of the queue to be <code>k</code>.</li>\n\t<li><code>int Front()</code> Gets the front item from the queue. If the queue is empty, return <code>-1</code>.</li>\n\t<li><code>int Rear()</code> Gets the last item from the queue. If the queue is empty, return <code>-1</code>.</li>\n\t<li><code>boolean enQueue(int value)</code> Inserts an element into the circular queue. Return <code>true</code> if the operation is successful.</li>\n\t<li><code>boolean deQueue()</code> Deletes an element from the circular queue. Return <code>true</code> if the operation is successful.</li>\n\t<li><code>boolean isEmpty()</code> Checks whether the circular queue is empty or not.</li>\n\t<li><code>boolean isFull()</code> Checks whether the circular queue is full or not.</li>\n</ul>\n\n<p>You must solve the problem without using the built-in queue data structure in your programming language.&nbsp;</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input</strong>\n[&quot;MyCircularQueue&quot;, &quot;enQueue&quot;, &quot;enQueue&quot;, &quot;enQueue&quot;, &quot;enQueue&quot;, &quot;Rear&quot;, &quot;isFull&quot;, &quot;deQueue&quot;, &quot;enQueue&quot;, &quot;Rear&quot;]\n[[3], [1], [2], [3], [4], [], [], [], [4], []]\n<strong>Output</strong>\n[null, true, true, true, false, 3, true, true, true, 4]\n\n<strong>Explanation</strong>\nMyCircularQueue myCircularQueue = new MyCircularQueue(3);\nmyCircularQueue.enQueue(1); // return True\nmyCircularQueue.enQueue(2); // return True\nmyCircularQueue.enQueue(3); // return True\nmyCircularQueue.enQueue(4); // return False\nmyCircularQueue.Rear();     // return 3\nmyCircularQueue.isFull();   // return True\nmyCircularQueue.deQueue();  // return True\nmyCircularQueue.enQueue(4); // return True\nmyCircularQueue.Rear();     // return 4\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= k &lt;= 1000</code></li>\n\t<li><code>0 &lt;= value &lt;= 1000</code></li>\n\t<li>At most <code>3000</code> calls will be made to&nbsp;<code>enQueue</code>, <code>deQueue</code>,&nbsp;<code>Front</code>,&nbsp;<code>Rear</code>,&nbsp;<code>isEmpty</code>, and&nbsp;<code>isFull</code>.</li>\n</ul>\n",
+  "likes": 3726,
+  "dislikes": 331,
+  "stats": {
+    "totalAccepted": "409K",
+    "totalSubmission": "772K",
+    "totalAcceptedRaw": 409018,
+    "totalSubmissionRaw": 771953,
+    "acRate": "53.0%"
+  },
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Linked List",
+      "slug": "linked-list"
+    },
+    {
+      "name": "Design",
+      "slug": "design"
+    },
+    {
+      "name": "Queue",
+      "slug": "queue"
+    }
+  ],
+  "metaData": {
+    "classname": "MyCircularQueue",
+    "constructor": {
+      "params": [
+        {
+          "type": "integer",
+          "name": "k"
+        }
+      ]
+    },
+    "methods": [
+      {
+        "params": [
+          {
+            "type": "integer",
+            "name": "value"
+          }
+        ],
+        "name": "enQueue",
+        "return": {
+          "type": "boolean"
+        }
+      },
+      {
+        "params": [],
+        "name": "deQueue",
+        "return": {
+          "type": "boolean"
+        }
+      },
+      {
+        "params": [],
+        "name": "Front",
+        "return": {
+          "type": "integer"
+        }
+      },
+      {
+        "params": [],
+        "name": "Rear",
+        "return": {
+          "type": "integer"
+        }
+      },
+      {
+        "params": [],
+        "name": "isEmpty",
+        "return": {
+          "type": "boolean"
+        }
+      },
+      {
+        "params": [],
+        "name": "isFull",
+        "return": {
+          "type": "boolean"
+        }
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "systemdesign": true
+  },
+  "discussion_posts": [
+    {
+      "name": "laker49",
+      "year": 2023,
+      "content": "Why is the title and description of this a circular queue when the actual implementation is just a standard queue? Wouldn\\'t a circular start overwriting the oldest values when the capacity is reached?",
+      "voteCount": 78
+    },
+    {
+      "name": "Four0One",
+      "year": 2024,
+      "content": "Use of word \"circular queue\" is not correct because internally we can use queue and it has all the methods needed to.\\n\\nthe problem statement should include build a circular buffer using simple linear buffer(array) ",
+      "voteCount": 23
+    },
+    {
+      "name": "hyunjin-jeong",
+      "year": 2024,
+      "content": "I don\\'t understand the description. What is \"the spaces in front of the queue\"? I just implemented a doubly linked list and got accepted... It\\'s confusing.",
+      "voteCount": 18
+    },
+    {
+      "name": "trashytrash",
+      "year": 2024,
+      "content": "This is really poorly explained. What does it even mean to \"make use of spaces in in front of the queue\"\\n\\nFrom wikipedia on ring buffer/circular queue:\\n\\n\"A property of the circular buffer is that when it is full and a subsequent write is performed, then it starts overwriting the oldest data.\"\\n\\nI think this matches most people\\'s definition of what a ring buffer is.\\n\\nThe behavior in this problem statement is completely antithetical to the definition of a ring buffer or circular queue.\\n\\nLeetcode, you should rethink this one.",
+      "voteCount": 15
+    },
+    {
+      "name": "sreasor",
+      "year": 2024,
+      "content": "I do not understand how this is a queue.... It doesn't follow FIFO? In the example, 1, 2, and 3, are enqueued respectively. Then, 4 is attempted to be queued, but fails as the size is already at max. We then call rear, and get 3. We then call dequeue or pop or whatever, and then we call enqueue on 4 again. We then call rear and get 4. This implies that 3 was removed, which makes this data structure follow LIFO as the last value added (3) was the first out. Queues normally follow FIFO? Correct?",
+      "voteCount": 7
+    },
+    {
+      "name": "CreepyWings",
+      "year": 2024,
+      "content": "This solution naturally calls for a linkedList :*",
+      "voteCount": 6
+    },
+    {
+      "name": "Qq891874911",
+      "year": 2018,
+      "content": "THIS IS THE SUBMISSION TEST:\\n[\"MyCircularQueue\",\"enQueue\",\"enQueue\",\"enQueue\",\"enQueue\",\"deQueue\",\"deQueue\",\"isEmpty\",\"isEmpty\",\"Rear\",\"Rear\",\"deQueue\"]\\n[[8],[3],[9],[5],[0],[],[],[],[],[],[],[]]\\n,AND THE WEBSITE ANSWER IS \\n[null,true,true,true,true,true,true,false,false,0,0,true].\\n\\nI THINK THE TRUTH ANSWER IS \\n[null,true,true,true,true,true,true,false,false,9,9,true].\\n\\nPLEASE HELP ME ,THE WEBSITE ANSWER IS WHRONG?\\nOR MY THINKING IS WRONG",
+      "voteCount": 5
+    },
+    {
+      "name": "En-Huei",
+      "year": 2025,
+      "content": "hoping the description can specify that the `enQueue()` is pushing to `rear`, and `deQueue()` is popping from `front`, though it seems to be the convention.",
+      "voteCount": 4
+    },
+    {
+      "name": "RedCastle",
+      "year": 2024,
+      "content": "I am having issues withs this test case.\\n```\\n[\"MyCircularQueue\",\"enQueue\",\"enQueue\",\"deQueue\",\"enQueue\",\"deQueue\",\"enQueue\",\"deQueue\",\"enQueue\",\"deQueue\", \"Front\"]\\n[[2],[1],[2],[],[3],[],[3],[],[3],[],[]]\\n```\\nTest wants me to return value `3`. With the capacity at `2` my code returns `1` which fails the test. Is there error in the test? Here my print statements.\\n\\n```\\nCapacity 2\\nenQueue [1, 0] head 0 tail 0\\nenQueue [1, 2] head 0 tail 1\\ndeQueue [1, 2] head 0 tail 0\\nenQueue [1, 3] head 0 tail 1\\ndeQueue [1, 3] head 0 tail 0\\nenQueue [1, 3] head 0 tail 1\\ndeQueue [1, 3] head 0 tail 0\\nenQueue [1, 3] head 0 tail 1\\ndeQueue [1, 3] head 0 tail 0\\n```\\nYou can see that calling `Rear()` would get you the value `1` because it returns head, which points to value `1`.\\n\\n```swift\\nfunc Front() -> Int {\\n    if isEmpty() { return -1 }\\n    return storage[head]\\n}\\n```",
+      "voteCount": 2
+    },
+    {
+      "name": "Ksalomon",
+      "year": 2020,
+      "content": "You can see the code [here](https://skabongo.github.io/coding/2020/01/29/leet_code_circular.html)",
+      "voteCount": 2
+    }
+  ]
+}

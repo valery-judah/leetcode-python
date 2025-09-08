@@ -1,0 +1,128 @@
+{
+  "category": "",
+  "id": "947",
+  "name": "Most Stones Removed with Same Row or Column",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/",
+  "slug": "most-stones-removed-with-same-row-or-column",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "Depth-First Search",
+    "Union Find",
+    "Graph"
+  ],
+  "similar_questions": [
+    {
+      "title": "Minimum Moves to Get a Peaceful Board",
+      "difficulty": "Medium",
+      "slug": "minimum-moves-to-get-a-peaceful-board"
+    }
+  ],
+  "questionId": "984",
+  "questionFrontendId": "947",
+  "title": "Most Stones Removed with Same Row or Column",
+  "titleSlug": "most-stones-removed-with-same-row-or-column",
+  "content": "<p>On a 2D plane, we place <code>n</code> stones at some integer coordinate points. Each coordinate point may have at most one stone.</p>\n\n<p>A stone can be removed if it shares either <strong>the same row or the same column</strong> as another stone that has not been removed.</p>\n\n<p>Given an array <code>stones</code> of length <code>n</code> where <code>stones[i] = [x<sub>i</sub>, y<sub>i</sub>]</code> represents the location of the <code>i<sup>th</sup></code> stone, return <em>the largest possible number of stones that can be removed</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> stones = [[0,0],[0,1],[1,0],[1,2],[2,1],[2,2]]\n<strong>Output:</strong> 5\n<strong>Explanation:</strong> One way to remove 5 stones is as follows:\n1. Remove stone [2,2] because it shares the same row as [2,1].\n2. Remove stone [2,1] because it shares the same column as [0,1].\n3. Remove stone [1,2] because it shares the same row as [1,0].\n4. Remove stone [1,0] because it shares the same column as [0,0].\n5. Remove stone [0,1] because it shares the same row as [0,0].\nStone [0,0] cannot be removed since it does not share a row/column with another stone still on the plane.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> stones = [[0,0],[0,2],[1,1],[2,0],[2,2]]\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> One way to make 3 moves is as follows:\n1. Remove stone [2,2] because it shares the same row as [2,0].\n2. Remove stone [2,0] because it shares the same column as [0,0].\n3. Remove stone [0,2] because it shares the same row as [0,0].\nStones [0,0] and [1,1] cannot be removed since they do not share a row/column with another stone still on the plane.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> stones = [[0,0]]\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> [0,0] is the only stone on the plane, so you cannot remove it.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= stones.length &lt;= 1000</code></li>\n\t<li><code>0 &lt;= x<sub>i</sub>, y<sub>i</sub> &lt;= 10<sup>4</sup></code></li>\n\t<li>No two stones are at the same coordinate point.</li>\n</ul>\n",
+  "likes": 6260,
+  "dislikes": 702,
+  "stats": {
+    "totalAccepted": "366.7K",
+    "totalSubmission": "587.6K",
+    "totalAcceptedRaw": 366740,
+    "totalSubmissionRaw": 587567,
+    "acRate": "62.4%"
+  },
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Depth-First Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Union Find",
+      "slug": "union-find"
+    },
+    {
+      "name": "Graph",
+      "slug": "graph"
+    }
+  ],
+  "metaData": {
+    "name": "removeStones",
+    "params": [
+      {
+        "name": "stones",
+        "type": "integer[][]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "malikharshit03",
+      "year": 2022,
+      "content": "HINT 1 :\\nInstead of viewing this question as \"Remove the maximum number of stones with the same rows and columns\", you may take this question to be \"What is the number of stones that can be reached from one another, if reaching stone A to stone B requires either stone A and B having same row or column.\\n\\nHINT 2 :\\nLet us assume that the number of given stones is \"num\"\\nIf we look at all the stone clusters connected to one another, what is the number of stones that you can remove?\\nExample : In the below given grid, if \\'0\\' represents stones \\nX X 0 X X\\n0 X 0 X X\\nX X X X X\\n0 X X X 0\\n\\nWe can map all the stones to one another using basic traversal algorithms.\\nFor EACH SUCH CLUSTER of stones that can be connected in the grid, the number of stones that can be removed is number of stones in that cluster - 1.\\n\\nIf we now add the number of clusters and all the number of stones that can be remove :-\\n(Stones in Cluster 1- 1) + (C2 -1) + (C3 -1) + ......\\n= C1 + C2 + C3 +..... - (number of clusters)\\n= Total number of stones - Number of Clusters\\n\\n \\nWhich will be the solution to this problem.\\n\\n",
+      "voteCount": 221
+    },
+    {
+      "name": "mrBRUTE",
+      "year": 2024,
+      "content": "It must be tagged Hard.",
+      "voteCount": 196
+    },
+    {
+      "name": "Garv_Virmani",
+      "year": 2024,
+      "content": "It should be marked as \"HARD\" can\\'t be solved.\\n# Agree button \\u2B07",
+      "voteCount": 186
+    },
+    {
+      "name": "Dacredible",
+      "year": 2018,
+      "content": "What is the inputs stands for? Is it stands for the cordinate\\'s of the stone? Also What does remove and moves means here? And what\\'s the goal?",
+      "voteCount": 128
+    },
+    {
+      "name": "Unavailable503",
+      "year": 2019,
+      "content": "[[3,2],[3,1],[4,4],[1,1],[0,2],[4,0]]\\nexpectd 4\\nshouldn\\'t the expected be 3?  standing on stone [1,1] I can remove [3,1], [3,2], [0,2]\\n",
+      "voteCount": 36
+    },
+    {
+      "name": "skdkim",
+      "year": 2019,
+      "content": "I decided to write a post about the examples because I got really confused at first and unlike a real interview, you can\\'t ask someone for clarification or have someone else stop you when you make a completely wrong assumption.\\n\\nWe\\'ll look at example 2 and 3 today.\\nWork through Example 1 yourself to see if you get it after my explanation.\\n\\nFirst off they give us coordinates so you can expect some sort of grid.\\nImagine the horizontal lines yourself\\n\\nInput: stones = [[0,0],[0,2],[1,1],[2,0],[2,2]]\\nExample 2:\\n__0 | 1 | 2\\n0   X | _ | X\\n1  __| X |\\n2   X |  __| X\\n\\nThe way a MOVE is describe is confusing as heck.\\nIn simpler terms, a move is an X (stone) trying to get out of the grid but it can\\'t leave unless someone is there to cover for it.\\nThink of it like, you are working the cash register and you need to use the \"bathroom\" but you can\\'t just go. \\nYou need someone to man the station.\\n\\nBy the way, these stone are never coming back.\\nOnce it see\\'s another stone in it\\'s row or column, it give itself permission to leave immediately.\\nThis is why in example 2, the last stone to leave will be left with no one to cover for them.\\nThe stone in the middle never had a chance.\\n\\nExample 3:\\nThe grid is just one unit.\\nThe stone is manning the whole store by alone. \\nIt can\\'t go for the bathroom break.\\n\\nExample 1:\\nInput: stones = [[0,0],[0,1],[1,0],[1,2],[2,1],[2,2]]\\nOutput: 5\\n\\nExample 2:\\nInput: stones = [[0,0],[0,2],[1,1],[2,0],[2,2]]\\nOutput: 3\\n\\nExample 3:\\nInput: stones = [[0,0]]\\nOutput: 0",
+      "voteCount": 36
+    },
+    {
+      "name": "chris4FB",
+      "year": 2018,
+      "content": "During the contest, the description is different with the one after contest finishes. Look at the screenshoot for details.\\n\\nDuring contest\\n![image](https://assets.leetcode.com/users/chris4fb/image_1543118912.png)\\noutputs for examples 1 and 2 are 1 and 2 respectively. \\n\\nAfter contest, look at the descriptions and examples again.\\n![image](https://assets.leetcode.com/users/chris4fb/image_1543118995.png)\\nI found that the outputs given for the same examples 1 and 2 are 5 and 3.\\n\\nIt sucks.\\n",
+      "voteCount": 32
+    },
+    {
+      "name": "anwendeng",
+      "year": 2024,
+      "content": "Have a nice day.\nEach component has at least 1 stone remaining.\n1 more sentence:\nWhen a component has only 1 stone, this stone cannot be removed.",
+      "voteCount": 26
+    },
+    {
+      "name": "MingyaoLiu",
+      "year": 2018,
+      "content": "The answer provided by test is 4,\\nI just don\\'t get how the result is 4, I can only find 3 to be the max steps.\\n[4, 4] and [4, 0] is not on the same line as any other, which means the max would be [1,1], [3,1], [3,2], [0,2], which is 3 steps.\\n\\nPlease help thanks.",
+      "voteCount": 18
+    },
+    {
+      "name": "umarmohd",
+      "year": 2024,
+      "content": "This question demonstrates overthinking. You can solve this question in an easy way or a hard way.\n\nFirst hard way, create an edge between two coordinates if they share a common x or y coordinate. Then, use union-find by size (not rank) and sum all the sizes. Return this sum. The reason we sum all the sizes is that if a coordinate shares a row or column, it is basically connected to the nodes. To make a node independent, we need to remove every node that is connected to this node.\n\nThis is the same as finding the number of connected components. By calculating the total nodes minus the number of connected components, we find the number of individual components that share a row or column with no other node.\n\nThis is where the easy method comes in using DFS. Find the number of connected components using DFS and then subtract the number of connected components from the length of the stones.",
+      "voteCount": 17
+    }
+  ]
+}

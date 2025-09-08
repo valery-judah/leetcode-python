@@ -1,0 +1,133 @@
+{
+  "category": "",
+  "id": "678",
+  "name": "Valid Parenthesis String",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/valid-parenthesis-string/",
+  "slug": "valid-parenthesis-string",
+  "isPaidOnly": false,
+  "tags": [
+    "String",
+    "Dynamic Programming",
+    "Stack",
+    "Greedy"
+  ],
+  "similar_questions": [
+    {
+      "title": "Special Binary String",
+      "difficulty": "Hard",
+      "slug": "special-binary-string"
+    },
+    {
+      "title": "Check if a Parentheses String Can Be Valid",
+      "difficulty": "Medium",
+      "slug": "check-if-a-parentheses-string-can-be-valid"
+    }
+  ],
+  "questionId": "678",
+  "questionFrontendId": "678",
+  "title": "Valid Parenthesis String",
+  "titleSlug": "valid-parenthesis-string",
+  "content": "<p>Given a string <code>s</code> containing only three types of characters: <code>&#39;(&#39;</code>, <code>&#39;)&#39;</code> and <code>&#39;*&#39;</code>, return <code>true</code> <em>if</em> <code>s</code> <em>is <strong>valid</strong></em>.</p>\n\n<p>The following rules define a <strong>valid</strong> string:</p>\n\n<ul>\n\t<li>Any left parenthesis <code>&#39;(&#39;</code> must have a corresponding right parenthesis <code>&#39;)&#39;</code>.</li>\n\t<li>Any right parenthesis <code>&#39;)&#39;</code> must have a corresponding left parenthesis <code>&#39;(&#39;</code>.</li>\n\t<li>Left parenthesis <code>&#39;(&#39;</code> must go before the corresponding right parenthesis <code>&#39;)&#39;</code>.</li>\n\t<li><code>&#39;*&#39;</code> could be treated as a single right parenthesis <code>&#39;)&#39;</code> or a single left parenthesis <code>&#39;(&#39;</code> or an empty string <code>&quot;&quot;</code>.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> s = \"()\"\n<strong>Output:</strong> true\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> s = \"(*)\"\n<strong>Output:</strong> true\n</pre><p><strong class=\"example\">Example 3:</strong></p>\n<pre><strong>Input:</strong> s = \"(*))\"\n<strong>Output:</strong> true\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 100</code></li>\n\t<li><code>s[i]</code> is <code>&#39;(&#39;</code>, <code>&#39;)&#39;</code> or <code>&#39;*&#39;</code>.</li>\n</ul>\n",
+  "likes": 6730,
+  "dislikes": 213,
+  "stats": {
+    "totalAccepted": "518.7K",
+    "totalSubmission": "1.3M",
+    "totalAcceptedRaw": 518709,
+    "totalSubmissionRaw": 1319140,
+    "acRate": "39.3%"
+  },
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    },
+    {
+      "name": "Stack",
+      "slug": "stack"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "metaData": {
+    "name": "checkValidString",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    }
+  },
+  "discussion_posts": [
+    {
+      "name": "anmolpatel562",
+      "year": 2023,
+      "content": "Please provide more sample inputs in the question. ",
+      "voteCount": 211
+    },
+    {
+      "name": "mstuebs",
+      "year": 2024,
+      "content": "### Helpful testcases\n```\n\"*\"\n\"(**(*()**()**((**(*)\"\n\"((*)(*))()*(*)****((*(*)())*()((()**(**)\"\n\")(*()(**(*)())*))())())*)()()*(((*)()))(**()*)**(*\"\n\")))(*)**)))*)))))*)*(((()(((*())(***)**(**((()))()((*((()(((\"\n\"()))))**)(()*()**)))()*)()())*(*)())**()*)))(**())))()**))*)*()**((*(*\"\n\"*(*)(*))((*)*)))(*)())*())()(()*)*)****)())(()()*(*(*())()((())))*()****)(*(()))((*()*(**(*()*)*()\"\n```\nSource code: [Generator678.py](https://github.com/mquintus/l33tcode-testcase-generator/blob/main/source/Generator678.py)",
+      "voteCount": 72
+    },
+    {
+      "name": "vikas_singh_1999",
+      "year": 2024,
+      "content": "\"***********************((((((((((((((((\"\\n",
+      "voteCount": 49
+    },
+    {
+      "name": "techno_phile",
+      "year": 2023,
+      "content": "Here\\'s a small hint -  The linear solution with constant space complexity is not intuitive AT ALL. So, if you\\'re struggling with this problem for a while, and you really want solve this, then try to find a solution with a non-linear time complexity.",
+      "voteCount": 49
+    },
+    {
+      "name": "shrawank22",
+      "year": 2023,
+      "content": "Can anyone tell me how this problem comes under greedy? ",
+      "voteCount": 31
+    },
+    {
+      "name": "playful-Cloud",
+      "year": 2024,
+      "content": "those brackets are getting annoying\\n",
+      "voteCount": 27
+    },
+    {
+      "name": "TGBBSZWHWDLANZP",
+      "year": 2023,
+      "content": "one tough testcase is \\n```\\n\"(((((*)))**\"\\n```\\n",
+      "voteCount": 27
+    },
+    {
+      "name": "anwendeng",
+      "year": 2024,
+      "content": "There is some linear solution, very tricky. But since n<=100, a 2d DP solution is possible. Knowing the recursion then DP is doable! Consider\nthe dp[i][balance] where i is the index for s & balance is # of '('s -# of ')'s with modification by wildcard '*'s. ",
+      "voteCount": 23
+    },
+    {
+      "name": "Cocamo1337",
+      "year": 2024,
+      "content": "I could tell that the backtracking solution with no memoization would take exponential time complexity in the worst case, but somehow I thought of the linear solution before I thought of the DP solution. \n\nMy first thought was to use a prefix sum of the number of $$*$$ at any given index, along with a prefix sum of the total sum of \"(\" and \")\" where \"(\" would represent +1 and \")\" would represent -1. I figured that if at any point the total sum was less than 0, and its absolute value was greater than the prefix value for the $$*$$ chars, then we have an invalid string. This sum being less than 0 and having an absolute value greater than the $$*$$s represents an excess of \")\" that we can't match.\n\nHowever, It occurred to me that after that algorithm we might be left with an excess of unmatched \"(\" AKA our sum is positive. So I thought \"Well, why can't we just run the same algorithm but in reverse?\"\n\nBasically do the same thing but this time \")\" represents +1, \"(\" represents -1, and we iterate from the back to the start which makes all of the sums suffix sums instead of prefix sums.\n\nIf both of those linear-time passes don't return false, it means that all of the \"(\" and \")\" can be matched to a valid pair.",
+      "voteCount": 13
+    },
+    {
+      "name": "VishalArora14",
+      "year": 2024,
+      "content": "67 / 83 testcases passed. Check your code for this tc too.\n `\"(((((*(()((((*((**(((()()*)()()()*((((**)())*)*)))))))(())(()))())((*()()(((()((()*(())*(()**)()(())\"`",
+      "voteCount": 11
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "category": "",
+  "id": "981",
+  "name": "Time Based Key-Value Store",
+  "difficulty": "Medium",
+  "leetcode_url": "https://leetcode.com/problems/time-based-key-value-store/",
+  "slug": "time-based-key-value-store",
+  "isPaidOnly": false,
+  "tags": [
+    "Hash Table",
+    "String",
+    "Binary Search",
+    "Design"
+  ],
+  "similar_questions": [
+    {
+      "title": "Stock Price Fluctuation ",
+      "difficulty": "Medium",
+      "slug": "stock-price-fluctuation"
+    }
+  ],
+  "questionId": "1023",
+  "questionFrontendId": "981",
+  "title": "Time Based Key-Value Store",
+  "titleSlug": "time-based-key-value-store",
+  "content": "<p>Design a time-based key-value data structure that can store multiple values for the same key at different time stamps and retrieve the key&#39;s value at a certain timestamp.</p>\n\n<p>Implement the <code>TimeMap</code> class:</p>\n\n<ul>\n\t<li><code>TimeMap()</code> Initializes the object of the data structure.</li>\n\t<li><code>void set(String key, String value, int timestamp)</code> Stores the key <code>key</code> with the value <code>value</code> at the given time <code>timestamp</code>.</li>\n\t<li><code>String get(String key, int timestamp)</code> Returns a value such that <code>set</code> was called previously, with <code>timestamp_prev &lt;= timestamp</code>. If there are multiple such values, it returns the value associated with the largest <code>timestamp_prev</code>. If there are no values, it returns <code>&quot;&quot;</code>.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input</strong>\n[&quot;TimeMap&quot;, &quot;set&quot;, &quot;get&quot;, &quot;get&quot;, &quot;set&quot;, &quot;get&quot;, &quot;get&quot;]\n[[], [&quot;foo&quot;, &quot;bar&quot;, 1], [&quot;foo&quot;, 1], [&quot;foo&quot;, 3], [&quot;foo&quot;, &quot;bar2&quot;, 4], [&quot;foo&quot;, 4], [&quot;foo&quot;, 5]]\n<strong>Output</strong>\n[null, null, &quot;bar&quot;, &quot;bar&quot;, null, &quot;bar2&quot;, &quot;bar2&quot;]\n\n<strong>Explanation</strong>\nTimeMap timeMap = new TimeMap();\ntimeMap.set(&quot;foo&quot;, &quot;bar&quot;, 1);  // store the key &quot;foo&quot; and value &quot;bar&quot; along with timestamp = 1.\ntimeMap.get(&quot;foo&quot;, 1);         // return &quot;bar&quot;\ntimeMap.get(&quot;foo&quot;, 3);         // return &quot;bar&quot;, since there is no value corresponding to foo at timestamp 3 and timestamp 2, then the only value is at timestamp 1 is &quot;bar&quot;.\ntimeMap.set(&quot;foo&quot;, &quot;bar2&quot;, 4); // store the key &quot;foo&quot; and value &quot;bar2&quot; along with timestamp = 4.\ntimeMap.get(&quot;foo&quot;, 4);         // return &quot;bar2&quot;\ntimeMap.get(&quot;foo&quot;, 5);         // return &quot;bar2&quot;\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= key.length, value.length &lt;= 100</code></li>\n\t<li><code>key</code> and <code>value</code> consist of lowercase English letters and digits.</li>\n\t<li><code>1 &lt;= timestamp &lt;= 10<sup>7</sup></code></li>\n\t<li>All the timestamps <code>timestamp</code> of <code>set</code> are strictly increasing.</li>\n\t<li>At most <code>2 * 10<sup>5</sup></code> calls will be made to <code>set</code> and <code>get</code>.</li>\n</ul>\n",
+  "likes": 5123,
+  "dislikes": 692,
+  "stats": {
+    "totalAccepted": "632.8K",
+    "totalSubmission": "1.3M",
+    "totalAcceptedRaw": 632812,
+    "totalSubmissionRaw": 1278638,
+    "acRate": "49.5%"
+  },
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    },
+    {
+      "name": "Design",
+      "slug": "design"
+    }
+  ],
+  "metaData": {
+    "classname": "TimeMap",
+    "constructor": {
+      "params": []
+    },
+    "methods": [
+      {
+        "params": [
+          {
+            "type": "string",
+            "name": "key"
+          },
+          {
+            "type": "string",
+            "name": "value"
+          },
+          {
+            "type": "integer",
+            "name": "timestamp"
+          }
+        ],
+        "return": {
+          "type": "void"
+        },
+        "name": "set"
+      },
+      {
+        "params": [
+          {
+            "type": "string",
+            "name": "key"
+          },
+          {
+            "type": "integer",
+            "name": "timestamp"
+          }
+        ],
+        "return": {
+          "type": "string"
+        },
+        "name": "get"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    },
+    "systemdesign": true
+  },
+  "discussion_posts": [
+    {
+      "name": "raghavpewri",
+      "year": 2023,
+      "content": "This problem statement is really badly written",
+      "voteCount": 539
+    },
+    {
+      "name": "beginner_7",
+      "year": 2020,
+      "content": "What does this mean? \"Returns a value such that set(key, value, timestamp_prev) was called previously, with timestamp_prev <= timestamp.\" The examples seem contradictory to this statement",
+      "voteCount": 149
+    },
+    {
+      "name": "SaAwAL_Ag",
+      "year": 2023,
+      "content": "this question is really hard to understand :(",
+      "voteCount": 75
+    },
+    {
+      "name": "sanyam0410",
+      "year": 2023,
+      "content": "FIXED !!! : GETTING TLE IN C++ EVEN ON CORRECT SOLUTION ???\n\n`Remember one thing : that when you access the container inside your hashmap... access it using reference \n instead of directly assigning bcoz it will cause copying of the container so more time complexity`",
+      "voteCount": 64
+    },
+    {
+      "name": "xeniawann",
+      "year": 2023,
+      "content": "***Hint:*** \nTake advantage of the fact that \"timestamp is strictly increasing\", so you can do binary search based on `timestamp` variable. A linear search will exceed time limit, so it's probably better to start from linear search but write code based on binary search. \n\nA hashmap of `key` will get you started, think what its associating value could be, maybe another hashmap (but then it's unsorted)? or maybe just an array of tuples?",
+      "voteCount": 54
+    },
+    {
+      "name": "lylyjenny",
+      "year": 2021,
+      "content": "Shall we move this constraint to the main problem description? This matters a lot when people trying to design the solution. Thanks!",
+      "voteCount": 35
+    },
+    {
+      "name": "mattreex",
+      "year": 2023,
+      "content": "This test case is wrong because it breaks the constraint given in the description\\n[\"TimeMap\",\"set\",\"set\",\"get\",\"get\",\"get\",\"get\",\"get\"]\\n[[],[\"love\",\"high\",10],[\"love\",\"low\",20],[\"love\",5],[\"love\",10],[\"love\",15],[\"love\",20],[\"love\",25]]\\n\\n",
+      "voteCount": 31
+    },
+    {
+      "name": "akshar_",
+      "year": 2022,
+      "content": "The time limit for C++ must be relaxed. Stuck at 44/48 test cases even though the same code translated to Java passes every time.",
+      "voteCount": 31
+    },
+    {
+      "name": "matthewwdaly",
+      "year": 2023,
+      "content": "Here is a testcase that is more comprehensive than the provided example:\\n[\"TimeMap\",\"set\",\"get\",\"set\",\"set\",\"get\",\"get\",\"get\"]\\n[[],[\"robb\",\"talisa\",2],[\"robb\",3],[\"sansa\", \"tyrion\",3],[\"sansa\",\"ramsay\",5],[\"sansa\",5],[\"sansa\",1],[\"bran\",7]]",
+      "voteCount": 16
+    },
+    {
+      "name": "jpla83",
+      "year": 2021,
+      "content": "I would like to know why the performance of C# solutions are always that bad. For example I solved this exercise using C# and I got Time Exceeeded, after that I translated the same code to java and it was accepted. Do anybody here knows what this happens?",
+      "voteCount": 13
+    }
+  ]
+}
