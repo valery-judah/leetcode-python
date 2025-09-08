@@ -30,11 +30,11 @@ See generation instructions in ../README.md.
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
 | Car Pooling | Medium |  |  |  |  |  |                  |  |  |  |  |  |                      |
 | Corporate Flight Bookings | Medium |  |  |  |  |  |                  |  |  |  |  |  |                      |
-| My Calendar I | Medium |  |  |  |  |  |                  |  |  |  |  |  |                      |
-| My Calendar II | Medium |  |  |  |  |  |                  |  |  |  |  |  |                      |
-| My Calendar III | Hard |  |  |  |  |  |                  |  |  |  |  |  |                      |
+| [My Calendar I](../problems/0729-my-calendar-i/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 |                 1 | ✖️ | ✖️ | ✖️ | ✖️ | ✖️ |                      |
+| [My Calendar II](../problems/0731-my-calendar-ii/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 |                 1 | ✖️ | ✖️ | ✖️ | ✖️ | ✖️ |                      |
+| [My Calendar III](../problems/0732-my-calendar-iii/readme.md) | Hard | ✖️ | ✖️ | ✖️ |  | 0 |                 1 | ✖️ | ✖️ | ✖️ | ✖️ | ✖️ |                      |
 | Minimum Number of Taps to Open to Water a Garden | Hard |  |  |  |  |  |                  |  |  |  |  |  |                      |
 | Video Stitching | Medium |  |  |  |  |  |                  |  |  |  |  |  |                      |
 | Remove Interval | Medium |  |  |  |  |  |                  |  |  |  |  |  |                      |
-| Data Stream as Disjoint Intervals | Hard |  |  |  |  |  |                  |  |  |  |  |  |                      |
+| [Data Stream as Disjoint Intervals](../problems/0352-data-stream-as-disjoint-intervals/readme.md) | Hard | ✖️ | ✖️ | ✖️ |  | 0 |                 1 | ✖️ | ✖️ | ✖️ | ✖️ | ✖️ |                      |
 | Minimum Interval to Include Each Query | Hard |  |  |  |  |  |                  |  |  |  |  |  |                      |

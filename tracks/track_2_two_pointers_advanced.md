@@ -11,9 +11,9 @@ See generation instructions in ../README.md.
 | Problem | Diff | Baseline | Complex Justified | Optimal | Repeats | Min Time | Conf | Clarified |             Communicated | Stated | Edge Tests | Clean Impl | Mistakes |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
 | [Remove Duplicates from Sorted Array](../problems/0026-remove-duplicates-from-sorted-array/readme.md) | Easy | ✖️ | ✖️ | ✖️ |  | 0 |                 1 | ✖️ | ✖️ | ✖️ | ✖️ | ✖️ |                      |
-| Move Zeroes | Easy |  |  |  |  |  |                  |  |  |  |  |  |                      |
+| [Move Zeroes](../problems/0283-move-zeroes/readme.md) | Easy | ✖️ | ✖️ | ✖️ |  | 0 |                 1 | ✖️ | ✖️ | ✖️ | ✖️ | ✖️ |                      |
 | [Sort Colors](../problems/0075-sort-colors/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 |                 1 | ✖️ | ✖️ | ✖️ | ✖️ | ✖️ |                      |
-| 3Sum Closest | Medium |  |  |  |  |  |                  |  |  |  |  |  |                      |
+| [3Sum Closest](../problems/0016-3sum-closest/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 |                 1 | ✖️ | ✖️ | ✖️ | ✖️ | ✖️ |                      |
 | [4Sum](../problems/0018-4sum/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 |                 1 | ✖️ | ✖️ | ✖️ | ✖️ | ✖️ |                      |
 | [Is Subsequence](../problems/0392-is-subsequence/readme.md) | Easy | ✖️ | ✖️ | ✖️ |  | 0 |                 1 | ✖️ | ✖️ | ✖️ | ✖️ | ✖️ |                      |
 | Backspace String Compare | Easy |  |  |  |  |  |                  |  |  |  |  |  |                      |
@@ -34,5 +34,5 @@ See generation instructions in ../README.md.
 | Sort Array By Parity | Easy |  |  |  |  |  |                  |  |  |  |  |  |                      |
 | Shortest Unsorted Continuous Subarray | Medium |  |  |  |  |  |                  |  |  |  |  |  |                      |
 | [Reverse Words in a String II](../problems/0186-reverse-words-in-a-string-ii/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 |                 1 | ✖️ | ✖️ | ✖️ | ✖️ | ✖️ |                      |
-| Minimum Window Subsequence | Hard |  |  |  |  |  |                  |  |  |  |  |  |                      |
+| [Minimum Window Subsequence](../problems/0727-minimum-window-subsequence/readme.md) | Hard | ✖️ | ✖️ | ✖️ |  | 0 |                 1 | ✖️ | ✖️ | ✖️ | ✖️ | ✖️ |                      |
 | [Partition List](../problems/0086-partition-list/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 |                 1 | ✖️ | ✖️ | ✖️ | ✖️ | ✖️ |                      |

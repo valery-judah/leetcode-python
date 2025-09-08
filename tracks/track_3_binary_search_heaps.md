@@ -21,7 +21,7 @@ See generation instructions in ../README.md.
 | [Find Median from Data Stream](../problems/0295-find-median-from-data-stream/readme.md) | Hard | ✖️ | ✖️ | ✖️ |  | 0 |                 1 | ✖️ | ✖️ | ✖️ | ✖️ | ✖️ |                      |
 | [Kth Largest Element in an Array](../problems/0215-kth-largest-element-in-an-array/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 |                 1 | ✖️ | ✖️ | ✖️ | ✖️ | ✖️ |                      |
 | [Merge k Sorted Lists](../problems/0023-merge-k-sorted-lists/readme.md) | Hard | ✖️ | ✖️ | ✖️ |  | 0 |                 1 | ✖️ | ✖️ | ✖️ | ✖️ | ✖️ |                      |
-| Kth Smallest Element in a Sorted Matrix | Hard |  |  |  |  |  |                  |  |  |  |  |  |                      |
+| [Kth Smallest Element in a Sorted Matrix](../problems/0378-kth-smallest-element-in-a-sorted-matrix/readme.md) | Hard | ✖️ | ✖️ | ✖️ |  | 0 |                 1 | ✖️ | ✖️ | ✖️ | ✖️ | ✖️ |                      |
 
 
 ## Extensions (Optional)
@@ -31,6 +31,6 @@ See generation instructions in ../README.md.
 | Koko Eating Bananas | Medium |  |  |  |  |  |                  |  |  |  |  |  |                      |
 | Capacity To Ship Packages Within D Days | Medium |  |  |  |  |  |                  |  |  |  |  |  |                      |
 | [Split Array Largest Sum](../problems/0410-split-array-largest-sum/readme.md) | Hard | ✖️ | ✖️ | ✖️ |  | 0 |                 1 | ✖️ | ✖️ | ✖️ | ✖️ | ✖️ |                      |
-| Search a 2D Matrix II | Medium |  |  |  |  |  |                  |  |  |  |  |  |                      |
+| [Search a 2D Matrix II](../problems/0240-search-a-2d-matrix-ii/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 |                 1 | ✖️ | ✖️ | ✖️ | ✖️ | ✖️ |                      |
 | [Find First and Last Position of Element in Sorted Array](../problems/0034-find-first-and-last-position-of-element-in-sorted-array/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 |                 1 | ✖️ | ✖️ | ✖️ | ✖️ | ✖️ |                      |
 | [Find K Closest Elements](../problems/0658-find-k-closest-elements/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 |                 1 | ✖️ | ✖️ | ✖️ | ✖️ | ✖️ |                      |

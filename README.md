@@ -30,16 +30,16 @@ Current tracks and progress:
 <!-- BEGIN_TRACKS_TABLE -->
 | Track | Main | Ext | Total | Done | Progress | Linked | Unlinked |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| [Foundations — Arrays, Hashing, Two-Pointers, Prefix, Stack](tracks/track_0_foundations.md) | 17 | 8 | 25 | 0 | 0%                 | 23 | 2 |
-| [Sliding Window — Fixed and Dynamic](tracks/track_1_sliding_window.md) | 12 | 6 | 18 | 0 | 0%                 | 8 | 10 |
-| [Two Pointers — Advanced and In‑Place Transforms](tracks/track_2_two_pointers_advanced.md) | 12 | 8 | 20 | 0 | 0%                 | 14 | 6 |
-| [Binary Search — Predicates, Partitions, and Heaps](tracks/track_3_binary_search_heaps.md) | 12 | 6 | 18 | 0 | 0%                 | 11 | 7 |
-| [Intervals — Sorting, Merging, and Greedy Scheduling](tracks/track_4_intervals.md) | 12 | 10 | 22 | 0 | 0%                 | 7 | 15 |
+| [Foundations — Arrays, Hashing, Two-Pointers, Prefix, Stack](tracks/track_0_foundations.md) | 17 | 8 | 25 | 0 | 0%                 | 24 | 1 |
+| [Sliding Window — Fixed and Dynamic](tracks/track_1_sliding_window.md) | 12 | 6 | 18 | 0 | 0%                 | 10 | 8 |
+| [Two Pointers — Advanced and In‑Place Transforms](tracks/track_2_two_pointers_advanced.md) | 12 | 8 | 20 | 0 | 0%                 | 17 | 3 |
+| [Binary Search — Predicates, Partitions, and Heaps](tracks/track_3_binary_search_heaps.md) | 12 | 6 | 18 | 0 | 0%                 | 13 | 5 |
+| [Intervals — Sorting, Merging, and Greedy Scheduling](tracks/track_4_intervals.md) | 12 | 10 | 22 | 0 | 0%                 | 11 | 11 |
 | [NeetCode 250 — Arrays & Hashing](tracks/track_neetcode_0_arrays_hashing.md) | 22 | 0 | 22 | 0 | 0%                 | 18 | 4 |
 | [NeetCode 250 — Two Pointers](tracks/track_neetcode_1_two_pointers.md) | 13 | 0 | 13 | 0 | 0%                 | 11 | 2 |
 | [NeetCode 250 — Sliding Window](tracks/track_neetcode_2_sliding_window.md) | 9 | 0 | 9 | 0 | 0%                 | 9 | 0 |
 | [NeetCode 250 — Stack](tracks/track_neetcode_3_stack.md) | 15 | 0 | 15 | 0 | 0%                 | 12 | 3 |
-| [NeetCode 250 — Binary Search](tracks/track_neetcode_4_binary_search.md) | 14 | 0 | 14 | 0 | 0%                 | 9 | 5 |
+| [NeetCode 250 — Binary Search](tracks/track_neetcode_4_binary_search.md) | 14 | 0 | 14 | 0 | 0%                 | 10 | 4 |
 <!-- END_TRACKS_TABLE -->
 
 > Manage tracks in `tracks/*.yaml`. Generate reports and update this table with `make markdown` (or run the full pipeline with `make build`).

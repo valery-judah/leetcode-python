@@ -38,6 +38,6 @@ See generation instructions in ../README.md.
 | [Majority Element](../problems/0169-majority-element/readme.md) | Easy | ✖️ | ✖️ | ✖️ |  | 0 |                 1 | ✖️ | ✖️ | ✖️ | ✖️ | ✖️ |                      |
 | Squares of a Sorted Array | Easy |  |  |  |  |  |                  |  |  |  |  |  |                      |
 | [Remove Duplicates from Sorted Array](../problems/0026-remove-duplicates-from-sorted-array/readme.md) | Easy | ✖️ | ✖️ | ✖️ |  | 0 |                 1 | ✖️ | ✖️ | ✖️ | ✖️ | ✖️ |                      |
-| Move Zeroes | Easy |  |  |  |  |  |                  |  |  |  |  |  |                      |
+| [Move Zeroes](../problems/0283-move-zeroes/readme.md) | Easy | ✖️ | ✖️ | ✖️ |  | 0 |                 1 | ✖️ | ✖️ | ✖️ | ✖️ | ✖️ |                      |
 | [Merge Sorted Array](../problems/0088-merge-sorted-array/readme.md) | Easy | ✖️ | ✖️ | ✖️ |  | 0 |                 1 | ✖️ | ✖️ | ✖️ | ✖️ | ✖️ |                      |
 | [Implement Queue using Stacks](../problems/0232-implement-queue-using-stacks/readme.md) | Easy | ✖️ | ✖️ | ✖️ |  | 0 |                 1 | ✖️ | ✖️ | ✖️ | ✖️ | ✖️ |                      |

@@ -23,4 +23,4 @@ See generation instructions in ../README.md.
 | Time Based Key Value Store | Medium |  |  |  |  |  |                  |  |  |  |  |  |                      |
 | [Split Array Largest Sum](../problems/0410-split-array-largest-sum/readme.md) | Hard | ✖️ | ✖️ | ✖️ |  | 0 |                 1 | ✖️ | ✖️ | ✖️ | ✖️ | ✖️ |                      |
 | [Median of Two Sorted Arrays](../problems/0004-median-of-two-sorted-arrays/readme.md) | Hard | ✖️ | ✖️ | ✖️ |  | 0 |                 1 | ✖️ | ✖️ | ✖️ | ✖️ | ✖️ |                      |
-| Find in Mountain Array | Hard |  |  |  |  |  |                  |  |  |  |  |  |                      |
+| [Find in Mountain Array](../problems/1095-find-in-mountain-array/readme.md) | Hard | ✖️ | ✖️ | ✖️ |  | 0 |                 1 | ✖️ | ✖️ | ✖️ | ✖️ | ✖️ |                      |
