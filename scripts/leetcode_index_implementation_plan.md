@@ -299,7 +299,7 @@ def build() -> None:
         for i, line in enumerate(f, 1):
             r = json.loads(line)
             raw_slug = r["slug"]
-            r["slug"] = norm(r["slug"]) 
+            r["slug"] = norm(r["slug"])
             r["aliases"] = [norm(a) for a in r.get("aliases", [])]
             if r["id"] in ids: sys.exit(f"E100 duplicate id {r['id']} at line {i}")
             if r["slug"] in slugs: sys.exit(f"E101 duplicate slug {r['slug']} at line {i}")
