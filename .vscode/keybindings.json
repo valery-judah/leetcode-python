@@ -5,7 +5,7 @@
     "when": "editorTextFocus || terminalFocus"
   },
   {
-    "key": "cmd+shift+n", // Or your preferred shortcut
+    "key": "cmd+shift+n",
     "command": "workbench.action.tasks.runTask",
     "args": "Create New LeetCode Attempt"
   }
