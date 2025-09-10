@@ -14,7 +14,8 @@ class Optimized:
             return False
 
         count = [0] * 26
-        char_to_index = lambda c: ord(c) - ord("a")
+        def char_to_index(c):
+            return ord(c) - ord("a")
 
         for char in s:
             index = char_to_index(char)
