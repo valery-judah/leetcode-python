@@ -3,23 +3,47 @@ from __future__ import annotations
 
 class Baseline:
     def solve(self, s: str = "", t: str = "") -> bool:
-        raise NotImplementedError
+        if len(s) != len(t):
+            return False
+        return sorted(s) == sorted(t)
 
 
 class Optimized:
     def solve(self, s: str = "", t: str = "") -> bool:
-        raise NotImplementedError
+        if len(s) != len(t):
+            return False
+
+        count = [0] * 26
+        def char_to_index(c):
+            return ord(c) - ord("a")
+
+        for char in s:
+            index = char_to_index(char)
+            count[index] = count[index] + 1
+            print(f"count after adding {char}: {count}")
+
+        for char in t:
+            index = char_to_index(char)
+            print(f"count before deciding {char}: {count}")
+            # specify decision logic for the step
+            # first check if the count is already zero then we have an extra char in t
+            if count[index] == 0:
+                return False
+            count[index] = count[index] - 1
+            print(f"count after removing {char}: {count}")
+            #
+        return True
 
 
 # Explicit multi-export for test discovery
 ALL_SOLUTIONS = [Baseline, Optimized]
 
 TEST_CASES = [
-    ("types", ("a", "a"), False),
+    ("usual case", ("anagram", "ramanag"), True),
+    ("different lengths", ("nagram", "graamna"), False),
+    ("different words", ("cat", "tar"), False),
+    ("empty strings", ("", ""), True),
 ]
-
-# Opt-in for generic stub testing: assert .solve raises this exception.
-TEST_EXPECT_EXCEPTION = NotImplementedError
 
 # Optional: when all default tests pass, auto-mark this problem as optimal in stats.json
 # Uncomment to enable once you are satisfied with your solution quality.
