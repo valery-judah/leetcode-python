@@ -4,24 +4,13 @@ Track-first workflow for interview prep. Organize your practice into curated “
 
 This repo ships with predefined tracks you can use out of the box, and you can also create your own. See [Tracks](#tracks) to view progress, copy built-in tracks, and build custom ones.
 
-All problems live under `problems/`. Each problem folder contains the description, solution(s), reasoning, and progress stats. Example: `problems/0169-majority-element/readme.md`.
-
-## Quick start
-
-Common tasks
-
-- Create a new problem: `python scripts/new_problem.py <slug> <id> [--difficulty ... --tags ... --url ...]`
-- Run tests: `make test` (pytest, no `__pycache__`)
-- Lint/format: `make lint` / `make fmt`
-- Type check: `make type`
-- Generate track reports and update README table: `make markdown`
-- Full build (format → lint → type → test → validate stats → reports): `make build`
+All problems live under `problems/`. Each problem folder contains the description, solution(s), reasoning, and progress stats. Example: [`problems/0169-majority-element/readme.md`](/problems/0169-majority-element/readme.md).
 
 # Tracks
 
 Tracks are curated problem lists that drive your learning plan and progress tracking.
 
-- Define tracks in `tracks/*.yaml` (custom or copied from predefined ones).
+- Define tracks in `tracks/*.yaml` (custom or copied from predefined ones in [archive folder](/archive/)).
 - Generate per-track reports and the README table from your problem stats.
 - “Done” is counted from each problem’s `stats.json` (`optimal_solution: true`).
 
@@ -137,12 +126,12 @@ Folders are created under `problems/NNNN-slug/`. Each contains:
   TEST_MARK_OPTIMAL_ON_PASS = True
   ```
 
-- How to trigger:
+<!-- - How to trigger:
 
   - Run tests for a specific problem: `pytest -q -k "0001-two-sum"`
   - Or run the full suite: `make test`
   - On success, you’ll see a note like: “Updated stats.json fields for: 0001-two-sum”.
-  - Then regenerate reports/tables: `make markdown`
+  - Then regenerate reports/tables: `make markdown` -->
 
 Example:
 
