@@ -2,19 +2,30 @@
 
 :root {
   /* Dark palette tuned to resemble LC dark */
-  --bg: #0d1117;            /* page background */
-  --panel: #0f141a;         /* content card */
-  --text: #c9d1d9;          /* body text */
-  --muted: #9aa4ad;         /* secondary text */
-  --heading: #e6edf3;       /* headings */
-  --border: #30363d;        /* subtle borders */
-  --accent: #58a6ff;        /* links */
-  --accent-soft: #1f6feb22; /* link hover bg */
-  --code-bg: #161b22;       /* code block bg */
-  --code-border: #2d333b;   /* code block border */
+  --bg: #0d1117;
+  /* page background */
+  --panel: #0f141a;
+  /* content card */
+  --text: #c9d1d9;
+  /* body text */
+  --muted: #9aa4ad;
+  /* secondary text */
+  --heading: #e6edf3;
+  /* headings */
+  --border: #30363d;
+  /* subtle borders */
+  --accent: #58a6ff;
+  /* links */
+  --accent-soft: #1f6feb22;
+  /* link hover bg */
+  --code-bg: #161b22;
+  /* code block bg */
+  --code-border: #2d333b;
+  /* code block border */
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   background: var(--bg);
@@ -23,6 +34,7 @@ html, body {
     Cantarell, Noto Sans, Arial, Helvetica, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol";
   line-height: 1.6;
+  font-size: 1.1rem;
 }
 
 .lc-content {
@@ -35,27 +47,54 @@ html, body {
   border-radius: 10px;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.25;
   margin: 1.2em 0 0.5em;
   color: var(--heading);
 }
 
-p { margin: 0.7em 0; }
-strong { color: var(--heading); font-weight: 600; }
-em { color: var(--text); }
+p {
+  margin: 0.7em 0;
+}
 
-a { color: var(--accent); text-decoration: none; }
-a:hover { text-decoration: underline; }
+strong {
+  color: var(--heading);
+  font-weight: 600;
+}
 
-ul, ol { padding-left: 1.5rem; }
-li { margin: 0.35em 0; }
+em {
+  color: var(--text);
+}
 
-code, kbd, samp {
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul,
+ol {
+  padding-left: 1.5rem;
+}
+
+li {
+  margin: 0.35em 0;
+}
+
+code,
+kbd,
+samp {
   background: rgba(240, 246, 252, 0.05);
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
-  font-size: 1.05em; /* larger inline code */
+  font-size: 1.05em;
+  /* larger inline code */
   border-radius: 4px;
   padding: 0 .25em;
 }
@@ -66,10 +105,13 @@ pre {
   border-radius: 8px;
   padding: 0.95rem 1.1rem;
   overflow: auto;
-  font-size: 1.02em; /* slightly larger code blocks */
+  font-size: 1.02em;
+  /* slightly larger code blocks */
 }
 
-pre code { background: transparent; }
+pre code {
+  background: transparent;
+}
 
 table {
   width: 100%;
@@ -77,7 +119,8 @@ table {
   margin: 1rem 0;
 }
 
-th, td {
+th,
+td {
   border: 1px solid var(--border);
   padding: 0.5rem 0.6rem;
   text-align: left;
@@ -91,7 +134,10 @@ blockquote {
 }
 
 /* LeetCode-specific helpers seen in HTML fragments */
-.example { color: var(--heading); }
+.example {
+  color: var(--heading);
+}
+
 .example-block {
   /* neutral background (remove bluish accent) */
   background: var(--code-bg);
@@ -124,4 +170,6 @@ hr {
   margin: 1.5rem 0;
 }
 
-sup { font-size: 0.75em; }
+sup {
+  font-size: 0.75em;
+}

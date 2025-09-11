@@ -22,5 +22,8 @@
   "terminal.integrated.defaultProfile.osx": "zsh-with-venv",
   "python.analysis.extraPaths": [
     "./common"
+  ],
+  "markdown.styles": [
+    "common/leetcode-content.css"
   ]
 }

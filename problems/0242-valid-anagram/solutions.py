@@ -14,6 +14,7 @@ class Optimized:
             return False
 
         count = [0] * 26
+
         def char_to_index(c):
             return ord(c) - ord("a")
 
@@ -31,7 +32,8 @@ class Optimized:
                 return False
             count[index] = count[index] - 1
             print(f"count after removing {char}: {count}")
-            #
+
+        # Usually we would check if all counts are zero here
         return True
 
 
@@ -44,10 +46,6 @@ TEST_CASES = [
     ("different words", ("cat", "tar"), False),
     ("empty strings", ("", ""), True),
 ]
-
-# Optional: when all default tests pass, auto-mark this problem as optimal in stats.json
-# Uncomment to enable once you are satisfied with your solution quality.
-# TEST_MARK_OPTIMAL_ON_PASS = True
 
 if __name__ == "__main__":
     import subprocess
