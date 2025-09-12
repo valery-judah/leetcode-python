@@ -19,7 +19,7 @@ See generation instructions in ../README.md.
 | [Valid Sudoku](../problems/0036-valid-sudoku/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Longest Consecutive Sequence](../problems/0128-longest-consecutive-sequence/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Encode and Decode Strings](../problems/0271-encode-and-decode-strings/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
-| [Valid Palindrome](../problems/0125-valid-palindrome/readme.md) | Easy | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
+| [Valid Palindrome](../problems/0125-valid-palindrome/readme.md) | Easy | ✅ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Two Sum II - Input Array Is Sorted](../problems/0167-two-sum-ii-input-array-is-sorted/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [3Sum](../problems/0015-3sum/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Container With Most Water](../problems/0011-container-with-most-water/readme.md) | Medium | ✅ | ✖️ | ✅ |  | 2 | 2 | ✖️ | ✖️ | ✖️ | ✖️                 | ✅ |  |
