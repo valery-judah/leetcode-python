@@ -3,12 +3,16 @@ from __future__ import annotations
 
 class Baseline:
     def solve(self, nums: list[int] | None = None, target: int = 0) -> list[int]:
-        raise NotImplementedError
+        for i in range(len(nums or [])):
+            for j in range(i + 1, len(nums)): # it's already optimized to not repeat pairs
+                # because we already checked the pairs (k, i) for k < i
+                if (nums or [])[i] + (nums)[j] == target:
+                    return [i, j]
 
 
 class Optimized:
     def solve(self, nums: list[int] | None = None, target: int = 0) -> list[int]:
-        raise NotImplementedError
+        return 0
 
 
 # Explicit multi-export for test discovery
@@ -18,13 +22,6 @@ TEST_CASES = [
     ("types", ([0], 0), [0]),
     ("empty_list", ([], 0), [0]),
 ]
-
-# Opt-in for generic stub testing: assert .solve raises this exception.
-TEST_EXPECT_EXCEPTION = NotImplementedError
-
-# Optional: when all default tests pass, auto-mark this problem as optimal in stats.json
-# Uncomment to enable once you are satisfied with your solution quality.
-# TEST_MARK_OPTIMAL_ON_PASS = True
 
 if __name__ == "__main__":
     import subprocess
