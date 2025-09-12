@@ -81,9 +81,9 @@ TEST_CASES = [
     ("whitespace_palindrome", ("taco cat",), True),
     ("whitespace_only", ("  ",), True),  # Sanitizes to "".
     ("leading_trailing_whitespace", ("  a b a  ",), True),
-    # Category: Long Run 
+    # Category: Long Run
     ("long_run_in_middle", ("ab,,,,,,,,,,,,,,,,cd",), False),
-    ("long_run_palindrome", ("a,,,,,,,,,,,,,,,,a",), True), 
+    ("long_run_palindrome", ("a,,,,,,,,,,,,,,,,a",), True),
 ]
 
 

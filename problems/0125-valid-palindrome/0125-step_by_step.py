@@ -1,5 +1,6 @@
 import time
 
+
 class Solution:
     def isPalindrome(self, s: str) -> bool:
         """
@@ -7,7 +8,7 @@ class Solution:
         two-pointer approach to illustrate the decision process.
         """
         left, right = 0, len(s) - 1
-        
+
         print("--- START OF ANALYSIS ---")
         print(f"Input string: '{s}'")
         print(f"Initial state: left = {left}, right = {right}\n")
@@ -28,10 +29,13 @@ class Solution:
                 left += 1
                 print(f"     New left position: {left}")
                 time.sleep(1)
-            
+
             # This check handles cases where all remaining characters are non-alphanumeric
             if left >= right:
-                print("\n  -> Pointers met or crossed while seeking. All remaining chars were non-alphanumeric.")
+                print(
+                    "\n  -> Pointers met or crossed while seeking. "
+                    "All remaining chars were non-alphanumeric."
+                )
                 break
 
             print(f"  -> Found valid LEFT character at {left}: '{s[left]}'")
@@ -45,7 +49,7 @@ class Solution:
                 right -= 1
                 print(f"     New right position: {right}")
                 time.sleep(1)
-            
+
             print(f"  -> Found valid RIGHT character at {right}: '{s[right]}'")
             time.sleep(1)
 
@@ -62,20 +66,22 @@ class Solution:
             right -= 1
             print(f"     New state: left = {left}, right = {right}\n")
             time.sleep(1.5)
-        
+
         print(f"\n--- Main Loop Condition False (Check: {left} < {right} -> {left < right}) ---")
         print("Loop terminated because pointers met or crossed. No mismatches found.")
         print("The string is a palindrome.")
         print("--- END OF ANALYSIS ---\n")
         return True
 
+
 def run_test_case(solver, test_str):
     """Helper function to run and display a single test case."""
-    print("="*40)
+    print("=" * 40)
     print(f"TESTING: '{test_str}'")
-    print("="*40)
+    print("=" * 40)
     result = solver.isPalindrome(test_str)
     print(f"FINAL RESULT for '{test_str}': {result}\n\n")
+
 
 if __name__ == "__main__":
     solver = Solution()
@@ -85,7 +91,7 @@ if __name__ == "__main__":
 
     # Test case 2: The critical failure case for an unguarded seek
     # This demonstrates WHY `left < right` is necessary in the inner loops.
-    run_test_case(solver, ",. , .," )
+    run_test_case(solver, ",. , .,")
 
     # Test case 3: A standard non-palindrome to show early exit
     run_test_case(solver, "race a car")
