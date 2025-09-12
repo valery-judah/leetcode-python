@@ -15,6 +15,7 @@ class Baseline:
             max_length = max(max_length, current_length)
         return max_length
 
+
 class Optimized:
     def solve(self, nums: list[int] | None = None) -> int:
         num_set = set(nums)
