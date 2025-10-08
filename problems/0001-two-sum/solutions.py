@@ -4,7 +4,7 @@ from __future__ import annotations
 class Baseline:
     def solve(self, nums: list[int], target: int = 0) -> list[int] | None:
         for i in range(len(nums or [])):
-            for j in range(i + 1, len(nums)):  
+            for j in range(i + 1, len(nums)):
                 # it's already optimized to not repeat pairs
                 # because we already checked the pairs (k, i) for k < i
                 if (nums)[i] + (nums)[j] == target:
@@ -14,15 +14,11 @@ class Baseline:
 
 class Optimized:
     def solve(self, nums: list[int], target: int = 0) -> list[int] | None:
-        seen = {}
-        for i, num in enumerate(nums):
-            pass
         return None
 
 
-
 # Explicit multi-export for test discovery
-ALL_SOLUTIONS = [Baseline, Optimized]
+ALL_SOLUTIONS = [Baseline]
 
 TEST_CASES = [
     # Happy path

@@ -3,27 +3,28 @@ from __future__ import annotations
 
 class Baseline:
     def solve(self, word1: str = "", word2: str = "") -> str:
-        raise NotImplementedError
+        parts = []
+        min_len = min(len(word1), len(word2))
+        for i in range(min_len):
+            parts.append(word1[i])
+            parts.append(word2[i])
+        parts.append(word1[min_len:])
+        parts.append(word2[min_len:])
+        return "".join(parts)
 
 
 class Optimized:
     def solve(self, word1: str = "", word2: str = "") -> str:
-        raise NotImplementedError
+        pairwise_chunks = (a + b for a, b in zip(word1, word2, strict=False))
+        return "".join(pairwise_chunks) + word1[len(word2) :] + word2[len(word1) :]
 
 
 # Explicit multi-export for test discovery
 ALL_SOLUTIONS = [Baseline, Optimized]
 
 TEST_CASES = [
-    ("types", ("a", "a"), "a"),
+    ("types", ("ab", "lm"), "albm"),
 ]
-
-# Opt-in for generic stub testing: assert .solve raises this exception.
-TEST_EXPECT_EXCEPTION = NotImplementedError
-
-# Optional: when all default tests pass, auto-mark this problem as optimal in stats.json
-# Uncomment to enable once you are satisfied with your solution quality.
-# TEST_MARK_OPTIMAL_ON_PASS = True
 
 if __name__ == "__main__":
     import subprocess

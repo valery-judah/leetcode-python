@@ -49,19 +49,19 @@ Before coding, it is critical to clarify constraints and define the problem's bo
 
   - **Failure:** This fails to account for character frequency. For `s = "aab"` and `t = "ab"`, `set(s) == {'a', 'b'}` and `set(t) == {'a', 'b'}`. A set-based check would incorrectly return `True`.
 
-#reflection and here I was stuck and didn't know where to go.. why did I stuck? <- I didn't thought about symmetry: s -> t `<==>` t -> s. Which symmetry? The characters frequency.
+#reflection and here I was stuck and didn't know where to go.. why did I stuck? \<- I didn't thought about symmetry: s -> t `<==>` t -> s. Which symmetry? The characters frequency.
 
 - **Key Invariant:** Two strings are anagrams if and only if they represent the same **multiset** of characters. A multiset is a collection where members are allowed to appear more than once. The core of the problem is therefore to verify multiset equality.
 
 - **Choosing Data Structures:** How can we represent and compare these multisets? #note cool: we're setting the goal why do we need these structures. we're defining the requirements in form of operations (also could be the space reqs) ... restricting the space of possible DS
 
-    1. **Canonical Representation:** If we can transform any anagram of a string into a **single, canonical form**, we can simply compare the forms. Sorting the characters of a string provides such a representation. `sorted("anagram")` and `sorted("nagaram")` both produce `['a', 'a', 'a', 'g', 'm', 'n', 'r']`.
+  1. **Canonical Representation:** If we can transform any anagram of a string into a **single, canonical form**, we can simply compare the forms. Sorting the characters of a string provides such a representation. `sorted("anagram")` and `sorted("nagaram")` both produce `['a', 'a', 'a', 'g', 'm', 'n', 'r']`.
 
-    2. **Frequency Counting:** We can directly count the occurrences of each character in both strings and compare the counts. This is a direct implementation of multiset comparison.
+  1. **Frequency Counting:** We can directly count the occurrences of each character in both strings and compare the counts. This is a direct implementation of multiset comparison.
 
-        - A **hash map** (`dict` in Python) is a general-purpose tool for this.
+     - A **hash map** (`dict` in Python) is a general-purpose tool for this.
 
-        - If the character set is fixed and small (e.g., 26 lowercase English letters, 128 ASCII characters), a simple **array** can serve as a highly efficient, direct-access frequency map.
+     - If the character set is fixed and small (e.g., 26 lowercase English letters, 128 ASCII characters), a simple **array** can serve as a highly efficient, direct-access frequency map.
 
 ### Alternative
 
@@ -92,22 +92,22 @@ Since their underlying character multisets are identical, they are anagrams. In 
 
 These multisets are different, so they are not anagrams.
 
->[!note] Reflection
->From my experience, the symmetry in this reframing of the problem helps eliminate 'example-construction' bias, leading to more useful test cases.
+> [!note] Reflection
+> From my experience, the symmetry in this reframing of the problem helps eliminate 'example-construction' bias, leading to more useful test cases.
 >
->This definition also guides us toward a solution. (How?)
+> This definition also guides us toward a solution. (How?)
 
 The next step is to construct a frequency-based solution, which is a direct implementation of this multiset comparison.
 
 #reflection I don't remember whether I already wrote about this somewhere but I think it's important. We have a different way of representing strings in this case in our mind. One of the definitive features - that we can see these by eyes as a whole structure. Second could be that we can play in mind with different ways... But computer can see them only one by one - so we could (or may, or must) utilize the same approach - open letters one by one and imagine how we can find what we need to find. [difference of representations]
 
-#todo refactor and include [[lc-valid-anagram#Translating the Concept into an Algorithm]]
+#todo refactor and include \[[lc-valid-anagram#Translating the Concept into an Algorithm]\]
 
 ### Step-by-step Alternative
 
 The core idea is this: two strings are anagrams if they are made of the exact same characters with the exact same counts.
 
----
+______________________________________________________________________
 
 #### Step 1: Deconstruct the Problem's Definition
 
@@ -115,11 +115,11 @@ First, what does "anagram" really mean in a computational sense? "Rearranging le
 
 1. They must have the **same length**.
 
-2. They must have the **exact same frequency** of each character.
+1. They must have the **exact same frequency** of each character.
 
 For example, `listen` and `silent` both have one 'l', one 'i', one 's', one 't', one 'e', and one 'n'. The order is irrelevant; the character inventory is what matters. This is our guiding principle.
 
----
+______________________________________________________________________
 
 #### Step 2: The Intuitive First Approach (Sorting)
 
@@ -140,7 +140,7 @@ def isAnagram_sorting(s: str, t: str) -> bool:
 
 But is it *optimal*? Sorting typically takes O(NlogN) time. We should always ask ourselves, "Can we do better?" Since we have to look at every character at least once, the theoretical best we can achieve is linear time, O(N). So, let's hunt for a linear time solution.
 
----
+______________________________________________________________________
 
 #### Step 3: The "Aha!" Moment — From Sorting to Counting 💡
 
@@ -150,7 +150,7 @@ Think of it like comparing two bags of Scrabble tiles. You don't need to arrange
 
 This is the key insight: we can replace an O(NlogN) sorting operation with a simple O(N) counting operation.
 
----
+______________________________________________________________________
 
 #### Step 4: Choose Your Tool — The Frequency Map
 
@@ -160,7 +160,7 @@ However, the problem statement gives us a valuable constraint: `s and t consist
 
 We can use a 26-element integer array, where index `0` represents 'a', `1` represents 'b', and so on.
 
----
+______________________________________________________________________
 
 #### Step 5: Build the Optimal Algorithm
 
@@ -168,11 +168,11 @@ Now we can assemble our linear-time algorithm.
 
 1. **The Sanity Check**: First, check the lengths. If `len(s) != len(t)`, it's impossible for them to be anagrams. Return `false` immediately. This simple check can save a lot of unnecessary work.
 
-2. **Build the Character Inventory**: Create your 26-element integer array, `counts`, initialized to all zeros. Iterate through string `s` and for each character, increment its corresponding index in `counts`. `counts[ord(char) - ord('a')] += 1`. After this loop, `counts` holds the exact inventory for `s`.
+1. **Build the Character Inventory**: Create your 26-element integer array, `counts`, initialized to all zeros. Iterate through string `s` and for each character, increment its corresponding index in `counts`. `counts[ord(char) - ord('a')] += 1`. After this loop, `counts` holds the exact inventory for `s`.
 
-3. **Check Against the Inventory**: Now, iterate through string `t`. For each character, *decrement* its count in the array. `counts[ord(char) - ord('a')] -= 1`. While doing this, perform a crucial check: if a count is already `0` _before_you decrement it, it means `t` has a character that either doesn't exist in `s` or has too many occurrences. You've found a mismatch, so you can stop and return `false` right away.
+1. **Check Against the Inventory**: Now, iterate through string `t`. For each character, *decrement* its count in the array. `counts[ord(char) - ord('a')] -= 1`. While doing this, perform a crucial check: if a count is already `0` \_before_you decrement it, it means `t` has a character that either doesn't exist in `s` or has too many occurrences. You've found a mismatch, so you can stop and return `false` right away.
 
-4. **The Conclusion**: If you finish the loop for `t` without any issues, it means every character in `t` was successfully accounted for in the inventory from `s`. Since we already confirmed the lengths are the same, this guarantees they are anagrams. You can confidently return `true`. ✅
+1. **The Conclusion**: If you finish the loop for `t` without any issues, it means every character in `t` was successfully accounted for in the inventory from `s`. Since we already confirmed the lengths are the same, this guarantees they are anagrams. You can confidently return `true`. ✅
 
 Here's how that logic looks in code:
 
@@ -332,7 +332,7 @@ During this process, if you encounter a character in `t` whose count in the freq
 **The Power of the Length Check**
 If the loop over `t` completes without trying to decrement a zero count, it implies that `t` has successfully "used up" all the characters from `s`. Since we already checked that the lengths are equal, this is sufficient to prove they are anagrams. We can return `true` without a final pass to check for zero counts; the logic guarantees it. (TODO: Can we prove this with an invariant?)
 
-See [[#application1]]
+See \[[#application1]\]
 
 ### Algorithm D: Edge Case Handling (Unicode)
 
@@ -352,12 +352,12 @@ Unicode introduces complexities like combining characters (`e` + `´` vs. `�
 
 #note perhaps we should add Solution Justification here
 
-|                            |                     |                           |                                                                    |
+| | | | |
 | -------------------------- | ------------------- | ------------------------- | ------------------------------------------------------------------ |
-| **Algorithm**              | **Time Complexity** | **Space Complexity**      | **Notes**                                                          |
-| **A: Sorting**             | `O(N log N)`        | `O(N)`                    | Simple, but asymptotically slower. Space is for the sorted copies. |
-| **B: Hash Map Counter**    | `O(N)`              | `O(k)` (up to `O(N)`)     | General purpose. `k` is alphabet size. `O(1)` space for ASCII.     |
-| **C: Fixed-Array Counter** | `O(N)`              | `O(k)` (constant, `O(1)`) | Most efficient for small, fixed alphabets. Best constant factors.  |
+| **Algorithm** | **Time Complexity** | **Space Complexity** | **Notes** |
+| **A: Sorting** | `O(N log N)` | `O(N)` | Simple, but asymptotically slower. Space is for the sorted copies. |
+| **B: Hash Map Counter** | `O(N)` | `O(k)` (up to `O(N)`) | General purpose. `k` is alphabet size. `O(1)` space for ASCII. |
+| **C: Fixed-Array Counter** | `O(N)` | `O(k)` (constant, `O(1)`) | Most efficient for small, fixed alphabets. Best constant factors. |
 
 ## 7. Implementation
 
@@ -433,7 +433,7 @@ also "Interview Considerations"
 
 - **Explaining Trade-offs:**
 
-    > "We can solve this in two main ways. A sorting-based approach is simple to write, but it's `O(N log N)`. A more optimal approach is to use a frequency map, which is `O(N)` time. This map can be a general-purpose hash map, giving us `O(k)` space for an alphabet of size `k`, or a fixed-size array if the character set is small and known, like ASCII, which gives us `O(1)` space. Given that performance is usually key, I'd proceed with the frequency map approach."
+  > "We can solve this in two main ways. A sorting-based approach is simple to write, but it's `O(N log N)`. A more optimal approach is to use a frequency map, which is `O(N)` time. This map can be a general-purpose hash map, giving us `O(k)` space for an alphabet of size `k`, or a fixed-size array if the character set is small and known, like ASCII, which gives us `O(1)` space. Given that performance is usually key, I'd proceed with the frequency map approach."
 
 - **Big-O and Constants:** Be precise. Acknowledge that while both hash map and array solutions are `O(N)` time and `O(1)` space for ASCII, the array version has better constant factors (no hash computation, no collision handling, better cache locality), making it faster in practice for that specific use case.
 
@@ -442,6 +442,7 @@ also "Interview Considerations"
 ## 10a. Interview Talk-track
 
 ### 10.1 Default script (≈25s)
+
 “First, I check lengths and return False if they differ. If equal, I choose between sort and count. Sorting is `O(n log n)` and shortest to write. Counting is `O(n)` by maintaining a per‑char net count that ends at zero. For ASCII I use a fixed array for constant space and best constants; for Unicode I normalize (NFC) and use a dict. Correctness follows from multiset equality; the loop invariant is that after i steps, counts reflect the difference in multiplicities over prefixes. I can discuss trade‑offs or handle streaming if inputs are huge.”
 
 ### 10.2 If constraints are unknown
@@ -498,18 +499,19 @@ Unicode/case rules?
 
 ### 10.10 Sample Q&A
 
-- **Q:** Why not sort only one and binary‑search?  
+- **Q:** Why not sort only one and binary‑search?\
   **A:** Loses multiplicity equality and worsens complexity.
-- **Q:** Prove correctness of counting.  
+- **Q:** Prove correctness of counting.\
   **A:** Loop invariant as above; termination with all zeros ⇔ equal multisets.
-- **Q:** Space bound?  
+- **Q:** Space bound?\
   **A:** Dict `O(k)`, array `O(1)` for fixed alphabet.
-- **Q:** Worst case for dict?  
+- **Q:** Worst case for dict?\
   **A:** Many distinct code points increase `k`; still linear in `n` updates.
-- **Q:** How to handle emojis?  
+- **Q:** How to handle emojis?\
   **A:** Clarify requirement. If grapheme‑aware, need segmentation library; otherwise code‑point comparison per problem norms.
 
----
+______________________________________________________________________
+
 ## 11. Extensions
 
 Discussing extensions shows you are thinking beyond the immediate problem.
@@ -566,7 +568,7 @@ I would ask students to write a brief "narrative" of their journey to the soluti
 
 - **Teaching Analogy**: "If you had to explain the frequency-counting method to a friend who has never coded before, what real-world analogy would you use? (e.g., recipes, shopping lists, Scrabble tiles)."
 
----
+______________________________________________________________________
 
 ### ## 2. Peer Code Review and Critique
 
@@ -584,7 +586,7 @@ I would provide a simple rubric to guide their reflection:
 
 This process forces them to articulate what makes code "good" beyond simply being correct, and it exposes them to different ways of thinking about the same problem.
 
----
+______________________________________________________________________
 
 ### ## 3. Abstraction and Generalization Questions
 
@@ -596,7 +598,7 @@ This strategy pushes students to see the "Valid Anagram" problem not as an isola
 
 - **Knowing the Limits**: "When would this pattern be the **wrong** tool for the job? Describe a problem where using a frequency map would fail or be inefficient."
 
----
+______________________________________________________________________
 
 ### ## 4. The "Bug Autopsy"
 
@@ -606,9 +608,9 @@ For each significant bug, they would briefly document:
 
 1. **The Symptom**: What was the incorrect behavior? (e.g., `"aab"` and `"abb"` were incorrectly reported as anagrams).
 
-2. **The Root Cause**: What was the specific flaw in the logic? (e.g., I created two maps but only checked if characters from `s` were in `t`, not the counts).
+1. **The Root Cause**: What was the specific flaw in the logic? (e.g., I created two maps but only checked if characters from `s` were in `t`, not the counts).
 
-3. **The Prevention**: What's a personal rule or practice I can adopt to avoid this type of error in the future? (e.g., "When comparing for equality, I must be exhaustive and check keys, values, and lengths").
+1. **The Prevention**: What's a personal rule or practice I can adopt to avoid this type of error in the future? (e.g., "When comparing for equality, I must be exhaustive and check keys, values, and lengths").
 
 # application1
 
@@ -620,11 +622,11 @@ The algorithm in question works as follows:
 
 1. Check if `s` and `t` have equal length. If not, return `false`.
 
-2. Create a frequency map (e.g., an array `counts`) from all characters in `s`.
+1. Create a frequency map (e.g., an array `counts`) from all characters in `s`.
 
-3. Iterate through `t`. For each character, decrement its count in the map. If a character's count is already zero before decrementing, return `false`.
+1. Iterate through `t`. For each character, decrement its count in the map. If a character's count is already zero before decrementing, return `false`.
 
-4. If the loop finishes, return `true`.
+1. If the loop finishes, return `true`.
 
 **The key insight to prove is:** If the loop completes, we are *guaranteed* that all counts in the frequency map are zero. A final check is redundant.
 
@@ -662,15 +664,15 @@ This method is more rigorous and abstract, common in academic computer science f
 
 - **Defining the Invariant:** The core creative step is defining the property. For the verification loop (iterating through `t`), the invariant is:
 
-    > "At the start of the k-th iteration, the `counts` array stores the character frequencies of `s` minus the frequencies of the prefix `t[0...k-1]`."
+  > "At the start of the k-th iteration, the `counts` array stores the character frequencies of `s` minus the frequencies of the prefix `t[0...k-1]`."
 
 - **Proving the Invariant (Three Steps):**
 
-    1. **Initialization:** Show the invariant is true before the loop begins (`k=0`). The `counts` array holds frequencies of `s`, and the prefix of `t` is empty. The property holds.
+  1. **Initialization:** Show the invariant is true before the loop begins (`k=0`). The `counts` array holds frequencies of `s`, and the prefix of `t` is empty. The property holds.
 
-    2. **Maintenance:** Show that if the invariant is true at the start of an iteration, it remains true at the start of the next one. Decrementing the count for `t[k]` correctly updates the state for the next prefix `t[0...k]`.
+  1. **Maintenance:** Show that if the invariant is true at the start of an iteration, it remains true at the start of the next one. Decrementing the count for `t[k]` correctly updates the state for the next prefix `t[0...k]`.
 
-    3. **Termination:** Analyze what the invariant tells us when the loop ends. After `n` iterations, the processed prefix is the entire string `t`. The invariant becomes `counts[c] = freq(c, s) - freq(c, t)`. Since the sum of all `counts` must be 0 and no count can be negative, every individual count must be 0.
+  1. **Termination:** Analyze what the invariant tells us when the loop ends. After `n` iterations, the processed prefix is the entire string `t`. The invariant becomes `counts[c] = freq(c, s) - freq(c, t)`. Since the sum of all `counts` must be 0 and no count can be negative, every individual count must be 0.
 
 ## **4. Algorithmic Perspective: Which Proof to Use?**
 
@@ -688,7 +690,7 @@ You're university professor in leading university on algorithms and data structu
 
 this one I like because it produced really practical reasoning flow
 
-There is another really big probmpt that already contains some information about the problem. [[prompt-leetcode-one]] #todo define other characteristics
+There is another really big probmpt that already contains some information about the problem. \[[prompt-leetcode-one]\] #todo define other characteristics
 
 ## Two: Questions
 
@@ -714,58 +716,58 @@ Of course. Here are 10 prompts designed to guide a user (or an AI tutor) through
 
 These prompts are engineered to elicit structured, pedagogical responses from a capable LLM.
 
----
+______________________________________________________________________
 
 ### ## Phase 1: Conceptualization & Initial Brainstorming
 
 1. **Prompt for Eliciting an Analogy and First Solution**
 
-    > "Act as a Socratic tutor. Your goal is to help a student understand the 'Valid Anagram' problem. Start by explaining the core concept using a real-world analogy of a chef comparing two lists of ingredients for a recipe. After the analogy, ask a guiding question that prompts the student to think of the most intuitive, non-optimal solution involving sorting."
+   > "Act as a Socratic tutor. Your goal is to help a student understand the 'Valid Anagram' problem. Start by explaining the core concept using a real-world analogy of a chef comparing two lists of ingredients for a recipe. After the analogy, ask a guiding question that prompts the student to think of the most intuitive, non-optimal solution involving sorting."
 
-2. **Prompt for Generating and Analyzing the Naive Solution**
+1. **Prompt for Generating and Analyzing the Naive Solution**
 
-    > "Act as a code assistant. A user needs the simple, sorting-based solution for LeetCode's 'Valid Anagram'. Provide a clean, commented Python implementation. Immediately after the code, add a section titled 'Performance Analysis' that explains the time and space complexity (O(NlogN)), clearly identifying the sorting operation as the primary performance bottleneck."
+   > "Act as a code assistant. A user needs the simple, sorting-based solution for LeetCode's 'Valid Anagram'. Provide a clean, commented Python implementation. Immediately after the code, add a section titled 'Performance Analysis' that explains the time and space complexity (O(NlogN)), clearly identifying the sorting operation as the primary performance bottleneck."
 
----
+______________________________________________________________________
 
 ### ## Phase 2: Optimization and Deeper Algorithmic Thinking
 
 3. **Prompt for Guiding Towards Optimization**
 
-    > "Act as an algorithmic coach. You are helping a student move from the O(NlogN) sorting solution to the optimal O(N) solution for 'Valid Anagram'. Your opening statement is: 'The key is to stop comparing ordered strings and start comparing character inventories.' Your task is to ask the student to brainstorm two distinct data structures that could represent a 'character inventory' and briefly state one advantage of each."
+   > "Act as an algorithmic coach. You are helping a student move from the O(NlogN) sorting solution to the optimal O(N) solution for 'Valid Anagram'. Your opening statement is: 'The key is to stop comparing ordered strings and start comparing character inventories.' Your task is to ask the student to brainstorm two distinct data structures that could represent a 'character inventory' and briefly state one advantage of each."
 
-4. **Prompt for Data Structure Comparison**
+1. **Prompt for Data Structure Comparison**
 
-    > "Generate a concise comparison table contrasting the use of a Hash Map versus a Fixed-Size Array for solving 'Valid Anagram'. The rows should be 'Data Structure', 'Time Complexity', 'Space Complexity', and 'Ideal Use Case'. In the use case row, explicitly mention when one is superior to the other (e.g., Unicode character sets vs. fixed lowercase ASCII)."
+   > "Generate a concise comparison table contrasting the use of a Hash Map versus a Fixed-Size Array for solving 'Valid Anagram'. The rows should be 'Data Structure', 'Time Complexity', 'Space Complexity', and 'Ideal Use Case'. In the use case row, explicitly mention when one is superior to the other (e.g., Unicode character sets vs. fixed lowercase ASCII)."
 
-5. **Prompt for Explaining the Optimal Algorithm**
+1. **Prompt for Explaining the Optimal Algorithm**
 
-    > "Act as a technical interviewer simulating a 'whiteboard' session. Ask the user to verbally walk you through the logic of the optimal, O(N) frequency-counting algorithm for 'Valid Anagram'. Specifically, request an explanation for these three points: 1) The purpose of the initial length check. 2) The mechanics of the character-to-index mapping (using `ord()`). 3) Why the two-pass (increment then decrement) approach is sufficient and requires no final validation loop."
+   > "Act as a technical interviewer simulating a 'whiteboard' session. Ask the user to verbally walk you through the logic of the optimal, O(N) frequency-counting algorithm for 'Valid Anagram'. Specifically, request an explanation for these three points: 1) The purpose of the initial length check. 2) The mechanics of the character-to-index mapping (using `ord()`). 3) Why the two-pass (increment then decrement) approach is sufficient and requires no final validation loop."
 
----
+______________________________________________________________________
 
 ### ## Phase 3: Code Refinement and Best Practices
 
 6. **Prompt for Simulating a Code Review**
 
-    > "Act as a senior software engineer reviewing a junior developer's code. The user will provide their working solution to 'Valid Anagram'. Your task is to provide a constructive code review with three distinct points focusing on: 1) variable naming and clarity, 2) handling of a specific edge case they might have missed (e.g., empty strings), and 3) a suggestion for making the code more idiomatic for its language (e.g., using `collections.Counter` in Python)."
+   > "Act as a senior software engineer reviewing a junior developer's code. The user will provide their working solution to 'Valid Anagram'. Your task is to provide a constructive code review with three distinct points focusing on: 1) variable naming and clarity, 2) handling of a specific edge case they might have missed (e.g., empty strings), and 3) a suggestion for making the code more idiomatic for its language (e.g., using `collections.Counter` in Python)."
 
-7. **Prompt for Explaining Idiomatic Code**
+1. **Prompt for Explaining Idiomatic Code**
 
-    > "Explain the concept of an 'idiomatic solution' in programming. Use the 'Valid Anagram' problem as your example. First, present the efficient solution using a 26-element integer array. Then, present the 'Pythonic' one-liner using `collections.Counter`. Explain what `Counter` is and why, despite having similar performance characteristics, it's often preferred in a professional setting."
+   > "Explain the concept of an 'idiomatic solution' in programming. Use the 'Valid Anagram' problem as your example. First, present the efficient solution using a 26-element integer array. Then, present the 'Pythonic' one-liner using `collections.Counter`. Explain what `Counter` is and why, despite having similar performance characteristics, it's often preferred in a professional setting."
 
----
+______________________________________________________________________
 
 ### ## Phase 4: Reflection and Generalization
 
 8. **Prompt for Fostering Metacognition**
 
-    > "Act as a metacognitive learning coach. Generate a list of 5 reflective questions for a student who has just successfully implemented the optimal solution for 'Valid Anagram'. The questions should prompt them to think about their personal problem-solving journey, insights, and misconceptions."
+   > "Act as a metacognitive learning coach. Generate a list of 5 reflective questions for a student who has just successfully implemented the optimal solution for 'Valid Anagram'. The questions should prompt them to think about their personal problem-solving journey, insights, and misconceptions."
 
-9. **Prompt for Abstracting the Core Concept**
+1. **Prompt for Abstracting the Core Concept**
 
-    > "Act as a computer science professor. Define the algorithmic concept of **Canonical Representation**. Use the 'Valid Anagram' problem as your core example. Show how both a sorted string (e.g., 'aaagmnr') and a frequency map (e.g., `{'a':3, 'g':1, ...}`) can serve as distinct canonical representations for an entire class of anagrams. Conclude by explaining how this concept is the key to solving 'Group Anagrams'."
+   > "Act as a computer science professor. Define the algorithmic concept of **Canonical Representation**. Use the 'Valid Anagram' problem as your core example. Show how both a sorted string (e.g., 'aaagmnr') and a frequency map (e.g., `{'a':3, 'g':1, ...}`) can serve as distinct canonical representations for an entire class of anagrams. Conclude by explaining how this concept is the key to solving 'Group Anagrams'."
 
-10. **Prompt for Problem Extension**
+1. **Prompt for Problem Extension**
 
-    > "Act as a problem designer for an online coding platform. Your task is to create a new, more complex problem that builds upon the 'frequency map' pattern used in 'Valid Anagram'. The new problem must also incorporate a 'sliding window' technique. Provide the full problem statement, including a name, a clear description, two illustrative examples, and the input constraints."
+   > "Act as a problem designer for an online coding platform. Your task is to create a new, more complex problem that builds upon the 'frequency map' pattern used in 'Valid Anagram'. The new problem must also incorporate a 'sliding window' technique. Provide the full problem statement, including a name, a clear description, two illustrative examples, and the input constraints."
