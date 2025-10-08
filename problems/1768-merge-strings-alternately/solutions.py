@@ -1,4 +1,5 @@
 from __future__ import annotations
+from itertools import chain
 
 
 class Baseline:
@@ -13,14 +14,14 @@ class Baseline:
         return "".join(parts)
 
 
-class Optimized:
+class PythonicWay:
     def solve(self, word1: str = "", word2: str = "") -> str:
         pairwise_chunks = (a + b for a, b in zip(word1, word2, strict=False))
-        return "".join(pairwise_chunks) + word1[len(word2) :] + word2[len(word1) :]
-
+        tails = (word1[len(word2) :], word2[len(word1) :])
+        return "".join(chain(pairwise_chunks, tails))
 
 # Explicit multi-export for test discovery
-ALL_SOLUTIONS = [Baseline, Optimized]
+ALL_SOLUTIONS = [Baseline, PythonicWay]
 
 TEST_CASES = [
     ("types", ("ab", "lm"), "albm"),
