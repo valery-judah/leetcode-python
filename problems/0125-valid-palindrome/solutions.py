@@ -11,44 +11,40 @@ def clean_string(s):
 
 class Baseline:
     def solve(self, s: str = "") -> bool:
-        cleaned = clean_string(s)
-        if len(cleaned) <= 1:
+        if s is None or len(s) == 1:
             return True
-        left, right = 0, len(cleaned) - 1
+        
+        s = s.lower()
+        
+        left, right = 0, len(s) - 1
+        
         while left < right:
-            if cleaned[left] != cleaned[right]:
+
+            while not s[left].isalnum() and left < right:
+                left += 1
+            while not s[right].isalnum() and left < right:
+                right -= 1
+            
+            if left >= right:
+                break
+
+            if s[left] != s[right]:
                 return False
-            # else we just going to center while checking validity
+
             left += 1
             right -= 1
+        
+        # all symbols are verified
         return True
 
 
 class Optimized:
     def solve(self, s: str = "") -> bool:
-        left, right = 0, len(s) - 1
-        while left < right:
-            # Move the left pointer forward until it finds an alphanumeric character
-            while left < right and not s[left].isalnum():
-                # important to have left < right to avoid overstepping
-                left += 1
-
-            # Move the right pointer backward until it finds an alphanumeric character
-            while left < right and not s[right].isalnum():
-                right -= 1
-
-            # Compare the two alphanumeric characters (case-insensitive)
-            if s[left].lower() != s[right].lower():
-                return False
-
-            # Move pointers inward for the next comparison
-            left += 1
-            right -= 1
-        return True
+        ...
 
 
 # Explicit multi-export for test discovery
-ALL_SOLUTIONS = [Baseline, Optimized]
+ALL_SOLUTIONS = [Baseline]
 
 TEST_CASES = [
     # Category: Standard Palindromes (Basic functionality)
@@ -80,6 +76,7 @@ TEST_CASES = [
     # Category: Whitespace Variations
     ("whitespace_palindrome", ("taco cat",), True),
     ("whitespace_only", ("  ",), True),  # Sanitizes to "".
+    ("punctuation only", (".,",), True),  # Sanitizes to "".
     ("leading_trailing_whitespace", ("  a b a  ",), True),
     # Category: Long Run
     ("long_run_in_middle", ("ab,,,,,,,,,,,,,,,,cd",), False),

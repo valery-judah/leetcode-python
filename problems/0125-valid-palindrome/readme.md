@@ -123,3 +123,9 @@ To augment your `example-construction-bias.md` note, adopt the following recomme
   - The **Boundary Class:** Inputs where valid data is at the absolute edges (e.g., `"a,,,,,"`, `",,,,,a"`).
 
 - **Formalize into a Checklist:** Convert this process into a repeatable checklist. Before committing code, verify that you have written a test case for each non-obvious equivalence class. This transforms the mitigation of bias from a hope into a defined engineering step.
+
+# Attempt 2
+
+- forgot about guard close and ".," test case
++ used phased approach
+

@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import ast
 import re
 import subprocess
 import sys
@@ -19,6 +20,68 @@ def get_problem_id_from_path(path: Path) -> str | None:
         if match:
             return match.group(1)
     return None
+
+
+def clean_solution_file(problem_id: int, slug: str) -> None:
+    """
+    Finds the solution file and replaces the body of `solve` methods with `...`.
+    This uses AST to find function body line numbers and then performs a text-based
+    replacement to avoid reformatting the entire file.
+    """
+
+    class SolveVisitor(ast.NodeVisitor):
+        def __init__(self):
+            self.functions_to_clean: list[tuple[int, int, int]] = []
+
+        def visit_FunctionDef(self, node: ast.FunctionDef):
+            if node.name == "solve" and node.body:
+                # Get start and end line numbers of the function body
+                start_line = node.body[0].lineno
+                # The end_lineno of the last statement in the body
+                end_line = node.body[-1].end_lineno
+                if end_line is None:
+                    end_line = node.body[-1].lineno
+                # Get indentation of the function definition itself
+                indentation = node.col_offset
+                self.functions_to_clean.append((start_line, end_line, indentation))
+            self.generic_visit(node)  # Continue traversal
+
+    problem_dir = ROOT / "problems" / f"{problem_id:04d}-{slug}"
+    solution_path = next(
+        (p for p in [problem_dir / "solution.py", problem_dir / "solutions.py"] if p.exists()),
+        None,
+    )
+
+    if not solution_path:
+        print(f"Warning: No solution file found for {slug}", file=sys.stderr)
+        return
+
+    try:
+        source_code = solution_path.read_text()
+        tree = ast.parse(source_code)
+
+        visitor = SolveVisitor()
+        visitor.visit(tree)
+
+        lines = source_code.splitlines()
+
+        # Process replacements from the bottom up to not affect line numbers
+        for start, end, indent in sorted(visitor.functions_to_clean, key=lambda x: x[0], reverse=True):
+            indent_str = " " * (indent + 4)  # Assume 4-space indent for the body
+            # Replace the body lines with a single line containing '...'
+            lines[start - 1 : end] = [f"{indent_str}..."]
+
+        # Add a trailing newline if the original file had one
+        if source_code.endswith("\n"):
+            new_code = "\n".join(lines) + "\n"
+        else:
+            new_code = "\n".join(lines)
+
+        solution_path.write_text(new_code)
+        print(f"Cleaned solution file: {solution_path}")
+    except Exception as e:
+        print(f"Error processing {solution_path}: {e}", file=sys.stderr)
+        sys.exit(1)
 
 
 def main() -> None:
@@ -61,34 +124,13 @@ def main() -> None:
         sys.exit(1)
 
     branch_prefix = f"p/{problem_id:04d}-{slug}/"
-
-    try:
-        result = subprocess.run(
-            ["git", "branch", "--list", f"{branch_prefix}*"],
-            capture_output=True,
-            text=True,
-            check=True,
-            env={"VSCODE_TASK": "1"},
-        )
-        branches = result.stdout.strip().split("\n")
-    except subprocess.CalledProcessError as e:
-        print(f"Error listing branches: {e}", file=sys.stderr)
-        sys.exit(1)
-
-    max_attempt = 0
-    for branch in branches:
-        branch = branch.strip()
-        if match := re.search(r"/(\d+)$", branch):
-            max_attempt = max(max_attempt, int(match.group(1)))
-
-    new_attempt = max_attempt + 1
-    new_branch_name = f"{branch_prefix}{new_attempt}"
+    new_branch_name = f"{branch_prefix}retry"
 
     print(f"Creating and checking out new branch: {new_branch_name}")
 
     try:
         subprocess.run(
-            ["git", "checkout", "-b", new_branch_name],
+            ["git", "checkout", "-B", new_branch_name],
             check=True,
             env={"VSCODE_TASK": "1"},
         )
@@ -96,22 +138,8 @@ def main() -> None:
         print(f"Error creating new branch: {e}", file=sys.stderr)
         sys.exit(1)
 
-    print(f"Running new_problem.py for problem {problem_id}")
-    new_problem_script = ROOT / "scripts" / "new_problem.py"
-    try:
-        subprocess.run(
-            [
-                sys.executable,
-                str(new_problem_script),
-                str(problem_id),
-                "--full-rewrite",
-            ],
-            check=True,
-            env={"VSCODE_TASK": "1"},
-        )
-    except subprocess.CalledProcessError as e:
-        print(f"Error running new_problem.py: {e}", file=sys.stderr)
-        sys.exit(1)
+    print(f"Cleaning solution file for problem {problem_id}")
+    clean_solution_file(problem_id, slug)
 
     print("Done.")
 
