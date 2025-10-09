@@ -12,7 +12,7 @@ See generation instructions in ../README.md.
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
 | [Reverse String](../problems/0344-reverse-string/readme.md) | Easy | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Valid Palindrome](../problems/0125-valid-palindrome/readme.md) | Easy | ✅ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
-| [Valid Palindrome II](../problems/0680-valid-palindrome-ii/readme.md) | Easy | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
+| [Valid Palindrome II](../problems/0680-valid-palindrome-ii/readme.md) | Easy | ✅ | ✖️ | ✅ |  | 0 | 2 | ✖️ | ✖️ | ✖️ | ✖️                 | ✅ |  |
 | [Merge Strings Alternately](../problems/1768-merge-strings-alternately/readme.md) | Easy | ✅ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Merge Sorted Array](../problems/0088-merge-sorted-array/readme.md) | Easy | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Remove Duplicates From Sorted Array](../problems/0026-remove-duplicates-from-sorted-array/readme.md) | Easy | ✅ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |

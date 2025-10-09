@@ -28,7 +28,7 @@ See generation instructions in ../README.md.
 
 | Problem | Diff | Baseline | Complex Justified | Optimal | Repeats | Min Time | Conf | Clarified | Communicated | Stated | Edge Tests | Clean Impl | Mistakes |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| [Valid Palindrome II](../problems/0680-valid-palindrome-ii/readme.md) | Easy | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
+| [Valid Palindrome II](../problems/0680-valid-palindrome-ii/readme.md) | Easy | ✅ | ✖️ | ✅ |  | 0 | 2 | ✖️ | ✖️ | ✖️ | ✖️                 | ✅ |  |
 | [Remove Duplicates from Sorted Array II](../problems/0080-remove-duplicates-from-sorted-array-ii/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Remove Element](../problems/0027-remove-element/readme.md) | Easy | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Sort Array By Parity](../problems/0905-sort-array-by-parity/readme.md) | Easy | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
