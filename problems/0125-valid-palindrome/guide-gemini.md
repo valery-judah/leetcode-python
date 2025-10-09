@@ -1,4 +1,3 @@
-That is an excellent question. It moves the discussion from implementation details to broader software design principles.
 
 You are correct to identify that decoupling the preprocessing step is often a good practice. It aligns with the **Separation of Concerns** principle, which advocates for breaking down a problem into distinct, manageable parts. However, in the context of algorithm optimization (especially in interviews), this choice involves a significant trade-off.
 
