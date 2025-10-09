@@ -1,4 +1,5 @@
 from __future__ import annotations
+
 from itertools import chain
 
 
@@ -19,6 +20,7 @@ class PythonicWay:
         pairwise_chunks = (a + b for a, b in zip(word1, word2, strict=False))
         tails = (word1[len(word2) :], word2[len(word1) :])
         return "".join(chain(pairwise_chunks, tails))
+
 
 # Explicit multi-export for test discovery
 ALL_SOLUTIONS = [Baseline, PythonicWay]
