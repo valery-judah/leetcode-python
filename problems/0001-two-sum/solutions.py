@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import copy
+
 import pytest
 
 
@@ -10,7 +12,7 @@ class Baseline:
                 # it's already optimized to not repeat pairs
                 # because we already checked the pairs (k, i) for k < i
                 if (nums)[i] + (nums)[j] == target:
-                    return [i, j]
+                    return [i, j + 1]
         return None
 
 
@@ -39,6 +41,20 @@ TEST_CASES = [
     ("zero_involvement", ([5, 0, -2, 4], 2), [2, 3]),
     ("duplicate_numbers_as_solution", ([6, 5, 3, 3], 6), [2, 3]),
 ]
+
+
+@pytest.mark.parametrize(
+    ("_", "args", "expected"),
+    TEST_CASES,
+)
+def test_solutions(_, args, expected):
+    for solution_class in ALL_SOLUTIONS:
+        solution = solution_class()
+        # Prevent test pollution by deep-copying mutable arguments
+        args_copy = copy.deepcopy(args)
+        actual = solution.solve(*args_copy)
+        assert actual == expected
+
 
 if __name__ == "__main__":
     pytest.main([__file__])

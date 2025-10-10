@@ -63,16 +63,17 @@ TEST_CASES = [
 
 
 @pytest.mark.parametrize(
-    ("_", "args", "expected"),
+    ("name", "args", "expected"),
     TEST_CASES,
+    ids=[c[0] for c in TEST_CASES],
 )
-def test_solutions(_, args, expected):
+def test_solutions(name, args, expected):
     for solution_class in ALL_SOLUTIONS:
         solution = solution_class()
         # Prevent test pollution by deep-copying mutable arguments
         args_copy = copy.deepcopy(args)
         actual = solution.solve(*args_copy)
-        assert actual == expected
+        assert actual == expected, f"Test case '{name}' failed"
 
 
 if __name__ == "__main__":
