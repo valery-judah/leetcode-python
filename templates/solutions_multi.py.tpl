@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 {import_types}
+import copy
 import pytest
 
 
@@ -20,9 +21,18 @@ ALL_SOLUTIONS = [Baseline, Optimized]
 {generated_cases}
 
 
-# Optional: when all default tests pass, auto-mark this problem as optimal in stats.json
-# Uncomment to enable once you are satisfied with your solution quality.
-# TEST_MARK_OPTIMAL_ON_PASS = True
+@pytest.mark.parametrize(
+    ("_, args, expected"),
+    TEST_CASES,
+)
+def test_solutions(_, args, expected):
+    for solution_class in ALL_SOLUTIONS:
+        solution = solution_class()
+        # Prevent test pollution by deep-copying mutable arguments
+        args_copy = copy.deepcopy(args)
+        actual = solution.solve(*args_copy)
+        assert actual == expected
+
 
 if __name__ == "__main__":
     pytest.main([__file__])

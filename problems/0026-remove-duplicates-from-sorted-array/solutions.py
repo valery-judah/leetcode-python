@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import pytest
+
 
 class Baseline:
     """
@@ -8,10 +10,10 @@ class Baseline:
     'read_ptr' iterates through the array to find unique elements.
     """
 
-    def solve(self, nums: list[int]) -> int:
+    def solve(self, nums: list[int]) -> dict[str, int | list[int]]:
         # Handle the edge case of an empty list.
         if not nums:
-            return 0
+            return {"k": 0, "nums": []}
 
         # 'write_ptr' marks the position where the next unique element should be placed.
         # It starts at 1 because the first element (at index 0) is always
@@ -30,7 +32,7 @@ class Baseline:
 
         # 'write_ptr' now holds the count of unique elements, which is the
         # length of the modified part of the array.
-        return write_ptr
+        return {"k": write_ptr, "nums": nums[:write_ptr]}
 
 
 # Explicit multi-export for test discovery
@@ -52,22 +54,16 @@ TEST_CASES = [
     ("no_duplicates", ([1, 2, 3],), {"k": 3, "nums": [1, 2, 3]}),
 ]
 
-#
+@pytest.mark.parametrize(
+    ("_", "nums", "expected"),
+    TEST_CASES,
+)
+def test_solutions(_, nums, expected):
+    for solution_class in ALL_SOLUTIONS:
+        solution = solution_class()
+        actual = solution.solve(*nums)
+        assert actual == expected
 
-
-# Optional: when all default tests pass, auto-mark this problem as optimal in stats.json
-# Uncomment to enable once you are satisfied with your solution quality.
-# TEST_MARK_OPTIMAL_ON_PASS = True
 
 if __name__ == "__main__":
-    import subprocess
-    from pathlib import Path
-
-    problem_dir = Path(__file__).parent
-    problem_name = problem_dir.name
-    spec_path = problem_dir.parent / "all_problems_spec.py"
-
-    subprocess.run(
-        ["pytest", "-q", str(spec_path), "-k", problem_name],
-        check=False,
-    )
+    pytest.main([__file__])

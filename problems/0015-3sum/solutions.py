@@ -37,7 +37,6 @@ class Optimized:
 # Explicit multi-export for test discovery
 ALL_SOLUTIONS = [TwoPointers]
 
-
 TEST_CASES = [
     # --- Corrected User-Provided & Basic Edge Cases ---
     ("empty_list", ([],), []),
@@ -62,8 +61,10 @@ TEST_CASES = [
         [[-1, -1, 2], [-1, 0, 1], [0, 0, 0]],
     ),
 ]
+
+
 @pytest.mark.parametrize(
-    "_, nums, expected",
+    ("_", "nums", "expected"),
     TEST_CASES,
 )
 def test_solutions(_, nums, expected):
