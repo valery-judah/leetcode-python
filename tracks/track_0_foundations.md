@@ -12,7 +12,7 @@ See generation instructions in ../README.md.
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
 | [Contains Duplicate](../problems/0217-contains-duplicate/readme.md) | Easy | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Valid Anagram](../problems/0242-valid-anagram/readme.md) | Easy | ✅ | ✖️ | ✅ |  | 0 | 2 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
-| [Two Sum](../problems/0001-two-sum/readme.md) | Easy | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
+| [Two Sum](../problems/0001-two-sum/readme.md) | Easy | ✖️ | ✖️ | ✅ |  | 0 | 2 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Group Anagrams](../problems/0049-group-anagrams/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Top K Frequent Elements](../problems/0347-top-k-frequent-elements/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Product of Array Except Self](../problems/0238-product-of-array-except-self/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
@@ -20,7 +20,7 @@ See generation instructions in ../README.md.
 | [Longest Consecutive Sequence](../problems/0128-longest-consecutive-sequence/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Encode and Decode Strings](../problems/0271-encode-and-decode-strings/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Valid Palindrome](../problems/0125-valid-palindrome/readme.md) | Easy | ✅ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
-| [Two Sum II - Input Array Is Sorted](../problems/0167-two-sum-ii-input-array-is-sorted/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
+| [Two Sum II - Input Array Is Sorted](../problems/0167-two-sum-ii-input-array-is-sorted/readme.md) | Medium | ✅ | ✖️ | ✖️ |  | 0 | 2 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [3Sum](../problems/0015-3sum/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Container With Most Water](../problems/0011-container-with-most-water/readme.md) | Medium | ✅ | ✖️ | ✅ |  | 2 | 2 | ✖️ | ✖️ | ✖️ | ✖️                 | ✅ |  |
 | [Subarray Sum Equals K](../problems/0560-subarray-sum-equals-k/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |

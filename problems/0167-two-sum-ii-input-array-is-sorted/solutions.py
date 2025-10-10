@@ -2,29 +2,29 @@ from __future__ import annotations
 
 
 class Baseline:
-    def solve(self, numbers: list[int] | None = None, target: int = 0) -> list[int]:
-        raise NotImplementedError
+    def solve(self, numbers: list[int], target: int) -> list[int]:
+        if len(numbers) < 2:
+            return [-1, -1]
 
-
-class Optimized:
-    def solve(self, numbers: list[int] | None = None, target: int = 0) -> list[int]:
-        raise NotImplementedError
+        left, right = 0, len(numbers) - 1
+        while left < right:
+            cur_sum = numbers[left] + numbers[right]
+            if cur_sum < target:
+                left += 1
+            elif cur_sum > target:
+                right -= 1
+            else:
+                return [left + 1, right + 1]
+        return [-1, -1]
 
 
 # Explicit multi-export for test discovery
-ALL_SOLUTIONS = [Baseline, Optimized]
+ALL_SOLUTIONS = [Baseline]
 
 TEST_CASES = [
-    ("types", ([0], 0), [0]),
-    ("empty_list", ([], 0), [0]),
+    ("types", ([1, 2, 3], 4), [1, 3]),
+    ("empty_list", ([], 0), [-1, -1]),
 ]
-
-# Opt-in for generic stub testing: assert .solve raises this exception.
-TEST_EXPECT_EXCEPTION = NotImplementedError
-
-# Optional: when all default tests pass, auto-mark this problem as optimal in stats.json
-# Uncomment to enable once you are satisfied with your solution quality.
-# TEST_MARK_OPTIMAL_ON_PASS = True
 
 if __name__ == "__main__":
     import subprocess

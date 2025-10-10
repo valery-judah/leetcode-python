@@ -16,7 +16,7 @@ See generation instructions in ../README.md.
 | [Merge Strings Alternately](../problems/1768-merge-strings-alternately/readme.md) | Easy | ✅ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Merge Sorted Array](../problems/0088-merge-sorted-array/readme.md) | Easy | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Remove Duplicates From Sorted Array](../problems/0026-remove-duplicates-from-sorted-array/readme.md) | Easy | ✅ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
-| [Two Sum II Input Array Is Sorted](../problems/0167-two-sum-ii-input-array-is-sorted/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
+| [Two Sum II Input Array Is Sorted](../problems/0167-two-sum-ii-input-array-is-sorted/readme.md) | Medium | ✅ | ✖️ | ✖️ |  | 0 | 2 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [3Sum](../problems/0015-3sum/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [4Sum](../problems/0018-4sum/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Rotate Array](../problems/0189-rotate-array/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
