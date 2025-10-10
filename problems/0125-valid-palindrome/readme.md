@@ -127,5 +127,5 @@ To augment your `example-construction-bias.md` note, adopt the following recomme
 # Attempt 2
 
 - forgot about guard close and ".," test case
-+ used phased approach
 
+* used phased approach

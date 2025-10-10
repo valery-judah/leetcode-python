@@ -71,11 +71,10 @@ def clean_solution_file(problem_id: int, slug: str) -> None:
             # Replace the body lines with a single line containing '...'
             lines[start - 1 : end] = [f"{indent_str}..."]
 
-        # Add a trailing newline if the original file had one
+        # Reconstruct the code, preserving the trailing newline if it existed
+        new_code = "\n".join(lines)
         if source_code.endswith("\n"):
-            new_code = "\n".join(lines) + "\n"
-        else:
-            new_code = "\n".join(lines)
+            new_code += "\n"
 
         solution_path.write_text(new_code)
         print(f"Cleaned solution file: {solution_path}")
