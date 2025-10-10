@@ -20,23 +20,6 @@
           "VSCODE_TASK": "1"
         }
       }
-    },
-    {
-      "label": "Pytest Current File",
-      "type": "shell",
-      "command": "${workspaceFolder}/venv/bin/pytest",
-      "args": [
-        "${file}"
-      ],
-      "group": {
-        "kind": "test",
-        "isDefault": true
-      },
-      "presentation": {
-        "reveal": "always",
-        "panel": "new"
-      },
-      "problemMatcher": []
     }
   ]
 }
