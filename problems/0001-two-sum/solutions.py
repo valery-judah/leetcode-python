@@ -14,7 +14,12 @@ class Baseline:
 
 class Optimized:
     def solve(self, nums: list[int], target: int = 0) -> list[int] | None:
-        return None
+        targets = {}
+        for i, n in enumerate(nums):
+            if n in targets:
+                return [i, targets[n]]
+            else:
+                targets[target - n] = i
 
 
 # Explicit multi-export for test discovery
