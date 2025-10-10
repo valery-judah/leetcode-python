@@ -2,9 +2,7 @@
   "python.defaultInterpreterPath": "${workspaceFolder}/venv/bin/python",
   "python.testing.pytestEnabled": true,
   "python.testing.unittestEnabled": false,
-  "python.testing.pytestArgs": [
-    "tasks"
-  ],
+  "python.testing.pytestArgs": [],
   "editor.formatOnSave": true,
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter"
