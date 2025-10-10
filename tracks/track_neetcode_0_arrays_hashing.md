@@ -13,7 +13,7 @@ See generation instructions in ../README.md.
 | [Concatenation of Array](../problems/1929-concatenation-of-array/readme.md) | Easy | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Contains Duplicate](../problems/0217-contains-duplicate/readme.md) | Easy | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Valid Anagram](../problems/0242-valid-anagram/readme.md) | Easy | ✅ | ✖️ | ✅ |  | 0 | 2 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
-| [Two Sum](../problems/0001-two-sum/readme.md) | Easy | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
+| [Two Sum](../problems/0001-two-sum/readme.md) | Easy | ✖️ | ✖️ | ✅ |  | 0 | 2 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Longest Common Prefix](../problems/0014-longest-common-prefix/readme.md) | Easy | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Group Anagrams](../problems/0049-group-anagrams/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Remove Element](../problems/0027-remove-element/readme.md) | Easy | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
