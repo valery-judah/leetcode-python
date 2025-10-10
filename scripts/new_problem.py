@@ -556,22 +556,8 @@ def _write_solutions(
             deduped_params.append((name, t))
 
         sig_params_parts = []
-        for n, t_orig in deduped_params:
-            t = t_orig
-            default_val = "None"
-            if t in ("int", "long"):
-                default_val = "0"
-            elif t in ("float", "double"):
-                default_val = "0.0"
-            elif t == "bool":
-                default_val = "False"
-            elif t in ("str", "character"):
-                default_val = '""'
-            elif t.startswith("list[") or t.endswith("[]"):
-                default_val = "None"
-                if "None" not in t:
-                    t = f"{t} | None"
-            sig_params_parts.append(f"{n}: {t} = {default_val}")
+        for n, t in deduped_params:
+            sig_params_parts.append(f"{n}: {t}")
         type_imports: str = _determine_type_imports(params, ret_type)
         generated_cases: str = generate_test_cases_from_signature(params, ret_type)
         # Prefer single-line signature when short; otherwise use multi-line for readability (E501).
@@ -595,7 +581,7 @@ def _write_solutions(
             # Closing paren aligns with the 'def' indent (4 spaces inside class)
             solve_signature = "def solve(\n" f"{cont}\n" f"    ) -> {ret_type}:"
 
-        context["import_types"] = type_imports
+        context["import_types"] = f"\n{type_imports}" if type_imports else ""
         context["generated_cases"] = generated_cases
         context["solve_signature"] = solve_signature
         tpl_text = render(variant_tpl, **context)
@@ -604,7 +590,7 @@ def _write_solutions(
         content = tpl_text
     else:
         context["import_types"] = ""
-        context["generated_cases"] = "..."
+        context["generated_cases"] = "TEST_CASES = []"
         context["solve_signature"] = "def solve(self, *args, **kwargs):"
         content = render(variant_tpl, **context)
     if (not solutions_path.exists()) or full_rewrite or rewrite_files:

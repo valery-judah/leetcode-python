@@ -1,26 +1,16 @@
 from __future__ import annotations
 
+import copy
+
+import pytest
+
 
 class Baseline:
-    def solve(
-        self,
-        nums1: list[int] | None = None,
-        m: int = 0,
-        nums2: list[int] | None = None,
-        n: int = 0,
-    ) -> None:
-        raise NotImplementedError
+    def solve(self, nums1: list[int], m: int, nums2: list[int], n: int) -> None: ...
 
 
 class Optimized:
-    def solve(
-        self,
-        nums1: list[int] | None = None,
-        m: int = 0,
-        nums2: list[int] | None = None,
-        n: int = 0,
-    ) -> None:
-        raise NotImplementedError
+    def solve(self, nums1: list[int], m: int, nums2: list[int], n: int) -> None: ...
 
 
 # Explicit multi-export for test discovery
@@ -31,22 +21,19 @@ TEST_CASES = [
     ("empty_list", ([], 0, [], 0), None),
 ]
 
-# Opt-in for generic stub testing: assert .solve raises this exception.
-TEST_EXPECT_EXCEPTION = NotImplementedError
 
-# Optional: when all default tests pass, auto-mark this problem as optimal in stats.json
-# Uncomment to enable once you are satisfied with your solution quality.
-# TEST_MARK_OPTIMAL_ON_PASS = True
+@pytest.mark.parametrize(
+    ("_", "args", "expected"),
+    TEST_CASES,
+)
+def test_solutions(_, args, expected):
+    for solution_class in ALL_SOLUTIONS:
+        solution = solution_class()
+        # Prevent test pollution by deep-copying mutable arguments
+        args_copy = copy.deepcopy(args)
+        actual = solution.solve(*args_copy)
+        assert actual == expected
+
 
 if __name__ == "__main__":
-    import subprocess
-    from pathlib import Path
-
-    problem_dir = Path(__file__).parent
-    problem_name = problem_dir.name
-    spec_path = problem_dir.parent / "all_problems_spec.py"
-
-    subprocess.run(
-        ["pytest", "-q", str(spec_path), "-k", problem_name],
-        check=False,
-    )
+    pytest.main([__file__])

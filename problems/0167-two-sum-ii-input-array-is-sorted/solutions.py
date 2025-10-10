@@ -1,40 +1,39 @@
 from __future__ import annotations
 
+import copy
+
+import pytest
+
 
 class Baseline:
-    def solve(self, numbers: list[int], target: int) -> list[int]:
-        if len(numbers) < 2:
-            return [-1, -1]
+    def solve(self, numbers: list[int], target: int) -> list[int]: ...
 
-        left, right = 0, len(numbers) - 1
-        while left < right:
-            cur_sum = numbers[left] + numbers[right]
-            if cur_sum < target:
-                left += 1
-            elif cur_sum > target:
-                right -= 1
-            else:
-                return [left + 1, right + 1]
-        return [-1, -1]
+
+class Optimized:
+    def solve(self, numbers: list[int], target: int) -> list[int]: ...
 
 
 # Explicit multi-export for test discovery
-ALL_SOLUTIONS = [Baseline]
+ALL_SOLUTIONS = [Baseline, Optimized]
 
 TEST_CASES = [
-    ("types", ([1, 2, 3], 4), [1, 3]),
-    ("empty_list", ([], 0), [-1, -1]),
+    ("types", ([0], 0), [0]),
+    ("empty_list", ([], 0), [0]),
 ]
 
+
+@pytest.mark.parametrize(
+    ("_", "args", "expected"),
+    TEST_CASES,
+)
+def test_solutions(_, args, expected):
+    for solution_class in ALL_SOLUTIONS:
+        solution = solution_class()
+        # Prevent test pollution by deep-copying mutable arguments
+        args_copy = copy.deepcopy(args)
+        actual = solution.solve(*args_copy)
+        assert actual == expected
+
+
 if __name__ == "__main__":
-    import subprocess
-    from pathlib import Path
-
-    problem_dir = Path(__file__).parent
-    problem_name = problem_dir.name
-    spec_path = problem_dir.parent / "all_problems_spec.py"
-
-    subprocess.run(
-        ["pytest", "-q", str(spec_path), "-k", problem_name],
-        check=False,
-    )
+    pytest.main([__file__])

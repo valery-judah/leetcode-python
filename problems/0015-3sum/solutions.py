@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import copy
+
 import pytest
 
 
@@ -31,7 +33,7 @@ class TwoPointers:
 
 
 class Optimized:
-    def solve(self, nums: list[int] | None = None) -> list[list[int]]: ...
+    def solve(self, nums: list[int]) -> list[list[int]]: ...
 
 
 # Explicit multi-export for test discovery
@@ -64,14 +66,16 @@ TEST_CASES = [
 
 
 @pytest.mark.parametrize(
-    ("_", "nums", "expected"),
+    ("_", "args", "expected"),
     TEST_CASES,
 )
-def test_solutions(_, nums, expected):
+def test_solutions(_, args, expected):
     for solution_class in ALL_SOLUTIONS:
         solution = solution_class()
-        actual = solution.solve(*nums)
-        assert sorted(map(sorted, actual)) == sorted(map(sorted, expected))
+        # Prevent test pollution by deep-copying mutable arguments
+        args_copy = copy.deepcopy(args)
+        actual = solution.solve(*args_copy)
+        assert actual == expected
 
 
 if __name__ == "__main__":

@@ -1,49 +1,20 @@
 from __future__ import annotations
 
-import re
+import copy
 
-
-def clean_string(s):
-    s = s.lower()
-    s = re.sub(r"[^a-z0-9]", "", s)
-    return s
+import pytest
 
 
 class Baseline:
-    def solve(self, s: str = "") -> bool:
-        if s is None or len(s) == 1:
-            return True
-
-        s = s.lower()
-
-        left, right = 0, len(s) - 1
-
-        while left < right:
-
-            while not s[left].isalnum() and left < right:
-                left += 1
-            while not s[right].isalnum() and left < right:
-                right -= 1
-
-            if left >= right:
-                break
-
-            if s[left] != s[right]:
-                return False
-
-            left += 1
-            right -= 1
-
-        # all symbols are verified
-        return True
+    def solve(self, s: str) -> bool: ...
 
 
 class Optimized:
-    def solve(self, s: str = "") -> bool: ...
+    def solve(self, s: str) -> bool: ...
 
 
 # Explicit multi-export for test discovery
-ALL_SOLUTIONS = [Baseline]
+ALL_SOLUTIONS = [Baseline, Optimized]
 
 TEST_CASES = [
     # Category: Standard Palindromes (Basic functionality)
@@ -83,15 +54,18 @@ TEST_CASES = [
 ]
 
 
+@pytest.mark.parametrize(
+    ("_", "args", "expected"),
+    TEST_CASES,
+)
+def test_solutions(_, args, expected):
+    for solution_class in ALL_SOLUTIONS:
+        solution = solution_class()
+        # Prevent test pollution by deep-copying mutable arguments
+        args_copy = copy.deepcopy(args)
+        actual = solution.solve(*args_copy)
+        assert actual == expected
+
+
 if __name__ == "__main__":
-    import subprocess
-    from pathlib import Path
-
-    problem_dir = Path(__file__).parent
-    problem_name = problem_dir.name
-    spec_path = problem_dir.parent / "all_problems_spec.py"
-
-    subprocess.run(
-        ["pytest", "-q", str(spec_path), "-k", problem_name],
-        check=False,
-    )
+    pytest.main([__file__])

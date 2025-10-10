@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import pytest
+
 
 class Baseline:
     def solve(self, nums: list[int], target: int = 0) -> list[int] | None:
@@ -23,7 +25,8 @@ class Optimized:
 
 
 # Explicit multi-export for test discovery
-ALL_SOLUTIONS = [Baseline]
+ALL_SOLUTIONS = [Baseline, Optimized]
+
 
 TEST_CASES = [
     # Happy path
@@ -38,14 +41,4 @@ TEST_CASES = [
 ]
 
 if __name__ == "__main__":
-    import subprocess
-    from pathlib import Path
-
-    problem_dir = Path(__file__).parent
-    problem_name = problem_dir.name
-    spec_path = problem_dir.parent / "all_problems_spec.py"
-
-    subprocess.run(
-        ["pytest", "-q", str(spec_path), "-k", problem_name],
-        check=False,
-    )
+    pytest.main([__file__])

@@ -1,43 +1,38 @@
 from __future__ import annotations
 
-from itertools import chain
+import copy
+
+import pytest
 
 
 class Baseline:
-    def solve(self, word1: str = "", word2: str = "") -> str:
-        parts = []
-        min_len = min(len(word1), len(word2))
-        for i in range(min_len):
-            parts.append(word1[i])
-            parts.append(word2[i])
-        parts.append(word1[min_len:])
-        parts.append(word2[min_len:])
-        return "".join(parts)
+    def solve(self, word1: str, word2: str) -> str: ...
 
 
-class PythonicWay:
-    def solve(self, word1: str = "", word2: str = "") -> str:
-        pairwise_chunks = (a + b for a, b in zip(word1, word2, strict=False))
-        tails = (word1[len(word2) :], word2[len(word1) :])
-        return "".join(chain(pairwise_chunks, tails))
+class Optimized:
+    def solve(self, word1: str, word2: str) -> str: ...
 
 
 # Explicit multi-export for test discovery
-ALL_SOLUTIONS = [Baseline, PythonicWay]
+ALL_SOLUTIONS = [Baseline, Optimized]
 
 TEST_CASES = [
-    ("types", ("ab", "lm"), "albm"),
+    ("types", ("a", "a"), "a"),
 ]
 
+
+@pytest.mark.parametrize(
+    ("_", "args", "expected"),
+    TEST_CASES,
+)
+def test_solutions(_, args, expected):
+    for solution_class in ALL_SOLUTIONS:
+        solution = solution_class()
+        # Prevent test pollution by deep-copying mutable arguments
+        args_copy = copy.deepcopy(args)
+        actual = solution.solve(*args_copy)
+        assert actual == expected
+
+
 if __name__ == "__main__":
-    import subprocess
-    from pathlib import Path
-
-    problem_dir = Path(__file__).parent
-    problem_name = problem_dir.name
-    spec_path = problem_dir.parent / "all_problems_spec.py"
-
-    subprocess.run(
-        ["pytest", "-q", str(spec_path), "-k", problem_name],
-        check=False,
-    )
+    pytest.main([__file__])

@@ -1,8 +1,9 @@
 from __future__ import annotations
 
-{import_types}
 import copy
+
 import pytest
+{import_types}
 
 
 class Baseline:
@@ -22,7 +23,7 @@ ALL_SOLUTIONS = [Baseline, Optimized]
 
 
 @pytest.mark.parametrize(
-    ("_, args, expected"),
+    ("_", "args", "expected"),
     TEST_CASES,
 )
 def test_solutions(_, args, expected):
