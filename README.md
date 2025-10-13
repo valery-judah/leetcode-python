@@ -27,7 +27,7 @@ Current tracks and progress:
 | [Binary Search — Predicates, Partitions, and Heaps](tracks/track_3_binary_search_heaps.md) | 12 | 6 | 18 | 0 | 0%                 | 18 | 0 |
 | [Intervals — Sorting, Merging, and Greedy Scheduling](tracks/track_4_intervals.md) | 12 | 10 | 22 | 0 | 0%                 | 22 | 0 |
 | [NeetCode 250 — Arrays & Hashing](tracks/track_neetcode_0_arrays_hashing.md) | 22 | 0 | 22 | 2 | 9%                 | 22 | 0 |
-| [NeetCode 250 — Two Pointers](tracks/track_neetcode_1_two_pointers.md) | 13 | 0 | 13 | 6 | 46%                 | 13 | 0 |
+| [NeetCode 250 — Two Pointers](tracks/track_neetcode_1_two_pointers.md) | 13 | 0 | 13 | 7 | 54%                 | 13 | 0 |
 | [NeetCode 250 — Sliding Window](tracks/track_neetcode_2_sliding_window.md) | 9 | 0 | 9 | 0 | 0%                 | 9 | 0 |
 | [NeetCode 250 — Stack](tracks/track_neetcode_3_stack.md) | 15 | 0 | 15 | 0 | 0%                 | 15 | 0 |
 | [NeetCode 250 — Binary Search](tracks/track_neetcode_4_binary_search.md) | 14 | 0 | 14 | 0 | 0%                 | 14 | 0 |

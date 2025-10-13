@@ -6,19 +6,22 @@ import pytest
 
 
 class Baseline:
-    def solve(self, nums: list[int], k: int) -> None: ...
+    def solve(self, nums: list[int], k: int) -> list[int]: 
+        # where to start?
+        return []
+
 
 
 class Optimized:
-    def solve(self, nums: list[int], k: int) -> None: ...
+    def solve(self, nums: list[int], k: int) -> list[int]: ...
 
 
 # Explicit multi-export for test discovery
 ALL_SOLUTIONS = [Baseline, Optimized]
 
 TEST_CASES = [
-    ("types", ([0], 0), None),
-    ("empty_list", ([], 0), None),
+    ("types", ([0], 0), [0]),
+    ("empty_list", ([1, 2, 3, 4, 5, 6, 7], 3), [5, 6, 7, 1, 2, 3]),
 ]
 
 

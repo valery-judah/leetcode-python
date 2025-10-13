@@ -6,7 +6,7 @@ import pytest
 
 
 class Baseline:
-    def solve(self, s: list[str]) -> None: 
+    def solve(self, s: list[str]) -> None:
         if len(s) < 2:
             return None
         left, right = 0, len(s) - 1

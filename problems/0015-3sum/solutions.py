@@ -1,5 +1,4 @@
 from __future__ import annotations
-from typing import List
 
 import copy
 
@@ -42,7 +41,7 @@ class WithoutSorting:
                 continue
 
             complements: dict[int, int] = {}
-            
+
             for j in range(i + 1, len(nums)):
                 if nums[j] in complements:
                     triplet = tuple(sorted((first_num, complements[nums[j]], nums[j])))
@@ -50,7 +49,7 @@ class WithoutSorting:
                 else:
                     complement = -(first_num + nums[j])
                     complements[complement] = nums[j]
-        
+
         return [list(triplet) for triplet in triplets]
 
 
@@ -59,37 +58,38 @@ class Solution:
         # Set to store the final unique triplets.
         # We store sorted tuples to handle permutation duplicates like (-1, 0, 1) and (1, 0, -1).
         results = set()
-        
+
         # Set to keep track of numbers we've already used as the first element `a`.
         # This prevents redundant work, e.g., for inputs like [-1, 0, 1, -1].
         processed_first_nums = set()
-        
+
         for i, first_num in enumerate(nums):
             if first_num in processed_first_nums:
                 continue
             processed_first_nums.add(first_num)
-            
+
             # Now, solve the 2Sum problem for the rest of the array.
             # Target for the other two numbers is -first_num.
             target = -first_num
-            
+
             # Hash map for the 2Sum problem. Stores complements we've seen.
             # {value: index}
-            seen_complements = {} 
-            
+            seen_complements = {}
+
             for j in range(i + 1, len(nums)):
                 second_num = nums[j]
                 complement = target - second_num
-                
+
                 if complement in seen_complements:
                     # Found a valid triplet!
                     triplet = tuple(sorted((first_num, second_num, complement)))
                     results.add(triplet)
-                
+
                 # Add the current number to our map for future 2Sum checks.
                 seen_complements[second_num] = j
-                
+
         return [list(triplet) for triplet in results]
+
 
 # Explicit multi-export for test discovery
 ALL_SOLUTIONS = [TwoPointers, WithoutSorting, Solution]
