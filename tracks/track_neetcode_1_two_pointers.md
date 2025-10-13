@@ -19,7 +19,7 @@ See generation instructions in ../README.md.
 | [Two Sum II Input Array Is Sorted](../problems/0167-two-sum-ii-input-array-is-sorted/readme.md) | Medium | ✅ | ✖️ | ✅ |  | 0 | 2 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [3Sum](../problems/0015-3sum/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [4Sum](../problems/0018-4sum/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
-| [Rotate Array](../problems/0189-rotate-array/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
+| [Rotate Array](../problems/0189-rotate-array/readme.md) | Medium | ✅ | ✖️ | ✅ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Container With Most Water](../problems/0011-container-with-most-water/readme.md) | Medium | ✅ | ✖️ | ✅ |  | 2 | 2 | ✖️ | ✖️ | ✖️ | ✖️                 | ✅ |  |
 | [Boats to Save People](../problems/0881-boats-to-save-people/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Trapping Rain Water](../problems/0042-trapping-rain-water/readme.md) | Hard | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
