@@ -19,7 +19,7 @@ See generation instructions in ../README.md.
 | [Maximum Number of Vowels in a Substring of Given Length](../problems/1456-maximum-number-of-vowels-in-a-substring-of-given-length/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Sliding Window Maximum](../problems/0239-sliding-window-maximum/readme.md) | Hard | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Max Consecutive Ones III](../problems/1004-max-consecutive-ones-iii/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
-| Fruit Into Baskets (0904-fruit-into-baskets) | Medium |  |  |  |  |  |  |  |  |  |                  |  |  |
+| Fruit Into Baskets | Medium |  |  |  |  |  |  |  |  |  |                  |  |  |
 | [Binary Subarrays With Sum](../problems/0930-binary-subarrays-with-sum/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Subarrays with K Different Integers](../problems/0992-subarrays-with-k-different-integers/readme.md) | Hard | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 

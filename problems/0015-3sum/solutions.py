@@ -1,4 +1,5 @@
 from __future__ import annotations
+from typing import List
 
 import copy
 
@@ -32,12 +33,66 @@ class TwoPointers:
         return triplets
 
 
-class Optimized:
-    def solve(self, nums: list[int]) -> list[list[int]]: ...
+class WithoutSorting:
+    def solve(self, nums: list[int]) -> list[list[int]]:
+        triplets = set()
+        seen = set()
+        for i, first_num in enumerate(nums):
+            if first_num in seen:
+                continue
 
+            complements: dict[int, int] = {}
+            
+            for j in range(i + 1, len(nums)):
+                if nums[j] in complements:
+                    triplet = tuple(sorted((first_num, complements[nums[j]], nums[j])))
+                    triplets.add(triplet)
+                else:
+                    complement = -(first_num + nums[j])
+                    complements[complement] = nums[j]
+        
+        return [list(triplet) for triplet in triplets]
+
+
+class Solution:
+    def solve(self, nums: list[int]) -> list[list[int]]:
+        # Set to store the final unique triplets.
+        # We store sorted tuples to handle permutation duplicates like (-1, 0, 1) and (1, 0, -1).
+        results = set()
+        
+        # Set to keep track of numbers we've already used as the first element `a`.
+        # This prevents redundant work, e.g., for inputs like [-1, 0, 1, -1].
+        processed_first_nums = set()
+        
+        for i, first_num in enumerate(nums):
+            if first_num in processed_first_nums:
+                continue
+            processed_first_nums.add(first_num)
+            
+            # Now, solve the 2Sum problem for the rest of the array.
+            # Target for the other two numbers is -first_num.
+            target = -first_num
+            
+            # Hash map for the 2Sum problem. Stores complements we've seen.
+            # {value: index}
+            seen_complements = {} 
+            
+            for j in range(i + 1, len(nums)):
+                second_num = nums[j]
+                complement = target - second_num
+                
+                if complement in seen_complements:
+                    # Found a valid triplet!
+                    triplet = tuple(sorted((first_num, second_num, complement)))
+                    results.add(triplet)
+                
+                # Add the current number to our map for future 2Sum checks.
+                seen_complements[second_num] = j
+                
+        return [list(triplet) for triplet in results]
 
 # Explicit multi-export for test discovery
-ALL_SOLUTIONS = [TwoPointers]
+ALL_SOLUTIONS = [TwoPointers, WithoutSorting, Solution]
 
 TEST_CASES = [
     # --- Corrected User-Provided & Basic Edge Cases ---
@@ -75,7 +130,11 @@ def test_solutions(_, args, expected):
         # Prevent test pollution by deep-copying mutable arguments
         args_copy = copy.deepcopy(args)
         actual = solution.solve(*args_copy)
-        assert actual == expected
+        # Sort both actual and expected results for comparison
+        # The order of triplets, and elements within triplets, does not matter.
+        actual_sorted = sorted(map(sorted, actual))
+        expected_sorted = sorted(map(sorted, expected))
+        assert actual_sorted == expected_sorted
 
 
 if __name__ == "__main__":

@@ -10,7 +10,7 @@ See generation instructions in ../README.md.
 
 | Problem | Diff | Baseline | Complex Justified | Optimal | Repeats | Min Time | Conf | Clarified | Communicated | Stated | Edge Tests | Clean Impl | Mistakes |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| [Remove Duplicates from Sorted Array](../problems/0026-remove-duplicates-from-sorted-array/readme.md) | Easy | ✅ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
+| [Remove Duplicates from Sorted Array](../problems/0026-remove-duplicates-from-sorted-array/readme.md) | Easy | ✅ | ✖️ | ✅ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Move Zeroes](../problems/0283-move-zeroes/readme.md) | Easy | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Sort Colors](../problems/0075-sort-colors/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [3Sum Closest](../problems/0016-3sum-closest/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
