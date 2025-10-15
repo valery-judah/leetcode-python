@@ -2,7 +2,8 @@
 
 ## Quick Facts
 
-- URL: [Lowest Common Ancestor of Deepest Leaves](https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves/)
+- URL:
+  [Lowest Common Ancestor of Deepest Leaves](https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves/)
 - Function: `lcaDeepestLeaves`
 - Signature: `(root: TreeNode | None)  -> TreeNode | None`
 - Primary pattern: **Tree**
@@ -29,11 +30,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +49,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,9 +66,9 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 1676 | Medium | [Lowest Common Ancestor of a Binary Tree IV](../1676-lowest-common-ancestor-of-a-binary-tree-iv/readme.md) | [Lowest Common Ancestor of a Binary Tree IV](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iv/) |
+| Number | Difficulty | Name                                                                                                       | LeetCode                                                                                                                |
+| ------ | ---------- | ---------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| 1676   | Medium     | [Lowest Common Ancestor of a Binary Tree IV](../1676-lowest-common-ancestor-of-a-binary-tree-iv/readme.md) | [Lowest Common Ancestor of a Binary Tree IV](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iv/) |
 
 ## Examples
 

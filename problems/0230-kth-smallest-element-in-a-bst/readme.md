@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,10 +65,10 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0094 | Easy | [Binary Tree Inorder Traversal](../0094-binary-tree-inorder-traversal/readme.md) | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) |
-| 0671 | Easy | [Second Minimum Node In a Binary Tree](../0671-second-minimum-node-in-a-binary-tree/readme.md) | [Second Minimum Node In a Binary Tree](https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/) |
+| Number | Difficulty | Name                                                                                           | LeetCode                                                                                                    |
+| ------ | ---------- | ---------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| 0094   | Easy       | [Binary Tree Inorder Traversal](../0094-binary-tree-inorder-traversal/readme.md)               | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)               |
+| 0671   | Easy       | [Second Minimum Node In a Binary Tree](../0671-second-minimum-node-in-a-binary-tree/readme.md) | [Second Minimum Node In a Binary Tree](https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/) |
 
 ## Examples
 

@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,17 +65,17 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0983 | Medium | [Minimum Cost For Tickets](../0983-minimum-cost-for-tickets/readme.md) | [Minimum Cost For Tickets](https://leetcode.com/problems/minimum-cost-for-tickets/) |
-| 2218 | Hard | [Maximum Value of K Coins From Piles](../2218-maximum-value-of-k-coins-from-piles/readme.md) | [Maximum Value of K Coins From Piles](https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/) |
-| 2224 | Easy | [Minimum Number of Operations to Convert Time](../2224-minimum-number-of-operations-to-convert-time/readme.md) | [Minimum Number of Operations to Convert Time](https://leetcode.com/problems/minimum-number-of-operations-to-convert-time/) |
-| 2547 | Hard | [Minimum Cost to Split an Array](../2547-minimum-cost-to-split-an-array/readme.md) | [Minimum Cost to Split an Array](https://leetcode.com/problems/minimum-cost-to-split-an-array/) |
-| 2902 | Hard | [Count of Sub-Multisets With Bounded Sum](../2902-count-of-sub-multisets-with-bounded-sum/readme.md) | [Count of Sub-Multisets With Bounded Sum](https://leetcode.com/problems/count-of-sub-multisets-with-bounded-sum/) |
-| 2915 | Medium | [Length of the Longest Subsequence That Sums to Target](../2915-length-of-the-longest-subsequence-that-sums-to-target/readme.md) | [Length of the Longest Subsequence That Sums to Target](https://leetcode.com/problems/length-of-the-longest-subsequence-that-sums-to-target/) |
-| 2952 | Medium | [Minimum Number of Coins to be Added](../2952-minimum-number-of-coins-to-be-added/readme.md) | [Minimum Number of Coins to be Added](https://leetcode.com/problems/minimum-number-of-coins-to-be-added/) |
-| 2979 | Medium | [Most Expensive Item That Can Not Be Bought](../2979-most-expensive-item-that-can-not-be-bought/readme.md) | [Most Expensive Item That Can Not Be Bought](https://leetcode.com/problems/most-expensive-item-that-can-not-be-bought/) |
-| 3592 | Medium | [Inverse Coin Change](../3592-inverse-coin-change/readme.md) | [Inverse Coin Change](https://leetcode.com/problems/inverse-coin-change/) |
+| Number | Difficulty | Name                                                                                                                             | LeetCode                                                                                                                                      |
+| ------ | ---------- | -------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0983   | Medium     | [Minimum Cost For Tickets](../0983-minimum-cost-for-tickets/readme.md)                                                           | [Minimum Cost For Tickets](https://leetcode.com/problems/minimum-cost-for-tickets/)                                                           |
+| 2218   | Hard       | [Maximum Value of K Coins From Piles](../2218-maximum-value-of-k-coins-from-piles/readme.md)                                     | [Maximum Value of K Coins From Piles](https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/)                                     |
+| 2224   | Easy       | [Minimum Number of Operations to Convert Time](../2224-minimum-number-of-operations-to-convert-time/readme.md)                   | [Minimum Number of Operations to Convert Time](https://leetcode.com/problems/minimum-number-of-operations-to-convert-time/)                   |
+| 2547   | Hard       | [Minimum Cost to Split an Array](../2547-minimum-cost-to-split-an-array/readme.md)                                               | [Minimum Cost to Split an Array](https://leetcode.com/problems/minimum-cost-to-split-an-array/)                                               |
+| 2902   | Hard       | [Count of Sub-Multisets With Bounded Sum](../2902-count-of-sub-multisets-with-bounded-sum/readme.md)                             | [Count of Sub-Multisets With Bounded Sum](https://leetcode.com/problems/count-of-sub-multisets-with-bounded-sum/)                             |
+| 2915   | Medium     | [Length of the Longest Subsequence That Sums to Target](../2915-length-of-the-longest-subsequence-that-sums-to-target/readme.md) | [Length of the Longest Subsequence That Sums to Target](https://leetcode.com/problems/length-of-the-longest-subsequence-that-sums-to-target/) |
+| 2952   | Medium     | [Minimum Number of Coins to be Added](../2952-minimum-number-of-coins-to-be-added/readme.md)                                     | [Minimum Number of Coins to be Added](https://leetcode.com/problems/minimum-number-of-coins-to-be-added/)                                     |
+| 2979   | Medium     | [Most Expensive Item That Can Not Be Bought](../2979-most-expensive-item-that-can-not-be-bought/readme.md)                       | [Most Expensive Item That Can Not Be Bought](https://leetcode.com/problems/most-expensive-item-that-can-not-be-bought/)                       |
+| 3592   | Medium     | [Inverse Coin Change](../3592-inverse-coin-change/readme.md)                                                                     | [Inverse Coin Change](https://leetcode.com/problems/inverse-coin-change/)                                                                     |
 
 ## Examples
 

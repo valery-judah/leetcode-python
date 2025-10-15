@@ -28,11 +28,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +47,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,10 +64,10 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0725 | Medium | [Split Linked List in Parts](../0725-split-linked-list-in-parts/readme.md) | [Split Linked List in Parts](https://leetcode.com/problems/split-linked-list-in-parts/) |
-| 3467 | Easy | [Transform Array by Parity](../3467-transform-array-by-parity/readme.md) | [Transform Array by Parity](https://leetcode.com/problems/transform-array-by-parity/) |
+| Number | Difficulty | Name                                                                       | LeetCode                                                                                |
+| ------ | ---------- | -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| 0725   | Medium     | [Split Linked List in Parts](../0725-split-linked-list-in-parts/readme.md) | [Split Linked List in Parts](https://leetcode.com/problems/split-linked-list-in-parts/) |
+| 3467   | Easy       | [Transform Array by Parity](../3467-transform-array-by-parity/readme.md)   | [Transform Array by Parity](https://leetcode.com/problems/transform-array-by-parity/)   |
 
 ## Examples
 

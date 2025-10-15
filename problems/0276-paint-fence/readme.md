@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,12 +65,12 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0198 | Medium | [House Robber](../0198-house-robber/readme.md) | [House Robber](https://leetcode.com/problems/house-robber/) |
-| 0213 | Medium | [House Robber II](../0213-house-robber-ii/readme.md) | [House Robber II](https://leetcode.com/problems/house-robber-ii/) |
-| 0256 | Medium | [Paint House](../0256-paint-house/readme.md) | [Paint House](https://leetcode.com/problems/paint-house/) |
-| 0265 | Hard | [Paint House II](../0265-paint-house-ii/readme.md) | [Paint House II](https://leetcode.com/problems/paint-house-ii/) |
+| Number | Difficulty | Name                                                 | LeetCode                                                          |
+| ------ | ---------- | ---------------------------------------------------- | ----------------------------------------------------------------- |
+| 0198   | Medium     | [House Robber](../0198-house-robber/readme.md)       | [House Robber](https://leetcode.com/problems/house-robber/)       |
+| 0213   | Medium     | [House Robber II](../0213-house-robber-ii/readme.md) | [House Robber II](https://leetcode.com/problems/house-robber-ii/) |
+| 0256   | Medium     | [Paint House](../0256-paint-house/readme.md)         | [Paint House](https://leetcode.com/problems/paint-house/)         |
+| 0265   | Hard       | [Paint House II](../0265-paint-house-ii/readme.md)   | [Paint House II](https://leetcode.com/problems/paint-house-ii/)   |
 
 ## Examples
 

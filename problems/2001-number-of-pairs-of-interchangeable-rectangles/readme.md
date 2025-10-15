@@ -2,7 +2,8 @@
 
 ## Quick Facts
 
-- URL: [Number of Pairs of Interchangeable Rectangles](https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/)
+- URL:
+  [Number of Pairs of Interchangeable Rectangles](https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/)
 - Function: `interchangeableRectangles`
 - Signature: `(rectangles: list[list[int]])  -> int`
 - Primary pattern: **Hash Table**
@@ -30,11 +31,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -49,8 +50,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -66,11 +67,11 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 1512 | Easy | [Number of Good Pairs](../1512-number-of-good-pairs/readme.md) | [Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/) |
-| 1814 | Medium | [Count Nice Pairs in an Array](../1814-count-nice-pairs-in-an-array/readme.md) | [Count Nice Pairs in an Array](https://leetcode.com/problems/count-nice-pairs-in-an-array/) |
-| 2197 | Hard | [Replace Non-Coprime Numbers in Array](../2197-replace-non-coprime-numbers-in-array/readme.md) | [Replace Non-Coprime Numbers in Array](https://leetcode.com/problems/replace-non-coprime-numbers-in-array/) |
+| Number | Difficulty | Name                                                                                           | LeetCode                                                                                                    |
+| ------ | ---------- | ---------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| 1512   | Easy       | [Number of Good Pairs](../1512-number-of-good-pairs/readme.md)                                 | [Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/)                                 |
+| 1814   | Medium     | [Count Nice Pairs in an Array](../1814-count-nice-pairs-in-an-array/readme.md)                 | [Count Nice Pairs in an Array](https://leetcode.com/problems/count-nice-pairs-in-an-array/)                 |
+| 2197   | Hard       | [Replace Non-Coprime Numbers in Array](../2197-replace-non-coprime-numbers-in-array/readme.md) | [Replace Non-Coprime Numbers in Array](https://leetcode.com/problems/replace-non-coprime-numbers-in-array/) |
 
 ## Examples
 

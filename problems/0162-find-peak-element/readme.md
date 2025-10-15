@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,13 +65,13 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0852 | Medium | [Peak Index in a Mountain Array](../0852-peak-index-in-a-mountain-array/readme.md) | [Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/) |
-| 1901 | Medium | [Find a Peak Element II](../1901-find-a-peak-element-ii/readme.md) | [Find a Peak Element II](https://leetcode.com/problems/find-a-peak-element-ii/) |
-| 2137 | Medium | [Pour Water Between Buckets to Make Water Levels Equal](../2137-pour-water-between-buckets-to-make-water-levels-equal/readme.md) | [Pour Water Between Buckets to Make Water Levels Equal](https://leetcode.com/problems/pour-water-between-buckets-to-make-water-levels-equal/) |
-| 2210 | Easy | [Count Hills and Valleys in an Array](../2210-count-hills-and-valleys-in-an-array/readme.md) | [Count Hills and Valleys in an Array](https://leetcode.com/problems/count-hills-and-valleys-in-an-array/) |
-| 2951 | Easy | [Find the Peaks](../2951-find-the-peaks/readme.md) | [Find the Peaks](https://leetcode.com/problems/find-the-peaks/) |
+| Number | Difficulty | Name                                                                                                                             | LeetCode                                                                                                                                      |
+| ------ | ---------- | -------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0852   | Medium     | [Peak Index in a Mountain Array](../0852-peak-index-in-a-mountain-array/readme.md)                                               | [Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/)                                               |
+| 1901   | Medium     | [Find a Peak Element II](../1901-find-a-peak-element-ii/readme.md)                                                               | [Find a Peak Element II](https://leetcode.com/problems/find-a-peak-element-ii/)                                                               |
+| 2137   | Medium     | [Pour Water Between Buckets to Make Water Levels Equal](../2137-pour-water-between-buckets-to-make-water-levels-equal/readme.md) | [Pour Water Between Buckets to Make Water Levels Equal](https://leetcode.com/problems/pour-water-between-buckets-to-make-water-levels-equal/) |
+| 2210   | Easy       | [Count Hills and Valleys in an Array](../2210-count-hills-and-valleys-in-an-array/readme.md)                                     | [Count Hills and Valleys in an Array](https://leetcode.com/problems/count-hills-and-valleys-in-an-array/)                                     |
+| 2951   | Easy       | [Find the Peaks](../2951-find-the-peaks/readme.md)                                                                               | [Find the Peaks](https://leetcode.com/problems/find-the-peaks/)                                                                               |
 
 ## Examples
 

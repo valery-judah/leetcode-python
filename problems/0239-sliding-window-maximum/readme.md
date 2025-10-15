@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,16 +65,16 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0076 | Hard | [Minimum Window Substring](../0076-minimum-window-substring/readme.md) | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) |
-| 0155 | Medium | [Min Stack](../0155-min-stack/readme.md) | [Min Stack](https://leetcode.com/problems/min-stack/) |
-| 0159 | Medium | [Longest Substring with At Most Two Distinct Characters](../0159-longest-substring-with-at-most-two-distinct-characters/readme.md) | [Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/) |
-| 0265 | Hard | [Paint House II](../0265-paint-house-ii/readme.md) | [Paint House II](https://leetcode.com/problems/paint-house-ii/) |
-| 1696 | Medium | [Jump Game VI](../1696-jump-game-vi/readme.md) | [Jump Game VI](https://leetcode.com/problems/jump-game-vi/) |
-| 2398 | Hard | [Maximum Number of Robots Within Budget](../2398-maximum-number-of-robots-within-budget/readme.md) | [Maximum Number of Robots Within Budget](https://leetcode.com/problems/maximum-number-of-robots-within-budget/) |
-| 2517 | Medium | [Maximum Tastiness of Candy Basket](../2517-maximum-tastiness-of-candy-basket/readme.md) | [Maximum Tastiness of Candy Basket](https://leetcode.com/problems/maximum-tastiness-of-candy-basket/) |
-| 2530 | Medium | [Maximal Score After Applying K Operations](../2530-maximal-score-after-applying-k-operations/readme.md) | [Maximal Score After Applying K Operations](https://leetcode.com/problems/maximal-score-after-applying-k-operations/) |
+| Number | Difficulty | Name                                                                                                                               | LeetCode                                                                                                                                        |
+| ------ | ---------- | ---------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0076   | Hard       | [Minimum Window Substring](../0076-minimum-window-substring/readme.md)                                                             | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)                                                             |
+| 0155   | Medium     | [Min Stack](../0155-min-stack/readme.md)                                                                                           | [Min Stack](https://leetcode.com/problems/min-stack/)                                                                                           |
+| 0159   | Medium     | [Longest Substring with At Most Two Distinct Characters](../0159-longest-substring-with-at-most-two-distinct-characters/readme.md) | [Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/) |
+| 0265   | Hard       | [Paint House II](../0265-paint-house-ii/readme.md)                                                                                 | [Paint House II](https://leetcode.com/problems/paint-house-ii/)                                                                                 |
+| 1696   | Medium     | [Jump Game VI](../1696-jump-game-vi/readme.md)                                                                                     | [Jump Game VI](https://leetcode.com/problems/jump-game-vi/)                                                                                     |
+| 2398   | Hard       | [Maximum Number of Robots Within Budget](../2398-maximum-number-of-robots-within-budget/readme.md)                                 | [Maximum Number of Robots Within Budget](https://leetcode.com/problems/maximum-number-of-robots-within-budget/)                                 |
+| 2517   | Medium     | [Maximum Tastiness of Candy Basket](../2517-maximum-tastiness-of-candy-basket/readme.md)                                           | [Maximum Tastiness of Candy Basket](https://leetcode.com/problems/maximum-tastiness-of-candy-basket/)                                           |
+| 2530   | Medium     | [Maximal Score After Applying K Operations](../2530-maximal-score-after-applying-k-operations/readme.md)                           | [Maximal Score After Applying K Operations](https://leetcode.com/problems/maximal-score-after-applying-k-operations/)                           |
 
 ## Examples
 

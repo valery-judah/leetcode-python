@@ -35,11 +35,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -54,8 +54,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -71,10 +71,10 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 2307 | Hard | [Check for Contradictions in Equations](../2307-check-for-contradictions-in-equations/readme.md) | [Check for Contradictions in Equations](https://leetcode.com/problems/check-for-contradictions-in-equations/) |
-| 3387 | Medium | [Maximize Amount After Two Days of Conversions](../3387-maximize-amount-after-two-days-of-conversions/readme.md) | [Maximize Amount After Two Days of Conversions](https://leetcode.com/problems/maximize-amount-after-two-days-of-conversions/) |
+| Number | Difficulty | Name                                                                                                             | LeetCode                                                                                                                      |
+| ------ | ---------- | ---------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| 2307   | Hard       | [Check for Contradictions in Equations](../2307-check-for-contradictions-in-equations/readme.md)                 | [Check for Contradictions in Equations](https://leetcode.com/problems/check-for-contradictions-in-equations/)                 |
+| 3387   | Medium     | [Maximize Amount After Two Days of Conversions](../3387-maximize-amount-after-two-days-of-conversions/readme.md) | [Maximize Amount After Two Days of Conversions](https://leetcode.com/problems/maximize-amount-after-two-days-of-conversions/) |
 
 ## Examples
 

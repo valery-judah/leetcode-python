@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,11 +65,11 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0385 | Medium | [Mini Parser](../0385-mini-parser/readme.md) | [Mini Parser](https://leetcode.com/problems/mini-parser/) |
-| 0722 | Medium | [Remove Comments](../0722-remove-comments/readme.md) | [Remove Comments](https://leetcode.com/problems/remove-comments/) |
-| 0736 | Hard | [Parse Lisp Expression](../0736-parse-lisp-expression/readme.md) | [Parse Lisp Expression](https://leetcode.com/problems/parse-lisp-expression/) |
+| Number | Difficulty | Name                                                             | LeetCode                                                                      |
+| ------ | ---------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| 0385   | Medium     | [Mini Parser](../0385-mini-parser/readme.md)                     | [Mini Parser](https://leetcode.com/problems/mini-parser/)                     |
+| 0722   | Medium     | [Remove Comments](../0722-remove-comments/readme.md)             | [Remove Comments](https://leetcode.com/problems/remove-comments/)             |
+| 0736   | Hard       | [Parse Lisp Expression](../0736-parse-lisp-expression/readme.md) | [Parse Lisp Expression](https://leetcode.com/problems/parse-lisp-expression/) |
 
 ## Examples
 

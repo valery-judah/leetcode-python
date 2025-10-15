@@ -2,7 +2,8 @@
 
 ## Quick Facts
 
-- URL: [Tiling a Rectangle with the Fewest Squares](https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares/)
+- URL:
+  [Tiling a Rectangle with the Fewest Squares](https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares/)
 - Function: `tilingRectangle`
 - Signature: `(n: int, m: int)  -> int`
 - Primary pattern: **Backtracking**
@@ -27,11 +28,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -46,8 +47,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -63,9 +64,9 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 2312 | Hard | [Selling Pieces of Wood](../2312-selling-pieces-of-wood/readme.md) | [Selling Pieces of Wood](https://leetcode.com/problems/selling-pieces-of-wood/) |
+| Number | Difficulty | Name                                                               | LeetCode                                                                        |
+| ------ | ---------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------- |
+| 2312   | Hard       | [Selling Pieces of Wood](../2312-selling-pieces-of-wood/readme.md) | [Selling Pieces of Wood](https://leetcode.com/problems/selling-pieces-of-wood/) |
 
 ## Examples
 

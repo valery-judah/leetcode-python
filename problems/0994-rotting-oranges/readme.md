@@ -30,11 +30,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -49,8 +49,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -66,12 +66,12 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0286 | Medium | [Walls and Gates](../0286-walls-and-gates/readme.md) | [Walls and Gates](https://leetcode.com/problems/walls-and-gates/) |
-| 0419 | Medium | [Battleships in a Board](../0419-battleships-in-a-board/readme.md) | [Battleships in a Board](https://leetcode.com/problems/battleships-in-a-board/) |
-| 2101 | Medium | [Detonate the Maximum Bombs](../2101-detonate-the-maximum-bombs/readme.md) | [Detonate the Maximum Bombs](https://leetcode.com/problems/detonate-the-maximum-bombs/) |
-| 2258 | Hard | [Escape the Spreading Fire](../2258-escape-the-spreading-fire/readme.md) | [Escape the Spreading Fire](https://leetcode.com/problems/escape-the-spreading-fire/) |
+| Number | Difficulty | Name                                                                       | LeetCode                                                                                |
+| ------ | ---------- | -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| 0286   | Medium     | [Walls and Gates](../0286-walls-and-gates/readme.md)                       | [Walls and Gates](https://leetcode.com/problems/walls-and-gates/)                       |
+| 0419   | Medium     | [Battleships in a Board](../0419-battleships-in-a-board/readme.md)         | [Battleships in a Board](https://leetcode.com/problems/battleships-in-a-board/)         |
+| 2101   | Medium     | [Detonate the Maximum Bombs](../2101-detonate-the-maximum-bombs/readme.md) | [Detonate the Maximum Bombs](https://leetcode.com/problems/detonate-the-maximum-bombs/) |
+| 2258   | Hard       | [Escape the Spreading Fire](../2258-escape-the-spreading-fire/readme.md)   | [Escape the Spreading Fire](https://leetcode.com/problems/escape-the-spreading-fire/)   |
 
 ## Examples
 

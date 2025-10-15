@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,10 +65,10 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0142 | Medium | [Linked List Cycle II](../0142-linked-list-cycle-ii/readme.md) | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) |
-| 0202 | Easy | [Happy Number](../0202-happy-number/readme.md) | [Happy Number](https://leetcode.com/problems/happy-number/) |
+| Number | Difficulty | Name                                                           | LeetCode                                                                    |
+| ------ | ---------- | -------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| 0142   | Medium     | [Linked List Cycle II](../0142-linked-list-cycle-ii/readme.md) | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) |
+| 0202   | Easy       | [Happy Number](../0202-happy-number/readme.md)                 | [Happy Number](https://leetcode.com/problems/happy-number/)                 |
 
 ## Examples
 

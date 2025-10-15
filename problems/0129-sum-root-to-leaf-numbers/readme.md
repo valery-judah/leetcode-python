@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,11 +65,11 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0064 | Easy | [Path Sum](../0064-path-sum/readme.md) | [Path Sum](https://leetcode.com/problems/path-sum/) |
-| 0124 | Hard | [Binary Tree Maximum Path Sum](../0124-binary-tree-maximum-path-sum/readme.md) | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) |
-| 0988 | Medium | [Smallest String Starting From Leaf](../0988-smallest-string-starting-from-leaf/readme.md) | [Smallest String Starting From Leaf](https://leetcode.com/problems/smallest-string-starting-from-leaf/) |
+| Number | Difficulty | Name                                                                                       | LeetCode                                                                                                |
+| ------ | ---------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------- |
+| 0064   | Easy       | [Path Sum](../0064-path-sum/readme.md)                                                     | [Path Sum](https://leetcode.com/problems/path-sum/)                                                     |
+| 0124   | Hard       | [Binary Tree Maximum Path Sum](../0124-binary-tree-maximum-path-sum/readme.md)             | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)             |
+| 0988   | Medium     | [Smallest String Starting From Leaf](../0988-smallest-string-starting-from-leaf/readme.md) | [Smallest String Starting From Leaf](https://leetcode.com/problems/smallest-string-starting-from-leaf/) |
 
 ## Examples
 

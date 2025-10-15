@@ -31,11 +31,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -50,8 +50,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -67,11 +67,11 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0001 | Easy | [Two Sum](../0001-two-sum/readme.md) | [Two Sum](https://leetcode.com/problems/two-sum/) |
-| 0653 | Easy | [Two Sum IV - Input is a BST](../0653-two-sum-iv-input-is-a-bst/readme.md) | [Two Sum IV - Input is a BST](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/) |
-| 1099 | Easy | [Two Sum Less Than K](../1099-two-sum-less-than-k/readme.md) | [Two Sum Less Than K](https://leetcode.com/problems/two-sum-less-than-k/) |
+| Number | Difficulty | Name                                                                       | LeetCode                                                                                |
+| ------ | ---------- | -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| 0001   | Easy       | [Two Sum](../0001-two-sum/readme.md)                                       | [Two Sum](https://leetcode.com/problems/two-sum/)                                       |
+| 0653   | Easy       | [Two Sum IV - Input is a BST](../0653-two-sum-iv-input-is-a-bst/readme.md) | [Two Sum IV - Input is a BST](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/) |
+| 1099   | Easy       | [Two Sum Less Than K](../1099-two-sum-less-than-k/readme.md)               | [Two Sum Less Than K](https://leetcode.com/problems/two-sum-less-than-k/)               |
 
 ## Examples
 

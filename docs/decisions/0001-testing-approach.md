@@ -5,11 +5,13 @@
 
 ## Context
 
-The repo contains a mix of ad-hoc tests, `unittest`, and pytest. We want a consistent, fast, and scalable testing setup for iterative problem solving.
+The repo contains a mix of ad-hoc tests, `unittest`, and pytest. We want a consistent, fast, and scalable
+testing setup for iterative problem solving.
 
 ## Decision
 
-Adopt pytest with per-problem tests under `problems/NNNN-slug/`. Tests use parametrization and `runpy` to load `solutions.py` (single or multi via `ALL_SOLUTIONS`) without package imports.
+Adopt pytest with per-problem tests under `problems/NNNN-slug/`. Tests use parametrization and `runpy` to load
+`solutions.py` (single or multi via `ALL_SOLUTIONS`) without package imports.
 
 ## Consequences
 

@@ -27,11 +27,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -46,8 +46,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -63,12 +63,12 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0008 | Medium | [String to Integer (atoi)](../0008-string-to-integer-atoi/readme.md) | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) |
-| 0190 | Easy | [Reverse Bits](../0190-reverse-bits/readme.md) | [Reverse Bits](https://leetcode.com/problems/reverse-bits/) |
-| 2119 | Easy | [A Number After a Double Reversal](../2119-a-number-after-a-double-reversal/readme.md) | [A Number After a Double Reversal](https://leetcode.com/problems/a-number-after-a-double-reversal/) |
-| 2442 | Medium | [Count Number of Distinct Integers After Reverse Operations](../2442-count-number-of-distinct-integers-after-reverse-operations/readme.md) | [Count Number of Distinct Integers After Reverse Operations](https://leetcode.com/problems/count-number-of-distinct-integers-after-reverse-operations/) |
+| Number | Difficulty | Name                                                                                                                                       | LeetCode                                                                                                                                                |
+| ------ | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0008   | Medium     | [String to Integer (atoi)](../0008-string-to-integer-atoi/readme.md)                                                                       | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)                                                                       |
+| 0190   | Easy       | [Reverse Bits](../0190-reverse-bits/readme.md)                                                                                             | [Reverse Bits](https://leetcode.com/problems/reverse-bits/)                                                                                             |
+| 2119   | Easy       | [A Number After a Double Reversal](../2119-a-number-after-a-double-reversal/readme.md)                                                     | [A Number After a Double Reversal](https://leetcode.com/problems/a-number-after-a-double-reversal/)                                                     |
+| 2442   | Medium     | [Count Number of Distinct Integers After Reverse Operations](../2442-count-number-of-distinct-integers-after-reverse-operations/readme.md) | [Count Number of Distinct Integers After Reverse Operations](https://leetcode.com/problems/count-number-of-distinct-integers-after-reverse-operations/) |
 
 ## Examples
 

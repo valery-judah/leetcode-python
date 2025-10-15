@@ -2,7 +2,8 @@
 
 ## Quick Facts
 
-- URL: [Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/)
+- URL:
+  [Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/)
 - Function: `kthSmallest`
 - Signature: `(matrix: list[list[int]], k: int)  -> int`
 - Primary pattern: **Binary Search**
@@ -31,11 +32,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -50,8 +51,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -67,12 +68,12 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0373 | Medium | [Find K Pairs with Smallest Sums](../0373-find-k-pairs-with-smallest-sums/readme.md) | [Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/) |
-| 0668 | Hard | [Kth Smallest Number in Multiplication Table](../0668-kth-smallest-number-in-multiplication-table/readme.md) | [Kth Smallest Number in Multiplication Table](https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/) |
-| 0719 | Hard | [Find K-th Smallest Pair Distance](../0719-find-k-th-smallest-pair-distance/readme.md) | [Find K-th Smallest Pair Distance](https://leetcode.com/problems/find-k-th-smallest-pair-distance/) |
-| 0786 | Medium | [K-th Smallest Prime Fraction](../0786-k-th-smallest-prime-fraction/readme.md) | [K-th Smallest Prime Fraction](https://leetcode.com/problems/k-th-smallest-prime-fraction/) |
+| Number | Difficulty | Name                                                                                                         | LeetCode                                                                                                                  |
+| ------ | ---------- | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| 0373   | Medium     | [Find K Pairs with Smallest Sums](../0373-find-k-pairs-with-smallest-sums/readme.md)                         | [Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/)                         |
+| 0668   | Hard       | [Kth Smallest Number in Multiplication Table](../0668-kth-smallest-number-in-multiplication-table/readme.md) | [Kth Smallest Number in Multiplication Table](https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/) |
+| 0719   | Hard       | [Find K-th Smallest Pair Distance](../0719-find-k-th-smallest-pair-distance/readme.md)                       | [Find K-th Smallest Pair Distance](https://leetcode.com/problems/find-k-th-smallest-pair-distance/)                       |
+| 0786   | Medium     | [K-th Smallest Prime Fraction](../0786-k-th-smallest-prime-fraction/readme.md)                               | [K-th Smallest Prime Fraction](https://leetcode.com/problems/k-th-smallest-prime-fraction/)                               |
 
 ## Examples
 

@@ -30,11 +30,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -49,8 +49,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -66,14 +66,14 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 2218 | Hard | [Maximum Value of K Coins From Piles](../2218-maximum-value-of-k-coins-from-piles/readme.md) | [Maximum Value of K Coins From Piles](https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/) |
-| 2585 | Hard | [Number of Ways to Earn Points](../2585-number-of-ways-to-earn-points/readme.md) | [Number of Ways to Earn Points](https://leetcode.com/problems/number-of-ways-to-earn-points/) |
-| 2902 | Hard | [Count of Sub-Multisets With Bounded Sum](../2902-count-of-sub-multisets-with-bounded-sum/readme.md) | [Count of Sub-Multisets With Bounded Sum](https://leetcode.com/problems/count-of-sub-multisets-with-bounded-sum/) |
-| 2915 | Medium | [Length of the Longest Subsequence That Sums to Target](../2915-length-of-the-longest-subsequence-that-sums-to-target/readme.md) | [Length of the Longest Subsequence That Sums to Target](https://leetcode.com/problems/length-of-the-longest-subsequence-that-sums-to-target/) |
-| 3183 | Medium | [The Number of Ways to Make the Sum](../3183-the-number-of-ways-to-make-the-sum/readme.md) | [The Number of Ways to Make the Sum](https://leetcode.com/problems/the-number-of-ways-to-make-the-sum/) |
-| 3592 | Medium | [Inverse Coin Change](../3592-inverse-coin-change/readme.md) | [Inverse Coin Change](https://leetcode.com/problems/inverse-coin-change/) |
+| Number | Difficulty | Name                                                                                                                             | LeetCode                                                                                                                                      |
+| ------ | ---------- | -------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2218   | Hard       | [Maximum Value of K Coins From Piles](../2218-maximum-value-of-k-coins-from-piles/readme.md)                                     | [Maximum Value of K Coins From Piles](https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/)                                     |
+| 2585   | Hard       | [Number of Ways to Earn Points](../2585-number-of-ways-to-earn-points/readme.md)                                                 | [Number of Ways to Earn Points](https://leetcode.com/problems/number-of-ways-to-earn-points/)                                                 |
+| 2902   | Hard       | [Count of Sub-Multisets With Bounded Sum](../2902-count-of-sub-multisets-with-bounded-sum/readme.md)                             | [Count of Sub-Multisets With Bounded Sum](https://leetcode.com/problems/count-of-sub-multisets-with-bounded-sum/)                             |
+| 2915   | Medium     | [Length of the Longest Subsequence That Sums to Target](../2915-length-of-the-longest-subsequence-that-sums-to-target/readme.md) | [Length of the Longest Subsequence That Sums to Target](https://leetcode.com/problems/length-of-the-longest-subsequence-that-sums-to-target/) |
+| 3183   | Medium     | [The Number of Ways to Make the Sum](../3183-the-number-of-ways-to-make-the-sum/readme.md)                                       | [The Number of Ways to Make the Sum](https://leetcode.com/problems/the-number-of-ways-to-make-the-sum/)                                       |
+| 3592   | Medium     | [Inverse Coin Change](../3592-inverse-coin-change/readme.md)                                                                     | [Inverse Coin Change](https://leetcode.com/problems/inverse-coin-change/)                                                                     |
 
 ## Examples
 

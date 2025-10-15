@@ -30,11 +30,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -49,8 +49,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -66,12 +66,12 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0315 | Hard | [Count of Smaller Numbers After Self](../0315-count-of-smaller-numbers-after-self/readme.md) | [Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/) |
-| 0493 | Hard | [Reverse Pairs](../0493-reverse-pairs/readme.md) | [Reverse Pairs](https://leetcode.com/problems/reverse-pairs/) |
-| 2563 | Medium | [Count the Number of Fair Pairs](../2563-count-the-number-of-fair-pairs/readme.md) | [Count the Number of Fair Pairs](https://leetcode.com/problems/count-the-number-of-fair-pairs/) |
-| 3468 | Medium | [Find the Number of Copy Arrays](../3468-find-the-number-of-copy-arrays/readme.md) | [Find the Number of Copy Arrays](https://leetcode.com/problems/find-the-number-of-copy-arrays/) |
+| Number | Difficulty | Name                                                                                         | LeetCode                                                                                                  |
+| ------ | ---------- | -------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| 0315   | Hard       | [Count of Smaller Numbers After Self](../0315-count-of-smaller-numbers-after-self/readme.md) | [Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/) |
+| 0493   | Hard       | [Reverse Pairs](../0493-reverse-pairs/readme.md)                                             | [Reverse Pairs](https://leetcode.com/problems/reverse-pairs/)                                             |
+| 2563   | Medium     | [Count the Number of Fair Pairs](../2563-count-the-number-of-fair-pairs/readme.md)           | [Count the Number of Fair Pairs](https://leetcode.com/problems/count-the-number-of-fair-pairs/)           |
+| 3468   | Medium     | [Find the Number of Copy Arrays](../3468-find-the-number-of-copy-arrays/readme.md)           | [Find the Number of Copy Arrays](https://leetcode.com/problems/find-the-number-of-copy-arrays/)           |
 
 ## Examples
 

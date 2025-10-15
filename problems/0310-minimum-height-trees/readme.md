@@ -32,11 +32,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -51,8 +51,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -68,13 +68,13 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0207 | Medium | [Course Schedule](../0207-course-schedule/readme.md) | [Course Schedule](https://leetcode.com/problems/course-schedule/) |
-| 0210 | Medium | [Course Schedule II](../0210-course-schedule-ii/readme.md) | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/) |
-| 2603 | Hard | [Collect Coins in a Tree](../2603-collect-coins-in-a-tree/readme.md) | [Collect Coins in a Tree](https://leetcode.com/problems/collect-coins-in-a-tree/) |
-| 3067 | Medium | [Count Pairs of Connectable Servers in a Weighted Tree Network](../3067-count-pairs-of-connectable-servers-in-a-weighted-tree-network/readme.md) | [Count Pairs of Connectable Servers in a Weighted Tree Network](https://leetcode.com/problems/count-pairs-of-connectable-servers-in-a-weighted-tree-network/) |
-| 3203 | Hard | [Find Minimum Diameter After Merging Two Trees](../3203-find-minimum-diameter-after-merging-two-trees/readme.md) | [Find Minimum Diameter After Merging Two Trees](https://leetcode.com/problems/find-minimum-diameter-after-merging-two-trees/) |
+| Number | Difficulty | Name                                                                                                                                             | LeetCode                                                                                                                                                      |
+| ------ | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0207   | Medium     | [Course Schedule](../0207-course-schedule/readme.md)                                                                                             | [Course Schedule](https://leetcode.com/problems/course-schedule/)                                                                                             |
+| 0210   | Medium     | [Course Schedule II](../0210-course-schedule-ii/readme.md)                                                                                       | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)                                                                                       |
+| 2603   | Hard       | [Collect Coins in a Tree](../2603-collect-coins-in-a-tree/readme.md)                                                                             | [Collect Coins in a Tree](https://leetcode.com/problems/collect-coins-in-a-tree/)                                                                             |
+| 3067   | Medium     | [Count Pairs of Connectable Servers in a Weighted Tree Network](../3067-count-pairs-of-connectable-servers-in-a-weighted-tree-network/readme.md) | [Count Pairs of Connectable Servers in a Weighted Tree Network](https://leetcode.com/problems/count-pairs-of-connectable-servers-in-a-weighted-tree-network/) |
+| 3203   | Hard       | [Find Minimum Diameter After Merging Two Trees](../3203-find-minimum-diameter-after-merging-two-trees/readme.md)                                 | [Find Minimum Diameter After Merging Two Trees](https://leetcode.com/problems/find-minimum-diameter-after-merging-two-trees/)                                 |
 
 ## Examples
 

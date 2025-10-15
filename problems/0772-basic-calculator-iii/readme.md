@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,12 +65,12 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0224 | Hard | [Basic Calculator](../0224-basic-calculator/readme.md) | [Basic Calculator](https://leetcode.com/problems/basic-calculator/) |
-| 0227 | Medium | [Basic Calculator II](../0227-basic-calculator-ii/readme.md) | [Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/) |
-| 0770 | Hard | [Basic Calculator IV](../0770-basic-calculator-iv/readme.md) | [Basic Calculator IV](https://leetcode.com/problems/basic-calculator-iv/) |
-| 1597 | Hard | [Build Binary Expression Tree From Infix Expression](../1597-build-binary-expression-tree-from-infix-expression/readme.md) | [Build Binary Expression Tree From Infix Expression](https://leetcode.com/problems/build-binary-expression-tree-from-infix-expression/) |
+| Number | Difficulty | Name                                                                                                                       | LeetCode                                                                                                                                |
+| ------ | ---------- | -------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| 0224   | Hard       | [Basic Calculator](../0224-basic-calculator/readme.md)                                                                     | [Basic Calculator](https://leetcode.com/problems/basic-calculator/)                                                                     |
+| 0227   | Medium     | [Basic Calculator II](../0227-basic-calculator-ii/readme.md)                                                               | [Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/)                                                               |
+| 0770   | Hard       | [Basic Calculator IV](../0770-basic-calculator-iv/readme.md)                                                               | [Basic Calculator IV](https://leetcode.com/problems/basic-calculator-iv/)                                                               |
+| 1597   | Hard       | [Build Binary Expression Tree From Infix Expression](../1597-build-binary-expression-tree-from-infix-expression/readme.md) | [Build Binary Expression Tree From Infix Expression](https://leetcode.com/problems/build-binary-expression-tree-from-infix-expression/) |
 
 ## Examples
 

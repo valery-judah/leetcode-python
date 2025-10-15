@@ -30,11 +30,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -49,8 +49,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -66,12 +66,12 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0374 | Easy | [Guess Number Higher or Lower](../0374-guess-number-higher-or-lower/readme.md) | [Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/) |
-| 0375 | Medium | [Guess Number Higher or Lower II](../0375-guess-number-higher-or-lower-ii/readme.md) | [Guess Number Higher or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/) |
-| 0719 | Hard | [Find K-th Smallest Pair Distance](../0719-find-k-th-smallest-pair-distance/readme.md) | [Find K-th Smallest Pair Distance](https://leetcode.com/problems/find-k-th-smallest-pair-distance/) |
-| 2239 | Easy | [Find Closest Number to Zero](../2239-find-closest-number-to-zero/readme.md) | [Find Closest Number to Zero](https://leetcode.com/problems/find-closest-number-to-zero/) |
+| Number | Difficulty | Name                                                                                   | LeetCode                                                                                            |
+| ------ | ---------- | -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| 0374   | Easy       | [Guess Number Higher or Lower](../0374-guess-number-higher-or-lower/readme.md)         | [Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)         |
+| 0375   | Medium     | [Guess Number Higher or Lower II](../0375-guess-number-higher-or-lower-ii/readme.md)   | [Guess Number Higher or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/)   |
+| 0719   | Hard       | [Find K-th Smallest Pair Distance](../0719-find-k-th-smallest-pair-distance/readme.md) | [Find K-th Smallest Pair Distance](https://leetcode.com/problems/find-k-th-smallest-pair-distance/) |
+| 2239   | Easy       | [Find Closest Number to Zero](../2239-find-closest-number-to-zero/readme.md)           | [Find Closest Number to Zero](https://leetcode.com/problems/find-closest-number-to-zero/)           |
 
 ## Examples
 

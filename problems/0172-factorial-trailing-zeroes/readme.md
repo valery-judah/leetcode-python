@@ -27,11 +27,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -46,8 +46,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -63,12 +63,12 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0233 | Hard | [Number of Digit One](../0233-number-of-digit-one/readme.md) | [Number of Digit One](https://leetcode.com/problems/number-of-digit-one/) |
-| 0793 | Hard | [Preimage Size of Factorial Zeroes Function](../0793-preimage-size-of-factorial-zeroes-function/readme.md) | [Preimage Size of Factorial Zeroes Function](https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function/) |
-| 2117 | Hard | [Abbreviating the Product of a Range](../2117-abbreviating-the-product-of-a-range/readme.md) | [Abbreviating the Product of a Range](https://leetcode.com/problems/abbreviating-the-product-of-a-range/) |
-| 2245 | Medium | [Maximum Trailing Zeros in a Cornered Path](../2245-maximum-trailing-zeros-in-a-cornered-path/readme.md) | [Maximum Trailing Zeros in a Cornered Path](https://leetcode.com/problems/maximum-trailing-zeros-in-a-cornered-path/) |
+| Number | Difficulty | Name                                                                                                       | LeetCode                                                                                                                |
+| ------ | ---------- | ---------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| 0233   | Hard       | [Number of Digit One](../0233-number-of-digit-one/readme.md)                                               | [Number of Digit One](https://leetcode.com/problems/number-of-digit-one/)                                               |
+| 0793   | Hard       | [Preimage Size of Factorial Zeroes Function](../0793-preimage-size-of-factorial-zeroes-function/readme.md) | [Preimage Size of Factorial Zeroes Function](https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function/) |
+| 2117   | Hard       | [Abbreviating the Product of a Range](../2117-abbreviating-the-product-of-a-range/readme.md)               | [Abbreviating the Product of a Range](https://leetcode.com/problems/abbreviating-the-product-of-a-range/)               |
+| 2245   | Medium     | [Maximum Trailing Zeros in a Cornered Path](../2245-maximum-trailing-zeros-in-a-cornered-path/readme.md)   | [Maximum Trailing Zeros in a Cornered Path](https://leetcode.com/problems/maximum-trailing-zeros-in-a-cornered-path/)   |
 
 ## Examples
 

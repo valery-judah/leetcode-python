@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,10 +65,10 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 2050 | Hard | [Parallel Courses III](../2050-parallel-courses-iii/readme.md) | [Parallel Courses III](https://leetcode.com/problems/parallel-courses-iii/) |
-| 2589 | Hard | [Minimum Time to Complete All Tasks](../2589-minimum-time-to-complete-all-tasks/readme.md) | [Minimum Time to Complete All Tasks](https://leetcode.com/problems/minimum-time-to-complete-all-tasks/) |
+| Number | Difficulty | Name                                                                                       | LeetCode                                                                                                |
+| ------ | ---------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------- |
+| 2050   | Hard       | [Parallel Courses III](../2050-parallel-courses-iii/readme.md)                             | [Parallel Courses III](https://leetcode.com/problems/parallel-courses-iii/)                             |
+| 2589   | Hard       | [Minimum Time to Complete All Tasks](../2589-minimum-time-to-complete-all-tasks/readme.md) | [Minimum Time to Complete All Tasks](https://leetcode.com/problems/minimum-time-to-complete-all-tasks/) |
 
 ## Examples
 

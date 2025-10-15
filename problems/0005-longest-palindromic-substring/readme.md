@@ -28,11 +28,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +47,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,14 +64,14 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0214 | Hard | [Shortest Palindrome](../0214-shortest-palindrome/readme.md) | [Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome/) |
-| 0266 | Easy | [Palindrome Permutation](../0266-palindrome-permutation/readme.md) | [Palindrome Permutation](https://leetcode.com/problems/palindrome-permutation/) |
-| 0336 | Hard | [Palindrome Pairs](../0336-palindrome-pairs/readme.md) | [Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs/) |
-| 0516 | Medium | [Longest Palindromic Subsequence](../0516-longest-palindromic-subsequence/readme.md) | [Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/) |
-| 0647 | Medium | [Palindromic Substrings](../0647-palindromic-substrings/readme.md) | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/) |
-| 2472 | Hard | [Maximum Number of Non-overlapping Palindrome Substrings](../2472-maximum-number-of-non-overlapping-palindrome-substrings/readme.md) | [Maximum Number of Non-overlapping Palindrome Substrings](https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings/) |
+| Number | Difficulty | Name                                                                                                                                 | LeetCode                                                                                                                                          |
+| ------ | ---------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0214   | Hard       | [Shortest Palindrome](../0214-shortest-palindrome/readme.md)                                                                         | [Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome/)                                                                         |
+| 0266   | Easy       | [Palindrome Permutation](../0266-palindrome-permutation/readme.md)                                                                   | [Palindrome Permutation](https://leetcode.com/problems/palindrome-permutation/)                                                                   |
+| 0336   | Hard       | [Palindrome Pairs](../0336-palindrome-pairs/readme.md)                                                                               | [Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs/)                                                                               |
+| 0516   | Medium     | [Longest Palindromic Subsequence](../0516-longest-palindromic-subsequence/readme.md)                                                 | [Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/)                                                 |
+| 0647   | Medium     | [Palindromic Substrings](../0647-palindromic-substrings/readme.md)                                                                   | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)                                                                   |
+| 2472   | Hard       | [Maximum Number of Non-overlapping Palindrome Substrings](../2472-maximum-number-of-non-overlapping-palindrome-substrings/readme.md) | [Maximum Number of Non-overlapping Palindrome Substrings](https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings/) |
 
 ## Examples
 

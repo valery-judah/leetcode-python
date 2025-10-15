@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,13 +65,13 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0173 | Medium | [Binary Search Tree Iterator](../0173-binary-search-tree-iterator/readme.md) | [Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/) |
-| 0251 | Medium | [Flatten 2D Vector](../0251-flatten-2d-vector/readme.md) | [Flatten 2D Vector](https://leetcode.com/problems/flatten-2d-vector/) |
-| 0284 | Medium | [Peeking Iterator](../0284-peeking-iterator/readme.md) | [Peeking Iterator](https://leetcode.com/problems/peeking-iterator/) |
-| 0341 | Medium | [Flatten Nested List Iterator](../0341-flatten-nested-list-iterator/readme.md) | [Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/) |
-| 1768 | Easy | [Merge Strings Alternately](../1768-merge-strings-alternately/readme.md) | [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/) |
+| Number | Difficulty | Name                                                                           | LeetCode                                                                                    |
+| ------ | ---------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------- |
+| 0173   | Medium     | [Binary Search Tree Iterator](../0173-binary-search-tree-iterator/readme.md)   | [Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)   |
+| 0251   | Medium     | [Flatten 2D Vector](../0251-flatten-2d-vector/readme.md)                       | [Flatten 2D Vector](https://leetcode.com/problems/flatten-2d-vector/)                       |
+| 0284   | Medium     | [Peeking Iterator](../0284-peeking-iterator/readme.md)                         | [Peeking Iterator](https://leetcode.com/problems/peeking-iterator/)                         |
+| 0341   | Medium     | [Flatten Nested List Iterator](../0341-flatten-nested-list-iterator/readme.md) | [Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/) |
+| 1768   | Easy       | [Merge Strings Alternately](../1768-merge-strings-alternately/readme.md)       | [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/)       |
 
 ## Examples
 

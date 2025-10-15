@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,17 +65,17 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 1011 | Medium | [Capacity To Ship Packages Within D Days](../1011-capacity-to-ship-packages-within-d-days/readme.md) | [Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/) |
-| 1231 | Hard | [Divide Chocolate](../1231-divide-chocolate/readme.md) | [Divide Chocolate](https://leetcode.com/problems/divide-chocolate/) |
-| 2305 | Medium | [Fair Distribution of Cookies](../2305-fair-distribution-of-cookies/readme.md) | [Fair Distribution of Cookies](https://leetcode.com/problems/fair-distribution-of-cookies/) |
-| 2098 | Medium | [Subsequence of Size K With the Largest Even Sum](../2098-subsequence-of-size-k-with-the-largest-even-sum/readme.md) | [Subsequence of Size K With the Largest Even Sum](https://leetcode.com/problems/subsequence-of-size-k-with-the-largest-even-sum/) |
-| 2234 | Hard | [Maximum Total Beauty of the Gardens](../2234-maximum-total-beauty-of-the-gardens/readme.md) | [Maximum Total Beauty of the Gardens](https://leetcode.com/problems/maximum-total-beauty-of-the-gardens/) |
-| 2270 | Medium | [Number of Ways to Split Array](../2270-number-of-ways-to-split-array/readme.md) | [Number of Ways to Split Array](https://leetcode.com/problems/number-of-ways-to-split-array/) |
-| 2547 | Hard | [Minimum Cost to Split an Array](../2547-minimum-cost-to-split-an-array/readme.md) | [Minimum Cost to Split an Array](https://leetcode.com/problems/minimum-cost-to-split-an-array/) |
-| 3069 | Easy | [Distribute Elements Into Two Arrays I](../3069-distribute-elements-into-two-arrays-i/readme.md) | [Distribute Elements Into Two Arrays I](https://leetcode.com/problems/distribute-elements-into-two-arrays-i/) |
-| 3072 | Hard | [Distribute Elements Into Two Arrays II](../3072-distribute-elements-into-two-arrays-ii/readme.md) | [Distribute Elements Into Two Arrays II](https://leetcode.com/problems/distribute-elements-into-two-arrays-ii/) |
+| Number | Difficulty | Name                                                                                                                 | LeetCode                                                                                                                          |
+| ------ | ---------- | -------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| 1011   | Medium     | [Capacity To Ship Packages Within D Days](../1011-capacity-to-ship-packages-within-d-days/readme.md)                 | [Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/)                 |
+| 1231   | Hard       | [Divide Chocolate](../1231-divide-chocolate/readme.md)                                                               | [Divide Chocolate](https://leetcode.com/problems/divide-chocolate/)                                                               |
+| 2305   | Medium     | [Fair Distribution of Cookies](../2305-fair-distribution-of-cookies/readme.md)                                       | [Fair Distribution of Cookies](https://leetcode.com/problems/fair-distribution-of-cookies/)                                       |
+| 2098   | Medium     | [Subsequence of Size K With the Largest Even Sum](../2098-subsequence-of-size-k-with-the-largest-even-sum/readme.md) | [Subsequence of Size K With the Largest Even Sum](https://leetcode.com/problems/subsequence-of-size-k-with-the-largest-even-sum/) |
+| 2234   | Hard       | [Maximum Total Beauty of the Gardens](../2234-maximum-total-beauty-of-the-gardens/readme.md)                         | [Maximum Total Beauty of the Gardens](https://leetcode.com/problems/maximum-total-beauty-of-the-gardens/)                         |
+| 2270   | Medium     | [Number of Ways to Split Array](../2270-number-of-ways-to-split-array/readme.md)                                     | [Number of Ways to Split Array](https://leetcode.com/problems/number-of-ways-to-split-array/)                                     |
+| 2547   | Hard       | [Minimum Cost to Split an Array](../2547-minimum-cost-to-split-an-array/readme.md)                                   | [Minimum Cost to Split an Array](https://leetcode.com/problems/minimum-cost-to-split-an-array/)                                   |
+| 3069   | Easy       | [Distribute Elements Into Two Arrays I](../3069-distribute-elements-into-two-arrays-i/readme.md)                     | [Distribute Elements Into Two Arrays I](https://leetcode.com/problems/distribute-elements-into-two-arrays-i/)                     |
+| 3072   | Hard       | [Distribute Elements Into Two Arrays II](../3072-distribute-elements-into-two-arrays-ii/readme.md)                   | [Distribute Elements Into Two Arrays II](https://leetcode.com/problems/distribute-elements-into-two-arrays-ii/)                   |
 
 ## Examples
 

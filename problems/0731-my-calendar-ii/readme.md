@@ -28,11 +28,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +47,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,10 +64,10 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0729 | Medium | [My Calendar I](../0729-my-calendar-i/readme.md) | [My Calendar I](https://leetcode.com/problems/my-calendar-i/) |
-| 0732 | Hard | [My Calendar III](../0732-my-calendar-iii/readme.md) | [My Calendar III](https://leetcode.com/problems/my-calendar-iii/) |
+| Number | Difficulty | Name                                                 | LeetCode                                                          |
+| ------ | ---------- | ---------------------------------------------------- | ----------------------------------------------------------------- |
+| 0729   | Medium     | [My Calendar I](../0729-my-calendar-i/readme.md)     | [My Calendar I](https://leetcode.com/problems/my-calendar-i/)     |
+| 0732   | Hard       | [My Calendar III](../0732-my-calendar-iii/readme.md) | [My Calendar III](https://leetcode.com/problems/my-calendar-iii/) |
 
 ## Examples
 

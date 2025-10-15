@@ -32,11 +32,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -51,8 +51,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -68,17 +68,17 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0207 | Medium | [Course Schedule](../0207-course-schedule/readme.md) | [Course Schedule](https://leetcode.com/problems/course-schedule/) |
-| 0269 | Hard | [Alien Dictionary](../0269-alien-dictionary/readme.md) | [Alien Dictionary](https://leetcode.com/problems/alien-dictionary/) |
-| 0310 | Medium | [Minimum Height Trees](../0310-minimum-height-trees/readme.md) | [Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/) |
-| 0444 | Medium | [Sequence Reconstruction](../0444-sequence-reconstruction/readme.md) | [Sequence Reconstruction](https://leetcode.com/problems/sequence-reconstruction/) |
-| 0630 | Hard | [Course Schedule III](../0630-course-schedule-iii/readme.md) | [Course Schedule III](https://leetcode.com/problems/course-schedule-iii/) |
-| 1136 | Medium | [Parallel Courses](../1136-parallel-courses/readme.md) | [Parallel Courses](https://leetcode.com/problems/parallel-courses/) |
-| 2115 | Medium | [Find All Possible Recipes from Given Supplies](../2115-find-all-possible-recipes-from-given-supplies/readme.md) | [Find All Possible Recipes from Given Supplies](https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies/) |
-| 2392 | Hard | [Build a Matrix With Conditions](../2392-build-a-matrix-with-conditions/readme.md) | [Build a Matrix With Conditions](https://leetcode.com/problems/build-a-matrix-with-conditions/) |
-| 2459 | Hard | [Sort Array by Moving Items to Empty Space](../2459-sort-array-by-moving-items-to-empty-space/readme.md) | [Sort Array by Moving Items to Empty Space](https://leetcode.com/problems/sort-array-by-moving-items-to-empty-space/) |
+| Number | Difficulty | Name                                                                                                             | LeetCode                                                                                                                      |
+| ------ | ---------- | ---------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| 0207   | Medium     | [Course Schedule](../0207-course-schedule/readme.md)                                                             | [Course Schedule](https://leetcode.com/problems/course-schedule/)                                                             |
+| 0269   | Hard       | [Alien Dictionary](../0269-alien-dictionary/readme.md)                                                           | [Alien Dictionary](https://leetcode.com/problems/alien-dictionary/)                                                           |
+| 0310   | Medium     | [Minimum Height Trees](../0310-minimum-height-trees/readme.md)                                                   | [Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/)                                                   |
+| 0444   | Medium     | [Sequence Reconstruction](../0444-sequence-reconstruction/readme.md)                                             | [Sequence Reconstruction](https://leetcode.com/problems/sequence-reconstruction/)                                             |
+| 0630   | Hard       | [Course Schedule III](../0630-course-schedule-iii/readme.md)                                                     | [Course Schedule III](https://leetcode.com/problems/course-schedule-iii/)                                                     |
+| 1136   | Medium     | [Parallel Courses](../1136-parallel-courses/readme.md)                                                           | [Parallel Courses](https://leetcode.com/problems/parallel-courses/)                                                           |
+| 2115   | Medium     | [Find All Possible Recipes from Given Supplies](../2115-find-all-possible-recipes-from-given-supplies/readme.md) | [Find All Possible Recipes from Given Supplies](https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies/) |
+| 2392   | Hard       | [Build a Matrix With Conditions](../2392-build-a-matrix-with-conditions/readme.md)                               | [Build a Matrix With Conditions](https://leetcode.com/problems/build-a-matrix-with-conditions/)                               |
+| 2459   | Hard       | [Sort Array by Moving Items to Empty Space](../2459-sort-array-by-moving-items-to-empty-space/readme.md)         | [Sort Array by Moving Items to Empty Space](https://leetcode.com/problems/sort-array-by-moving-items-to-empty-space/)         |
 
 ## Examples
 

@@ -27,11 +27,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -46,8 +46,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -63,10 +63,10 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0119 | Easy | [Pascal's Triangle II](../0119-pascals-triangle-ii/readme.md) | [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/) |
-| 3463 | Hard | [Check If Digits Are Equal in String After Operations II](../3463-check-if-digits-are-equal-in-string-after-operations-ii/readme.md) | [Check If Digits Are Equal in String After Operations II](https://leetcode.com/problems/check-if-digits-are-equal-in-string-after-operations-ii/) |
+| Number | Difficulty | Name                                                                                                                                 | LeetCode                                                                                                                                          |
+| ------ | ---------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0119   | Easy       | [Pascal's Triangle II](../0119-pascals-triangle-ii/readme.md)                                                                        | [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/)                                                                        |
+| 3463   | Hard       | [Check If Digits Are Equal in String After Operations II](../3463-check-if-digits-are-equal-in-string-after-operations-ii/readme.md) | [Check If Digits Are Equal in String After Operations II](https://leetcode.com/problems/check-if-digits-are-equal-in-string-after-operations-ii/) |
 
 ## Examples
 

@@ -30,11 +30,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -49,8 +49,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -66,14 +66,14 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0200 | Medium | [Number of Islands](../0200-number-of-islands/readme.md) | [Number of Islands](https://leetcode.com/problems/number-of-islands/) |
-| 0419 | Medium | [Battleships in a Board](../0419-battleships-in-a-board/readme.md) | [Battleships in a Board](https://leetcode.com/problems/battleships-in-a-board/) |
-| 0463 | Easy | [Island Perimeter](../0463-island-perimeter/readme.md) | [Island Perimeter](https://leetcode.com/problems/island-perimeter/) |
-| 1727 | Medium | [Largest Submatrix With Rearrangements](../1727-largest-submatrix-with-rearrangements/readme.md) | [Largest Submatrix With Rearrangements](https://leetcode.com/problems/largest-submatrix-with-rearrangements/) |
-| 2101 | Medium | [Detonate the Maximum Bombs](../2101-detonate-the-maximum-bombs/readme.md) | [Detonate the Maximum Bombs](https://leetcode.com/problems/detonate-the-maximum-bombs/) |
-| 2658 | Medium | [Maximum Number of Fish in a Grid](../2658-maximum-number-of-fish-in-a-grid/readme.md) | [Maximum Number of Fish in a Grid](https://leetcode.com/problems/maximum-number-of-fish-in-a-grid/) |
+| Number | Difficulty | Name                                                                                             | LeetCode                                                                                                      |
+| ------ | ---------- | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------- |
+| 0200   | Medium     | [Number of Islands](../0200-number-of-islands/readme.md)                                         | [Number of Islands](https://leetcode.com/problems/number-of-islands/)                                         |
+| 0419   | Medium     | [Battleships in a Board](../0419-battleships-in-a-board/readme.md)                               | [Battleships in a Board](https://leetcode.com/problems/battleships-in-a-board/)                               |
+| 0463   | Easy       | [Island Perimeter](../0463-island-perimeter/readme.md)                                           | [Island Perimeter](https://leetcode.com/problems/island-perimeter/)                                           |
+| 1727   | Medium     | [Largest Submatrix With Rearrangements](../1727-largest-submatrix-with-rearrangements/readme.md) | [Largest Submatrix With Rearrangements](https://leetcode.com/problems/largest-submatrix-with-rearrangements/) |
+| 2101   | Medium     | [Detonate the Maximum Bombs](../2101-detonate-the-maximum-bombs/readme.md)                       | [Detonate the Maximum Bombs](https://leetcode.com/problems/detonate-the-maximum-bombs/)                       |
+| 2658   | Medium     | [Maximum Number of Fish in a Grid](../2658-maximum-number-of-fish-in-a-grid/readme.md)           | [Maximum Number of Fish in a Grid](https://leetcode.com/problems/maximum-number-of-fish-in-a-grid/)           |
 
 ## Examples
 

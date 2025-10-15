@@ -28,11 +28,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +47,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,14 +64,14 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0064 | Easy | [Path Sum](../0064-path-sum/readme.md) | [Path Sum](https://leetcode.com/problems/path-sum/) |
-| 0129 | Medium | [Sum Root to Leaf Numbers](../0129-sum-root-to-leaf-numbers/readme.md) | [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) |
-| 0666 | Medium | [Path Sum IV](../0666-path-sum-iv/readme.md) | [Path Sum IV](https://leetcode.com/problems/path-sum-iv/) |
-| 0687 | Medium | [Longest Univalue Path](../0687-longest-univalue-path/readme.md) | [Longest Univalue Path](https://leetcode.com/problems/longest-univalue-path/) |
-| 1376 | Medium | [Time Needed to Inform All Employees](../1376-time-needed-to-inform-all-employees/readme.md) | [Time Needed to Inform All Employees](https://leetcode.com/problems/time-needed-to-inform-all-employees/) |
-| 2538 | Hard | [Difference Between Maximum and Minimum Price Sum](../2538-difference-between-maximum-and-minimum-price-sum/readme.md) | [Difference Between Maximum and Minimum Price Sum](https://leetcode.com/problems/difference-between-maximum-and-minimum-price-sum/) |
+| Number | Difficulty | Name                                                                                                                   | LeetCode                                                                                                                            |
+| ------ | ---------- | ---------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| 0064   | Easy       | [Path Sum](../0064-path-sum/readme.md)                                                                                 | [Path Sum](https://leetcode.com/problems/path-sum/)                                                                                 |
+| 0129   | Medium     | [Sum Root to Leaf Numbers](../0129-sum-root-to-leaf-numbers/readme.md)                                                 | [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/)                                                 |
+| 0666   | Medium     | [Path Sum IV](../0666-path-sum-iv/readme.md)                                                                           | [Path Sum IV](https://leetcode.com/problems/path-sum-iv/)                                                                           |
+| 0687   | Medium     | [Longest Univalue Path](../0687-longest-univalue-path/readme.md)                                                       | [Longest Univalue Path](https://leetcode.com/problems/longest-univalue-path/)                                                       |
+| 1376   | Medium     | [Time Needed to Inform All Employees](../1376-time-needed-to-inform-all-employees/readme.md)                           | [Time Needed to Inform All Employees](https://leetcode.com/problems/time-needed-to-inform-all-employees/)                           |
+| 2538   | Hard       | [Difference Between Maximum and Minimum Price Sum](../2538-difference-between-maximum-and-minimum-price-sum/readme.md) | [Difference Between Maximum and Minimum Price Sum](https://leetcode.com/problems/difference-between-maximum-and-minimum-price-sum/) |
 
 ## Examples
 

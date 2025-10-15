@@ -31,11 +31,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -50,8 +50,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -67,12 +67,12 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0021 | Easy | [Merge Two Sorted Lists](../0021-merge-two-sorted-lists/readme.md) | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) |
-| 0977 | Easy | [Squares of a Sorted Array](../0977-squares-of-a-sorted-array/readme.md) | [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) |
-| 0986 | Medium | [Interval List Intersections](../0986-interval-list-intersections/readme.md) | [Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/) |
-| 2516 | Medium | [Take K of Each Character From Left and Right](../2516-take-k-of-each-character-from-left-and-right/readme.md) | [Take K of Each Character From Left and Right](https://leetcode.com/problems/take-k-of-each-character-from-left-and-right/) |
+| Number | Difficulty | Name                                                                                                           | LeetCode                                                                                                                    |
+| ------ | ---------- | -------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| 0021   | Easy       | [Merge Two Sorted Lists](../0021-merge-two-sorted-lists/readme.md)                                             | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)                                             |
+| 0977   | Easy       | [Squares of a Sorted Array](../0977-squares-of-a-sorted-array/readme.md)                                       | [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/)                                       |
+| 0986   | Medium     | [Interval List Intersections](../0986-interval-list-intersections/readme.md)                                   | [Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/)                                   |
+| 2516   | Medium     | [Take K of Each Character From Left and Right](../2516-take-k-of-each-character-from-left-and-right/readme.md) | [Take K of Each Character From Left and Right](https://leetcode.com/problems/take-k-of-each-character-from-left-and-right/) |
 
 ## Examples
 

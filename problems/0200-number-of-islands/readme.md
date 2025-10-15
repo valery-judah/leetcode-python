@@ -30,11 +30,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -49,8 +49,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -66,20 +66,20 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0130 | Medium | [Surrounded Regions](../0130-surrounded-regions/readme.md) | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/) |
-| 0286 | Medium | [Walls and Gates](../0286-walls-and-gates/readme.md) | [Walls and Gates](https://leetcode.com/problems/walls-and-gates/) |
-| 0305 | Hard | [Number of Islands II](../0305-number-of-islands-ii/readme.md) | [Number of Islands II](https://leetcode.com/problems/number-of-islands-ii/) |
-| 0323 | Medium | [Number of Connected Components in an Undirected Graph](../0323-number-of-connected-components-in-an-undirected-graph/readme.md) | [Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) |
-| 0419 | Medium | [Battleships in a Board](../0419-battleships-in-a-board/readme.md) | [Battleships in a Board](https://leetcode.com/problems/battleships-in-a-board/) |
-| 0694 | Medium | [Number of Distinct Islands](../0694-number-of-distinct-islands/readme.md) | [Number of Distinct Islands](https://leetcode.com/problems/number-of-distinct-islands/) |
-| 0695 | Medium | [Max Area of Island](../0695-max-area-of-island/readme.md) | [Max Area of Island](https://leetcode.com/problems/max-area-of-island/) |
-| 1905 | Medium | [Count Sub Islands](../1905-count-sub-islands/readme.md) | [Count Sub Islands](https://leetcode.com/problems/count-sub-islands/) |
-| 1992 | Medium | [Find All Groups of Farmland](../1992-find-all-groups-of-farmland/readme.md) | [Find All Groups of Farmland](https://leetcode.com/problems/find-all-groups-of-farmland/) |
-| 2316 | Medium | [Count Unreachable Pairs of Nodes in an Undirected Graph](../2316-count-unreachable-pairs-of-nodes-in-an-undirected-graph/readme.md) | [Count Unreachable Pairs of Nodes in an Undirected Graph](https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/) |
-| 2658 | Medium | [Maximum Number of Fish in a Grid](../2658-maximum-number-of-fish-in-a-grid/readme.md) | [Maximum Number of Fish in a Grid](https://leetcode.com/problems/maximum-number-of-fish-in-a-grid/) |
-| 3619 | Medium | [Count Islands With Total Value Divisible by K](../3619-count-islands-with-total-value-divisible-by-k/readme.md) | [Count Islands With Total Value Divisible by K](https://leetcode.com/problems/count-islands-with-total-value-divisible-by-k/) |
+| Number | Difficulty | Name                                                                                                                                 | LeetCode                                                                                                                                          |
+| ------ | ---------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0130   | Medium     | [Surrounded Regions](../0130-surrounded-regions/readme.md)                                                                           | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)                                                                           |
+| 0286   | Medium     | [Walls and Gates](../0286-walls-and-gates/readme.md)                                                                                 | [Walls and Gates](https://leetcode.com/problems/walls-and-gates/)                                                                                 |
+| 0305   | Hard       | [Number of Islands II](../0305-number-of-islands-ii/readme.md)                                                                       | [Number of Islands II](https://leetcode.com/problems/number-of-islands-ii/)                                                                       |
+| 0323   | Medium     | [Number of Connected Components in an Undirected Graph](../0323-number-of-connected-components-in-an-undirected-graph/readme.md)     | [Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)     |
+| 0419   | Medium     | [Battleships in a Board](../0419-battleships-in-a-board/readme.md)                                                                   | [Battleships in a Board](https://leetcode.com/problems/battleships-in-a-board/)                                                                   |
+| 0694   | Medium     | [Number of Distinct Islands](../0694-number-of-distinct-islands/readme.md)                                                           | [Number of Distinct Islands](https://leetcode.com/problems/number-of-distinct-islands/)                                                           |
+| 0695   | Medium     | [Max Area of Island](../0695-max-area-of-island/readme.md)                                                                           | [Max Area of Island](https://leetcode.com/problems/max-area-of-island/)                                                                           |
+| 1905   | Medium     | [Count Sub Islands](../1905-count-sub-islands/readme.md)                                                                             | [Count Sub Islands](https://leetcode.com/problems/count-sub-islands/)                                                                             |
+| 1992   | Medium     | [Find All Groups of Farmland](../1992-find-all-groups-of-farmland/readme.md)                                                         | [Find All Groups of Farmland](https://leetcode.com/problems/find-all-groups-of-farmland/)                                                         |
+| 2316   | Medium     | [Count Unreachable Pairs of Nodes in an Undirected Graph](../2316-count-unreachable-pairs-of-nodes-in-an-undirected-graph/readme.md) | [Count Unreachable Pairs of Nodes in an Undirected Graph](https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/) |
+| 2658   | Medium     | [Maximum Number of Fish in a Grid](../2658-maximum-number-of-fish-in-a-grid/readme.md)                                               | [Maximum Number of Fish in a Grid](https://leetcode.com/problems/maximum-number-of-fish-in-a-grid/)                                               |
+| 3619   | Medium     | [Count Islands With Total Value Divisible by K](../3619-count-islands-with-total-value-divisible-by-k/readme.md)                     | [Count Islands With Total Value Divisible by K](https://leetcode.com/problems/count-islands-with-total-value-divisible-by-k/)                     |
 
 ## Examples
 

@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,16 +65,16 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0043 | Medium | [Multiply Strings](../0043-multiply-strings/readme.md) | [Multiply Strings](https://leetcode.com/problems/multiply-strings/) |
-| 0067 | Easy | [Add Binary](../0067-add-binary/readme.md) | [Add Binary](https://leetcode.com/problems/add-binary/) |
-| 0371 | Medium | [Sum of Two Integers](../0371-sum-of-two-integers/readme.md) | [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/) |
-| 0415 | Easy | [Add Strings](../0415-add-strings/readme.md) | [Add Strings](https://leetcode.com/problems/add-strings/) |
-| 0445 | Medium | [Add Two Numbers II](../0445-add-two-numbers-ii/readme.md) | [Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/) |
-| 0989 | Easy | [Add to Array-Form of Integer](../0989-add-to-array-form-of-integer/readme.md) | [Add to Array-Form of Integer](https://leetcode.com/problems/add-to-array-form-of-integer/) |
-| 1634 | Medium | [Add Two Polynomials Represented as Linked Lists](../1634-add-two-polynomials-represented-as-linked-lists/readme.md) | [Add Two Polynomials Represented as Linked Lists](https://leetcode.com/problems/add-two-polynomials-represented-as-linked-lists/) |
-| 2816 | Medium | [Double a Number Represented as a Linked List](../2816-double-a-number-represented-as-a-linked-list/readme.md) | [Double a Number Represented as a Linked List](https://leetcode.com/problems/double-a-number-represented-as-a-linked-list/) |
+| Number | Difficulty | Name                                                                                                                 | LeetCode                                                                                                                          |
+| ------ | ---------- | -------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| 0043   | Medium     | [Multiply Strings](../0043-multiply-strings/readme.md)                                                               | [Multiply Strings](https://leetcode.com/problems/multiply-strings/)                                                               |
+| 0067   | Easy       | [Add Binary](../0067-add-binary/readme.md)                                                                           | [Add Binary](https://leetcode.com/problems/add-binary/)                                                                           |
+| 0371   | Medium     | [Sum of Two Integers](../0371-sum-of-two-integers/readme.md)                                                         | [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)                                                         |
+| 0415   | Easy       | [Add Strings](../0415-add-strings/readme.md)                                                                         | [Add Strings](https://leetcode.com/problems/add-strings/)                                                                         |
+| 0445   | Medium     | [Add Two Numbers II](../0445-add-two-numbers-ii/readme.md)                                                           | [Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/)                                                           |
+| 0989   | Easy       | [Add to Array-Form of Integer](../0989-add-to-array-form-of-integer/readme.md)                                       | [Add to Array-Form of Integer](https://leetcode.com/problems/add-to-array-form-of-integer/)                                       |
+| 1634   | Medium     | [Add Two Polynomials Represented as Linked Lists](../1634-add-two-polynomials-represented-as-linked-lists/readme.md) | [Add Two Polynomials Represented as Linked Lists](https://leetcode.com/problems/add-two-polynomials-represented-as-linked-lists/) |
+| 2816   | Medium     | [Double a Number Represented as a Linked List](../2816-double-a-number-represented-as-a-linked-list/readme.md)       | [Double a Number Represented as a Linked List](https://leetcode.com/problems/double-a-number-represented-as-a-linked-list/)       |
 
 ## Examples
 

@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,12 +65,12 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0242 | Easy | [Valid Anagram](../0242-valid-anagram/readme.md) | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) |
-| 0249 | Medium | [Group Shifted Strings](../0249-group-shifted-strings/readme.md) | [Group Shifted Strings](https://leetcode.com/problems/group-shifted-strings/) |
-| 2273 | Easy | [Find Resultant Array After Removing Anagrams](../2273-find-resultant-array-after-removing-anagrams/readme.md) | [Find Resultant Array After Removing Anagrams](https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/) |
-| 2514 | Hard | [Count Anagrams](../2514-count-anagrams/readme.md) | [Count Anagrams](https://leetcode.com/problems/count-anagrams/) |
+| Number | Difficulty | Name                                                                                                           | LeetCode                                                                                                                    |
+| ------ | ---------- | -------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| 0242   | Easy       | [Valid Anagram](../0242-valid-anagram/readme.md)                                                               | [Valid Anagram](https://leetcode.com/problems/valid-anagram/)                                                               |
+| 0249   | Medium     | [Group Shifted Strings](../0249-group-shifted-strings/readme.md)                                               | [Group Shifted Strings](https://leetcode.com/problems/group-shifted-strings/)                                               |
+| 2273   | Easy       | [Find Resultant Array After Removing Anagrams](../2273-find-resultant-array-after-removing-anagrams/readme.md) | [Find Resultant Array After Removing Anagrams](https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/) |
+| 2514   | Hard       | [Count Anagrams](../2514-count-anagrams/readme.md)                                                             | [Count Anagrams](https://leetcode.com/problems/count-anagrams/)                                                             |
 
 ## Examples
 

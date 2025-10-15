@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,14 +65,14 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0027 | Easy | [Remove Element](../0027-remove-element/readme.md) | [Remove Element](https://leetcode.com/problems/remove-element/) |
-| 0237 | Medium | [Delete Node in a Linked List](../0237-delete-node-in-a-linked-list/readme.md) | [Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/) |
-| 2095 | Medium | [Delete the Middle Node of a Linked List](../2095-delete-the-middle-node-of-a-linked-list/readme.md) | [Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/) |
-| 3217 | Medium | [Delete Nodes From Linked List Present in Array](../3217-delete-nodes-from-linked-list-present-in-array/readme.md) | [Delete Nodes From Linked List Present in Array](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/) |
-| 3263 | Easy | [Convert Doubly Linked List to Array I](../3263-convert-doubly-linked-list-to-array-i/readme.md) | [Convert Doubly Linked List to Array I](https://leetcode.com/problems/convert-doubly-linked-list-to-array-i/) |
-| 3294 | Medium | [Convert Doubly Linked List to Array II](../3294-convert-doubly-linked-list-to-array-ii/readme.md) | [Convert Doubly Linked List to Array II](https://leetcode.com/problems/convert-doubly-linked-list-to-array-ii/) |
+| Number | Difficulty | Name                                                                                                               | LeetCode                                                                                                                        |
+| ------ | ---------- | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------- |
+| 0027   | Easy       | [Remove Element](../0027-remove-element/readme.md)                                                                 | [Remove Element](https://leetcode.com/problems/remove-element/)                                                                 |
+| 0237   | Medium     | [Delete Node in a Linked List](../0237-delete-node-in-a-linked-list/readme.md)                                     | [Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)                                     |
+| 2095   | Medium     | [Delete the Middle Node of a Linked List](../2095-delete-the-middle-node-of-a-linked-list/readme.md)               | [Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/)               |
+| 3217   | Medium     | [Delete Nodes From Linked List Present in Array](../3217-delete-nodes-from-linked-list-present-in-array/readme.md) | [Delete Nodes From Linked List Present in Array](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/) |
+| 3263   | Easy       | [Convert Doubly Linked List to Array I](../3263-convert-doubly-linked-list-to-array-i/readme.md)                   | [Convert Doubly Linked List to Array I](https://leetcode.com/problems/convert-doubly-linked-list-to-array-i/)                   |
+| 3294   | Medium     | [Convert Doubly Linked List to Array II](../3294-convert-doubly-linked-list-to-array-ii/readme.md)                 | [Convert Doubly Linked List to Array II](https://leetcode.com/problems/convert-doubly-linked-list-to-array-ii/)                 |
 
 ## Examples
 

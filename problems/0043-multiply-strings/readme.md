@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,13 +65,13 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0002 | Medium | [Add Two Numbers](../0002-add-two-numbers/readme.md) | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) |
-| 0066 | Easy | [Plus One](../0066-plus-one/readme.md) | [Plus One](https://leetcode.com/problems/plus-one/) |
-| 0067 | Easy | [Add Binary](../0067-add-binary/readme.md) | [Add Binary](https://leetcode.com/problems/add-binary/) |
-| 0415 | Easy | [Add Strings](../0415-add-strings/readme.md) | [Add Strings](https://leetcode.com/problems/add-strings/) |
-| 2288 | Medium | [Apply Discount to Prices](../2288-apply-discount-to-prices/readme.md) | [Apply Discount to Prices](https://leetcode.com/problems/apply-discount-to-prices/) |
+| Number | Difficulty | Name                                                                   | LeetCode                                                                            |
+| ------ | ---------- | ---------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| 0002   | Medium     | [Add Two Numbers](../0002-add-two-numbers/readme.md)                   | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)                   |
+| 0066   | Easy       | [Plus One](../0066-plus-one/readme.md)                                 | [Plus One](https://leetcode.com/problems/plus-one/)                                 |
+| 0067   | Easy       | [Add Binary](../0067-add-binary/readme.md)                             | [Add Binary](https://leetcode.com/problems/add-binary/)                             |
+| 0415   | Easy       | [Add Strings](../0415-add-strings/readme.md)                           | [Add Strings](https://leetcode.com/problems/add-strings/)                           |
+| 2288   | Medium     | [Apply Discount to Prices](../2288-apply-discount-to-prices/readme.md) | [Apply Discount to Prices](https://leetcode.com/problems/apply-discount-to-prices/) |
 
 ## Examples
 

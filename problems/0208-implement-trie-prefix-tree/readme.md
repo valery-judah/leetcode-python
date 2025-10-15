@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,16 +65,16 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0211 | Medium | [Design Add and Search Words Data Structure](../0211-design-add-and-search-words-data-structure/readme.md) | [Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/) |
-| 0642 | Hard | [Design Search Autocomplete System](../0642-design-search-autocomplete-system/readme.md) | [Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system/) |
-| 0648 | Medium | [Replace Words](../0648-replace-words/readme.md) | [Replace Words](https://leetcode.com/problems/replace-words/) |
-| 0676 | Medium | [Implement Magic Dictionary](../0676-implement-magic-dictionary/readme.md) | [Implement Magic Dictionary](https://leetcode.com/problems/implement-magic-dictionary/) |
-| 2227 | Hard | [Encrypt and Decrypt Strings](../2227-encrypt-and-decrypt-strings/readme.md) | [Encrypt and Decrypt Strings](https://leetcode.com/problems/encrypt-and-decrypt-strings/) |
-| 1804 | Medium | [Implement Trie II (Prefix Tree)](../1804-implement-trie-ii-prefix-tree/readme.md) | [Implement Trie II (Prefix Tree)](https://leetcode.com/problems/implement-trie-ii-prefix-tree/) |
-| 3045 | Hard | [Count Prefix and Suffix Pairs II](../3045-count-prefix-and-suffix-pairs-ii/readme.md) | [Count Prefix and Suffix Pairs II](https://leetcode.com/problems/count-prefix-and-suffix-pairs-ii/) |
-| 3042 | Easy | [Count Prefix and Suffix Pairs I](../3042-count-prefix-and-suffix-pairs-i/readme.md) | [Count Prefix and Suffix Pairs I](https://leetcode.com/problems/count-prefix-and-suffix-pairs-i/) |
+| Number | Difficulty | Name                                                                                                       | LeetCode                                                                                                                |
+| ------ | ---------- | ---------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| 0211   | Medium     | [Design Add and Search Words Data Structure](../0211-design-add-and-search-words-data-structure/readme.md) | [Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/) |
+| 0642   | Hard       | [Design Search Autocomplete System](../0642-design-search-autocomplete-system/readme.md)                   | [Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system/)                   |
+| 0648   | Medium     | [Replace Words](../0648-replace-words/readme.md)                                                           | [Replace Words](https://leetcode.com/problems/replace-words/)                                                           |
+| 0676   | Medium     | [Implement Magic Dictionary](../0676-implement-magic-dictionary/readme.md)                                 | [Implement Magic Dictionary](https://leetcode.com/problems/implement-magic-dictionary/)                                 |
+| 2227   | Hard       | [Encrypt and Decrypt Strings](../2227-encrypt-and-decrypt-strings/readme.md)                               | [Encrypt and Decrypt Strings](https://leetcode.com/problems/encrypt-and-decrypt-strings/)                               |
+| 1804   | Medium     | [Implement Trie II (Prefix Tree)](../1804-implement-trie-ii-prefix-tree/readme.md)                         | [Implement Trie II (Prefix Tree)](https://leetcode.com/problems/implement-trie-ii-prefix-tree/)                         |
+| 3045   | Hard       | [Count Prefix and Suffix Pairs II](../3045-count-prefix-and-suffix-pairs-ii/readme.md)                     | [Count Prefix and Suffix Pairs II](https://leetcode.com/problems/count-prefix-and-suffix-pairs-ii/)                     |
+| 3042   | Easy       | [Count Prefix and Suffix Pairs I](../3042-count-prefix-and-suffix-pairs-i/readme.md)                       | [Count Prefix and Suffix Pairs I](https://leetcode.com/problems/count-prefix-and-suffix-pairs-i/)                       |
 
 ## Examples
 

@@ -28,11 +28,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +47,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,11 +64,11 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0729 | Medium | [My Calendar I](../0729-my-calendar-i/readme.md) | [My Calendar I](https://leetcode.com/problems/my-calendar-i/) |
-| 0731 | Medium | [My Calendar II](../0731-my-calendar-ii/readme.md) | [My Calendar II](https://leetcode.com/problems/my-calendar-ii/) |
-| 2276 | Hard | [Count Integers in Intervals](../2276-count-integers-in-intervals/readme.md) | [Count Integers in Intervals](https://leetcode.com/problems/count-integers-in-intervals/) |
+| Number | Difficulty | Name                                                                         | LeetCode                                                                                  |
+| ------ | ---------- | ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| 0729   | Medium     | [My Calendar I](../0729-my-calendar-i/readme.md)                             | [My Calendar I](https://leetcode.com/problems/my-calendar-i/)                             |
+| 0731   | Medium     | [My Calendar II](../0731-my-calendar-ii/readme.md)                           | [My Calendar II](https://leetcode.com/problems/my-calendar-ii/)                           |
+| 2276   | Hard       | [Count Integers in Intervals](../2276-count-integers-in-intervals/readme.md) | [Count Integers in Intervals](https://leetcode.com/problems/count-integers-in-intervals/) |
 
 ## Examples
 

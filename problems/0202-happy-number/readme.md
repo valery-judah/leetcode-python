@@ -27,11 +27,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -46,8 +46,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -63,15 +63,15 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0141 | Easy | [Linked List Cycle](../0141-linked-list-cycle/readme.md) | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) |
-| 0258 | Easy | [Add Digits](../0258-add-digits/readme.md) | [Add Digits](https://leetcode.com/problems/add-digits/) |
-| 0263 | Easy | [Ugly Number](../0263-ugly-number/readme.md) | [Ugly Number](https://leetcode.com/problems/ugly-number/) |
-| 1945 | Easy | [Sum of Digits of String After Convert](../1945-sum-of-digits-of-string-after-convert/readme.md) | [Sum of Digits of String After Convert](https://leetcode.com/problems/sum-of-digits-of-string-after-convert/) |
-| 2457 | Medium | [Minimum Addition to Make Integer Beautiful](../2457-minimum-addition-to-make-integer-beautiful/readme.md) | [Minimum Addition to Make Integer Beautiful](https://leetcode.com/problems/minimum-addition-to-make-integer-beautiful/) |
-| 2507 | Medium | [Smallest Value After Replacing With Sum of Prime Factors](../2507-smallest-value-after-replacing-with-sum-of-prime-factors/readme.md) | [Smallest Value After Replacing With Sum of Prime Factors](https://leetcode.com/problems/smallest-value-after-replacing-with-sum-of-prime-factors/) |
-| 2520 | Easy | [Count the Digits That Divide a Number](../2520-count-the-digits-that-divide-a-number/readme.md) | [Count the Digits That Divide a Number](https://leetcode.com/problems/count-the-digits-that-divide-a-number/) |
+| Number | Difficulty | Name                                                                                                                                   | LeetCode                                                                                                                                            |
+| ------ | ---------- | -------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0141   | Easy       | [Linked List Cycle](../0141-linked-list-cycle/readme.md)                                                                               | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)                                                                               |
+| 0258   | Easy       | [Add Digits](../0258-add-digits/readme.md)                                                                                             | [Add Digits](https://leetcode.com/problems/add-digits/)                                                                                             |
+| 0263   | Easy       | [Ugly Number](../0263-ugly-number/readme.md)                                                                                           | [Ugly Number](https://leetcode.com/problems/ugly-number/)                                                                                           |
+| 1945   | Easy       | [Sum of Digits of String After Convert](../1945-sum-of-digits-of-string-after-convert/readme.md)                                       | [Sum of Digits of String After Convert](https://leetcode.com/problems/sum-of-digits-of-string-after-convert/)                                       |
+| 2457   | Medium     | [Minimum Addition to Make Integer Beautiful](../2457-minimum-addition-to-make-integer-beautiful/readme.md)                             | [Minimum Addition to Make Integer Beautiful](https://leetcode.com/problems/minimum-addition-to-make-integer-beautiful/)                             |
+| 2507   | Medium     | [Smallest Value After Replacing With Sum of Prime Factors](../2507-smallest-value-after-replacing-with-sum-of-prime-factors/readme.md) | [Smallest Value After Replacing With Sum of Prime Factors](https://leetcode.com/problems/smallest-value-after-replacing-with-sum-of-prime-factors/) |
+| 2520   | Easy       | [Count the Digits That Divide a Number](../2520-count-the-digits-that-divide-a-number/readme.md)                                       | [Count the Digits That Divide a Number](https://leetcode.com/problems/count-the-digits-that-divide-a-number/)                                       |
 
 ## Examples
 

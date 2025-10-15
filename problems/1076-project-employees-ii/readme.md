@@ -27,11 +27,11 @@ None
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -46,8 +46,8 @@ None
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -63,10 +63,10 @@ None
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 1075 | Easy | [Project Employees I](../1075-project-employees-i/readme.md) | [Project Employees I](https://leetcode.com/problems/project-employees-i/) |
-| 1077 | Medium | [Project Employees III](../1077-project-employees-iii/readme.md) | [Project Employees III](https://leetcode.com/problems/project-employees-iii/) |
+| Number | Difficulty | Name                                                             | LeetCode                                                                      |
+| ------ | ---------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| 1075   | Easy       | [Project Employees I](../1075-project-employees-i/readme.md)     | [Project Employees I](https://leetcode.com/problems/project-employees-i/)     |
+| 1077   | Medium     | [Project Employees III](../1077-project-employees-iii/readme.md) | [Project Employees III](https://leetcode.com/problems/project-employees-iii/) |
 
 ## Examples
 

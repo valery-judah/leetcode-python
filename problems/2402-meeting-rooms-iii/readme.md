@@ -31,11 +31,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -50,8 +50,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -67,13 +67,13 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0252 | Easy | [Meeting Rooms](../0252-meeting-rooms/readme.md) | [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/) |
-| 0253 | Medium | [Meeting Rooms II](../0253-meeting-rooms-ii/readme.md) | [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/) |
-| 1353 | Medium | [Maximum Number of Events That Can Be Attended](../1353-maximum-number-of-events-that-can-be-attended/readme.md) | [Maximum Number of Events That Can Be Attended](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/) |
-| 1606 | Hard | [Find Servers That Handled Most Number of Requests](../1606-find-servers-that-handled-most-number-of-requests/readme.md) | [Find Servers That Handled Most Number of Requests](https://leetcode.com/problems/find-servers-that-handled-most-number-of-requests/) |
-| 1751 | Hard | [Maximum Number of Events That Can Be Attended II](../1751-maximum-number-of-events-that-can-be-attended-ii/readme.md) | [Maximum Number of Events That Can Be Attended II](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended-ii/) |
+| Number | Difficulty | Name                                                                                                                     | LeetCode                                                                                                                              |
+| ------ | ---------- | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- |
+| 0252   | Easy       | [Meeting Rooms](../0252-meeting-rooms/readme.md)                                                                         | [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/)                                                                         |
+| 0253   | Medium     | [Meeting Rooms II](../0253-meeting-rooms-ii/readme.md)                                                                   | [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/)                                                                   |
+| 1353   | Medium     | [Maximum Number of Events That Can Be Attended](../1353-maximum-number-of-events-that-can-be-attended/readme.md)         | [Maximum Number of Events That Can Be Attended](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/)         |
+| 1606   | Hard       | [Find Servers That Handled Most Number of Requests](../1606-find-servers-that-handled-most-number-of-requests/readme.md) | [Find Servers That Handled Most Number of Requests](https://leetcode.com/problems/find-servers-that-handled-most-number-of-requests/) |
+| 1751   | Hard       | [Maximum Number of Events That Can Be Attended II](../1751-maximum-number-of-events-that-can-be-attended-ii/readme.md)   | [Maximum Number of Events That Can Be Attended II](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended-ii/)   |
 
 ## Examples
 

@@ -31,11 +31,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -50,8 +50,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -67,12 +67,12 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0238 | Medium | [Product of Array Except Self](../0238-product-of-array-except-self/readme.md) | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) |
-| 0239 | Hard | [Sliding Window Maximum](../0239-sliding-window-maximum/readme.md) | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) |
-| 0256 | Medium | [Paint House](../0256-paint-house/readme.md) | [Paint House](https://leetcode.com/problems/paint-house/) |
-| 0276 | Medium | [Paint Fence](../0276-paint-fence/readme.md) | [Paint Fence](https://leetcode.com/problems/paint-fence/) |
+| Number | Difficulty | Name                                                                           | LeetCode                                                                                    |
+| ------ | ---------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------- |
+| 0238   | Medium     | [Product of Array Except Self](../0238-product-of-array-except-self/readme.md) | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) |
+| 0239   | Hard       | [Sliding Window Maximum](../0239-sliding-window-maximum/readme.md)             | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)             |
+| 0256   | Medium     | [Paint House](../0256-paint-house/readme.md)                                   | [Paint House](https://leetcode.com/problems/paint-house/)                                   |
+| 0276   | Medium     | [Paint Fence](../0276-paint-fence/readme.md)                                   | [Paint Fence](https://leetcode.com/problems/paint-fence/)                                   |
 
 ## Examples
 

@@ -30,11 +30,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -49,8 +49,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -66,11 +66,11 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0200 | Medium | [Number of Islands](../0200-number-of-islands/readme.md) | [Number of Islands](https://leetcode.com/problems/number-of-islands/) |
-| 0711 | Hard | [Number of Distinct Islands II](../0711-number-of-distinct-islands-ii/readme.md) | [Number of Distinct Islands II](https://leetcode.com/problems/number-of-distinct-islands-ii/) |
-| 1905 | Medium | [Count Sub Islands](../1905-count-sub-islands/readme.md) | [Count Sub Islands](https://leetcode.com/problems/count-sub-islands/) |
+| Number | Difficulty | Name                                                                             | LeetCode                                                                                      |
+| ------ | ---------- | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| 0200   | Medium     | [Number of Islands](../0200-number-of-islands/readme.md)                         | [Number of Islands](https://leetcode.com/problems/number-of-islands/)                         |
+| 0711   | Hard       | [Number of Distinct Islands II](../0711-number-of-distinct-islands-ii/readme.md) | [Number of Distinct Islands II](https://leetcode.com/problems/number-of-distinct-islands-ii/) |
+| 1905   | Medium     | [Count Sub Islands](../1905-count-sub-islands/readme.md)                         | [Count Sub Islands](https://leetcode.com/problems/count-sub-islands/)                         |
 
 ## Examples
 

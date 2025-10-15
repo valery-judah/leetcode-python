@@ -3,33 +3,33 @@ track: track_neetcode_17_bit_manipulation
 title: NeetCode 250 — Bit Manipulation
 description: Problems from the NeetCode 250 list for Bit Manipulation.
 problems:
-  - slug: single-number
-    title: Single Number
-    difficulty: easy
-  - slug: number-of-1-bits
-    title: Number of 1 Bits
-    difficulty: easy
-  - slug: counting-bits
-    title: Counting Bits
-    difficulty: easy
-  - slug: add-binary
-    title: Add Binary
-    difficulty: easy
-  - slug: reverse-bits
-    title: Reverse Bits
-    difficulty: easy
-  - slug: missing-number
-    title: Missing Number
-    difficulty: easy
-  - slug: sum-of-two-integers
-    title: Sum of Two Integers
-    difficulty: medium
-  - slug: reverse-integer
-    title: Reverse Integer
-    difficulty: medium
-  - slug: bitwise-and-of-numbers-range
-    title: Bitwise AND of Numbers Range
-    difficulty: medium
-  - slug: minimum-array-end
-    title: Minimum Array End
-    difficulty: medium
+    - slug: single-number
+      title: Single Number
+      difficulty: easy
+    - slug: number-of-1-bits
+      title: Number of 1 Bits
+      difficulty: easy
+    - slug: counting-bits
+      title: Counting Bits
+      difficulty: easy
+    - slug: add-binary
+      title: Add Binary
+      difficulty: easy
+    - slug: reverse-bits
+      title: Reverse Bits
+      difficulty: easy
+    - slug: missing-number
+      title: Missing Number
+      difficulty: easy
+    - slug: sum-of-two-integers
+      title: Sum of Two Integers
+      difficulty: medium
+    - slug: reverse-integer
+      title: Reverse Integer
+      difficulty: medium
+    - slug: bitwise-and-of-numbers-range
+      title: Bitwise AND of Numbers Range
+      difficulty: medium
+    - slug: minimum-array-end
+      title: Minimum Array End
+      difficulty: medium

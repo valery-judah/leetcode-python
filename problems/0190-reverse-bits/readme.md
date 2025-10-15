@@ -28,11 +28,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +47,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,11 +64,11 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0007 | Medium | [Reverse Integer](../0007-reverse-integer/readme.md) | [Reverse Integer](https://leetcode.com/problems/reverse-integer/) |
-| 0191 | Easy | [Number of 1 Bits](../0191-number-of-1-bits/readme.md) | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) |
-| 2119 | Easy | [A Number After a Double Reversal](../2119-a-number-after-a-double-reversal/readme.md) | [A Number After a Double Reversal](https://leetcode.com/problems/a-number-after-a-double-reversal/) |
+| Number | Difficulty | Name                                                                                   | LeetCode                                                                                            |
+| ------ | ---------- | -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| 0007   | Medium     | [Reverse Integer](../0007-reverse-integer/readme.md)                                   | [Reverse Integer](https://leetcode.com/problems/reverse-integer/)                                   |
+| 0191   | Easy       | [Number of 1 Bits](../0191-number-of-1-bits/readme.md)                                 | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)                                 |
+| 2119   | Easy       | [A Number After a Double Reversal](../2119-a-number-after-a-double-reversal/readme.md) | [A Number After a Double Reversal](https://leetcode.com/problems/a-number-after-a-double-reversal/) |
 
 ## Examples
 

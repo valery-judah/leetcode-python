@@ -28,11 +28,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +47,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,17 +64,17 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0268 | Easy | [Missing Number](../0268-missing-number/readme.md) | [Missing Number](https://leetcode.com/problems/missing-number/) |
-| 0287 | Medium | [Find the Duplicate Number](../0287-find-the-duplicate-number/readme.md) | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) |
-| 0448 | Easy | [Find All Numbers Disappeared in an Array](../0448-find-all-numbers-disappeared-in-an-array/readme.md) | [Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/) |
-| 0765 | Hard | [Couples Holding Hands](../0765-couples-holding-hands/readme.md) | [Couples Holding Hands](https://leetcode.com/problems/couples-holding-hands/) |
-| 2336 | Medium | [Smallest Number in Infinite Set](../2336-smallest-number-in-infinite-set/readme.md) | [Smallest Number in Infinite Set](https://leetcode.com/problems/smallest-number-in-infinite-set/) |
-| 2554 | Medium | [Maximum Number of Integers to Choose From a Range I](../2554-maximum-number-of-integers-to-choose-from-a-range-i/readme.md) | [Maximum Number of Integers to Choose From a Range I](https://leetcode.com/problems/maximum-number-of-integers-to-choose-from-a-range-i/) |
-| 2598 | Medium | [Smallest Missing Non-negative Integer After Operations](../2598-smallest-missing-non-negative-integer-after-operations/readme.md) | [Smallest Missing Non-negative Integer After Operations](https://leetcode.com/problems/smallest-missing-non-negative-integer-after-operations/) |
-| 2557 | Medium | [Maximum Number of Integers to Choose From a Range II](../2557-maximum-number-of-integers-to-choose-from-a-range-ii/readme.md) | [Maximum Number of Integers to Choose From a Range II](https://leetcode.com/problems/maximum-number-of-integers-to-choose-from-a-range-ii/) |
-| 2996 | Easy | [Smallest Missing Integer Greater Than Sequential Prefix Sum](../2996-smallest-missing-integer-greater-than-sequential-prefix-sum/readme.md) | [Smallest Missing Integer Greater Than Sequential Prefix Sum](https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/) |
+| Number | Difficulty | Name                                                                                                                                         | LeetCode                                                                                                                                                  |
+| ------ | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0268   | Easy       | [Missing Number](../0268-missing-number/readme.md)                                                                                           | [Missing Number](https://leetcode.com/problems/missing-number/)                                                                                           |
+| 0287   | Medium     | [Find the Duplicate Number](../0287-find-the-duplicate-number/readme.md)                                                                     | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)                                                                     |
+| 0448   | Easy       | [Find All Numbers Disappeared in an Array](../0448-find-all-numbers-disappeared-in-an-array/readme.md)                                       | [Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/)                                       |
+| 0765   | Hard       | [Couples Holding Hands](../0765-couples-holding-hands/readme.md)                                                                             | [Couples Holding Hands](https://leetcode.com/problems/couples-holding-hands/)                                                                             |
+| 2336   | Medium     | [Smallest Number in Infinite Set](../2336-smallest-number-in-infinite-set/readme.md)                                                         | [Smallest Number in Infinite Set](https://leetcode.com/problems/smallest-number-in-infinite-set/)                                                         |
+| 2554   | Medium     | [Maximum Number of Integers to Choose From a Range I](../2554-maximum-number-of-integers-to-choose-from-a-range-i/readme.md)                 | [Maximum Number of Integers to Choose From a Range I](https://leetcode.com/problems/maximum-number-of-integers-to-choose-from-a-range-i/)                 |
+| 2598   | Medium     | [Smallest Missing Non-negative Integer After Operations](../2598-smallest-missing-non-negative-integer-after-operations/readme.md)           | [Smallest Missing Non-negative Integer After Operations](https://leetcode.com/problems/smallest-missing-non-negative-integer-after-operations/)           |
+| 2557   | Medium     | [Maximum Number of Integers to Choose From a Range II](../2557-maximum-number-of-integers-to-choose-from-a-range-ii/readme.md)               | [Maximum Number of Integers to Choose From a Range II](https://leetcode.com/problems/maximum-number-of-integers-to-choose-from-a-range-ii/)               |
+| 2996   | Easy       | [Smallest Missing Integer Greater Than Sequential Prefix Sum](../2996-smallest-missing-integer-greater-than-sequential-prefix-sum/readme.md) | [Smallest Missing Integer Greater Than Sequential Prefix Sum](https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/) |
 
 ## Examples
 

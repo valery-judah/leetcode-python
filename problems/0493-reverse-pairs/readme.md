@@ -28,11 +28,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +47,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,10 +64,10 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0315 | Hard | [Count of Smaller Numbers After Self](../0315-count-of-smaller-numbers-after-self/readme.md) | [Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/) |
-| 0327 | Hard | [Count of Range Sum](../0327-count-of-range-sum/readme.md) | [Count of Range Sum](https://leetcode.com/problems/count-of-range-sum/) |
+| Number | Difficulty | Name                                                                                         | LeetCode                                                                                                  |
+| ------ | ---------- | -------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| 0315   | Hard       | [Count of Smaller Numbers After Self](../0315-count-of-smaller-numbers-after-self/readme.md) | [Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/) |
+| 0327   | Hard       | [Count of Range Sum](../0327-count-of-range-sum/readme.md)                                   | [Count of Range Sum](https://leetcode.com/problems/count-of-range-sum/)                                   |
 
 ## Examples
 

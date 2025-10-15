@@ -27,11 +27,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -46,8 +46,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -63,16 +63,16 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0190 | Easy | [Reverse Bits](../0190-reverse-bits/readme.md) | [Reverse Bits](https://leetcode.com/problems/reverse-bits/) |
-| 0231 | Easy | [Power of Two](../0231-power-of-two/readme.md) | [Power of Two](https://leetcode.com/problems/power-of-two/) |
-| 0338 | Easy | [Counting Bits](../0338-counting-bits/readme.md) | [Counting Bits](https://leetcode.com/problems/counting-bits/) |
-| 0401 | Easy | [Binary Watch](../0401-binary-watch/readme.md) | [Binary Watch](https://leetcode.com/problems/binary-watch/) |
-| 0461 | Easy | [Hamming Distance](../0461-hamming-distance/readme.md) | [Hamming Distance](https://leetcode.com/problems/hamming-distance/) |
-| 0693 | Easy | [Binary Number with Alternating Bits](../0693-binary-number-with-alternating-bits/readme.md) | [Binary Number with Alternating Bits](https://leetcode.com/problems/binary-number-with-alternating-bits/) |
-| 0762 | Easy | [Prime Number of Set Bits in Binary Representation](../0762-prime-number-of-set-bits-in-binary-representation/readme.md) | [Prime Number of Set Bits in Binary Representation](https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/) |
-| 3280 | Easy | [Convert Date to Binary](../3280-convert-date-to-binary/readme.md) | [Convert Date to Binary](https://leetcode.com/problems/convert-date-to-binary/) |
+| Number | Difficulty | Name                                                                                                                     | LeetCode                                                                                                                              |
+| ------ | ---------- | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- |
+| 0190   | Easy       | [Reverse Bits](../0190-reverse-bits/readme.md)                                                                           | [Reverse Bits](https://leetcode.com/problems/reverse-bits/)                                                                           |
+| 0231   | Easy       | [Power of Two](../0231-power-of-two/readme.md)                                                                           | [Power of Two](https://leetcode.com/problems/power-of-two/)                                                                           |
+| 0338   | Easy       | [Counting Bits](../0338-counting-bits/readme.md)                                                                         | [Counting Bits](https://leetcode.com/problems/counting-bits/)                                                                         |
+| 0401   | Easy       | [Binary Watch](../0401-binary-watch/readme.md)                                                                           | [Binary Watch](https://leetcode.com/problems/binary-watch/)                                                                           |
+| 0461   | Easy       | [Hamming Distance](../0461-hamming-distance/readme.md)                                                                   | [Hamming Distance](https://leetcode.com/problems/hamming-distance/)                                                                   |
+| 0693   | Easy       | [Binary Number with Alternating Bits](../0693-binary-number-with-alternating-bits/readme.md)                             | [Binary Number with Alternating Bits](https://leetcode.com/problems/binary-number-with-alternating-bits/)                             |
+| 0762   | Easy       | [Prime Number of Set Bits in Binary Representation](../0762-prime-number-of-set-bits-in-binary-representation/readme.md) | [Prime Number of Set Bits in Binary Representation](https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/) |
+| 3280   | Easy       | [Convert Date to Binary](../3280-convert-date-to-binary/readme.md)                                                       | [Convert Date to Binary](https://leetcode.com/problems/convert-date-to-binary/)                                                       |
 
 ## Examples
 

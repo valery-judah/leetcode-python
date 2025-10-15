@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,12 +65,12 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0792 | Medium | [Number of Matching Subsequences](../0792-number-of-matching-subsequences/readme.md) | [Number of Matching Subsequences](https://leetcode.com/problems/number-of-matching-subsequences/) |
-| 1055 | Medium | [Shortest Way to Form String](../1055-shortest-way-to-form-string/readme.md) | [Shortest Way to Form String](https://leetcode.com/problems/shortest-way-to-form-string/) |
-| 2486 | Medium | [Append Characters to String to Make Subsequence](../2486-append-characters-to-string-to-make-subsequence/readme.md) | [Append Characters to String to Make Subsequence](https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/) |
-| 2825 | Medium | [Make String a Subsequence Using Cyclic Increments](../2825-make-string-a-subsequence-using-cyclic-increments/readme.md) | [Make String a Subsequence Using Cyclic Increments](https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments/) |
+| Number | Difficulty | Name                                                                                                                     | LeetCode                                                                                                                              |
+| ------ | ---------- | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- |
+| 0792   | Medium     | [Number of Matching Subsequences](../0792-number-of-matching-subsequences/readme.md)                                     | [Number of Matching Subsequences](https://leetcode.com/problems/number-of-matching-subsequences/)                                     |
+| 1055   | Medium     | [Shortest Way to Form String](../1055-shortest-way-to-form-string/readme.md)                                             | [Shortest Way to Form String](https://leetcode.com/problems/shortest-way-to-form-string/)                                             |
+| 2486   | Medium     | [Append Characters to String to Make Subsequence](../2486-append-characters-to-string-to-make-subsequence/readme.md)     | [Append Characters to String to Make Subsequence](https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/)     |
+| 2825   | Medium     | [Make String a Subsequence Using Cyclic Increments](../2825-make-string-a-subsequence-using-cyclic-increments/readme.md) | [Make String a Subsequence Using Cyclic Increments](https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments/) |
 
 ## Examples
 

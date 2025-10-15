@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,11 +65,11 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0042 | Hard | [Trapping Rain Water](../0042-trapping-rain-water/readme.md) | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) |
-| 2517 | Medium | [Maximum Tastiness of Candy Basket](../2517-maximum-tastiness-of-candy-basket/readme.md) | [Maximum Tastiness of Candy Basket](https://leetcode.com/problems/maximum-tastiness-of-candy-basket/) |
-| 2560 | Medium | [House Robber IV](../2560-house-robber-iv/readme.md) | [House Robber IV](https://leetcode.com/problems/house-robber-iv/) |
+| Number | Difficulty | Name                                                                                     | LeetCode                                                                                              |
+| ------ | ---------- | ---------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| 0042   | Hard       | [Trapping Rain Water](../0042-trapping-rain-water/readme.md)                             | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)                             |
+| 2517   | Medium     | [Maximum Tastiness of Candy Basket](../2517-maximum-tastiness-of-candy-basket/readme.md) | [Maximum Tastiness of Candy Basket](https://leetcode.com/problems/maximum-tastiness-of-candy-basket/) |
+| 2560   | Medium     | [House Robber IV](../2560-house-robber-iv/readme.md)                                     | [House Robber IV](https://leetcode.com/problems/house-robber-iv/)                                     |
 
 ## Examples
 

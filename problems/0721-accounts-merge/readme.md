@@ -31,11 +31,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -50,8 +50,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -67,11 +67,11 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0684 | Medium | [Redundant Connection](../0684-redundant-connection/readme.md) | [Redundant Connection](https://leetcode.com/problems/redundant-connection/) |
-| 0734 | Easy | [Sentence Similarity](../0734-sentence-similarity/readme.md) | [Sentence Similarity](https://leetcode.com/problems/sentence-similarity/) |
-| 0737 | Medium | [Sentence Similarity II](../0737-sentence-similarity-ii/readme.md) | [Sentence Similarity II](https://leetcode.com/problems/sentence-similarity-ii/) |
+| Number | Difficulty | Name                                                               | LeetCode                                                                        |
+| ------ | ---------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------- |
+| 0684   | Medium     | [Redundant Connection](../0684-redundant-connection/readme.md)     | [Redundant Connection](https://leetcode.com/problems/redundant-connection/)     |
+| 0734   | Easy       | [Sentence Similarity](../0734-sentence-similarity/readme.md)       | [Sentence Similarity](https://leetcode.com/problems/sentence-similarity/)       |
+| 0737   | Medium     | [Sentence Similarity II](../0737-sentence-similarity-ii/readme.md) | [Sentence Similarity II](https://leetcode.com/problems/sentence-similarity-ii/) |
 
 ## Examples
 

@@ -27,11 +27,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -46,8 +46,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -63,11 +63,11 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0017 | Medium | [Letter Combinations of a Phone Number](../0017-letter-combinations-of-a-phone-number/readme.md) | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) |
-| 0020 | Easy | [Valid Parentheses](../0020-valid-parentheses/readme.md) | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) |
-| 2116 | Medium | [Check if a Parentheses String Can Be Valid](../2116-check-if-a-parentheses-string-can-be-valid/readme.md) | [Check if a Parentheses String Can Be Valid](https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid/) |
+| Number | Difficulty | Name                                                                                                       | LeetCode                                                                                                                |
+| ------ | ---------- | ---------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| 0017   | Medium     | [Letter Combinations of a Phone Number](../0017-letter-combinations-of-a-phone-number/readme.md)           | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)           |
+| 0020   | Easy       | [Valid Parentheses](../0020-valid-parentheses/readme.md)                                                   | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)                                                   |
+| 2116   | Medium     | [Check if a Parentheses String Can Be Valid](../2116-check-if-a-parentheses-string-can-be-valid/readme.md) | [Check if a Parentheses String Can Be Valid](https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid/) |
 
 ## Examples
 

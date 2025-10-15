@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,13 +65,13 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0011 | Medium | [Container With Most Water](../0011-container-with-most-water/readme.md) | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) |
-| 0238 | Medium | [Product of Array Except Self](../0238-product-of-array-except-self/readme.md) | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) |
-| 0407 | Hard | [Trapping Rain Water II](../0407-trapping-rain-water-ii/readme.md) | [Trapping Rain Water II](https://leetcode.com/problems/trapping-rain-water-ii/) |
-| 0755 | Medium | [Pour Water](../0755-pour-water/readme.md) | [Pour Water](https://leetcode.com/problems/pour-water/) |
-| 2874 | Medium | [Maximum Value of an Ordered Triplet II](../2874-maximum-value-of-an-ordered-triplet-ii/readme.md) | [Maximum Value of an Ordered Triplet II](https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-ii/) |
+| Number | Difficulty | Name                                                                                               | LeetCode                                                                                                        |
+| ------ | ---------- | -------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| 0011   | Medium     | [Container With Most Water](../0011-container-with-most-water/readme.md)                           | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)                           |
+| 0238   | Medium     | [Product of Array Except Self](../0238-product-of-array-except-self/readme.md)                     | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)                     |
+| 0407   | Hard       | [Trapping Rain Water II](../0407-trapping-rain-water-ii/readme.md)                                 | [Trapping Rain Water II](https://leetcode.com/problems/trapping-rain-water-ii/)                                 |
+| 0755   | Medium     | [Pour Water](../0755-pour-water/readme.md)                                                         | [Pour Water](https://leetcode.com/problems/pour-water/)                                                         |
+| 2874   | Medium     | [Maximum Value of an Ordered Triplet II](../2874-maximum-value-of-an-ordered-triplet-ii/readme.md) | [Maximum Value of an Ordered Triplet II](https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-ii/) |
 
 ## Examples
 

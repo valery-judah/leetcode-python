@@ -28,11 +28,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +47,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,14 +64,14 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0215 | Medium | [Kth Largest Element in an Array](../0215-kth-largest-element-in-an-array/readme.md) | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) |
-| 0347 | Medium | [Top K Frequent Elements](../0347-top-k-frequent-elements/readme.md) | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) |
-| 0692 | Medium | [Top K Frequent Words](../0692-top-k-frequent-words/readme.md) | [Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words/) |
-| 1779 | Easy | [Find Nearest Point That Has the Same X or Y Coordinate](../1779-find-nearest-point-that-has-the-same-x-or-y-coordinate/readme.md) | [Find Nearest Point That Has the Same X or Y Coordinate](https://leetcode.com/problems/find-nearest-point-that-has-the-same-x-or-y-coordinate/) |
-| 3111 | Medium | [Minimum Rectangles to Cover Points](../3111-minimum-rectangles-to-cover-points/readme.md) | [Minimum Rectangles to Cover Points](https://leetcode.com/problems/minimum-rectangles-to-cover-points/) |
-| 3275 | Medium | [K-th Nearest Obstacle Queries](../3275-k-th-nearest-obstacle-queries/readme.md) | [K-th Nearest Obstacle Queries](https://leetcode.com/problems/k-th-nearest-obstacle-queries/) |
+| Number | Difficulty | Name                                                                                                                               | LeetCode                                                                                                                                        |
+| ------ | ---------- | ---------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0215   | Medium     | [Kth Largest Element in an Array](../0215-kth-largest-element-in-an-array/readme.md)                                               | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)                                               |
+| 0347   | Medium     | [Top K Frequent Elements](../0347-top-k-frequent-elements/readme.md)                                                               | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)                                                               |
+| 0692   | Medium     | [Top K Frequent Words](../0692-top-k-frequent-words/readme.md)                                                                     | [Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words/)                                                                     |
+| 1779   | Easy       | [Find Nearest Point That Has the Same X or Y Coordinate](../1779-find-nearest-point-that-has-the-same-x-or-y-coordinate/readme.md) | [Find Nearest Point That Has the Same X or Y Coordinate](https://leetcode.com/problems/find-nearest-point-that-has-the-same-x-or-y-coordinate/) |
+| 3111   | Medium     | [Minimum Rectangles to Cover Points](../3111-minimum-rectangles-to-cover-points/readme.md)                                         | [Minimum Rectangles to Cover Points](https://leetcode.com/problems/minimum-rectangles-to-cover-points/)                                         |
+| 3275   | Medium     | [K-th Nearest Obstacle Queries](../3275-k-th-nearest-obstacle-queries/readme.md)                                                   | [K-th Nearest Obstacle Queries](https://leetcode.com/problems/k-th-nearest-obstacle-queries/)                                                   |
 
 ## Examples
 

@@ -28,11 +28,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +47,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,10 +64,10 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 1522 | Medium | [Diameter of N-Ary Tree](../1522-diameter-of-n-ary-tree/readme.md) | [Diameter of N-Ary Tree](https://leetcode.com/problems/diameter-of-n-ary-tree/) |
-| 2246 | Hard | [Longest Path With Different Adjacent Characters](../2246-longest-path-with-different-adjacent-characters/readme.md) | [Longest Path With Different Adjacent Characters](https://leetcode.com/problems/longest-path-with-different-adjacent-characters/) |
+| Number | Difficulty | Name                                                                                                                 | LeetCode                                                                                                                          |
+| ------ | ---------- | -------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| 1522   | Medium     | [Diameter of N-Ary Tree](../1522-diameter-of-n-ary-tree/readme.md)                                                   | [Diameter of N-Ary Tree](https://leetcode.com/problems/diameter-of-n-ary-tree/)                                                   |
+| 2246   | Hard       | [Longest Path With Different Adjacent Characters](../2246-longest-path-with-different-adjacent-characters/readme.md) | [Longest Path With Different Adjacent Characters](https://leetcode.com/problems/longest-path-with-different-adjacent-characters/) |
 
 ## Examples
 

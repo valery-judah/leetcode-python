@@ -28,11 +28,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +47,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,10 +64,10 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0281 | Medium | [Zigzag Iterator](../0281-zigzag-iterator/readme.md) | [Zigzag Iterator](https://leetcode.com/problems/zigzag-iterator/) |
-| 2645 | Medium | [Minimum Additions to Make Valid String](../2645-minimum-additions-to-make-valid-string/readme.md) | [Minimum Additions to Make Valid String](https://leetcode.com/problems/minimum-additions-to-make-valid-string/) |
+| Number | Difficulty | Name                                                                                               | LeetCode                                                                                                        |
+| ------ | ---------- | -------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| 0281   | Medium     | [Zigzag Iterator](../0281-zigzag-iterator/readme.md)                                               | [Zigzag Iterator](https://leetcode.com/problems/zigzag-iterator/)                                               |
+| 2645   | Medium     | [Minimum Additions to Make Valid String](../2645-minimum-additions-to-make-valid-string/readme.md) | [Minimum Additions to Make Valid String](https://leetcode.com/problems/minimum-additions-to-make-valid-string/) |
 
 ## Examples
 

@@ -2,7 +2,8 @@
 
 ## Quick Facts
 
-- URL: [Insert Greatest Common Divisors in Linked List](https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/)
+- URL:
+  [Insert Greatest Common Divisors in Linked List](https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/)
 - Function: `insertGreatestCommonDivisors`
 - Signature: `(head: ListNode | None)  -> ListNode | None`
 - Primary pattern: **Linked List**
@@ -28,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,9 +65,9 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0206 | Easy | [Reverse Linked List](../0206-reverse-linked-list/readme.md) | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) |
+| Number | Difficulty | Name                                                         | LeetCode                                                                  |
+| ------ | ---------- | ------------------------------------------------------------ | ------------------------------------------------------------------------- |
+| 0206   | Easy       | [Reverse Linked List](../0206-reverse-linked-list/readme.md) | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) |
 
 ## Examples
 

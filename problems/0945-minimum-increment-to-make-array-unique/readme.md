@@ -2,7 +2,8 @@
 
 ## Quick Facts
 
-- URL: [Minimum Increment to Make Array Unique](https://leetcode.com/problems/minimum-increment-to-make-array-unique/)
+- URL:
+  [Minimum Increment to Make Array Unique](https://leetcode.com/problems/minimum-increment-to-make-array-unique/)
 - Function: `minIncrementForUnique`
 - Signature: `(nums: list[int])  -> int`
 - Primary pattern: **Greedy**
@@ -28,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,11 +65,11 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 1827 | Easy | [Minimum Operations to Make the Array Increasing](../1827-minimum-operations-to-make-the-array-increasing/readme.md) | [Minimum Operations to Make the Array Increasing](https://leetcode.com/problems/minimum-operations-to-make-the-array-increasing/) |
-| 2233 | Medium | [Maximum Product After K Increments](../2233-maximum-product-after-k-increments/readme.md) | [Maximum Product After K Increments](https://leetcode.com/problems/maximum-product-after-k-increments/) |
-| 3396 | Easy | [Minimum Number of Operations to Make Elements in Array Distinct](../3396-minimum-number-of-operations-to-make-elements-in-array-distinct/readme.md) | [Minimum Number of Operations to Make Elements in Array Distinct](https://leetcode.com/problems/minimum-number-of-operations-to-make-elements-in-array-distinct/) |
+| Number | Difficulty | Name                                                                                                                                                 | LeetCode                                                                                                                                                          |
+| ------ | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1827   | Easy       | [Minimum Operations to Make the Array Increasing](../1827-minimum-operations-to-make-the-array-increasing/readme.md)                                 | [Minimum Operations to Make the Array Increasing](https://leetcode.com/problems/minimum-operations-to-make-the-array-increasing/)                                 |
+| 2233   | Medium     | [Maximum Product After K Increments](../2233-maximum-product-after-k-increments/readme.md)                                                           | [Maximum Product After K Increments](https://leetcode.com/problems/maximum-product-after-k-increments/)                                                           |
+| 3396   | Easy       | [Minimum Number of Operations to Make Elements in Array Distinct](../3396-minimum-number-of-operations-to-make-elements-in-array-distinct/readme.md) | [Minimum Number of Operations to Make Elements in Array Distinct](https://leetcode.com/problems/minimum-number-of-operations-to-make-elements-in-array-distinct/) |
 
 ## Examples
 

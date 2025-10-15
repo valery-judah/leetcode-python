@@ -1,227 +1,237 @@
 version: 1
 track: track_4_intervals
 title: Intervals — Sorting, Merging, and Greedy Scheduling
-description: Sort-by-start, merge-or-pick-by-end, two-pointer intersections, coverage, and scheduling with heaps.
+description:
+    Sort-by-start, merge-or-pick-by-end, two-pointer intersections, coverage, and scheduling with heaps.
 problems:
-  # Warm‑ups
-  - slug: summary-ranges
-    title: Summary Ranges
-    difficulty: easy
-    primary_pattern: interval-scan
-    section: warmups
-    why: >
-      Light intro. Scan and emit segments when gaps appear. Builds habit of sentinel handling and output batching.
+    # Warm‑ups
+    - slug: summary-ranges
+      title: Summary Ranges
+      difficulty: easy
+      primary_pattern: interval-scan
+      section: warmups
+      why: >
+          Light intro. Scan and emit segments when gaps appear. Builds habit of sentinel handling and output
+          batching.
 
-  # Merge / insert / intersect
-  - slug: merge-intervals
-    title: Merge Intervals
-    difficulty: medium
-    primary_pattern: merge-by-start
-    section: merge
-    why: >
-      Canonical: sort by start, append or merge into last. Trains interval overlap test and accumulator pattern.
-  - slug: insert-interval
-    title: Insert Interval
-    difficulty: medium
-    primary_pattern: merge-with-insertion
-    section: merge
-    why: >
-      Insert then merge in one pass: copy left of new, merge overlaps, append right. Sharpens boundary math.
-  - slug: interval-list-intersections
-    title: Interval List Intersections
-    difficulty: medium
-    primary_pattern: two-pointers-intersect
-    section: intersect
-    why: >
-      Two-pointer sweep across two sorted lists; advance the interval that finishes first. Portable to calendars.
-
-  # Non‑overlap, coverage, arrows
-  - slug: non-overlapping-intervals
-    title: Non-overlapping Intervals
-    difficulty: medium
-    primary_pattern: greedy-pick-by-end
-    section: coverage
-    why: >
-      Pick intervals by earliest end to maximize kept segments (or minimize deletions). Core greedy proof.
-  - slug: minimum-number-of-arrows-to-burst-balloons
-    title: Minimum Number of Arrows to Burst Balloons
-    difficulty: medium
-    primary_pattern: greedy-pick-by-end
-    section: coverage
-    why: >
-      Same end-picking idea with inclusive endpoints. Reinforces coordinate conventions and tie handling.
-  - slug: remove-covered-intervals
-    title: Remove Covered Intervals
-    difficulty: medium
-    primary_pattern: coverage-sort-start-desc-end
-    section: coverage
-    why: >
-      Sort by start asc, end desc to detect coverage. Clarifies difference between overlap and containment.
-
-  # Scheduling
-  - slug: meeting-rooms
-    title: Meeting Rooms
-    difficulty: easy
-    primary_pattern: detect-any-overlap
-    section: scheduling
-    why: >
-      Sort and check adjacent overlap. Baseline feasibility test for schedules.
-  - slug: meeting-rooms-ii
-    title: Meeting Rooms II
-    difficulty: medium
-    primary_pattern: min-heap-rooms
-    section: scheduling
-    why: >
-      Min-heap of end times or event sweep to count max concurrent. Introduces sweep/heap scheduling.
-  - slug: employee-free-time
-    title: Employee Free Time
-    difficulty: hard
-    primary_pattern: flatten-merge-gaps
-    section: scheduling
-    why: >
-      Flatten k calendars, merge, then emit gaps. Combines merging and gap detection at scale.
-
-  # Greedy segmentation / costs
-  - slug: partition-labels
-    title: Partition Labels
-    difficulty: medium
-    primary_pattern: last-occurrence-partition
-    section: greedy
-    why: >
-      Treat last positions as interval ends. Greedy cut when current index hits the farthest last occurrence.
-  - slug: two-city-scheduling
-    title: Two City Scheduling
-    difficulty: medium
-    primary_pattern: greedy-delta-sort
-    section: greedy
-    why: >
-      Sort by cost delta B−A and take first half to A, rest to B. Teaches exchange argument style proofs.
-
-notes:
-  ordering: Warm‑ups → merge/insert/intersect → non‑overlap/coverage → scheduling → greedy segmentation/costs.
-  next_track: track_5_linked_lists
-
-extensions:
-  optional:
-    - slug: car-pooling
-      title: Car Pooling
+    # Merge / insert / intersect
+    - slug: merge-intervals
+      title: Merge Intervals
       difficulty: medium
-      primary_pattern: sweep-or-difference-array
-      section: scheduling
-      why: >
-        Capacity‑constrained intervals. Solve with min‑heap of dropoffs or difference array + prefix sum.
-    - slug: corporate-flight-bookings
-      title: Corporate Flight Bookings
-      difficulty: medium
-      primary_pattern: difference-array
-      section: coverage
-      why: >
-        Range add queries via difference array and one prefix pass. Scales to large N.
-    - slug: my-calendar-i
-      title: My Calendar I
-      difficulty: medium
-      primary_pattern: ordered-map-intervals
-      section: data-structures
-      why: >
-        BST/ordered map to detect overlaps. Foundation for calendar series.
-    - slug: my-calendar-ii
-      title: My Calendar II
-      difficulty: medium
-      primary_pattern: sweep-overlaps
-      section: data-structures
-      why: >
-        Allow double but not triple booking. Event counting or map of deltas.
-    - slug: my-calendar-iii
-      title: My Calendar III
-      difficulty: hard
-      primary_pattern: sweep-maximum-overlap
-      section: data-structures
-      why: >
-        Maintain running maximum overlap with ordered map. Heavy but instructive.
-    - slug: minimum-number-of-taps-to-open-to-water-a-garden
-      title: Minimum Number of Taps to Open to Water a Garden
-      difficulty: hard
-      primary_pattern: interval-cover-to-jump-game
-      section: coverage
-      why: >
-        Convert radii to intervals and use greedy cover like Jump Game II.
-    - slug: video-stitching
-      title: Video Stitching
-      difficulty: medium
-      primary_pattern: greedy-cover
-      section: coverage
-      why: >
-        Standard minimum interval cover on [0,T]. Good rehearsal for cover proofs.
-    - slug: remove-interval
-      title: Remove Interval
-      difficulty: medium
-      primary_pattern: interval-diff
+      primary_pattern: merge-by-start
       section: merge
       why: >
-        Subtract one interval from a list, possibly splitting. Sharp boundary tests.
-    - slug: data-stream-as-disjoint-intervals
-      title: Data Stream as Disjoint Intervals
-      difficulty: hard
-      primary_pattern: ordered-set-union
-      section: data-structures
+          Canonical: sort by start, append or merge into last. Trains interval overlap test and accumulator
+          pattern.
+    - slug: insert-interval
+      title: Insert Interval
+      difficulty: medium
+      primary_pattern: merge-with-insertion
+      section: merge
       why: >
-        Maintain disjoint intervals online with TreeSet/ordered map. Complex but powerful.
-    - slug: minimum-interval-to-include-each-query
-      title: Minimum Interval to Include Each Query
-      difficulty: hard
-      primary_pattern: offline-heap
+          Insert then merge in one pass: copy left of new, merge overlaps, append right. Sharpens boundary
+          math.
+    - slug: interval-list-intersections
+      title: Interval List Intersections
+      difficulty: medium
+      primary_pattern: two-pointers-intersect
+      section: intersect
+      why: >
+          Two-pointer sweep across two sorted lists; advance the interval that finishes first. Portable to
+          calendars.
+
+    # Non‑overlap, coverage, arrows
+    - slug: non-overlapping-intervals
+      title: Non-overlapping Intervals
+      difficulty: medium
+      primary_pattern: greedy-pick-by-end
+      section: coverage
+      why: >
+          Pick intervals by earliest end to maximize kept segments (or minimize deletions). Core greedy proof.
+    - slug: minimum-number-of-arrows-to-burst-balloons
+      title: Minimum Number of Arrows to Burst Balloons
+      difficulty: medium
+      primary_pattern: greedy-pick-by-end
+      section: coverage
+      why: >
+          Same end-picking idea with inclusive endpoints. Reinforces coordinate conventions and tie handling.
+    - slug: remove-covered-intervals
+      title: Remove Covered Intervals
+      difficulty: medium
+      primary_pattern: coverage-sort-start-desc-end
+      section: coverage
+      why: >
+          Sort by start asc, end desc to detect coverage. Clarifies difference between overlap and
+          containment.
+
+    # Scheduling
+    - slug: meeting-rooms
+      title: Meeting Rooms
+      difficulty: easy
+      primary_pattern: detect-any-overlap
       section: scheduling
       why: >
-        Sort queries and intervals; push eligible intervals to a heap and pop those that no longer cover.
+          Sort and check adjacent overlap. Baseline feasibility test for schedules.
+    - slug: meeting-rooms-ii
+      title: Meeting Rooms II
+      difficulty: medium
+      primary_pattern: min-heap-rooms
+      section: scheduling
+      why: >
+          Min-heap of end times or event sweep to count max concurrent. Introduces sweep/heap scheduling.
+    - slug: employee-free-time
+      title: Employee Free Time
+      difficulty: hard
+      primary_pattern: flatten-merge-gaps
+      section: scheduling
+      why: >
+          Flatten k calendars, merge, then emit gaps. Combines merging and gap detection at scale.
+
+    # Greedy segmentation / costs
+    - slug: partition-labels
+      title: Partition Labels
+      difficulty: medium
+      primary_pattern: last-occurrence-partition
+      section: greedy
+      why: >
+          Treat last positions as interval ends. Greedy cut when current index hits the farthest last
+          occurrence.
+    - slug: two-city-scheduling
+      title: Two City Scheduling
+      difficulty: medium
+      primary_pattern: greedy-delta-sort
+      section: greedy
+      why: >
+          Sort by cost delta B−A and take first half to A, rest to B. Teaches exchange argument style proofs.
+
+notes:
+    ordering:
+        Warm‑ups → merge/insert/intersect → non‑overlap/coverage → scheduling → greedy segmentation/costs.
+    next_track: track_5_linked_lists
+
+extensions:
+    optional:
+        - slug: car-pooling
+          title: Car Pooling
+          difficulty: medium
+          primary_pattern: sweep-or-difference-array
+          section: scheduling
+          why: >
+              Capacity‑constrained intervals. Solve with min‑heap of dropoffs or difference array + prefix
+              sum.
+        - slug: corporate-flight-bookings
+          title: Corporate Flight Bookings
+          difficulty: medium
+          primary_pattern: difference-array
+          section: coverage
+          why: >
+              Range add queries via difference array and one prefix pass. Scales to large N.
+        - slug: my-calendar-i
+          title: My Calendar I
+          difficulty: medium
+          primary_pattern: ordered-map-intervals
+          section: data-structures
+          why: >
+              BST/ordered map to detect overlaps. Foundation for calendar series.
+        - slug: my-calendar-ii
+          title: My Calendar II
+          difficulty: medium
+          primary_pattern: sweep-overlaps
+          section: data-structures
+          why: >
+              Allow double but not triple booking. Event counting or map of deltas.
+        - slug: my-calendar-iii
+          title: My Calendar III
+          difficulty: hard
+          primary_pattern: sweep-maximum-overlap
+          section: data-structures
+          why: >
+              Maintain running maximum overlap with ordered map. Heavy but instructive.
+        - slug: minimum-number-of-taps-to-open-to-water-a-garden
+          title: Minimum Number of Taps to Open to Water a Garden
+          difficulty: hard
+          primary_pattern: interval-cover-to-jump-game
+          section: coverage
+          why: >
+              Convert radii to intervals and use greedy cover like Jump Game II.
+        - slug: video-stitching
+          title: Video Stitching
+          difficulty: medium
+          primary_pattern: greedy-cover
+          section: coverage
+          why: >
+              Standard minimum interval cover on [0,T]. Good rehearsal for cover proofs.
+        - slug: remove-interval
+          title: Remove Interval
+          difficulty: medium
+          primary_pattern: interval-diff
+          section: merge
+          why: >
+              Subtract one interval from a list, possibly splitting. Sharp boundary tests.
+        - slug: data-stream-as-disjoint-intervals
+          title: Data Stream as Disjoint Intervals
+          difficulty: hard
+          primary_pattern: ordered-set-union
+          section: data-structures
+          why: >
+              Maintain disjoint intervals online with TreeSet/ordered map. Complex but powerful.
+        - slug: minimum-interval-to-include-each-query
+          title: Minimum Interval to Include Each Query
+          difficulty: hard
+          primary_pattern: offline-heap
+          section: scheduling
+          why: >
+              Sort queries and intervals; push eligible intervals to a heap and pop those that no longer
+              cover.
 
 omitted:
-  from_neetcode_250:
-    - id: 1094
-      slug: car-pooling
-      reason: >
-        Provided as an extension. Core keeps to classic merge/coverage before capacity constraints.
-    - id: 1109
-      slug: corporate-flight-bookings
-      reason: >
-        Provided as an extension to practice difference arrays.
-    - id: 352
-      slug: data-stream-as-disjoint-intervals
-      reason: >
-        Heavy ordered‑set maintenance; included as hard extension, not core.
-    - id: 1851
-      slug: minimum-interval-to-include-each-query
-      reason: >
-        Offline heap technique; useful after heap basics in track_3.
-    - id: 729
-      slug: my-calendar-i
-      reason: >
-        Calendar series reserved for extensions due to ordered map requirements.
-  from_leetcode_150:
-    - id: 252
-      slug: meeting-rooms
-      reason: >
-        Included in core.
-    - id: 253
-      slug: meeting-rooms-ii
-      reason: >
-        Included in core.
-    - id: 56
-      slug: merge-intervals
-      reason: >
-        Included in core.
-    - id: 57
-      slug: insert-interval
-      reason: >
-        Included in core.
-    - id: 435
-      slug: non-overlapping-intervals
-      reason: >
-        Included in core.
-    - id: 452
-      slug: minimum-number-of-arrows-to-burst-balloons
-      reason: >
-        Included in core.
-    - id: 1288
-      slug: remove-covered-intervals
-      reason: >
-        Included in core.
+    from_neetcode_250:
+        - id: 1094
+          slug: car-pooling
+          reason: >
+              Provided as an extension. Core keeps to classic merge/coverage before capacity constraints.
+        - id: 1109
+          slug: corporate-flight-bookings
+          reason: >
+              Provided as an extension to practice difference arrays.
+        - id: 352
+          slug: data-stream-as-disjoint-intervals
+          reason: >
+              Heavy ordered‑set maintenance; included as hard extension, not core.
+        - id: 1851
+          slug: minimum-interval-to-include-each-query
+          reason: >
+              Offline heap technique; useful after heap basics in track_3.
+        - id: 729
+          slug: my-calendar-i
+          reason: >
+              Calendar series reserved for extensions due to ordered map requirements.
+    from_leetcode_150:
+        - id: 252
+          slug: meeting-rooms
+          reason: >
+              Included in core.
+        - id: 253
+          slug: meeting-rooms-ii
+          reason: >
+              Included in core.
+        - id: 56
+          slug: merge-intervals
+          reason: >
+              Included in core.
+        - id: 57
+          slug: insert-interval
+          reason: >
+              Included in core.
+        - id: 435
+          slug: non-overlapping-intervals
+          reason: >
+              Included in core.
+        - id: 452
+          slug: minimum-number-of-arrows-to-burst-balloons
+          reason: >
+              Included in core.
+        - id: 1288
+          slug: remove-covered-intervals
+          reason: >
+              Included in core.

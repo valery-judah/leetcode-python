@@ -30,11 +30,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -49,8 +49,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -66,10 +66,10 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0699 | Hard | [Falling Squares](../0699-falling-squares/readme.md) | [Falling Squares](https://leetcode.com/problems/falling-squares/) |
-| 2381 | Medium | [Shifting Letters II](../2381-shifting-letters-ii/readme.md) | [Shifting Letters II](https://leetcode.com/problems/shifting-letters-ii/) |
+| Number | Difficulty | Name                                                         | LeetCode                                                                  |
+| ------ | ---------- | ------------------------------------------------------------ | ------------------------------------------------------------------------- |
+| 0699   | Hard       | [Falling Squares](../0699-falling-squares/readme.md)         | [Falling Squares](https://leetcode.com/problems/falling-squares/)         |
+| 2381   | Medium     | [Shifting Letters II](../2381-shifting-letters-ii/readme.md) | [Shifting Letters II](https://leetcode.com/problems/shifting-letters-ii/) |
 
 ## Examples
 

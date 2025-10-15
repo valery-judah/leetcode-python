@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,15 +65,15 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0055 | Medium | [Jump Game](../0055-jump-game/readme.md) | [Jump Game](https://leetcode.com/problems/jump-game/) |
-| 1306 | Medium | [Jump Game III](../1306-jump-game-iii/readme.md) | [Jump Game III](https://leetcode.com/problems/jump-game-iii/) |
-| 1871 | Medium | [Jump Game VII](../1871-jump-game-vii/readme.md) | [Jump Game VII](https://leetcode.com/problems/jump-game-vii/) |
-| 2297 | Medium | [Jump Game VIII](../2297-jump-game-viii/readme.md) | [Jump Game VIII](https://leetcode.com/problems/jump-game-viii/) |
-| 2617 | Hard | [Minimum Number of Visited Cells in a Grid](../2617-minimum-number-of-visited-cells-in-a-grid/readme.md) | [Minimum Number of Visited Cells in a Grid](https://leetcode.com/problems/minimum-number-of-visited-cells-in-a-grid/) |
-| 2770 | Medium | [Maximum Number of Jumps to Reach the Last Index](../2770-maximum-number-of-jumps-to-reach-the-last-index/readme.md) | [Maximum Number of Jumps to Reach the Last Index](https://leetcode.com/problems/maximum-number-of-jumps-to-reach-the-last-index/) |
-| 2786 | Medium | [Visit Array Positions to Maximize Score](../2786-visit-array-positions-to-maximize-score/readme.md) | [Visit Array Positions to Maximize Score](https://leetcode.com/problems/visit-array-positions-to-maximize-score/) |
+| Number | Difficulty | Name                                                                                                                 | LeetCode                                                                                                                          |
+| ------ | ---------- | -------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| 0055   | Medium     | [Jump Game](../0055-jump-game/readme.md)                                                                             | [Jump Game](https://leetcode.com/problems/jump-game/)                                                                             |
+| 1306   | Medium     | [Jump Game III](../1306-jump-game-iii/readme.md)                                                                     | [Jump Game III](https://leetcode.com/problems/jump-game-iii/)                                                                     |
+| 1871   | Medium     | [Jump Game VII](../1871-jump-game-vii/readme.md)                                                                     | [Jump Game VII](https://leetcode.com/problems/jump-game-vii/)                                                                     |
+| 2297   | Medium     | [Jump Game VIII](../2297-jump-game-viii/readme.md)                                                                   | [Jump Game VIII](https://leetcode.com/problems/jump-game-viii/)                                                                   |
+| 2617   | Hard       | [Minimum Number of Visited Cells in a Grid](../2617-minimum-number-of-visited-cells-in-a-grid/readme.md)             | [Minimum Number of Visited Cells in a Grid](https://leetcode.com/problems/minimum-number-of-visited-cells-in-a-grid/)             |
+| 2770   | Medium     | [Maximum Number of Jumps to Reach the Last Index](../2770-maximum-number-of-jumps-to-reach-the-last-index/readme.md) | [Maximum Number of Jumps to Reach the Last Index](https://leetcode.com/problems/maximum-number-of-jumps-to-reach-the-last-index/) |
+| 2786   | Medium     | [Visit Array Positions to Maximize Score](../2786-visit-array-positions-to-maximize-score/readme.md)                 | [Visit Array Positions to Maximize Score](https://leetcode.com/problems/visit-array-positions-to-maximize-score/)                 |
 
 ## Examples
 

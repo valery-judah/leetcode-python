@@ -1,6 +1,7 @@
 # Project Setup Instructions
 
-To ensure that the project runs correctly and all modules are properly imported, please follow these setup steps after cloning the repository. This guide leverages the project's `Makefile` for a streamlined setup.
+To ensure that the project runs correctly and all modules are properly imported, please follow these setup
+steps after cloning the repository. This guide leverages the project's `Makefile` for a streamlined setup.
 
 ## 1. Create and Activate a Virtual Environment
 
@@ -34,7 +35,9 @@ This will install all the necessary packages listed in `requirements.txt` and `r
 
 ## 3. Install the Project in Editable Mode
 
-To make sure that shared modules like `common` can be found by scripts and tests, you must install the project in "editable" mode. This links the project's source code to your Python environment, so imports work correctly.
+To make sure that shared modules like `common` can be found by scripts and tests, you must install the project
+in "editable" mode. This links the project's source code to your Python environment, so imports work
+correctly.
 
 Run the following command from the project's root directory:
 
@@ -44,7 +47,8 @@ pip install -e .
 
 ## 4. Set Up Pre-Commit Hooks
 
-This project uses pre-commit hooks to automatically check and format your code before you commit. This helps maintain code quality and consistency.
+This project uses pre-commit hooks to automatically check and format your code before you commit. This helps
+maintain code quality and consistency.
 
 To set up the hooks, run:
 
@@ -52,4 +56,5 @@ To set up the hooks, run:
 make precommit
 ```
 
-After completing these steps, your development environment will be fully configured. You will be able to run scripts, tests, and linters without encountering import errors or configuration issues.
+After completing these steps, your development environment will be fully configured. You will be able to run
+scripts, tests, and linters without encountering import errors or configuration issues.

@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,13 +65,13 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0043 | Medium | [Multiply Strings](../0043-multiply-strings/readme.md) | [Multiply Strings](https://leetcode.com/problems/multiply-strings/) |
-| 0067 | Easy | [Add Binary](../0067-add-binary/readme.md) | [Add Binary](https://leetcode.com/problems/add-binary/) |
-| 0369 | Medium | [Plus One Linked List](../0369-plus-one-linked-list/readme.md) | [Plus One Linked List](https://leetcode.com/problems/plus-one-linked-list/) |
-| 0989 | Easy | [Add to Array-Form of Integer](../0989-add-to-array-form-of-integer/readme.md) | [Add to Array-Form of Integer](https://leetcode.com/problems/add-to-array-form-of-integer/) |
-| 2571 | Medium | [Minimum Operations to Reduce an Integer to 0](../2571-minimum-operations-to-reduce-an-integer-to-0/readme.md) | [Minimum Operations to Reduce an Integer to 0](https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/) |
+| Number | Difficulty | Name                                                                                                           | LeetCode                                                                                                                    |
+| ------ | ---------- | -------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| 0043   | Medium     | [Multiply Strings](../0043-multiply-strings/readme.md)                                                         | [Multiply Strings](https://leetcode.com/problems/multiply-strings/)                                                         |
+| 0067   | Easy       | [Add Binary](../0067-add-binary/readme.md)                                                                     | [Add Binary](https://leetcode.com/problems/add-binary/)                                                                     |
+| 0369   | Medium     | [Plus One Linked List](../0369-plus-one-linked-list/readme.md)                                                 | [Plus One Linked List](https://leetcode.com/problems/plus-one-linked-list/)                                                 |
+| 0989   | Easy       | [Add to Array-Form of Integer](../0989-add-to-array-form-of-integer/readme.md)                                 | [Add to Array-Form of Integer](https://leetcode.com/problems/add-to-array-form-of-integer/)                                 |
+| 2571   | Medium     | [Minimum Operations to Reduce an Integer to 0](../2571-minimum-operations-to-reduce-an-integer-to-0/readme.md) | [Minimum Operations to Reduce an Integer to 0](https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/) |
 
 ## Examples
 

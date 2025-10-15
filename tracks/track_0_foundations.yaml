@@ -3,237 +3,253 @@ track: track_0_foundations
 title: Foundations — Arrays, Hashing, Two-Pointers, Prefix, Stack
 description: Core patterns for fast ramp-up. Focus on invariants, O(n) scans, and state compression.
 problems:
-  # Arrays & Hashing
-  - slug: contains-duplicate
-    title: Contains Duplicate
-    difficulty: easy
-    primary_pattern: hash-map
-    section: arrays-hashing
-    why: >
-      Fastest intro to using a set/hash to eliminate rescans. Teaches time–space tradeoff and membership checks.
-  - slug: valid-anagram
-    title: Valid Anagram
-    difficulty: easy
-    primary_pattern: hash-map
-    section: arrays-hashing
-    why: >
-      Counting vs sorting tradeoff. Establishes frequency maps and the habit of proving equality by counts.
-  - slug: two-sum
-    title: Two Sum
-    difficulty: easy
-    primary_pattern: hash-map
-    section: arrays-hashing
-    why: >
-      One-pass hashmap with complement invariant (store index of needed value). Fundamental interview template.
-  - slug: group-anagrams
-    title: Group Anagrams
-    difficulty: medium
-    primary_pattern: hashing-bucketing
-    section: arrays-hashing
-    why: >
-      Normalizes strings to keys (sorted or count vector). Solidifies map-of-lists and custom key design.
-  - slug: top-k-frequent-elements
-    title: Top K Frequent Elements
-    difficulty: medium
-    primary_pattern: heap-or-bucket
-    section: arrays-hashing
-    why: >
-      Frequency table → bucket sort or heap. Introduces picking the right retrieval structure for top-K.
-  - slug: product-of-array-except-self
-    title: Product of Array Except Self
-    difficulty: medium
-    primary_pattern: prefix-suffix
-    section: arrays-hashing
-    why: >
-      State compression with prefix/suffix scans and no division. Teaches two-pass accumulation and space analysis.
-  - slug: valid-sudoku
-    title: Valid Sudoku
-    difficulty: medium
-    primary_pattern: set-constraints
-    section: arrays-hashing
-    why: >
-      Constraint checking across three axes (row/col/box). Practices composite keys and early exit.
-  - slug: longest-consecutive-sequence
-    title: Longest Consecutive Sequence
-    difficulty: medium
-    primary_pattern: set-linear-scan
-    section: arrays-hashing
-    why: >
-      O(n) set trick by only expanding from sequence starts. Trains thinking in terms of invariants over membership.
-  - slug: encode-and-decode-strings
-    title: Encode and Decode Strings
-    difficulty: medium
-    primary_pattern: custom-serialization
-    section: arrays-hashing
-    why: >
-      Practical design: length-prefixed vs delimiter encoding. Forces robustness to arbitrary characters.
-
-  # Two Pointers (basics)
-  - slug: valid-palindrome
-    title: Valid Palindrome
-    difficulty: easy
-    primary_pattern: two-pointers
-    section: two-pointers
-    why: >
-      Canonical left/right scan with filtering. Builds pointer movement and normalization rules.
-  - slug: two-sum-ii-input-array-is-sorted
-    title: Two Sum II - Input Array Is Sorted
-    difficulty: medium
-    primary_pattern: two-pointers
-    section: two-pointers
-    why: >
-      Sorted-array counterpart to hashmap Two Sum. Trains the shrink-from-sides logic based on order.
-  - slug: 3sum
-    title: 3Sum
-    difficulty: medium
-    primary_pattern: two-pointers
-    section: two-pointers
-    why: >
-      Sort + two pointers + duplicate skipping. Foundation for k-sum family and boundary discipline.
-  - slug: container-with-most-water
-    title: Container With Most Water
-    difficulty: medium
-    primary_pattern: two-pointers
-    section: two-pointers
-    why: >
-      Move the limiting side heuristic. Sharpens reasoning about which pointer to advance.
-
-  # Prefix Sum
-  - id: 560
-    slug: subarray-sum-equals-k
-    title: Subarray Sum Equals K
-    difficulty: medium
-    primary_pattern: prefix-sum
-    section: prefix-sum
-    why: >
-      Prefix hashmap for complements handles negatives. Core template reused in many subarray-sum variants.
-
-  # Stack (basics + monotonic)
-  - slug: valid-parentheses
-    title: Valid Parentheses
-    difficulty: easy
-    primary_pattern: stack
-    section: stack
-    why: >
-      Minimal stack checker with close→open mapping. Forces correct empty checks and early failure.
-  - slug: min-stack
-    title: Min Stack
-    difficulty: medium
-    primary_pattern: stack-augmented
-    section: stack
-    why: >
-      Augmented stack with O(1) min via paired minima or encoded deltas. Introduces auxiliary-state design.
-  - slug: daily-temperatures
-    title: Daily Temperatures
-    difficulty: medium
-    primary_pattern: monotonic-stack
-    section: stack
-    why: >
-      Monotonic decreasing stack for next-greater index. Reusable for stock span, next warmer, and similar.
-
-notes:
-  ordering: Arrays & Hashing → Two Pointers → Prefix Sum → Stack.
-  next_track: track_1_sliding_window
-
-extensions:
-  optional:
-    - slug: isomorphic-strings
-      title: Isomorphic Strings
+    # Arrays & Hashing
+    - slug: contains-duplicate
+      title: Contains Duplicate
       difficulty: easy
-      primary_pattern: bijection-maps
+      primary_pattern: hash-map
       section: arrays-hashing
       why: >
-        Dual map/bijection pattern. Sharpens thinking about one-to-one constraints and counterexamples.
-    - slug: ransom-note
-      title: Ransom Note
+          Fastest intro to using a set/hash to eliminate rescans. Teaches time–space tradeoff and membership
+          checks.
+    - slug: valid-anagram
+      title: Valid Anagram
       difficulty: easy
-      primary_pattern: counting
+      primary_pattern: hash-map
       section: arrays-hashing
       why: >
-        Straightforward frequency subtraction. Quick reps on hashmap updates and early exit.
-    - slug: majority-element
-      title: Majority Element
+          Counting vs sorting tradeoff. Establishes frequency maps and the habit of proving equality by
+          counts.
+    - slug: two-sum
+      title: Two Sum
       difficulty: easy
-      primary_pattern: boyer-moore-voting
+      primary_pattern: hash-map
       section: arrays-hashing
       why: >
-        Classic state-compression (candidate, count). Builds invariant proofs and prepares for harder variants.
-    - slug: squares-of-a-sorted-array
-      title: Squares of a Sorted Array
+          One-pass hashmap with complement invariant (store index of needed value). Fundamental interview
+          template.
+    - slug: group-anagrams
+      title: Group Anagrams
+      difficulty: medium
+      primary_pattern: hashing-bucketing
+      section: arrays-hashing
+      why: >
+          Normalizes strings to keys (sorted or count vector). Solidifies map-of-lists and custom key design.
+    - slug: top-k-frequent-elements
+      title: Top K Frequent Elements
+      difficulty: medium
+      primary_pattern: heap-or-bucket
+      section: arrays-hashing
+      why: >
+          Frequency table → bucket sort or heap. Introduces picking the right retrieval structure for top-K.
+    - slug: product-of-array-except-self
+      title: Product of Array Except Self
+      difficulty: medium
+      primary_pattern: prefix-suffix
+      section: arrays-hashing
+      why: >
+          State compression with prefix/suffix scans and no division. Teaches two-pass accumulation and space
+          analysis.
+    - slug: valid-sudoku
+      title: Valid Sudoku
+      difficulty: medium
+      primary_pattern: set-constraints
+      section: arrays-hashing
+      why: >
+          Constraint checking across three axes (row/col/box). Practices composite keys and early exit.
+    - slug: longest-consecutive-sequence
+      title: Longest Consecutive Sequence
+      difficulty: medium
+      primary_pattern: set-linear-scan
+      section: arrays-hashing
+      why: >
+          O(n) set trick by only expanding from sequence starts. Trains thinking in terms of invariants over
+          membership.
+    - slug: encode-and-decode-strings
+      title: Encode and Decode Strings
+      difficulty: medium
+      primary_pattern: custom-serialization
+      section: arrays-hashing
+      why: >
+          Practical design: length-prefixed vs delimiter encoding. Forces robustness to arbitrary characters.
+
+    # Two Pointers (basics)
+    - slug: valid-palindrome
+      title: Valid Palindrome
       difficulty: easy
       primary_pattern: two-pointers
       section: two-pointers
       why: >
-        Two-pointer merge from extremes. Clean practice for output writing and stability.
-    - slug: remove-duplicates-from-sorted-array
-      title: Remove Duplicates from Sorted Array
-      difficulty: easy
-      primary_pattern: two-pointers-slow-fast
+          Canonical left/right scan with filtering. Builds pointer movement and normalization rules.
+    - slug: two-sum-ii-input-array-is-sorted
+      title: Two Sum II - Input Array Is Sorted
+      difficulty: medium
+      primary_pattern: two-pointers
       section: two-pointers
       why: >
-        In-place write head vs read head. Trains index arithmetic and return semantics.
-    - slug: move-zeroes
-      title: Move Zeroes
-      difficulty: easy
-      primary_pattern: two-pointers-slow-fast
+          Sorted-array counterpart to hashmap Two Sum. Trains the shrink-from-sides logic based on order.
+    - slug: 3sum
+      title: 3Sum
+      difficulty: medium
+      primary_pattern: two-pointers
       section: two-pointers
       why: >
-        Stable compaction pattern. Reinforces conditional writes and swap vs overwrite choices.
-    - slug: merge-sorted-array
-      title: Merge Sorted Array
-      difficulty: easy
-      primary_pattern: two-pointers-backfill
+          Sort + two pointers + duplicate skipping. Foundation for k-sum family and boundary discipline.
+    - slug: container-with-most-water
+      title: Container With Most Water
+      difficulty: medium
+      primary_pattern: two-pointers
       section: two-pointers
       why: >
-        Backfill from the end to avoid extra space. Prepares for in-place merges and interval-like merges.
-    - slug: implement-queue-using-stacks
-      title: Implement Queue using Stacks
+          Move the limiting side heuristic. Sharpens reasoning about which pointer to advance.
+
+    # Prefix Sum
+    - id: 560
+      slug: subarray-sum-equals-k
+      title: Subarray Sum Equals K
+      difficulty: medium
+      primary_pattern: prefix-sum
+      section: prefix-sum
+      why: >
+          Prefix hashmap for complements handles negatives. Core template reused in many subarray-sum
+          variants.
+
+    # Stack (basics + monotonic)
+    - slug: valid-parentheses
+      title: Valid Parentheses
       difficulty: easy
-      primary_pattern: two-stacks
+      primary_pattern: stack
       section: stack
       why: >
-        Amortized analysis via lazy transfer. Good exercise in proving amortized O(1).
+          Minimal stack checker with close→open mapping. Forces correct empty checks and early failure.
+    - slug: min-stack
+      title: Min Stack
+      difficulty: medium
+      primary_pattern: stack-augmented
+      section: stack
+      why: >
+          Augmented stack with O(1) min via paired minima or encoded deltas. Introduces auxiliary-state
+          design.
+    - slug: daily-temperatures
+      title: Daily Temperatures
+      difficulty: medium
+      primary_pattern: monotonic-stack
+      section: stack
+      why: >
+          Monotonic decreasing stack for next-greater index. Reusable for stock span, next warmer, and
+          similar.
+
+notes:
+    ordering: Arrays & Hashing → Two Pointers → Prefix Sum → Stack.
+    next_track: track_1_sliding_window
+
+extensions:
+    optional:
+        - slug: isomorphic-strings
+          title: Isomorphic Strings
+          difficulty: easy
+          primary_pattern: bijection-maps
+          section: arrays-hashing
+          why: >
+              Dual map/bijection pattern. Sharpens thinking about one-to-one constraints and counterexamples.
+        - slug: ransom-note
+          title: Ransom Note
+          difficulty: easy
+          primary_pattern: counting
+          section: arrays-hashing
+          why: >
+              Straightforward frequency subtraction. Quick reps on hashmap updates and early exit.
+        - slug: majority-element
+          title: Majority Element
+          difficulty: easy
+          primary_pattern: boyer-moore-voting
+          section: arrays-hashing
+          why: >
+              Classic state-compression (candidate, count). Builds invariant proofs and prepares for harder
+              variants.
+        - slug: squares-of-a-sorted-array
+          title: Squares of a Sorted Array
+          difficulty: easy
+          primary_pattern: two-pointers
+          section: two-pointers
+          why: >
+              Two-pointer merge from extremes. Clean practice for output writing and stability.
+        - slug: remove-duplicates-from-sorted-array
+          title: Remove Duplicates from Sorted Array
+          difficulty: easy
+          primary_pattern: two-pointers-slow-fast
+          section: two-pointers
+          why: >
+              In-place write head vs read head. Trains index arithmetic and return semantics.
+        - slug: move-zeroes
+          title: Move Zeroes
+          difficulty: easy
+          primary_pattern: two-pointers-slow-fast
+          section: two-pointers
+          why: >
+              Stable compaction pattern. Reinforces conditional writes and swap vs overwrite choices.
+        - slug: merge-sorted-array
+          title: Merge Sorted Array
+          difficulty: easy
+          primary_pattern: two-pointers-backfill
+          section: two-pointers
+          why: >
+              Backfill from the end to avoid extra space. Prepares for in-place merges and interval-like
+              merges.
+        - slug: implement-queue-using-stacks
+          title: Implement Queue using Stacks
+          difficulty: easy
+          primary_pattern: two-stacks
+          section: stack
+          why: >
+              Amortized analysis via lazy transfer. Good exercise in proving amortized O(1).
 
 omitted:
-  from_neetcode_250:
-    - id: 680
-      slug: valid-palindrome-ii
-      reason: >
-        Two-pointers with one deletion (k=1). Placed in advanced two-pointers where boundary cases are emphasized.
-    - id: 16
-      slug: 3sum-closest
-      reason: >
-        Variant emphasizes boundary math and pruning. Scheduled for track_2_two_pointers_advanced with 4Sum.
-    - id: 18
-      slug: 4sum
-      reason: >
-        Higher-order k-sum generalization. Fits advanced two-pointers after 3Sum mastery.
-    - id: 268
-      slug: missing-number
-      reason: >
-        XOR/Gauss arithmetic trick. Better in a math/bit-manip track; not core to hash/pointer foundations.
-    - id: 136
-      slug: single-number
-      reason: >
-        XOR identity application. Place in bit-manip basics; low transfer to map/pointer skills.
-    - id: 349
-      slug: intersection-of-two-arrays
-      reason: >
-        Straight set operations. Redundant after anagram/duplicate. Keep for quick drills if needed.
-  from_leetcode_150:
-    - id: 13
-      slug: roman-to-integer
-      reason: >
-        Deterministic parsing problem. Useful but orthogonal to core patterns; treat as warm-up outside track.
-    - id: 14
-      slug: longest-common-prefix
-      reason: >
-        String scanning with edge cases; minimal reuse elsewhere. Keep for speed practice, not core.
-    - id: 150
-      slug: evaluate-reverse-polish-notation
-      reason: >
-        Application of stack evaluation rather than structural stack patterns. Add later if you want arithmetic parsing reps.
-    - id: 189
-      slug: rotate-array
-      reason: >
-        Triple-reverse technique. Good two-pointer exercise but fits better once you start in-place array transforms in track_2.
+    from_neetcode_250:
+        - id: 680
+          slug: valid-palindrome-ii
+          reason: >
+              Two-pointers with one deletion (k=1). Placed in advanced two-pointers where boundary cases are
+              emphasized.
+        - id: 16
+          slug: 3sum-closest
+          reason: >
+              Variant emphasizes boundary math and pruning. Scheduled for track_2_two_pointers_advanced with
+              4Sum.
+        - id: 18
+          slug: 4sum
+          reason: >
+              Higher-order k-sum generalization. Fits advanced two-pointers after 3Sum mastery.
+        - id: 268
+          slug: missing-number
+          reason: >
+              XOR/Gauss arithmetic trick. Better in a math/bit-manip track; not core to hash/pointer
+              foundations.
+        - id: 136
+          slug: single-number
+          reason: >
+              XOR identity application. Place in bit-manip basics; low transfer to map/pointer skills.
+        - id: 349
+          slug: intersection-of-two-arrays
+          reason: >
+              Straight set operations. Redundant after anagram/duplicate. Keep for quick drills if needed.
+    from_leetcode_150:
+        - id: 13
+          slug: roman-to-integer
+          reason: >
+              Deterministic parsing problem. Useful but orthogonal to core patterns; treat as warm-up outside
+              track.
+        - id: 14
+          slug: longest-common-prefix
+          reason: >
+              String scanning with edge cases; minimal reuse elsewhere. Keep for speed practice, not core.
+        - id: 150
+          slug: evaluate-reverse-polish-notation
+          reason: >
+              Application of stack evaluation rather than structural stack patterns. Add later if you want
+              arithmetic parsing reps.
+        - id: 189
+          slug: rotate-array
+          reason: >
+              Triple-reverse technique. Good two-pointer exercise but fits better once you start in-place
+              array transforms in track_2.

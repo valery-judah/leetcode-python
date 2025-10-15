@@ -28,11 +28,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +47,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,14 +64,14 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0234 | Easy | [Palindrome Linked List](../0234-palindrome-linked-list/readme.md) | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) |
-| 0680 | Easy | [Valid Palindrome II](../0680-valid-palindrome-ii/readme.md) | [Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/) |
-| 2002 | Medium | [Maximum Product of the Length of Two Palindromic Subsequences](../2002-maximum-product-of-the-length-of-two-palindromic-subsequences/readme.md) | [Maximum Product of the Length of Two Palindromic Subsequences](https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/) |
-| 2108 | Easy | [Find First Palindromic String in the Array](../2108-find-first-palindromic-string-in-the-array/readme.md) | [Find First Palindromic String in the Array](https://leetcode.com/problems/find-first-palindromic-string-in-the-array/) |
-| 2330 | Medium | [Valid Palindrome IV](../2330-valid-palindrome-iv/readme.md) | [Valid Palindrome IV](https://leetcode.com/problems/valid-palindrome-iv/) |
-| 3035 | Medium | [Maximum Palindromes After Operations](../3035-maximum-palindromes-after-operations/readme.md) | [Maximum Palindromes After Operations](https://leetcode.com/problems/maximum-palindromes-after-operations/) |
+| Number | Difficulty | Name                                                                                                                                             | LeetCode                                                                                                                                                      |
+| ------ | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0234   | Easy       | [Palindrome Linked List](../0234-palindrome-linked-list/readme.md)                                                                               | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)                                                                               |
+| 0680   | Easy       | [Valid Palindrome II](../0680-valid-palindrome-ii/readme.md)                                                                                     | [Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/)                                                                                     |
+| 2002   | Medium     | [Maximum Product of the Length of Two Palindromic Subsequences](../2002-maximum-product-of-the-length-of-two-palindromic-subsequences/readme.md) | [Maximum Product of the Length of Two Palindromic Subsequences](https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/) |
+| 2108   | Easy       | [Find First Palindromic String in the Array](../2108-find-first-palindromic-string-in-the-array/readme.md)                                       | [Find First Palindromic String in the Array](https://leetcode.com/problems/find-first-palindromic-string-in-the-array/)                                       |
+| 2330   | Medium     | [Valid Palindrome IV](../2330-valid-palindrome-iv/readme.md)                                                                                     | [Valid Palindrome IV](https://leetcode.com/problems/valid-palindrome-iv/)                                                                                     |
+| 3035   | Medium     | [Maximum Palindromes After Operations](../3035-maximum-palindromes-after-operations/readme.md)                                                   | [Maximum Palindromes After Operations](https://leetcode.com/problems/maximum-palindromes-after-operations/)                                                   |
 
 ## Examples
 

@@ -2,7 +2,8 @@
 
 ## Quick Facts
 
-- URL: [Remove Stones to Minimize the Total](https://leetcode.com/problems/remove-stones-to-minimize-the-total/)
+- URL:
+  [Remove Stones to Minimize the Total](https://leetcode.com/problems/remove-stones-to-minimize-the-total/)
 - Function: `minStoneSum`
 - Signature: `(piles: list[int], k: int)  -> int`
 - Primary pattern: **Heap (Priority Queue)**
@@ -29,11 +30,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +49,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,11 +66,11 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 2208 | Medium | [Minimum Operations to Halve Array Sum](../2208-minimum-operations-to-halve-array-sum/readme.md) | [Minimum Operations to Halve Array Sum](https://leetcode.com/problems/minimum-operations-to-halve-array-sum/) |
-| 2530 | Medium | [Maximal Score After Applying K Operations](../2530-maximal-score-after-applying-k-operations/readme.md) | [Maximal Score After Applying K Operations](https://leetcode.com/problems/maximal-score-after-applying-k-operations/) |
-| 2558 | Easy | [Take Gifts From the Richest Pile](../2558-take-gifts-from-the-richest-pile/readme.md) | [Take Gifts From the Richest Pile](https://leetcode.com/problems/take-gifts-from-the-richest-pile/) |
+| Number | Difficulty | Name                                                                                                     | LeetCode                                                                                                              |
+| ------ | ---------- | -------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| 2208   | Medium     | [Minimum Operations to Halve Array Sum](../2208-minimum-operations-to-halve-array-sum/readme.md)         | [Minimum Operations to Halve Array Sum](https://leetcode.com/problems/minimum-operations-to-halve-array-sum/)         |
+| 2530   | Medium     | [Maximal Score After Applying K Operations](../2530-maximal-score-after-applying-k-operations/readme.md) | [Maximal Score After Applying K Operations](https://leetcode.com/problems/maximal-score-after-applying-k-operations/) |
+| 2558   | Easy       | [Take Gifts From the Richest Pile](../2558-take-gifts-from-the-richest-pile/readme.md)                   | [Take Gifts From the Richest Pile](https://leetcode.com/problems/take-gifts-from-the-richest-pile/)                   |
 
 ## Examples
 

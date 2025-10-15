@@ -28,11 +28,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +47,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,10 +64,10 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0691 | Hard | [Stickers to Spell Word](../0691-stickers-to-spell-word/readme.md) | [Stickers to Spell Word](https://leetcode.com/problems/stickers-to-spell-word/) |
-| 1160 | Easy | [Find Words That Can Be Formed by Characters](../1160-find-words-that-can-be-formed-by-characters/readme.md) | [Find Words That Can Be Formed by Characters](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/) |
+| Number | Difficulty | Name                                                                                                         | LeetCode                                                                                                                  |
+| ------ | ---------- | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| 0691   | Hard       | [Stickers to Spell Word](../0691-stickers-to-spell-word/readme.md)                                           | [Stickers to Spell Word](https://leetcode.com/problems/stickers-to-spell-word/)                                           |
+| 1160   | Easy       | [Find Words That Can Be Formed by Characters](../1160-find-words-that-can-be-formed-by-characters/readme.md) | [Find Words That Can Be Formed by Characters](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/) |
 
 ## Examples
 

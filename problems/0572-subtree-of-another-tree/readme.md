@@ -30,11 +30,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -49,8 +49,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -66,10 +66,10 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0250 | Medium | [Count Univalue Subtrees](../0250-count-univalue-subtrees/readme.md) | [Count Univalue Subtrees](https://leetcode.com/problems/count-univalue-subtrees/) |
-| 0508 | Medium | [Most Frequent Subtree Sum](../0508-most-frequent-subtree-sum/readme.md) | [Most Frequent Subtree Sum](https://leetcode.com/problems/most-frequent-subtree-sum/) |
+| Number | Difficulty | Name                                                                     | LeetCode                                                                              |
+| ------ | ---------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------- |
+| 0250   | Medium     | [Count Univalue Subtrees](../0250-count-univalue-subtrees/readme.md)     | [Count Univalue Subtrees](https://leetcode.com/problems/count-univalue-subtrees/)     |
+| 0508   | Medium     | [Most Frequent Subtree Sum](../0508-most-frequent-subtree-sum/readme.md) | [Most Frequent Subtree Sum](https://leetcode.com/problems/most-frequent-subtree-sum/) |
 
 ## Examples
 

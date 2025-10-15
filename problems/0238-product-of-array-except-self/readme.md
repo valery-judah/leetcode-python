@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,14 +65,14 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0042 | Hard | [Trapping Rain Water](../0042-trapping-rain-water/readme.md) | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) |
-| 0152 | Medium | [Maximum Product Subarray](../0152-maximum-product-subarray/readme.md) | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) |
-| 0265 | Hard | [Paint House II](../0265-paint-house-ii/readme.md) | [Paint House II](https://leetcode.com/problems/paint-house-ii/) |
-| 2163 | Hard | [Minimum Difference in Sums After Removal of Elements](../2163-minimum-difference-in-sums-after-removal-of-elements/readme.md) | [Minimum Difference in Sums After Removal of Elements](https://leetcode.com/problems/minimum-difference-in-sums-after-removal-of-elements/) |
-| 2906 | Medium | [Construct Product Matrix](../2906-construct-product-matrix/readme.md) | [Construct Product Matrix](https://leetcode.com/problems/construct-product-matrix/) |
-| 3539 | Hard | [Find Sum of Array Product of Magical Sequences](../3539-find-sum-of-array-product-of-magical-sequences/readme.md) | [Find Sum of Array Product of Magical Sequences](https://leetcode.com/problems/find-sum-of-array-product-of-magical-sequences/) |
+| Number | Difficulty | Name                                                                                                                           | LeetCode                                                                                                                                    |
+| ------ | ---------- | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0042   | Hard       | [Trapping Rain Water](../0042-trapping-rain-water/readme.md)                                                                   | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)                                                                   |
+| 0152   | Medium     | [Maximum Product Subarray](../0152-maximum-product-subarray/readme.md)                                                         | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)                                                         |
+| 0265   | Hard       | [Paint House II](../0265-paint-house-ii/readme.md)                                                                             | [Paint House II](https://leetcode.com/problems/paint-house-ii/)                                                                             |
+| 2163   | Hard       | [Minimum Difference in Sums After Removal of Elements](../2163-minimum-difference-in-sums-after-removal-of-elements/readme.md) | [Minimum Difference in Sums After Removal of Elements](https://leetcode.com/problems/minimum-difference-in-sums-after-removal-of-elements/) |
+| 2906   | Medium     | [Construct Product Matrix](../2906-construct-product-matrix/readme.md)                                                         | [Construct Product Matrix](https://leetcode.com/problems/construct-product-matrix/)                                                         |
+| 3539   | Hard       | [Find Sum of Array Product of Magical Sequences](../3539-find-sum-of-array-product-of-magical-sequences/readme.md)             | [Find Sum of Array Product of Magical Sequences](https://leetcode.com/problems/find-sum-of-array-product-of-magical-sequences/)             |
 
 ## Examples
 

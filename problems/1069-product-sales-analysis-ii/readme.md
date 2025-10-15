@@ -27,11 +27,11 @@ None
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -46,8 +46,8 @@ None
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -63,12 +63,12 @@ None
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 1068 | Easy | [Product Sales Analysis I](../1068-product-sales-analysis-i/readme.md) | [Product Sales Analysis I](https://leetcode.com/problems/product-sales-analysis-i/) |
-| 1070 | Medium | [Product Sales Analysis III](../1070-product-sales-analysis-iii/readme.md) | [Product Sales Analysis III](https://leetcode.com/problems/product-sales-analysis-iii/) |
-| 2324 | Medium | [Product Sales Analysis IV](../2324-product-sales-analysis-iv/readme.md) | [Product Sales Analysis IV](https://leetcode.com/problems/product-sales-analysis-iv/) |
-| 2329 | Easy | [Product Sales Analysis V](../2329-product-sales-analysis-v/readme.md) | [Product Sales Analysis V](https://leetcode.com/problems/product-sales-analysis-v/) |
+| Number | Difficulty | Name                                                                       | LeetCode                                                                                |
+| ------ | ---------- | -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| 1068   | Easy       | [Product Sales Analysis I](../1068-product-sales-analysis-i/readme.md)     | [Product Sales Analysis I](https://leetcode.com/problems/product-sales-analysis-i/)     |
+| 1070   | Medium     | [Product Sales Analysis III](../1070-product-sales-analysis-iii/readme.md) | [Product Sales Analysis III](https://leetcode.com/problems/product-sales-analysis-iii/) |
+| 2324   | Medium     | [Product Sales Analysis IV](../2324-product-sales-analysis-iv/readme.md)   | [Product Sales Analysis IV](https://leetcode.com/problems/product-sales-analysis-iv/)   |
+| 2329   | Easy       | [Product Sales Analysis V](../2329-product-sales-analysis-v/readme.md)     | [Product Sales Analysis V](https://leetcode.com/problems/product-sales-analysis-v/)     |
 
 ## Examples
 

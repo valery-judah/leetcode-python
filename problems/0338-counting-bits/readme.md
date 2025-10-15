@@ -27,11 +27,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -46,8 +46,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -63,11 +63,11 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0191 | Easy | [Number of 1 Bits](../0191-number-of-1-bits/readme.md) | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) |
-| 2859 | Easy | [Sum of Values at Indices With K Set Bits](../2859-sum-of-values-at-indices-with-k-set-bits/readme.md) | [Sum of Values at Indices With K Set Bits](https://leetcode.com/problems/sum-of-values-at-indices-with-k-set-bits/) |
-| 2917 | Easy | [Find the K-or of an Array](../2917-find-the-k-or-of-an-array/readme.md) | [Find the K-or of an Array](https://leetcode.com/problems/find-the-k-or-of-an-array/) |
+| Number | Difficulty | Name                                                                                                   | LeetCode                                                                                                            |
+| ------ | ---------- | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- |
+| 0191   | Easy       | [Number of 1 Bits](../0191-number-of-1-bits/readme.md)                                                 | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)                                                 |
+| 2859   | Easy       | [Sum of Values at Indices With K Set Bits](../2859-sum-of-values-at-indices-with-k-set-bits/readme.md) | [Sum of Values at Indices With K Set Bits](https://leetcode.com/problems/sum-of-values-at-indices-with-k-set-bits/) |
+| 2917   | Easy       | [Find the K-or of an Array](../2917-find-the-k-or-of-an-array/readme.md)                               | [Find the K-or of an Array](https://leetcode.com/problems/find-the-k-or-of-an-array/)                               |
 
 ## Examples
 

@@ -35,11 +35,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -54,8 +54,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -71,10 +71,10 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 1970 | Hard | [Last Day Where You Can Still Cross](../1970-last-day-where-you-can-still-cross/readme.md) | [Last Day Where You Can Still Cross](https://leetcode.com/problems/last-day-where-you-can-still-cross/) |
-| 2184 | Medium | [Number of Ways to Build Sturdy Brick Wall](../2184-number-of-ways-to-build-sturdy-brick-wall/readme.md) | [Number of Ways to Build Sturdy Brick Wall](https://leetcode.com/problems/number-of-ways-to-build-sturdy-brick-wall/) |
+| Number | Difficulty | Name                                                                                                     | LeetCode                                                                                                              |
+| ------ | ---------- | -------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| 1970   | Hard       | [Last Day Where You Can Still Cross](../1970-last-day-where-you-can-still-cross/readme.md)               | [Last Day Where You Can Still Cross](https://leetcode.com/problems/last-day-where-you-can-still-cross/)               |
+| 2184   | Medium     | [Number of Ways to Build Sturdy Brick Wall](../2184-number-of-ways-to-build-sturdy-brick-wall/readme.md) | [Number of Ways to Build Sturdy Brick Wall](https://leetcode.com/problems/number-of-ways-to-build-sturdy-brick-wall/) |
 
 ## Examples
 

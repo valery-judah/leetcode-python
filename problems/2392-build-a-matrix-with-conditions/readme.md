@@ -32,11 +32,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -51,8 +51,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -68,12 +68,12 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0207 | Medium | [Course Schedule](../0207-course-schedule/readme.md) | [Course Schedule](https://leetcode.com/problems/course-schedule/) |
-| 0210 | Medium | [Course Schedule II](../0210-course-schedule-ii/readme.md) | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/) |
-| 0802 | Medium | [Find Eventual Safe States](../0802-find-eventual-safe-states/readme.md) | [Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states/) |
-| 0851 | Medium | [Loud and Rich](../0851-loud-and-rich/readme.md) | [Loud and Rich](https://leetcode.com/problems/loud-and-rich/) |
+| Number | Difficulty | Name                                                                     | LeetCode                                                                              |
+| ------ | ---------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------- |
+| 0207   | Medium     | [Course Schedule](../0207-course-schedule/readme.md)                     | [Course Schedule](https://leetcode.com/problems/course-schedule/)                     |
+| 0210   | Medium     | [Course Schedule II](../0210-course-schedule-ii/readme.md)               | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)               |
+| 0802   | Medium     | [Find Eventual Safe States](../0802-find-eventual-safe-states/readme.md) | [Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states/) |
+| 0851   | Medium     | [Loud and Rich](../0851-loud-and-rich/readme.md)                         | [Loud and Rich](https://leetcode.com/problems/loud-and-rich/)                         |
 
 ## Examples
 

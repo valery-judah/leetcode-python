@@ -33,11 +33,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -52,8 +52,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -69,11 +69,11 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0126 | Hard | [Word Ladder II](../0126-word-ladder-ii/readme.md) | [Word Ladder II](https://leetcode.com/problems/word-ladder-ii/) |
-| 0433 | Medium | [Minimum Genetic Mutation](../0433-minimum-genetic-mutation/readme.md) | [Minimum Genetic Mutation](https://leetcode.com/problems/minimum-genetic-mutation/) |
-| 2452 | Medium | [Words Within Two Edits of Dictionary](../2452-words-within-two-edits-of-dictionary/readme.md) | [Words Within Two Edits of Dictionary](https://leetcode.com/problems/words-within-two-edits-of-dictionary/) |
+| Number | Difficulty | Name                                                                                           | LeetCode                                                                                                    |
+| ------ | ---------- | ---------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| 0126   | Hard       | [Word Ladder II](../0126-word-ladder-ii/readme.md)                                             | [Word Ladder II](https://leetcode.com/problems/word-ladder-ii/)                                             |
+| 0433   | Medium     | [Minimum Genetic Mutation](../0433-minimum-genetic-mutation/readme.md)                         | [Minimum Genetic Mutation](https://leetcode.com/problems/minimum-genetic-mutation/)                         |
+| 2452   | Medium     | [Words Within Two Edits of Dictionary](../2452-words-within-two-edits-of-dictionary/readme.md) | [Words Within Two Edits of Dictionary](https://leetcode.com/problems/words-within-two-edits-of-dictionary/) |
 
 ## Examples
 

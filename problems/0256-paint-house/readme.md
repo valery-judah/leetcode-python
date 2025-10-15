@@ -30,11 +30,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -49,8 +49,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -66,13 +66,13 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0198 | Medium | [House Robber](../0198-house-robber/readme.md) | [House Robber](https://leetcode.com/problems/house-robber/) |
-| 0213 | Medium | [House Robber II](../0213-house-robber-ii/readme.md) | [House Robber II](https://leetcode.com/problems/house-robber-ii/) |
-| 0265 | Hard | [Paint House II](../0265-paint-house-ii/readme.md) | [Paint House II](https://leetcode.com/problems/paint-house-ii/) |
-| 0276 | Medium | [Paint Fence](../0276-paint-fence/readme.md) | [Paint Fence](https://leetcode.com/problems/paint-fence/) |
-| 2304 | Medium | [Minimum Path Cost in a Grid](../2304-minimum-path-cost-in-a-grid/readme.md) | [Minimum Path Cost in a Grid](https://leetcode.com/problems/minimum-path-cost-in-a-grid/) |
+| Number | Difficulty | Name                                                                         | LeetCode                                                                                  |
+| ------ | ---------- | ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| 0198   | Medium     | [House Robber](../0198-house-robber/readme.md)                               | [House Robber](https://leetcode.com/problems/house-robber/)                               |
+| 0213   | Medium     | [House Robber II](../0213-house-robber-ii/readme.md)                         | [House Robber II](https://leetcode.com/problems/house-robber-ii/)                         |
+| 0265   | Hard       | [Paint House II](../0265-paint-house-ii/readme.md)                           | [Paint House II](https://leetcode.com/problems/paint-house-ii/)                           |
+| 0276   | Medium     | [Paint Fence](../0276-paint-fence/readme.md)                                 | [Paint Fence](https://leetcode.com/problems/paint-fence/)                                 |
+| 2304   | Medium     | [Minimum Path Cost in a Grid](../2304-minimum-path-cost-in-a-grid/readme.md) | [Minimum Path Cost in a Grid](https://leetcode.com/problems/minimum-path-cost-in-a-grid/) |
 
 ## Examples
 

@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,12 +65,12 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0061 | Medium | [Rotate List](../0061-rotate-list/readme.md) | [Rotate List](https://leetcode.com/problems/rotate-list/) |
-| 0186 | Medium | [Reverse Words in a String II](../0186-reverse-words-in-a-string-ii/readme.md) | [Reverse Words in a String II](https://leetcode.com/problems/reverse-words-in-a-string-ii/) |
-| 2607 | Medium | [Make K-Subarray Sums Equal](../2607-make-k-subarray-sums-equal/readme.md) | [Make K-Subarray Sums Equal](https://leetcode.com/problems/make-k-subarray-sums-equal/) |
-| 3400 | Medium | [Maximum Number of Matching Indices After Right Shifts](../3400-maximum-number-of-matching-indices-after-right-shifts/readme.md) | [Maximum Number of Matching Indices After Right Shifts](https://leetcode.com/problems/maximum-number-of-matching-indices-after-right-shifts/) |
+| Number | Difficulty | Name                                                                                                                             | LeetCode                                                                                                                                      |
+| ------ | ---------- | -------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0061   | Medium     | [Rotate List](../0061-rotate-list/readme.md)                                                                                     | [Rotate List](https://leetcode.com/problems/rotate-list/)                                                                                     |
+| 0186   | Medium     | [Reverse Words in a String II](../0186-reverse-words-in-a-string-ii/readme.md)                                                   | [Reverse Words in a String II](https://leetcode.com/problems/reverse-words-in-a-string-ii/)                                                   |
+| 2607   | Medium     | [Make K-Subarray Sums Equal](../2607-make-k-subarray-sums-equal/readme.md)                                                       | [Make K-Subarray Sums Equal](https://leetcode.com/problems/make-k-subarray-sums-equal/)                                                       |
+| 3400   | Medium     | [Maximum Number of Matching Indices After Right Shifts](../3400-maximum-number-of-matching-indices-after-right-shifts/readme.md) | [Maximum Number of Matching Indices After Right Shifts](https://leetcode.com/problems/maximum-number-of-matching-indices-after-right-shifts/) |
 
 ## Examples
 

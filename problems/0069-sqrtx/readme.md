@@ -27,11 +27,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -46,8 +46,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -63,10 +63,10 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0050 | Medium | [Pow(x, n)](../0050-powx-n/readme.md) | [Pow(x, n)](https://leetcode.com/problems/powx-n/) |
-| 0367 | Easy | [Valid Perfect Square](../0367-valid-perfect-square/readme.md) | [Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/) |
+| Number | Difficulty | Name                                                           | LeetCode                                                                    |
+| ------ | ---------- | -------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| 0050   | Medium     | [Pow(x, n)](../0050-powx-n/readme.md)                          | [Pow(x, n)](https://leetcode.com/problems/powx-n/)                          |
+| 0367   | Easy       | [Valid Perfect Square](../0367-valid-perfect-square/readme.md) | [Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/) |
 
 ## Examples
 

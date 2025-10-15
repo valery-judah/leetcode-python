@@ -30,11 +30,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -49,8 +49,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -66,13 +66,13 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0085 | Hard | [Maximal Rectangle](../0085-maximal-rectangle/readme.md) | [Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/) |
-| 0764 | Medium | [Largest Plus Sign](../0764-largest-plus-sign/readme.md) | [Largest Plus Sign](https://leetcode.com/problems/largest-plus-sign/) |
-| 2201 | Medium | [Count Artifacts That Can Be Extracted](../2201-count-artifacts-that-can-be-extracted/readme.md) | [Count Artifacts That Can Be Extracted](https://leetcode.com/problems/count-artifacts-that-can-be-extracted/) |
-| 2132 | Hard | [Stamping the Grid](../2132-stamping-the-grid/readme.md) | [Stamping the Grid](https://leetcode.com/problems/stamping-the-grid/) |
-| 2943 | Medium | [Maximize Area of Square Hole in Grid](../2943-maximize-area-of-square-hole-in-grid/readme.md) | [Maximize Area of Square Hole in Grid](https://leetcode.com/problems/maximize-area-of-square-hole-in-grid/) |
+| Number | Difficulty | Name                                                                                             | LeetCode                                                                                                      |
+| ------ | ---------- | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------- |
+| 0085   | Hard       | [Maximal Rectangle](../0085-maximal-rectangle/readme.md)                                         | [Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/)                                         |
+| 0764   | Medium     | [Largest Plus Sign](../0764-largest-plus-sign/readme.md)                                         | [Largest Plus Sign](https://leetcode.com/problems/largest-plus-sign/)                                         |
+| 2201   | Medium     | [Count Artifacts That Can Be Extracted](../2201-count-artifacts-that-can-be-extracted/readme.md) | [Count Artifacts That Can Be Extracted](https://leetcode.com/problems/count-artifacts-that-can-be-extracted/) |
+| 2132   | Hard       | [Stamping the Grid](../2132-stamping-the-grid/readme.md)                                         | [Stamping the Grid](https://leetcode.com/problems/stamping-the-grid/)                                         |
+| 2943   | Medium     | [Maximize Area of Square Hole in Grid](../2943-maximize-area-of-square-hole-in-grid/readme.md)   | [Maximize Area of Square Hole in Grid](https://leetcode.com/problems/maximize-area-of-square-hole-in-grid/)   |
 
 ## Examples
 

@@ -28,11 +28,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +47,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,11 +64,11 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0485 | Easy | [Max Consecutive Ones](../0485-max-consecutive-ones/readme.md) | [Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/) |
-| 1004 | Medium | [Max Consecutive Ones III](../1004-max-consecutive-ones-iii/readme.md) | [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/) |
-| 2155 | Medium | [All Divisions With the Highest Score of a Binary Array](../2155-all-divisions-with-the-highest-score-of-a-binary-array/readme.md) | [All Divisions With the Highest Score of a Binary Array](https://leetcode.com/problems/all-divisions-with-the-highest-score-of-a-binary-array/) |
+| Number | Difficulty | Name                                                                                                                               | LeetCode                                                                                                                                        |
+| ------ | ---------- | ---------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0485   | Easy       | [Max Consecutive Ones](../0485-max-consecutive-ones/readme.md)                                                                     | [Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/)                                                                     |
+| 1004   | Medium     | [Max Consecutive Ones III](../1004-max-consecutive-ones-iii/readme.md)                                                             | [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/)                                                             |
+| 2155   | Medium     | [All Divisions With the Highest Score of a Binary Array](../2155-all-divisions-with-the-highest-score-of-a-binary-array/readme.md) | [All Divisions With the Highest Score of a Binary Array](https://leetcode.com/problems/all-divisions-with-the-highest-score-of-a-binary-array/) |
 
 ## Examples
 

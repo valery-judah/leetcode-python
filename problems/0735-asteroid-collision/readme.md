@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,12 +65,12 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0605 | Easy | [Can Place Flowers](../0605-can-place-flowers/readme.md) | [Can Place Flowers](https://leetcode.com/problems/can-place-flowers/) |
-| 2126 | Medium | [Destroying Asteroids](../2126-destroying-asteroids/readme.md) | [Destroying Asteroids](https://leetcode.com/problems/destroying-asteroids/) |
-| 2211 | Medium | [Count Collisions on a Road](../2211-count-collisions-on-a-road/readme.md) | [Count Collisions on a Road](https://leetcode.com/problems/count-collisions-on-a-road/) |
-| 2751 | Hard | [Robot Collisions](../2751-robot-collisions/readme.md) | [Robot Collisions](https://leetcode.com/problems/robot-collisions/) |
+| Number | Difficulty | Name                                                                       | LeetCode                                                                                |
+| ------ | ---------- | -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| 0605   | Easy       | [Can Place Flowers](../0605-can-place-flowers/readme.md)                   | [Can Place Flowers](https://leetcode.com/problems/can-place-flowers/)                   |
+| 2126   | Medium     | [Destroying Asteroids](../2126-destroying-asteroids/readme.md)             | [Destroying Asteroids](https://leetcode.com/problems/destroying-asteroids/)             |
+| 2211   | Medium     | [Count Collisions on a Road](../2211-count-collisions-on-a-road/readme.md) | [Count Collisions on a Road](https://leetcode.com/problems/count-collisions-on-a-road/) |
+| 2751   | Hard       | [Robot Collisions](../2751-robot-collisions/readme.md)                     | [Robot Collisions](https://leetcode.com/problems/robot-collisions/)                     |
 
 ## Examples
 

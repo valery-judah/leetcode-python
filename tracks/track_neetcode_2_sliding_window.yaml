@@ -3,30 +3,30 @@ track: track_neetcode_2_sliding_window
 title: NeetCode 250 — Sliding Window
 description: Problems from the NeetCode 250 list for Sliding Window.
 problems:
-  - slug: contains-duplicate-ii
-    title: Contains Duplicate II
-    difficulty: easy
-  - slug: best-time-to-buy-and-sell-stock
-    title: Best Time to Buy And Sell Stock
-    difficulty: easy
-  - slug: longest-substring-without-repeating-characters
-    title: Longest Substring Without Repeating Characters
-    difficulty: medium
-  - slug: longest-repeating-character-replacement
-    title: Longest Repeating Character Replacement
-    difficulty: medium
-  - slug: permutation-in-string
-    title: Permutation In String
-    difficulty: medium
-  - slug: minimum-size-subarray-sum
-    title: Minimum Size Subarray Sum
-    difficulty: medium
-  - slug: find-k-closest-elements
-    title: Find K Closest Elements
-    difficulty: medium
-  - slug: minimum-window-substring
-    title: Minimum Window Substring
-    difficulty: hard
-  - slug: sliding-window-maximum
-    title: Sliding Window Maximum
-    difficulty: hard
+    - slug: contains-duplicate-ii
+      title: Contains Duplicate II
+      difficulty: easy
+    - slug: best-time-to-buy-and-sell-stock
+      title: Best Time to Buy And Sell Stock
+      difficulty: easy
+    - slug: longest-substring-without-repeating-characters
+      title: Longest Substring Without Repeating Characters
+      difficulty: medium
+    - slug: longest-repeating-character-replacement
+      title: Longest Repeating Character Replacement
+      difficulty: medium
+    - slug: permutation-in-string
+      title: Permutation In String
+      difficulty: medium
+    - slug: minimum-size-subarray-sum
+      title: Minimum Size Subarray Sum
+      difficulty: medium
+    - slug: find-k-closest-elements
+      title: Find K Closest Elements
+      difficulty: medium
+    - slug: minimum-window-substring
+      title: Minimum Window Substring
+      difficulty: hard
+    - slug: sliding-window-maximum
+      title: Sliding Window Maximum
+      difficulty: hard

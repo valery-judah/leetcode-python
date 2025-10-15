@@ -28,11 +28,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +47,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,10 +64,10 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0496 | Easy | [Next Greater Element I](../0496-next-greater-element-i/readme.md) | [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/) |
-| 0901 | Medium | [Online Stock Span](../0901-online-stock-span/readme.md) | [Online Stock Span](https://leetcode.com/problems/online-stock-span/) |
+| Number | Difficulty | Name                                                               | LeetCode                                                                        |
+| ------ | ---------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------- |
+| 0496   | Easy       | [Next Greater Element I](../0496-next-greater-element-i/readme.md) | [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/) |
+| 0901   | Medium     | [Online Stock Span](../0901-online-stock-span/readme.md)           | [Online Stock Span](https://leetcode.com/problems/online-stock-span/)           |
 
 ## Examples
 

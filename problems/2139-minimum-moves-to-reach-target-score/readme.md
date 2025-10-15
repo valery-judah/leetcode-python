@@ -2,7 +2,8 @@
 
 ## Quick Facts
 
-- URL: [Minimum Moves to Reach Target Score](https://leetcode.com/problems/minimum-moves-to-reach-target-score/)
+- URL:
+  [Minimum Moves to Reach Target Score](https://leetcode.com/problems/minimum-moves-to-reach-target-score/)
 - Function: `minMoves`
 - Signature: `(target: int, maxDoubles: int)  -> int`
 - Primary pattern: **Greedy**
@@ -28,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,10 +65,10 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 1342 | Easy | [Number of Steps to Reduce a Number to Zero](../1342-number-of-steps-to-reduce-a-number-to-zero/readme.md) | [Number of Steps to Reduce a Number to Zero](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/) |
-| 1404 | Medium | [Number of Steps to Reduce a Number in Binary Representation to One](../1404-number-of-steps-to-reduce-a-number-in-binary-representation-to-one/readme.md) | [Number of Steps to Reduce a Number in Binary Representation to One](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/) |
+| Number | Difficulty | Name                                                                                                                                                       | LeetCode                                                                                                                                                                |
+| ------ | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1342   | Easy       | [Number of Steps to Reduce a Number to Zero](../1342-number-of-steps-to-reduce-a-number-to-zero/readme.md)                                                 | [Number of Steps to Reduce a Number to Zero](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/)                                                 |
+| 1404   | Medium     | [Number of Steps to Reduce a Number in Binary Representation to One](../1404-number-of-steps-to-reduce-a-number-in-binary-representation-to-one/readme.md) | [Number of Steps to Reduce a Number in Binary Representation to One](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/) |
 
 ## Examples
 

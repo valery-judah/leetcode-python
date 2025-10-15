@@ -28,11 +28,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +47,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,12 +64,12 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 2401 | Medium | [Longest Nice Subarray](../2401-longest-nice-subarray/readme.md) | [Longest Nice Subarray](https://leetcode.com/problems/longest-nice-subarray/) |
-| 2411 | Medium | [Smallest Subarrays With Maximum Bitwise OR](../2411-smallest-subarrays-with-maximum-bitwise-or/readme.md) | [Smallest Subarrays With Maximum Bitwise OR](https://leetcode.com/problems/smallest-subarrays-with-maximum-bitwise-or/) |
-| 2505 | Medium | [Bitwise OR of All Subsequence Sums](../2505-bitwise-or-of-all-subsequence-sums/readme.md) | [Bitwise OR of All Subsequence Sums](https://leetcode.com/problems/bitwise-or-of-all-subsequence-sums/) |
-| 3287 | Hard | [Find the Maximum Sequence Value of Array](../3287-find-the-maximum-sequence-value-of-array/readme.md) | [Find the Maximum Sequence Value of Array](https://leetcode.com/problems/find-the-maximum-sequence-value-of-array/) |
+| Number | Difficulty | Name                                                                                                       | LeetCode                                                                                                                |
+| ------ | ---------- | ---------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| 2401   | Medium     | [Longest Nice Subarray](../2401-longest-nice-subarray/readme.md)                                           | [Longest Nice Subarray](https://leetcode.com/problems/longest-nice-subarray/)                                           |
+| 2411   | Medium     | [Smallest Subarrays With Maximum Bitwise OR](../2411-smallest-subarrays-with-maximum-bitwise-or/readme.md) | [Smallest Subarrays With Maximum Bitwise OR](https://leetcode.com/problems/smallest-subarrays-with-maximum-bitwise-or/) |
+| 2505   | Medium     | [Bitwise OR of All Subsequence Sums](../2505-bitwise-or-of-all-subsequence-sums/readme.md)                 | [Bitwise OR of All Subsequence Sums](https://leetcode.com/problems/bitwise-or-of-all-subsequence-sums/)                 |
+| 3287   | Hard       | [Find the Maximum Sequence Value of Array](../3287-find-the-maximum-sequence-value-of-array/readme.md)     | [Find the Maximum Sequence Value of Array](https://leetcode.com/problems/find-the-maximum-sequence-value-of-array/)     |
 
 ## Examples
 

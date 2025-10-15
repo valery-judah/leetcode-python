@@ -28,11 +28,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +47,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,10 +64,10 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0053 | Medium | [Maximum Subarray](../0053-maximum-subarray/readme.md) | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) |
-| 2765 | Easy | [Longest Alternating Subarray](../2765-longest-alternating-subarray/readme.md) | [Longest Alternating Subarray](https://leetcode.com/problems/longest-alternating-subarray/) |
+| Number | Difficulty | Name                                                                           | LeetCode                                                                                    |
+| ------ | ---------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------- |
+| 0053   | Medium     | [Maximum Subarray](../0053-maximum-subarray/readme.md)                         | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)                         |
+| 2765   | Easy       | [Longest Alternating Subarray](../2765-longest-alternating-subarray/readme.md) | [Longest Alternating Subarray](https://leetcode.com/problems/longest-alternating-subarray/) |
 
 ## Examples
 

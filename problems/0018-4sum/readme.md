@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,12 +65,12 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0001 | Easy | [Two Sum](../0001-two-sum/readme.md) | [Two Sum](https://leetcode.com/problems/two-sum/) |
-| 0015 | Medium | [3Sum](../0015-3sum/readme.md) | [3Sum](https://leetcode.com/problems/3sum/) |
-| 0454 | Medium | [4Sum II](../0454-4sum-ii/readme.md) | [4Sum II](https://leetcode.com/problems/4sum-ii/) |
-| 1995 | Easy | [Count Special Quadruplets](../1995-count-special-quadruplets/readme.md) | [Count Special Quadruplets](https://leetcode.com/problems/count-special-quadruplets/) |
+| Number | Difficulty | Name                                                                     | LeetCode                                                                              |
+| ------ | ---------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------- |
+| 0001   | Easy       | [Two Sum](../0001-two-sum/readme.md)                                     | [Two Sum](https://leetcode.com/problems/two-sum/)                                     |
+| 0015   | Medium     | [3Sum](../0015-3sum/readme.md)                                           | [3Sum](https://leetcode.com/problems/3sum/)                                           |
+| 0454   | Medium     | [4Sum II](../0454-4sum-ii/readme.md)                                     | [4Sum II](https://leetcode.com/problems/4sum-ii/)                                     |
+| 1995   | Easy       | [Count Special Quadruplets](../1995-count-special-quadruplets/readme.md) | [Count Special Quadruplets](https://leetcode.com/problems/count-special-quadruplets/) |
 
 ## Examples
 

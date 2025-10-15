@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,12 +65,12 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0056 | Medium | [Merge Intervals](../0056-merge-intervals/readme.md) | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) |
-| 0253 | Medium | [Meeting Rooms II](../0253-meeting-rooms-ii/readme.md) | [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/) |
-| 2402 | Hard | [Meeting Rooms III](../2402-meeting-rooms-iii/readme.md) | [Meeting Rooms III](https://leetcode.com/problems/meeting-rooms-iii/) |
-| 2848 | Easy | [Points That Intersect With Cars](../2848-points-that-intersect-with-cars/readme.md) | [Points That Intersect With Cars](https://leetcode.com/problems/points-that-intersect-with-cars/) |
+| Number | Difficulty | Name                                                                                 | LeetCode                                                                                          |
+| ------ | ---------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------- |
+| 0056   | Medium     | [Merge Intervals](../0056-merge-intervals/readme.md)                                 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/)                                 |
+| 0253   | Medium     | [Meeting Rooms II](../0253-meeting-rooms-ii/readme.md)                               | [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/)                               |
+| 2402   | Hard       | [Meeting Rooms III](../2402-meeting-rooms-iii/readme.md)                             | [Meeting Rooms III](https://leetcode.com/problems/meeting-rooms-iii/)                             |
+| 2848   | Easy       | [Points That Intersect With Cars](../2848-points-that-intersect-with-cars/readme.md) | [Points That Intersect With Cars](https://leetcode.com/problems/points-that-intersect-with-cars/) |
 
 ## Examples
 

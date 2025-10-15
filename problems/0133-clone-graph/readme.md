@@ -31,11 +31,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -50,8 +50,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -67,11 +67,11 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0138 | Medium | [Copy List with Random Pointer](../0138-copy-list-with-random-pointer/readme.md) | [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) |
-| 1485 | Medium | [Clone Binary Tree With Random Pointer](../1485-clone-binary-tree-with-random-pointer/readme.md) | [Clone Binary Tree With Random Pointer](https://leetcode.com/problems/clone-binary-tree-with-random-pointer/) |
-| 1490 | Medium | [Clone N-ary Tree](../1490-clone-n-ary-tree/readme.md) | [Clone N-ary Tree](https://leetcode.com/problems/clone-n-ary-tree/) |
+| Number | Difficulty | Name                                                                                             | LeetCode                                                                                                      |
+| ------ | ---------- | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------- |
+| 0138   | Medium     | [Copy List with Random Pointer](../0138-copy-list-with-random-pointer/readme.md)                 | [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)                 |
+| 1485   | Medium     | [Clone Binary Tree With Random Pointer](../1485-clone-binary-tree-with-random-pointer/readme.md) | [Clone Binary Tree With Random Pointer](https://leetcode.com/problems/clone-binary-tree-with-random-pointer/) |
+| 1490   | Medium     | [Clone N-ary Tree](../1490-clone-n-ary-tree/readme.md)                                           | [Clone N-ary Tree](https://leetcode.com/problems/clone-n-ary-tree/)                                           |
 
 ## Examples
 

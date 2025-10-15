@@ -30,11 +30,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -49,8 +49,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -66,11 +66,11 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0471 | Hard | [Encode String with Shortest Length](../0471-encode-string-with-shortest-length/readme.md) | [Encode String with Shortest Length](https://leetcode.com/problems/encode-string-with-shortest-length/) |
-| 0726 | Hard | [Number of Atoms](../0726-number-of-atoms/readme.md) | [Number of Atoms](https://leetcode.com/problems/number-of-atoms/) |
-| 1087 | Medium | [Brace Expansion](../1087-brace-expansion/readme.md) | [Brace Expansion](https://leetcode.com/problems/brace-expansion/) |
+| Number | Difficulty | Name                                                                                       | LeetCode                                                                                                |
+| ------ | ---------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------- |
+| 0471   | Hard       | [Encode String with Shortest Length](../0471-encode-string-with-shortest-length/readme.md) | [Encode String with Shortest Length](https://leetcode.com/problems/encode-string-with-shortest-length/) |
+| 0726   | Hard       | [Number of Atoms](../0726-number-of-atoms/readme.md)                                       | [Number of Atoms](https://leetcode.com/problems/number-of-atoms/)                                       |
+| 1087   | Medium     | [Brace Expansion](../1087-brace-expansion/readme.md)                                       | [Brace Expansion](https://leetcode.com/problems/brace-expansion/)                                       |
 
 ## Examples
 

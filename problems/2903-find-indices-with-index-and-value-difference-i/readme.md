@@ -2,7 +2,8 @@
 
 ## Quick Facts
 
-- URL: [Find Indices With Index and Value Difference I](https://leetcode.com/problems/find-indices-with-index-and-value-difference-i/)
+- URL:
+  [Find Indices With Index and Value Difference I](https://leetcode.com/problems/find-indices-with-index-and-value-difference-i/)
 - Function: `findIndices`
 - Signature: `(nums: list[int], indexDifference: int, valueDifference: int)  -> list[int]`
 - Primary pattern: **Two Pointers**
@@ -30,11 +31,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -49,8 +50,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -66,10 +67,10 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 2817 | Medium | [Minimum Absolute Difference Between Elements With Constraint](../2817-minimum-absolute-difference-between-elements-with-constraint/readme.md) | [Minimum Absolute Difference Between Elements With Constraint](https://leetcode.com/problems/minimum-absolute-difference-between-elements-with-constraint/) |
-| 2905 | Medium | [Find Indices With Index and Value Difference II](../2905-find-indices-with-index-and-value-difference-ii/readme.md) | [Find Indices With Index and Value Difference II](https://leetcode.com/problems/find-indices-with-index-and-value-difference-ii/) |
+| Number | Difficulty | Name                                                                                                                                           | LeetCode                                                                                                                                                    |
+| ------ | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2817   | Medium     | [Minimum Absolute Difference Between Elements With Constraint](../2817-minimum-absolute-difference-between-elements-with-constraint/readme.md) | [Minimum Absolute Difference Between Elements With Constraint](https://leetcode.com/problems/minimum-absolute-difference-between-elements-with-constraint/) |
+| 2905   | Medium     | [Find Indices With Index and Value Difference II](../2905-find-indices-with-index-and-value-difference-ii/readme.md)                           | [Find Indices With Index and Value Difference II](https://leetcode.com/problems/find-indices-with-index-and-value-difference-ii/)                           |
 
 ## Examples
 

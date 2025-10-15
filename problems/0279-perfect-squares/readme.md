@@ -27,11 +27,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -46,8 +46,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -63,11 +63,11 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0204 | Medium | [Count Primes](../0204-count-primes/readme.md) | [Count Primes](https://leetcode.com/problems/count-primes/) |
-| 0264 | Medium | [Ugly Number II](../0264-ugly-number-ii/readme.md) | [Ugly Number II](https://leetcode.com/problems/ugly-number-ii/) |
-| 2787 | Medium | [Ways to Express an Integer as Sum of Powers](../2787-ways-to-express-an-integer-as-sum-of-powers/readme.md) | [Ways to Express an Integer as Sum of Powers](https://leetcode.com/problems/ways-to-express-an-integer-as-sum-of-powers/) |
+| Number | Difficulty | Name                                                                                                         | LeetCode                                                                                                                  |
+| ------ | ---------- | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| 0204   | Medium     | [Count Primes](../0204-count-primes/readme.md)                                                               | [Count Primes](https://leetcode.com/problems/count-primes/)                                                               |
+| 0264   | Medium     | [Ugly Number II](../0264-ugly-number-ii/readme.md)                                                           | [Ugly Number II](https://leetcode.com/problems/ugly-number-ii/)                                                           |
+| 2787   | Medium     | [Ways to Express an Integer as Sum of Powers](../2787-ways-to-express-an-integer-as-sum-of-powers/readme.md) | [Ways to Express an Integer as Sum of Powers](https://leetcode.com/problems/ways-to-express-an-integer-as-sum-of-powers/) |
 
 ## Examples
 

@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,12 +65,12 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0222 | Easy | [Count Complete Tree Nodes](../0222-count-complete-tree-nodes/readme.md) | [Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/) |
-| 0272 | Hard | [Closest Binary Search Tree Value II](../0272-closest-binary-search-tree-value-ii/readme.md) | [Closest Binary Search Tree Value II](https://leetcode.com/problems/closest-binary-search-tree-value-ii/) |
-| 0700 | Easy | [Search in a Binary Search Tree](../0700-search-in-a-binary-search-tree/readme.md) | [Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/) |
-| 2476 | Medium | [Closest Nodes Queries in a Binary Search Tree](../2476-closest-nodes-queries-in-a-binary-search-tree/readme.md) | [Closest Nodes Queries in a Binary Search Tree](https://leetcode.com/problems/closest-nodes-queries-in-a-binary-search-tree/) |
+| Number | Difficulty | Name                                                                                                             | LeetCode                                                                                                                      |
+| ------ | ---------- | ---------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| 0222   | Easy       | [Count Complete Tree Nodes](../0222-count-complete-tree-nodes/readme.md)                                         | [Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/)                                         |
+| 0272   | Hard       | [Closest Binary Search Tree Value II](../0272-closest-binary-search-tree-value-ii/readme.md)                     | [Closest Binary Search Tree Value II](https://leetcode.com/problems/closest-binary-search-tree-value-ii/)                     |
+| 0700   | Easy       | [Search in a Binary Search Tree](../0700-search-in-a-binary-search-tree/readme.md)                               | [Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/)                               |
+| 2476   | Medium     | [Closest Nodes Queries in a Binary Search Tree](../2476-closest-nodes-queries-in-a-binary-search-tree/readme.md) | [Closest Nodes Queries in a Binary Search Tree](https://leetcode.com/problems/closest-nodes-queries-in-a-binary-search-tree/) |
 
 ## Examples
 

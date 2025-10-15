@@ -1,14 +1,16 @@
 # Solving LeetCode 242 “Valid Anagram” — Rigorous Interview Guide
 
-> Purpose: a compact, reusable guide to derive, verify, implement, and defend solutions for LeetCode 242 in interviews and code reviews.
+> Purpose: a compact, reusable guide to derive, verify, implement, and defend solutions for LeetCode 242 in
+> interviews and code reviews.
 
-______________________________________________________________________
+---
 
 ## 1) Problem Restatement
 
-Given two strings `s` and `t`, return `True` if `t` is an anagram of `s`, else `False`. An anagram has identical character multiplicities. Order is irrelevant.
+Given two strings `s` and `t`, return `True` if `t` is an anagram of `s`, else `False`. An anagram has
+identical character multiplicities. Order is irrelevant.
 
-______________________________________________________________________
+---
 
 ## 2) Assumptions and Constraints
 
@@ -21,53 +23,57 @@ Clarify before coding:
 
 Default if unstated: ASCII, case-sensitive, in‑memory, `n = len(s) = len(t)` up to a few 10^5.
 
-______________________________________________________________________
+---
 
 ## 3) Discovery Path (How to Arrive at a Solution)
 
 1. **State the invariant you need**: equality of multisets of characters.
 1. **Naive idea**: membership checks (`c in t`) fail because they ignore multiplicity.
-1. **Key observation**: sorting equalizes order; counting equalizes multiplicity. Either proves multiset equality.
+1. **Key observation**: sorting equalizes order; counting equalizes multiplicity. Either proves multiset
+   equality.
 1. **Choose DS by constraints**:
-   - Unknown or large alphabet → hash map counts.
-   - Small fixed alphabet (ASCII) → fixed-size int array.
-   - When unsure or rushed → sorting often passes and is shortest to code.
+    - Unknown or large alphabet → hash map counts.
+    - Small fixed alphabet (ASCII) → fixed-size int array.
+    - When unsure or rushed → sorting often passes and is shortest to code.
 
-______________________________________________________________________
+---
 
 ## 4) Algorithms and Trade‑offs
 
-| Method | Time | Space | When to Use | Notes |
-|---|---:|---:|---|---|
-| Sort both strings | `O(n log n)` | `O(n)` | Fast to write; any alphabet | Correct by permutation equality after sort |
-| Hash‑map counting | `O(n)` avg | `O(k)` | Large/unknown alphabets | Robust; needs careful decrements |
-| Fixed array (ASCII) | `O(n)` | `O(1)` | Known small alphabet | Best constants; simplest invariant check |
+| Method              |         Time |  Space | When to Use                 | Notes                                      |
+| ------------------- | -----------: | -----: | --------------------------- | ------------------------------------------ |
+| Sort both strings   | `O(n log n)` | `O(n)` | Fast to write; any alphabet | Correct by permutation equality after sort |
+| Hash‑map counting   |   `O(n)` avg | `O(k)` | Large/unknown alphabets     | Robust; needs careful decrements           |
+| Fixed array (ASCII) |       `O(n)` | `O(1)` | Known small alphabet        | Best constants; simplest invariant check   |
 
 `k` = number of distinct characters observed.
 
-______________________________________________________________________
+---
 
 ## 5) Correctness Sketches
 
-**Sorting**: If sorted strings are equal, they contain exactly the same characters with the same multiplicities, hence are anagrams. Conversely, anagrams sort to the same sequence. ⇔ relation holds.
+**Sorting**: If sorted strings are equal, they contain exactly the same characters with the same
+multiplicities, hence are anagrams. Conversely, anagrams sort to the same sequence. ⇔ relation holds.
 
 **Counting (hash map or array)**:
 
-- Invariant: after processing the i‑th position of both strings, for every character `x`, `count[x]` equals `(# of x in s[0..i]) − (# of x in t[0..i])`.
+- Invariant: after processing the i‑th position of both strings, for every character `x`, `count[x]` equals
+  `(# of x in s[0..i]) − (# of x in t[0..i])`.
 - Initialization: all zero.
 - Maintenance: increment on `s[i]`, decrement on `t[i]`.
 - Termination: all counts zero ⇔ equal multiplicities.
 
 Early failure: any decrement below zero implies `t` overuses some char, so not an anagram.
 
-______________________________________________________________________
+---
 
 ## 6) Complexity
 
-- Sorting: time `O(n log n)`, extra space `O(n)` due to Python sorting copies for strings; or `O(1)` if sorting lists in place after conversion.
+- Sorting: time `O(n log n)`, extra space `O(n)` due to Python sorting copies for strings; or `O(1)` if
+  sorting lists in place after conversion.
 - Counting: time `O(n)` average; space `O(k)` hash map or `O(1)` fixed-size array.
 
-______________________________________________________________________
+---
 
 ## 7) Implementations (Python)
 
@@ -136,7 +142,7 @@ def is_anagram_unicode(s: str, t: str, normalization: str = "NFC", casefold: boo
     return all(v == 0 for v in counts.values())
 ```
 
-______________________________________________________________________
+---
 
 ## 8) Tests
 
@@ -196,7 +202,7 @@ for _ in range(200):
     assert not is_anagram_count(a, b)
 ```
 
-______________________________________________________________________
+---
 
 ## 9) Pitfalls Checklist
 
@@ -207,13 +213,17 @@ ______________________________________________________________________
 - [ ] Off‑by‑one in paired iteration.
 - [ ] Mutated counts asymmetrically (only increments or only decrements).
 
-______________________________________________________________________
+---
 
 ## 10) Interview Talk‑track
 
 ### 10.1 Default script (≈25s)
 
-“First, I check lengths and return False if they differ. If equal, I choose between sort and count. Sorting is `O(n log n)` and shortest to write. Counting is `O(n)` by maintaining a per‑char net count that ends at zero. For ASCII I use a fixed array for constant space and best constants; for Unicode I normalize (NFC) and use a dict. Correctness follows from multiset equality; the loop invariant is that after i steps, counts reflect the difference in multiplicities over prefixes. I can discuss trade‑offs or handle streaming if inputs are huge.”
+“First, I check lengths and return False if they differ. If equal, I choose between sort and count. Sorting is
+`O(n log n)` and shortest to write. Counting is `O(n)` by maintaining a per‑char net count that ends at zero.
+For ASCII I use a fixed array for constant space and best constants; for Unicode I normalize (NFC) and use a
+dict. Correctness follows from multiset equality; the loop invariant is that after i steps, counts reflect the
+difference in multiplicities over prefixes. I can discuss trade‑offs or handle streaming if inputs are huge.”
 
 ### 10.2 If constraints are unknown
 
@@ -234,7 +244,8 @@ ______________________________________________________________________
 
 ### 10.5 If memory is tight or data is streaming
 
-- Streaming files: single pass that increments for `s` and decrements for `t` per chunk; maintain dict/array counts; verify zeros at end.
+- Streaming files: single pass that increments for `s` and decrements for `t` per chunk; maintain dict/array
+  counts; verify zeros at end.
 - Very large but disk‑resident: external sort both files then merge‑scan; `O(n log n)` with low RAM.
 
 ### 10.6 Trade‑off one‑liners
@@ -265,7 +276,9 @@ Unicode/case rules?
 
 ### 10.9 Micro‑derivation to narrate (invariant)
 
-“Let `count[x]` be net multiplicity of `x`. Start zeros. For each i: `++count[s[i]]`, `--count[t[i]]`. If strings are anagrams, every char’s net is zero at end. If any `count[x]` dips negative during the scan, `t` overuses `x`, so we can early‑reject.”
+“Let `count[x]` be net multiplicity of `x`. Start zeros. For each i: `++count[s[i]]`, `--count[t[i]]`. If
+strings are anagrams, every char’s net is zero at end. If any `count[x]` dips negative during the scan, `t`
+overuses `x`, so we can early‑reject.”
 
 ### 10.10 Sample Q&A
 
@@ -278,9 +291,10 @@ Unicode/case rules?
 - **Q:** Worst case for dict?\
   **A:** Many distinct code points increase `k`; still linear in `n` updates.
 - **Q:** How to handle emojis?\
-  **A:** Clarify requirement. If grapheme‑aware, need segmentation library; otherwise code‑point comparison per problem norms.
+  **A:** Clarify requirement. If grapheme‑aware, need segmentation library; otherwise code‑point comparison
+  per problem norms.
 
-______________________________________________________________________
+---
 
 ## 11) Extensions
 
@@ -290,14 +304,15 @@ ______________________________________________________________________
 - **Near‑anagram distance**: L1 distance of count vectors.
 - **Streaming**: process files chunk‑by‑chunk, maintain counts per byte/char.
 
-______________________________________________________________________
+---
 
 ## Appendix A — Unicode Notes
 
 - Combine **normalization** (NFC/NFKC) with **casefold** if case‑insensitive equality is desired.
-- Be aware of grapheme clusters (emoji sequences, skin tones). Python iterates code points, not grapheme clusters. For interviews, code‑point counting is usually acceptable; clarify if needed.
+- Be aware of grapheme clusters (emoji sequences, skin tones). Python iterates code points, not grapheme
+  clusters. For interviews, code‑point counting is usually acceptable; clarify if needed.
 
-______________________________________________________________________
+---
 
 ## Appendix B — Reflection Prompts
 

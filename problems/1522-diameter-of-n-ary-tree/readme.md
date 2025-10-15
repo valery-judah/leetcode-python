@@ -28,11 +28,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +47,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,9 +64,9 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0543 | Easy | [Diameter of Binary Tree](../0543-diameter-of-binary-tree/readme.md) | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/) |
+| Number | Difficulty | Name                                                                 | LeetCode                                                                          |
+| ------ | ---------- | -------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| 0543   | Easy       | [Diameter of Binary Tree](../0543-diameter-of-binary-tree/readme.md) | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/) |
 
 ## Examples
 

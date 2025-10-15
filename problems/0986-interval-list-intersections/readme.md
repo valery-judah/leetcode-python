@@ -32,11 +32,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -51,8 +51,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -68,12 +68,12 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0056 | Medium | [Merge Intervals](../0056-merge-intervals/readme.md) | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) |
-| 0088 | Easy | [Merge Sorted Array](../0088-merge-sorted-array/readme.md) | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) |
-| 0759 | Hard | [Employee Free Time](../0759-employee-free-time/readme.md) | [Employee Free Time](https://leetcode.com/problems/employee-free-time/) |
-| 2410 | Medium | [Maximum Matching of Players With Trainers](../2410-maximum-matching-of-players-with-trainers/readme.md) | [Maximum Matching of Players With Trainers](https://leetcode.com/problems/maximum-matching-of-players-with-trainers/) |
+| Number | Difficulty | Name                                                                                                     | LeetCode                                                                                                              |
+| ------ | ---------- | -------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| 0056   | Medium     | [Merge Intervals](../0056-merge-intervals/readme.md)                                                     | [Merge Intervals](https://leetcode.com/problems/merge-intervals/)                                                     |
+| 0088   | Easy       | [Merge Sorted Array](../0088-merge-sorted-array/readme.md)                                               | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)                                               |
+| 0759   | Hard       | [Employee Free Time](../0759-employee-free-time/readme.md)                                               | [Employee Free Time](https://leetcode.com/problems/employee-free-time/)                                               |
+| 2410   | Medium     | [Maximum Matching of Players With Trainers](../2410-maximum-matching-of-players-with-trainers/readme.md) | [Maximum Matching of Players With Trainers](https://leetcode.com/problems/maximum-matching-of-players-with-trainers/) |
 
 ## Examples
 

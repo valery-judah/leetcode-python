@@ -3,15 +3,15 @@ track: track_neetcode_9_tries
 title: NeetCode 250 — Tries
 description: Problems from the NeetCode 250 list for Tries.
 problems:
-  - slug: implement-trie-prefix-tree
-    title: Implement Trie Prefix Tree
-    difficulty: medium
-  - slug: design-add-and-search-words-data-structure
-    title: Design Add And Search Words Data Structure
-    difficulty: medium
-  - slug: extra-characters-in-a-string
-    title: Extra Characters in a String
-    difficulty: medium
-  - slug: word-search-ii
-    title: Word Search II
-    difficulty: hard
+    - slug: implement-trie-prefix-tree
+      title: Implement Trie Prefix Tree
+      difficulty: medium
+    - slug: design-add-and-search-words-data-structure
+      title: Design Add And Search Words Data Structure
+      difficulty: medium
+    - slug: extra-characters-in-a-string
+      title: Extra Characters in a String
+      difficulty: medium
+    - slug: word-search-ii
+      title: Word Search II
+      difficulty: hard

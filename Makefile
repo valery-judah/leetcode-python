@@ -87,10 +87,6 @@ markdown: tracks-report tracks-table
 build:
 	@echo "--- Running code formatters ---"
 	make fmt
-# 	@echo "--- Formatting Markdown ---"
-# 	make format-md
-# 	@echo "--- Formatting JSON ---"
-# 	make fmt-json
 	@echo "--- Running linters ---"
 	make lint
 	@echo "--- Type checking ---"
@@ -101,13 +97,6 @@ build:
 	make markdown
 	@echo "--- Running pre-commit on all files (final step) ---"
 	make precommit-all
-
-# Target: format-md
-# Automatically formats all Markdown files in the repository using mdformat.
-# This target should be used locally to fix files.
-format-md:
-	@echo "--- Formatting Markdown files with mdformat ---"
-	$(PYTHON) -m mdformat README.md docs problems tracks archive topics
 
 # JSON formatting via pre-commit hook (pretty-format-json)
 fmt-json:

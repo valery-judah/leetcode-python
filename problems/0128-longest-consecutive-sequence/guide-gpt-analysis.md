@@ -1,48 +1,48 @@
 # **1) Diagnosis of your logic**
 
 - **Strong starts**
+    - Correctly identifies the core operation: fast membership → use a hash set.
 
-  - Correctly identifies the core operation: fast membership → use a hash set.
+    - Spots the flaw in “scan from global minimum”: the numeric range is huge, so “what’s next?” over ℤ is
+      intractable.
 
-  - Spots the flaw in “scan from global minimum”: the numeric range is huge, so “what’s next?” over ℤ is intractable.
-
-  - Explicitly calls out the key predicate: “x is a start iff x-1 ∉ set.”
+    - Explicitly calls out the key predicate: “x is a start iff x-1 ∉ set.”
 
 - **Gaps / corrections**
+    - **Complexity misstatement:** “Brute force is O(n!)” is incorrect here. Common baselines are:
+        - Sort + scan: O(n log n) time, O(1) extra if in-place.
 
-  - **Complexity misstatement:** “Brute force is O(n!)” is incorrect here. Common baselines are:
+        - Un-pruned set walk from every element: worst-case O(n^2) (re-walking tails), not factorial.
 
-    - Sort + scan: O(n log n) time, O(1) extra if in-place.
+    - **Iteration domain not nailed down early:** You hint at it; make it explicit: iterate over **observed
+      values** only (the set), never over a numeric interval.
 
-    - Un-pruned set walk from every element: worst-case O(n^2) (re-walking tails), not factorial.
-
-  - **Iteration domain not nailed down early:** You hint at it; make it explicit: iterate over **observed values** only (the set), never over a numeric interval.
-
-  - **Redundancy audit not formalized:** You see the symptom. Name the rule that kills it: “only start at numbers without predecessors.”
+    - **Redundancy audit not formalized:** You see the symptom. Name the rule that kills it: “only start at
+      numbers without predecessors.”
 
 # **2) Diagnosis of Gemini’s proposal**
 
 - **Strengths**
+    - Clear **naive → failure → aha → rule** cadence.
 
-  - Clear **naive → failure → aha → rule** cadence.
+    - The “start if and only if no predecessor” rule is front and center.
 
-  - The “start if and only if no predecessor” rule is front and center.
-
-  - Explains the greedy flavor: eliminate middle elements by definition.
+    - Explains the greedy flavor: eliminate middle elements by definition.
 
 - **Gaps**
+    - Light on a correctness invariant (why every maximal run is visited exactly once).
 
-  - Light on a correctness invariant (why every maximal run is visited exactly once).
+    - Light on duplicates and dedup strategy when describing the sorting oracle.
 
-  - Light on duplicates and dedup strategy when describing the sorting oracle.
-
-  - Skips iteration-domain language (‘values vs range’), which is your sticking point.
+    - Skips iteration-domain language (‘values vs range’), which is your sticking point.
 
 # **3) Merged heuristics that bridge your gap**
 
-- **Redundant-work audit:** If you walk from every x, you recompute tails x+1, x+2, …. Kill this by filtering to **starts** only.
+- **Redundant-work audit:** If you walk from every x, you recompute tails x+1, x+2, …. Kill this by filtering
+  to **starts** only.
 
-- **Start-of-work-unit heuristic:** A work unit = one maximal consecutive block. Unique start property: x is a start ⇔ x-1 ∉ S. Check is O(1).
+- **Start-of-work-unit heuristic:** A work unit = one maximal consecutive block. Unique start property: x is a
+  start ⇔ x-1 ∉ S. Check is O(1).
 
 - **Iteration-domain shift:** Loop over the **set of given numbers** S, not over [min(nums), max(nums)].
 
@@ -56,9 +56,12 @@
 
 # **5) Plain-English correctness you can say**
 
-- **Dominance/exchange:** If x-1 ∈ S, then any run that includes x is also discovered from x-1. Starting from x would duplicate work. So only x with x-1 ∉ S can start a new, undiscovered run.
+- **Dominance/exchange:** If x-1 ∈ S, then any run that includes x is also discovered from x-1. Starting from
+  x would duplicate work. So only x with x-1 ∉ S can start a new, undiscovered run.
 
-- **Loop invariant:** When growing from a start x, at step k the pointer sits at x+k and all x, …, x+k-1 are in S. The loop stops exactly when x+L ∉ S. No other start can claim a member of this run because every interior z has z-1 ∈ S.
+- **Loop invariant:** When growing from a start x, at step k the pointer sits at x+k and all x, …, x+k-1 are
+  in S. The loop stops exactly when x+L ∉ S. No other start can claim a member of this run because every
+  interior z has z-1 ∈ S.
 
 # **6) Your notes, upgraded (interview bullets)**
 
@@ -86,13 +89,17 @@
 
 - **Initial observation.** We need runs like …, k, k+1, …. Only membership matters.
 
-- **Naive idea & failure mode.** Sort and line-scan to count runs. Correct but O(n log n). If we instead walk forward from **every** number using a set, we re-walk tails → O(n^2) in a single long run.
+- **Naive idea & failure mode.** Sort and line-scan to count runs. Correct but O(n log n). If we instead walk
+  forward from **every** number using a set, we re-walk tails → O(n^2) in a single long run.
 
-- **Aha!** Each maximal run has a **unique smallest element**. We can find it with a constant-time predicate: x is a start iff x-1 is **not** present.
+- **Aha!** Each maximal run has a **unique smallest element**. We can find it with a constant-time predicate:
+  x is a start iff x-1 is **not** present.
 
-- **Rule.** Build S = set(nums). For each x ∈ S, **only** if x-1 ∉ S, walk y = x, x+1, … while y ∈ S; update best with y - x.
+- **Rule.** Build S = set(nums). For each x ∈ S, **only** if x-1 ∉ S, walk y = x, x+1, … while y ∈ S; update
+  best with y - x.
 
-- **Micro-walkthrough.** [100,4,200,1,3,2] → S={…}. Starts: 100 (no 99), 1 (no 0), 200 (no 199). Lengths: 100→1, 1→4 (1,2,3,4), 200→1. Answer 4. We never start at 2,3,4 since each has a predecessor.
+- **Micro-walkthrough.** [100,4,200,1,3,2] → S={…}. Starts: 100 (no 99), 1 (no 0), 200 (no 199). Lengths:
+  100→1, 1→4 (1,2,3,4), 200→1. Answer 4. We never start at 2,3,4 since each has a predecessor.
 
 # **8) Common pitfalls to preempt**
 

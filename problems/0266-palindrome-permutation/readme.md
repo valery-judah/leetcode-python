@@ -28,11 +28,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +47,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,12 +64,12 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0005 | Medium | [Longest Palindromic Substring](../0005-longest-palindromic-substring/readme.md) | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) |
-| 0242 | Easy | [Valid Anagram](../0242-valid-anagram/readme.md) | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) |
-| 0267 | Medium | [Palindrome Permutation II](../0267-palindrome-permutation-ii/readme.md) | [Palindrome Permutation II](https://leetcode.com/problems/palindrome-permutation-ii/) |
-| 0409 | Easy | [Longest Palindrome](../0409-longest-palindrome/readme.md) | [Longest Palindrome](https://leetcode.com/problems/longest-palindrome/) |
+| Number | Difficulty | Name                                                                             | LeetCode                                                                                      |
+| ------ | ---------- | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| 0005   | Medium     | [Longest Palindromic Substring](../0005-longest-palindromic-substring/readme.md) | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) |
+| 0242   | Easy       | [Valid Anagram](../0242-valid-anagram/readme.md)                                 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/)                                 |
+| 0267   | Medium     | [Palindrome Permutation II](../0267-palindrome-permutation-ii/readme.md)         | [Palindrome Permutation II](https://leetcode.com/problems/palindrome-permutation-ii/)         |
+| 0409   | Easy       | [Longest Palindrome](../0409-longest-palindrome/readme.md)                       | [Longest Palindrome](https://leetcode.com/problems/longest-palindrome/)                       |
 
 ## Examples
 

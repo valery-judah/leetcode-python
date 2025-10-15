@@ -2,7 +2,8 @@
 
 ## Quick Facts
 
-- URL: [Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/)
+- URL:
+  [Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/)
 - Function: `maxVowels`
 - Signature: `(s: str, k: int)  -> int`
 - Primary pattern: **Sliding Window**
@@ -29,11 +30,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +49,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,11 +66,11 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 2271 | Medium | [Maximum White Tiles Covered by a Carpet](../2271-maximum-white-tiles-covered-by-a-carpet/readme.md) | [Maximum White Tiles Covered by a Carpet](https://leetcode.com/problems/maximum-white-tiles-covered-by-a-carpet/) |
-| 2379 | Easy | [Minimum Recolors to Get K Consecutive Black Blocks](../2379-minimum-recolors-to-get-k-consecutive-black-blocks/readme.md) | [Minimum Recolors to Get K Consecutive Black Blocks](https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/) |
-| 2414 | Medium | [Length of the Longest Alphabetical Continuous Substring](../2414-length-of-the-longest-alphabetical-continuous-substring/readme.md) | [Length of the Longest Alphabetical Continuous Substring](https://leetcode.com/problems/length-of-the-longest-alphabetical-continuous-substring/) |
+| Number | Difficulty | Name                                                                                                                                 | LeetCode                                                                                                                                          |
+| ------ | ---------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2271   | Medium     | [Maximum White Tiles Covered by a Carpet](../2271-maximum-white-tiles-covered-by-a-carpet/readme.md)                                 | [Maximum White Tiles Covered by a Carpet](https://leetcode.com/problems/maximum-white-tiles-covered-by-a-carpet/)                                 |
+| 2379   | Easy       | [Minimum Recolors to Get K Consecutive Black Blocks](../2379-minimum-recolors-to-get-k-consecutive-black-blocks/readme.md)           | [Minimum Recolors to Get K Consecutive Black Blocks](https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/)           |
+| 2414   | Medium     | [Length of the Longest Alphabetical Continuous Substring](../2414-length-of-the-longest-alphabetical-continuous-substring/readme.md) | [Length of the Longest Alphabetical Continuous Substring](https://leetcode.com/problems/length-of-the-longest-alphabetical-continuous-substring/) |
 
 ## Examples
 

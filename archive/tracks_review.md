@@ -1,18 +1,21 @@
 # How to Use These Tracks Effectively (Interview‑Focused)
 
-This review explains **how** to run the tracks, **what to practice**, and **how to judge readiness**. It is systemized for short, repeatable sessions and interview realism.
+This review explains **how** to run the tracks, **what to practice**, and **how to judge readiness**. It is
+systemized for short, repeatable sessions and interview realism.
 
-______________________________________________________________________
+---
 
 ## 0) What’s in this repo
 
 - `tracks/track_*.yaml`: ordered learning tracks with **why** for each problem, extensions, and omissions.
 - `tracks/tracks.json`: compact list of `{name, ids}` for generators.
-- `problems/<slug>/`: per‑problem folder with README, solution(s), tests, `meta.yaml` (see schema in the project root plan).
+- `problems/<slug>/`: per‑problem folder with README, solution(s), tests, `meta.yaml` (see schema in the
+  project root plan).
 
-> Principle: **one primary pattern** per problem. Solve using that pattern first. Alternate solutions are fine later, not up front.
+> Principle: **one primary pattern** per problem. Solve using that pattern first. Alternate solutions are fine
+> later, not up front.
 
-______________________________________________________________________
+---
 
 ## 1) Daily loop (45–60 min per medium)
 
@@ -29,7 +32,8 @@ ______________________________________________________________________
 
 ### C. Plan (≤5 min)
 
-- Write the invariant or predicate (e.g., *“window has no dups”*, *“ok(mid) is feasible”*, *“stack keeps increasing heights”*).
+- Write the invariant or predicate (e.g., _“window has no dups”_, _“ok(mid) is feasible”_, _“stack keeps
+  increasing heights”_).
 - Name key variables and data structures.
 
 ### D. Code (15–25 min)
@@ -47,57 +51,66 @@ ______________________________________________________________________
 - Update `problems/<slug>/meta.yaml`: status, attempts, last_solved, next `revisit_on`.
 - Write 2–4 bullets in README: invariant, pitfalls, final complexities.
 
-______________________________________________________________________
+---
 
 ## 2) Track progression and readiness gates
 
 Advance only when you meet the gate for the current track.
 
-- **Track 0 Foundations**: 12+ problems at ≤20 min easy / ≤30 min medium. One‑pass hashmap, set logic, simple stack, prefix‑sum complement are automatic.
-- **Track 1 Sliding Window**: You can derive the shrink condition for **set**, **counts**, **fixed‑size**, **deque** windows without hints. Solve 121, 3, 424, 76, 239 from memory.
-- **Track 2 Two‑Pointers Advanced**: Clean duplicate handling in 3Sum/4Sum. Dutch Flag in ≤10 min. Can prove Trapping Rain Water two‑pointer correctness.
-- **Track 3 Binary Search & Heaps**: You can write `binary_search_on_answer(ok)` skeleton blind. Justify heap vs quickselect vs bucket.
-- **Track 4 Intervals**: Give a 2‑minute greedy proof for “pick by earliest end.” Implement merge/insert/intersect correctly first try.
-- **Track 5 Linked Lists**: No extra arrays for core rewiring. Use dummy heads. Reverse sublist and k‑group without pointer leaks.
+- **Track 0 Foundations**: 12+ problems at ≤20 min easy / ≤30 min medium. One‑pass hashmap, set logic, simple
+  stack, prefix‑sum complement are automatic.
+- **Track 1 Sliding Window**: You can derive the shrink condition for **set**, **counts**, **fixed‑size**,
+  **deque** windows without hints. Solve 121, 3, 424, 76, 239 from memory.
+- **Track 2 Two‑Pointers Advanced**: Clean duplicate handling in 3Sum/4Sum. Dutch Flag in ≤10 min. Can prove
+  Trapping Rain Water two‑pointer correctness.
+- **Track 3 Binary Search & Heaps**: You can write `binary_search_on_answer(ok)` skeleton blind. Justify heap
+  vs quickselect vs bucket.
+- **Track 4 Intervals**: Give a 2‑minute greedy proof for “pick by earliest end.” Implement
+  merge/insert/intersect correctly first try.
+- **Track 5 Linked Lists**: No extra arrays for core rewiring. Use dummy heads. Reverse sublist and k‑group
+  without pointer leaks.
 - **Track 6 Trees**: Postorder return‑tuple habit. LCA (BST and general). BFS levels with size snapshots.
-- **Track 7 Graphs**: Grid BFS/DFS templates. Kahn’s topo with indegrees. Dijkstra with visited and decrease‑key by push‑again.
-- **Track 8 DP I**: State, subproblem, transition, base (**SSTB**) in one minute on paper for LIS, Coin Change, Word Break.
-- **Track 9 DP II**: Build 2D tables left‑to‑right/top‑down correctly. LCS, Edit Distance, Palindromes are smooth.
+- **Track 7 Graphs**: Grid BFS/DFS templates. Kahn’s topo with indegrees. Dijkstra with visited and
+  decrease‑key by push‑again.
+- **Track 8 DP I**: State, subproblem, transition, base (**SSTB**) in one minute on paper for LIS, Coin
+  Change, Word Break.
+- **Track 9 DP II**: Build 2D tables left‑to‑right/top‑down correctly. LCS, Edit Distance, Palindromes are
+  smooth.
 - **Track 10 Hard Mix**: Monotonic stack 84/85, Trie+DFS 212, DSU 947, BIT/SegTree 307 under time pressure.
 
-______________________________________________________________________
+---
 
 ## 3) Cue → Pattern decision table
 
 Use these to pick a starting template fast.
 
 - **“Longest/shortest subarray/substring with condition”** → Sliding Window.
-  - Unique elements → window + set.
-  - At most K distinct / budget K → counts + shrink on violation.
-  - Fixed length K → roll counts in O(1) per step.
-  - Max per window → monotonic deque.
+    - Unique elements → window + set.
+    - At most K distinct / budget K → counts + shrink on violation.
+    - Fixed length K → roll counts in O(1) per step.
+    - Max per window → monotonic deque.
 - **Sorted array + sum/area** → Two Pointers. If k‑sum, sort + move l/r with dedup.
 - **“Minimize max” or “can we do with X?”** → Binary Search on Answer with `ok(mid)`.
 - **“Top K” / “K closest” / stream** → Heap (size‑K or two‑heap for median).
 - **Intervals**:
-  - Merge/insert → sort by start, merge into accumulator.
-  - Non‑overlap/rooms/arrows → greedy by earliest end; rooms = min‑heap or sweep.
+    - Merge/insert → sort by start, merge into accumulator.
+    - Non‑overlap/rooms/arrows → greedy by earliest end; rooms = min‑heap or sweep.
 - **Linked list rewiring** → Dummy head + pointer choreography; avoid arrays.
 - **Trees**:
-  - Combine children → postorder return tuple.
-  - BST ops → inorder or bound checks.
-  - LCA → order property (BST) or postorder combine.
+    - Combine children → postorder return tuple.
+    - BST ops → inorder or bound checks.
+    - LCA → order property (BST) or postorder combine.
 - **Graphs**:
-  - Grid regions → DFS/BFS with visited.
-  - Prereqs → Kahn topo.
-  - Positive weights → Dijkstra.
-  - Components/cycles in undirected → DSU.
+    - Grid regions → DFS/BFS with visited.
+    - Prereqs → Kahn topo.
+    - Positive weights → Dijkstra.
+    - Components/cycles in undirected → DSU.
 - **DP**:
-  - Subarray max → Kadane.
-  - Sequence (LIS/LCS) → 1D tails or 2D table by match/skip.
-  - Coin/Subset → 1D knapsack with careful iteration order.
+    - Subarray max → Kadane.
+    - Sequence (LIS/LCS) → 1D tails or 2D table by match/skip.
+    - Coin/Subset → 1D knapsack with careful iteration order.
 
-______________________________________________________________________
+---
 
 ## 4) Pattern templates to say out loud (no code)
 
@@ -107,9 +120,10 @@ ______________________________________________________________________
 - **Monotonic Deque**: pop back while worse; push new index; pop front if out of window; read front as answer.
 - **Postorder Return Tuple**: get left/right tuples; compute local; update global; return tuple to parent.
 - **DSU**: `find` with path compression, `union` by rank/size; count components.
-- **Knapsack (min coins)**: init `dp[0]=0`, rest INF; for each coin, for amount from coin..N: `dp[a]=min(dp[a],dp[a-coin]+1)`.
+- **Knapsack (min coins)**: init `dp[0]=0`, rest INF; for each coin, for amount from coin..N:
+  `dp[a]=min(dp[a],dp[a-coin]+1)`.
 
-______________________________________________________________________
+---
 
 ## 5) Testing checklist (per problem)
 
@@ -120,16 +134,17 @@ ______________________________________________________________________
 - Boundaries: first/last window, off‑by‑one around edges.
 - Randomized spot checks for commutativity/associativity assumptions.
 
-______________________________________________________________________
+---
 
 ## 6) Spaced repetition and promotion rules
 
 - After **first AC**: schedule `revisit_on = +7d`.
 - After **second AC**: `+21d`.
 - After **any miss** or >20 min struggle: `+3d` and mark `pitfalls` in README.
-- Promotion: move to next track only when **gates** are met and last week’s accuracy ≥80% on current track items.
+- Promotion: move to next track only when **gates** are met and last week’s accuracy ≥80% on current track
+  items.
 
-______________________________________________________________________
+---
 
 ## 7) Time management for interviews (60 min block)
 
@@ -142,7 +157,7 @@ ______________________________________________________________________
 
 > If stuck at 10 min: state backup approach (e.g., O(n log n) sort + heap), then iterate toward optimal.
 
-______________________________________________________________________
+---
 
 ## 8) Communication rubric (what to say)
 
@@ -154,7 +169,7 @@ ______________________________________________________________________
 - Edge cases you will test.
 - Alternatives if time allows.
 
-______________________________________________________________________
+---
 
 ## 9) Common pitfalls per pattern
 
@@ -168,7 +183,7 @@ ______________________________________________________________________
 - **Graphs**: revisiting nodes; building O(n²) adjacency when a map is enough.
 - **DP**: wrong iteration order (0/1 vs unbounded); bad base initialization; double counting.
 
-______________________________________________________________________
+---
 
 ## 10) Using the track files
 
@@ -176,11 +191,11 @@ ______________________________________________________________________
 - In each `track_*.yaml`, use the ordered `problems:` and optional `extensions:` as a queue.
 - If you keep a generator, consume from `tracks.json` for `{name, ids}`.
 - For each problem, scaffold `problems/<slug>/` and write `meta.yaml` with fields:
-  - `status` (`todo|in_progress|solved|revisit`), `attempts`, `last_solved`, `revisit_on`.
-  - `primary_pattern`, `time_complexity`, `space_complexity`.
-  - `pitfalls` bullets.
+    - `status` (`todo|in_progress|solved|revisit`), `attempts`, `last_solved`, `revisit_on`.
+    - `primary_pattern`, `time_complexity`, `space_complexity`.
+    - `pitfalls` bullets.
 
-______________________________________________________________________
+---
 
 ## 11) Edge‑case bank (fast recall)
 
@@ -189,15 +204,16 @@ ______________________________________________________________________
 - For sums/products: negatives, zeros, large magnitudes; overflow guards.
 - For graphs: single node, disconnected components; cycles vs trees.
 
-______________________________________________________________________
+---
 
 ## 12) When unknown pattern appears
 
-- Reduce to known core: can it be **window**, **two‑pointers**, **prefix/heap**, **interval**, **DSU**, **postorder tuple**, or **DP**?
+- Reduce to known core: can it be **window**, **two‑pointers**, **prefix/heap**, **interval**, **DSU**,
+  **postorder tuple**, or **DP**?
 - If not, propose a safe O(n log n) baseline (sort + structure). State it and implement.
 - Re‑evaluate for optimizations only after baseline passes tests.
 
-______________________________________________________________________
+---
 
 ## 13) Final week before interview
 
@@ -206,7 +222,7 @@ ______________________________________________________________________
 - Day 2: Track 7–9 mixed set; 1–2 hards from Track 10.
 - Day 1: Two full mocks. One design (LRU/LFU/Trie), one algorithms mixed.
 
-______________________________________________________________________
+---
 
 ## 14) Quality bar for submission
 
@@ -216,14 +232,15 @@ ______________________________________________________________________
 - Tests include at least 5 “bank” cases.
 - Final note on **time/space** and **why this pattern**.
 
-______________________________________________________________________
+---
 
 ## 15) Short template crib (one‑liners)
 
-- **SSTB for DP**: *State, Subproblem, Transition, Base*.
+- **SSTB for DP**: _State, Subproblem, Transition, Base_.
 - **BS on answer**: `lo, hi = min, max; while lo < hi: mid; if ok(mid): hi=mid else lo=mid+1`.
 - **Deque max**: drop back while worse; drop front if out; front is max.
 - **DSU**: path compression in `find`, union by size.
 - **Postorder**: compute from children; update global; return to parent.
 
-Stay mechanical. Pick a pattern, state its invariant, implement its template, test edges, record learnings, repeat.
+Stay mechanical. Pick a pattern, state its invariant, implement its template, test edges, record learnings,
+repeat.

@@ -2,7 +2,8 @@
 
 ## Quick Facts
 
-- URL: [Prime Number of Set Bits in Binary Representation](https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/)
+- URL:
+  [Prime Number of Set Bits in Binary Representation](https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/)
 - Function: `countPrimeSetBits`
 - Signature: `(left: int, right: int)  -> int`
 - Primary pattern: **Math**
@@ -28,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,9 +65,9 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0191 | Easy | [Number of 1 Bits](../0191-number-of-1-bits/readme.md) | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) |
+| Number | Difficulty | Name                                                   | LeetCode                                                            |
+| ------ | ---------- | ------------------------------------------------------ | ------------------------------------------------------------------- |
+| 0191   | Easy       | [Number of 1 Bits](../0191-number-of-1-bits/readme.md) | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) |
 
 ## Examples
 

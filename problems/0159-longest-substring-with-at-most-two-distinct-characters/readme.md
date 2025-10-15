@@ -2,7 +2,8 @@
 
 ## Quick Facts
 
-- URL: [Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/)
+- URL:
+  [Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/)
 - Function: `lengthOfLongestSubstringTwoDistinct`
 - Signature: `(s: str)  -> int`
 - Primary pattern: **Sliding Window**
@@ -28,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,12 +65,12 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0003 | Medium | [Longest Substring Without Repeating Characters](../0003-longest-substring-without-repeating-characters/readme.md) | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) |
-| 0239 | Hard | [Sliding Window Maximum](../0239-sliding-window-maximum/readme.md) | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) |
-| 0340 | Medium | [Longest Substring with At Most K Distinct Characters](../0340-longest-substring-with-at-most-k-distinct-characters/readme.md) | [Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/) |
-| 0992 | Hard | [Subarrays with K Different Integers](../0992-subarrays-with-k-different-integers/readme.md) | [Subarrays with K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers/) |
+| Number | Difficulty | Name                                                                                                                           | LeetCode                                                                                                                                    |
+| ------ | ---------- | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0003   | Medium     | [Longest Substring Without Repeating Characters](../0003-longest-substring-without-repeating-characters/readme.md)             | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)             |
+| 0239   | Hard       | [Sliding Window Maximum](../0239-sliding-window-maximum/readme.md)                                                             | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)                                                             |
+| 0340   | Medium     | [Longest Substring with At Most K Distinct Characters](../0340-longest-substring-with-at-most-k-distinct-characters/readme.md) | [Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/) |
+| 0992   | Hard       | [Subarrays with K Different Integers](../0992-subarrays-with-k-different-integers/readme.md)                                   | [Subarrays with K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers/)                                   |
 
 ## Examples
 

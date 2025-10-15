@@ -32,11 +32,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -51,8 +51,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -68,14 +68,14 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0323 | Medium | [Number of Connected Components in an Undirected Graph](../0323-number-of-connected-components-in-an-undirected-graph/readme.md) | [Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) |
-| 0657 | Easy | [Robot Return to Origin](../0657-robot-return-to-origin/readme.md) | [Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/) |
-| 0734 | Easy | [Sentence Similarity](../0734-sentence-similarity/readme.md) | [Sentence Similarity](https://leetcode.com/problems/sentence-similarity/) |
-| 0737 | Medium | [Sentence Similarity II](../0737-sentence-similarity-ii/readme.md) | [Sentence Similarity II](https://leetcode.com/problems/sentence-similarity-ii/) |
-| 1101 | Medium | [The Earliest Moment When Everyone Become Friends](../1101-the-earliest-moment-when-everyone-become-friends/readme.md) | [The Earliest Moment When Everyone Become Friends](https://leetcode.com/problems/the-earliest-moment-when-everyone-become-friends/) |
-| 2101 | Medium | [Detonate the Maximum Bombs](../2101-detonate-the-maximum-bombs/readme.md) | [Detonate the Maximum Bombs](https://leetcode.com/problems/detonate-the-maximum-bombs/) |
+| Number | Difficulty | Name                                                                                                                             | LeetCode                                                                                                                                      |
+| ------ | ---------- | -------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0323   | Medium     | [Number of Connected Components in an Undirected Graph](../0323-number-of-connected-components-in-an-undirected-graph/readme.md) | [Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) |
+| 0657   | Easy       | [Robot Return to Origin](../0657-robot-return-to-origin/readme.md)                                                               | [Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)                                                               |
+| 0734   | Easy       | [Sentence Similarity](../0734-sentence-similarity/readme.md)                                                                     | [Sentence Similarity](https://leetcode.com/problems/sentence-similarity/)                                                                     |
+| 0737   | Medium     | [Sentence Similarity II](../0737-sentence-similarity-ii/readme.md)                                                               | [Sentence Similarity II](https://leetcode.com/problems/sentence-similarity-ii/)                                                               |
+| 1101   | Medium     | [The Earliest Moment When Everyone Become Friends](../1101-the-earliest-moment-when-everyone-become-friends/readme.md)           | [The Earliest Moment When Everyone Become Friends](https://leetcode.com/problems/the-earliest-moment-when-everyone-become-friends/)           |
+| 2101   | Medium     | [Detonate the Maximum Bombs](../2101-detonate-the-maximum-bombs/readme.md)                                                       | [Detonate the Maximum Bombs](https://leetcode.com/problems/detonate-the-maximum-bombs/)                                                       |
 
 ## Examples
 

@@ -31,11 +31,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -50,8 +50,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -67,10 +67,10 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 3356 | Medium | [Zero Array Transformation II](../3356-zero-array-transformation-ii/readme.md) | [Zero Array Transformation II](https://leetcode.com/problems/zero-array-transformation-ii/) |
-| 3362 | Medium | [Zero Array Transformation III](../3362-zero-array-transformation-iii/readme.md) | [Zero Array Transformation III](https://leetcode.com/problems/zero-array-transformation-iii/) |
+| Number | Difficulty | Name                                                                             | LeetCode                                                                                      |
+| ------ | ---------- | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| 3356   | Medium     | [Zero Array Transformation II](../3356-zero-array-transformation-ii/readme.md)   | [Zero Array Transformation II](https://leetcode.com/problems/zero-array-transformation-ii/)   |
+| 3362   | Medium     | [Zero Array Transformation III](../3362-zero-array-transformation-iii/readme.md) | [Zero Array Transformation III](https://leetcode.com/problems/zero-array-transformation-iii/) |
 
 ## Examples
 

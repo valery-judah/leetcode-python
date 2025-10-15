@@ -28,11 +28,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +47,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,10 +64,10 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0242 | Easy | [Valid Anagram](../0242-valid-anagram/readme.md) | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) |
-| 0567 | Medium | [Permutation in String](../0567-permutation-in-string/readme.md) | [Permutation in String](https://leetcode.com/problems/permutation-in-string/) |
+| Number | Difficulty | Name                                                             | LeetCode                                                                      |
+| ------ | ---------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| 0242   | Easy       | [Valid Anagram](../0242-valid-anagram/readme.md)                 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/)                 |
+| 0567   | Medium     | [Permutation in String](../0567-permutation-in-string/readme.md) | [Permutation in String](https://leetcode.com/problems/permutation-in-string/) |
 
 ## Examples
 

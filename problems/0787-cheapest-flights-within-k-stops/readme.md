@@ -35,11 +35,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -54,8 +54,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -71,10 +71,10 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0568 | Hard | [Maximum Vacation Days](../0568-maximum-vacation-days/readme.md) | [Maximum Vacation Days](https://leetcode.com/problems/maximum-vacation-days/) |
-| 2093 | Medium | [Minimum Cost to Reach City With Discounts](../2093-minimum-cost-to-reach-city-with-discounts/readme.md) | [Minimum Cost to Reach City With Discounts](https://leetcode.com/problems/minimum-cost-to-reach-city-with-discounts/) |
+| Number | Difficulty | Name                                                                                                     | LeetCode                                                                                                              |
+| ------ | ---------- | -------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| 0568   | Hard       | [Maximum Vacation Days](../0568-maximum-vacation-days/readme.md)                                         | [Maximum Vacation Days](https://leetcode.com/problems/maximum-vacation-days/)                                         |
+| 2093   | Medium     | [Minimum Cost to Reach City With Discounts](../2093-minimum-cost-to-reach-city-with-discounts/readme.md) | [Minimum Cost to Reach City With Discounts](https://leetcode.com/problems/minimum-cost-to-reach-city-with-discounts/) |
 
 ## Examples
 

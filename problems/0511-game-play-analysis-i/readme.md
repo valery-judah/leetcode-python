@@ -27,11 +27,11 @@ None
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -46,8 +46,8 @@ None
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -63,9 +63,9 @@ None
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0512 | Easy | [Game Play Analysis II](../0512-game-play-analysis-ii/readme.md) | [Game Play Analysis II](https://leetcode.com/problems/game-play-analysis-ii/) |
+| Number | Difficulty | Name                                                             | LeetCode                                                                      |
+| ------ | ---------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| 0512   | Easy       | [Game Play Analysis II](../0512-game-play-analysis-ii/readme.md) | [Game Play Analysis II](https://leetcode.com/problems/game-play-analysis-ii/) |
 
 ## Examples
 

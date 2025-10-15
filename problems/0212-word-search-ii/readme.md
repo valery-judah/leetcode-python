@@ -34,11 +34,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -53,8 +53,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -70,11 +70,11 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0079 | Medium | [Word Search](../0079-word-search/readme.md) | [Word Search](https://leetcode.com/problems/word-search/) |
-| 0980 | Hard | [Unique Paths III](../0980-unique-paths-iii/readme.md) | [Unique Paths III](https://leetcode.com/problems/unique-paths-iii/) |
-| 2227 | Hard | [Encrypt and Decrypt Strings](../2227-encrypt-and-decrypt-strings/readme.md) | [Encrypt and Decrypt Strings](https://leetcode.com/problems/encrypt-and-decrypt-strings/) |
+| Number | Difficulty | Name                                                                         | LeetCode                                                                                  |
+| ------ | ---------- | ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| 0079   | Medium     | [Word Search](../0079-word-search/readme.md)                                 | [Word Search](https://leetcode.com/problems/word-search/)                                 |
+| 0980   | Hard       | [Unique Paths III](../0980-unique-paths-iii/readme.md)                       | [Unique Paths III](https://leetcode.com/problems/unique-paths-iii/)                       |
+| 2227   | Hard       | [Encrypt and Decrypt Strings](../2227-encrypt-and-decrypt-strings/readme.md) | [Encrypt and Decrypt Strings](https://leetcode.com/problems/encrypt-and-decrypt-strings/) |
 
 ## Examples
 

@@ -28,11 +28,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +47,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,11 +64,11 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0169 | Easy | [Majority Element](../0169-majority-element/readme.md) | [Majority Element](https://leetcode.com/problems/majority-element/) |
-| 1150 | Easy | [Check If a Number Is Majority Element in a Sorted Array](../1150-check-if-a-number-is-majority-element-in-a-sorted-array/readme.md) | [Check If a Number Is Majority Element in a Sorted Array](https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/) |
-| 2404 | Easy | [Most Frequent Even Element](../2404-most-frequent-even-element/readme.md) | [Most Frequent Even Element](https://leetcode.com/problems/most-frequent-even-element/) |
+| Number | Difficulty | Name                                                                                                                                 | LeetCode                                                                                                                                          |
+| ------ | ---------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0169   | Easy       | [Majority Element](../0169-majority-element/readme.md)                                                                               | [Majority Element](https://leetcode.com/problems/majority-element/)                                                                               |
+| 1150   | Easy       | [Check If a Number Is Majority Element in a Sorted Array](../1150-check-if-a-number-is-majority-element-in-a-sorted-array/readme.md) | [Check If a Number Is Majority Element in a Sorted Array](https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/) |
+| 2404   | Easy       | [Most Frequent Even Element](../2404-most-frequent-even-element/readme.md)                                                           | [Most Frequent Even Element](https://leetcode.com/problems/most-frequent-even-element/)                                                           |
 
 ## Examples
 

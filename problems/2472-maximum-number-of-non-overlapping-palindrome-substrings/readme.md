@@ -2,7 +2,8 @@
 
 ## Quick Facts
 
-- URL: [Maximum Number of Non-overlapping Palindrome Substrings](https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings/)
+- URL:
+  [Maximum Number of Non-overlapping Palindrome Substrings](https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings/)
 - Function: `maxPalindromes`
 - Signature: `(s: str, k: int)  -> int`
 - Primary pattern: **Two Pointers**
@@ -28,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,14 +65,14 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0005 | Medium | [Longest Palindromic Substring](../0005-longest-palindromic-substring/readme.md) | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) |
-| 0131 | Medium | [Palindrome Partitioning](../0131-palindrome-partitioning/readme.md) | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/) |
-| 0132 | Hard | [Palindrome Partitioning II](../0132-palindrome-partitioning-ii/readme.md) | [Palindrome Partitioning II](https://leetcode.com/problems/palindrome-partitioning-ii/) |
-| 1278 | Hard | [Palindrome Partitioning III](../1278-palindrome-partitioning-iii/readme.md) | [Palindrome Partitioning III](https://leetcode.com/problems/palindrome-partitioning-iii/) |
-| 1520 | Hard | [Maximum Number of Non-Overlapping Substrings](../1520-maximum-number-of-non-overlapping-substrings/readme.md) | [Maximum Number of Non-Overlapping Substrings](https://leetcode.com/problems/maximum-number-of-non-overlapping-substrings/) |
-| 1745 | Hard | [Palindrome Partitioning IV](../1745-palindrome-partitioning-iv/readme.md) | [Palindrome Partitioning IV](https://leetcode.com/problems/palindrome-partitioning-iv/) |
+| Number | Difficulty | Name                                                                                                           | LeetCode                                                                                                                    |
+| ------ | ---------- | -------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| 0005   | Medium     | [Longest Palindromic Substring](../0005-longest-palindromic-substring/readme.md)                               | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)                               |
+| 0131   | Medium     | [Palindrome Partitioning](../0131-palindrome-partitioning/readme.md)                                           | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/)                                           |
+| 0132   | Hard       | [Palindrome Partitioning II](../0132-palindrome-partitioning-ii/readme.md)                                     | [Palindrome Partitioning II](https://leetcode.com/problems/palindrome-partitioning-ii/)                                     |
+| 1278   | Hard       | [Palindrome Partitioning III](../1278-palindrome-partitioning-iii/readme.md)                                   | [Palindrome Partitioning III](https://leetcode.com/problems/palindrome-partitioning-iii/)                                   |
+| 1520   | Hard       | [Maximum Number of Non-Overlapping Substrings](../1520-maximum-number-of-non-overlapping-substrings/readme.md) | [Maximum Number of Non-Overlapping Substrings](https://leetcode.com/problems/maximum-number-of-non-overlapping-substrings/) |
+| 1745   | Hard       | [Palindrome Partitioning IV](../1745-palindrome-partitioning-iv/readme.md)                                     | [Palindrome Partitioning IV](https://leetcode.com/problems/palindrome-partitioning-iv/)                                     |
 
 ## Examples
 

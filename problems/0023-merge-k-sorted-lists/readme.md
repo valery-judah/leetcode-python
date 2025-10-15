@@ -32,11 +32,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -51,8 +51,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -68,11 +68,11 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0021 | Easy | [Merge Two Sorted Lists](../0021-merge-two-sorted-lists/readme.md) | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) |
-| 0264 | Medium | [Ugly Number II](../0264-ugly-number-ii/readme.md) | [Ugly Number II](https://leetcode.com/problems/ugly-number-ii/) |
-| 2411 | Medium | [Smallest Subarrays With Maximum Bitwise OR](../2411-smallest-subarrays-with-maximum-bitwise-or/readme.md) | [Smallest Subarrays With Maximum Bitwise OR](https://leetcode.com/problems/smallest-subarrays-with-maximum-bitwise-or/) |
+| Number | Difficulty | Name                                                                                                       | LeetCode                                                                                                                |
+| ------ | ---------- | ---------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| 0021   | Easy       | [Merge Two Sorted Lists](../0021-merge-two-sorted-lists/readme.md)                                         | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)                                         |
+| 0264   | Medium     | [Ugly Number II](../0264-ugly-number-ii/readme.md)                                                         | [Ugly Number II](https://leetcode.com/problems/ugly-number-ii/)                                                         |
+| 2411   | Medium     | [Smallest Subarrays With Maximum Bitwise OR](../2411-smallest-subarrays-with-maximum-bitwise-or/readme.md) | [Smallest Subarrays With Maximum Bitwise OR](https://leetcode.com/problems/smallest-subarrays-with-maximum-bitwise-or/) |
 
 ## Examples
 

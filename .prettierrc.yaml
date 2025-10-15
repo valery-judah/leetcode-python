@@ -1,0 +1,4 @@
+# .prettierrc.yaml
+proseWrap: "always"
+printWidth: 110
+singleQuote: true

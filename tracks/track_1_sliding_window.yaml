@@ -1,174 +1,181 @@
 version: 1
 track: track_1_sliding_window
 title: Sliding Window — Fixed and Dynamic
-description: Master fixed-size and variable-size windows. Learn frequency maps, expansion/contraction logic, and deque optimization.
+description:
+    Master fixed-size and variable-size windows. Learn frequency maps, expansion/contraction logic, and deque
+    optimization.
 problems:
-  # Single-pass window (buy low, sell high)
-  - slug: best-time-to-buy-and-sell-stock
-    title: Best Time to Buy and Sell Stock
-    difficulty: easy
-    primary_pattern: single-pass-window
-    section: window-basics
-    why: >
-      Baseline one-pass window. Track running minimum and compute max profit on the fly.
-      Teaches state maintenance without explicit left/right pointers.
-
-  # Dynamic-size windows with sets/maps
-  - slug: longest-substring-without-repeating-characters
-    title: Longest Substring Without Repeating Characters
-    difficulty: medium
-    primary_pattern: window-dynamic-set
-    section: window-dynamic
-    why: >
-      First true expand–shrink window. Maintain a set/map to keep all characters unique.
-      Builds the invariant and pointer movement discipline.
-  - slug: longest-repeating-character-replacement
-    title: Longest Repeating Character Replacement
-    difficulty: medium
-    primary_pattern: window-dynamic-counts
-    section: window-dynamic
-    why: >
-      Introduces frequency counts and the max-frequency trick. Core invariant: window_size - max_count <= k.
-      Forces correct shrink condition reasoning.
-  - slug: minimum-window-substring
-    title: Minimum Window Substring
-    difficulty: hard
-    primary_pattern: window-dynamic-counts
-    section: window-dynamic
-    why: >
-      Canonical target-coverage window. Track need vs have counts and shrink while valid.
-      Solidifies bidirectional movement and sentinel best-window bookkeeping.
-
-  # Fixed-size counting windows
-  - slug: permutation-in-string
-    title: Permutation in String
-    difficulty: medium
-    primary_pattern: window-fixed-counts
-    section: window-fixed
-    why: >
-      Fixed-length histogram comparison. Teaches sliding histogram update and early stopping.
-  - slug: find-all-anagrams-in-a-string
-    title: Find All Anagrams in a String
-    difficulty: medium
-    primary_pattern: window-fixed-counts
-    section: window-fixed
-    why: >
-      Same mechanics as 567 but requires collecting all start indices. Reinforces rolling counts.
-  - slug: maximum-number-of-vowels-in-a-substring-of-given-length
-    title: Maximum Number of Vowels in a Substring of Given Length
-    difficulty: medium
-    primary_pattern: window-fixed
-    section: window-fixed
-    why: >
-      Easiest fixed-size window. Practice add-entering, remove-leaving updates with O(1) per shift.
-
-  # Deque-optimized window
-  - slug: sliding-window-maximum
-    title: Sliding Window Maximum
-    difficulty: hard
-    primary_pattern: window-deque-monotonic
-    section: window-deque
-    why: >
-      Monotonic deque technique. Achieves O(n) max-per-window and generalizes to many deque problems.
-
-  # Frequency-window practice
-  - slug: max-consecutive-ones-iii
-    title: Max Consecutive Ones III
-    difficulty: medium
-    primary_pattern: window-dynamic-budget
-    section: window-dynamic
-    why: >
-      Budget window: allow at most k violations (zeros). Practice shrinking based on a counter rather than exact matches.
-  - slug: fruit-into-baskets
-    title: Fruit Into Baskets
-    difficulty: medium
-    primary_pattern: window-dynamic-k-types
-    section: window-dynamic
-    why: >
-      'At most 2 types' template. Simple map of counts with shrink while distinct>2.
-  - slug: binary-subarrays-with-sum
-    title: Binary Subarrays With Sum
-    difficulty: medium
-    primary_pattern: prefix-sum + window
-    section: window-advanced
-    why: >
-      Shows the limit of classic windows when negatives/constraints break them.
-      Uses prefix-sum hashmap to count complements inside a moving boundary.
-  - slug: subarrays-with-k-different-integers
-    title: Subarrays with K Different Integers
-    difficulty: hard
-    primary_pattern: window-at-most-k
-    section: window-advanced
-    why: >
-      Gold-standard 'at most K' formulation. Compute exactly-K via atMost(K) - atMost(K-1).
-      Tests clean helper design and off-by-one handling.
-
-notes:
-  ordering: Start with basics → dynamic-size → fixed-size → deque → advanced.
-  next_track: track_2_two_pointers_advanced
-
-extensions:
-  optional:
-    - slug: subarray-product-less-than-k
-      title: Subarray Product Less Than K
-      difficulty: medium
-      primary_pattern: window-multiplicative
-      section: window-extensions
+    # Single-pass window (buy low, sell high)
+    - slug: best-time-to-buy-and-sell-stock
+      title: Best Time to Buy and Sell Stock
+      difficulty: easy
+      primary_pattern: single-pass-window
+      section: window-basics
       why: >
-        Multiplicative window on positive integers. Maintain running product and shrink while product >= k.
-    - slug: longest-subarray-of-1s-after-deleting-one-element
-      title: Longest Subarray of 1s After Deleting One
-      difficulty: medium
-      primary_pattern: window-dynamic-budget
-      section: window-extensions
-      why: >
-        Budget variant with K=1. Gentle precursor to 1004 or a quick confidence builder after it.
-    - slug: longest-substring-with-at-most-k-distinct-characters
-      title: Longest Substring with At Most K Distinct Characters
-      difficulty: medium
-      primary_pattern: window-at-most-k
-      section: window-extensions
-      why: >
-        Direct 'at most K' template. Foundation for 992's exactly-K trick.
-    - slug: longest-substring-with-at-most-two-distinct-characters
-      title: Longest Substring with At Most Two Distinct Characters
-      difficulty: medium
-      primary_pattern: window-at-most-k
-      section: window-extensions
-      why: >
-        The K=2 specialization. Faster to reason about and good for speed runs.
-    - slug: shortest-subarray-with-sum-at-least-k
-      title: Shortest Subarray with Sum at Least K
-      difficulty: hard
-      primary_pattern: prefix-deque-monotonic
-      section: window-extensions
-      why: >
-        Prefix-sum + monotonic deque for minima with possible negatives. Not a classic window but vital technique.
-    - slug: maximum-erasure-value
-      title: Maximum Erasure Value
+          Baseline one-pass window. Track running minimum and compute max profit on the fly. Teaches state
+          maintenance without explicit left/right pointers.
+
+    # Dynamic-size windows with sets/maps
+    - slug: longest-substring-without-repeating-characters
+      title: Longest Substring Without Repeating Characters
       difficulty: medium
       primary_pattern: window-dynamic-set
-      section: window-extensions
+      section: window-dynamic
       why: >
-        Set-based window with a running sum objective. Sharpens remove-until-unique loops.
+          First true expand–shrink window. Maintain a set/map to keep all characters unique. Builds the
+          invariant and pointer movement discipline.
+    - slug: longest-repeating-character-replacement
+      title: Longest Repeating Character Replacement
+      difficulty: medium
+      primary_pattern: window-dynamic-counts
+      section: window-dynamic
+      why: >
+          Introduces frequency counts and the max-frequency trick. Core invariant: window_size - max_count <=
+          k. Forces correct shrink condition reasoning.
+    - slug: minimum-window-substring
+      title: Minimum Window Substring
+      difficulty: hard
+      primary_pattern: window-dynamic-counts
+      section: window-dynamic
+      why: >
+          Canonical target-coverage window. Track need vs have counts and shrink while valid. Solidifies
+          bidirectional movement and sentinel best-window bookkeeping.
+
+    # Fixed-size counting windows
+    - slug: permutation-in-string
+      title: Permutation in String
+      difficulty: medium
+      primary_pattern: window-fixed-counts
+      section: window-fixed
+      why: >
+          Fixed-length histogram comparison. Teaches sliding histogram update and early stopping.
+    - slug: find-all-anagrams-in-a-string
+      title: Find All Anagrams in a String
+      difficulty: medium
+      primary_pattern: window-fixed-counts
+      section: window-fixed
+      why: >
+          Same mechanics as 567 but requires collecting all start indices. Reinforces rolling counts.
+    - slug: maximum-number-of-vowels-in-a-substring-of-given-length
+      title: Maximum Number of Vowels in a Substring of Given Length
+      difficulty: medium
+      primary_pattern: window-fixed
+      section: window-fixed
+      why: >
+          Easiest fixed-size window. Practice add-entering, remove-leaving updates with O(1) per shift.
+
+    # Deque-optimized window
+    - slug: sliding-window-maximum
+      title: Sliding Window Maximum
+      difficulty: hard
+      primary_pattern: window-deque-monotonic
+      section: window-deque
+      why: >
+          Monotonic deque technique. Achieves O(n) max-per-window and generalizes to many deque problems.
+
+    # Frequency-window practice
+    - slug: max-consecutive-ones-iii
+      title: Max Consecutive Ones III
+      difficulty: medium
+      primary_pattern: window-dynamic-budget
+      section: window-dynamic
+      why: >
+          Budget window: allow at most k violations (zeros). Practice shrinking based on a counter rather than
+          exact matches.
+    - slug: fruit-into-baskets
+      title: Fruit Into Baskets
+      difficulty: medium
+      primary_pattern: window-dynamic-k-types
+      section: window-dynamic
+      why: >
+          'At most 2 types' template. Simple map of counts with shrink while distinct>2.
+    - slug: binary-subarrays-with-sum
+      title: Binary Subarrays With Sum
+      difficulty: medium
+      primary_pattern: prefix-sum + window
+      section: window-advanced
+      why: >
+          Shows the limit of classic windows when negatives/constraints break them. Uses prefix-sum hashmap to
+          count complements inside a moving boundary.
+    - slug: subarrays-with-k-different-integers
+      title: Subarrays with K Different Integers
+      difficulty: hard
+      primary_pattern: window-at-most-k
+      section: window-advanced
+      why: >
+          Gold-standard 'at most K' formulation. Compute exactly-K via atMost(K) - atMost(K-1). Tests clean
+          helper design and off-by-one handling.
+
+notes:
+    ordering: Start with basics → dynamic-size → fixed-size → deque → advanced.
+    next_track: track_2_two_pointers_advanced
+
+extensions:
+    optional:
+        - slug: subarray-product-less-than-k
+          title: Subarray Product Less Than K
+          difficulty: medium
+          primary_pattern: window-multiplicative
+          section: window-extensions
+          why: >
+              Multiplicative window on positive integers. Maintain running product and shrink while product >=
+              k.
+        - slug: longest-subarray-of-1s-after-deleting-one-element
+          title: Longest Subarray of 1s After Deleting One
+          difficulty: medium
+          primary_pattern: window-dynamic-budget
+          section: window-extensions
+          why: >
+              Budget variant with K=1. Gentle precursor to 1004 or a quick confidence builder after it.
+        - slug: longest-substring-with-at-most-k-distinct-characters
+          title: Longest Substring with At Most K Distinct Characters
+          difficulty: medium
+          primary_pattern: window-at-most-k
+          section: window-extensions
+          why: >
+              Direct 'at most K' template. Foundation for 992's exactly-K trick.
+        - slug: longest-substring-with-at-most-two-distinct-characters
+          title: Longest Substring with At Most Two Distinct Characters
+          difficulty: medium
+          primary_pattern: window-at-most-k
+          section: window-extensions
+          why: >
+              The K=2 specialization. Faster to reason about and good for speed runs.
+        - slug: shortest-subarray-with-sum-at-least-k
+          title: Shortest Subarray with Sum at Least K
+          difficulty: hard
+          primary_pattern: prefix-deque-monotonic
+          section: window-extensions
+          why: >
+              Prefix-sum + monotonic deque for minima with possible negatives. Not a classic window but vital
+              technique.
+        - slug: maximum-erasure-value
+          title: Maximum Erasure Value
+          difficulty: medium
+          primary_pattern: window-dynamic-set
+          section: window-extensions
+          why: >
+              Set-based window with a running sum objective. Sharpens remove-until-unique loops.
 
 omitted:
-  from_neetcode_250:
-    - id: 219
-      slug: contains-duplicate-ii
-      reason: >
-        Trivial k-distance set window. Redundant after 121 and 3. Use as warm-up if you want quick wins.
-    - id: 658
-      slug: find-k-closest-elements
-      reason: >
-        Better solved with binary search on left boundary plus two pointers or a heap. Parked for track_3_binary_search_heaps.
-    - id: 209
-      slug: minimum-size-subarray-sum
-      reason: >
-        Core expand–shrink 'min length' pattern. Recommended to include soon; current track kept 930 to show prefix-sum alternative.
-        Swap 930→prefix track and add 209 here when ready.
-  from_leetcode_150:
-    - id: 30
-      slug: substring-with-concatenation-of-all-words
-      reason: >
-        Niche stepping window keyed by word length with heavy hash maps. High implementation overhead; treat as advanced extension after 76/438.
+    from_neetcode_250:
+        - id: 219
+          slug: contains-duplicate-ii
+          reason: >
+              Trivial k-distance set window. Redundant after 121 and 3. Use as warm-up if you want quick wins.
+        - id: 658
+          slug: find-k-closest-elements
+          reason: >
+              Better solved with binary search on left boundary plus two pointers or a heap. Parked for
+              track_3_binary_search_heaps.
+        - id: 209
+          slug: minimum-size-subarray-sum
+          reason: >
+              Core expand–shrink 'min length' pattern. Recommended to include soon; current track kept 930 to
+              show prefix-sum alternative. Swap 930→prefix track and add 209 here when ready.
+    from_leetcode_150:
+        - id: 30
+          slug: substring-with-concatenation-of-all-words
+          reason: >
+              Niche stepping window keyed by word length with heavy hash maps. High implementation overhead;
+              treat as advanced extension after 76/438.

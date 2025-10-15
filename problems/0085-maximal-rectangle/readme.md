@@ -30,11 +30,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -49,8 +49,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -66,11 +66,11 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0084 | Hard | [Largest Rectangle in Histogram](../0084-largest-rectangle-in-histogram/readme.md) | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) |
-| 0221 | Medium | [Maximal Square](../0221-maximal-square/readme.md) | [Maximal Square](https://leetcode.com/problems/maximal-square/) |
-| 3359 | Hard | [Find Sorted Submatrices With Maximum Element at Most K](../3359-find-sorted-submatrices-with-maximum-element-at-most-k/readme.md) | [Find Sorted Submatrices With Maximum Element at Most K](https://leetcode.com/problems/find-sorted-submatrices-with-maximum-element-at-most-k/) |
+| Number | Difficulty | Name                                                                                                                               | LeetCode                                                                                                                                        |
+| ------ | ---------- | ---------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0084   | Hard       | [Largest Rectangle in Histogram](../0084-largest-rectangle-in-histogram/readme.md)                                                 | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)                                                 |
+| 0221   | Medium     | [Maximal Square](../0221-maximal-square/readme.md)                                                                                 | [Maximal Square](https://leetcode.com/problems/maximal-square/)                                                                                 |
+| 3359   | Hard       | [Find Sorted Submatrices With Maximum Element at Most K](../3359-find-sorted-submatrices-with-maximum-element-at-most-k/readme.md) | [Find Sorted Submatrices With Maximum Element at Most K](https://leetcode.com/problems/find-sorted-submatrices-with-maximum-element-at-most-k/) |
 
 ## Examples
 

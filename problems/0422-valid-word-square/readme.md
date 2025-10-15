@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,10 +65,10 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0425 | Hard | [Word Squares](../0425-word-squares/readme.md) | [Word Squares](https://leetcode.com/problems/word-squares/) |
-| 0766 | Easy | [Toeplitz Matrix](../0766-toeplitz-matrix/readme.md) | [Toeplitz Matrix](https://leetcode.com/problems/toeplitz-matrix/) |
+| Number | Difficulty | Name                                                 | LeetCode                                                          |
+| ------ | ---------- | ---------------------------------------------------- | ----------------------------------------------------------------- |
+| 0425   | Hard       | [Word Squares](../0425-word-squares/readme.md)       | [Word Squares](https://leetcode.com/problems/word-squares/)       |
+| 0766   | Easy       | [Toeplitz Matrix](../0766-toeplitz-matrix/readme.md) | [Toeplitz Matrix](https://leetcode.com/problems/toeplitz-matrix/) |
 
 ## Examples
 

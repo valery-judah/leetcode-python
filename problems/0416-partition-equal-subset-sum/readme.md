@@ -28,11 +28,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +47,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,15 +64,15 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0698 | Medium | [Partition to K Equal Sum Subsets](../0698-partition-to-k-equal-sum-subsets/readme.md) | [Partition to K Equal Sum Subsets](https://leetcode.com/problems/partition-to-k-equal-sum-subsets/) |
-| 1981 | Medium | [Minimize the Difference Between Target and Chosen Elements](../1981-minimize-the-difference-between-target-and-chosen-elements/readme.md) | [Minimize the Difference Between Target and Chosen Elements](https://leetcode.com/problems/minimize-the-difference-between-target-and-chosen-elements/) |
-| 2025 | Hard | [Maximum Number of Ways to Partition an Array](../2025-maximum-number-of-ways-to-partition-an-array/readme.md) | [Maximum Number of Ways to Partition an Array](https://leetcode.com/problems/maximum-number-of-ways-to-partition-an-array/) |
-| 2035 | Hard | [Partition Array Into Two Arrays to Minimize Sum Difference](../2035-partition-array-into-two-arrays-to-minimize-sum-difference/readme.md) | [Partition Array Into Two Arrays to Minimize Sum Difference](https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/) |
-| 2395 | Easy | [Find Subarrays With Equal Sum](../2395-find-subarrays-with-equal-sum/readme.md) | [Find Subarrays With Equal Sum](https://leetcode.com/problems/find-subarrays-with-equal-sum/) |
-| 2518 | Hard | [Number of Great Partitions](../2518-number-of-great-partitions/readme.md) | [Number of Great Partitions](https://leetcode.com/problems/number-of-great-partitions/) |
-| 2578 | Easy | [Split With Minimum Sum](../2578-split-with-minimum-sum/readme.md) | [Split With Minimum Sum](https://leetcode.com/problems/split-with-minimum-sum/) |
+| Number | Difficulty | Name                                                                                                                                       | LeetCode                                                                                                                                                |
+| ------ | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0698   | Medium     | [Partition to K Equal Sum Subsets](../0698-partition-to-k-equal-sum-subsets/readme.md)                                                     | [Partition to K Equal Sum Subsets](https://leetcode.com/problems/partition-to-k-equal-sum-subsets/)                                                     |
+| 1981   | Medium     | [Minimize the Difference Between Target and Chosen Elements](../1981-minimize-the-difference-between-target-and-chosen-elements/readme.md) | [Minimize the Difference Between Target and Chosen Elements](https://leetcode.com/problems/minimize-the-difference-between-target-and-chosen-elements/) |
+| 2025   | Hard       | [Maximum Number of Ways to Partition an Array](../2025-maximum-number-of-ways-to-partition-an-array/readme.md)                             | [Maximum Number of Ways to Partition an Array](https://leetcode.com/problems/maximum-number-of-ways-to-partition-an-array/)                             |
+| 2035   | Hard       | [Partition Array Into Two Arrays to Minimize Sum Difference](../2035-partition-array-into-two-arrays-to-minimize-sum-difference/readme.md) | [Partition Array Into Two Arrays to Minimize Sum Difference](https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/) |
+| 2395   | Easy       | [Find Subarrays With Equal Sum](../2395-find-subarrays-with-equal-sum/readme.md)                                                           | [Find Subarrays With Equal Sum](https://leetcode.com/problems/find-subarrays-with-equal-sum/)                                                           |
+| 2518   | Hard       | [Number of Great Partitions](../2518-number-of-great-partitions/readme.md)                                                                 | [Number of Great Partitions](https://leetcode.com/problems/number-of-great-partitions/)                                                                 |
+| 2578   | Easy       | [Split With Minimum Sum](../2578-split-with-minimum-sum/readme.md)                                                                         | [Split With Minimum Sum](https://leetcode.com/problems/split-with-minimum-sum/)                                                                         |
 
 ## Examples
 

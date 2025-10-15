@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,10 +65,10 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0015 | Medium | [3Sum](../0015-3sum/readme.md) | [3Sum](https://leetcode.com/problems/3sum/) |
-| 0259 | Medium | [3Sum Smaller](../0259-3sum-smaller/readme.md) | [3Sum Smaller](https://leetcode.com/problems/3sum-smaller/) |
+| Number | Difficulty | Name                                           | LeetCode                                                    |
+| ------ | ---------- | ---------------------------------------------- | ----------------------------------------------------------- |
+| 0015   | Medium     | [3Sum](../0015-3sum/readme.md)                 | [3Sum](https://leetcode.com/problems/3sum/)                 |
+| 0259   | Medium     | [3Sum Smaller](../0259-3sum-smaller/readme.md) | [3Sum Smaller](https://leetcode.com/problems/3sum-smaller/) |
 
 ## Examples
 

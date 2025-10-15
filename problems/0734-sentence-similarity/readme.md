@@ -34,11 +34,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -53,8 +53,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -70,11 +70,11 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0547 | Medium | [Number of Provinces](../0547-number-of-provinces/readme.md) | [Number of Provinces](https://leetcode.com/problems/number-of-provinces/) |
-| 0721 | Medium | [Accounts Merge](../0721-accounts-merge/readme.md) | [Accounts Merge](https://leetcode.com/problems/accounts-merge/) |
-| 0737 | Medium | [Sentence Similarity II](../0737-sentence-similarity-ii/readme.md) | [Sentence Similarity II](https://leetcode.com/problems/sentence-similarity-ii/) |
+| Number | Difficulty | Name                                                               | LeetCode                                                                        |
+| ------ | ---------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------- |
+| 0547   | Medium     | [Number of Provinces](../0547-number-of-provinces/readme.md)       | [Number of Provinces](https://leetcode.com/problems/number-of-provinces/)       |
+| 0721   | Medium     | [Accounts Merge](../0721-accounts-merge/readme.md)                 | [Accounts Merge](https://leetcode.com/problems/accounts-merge/)                 |
+| 0737   | Medium     | [Sentence Similarity II](../0737-sentence-similarity-ii/readme.md) | [Sentence Similarity II](https://leetcode.com/problems/sentence-similarity-ii/) |
 
 ## Examples
 

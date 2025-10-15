@@ -28,11 +28,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +47,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,12 +64,12 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0219 | Easy | [Contains Duplicate II](../0219-contains-duplicate-ii/readme.md) | [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/) |
-| 0220 | Hard | [Contains Duplicate III](../0220-contains-duplicate-iii/readme.md) | [Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/) |
-| 2357 | Easy | [Make Array Zero by Subtracting Equal Amounts](../2357-make-array-zero-by-subtracting-equal-amounts/readme.md) | [Make Array Zero by Subtracting Equal Amounts](https://leetcode.com/problems/make-array-zero-by-subtracting-equal-amounts/) |
-| 3438 | Easy | [Find Valid Pair of Adjacent Digits in String](../3438-find-valid-pair-of-adjacent-digits-in-string/readme.md) | [Find Valid Pair of Adjacent Digits in String](https://leetcode.com/problems/find-valid-pair-of-adjacent-digits-in-string/) |
+| Number | Difficulty | Name                                                                                                           | LeetCode                                                                                                                    |
+| ------ | ---------- | -------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| 0219   | Easy       | [Contains Duplicate II](../0219-contains-duplicate-ii/readme.md)                                               | [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)                                               |
+| 0220   | Hard       | [Contains Duplicate III](../0220-contains-duplicate-iii/readme.md)                                             | [Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/)                                             |
+| 2357   | Easy       | [Make Array Zero by Subtracting Equal Amounts](../2357-make-array-zero-by-subtracting-equal-amounts/readme.md) | [Make Array Zero by Subtracting Equal Amounts](https://leetcode.com/problems/make-array-zero-by-subtracting-equal-amounts/) |
+| 3438   | Easy       | [Find Valid Pair of Adjacent Digits in String](../3438-find-valid-pair-of-adjacent-digits-in-string/readme.md) | [Find Valid Pair of Adjacent Digits in String](https://leetcode.com/problems/find-valid-pair-of-adjacent-digits-in-string/) |
 
 ## Examples
 

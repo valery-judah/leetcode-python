@@ -28,11 +28,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +47,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,11 +64,11 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0358 | Hard | [Rearrange String k Distance Apart](../0358-rearrange-string-k-distance-apart/readme.md) | [Rearrange String k Distance Apart](https://leetcode.com/problems/rearrange-string-k-distance-apart/) |
-| 0621 | Medium | [Task Scheduler](../0621-task-scheduler/readme.md) | [Task Scheduler](https://leetcode.com/problems/task-scheduler/) |
-| 1405 | Medium | [Longest Happy String](../1405-longest-happy-string/readme.md) | [Longest Happy String](https://leetcode.com/problems/longest-happy-string/) |
+| Number | Difficulty | Name                                                                                     | LeetCode                                                                                              |
+| ------ | ---------- | ---------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| 0358   | Hard       | [Rearrange String k Distance Apart](../0358-rearrange-string-k-distance-apart/readme.md) | [Rearrange String k Distance Apart](https://leetcode.com/problems/rearrange-string-k-distance-apart/) |
+| 0621   | Medium     | [Task Scheduler](../0621-task-scheduler/readme.md)                                       | [Task Scheduler](https://leetcode.com/problems/task-scheduler/)                                       |
+| 1405   | Medium     | [Longest Happy String](../1405-longest-happy-string/readme.md)                           | [Longest Happy String](https://leetcode.com/problems/longest-happy-string/)                           |
 
 ## Examples
 

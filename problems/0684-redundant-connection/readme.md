@@ -33,11 +33,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -52,8 +52,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -69,12 +69,12 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0685 | Hard | [Redundant Connection II](../0685-redundant-connection-ii/readme.md) | [Redundant Connection II](https://leetcode.com/problems/redundant-connection-ii/) |
-| 0721 | Medium | [Accounts Merge](../0721-accounts-merge/readme.md) | [Accounts Merge](https://leetcode.com/problems/accounts-merge/) |
-| 2127 | Hard | [Maximum Employees to Be Invited to a Meeting](../2127-maximum-employees-to-be-invited-to-a-meeting/readme.md) | [Maximum Employees to Be Invited to a Meeting](https://leetcode.com/problems/maximum-employees-to-be-invited-to-a-meeting/) |
-| 2608 | Hard | [Shortest Cycle in a Graph](../2608-shortest-cycle-in-a-graph/readme.md) | [Shortest Cycle in a Graph](https://leetcode.com/problems/shortest-cycle-in-a-graph/) |
+| Number | Difficulty | Name                                                                                                           | LeetCode                                                                                                                    |
+| ------ | ---------- | -------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| 0685   | Hard       | [Redundant Connection II](../0685-redundant-connection-ii/readme.md)                                           | [Redundant Connection II](https://leetcode.com/problems/redundant-connection-ii/)                                           |
+| 0721   | Medium     | [Accounts Merge](../0721-accounts-merge/readme.md)                                                             | [Accounts Merge](https://leetcode.com/problems/accounts-merge/)                                                             |
+| 2127   | Hard       | [Maximum Employees to Be Invited to a Meeting](../2127-maximum-employees-to-be-invited-to-a-meeting/readme.md) | [Maximum Employees to Be Invited to a Meeting](https://leetcode.com/problems/maximum-employees-to-be-invited-to-a-meeting/) |
+| 2608   | Hard       | [Shortest Cycle in a Graph](../2608-shortest-cycle-in-a-graph/readme.md)                                       | [Shortest Cycle in a Graph](https://leetcode.com/problems/shortest-cycle-in-a-graph/)                                       |
 
 ## Examples
 

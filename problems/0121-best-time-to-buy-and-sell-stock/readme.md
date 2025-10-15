@@ -28,11 +28,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +47,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,17 +64,17 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0053 | Medium | [Maximum Subarray](../0053-maximum-subarray/readme.md) | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) |
-| 0122 | Medium | [Best Time to Buy and Sell Stock II](../0122-best-time-to-buy-and-sell-stock-ii/readme.md) | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) |
-| 0123 | Hard | [Best Time to Buy and Sell Stock III](../0123-best-time-to-buy-and-sell-stock-iii/readme.md) | [Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) |
-| 0188 | Hard | [Best Time to Buy and Sell Stock IV](../0188-best-time-to-buy-and-sell-stock-iv/readme.md) | [Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/) |
-| 0309 | Medium | [Best Time to Buy and Sell Stock with Cooldown](../0309-best-time-to-buy-and-sell-stock-with-cooldown/readme.md) | [Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/) |
-| 2012 | Medium | [Sum of Beauty in the Array](../2012-sum-of-beauty-in-the-array/readme.md) | [Sum of Beauty in the Array](https://leetcode.com/problems/sum-of-beauty-in-the-array/) |
-| 2016 | Easy | [Maximum Difference Between Increasing Elements](../2016-maximum-difference-between-increasing-elements/readme.md) | [Maximum Difference Between Increasing Elements](https://leetcode.com/problems/maximum-difference-between-increasing-elements/) |
-| 2291 | Medium | [Maximum Profit From Trading Stocks](../2291-maximum-profit-from-trading-stocks/readme.md) | [Maximum Profit From Trading Stocks](https://leetcode.com/problems/maximum-profit-from-trading-stocks/) |
-| 3573 | Medium | [Best Time to Buy and Sell Stock V](../3573-best-time-to-buy-and-sell-stock-v/readme.md) | [Best Time to Buy and Sell Stock V](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-v/) |
+| Number | Difficulty | Name                                                                                                               | LeetCode                                                                                                                        |
+| ------ | ---------- | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------- |
+| 0053   | Medium     | [Maximum Subarray](../0053-maximum-subarray/readme.md)                                                             | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)                                                             |
+| 0122   | Medium     | [Best Time to Buy and Sell Stock II](../0122-best-time-to-buy-and-sell-stock-ii/readme.md)                         | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)                         |
+| 0123   | Hard       | [Best Time to Buy and Sell Stock III](../0123-best-time-to-buy-and-sell-stock-iii/readme.md)                       | [Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/)                       |
+| 0188   | Hard       | [Best Time to Buy and Sell Stock IV](../0188-best-time-to-buy-and-sell-stock-iv/readme.md)                         | [Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)                         |
+| 0309   | Medium     | [Best Time to Buy and Sell Stock with Cooldown](../0309-best-time-to-buy-and-sell-stock-with-cooldown/readme.md)   | [Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)   |
+| 2012   | Medium     | [Sum of Beauty in the Array](../2012-sum-of-beauty-in-the-array/readme.md)                                         | [Sum of Beauty in the Array](https://leetcode.com/problems/sum-of-beauty-in-the-array/)                                         |
+| 2016   | Easy       | [Maximum Difference Between Increasing Elements](../2016-maximum-difference-between-increasing-elements/readme.md) | [Maximum Difference Between Increasing Elements](https://leetcode.com/problems/maximum-difference-between-increasing-elements/) |
+| 2291   | Medium     | [Maximum Profit From Trading Stocks](../2291-maximum-profit-from-trading-stocks/readme.md)                         | [Maximum Profit From Trading Stocks](https://leetcode.com/problems/maximum-profit-from-trading-stocks/)                         |
+| 3573   | Medium     | [Best Time to Buy and Sell Stock V](../3573-best-time-to-buy-and-sell-stock-v/readme.md)                           | [Best Time to Buy and Sell Stock V](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-v/)                           |
 
 ## Examples
 

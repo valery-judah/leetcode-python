@@ -2,7 +2,8 @@
 
 ## Quick Facts
 
-- URL: [Add Two Polynomials Represented as Linked Lists](https://leetcode.com/problems/add-two-polynomials-represented-as-linked-lists/)
+- URL:
+  [Add Two Polynomials Represented as Linked Lists](https://leetcode.com/problems/add-two-polynomials-represented-as-linked-lists/)
 - Function: `addPoly`
 - Signature: `(poly1: list[list[int]], poly2: list[list[int]])  -> int`
 - Primary pattern: **Two Pointers**
@@ -31,11 +32,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -50,8 +51,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -67,11 +68,11 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0002 | Medium | [Add Two Numbers](../0002-add-two-numbers/readme.md) | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) |
-| 0021 | Easy | [Merge Two Sorted Lists](../0021-merge-two-sorted-lists/readme.md) | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) |
-| 0445 | Medium | [Add Two Numbers II](../0445-add-two-numbers-ii/readme.md) | [Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/) |
+| Number | Difficulty | Name                                                               | LeetCode                                                                        |
+| ------ | ---------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------- |
+| 0002   | Medium     | [Add Two Numbers](../0002-add-two-numbers/readme.md)               | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)               |
+| 0021   | Easy       | [Merge Two Sorted Lists](../0021-merge-two-sorted-lists/readme.md) | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) |
+| 0445   | Medium     | [Add Two Numbers II](../0445-add-two-numbers-ii/readme.md)         | [Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/)         |
 
 ## Examples
 

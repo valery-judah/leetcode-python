@@ -30,11 +30,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -49,8 +49,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -66,16 +66,16 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0130 | Medium | [Surrounded Regions](../0130-surrounded-regions/readme.md) | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/) |
-| 0200 | Medium | [Number of Islands](../0200-number-of-islands/readme.md) | [Number of Islands](https://leetcode.com/problems/number-of-islands/) |
-| 0317 | Hard | [Shortest Distance from All Buildings](../0317-shortest-distance-from-all-buildings/readme.md) | [Shortest Distance from All Buildings](https://leetcode.com/problems/shortest-distance-from-all-buildings/) |
-| 0419 | Medium | [Battleships in a Board](../0419-battleships-in-a-board/readme.md) | [Battleships in a Board](https://leetcode.com/problems/battleships-in-a-board/) |
-| 0489 | Hard | [Robot Room Cleaner](../0489-robot-room-cleaner/readme.md) | [Robot Room Cleaner](https://leetcode.com/problems/robot-room-cleaner/) |
-| 0994 | Medium | [Rotting Oranges](../0994-rotting-oranges/readme.md) | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) |
-| 3015 | Medium | [Count the Number of Houses at a Certain Distance I](../3015-count-the-number-of-houses-at-a-certain-distance-i/readme.md) | [Count the Number of Houses at a Certain Distance I](https://leetcode.com/problems/count-the-number-of-houses-at-a-certain-distance-i/) |
-| 3017 | Hard | [Count the Number of Houses at a Certain Distance II](../3017-count-the-number-of-houses-at-a-certain-distance-ii/readme.md) | [Count the Number of Houses at a Certain Distance II](https://leetcode.com/problems/count-the-number-of-houses-at-a-certain-distance-ii/) |
+| Number | Difficulty | Name                                                                                                                         | LeetCode                                                                                                                                  |
+| ------ | ---------- | ---------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| 0130   | Medium     | [Surrounded Regions](../0130-surrounded-regions/readme.md)                                                                   | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)                                                                   |
+| 0200   | Medium     | [Number of Islands](../0200-number-of-islands/readme.md)                                                                     | [Number of Islands](https://leetcode.com/problems/number-of-islands/)                                                                     |
+| 0317   | Hard       | [Shortest Distance from All Buildings](../0317-shortest-distance-from-all-buildings/readme.md)                               | [Shortest Distance from All Buildings](https://leetcode.com/problems/shortest-distance-from-all-buildings/)                               |
+| 0419   | Medium     | [Battleships in a Board](../0419-battleships-in-a-board/readme.md)                                                           | [Battleships in a Board](https://leetcode.com/problems/battleships-in-a-board/)                                                           |
+| 0489   | Hard       | [Robot Room Cleaner](../0489-robot-room-cleaner/readme.md)                                                                   | [Robot Room Cleaner](https://leetcode.com/problems/robot-room-cleaner/)                                                                   |
+| 0994   | Medium     | [Rotting Oranges](../0994-rotting-oranges/readme.md)                                                                         | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/)                                                                         |
+| 3015   | Medium     | [Count the Number of Houses at a Certain Distance I](../3015-count-the-number-of-houses-at-a-certain-distance-i/readme.md)   | [Count the Number of Houses at a Certain Distance I](https://leetcode.com/problems/count-the-number-of-houses-at-a-certain-distance-i/)   |
+| 3017   | Hard       | [Count the Number of Houses at a Certain Distance II](../3017-count-the-number-of-houses-at-a-certain-distance-ii/readme.md) | [Count the Number of Houses at a Certain Distance II](https://leetcode.com/problems/count-the-number-of-houses-at-a-certain-distance-ii/) |
 
 ## Examples
 

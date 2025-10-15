@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,12 +65,12 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0038 | Medium | [Count and Say](../0038-count-and-say/readme.md) | [Count and Say](https://leetcode.com/problems/count-and-say/) |
-| 0297 | Hard | [Serialize and Deserialize Binary Tree](../0297-serialize-and-deserialize-binary-tree/readme.md) | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) |
-| 0443 | Medium | [String Compression](../0443-string-compression/readme.md) | [String Compression](https://leetcode.com/problems/string-compression/) |
-| 0696 | Easy | [Count Binary Substrings](../0696-count-binary-substrings/readme.md) | [Count Binary Substrings](https://leetcode.com/problems/count-binary-substrings/) |
+| Number | Difficulty | Name                                                                                             | LeetCode                                                                                                      |
+| ------ | ---------- | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------- |
+| 0038   | Medium     | [Count and Say](../0038-count-and-say/readme.md)                                                 | [Count and Say](https://leetcode.com/problems/count-and-say/)                                                 |
+| 0297   | Hard       | [Serialize and Deserialize Binary Tree](../0297-serialize-and-deserialize-binary-tree/readme.md) | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) |
+| 0443   | Medium     | [String Compression](../0443-string-compression/readme.md)                                       | [String Compression](https://leetcode.com/problems/string-compression/)                                       |
+| 0696   | Easy       | [Count Binary Substrings](../0696-count-binary-substrings/readme.md)                             | [Count Binary Substrings](https://leetcode.com/problems/count-binary-substrings/)                             |
 
 ## Examples
 

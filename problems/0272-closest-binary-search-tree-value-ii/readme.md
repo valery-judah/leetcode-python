@@ -2,7 +2,8 @@
 
 ## Quick Facts
 
-- URL: [Closest Binary Search Tree Value II](https://leetcode.com/problems/closest-binary-search-tree-value-ii/)
+- URL:
+  [Closest Binary Search Tree Value II](https://leetcode.com/problems/closest-binary-search-tree-value-ii/)
 - Function: `closestKValues`
 - Signature: `(root: TreeNode | None, target: float, k: int)  -> list[int]`
 - Primary pattern: **Two Pointers**
@@ -30,11 +31,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -49,8 +50,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -66,11 +67,11 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0094 | Easy | [Binary Tree Inorder Traversal](../0094-binary-tree-inorder-traversal/readme.md) | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) |
-| 0270 | Easy | [Closest Binary Search Tree Value](../0270-closest-binary-search-tree-value/readme.md) | [Closest Binary Search Tree Value](https://leetcode.com/problems/closest-binary-search-tree-value/) |
-| 2476 | Medium | [Closest Nodes Queries in a Binary Search Tree](../2476-closest-nodes-queries-in-a-binary-search-tree/readme.md) | [Closest Nodes Queries in a Binary Search Tree](https://leetcode.com/problems/closest-nodes-queries-in-a-binary-search-tree/) |
+| Number | Difficulty | Name                                                                                                             | LeetCode                                                                                                                      |
+| ------ | ---------- | ---------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| 0094   | Easy       | [Binary Tree Inorder Traversal](../0094-binary-tree-inorder-traversal/readme.md)                                 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)                                 |
+| 0270   | Easy       | [Closest Binary Search Tree Value](../0270-closest-binary-search-tree-value/readme.md)                           | [Closest Binary Search Tree Value](https://leetcode.com/problems/closest-binary-search-tree-value/)                           |
+| 2476   | Medium     | [Closest Nodes Queries in a Binary Search Tree](../2476-closest-nodes-queries-in-a-binary-search-tree/readme.md) | [Closest Nodes Queries in a Binary Search Tree](https://leetcode.com/problems/closest-nodes-queries-in-a-binary-search-tree/) |
 
 ## Examples
 

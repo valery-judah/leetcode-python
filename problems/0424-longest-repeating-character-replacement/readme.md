@@ -2,7 +2,8 @@
 
 ## Quick Facts
 
-- URL: [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)
+- URL:
+  [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)
 - Function: `characterReplacement`
 - Signature: `(s: str, k: int)  -> int`
 - Primary pattern: **Sliding Window**
@@ -29,11 +30,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +49,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,13 +66,13 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0340 | Medium | [Longest Substring with At Most K Distinct Characters](../0340-longest-substring-with-at-most-k-distinct-characters/readme.md) | [Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/) |
-| 1004 | Medium | [Max Consecutive Ones III](../1004-max-consecutive-ones-iii/readme.md) | [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/) |
-| 2009 | Hard | [Minimum Number of Operations to Make Array Continuous](../2009-minimum-number-of-operations-to-make-array-continuous/readme.md) | [Minimum Number of Operations to Make Array Continuous](https://leetcode.com/problems/minimum-number-of-operations-to-make-array-continuous/) |
-| 2024 | Medium | [Maximize the Confusion of an Exam](../2024-maximize-the-confusion-of-an-exam/readme.md) | [Maximize the Confusion of an Exam](https://leetcode.com/problems/maximize-the-confusion-of-an-exam/) |
-| 2213 | Hard | [Longest Substring of One Repeating Character](../2213-longest-substring-of-one-repeating-character/readme.md) | [Longest Substring of One Repeating Character](https://leetcode.com/problems/longest-substring-of-one-repeating-character/) |
+| Number | Difficulty | Name                                                                                                                             | LeetCode                                                                                                                                      |
+| ------ | ---------- | -------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0340   | Medium     | [Longest Substring with At Most K Distinct Characters](../0340-longest-substring-with-at-most-k-distinct-characters/readme.md)   | [Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/)   |
+| 1004   | Medium     | [Max Consecutive Ones III](../1004-max-consecutive-ones-iii/readme.md)                                                           | [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/)                                                           |
+| 2009   | Hard       | [Minimum Number of Operations to Make Array Continuous](../2009-minimum-number-of-operations-to-make-array-continuous/readme.md) | [Minimum Number of Operations to Make Array Continuous](https://leetcode.com/problems/minimum-number-of-operations-to-make-array-continuous/) |
+| 2024   | Medium     | [Maximize the Confusion of an Exam](../2024-maximize-the-confusion-of-an-exam/readme.md)                                         | [Maximize the Confusion of an Exam](https://leetcode.com/problems/maximize-the-confusion-of-an-exam/)                                         |
+| 2213   | Hard       | [Longest Substring of One Repeating Character](../2213-longest-substring-of-one-repeating-character/readme.md)                   | [Longest Substring of One Repeating Character](https://leetcode.com/problems/longest-substring-of-one-repeating-character/)                   |
 
 ## Examples
 

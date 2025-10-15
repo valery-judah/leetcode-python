@@ -2,7 +2,8 @@
 
 ## Quick Facts
 
-- URL: [Shortest Distance from All Buildings](https://leetcode.com/problems/shortest-distance-from-all-buildings/)
+- URL:
+  [Shortest Distance from All Buildings](https://leetcode.com/problems/shortest-distance-from-all-buildings/)
 - Function: `shortestDistance`
 - Signature: `(grid: list[list[int]])  -> int`
 - Primary pattern: **Array**
@@ -31,11 +32,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -50,8 +51,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -67,11 +68,11 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0286 | Medium | [Walls and Gates](../0286-walls-and-gates/readme.md) | [Walls and Gates](https://leetcode.com/problems/walls-and-gates/) |
-| 0296 | Hard | [Best Meeting Point](../0296-best-meeting-point/readme.md) | [Best Meeting Point](https://leetcode.com/problems/best-meeting-point/) |
-| 1162 | Medium | [As Far from Land as Possible](../1162-as-far-from-land-as-possible/readme.md) | [As Far from Land as Possible](https://leetcode.com/problems/as-far-from-land-as-possible/) |
+| Number | Difficulty | Name                                                                           | LeetCode                                                                                    |
+| ------ | ---------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------- |
+| 0286   | Medium     | [Walls and Gates](../0286-walls-and-gates/readme.md)                           | [Walls and Gates](https://leetcode.com/problems/walls-and-gates/)                           |
+| 0296   | Hard       | [Best Meeting Point](../0296-best-meeting-point/readme.md)                     | [Best Meeting Point](https://leetcode.com/problems/best-meeting-point/)                     |
+| 1162   | Medium     | [As Far from Land as Possible](../1162-as-far-from-land-as-possible/readme.md) | [As Far from Land as Possible](https://leetcode.com/problems/as-far-from-land-as-possible/) |
 
 ## Examples
 

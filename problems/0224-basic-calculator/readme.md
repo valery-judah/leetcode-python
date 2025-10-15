@@ -33,11 +33,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -52,8 +52,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -69,15 +69,15 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0150 | Medium | [Evaluate Reverse Polish Notation](../0150-evaluate-reverse-polish-notation/readme.md) | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) |
-| 0227 | Medium | [Basic Calculator II](../0227-basic-calculator-ii/readme.md) | [Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/) |
-| 0241 | Medium | [Different Ways to Add Parentheses](../0241-different-ways-to-add-parentheses/readme.md) | [Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/) |
-| 0282 | Hard | [Expression Add Operators](../0282-expression-add-operators/readme.md) | [Expression Add Operators](https://leetcode.com/problems/expression-add-operators/) |
-| 0772 | Hard | [Basic Calculator III](../0772-basic-calculator-iii/readme.md) | [Basic Calculator III](https://leetcode.com/problems/basic-calculator-iii/) |
-| 2019 | Hard | [The Score of Students Solving Math Expression](../2019-the-score-of-students-solving-math-expression/readme.md) | [The Score of Students Solving Math Expression](https://leetcode.com/problems/the-score-of-students-solving-math-expression/) |
-| 2232 | Medium | [Minimize Result by Adding Parentheses to Expression](../2232-minimize-result-by-adding-parentheses-to-expression/readme.md) | [Minimize Result by Adding Parentheses to Expression](https://leetcode.com/problems/minimize-result-by-adding-parentheses-to-expression/) |
+| Number | Difficulty | Name                                                                                                                         | LeetCode                                                                                                                                  |
+| ------ | ---------- | ---------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| 0150   | Medium     | [Evaluate Reverse Polish Notation](../0150-evaluate-reverse-polish-notation/readme.md)                                       | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)                                       |
+| 0227   | Medium     | [Basic Calculator II](../0227-basic-calculator-ii/readme.md)                                                                 | [Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/)                                                                 |
+| 0241   | Medium     | [Different Ways to Add Parentheses](../0241-different-ways-to-add-parentheses/readme.md)                                     | [Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/)                                     |
+| 0282   | Hard       | [Expression Add Operators](../0282-expression-add-operators/readme.md)                                                       | [Expression Add Operators](https://leetcode.com/problems/expression-add-operators/)                                                       |
+| 0772   | Hard       | [Basic Calculator III](../0772-basic-calculator-iii/readme.md)                                                               | [Basic Calculator III](https://leetcode.com/problems/basic-calculator-iii/)                                                               |
+| 2019   | Hard       | [The Score of Students Solving Math Expression](../2019-the-score-of-students-solving-math-expression/readme.md)             | [The Score of Students Solving Math Expression](https://leetcode.com/problems/the-score-of-students-solving-math-expression/)             |
+| 2232   | Medium     | [Minimize Result by Adding Parentheses to Expression](../2232-minimize-result-by-adding-parentheses-to-expression/readme.md) | [Minimize Result by Adding Parentheses to Expression](https://leetcode.com/problems/minimize-result-by-adding-parentheses-to-expression/) |
 
 ## Examples
 

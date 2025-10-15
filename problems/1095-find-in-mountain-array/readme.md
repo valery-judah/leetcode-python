@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,12 +65,12 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0852 | Medium | [Peak Index in a Mountain Array](../0852-peak-index-in-a-mountain-array/readme.md) | [Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/) |
-| 1671 | Hard | [Minimum Number of Removals to Make Mountain Array](../1671-minimum-number-of-removals-to-make-mountain-array/readme.md) | [Minimum Number of Removals to Make Mountain Array](https://leetcode.com/problems/minimum-number-of-removals-to-make-mountain-array/) |
-| 2100 | Medium | [Find Good Days to Rob the Bank](../2100-find-good-days-to-rob-the-bank/readme.md) | [Find Good Days to Rob the Bank](https://leetcode.com/problems/find-good-days-to-rob-the-bank/) |
-| 3285 | Easy | [Find Indices of Stable Mountains](../3285-find-indices-of-stable-mountains/readme.md) | [Find Indices of Stable Mountains](https://leetcode.com/problems/find-indices-of-stable-mountains/) |
+| Number | Difficulty | Name                                                                                                                     | LeetCode                                                                                                                              |
+| ------ | ---------- | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- |
+| 0852   | Medium     | [Peak Index in a Mountain Array](../0852-peak-index-in-a-mountain-array/readme.md)                                       | [Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/)                                       |
+| 1671   | Hard       | [Minimum Number of Removals to Make Mountain Array](../1671-minimum-number-of-removals-to-make-mountain-array/readme.md) | [Minimum Number of Removals to Make Mountain Array](https://leetcode.com/problems/minimum-number-of-removals-to-make-mountain-array/) |
+| 2100   | Medium     | [Find Good Days to Rob the Bank](../2100-find-good-days-to-rob-the-bank/readme.md)                                       | [Find Good Days to Rob the Bank](https://leetcode.com/problems/find-good-days-to-rob-the-bank/)                                       |
+| 3285   | Easy       | [Find Indices of Stable Mountains](../3285-find-indices-of-stable-mountains/readme.md)                                   | [Find Indices of Stable Mountains](https://leetcode.com/problems/find-indices-of-stable-mountains/)                                   |
 
 ## Examples
 

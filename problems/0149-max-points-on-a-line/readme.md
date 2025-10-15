@@ -30,11 +30,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -49,8 +49,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -66,12 +66,12 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0356 | Medium | [Line Reflection](../0356-line-reflection/readme.md) | [Line Reflection](https://leetcode.com/problems/line-reflection/) |
-| 2152 | Medium | [Minimum Number of Lines to Cover Points](../2152-minimum-number-of-lines-to-cover-points/readme.md) | [Minimum Number of Lines to Cover Points](https://leetcode.com/problems/minimum-number-of-lines-to-cover-points/) |
-| 2280 | Medium | [Minimum Lines to Represent a Line Chart](../2280-minimum-lines-to-represent-a-line-chart/readme.md) | [Minimum Lines to Represent a Line Chart](https://leetcode.com/problems/minimum-lines-to-represent-a-line-chart/) |
-| 3404 | Medium | [Count Special Subsequences](../3404-count-special-subsequences/readme.md) | [Count Special Subsequences](https://leetcode.com/problems/count-special-subsequences/) |
+| Number | Difficulty | Name                                                                                                 | LeetCode                                                                                                          |
+| ------ | ---------- | ---------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| 0356   | Medium     | [Line Reflection](../0356-line-reflection/readme.md)                                                 | [Line Reflection](https://leetcode.com/problems/line-reflection/)                                                 |
+| 2152   | Medium     | [Minimum Number of Lines to Cover Points](../2152-minimum-number-of-lines-to-cover-points/readme.md) | [Minimum Number of Lines to Cover Points](https://leetcode.com/problems/minimum-number-of-lines-to-cover-points/) |
+| 2280   | Medium     | [Minimum Lines to Represent a Line Chart](../2280-minimum-lines-to-represent-a-line-chart/readme.md) | [Minimum Lines to Represent a Line Chart](https://leetcode.com/problems/minimum-lines-to-represent-a-line-chart/) |
+| 3404   | Medium     | [Count Special Subsequences](../3404-count-special-subsequences/readme.md)                           | [Count Special Subsequences](https://leetcode.com/problems/count-special-subsequences/)                           |
 
 ## Examples
 

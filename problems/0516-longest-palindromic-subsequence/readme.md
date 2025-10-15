@@ -28,11 +28,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +47,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,15 +64,15 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0005 | Medium | [Longest Palindromic Substring](../0005-longest-palindromic-substring/readme.md) | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) |
-| 0647 | Medium | [Palindromic Substrings](../0647-palindromic-substrings/readme.md) | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/) |
-| 0730 | Hard | [Count Different Palindromic Subsequences](../0730-count-different-palindromic-subsequences/readme.md) | [Count Different Palindromic Subsequences](https://leetcode.com/problems/count-different-palindromic-subsequences/) |
-| 1143 | Medium | [Longest Common Subsequence](../1143-longest-common-subsequence/readme.md) | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) |
-| 1682 | Medium | [Longest Palindromic Subsequence II](../1682-longest-palindromic-subsequence-ii/readme.md) | [Longest Palindromic Subsequence II](https://leetcode.com/problems/longest-palindromic-subsequence-ii/) |
-| 1771 | Hard | [Maximize Palindrome Length From Subsequences](../1771-maximize-palindrome-length-from-subsequences/readme.md) | [Maximize Palindrome Length From Subsequences](https://leetcode.com/problems/maximize-palindrome-length-from-subsequences/) |
-| 2002 | Medium | [Maximum Product of the Length of Two Palindromic Subsequences](../2002-maximum-product-of-the-length-of-two-palindromic-subsequences/readme.md) | [Maximum Product of the Length of Two Palindromic Subsequences](https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/) |
+| Number | Difficulty | Name                                                                                                                                             | LeetCode                                                                                                                                                      |
+| ------ | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0005   | Medium     | [Longest Palindromic Substring](../0005-longest-palindromic-substring/readme.md)                                                                 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)                                                                 |
+| 0647   | Medium     | [Palindromic Substrings](../0647-palindromic-substrings/readme.md)                                                                               | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)                                                                               |
+| 0730   | Hard       | [Count Different Palindromic Subsequences](../0730-count-different-palindromic-subsequences/readme.md)                                           | [Count Different Palindromic Subsequences](https://leetcode.com/problems/count-different-palindromic-subsequences/)                                           |
+| 1143   | Medium     | [Longest Common Subsequence](../1143-longest-common-subsequence/readme.md)                                                                       | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)                                                                       |
+| 1682   | Medium     | [Longest Palindromic Subsequence II](../1682-longest-palindromic-subsequence-ii/readme.md)                                                       | [Longest Palindromic Subsequence II](https://leetcode.com/problems/longest-palindromic-subsequence-ii/)                                                       |
+| 1771   | Hard       | [Maximize Palindrome Length From Subsequences](../1771-maximize-palindrome-length-from-subsequences/readme.md)                                   | [Maximize Palindrome Length From Subsequences](https://leetcode.com/problems/maximize-palindrome-length-from-subsequences/)                                   |
+| 2002   | Medium     | [Maximum Product of the Length of Two Palindromic Subsequences](../2002-maximum-product-of-the-length-of-two-palindromic-subsequences/readme.md) | [Maximum Product of the Length of Two Palindromic Subsequences](https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/) |
 
 ## Examples
 

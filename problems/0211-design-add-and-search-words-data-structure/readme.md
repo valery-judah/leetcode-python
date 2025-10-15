@@ -2,7 +2,8 @@
 
 ## Quick Facts
 
-- URL: [Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/)
+- URL:
+  [Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/)
 - Function: \`\`
 - Signature: `()  -> bool`
 - Primary pattern: **String**
@@ -31,11 +32,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -50,8 +51,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -67,14 +68,14 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0208 | Medium | [Implement Trie (Prefix Tree)](../0208-implement-trie-prefix-tree/readme.md) | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) |
-| 0745 | Hard | [Prefix and Suffix Search](../0745-prefix-and-suffix-search/readme.md) | [Prefix and Suffix Search](https://leetcode.com/problems/prefix-and-suffix-search/) |
-| 2301 | Hard | [Match Substring After Replacement](../2301-match-substring-after-replacement/readme.md) | [Match Substring After Replacement](https://leetcode.com/problems/match-substring-after-replacement/) |
-| 2416 | Hard | [Sum of Prefix Scores of Strings](../2416-sum-of-prefix-scores-of-strings/readme.md) | [Sum of Prefix Scores of Strings](https://leetcode.com/problems/sum-of-prefix-scores-of-strings/) |
-| 3045 | Hard | [Count Prefix and Suffix Pairs II](../3045-count-prefix-and-suffix-pairs-ii/readme.md) | [Count Prefix and Suffix Pairs II](https://leetcode.com/problems/count-prefix-and-suffix-pairs-ii/) |
-| 3042 | Easy | [Count Prefix and Suffix Pairs I](../3042-count-prefix-and-suffix-pairs-i/readme.md) | [Count Prefix and Suffix Pairs I](https://leetcode.com/problems/count-prefix-and-suffix-pairs-i/) |
+| Number | Difficulty | Name                                                                                     | LeetCode                                                                                              |
+| ------ | ---------- | ---------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| 0208   | Medium     | [Implement Trie (Prefix Tree)](../0208-implement-trie-prefix-tree/readme.md)             | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)             |
+| 0745   | Hard       | [Prefix and Suffix Search](../0745-prefix-and-suffix-search/readme.md)                   | [Prefix and Suffix Search](https://leetcode.com/problems/prefix-and-suffix-search/)                   |
+| 2301   | Hard       | [Match Substring After Replacement](../2301-match-substring-after-replacement/readme.md) | [Match Substring After Replacement](https://leetcode.com/problems/match-substring-after-replacement/) |
+| 2416   | Hard       | [Sum of Prefix Scores of Strings](../2416-sum-of-prefix-scores-of-strings/readme.md)     | [Sum of Prefix Scores of Strings](https://leetcode.com/problems/sum-of-prefix-scores-of-strings/)     |
+| 3045   | Hard       | [Count Prefix and Suffix Pairs II](../3045-count-prefix-and-suffix-pairs-ii/readme.md)   | [Count Prefix and Suffix Pairs II](https://leetcode.com/problems/count-prefix-and-suffix-pairs-ii/)   |
+| 3042   | Easy       | [Count Prefix and Suffix Pairs I](../3042-count-prefix-and-suffix-pairs-i/readme.md)     | [Count Prefix and Suffix Pairs I](https://leetcode.com/problems/count-prefix-and-suffix-pairs-i/)     |
 
 ## Examples
 

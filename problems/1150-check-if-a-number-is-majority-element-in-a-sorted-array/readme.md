@@ -2,7 +2,8 @@
 
 ## Quick Facts
 
-- URL: [Check If a Number Is Majority Element in a Sorted Array](https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/)
+- URL:
+  [Check If a Number Is Majority Element in a Sorted Array](https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/)
 - Function: `isMajorityElement`
 - Signature: `(nums: list[int], target: int)  -> bool`
 - Primary pattern: **Binary Search**
@@ -29,11 +30,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +49,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,10 +66,10 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0169 | Easy | [Majority Element](../0169-majority-element/readme.md) | [Majority Element](https://leetcode.com/problems/majority-element/) |
-| 0229 | Medium | [Majority Element II](../0229-majority-element-ii/readme.md) | [Majority Element II](https://leetcode.com/problems/majority-element-ii/) |
+| Number | Difficulty | Name                                                         | LeetCode                                                                  |
+| ------ | ---------- | ------------------------------------------------------------ | ------------------------------------------------------------------------- |
+| 0169   | Easy       | [Majority Element](../0169-majority-element/readme.md)       | [Majority Element](https://leetcode.com/problems/majority-element/)       |
+| 0229   | Medium     | [Majority Element II](../0229-majority-element-ii/readme.md) | [Majority Element II](https://leetcode.com/problems/majority-element-ii/) |
 
 ## Examples
 

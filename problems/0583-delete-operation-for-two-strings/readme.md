@@ -28,11 +28,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +47,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,12 +64,12 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0072 | Medium | [Edit Distance](../0072-edit-distance/readme.md) | [Edit Distance](https://leetcode.com/problems/edit-distance/) |
-| 0712 | Medium | [Minimum ASCII Delete Sum for Two Strings](../0712-minimum-ascii-delete-sum-for-two-strings/readme.md) | [Minimum ASCII Delete Sum for Two Strings](https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/) |
-| 1143 | Medium | [Longest Common Subsequence](../1143-longest-common-subsequence/readme.md) | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) |
-| 2937 | Easy | [Make Three Strings Equal](../2937-make-three-strings-equal/readme.md) | [Make Three Strings Equal](https://leetcode.com/problems/make-three-strings-equal/) |
+| Number | Difficulty | Name                                                                                                   | LeetCode                                                                                                            |
+| ------ | ---------- | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- |
+| 0072   | Medium     | [Edit Distance](../0072-edit-distance/readme.md)                                                       | [Edit Distance](https://leetcode.com/problems/edit-distance/)                                                       |
+| 0712   | Medium     | [Minimum ASCII Delete Sum for Two Strings](../0712-minimum-ascii-delete-sum-for-two-strings/readme.md) | [Minimum ASCII Delete Sum for Two Strings](https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/) |
+| 1143   | Medium     | [Longest Common Subsequence](../1143-longest-common-subsequence/readme.md)                             | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)                             |
+| 2937   | Easy       | [Make Three Strings Equal](../2937-make-three-strings-equal/readme.md)                                 | [Make Three Strings Equal](https://leetcode.com/problems/make-three-strings-equal/)                                 |
 
 ## Examples
 

@@ -2,7 +2,8 @@
 
 ## Quick Facts
 
-- URL: [Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)
+- URL:
+  [Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)
 - Function: `levelOrderBottom`
 - Signature: `(root: TreeNode | None)  -> list[list[int]]`
 - Primary pattern: **Tree**
@@ -28,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,10 +65,10 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0102 | Medium | [Binary Tree Level Order Traversal](../0102-binary-tree-level-order-traversal/readme.md) | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) |
-| 0637 | Easy | [Average of Levels in Binary Tree](../0637-average-of-levels-in-binary-tree/readme.md) | [Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/) |
+| Number | Difficulty | Name                                                                                     | LeetCode                                                                                              |
+| ------ | ---------- | ---------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| 0102   | Medium     | [Binary Tree Level Order Traversal](../0102-binary-tree-level-order-traversal/readme.md) | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) |
+| 0637   | Easy       | [Average of Levels in Binary Tree](../0637-average-of-levels-in-binary-tree/readme.md)   | [Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/)   |
 
 ## Examples
 

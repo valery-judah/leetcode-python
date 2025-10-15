@@ -2,7 +2,8 @@
 
 ## Quick Facts
 
-- URL: [Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)
+- URL:
+  [Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)
 - Function: `countComponents`
 - Signature: `(n: int, edges: list[list[int]])  -> int`
 - Primary pattern: **Graph**
@@ -32,11 +33,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -51,8 +52,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -68,13 +69,13 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0200 | Medium | [Number of Islands](../0200-number-of-islands/readme.md) | [Number of Islands](https://leetcode.com/problems/number-of-islands/) |
-| 0261 | Medium | [Graph Valid Tree](../0261-graph-valid-tree/readme.md) | [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/) |
-| 0547 | Medium | [Number of Provinces](../0547-number-of-provinces/readme.md) | [Number of Provinces](https://leetcode.com/problems/number-of-provinces/) |
-| 2077 | Medium | [Paths in Maze That Lead to Same Room](../2077-paths-in-maze-that-lead-to-same-room/readme.md) | [Paths in Maze That Lead to Same Room](https://leetcode.com/problems/paths-in-maze-that-lead-to-same-room/) |
-| 2685 | Medium | [Count the Number of Complete Components](../2685-count-the-number-of-complete-components/readme.md) | [Count the Number of Complete Components](https://leetcode.com/problems/count-the-number-of-complete-components/) |
+| Number | Difficulty | Name                                                                                                 | LeetCode                                                                                                          |
+| ------ | ---------- | ---------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| 0200   | Medium     | [Number of Islands](../0200-number-of-islands/readme.md)                                             | [Number of Islands](https://leetcode.com/problems/number-of-islands/)                                             |
+| 0261   | Medium     | [Graph Valid Tree](../0261-graph-valid-tree/readme.md)                                               | [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)                                               |
+| 0547   | Medium     | [Number of Provinces](../0547-number-of-provinces/readme.md)                                         | [Number of Provinces](https://leetcode.com/problems/number-of-provinces/)                                         |
+| 2077   | Medium     | [Paths in Maze That Lead to Same Room](../2077-paths-in-maze-that-lead-to-same-room/readme.md)       | [Paths in Maze That Lead to Same Room](https://leetcode.com/problems/paths-in-maze-that-lead-to-same-room/)       |
+| 2685   | Medium     | [Count the Number of Complete Components](../2685-count-the-number-of-complete-components/readme.md) | [Count the Number of Complete Components](https://leetcode.com/problems/count-the-number-of-complete-components/) |
 
 ## Examples
 

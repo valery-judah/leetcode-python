@@ -31,11 +31,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -50,8 +50,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -67,11 +67,11 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0695 | Medium | [Max Area of Island](../0695-max-area-of-island/readme.md) | [Max Area of Island](https://leetcode.com/problems/max-area-of-island/) |
-| 0733 | Easy | [Flood Fill](../0733-flood-fill/readme.md) | [Flood Fill](https://leetcode.com/problems/flood-fill/) |
-| 1034 | Medium | [Coloring A Border](../1034-coloring-a-border/readme.md) | [Coloring A Border](https://leetcode.com/problems/coloring-a-border/) |
+| Number | Difficulty | Name                                                       | LeetCode                                                                |
+| ------ | ---------- | ---------------------------------------------------------- | ----------------------------------------------------------------------- |
+| 0695   | Medium     | [Max Area of Island](../0695-max-area-of-island/readme.md) | [Max Area of Island](https://leetcode.com/problems/max-area-of-island/) |
+| 0733   | Easy       | [Flood Fill](../0733-flood-fill/readme.md)                 | [Flood Fill](https://leetcode.com/problems/flood-fill/)                 |
+| 1034   | Medium     | [Coloring A Border](../1034-coloring-a-border/readme.md)   | [Coloring A Border](https://leetcode.com/problems/coloring-a-border/)   |
 
 ## Examples
 

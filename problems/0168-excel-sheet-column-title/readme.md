@@ -27,11 +27,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -46,8 +46,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -63,11 +63,11 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0171 | Easy | [Excel Sheet Column Number](../0171-excel-sheet-column-number/readme.md) | [Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/) |
-| 2194 | Easy | [Cells in a Range on an Excel Sheet](../2194-cells-in-a-range-on-an-excel-sheet/readme.md) | [Cells in a Range on an Excel Sheet](https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet/) |
-| 3484 | Medium | [Design Spreadsheet](../3484-design-spreadsheet/readme.md) | [Design Spreadsheet](https://leetcode.com/problems/design-spreadsheet/) |
+| Number | Difficulty | Name                                                                                       | LeetCode                                                                                                |
+| ------ | ---------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------- |
+| 0171   | Easy       | [Excel Sheet Column Number](../0171-excel-sheet-column-number/readme.md)                   | [Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/)                   |
+| 2194   | Easy       | [Cells in a Range on an Excel Sheet](../2194-cells-in-a-range-on-an-excel-sheet/readme.md) | [Cells in a Range on an Excel Sheet](https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet/) |
+| 3484   | Medium     | [Design Spreadsheet](../3484-design-spreadsheet/readme.md)                                 | [Design Spreadsheet](https://leetcode.com/problems/design-spreadsheet/)                                 |
 
 ## Examples
 

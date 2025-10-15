@@ -28,11 +28,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +47,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,15 +64,15 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0092 | Medium | [Reverse Linked List II](../0092-reverse-linked-list-ii/readme.md) | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) |
-| 0156 | Medium | [Binary Tree Upside Down](../0156-binary-tree-upside-down/readme.md) | [Binary Tree Upside Down](https://leetcode.com/problems/binary-tree-upside-down/) |
-| 0234 | Easy | [Palindrome Linked List](../0234-palindrome-linked-list/readme.md) | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) |
-| 2074 | Medium | [Reverse Nodes in Even Length Groups](../2074-reverse-nodes-in-even-length-groups/readme.md) | [Reverse Nodes in Even Length Groups](https://leetcode.com/problems/reverse-nodes-in-even-length-groups/) |
-| 2130 | Medium | [Maximum Twin Sum of a Linked List](../2130-maximum-twin-sum-of-a-linked-list/readme.md) | [Maximum Twin Sum of a Linked List](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/) |
-| 2487 | Medium | [Remove Nodes From Linked List](../2487-remove-nodes-from-linked-list/readme.md) | [Remove Nodes From Linked List](https://leetcode.com/problems/remove-nodes-from-linked-list/) |
-| 2807 | Medium | [Insert Greatest Common Divisors in Linked List](../2807-insert-greatest-common-divisors-in-linked-list/readme.md) | [Insert Greatest Common Divisors in Linked List](https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/) |
+| Number | Difficulty | Name                                                                                                               | LeetCode                                                                                                                        |
+| ------ | ---------- | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------- |
+| 0092   | Medium     | [Reverse Linked List II](../0092-reverse-linked-list-ii/readme.md)                                                 | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)                                                 |
+| 0156   | Medium     | [Binary Tree Upside Down](../0156-binary-tree-upside-down/readme.md)                                               | [Binary Tree Upside Down](https://leetcode.com/problems/binary-tree-upside-down/)                                               |
+| 0234   | Easy       | [Palindrome Linked List](../0234-palindrome-linked-list/readme.md)                                                 | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)                                                 |
+| 2074   | Medium     | [Reverse Nodes in Even Length Groups](../2074-reverse-nodes-in-even-length-groups/readme.md)                       | [Reverse Nodes in Even Length Groups](https://leetcode.com/problems/reverse-nodes-in-even-length-groups/)                       |
+| 2130   | Medium     | [Maximum Twin Sum of a Linked List](../2130-maximum-twin-sum-of-a-linked-list/readme.md)                           | [Maximum Twin Sum of a Linked List](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/)                           |
+| 2487   | Medium     | [Remove Nodes From Linked List](../2487-remove-nodes-from-linked-list/readme.md)                                   | [Remove Nodes From Linked List](https://leetcode.com/problems/remove-nodes-from-linked-list/)                                   |
+| 2807   | Medium     | [Insert Greatest Common Divisors in Linked List](../2807-insert-greatest-common-divisors-in-linked-list/readme.md) | [Insert Greatest Common Divisors in Linked List](https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/) |
 
 ## Examples
 

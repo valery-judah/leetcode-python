@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,13 +65,13 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0774 | Hard | [Minimize Max Distance to Gas Station](../0774-minimize-max-distance-to-gas-station/readme.md) | [Minimize Max Distance to Gas Station](https://leetcode.com/problems/minimize-max-distance-to-gas-station/) |
-| 2226 | Medium | [Maximum Candies Allocated to K Children](../2226-maximum-candies-allocated-to-k-children/readme.md) | [Maximum Candies Allocated to K Children](https://leetcode.com/problems/maximum-candies-allocated-to-k-children/) |
-| 2064 | Medium | [Minimized Maximum of Products Distributed to Any Store](../2064-minimized-maximum-of-products-distributed-to-any-store/readme.md) | [Minimized Maximum of Products Distributed to Any Store](https://leetcode.com/problems/minimized-maximum-of-products-distributed-to-any-store/) |
-| 2498 | Medium | [Frog Jump II](../2498-frog-jump-ii/readme.md) | [Frog Jump II](https://leetcode.com/problems/frog-jump-ii/) |
-| 2594 | Medium | [Minimum Time to Repair Cars](../2594-minimum-time-to-repair-cars/readme.md) | [Minimum Time to Repair Cars](https://leetcode.com/problems/minimum-time-to-repair-cars/) |
+| Number | Difficulty | Name                                                                                                                               | LeetCode                                                                                                                                        |
+| ------ | ---------- | ---------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0774   | Hard       | [Minimize Max Distance to Gas Station](../0774-minimize-max-distance-to-gas-station/readme.md)                                     | [Minimize Max Distance to Gas Station](https://leetcode.com/problems/minimize-max-distance-to-gas-station/)                                     |
+| 2226   | Medium     | [Maximum Candies Allocated to K Children](../2226-maximum-candies-allocated-to-k-children/readme.md)                               | [Maximum Candies Allocated to K Children](https://leetcode.com/problems/maximum-candies-allocated-to-k-children/)                               |
+| 2064   | Medium     | [Minimized Maximum of Products Distributed to Any Store](../2064-minimized-maximum-of-products-distributed-to-any-store/readme.md) | [Minimized Maximum of Products Distributed to Any Store](https://leetcode.com/problems/minimized-maximum-of-products-distributed-to-any-store/) |
+| 2498   | Medium     | [Frog Jump II](../2498-frog-jump-ii/readme.md)                                                                                     | [Frog Jump II](https://leetcode.com/problems/frog-jump-ii/)                                                                                     |
+| 2594   | Medium     | [Minimum Time to Repair Cars](../2594-minimum-time-to-repair-cars/readme.md)                                                       | [Minimum Time to Repair Cars](https://leetcode.com/problems/minimum-time-to-repair-cars/)                                                       |
 
 ## Examples
 

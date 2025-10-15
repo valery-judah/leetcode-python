@@ -30,11 +30,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -49,8 +49,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -66,11 +66,11 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0059 | Medium | [Spiral Matrix II](../0059-spiral-matrix-ii/readme.md) | [Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/) |
-| 0885 | Medium | [Spiral Matrix III](../0885-spiral-matrix-iii/readme.md) | [Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii/) |
-| 2326 | Medium | [Spiral Matrix IV](../2326-spiral-matrix-iv/readme.md) | [Spiral Matrix IV](https://leetcode.com/problems/spiral-matrix-iv/) |
+| Number | Difficulty | Name                                                     | LeetCode                                                              |
+| ------ | ---------- | -------------------------------------------------------- | --------------------------------------------------------------------- |
+| 0059   | Medium     | [Spiral Matrix II](../0059-spiral-matrix-ii/readme.md)   | [Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/)   |
+| 0885   | Medium     | [Spiral Matrix III](../0885-spiral-matrix-iii/readme.md) | [Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii/) |
+| 2326   | Medium     | [Spiral Matrix IV](../2326-spiral-matrix-iv/readme.md)   | [Spiral Matrix IV](https://leetcode.com/problems/spiral-matrix-iv/)   |
 
 ## Examples
 

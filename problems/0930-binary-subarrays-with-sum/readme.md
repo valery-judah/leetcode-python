@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,12 +65,12 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 2302 | Hard | [Count Subarrays With Score Less Than K](../2302-count-subarrays-with-score-less-than-k/readme.md) | [Count Subarrays With Score Less Than K](https://leetcode.com/problems/count-subarrays-with-score-less-than-k/) |
-| 2750 | Medium | [Ways to Split Array Into Good Subarrays](../2750-ways-to-split-array-into-good-subarrays/readme.md) | [Ways to Split Array Into Good Subarrays](https://leetcode.com/problems/ways-to-split-array-into-good-subarrays/) |
-| 3129 | Medium | [Find All Possible Stable Binary Arrays I](../3129-find-all-possible-stable-binary-arrays-i/readme.md) | [Find All Possible Stable Binary Arrays I](https://leetcode.com/problems/find-all-possible-stable-binary-arrays-i/) |
-| 3130 | Hard | [Find All Possible Stable Binary Arrays II](../3130-find-all-possible-stable-binary-arrays-ii/readme.md) | [Find All Possible Stable Binary Arrays II](https://leetcode.com/problems/find-all-possible-stable-binary-arrays-ii/) |
+| Number | Difficulty | Name                                                                                                     | LeetCode                                                                                                              |
+| ------ | ---------- | -------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| 2302   | Hard       | [Count Subarrays With Score Less Than K](../2302-count-subarrays-with-score-less-than-k/readme.md)       | [Count Subarrays With Score Less Than K](https://leetcode.com/problems/count-subarrays-with-score-less-than-k/)       |
+| 2750   | Medium     | [Ways to Split Array Into Good Subarrays](../2750-ways-to-split-array-into-good-subarrays/readme.md)     | [Ways to Split Array Into Good Subarrays](https://leetcode.com/problems/ways-to-split-array-into-good-subarrays/)     |
+| 3129   | Medium     | [Find All Possible Stable Binary Arrays I](../3129-find-all-possible-stable-binary-arrays-i/readme.md)   | [Find All Possible Stable Binary Arrays I](https://leetcode.com/problems/find-all-possible-stable-binary-arrays-i/)   |
+| 3130   | Hard       | [Find All Possible Stable Binary Arrays II](../3130-find-all-possible-stable-binary-arrays-ii/readme.md) | [Find All Possible Stable Binary Arrays II](https://leetcode.com/problems/find-all-possible-stable-binary-arrays-ii/) |
 
 ## Examples
 

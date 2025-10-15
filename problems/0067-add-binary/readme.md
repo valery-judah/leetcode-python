@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,12 +65,12 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0002 | Medium | [Add Two Numbers](../0002-add-two-numbers/readme.md) | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) |
-| 0043 | Medium | [Multiply Strings](../0043-multiply-strings/readme.md) | [Multiply Strings](https://leetcode.com/problems/multiply-strings/) |
-| 0066 | Easy | [Plus One](../0066-plus-one/readme.md) | [Plus One](https://leetcode.com/problems/plus-one/) |
-| 0989 | Easy | [Add to Array-Form of Integer](../0989-add-to-array-form-of-integer/readme.md) | [Add to Array-Form of Integer](https://leetcode.com/problems/add-to-array-form-of-integer/) |
+| Number | Difficulty | Name                                                                           | LeetCode                                                                                    |
+| ------ | ---------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------- |
+| 0002   | Medium     | [Add Two Numbers](../0002-add-two-numbers/readme.md)                           | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)                           |
+| 0043   | Medium     | [Multiply Strings](../0043-multiply-strings/readme.md)                         | [Multiply Strings](https://leetcode.com/problems/multiply-strings/)                         |
+| 0066   | Easy       | [Plus One](../0066-plus-one/readme.md)                                         | [Plus One](https://leetcode.com/problems/plus-one/)                                         |
+| 0989   | Easy       | [Add to Array-Form of Integer](../0989-add-to-array-form-of-integer/readme.md) | [Add to Array-Form of Integer](https://leetcode.com/problems/add-to-array-form-of-integer/) |
 
 ## Examples
 

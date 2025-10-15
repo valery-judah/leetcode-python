@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,11 +65,11 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0024 | Medium | [Swap Nodes in Pairs](../0024-swap-nodes-in-pairs/readme.md) | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) |
-| 1721 | Medium | [Swapping Nodes in a Linked List](../1721-swapping-nodes-in-a-linked-list/readme.md) | [Swapping Nodes in a Linked List](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/) |
-| 2074 | Medium | [Reverse Nodes in Even Length Groups](../2074-reverse-nodes-in-even-length-groups/readme.md) | [Reverse Nodes in Even Length Groups](https://leetcode.com/problems/reverse-nodes-in-even-length-groups/) |
+| Number | Difficulty | Name                                                                                         | LeetCode                                                                                                  |
+| ------ | ---------- | -------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| 0024   | Medium     | [Swap Nodes in Pairs](../0024-swap-nodes-in-pairs/readme.md)                                 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)                                 |
+| 1721   | Medium     | [Swapping Nodes in a Linked List](../1721-swapping-nodes-in-a-linked-list/readme.md)         | [Swapping Nodes in a Linked List](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/)         |
+| 2074   | Medium     | [Reverse Nodes in Even Length Groups](../2074-reverse-nodes-in-even-length-groups/readme.md) | [Reverse Nodes in Even Length Groups](https://leetcode.com/problems/reverse-nodes-in-even-length-groups/) |
 
 ## Examples
 

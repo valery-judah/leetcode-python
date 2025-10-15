@@ -28,11 +28,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +47,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,11 +64,11 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0104 | Easy | [Maximum Depth of Binary Tree](../0104-maximum-depth-of-binary-tree/readme.md) | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) |
-| 3319 | Medium | [K-th Largest Perfect Subtree Size in Binary Tree](../3319-k-th-largest-perfect-subtree-size-in-binary-tree/readme.md) | [K-th Largest Perfect Subtree Size in Binary Tree](https://leetcode.com/problems/k-th-largest-perfect-subtree-size-in-binary-tree/) |
-| 3340 | Easy | [Check Balanced String](../3340-check-balanced-string/readme.md) | [Check Balanced String](https://leetcode.com/problems/check-balanced-string/) |
+| Number | Difficulty | Name                                                                                                                   | LeetCode                                                                                                                            |
+| ------ | ---------- | ---------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| 0104   | Easy       | [Maximum Depth of Binary Tree](../0104-maximum-depth-of-binary-tree/readme.md)                                         | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)                                         |
+| 3319   | Medium     | [K-th Largest Perfect Subtree Size in Binary Tree](../3319-k-th-largest-perfect-subtree-size-in-binary-tree/readme.md) | [K-th Largest Perfect Subtree Size in Binary Tree](https://leetcode.com/problems/k-th-largest-perfect-subtree-size-in-binary-tree/) |
+| 3340   | Easy       | [Check Balanced String](../3340-check-balanced-string/readme.md)                                                       | [Check Balanced String](https://leetcode.com/problems/check-balanced-string/)                                                       |
 
 ## Examples
 

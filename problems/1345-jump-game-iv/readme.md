@@ -28,11 +28,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +47,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,11 +64,11 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 1871 | Medium | [Jump Game VII](../1871-jump-game-vii/readme.md) | [Jump Game VII](https://leetcode.com/problems/jump-game-vii/) |
-| 2297 | Medium | [Jump Game VIII](../2297-jump-game-viii/readme.md) | [Jump Game VIII](https://leetcode.com/problems/jump-game-viii/) |
-| 2770 | Medium | [Maximum Number of Jumps to Reach the Last Index](../2770-maximum-number-of-jumps-to-reach-the-last-index/readme.md) | [Maximum Number of Jumps to Reach the Last Index](https://leetcode.com/problems/maximum-number-of-jumps-to-reach-the-last-index/) |
+| Number | Difficulty | Name                                                                                                                 | LeetCode                                                                                                                          |
+| ------ | ---------- | -------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| 1871   | Medium     | [Jump Game VII](../1871-jump-game-vii/readme.md)                                                                     | [Jump Game VII](https://leetcode.com/problems/jump-game-vii/)                                                                     |
+| 2297   | Medium     | [Jump Game VIII](../2297-jump-game-viii/readme.md)                                                                   | [Jump Game VIII](https://leetcode.com/problems/jump-game-viii/)                                                                   |
+| 2770   | Medium     | [Maximum Number of Jumps to Reach the Last Index](../2770-maximum-number-of-jumps-to-reach-the-last-index/readme.md) | [Maximum Number of Jumps to Reach the Last Index](https://leetcode.com/problems/maximum-number-of-jumps-to-reach-the-last-index/) |
 
 ## Examples
 

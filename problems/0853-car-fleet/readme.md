@@ -32,11 +32,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -51,8 +51,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -68,10 +68,10 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 1776 | Hard | [Car Fleet II](../1776-car-fleet-ii/readme.md) | [Car Fleet II](https://leetcode.com/problems/car-fleet-ii/) |
-| 2211 | Medium | [Count Collisions on a Road](../2211-count-collisions-on-a-road/readme.md) | [Count Collisions on a Road](https://leetcode.com/problems/count-collisions-on-a-road/) |
+| Number | Difficulty | Name                                                                       | LeetCode                                                                                |
+| ------ | ---------- | -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| 1776   | Hard       | [Car Fleet II](../1776-car-fleet-ii/readme.md)                             | [Car Fleet II](https://leetcode.com/problems/car-fleet-ii/)                             |
+| 2211   | Medium     | [Count Collisions on a Road](../2211-count-collisions-on-a-road/readme.md) | [Count Collisions on a Road](https://leetcode.com/problems/count-collisions-on-a-road/) |
 
 ## Examples
 

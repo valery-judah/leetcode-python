@@ -2,7 +2,8 @@
 
 ## Quick Facts
 
-- URL: [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)
+- URL:
+  [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)
 - Function: `letterCombinations`
 - Signature: `(digits: str)  -> list[str]`
 - Primary pattern: **Backtracking**
@@ -28,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,14 +65,14 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0022 | Medium | [Generate Parentheses](../0022-generate-parentheses/readme.md) | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) |
-| 0039 | Medium | [Combination Sum](../0039-combination-sum/readme.md) | [Combination Sum](https://leetcode.com/problems/combination-sum/) |
-| 0401 | Easy | [Binary Watch](../0401-binary-watch/readme.md) | [Binary Watch](https://leetcode.com/problems/binary-watch/) |
-| 2266 | Medium | [Count Number of Texts](../2266-count-number-of-texts/readme.md) | [Count Number of Texts](https://leetcode.com/problems/count-number-of-texts/) |
-| 3014 | Easy | [Minimum Number of Pushes to Type Word I](../3014-minimum-number-of-pushes-to-type-word-i/readme.md) | [Minimum Number of Pushes to Type Word I](https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i/) |
-| 3016 | Medium | [Minimum Number of Pushes to Type Word II](../3016-minimum-number-of-pushes-to-type-word-ii/readme.md) | [Minimum Number of Pushes to Type Word II](https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-ii/) |
+| Number | Difficulty | Name                                                                                                   | LeetCode                                                                                                            |
+| ------ | ---------- | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- |
+| 0022   | Medium     | [Generate Parentheses](../0022-generate-parentheses/readme.md)                                         | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)                                         |
+| 0039   | Medium     | [Combination Sum](../0039-combination-sum/readme.md)                                                   | [Combination Sum](https://leetcode.com/problems/combination-sum/)                                                   |
+| 0401   | Easy       | [Binary Watch](../0401-binary-watch/readme.md)                                                         | [Binary Watch](https://leetcode.com/problems/binary-watch/)                                                         |
+| 2266   | Medium     | [Count Number of Texts](../2266-count-number-of-texts/readme.md)                                       | [Count Number of Texts](https://leetcode.com/problems/count-number-of-texts/)                                       |
+| 3014   | Easy       | [Minimum Number of Pushes to Type Word I](../3014-minimum-number-of-pushes-to-type-word-i/readme.md)   | [Minimum Number of Pushes to Type Word I](https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i/)   |
+| 3016   | Medium     | [Minimum Number of Pushes to Type Word II](../3016-minimum-number-of-pushes-to-type-word-ii/readme.md) | [Minimum Number of Pushes to Type Word II](https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-ii/) |
 
 ## Examples
 

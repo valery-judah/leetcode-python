@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,15 +65,15 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0023 | Hard | [Merge k Sorted Lists](../0023-merge-k-sorted-lists/readme.md) | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) |
-| 0088 | Easy | [Merge Sorted Array](../0088-merge-sorted-array/readme.md) | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) |
-| 0147 | Medium | [Sort List](../0147-sort-list/readme.md) | [Sort List](https://leetcode.com/problems/sort-list/) |
-| 0244 | Medium | [Shortest Word Distance II](../0244-shortest-word-distance-ii/readme.md) | [Shortest Word Distance II](https://leetcode.com/problems/shortest-word-distance-ii/) |
-| 1634 | Medium | [Add Two Polynomials Represented as Linked Lists](../1634-add-two-polynomials-represented-as-linked-lists/readme.md) | [Add Two Polynomials Represented as Linked Lists](https://leetcode.com/problems/add-two-polynomials-represented-as-linked-lists/) |
-| 1940 | Medium | [Longest Common Subsequence Between Sorted Arrays](../1940-longest-common-subsequence-between-sorted-arrays/readme.md) | [Longest Common Subsequence Between Sorted Arrays](https://leetcode.com/problems/longest-common-subsequence-between-sorted-arrays/) |
-| 2570 | Easy | [Merge Two 2D Arrays by Summing Values](../2570-merge-two-2d-arrays-by-summing-values/readme.md) | [Merge Two 2D Arrays by Summing Values](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/) |
+| Number | Difficulty | Name                                                                                                                   | LeetCode                                                                                                                            |
+| ------ | ---------- | ---------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| 0023   | Hard       | [Merge k Sorted Lists](../0023-merge-k-sorted-lists/readme.md)                                                         | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)                                                         |
+| 0088   | Easy       | [Merge Sorted Array](../0088-merge-sorted-array/readme.md)                                                             | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)                                                             |
+| 0147   | Medium     | [Sort List](../0147-sort-list/readme.md)                                                                               | [Sort List](https://leetcode.com/problems/sort-list/)                                                                               |
+| 0244   | Medium     | [Shortest Word Distance II](../0244-shortest-word-distance-ii/readme.md)                                               | [Shortest Word Distance II](https://leetcode.com/problems/shortest-word-distance-ii/)                                               |
+| 1634   | Medium     | [Add Two Polynomials Represented as Linked Lists](../1634-add-two-polynomials-represented-as-linked-lists/readme.md)   | [Add Two Polynomials Represented as Linked Lists](https://leetcode.com/problems/add-two-polynomials-represented-as-linked-lists/)   |
+| 1940   | Medium     | [Longest Common Subsequence Between Sorted Arrays](../1940-longest-common-subsequence-between-sorted-arrays/readme.md) | [Longest Common Subsequence Between Sorted Arrays](https://leetcode.com/problems/longest-common-subsequence-between-sorted-arrays/) |
+| 2570   | Easy       | [Merge Two 2D Arrays by Summing Values](../2570-merge-two-2d-arrays-by-summing-values/readme.md)                       | [Merge Two 2D Arrays by Summing Values](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/)                       |
 
 ## Examples
 

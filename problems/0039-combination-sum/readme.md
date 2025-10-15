@@ -30,11 +30,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -49,8 +49,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -66,15 +66,15 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0017 | Medium | [Letter Combinations of a Phone Number](../0017-letter-combinations-of-a-phone-number/readme.md) | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) |
-| 0040 | Medium | [Combination Sum II](../0040-combination-sum-ii/readme.md) | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/) |
-| 0077 | Medium | [Combinations](../0077-combinations/readme.md) | [Combinations](https://leetcode.com/problems/combinations/) |
-| 0216 | Medium | [Combination Sum III](../0216-combination-sum-iii/readme.md) | [Combination Sum III](https://leetcode.com/problems/combination-sum-iii/) |
-| 0254 | Medium | [Factor Combinations](../0254-factor-combinations/readme.md) | [Factor Combinations](https://leetcode.com/problems/factor-combinations/) |
-| 0377 | Medium | [Combination Sum IV](../0377-combination-sum-iv/readme.md) | [Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/) |
-| 3183 | Medium | [The Number of Ways to Make the Sum](../3183-the-number-of-ways-to-make-the-sum/readme.md) | [The Number of Ways to Make the Sum](https://leetcode.com/problems/the-number-of-ways-to-make-the-sum/) |
+| Number | Difficulty | Name                                                                                             | LeetCode                                                                                                      |
+| ------ | ---------- | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------- |
+| 0017   | Medium     | [Letter Combinations of a Phone Number](../0017-letter-combinations-of-a-phone-number/readme.md) | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) |
+| 0040   | Medium     | [Combination Sum II](../0040-combination-sum-ii/readme.md)                                       | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)                                       |
+| 0077   | Medium     | [Combinations](../0077-combinations/readme.md)                                                   | [Combinations](https://leetcode.com/problems/combinations/)                                                   |
+| 0216   | Medium     | [Combination Sum III](../0216-combination-sum-iii/readme.md)                                     | [Combination Sum III](https://leetcode.com/problems/combination-sum-iii/)                                     |
+| 0254   | Medium     | [Factor Combinations](../0254-factor-combinations/readme.md)                                     | [Factor Combinations](https://leetcode.com/problems/factor-combinations/)                                     |
+| 0377   | Medium     | [Combination Sum IV](../0377-combination-sum-iv/readme.md)                                       | [Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/)                                       |
+| 3183   | Medium     | [The Number of Ways to Make the Sum](../3183-the-number-of-ways-to-make-the-sum/readme.md)       | [The Number of Ways to Make the Sum](https://leetcode.com/problems/the-number-of-ways-to-make-the-sum/)       |
 
 ## Examples
 

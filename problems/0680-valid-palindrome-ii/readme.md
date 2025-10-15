@@ -28,11 +28,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +47,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,11 +64,11 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0125 | Easy | [Valid Palindrome](../0125-valid-palindrome/readme.md) | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) |
-| 1216 | Hard | [Valid Palindrome III](../1216-valid-palindrome-iii/readme.md) | [Valid Palindrome III](https://leetcode.com/problems/valid-palindrome-iii/) |
-| 2330 | Medium | [Valid Palindrome IV](../2330-valid-palindrome-iv/readme.md) | [Valid Palindrome IV](https://leetcode.com/problems/valid-palindrome-iv/) |
+| Number | Difficulty | Name                                                           | LeetCode                                                                    |
+| ------ | ---------- | -------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| 0125   | Easy       | [Valid Palindrome](../0125-valid-palindrome/readme.md)         | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)         |
+| 1216   | Hard       | [Valid Palindrome III](../1216-valid-palindrome-iii/readme.md) | [Valid Palindrome III](https://leetcode.com/problems/valid-palindrome-iii/) |
+| 2330   | Medium     | [Valid Palindrome IV](../2330-valid-palindrome-iv/readme.md)   | [Valid Palindrome IV](https://leetcode.com/problems/valid-palindrome-iv/)   |
 
 ## Examples
 

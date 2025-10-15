@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,13 +65,13 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0053 | Medium | [Maximum Subarray](../0053-maximum-subarray/readme.md) | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) |
-| 0198 | Medium | [House Robber](../0198-house-robber/readme.md) | [House Robber](https://leetcode.com/problems/house-robber/) |
-| 0238 | Medium | [Product of Array Except Self](../0238-product-of-array-except-self/readme.md) | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) |
-| 0628 | Easy | [Maximum Product of Three Numbers](../0628-maximum-product-of-three-numbers/readme.md) | [Maximum Product of Three Numbers](https://leetcode.com/problems/maximum-product-of-three-numbers/) |
-| 0713 | Medium | [Subarray Product Less Than K](../0713-subarray-product-less-than-k/readme.md) | [Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/) |
+| Number | Difficulty | Name                                                                                   | LeetCode                                                                                            |
+| ------ | ---------- | -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| 0053   | Medium     | [Maximum Subarray](../0053-maximum-subarray/readme.md)                                 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)                                 |
+| 0198   | Medium     | [House Robber](../0198-house-robber/readme.md)                                         | [House Robber](https://leetcode.com/problems/house-robber/)                                         |
+| 0238   | Medium     | [Product of Array Except Self](../0238-product-of-array-except-self/readme.md)         | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)         |
+| 0628   | Easy       | [Maximum Product of Three Numbers](../0628-maximum-product-of-three-numbers/readme.md) | [Maximum Product of Three Numbers](https://leetcode.com/problems/maximum-product-of-three-numbers/) |
+| 0713   | Medium     | [Subarray Product Less Than K](../0713-subarray-product-less-than-k/readme.md)         | [Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/)         |
 
 ## Examples
 

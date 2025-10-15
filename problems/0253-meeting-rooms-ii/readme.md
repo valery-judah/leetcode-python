@@ -28,11 +28,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +47,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,16 +64,16 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0056 | Medium | [Merge Intervals](../0056-merge-intervals/readme.md) | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) |
-| 0252 | Easy | [Meeting Rooms](../0252-meeting-rooms/readme.md) | [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/) |
-| 0452 | Medium | [Minimum Number of Arrows to Burst Balloons](../0452-minimum-number-of-arrows-to-burst-balloons/readme.md) | [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) |
-| 1094 | Medium | [Car Pooling](../1094-car-pooling/readme.md) | [Car Pooling](https://leetcode.com/problems/car-pooling/) |
-| 2251 | Hard | [Number of Flowers in Full Bloom](../2251-number-of-flowers-in-full-bloom/readme.md) | [Number of Flowers in Full Bloom](https://leetcode.com/problems/number-of-flowers-in-full-bloom/) |
-| 2402 | Hard | [Meeting Rooms III](../2402-meeting-rooms-iii/readme.md) | [Meeting Rooms III](https://leetcode.com/problems/meeting-rooms-iii/) |
-| 2462 | Medium | [Total Cost to Hire K Workers](../2462-total-cost-to-hire-k-workers/readme.md) | [Total Cost to Hire K Workers](https://leetcode.com/problems/total-cost-to-hire-k-workers/) |
-| 2848 | Easy | [Points That Intersect With Cars](../2848-points-that-intersect-with-cars/readme.md) | [Points That Intersect With Cars](https://leetcode.com/problems/points-that-intersect-with-cars/) |
+| Number | Difficulty | Name                                                                                                       | LeetCode                                                                                                                |
+| ------ | ---------- | ---------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| 0056   | Medium     | [Merge Intervals](../0056-merge-intervals/readme.md)                                                       | [Merge Intervals](https://leetcode.com/problems/merge-intervals/)                                                       |
+| 0252   | Easy       | [Meeting Rooms](../0252-meeting-rooms/readme.md)                                                           | [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/)                                                           |
+| 0452   | Medium     | [Minimum Number of Arrows to Burst Balloons](../0452-minimum-number-of-arrows-to-burst-balloons/readme.md) | [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) |
+| 1094   | Medium     | [Car Pooling](../1094-car-pooling/readme.md)                                                               | [Car Pooling](https://leetcode.com/problems/car-pooling/)                                                               |
+| 2251   | Hard       | [Number of Flowers in Full Bloom](../2251-number-of-flowers-in-full-bloom/readme.md)                       | [Number of Flowers in Full Bloom](https://leetcode.com/problems/number-of-flowers-in-full-bloom/)                       |
+| 2402   | Hard       | [Meeting Rooms III](../2402-meeting-rooms-iii/readme.md)                                                   | [Meeting Rooms III](https://leetcode.com/problems/meeting-rooms-iii/)                                                   |
+| 2462   | Medium     | [Total Cost to Hire K Workers](../2462-total-cost-to-hire-k-workers/readme.md)                             | [Total Cost to Hire K Workers](https://leetcode.com/problems/total-cost-to-hire-k-workers/)                             |
+| 2848   | Easy       | [Points That Intersect With Cars](../2848-points-that-intersect-with-cars/readme.md)                       | [Points That Intersect With Cars](https://leetcode.com/problems/points-that-intersect-with-cars/)                       |
 
 ## Examples
 

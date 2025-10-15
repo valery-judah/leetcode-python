@@ -33,11 +33,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -52,8 +52,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -69,11 +69,11 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0146 | Medium | [LRU Cache](../0146-lru-cache/readme.md) | [LRU Cache](https://leetcode.com/problems/lru-cache/) |
-| 0460 | Hard | [LFU Cache](../0460-lfu-cache/readme.md) | [LFU Cache](https://leetcode.com/problems/lfu-cache/) |
-| 0635 | Medium | [Design Log Storage System](../0635-design-log-storage-system/readme.md) | [Design Log Storage System](https://leetcode.com/problems/design-log-storage-system/) |
+| Number | Difficulty | Name                                                                     | LeetCode                                                                              |
+| ------ | ---------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------- |
+| 0146   | Medium     | [LRU Cache](../0146-lru-cache/readme.md)                                 | [LRU Cache](https://leetcode.com/problems/lru-cache/)                                 |
+| 0460   | Hard       | [LFU Cache](../0460-lfu-cache/readme.md)                                 | [LFU Cache](https://leetcode.com/problems/lfu-cache/)                                 |
+| 0635   | Medium     | [Design Log Storage System](../0635-design-log-storage-system/readme.md) | [Design Log Storage System](https://leetcode.com/problems/design-log-storage-system/) |
 
 ## Examples
 

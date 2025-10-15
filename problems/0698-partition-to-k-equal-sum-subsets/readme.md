@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,13 +65,13 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0416 | Medium | [Partition Equal Subset Sum](../0416-partition-equal-subset-sum/readme.md) | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/) |
-| 2305 | Medium | [Fair Distribution of Cookies](../2305-fair-distribution-of-cookies/readme.md) | [Fair Distribution of Cookies](https://leetcode.com/problems/fair-distribution-of-cookies/) |
-| 2025 | Hard | [Maximum Number of Ways to Partition an Array](../2025-maximum-number-of-ways-to-partition-an-array/readme.md) | [Maximum Number of Ways to Partition an Array](https://leetcode.com/problems/maximum-number-of-ways-to-partition-an-array/) |
-| 2397 | Medium | [Maximum Rows Covered by Columns](../2397-maximum-rows-covered-by-columns/readme.md) | [Maximum Rows Covered by Columns](https://leetcode.com/problems/maximum-rows-covered-by-columns/) |
-| | Medium | Maximum Product of Two Integers With No Common Bits | [Maximum Product of Two Integers With No Common Bits](https://leetcode.com/problems/maximum-product-of-two-integers-with-no-common-bits/) |
+| Number | Difficulty | Name                                                                                                           | LeetCode                                                                                                                                  |
+| ------ | ---------- | -------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| 0416   | Medium     | [Partition Equal Subset Sum](../0416-partition-equal-subset-sum/readme.md)                                     | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/)                                                   |
+| 2305   | Medium     | [Fair Distribution of Cookies](../2305-fair-distribution-of-cookies/readme.md)                                 | [Fair Distribution of Cookies](https://leetcode.com/problems/fair-distribution-of-cookies/)                                               |
+| 2025   | Hard       | [Maximum Number of Ways to Partition an Array](../2025-maximum-number-of-ways-to-partition-an-array/readme.md) | [Maximum Number of Ways to Partition an Array](https://leetcode.com/problems/maximum-number-of-ways-to-partition-an-array/)               |
+| 2397   | Medium     | [Maximum Rows Covered by Columns](../2397-maximum-rows-covered-by-columns/readme.md)                           | [Maximum Rows Covered by Columns](https://leetcode.com/problems/maximum-rows-covered-by-columns/)                                         |
+|        | Medium     | Maximum Product of Two Integers With No Common Bits                                                            | [Maximum Product of Two Integers With No Common Bits](https://leetcode.com/problems/maximum-product-of-two-integers-with-no-common-bits/) |
 
 ## Examples
 

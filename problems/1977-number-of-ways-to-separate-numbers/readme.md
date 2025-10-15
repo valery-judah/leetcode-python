@@ -28,11 +28,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +47,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,12 +64,12 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0091 | Medium | [Decode Ways](../0091-decode-ways/readme.md) | [Decode Ways](https://leetcode.com/problems/decode-ways/) |
-| 0639 | Hard | [Decode Ways II](../0639-decode-ways-ii/readme.md) | [Decode Ways II](https://leetcode.com/problems/decode-ways-ii/) |
-| 1416 | Hard | [Restore The Array](../1416-restore-the-array/readme.md) | [Restore The Array](https://leetcode.com/problems/restore-the-array/) |
-| 2478 | Hard | [Number of Beautiful Partitions](../2478-number-of-beautiful-partitions/readme.md) | [Number of Beautiful Partitions](https://leetcode.com/problems/number-of-beautiful-partitions/) |
+| Number | Difficulty | Name                                                                               | LeetCode                                                                                        |
+| ------ | ---------- | ---------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| 0091   | Medium     | [Decode Ways](../0091-decode-ways/readme.md)                                       | [Decode Ways](https://leetcode.com/problems/decode-ways/)                                       |
+| 0639   | Hard       | [Decode Ways II](../0639-decode-ways-ii/readme.md)                                 | [Decode Ways II](https://leetcode.com/problems/decode-ways-ii/)                                 |
+| 1416   | Hard       | [Restore The Array](../1416-restore-the-array/readme.md)                           | [Restore The Array](https://leetcode.com/problems/restore-the-array/)                           |
+| 2478   | Hard       | [Number of Beautiful Partitions](../2478-number-of-beautiful-partitions/readme.md) | [Number of Beautiful Partitions](https://leetcode.com/problems/number-of-beautiful-partitions/) |
 
 ## Examples
 

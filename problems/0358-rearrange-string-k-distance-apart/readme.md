@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,11 +65,11 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0621 | Medium | [Task Scheduler](../0621-task-scheduler/readme.md) | [Task Scheduler](https://leetcode.com/problems/task-scheduler/) |
-| 0767 | Medium | [Reorganize String](../0767-reorganize-string/readme.md) | [Reorganize String](https://leetcode.com/problems/reorganize-string/) |
-| 2182 | Medium | [Construct String With Repeat Limit](../2182-construct-string-with-repeat-limit/readme.md) | [Construct String With Repeat Limit](https://leetcode.com/problems/construct-string-with-repeat-limit/) |
+| Number | Difficulty | Name                                                                                       | LeetCode                                                                                                |
+| ------ | ---------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------- |
+| 0621   | Medium     | [Task Scheduler](../0621-task-scheduler/readme.md)                                         | [Task Scheduler](https://leetcode.com/problems/task-scheduler/)                                         |
+| 0767   | Medium     | [Reorganize String](../0767-reorganize-string/readme.md)                                   | [Reorganize String](https://leetcode.com/problems/reorganize-string/)                                   |
+| 2182   | Medium     | [Construct String With Repeat Limit](../2182-construct-string-with-repeat-limit/readme.md) | [Construct String With Repeat Limit](https://leetcode.com/problems/construct-string-with-repeat-limit/) |
 
 ## Examples
 

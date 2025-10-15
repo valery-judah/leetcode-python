@@ -28,11 +28,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +47,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,15 +64,15 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0001 | Easy | [Two Sum](../0001-two-sum/readme.md) | [Two Sum](https://leetcode.com/problems/two-sum/) |
-| 0016 | Medium | [3Sum Closest](../0016-3sum-closest/readme.md) | [3Sum Closest](https://leetcode.com/problems/3sum-closest/) |
-| 0018 | Medium | [4Sum](../0018-4sum/readme.md) | [4Sum](https://leetcode.com/problems/4sum/) |
-| 0259 | Medium | [3Sum Smaller](../0259-3sum-smaller/readme.md) | [3Sum Smaller](https://leetcode.com/problems/3sum-smaller/) |
-| 2367 | Easy | [Number of Arithmetic Triplets](../2367-number-of-arithmetic-triplets/readme.md) | [Number of Arithmetic Triplets](https://leetcode.com/problems/number-of-arithmetic-triplets/) |
-| 2908 | Easy | [Minimum Sum of Mountain Triplets I](../2908-minimum-sum-of-mountain-triplets-i/readme.md) | [Minimum Sum of Mountain Triplets I](https://leetcode.com/problems/minimum-sum-of-mountain-triplets-i/) |
-| 2909 | Medium | [Minimum Sum of Mountain Triplets II](../2909-minimum-sum-of-mountain-triplets-ii/readme.md) | [Minimum Sum of Mountain Triplets II](https://leetcode.com/problems/minimum-sum-of-mountain-triplets-ii/) |
+| Number | Difficulty | Name                                                                                         | LeetCode                                                                                                  |
+| ------ | ---------- | -------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| 0001   | Easy       | [Two Sum](../0001-two-sum/readme.md)                                                         | [Two Sum](https://leetcode.com/problems/two-sum/)                                                         |
+| 0016   | Medium     | [3Sum Closest](../0016-3sum-closest/readme.md)                                               | [3Sum Closest](https://leetcode.com/problems/3sum-closest/)                                               |
+| 0018   | Medium     | [4Sum](../0018-4sum/readme.md)                                                               | [4Sum](https://leetcode.com/problems/4sum/)                                                               |
+| 0259   | Medium     | [3Sum Smaller](../0259-3sum-smaller/readme.md)                                               | [3Sum Smaller](https://leetcode.com/problems/3sum-smaller/)                                               |
+| 2367   | Easy       | [Number of Arithmetic Triplets](../2367-number-of-arithmetic-triplets/readme.md)             | [Number of Arithmetic Triplets](https://leetcode.com/problems/number-of-arithmetic-triplets/)             |
+| 2908   | Easy       | [Minimum Sum of Mountain Triplets I](../2908-minimum-sum-of-mountain-triplets-i/readme.md)   | [Minimum Sum of Mountain Triplets I](https://leetcode.com/problems/minimum-sum-of-mountain-triplets-i/)   |
+| 2909   | Medium     | [Minimum Sum of Mountain Triplets II](../2909-minimum-sum-of-mountain-triplets-ii/readme.md) | [Minimum Sum of Mountain Triplets II](https://leetcode.com/problems/minimum-sum-of-mountain-triplets-ii/) |
 
 ## Examples
 

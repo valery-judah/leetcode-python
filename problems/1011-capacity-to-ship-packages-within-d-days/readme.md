@@ -2,7 +2,8 @@
 
 ## Quick Facts
 
-- URL: [Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/)
+- URL:
+  [Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/)
 - Function: `shipWithinDays`
 - Signature: `(weights: list[int], days: int)  -> int`
 - Primary pattern: **Binary Search**
@@ -28,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,14 +65,14 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0410 | Hard | [Split Array Largest Sum](../0410-split-array-largest-sum/readme.md) | [Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum/) |
-| 1231 | Hard | [Divide Chocolate](../1231-divide-chocolate/readme.md) | [Divide Chocolate](https://leetcode.com/problems/divide-chocolate/) |
-| 1891 | Medium | [Cutting Ribbons](../1891-cutting-ribbons/readme.md) | [Cutting Ribbons](https://leetcode.com/problems/cutting-ribbons/) |
-| 2064 | Medium | [Minimized Maximum of Products Distributed to Any Store](../2064-minimized-maximum-of-products-distributed-to-any-store/readme.md) | [Minimized Maximum of Products Distributed to Any Store](https://leetcode.com/problems/minimized-maximum-of-products-distributed-to-any-store/) |
-| 2279 | Medium | [Maximum Bags With Full Capacity of Rocks](../2279-maximum-bags-with-full-capacity-of-rocks/readme.md) | [Maximum Bags With Full Capacity of Rocks](https://leetcode.com/problems/maximum-bags-with-full-capacity-of-rocks/) |
-| 2463 | Hard | [Minimum Total Distance Traveled](../2463-minimum-total-distance-traveled/readme.md) | [Minimum Total Distance Traveled](https://leetcode.com/problems/minimum-total-distance-traveled/) |
+| Number | Difficulty | Name                                                                                                                               | LeetCode                                                                                                                                        |
+| ------ | ---------- | ---------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0410   | Hard       | [Split Array Largest Sum](../0410-split-array-largest-sum/readme.md)                                                               | [Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum/)                                                               |
+| 1231   | Hard       | [Divide Chocolate](../1231-divide-chocolate/readme.md)                                                                             | [Divide Chocolate](https://leetcode.com/problems/divide-chocolate/)                                                                             |
+| 1891   | Medium     | [Cutting Ribbons](../1891-cutting-ribbons/readme.md)                                                                               | [Cutting Ribbons](https://leetcode.com/problems/cutting-ribbons/)                                                                               |
+| 2064   | Medium     | [Minimized Maximum of Products Distributed to Any Store](../2064-minimized-maximum-of-products-distributed-to-any-store/readme.md) | [Minimized Maximum of Products Distributed to Any Store](https://leetcode.com/problems/minimized-maximum-of-products-distributed-to-any-store/) |
+| 2279   | Medium     | [Maximum Bags With Full Capacity of Rocks](../2279-maximum-bags-with-full-capacity-of-rocks/readme.md)                             | [Maximum Bags With Full Capacity of Rocks](https://leetcode.com/problems/maximum-bags-with-full-capacity-of-rocks/)                             |
+| 2463   | Hard       | [Minimum Total Distance Traveled](../2463-minimum-total-distance-traveled/readme.md)                                               | [Minimum Total Distance Traveled](https://leetcode.com/problems/minimum-total-distance-traveled/)                                               |
 
 ## Examples
 

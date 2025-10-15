@@ -2,7 +2,8 @@
 
 ## Quick Facts
 
-- URL: [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+- URL:
+  [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 - Function: `lengthOfLongestSubstring`
 - Signature: `(s: str)  -> int`
 - Primary pattern: **Sliding Window**
@@ -28,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,19 +65,19 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0159 | Medium | [Longest Substring with At Most Two Distinct Characters](../0159-longest-substring-with-at-most-two-distinct-characters/readme.md) | [Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/) |
-| 0340 | Medium | [Longest Substring with At Most K Distinct Characters](../0340-longest-substring-with-at-most-k-distinct-characters/readme.md) | [Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/) |
-| 0992 | Hard | [Subarrays with K Different Integers](../0992-subarrays-with-k-different-integers/readme.md) | [Subarrays with K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers/) |
-| 1695 | Medium | [Maximum Erasure Value](../1695-maximum-erasure-value/readme.md) | [Maximum Erasure Value](https://leetcode.com/problems/maximum-erasure-value/) |
-| 2067 | Medium | [Number of Equal Count Substrings](../2067-number-of-equal-count-substrings/readme.md) | [Number of Equal Count Substrings](https://leetcode.com/problems/number-of-equal-count-substrings/) |
-| 2260 | Medium | [Minimum Consecutive Cards to Pick Up](../2260-minimum-consecutive-cards-to-pick-up/readme.md) | [Minimum Consecutive Cards to Pick Up](https://leetcode.com/problems/minimum-consecutive-cards-to-pick-up/) |
-| 2401 | Medium | [Longest Nice Subarray](../2401-longest-nice-subarray/readme.md) | [Longest Nice Subarray](https://leetcode.com/problems/longest-nice-subarray/) |
-| 2405 | Medium | [Optimal Partition of String](../2405-optimal-partition-of-string/readme.md) | [Optimal Partition of String](https://leetcode.com/problems/optimal-partition-of-string/) |
-| 2799 | Medium | [Count Complete Subarrays in an Array](../2799-count-complete-subarrays-in-an-array/readme.md) | [Count Complete Subarrays in an Array](https://leetcode.com/problems/count-complete-subarrays-in-an-array/) |
-| 2982 | Medium | [Find Longest Special Substring That Occurs Thrice II](../2982-find-longest-special-substring-that-occurs-thrice-ii/readme.md) | [Find Longest Special Substring That Occurs Thrice II](https://leetcode.com/problems/find-longest-special-substring-that-occurs-thrice-ii/) |
-| 2981 | Medium | [Find Longest Special Substring That Occurs Thrice I](../2981-find-longest-special-substring-that-occurs-thrice-i/readme.md) | [Find Longest Special Substring That Occurs Thrice I](https://leetcode.com/problems/find-longest-special-substring-that-occurs-thrice-i/) |
+| Number | Difficulty | Name                                                                                                                               | LeetCode                                                                                                                                        |
+| ------ | ---------- | ---------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0159   | Medium     | [Longest Substring with At Most Two Distinct Characters](../0159-longest-substring-with-at-most-two-distinct-characters/readme.md) | [Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/) |
+| 0340   | Medium     | [Longest Substring with At Most K Distinct Characters](../0340-longest-substring-with-at-most-k-distinct-characters/readme.md)     | [Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/)     |
+| 0992   | Hard       | [Subarrays with K Different Integers](../0992-subarrays-with-k-different-integers/readme.md)                                       | [Subarrays with K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers/)                                       |
+| 1695   | Medium     | [Maximum Erasure Value](../1695-maximum-erasure-value/readme.md)                                                                   | [Maximum Erasure Value](https://leetcode.com/problems/maximum-erasure-value/)                                                                   |
+| 2067   | Medium     | [Number of Equal Count Substrings](../2067-number-of-equal-count-substrings/readme.md)                                             | [Number of Equal Count Substrings](https://leetcode.com/problems/number-of-equal-count-substrings/)                                             |
+| 2260   | Medium     | [Minimum Consecutive Cards to Pick Up](../2260-minimum-consecutive-cards-to-pick-up/readme.md)                                     | [Minimum Consecutive Cards to Pick Up](https://leetcode.com/problems/minimum-consecutive-cards-to-pick-up/)                                     |
+| 2401   | Medium     | [Longest Nice Subarray](../2401-longest-nice-subarray/readme.md)                                                                   | [Longest Nice Subarray](https://leetcode.com/problems/longest-nice-subarray/)                                                                   |
+| 2405   | Medium     | [Optimal Partition of String](../2405-optimal-partition-of-string/readme.md)                                                       | [Optimal Partition of String](https://leetcode.com/problems/optimal-partition-of-string/)                                                       |
+| 2799   | Medium     | [Count Complete Subarrays in an Array](../2799-count-complete-subarrays-in-an-array/readme.md)                                     | [Count Complete Subarrays in an Array](https://leetcode.com/problems/count-complete-subarrays-in-an-array/)                                     |
+| 2982   | Medium     | [Find Longest Special Substring That Occurs Thrice II](../2982-find-longest-special-substring-that-occurs-thrice-ii/readme.md)     | [Find Longest Special Substring That Occurs Thrice II](https://leetcode.com/problems/find-longest-special-substring-that-occurs-thrice-ii/)     |
+| 2981   | Medium     | [Find Longest Special Substring That Occurs Thrice I](../2981-find-longest-special-substring-that-occurs-thrice-i/readme.md)       | [Find Longest Special Substring That Occurs Thrice I](https://leetcode.com/problems/find-longest-special-substring-that-occurs-thrice-i/)       |
 
 ## Examples
 

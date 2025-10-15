@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,14 +65,14 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0152 | Medium | [Maximum Product Subarray](../0152-maximum-product-subarray/readme.md) | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) |
-| 0325 | Medium | [Maximum Size Subarray Sum Equals k](../0325-maximum-size-subarray-sum-equals-k/readme.md) | [Maximum Size Subarray Sum Equals k](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/) |
-| 0325 | Medium | [Subarray Sum Equals K](../0325-subarray-sum-equals-k/readme.md) | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) |
-| 1099 | Easy | [Two Sum Less Than K](../1099-two-sum-less-than-k/readme.md) | [Two Sum Less Than K](https://leetcode.com/problems/two-sum-less-than-k/) |
-| 2110 | Medium | [Number of Smooth Descent Periods of a Stock](../2110-number-of-smooth-descent-periods-of-a-stock/readme.md) | [Number of Smooth Descent Periods of a Stock](https://leetcode.com/problems/number-of-smooth-descent-periods-of-a-stock/) |
-| 2302 | Hard | [Count Subarrays With Score Less Than K](../2302-count-subarrays-with-score-less-than-k/readme.md) | [Count Subarrays With Score Less Than K](https://leetcode.com/problems/count-subarrays-with-score-less-than-k/) |
+| Number | Difficulty | Name                                                                                                         | LeetCode                                                                                                                  |
+| ------ | ---------- | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| 0152   | Medium     | [Maximum Product Subarray](../0152-maximum-product-subarray/readme.md)                                       | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)                                       |
+| 0325   | Medium     | [Maximum Size Subarray Sum Equals k](../0325-maximum-size-subarray-sum-equals-k/readme.md)                   | [Maximum Size Subarray Sum Equals k](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/)                   |
+| 0325   | Medium     | [Subarray Sum Equals K](../0325-subarray-sum-equals-k/readme.md)                                             | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)                                             |
+| 1099   | Easy       | [Two Sum Less Than K](../1099-two-sum-less-than-k/readme.md)                                                 | [Two Sum Less Than K](https://leetcode.com/problems/two-sum-less-than-k/)                                                 |
+| 2110   | Medium     | [Number of Smooth Descent Periods of a Stock](../2110-number-of-smooth-descent-periods-of-a-stock/readme.md) | [Number of Smooth Descent Periods of a Stock](https://leetcode.com/problems/number-of-smooth-descent-periods-of-a-stock/) |
+| 2302   | Hard       | [Count Subarrays With Score Less Than K](../2302-count-subarrays-with-score-less-than-k/readme.md)           | [Count Subarrays With Score Less Than K](https://leetcode.com/problems/count-subarrays-with-score-less-than-k/)           |
 
 ## Examples
 

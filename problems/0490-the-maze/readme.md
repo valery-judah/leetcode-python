@@ -36,11 +36,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -55,8 +55,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -72,10 +72,10 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0499 | Hard | [The Maze III](../0499-the-maze-iii/readme.md) | [The Maze III](https://leetcode.com/problems/the-maze-iii/) |
-| 0505 | Medium | [The Maze II](../0505-the-maze-ii/readme.md) | [The Maze II](https://leetcode.com/problems/the-maze-ii/) |
+| Number | Difficulty | Name                                           | LeetCode                                                    |
+| ------ | ---------- | ---------------------------------------------- | ----------------------------------------------------------- |
+| 0499   | Hard       | [The Maze III](../0499-the-maze-iii/readme.md) | [The Maze III](https://leetcode.com/problems/the-maze-iii/) |
+| 0505   | Medium     | [The Maze II](../0505-the-maze-ii/readme.md)   | [The Maze II](https://leetcode.com/problems/the-maze-ii/)   |
 
 ## Examples
 

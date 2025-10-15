@@ -28,11 +28,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +47,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,13 +64,13 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0516 | Medium | [Longest Palindromic Subsequence](../0516-longest-palindromic-subsequence/readme.md) | [Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/) |
-| 0583 | Medium | [Delete Operation for Two Strings](../0583-delete-operation-for-two-strings/readme.md) | [Delete Operation for Two Strings](https://leetcode.com/problems/delete-operation-for-two-strings/) |
-| 1092 | Hard | [Shortest Common Supersequence](../1092-shortest-common-supersequence/readme.md) | [Shortest Common Supersequence](https://leetcode.com/problems/shortest-common-supersequence/) |
-| 2207 | Medium | [Maximize Number of Subsequences in a String](../2207-maximize-number-of-subsequences-in-a-string/readme.md) | [Maximize Number of Subsequences in a String](https://leetcode.com/problems/maximize-number-of-subsequences-in-a-string/) |
-| 2565 | Hard | [Subsequence With the Minimum Score](../2565-subsequence-with-the-minimum-score/readme.md) | [Subsequence With the Minimum Score](https://leetcode.com/problems/subsequence-with-the-minimum-score/) |
+| Number | Difficulty | Name                                                                                                         | LeetCode                                                                                                                  |
+| ------ | ---------- | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| 0516   | Medium     | [Longest Palindromic Subsequence](../0516-longest-palindromic-subsequence/readme.md)                         | [Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/)                         |
+| 0583   | Medium     | [Delete Operation for Two Strings](../0583-delete-operation-for-two-strings/readme.md)                       | [Delete Operation for Two Strings](https://leetcode.com/problems/delete-operation-for-two-strings/)                       |
+| 1092   | Hard       | [Shortest Common Supersequence](../1092-shortest-common-supersequence/readme.md)                             | [Shortest Common Supersequence](https://leetcode.com/problems/shortest-common-supersequence/)                             |
+| 2207   | Medium     | [Maximize Number of Subsequences in a String](../2207-maximize-number-of-subsequences-in-a-string/readme.md) | [Maximize Number of Subsequences in a String](https://leetcode.com/problems/maximize-number-of-subsequences-in-a-string/) |
+| 2565   | Hard       | [Subsequence With the Minimum Score](../2565-subsequence-with-the-minimum-score/readme.md)                   | [Subsequence With the Minimum Score](https://leetcode.com/problems/subsequence-with-the-minimum-score/)                   |
 
 ## Examples
 

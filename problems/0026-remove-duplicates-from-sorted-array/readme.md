@@ -2,7 +2,8 @@
 
 ## Quick Facts
 
-- URL: [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
+- URL:
+  [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
 - Function: `removeDuplicates`
 - Signature: `(nums: list[int])  -> int`
 - Primary pattern: **Two Pointers**
@@ -29,11 +30,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +49,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,12 +66,12 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0027 | Easy | [Remove Element](../0027-remove-element/readme.md) | [Remove Element](https://leetcode.com/problems/remove-element/) |
-| 0080 | Medium | [Remove Duplicates from Sorted Array II](../0080-remove-duplicates-from-sorted-array-ii/readme.md) | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) |
-| 2460 | Easy | [Apply Operations to an Array](../2460-apply-operations-to-an-array/readme.md) | [Apply Operations to an Array](https://leetcode.com/problems/apply-operations-to-an-array/) |
-| 2615 | Medium | [Sum of Distances](../2615-sum-of-distances/readme.md) | [Sum of Distances](https://leetcode.com/problems/sum-of-distances/) |
+| Number | Difficulty | Name                                                                                               | LeetCode                                                                                                        |
+| ------ | ---------- | -------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| 0027   | Easy       | [Remove Element](../0027-remove-element/readme.md)                                                 | [Remove Element](https://leetcode.com/problems/remove-element/)                                                 |
+| 0080   | Medium     | [Remove Duplicates from Sorted Array II](../0080-remove-duplicates-from-sorted-array-ii/readme.md) | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) |
+| 2460   | Easy       | [Apply Operations to an Array](../2460-apply-operations-to-an-array/readme.md)                     | [Apply Operations to an Array](https://leetcode.com/problems/apply-operations-to-an-array/)                     |
+| 2615   | Medium     | [Sum of Distances](../2615-sum-of-distances/readme.md)                                             | [Sum of Distances](https://leetcode.com/problems/sum-of-distances/)                                             |
 
 ## Examples
 

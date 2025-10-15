@@ -28,11 +28,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +47,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,12 +64,12 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0031 | Medium | [Next Permutation](../0031-next-permutation/readme.md) | [Next Permutation](https://leetcode.com/problems/next-permutation/) |
-| 0046 | Medium | [Permutations](../0046-permutations/readme.md) | [Permutations](https://leetcode.com/problems/permutations/) |
-| 0267 | Medium | [Palindrome Permutation II](../0267-palindrome-permutation-ii/readme.md) | [Palindrome Permutation II](https://leetcode.com/problems/palindrome-permutation-ii/) |
-| 0996 | Hard | [Number of Squareful Arrays](../0996-number-of-squareful-arrays/readme.md) | [Number of Squareful Arrays](https://leetcode.com/problems/number-of-squareful-arrays/) |
+| Number | Difficulty | Name                                                                       | LeetCode                                                                                |
+| ------ | ---------- | -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| 0031   | Medium     | [Next Permutation](../0031-next-permutation/readme.md)                     | [Next Permutation](https://leetcode.com/problems/next-permutation/)                     |
+| 0046   | Medium     | [Permutations](../0046-permutations/readme.md)                             | [Permutations](https://leetcode.com/problems/permutations/)                             |
+| 0267   | Medium     | [Palindrome Permutation II](../0267-palindrome-permutation-ii/readme.md)   | [Palindrome Permutation II](https://leetcode.com/problems/palindrome-permutation-ii/)   |
+| 0996   | Hard       | [Number of Squareful Arrays](../0996-number-of-squareful-arrays/readme.md) | [Number of Squareful Arrays](https://leetcode.com/problems/number-of-squareful-arrays/) |
 
 ## Examples
 

@@ -2,7 +2,8 @@
 
 ## Quick Facts
 
-- URL: [Intersection of Three Sorted Arrays](https://leetcode.com/problems/intersection-of-three-sorted-arrays/)
+- URL:
+  [Intersection of Three Sorted Arrays](https://leetcode.com/problems/intersection-of-three-sorted-arrays/)
 - Function: `arraysIntersection`
 - Signature: `(arr1: list[int], arr2: list[int], arr3: list[int])  -> list[int]`
 - Primary pattern: **Binary Search**
@@ -28,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,10 +65,10 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0349 | Easy | [Intersection of Two Arrays](../0349-intersection-of-two-arrays/readme.md) | [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/) |
-| 2248 | Easy | [Intersection of Multiple Arrays](../2248-intersection-of-multiple-arrays/readme.md) | [Intersection of Multiple Arrays](https://leetcode.com/problems/intersection-of-multiple-arrays/) |
+| Number | Difficulty | Name                                                                                 | LeetCode                                                                                          |
+| ------ | ---------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------- |
+| 0349   | Easy       | [Intersection of Two Arrays](../0349-intersection-of-two-arrays/readme.md)           | [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)           |
+| 2248   | Easy       | [Intersection of Multiple Arrays](../2248-intersection-of-multiple-arrays/readme.md) | [Intersection of Multiple Arrays](https://leetcode.com/problems/intersection-of-multiple-arrays/) |
 
 ## Examples
 

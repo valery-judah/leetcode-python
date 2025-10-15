@@ -3,72 +3,72 @@ track: track_neetcode_6_trees
 title: NeetCode 250 — Trees
 description: Problems from the NeetCode 250 list for Trees.
 problems:
-  - slug: binary-tree-inorder-traversal
-    title: Binary Tree Inorder Traversal
-    difficulty: easy
-  - slug: binary-tree-preorder-traversal
-    title: Binary Tree Preorder Traversal
-    difficulty: easy
-  - slug: binary-tree-postorder-traversal
-    title: Binary Tree Postorder Traversal
-    difficulty: easy
-  - slug: invert-binary-tree
-    title: Invert Binary Tree
-    difficulty: easy
-  - slug: maximum-depth-of-binary-tree
-    title: Maximum Depth of Binary Tree
-    difficulty: easy
-  - slug: diameter-of-binary-tree
-    title: Diameter of Binary Tree
-    difficulty: easy
-  - slug: balanced-binary-tree
-    title: Balanced Binary Tree
-    difficulty: easy
-  - slug: same-tree
-    title: Same Tree
-    difficulty: easy
-  - slug: subtree-of-another-tree
-    title: Subtree of Another Tree
-    difficulty: easy
-  - slug: lowest-common-ancestor-of-a-binary-search-tree
-    title: Lowest Common Ancestor of a Binary Search Tree
-    difficulty: medium
-  - slug: insert-into-a-binary-search-tree
-    title: Insert into a Binary Search Tree
-    difficulty: medium
-  - slug: delete-node-in-a-bst
-    title: Delete Node in a BST
-    difficulty: medium
-  - slug: binary-tree-level-order-traversal
-    title: Binary Tree Level Order Traversal
-    difficulty: medium
-  - slug: binary-tree-right-side-view
-    title: Binary Tree Right Side View
-    difficulty: medium
-  - slug: construct-quad-tree
-    title: Construct Quad Tree
-    difficulty: medium
-  - slug: count-good-nodes-in-binary-tree
-    title: Count Good Nodes In Binary Tree
-    difficulty: medium
-  - slug: validate-binary-search-tree
-    title: Validate Binary Search Tree
-    difficulty: medium
-  - slug: kth-smallest-element-in-a-bst
-    title: Kth Smallest Element In a Bst
-    difficulty: medium
-  - slug: construct-binary-tree-from-preorder-and-inorder-traversal
-    title: Construct Binary Tree From Preorder And Inorder Traversal
-    difficulty: medium
-  - slug: house-robber-iii
-    title: House Robber III
-    difficulty: medium
-  - slug: delete-leaves-with-a-given-value
-    title: Delete Leaves With a Given Value
-    difficulty: medium
-  - slug: binary-tree-maximum-path-sum
-    title: Binary Tree Maximum Path Sum
-    difficulty: hard
-  - slug: serialize-and-deserialize-binary-tree
-    title: Serialize And Deserialize Binary Tree
-    difficulty: hard
+    - slug: binary-tree-inorder-traversal
+      title: Binary Tree Inorder Traversal
+      difficulty: easy
+    - slug: binary-tree-preorder-traversal
+      title: Binary Tree Preorder Traversal
+      difficulty: easy
+    - slug: binary-tree-postorder-traversal
+      title: Binary Tree Postorder Traversal
+      difficulty: easy
+    - slug: invert-binary-tree
+      title: Invert Binary Tree
+      difficulty: easy
+    - slug: maximum-depth-of-binary-tree
+      title: Maximum Depth of Binary Tree
+      difficulty: easy
+    - slug: diameter-of-binary-tree
+      title: Diameter of Binary Tree
+      difficulty: easy
+    - slug: balanced-binary-tree
+      title: Balanced Binary Tree
+      difficulty: easy
+    - slug: same-tree
+      title: Same Tree
+      difficulty: easy
+    - slug: subtree-of-another-tree
+      title: Subtree of Another Tree
+      difficulty: easy
+    - slug: lowest-common-ancestor-of-a-binary-search-tree
+      title: Lowest Common Ancestor of a Binary Search Tree
+      difficulty: medium
+    - slug: insert-into-a-binary-search-tree
+      title: Insert into a Binary Search Tree
+      difficulty: medium
+    - slug: delete-node-in-a-bst
+      title: Delete Node in a BST
+      difficulty: medium
+    - slug: binary-tree-level-order-traversal
+      title: Binary Tree Level Order Traversal
+      difficulty: medium
+    - slug: binary-tree-right-side-view
+      title: Binary Tree Right Side View
+      difficulty: medium
+    - slug: construct-quad-tree
+      title: Construct Quad Tree
+      difficulty: medium
+    - slug: count-good-nodes-in-binary-tree
+      title: Count Good Nodes In Binary Tree
+      difficulty: medium
+    - slug: validate-binary-search-tree
+      title: Validate Binary Search Tree
+      difficulty: medium
+    - slug: kth-smallest-element-in-a-bst
+      title: Kth Smallest Element In a Bst
+      difficulty: medium
+    - slug: construct-binary-tree-from-preorder-and-inorder-traversal
+      title: Construct Binary Tree From Preorder And Inorder Traversal
+      difficulty: medium
+    - slug: house-robber-iii
+      title: House Robber III
+      difficulty: medium
+    - slug: delete-leaves-with-a-given-value
+      title: Delete Leaves With a Given Value
+      difficulty: medium
+    - slug: binary-tree-maximum-path-sum
+      title: Binary Tree Maximum Path Sum
+      difficulty: hard
+    - slug: serialize-and-deserialize-binary-tree
+      title: Serialize And Deserialize Binary Tree
+      difficulty: hard

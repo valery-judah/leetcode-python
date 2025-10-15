@@ -2,7 +2,8 @@
 
 ## Quick Facts
 
-- URL: [Minimum ASCII Delete Sum for Two Strings](https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/)
+- URL:
+  [Minimum ASCII Delete Sum for Two Strings](https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/)
 - Function: `minimumDeleteSum`
 - Signature: `(s1: str, s2: str)  -> int`
 - Primary pattern: **Dynamic Programming**
@@ -28,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,11 +65,11 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0072 | Medium | [Edit Distance](../0072-edit-distance/readme.md) | [Edit Distance](https://leetcode.com/problems/edit-distance/) |
-| 0300 | Medium | [Longest Increasing Subsequence](../0300-longest-increasing-subsequence/readme.md) | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) |
-| 0583 | Medium | [Delete Operation for Two Strings](../0583-delete-operation-for-two-strings/readme.md) | [Delete Operation for Two Strings](https://leetcode.com/problems/delete-operation-for-two-strings/) |
+| Number | Difficulty | Name                                                                                   | LeetCode                                                                                            |
+| ------ | ---------- | -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| 0072   | Medium     | [Edit Distance](../0072-edit-distance/readme.md)                                       | [Edit Distance](https://leetcode.com/problems/edit-distance/)                                       |
+| 0300   | Medium     | [Longest Increasing Subsequence](../0300-longest-increasing-subsequence/readme.md)     | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)     |
+| 0583   | Medium     | [Delete Operation for Two Strings](../0583-delete-operation-for-two-strings/readme.md) | [Delete Operation for Two Strings](https://leetcode.com/problems/delete-operation-for-two-strings/) |
 
 ## Examples
 

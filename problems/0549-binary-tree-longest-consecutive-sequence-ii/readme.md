@@ -2,7 +2,8 @@
 
 ## Quick Facts
 
-- URL: [Binary Tree Longest Consecutive Sequence II](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence-ii/)
+- URL:
+  [Binary Tree Longest Consecutive Sequence II](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence-ii/)
 - Function: `longestConsecutive`
 - Signature: `(root: TreeNode | None)  -> int`
 - Primary pattern: **Tree**
@@ -28,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,10 +65,10 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0298 | Medium | [Binary Tree Longest Consecutive Sequence](../0298-binary-tree-longest-consecutive-sequence/readme.md) | [Binary Tree Longest Consecutive Sequence](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/) |
-| 2229 | Easy | [Check if an Array Is Consecutive](../2229-check-if-an-array-is-consecutive/readme.md) | [Check if an Array Is Consecutive](https://leetcode.com/problems/check-if-an-array-is-consecutive/) |
+| Number | Difficulty | Name                                                                                                   | LeetCode                                                                                                            |
+| ------ | ---------- | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- |
+| 0298   | Medium     | [Binary Tree Longest Consecutive Sequence](../0298-binary-tree-longest-consecutive-sequence/readme.md) | [Binary Tree Longest Consecutive Sequence](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/) |
+| 2229   | Easy       | [Check if an Array Is Consecutive](../2229-check-if-an-array-is-consecutive/readme.md)                 | [Check if an Array Is Consecutive](https://leetcode.com/problems/check-if-an-array-is-consecutive/)                 |
 
 ## Examples
 

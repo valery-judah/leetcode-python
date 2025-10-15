@@ -31,11 +31,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -50,8 +50,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -67,11 +67,11 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0041 | Hard | [First Missing Positive](../0041-first-missing-positive/readme.md) | [First Missing Positive](https://leetcode.com/problems/first-missing-positive/) |
-| 0268 | Easy | [Missing Number](../0268-missing-number/readme.md) | [Missing Number](https://leetcode.com/problems/missing-number/) |
-| 0854 | Hard | [K-Similar Strings](../0854-k-similar-strings/readme.md) | [K-Similar Strings](https://leetcode.com/problems/k-similar-strings/) |
+| Number | Difficulty | Name                                                               | LeetCode                                                                        |
+| ------ | ---------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------- |
+| 0041   | Hard       | [First Missing Positive](../0041-first-missing-positive/readme.md) | [First Missing Positive](https://leetcode.com/problems/first-missing-positive/) |
+| 0268   | Easy       | [Missing Number](../0268-missing-number/readme.md)                 | [Missing Number](https://leetcode.com/problems/missing-number/)                 |
+| 0854   | Hard       | [K-Similar Strings](../0854-k-similar-strings/readme.md)           | [K-Similar Strings](https://leetcode.com/problems/k-similar-strings/)           |
 
 ## Examples
 

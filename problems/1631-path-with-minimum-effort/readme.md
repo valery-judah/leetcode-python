@@ -30,11 +30,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -49,8 +49,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -66,11 +66,11 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0778 | Hard | [Swim in Rising Water](../0778-swim-in-rising-water/readme.md) | [Swim in Rising Water](https://leetcode.com/problems/swim-in-rising-water/) |
-| 1102 | Medium | [Path With Maximum Minimum Value](../1102-path-with-maximum-minimum-value/readme.md) | [Path With Maximum Minimum Value](https://leetcode.com/problems/path-with-maximum-minimum-value/) |
-| 2812 | Medium | [Find the Safest Path in a Grid](../2812-find-the-safest-path-in-a-grid/readme.md) | [Find the Safest Path in a Grid](https://leetcode.com/problems/find-the-safest-path-in-a-grid/) |
+| Number | Difficulty | Name                                                                                 | LeetCode                                                                                          |
+| ------ | ---------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------- |
+| 0778   | Hard       | [Swim in Rising Water](../0778-swim-in-rising-water/readme.md)                       | [Swim in Rising Water](https://leetcode.com/problems/swim-in-rising-water/)                       |
+| 1102   | Medium     | [Path With Maximum Minimum Value](../1102-path-with-maximum-minimum-value/readme.md) | [Path With Maximum Minimum Value](https://leetcode.com/problems/path-with-maximum-minimum-value/) |
+| 2812   | Medium     | [Find the Safest Path in a Grid](../2812-find-the-safest-path-in-a-grid/readme.md)   | [Find the Safest Path in a Grid](https://leetcode.com/problems/find-the-safest-path-in-a-grid/)   |
 
 ## Examples
 

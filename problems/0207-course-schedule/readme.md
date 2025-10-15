@@ -31,11 +31,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -50,8 +50,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -67,13 +67,13 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0210 | Medium | [Course Schedule II](../0210-course-schedule-ii/readme.md) | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/) |
-| 0261 | Medium | [Graph Valid Tree](../0261-graph-valid-tree/readme.md) | [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/) |
-| 0310 | Medium | [Minimum Height Trees](../0310-minimum-height-trees/readme.md) | [Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/) |
-| 0630 | Hard | [Course Schedule III](../0630-course-schedule-iii/readme.md) | [Course Schedule III](https://leetcode.com/problems/course-schedule-iii/) |
-| 2392 | Hard | [Build a Matrix With Conditions](../2392-build-a-matrix-with-conditions/readme.md) | [Build a Matrix With Conditions](https://leetcode.com/problems/build-a-matrix-with-conditions/) |
+| Number | Difficulty | Name                                                                               | LeetCode                                                                                        |
+| ------ | ---------- | ---------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| 0210   | Medium     | [Course Schedule II](../0210-course-schedule-ii/readme.md)                         | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)                         |
+| 0261   | Medium     | [Graph Valid Tree](../0261-graph-valid-tree/readme.md)                             | [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)                             |
+| 0310   | Medium     | [Minimum Height Trees](../0310-minimum-height-trees/readme.md)                     | [Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/)                     |
+| 0630   | Hard       | [Course Schedule III](../0630-course-schedule-iii/readme.md)                       | [Course Schedule III](https://leetcode.com/problems/course-schedule-iii/)                       |
+| 2392   | Hard       | [Build a Matrix With Conditions](../2392-build-a-matrix-with-conditions/readme.md) | [Build a Matrix With Conditions](https://leetcode.com/problems/build-a-matrix-with-conditions/) |
 
 ## Examples
 

@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,12 +65,12 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0031 | Medium | [Next Permutation](../0031-next-permutation/readme.md) | [Next Permutation](https://leetcode.com/problems/next-permutation/) |
-| 0047 | Medium | [Permutations II](../0047-permutations-ii/readme.md) | [Permutations II](https://leetcode.com/problems/permutations-ii/) |
-| 0060 | Hard | [Permutation Sequence](../0060-permutation-sequence/readme.md) | [Permutation Sequence](https://leetcode.com/problems/permutation-sequence/) |
-| 0077 | Medium | [Combinations](../0077-combinations/readme.md) | [Combinations](https://leetcode.com/problems/combinations/) |
+| Number | Difficulty | Name                                                           | LeetCode                                                                    |
+| ------ | ---------- | -------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| 0031   | Medium     | [Next Permutation](../0031-next-permutation/readme.md)         | [Next Permutation](https://leetcode.com/problems/next-permutation/)         |
+| 0047   | Medium     | [Permutations II](../0047-permutations-ii/readme.md)           | [Permutations II](https://leetcode.com/problems/permutations-ii/)           |
+| 0060   | Hard       | [Permutation Sequence](../0060-permutation-sequence/readme.md) | [Permutation Sequence](https://leetcode.com/problems/permutation-sequence/) |
+| 0077   | Medium     | [Combinations](../0077-combinations/readme.md)                 | [Combinations](https://leetcode.com/problems/combinations/)                 |
 
 ## Examples
 

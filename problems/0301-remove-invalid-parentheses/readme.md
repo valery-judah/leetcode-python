@@ -29,11 +29,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -48,8 +48,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -65,10 +65,10 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0020 | Easy | [Valid Parentheses](../0020-valid-parentheses/readme.md) | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) |
-| 1963 | Medium | [Minimum Number of Swaps to Make the String Balanced](../1963-minimum-number-of-swaps-to-make-the-string-balanced/readme.md) | [Minimum Number of Swaps to Make the String Balanced](https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/) |
+| Number | Difficulty | Name                                                                                                                         | LeetCode                                                                                                                                  |
+| ------ | ---------- | ---------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| 0020   | Easy       | [Valid Parentheses](../0020-valid-parentheses/readme.md)                                                                     | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)                                                                     |
+| 1963   | Medium     | [Minimum Number of Swaps to Make the String Balanced](../1963-minimum-number-of-swaps-to-make-the-string-balanced/readme.md) | [Minimum Number of Swaps to Make the String Balanced](https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/) |
 
 ## Examples
 

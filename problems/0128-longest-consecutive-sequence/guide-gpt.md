@@ -1,6 +1,7 @@
 # Solving LeetCode 128: Longest Consecutive Sequence (An Interview Guide)
 
-This document provides a systematic approach to analyzing, solving, and presenting the “Longest Consecutive Sequence” problem in a senior-level software engineering interview.
+This document provides a systematic approach to analyzing, solving, and presenting the “Longest Consecutive
+Sequence” problem in a senior-level software engineering interview.
 
 - **Identifier:** LC-0128
 - **Title:** Longest Consecutive Sequence
@@ -10,13 +11,15 @@ This document provides a systematic approach to analyzing, solving, and presenti
 - **Link:** https://leetcode.com/problems/longest-consecutive-sequence/description/
 - **Function:** `longestConsecutive(nums: list[int]) -> int`
 
-______________________________________________________________________
+---
 
 ## 1) Problem Restatement
 
-Given an unsorted list of integers, return the length of the longest sequence of consecutive integers that appear in the list. Consecutive means values increase by exactly 1 each step. Duplicates may exist and should not extend the length.
+Given an unsorted list of integers, return the length of the longest sequence of consecutive integers that
+appear in the list. Consecutive means values increase by exactly 1 each step. Duplicates may exist and should
+not extend the length.
 
-______________________________________________________________________
+---
 
 ## 2) Clarifying Questions and Assumptions
 
@@ -28,17 +31,22 @@ ______________________________________________________________________
 
 > **Reflection:** These assumptions push us toward set reasoning rather than index-based DP.
 
-______________________________________________________________________
+---
 
 ## 3) Solution Discovery Path
 
 - **Initial Observation.** We need runs like `…, k, k+1, …`. Only membership matters, not positions.
-- **Naive Idea & Failure Mode.** Sort and scan to count consecutive runs. Correct, `O(n log n)` time, `O(1)` extra if in-place. Fails target linear time for large `n`.
-- **Aha! Insight.** If we know whether a number has a predecessor (`x-1`), then only numbers **without** a predecessor can start runs. From each start, count forward `x+1, x+2, …` using `O(1)` membership checks in a hash set.
-- **Core Plan (one sentence).** Insert all numbers in a set; for each `x` with no `x-1` in the set, walk upward while `x+len` exists; track the max length.
-- **Micro Walkthrough.** For `[100,4,200,1,3,2]`, the starts are `100` (no `99`), `1` (no `0`), `200` (no `199`). Their runs are `100`→len 1, `1,2,3,4`→len 4, `200`→len 1. Answer `4`.
+- **Naive Idea & Failure Mode.** Sort and scan to count consecutive runs. Correct, `O(n log n)` time, `O(1)`
+  extra if in-place. Fails target linear time for large `n`.
+- **Aha! Insight.** If we know whether a number has a predecessor (`x-1`), then only numbers **without** a
+  predecessor can start runs. From each start, count forward `x+1, x+2, …` using `O(1)` membership checks in a
+  hash set.
+- **Core Plan (one sentence).** Insert all numbers in a set; for each `x` with no `x-1` in the set, walk
+  upward while `x+len` exists; track the max length.
+- **Micro Walkthrough.** For `[100,4,200,1,3,2]`, the starts are `100` (no `99`), `1` (no `0`), `200` (no
+  `199`). Their runs are `100`→len 1, `1,2,3,4`→len 4, `200`→len 1. Answer `4`.
 
-______________________________________________________________________
+---
 
 ## 4) Algorithms and Trade-offs
 
@@ -62,22 +70,29 @@ ______________________________________________________________________
 
 > **Recommendation:** Hash-set starts. Single pass, minimal code, linear average time.
 
-______________________________________________________________________
+---
 
 ## 5) Correctness
 
-- **Dominance intuition.** If `x-1` exists, then any run containing `x` will be discovered starting at `x-1` (or earlier). So counting from `x` would be redundant. Limiting starts to numbers with no predecessor ensures each maximal run is explored once.
-- **Invariant (formal).** While iterating the array, the set `S` equals the input’s distinct elements. For any `x ∈ S`, if `x-1 ∉ S`, then the loop that increments `y = x, x+1, …` visits exactly the elements of the unique maximal run containing `x`. No other start can visit these elements because any other candidate `z` in the run has `z-1 ∈ S`. Therefore the maximum length observed equals the true maximum.
+- **Dominance intuition.** If `x-1` exists, then any run containing `x` will be discovered starting at `x-1`
+  (or earlier). So counting from `x` would be redundant. Limiting starts to numbers with no predecessor
+  ensures each maximal run is explored once.
+- **Invariant (formal).** While iterating the array, the set `S` equals the input’s distinct elements. For any
+  `x ∈ S`, if `x-1 ∉ S`, then the loop that increments `y = x, x+1, …` visits exactly the elements of the
+  unique maximal run containing `x`. No other start can visit these elements because any other candidate `z`
+  in the run has `z-1 ∈ S`. Therefore the maximum length observed equals the true maximum.
 
-______________________________________________________________________
+---
 
 ## 6) Complexity and Resource Analysis
 
-- **Time:** Expected `O(n)` with hash set membership (`n` insertions + each element’s membership tested a constant number of times; each element participates in at most one forward walk).
+- **Time:** Expected `O(n)` with hash set membership (`n` insertions + each element’s membership tested a
+  constant number of times; each element participates in at most one forward walk).
 - **Space:** `O(n)` for the set of distinct elements.
-- **Constant factors:** Using local variables and `while` loops keeps Python overhead low; avoid repeated `in` checks with recomputed expressions where possible.
+- **Constant factors:** Using local variables and `while` loops keeps Python overhead low; avoid repeated `in`
+  checks with recomputed expressions where possible.
 
-______________________________________________________________________
+---
 
 ## 7) Implementation (Python)
 
@@ -112,7 +127,7 @@ def longestConsecutive(nums: List[int]) -> int:
     return best
 ```
 
-______________________________________________________________________
+---
 
 ## 8) Tests (pytest)
 
@@ -190,7 +205,7 @@ def test_scale_constant_stride():
     assert longestConsecutive(arr) == max(n1, n2)
 ```
 
-______________________________________________________________________
+---
 
 ## 9) Pitfalls Checklist
 
@@ -200,18 +215,21 @@ ______________________________________________________________________
 - Mutating the set during iteration → undefined behavior; iterate over a fixed set.
 - Assuming positivity; negative values and zero are valid consecutive integers.
 
-______________________________________________________________________
+---
 
 ## 10) Interview Guidance
 
-- **Talk-track (≈25s).** “I want linear time. Sorting works in `O(n log n)` but we can do better. Put all numbers in a set. A consecutive run must start at a number with no predecessor `x-1`. For each such start, walk upward while `x+1, x+2, …` are in the set and track the max length. Each element belongs to exactly one forward walk, so expected `O(n)`. Duplicates are ignored by the set. Empty input returns 0.”
+- **Talk-track (≈25s).** “I want linear time. Sorting works in `O(n log n)` but we can do better. Put all
+  numbers in a set. A consecutive run must start at a number with no predecessor `x-1`. For each such start,
+  walk upward while `x+1, x+2, …` are in the set and track the max length. Each element belongs to exactly one
+  forward walk, so expected `O(n)`. Duplicates are ignored by the set. Empty input returns 0.”
 - **What to implement first.** Sorting oracle to lock down correctness, then the set-based optimal.
 - **Follow-ups.**
-  - Streaming data → maintain a disjoint-set or map of segment endpoints to merge on the fly.
-  - Memory limits → external sort then one pass.
-  - Need actual sequence, not length → record `(start, len)` and reconstruct.
+    - Streaming data → maintain a disjoint-set or map of segment endpoints to merge on the fly.
+    - Memory limits → external sort then one pass.
+    - Need actual sequence, not length → record `(start, len)` and reconstruct.
 
-______________________________________________________________________
+---
 
 ## 11) Reflection Prompts
 
@@ -221,10 +239,13 @@ ______________________________________________________________________
 - When would you prefer the sorting solution despite higher asymptotics?
 - How would you adapt the solution to return the sequence itself?
 
-______________________________________________________________________
+---
 
 ## 12) Extensions
 
-- **LC-0129 variant idea:** Return the **longest k-consecutive** where gaps up to `k` are allowed → sliding window over sorted unique values.
-- **Disjoint sequences with updates:** Support insert/delete and query max run length → interval map or union-find with hash maps.
-- **2D generalization:** Longest consecutive path in a grid with 4-connectivity → graph traversal, not a set lookup.
+- **LC-0129 variant idea:** Return the **longest k-consecutive** where gaps up to `k` are allowed → sliding
+  window over sorted unique values.
+- **Disjoint sequences with updates:** Support insert/delete and query max run length → interval map or
+  union-find with hash maps.
+- **2D generalization:** Longest consecutive path in a grid with 4-connectivity → graph traversal, not a set
+  lookup.

@@ -1,211 +1,215 @@
-
-
 version: 1
 track: track_10_hard_mix
 title: Hard Mix — Integration and Advanced Data Structures
-description: "Integrate prior patterns under pressure: monotonic stacks, tries+DFS, DSU, segment trees/BIT, hard strings, and graph paths."
+description:
+    'Integrate prior patterns under pressure: monotonic stacks, tries+DFS, DSU, segment trees/BIT, hard
+    strings, and graph paths.'
 problems:
-  # Monotonic stack geometry
-  - slug: largest-rectangle-in-histogram
-    title: Largest Rectangle in Histogram
-    difficulty: hard
-    primary_pattern: monotonic-stack
-    section: monotonic-geometry
-    why: >
-      Strictly increasing stack over heights. Compute maximal area on pop using next/prev smaller.
-  - slug: maximal-rectangle
-    title: Maximal Rectangle
-    difficulty: hard
-    primary_pattern: histogram-per-row
-    section: monotonic-geometry
-    why: >
-      Reduce rows to histograms and reuse 84 each row. Tests composition and sentinel handling.
-  - slug: trapping-rain-water
-    title: Trapping Rain Water
-    difficulty: hard
-    primary_pattern: two-pointers-or-stack
-    section: monotonic-geometry
-    why: >
-      Revisit with boundary maxes or stack bars. Forces invariant proof under both methods.
-
-  # Tries + DFS backtracking
-  - slug: implement-trie-prefix-tree
-    title: Implement Trie (Prefix Tree)
-    difficulty: medium
-    primary_pattern: trie
-    section: tries-dfs
-    why: >
-      Node children map + end flag. Baseline structure for word search problems.
-  - slug: design-add-and-search-words-data-structure
-    title: Design Add and Search Words Data Structure
-    difficulty: medium
-    primary_pattern: trie-with-wildcard
-    section: tries-dfs
-    why: >
-      Trie + dot wildcard via DFS. Bridges to multi-branch search recursion.
-  - slug: word-search-ii
-    title: Word Search II
-    difficulty: hard
-    primary_pattern: trie+dfs-prune
-    section: tries-dfs
-    why: >
-      Backtrack board with trie pruning and visited marks. Emphasizes prefix pruning and node count cleanup.
-
-  # Union–Find (DSU) and merges
-  - slug: accounts-merge
-    title: Accounts Merge
-    difficulty: medium
-    primary_pattern: dsu + map
-    section: dsu
-    why: >
-      Union emails by owner. Practice DSU API, path compression, and grouping via parent.
-  - slug: most-stones-removed-with-same-row-or-column
-    title: Most Stones Removed with Same Row or Column
-    difficulty: hard
-    primary_pattern: dsu-bipartite-keys
-    section: dsu
-    why: >
-      Union on row/col keys; answer = total - components. DSU on implicit bipartite graph.
-
-  # Range structures
-  - slug: range-sum-query-mutable
-    title: Range Sum Query - Mutable
-    difficulty: medium
-    primary_pattern: fenwick-or-segment-tree
-    section: range-structures
-    why: >
-      Implement BIT or segment tree for point update + range sum. Solidifies tree indexing and lazy choice.
-
-  # Hard strings / parentheses
-  - slug: longest-valid-parentheses
-    title: Longest Valid Parentheses
-    difficulty: hard
-    primary_pattern: stack-or-dp
-    section: hard-strings
-    why: >
-      Solutions via stack of indices or DP with pair linking. Edge-heavy; picks up off-by-one discipline.
-  - slug: remove-invalid-parentheses
-    title: Remove Invalid Parentheses
-    difficulty: hard
-    primary_pattern: bfs-min-removal-or-dfs
-    section: hard-strings
-    why: >
-      Generate minimal removals. BFS layer by layer or DFS with pruning; validate function design matters.
-
-  # Graph paths / reconstruction
-  - slug: reconstruct-itinerary
-    title: Reconstruct Itinerary
-    difficulty: hard
-    primary_pattern: hierholzer-eulerian-path
-    section: graphs
-    why: >
-      Lexicographically smallest Eulerian path via min-heap adjacency and postorder push. Tests recursion + ordering.
-
-  # Review under load
-  - slug: sliding-window-maximum
-    title: Sliding Window Maximum
-    difficulty: hard
-    primary_pattern: window-deque-monotonic
-    section: review
-    why: >
-      Deque template under heavy test input. Ensures the technique is fluent.
-
-notes:
-  ordering: Monotonic geometry → tries+DFS → DSU → range structures → hard strings → graph path → review.
-  next_track: none
-
-extensions:
-  optional:
-    - slug: shortest-subarray-with-sum-at-least-k
-      title: Shortest Subarray with Sum at Least K
+    # Monotonic stack geometry
+    - slug: largest-rectangle-in-histogram
+      title: Largest Rectangle in Histogram
       difficulty: hard
-      primary_pattern: prefix-deque-monotonic
-      section: cross-techniques
+      primary_pattern: monotonic-stack
+      section: monotonic-geometry
       why: >
-        Prefix array + deque of increasing sums to find shortest ≥K. Hybrid of prefix and deque.
-    - slug: substring-with-concatenation-of-all-words
-      title: Substring with Concatenation of All Words
+          Strictly increasing stack over heights. Compute maximal area on pop using next/prev smaller.
+    - slug: maximal-rectangle
+      title: Maximal Rectangle
       difficulty: hard
-      primary_pattern: window-stepped-counts
-      section: cross-techniques
+      primary_pattern: histogram-per-row
+      section: monotonic-geometry
       why: >
-        Step by word length with rolling hash maps. Heavy bookkeeping; good endurance test.
-    - slug: count-of-smaller-numbers-after-self
-      title: Count of Smaller Numbers After Self
+          Reduce rows to histograms and reuse 84 each row. Tests composition and sentinel handling.
+    - slug: trapping-rain-water
+      title: Trapping Rain Water
       difficulty: hard
-      primary_pattern: fenwick-or-merge-count
+      primary_pattern: two-pointers-or-stack
+      section: monotonic-geometry
+      why: >
+          Revisit with boundary maxes or stack bars. Forces invariant proof under both methods.
+
+    # Tries + DFS backtracking
+    - slug: implement-trie-prefix-tree
+      title: Implement Trie (Prefix Tree)
+      difficulty: medium
+      primary_pattern: trie
+      section: tries-dfs
+      why: >
+          Node children map + end flag. Baseline structure for word search problems.
+    - slug: design-add-and-search-words-data-structure
+      title: Design Add and Search Words Data Structure
+      difficulty: medium
+      primary_pattern: trie-with-wildcard
+      section: tries-dfs
+      why: >
+          Trie + dot wildcard via DFS. Bridges to multi-branch search recursion.
+    - slug: word-search-ii
+      title: Word Search II
+      difficulty: hard
+      primary_pattern: trie+dfs-prune
+      section: tries-dfs
+      why: >
+          Backtrack board with trie pruning and visited marks. Emphasizes prefix pruning and node count
+          cleanup.
+
+    # Union–Find (DSU) and merges
+    - slug: accounts-merge
+      title: Accounts Merge
+      difficulty: medium
+      primary_pattern: dsu + map
+      section: dsu
+      why: >
+          Union emails by owner. Practice DSU API, path compression, and grouping via parent.
+    - slug: most-stones-removed-with-same-row-or-column
+      title: Most Stones Removed with Same Row or Column
+      difficulty: hard
+      primary_pattern: dsu-bipartite-keys
+      section: dsu
+      why: >
+          Union on row/col keys; answer = total - components. DSU on implicit bipartite graph.
+
+    # Range structures
+    - slug: range-sum-query-mutable
+      title: Range Sum Query - Mutable
+      difficulty: medium
+      primary_pattern: fenwick-or-segment-tree
       section: range-structures
       why: >
-        Coordinate compress and use BIT, or use modified merge count. Strengthens index compression.
-    - slug: reverse-pairs
-      title: Reverse Pairs
+          Implement BIT or segment tree for point update + range sum. Solidifies tree indexing and lazy
+          choice.
+
+    # Hard strings / parentheses
+    - slug: longest-valid-parentheses
+      title: Longest Valid Parentheses
       difficulty: hard
-      primary_pattern: fenwick-or-merge-count
-      section: range-structures
+      primary_pattern: stack-or-dp
+      section: hard-strings
       why: >
-        Count pairs i<j with nums[i] > 2*nums[j]. Requires careful long type and compression.
-    - slug: count-of-range-sum
-      title: Count of Range Sum
+          Solutions via stack of indices or DP with pair linking. Edge-heavy; picks up off-by-one discipline.
+    - slug: remove-invalid-parentheses
+      title: Remove Invalid Parentheses
       difficulty: hard
-      primary_pattern: prefix + fenwick-or-merge
-      section: range-structures
+      primary_pattern: bfs-min-removal-or-dfs
+      section: hard-strings
       why: >
-        Prefix sums with coordinate compression; count sums in [lower,upper] via BIT or divide-and-conquer.
-    - slug: the-skyline-problem
-      title: The Skyline Problem
+          Generate minimal removals. BFS layer by layer or DFS with pruning; validate function design matters.
+
+    # Graph paths / reconstruction
+    - slug: reconstruct-itinerary
+      title: Reconstruct Itinerary
       difficulty: hard
-      primary_pattern: sweep-line + heap
+      primary_pattern: hierholzer-eulerian-path
       section: graphs
       why: >
-        Event sweep with multiset/heap of active heights. High‑signal geometry + ordering problem.
-    - slug: lfu-cache
-      title: LFU Cache
+          Lexicographically smallest Eulerian path via min-heap adjacency and postorder push. Tests recursion
+          + ordering.
+
+    # Review under load
+    - slug: sliding-window-maximum
+      title: Sliding Window Maximum
       difficulty: hard
-      primary_pattern: ordered-maps + dll-buckets
-      section: design
+      primary_pattern: window-deque-monotonic
+      section: review
       why: >
-        O(1) ops by freq buckets and linked lists. Stress‑test of design and invariants.
+          Deque template under heavy test input. Ensures the technique is fluent.
+
+notes:
+    ordering: Monotonic geometry → tries+DFS → DSU → range structures → hard strings → graph path → review.
+    next_track: none
+
+extensions:
+    optional:
+        - slug: shortest-subarray-with-sum-at-least-k
+          title: Shortest Subarray with Sum at Least K
+          difficulty: hard
+          primary_pattern: prefix-deque-monotonic
+          section: cross-techniques
+          why: >
+              Prefix array + deque of increasing sums to find shortest ≥K. Hybrid of prefix and deque.
+        - slug: substring-with-concatenation-of-all-words
+          title: Substring with Concatenation of All Words
+          difficulty: hard
+          primary_pattern: window-stepped-counts
+          section: cross-techniques
+          why: >
+              Step by word length with rolling hash maps. Heavy bookkeeping; good endurance test.
+        - slug: count-of-smaller-numbers-after-self
+          title: Count of Smaller Numbers After Self
+          difficulty: hard
+          primary_pattern: fenwick-or-merge-count
+          section: range-structures
+          why: >
+              Coordinate compress and use BIT, or use modified merge count. Strengthens index compression.
+        - slug: reverse-pairs
+          title: Reverse Pairs
+          difficulty: hard
+          primary_pattern: fenwick-or-merge-count
+          section: range-structures
+          why: >
+              Count pairs i<j with nums[i] > 2*nums[j]. Requires careful long type and compression.
+        - slug: count-of-range-sum
+          title: Count of Range Sum
+          difficulty: hard
+          primary_pattern: prefix + fenwick-or-merge
+          section: range-structures
+          why: >
+              Prefix sums with coordinate compression; count sums in [lower,upper] via BIT or
+              divide-and-conquer.
+        - slug: the-skyline-problem
+          title: The Skyline Problem
+          difficulty: hard
+          primary_pattern: sweep-line + heap
+          section: graphs
+          why: >
+              Event sweep with multiset/heap of active heights. High‑signal geometry + ordering problem.
+        - slug: lfu-cache
+          title: LFU Cache
+          difficulty: hard
+          primary_pattern: ordered-maps + dll-buckets
+          section: design
+          why: >
+              O(1) ops by freq buckets and linked lists. Stress‑test of design and invariants.
 
 omitted:
-  from_neetcode_250:
-    - id: 684
-      slug: redundant-connection
-      reason: >
-        DSU cycle already covered in graphs track; prefer 947 here for variety.
-    - id: 239
-      slug: sliding-window-maximum
-      reason: >
-        Already core in sliding-window; kept here only as a review item. Remove if you want no repeats.
-    - id: 208
-      slug: implement-trie-prefix-tree
-      reason: >
-        Included in core to support 211/212.
-    - id: 212
-      slug: word-search-ii
-      reason: >
-        Included in core as trie+DFS capstone.
-    - id: 84
-      slug: largest-rectangle-in-histogram
-      reason: >
-        Included in core; cornerstone monotonic stack problem.
-    - id: 85
-      slug: maximal-rectangle
-      reason: >
-        Included in core; composition of 84 with row histograms.
-  from_leetcode_150:
-    - id: 332
-      slug: reconstruct-itinerary
-      reason: >
-        Included in core for Hierholzer path practice.
-    - id: 301
-      slug: remove-invalid-parentheses
-      reason: >
-        Included in core for BFS/DFS generation.
-    - id: 32
-      slug: longest-valid-parentheses
-      reason: >
-        Included in core for stack/DP.
-    - id: 307
-      slug: range-sum-query-mutable
-      reason: >
-        Included in core to cover BIT/segment tree basics.
+    from_neetcode_250:
+        - id: 684
+          slug: redundant-connection
+          reason: >
+              DSU cycle already covered in graphs track; prefer 947 here for variety.
+        - id: 239
+          slug: sliding-window-maximum
+          reason: >
+              Already core in sliding-window; kept here only as a review item. Remove if you want no repeats.
+        - id: 208
+          slug: implement-trie-prefix-tree
+          reason: >
+              Included in core to support 211/212.
+        - id: 212
+          slug: word-search-ii
+          reason: >
+              Included in core as trie+DFS capstone.
+        - id: 84
+          slug: largest-rectangle-in-histogram
+          reason: >
+              Included in core; cornerstone monotonic stack problem.
+        - id: 85
+          slug: maximal-rectangle
+          reason: >
+              Included in core; composition of 84 with row histograms.
+    from_leetcode_150:
+        - id: 332
+          slug: reconstruct-itinerary
+          reason: >
+              Included in core for Hierholzer path practice.
+        - id: 301
+          slug: remove-invalid-parentheses
+          reason: >
+              Included in core for BFS/DFS generation.
+        - id: 32
+          slug: longest-valid-parentheses
+          reason: >
+              Included in core for stack/DP.
+        - id: 307
+          slug: range-sum-query-mutable
+          reason: >
+              Included in core to cover BIT/segment tree basics.

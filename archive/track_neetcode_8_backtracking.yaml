@@ -3,51 +3,51 @@ track: track_neetcode_8_backtracking
 title: NeetCode 250 — Backtracking
 description: Problems from the NeetCode 250 list for Backtracking.
 problems:
-  - slug: sum-of-all-subset-xor-totals
-    title: Sum of All Subsets XOR Total
-    difficulty: easy
-  - slug: subsets
-    title: Subsets
-    difficulty: medium
-  - slug: combination-sum
-    title: Combination Sum
-    difficulty: medium
-  - slug: combination-sum-ii
-    title: Combination Sum II
-    difficulty: medium
-  - slug: combinations
-    title: Combinations
-    difficulty: medium
-  - slug: permutations
-    title: Permutations
-    difficulty: medium
-  - slug: subsets-ii
-    title: Subsets II
-    difficulty: medium
-  - slug: permutations-ii
-    title: Permutations II
-    difficulty: medium
-  - slug: word-search
-    title: Word Search
-    difficulty: medium
-  - slug: palindrome-partitioning
-    title: Palindrome Partitioning
-    difficulty: medium
-  - slug: letter-combinations-of-a-phone-number
-    title: Letter Combinations of a Phone Number
-    difficulty: medium
-  - slug: matchsticks-to-square
-    title: Matchsticks to Square
-    difficulty: medium
-  - slug: partition-to-k-equal-sum-subsets
-    title: Partition to K Equal Sum Subsets
-    difficulty: medium
-  - slug: n-queens
-    title: N Queens
-    difficulty: hard
-  - slug: n-queens-ii
-    title: N Queens II
-    difficulty: hard
-  - slug: word-break-ii
-    title: Word Break II
-    difficulty: hard
+    - slug: sum-of-all-subset-xor-totals
+      title: Sum of All Subsets XOR Total
+      difficulty: easy
+    - slug: subsets
+      title: Subsets
+      difficulty: medium
+    - slug: combination-sum
+      title: Combination Sum
+      difficulty: medium
+    - slug: combination-sum-ii
+      title: Combination Sum II
+      difficulty: medium
+    - slug: combinations
+      title: Combinations
+      difficulty: medium
+    - slug: permutations
+      title: Permutations
+      difficulty: medium
+    - slug: subsets-ii
+      title: Subsets II
+      difficulty: medium
+    - slug: permutations-ii
+      title: Permutations II
+      difficulty: medium
+    - slug: word-search
+      title: Word Search
+      difficulty: medium
+    - slug: palindrome-partitioning
+      title: Palindrome Partitioning
+      difficulty: medium
+    - slug: letter-combinations-of-a-phone-number
+      title: Letter Combinations of a Phone Number
+      difficulty: medium
+    - slug: matchsticks-to-square
+      title: Matchsticks to Square
+      difficulty: medium
+    - slug: partition-to-k-equal-sum-subsets
+      title: Partition to K Equal Sum Subsets
+      difficulty: medium
+    - slug: n-queens
+      title: N Queens
+      difficulty: hard
+    - slug: n-queens-ii
+      title: N Queens II
+      difficulty: hard
+    - slug: word-break-ii
+      title: Word Break II
+      difficulty: hard

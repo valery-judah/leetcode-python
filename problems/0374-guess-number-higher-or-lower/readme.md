@@ -28,11 +28,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +47,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,11 +64,11 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0278 | Easy | [First Bad Version](../0278-first-bad-version/readme.md) | [First Bad Version](https://leetcode.com/problems/first-bad-version/) |
-| 0375 | Medium | [Guess Number Higher or Lower II](../0375-guess-number-higher-or-lower-ii/readme.md) | [Guess Number Higher or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/) |
-| 0658 | Medium | [Find K Closest Elements](../0658-find-k-closest-elements/readme.md) | [Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements/) |
+| Number | Difficulty | Name                                                                                 | LeetCode                                                                                          |
+| ------ | ---------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------- |
+| 0278   | Easy       | [First Bad Version](../0278-first-bad-version/readme.md)                             | [First Bad Version](https://leetcode.com/problems/first-bad-version/)                             |
+| 0375   | Medium     | [Guess Number Higher or Lower II](../0375-guess-number-higher-or-lower-ii/readme.md) | [Guess Number Higher or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/) |
+| 0658   | Medium     | [Find K Closest Elements](../0658-find-k-closest-elements/readme.md)                 | [Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements/)                 |
 
 ## Examples
 

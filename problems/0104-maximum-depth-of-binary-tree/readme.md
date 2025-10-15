@@ -28,11 +28,11 @@
 
 ## Approach Options
 
-| # | Idea | When to use | Correctness invariant | Time | Space |
-|---|------|-------------|-----------------------|------|-------|
-| A | [primary idea] | [scenario] | [invariant] | O(n) | O(n) |
-| B | [alternative] | [scenario] | [invariant] | O(n log n) | O(1) |
-| C | [reject] | [why not] | [violated invariant] | - | - |
+| #   | Idea           | When to use | Correctness invariant | Time       | Space |
+| --- | -------------- | ----------- | --------------------- | ---------- | ----- |
+| A   | [primary idea] | [scenario]  | [invariant]           | O(n)       | O(n)  |
+| B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
+| C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
 ## Edge Cases Checklist
 
@@ -47,8 +47,8 @@
 ## Implementation
 
 - `solutions.py` should expose:
-  - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
-  - Short notes on tradeoffs and pitfalls.
+    - `ALL_SOLUTIONS = {"...": fn, "...": fn}`
+    - Short notes on tradeoffs and pitfalls.
 
 ## Tests
 
@@ -64,14 +64,14 @@
 
 ## Similar Problems
 
-| Number | Difficulty | Name | LeetCode |
-|---|---|---|---|
-| 0110 | Easy | [Balanced Binary Tree](../0110-balanced-binary-tree/readme.md) | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) |
-| 0111 | Easy | [Minimum Depth of Binary Tree](../0111-minimum-depth-of-binary-tree/readme.md) | [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/) |
-| 0559 | Easy | [Maximum Depth of N-ary Tree](../0559-maximum-depth-of-n-ary-tree/readme.md) | [Maximum Depth of N-ary Tree](https://leetcode.com/problems/maximum-depth-of-n-ary-tree/) |
-| 1376 | Medium | [Time Needed to Inform All Employees](../1376-time-needed-to-inform-all-employees/readme.md) | [Time Needed to Inform All Employees](https://leetcode.com/problems/time-needed-to-inform-all-employees/) |
-| 2385 | Medium | [Amount of Time for Binary Tree to Be Infected](../2385-amount-of-time-for-binary-tree-to-be-infected/readme.md) | [Amount of Time for Binary Tree to Be Infected](https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/) |
-| 2458 | Hard | [Height of Binary Tree After Subtree Removal Queries](../2458-height-of-binary-tree-after-subtree-removal-queries/readme.md) | [Height of Binary Tree After Subtree Removal Queries](https://leetcode.com/problems/height-of-binary-tree-after-subtree-removal-queries/) |
+| Number | Difficulty | Name                                                                                                                         | LeetCode                                                                                                                                  |
+| ------ | ---------- | ---------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| 0110   | Easy       | [Balanced Binary Tree](../0110-balanced-binary-tree/readme.md)                                                               | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)                                                               |
+| 0111   | Easy       | [Minimum Depth of Binary Tree](../0111-minimum-depth-of-binary-tree/readme.md)                                               | [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)                                               |
+| 0559   | Easy       | [Maximum Depth of N-ary Tree](../0559-maximum-depth-of-n-ary-tree/readme.md)                                                 | [Maximum Depth of N-ary Tree](https://leetcode.com/problems/maximum-depth-of-n-ary-tree/)                                                 |
+| 1376   | Medium     | [Time Needed to Inform All Employees](../1376-time-needed-to-inform-all-employees/readme.md)                                 | [Time Needed to Inform All Employees](https://leetcode.com/problems/time-needed-to-inform-all-employees/)                                 |
+| 2385   | Medium     | [Amount of Time for Binary Tree to Be Infected](../2385-amount-of-time-for-binary-tree-to-be-infected/readme.md)             | [Amount of Time for Binary Tree to Be Infected](https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/)             |
+| 2458   | Hard       | [Height of Binary Tree After Subtree Removal Queries](../2458-height-of-binary-tree-after-subtree-removal-queries/readme.md) | [Height of Binary Tree After Subtree Removal Queries](https://leetcode.com/problems/height-of-binary-tree-after-subtree-removal-queries/) |
 
 ## Examples
 
