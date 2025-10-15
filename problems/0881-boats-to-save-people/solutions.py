@@ -5,15 +5,17 @@ import copy
 import pytest
 
 
-class Baseline:
+class Straight:
     def solve(self, people: list[int], limit: int) -> int:
         people.sort()
-        left, right = 0, len(people) - 1
         boats = 0
+        left, right = 0, len(people) - 1
         while left <= right:
             if people[left] + people[right] <= limit:
                 left += 1
-            right -= 1
+                right -= 1
+            else:
+                right -= 1
             boats += 1
         return boats
 
@@ -21,18 +23,18 @@ class Baseline:
 class Optimized:
     def solve(self, people: list[int], limit: int) -> int:
         people.sort()
-        left, right = 0, len(people) - 1
-        boats = 0
+        res, left, right = 0, 0, len(people) - 1
         while left <= right:
-            if people[left] + people[right] <= limit:
-                left += 1
+            remain = limit - people[right]
             right -= 1
-            boats += 1
-        return boats
+            res += 1
+            if left <= right and remain >= people[left]:
+                left += 1
+        return res
 
 
 # Explicit multi-export for test discovery
-ALL_SOLUTIONS = [Baseline, Optimized]
+ALL_SOLUTIONS = [Straight, Optimized]
 
 TEST_CASES = [
     ("example_1", ([1, 2], 3), 1),

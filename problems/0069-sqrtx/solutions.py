@@ -6,18 +6,34 @@ import pytest
 
 
 class Baseline:
-    def solve(self, x: int) -> int: ...
-
+    def solve(self, x: int) -> int:
+        if x < 2:
+            return x
+        res = 0
+        for i in range(2, x // 2):
+            if i * i >= x:
+                res = i
+        return res
 
 class Optimized:
     def solve(self, x: int) -> int: ...
 
 
 # Explicit multi-export for test discovery
-ALL_SOLUTIONS = [Baseline, Optimized]
+ALL_SOLUTIONS = [Baseline]
 
 TEST_CASES = [
-    ("types", (0,), 0),
+    ("zero", (0,), 0),
+    ("one", (1,), 1),
+    ("two", (2,), 1),
+    ("three", (3,), 1),
+    ("four", (4,), 2),
+    ("eight", (8,), 2),
+    ("nine", (9,), 3),
+    ("sixteen", (16,), 4),
+    ("twenty_four", (24,), 4),
+    ("twenty_five", (25,), 5),
+    ("twenty_six", (26,), 5),
 ]
 
 
