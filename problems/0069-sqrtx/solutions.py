@@ -15,6 +15,7 @@ class Baseline:
                 res = i
         return res
 
+
 class Optimized:
     def solve(self, x: int) -> int: ...
 

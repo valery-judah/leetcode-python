@@ -69,7 +69,6 @@ class Optimized:
             nums1[: p2 + 1] = nums2[: p2 + 1]
 
 
-
 # Explicit multi-export for test discovery
 ALL_SOLUTIONS = [Baseline, Optimized]
 
