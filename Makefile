@@ -87,16 +87,14 @@ markdown: tracks-report tracks-table
 build:
 	@echo "--- Running code formatters ---"
 	make fmt
-	@echo "--- Formatting Markdown ---"
-	make format-md
-	@echo "--- Formatting JSON ---"
-	make fmt-json
+# 	@echo "--- Formatting Markdown ---"
+# 	make format-md
+# 	@echo "--- Formatting JSON ---"
+# 	make fmt-json
 	@echo "--- Running linters ---"
 	make lint
 	@echo "--- Type checking ---"
 	make type
-# 	@echo "--- Running tests ---"
-# 	make test
 	@echo "--- Validating stats schema ---"
 	make validate-stats
 	@echo "--- Generating Markdown (tracks + README table) ---"
