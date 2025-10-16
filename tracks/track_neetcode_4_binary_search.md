@@ -17,7 +17,7 @@ See generation instructions in ../README.md.
 | [Search a 2D Matrix](../problems/0074-search-a-2d-matrix/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Koko Eating Bananas](../problems/0875-koko-eating-bananas/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Capacity to Ship Packages Within D Days](../problems/1011-capacity-to-ship-packages-within-d-days/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
-| [Find Minimum In Rotated Sorted Array](../problems/0153-find-minimum-in-rotated-sorted-array/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
+| [Find Minimum In Rotated Sorted Array](../problems/0153-find-minimum-in-rotated-sorted-array/readme.md) | Medium | ✅ | ✖️ | ✅ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Search In Rotated Sorted Array](../problems/0033-search-in-rotated-sorted-array/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Search In Rotated Sorted Array II](../problems/0081-search-in-rotated-sorted-array-ii/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Time Based Key Value Store](../problems/0981-time-based-key-value-store/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
