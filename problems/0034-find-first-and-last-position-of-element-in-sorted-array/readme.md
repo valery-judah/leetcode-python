@@ -37,6 +37,30 @@
 | B   | [alternative]  | [scenario]  | [invariant]           | O(n log n) | O(1)  |
 | C   | [reject]       | [why not]   | [violated invariant]  | -          | -     |
 
+### Alternative Binary Search Variations
+
+Beyond the iterative implementations, several other variations of binary search are worth knowing:
+
+1.  **Recursive Binary Search**:
+    *   **Idea**: Uses function calls to recursively narrow the search space instead of a `while` loop.
+    *   **Pros**: Can be more intuitive and elegant.
+    *   **Cons**: Less efficient in Python due to function call overhead and potential for recursion depth errors.
+
+2.  **Using Python's `bisect` Module**:
+    *   **Idea**: Leverages the highly optimized `bisect_left` and `bisect_right` functions.
+    *   **Pros**: The most "Pythonic" and efficient approach. It's concise, fast, and less error-prone.
+    *   **Cons**: Relies on a standard library, so it doesn't demonstrate an understanding of the underlying algorithm.
+
+3.  **Exponential Search**:
+    *   **Idea**: Finds a range where the target is likely to be by checking indices `1, 2, 4, 8, ...` and then performs a binary search within that range.
+    *   **Pros**: Useful for unbounded or infinite sorted arrays.
+    *   **Cons**: More complex and not a direct replacement for standard binary search.
+
+4.  **Interpolation Search**:
+    *   **Idea**: Makes an educated guess about the target's position based on its value relative to the start and end of the array.
+    *   **Pros**: Can be faster than binary search (O(log log n)) for uniformly distributed data.
+    *   **Cons**: Worst-case performance is O(n) if the data is not uniformly distributed.
+
 ## Edge Cases Checklist
 
 - [case 1]
