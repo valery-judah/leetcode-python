@@ -11,7 +11,7 @@ See generation instructions in ../README.md.
 | Problem | Diff | Baseline | Complex Justified | Optimal | Repeats | Min Time | Conf | Clarified | Communicated | Stated | Edge Tests | Clean Impl | Mistakes |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
 | [Binary Search](../problems/0704-binary-search/readme.md) | Easy | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
-| [Search in Rotated Sorted Array](../problems/0033-search-in-rotated-sorted-array/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
+| [Search in Rotated Sorted Array](../problems/0033-search-in-rotated-sorted-array/readme.md) | Medium | ✅ | ✖️ | ✅ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Find Minimum in Rotated Sorted Array](../problems/0153-find-minimum-in-rotated-sorted-array/readme.md) | Medium | ✅ | ✖️ | ✅ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Find Peak Element](../problems/0162-find-peak-element/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Search a 2D Matrix](../problems/0074-search-a-2d-matrix/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
