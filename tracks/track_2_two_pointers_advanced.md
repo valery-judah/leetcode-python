@@ -8,7 +8,7 @@ See generation instructions in ../README.md.
 
 ## Problems
 
-| Problem | Diff | Baseline | Complex Justified | Optimal | Repeats | Min Time | Conf | Clarified | Communicated | Stated | Edge Tests | Clean Impl | Mistakes |
+| Problem &nbsp;&nbsp;&nbsp;&nbsp;| Diff | Baseline | Complex Justified | Optimal | Repeats | Min Time | Conf | Clarified | Communicated | Stated | Edge Tests | Clean Impl | Mistakes |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
 | [Remove Duplicates from Sorted Array](../problems/0026-remove-duplicates-from-sorted-array/readme.md) | Easy | ✅ | ✖️ | ✅ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Move Zeroes](../problems/0283-move-zeroes/readme.md) | Easy | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
@@ -26,7 +26,7 @@ See generation instructions in ../README.md.
 
 ## Extensions (Optional)
 
-| Problem | Diff | Baseline | Complex Justified | Optimal | Repeats | Min Time | Conf | Clarified | Communicated | Stated | Edge Tests | Clean Impl | Mistakes |
+| Problem &nbsp;&nbsp;&nbsp;&nbsp;| Diff | Baseline | Complex Justified | Optimal | Repeats | Min Time | Conf | Clarified | Communicated | Stated | Edge Tests | Clean Impl | Mistakes |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
 | [Valid Palindrome II](../problems/0680-valid-palindrome-ii/readme.md) | Easy | ✅ | ✖️ | ✅ |  | 0 | 2 | ✖️ | ✖️ | ✖️ | ✖️                 | ✅ |  |
 | [Remove Duplicates from Sorted Array II](../problems/0080-remove-duplicates-from-sorted-array-ii/readme.md) | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |

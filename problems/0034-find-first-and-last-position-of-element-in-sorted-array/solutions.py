@@ -7,123 +7,78 @@ import pytest
 
 class Baseline:
     def solve(self, nums: list[int], target: int) -> list[int]:
-        """
-        Finds the first and last positions of a target in a sorted array.
-        This baseline approach uses two separate binary searches.
-        """
-        first = self._find_first(nums, target)
-        if first == -1:
-            return [-1, -1]
-        last = self._find_last(nums, target)
-        return [first, last]
 
-    def _find_first(self, nums: list[int], target: int) -> int:
-        low, high = 0, len(nums) - 1
-        first_pos = -1
-        while low <= high:
-            mid = (low + high) // 2
-            if nums[mid] == target:
-                first_pos = mid
-                high = mid - 1  # Look for an earlier occurrence
-            elif nums[mid] < target:
-                low = mid + 1
-            else:
-                high = mid - 1
-        return first_pos
-
-    def _find_last(self, nums: list[int], target: int) -> int:
-        low, high = 0, len(nums) - 1
-        last_pos = -1
-        while low <= high:
-            mid = (low + high) // 2
-            if nums[mid] == target:
-                last_pos = mid
-                low = mid + 1  # Look for a later occurrence
-            elif nums[mid] < target:
-                low = mid + 1
-            else:
-                high = mid - 1
-        return last_pos
-
-
-class Optimized:
-    def solve(self, nums: list[int], target: int) -> list[int]:
-        """
-        Optimized approach using a single, reusable binary search function
-        to find both the first and last positions.
-        """
-        first = self._binary_search(nums, target, find_first=True)
-        if first == -1:
-            return [-1, -1]
-        last = self._binary_search(nums, target, find_first=False)
-        return [first, last]
-
-    def _binary_search(self, nums: list[int], target: int, find_first: bool) -> int:
-        low, high = 0, len(nums) - 1
-        position = -1
-        while low <= high:
-            mid = (low + high) // 2
-            if nums[mid] == target:
-                position = mid
-                if find_first:
-                    high = mid - 1  # Continue searching on the left
+        def find_last(nums, target) -> int:
+            left, right = 0, len(nums) - 1
+            while left <= right:
+                mid = left + (right - left) // 2
+                if nums[mid] < target:
+                    left = mid + 1
+                elif nums[mid] > target:
+                    right = mid - 1
                 else:
-                    low = mid + 1  # Continue searching on the right
-            elif nums[mid] < target:
-                low = mid + 1
-            else:
-                high = mid - 1
-        return position
+                    if right == mid or nums[mid] != nums[mid + 1]:
+                        return mid
+                    else:
+                        left = mid + 1
+            return -1
+
+        def find_first(nums, target) -> int:
+            left, right = 0, len(nums) - 1
+            while left <= right:
+                mid = left + (right - left) // 2
+                if nums[mid] < target:
+                    left = mid + 1
+                elif nums[mid] > target:
+                    right = mid - 1
+                else:
+                    if left == mid or nums[mid] != nums[mid - 1]:
+                        return mid
+                    else:
+                        right = mid - 1
+            return -1
+
+        left = find_first(nums, target=target)
+        if left == -1:
+            return [-1, -1]
+        right = find_last(nums, target)
+        # first - find first occurence; to do it let's write some tests
+        return [left, right]
 
 
-class TemplateBased:
+class Other:
     def solve(self, nums: list[int], target: int) -> list[int]:
-        """
-        Finds the first and last positions using a binary search template
-        where the loop condition is `left + 1 < right`.
-        """
-        if not nums:
+        def find_bound(arr, t, is_first):
+            low = 0
+            high = len(arr) - 1
+            index = -1
+
+            while low <= high:
+                mid = low + (high - low) // 2
+                if arr[mid] == t:
+                    index = mid
+                    if is_first:
+                        # Try to find an earlier occurrence
+                        high = mid - 1
+                    else:
+                        # Try to find a later occurrence
+                        low = mid + 1
+                elif arr[mid] < t:
+                    low = mid + 1
+                else:  # arr[mid] > t
+                    high = mid - 1
+            return index
+
+        first_pos = find_bound(nums, target, True)
+        if first_pos == -1:
             return [-1, -1]
 
-        first = self._find_first(nums, target)
-        if first == -1:
-            return [-1, -1]
-        last = self._find_last(nums, target)
-        return [first, last]
-
-    def _find_first(self, nums: list[int], target: int) -> int:
-        left, right = 0, len(nums) - 1
-        while left + 1 < right:
-            mid = (left + right) // 2
-            if nums[mid] < target:
-                left = mid
-            else:  # nums[mid] >= target
-                right = mid
-
-        if nums[left] == target:
-            return left
-        if nums[right] == target:
-            return right
-        return -1
-
-    def _find_last(self, nums: list[int], target: int) -> int:
-        left, right = 0, len(nums) - 1
-        while left + 1 < right:
-            mid = (left + right) // 2
-            if nums[mid] > target:
-                right = mid
-            else:  # nums[mid] <= target
-                left = mid
-
-        if nums[right] == target:
-            return right
-        if nums[left] == target:
-            return left
-        return -1
+        last_pos = find_bound(nums, target, False)
+        return [first_pos, last_pos]
 
 
 # Explicit multi-export for test discovery
-ALL_SOLUTIONS = [Baseline, Optimized, TemplateBased]
+ALL_SOLUTIONS = [Baseline, Other]
 
 TEST_CASES = [
     ("example1", ([5, 7, 7, 8, 8, 10], 8), [3, 4]),

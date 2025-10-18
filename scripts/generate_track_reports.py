@@ -47,7 +47,8 @@ def load_stats(pdir: Path) -> dict | None:
 
 def build_table(rows: list[dict]) -> str:
     header = (
-        "| Problem | Diff | Baseline | Complex Justified | Optimal | Repeats | Min Time | Conf | Clarified | "
+        "| Problem &nbsp;&nbsp;&nbsp;&nbsp;| Diff | Baseline | Complex Justified "
+        "| Optimal | Repeats | Min Time | Conf | Clarified | "
         "Communicated | Stated | Edge Tests | Clean Impl | Mistakes |\n"
         "|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|"
     )
