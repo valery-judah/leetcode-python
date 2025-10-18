@@ -45,12 +45,18 @@ def load_stats(pdir: Path) -> dict | None:
         return None
 
 
+def _format_problem_cell(content: str) -> str:
+    """Wrap problem text with a span to enforce a minimum width."""
+    return f'<span style="display:inline-block; min-width: 260px;">{content}</span>'
+
+
 def build_table(rows: list[dict]) -> str:
+    header_problem = _format_problem_cell("Problem")
     header = (
-        "| Problem &nbsp;&nbsp;&nbsp;&nbsp;| Diff | Baseline | Complex Justified "
+        f"| {header_problem} | Diff | Baseline | Complex Justified "
         "| Optimal | Repeats | Min Time | Conf | Clarified | "
         "Communicated | Stated | Edge Tests | Clean Impl | Mistakes |\n"
-        "|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|"
+        "|:---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|"
     )
     lines = [header]
     for r in rows:
@@ -58,7 +64,7 @@ def build_table(rows: list[dict]) -> str:
             "| {problem} | {diff} | {baseline} | {complex_just} | {optimal} | {repeats} | {min_time} | "
             "{conf} | {clarified} | {communicated} | {stated} | {edge_tests} \
                 | {clean_impl} | {mistakes} |".format(
-                problem=r["problem"],
+                problem=_format_problem_cell(r["problem"]),
                 diff=r.get("diff", ""),
                 baseline=r.get("baseline", ""),
                 complex_just=r.get("complex_just", ""),
