@@ -8,24 +8,25 @@ import pytest
 class SecondTemplate:
     def solve(self, nums: list[int], target: int) -> list[int]:
         pass
-        
+
 
 class Bounds:
     def solve(self, nums: list[int], target: int) -> list[int]:
-        
+
         def lower_bound(a, x):
-            left, right = 0, len(a)      # right is one past the last index
+            left, right = 0, len(a)  # right is one past the last index
             while left < right:
                 mid = (left + right) // 2
                 if a[mid] < x:
                     left = mid + 1
                 else:
-                    right = mid          # keep mid as candidate
-            return left                  # in [0..n]
+                    right = mid  # keep mid as candidate
+            return left  # in [0..n]
 
         def first_occurrence(a, x):
             i = lower_bound(a, x)
             return i if i < len(a) and a[i] == x else -1
+
 
 class LeetCodesApproach:
     def solve(self, nums: list[int], target: int) -> list[int]:

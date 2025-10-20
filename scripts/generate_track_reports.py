@@ -45,9 +45,12 @@ def load_stats(pdir: Path) -> dict | None:
         return None
 
 
+_PROBLEM_PADDING = "&nbsp;" * 6
+
+
 def _format_problem_cell(content: str) -> str:
-    """Wrap problem text with a span to enforce a minimum width."""
-    return f'<span style="display:inline-block; min-width: 260px;">{content}</span>'
+    """Pad problem column so GitHub Markdown renders a wider cell."""
+    return f"{content}{_PROBLEM_PADDING}"
 
 
 def build_table(rows: list[dict]) -> str:
