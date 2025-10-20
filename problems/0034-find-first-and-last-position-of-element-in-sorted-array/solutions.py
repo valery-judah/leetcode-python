@@ -5,7 +5,29 @@ import copy
 import pytest
 
 
-class Baseline:
+class SecondTemplate:
+    def solve(self, nums: list[int], target: int) -> list[int]:
+        pass
+        
+
+class Bounds:
+    def solve(self, nums: list[int], target: int) -> list[int]:
+        
+        def lower_bound(a, x):
+            left, right = 0, len(a)      # right is one past the last index
+            while left < right:
+                mid = (left + right) // 2
+                if a[mid] < x:
+                    left = mid + 1
+                else:
+                    right = mid          # keep mid as candidate
+            return left                  # in [0..n]
+
+        def first_occurrence(a, x):
+            i = lower_bound(a, x)
+            return i if i < len(a) and a[i] == x else -1
+
+class LeetCodesApproach:
     def solve(self, nums: list[int], target: int) -> list[int]:
 
         def find_last(nums, target) -> int:
@@ -78,12 +100,12 @@ class Other:
 
 
 # Explicit multi-export for test discovery
-ALL_SOLUTIONS = [Baseline, Other]
+ALL_SOLUTIONS = [LeetCodesApproach, Other]
 
 TEST_CASES = [
     ("example1", ([5, 7, 7, 8, 8, 10], 8), [3, 4]),
     ("example2", ([5, 7, 7, 8, 8, 10], 6), [-1, -1]),
-    ("example3", ([], 0), [-1, -1]),
+    ("empty", ([], 0), [-1, -1]),
     ("target_at_start", ([8, 8, 8, 9, 10], 8), [0, 2]),
     ("target_at_end", ([1, 2, 8, 8, 8], 8), [2, 4]),
     ("single_element_match", ([8], 8), [0, 0]),

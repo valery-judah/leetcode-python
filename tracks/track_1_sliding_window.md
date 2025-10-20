@@ -19,7 +19,7 @@ See generation instructions in ../README.md.
 | <span style="display:inline-block; min-width: 260px;">[Maximum Number of Vowels in a Substring of Given Length](../problems/1456-maximum-number-of-vowels-in-a-substring-of-given-length/readme.md)</span> | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | <span style="display:inline-block; min-width: 260px;">[Sliding Window Maximum](../problems/0239-sliding-window-maximum/readme.md)</span> | Hard | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | <span style="display:inline-block; min-width: 260px;">[Max Consecutive Ones III](../problems/1004-max-consecutive-ones-iii/readme.md)</span> | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
-| <span style="display:inline-block; min-width: 260px;">Fruit Into Baskets (0904-fruit-into-baskets)</span> | Medium |  |  |  |  |  |  |  |  |  |                  |  |  |
+| <span style="display:inline-block; min-width: 260px;">Fruit Into Baskets</span> | Medium |  |  |  |  |  |  |  |  |  |                  |  |  |
 | <span style="display:inline-block; min-width: 260px;">[Binary Subarrays With Sum](../problems/0930-binary-subarrays-with-sum/readme.md)</span> | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | <span style="display:inline-block; min-width: 260px;">[Subarrays with K Different Integers](../problems/0992-subarrays-with-k-different-integers/readme.md)</span> | Hard | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 
