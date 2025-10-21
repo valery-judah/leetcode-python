@@ -29,7 +29,7 @@ Current tracks and progress:
 | [Hard Mix — Integration and Advanced Data Structures](tracks/track_10_hard_mix.md) | 13 | 6 | 19 | 0 | 0%                 | 19 | 0 |
 | [Sliding Window — Fixed and Dynamic](tracks/track_1_sliding_window.md) | 12 | 6 | 18 | 0 | 0%                 | 16 | 2 |
 | [Two Pointers — Advanced and In‑Place Transforms](tracks/track_2_two_pointers_advanced.md) | 12 | 8 | 20 | 3 | 15%                 | 20 | 0 |
-| [Binary Search — Predicates, Partitions, and Heaps](tracks/track_3_binary_search_heaps.md) | 12 | 6 | 18 | 3 | 17%                 | 18 | 0 |
+| [Binary Search — Predicates, Partitions, and Heaps](tracks/track_3_binary_search_heaps.md) | 12 | 6 | 18 | 4 | 22%                 | 18 | 0 |
 | [Intervals — Sorting, Merging, and Greedy Scheduling](tracks/track_4_intervals.md) | 12 | 10 | 22 | 0 | 0%                 | 22 | 0 |
 | [Linked Lists — Invariants, Rewiring, and Structural Tricks](tracks/track_5_linked_lists.md) | 12 | 9 | 21 | 0 | 0%                 | 21 | 0 |
 | [Trees — Traversals, BST Properties, and LCA](tracks/track_6_trees_basics.md) | 14 | 11 | 25 | 0 | 0%                 | 25 | 0 |
@@ -48,7 +48,7 @@ Current tracks and progress:
 | [NeetCode 250 — Two Pointers](tracks/track_neetcode_1_two_pointers.md) | 13 | 0 | 13 | 10 | 77%                 | 13 | 0 |
 | [NeetCode 250 — Sliding Window](tracks/track_neetcode_2_sliding_window.md) | 9 | 0 | 9 | 0 | 0%                 | 9 | 0 |
 | [NeetCode 250 — Stack](tracks/track_neetcode_3_stack.md) | 15 | 0 | 15 | 0 | 0%                 | 15 | 0 |
-| [NeetCode 250 — Binary Search](tracks/track_neetcode_4_binary_search.md) | 14 | 0 | 14 | 3 | 21%                 | 14 | 0 |
+| [NeetCode 250 — Binary Search](tracks/track_neetcode_4_binary_search.md) | 14 | 0 | 14 | 4 | 29%                 | 14 | 0 |
 | [NeetCode 250 — Linked List](tracks/track_neetcode_5_linked_list.md) | 14 | 0 | 14 | 0 | 0%                 | 14 | 0 |
 | [NeetCode 250 — Trees](tracks/track_neetcode_6_trees.md) | 23 | 0 | 23 | 0 | 0%                 | 23 | 0 |
 | [NeetCode 250 — Heap / Priority Queue](tracks/track_neetcode_7_heap_priority_queue.md) | 12 | 0 | 12 | 0 | 0%                 | 12 | 0 |

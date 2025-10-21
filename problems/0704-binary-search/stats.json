@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "baseline_impl": false,
+  "baseline_impl": true,
   "complexity_justified": false,
-  "optimal_solution": false,
-  "completed_repeats": 0,
+  "optimal_solution": true,
+  "completed_repeats": 1,
   "min_impl_time_min": 0,
-  "confidence_1to5": 1,
+  "confidence_1to5": 3,
   "signals": {
     "clarified_assumptions": false,
     "communicated_approach": false,

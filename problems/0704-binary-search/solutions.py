@@ -6,7 +6,17 @@ import pytest
 
 
 class Baseline:
-    def solve(self, nums: list[int], target: int) -> int: ...
+    def solve(self, nums: list[int], target: int) -> int:
+        left, right = 0, len(nums) - 1
+        while left <= right:
+            mid = left + (right - left) // 2
+            if nums[mid] < target:
+                left = mid + 1
+            elif nums[mid] > target:
+                right = mid - 1
+            else:
+                return left
+        return -1
 
 
 class Optimized:
@@ -14,7 +24,7 @@ class Optimized:
 
 
 # Explicit multi-export for test discovery
-ALL_SOLUTIONS = [Baseline, Optimized]
+ALL_SOLUTIONS = [Baseline]
 
 TEST_CASES = [
     ("single_element_found", ([5], 5), 0),

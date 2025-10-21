@@ -10,7 +10,7 @@ See generation instructions in ../README.md.
 
 | Problem&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Diff | Baseline | Complex Justified | Optimal | Repeats | Min Time | Conf | Clarified | Communicated | Stated | Edge Tests | Clean Impl | Mistakes |
 |:---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| [Binary Search](../problems/0704-binary-search/readme.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Easy | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
+| [Binary Search](../problems/0704-binary-search/readme.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Easy | ✅ | ✖️ | ✅ |  | 0 | 3 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Search Insert Position](../problems/0035-search-insert-position/readme.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Easy | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Guess Number Higher Or Lower](../problems/0374-guess-number-higher-or-lower/readme.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Easy | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Sqrt(x)](../problems/0069-sqrtx/readme.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Easy | ✅ | ✖️ | ✅ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |

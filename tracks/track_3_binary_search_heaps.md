@@ -10,7 +10,7 @@ See generation instructions in ../README.md.
 
 | Problem&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Diff | Baseline | Complex Justified | Optimal | Repeats | Min Time | Conf | Clarified | Communicated | Stated | Edge Tests | Clean Impl | Mistakes |
 |:---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| [Binary Search](../problems/0704-binary-search/readme.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Easy | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
+| [Binary Search](../problems/0704-binary-search/readme.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Easy | ✅ | ✖️ | ✅ |  | 0 | 3 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Search in Rotated Sorted Array](../problems/0033-search-in-rotated-sorted-array/readme.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Medium | ✅ | ✖️ | ✅ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Find Minimum in Rotated Sorted Array](../problems/0153-find-minimum-in-rotated-sorted-array/readme.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Medium | ✅ | ✖️ | ✅ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Find Peak Element](../problems/0162-find-peak-element/readme.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
