@@ -20,5 +20,3 @@ See generation instructions in ../README.md.
 | [Find Critical and Pseudo Critical Edges in Minimum Spanning Tree](../problems/1489-find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/readme.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Hard | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Build a Matrix With Conditions](../problems/2392-build-a-matrix-with-conditions/readme.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Hard | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Greatest Common Divisor Traversal](../problems/2709-greatest-common-divisor-traversal/readme.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Hard | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
-
-
