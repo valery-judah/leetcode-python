@@ -1,0 +1,133 @@
+{
+  "category": "",
+  "id": "278",
+  "name": "First Bad Version",
+  "difficulty": "Easy",
+  "leetcode_url": "https://leetcode.com/problems/first-bad-version/",
+  "slug": "first-bad-version",
+  "isPaidOnly": false,
+  "tags": [
+    "Binary Search",
+    "Interactive"
+  ],
+  "similar_questions": [
+    {
+      "title": "Find First and Last Position of Element in Sorted Array",
+      "difficulty": "Medium",
+      "slug": "find-first-and-last-position-of-element-in-sorted-array"
+    },
+    {
+      "title": "Search Insert Position",
+      "difficulty": "Easy",
+      "slug": "search-insert-position"
+    },
+    {
+      "title": "Guess Number Higher or Lower",
+      "difficulty": "Easy",
+      "slug": "guess-number-higher-or-lower"
+    }
+  ],
+  "questionId": "278",
+  "questionFrontendId": "278",
+  "title": "First Bad Version",
+  "titleSlug": "first-bad-version",
+  "content": "<p>You are a product manager and currently leading a team to develop a new product. Unfortunately, the latest version of your product fails the quality check. Since each version is developed based on the previous version, all the versions after a bad version are also bad.</p>\n\n<p>Suppose you have <code>n</code> versions <code>[1, 2, ..., n]</code> and you want to find out the first bad one, which causes all the following ones to be bad.</p>\n\n<p>You are given an API <code>bool isBadVersion(version)</code> which returns whether <code>version</code> is bad. Implement a function to find the first bad version. You should minimize the number of calls to the API.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 5, bad = 4\n<strong>Output:</strong> 4\n<strong>Explanation:</strong>\ncall isBadVersion(3) -&gt; false\ncall isBadVersion(5)&nbsp;-&gt; true\ncall isBadVersion(4)&nbsp;-&gt; true\nThen 4 is the first bad version.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 1, bad = 1\n<strong>Output:</strong> 1\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= bad &lt;= n &lt;= 2<sup>31</sup> - 1</code></li>\n</ul>\n",
+  "likes": 8793,
+  "dislikes": 3402,
+  "stats": {
+    "totalAccepted": "2M",
+    "totalSubmission": "4.3M",
+    "totalAcceptedRaw": 2004542,
+    "totalSubmissionRaw": 4336179,
+    "acRate": "46.2%"
+  },
+  "topicTags": [
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    },
+    {
+      "name": "Interactive",
+      "slug": "interactive"
+    }
+  ],
+  "metaData": {
+    "name": "firstBadVersion",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      },
+      {
+        "name": "bad",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    },
+    "manual": true
+  },
+  "discussion_posts": [
+    {
+      "name": "Baby_TRex",
+      "year": 2022,
+      "content": "Am I the only one who felt problem description and input is messy?",
+      "voteCount": 1086
+    },
+    {
+      "name": "Hazytea",
+      "year": 2022,
+      "content": "\"You are a product manager and currently leading a team to develop a new product.\"\\n\\nAssumes product managers can lead.",
+      "voteCount": 447
+    },
+    {
+      "name": "Yash_Mittal",
+      "year": 2021,
+      "content": "I didn\\'t get the problem, can anyone tell and describe the problem : /",
+      "voteCount": 209
+    },
+    {
+      "name": "Iluxmas",
+      "year": 2022,
+      "content": "Not the first time I notice description on leetcode is total trash =(",
+      "voteCount": 192
+    },
+    {
+      "name": "aaronwei",
+      "year": 2015,
+      "content": "Is there any difference between \" ( low + high ) / 2 \"  and  \" low + ( high - low ) / 2 \"?\\n\\nWhen I use the first one, it told me \"time limit exceed\" but if I use the second one, it worked!",
+      "voteCount": 171
+    },
+    {
+      "name": "smith911",
+      "year": 2021,
+      "content": "Why do the sample cases show two inputs\\n\\n    Input: n = 5, bad = 4\\nbut the function \\n\\n    public int firstBadVersion(int n) { \\nhas only one input.\\nWhat am I supposed to do with the second input ?",
+      "voteCount": 79
+    },
+    {
+      "name": "SergeyTachenov",
+      "year": 2016,
+      "content": "This problem has a very real-life practical description. So it sounds like you are allowed to make practical assumptions. I am usually very careful about possible integer overflows, so when I was coding binary search I thought, \"Can it overflow?\", and then I thought \"No, we can't have that many versions in a real life scenario, so better use a simpler expression than the usual overflow-conscious one.\" And\\u2014voila!\\u2014it overflowed!\\n\\nBut really, 2126753390 versions? Even if you're making a new version every second, you still need *67 years* to produce that many. And even if you really do, it's a bad idea to use `int` to store version numbers in such case.\\n\\nP. S. As mentioned in the comments, there is a way to get both overflow-protected and concise expression for positive integers: `(left + right) >>> 1`. That's exactly what `Arrays.binarySearch` uses. So that makes this one test case for this problem very useful education-wise.",
+      "voteCount": 65
+    },
+    {
+      "name": "sri_sushma",
+      "year": 2022,
+      "content": "For the example test case given, n = 5, means there are 5 versions and bad = 4, is not it obvious 4 is the first bad version.\\n\\nlets say there are 9 versions, that means from version 1 to version 9 (inclusive), say if bad version is 8, i would just return 8, as I already know from input bad version is 8.\\n\\nAlso it says n =5 and bad = 4, in the test case we see 5 followed by 4, but in the badversion function only 5, that is n is taken. how is the bad version taken into account?\\n\\n*I might probably the only one not understanding the question.*\\n\\nCan someone please explain me the question bit further. Thank you !\\n",
+      "voteCount": 29
+    },
+    {
+      "name": "narender_dhull",
+      "year": 2020,
+      "content": "Hey Guys, I tried to solve the first problem in c# but it gives error \"Line 10: Char 13: error CS0103: The name \\'isBadVersion\\' does not exist in the current context (in Solution.cs)\" I think isBadVersion method should be there and i don\\'t have to write it. we can use c# right? Anyone solved in C#?",
+      "voteCount": 17
+    },
+    {
+      "name": "tanmayaaeron142014",
+      "year": 2021,
+      "content": "Can somebody tell what does second number in input represents?",
+      "voteCount": 16
+    }
+  ]
+}
