@@ -1,0 +1,68 @@
+version: 1
+track: track_neetcode_10_graphs
+title: NeetCode 250 — Graphs
+description: Problems from the NeetCode 250 list for Graphs.
+problems:
+    - slug: island-perimeter
+      title: Island Perimeter
+      difficulty: easy
+    - slug: verifying-an-alien-dictionary
+      title: Verifying An Alien Dictionary
+      difficulty: easy
+    - slug: find-the-town-judge
+      title: Find the Town Judge
+      difficulty: easy
+    - slug: number-of-islands
+      title: Number of Islands
+      difficulty: medium
+    - slug: max-area-of-island
+      title: Max Area of Island
+      difficulty: medium
+    - slug: clone-graph
+      title: Clone Graph
+      difficulty: medium
+    - slug: walls-and-gates
+      title: Walls And Gates
+      difficulty: medium
+    - slug: rotting-oranges
+      title: Rotting Oranges
+      difficulty: medium
+    - slug: pacific-atlantic-water-flow
+      title: Pacific Atlantic Water Flow
+      difficulty: medium
+    - slug: surrounded-regions
+      title: Surrounded Regions
+      difficulty: medium
+    - slug: open-the-lock
+      title: Open The Lock
+      difficulty: medium
+    - slug: course-schedule
+      title: Course Schedule
+      difficulty: medium
+    - slug: course-schedule-ii
+      title: Course Schedule II
+      difficulty: medium
+    - slug: graph-valid-tree
+      title: Graph Valid Tree
+      difficulty: medium
+    - slug: course-schedule-iv
+      title: Course Schedule IV
+      difficulty: medium
+    - slug: number-of-connected-components-in-an-undirected-graph
+      title: Number of Connected Components In An Undirected Graph
+      difficulty: medium
+    - slug: redundant-connection
+      title: Redundant Connection
+      difficulty: medium
+    - slug: accounts-merge
+      title: Accounts Merge
+      difficulty: medium
+    - slug: evaluate-division
+      title: Evaluate Division
+      difficulty: medium
+    - slug: minimum-height-trees
+      title: Minimum Height Trees
+      difficulty: medium
+    - slug: word-ladder
+      title: Word Ladder
+      difficulty: hard

@@ -1,0 +1,228 @@
+version: 1
+track: track_7_graphs_basics
+title: Graphs — BFS/DFS, Topo Sort, Union‑Find, Shortest Paths
+description:
+    Grids-as-graphs, adjacency lists, coloring, topological order, multi-source BFS, Dijkstra, and DSU.
+problems:
+    # Grids as graphs (DFS/BFS)
+    - slug: number-of-islands
+      title: Number of Islands
+      difficulty: medium
+      primary_pattern: grid-dfs-bfs
+      section: grids
+      why: >
+          Canonical component count on a grid. Teaches visited marking, 4/8-neighborhoods, and recursion vs
+          queue tradeoffs.
+    - slug: max-area-of-island
+      title: Max Area of Island
+      difficulty: medium
+      primary_pattern: grid-dfs-area
+      section: grids
+      why: >
+          Same traversal with aggregation. Reinforces component-local state and returning size.
+    - slug: flood-fill
+      title: Flood Fill
+      difficulty: easy
+      primary_pattern: grid-dfs-bfs
+      section: grids
+      why: >
+          Warm-up coloring with base-case discipline and early exits; builds confidence for island variants.
+    - slug: surrounded-regions
+      title: Surrounded Regions
+      difficulty: medium
+      primary_pattern: grid-bfs-from-border
+      section: grids
+      why: >
+          Start from borders to tag non-flippable regions; then convert the rest. Shows reverse-thinking BFS.
+    - slug: pacific-atlantic-water-flow
+      title: Pacific Atlantic Water Flow
+      difficulty: medium
+      primary_pattern: grid-reverse-reachability
+      section: grids
+      why: >
+          Run DFS/BFS from oceans uphill. Introduces reverse reachability and intersection of visited sets.
+    - slug: rotting-oranges
+      title: Rotting Oranges
+      difficulty: medium
+      primary_pattern: multi-source-bfs
+      section: grids
+      why: >
+          BFS from all rotten as sources with minute layers. Standard multi-source queue pattern.
+    - slug: shortest-path-in-binary-matrix
+      title: Shortest Path in Binary Matrix
+      difficulty: medium
+      primary_pattern: bfs-shortest-path
+      section: grids
+      why: >
+          8-direction BFS with distance levels. Establishes shortest-path BFS template.
+
+    # Graph cloning and coloring
+    - slug: clone-graph
+      title: Clone Graph
+      difficulty: medium
+      primary_pattern: graph-clone
+      section: core
+      why: >
+          Build mapping old→new while traversing. Tests queue/stack usage and map-initialization timing.
+    - slug: is-graph-bipartite
+      title: Is Graph Bipartite?
+      difficulty: medium
+      primary_pattern: bfs-dfs-coloring
+      section: core
+      why: >
+          Two-coloring by BFS/DFS. Detect odd cycles; template extends to problems like Possible Bipartition.
+
+    # Topological ordering
+    - slug: course-schedule
+      title: Course Schedule
+      difficulty: medium
+      primary_pattern: topo-kahn-bfs
+      section: topo
+      why: >
+          Kahn’s algorithm with indegrees. Detect cycles and produce feasibility.
+    - slug: course-schedule-ii
+      title: Course Schedule II
+      difficulty: medium
+      primary_pattern: topo-kahn-bfs
+      section: topo
+      why: >
+          Same pattern but emit order. Practices queue discipline and indegree updates under branching.
+
+    # Shortest paths and reachability
+    - slug: network-delay-time
+      title: Network Delay Time
+      difficulty: medium
+      primary_pattern: dijkstra
+      section: shortest-paths
+      why: >
+          Positive weights. Use min-heap to relax edges; clarifies visited set vs current best distance.
+    - slug: number-of-provinces
+      title: Number of Provinces
+      difficulty: medium
+      primary_pattern: dsu-or-dfs
+      section: connectivity
+      why: >
+          Connected components in adjacency matrix. Offers both DSU and DFS solutions; compare tradeoffs.
+    - slug: redundant-connection
+      title: Redundant Connection
+      difficulty: medium
+      primary_pattern: union-find-cycle
+      section: connectivity
+      why: >
+          DSU to detect first edge that forms a cycle. Clean union-by-rank + path compression practice.
+
+notes:
+    ordering: Grids → clone/color → topo → shortest paths/DSU.
+    next_track: track_8_dynamic_programming_i
+
+extensions:
+    optional:
+        - slug: walls-and-gates
+          title: Walls and Gates
+          difficulty: medium
+          primary_pattern: multi-source-bfs
+          section: grids
+          why: >
+              Premium. Multi-source BFS from all gates to fill distances; solidifies INF/sentinel handling.
+        - slug: word-ladder
+          title: Word Ladder
+          difficulty: hard
+          primary_pattern: bfs-layered-transform
+          section: shortest-paths
+          why: >
+              BFS over implicit edges via wildcard buckets. Heavy adjacency build; do after core BFS is solid.
+        - slug: open-the-lock
+          title: Open the Lock
+          difficulty: medium
+          primary_pattern: bfs-state-space
+          section: shortest-paths
+          why: >
+              BFS in compact state space with forbidden states. Practice neighbor generation and pruning.
+        - slug: evaluate-division
+          title: Evaluate Division
+          difficulty: medium
+          primary_pattern: weighted-graph-bfs
+          section: core
+          why: >
+              Build bidirectional weighted graph and multiply along paths. Introduces weight accumulation.
+        - slug: minimum-genetic-mutation
+          title: Minimum Genetic Mutation
+          difficulty: medium
+          primary_pattern: bfs-layered-transform
+          section: shortest-paths
+          why: >
+              Word-ladder style on fixed alphabet. Good warm-up before 127.
+        - slug: bus-routes
+          title: Bus Routes
+          difficulty: hard
+          primary_pattern: bfs-on-routes
+          section: shortest-paths
+          why: >
+              BFS on routes rather than stops for speed. Teaches bipartite modeling of state.
+        - slug: possible-bipartition
+          title: Possible Bipartition
+          difficulty: medium
+          primary_pattern: bfs-dfs-coloring
+          section: core
+          why: >
+              Bipartite check from dislikes graph. Direct application of coloring with multiple components.
+        - slug: number-of-connected-components-in-an-undirected-graph
+          title: Number of Connected Components in an Undirected Graph
+          difficulty: medium
+          primary_pattern: dsu-or-dfs
+          section: connectivity
+          why: >
+              Premium. Same as Provinces but on sparse adjacency list; compare DSU vs DFS performance.
+        - slug: alien-dictionary
+          title: Alien Dictionary
+          difficulty: hard
+          primary_pattern: topo-ordering-with-constraints
+          section: topo
+          why: >
+              Premium. Build constraints from adjacent words, detect cycles, then topologically sort.
+        - slug: keys-and-rooms
+          title: Keys and Rooms
+          difficulty: medium
+          primary_pattern: dfs-reachability
+          section: core
+          why: >
+              Simple reachability in adjacency list form. Quick confidence builder.
+
+omitted:
+    from_neetcode_250:
+        - id: 261
+          slug: graph-valid-tree
+          reason: >
+              Premium; similar to DSU + cycle detection used in 684. Add later if you want both BFS and DSU
+              proofs.
+        - id: 323
+          slug: number-of-connected-components-in-an-undirected-graph
+          reason: >
+              Added as extension to avoid paywall duplication with 547 Provinces in core.
+        - id: 433
+          slug: minimum-genetic-mutation
+          reason: >
+              Provided as extension; core keeps variety without heavy word-graph preprocessing.
+        - id: 269
+          slug: alien-dictionary
+          reason: >
+              Premium and finicky input constraints. Listed as extension after topo basics.
+    from_leetcode_150:
+        - id: 399
+          slug: evaluate-division
+          reason: >
+              Included as extension to emphasize weighted graph modeling after unweighted BFS is solid.
+        - id: 127
+          slug: word-ladder
+          reason: >
+              Included as extension due to heavy adjacency optimizations; revisit after BFS templates feel
+              automatic.
+        - id: 286
+          slug: walls-and-gates
+          reason: >
+              Premium; listed as extension. Use 994 as the core multi-source BFS.
+        - id: 1971
+          slug: find-if-path-exists-in-graph
+          reason: >
+              Very easy DFS/DSU warm-up. Skip in core to keep challenge density high; use if you want a quick
+              win.

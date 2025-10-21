@@ -1,0 +1,47 @@
+version: 1
+track: track_neetcode_14_greedy
+title: NeetCode 250 — Greedy
+description: Problems from the NeetCode 250 list for Greedy.
+problems:
+    - slug: lemonade-change
+      title: Lemonade Change
+      difficulty: easy
+    - slug: maximum-subarray
+      title: Maximum Subarray
+      difficulty: medium
+    - slug: maximum-sum-circular-subarray
+      title: Maximum Sum Circular Subarray
+      difficulty: medium
+    - slug: longest-turbulent-subarray
+      title: Longest Turbulent Subarray
+      difficulty: medium
+    - slug: jump-game
+      title: Jump Game
+      difficulty: medium
+    - slug: jump-game-ii
+      title: Jump Game II
+      difficulty: medium
+    - slug: jump-game-vii
+      title: Jump Game VII
+      difficulty: medium
+    - slug: gas-station
+      title: Gas Station
+      difficulty: medium
+    - slug: hand-of-straights
+      title: Hand of Straights
+      difficulty: medium
+    - slug: dota2-senate
+      title: Dota2 Senate
+      difficulty: medium
+    - slug: merge-triplets-to-form-target-triplet
+      title: Merge Triplets to Form Target Triplet
+      difficulty: medium
+    - slug: partition-labels
+      title: Partition Labels
+      difficulty: medium
+    - slug: valid-parenthesis-string
+      title: Valid Parenthesis String
+      difficulty: medium
+    - slug: candy
+      title: Candy
+      difficulty: hard

@@ -1,0 +1,236 @@
+version: 1
+track: track_6_trees_basics
+title: Trees — Traversals, BST Properties, and LCA
+description: Postorder "return tuple" thinking, BFS levels, inorder/BST invariants, and LCA patterns.
+problems:
+    # Traversal fundamentals
+    - slug: maximum-depth-of-binary-tree
+      title: Maximum Depth of Binary Tree
+      difficulty: easy
+      primary_pattern: dfs-recursive
+      section: basics
+      why: >
+          Minimal postorder. Return height from children + 1. Sets up "compute from children" habit.
+    - slug: invert-binary-tree
+      title: Invert Binary Tree
+      difficulty: easy
+      primary_pattern: dfs-swap-children
+      section: basics
+      why: >
+          Swap left/right during DFS. Trains structural transforms with null checks.
+    - slug: balanced-binary-tree
+      title: Balanced Binary Tree
+      difficulty: easy
+      primary_pattern: postorder-return-tuple
+      section: basics
+      why: >
+          Return (is_balanced,height) from children. Introduces multi-field returns to avoid rescans.
+    - slug: diameter-of-binary-tree
+      title: Diameter of Binary Tree
+      difficulty: easy
+      primary_pattern: postorder-aggregate
+      section: basics
+      why: >
+          Track best diameter and return height. Separates returned value vs global best.
+    - slug: same-tree
+      title: Same Tree
+      difficulty: easy
+      primary_pattern: structure-equality
+      section: basics
+      why: >
+          Base case discipline (both null, one null, values, then recurse). Bedrock for comparisons.
+    - slug: symmetric-tree
+      title: Symmetric Tree
+      difficulty: easy
+      primary_pattern: mirror-check
+      section: basics
+      why: >
+          Mirror recursion: compare outer and inner pairs. Reinforces paired-recursion template.
+
+    # Subtree and path checks
+    - slug: subtree-of-another-tree
+      title: Subtree of Another Tree
+      difficulty: easy
+      primary_pattern: subtree-match
+      section: properties
+      why: >
+          DFS match via isSameTree(root, sub) or serialization. Emphasizes root candidate pruning.
+    - slug: path-sum
+      title: Path Sum
+      difficulty: easy
+      primary_pattern: dfs-path-sum
+      section: properties
+      why: >
+          Prefix target down the path. Tightens leaf detection and subtraction flow.
+
+    # BFS views
+    - slug: binary-tree-level-order-traversal
+      title: Binary Tree Level Order Traversal
+      difficulty: medium
+      primary_pattern: bfs-levels
+      section: bfs
+      why: >
+          Queue levels with size snapshot. Baseline BFS pattern used in many variants.
+    - slug: binary-tree-right-side-view
+      title: Binary Tree Right Side View
+      difficulty: medium
+      primary_pattern: bfs-rightmost
+      section: bfs
+      why: >
+          Take the last node per level or do right-first DFS with depth guard. Simple view extraction.
+
+    # BST properties
+    - slug: validate-binary-search-tree
+      title: Validate Binary Search Tree
+      difficulty: medium
+      primary_pattern: bst-bounds-or-inorder
+      section: bst
+      why: >
+          Use min/max bounds or inorder monotonicity. Teaches variant selection and overflow-safe bounds.
+    - slug: kth-smallest-element-in-a-bst
+      title: Kth Smallest Element in a BST
+      difficulty: medium
+      primary_pattern: bst-inorder-kth
+      section: bst
+      why: >
+          Inorder counter or stack. Introduces iterative traversal where useful.
+
+    # Lowest Common Ancestor
+    - slug: lowest-common-ancestor-of-a-binary-search-tree
+      title: Lowest Common Ancestor of a BST
+      difficulty: easy
+      primary_pattern: lca-bst
+      section: lca
+      why: >
+          Walk down using order property until split. Constant-space logic.
+    - slug: lowest-common-ancestor-of-a-binary-tree
+      title: Lowest Common Ancestor of a Binary Tree
+      difficulty: medium
+      primary_pattern: lca-postorder
+      section: lca
+      why: >
+          Return node if found in subtree; combine left/right. Canonical multi-branch postorder.
+
+notes:
+    ordering: DFS basics → subtree/path → BFS views → BST properties → LCA.
+    next_track: track_7_graphs_basics
+
+extensions:
+    optional:
+        - slug: binary-tree-inorder-traversal
+          title: Binary Tree Inorder Traversal
+          difficulty: easy
+          primary_pattern: iterative-stack
+          section: traversals
+          why: >
+              Iterative stack template for inorder. Useful when recursion is constrained.
+        - slug: binary-tree-zigzag-level-order-traversal
+          title: Binary Tree Zigzag Level Order Traversal
+          difficulty: medium
+          primary_pattern: bfs-levels-zigzag
+          section: bfs
+          why: >
+              Level parity handling. Reinforces BFS framing.
+        - slug: binary-tree-level-order-traversal-ii
+          title: Binary Tree Level Order Traversal II
+          difficulty: medium
+          primary_pattern: bfs-bottom-up
+          section: bfs
+          why: >
+              Same as 102 with reverse output. Cheap variant for practice.
+        - slug: construct-binary-tree-from-preorder-and-inorder-traversal
+          title: Construct Binary Tree from Preorder and Inorder Traversal
+          difficulty: medium
+          primary_pattern: build-from-orders
+          section: construction
+          why: >
+              Hash index map + recursion on ranges. Precise index math.
+        - slug: construct-binary-tree-from-inorder-and-postorder-traversal
+          title: Construct Binary Tree from Inorder and Postorder Traversal
+          difficulty: medium
+          primary_pattern: build-from-orders
+          section: construction
+          why: >
+              Mirror variant; careful postorder slicing. Good cross-check with 105.
+        - slug: serialize-and-deserialize-binary-tree
+          title: Serialize and Deserialize Binary Tree
+          difficulty: hard
+          primary_pattern: codec-bfs-or-preorder
+          section: design
+          why: >
+              Design a codec. BFS with nulls or preorder with sentinels. Robustness and versioning concerns.
+        - slug: flatten-binary-tree-to-linked-list
+          title: Flatten Binary Tree to Linked List
+          difficulty: medium
+          primary_pattern: preorder-rewire
+          section: transforms
+          why: >
+              Rewire right spine using stack or Morris-like pointer moves. Mutation safety.
+        - slug: binary-tree-maximum-path-sum
+          title: Binary Tree Maximum Path Sum
+          difficulty: hard
+          primary_pattern: postorder-global
+          section: properties
+          why: >
+              Return best-down path; update global best with left+node+right. Careful with negatives.
+        - slug: range-sum-of-bst
+          title: Range Sum of BST
+          difficulty: easy
+          primary_pattern: bst-prune-by-range
+          section: bst
+          why: >
+              Prune branches by [low,high]. Simple but cements BST pruning.
+        - slug: binary-search-tree-iterator
+          title: BST Iterator
+          difficulty: medium
+          primary_pattern: inorder-generator
+          section: design
+          why: >
+              O(h) space next() in amortized O(1). Clean stack discipline.
+        - slug: delete-node-in-a-bst
+          title: Delete Node in a BST
+          difficulty: medium
+          primary_pattern: bst-delete
+          section: bst
+          why: >
+              Three cases: leaf, one child, two children with inorder successor. Pointer hygiene.
+
+omitted:
+    from_neetcode_250:
+        - id: 297
+          slug: serialize-and-deserialize-binary-tree
+          reason: >
+              Added as extension due to design overhead; not needed for core traversal/BST/LCA mastery.
+        - id: 114
+          slug: flatten-binary-tree-to-linked-list
+          reason: >
+              Extension. Useful transform after core DFS and LCA.
+        - id: 124
+          slug: binary-tree-maximum-path-sum
+          reason: >
+              Kept as extension. Hard postorder with global updates; do after diameter and path-sum.
+        - id: 105
+          slug: construct-binary-tree-from-preorder-and-inorder-traversal
+          reason: >
+              Extension to avoid early index bookkeeping complexity in core.
+        - id: 106
+          slug: construct-binary-tree-from-inorder-and-postorder-traversal
+          reason: >
+              Same as above; keep outside core initially.
+    from_leetcode_150:
+        - id: 94
+          slug: binary-tree-inorder-traversal
+          reason: >
+              Provided as extension (iterative variant). Core favors conceptual DFS first.
+        - id: 103
+          slug: binary-tree-zigzag-level-order-traversal
+          reason: >
+              Extension variant of BFS levels.
+        - id: 173
+          slug: binary-search-tree-iterator
+          reason: >
+              Extension design task. Useful after core BST.
+        - id: 450
+          slug: delete-node-in-a-bst
+          reason: >
+              Extension. Include after validate/kth/LCA to keep core focused.
