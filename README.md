@@ -48,7 +48,7 @@ Current tracks and progress:
 | [NeetCode 250 — Two Pointers](tracks/track_neetcode_1_two_pointers.md) | 13 | 0 | 13 | 10 | 77%                 | 13 | 0 |
 | [NeetCode 250 — Sliding Window](tracks/track_neetcode_2_sliding_window.md) | 9 | 0 | 9 | 0 | 0%                 | 9 | 0 |
 | [NeetCode 250 — Stack](tracks/track_neetcode_3_stack.md) | 15 | 0 | 15 | 0 | 0%                 | 15 | 0 |
-| [NeetCode 250 — Binary Search](tracks/track_neetcode_4_binary_search.md) | 14 | 0 | 14 | 4 | 29%                 | 14 | 0 |
+| [NeetCode 250 — Binary Search](tracks/track_neetcode_4_binary_search.md) | 14 | 0 | 14 | 5 | 36%                 | 14 | 0 |
 | [NeetCode 250 — Linked List](tracks/track_neetcode_5_linked_list.md) | 14 | 0 | 14 | 0 | 0%                 | 14 | 0 |
 | [NeetCode 250 — Trees](tracks/track_neetcode_6_trees.md) | 23 | 0 | 23 | 0 | 0%                 | 23 | 0 |
 | [NeetCode 250 — Heap / Priority Queue](tracks/track_neetcode_7_heap_priority_queue.md) | 12 | 0 | 12 | 0 | 0%                 | 12 | 0 |

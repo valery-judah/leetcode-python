@@ -47,17 +47,21 @@ class Optimized:
         global _pick
         _pick = pick
 
+        # Lower-bound search with a half-open interval [low, high)
         low, high = 1, n
-        while low <= high:
+        while low < high:
             mid = low + (high - low) // 2
             result = guess(mid)
             if result == 0:
                 return mid
-            elif result == -1:
-                high = mid - 1
-            else:
+            # If our guess is too low, the number must be in the upper half.
+            if result == 1:
                 low = mid + 1
-        return -1
+            # Otherwise, the number is in the lower half, including mid.
+            else:
+                high = mid
+        # The loop terminates when low == high, which is our answer.
+        return low
 
 
 # Explicit multi-export for test discovery
