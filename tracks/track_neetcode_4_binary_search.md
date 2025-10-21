@@ -19,7 +19,7 @@ See generation instructions in ../README.md.
 | [Capacity to Ship Packages Within D Days](../problems/1011-capacity-to-ship-packages-within-d-days/readme.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Find Minimum In Rotated Sorted Array](../problems/0153-find-minimum-in-rotated-sorted-array/readme.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Medium | ✅ | ✖️ | ✅ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Search In Rotated Sorted Array](../problems/0033-search-in-rotated-sorted-array/readme.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Medium | ✅ | ✖️ | ✅ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
-| [Search In Rotated Sorted Array II](../problems/0081-search-in-rotated-sorted-array-ii/readme.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
+| [Search In Rotated Sorted Array II](../problems/0081-search-in-rotated-sorted-array-ii/readme.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Medium | ✅ | ✅ | ✅ |  | 0 | 2 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Time Based Key Value Store](../problems/0981-time-based-key-value-store/readme.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Split Array Largest Sum](../problems/0410-split-array-largest-sum/readme.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Hard | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Median of Two Sorted Arrays](../problems/0004-median-of-two-sorted-arrays/readme.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Hard | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
