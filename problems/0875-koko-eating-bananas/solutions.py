@@ -37,6 +37,7 @@ class Optimized:
                 left = mid + 1
         return left
 
+
 # Explicit multi-export for test discovery
 ALL_SOLUTIONS = [Baseline, Optimized]
 
