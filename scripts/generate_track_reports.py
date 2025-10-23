@@ -83,7 +83,7 @@ def build_table(rows: list[dict]) -> str:
                 mistakes=r.get("mistakes", ""),
             )
         )
-    return "\n".join(lines) + "\n"
+    return "\n".join(lines)
 
 
 def bool_icon(v: bool | None) -> str:
@@ -162,7 +162,7 @@ def generate_for_track(yaml_path: Path) -> Path:
     # Process optional extensions
     extensions = (data.get("extensions") or {}).get("optional") or []
     ext_rows = _process_problem_list(extensions, out_path)
-    extensions_table = "## Extensions (Optional)\n\n" + build_table(ext_rows) if ext_rows else ""
+    extensions_table = "\n\n## Extensions (Optional)\n\n" + build_table(ext_rows) if ext_rows else ""
 
     tpl = (ROOT / "templates" / "track_report.md.tpl").read_text()
     md = tpl.format(

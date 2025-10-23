@@ -25,7 +25,6 @@ See generation instructions in ../README.md.
 | [Lowest Common Ancestor of a BST](../problems/0235-lowest-common-ancestor-of-a-binary-search-tree/readme.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Easy | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Lowest Common Ancestor of a Binary Tree](../problems/0236-lowest-common-ancestor-of-a-binary-tree/readme.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 
-
 ## Extensions (Optional)
 
 | Problem&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Diff | Baseline | Complex Justified | Optimal | Repeats | Min Time | Conf | Clarified | Communicated | Stated | Edge Tests | Clean Impl | Mistakes |

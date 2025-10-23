@@ -24,7 +24,6 @@ See generation instructions in ../README.md.
 | [Reconstruct Itinerary](../problems/0332-reconstruct-itinerary/readme.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Hard | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Sliding Window Maximum](../problems/0239-sliding-window-maximum/readme.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Hard | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 
-
 ## Extensions (Optional)
 
 | Problem&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Diff | Baseline | Complex Justified | Optimal | Repeats | Min Time | Conf | Clarified | Communicated | Stated | Edge Tests | Clean Impl | Mistakes |

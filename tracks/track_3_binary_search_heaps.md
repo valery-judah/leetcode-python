@@ -23,13 +23,12 @@ See generation instructions in ../README.md.
 | [Merge k Sorted Lists](../problems/0023-merge-k-sorted-lists/readme.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Hard | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Kth Smallest Element in a Sorted Matrix](../problems/0378-kth-smallest-element-in-a-sorted-matrix/readme.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Hard | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 
-
 ## Extensions (Optional)
 
 | Problem&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Diff | Baseline | Complex Justified | Optimal | Repeats | Min Time | Conf | Clarified | Communicated | Stated | Edge Tests | Clean Impl | Mistakes |
 |:---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
 | [Koko Eating Bananas](../problems/0875-koko-eating-bananas/readme.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Medium | ✅ | ✖️ | ✅ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
-| [Capacity To Ship Packages Within D Days](../problems/1011-capacity-to-ship-packages-within-d-days/readme.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
+| [Capacity To Ship Packages Within D Days](../problems/1011-capacity-to-ship-packages-within-d-days/readme.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Medium | ✅ | ✖️ | ✅ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Split Array Largest Sum](../problems/0410-split-array-largest-sum/readme.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Hard | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Search a 2D Matrix II](../problems/0240-search-a-2d-matrix-ii/readme.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Medium | ✖️ | ✖️ | ✖️ |  | 0 | 1 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |
 | [Find First and Last Position of Element in Sorted Array](../problems/0034-find-first-and-last-position-of-element-in-sorted-array/readme.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Medium | ✅ | ✖️ | ✅ |  | 0 | 2 | ✖️ | ✖️ | ✖️ | ✖️                 | ✖️ |  |

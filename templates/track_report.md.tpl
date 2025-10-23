@@ -8,6 +8,4 @@ See generation instructions in ../README.md.
 
 ## Problems
 
-{problems_table}
-
-{extensions_table}
+{problems_table}{extensions_table}
